@@ -1,0 +1,22 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+# Redirect everything to my beautiful subdomain
+RewriteCond %{HTTP_HOST} !^kevin\.deldycke\.net
+RewriteRule ^(.*)$ http://kevin.deldycke.net/$1
+
+# Redirect paginated URL to non-paginated root
+RedirectMatch 301 /tag/(.*?)/page/(.*)      /tag/$1/
+RedirectMatch 301 /category/(.*)/page/(.*)  /category/$1/
+
+# Article and index URL's changed from ending with a forward slash to ending with a ".html"
+#RedirectMatch 301 (.*\d{4}/\d{2}/.*?)/ $1.html
+
+RedirectMatch 301 (/wp-content/uploads/)(.*) /static/uploads/$2
+
+#Redirect 301 /feed/ /feeds/all.atom.xml
+
+#ErrorDocument 404 /pages/404-page-not-found.html
+#ErrorDocument 500 /pages/500-error.html
+
+Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes

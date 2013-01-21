@@ -1,0 +1,18 @@
+comments: true
+date: 2010-01-28 20:31:36
+layout: post
+slug: cool-cavemen-live-gayant-expo-first-video-released
+title: Cool Cavemen live at Gayant Expo: first video released !
+wordpress_id: 967
+category: English
+tags: concert, Cool Cavemen, douai, gayant expo, live, Music, Video
+
+After several months of work, [nit-picking](http://kevin.deldycke.com/2010/01/remove-videotape-timecode/) and [drama](http://twitter.com/kdeldycke/status/6158072244), I've finally released [Cool Cavemen's "Pump the Funk Up" video](http://www.youtube.com/watch?v=qE-bis-wYxs):
+
+http://www.youtube.com/watch?v=qE-bis-wYxs
+
+This video was taken during the biggest Cool Cavemen's concert in 2009. We were playing at [Gayant Expo](http://www.gayantexpoconcerts.com) ("_largest french venue in the north of Paris_" as they said in their commercial leaflets...). It was April 17th, during [Cartel des Mines](http://fr.wikipedia.org/wiki/Cartel_des_Mines), a student festival organized by [a group of engineering schools](http://wikipedia.org/wiki/Ecole_des_Mines).
+
+As the whole concert was filmed, I plan to release a new song every one or two weeks. I can't promise a regular release cycle as I edit videos along the way. And of course, it also depends on my available free time...
+
+By the way, this post also mark the opening of a [section dedicated to my video projects](http://kevin.deldycke.com/video/). Currently it's quite empty and brief, but I hope to populate it with more substantial stuff soon...

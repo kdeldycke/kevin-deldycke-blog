@@ -1,0 +1,166 @@
+comments: true
+date: 2011-02-01 12:20:34
+layout: post
+slug: moving-git-subtree-repository
+title: Moving a Git sub-tree to its own repository
+wordpress_id: 2697
+category: English
+tags: code, Git, GitHub
+
+Coming from Subversion (and with [Plone collective repository](http://dev.plone.org/collective/browser) structure in mind), I've [recently moved all my tiny software projects](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/) in a big standalone Git repository (named `kev-code`). Now that I figured out that GitHub allows you to create unlimited amount of repositories, as long as they are open-source public projects, it make sense to emancipate some of my projects to their own repository. How do I move a sub-tree to its own repository ? That's what I talk about in this article.
+
+First, there is an automated way of performing this task with [git-subtree](http://github.com/apenwarr/git-subtree). You should try it first. For some reasons I didn't investigate, git-subtree didn't worked for me. So I'll explain now how I did it by hand.
+
+The idea is to revisit the history of my bloated Git repository and massively delete everything that is not related to the sub-folder I'm looking to export. In this case, I try to make a dedicated repository for my [e107 importer for WordPress](http://wordpress.org/extend/plugins/e107-importer/).
+
+Let's start by getting a local copy of my source repository:
+
+    
+    :::console
+    git clone git@github.com:kdeldycke/kev-code.git
+    cd scripts
+    
+
+
+
+Then I'll use the `filter-branch` action with a combination of `find` and `rm` to remove everything except the source code of my plugin:
+
+    
+    :::console
+    git filter-branch --prune-empty --tree-filter 'find ./ -maxdepth 1 -not -path "./e107*" -and -not -path "./wordpress-e107*" -and -not -path "./.git" -and -not -path "./" -print -exec rm -rf "{}" \;' -- --all
+    
+
+
+
+Instead of the command above, I could have use the `--subdirectory-filter` option ([as suggested by _jamessan_ on Stack Overflow](http://stackoverflow.com/questions/1662753/export-subtree-in-git-with-history/1662787#1662787)):
+
+    
+    :::console
+    git filter-branch --prune-empty --subdirectory-filter e107-importer -- --all
+    
+
+
+
+But this doesn't work in my case as my e107 Importer plugin didn't started its life straight in a dedicated folder. So this command squash some of the history I want to preserve.
+
+At this point I'm left with this following history:
+[![](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-subtree-cleanup-results-300x145.png)](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-subtree-cleanup-results.png)
+
+This looks pretty good, as all the history of my plugin is kept in order. But tags unrelated to my plugin are still there. Let's remove them:
+
+    
+    :::console
+    git tag -d coolkevmen-0.3 cool-blue-0.1 sapphire-0.1 sapphire-0.2 sapphire-0.3 sapphire-0.4
+    
+
+
+
+Now there is some commits polluting my history. These are left-overs of `git-modules` additions. I [tried to removed them](http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule/1260982#1260982), but it didn't worked. Also left in the history are unwanted merges and empty commits [from an old CVS import](http://kevin.deldycke.com/2010/02/how-to-fork-cvs-project-git/). To clean this up, I started an interactive rebase:
+
+    
+    :::console
+    git rebase --interactive init
+    
+
+
+
+There, using my text editor, I deleted the entries corresponding to these unrelated commits (namely `c21a840`, `0dc1d76`, `37473a8` and `c6f9f64`), and hoped Git will be smart enough to reconstruct a clean history:
+[![](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-interactive-rebase-300x130.png)](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-interactive-rebase.png)
+
+Luckily, it worked for me. If Git complain about such abuse, you may ignore warnings and force it to continue:
+
+    
+    :::console
+    git rebase --continue
+    
+
+
+
+Now that we only have a clean sub-tree, let's create a dedicated local Git repository to receive our branch:
+
+    
+    :::console
+    cd ..
+    mkdir e107-importer
+    cd e107-importer
+    git init
+    
+
+
+
+Add a temporary origin hooked on our source repository:
+
+    
+    :::console
+    git remote add origin ../kev-code
+    
+
+
+
+And import the master branch we carefully crafted (including tags):
+
+    
+    :::console
+    git pull --tags origin master
+    
+
+
+
+Now we can create on GitHub the new repository that will receive our exported project:
+[![](http://kevin.deldycke.com/wp-content/uploads/2011/01/github-new-repository-form-300x212.png)](http://kevin.deldycke.com/wp-content/uploads/2011/01/github-new-repository-form.png)
+
+It's time to push our changes. Let's replace our temporary origin to the new GitHub repository we just created:
+
+    
+    :::console
+    git remote rm origin
+    git remote add origin git@github.com:kdeldycke/e107-importer.git
+    git push origin master --force --tags
+    
+
+
+
+So now we have a copy of the sub-tree of my plugin into its own repository. That's great, but there is still some stuff to clean-up.
+
+First, we will rewrite the repository to look as if the `./e107-importer` sub-folder had been its project root since the beginning:
+
+    
+    :::console
+    git filter-branch --tree-filter 'test -d ./e107-importer && mv ./e107-importer/* ./ || echo "No folder found"' -- --all
+    
+
+
+
+Then, I've altered some commit messages to fix inconsistencies due to sub-folder removal:
+
+    
+    :::console
+    git filter-branch --msg-filter 'sed "s/Move the script to a dedicated folder/Rename script/g"' -- --all
+    
+
+
+
+Finally, at the bottom of the history, I still have my initial commit (a personal habit of mine when I [initialize my Git repositories](http://kevin.deldycke.com/2010/05/initialize-git-repositories/)). But its date was updated by the first `filter-branch` call. Let's set its date back to epoch:
+
+    
+    :::console
+    git filter-branch --force --env-filter \
+      'if [ $GIT_COMMIT = a2a5c05aed893fdd10250b724eb6a54bc6e7f122 ]
+         then
+           export GIT_AUTHOR_DATE="Thu, 01 Jan 1970 00:00:00 +0000"
+           export GIT_COMMITTER_DATE="Thu, 01 Jan 1970 00:00:00 +0000"
+       fi' -- --all
+    
+
+
+
+We can now send our latest changes to the remote GitHub repository by forcing a push:
+
+    
+    :::console
+    git push --force
+    
+
+
+
+Last thing we have to do, is to remove the plugin code from the fat source repository (I don't like duplicates). But that's another story for another article...

@@ -1,0 +1,21 @@
+diff -ru ./zenphoto-orig/zp-core/template-functions.php ./zenphoto/zp-core/template-functions.php
+--- ./zenphoto-orig/zp-core/template-functions.php	2008-08-15 07:43:05.000000000 +0200
++++ ./zenphoto/zp-core/template-functions.php	2008-08-16 17:08:03.000000000 +0200
+@@ -147,7 +147,16 @@
+
+ 		echo "<li><a href=\"".$zf."/admin.php?logout$redirect\">".gettext("Logout")."</a></li>\n";
+ 		echo "</ul></div>\n";
+-	}
++	} else {
++    echo "<script type=\"text/javascript\">
++var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");
++document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));
++</script>
++<script type=\"text/javascript\">
++var pageTracker = _gat._getTracker(\"UA-XXXXXX-Y\");
++pageTracker._trackPageview();
++</script>";
++  }
+ }
+
+ /**

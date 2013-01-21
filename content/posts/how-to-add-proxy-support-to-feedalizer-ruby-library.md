@@ -1,0 +1,46 @@
+comments: true
+date: 2008-07-16 22:40:53
+layout: post
+slug: how-to-add-proxy-support-to-feedalizer-ruby-library
+title: How-to add proxy support to Feedalizer ruby library
+wordpress_id: 233
+category: English
+tags: feed, feedalizer, hpricot, HTTP, monkey patch, parsing, proxy, RSS, ruby, Ruby on Rails, Snippet, Web
+
+![](http://kevin.deldycke.com/wp-content/uploads/2008/07/feedalizer-150x32.png)
+
+Here is a little code snippet that [monkey-patch](http://en.wikipedia.org/wiki/Monkey_patch) [Feedalizer](http://termos.vemod.net/feedalizer) to let it grab web content through a HTTP proxy:
+
+    
+    :::ruby
+    # HTTP proxy settings
+    HTTP_PROXY_HOST = "123.456.78.90"
+    HTTP_PROXY_PORT = 8080
+    
+    # Calculate proxy URL
+    HTTP_PROXY_URL = "http://#{HTTP_PROXY_HOST}:#{HTTP_PROXY_PORT}"
+    
+    # Monkey patch feedalizer to support page grabbing through a proxy
+    require 'feedalizer'
+    class Feedalizer
+      # Backup original grab_page method
+      alias_method :grab_page_orig, :grab_page
+      # Define new grab_page() method with proxy support
+      def grab_page(url)
+        open(url, :proxy => HTTP_PROXY_URL) { |io| Hpricot(io) }
+      end
+    end
+    
+
+
+
+This fix, written for a [Ruby on Rails](http://www.rubyonrails.org)-based project, lay in the `environment.rb` file, but I wonder if this is the right place and the right way of doing it... Anyway, it works for me ! :)
+
+**Update**: A [post from Matthew Higgins' blog that answer my question](http://www.strictlyuntyped.com/2008/06/rails-where-to-put-other-files.html) above has just shown up in my feed aggregator. What's he telling us ? That I'm a naughty programmer :
+
+
+> Previous to 2.0, naughty developers pasted code at the bottom of `environment.rb`, and the `config/initializer` folder was a welcome convention to help organize this madness.
+
+
+For your instance, the code in this post is extracted from an "old" (prior to RoR 2.0) project, thus explaining my naughtyness... ;)
+

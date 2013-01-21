@@ -1,0 +1,10 @@
+--- /usr/lib/mailman/pythonlib/email/Charset.py.orig   2008-12-28 19:46:23.000000000 +0100
++++ /usr/lib/mailman/pythonlib/email/Charset.py        2008-12-20 01:42:37.000000000 +0100
+@@ -351,6 +351,7 @@
+             lenqp = email.quopriMIME.header_quopri_len(s)
+             return min(lenb64, lenqp) + len(cset) + MISC_LEN
+         else:
++            return s is not None and len(str(s)) or 0
+             return len(s)
+
+     def header_encode(self, s, convert=False):
