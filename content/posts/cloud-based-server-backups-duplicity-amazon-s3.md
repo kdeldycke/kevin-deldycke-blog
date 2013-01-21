@@ -17,26 +17,17 @@ Now that you have access to Amazon's cloud, let's create a bucket on S3. I used 
 
 Duplicity can use the [cheaper RRS storage](http://aws.amazon.com/about-aws/whats-new/2010/05/19/announcing-amazon-s3-reduced-redundancy-storage/), but you need at least version 0.6.09. Having a Debian Squeeze, the only way to get a recent version is to install it from the backports:
 
-
     :::console
     $ apt-get -t squeeze-backports install duplicity python-boto
 
-
-
-
 Then I created a simple symmetric key with GPG:
-
 
     :::console
     $ gpg --gen-key
 
-
-
-
 You absolutely need to provide a passphrase, else Duplicity will refuse to run.
 
 Now update the script below with the GPG key passphrase and your AWS credentials:
-
 
     :::bash
     # Do not let this script run more than once
@@ -66,13 +57,9 @@ Now update the script below with the GPG key passphrase and your AWS credentials
     unset AWS_ACCESS_KEY_ID
     unset AWS_SECRET_ACCESS_KEY
 
-
-
-
 Before running duplicity, the script will dump all MySQL databases to a plain-text file. Then the first duplicity call will do the backup itself, and the second call will remove all backup older than a year.
 
 I saved the script above in `/home/kevin/s3-backup.sh` and `cron`-ed it:
-
 
     :::console
     $ chmod 755 /home/kevin/s3-backup.sh
@@ -80,9 +67,6 @@ I saved the script above in `/home/kevin/s3-backup.sh` and `cron`-ed it:
     # Backup everything to an Amazon S3 storage
     0 1 * * * root /home/kevin/s3-backup.sh
     " > /etc/cron.d/s3-backup
-
-
-
 
 I can now sleep better knowing all the work I do on my server will not be lost in case of a catastrophic event. Amazon S3 is today a no-brainer for server backups: your data will be secured and available. And for small quantity of data (like the 10 Go of my server), it's incredibly cheap. Especially if you compare it to the cost of maintaining a storage server at home.
 

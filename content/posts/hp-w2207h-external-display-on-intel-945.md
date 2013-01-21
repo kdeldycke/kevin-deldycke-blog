@@ -11,7 +11,6 @@ I recently had the oportunity to plug the [HP w2207h screen](http://www.amazon.c
 
 The laptop is powered by an [Intel 945 graphic chip](http://en.wikipedia.org/wiki/Intel_GMA#GMA_950):
 
-
     :::console
     [root@localhost ~]# lspci
     00:00.0 Host bridge: Intel Corporation Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub (rev 03)
@@ -19,11 +18,7 @@ The laptop is powered by an [Intel 945 graphic chip](http://en.wikipedia.org/wik
     00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS/GME, 943/940GML Express Integrated Graphics Controller (rev 03)
     (...)
 
-
-
-
 [After some googling](http://slforums.typo3-factory.net/lofiversion/index.php/t63508.html) and tests, I've designed the perfect `xorg.conf` for this configuration:
-
 
     :::console
     # **********************************************************************
@@ -112,23 +107,13 @@ The laptop is powered by an [Intel 945 graphic chip](http://en.wikipedia.org/wik
       Screen "screen1"
     EndSection
 
-
-
-
 What I've learned so far during these experiments:
-
-
-
 
   * With DRI, [virtual screen can't be greater than 2048x2048](http://www.thinkwiki.org/wiki/Xorg_RandR_1.2#the_Virtual_screen) for Intel 945 (or less) chips. This explain why my screens are one above the other instead of side-by-side.
 
-
   * [XRandR](http://www.x.org/wiki/Projects/XRandR) and its friend [KRandRTray](http://www.novell.com/coolsolutions/trench/16034.html) make screen positionning user-friendly...
-
 
   * ...until you play with the `xrandr`'s "`--off`" option ! After I manually called it, this parameter disabled all my screens, forever, and at each boot. I've randomly deleted xorg-related files, but I still didn't know how I solved this mess. If you have a better understanding of how `xrandr` store its configuration, please let me know !
 
-
   * Dual screening is awesome ! :D
-
 

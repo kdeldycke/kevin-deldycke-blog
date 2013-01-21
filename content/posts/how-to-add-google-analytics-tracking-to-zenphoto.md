@@ -15,7 +15,6 @@ Why ? As you can see in [ticket #441 in Zenphoto bugtracker](http://www.zenphoto
 
 Here is the [downloadable patch file](http://kevin.deldycke.com/wp-content/uploads/2008/08/google-analytics-tracking-for-non-admin-users.patch), and its content:
 
-
     :::diff
     diff -ru ./zenphoto-orig/zp-core/template-functions.php ./zenphoto/zp-core/template-functions.php
     --- ./zenphoto-orig/zp-core/template-functions.php  2008-08-15 07:43:05.000000000 +0200
@@ -39,15 +38,11 @@ Here is the [downloadable patch file](http://kevin.deldycke.com/wp-content/uploa
 
      /**
 
-
-
-
 This patch was generated from a [Zenphoto v1.2](http://www.zenphoto.org/2008/08/zenphoto-12-release-announcement/) and will likely not work with any other version.
 
 Do not forget to update the dummy Google Analytics account ID above (`UA-XXXXXX-Y`) by yours.
 
 And finally, to apply the patch, invoke the classic `patch` command:
-
 
     :::console
     patch -p0 < ./google-analytics-tracking-for-non-admin-users.patch

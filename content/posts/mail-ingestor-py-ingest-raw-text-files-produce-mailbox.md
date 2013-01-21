@@ -15,84 +15,43 @@ Nothing is left of my first steps on the web, but an archive of mails I sent and
 
 The archive contained all my mails in plain-text and was organized like this:
 
-
-
-
-
   * friend-1
 
-
     * in
-
 
       * mail-1.txt
 
-
       * mail-2.txt
-
 
       * attachement-1.jpg
 
-
       * attachement-2.pdf
-
 
       * ...
 
-
-
-
-
     * out
-
 
       * mail-10.txt
 
-
       * mail-11.txt
-
 
       * attachement-10.jpg
 
-
       * attachement-11.pdf
 
-
       * ...
-
-
-
-
-
-
-
 
   * friend-2
 
-
-
     * in
 
-
       * ...
-
-
-
-
 
     * out
 
-
       * ...
 
-
-
-
-
-
   * ...
-
-
 
 Now I want to consolidate all these mails to my Gmail account. But the plain-text files were in an inconsistent state, some with headers, some without, and others had headers translated in French...
 

@@ -11,18 +11,11 @@ About a year ago a friend asked me why I chose the [Ubercart](http://www.ubercar
 
 First, I selected a couple of web eCommerce solution based on the same [requirements upon which I choose WordPress](http://kevin.deldycke.com/2006/08/e107-to-wordpress-migration-here-is-why/) some years ago. Namely:
 
-
-
-
   * Open-source free software
-
 
   * Active project
 
-
   * Healthy community
-
-
 
 I excluded osCommerce right away. I quickly played with it in 2005 and in 2007 for projects that never came to fruition. And I keep a really bad memory of these experiences: both code and templates felt poorly designed and implemented. That's why osCommerce is classified in my brain as a giant legacy code base, hard to maintain. Maybe the project has evolved a lot since then. I should have looked back at it, but was attracted by another project...
 
@@ -30,19 +23,13 @@ I excluded osCommerce right away. I quickly played with it in 2005 and in 2007 f
 
 My shop was supposed to sell tee-shirts for the band. And a tee-shirt is a product that can have lots of variations:
 
-
   * different colors (white, black, yellow, ...),
-
 
   * of different sizes (S, M, L, X, XL, ...),
 
-
   * in different shapes (teeshirt, hoodie, sweatshirt, ...),
 
-
   * for different peoples (guy, girl, baby, ...).
-
-
 
 I wanted to track stocks and prices for each combination. And this degree of complexity is not supported by Magento. To be fair, I remember to have heard of this feature, but was only available in a third party module (that I don't remember the name). Alas, this module was proprietary. That is the main reason I discarded Magento.
 

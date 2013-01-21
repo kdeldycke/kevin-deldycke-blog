@@ -48,7 +48,6 @@ Most, if not all, other kind of data and metadata are stored in SQLite databases
 
 Finally, just in case you want to extract iPhones data from another backup than the default backup, like from a backup of the backup (isn't that clear ?), making a symlink is enough to trick iPhone Backup Extractor:
 
-
     :::console
     sh-3.2# pwd
     /Users/kevin/Library/Application Support/MobileSync
@@ -61,9 +60,6 @@ Finally, just in case you want to extract iPhones data from another backup than 
     lrwxr-xr-x   1 root   staff    99B Sep 16 21:56 Backup -> /Volumes/Untitled 1/laptop-kev-osx/mirror/Users/kevin/Library/Application Support/MobileSync/Backup
     drwxr-xr-x   4 kevin  staff   136B Aug 30 13:20 Backup-copy
     sh-3.2#
-
-
-
 
 That's how I was able to extract my iPhone data from an old backup, and get back most of the [data I lost after my last iOS update](http://twitter.com/kdeldycke/status/22516008513):
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-backup-extractor-from-old-backup-300x298.png)](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-backup-extractor-from-old-backup.png)

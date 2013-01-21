@@ -11,50 +11,33 @@ Again, here is a tutorial article exposing the recipe I use to cook a [Munin](ht
 
 As usual, let's start by installing the main Munin package:
 
-
     :::console
     $ aptitude install munin
-
-
-
 
 FYI, the version that aptitude choose to install was Munin 1.4.5. The default configuration coming along will make it produce graphs and HTML content to `/var/cache/munin/www`. Now we need to serve these pages via a web server.
 
 As I wanted to play with [nginx](http://en.wikipedia.org/wiki/Nginx) for a long time, I will use this opportunity to serve Munin's content. The default version coming with Squeeze is quite old, so we'll get the latest version from the [Dotdeb](http://www.dotdeb.org/) repository:
-
 
     :::console
     $ echo "deb http://packages.dotdeb.org squeeze all" > /etc/apt/sources.list.d/squeeze-dotdeb.list
     $ aptitude update
     $ aptitude install nginx
 
-
-
-
 And if you don't want to get those error messages about untrusted packages, don't forget to [add Dotdeb's keys to your keyring](http://www.dotdeb.org/2010/07/11/dotdeb-packages-are-now-signed/).
 
 We can now test that nginx is working by starting it up then fetch the default served page:
-
 
     :::console
     $ /etc/init.d/nginx start
     $ wget --output-document=- http://localhost | grep "Welcome to nginx"
 
-
-
-
 Then we'll disable the default nginx config and create a new one for Munin:
-
 
     :::console
     $ rm /etc/nginx/sites-enabled/default
     $ touch /etc/nginx/sites-available/munin
 
-
-
-
 In the latter, we put this minimal configuration:
-
 
     :::text
     server {
@@ -66,41 +49,25 @@ In the latter, we put this minimal configuration:
       }
     }
 
-
-
-
 Now we have to activate it before restarting nginx:
-
 
     :::console
     $ ln -s  /etc/nginx/sites-available/munin /etc/nginx/sites-enabled/munin
     $ /etc/init.d/nginx restart
 
-
-
-
 Now we are free to point our browser to the `http://munin.example.com` URL to get our graphs.
 
 You'll see that by default, Munin refer to your machine as `localhost.localdomain`. It's time to tweak Munin a little to get nice reports:
 
-
     :::console
     $ sed -i 's/\[localhost\.localdomain\]/\[munin\.example\.com\]/g' /etc/munin/munin.conf
 
-
-
-
 By default Munin activate a lot of great graphs. But I always find that some crucial monitoring are missing. Let's add some more monitoring scripts:
-
 
     :::console
     $ aptitude install munin-plugins-extra
 
-
-
-
 Here is a collection of general purpose graphs I automatically add to Munin:
-
 
     :::console
     $ ln -s /usr/share/munin/plugins/df_abs  /etc/munin/plugins/
@@ -109,32 +76,20 @@ Here is a collection of general purpose graphs I automatically add to Munin:
     user root
     " > /etc/munin/plugin-conf.d/netstat
 
-
-
-
 It's also good to have a clue about your connectivity to the rest of the world:
-
 
     :::console
     $ ln -s /usr/share/munin/plugins/ping_  /etc/munin/plugins/ping_google.com
     $ ln -s /usr/share/munin/plugins/ping_  /etc/munin/plugins/ping_ovh.fr
     $ ln -s /usr/share/munin/plugins/ping_  /etc/munin/plugins/ping_example.com
 
-
-
-
 I also like to have insight about my [automated backups](http://kevin.deldycke.com/2011/09/cloud-based-server-backups-duplicity-amazon-s3/):
-
 
     :::console
     $ ln -s /usr/share/munin/plugins/ps_ /etc/munin/plugins/ps_duplicity
     $ ln -s /usr/share/munin/plugins/ps_ /etc/munin/plugins/ps_sshd
 
-
-
-
 Monitoring temperatures, voltages and other hardware metrics is a must, unless your machine is a virtual server :) :
-
 
     :::console
     $ ln -s /usr/share/munin/plugins/cpuspeed         /etc/munin/plugins/
@@ -145,11 +100,7 @@ Monitoring temperatures, voltages and other hardware metrics is a must, unless y
     $ ln -s /usr/share/munin/plugins/sensors_ /etc/munin/plugins/sensors_temp
     $ ln -s /usr/share/munin/plugins/sensors_ /etc/munin/plugins/sensors_volt
 
-
-
-
 I sometimes have a Fail2Ban deamon running on a server, so that's a good thing to monitor it:
-
 
     :::console
     $ ln -s /usr/share/munin/plugins/fail2ban /etc/munin/plugins/
@@ -157,11 +108,7 @@ I sometimes have a Fail2Ban deamon running on a server, so that's a good thing t
     user root
     " > /etc/munin/plugin-conf.d/fail2ban
 
-
-
-
 [Having an UPS](http://kevin.deldycke.com/2011/05/mge-ellipse-750-ups-debian-squeeze/), it's good to monitor it too. Here is for the UPS on the local system having the `MGE-Ellipse750` ID (as defined in your `/etc/nut/ups.conf` file):
-
 
     :::console
     $ ln -s /usr/share/munin/plugins/nutups_   /etc/munin/plugins/nutups_MGE-Ellipse750_voltages
@@ -177,11 +124,7 @@ I sometimes have a Fail2Ban deamon running on a server, so that's a good thing t
     env.upsname MGE-Ellipse750@localhost
     " > /etc/munin/plugin-conf.d/nut
 
-
-
-
 And if you have a MySQL server running on the machine, that's a good idea to get stats:
-
 
     :::console
     $ ln -s /usr/share/munin/plugins/mysql_threads     /etc/munin/plugins/
@@ -189,21 +132,13 @@ And if you have a MySQL server running on the machine, that's a good idea to get
     $ ln -s /usr/share/munin/plugins/mysql_queries     /etc/munin/plugins/
     $ ln -s /usr/share/munin/plugins/mysql_bytes       /etc/munin/plugins/
 
-
-
-
 I also use some other Munin plugins coming from [Munin exchange](http://exchange.munin-monitoring.org):
-
 
     :::console
     $ wget http://exchange.munin-monitoring.org/plugins/mysql_size_all/version/1/download --output-document=/usr/share/munin/plugins/mysql_size_all
     $ ln -s /usr/share/munin/plugins/mysql_size_all /etc/munin/plugins/
 
-
-
-
 An here is how I monitor my RAID array:
-
 
     :::console
     $ wget http://exchange.munin-monitoring.org/plugins/raid/version/3/download --output-document=/usr/share/munin/plugins/raid
@@ -212,11 +147,7 @@ An here is how I monitor my RAID array:
     user root
     " > /etc/munin/plugin-conf.d/raid
 
-
-
-
 Finally, it's time to monitor nginx itself:
-
 
     :::console
     $ ln -s /usr/share/munin/plugins/nginx_status  /etc/munin/plugins/
@@ -225,20 +156,12 @@ Finally, it's time to monitor nginx itself:
     env.url http://localhost/nginx_status
     " > /etc/munin/plugin-conf.d/nginx
 
-
-
-
 These two scripts above have some Perl module dependencies:
-
 
     :::console
     $ aptitude install libio-all-lwp-perl
 
-
-
-
 If you don't install the libraries above, you'll get these kind of errors in `/var/log/munin/munin-node.log`:
-
 
     :::text
     2011/05/03-17:50:10 [2009] Error output from nginx_request:
@@ -248,11 +171,7 @@ If you don't install the libraries above, you'll get these kind of errors in `/v
     2011/05/03-17:50:10 [2009]      Can't locate object method "new" via package "LWP::UserAgent" at /etc/munin/plugins/nginx_status line 109.
     2011/05/03-17:50:10 [2009] Service 'nginx_status' exited with status 2/0.
 
-
-
-
 But for this to work, we have to update the `/etc/nginx/sites-enabled/munin` file. Now it looks like this:
-
 
     :::text
     server {
@@ -275,12 +194,9 @@ But for this to work, we have to update the `/etc/nginx/sites-enabled/munin` fil
       }
     }
 
-
-
 Note that I've added a simple HTTP authentication to Munin webpages and restricted access to nginx statistics from the local machine only.
 
 At last, before rebooting Munin and Nginx, make sure all downloaded plugins are executables. This is important and always forgotten:
-
 
     :::console
     $ chmod -R 755 /usr/share/munin/plugins/

@@ -11,21 +11,13 @@ tags: Backup, CLI, FTP, lftp, Linux, MySQL, mysqldump, Network, Python, rdiff-ba
 
 Changelog:
 
-
-
-
   * Check version of Python (at least v2.4 is required)
-
 
   * Rename `--debug` option to `--verbose`
 
-
   * Add a `--dry-run` option for testing
-
 
   * Remove use of deprecated `pexpect` methods
 
-
   * Add and update some error messages
-
 

@@ -13,24 +13,15 @@ tags: e107, migration, plugin, WordPress
 
 Change log:
 
-
-
-
   * "One-click migration" instead of multiple step process (more user-friendly),
-
 
   * Better error management (a must-have for precise bug reports),
 
-
   * Replace all links to old content with permalinks (increased SEO),
-
 
   * Better database management,
 
-
   * Work with latest [Wordpress v2.3.2](http://wordpress.org/development/2007/12/wordpress-232/) and [e107 v0.7.11](http://e107.org/news.php?item.824),
 
-
   * Code cleaned up ! ;)
-
 

@@ -13,27 +13,18 @@ If Python is well-equiped to enforce coding styles (thanks to [pep8](http://pypi
 
 First, we have to install some command-line utilities:
 
-
     :::console
     $ aptitude install libxml2-utils xsltproc
 
-
-
-
 Override the default XML indention from 2 spaces to 4, before forcing the cleaning of each XML file found from our current folder:
-
 
     :::console
     $ export XMLLINT_INDENT="    "
     $ find . -iname "*.xml" -exec xmllint --format --output "{}" "{}" \;
 
-
-
-
 Now we have a set of normalized XML content.
 
 Create an empty XSLT file named `tidy.xslt` and copy the following content in it:
-
 
     :::xslt
     <?xml version="1.0"?>
@@ -65,13 +56,9 @@ Create an empty XSLT file named `tidy.xslt` and copy the following content in it
 
     </xsl:stylesheet>
 
-
-
-
 The XSLT file above will separate with a blank line all children of all `data` tags. If this particular example is designed for OpenERP's XML, you can update the second and third `xsl:template` block to produce files fitting your taste and style.
 
 Finally, you can apply our XSLT to all our local XML files:
-
 
     :::console
     $ find . -iname "*.xml" -exec xsltproc --output "{}" ./tidy.xslt "{}" \;

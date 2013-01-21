@@ -11,11 +11,7 @@ I've just write a brand new script called [`system-backup.py`](https://github.co
 
 I run this script to backup all the local machines within my LAN. I start the backup process everyday thanks to a `cron` entry similar to this one:
 
-
     :::console
     0 20 * * * root /root/system-backup.py >> /mnt/backup-disk/backup.log
-
-
-
 
 If you need more information about the `rsync` part the script, please have a look to my previous [Remote Backup with rsync](http://kevin.deldycke.com/2005/04/remote-backup-with-rsync/) article, which detail how-to setup key authentification with `ssh`.

@@ -7,48 +7,23 @@ wordpress_id: 2674
 category: English
 tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web
 
-
-
-
   * Hide Subversion and Git directories content ([source](http://news.ycombinator.com/item?id=839016)):
-
 
         :::text
         RedirectMatch 404 /\.(svn|git)(/|$)
 
-
-
-
-
-
-
   * Disable rendering of PHP files coming from imported third party Javascript submodules ([context](https://github.com/kdeldycke/cool-cavemen-k2-theme/blob/master/.htaccess)):
-
 
         :::text
         RedirectMatch 404 js-(.*)\.php$
 
-
-
-
-
-
-
   * Redirect any request to current year sub-directory (I used this for a yearly-updated static web page):
-
 
         :::text
         RewriteEngine on
         RewriteRule !^/2010/ /2010/ [R=301,L]
 
-
-
-
-
-
-
   * Here is my template for domain-based virtual host routing:
-
 
         :::text
         # Setup the main website access
@@ -69,27 +44,13 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web
           RedirectMatch permanent (.*) http://example.com$1
         </VirtualHost>
 
-
-
-
-
-
-
   * Insert dynamic headers in HTTP responses depending on the browser:
-
 
         :::text
         BrowserMatchNoCase ".*MSIE\s[1-6].*" IS_DISGUSTING_BROWSER
         Header add X-advice-of-the-day "Save a kitten: use Firefox !" env=IS_DISGUSTING_BROWSER
 
-
-
-
-
-
-
   * Prevent WebDAV connexions (thanks Guillaume!):
-
 
         :::text
         <Location />
@@ -102,14 +63,7 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web
         SetEnvIf Request_Method "OPTIONS" CLIENT_PROBE
         Header set Allow "GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE" env=CLIENT_PROBE
 
-
-
-
-
-
-
   * At work, we had to engineer a convoluted software architecture for our intranet to fit the network security policy of our customer. This had a bad side effect of letting the [web statistic collector](http://www.nedstat.com) delete all cookies but its own, thus breaking intranet's authentication. So we (thanks Matthieu!) came up with this unmaintainable hack on Apache side to hide our intranet's cookies to NedStat's Javascript embedded code:
-
 
         :::text
         <LocationMatch "/(.*)">
@@ -119,33 +73,13 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web
           RequestHeader edit Cookie "(app_cookie_003=[^;]*(; )*)" ""
         </LocationMatch>
 
-
-
-
-
-
-
   * Kill all apache processes and restart the service:
-
 
         :::console
         /etc/init.d/apache2 stop ; pkill -9 -u www-data ; /etc/init.d/apache2 restart
 
-
-
-
-
-
-
   * Restart Apache service if no process found:
-
 
         :::console
         [ `ps axu | grep -v "grep" | grep --count "www-data"` -le 0 ] && /etc/init.d/apache2 restart
-
-
-
-
-
-
 

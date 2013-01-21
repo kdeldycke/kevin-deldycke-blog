@@ -9,24 +9,15 @@ tags: Apache, Exim, fail2ban, security, Server, SSH, Web
 
 This always start with a package installation:
 
-
     :::console
     $ aptitude install fail2ban
 
-
-
-
 Then I simply create a local configuration file where I'll put all my custom config:
-
 
     :::console
     $ touch /etc/fail2ban/jail.local
 
-
-
-
 Here is the content of that file:
-
 
     :::text
     [DEFAULT]
@@ -93,15 +84,11 @@ Here is the content of that file:
     logpath  = /var/log/exim*/rejectlog
     maxretry = 1
 
-
-
-
 While adjusting Fail2Ban, I was surprised by how sensitive this software is. It can just refuse to start without any notice in the log or on the command line. Even if its `log_level` variable is set to `4` (= `DEBUG`) in `/etc/fail2ban/fail2ban.conf`.
 
 In such a case, a sure way to find the culprit is to use a brute force debugging method: first set all the `enabled` variable of your `jail.local`'s sections to `false`. Then activate one section after another until Fail2Ban refuse to restart.
 
 For me, the problem was that I forgot to add my custom `exim-relay` filter to Fail2Ban. So I fixed my issue by creating an empty file at `/etc/fail2ban/filter.d/exim-relay.conf` in which I pasted the following content:
-
 
     :::text
     # Based on default exim.conf filter by Cyril Jaquier
@@ -123,11 +110,7 @@ For me, the problem was that I forgot to add my custom `exim-relay` filter to Fa
     #
     ignoreregex =
 
-
-
-
 Speaking of custom filters, here is one to filter DFind scans (file located at `/etc/fail2ban/filter.d/apache-w00tw00t.conf`):
-
 
     :::text
     # Based on http://howflow.com/tricks/block_w00tw00t_scan_hosts_with_fail2ban
@@ -146,11 +129,7 @@ Speaking of custom filters, here is one to filter DFind scans (file located at `
     # Values:  TEXT
     ignoreregex =
 
-
-
-
 And here is the corresponding section from my `jail.local` file:
-
 
     :::text
     [apache-w00tw00t]

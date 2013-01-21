@@ -8,12 +8,7 @@ tags: Linux, macro, Mandriva, RPM, urpmi
 
 This is a totally useless blog post to remind me the location of files that contain the definition of RPM's macros in Mandriva:
 
-
-
-
   * `/etc/rpm/`
 
-
   * `/usr/lib/rpm/`
-
 

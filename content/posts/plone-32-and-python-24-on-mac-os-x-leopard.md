@@ -24,27 +24,18 @@ Before going further, you need to have a machine that is able to compile code, w
 
 First we create our project directory, then we download, from its SVN repository, the bootstrap code of buildout:
 
-
     :::console
     $ mkdir -p ~/plone-vanilla
     $ cd ~/plone-vanilla
     $ curl http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py --output ./bootstrap.py
 
-
-
-
 Then we create our buildout config file and edit it:
-
 
     :::console
     $ touch ./buildout.cfg
     $ vi ./buildout.cfg
 
-
-
-
 The `buildout.cfg` file should contain the following directives, which tell buildout to install Plone 3.2.3, Zope 2.10.8 and all their dependencies:
-
 
     :::text
     [buildout]
@@ -75,21 +66,13 @@ The `buildout.cfg` file should contain the following directives, which tell buil
     verbose-security = on
     eggs             = ${buildout:eggs}
 
-
-
-
 Now let's build our Plone and Zope environnement:
-
 
     :::console
     $ python2.4 ./bootstrap.py
     $ ./bin/buildout
 
-
-
-
 At the end, if your build process didn't fail, you'll be able to start your Zope server:
-
 
     :::console
     $ ./bin/zope-instance
@@ -106,9 +89,6 @@ At the end, if your build process didn't fail, you'll be able to start your Zope
     2009-07-20T20:42:35 INFO Marshall libxml2-python not available. Unable to register libxml2 based marshallers.
     ------
     2009-07-20T20:42:59 INFO Zope Ready to handle requests
-
-
-
 
 Then you can fire up Safari, go to `http://localhost:8080/manage` (default Zope config), and login as the `admin` user (password: `admin`):
 [![safari-zope-login](http://kevin.deldycke.com/wp-content/uploads/2009/07/safari-zope-login-300x231.png)](http://kevin.deldycke.com/wp-content/uploads/2009/07/safari-zope-login.png)

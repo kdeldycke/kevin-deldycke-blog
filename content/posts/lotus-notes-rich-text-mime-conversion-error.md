@@ -24,32 +24,19 @@ As you can see above, the edit mode lets you manipulate (cut, copy, paste, ...) 
 
 Here is my procedure to make these mails pass through the conversion error:
 
-
-
-
   1. In Notes' edit mode, cut all inline pictures, one picture at a time;
-
 
   2. For each cutted picture, paste it as a new image in the image editor of your choice ([Gimp](http://www.gimp.org) did the trick for me);
 
-
   3. Save each image on your local disk;
-
 
   4. Now that all inline images are removed from the original mail, attach (but don't paste) to it all the images you saved in the previous step;
 
-
   5. Finally, save mail modifications in Notes and you'll be able to move the mail without the conversion error.
-
-
 
 This is really dirty, and isn't bearable past a few mails. But that's the only solution I found so far. Of course if you have a superior/automated way to address this lame bug, I'll be happy to hear that ! :)
 
-
-
 ## Update (Dec. 2010)
-
-
 
 I [recently tried again to migrate mails](http://kevin.deldycke.com/2010/09/ultimate-guide-lotus-notes-mail-migration/comment-page-1/#comment-7507) with embedded images, but this time with Lotus Notes 8.5.2 on Windows XP (inside a Qemu instance).
 

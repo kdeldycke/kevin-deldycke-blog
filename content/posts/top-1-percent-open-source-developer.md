@@ -15,23 +15,14 @@ Other interesting statistic is that I'm now ranked as open-source developer numb
 
 That's exciting, but irrelevant. Ohloh stats must be taken with a huge grain of salt.
 
-
-
-
   1. Some code are duplicated: my WordPress plugin is both present in my [personal GitHub repository](http://github.com/kdeldycke/e107-importer) and in [WordPress official plugin repository](http://plugins.trac.wordpress.org/browser/e107-importer/), inflating contributions on this project by 2.
-
 
   2. Not all open-source projects are tracked in Ohloh. Which make developer registered on Ohloh seems to be part of a smaller community.
 
-
   3. Not all developers on Ohloh have aggregated their repository accounts under one identity, making those who've done this looks like bigger contributors compared to others. This also artificially inflate the global population.
-
 
   4. Open-source contributions are not necessary in code repositories. Think about project promotion, maintenance of forges and websites, documentation, bug reports, testing, benchmarking, support (in mailing-lists, IRC and forums), ...
 
-
   5. And most importantly, the best contributions are not always tied to high commit activity or number of added code lines. Thinks about removing old/dead/legacy code and refactoring. These may be the best code contributions a project will see.
-
-
 
 That's why Ohloh stats must not be taken for granted. But this doesn't remove the fun you can get from them. Especially when they put me in a favorable light ! ;)

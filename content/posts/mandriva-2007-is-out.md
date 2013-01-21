@@ -11,5 +11,3 @@ tags: Linux, Mandriva, RPM
 
 Everybody know that, the [new version of Mandriva is out](http://www.mandriva.com/community/news/mandriva_linux_2007_is_out). Starting from now, [my 2006.0 repository](http://kevin.deldycke.com/static/repository/mandriva/2006.0/i586) will not be updated nor maintained. Instead, use [my brand new 2007.0 repository](http://kevin.deldycke.com/static/repository/mandriva/2007.0/i586), which is empty for the moment :p .
 
-
-

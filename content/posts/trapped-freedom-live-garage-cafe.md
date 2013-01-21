@@ -13,11 +13,9 @@ Some days after shooting I sent my raw footages to the band, which decided to pu
 
 http://www.youtube.com/watch?v=AZshlehRbPI
 
-
 They also released "Incoming" some days ago:
 
 http://www.youtube.com/watch?v=HlSmuJVQT8A
-
 
 All of these were shots in 1080p at 23.976 fps with a shutter speed of 1/50. Lens was set to manual focus as usual, and stayed wide open at f/2.8, with optical stabilization ("VC" in Tamron's jargon) on.
 

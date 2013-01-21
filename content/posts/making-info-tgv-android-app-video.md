@@ -17,11 +17,7 @@ http://www.youtube.com/watch?v=puDy-twV-Y4
 
 Now let's talk about what happened behind the scenes ! :)
 
-
-
 ## Shooting
-
-
 
 In all of my projects, I want to use free and open-source software, and push their usage for every step of the creation workflow. For video recording, there is no open-source firmware for the 7D. Sadly, the [Magic Lantern](http://magiclantern.wikia.com) community seems to have [reached a dead-end regarding 7D support](http://groups.google.com/group/ml-devel/browse_thread/thread/648f25d8d543e58). I'm quite sad as I choosed the 7D a year ago for 2 things: its video capabilities and the potential hackability of this camera (extrapolating Magic Lantern's success on the [5D Mark II](http://www.amazon.com/gp/product/B001G5ZTLS/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B001G5ZTLS)). But this doesn't stop me to get usable footages. Far from it.![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001G5ZTLS&camp=217145&creative=399381)
 
@@ -50,12 +46,7 @@ Yes, I could have tried to put the phone on a stand but I really wanted to show 
 By the way, about hands: there a trick involved here. The left hand is mine, but the right one is my co-worker's. There was a big advantage using this technic: with an eye on the 7D's rear LCD monitor, I can fully concentrate on the image and micro-adjust the distance of the phone to the lens. In the same time, my co-worker can focus (pardon the pun) on the action and follow the script. The only time when you can see my right hand is when I take the [Acer Liquid E](http://mobile.acer.com/en/phones/liquide/) to demonstrate the propagation of messages via Twitter:
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/09/htc-desire-and-acer-liquid-e-300x168.png)](http://kevin.deldycke.com/wp-content/uploads/2010/09/htc-desire-and-acer-liquid-e.png)
 
-
-
-
 ## Video editing
-
-
 
 For video editing, I knew I'll not be able to manipulate my 7D's files natively. At least not with the default packages bundled with my [Kubuntu 10.04](http://www.kubuntu.org/news/10.04-lts-release). So monday morning I started to compile the trunk version of [x264](http://www.videolan.org/developers/x264.html), [FFmpeg](http://ffmpeg.org) and [MLT](http://mltframework.org). Then I realized a brand new version of [Kdenlive (v0.7.8) was released](http://www.kdenlive.org/users/j-b-m/kdenlive-078-released). How did I missed such an important news about my favorite [NLE](http://en.wikipedia.org/wiki/Video_editing_software) ? :) Compliments must go to the Kdenlive team for providing up to date packages and all their dependencies !
 
@@ -65,12 +56,7 @@ So I did the entire video editing with Kdenlive. Here is what the final project 
 Inter-title cards were created from scratch with [Gimp](http://www.gimp.org):
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/09/gimp-title-card-editing-300x168.png)](http://kevin.deldycke.com/wp-content/uploads/2010/09/gimp-title-card-editing.png)
 
-
-
-
 ## Audio
-
-
 
 Let's talk audio now. I personally want to thanks [Tomasito, Cool Cavemen's saxophonist](http://coolcavemen.com/biography/tomasito/), who lends me his [Shure Beta57A microphone](http://www.amazon.com/gp/product/B0002BACAK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0002BACAK) and his [Line 6 POD Studio UX1](http://www.amazon.com/gp/product/B001EKECAY/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B001EKECAY) interface for this project. With [electrical tape](http://en.wikipedia.org/wiki/Electrical_tape), I attached the microphone on my [Gorillapod](http://www.amazon.com/gp/product/B002FGTWOC/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002FGTWOC), which serves as a mic stand. I used this setup to record Arnaud's voice:
 ![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0002BACAK&camp=217145&creative=399381)![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001EKECAY&camp=217145&creative=399381)![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002FGTWOC&camp=217145&creative=399381)
@@ -78,7 +64,6 @@ Let's talk audio now. I personally want to thanks [Tomasito, Cool Cavemen's saxo
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/09/shure-beta-57a-microphone-on-gorillapod-300x164.jpg)](http://kevin.deldycke.com/wp-content/uploads/2010/09/shure-beta-57a-microphone-on-gorillapod.jpg)
 
 I wanted to record the speach on my linux machine but I didn't managed to compile the [Line 6 open-source drivers](http://line6.com/community/thread/4031). In fact the module compiled but refused to load:
-
 
     :::text
     Sep 20 22:02:47 kev-laptop kernel: [  717.905187] line6usb: Unknown symbol snd_rawmidi_receive
@@ -119,9 +104,6 @@ I wanted to record the speach on my linux machine but I didn't managed to compil
     Sep 20 22:02:47 kev-laptop kernel: [  717.907474] line6usb: disagrees about version of symbol snd_pcm_period_elapsed
     Sep 20 22:02:47 kev-laptop kernel: [  717.907475] line6usb: Unknown symbol snd_pcm_period_elapsed
 
-
-
-
 Against my will, and to not waste time, I resigned myself to use a Windows machine lying around the office. I installed [Audacity](http://audacity.sourceforge.net) and the Windows drivers, then plugged the pod. And voilà, I had a portable recording studio.
 
 Again, as we were in a hurry, we didn't paid close attention to the way Arnaud was speaking in the mic. Thus the quality of the original take was not fantastic. To me it was good enough for the intended purpose.
@@ -132,12 +114,7 @@ When I gave the raw recording to [Thomas](http://coolcavemen.com/biography/jimy-
 
 By the way, if you're looking to record/mix/master any audio material (from a simple voice-over to a full band), I really recommend you to [contact his studio](http://soundupstudio.com). And tell him you heard of him by reading my blog, he may give you a discount ! ;)
 
-
-
-
 ## Epilogue
-
-
 
 As I concentrated all my efforts towards the creation of the video, I don't have many details about the application development itself. But coding the android app was, without a doubt, the biggest chunk of work of this project. It involves two of our best Andoid developpers (Jeremy and Paul) and [our in-house Photoshop geek](http://tilap.net) for the design. The project was lead by [Arnaud](http://www.infinityperl.org).
 

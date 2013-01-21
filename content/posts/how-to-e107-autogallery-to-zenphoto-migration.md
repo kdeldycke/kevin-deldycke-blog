@@ -13,24 +13,16 @@ The old gallery was based on [autogallery](http://sourceforge.net/projects/e107a
 
 The first step is to copy the autogallery album structure, with all its content, to Zenphoto:
 
-
     :::console
     cd /www
     cp -ax ./e107_plugins/autogallery/Gallery/* ./zenphoto/albums/
 
-
-
-
 Then we delete all previews, thumbnails and XML metadatas, to keep in Zenphoto original assets only:
-
 
     :::console
     find ./zenphoto/albums/ -iname "*.xml" | xargs rm -f
     find ./zenphoto/albums/ -iname "pv_*" | xargs rm -f
     find ./zenphoto/albums/ -iname "th_*" | xargs rm -f
-
-
-
 
 By now, you should be able to play with your medias using Zenphoto's admin interface.
 
@@ -39,7 +31,6 @@ But if you're unlucky as I was, you will find a strange bug which break down dra
 To migrate comments, I have no automatic solution. I choose to do this manually, editing the database by hand. In my case it was the quickest way as I only had a dozen of comments to migrate.
 
 And last but not least, if you care about measuring the popularity of your photos, you should consider migrating the view counter associated with each of your media. Don't worry, this time I wrote a script to take care of it automagically. It will generate a bunch of SQL statements you'll have to execute on your Zenphoto MySQL database. Here is my ["e107 autogallery to Zenphoto hit counter migration script"](http://kevin.deldycke.com/wp-content/uploads/2008/08/e107-autogallery-to-zenphoto-hit-counter-migration.py) (nice name isn't it ? ;) ) that do the job:
-
 
     :::python
     #!/usr/bin/python
@@ -68,7 +59,6 @@ And last but not least, if you care about measuring the popularity of your photo
       Last update: 2008 aug 21
     """
 
-
     ########### User config ###########
 
     AUTOGALLERY_ALBUM_PATH = "/www/e107_plugins/autogallery/Gallery"
@@ -77,10 +67,8 @@ And last but not least, if you care about measuring the popularity of your photo
 
     ######## End of user config #######
 
-
     import os, hashlib
     import xml.etree.ElementTree as ET
-
 
     # Calculate hash of a given file
     def getHash(path):
@@ -95,7 +83,6 @@ And last but not least, if you care about measuring the popularity of your photo
       if not len(data):
         return None
       return hashlib.sha224(data).hexdigest()
-
 
     # Associate each autogallery photo having a hitcounter greater than 0 with its MD5 hash
     def populateHashTable(arg, dirname, names):
@@ -126,7 +113,6 @@ And last but not least, if you care about measuring the popularity of your photo
           continue
         hash_table[file_hash] = hits + hash_table.get(file_hash, 0)
 
-
     # Generate hitcount SQL request for each matching file
     def generateSQL(arg, dirname, names):
       global sql
@@ -151,28 +137,17 @@ And last but not least, if you care about measuring the popularity of your photo
     os.path.walk(dest_path, generateSQL, None)
     print sql
 
-
-
-
 I think code and comments are self-explainatory. And do not forget to update constants at the top of the script to match your installation paths and database's tables prefix.
 
 And finally, for your information, I tested all of this on following versions:
 
-
-
-
   * e107 0.7.11
-
 
   * autogallery 2.61
 
-
   * Zenphoto 1.2
-
 
   * Python 2.5.2
 
-
   * Linux server
-
 

@@ -12,27 +12,17 @@ The main update is about the lock file, which I implemented in the [last version
 
 Here is the detailed changelog:
 
-
-
-
   * Auto-kill the script if the backup process take to much time. Timeout can be defined via a constant.
-
 
   * Clean kill: track all child processes to kill them safely before removing the lock file.
 
-
   * Require newer versions of python (>= v2.4), rsync (>= v2.6.7) and rdiff-backup (>= v1.1.0).
-
 
   * Use `--preserve-numerical-ids` option when adding rdiff-backup increment.
 
-
   * Keep 15 increments by default instead of 20. This value can be easily changed thanks to a defined constant.
-
 
   * Remove deleted file first during mirroring and delete outdated increments before adding a new one to gain space. This strategy is safer for target disk with low remaining free space.
 
-
   * Tell rsync to print human-readable values.
-
 

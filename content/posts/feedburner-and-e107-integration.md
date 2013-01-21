@@ -17,7 +17,6 @@ First, check that the e107 RSS feed plugin is activated. Then [create an account
 
 Then, create (or edit) the `http://www.my-domain.com/.htaccess` file, and add following code:
 
-
     :::console
     RewriteEngine On
 
@@ -29,12 +28,7 @@ Then, create (or edit) the `http://www.my-domain.com/.htaccess` file, and add fo
     RewriteCond %{QUERY_STRING} ^(1|News|.*)
     RewriteRule e107_plugins/rss_menu/rss\.php http://feeds.feedburner.com/myfeed? [R=301,L]
 
-
-
-
 This code is inspired by the one written by [Mike Atlas](http://www.mikeatlas.com), who had a similar issue and wanted to [outsource his e107 forum RSS feeds to FeedBurner](http://www.mikeatlas.com/blog/2007/03/09/transparently-outsourcing-your-rss-feeds-to-feedburner/).
-
-
 
 The first rewrite rule will redirect all URLs that start with `http://www.my-domain.com/e107_plugins/rss_menu/rss.php?5` or `http://www.my-domain.com/e107_plugins/rss_menu/rss.php?Comments` to `http://feeds.feedburner.com/myfeed-comments`.
 

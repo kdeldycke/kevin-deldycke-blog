@@ -11,8 +11,6 @@ This is a old discussion I had at least 9 months ago with people from the `#kde`
 
 I was looking for a way to get an error message in english instead of french. After reading the following discussion, the solution is quite obvious, but at that time I was probably too tired to think efficiently... :)
 
-
-
 > <kev1> Hi ! I use amarok in french and I would like to run it in english. How can I do ?
 <kev1> Things like "env LANG=en amarok" doesn't work...
 <shining> kev1: LANG=C amarok

@@ -19,12 +19,8 @@ There is still an inconvenient of using VLC instead of mencoder: VLC is transcod
 
 To summarize, here is the command line I use to do transcoding via VLC:
 
-
     :::console
     vlc --sout-all "input_video.avi" :sout='#transcode{vcodec=h264, acodec=mp3, ab=32,channels=1, audio-sync}:std{access=file, mux=mp4, url="output_video.mp4"}' vlc:quit -I dummy
-
-
-
 
 This command is far from perfect and I plan to dig into VLC help to tune h264 codec.
 

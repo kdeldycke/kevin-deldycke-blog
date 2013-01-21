@@ -15,15 +15,10 @@ J'ai souscrit à l'[offre no!Box](http://www.ovh.fr/adsl/no_box.xml) avec un mod
 
 Et donc, après s’être connecté depuis un terminal sous Linux en telnet:
 
-
     :::console
     $ telnel 192.168.1.254
 
-
-
-
 Il ne reste qu'à exécuter les commandes suivantes depuis le prompt du modem:
-
 
     :::console
     system reset factory yes proceed yes

@@ -17,26 +17,16 @@ Be carefull, actually the script is a very alpha version that only get e107 news
 
 In future releases, I plan to add following features:
 
-
-
-
   * Import News categories as tags,
-
 
   * Import static pages,
 
-
   * Import comments,
-
 
   * Import users (both post and comment authors),
 
-
   * Auto convert bb tags to html,
 
-
   * Auto import images embedded in news/pages.
-
-
 
 You can also [get the latest version of the script from my "Linux Scripts" page](http://kevin.deldycke.com/code/).

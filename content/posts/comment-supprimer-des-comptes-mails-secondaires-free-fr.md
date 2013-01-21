@@ -21,7 +21,6 @@ Ensuite, il faut se rendre sur la [page d'assistance par mail](http://www.free.f
 
 Et pour les paresseux, voici le modèle à copier/coller:
 
-
 > Bonjour,
 
 Je possède de nombreux comptes mails secondaires. La grande majorité de ceux ci sont obsolètes et abandonnés. Aussi je souhaiterais les supprimer, ainsi que toutes les données qui leurs sont associées (listes de diffusions, comptes mails, pages personnelles, bases de données SQL, statistiques, livres d'or, ...).
@@ -35,21 +34,13 @@ Voici la liste des comptes mails secondaires:
 
 Pour information, tous ces comptes mails secondaires sont attachés à mon compte principal (ADSL) dont l'identifiant est "0123456789" et le mot de passe "XXXXXXXX".
 
-
-
 Deux choses importante à noter:
-
-
-
 
   * Il faut préciser son mot de passe. Ben oui, c'est comme ça. Ça fait partie de la procédure de vérification.
 
   * Les opérateurs prenant en charge votre demande ne peuvent pas supprimer plus de 5 comptes mails à la fois. Donc si comme moi vous en avez beaucoup, il faudra faire plusieurs demandes. Et comme on ne peut pas faire plusieurs demandes en parallèle, il faudra s'armer de patience.
 
-
-
 Une fois sur deux, votre demande va être immédiatement prise en charge, et vous recevrez la confirmation suivante:
-
 
 > Madame, Monsieur,
 
@@ -67,10 +58,7 @@ En espérant que notre réponse vous apportera une entière satisfaction, nous r
 
 Au nom de toute l'équipe Free, nous vous prions de recevoir, Madame, Monsieur, nos sincères salutations.
 
-
-
 L'autre moitié du temps, si votre compte à été créé avec une ligne _Free Haut Débit_, on vous enverra une demande de confirmation:
-
 
 > Madame, Monsieur,
 
@@ -107,10 +95,7 @@ En espérant que notre réponse vous apportera une entière satisfaction, nous r
 
 Au nom de toute l'équipe Free, nous vous prions de recevoir, Madame, Monsieur, nos sincères salutations.
 
-
-
 Dans ce dernier cas, renvoyez un message de ce type pour relancer la procédure:
-
 
 > Bonjour, et merci pour cette demande de confirmation.
 
@@ -126,7 +111,5 @@ Aussi je vous confirme bien ma demande, à savoir la suppression des comptes sui
 Pour information, tous ces comptes mails secondaires sont attachés à mon compte principal (ADSL) dont l'identifiant est "01234567890" et le mot de passe "XXXXXXXX".
 
 Merci pour votre prévenance.
-
-
 
 Et voila comment, après plusieurs semaines d'échanges avec le support de Free, j'ai simplifié ma vie ! ;) Dommage que la procédure ne soit pas automatisée...

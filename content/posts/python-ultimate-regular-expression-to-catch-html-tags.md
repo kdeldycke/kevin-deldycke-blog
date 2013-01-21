@@ -9,16 +9,10 @@ tags: HTML, programming, Python, regexp, Snippet, software, Web, xHTML
 
 1 year and 3 months ago I've came with a [PHP regexp to parse HTML tag soup](http://kevin.deldycke.com/2007/03/ultimate-regular-expression-for-html-tag-parsing-with-php/). Here is an improved version, in Python (my favorite language so far), that is normally much prone to detect strange HTML tags. It also support attributes without value so it's closer to the [HTML specification](http://www.w3.org/TR/REC-html40/), but doesn't strictly stick to it in order to catch [tag soup](http://en.wikipedia.org/wiki/Tag_soup) and malformatted tags.
 
-
-
     :::python
     ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
 
-
-
-
 And here is it applied in a trivial example (in a python shell):
-
 
     :::python
     >>> import re

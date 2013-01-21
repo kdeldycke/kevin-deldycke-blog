@@ -7,30 +7,13 @@ wordpress_id: 4797
 category: English
 tags: javascript, programming, Web
 
-
-
-
   * Print a message in the console:
-
 
         :::javascript
         console.log("Debugging message");
 
-
-
-
-
-
-
   * Add a breakpoint:
-
 
         :::javascript
         debugger;
-
-
-
-
-
-
 

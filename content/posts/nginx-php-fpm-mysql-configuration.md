@@ -13,15 +13,9 @@ This article is a follow-up to the one I wrote 3 months ago, in which I explaine
 
 I'm mostly running WordPress instances on that server, so you'll see some reference of it in this post.
 
-
-
-
 ## MySQL
 
-
-
 First, let's tune MySQL. That's the easiest part of that article, as you only need to create a `.cnf` file in `/etc/mysql/conf.d/` and place there all your custom parameters. Here is the content of my `/etc/mysql/conf.d/kev.cnf`:
-
 
     :::text
     [mysqld]
@@ -56,22 +50,13 @@ First, let's tune MySQL. That's the easiest part of that article, as you only ne
     read_buffer = 16M
     write_buffer = 16M
 
-
-
-
 Most of these parameters were set for my particular usage and with insights from the [MySQL Tuning Primer Script](http://launchpad.net/mysql-tuning-primer).
 
-
-
-
 ## PHP-FPM
-
-
 
 Unlike MySQL, the structure of PHP configuration files on Debian Squeeze doesn't let us easily add our customizations. We have to modify the default files provided at the package installation.
 
 Here is my setup of the PHP processes pool:
-
 
     :::diff
     --- /etc/php5/fpm/pool.d/www.conf.orig     2011-06-07 08:14:30.000000000 +0200
@@ -88,11 +73,7 @@ Here is my setup of the PHP processes pool:
     +pm.max_requests = 500
     +request_terminate_timeout = 30
 
-
-
-
 The second customization I made is not about performances but convenience. It just allow my WordPress' users to upload larger files:
-
 
     :::diff
     --- /etc/php5/fpm/php.ini.orig      2011-06-18 13:32:37.000000000 +0200
@@ -116,18 +97,9 @@ The second customization I made is not about performances but convenience. It ju
      ; Maximum number of files that can be uploaded via a single request
      max_file_uploads = 20
 
-
-
-
-
-
-
 ## Nginx
 
-
-
 Let's say my Wordpress blog is installed in `/var/www/my_wordpress`. To let it be served by Nginx, we add a configuration file for this site in `/etc/nginx/sites-available/my_wordpress`:
-
 
     :::text
     server {
@@ -145,22 +117,14 @@ Let's say my Wordpress blog is installed in `/var/www/my_wordpress`. To let it b
       rewrite ^ http://blog.example.com$request_uri? permanent;
     }
 
-
-
-
 In the configuration above, you can see that I want my blog to be served at `http://blog.example.com`. I also added some domain redirections in the form of a second `server` section, and a way to better display my static file repository by letting Nginx generate index pages.
 
 Then don't forget to activate this site:
 
-
     :::console
     $ ln -s /etc/nginx/sites-available/my_wordpress /etc/nginx/sites-enabled/
 
-
-
-
 The file above refer to `/etc/nginx/wordpress.conf` which is where I place all the configuration directives common to all the WordPress blogs on my server. Here is the content of that file:
-
 
     :::text
     # This order might seem weird - this is attempted to match last if rules below fail.
@@ -176,11 +140,7 @@ The file above refer to `/etc/nginx/wordpress.conf` which is where I place all t
 
     include php.conf;
 
-
-
-
 Again, this file make a reference to `php.conf`, which is the same as [the one featured in my previous article](http://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/). I only removed the `index` directive to place it elsewhere, and added a limit on the number of PHP requests a client can make:
-
 
     :::text
     location ~ \.php$ {
@@ -217,11 +177,7 @@ Again, this file make a reference to `php.conf`, which is the same as [the one f
       fastcgi_pass 127.0.0.1:9000;
     }
 
-
-
-
 Here is where the `index` directive moved: `/etc/nginx/conf.d/kev.conf`. I also added there some tweaks and the global request throttling configuration:
-
 
     :::text
     # Hide Nginx version
@@ -236,11 +192,7 @@ Here is where the `index` directive moved: `/etc/nginx/conf.d/kev.conf`. I also 
     # Create a global request accounting pool to prevent DOS
     limit_req_zone $binary_remote_addr zone=antidos:10m rate=3r/s;
 
-
-
-
 The `global.conf` file we saw in `/etc/nginx/wordpress.conf` refer to `/etc/nginx/global.conf`, which contain additional measures to remove cruft from log files and enhance security:
-
 
     :::text
     # Do not log excessive request on common web content like favicon and robots.txt
@@ -261,11 +213,7 @@ The `global.conf` file we saw in `/etc/nginx/wordpress.conf` refer to `/etc/ngin
       log_not_found off;
     }
 
-
-
-
 All of default Nginx configuration can't be overridden by additional files. We have to change `/etc/nginx/nginx.conf` itself:
-
 
     :::diff
     --- /etc/nginx/nginx.conf.orig   2011-06-06 00:46:56.000000000 +0200
@@ -291,25 +239,13 @@ All of default Nginx configuration can't be overridden by additional files. We h
             types_hash_max_size 2048;
             # server_tokens off;
 
-
-
-
 That's all for our customizations. We can now restart all our servers:
-
 
     :::console
     $ /etc/init.d/mysql restart
     $ /etc/init.d/php5-fpm restart
     $ /etc/init.d/nginx restart
 
-
-
-
-
-
-
 ## Conclusion
-
-
 
 I'm running my websties under this configuration for about 3 months and I'm really happy with the results. I'm sure I can push optimizations further, but it may require lots of time and effort compared to the marginal gain I'll get. My websites are responsive enough to me. And if they collapse in the future under the load of the Reddit crowd, I'll still have the option to move to a bigger virtual server (vertical scaling FTW!).

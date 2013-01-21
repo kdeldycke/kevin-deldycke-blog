@@ -17,30 +17,19 @@ Before that happen, I will of course release one or two revisions of this plugin
 
 That being said, here is the changelog of the brand new e107 Importer 1.3:
 
-
-
-
   * Upgrade embedded e107 code with latest [0.7.25](http://e107.org/news.php?item.880).
-
 
   * Redirect imported images to attachments.
 
-
   * Purge invalid mapping entries on import.
-
 
   * Replace old e107 URLs in content by new WordPress permalinks.
 
-
   * Allow both imported and already-existing content to by updated with new permalinks.
-
 
   * Let user specify the list of e107 forums to import.
 
-
   * Phased imports should work without major problems.
-
-
 
 Finally, while cleaning up my home folder, I stumble upon this old screenshot of [dash](http://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/comment-page-1/#comment-3300)'s old e107 site. This is what its maintenance page looked like the day she initiated the transition to WordPress using my script:
 

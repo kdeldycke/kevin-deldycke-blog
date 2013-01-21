@@ -11,16 +11,11 @@ Today `mdadm` send me a mail to warn that one of my hard drive (`/dev/hdd1`) was
 
 Assuming that this situation was about an inconsistent file index, I decided to reset the superblocks of the remaining physical disks:
 
-
     :::console
     mdadm --zero-superblock /dev/hdc1
     mdadm --zero-superblock /dev/hdb1
 
-
-
-
 I don't know why I decided to do so, but it was the stupidest idea of the week. After such a violent treatment, my array refused to start:
-
 
     :::console
     [root@localhost ~]$ mdadm --assemble /dev/md0 --auto --scan --update=summaries --verbose
@@ -31,9 +26,6 @@ I don't know why I decided to do so, but it was the stupidest idea of the week. 
     mdadm: /dev/hdb1 has wrong raid level.
     mdadm: no devices found for /dev/md0
 
-
-
-
 At this moment I was sure that all my data assets were lost. I was desperate. My only alternative was to ask Google. So I did.
 
 I spend several minutes browsing the web without hope. I finally found [someone in the same situation as mine](http://lists.debian.org/debian-user-french/2006/03/msg00602.html) (sorry, in french) on debian-user-french mailing list.
@@ -42,15 +34,11 @@ The solution was to recreate the RAID array. This sound counter-intuitive: if we
 
 So, here is how I finally recovered my RAID array:
 
-
     :::console
     [root@localhost ~]$ mdadm --create /dev/md0 --verbose --level=5 --raid-devices=3 /dev/hdc1 missing /dev/hdb1
     mdadm: layout defaults to left-symmetric
     mdadm: chunk size defaults to 64K
     mdadm: size set to 312568576K
     mdadm: array /dev/md0 started.
-
-
-
 
 Of course this doesn't solve my initial problem about the `/dev/md0` file system: it is still in an altered state. Maybe it's too late to recover data. But at least I reverted all my today's mistakes, and the situation will not deteriorate until I power up my RAID ! :)

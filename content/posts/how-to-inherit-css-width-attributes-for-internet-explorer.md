@@ -9,14 +9,10 @@ tags: CSS, design, firefox, HTML, IE, layout, Web, webdesign
 
 Let's say you rely on a third party CSS framework that set the default layout of your content. The following CSS rule is part of the framework:
 
-
     :::css
     img {
       width: 100%;
     }
-
-
-
 
 This CSS directive tell all your images to use the full width available to them.
 
@@ -26,27 +22,19 @@ One solution (the laziest) is to remove those three lines from the original CSS 
 
 Another solution consist in overriding this `width` attribute in another CSS file that you will call after the original one. This case is covered by the [CSS 2.1 specification](http://www.w3.org/TR/CSS21/) which define the [`inherit` value](http://www.w3.org/TR/CSS21/cascade.html#value-def-inherit):
 
-
     :::css
     img {
       width: inherit;
     }
 
-
-
-
 This solution is perfect and work as expected in Firefox. Unfortunately, and without any surprise, it doesn't with Microsoft's browser as [IE has anecdotical support of CSS's `inherit`](http://www.sitepoint.com/blogs/2007/11/22/in-all-fairness-%e2%80%a6-internet-explorer-still-stinks/).
 
 But today I found a trick to fix this in both Firefox and Internet Explorer. The workaround is to use the `auto` value instead of `inherit`:
-
 
     :::css
     img {
       width: auto;
     }
-
-
-
 
 I've tested it with both [Firefox 3.0rc1](http://blog.mozilla.com/blog/2008/05/20/firefox-3-release-candidate-now-available-for-download/) and Internet Explorer 6.0.2800.1106CO.
 

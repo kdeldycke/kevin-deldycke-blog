@@ -13,85 +13,38 @@ In their latest white paper ([available for download here](http://www.smile.fr/L
 
 Here is what you can read (in french) in page 87:
 
-
 > ERP5 va même jusqu'à gérer les paies alors qu'aucun autre ERP libre n'est allé aussi loin
-
 
 Which roughly translates to:
 
-
 > ERP5 even manage payroll, while any other free software ERP has gone as far
-
-
 
 Hey wait. I wrote this module ! :D
 
 And here is their evaluation (0 is the lowest, 5 the highest note) of the payroll system for each ERP (from page 88):
 
-
-
-
-
-
-
 TinyERP
-
 
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (1/5)
 
-
-
-
-
-
 OpenBravo
 
-
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (0/5)
-
-
-
-
-
 
 Neogia
 
-
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (0/5)
-
-
-
-
-
 
 ERP5
 
-
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (4/5)
-
-
-
-
-
 
 Adempiere
 
-
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (0/5)
-
-
-
-
-
 
 Compiere GPL
 
-
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (0/5)
-
-
-
-
-
 
 Sorry for the shameless self-promotion, but I was so happy to get this distinction that I couldn't resist... :)

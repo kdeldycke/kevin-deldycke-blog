@@ -11,8 +11,6 @@ Vu le mois dernier dans un bar, une petite annonce pour un [Renault Espace](http
 
 [![Espas Diselle Avadre](http://kevin.deldycke.com/wp-content/uploads/2009/01/espas-diselle-avadre-300x225.jpg)](http://kevin.deldycke.com/wp-content/uploads/2009/01/espas-diselle-avadre.jpg)
 
-
-
 > AVADRE
 ESPAS 2L2 DCI
 DISELLE Anne 6/2002

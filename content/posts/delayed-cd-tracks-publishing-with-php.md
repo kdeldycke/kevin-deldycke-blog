@@ -9,7 +9,6 @@ tags: Cool Cavemen, Music, PHP, Web
 
 Here is a little piece of code I want to share with you. I created this some months ago for the [Cool Cavemen band](http://coolcavemen.com). They wanted to release all tracks of their new LP on their website, one track per week. That's the main purpose of the code below:
 
-
     :::php
     <?php
 
@@ -137,13 +136,9 @@ Here is a little piece of code I want to share with you. I created this some mon
 
     ?>
 
-
-
-
 Of course this code doesn't prevent someone to download the track if this person knows the exact URL. But having a bullet-proof system was not my priority: I had, at that time, to do something the quick and dirty way. So I give you this code as is it, without further explanations. This code is easy enough to let any rookie understand how it work.
 
 Here is the final result, from the user point of view (and with additional aesthetic enhancements):
 [![cd-track-delayed-publishing](http://kevin.deldycke.com/wp-content/uploads/2007/02/cd-track-delayed-publishing-300x200.png)](http://kevin.deldycke.com/wp-content/uploads/2007/02/cd-track-delayed-publishing.png)
-
 
 PS: If the code above contain formating errors (like bad html entities encoding, etc...), please look at the [file which contain the original code](http://kevin.deldycke.com/wp-content/uploads/2006/12/cd-track-delayed-publicationphp.txt) or its [colored html version](http://kevin.deldycke.com/wp-content/uploads/2006/12/cd-track-delayed-publicationphp.html).

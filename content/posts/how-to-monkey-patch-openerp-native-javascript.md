@@ -15,7 +15,6 @@ It's a custom view I created this month [at work](http://www.smile.fr/Solutions/
 
 The view above is produced by the following XML:
 
-
     :::xml
     <?xml version="1.0" encoding="utf-8"?>
     <openerp>
@@ -54,9 +53,6 @@ The view above is produced by the following XML:
         </data>
     </openerp>
 
-
-
-
 If you start searching a product template with the first field, you'll get a pop-up similar to this one:
 
 [![](http://kevin.deldycke.com/wp-content/uploads/2012/01/fixed-width-popup-list-300x196.png)](http://kevin.deldycke.com/wp-content/uploads/2012/01/fixed-width-popup-list.png)
@@ -69,7 +65,6 @@ My instinct told me that this default style could easily be overridden with some
 
 The code responsible for this behavior is located in the [`addons/openerp/static/javascript/m2o.js`](http://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js) file, in the [`ManyToOne.prototype.on_keydown`](http://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js#L267) method:
 
-
     :::javascript
     ManyToOne.prototype.on_keydown = function(evt) {
         (...)
@@ -77,15 +72,11 @@ The code responsible for this behavior is located in the [`addons/openerp/static
         (...)
     };
 
-
-
-
 My goal is now to alter this default behavior, without touching the code in `m2o.js`.
 
 And [thanks to Bryan Forbes' article](http://www.reigndropsfall.net/2010/06/15/monkey-patching/), I engineered a method to [monkey patch](http://wikipedia.org/wiki/Monkey_patch) the original `ManyToOne.prototype.on_keydown` Javascript method.
 
 Here is the code I added in the XML view, just below the `line_ids` field:
-
 
     :::xml
     <field name="line_ids" colspan="4" nolabel="1"/>
@@ -103,9 +94,6 @@ Here is the code I added in the XML view, just below the `line_ids` field:
             });
         </script>
     </html>
-
-
-
 
 The result of this is a nice looking pop-up which doesn't break any vanilla Javascript of the OpenERP web client:
 

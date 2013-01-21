@@ -25,23 +25,14 @@ So we are left with these deprecated and ugly white dots... For aesthetical reas
 
 The removal process is really straightforward: I've just added a black rectangle over these dots to hide them. Here is how to do it:
 
-
-
-
   1. Open your original file in Avidemux;
-
 
   2. Click on the `Filters` button;
 
-
   3. Go to `Transform`, then `Blacken Borders` and click on the `+` button;
-
 
   4. Use the dialog to set a 2 pixels top border;
 
-
   5. Now you have to export the result using a reasonable video codec, and that's it !
-
-
 
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/01/avidemux-add-black-border-300x165.png)](http://kevin.deldycke.com/wp-content/uploads/2010/01/avidemux-add-black-border.png)

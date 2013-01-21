@@ -14,10 +14,6 @@ http://www.youtube.com/watch?v=iHi0lwhTqqc
 [![](http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B001SER45Q&MarketPlace=US&ID=AsinImage&WS=1&tag=kevideld-20&ServiceVersion=20070822)](http://www.amazon.com/gp/product/B001SER45Q/ref=as_li_tf_il?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B001SER45Q) All the video material was shot by Tomasito itself, with his [Canon PowerShot SX200IS](http://www.amazon.com/gp/product/B001SER45Q/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B001SER45Q) point-and-shoot camera. This camera produce 30fps 720p clips.
 ![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001SER45Q&camp=217145&creative=399381)
 
-
-
-
-
 He came to me with all these `.mov` files, and the idea of combining them into a classical split-screen layout. He had no idea how to do this, so I accepted to help him with my technical knowledge.
 
 I fired up my Kdenlive (v0.8 on Kubuntu 11.04) and in a matter of hours, the project was done. With source videos of 720p, I naturally chose 1080p as the final resolution. I kept the 30fps framerate to not alter the original time resolution.

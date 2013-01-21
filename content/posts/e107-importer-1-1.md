@@ -15,45 +15,29 @@ Because of the experimental status of forum import, the default option of e107 I
 
 Here is a detailed changelog between 1.0 and 1.1:
 
-
-
-
   * Add import of forums and threads to bbPress WordPress plugin.
-
 
   * Parse BBCode and e107 constants in forums and thread.
 
-
   * Add forums and threads redirections.
-
 
   * Make e107 user import optional. This needs you to set a pre-existing WordPress user that will take ownership of all imported content.
 
-
   * Parse BBCode in titles too.
-
 
   * Import images embedded in comments and forum threads.
 
-
   * Description update of existing users is no longer destructive.
-
 
   * Add an entry in the FAQ regarding script ending prematurely.
 
-
   * Disable all extra HTML rendering hooks like the one coming from e107 linkwords plugin.
-
 
   * Allow news and pages import to be skipped.
 
-
   * Add missing news category redirects.
-
 
   * Minimal requirement set to WordPress 3.1.
 
-
   * Some pages are not tied to a user. In this case, default to the current user.
-
 

@@ -9,7 +9,6 @@ tags: bash, Linux, Network, Script, shell, Snippet
 
 Voici un petit script trivial en bash qui, couplé à `cron`, me permet de maintenir ma connexion internet 56kbps fournie par Free.fr (en attendant l'arrivée du modem ADSL):
 
-
     :::bash
     #!/bin/bash
     # Script de reconnection automatique

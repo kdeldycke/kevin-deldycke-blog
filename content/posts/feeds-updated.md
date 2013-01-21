@@ -11,14 +11,8 @@ tags: Aggregator, Apache, Atom, feed, FeedBurner, Google, RSS, WordPress
 
 But since this [blog moved](http://kevin.deldycke.com/2009/09/moving-wordpress-blog-to-another-domain/) from one location to another in the last past years, I doubt everyone use the right URLs. This update is a good opportunity to check that you are using the "official" feed URLs:
 
-
-
-
   * For blog posts: [http://kevin.deldycke.com/feed](http://kevin.deldycke.com/feed)
 
-
   * For blog comments: [http://kevin.deldycke.com/comments/feed](http://kevin.deldycke.com/comments/feed)
-
-
 
 In the future, I plan to support these URLs only. So please update your feed aggregation settings ! :)

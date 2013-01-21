@@ -11,14 +11,10 @@ The first few days I used Git, I messed up my repository. I had to reset and rec
 
 To create a Git repository, nothing else is absolutely necessary than these few trivial commands:
 
-
     :::console
     $ mkdir kev-code
     $ cd kev-code/
     $ git init
-
-
-
 
 But after reading [some documentation](http://www-cs-students.stanford.edu/~blynn/gitmagic/apa.html#_initial_commit) and user experiences on the web, it looks like Git has some limitations when dealing with the root of a repository history. As I plan to heavily manipulate the commit history (to do some kind of [code archaeology and history reconstruction](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)), I need to have the widest time latitude to play with commits.
 
@@ -26,15 +22,10 @@ In this situation, I came to the conclusion that it's a good idea to create an e
 
 So, let's create an empty commit:
 
-
     :::console
     $ git commit --allow-empty -m 'Initial commit'
 
-
-
-
 Then get the commit hash:
-
 
     :::console
     $ git log
@@ -44,11 +35,7 @@ Then get the commit hash:
 
         Initial commit
 
-
-
-
 We now change the commit date of our first commit to epoch start:
-
 
     :::console
     $ git filter-branch --env-filter '
@@ -60,11 +47,7 @@ We now change the commit date of our first commit to epoch start:
     Rewrite 395290bcdb8ffccfbff89e42cb976077fbd3c1b7 (1/1)
     Ref 'refs/heads/master' was rewritten
 
-
-
-
 And check that the previous operation did what we expected:
-
 
     :::console
     $ git log
@@ -74,22 +57,16 @@ And check that the previous operation did what we expected:
 
         Initial commit
 
-
-
 Looks good !
 
 For convenience, we'll now attach a tag to this initial commit. Let's call it `init`:
 
-
     :::console
     $ git tag "init"
-
-
 
 This will came handy later when we'll need to create a branch from here.
 
 It's time to push all changes to our brand new public repository:
-
 
     :::console
     $ git remote add origin git@github.com:kdeldycke/kev-code.git
@@ -103,9 +80,6 @@ It's time to push all changes to our brand new public repository:
     Total 2 (delta 0), reused 0 (delta 0)
     To git@github.com:kdeldycke/kev-code.git
      + 86bd2c7...8fe2934 master -> master (forced update)
-
-
-
 
 And here is the result on GitHub:
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/05/git-first-commit-300x58.png)](http://kevin.deldycke.com/wp-content/uploads/2010/05/git-first-commit.png)

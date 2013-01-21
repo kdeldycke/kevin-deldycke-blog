@@ -11,21 +11,13 @@ After [WebPing last week](http://kevin.deldycke.com/2011/08/webping-open-sourced
 
 This stack is composed of:
 
-
-
-
   * [CherryPy](http://www.cherrypy.org/) to serve web content,
-
 
   * [Mako](http://www.makotemplates.org/) for HTML templating,
 
-
   * [Formish](http://github.com/ish) for HTML form generation and validation,
 
-
   * [OOOP](http://github.com/lasarux/ooop) to talk to OpenERP server via web services.
-
-
 
 This project contains the experiments I did while working at [Smile](http://www.smile.fr/), when I explored the possibility of integrating these components. This code was a proof-of-concept that we leveraged later for a highly specific OpenERP project.
 

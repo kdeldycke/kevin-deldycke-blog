@@ -21,20 +21,12 @@ To fix this, I've created a tiny python [script to migrate a Maildir++ folder to
 
 How-to use it ? Simply:
 
-
-
-
   1. [Download it](http://github.com/kdeldycke/scripts/blob/master/maildir%2B%2B2kmail.py) to your disk,
-
 
   2. Edit it and change the `MAILDIR_SOURCE` and `KMAILDIR_DEST` variables to match your local configuration,
 
-
   3. Give it execution privileges,
 
-
   4. Run it !
-
-
 
 I advise you to try it first in a safe environment (like under a temporary user account). And don't forget to backup everything before playing with it: because this script work for me doesn't mean that it will work for you ! ;)

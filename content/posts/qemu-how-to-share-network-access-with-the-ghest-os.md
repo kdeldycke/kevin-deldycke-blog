@@ -11,7 +11,6 @@ tags: iptables, Linux, Network, Qemu
 
 Create a file `/etc/qemu-ifup` that contain:
 
-
     :::console
     #!/bin/sh
     sudo modprobe tun
@@ -24,39 +23,23 @@ Create a file `/etc/qemu-ifup` that contain:
     sudo /sbin/iptables -t nat -A POSTROUTING -s 10.0.2.15 -j MASQUERADE
     sudo /sbin/iptables -t nat -A POSTROUTING -d 10.0.2.15 -o $1
 
-
-
-
 Don't forget to give it execution permissions:
-
 
     :::console
     chmod 755 /etc/qemu-ifup
 
-
-
-
 Start qemu with the following parameters:
-
 
     :::console
     qemu /home/kevin/qemu-mdk10.1.img -n /etc/qemu-ifup
 
-
-
-
 Setup the network in your ghest OS in qemu:
-
 
     :::console
     ifconfig eth0 10.0.2.15
     route add default gw 10.0.2.2
 
-
-
-
 Test the visibility of the guest OS from the host OS:
-
 
     :::console
     [root@localhost kevin]# ping 10.0.2.15
@@ -69,11 +52,7 @@ Test the visibility of the guest OS from the host OS:
     3 packets transmitted, 3 received, 0% packet loss, time 2000ms
     rtt min/avg/max/mdev = 0.295/1.185/2.965/1.258 ms
 
-
-
-
 Test the visibility of the host from the guest:
-
 
     :::console
     [root@localhost root]# ping 10.0.2.2

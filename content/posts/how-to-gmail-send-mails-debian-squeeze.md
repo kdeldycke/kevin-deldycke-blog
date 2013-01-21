@@ -11,51 +11,32 @@ Here is quick guide on how I configured Exim 4 to let a Debian Squeeze server se
 
 Debian come with Exim (v4.72) pre-installed: it's the default MTA on this distribution. There is absolutely no need to install extra packages. Let's start right away by calling Exim's configuration wizard:
 
-
     :::console
     $ dpkg-reconfigure exim4-config
 
-
-
-
 Here are the options I choose in each step of the wizard:
-
-
-
 
   1. Choose `Mail sent by smarthost; received via SMTP or fetchmail`.
 
-
   2. System mail name: `server.deldycke.com`.
-
 
   3. IP adresses to listen on for incoming SMTP connections: `127.0.0.1 ; ::1` (which is the default proposed value).
 
-
   4. Other destinations for which mail is accepted: leave blank.
-
 
   5. Machines to relay mail for: leave blank.
 
-
   6. Machine handling outgoing mail for this host (smarthost): `smtp.gmail.com::587`.
-
 
   7. Hide local mail name in outgoing mail: `No`.
 
-
   8. Keep number of DNS-queries minimal (Dial-on-Demand): `No`.
-
 
   9. Mailboxes format: `mbox`.
 
-
   10. Split configuration into small files: `No`.
 
-
-
 All these parameters you just answered are saved in the `/etc/exim4/update-exim4.conf.conf`:
-
 
     :::text
     # /etc/exim4/update-exim4.conf.conf
@@ -90,11 +71,7 @@ All these parameters you just answered are saved in the `/etc/exim4/update-exim4
     dc_mailname_in_oh='true'
     dc_localdelivery='mail_spool'
 
-
-
-
 Then I updated the `/etc/exim4/exim4.conf.template` to add proper handling of GMail SMTP server. Here are the differences between the untouched original `exim4.conf.template` file and my version:
-
 
     :::diff
     --- /etc/exim4/exim4.conf.template-orig  2011-05-03 10:49:43.207938577 +0200
@@ -195,21 +172,13 @@ Then I updated the `/etc/exim4/exim4.conf.template` to add proper handling of GM
      ### end auth/30_exim4-config_examples
      #####################################################
 
-
-
-
 Now all we have to do is to regenerate Exim's configuration and restart the mail server:
-
 
     :::console
     $ update-exim4.conf
     $ /etc/init.d/exim4 restart
 
-
-
-
 You can then send a dummy email to test your mail system:
-
 
     :::console
     $ mail kevin@deldycke.com
@@ -218,18 +187,11 @@ You can then send a dummy email to test your mail system:
     Cc:
     Null message body; hope that's ok
 
-
-
-
 And check in the log that everything's fine:
-
 
     :::console
     $ tail -F /var/log/exim4/mainlog
     2011-05-03 10:56:32 1QHBPE-0000ne-CW <= root@server.deldycke.com U=root P=local S=362
     2011-05-03 10:56:36 1QHBPE-0000ne-CW => kevin@deldycke.com R=send_via_gmail T=gmail_smtp H=gmail-smtp-msa.l.google.com [209.85.227.109] X=TLS1.0:RSA_ARCFOUR_SHA1:16 DN="C=US,ST=California,L=Mountain View,O=Google Inc,CN=smtp.gmail.com"
     2011-05-03 10:56:36 1QHBPE-0000ne-CW Completed
-
-
-
 

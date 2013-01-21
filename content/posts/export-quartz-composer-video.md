@@ -24,7 +24,6 @@ If creating a composition is really simple and straightforward, exporting the re
 I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-to-movie) v1.3b plugin. But it didn't worked on my [Snow Leopard](http://www.amazon.com/gp/product/B001AMHWP8/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B001AMHWP8),![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001AMHWP8&camp=217145&creative=399381) throwing me this exception every time:
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/10/quartz-composer-export-to-movie-exception-300x187.png)](http://kevin.deldycke.com/wp-content/uploads/2010/10/quartz-composer-export-to-movie-exception.png)
 
-
     :::text
     0x8272938b: -[QCContext renderPatch:time:arguments:]
     0x8272906d: -[QCGraphicsContext renderPatch:time:arguments:]
@@ -49,9 +48,6 @@ I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-t
     0x0000a994
     0x86d70922: -[NSApplication run]
     0x00001d2b
-
-
-
 
 So I tried the old trick of [importing compositions in iMovie](http://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was possible in the past with [iMovie](http://www.amazon.com/gp/product/B003XKRZES/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B003XKRZES) '06, [Apple removed this feature in iMovie '09](http://www.quartzcompositions.com/phpBB2/viewtopic.php?t=594).![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B003XKRZES&camp=217145&creative=399381)
 

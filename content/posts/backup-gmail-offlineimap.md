@@ -11,7 +11,6 @@ Gmail's content can be retrieved via IMAP, and we'll use this way to backup all 
 
 Let's start by creating a dedicated configuration file in your home directory. Its content is quite straight-forward, as you can see in my `/home/kevin/.offlineimaprc`, which backup two Gmail accounts:
 
-
     :::text
     [general]
     accounts = gmail_account1, gmail_account2
@@ -56,19 +55,12 @@ Let's start by creating a dedicated configuration file in your home directory. I
     realdelete = no
     folderfilter = lambda foldername: foldername not in ['[Gmail]/%s' % f for f in ['All Mail', 'Trash', 'Spam', 'Starred', 'Important']]
 
-
-
-
 Notice how we use a Python lambda expressions to [filter out](http://readthedocs.org/docs/offlineimap/en/latest/nametrans.html#folderfilter) some Gmail's virtual folders.
 
 Then all you have to do is to launch the `offlineimap` command-line itself with the right user, for example in a `cron` job:
 
-
     :::text
     00 20 * * * kevin offlineimap
-
-
-
 
 A final warning: OfflineImap is fully bi-directional. This mean local deletion propagates to the remote server. This is can be quite dangerous so be careful not touching your local folders. If for any reason you'd like to reset your backups, stop OfflineImap processes first, then remove its cache folder (`~/.offlineimap/`) before removing the local folders themselves  (`~/gmail-backup-account*`).
 

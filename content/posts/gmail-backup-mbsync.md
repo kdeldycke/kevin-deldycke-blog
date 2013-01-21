@@ -13,30 +13,18 @@ In the mean time I found out about [mbsync](http://isync.sourceforge.net/mbsync.
 
 Let's install mbsync and its dependencies !
 
-
-
     :::console
     $ sudo aptitude install isync ca-certificates
-
-
-
 
 Just in case, don't forget to [enable IMAP access to you Gmail account](http://support.google.com/mail/bin/answer.py?hl=en&answer=77695).
 
 Create a new destination directory and an empty configuration file:
 
-
-
     :::console
     $ mkdir -p ~/gmail-backup
     $ touch ~/.mbsyncrc
 
-
-
-
 Then add the following parameters in `~/.mbsyncrc`:
-
-
 
     :::text
     IMAPAccount      gmail
@@ -64,23 +52,13 @@ Then add the following parameters in `~/.mbsyncrc`:
     # Exclude everything under the internal [Gmail] folder, except archived mails
     Patterns  * ![Gmail]* "[Gmail]/All Mail"
 
-
-
-
 Before going further we need to fetch Gmail's certificates:
-
-
 
     :::console
     $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > ~/gmail-backup/gmail.crt
     $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | tac | sed -ne '1,/-BEGIN CERTIFICATE-/p' | tac > ~/gmail-backup/google.crt
 
-
-
-
 Then all you have to do is to launch mbsync itself:
-
-
 
     :::console
     $ mbsync gmail
@@ -95,8 +73,5 @@ Then all you have to do is to launch mbsync itself:
     Selecting master MyLabel... 77 messages, 0 recent
     Synchronizing
     Pulling new messages........................................................
-
-
-
 
 Now to keep your local backup fresh don't forget to launch mbsync regularly in the background.

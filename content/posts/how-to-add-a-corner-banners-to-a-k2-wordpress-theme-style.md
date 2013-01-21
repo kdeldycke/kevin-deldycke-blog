@@ -13,7 +13,6 @@ In this post I will give you all the technical details to create a corner banner
 
 We will use the new [hooks](http://code.google.com/p/kaytwo/wiki/K2CSSandCustomCSS#PHP) from the brand new [K2 1.0RC6](http://getk2.com/2008/04/k2-release-candidate-6-released/). So first, we have to create a `functions.php` file in our style directory (example: `/wp-content/themes/k2/styles/my-style`). Then add the following PHP code in it:
 
-
     :::php
     <?php
 
@@ -29,13 +28,9 @@ We will use the new [hooks](http://code.google.com/p/kaytwo/wiki/K2CSSandCustomC
 
     ?>
 
-
-
-
 This code tell K2 to replace the `template_body_top` hook define in all K2 pages, by the result of the `add_corner_banner()` PHP function. This function is coded to return the HTML code we need for the corner banner.
 
 Then we need to add the following CSS code to our style (`/wp-content/themes/k2/styles/my-style/my-style.css`):
-
 
     :::css
     #cornerbanner {
@@ -50,44 +45,27 @@ Then we need to add the following CSS code to our style (`/wp-content/themes/k2/
       text-decoration: none;
     }
 
-
-
-
 This CSS code refer to the [`corner-banner.png`](http://kevin.deldycke.com/wp-content/uploads/2008/06/corner-banner.png) which is a 205x205 px PNG image with an alpha channel to simulate shadows and fine transparency. Here is the [Gimp `xcf` source file](http://kevin.deldycke.com/wp-content/uploads/2008/06/corner-banner.xcf) I used to generate it.
 
 This CSS code is designed for a top right banner. If you need a top left banner, replace:
 
-
     :::css
       right: 0;
 
-
-
 by
-
 
     :::css
       left: 0;
 
-
-
-
 This also work for horizontal positioning:
-
 
     :::css
       top: 0;
 
-
-
 can be replaced by
-
 
     :::css
       bottom: 0;
-
-
-
 
 That's all ! My solution is not supposed to work (and was not tested) with Internet Explorer as the latter is known to have [terrible PNG transparency support](http://en.wikipedia.org/wiki/Portable_Network_Graphics#Web_browser_support_for_PNG). You can still apply fixes on my code using [iepngfix](http://www.twinhelix.com/css/iepngfix/), [jquery](http://jquery.andreaseberhard.de/pngFix/) or [PNG8 images](http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/).
 

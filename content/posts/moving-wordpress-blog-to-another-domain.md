@@ -17,54 +17,33 @@ To play nice with your visitors, you can [setup a temporary maintenance page](ht
 
 Let's start the migration by replacing, in the files served by Apache, all occurrences of the old domain name by the new one:
 
-
     :::console
     find /var/www/qpx-blog -mount -print -type f -exec sed -i 's/qpx.lich-ti.fr/qpx.coolcavemen.com/g' "{}" \;
 
-
-
-
 If you have doubts about the efficiency of the command above, you can check the presence of the string we're looking to replace via this command:
-
 
     :::console
     grep -RIi "qpx.lich-ti.fr" ./*
 
-
-
-
 Then, we dump the database containing all WordPress content and config to a local file (the command will prompt for password):
-
 
     :::console
     mysqldump -p --host=localhost --port=3306 --user=root --opt --databases "qpx_blog" > qpx_dump.sql
 
-
-
-
 And we replace all strings of the old domain by the new one:
-
 
     :::console
     sed 's/qpx.lich-ti.fr/qpx.coolcavemen.com/g' qpx_dump.sql > new_qpx.sql
 
-
-
-
 Finally, we re-inject the modified database content after clearing the original:
-
 
     :::console
     mysql -p --host=localhost --port=3306 --user=root --execute='DROP DATABASE `qpx_blog`;'
     mysql -p --host=localhost --port=3306 --user=root < new_qpx.sql
 
-
-
-
 Now you can disable the maintenance page and test the blog to check nothing's broken.
 
 Again, to play nice with your visitors (and search engines), you can redirect old URLs to the new domain, with apache directives similar to this one:
-
 
     :::console
     <VirtualHost *:80>

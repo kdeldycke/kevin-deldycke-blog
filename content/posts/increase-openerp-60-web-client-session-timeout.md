@@ -11,12 +11,8 @@ Another week working with [OpenERP](http://openerp.com) means another trick lear
 
 Today I was asked to keep users logged-in on OpenERP's 6.0 web client. The latter being powered by [CherryPy](http://cherrypy.org), it was a matter of adding the following configuration directive in the web client configuration file to increase the session timeout:
 
-
     :::text
     tools.sessions.timeout = 720
-
-
-
 
 Now this will keep any client sessions opened for 12 hours (12h * 60 minutes = 720 minutes) before expiring. This is enough to keep employees not complaining about having to login to OpenERP several times a day.
 

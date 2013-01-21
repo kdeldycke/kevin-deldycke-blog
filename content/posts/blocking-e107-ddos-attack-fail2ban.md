@@ -13,12 +13,7 @@ I'm no exception and the old and decrepit part of Cool Cavemen's website [still 
 
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/08/munin-fail2ban-jails-weekly-stats-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/munin-fail2ban-jails-weekly-stats.png) Now [everything is back to normal](http://twitter.com/kdeldycke/status/19250530728) (I hope), thanks to [`fail2ban`](http://www.fail2ban.org). I created a set of rules ([based on this article](http://eromang.zataz.com/2010/07/13/byroenet-casper-bot-search-e107-rce-scanner/)) to dynamically catch [dDOS](http://en.wikipedia.org/wiki/Denial-of-service_attack) attempts and ban all IP addresses involved. Here is how I configured `fail2ban`...
 
-
-
-
-
 First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf` and put the following directives there:
-
 
     :::text
     # Fail2Ban configuration file
@@ -34,11 +29,7 @@ First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf` 
                 <HOST>\s-\s-\s.*perl post
     ignoreregex =
 
-
-
-
 Then update you fail2ban config file (`/etc/fail2ban/jail.local` in my case) with the appropriate section:
-
 
     :::text
     [apache-e107ddos]
@@ -49,20 +40,12 @@ Then update you fail2ban config file (`/etc/fail2ban/jail.local` in my case) wit
     logpath  = /var/log/apache*/*access.log
     maxretry = 1
 
-
-
-
 Then restart your fail2ban service:
-
 
     :::console
     $ /etc/init.d/fail2ban restart
 
-
-
-
 And you'll start to get those nice logs:
-
 
     :::console
     $ tail -F /var/log/fail2ban.log

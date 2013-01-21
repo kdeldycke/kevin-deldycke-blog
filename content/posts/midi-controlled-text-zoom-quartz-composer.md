@@ -16,5 +16,4 @@ As for the last time, I recorded a little demo to pratice my new videomaking ski
 
 http://www.youtube.com/watch?v=vOyePk1L4vA
 
-
 The audio part is [Dream](http://jamendo.com/track/556564) by [Paolo Lunardi](http://jamendo.com/artist/Paolo_Lunardi) (from his album [Essential](http://jamendo.com/album/64689)). I found it on [Jamendo](http://jamendo.com) under a [Creative Common BY-SA v3.0 license](http://creativecommons.org/licenses/by-sa/3.0/).

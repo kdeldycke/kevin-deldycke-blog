@@ -10,16 +10,10 @@ I've [updated my website-backup python script](http://kevin.deldycke.com/static/
 
 Change log:
 
-
-
   * Use `set ftp:list-options -a` command to force lftp to download hidden files (like `.htaccess` and so on).
-
 
   * Use `--force` parameter to allow auto-deletion of multiple outdated rdiff-backup increments.
 
-
   * Defensive incremental backup policy: keep 32 last backups instead of 32 days of backup.
-
-
 
 I also added a debug mode as [suggested by Sacha](http://kevin.deldycke.com/2006/11/website-backup-script-incremental-backup-feature-added/#comment-957).

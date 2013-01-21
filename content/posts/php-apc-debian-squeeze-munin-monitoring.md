@@ -9,12 +9,8 @@ tags: apx, Debian, debian squeeze, munin, nginx, PHP, Server, Web
 
 Installing [APC](http://php.net/manual/en/book.apc.php) on Debian Squeeze is as simple as installing the package:
 
-
     :::console
     $ aptitude install php5-apc
-
-
-
 
 In my case this package come from the PHP bundle distributed by the [Dotdeb repository](http://www.dotdeb.org).
 
@@ -22,18 +18,13 @@ If installing APC is easy, monitoring it with Munin requires some extra manipula
 
 The latter can't get APC statistics by itself: it need an extra PHP file to be served locally. As you can read in my previous article, [my Munin is powered by Nginx](http://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/). So now we'll setup Nginx to serve this extra PHP file:
 
-
     :::console
     $ mkdir -p /var/www/apc
     $ cd /var/www/apc
     $ wget http://munin-php-apc.googlecode.com/svn/trunk/php_apc/apc_info.php
     $ chown -R www-data:www-data /var/www/apc
 
-
-
-
 Then I need to update my `/etc/nginx/sites-available/munin` file (see [details about this file on my previous article](http://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/)) to have the second `server` section look like this:
-
 
     :::text
     server {
@@ -51,23 +42,16 @@ Then I need to update my `/etc/nginx/sites-available/munin` file (see [details a
       }
     }
 
-
-
 Here the included `/etc/nginx/php.conf` file is the one in which I've concentrate all the Nginx directives required to activate PHP file parsing. The content and the mechanism behind this file is describe in my [article on setting up Nginx with PHP-FPM](http://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/).
 
 Let's get back to our Munin monitoring setup. I can restart now Nginx and check that I can access locally to my raw statistics:
-
 
     :::console
     $ /etc/init.d/nginx reload
     $ wget http://localhost/apc_info.php
     $ wget http://localhost/nginx_status
 
-
-
-
 The last step is to install and configure the Munin plugin:
-
 
     :::console
     $ aptitude install libwww-perl
@@ -84,9 +68,6 @@ The last step is to install and configure the Munin plugin:
     env.url http://localhost/apc_info.php?auto
     " > /etc/munin/plugin-conf.d/php_apc
     $ /etc/init.d/munin-node restart
-
-
-
 
 And finally, after a while, you'll get those beautiful graphs:
 [![](http://kevin.deldycke.com/wp-content/uploads/2011/06/php-apc-munin-graphs-300x300.png)](http://kevin.deldycke.com/wp-content/uploads/2011/06/php-apc-munin-graphs.png)

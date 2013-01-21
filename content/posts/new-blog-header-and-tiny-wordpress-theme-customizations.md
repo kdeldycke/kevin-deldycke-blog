@@ -23,7 +23,6 @@ Talking about this , here is a quick tip to make minimal design changes to a Wor
 
 As widgets are site-wide, all these CSS customizations will be applied everywhere. Here is for example the code I applied on this site to hide blog's name and description from [TwentyTen](http://wordpress.org/extend/themes/twentyten)'s header:
 
-
     :::html
     <style type="text/css"><!--
     #header {
@@ -34,17 +33,9 @@ As widgets are site-wide, all these CSS customizations will be applied everywher
     }
     --></style>
 
-
-
-
 This quick and dirty hack is perfect for tiny customizations. It will make your CSS easier to maintain as you don't have to modify the core style files or create a child theme.
 
-
-
-
 ## Update (Aug. 2011)
-
-
 
 As I moved from TwentyTen to the new TwentyEleven default WordPress theme, I just updated the header.
 

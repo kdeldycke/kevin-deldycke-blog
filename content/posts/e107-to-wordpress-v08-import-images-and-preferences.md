@@ -10,24 +10,15 @@ The [8th version of my e107 to Wordpress import script](http://kevin.deldycke.co
 
 Here is the changelog:
 
-
-
-
   * Import images embedded in e107 news and custom pages,
-
 
   * Import e107 site preferences (like site name and description),
 
-
   * Better import of user profile data,
-
 
   * An existing user on the blog can be detected and updated automatically,
 
-
   * Fix the [profanity filter bug](http://kevin.deldycke.com/2006/11/wordpress-to-e107-v06-better-content-rendering-and-extended-news-support/#comment-2499),
 
-
   * Tested with latest [Wordpress 2.1.3](http://wordpress.org/development/2007/04/wordpress-213-and-2010/).
-
 

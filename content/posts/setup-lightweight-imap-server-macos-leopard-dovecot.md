@@ -11,24 +11,15 @@ tags: Dovecot, E-mail, IMAP, leopard, Mac OS X, maildir, ssl
 
 We're lucky, [Dovecot is available in Mac Ports](http://www.macports.org/ports.php?by=name&substr=dovecot), so we can install it easily:
 
-
     :::console
     port install dovecot
 
-
-
-
 It's time to configure it. We start with the default configuration template:
-
 
     :::console
     cp /opt/local/etc/dovecot/dovecot-example.conf /opt/local/etc/dovecot/dovecot.conf
 
-
-
-
 Then we can edit the `dovecot.conf` configuration file as we wish. FYI, here are my modifications:
-
 
     :::diff
     --- /opt/local/etc/dovecot/dovecot-example.conf	2010-04-23 14:29:52.000000000 +0200
@@ -61,27 +52,16 @@ Then we can edit the `dovecot.conf` configuration file as we wish. FYI, here are
      # If you need to set multiple mailbox locations or want to change default
      # namespace settings, you can do it by defining namespace sections.
 
-
-
-
 Before starting Dovecot, we have to create a dummy SSL certificate:
-
 
     :::console
     mkdir -p /opt/local/etc/ssl/{certs,private}
     openssl req -new -x509 -days 3650 -nodes -out /opt/local/etc/ssl/certs/dovecot.pem -keyout /opt/local/etc/ssl/private/dovecot.pem
 
-
-
-
 And finally, we can launch the Dovecot server itself as `root`:
-
 
     :::console
     dovecot
-
-
-
 
 That's all !
 
@@ -90,7 +70,6 @@ You can now access your local IMAP server with any client. Here is an example wi
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/04/thunderbird-macosx-local-imap-server-config-300x200.png)](http://kevin.deldycke.com/wp-content/uploads/2010/04/thunderbird-macosx-local-imap-server-config.png)
 
 And if you have problems, the first reflex is to read dovecot's logs:
-
 
     :::console
     tail -F /var/log/mail.log

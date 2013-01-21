@@ -13,17 +13,10 @@ First I have to tell you that everything is working fine and out of the box with
 
 The only annoying thing in 10.10 is the non-responding touchpad. But a [fix can be found on Ubuntu forums](http://ubuntuforums.org/showpost.php?p=9806445&postcount=9):
 
-
-
-
   1. Edit `/etc/default/grub` to include `GRUB_CMDLINE_LINUX="i8042.nopnp"`
-
 
   2. Run `sudo update-grub`
 
-
   3. Reboot
-
-
 
 Now about the laptop itself: construction quality is below my previous [MacBook](http://www.amazon.com/gp/product/B002QQ8H8I/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002QQ8H8I) (cheap plastic instead of aluminum) and battery autonomy is not impressive. A bios update seems to address the latter. Haven't done it yet as it requires to re-install Windows (*sigh*). But overall that's a good lightweight machine to get things done, especially with its 8 Gb of RAM, 4 cores and a SSD ! :)![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002QQ8H8I&camp=217145&creative=399373)
