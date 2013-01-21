@@ -24,28 +24,28 @@ Before going further, you need to have a machine that is able to compile code, w
 
 First we create our project directory, then we download, from its SVN repository, the bootstrap code of buildout:
 
-    
+
     :::console
     $ mkdir -p ~/plone-vanilla
     $ cd ~/plone-vanilla
     $ curl http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py --output ./bootstrap.py
-    
+
 
 
 
 Then we create our buildout config file and edit it:
 
-    
+
     :::console
     $ touch ./buildout.cfg
-    $ vi ./buildout.cfg 
-    
+    $ vi ./buildout.cfg
+
 
 
 
 The `buildout.cfg` file should contain the following directives, which tell buildout to install Plone 3.2.3, Zope 2.10.8 and all their dependencies:
 
-    
+
     :::text
     [buildout]
     find-links = http://dist.plone.org
@@ -59,14 +59,14 @@ The `buildout.cfg` file should contain the following directives, which tell buil
                  zope-instance
     eggs       = PIL
                  Plone
-    
+
     [zope-server]
     recipe               = plone.recipe.zope2install
     url                  = http://www.zope.org/Products/Zope/2.10.8/Zope-2.10.8-final.tgz
     fake-zope-eggs       = true
     additional-fake-eggs = ZConfig
                            pytz
-    
+
     [zope-instance]
     recipe           = plone.recipe.zope2instance
     zope2-location   = ${zope-server:location}
@@ -74,23 +74,23 @@ The `buildout.cfg` file should contain the following directives, which tell buil
     debug-mode       = on
     verbose-security = on
     eggs             = ${buildout:eggs}
-    
+
 
 
 
 Now let's build our Plone and Zope environnement:
 
-    
+
     :::console
-    $ python2.4 ./bootstrap.py 
+    $ python2.4 ./bootstrap.py
     $ ./bin/buildout
-    
+
 
 
 
 At the end, if your build process didn't fail, you'll be able to start your Zope server:
 
-    
+
     :::console
     $ ./bin/zope-instance
     program: /Users/kevin/plone-vanilla/parts/zope-instance/bin/runzope
@@ -106,7 +106,7 @@ At the end, if your build process didn't fail, you'll be able to start your Zope
     2009-07-20T20:42:35 INFO Marshall libxml2-python not available. Unable to register libxml2 based marshallers.
     ------
     2009-07-20T20:42:59 INFO Zope Ready to handle requests
-    
+
 
 
 

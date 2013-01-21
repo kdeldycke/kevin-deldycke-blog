@@ -15,15 +15,15 @@ FeedTools do a really nice job to detect the charset and handle feed's data. So 
 
 To fix that, I've recoded the [FeedTools::HtmlHelper.unescape_entities()](http://rubyfurnace.com/docs/feedtools-0.2.26/classes/FeedTools/HtmlHelper.html#M007308) method to convert each HTML entity it encounter to pure unicode. Here is the monkey patch I call by default from the `environment.rb` file of all my [Ruby on Rails](http://www.rubyonrails.org) projects:
 
-    
+
     :::ruby
     require 'feed_tools'
-    
+
     # Monkey patch feed tool.
     # Use case mixed UTF-8 chars and html entities: <description>Téléchargements et Multim&#233;dia</description>
     module FeedTools::HtmlHelper
       class << self
-    
+
         # Force UTF-8 conversion of HTML entities with number lower than 256.
         # Based on CGI::unescapeHTML method.
         def convert_html_entities_to_unicode(string)
@@ -48,16 +48,16 @@ To fix that, I've recoded the [FeedTools::HtmlHelper.unescape_entities()](http:/
             end
           end
         end
-    
+
         # Patch unescape_entities() method
         alias_method :unescape_entities_orig, :unescape_entities
         def unescape_entities(html)
           return unescape_entities_orig(convert_html_entities_to_unicode(html))
         end
-    
+
       end
     end
-    
+
 
 
 
@@ -67,13 +67,13 @@ But I'm not comfortable about this problem not solved cleanly. I still don't hav
 
 
 
- 
+
   1. Submit my monkey patch to FeedTools project for integration, or
 
- 
+
   2. Merge my monkey patch upstream in legacy ruby CGI library, or
 
- 
+
   3. Do not allow usage of HTML entities in feeds.
 
 

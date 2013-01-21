@@ -9,10 +9,10 @@ tags: Debian, entropy, haveged, Linux, random, security, squeeze
 
 While generating a GPG key on my server, I got the following error:
 
-    
+
     :::text
     Not enough random bytes available. Please do some other work to give the OS a chance to collect more entropy! (Need 283 more bytes)
-    
+
 
 
 
@@ -20,12 +20,12 @@ That's a [well known issue](http://otrs.menandmice.com/otrs/public.pl?Action=Pub
 
 My server is running Debian Squeeze. Luckily, a [package is available](http://packages.debian.org/squeeze-backports/haveged) in the backport repository. All we have to do is to add the latter in our source list before installing `haveged`:
 
-    
+
     :::console
     $ echo 'deb http://backports.debian.org/debian-backports squeeze-backports main' > /etc/apt/sources.list.d/squeeze-backports.list
     $ apt-get update
     $ apt-get -t squeeze-backports install haveged
-    
+
 
 
 

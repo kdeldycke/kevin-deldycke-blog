@@ -79,7 +79,7 @@ Let's talk audio now. I personally want to thanks [Tomasito, Cool Cavemen's saxo
 
 I wanted to record the speach on my linux machine but I didn't managed to compile the [Line 6 open-source drivers](http://line6.com/community/thread/4031). In fact the module compiled but refused to load:
 
-    
+
     :::text
     Sep 20 22:02:47 kev-laptop kernel: [  717.905187] line6usb: Unknown symbol snd_rawmidi_receive
     Sep 20 22:02:47 kev-laptop kernel: [  717.905321] line6usb: disagrees about version of symbol snd_ctl_add
@@ -118,7 +118,7 @@ I wanted to record the speach on my linux machine but I didn't managed to compil
     Sep 20 22:02:47 kev-laptop kernel: [  717.907414] line6usb: Unknown symbol snd_card_create
     Sep 20 22:02:47 kev-laptop kernel: [  717.907474] line6usb: disagrees about version of symbol snd_pcm_period_elapsed
     Sep 20 22:02:47 kev-laptop kernel: [  717.907475] line6usb: Unknown symbol snd_pcm_period_elapsed
-    
+
 
 
 

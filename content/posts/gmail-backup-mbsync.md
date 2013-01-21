@@ -14,10 +14,10 @@ In the mean time I found out about [mbsync](http://isync.sourceforge.net/mbsync.
 Let's install mbsync and its dependencies !
 
 
-    
+
     :::console
     $ sudo aptitude install isync ca-certificates
-    
+
 
 
 
@@ -26,18 +26,18 @@ Just in case, don't forget to [enable IMAP access to you Gmail account](http://s
 Create a new destination directory and an empty configuration file:
 
 
-    
+
     :::console
     $ mkdir -p ~/gmail-backup
     $ touch ~/.mbsyncrc
-    
+
 
 
 
 Then add the following parameters in `~/.mbsyncrc`:
 
 
-    
+
     :::text
     IMAPAccount      gmail
     Host             imap.gmail.com
@@ -47,14 +47,14 @@ Then add the following parameters in `~/.mbsyncrc`:
     CertificateFile  ~/gmail-backup/gmail.crt
     CertificateFile  ~/gmail-backup/google.crt
     CertificateFile  /usr/share/ca-certificates/mozilla/Equifax_Secure_CA.crt
-    
+
     IMAPStore  gmail-cloud
     Account    gmail
-    
+
     MaildirStore  gmail-backup
     Path          ~/gmail-backup/
     Inbox         ~/gmail-backup/Inbox
-    
+
     Channel   gmail
     Master    :gmail-cloud:
     Slave     :gmail-backup:
@@ -63,25 +63,25 @@ Then add the following parameters in `~/.mbsyncrc`:
     Sync      Pull
     # Exclude everything under the internal [Gmail] folder, except archived mails
     Patterns  * ![Gmail]* "[Gmail]/All Mail"
-    
+
 
 
 
 Before going further we need to fetch Gmail's certificates:
 
 
-    
+
     :::console
     $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > ~/gmail-backup/gmail.crt
     $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | tac | sed -ne '1,/-BEGIN CERTIFICATE-/p' | tac > ~/gmail-backup/google.crt
-    
+
 
 
 
 Then all you have to do is to launch mbsync itself:
 
 
-    
+
     :::console
     $ mbsync gmail
     Reading configuration file ~/.mbsyncrc
@@ -95,7 +95,7 @@ Then all you have to do is to launch mbsync itself:
     Selecting master MyLabel... 77 messages, 0 recent
     Synchronizing
     Pulling new messages........................................................
-    
+
 
 
 

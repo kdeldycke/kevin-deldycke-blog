@@ -11,10 +11,10 @@ Today I stumble upon a bug in the Kdenlive 0.7.8 running on my Kubuntu 10.10: th
 
 First, make sure to [use the latest stable Kdenlive stack](http://www.kdenlive.org/download-kdenlive-0) for you system. For me, the [Sunab's alternative repository for Kubuntu 10.10](https://launchpad.net/~sunab/+archive/kdenlive-release/?field.series_filter=maverick) was the ultimate source:
 
-    
+
     :::console
     sudo apt-get update && sudo apt-get install kdenlive
-    
+
 
 
 
@@ -22,19 +22,19 @@ The idea is to keep the version of Kdenlive installed above, and replace the pre
 
 But first, we'll install all the libraries required to build MLT from sources:
 
-    
+
     :::console
     sudo apt-get install libavdevice-dev libswscale-dev libvorbis-dev libsox-dev libsamplerate-dev frei0r-plugins-dev libdv-dev libavformat-dev libquicktime-dev libxml2-dev libsdl-dev libsdl-image1.2-dev
-    
+
 
 
 
 Let's now remove the installed MLT. If we use `apt-get` or KPackageKit, this will remove Kdenlive. So we'll use the following command to remove MLT while ignoring all the dependencies:
 
-    
+
     :::console
     sudo dpkg --remove --force-depends libmlt2 libmlt++3 libmlt-data melt
-    
+
 
 
 
@@ -44,32 +44,32 @@ To avoid this issue, I tried to freeze the state in which Kdenlive and MLT are, 
 
 Let's get MLT sources:
 
-    
+
     :::console
     git clone git://mltframework.org/mlt.git
-    
+
 
 
 
 The command above will give you the latest development version. But if you target a particular revision (like [commit 21a3f68](http://mltframework.org/gitweb/mlt.git?p=mltframework.org/mlt.git;a=commit;h=21a3f68d56ce1237eb6510cdf03ebfc40b5641c2) in my case), you have to use this additional command:
 
-    
+
     :::console
     git checkout 21a3f68
-    
+
 
 
 
 We can now follow the [procedure detailed in the Kdenlive manual](http://www.kdenlive.org/user-manual/downloading-and-installing-kdenlive/installing-source/installing-mlt-rendering-engine):
 
-    
+
     :::console
     cd mlt
     ./configure --prefix=/usr --enable-gpl
     make clean
     make
     sudo make install
-    
+
 
 
 
@@ -80,29 +80,29 @@ Oh, and by the way, it [fixed my problem with the crop filter](http://mltframewo
 
 Finally, if you want to revert the mess we created on the system, you have to remove the MLT we built in place:
 
-    
+
     :::console
     sudo rm -rf /usr/lib/libmlt*
     sudo rm -rf /usr/lib/mlt*
     sudo rm -rf /usr/lib/pkgconfig/mlt*
     sudo rm -rf /usr/include/mlt*
     sudo rm -rf /usr/share/mlt*
-    
+
 
 
 
 I came with the list above by searching my system with the following command:
 
-    
+
     :::console
     sudo find / -path "/home" -prune -or -iname "*mlt*" -print -or -iname "*melt*" -print
-    
+
 
 
 
 Then, we can let `apt` handle Kdenlive and MLT properly and get back to the pre-packaged binaries:
 
-    
+
     :::console
     sudo apt-get remove kdenlive && sudo apt-get update && sudo apt-get install kdenlive
-    
+

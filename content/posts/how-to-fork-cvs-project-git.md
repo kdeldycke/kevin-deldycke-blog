@@ -15,16 +15,16 @@ Here is my plan:
 
 
 
-  
+
   1. Make an exact copy of Drupify's code base in my GitHub repository.
 
-  
+
   2. Hack it in this playground.
 
-  
+
   3. ???
 
-  
+
   4. [Profit !](http://knowyourmeme.com/memes/profit) :D
 
 
@@ -35,7 +35,7 @@ Solution: Git features a [`cvsimport`](http://kernel.org/pub/software/scm/git-co
 
 Before going further, we need to install [`cvsps`](http://www.cobite.com/cvsps/). For [MacPorts](http://www.macports.org) users, this is as simple as:
 
-    
+
     :::console
     ~$ sudo port install cvsps
     Password:
@@ -52,13 +52,13 @@ Before going further, we need to install [`cvsps`](http://www.cobite.com/cvsps/)
     --->  Installing cvsps @2.1_1
     --->  Activating cvsps @2.1_1
     --->  Cleaning cvsps
-    
+
 
 
 
 Then we create a temporary copy of Drupify's CVS repository:
 
-    
+
     :::console
     ~$ git cvsimport -a -k -d:pserver:anonymous:anonymous@cvs.drupal.org:/cvs/drupal-contrib -C drupify-copy contributions/themes/drupify
     Initialized empty Git repository in /Users/kevin/drupify-copy/.git/
@@ -66,7 +66,7 @@ Then we create a temporary copy of Drupify's CVS repository:
     cvs rlog: Logging contributions/themes/drupify
     cvs rlog: Logging contributions/themes/drupify/css
     cvs rlog: Logging contributions/themes/drupify/images
-    
+
 
 
 
@@ -75,7 +75,7 @@ The new Git repository automatically created is named `drupify-copy`. Here is ho
 
 To keep things clean and tidy, I want to relocate all the content of this repository to a `drupify-fork` folder. [Inspired by Pedro Melo](http://www.simplicidade.org/notes/archives/2009/04/merging_two_unr.html), we'll use the [`git filter-branch`](http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html) to do this job:
 
-    
+
     :::console
     ~$ cd drupify-copy
     drupify-copy$ git filter-branch -f --prune-empty --tree-filter '
@@ -89,7 +89,7 @@ To keep things clean and tidy, I want to relocate all the content of this reposi
     Ref 'refs/heads/master' was rewritten
     Ref 'refs/heads/origin' was rewritten
     Ref 'refs/tags/DRUPAL-6--1-0' was rewritten
-    
+
 
 
 
@@ -97,7 +97,7 @@ The command we just used alter all the commits, in a way that let Drupify act as
 
 By default, `filter-branch` creates a backup of the tree using references prefixed by `refs/original/`:
 
-    
+
     :::console
     drupify-copy$ git show-ref
     4c33470f0f59bcfe7d0d88ee64945bb5625d6d02 refs/heads/DRUPAL-5
@@ -110,7 +110,7 @@ By default, `filter-branch` creates a backup of the tree using references prefix
     328f3440e202ed72253974dbbbd45f39db23ea4a refs/original/refs/heads/origin
     957bb22704bc8188c0421b68cbb2f52a3fdcdef6 refs/original/refs/tags/DRUPAL-6--1-0
     ee44c42250a2552c1dbef2f7165d65179e1d19c6 refs/tags/DRUPAL-6--1-0
-    
+
 
 
 
@@ -119,7 +119,7 @@ We're not the only ones to not see through this mess. GitX seems to be confused 
 
 But [according Jakub Narębski on the Git mailing-list](http://n2.nabble.com/Removing-some-files-from-history-tp1344670p1344919.html), we can safely removes Git's backups:
 
-    
+
     :::console
     drupify-copy$ rm -Rf .git/refs/original
     drupify-copy$ git gc --prune=now
@@ -128,13 +128,13 @@ But [according Jakub Narębski on the Git mailing-list](http://n2.nabble.com/Rem
     Compressing objects: 100% (88/88), done.
     Writing objects: 100% (106/106), done.
     Total 106 (delta 40), reused 0 (delta 0)
-    
+
 
 
 
 After the cleaning, references are back to normal:
 
-    
+
     :::console
     drupify-copy$ git show-ref
     4c33470f0f59bcfe7d0d88ee64945bb5625d6d02 refs/heads/DRUPAL-5
@@ -142,7 +142,7 @@ After the cleaning, references are back to normal:
     e5907fac0160febbd91f0cda73633b3e6eafa2a9 refs/heads/master
     e5907fac0160febbd91f0cda73633b3e6eafa2a9 refs/heads/origin
     ee44c42250a2552c1dbef2f7165d65179e1d19c6 refs/tags/DRUPAL-6--1-0
-    
+
 
 
 
@@ -151,7 +151,7 @@ We can then fire up GitX to get the ultimate proof that the relocation operation
 
 It's time to import all this code in our main repository. First, get a local copy of our public [GitHub](http://github.com/) code base:
 
-    
+
     :::console
     drupify-copy$ cd
     ~$ git clone git@github.com:kdeldycke/kev-code.git
@@ -160,13 +160,13 @@ It's time to import all this code in our main repository. First, get a local cop
     remote: Compressing objects: 100% (3/3), done.
     remote: Total 5 (delta 0), reused 0 (delta 0)
     Receiving objects: 100% (5/5), done.
-    
+
 
 
 
 Now let's include our temporary `drupify-copy` as a tracked remote repository:
 
-    
+
     :::console
     ~$ cd kev-code/
     kev-code$ git remote add drupify ../drupify-copy
@@ -184,13 +184,13 @@ Now let's include our temporary `drupify-copy` as a tracked remote repository:
      * [new branch]      origin     -> drupify/origin
     From ../drupify-copy
      * [new tag]         DRUPAL-6--1-0 -> DRUPAL-6--1-0
-    
+
 
 
 
 As you can see, all the little particularities of the remote repository are well tracked (HEAD, branches and tags are there):
 
-    
+
     :::console
     kev-code$ git remote show drupify
     * remote drupify
@@ -206,13 +206,13 @@ As you can see, all the little particularities of the remote repository are well
         origin      tracked
       Local ref configured for 'git push':
         master pushes to master (local out of date)
-    
+
 
 
 
 Another way to check this is to list all tracked remote branches:
 
-    
+
     :::console
     kev-code$ git branch -r
       drupify/DRUPAL-5
@@ -220,13 +220,13 @@ Another way to check this is to list all tracked remote branches:
       drupify/master
       drupify/origin
       origin/HEAD -> origin/master
-    
+
 
 
 
 It's time to merge all our tracked remote code (from `drupify-copy`) in our local repository (`kev-code`). The branch I'm interested in is `DRUPAL-6--1`, as it holds the latest Drupify code for Drupal 6.x:
 
-    
+
     :::console
     kev-code$ git merge drupify/DRUPAL-6--1
     Merge made by recursive.
@@ -299,18 +299,18 @@ It's time to merge all our tracked remote code (from `drupify-copy`) in our loca
      create mode 100644 drupify-fork/screenshot.png
      create mode 100644 drupify-fork/style.css
      create mode 100644 drupify-fork/template.php
-    
+
 
 
 
 We can remove the attached `drupify` repository and its local `drupify-copy` source:
 
-    
+
     :::console
     kev-code$ git remote rm drupify
     kev-code$ cd ..
     ~$ rm -rf ./drupify-copy
-    
+
 
 
 
@@ -319,7 +319,7 @@ At this stage, here is what our repository looks like:
 
 To keep all the details that were created by `git cvsimport`, we can add by hand all the missing refs. The only difference with the original ones is that I unified the namespace with a `drupify/` prefix:
 
-    
+
     :::console
     kev-code$ git update-ref refs/heads/drupify/DRUPAL-6--1 8930672
     kev-code$ git update-ref refs/heads/drupify/master e5907fa
@@ -327,7 +327,7 @@ To keep all the details that were created by `git cvsimport`, we can add by hand
     kev-code$ git tag drupify/DRUPAL-6--1-0 DRUPAL-6--1-0
     kev-code$ git tag -d DRUPAL-6--1-0
     Deleted tag 'DRUPAL-6--1-0'
-    
+
 
 
 

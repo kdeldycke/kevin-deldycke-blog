@@ -56,21 +56,21 @@ _Note_: A partir de la 10.1, la version de `webmin` fournie avec la Mandrake sup
 
 Installation de mdadm:
 
-    
+
     :::console
     urpmi mdadm
-    
+
 
 
 
 Création des matrices:
 
-    
+
     :::console
     mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/hda2 /dev/sda2 /dev/sdb2
     mdadm --create --verbose /dev/md1 --level=5 --raid-devices=3 /dev/hda3 /dev/sda1 /dev/sdb1
     mdadm --create --verbose /dev/md2 --level=5 --raid-devices=3 /dev/hda4 /dev/sda3 /dev/sdb3
-    
+
 
 
 
@@ -88,7 +88,7 @@ Lors de la création, les paramètres par défaut sont suffisants. Pour informat
 
 Éditons le fichier de configuration `/etc/mdadm.conf`:
 
-    
+
     :::console
     DEVICE          /dev/sda*
     DEVICE          /dev/sdb*
@@ -98,16 +98,16 @@ Lors de la création, les paramètres par défaut sont suffisants. Pour informat
     ARRAY           /dev/md0 devices=/dev/hda2,/dev/sda2,/dev/sdb2
     ARRAY           /dev/md1 devices=/dev/hda3,/dev/sda1,/dev/sdb1
     ARRAY           /dev/md2 devices=/dev/hda4,/dev/sda3,/dev/sdb3
-    
+
 
 
 
 Avant d'aller plus loin, il faut attendre que les matrices soient construites:
 
-    
+
     :::console
     watch -n1 'cat /proc/mdstat'
-    
+
 
 
 
@@ -115,12 +115,12 @@ Dans mon cas, cela à nécessité entre deux et trois heures pour chaque unité 
 
 _Note_: avec la Mandrake 10.1, lors de la création des matrices RAID, on aurait eu des problèmes du type `raidstart failed : /dev/md1: No such file or directory`, qui peuvent être résolus en créant les device manuellement:
 
-    
+
     :::console
     mknod /dev/md0 b 9 0
     mknod /dev/md1 b 9 1
     mknod /dev/md2 b 9 2
-    
+
 
 
 
@@ -137,10 +137,10 @@ J'ai choisi LVM pour agréger les unités RAID, pour bénéficier d'un redimensi
 
 Installation de LVM:
 
-    
+
     :::console
     urpmi lvm2
-    
+
 
 
 
@@ -148,21 +148,21 @@ On peut consulter la liste des disques parents sur le système avec `lvmdiskscan
 
 Ensuite il faut créer un volume physique (PV = Physical Volume) pour chaque unité RAID:
 
-    
+
     :::console
     pvcreate /dev/md0
     pvcreate /dev/md1
     pvcreate /dev/md2
-    
+
 
 
 
 Créons maintenant un groupe de volumes contenant nos trois partitions :
 
-    
+
     :::console
     vgcreate vg01 /dev/md0 /dev/md1 /dev/md2
-    
+
 
 
 (marche pas ???)
@@ -176,16 +176,16 @@ Créons maintenant un groupe de volumes contenant nos trois partitions :
 
 Si vous voulez utiliser du RAID linéaire plutôt que LVM, il faut créer une nouvelle unité RAID sur la base des trois premières:
 
-    
+
     :::console
     mdadm --create --verbose /dev/md3 --level=linear --raid-devices=3 /dev/md0 /dev/md1 /dev/md2
-    
+
 
 
 
 Puis penser à mettre à jour `/etc/mdadm.conf`:
 
-    
+
     :::console
     DEVICE          /dev/sda*
     DEVICE          /dev/sdb*
@@ -199,7 +199,7 @@ Puis penser à mettre à jour `/etc/mdadm.conf`:
     ARRAY           /dev/md1 devices=/dev/hda3,/dev/sda1,/dev/sdb1
     ARRAY           /dev/md2 devices=/dev/hda4,/dev/sda3,/dev/sdb3
     ARRAY           /dev/md3 devices=/dev/md0,/dev/md1,/dev/md2
-    
+
 
 
 
@@ -212,10 +212,10 @@ Puis penser à mettre à jour `/etc/mdadm.conf`:
 
 Formater en xfs:
 
-    
+
     :::console
     mkfs.xfs -f /dev/md3
-    
+
 
 
 
@@ -223,20 +223,20 @@ J'ai choisi xfs comme filesystem car il peut être agrandit à chaud, lorsque la
 
 Pour monter le tout:
 
-    
+
     :::console
     mkdir -p /mnt/data
     mount /dev/md3 /mnt/data
-    
+
 
 
 
 Et enfin, pour le montage automatique au démarrage de notre serveur, il faut ajouter la ligne suivante à notre fichier `/etc/fstab`:
 
-    
+
     :::console
     /dev/md3 /mnt/data xfs defaults 0 0
-    
+
 
 
 
@@ -255,13 +255,13 @@ Et enfin, pour le montage automatique au démarrage de notre serveur, il faut aj
 
 Si une partition est éjectée d'une unité raid (par exemple `sda1` sur `md1`), il faut faire:
 
-    
+
     :::console
     cat /proc/mdstat
     mdadm --examine /dev/sda1
     mdadm /dev/md1 -a /dev/sda1
     cat /proc/mdstat
-    
+
 
 
 
@@ -273,11 +273,11 @@ La première commande montre que le RAID est dégradé. La seconde commande exam
 
 La commande est du type:
 
-    
+
     :::console
     mdadm --stop /dev/md0
     mdadm --assemble /dev/md0
-    
+
 
 
 
@@ -289,10 +289,10 @@ Attention `--assemble` se base sur le fichier `/etc/mdadm.conf`.
 
 La commande suivante créée une unité RAID 5 sur 3 disques durs, en indiquant que le premier est absent via le mot clé `missing`:
 
-    
+
     :::console
     mdadm --create /dev/md0 --level=5 --raid-devices=3 missing /dev/hda1 /dev/sda1
-    
+
 
 
 

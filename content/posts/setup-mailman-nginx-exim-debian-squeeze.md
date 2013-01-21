@@ -18,10 +18,10 @@ tags: Debian, debian squeeze, E-mail, Exim, fcgiwrap, Linux, mailing list, mailm
 
 Now that you have the context, let's proceed with [Mailman](http://www.list.org/) install:
 
-    
+
     :::console
     $ aptitude install mailman
-    
+
 
 
 
@@ -29,10 +29,10 @@ During the installation, you'll be prompted about the languages files you want M
 
 Now Mailman requires a meta-mailing-list from which it will send all mails related to subscription, reminders and all:
 
-    
+
     :::console
     $ newlist mailman kevin@deldycke.com
-    
+
 
 
 
@@ -40,7 +40,7 @@ You'll then be prompted for a password.
 
 After that, Mailman will provide you with a list of directives to add to `/etc/aliases`:
 
-    
+
     :::text
     mailman:              "|/var/lib/mailman/mail/mailman post mailman"
     mailman-admin:        "|/var/lib/mailman/mail/mailman admin mailman"
@@ -52,7 +52,7 @@ After that, Mailman will provide you with a list of directives to add to `/etc/a
     mailman-request:      "|/var/lib/mailman/mail/mailman request mailman"
     mailman-subscribe:    "|/var/lib/mailman/mail/mailman subscribe mailman"
     mailman-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe mailman"
-    
+
 
 
 
@@ -60,21 +60,21 @@ This update is not necessary, as Exim will handle them automatically.
 
 You can now restart the Mailman server:
 
-    
+
     :::console
     $ /etc/init.d/mailman start
-    
+
 
 
 
 Oh, and the first time you'll run Mailman, do a `start` as above, not a `restart`, else you'll end up with this error:
 
-    
+
     :::console
     Restarting Mailman master qrunner: mailmanctl PID unreadable in: /var/run/mailman/mailman.pid
     [Errno 2] No such file or directory: '/var/run/mailman/mailman.pid'
     Is qrunner even running?
-    
+
 
 
 
@@ -92,30 +92,30 @@ Now we have to configure our HTTP server to make the administration interface av
 
 First, as [explained on Nginx wiki](http://wiki.nginx.org/Fcgiwrap) we need to install `fcgiwrap`:
 
-    
+
     :::console
     $ aptitude install fcgiwrap
-    
+
 
 
 
 Then we have to create an Nginx configuration file dedicated to Mailman. Assuming we want all mailing-lists managed under the `lists.example.com` domain, here are the directives you have to put in a new `/etc/nginx/sites-available/mailman` file:
 
-    
+
     :::text
     server {
       server_name lists.example.com;
-    
+
       root /usr/lib/cgi-bin;
-    
+
       location = / {
         rewrite ^ /mailman/listinfo permanent;
       }
-    
+
       location / {
         rewrite ^ /mailman$uri;
       }
-    
+
       location /mailman {
         include /etc/nginx/fastcgi_params;
         # Fastcgi socket
@@ -124,22 +124,22 @@ Then we have to create an Nginx configuration file dedicated to Mailman. Assumin
         # before getting gzipped)
         gzip off;
       }
-    
+
       location /images/mailman {
         alias /var/lib/mailman/icons;
       }
-    
+
       location /pipermail {
         alias /var/lib/mailman/archives/public;
         autoindex on;
       }
     }
-    
+
     server {
       server_name *.lists.example.com .lists.example.org .lists.example.net;
       rewrite ^ http://lists.example.com$request_uri? permanent;
     }
-    
+
 
 
 
@@ -147,12 +147,12 @@ The configuration above is a mix between [the one available on Nginx wiki](http:
 
 All we have to do now is to activate the configuration above and restart our CGI and HTTP server:
 
-    
+
     :::console
     $ ln -s /etc/nginx/sites-available/mailman /etc/nginx/sites-enabled/
     $ /etc/init.d/fcgiwrap restart
     $ /etc/init.d/nginx restart
-    
+
 
 
 
@@ -170,7 +170,7 @@ Now we have to setup the MTA. All informations here are coming from the document
 
 First, we have to update `/etc/mailman/mm_cfg.py` (the global Mailman configuration file). We'll aligned there the default URLs, hosts and MTA-related parameters:
 
-    
+
     :::diff
     --- /etc/mailman/mm_cfg.py.orig    2011-08-31 22:28:53.000000000 +0200
     +++ /etc/mailman/mm_cfg.py 2011-09-07 22:43:41.000000000 +0200
@@ -183,7 +183,7 @@ First, we have to update `/etc/mailman/mm_cfg.py` (the global Mailman configurat
     +DEFAULT_URL_PATTERN = 'http://%s/mailman/'
     +PRIVATE_ARCHIVE_URL = '/mailman/private'
      IMAGE_LOGOS         = '/images/mailman/'
-     
+
      #-------------------------------------------------------------
      # Default domain for email addresses of newly created MLs
     -DEFAULT_EMAIL_HOST = 'server123.example.net'
@@ -204,16 +204,16 @@ First, we have to update `/etc/mailman/mm_cfg.py` (the global Mailman configurat
     +POSTFIX_ALIAS_CMD = '/bin/true'
     +POSTFIX_MAP_CMD = 'chgrp Debian-exim'
     +POSTFIX_STYLE_VIRTUAL_DOMAINS = ['lists.example.com']
-     
+
      #-------------------------------------------------------------
      # Uncomment if you want to filter mail with SpamAssassin. For
-    
+
 
 
 
 Then we have to update the Exim configuration template. If like me you haven't choose to split configuration into small files, here are the modifications you have to add to `/etc/exim4/exim4.conf.template`:
 
-    
+
     :::text
     --- /etc/exim4/exim4.conf.template.orig 2011-09-07 23:34:53.000000000 +0200
     +++ /etc/exim4/exim4.conf.template       2011-09-07 23:44:45.000000000 +0200
@@ -238,7 +238,7 @@ Then we have to update the Exim configuration template. If like me you haven't c
     +#####################################################
      ### main/90_exim4-config_log_selector
      #####################################################
-     
+
     @@ -1371,6 +1386,44 @@
      ### end router/900_exim4-config_local_user
      #####################################################
@@ -283,7 +283,7 @@ Then we have to update the Exim configuration template. If like me you haven't c
     +#####################################################
      ### router/mmm_mail4root
      #####################################################
-     
+
     @@ -1689,6 +1742,25 @@
      ### end transport/35_exim4-config_address_directory
      #####################################################
@@ -309,8 +309,8 @@ Then we have to update the Exim configuration template. If like me you haven't c
     +#####################################################
      ### retry/00_exim4-config_header
      #####################################################
-     
-    
+
+
 
 
 
@@ -318,7 +318,7 @@ Don't apply this diff as-is, as the original file contain the modifications I pr
 
 Then we have to update the Exim meta-configuration that is stored in `/etc/exim4/update-exim4.conf.conf`. There we specify our host (`lists.example.com`) and public IP address (`123.456.78.90`):
 
-    
+
     :::text
     dc_eximconfig_configtype='smarthost'
     dc_other_hostnames='lists.example.com'
@@ -333,13 +333,13 @@ Then we have to update the Exim meta-configuration that is stored in `/etc/exim4
     dc_hide_mailname='false'
     dc_mailname_in_oh='true'
     dc_localdelivery='mail_spool'
-    
+
 
 
 
 Finally, our hostname must be a FQDN, so we have to add it to `/etc/hosts`:
 
-    
+
     :::diff
     --- /etc/hosts.orig        2011-09-12 13:52:19.000000000 +0200
     +++ /etc/hosts     2011-09-12 12:21:31.000000000 +0200
@@ -352,18 +352,18 @@ Finally, our hostname must be a FQDN, so we have to add it to `/etc/hosts`:
      # The following lines are desirable for IPv6 capable hosts
      #(added automatically by netbase upgrade)
      ::1     ip6-localhost ip6-loopback
-    
+
 
 
 
 Then we have to regenerate Exim's configuration before restarting Mailman:
 
-    
+
     :::console
     $ update-exim4.conf --verbose
     $ /etc/init.d/exim4 restart
     $ /etc/init.d/mailman restart
-    
+
 
 
 
@@ -376,10 +376,10 @@ Then we have to regenerate Exim's configuration before restarting Mailman:
 
 You can now test your setup by creating a test mailing-list:
 
-    
+
     :::console
     $ newlist kev-test
-    
+
 
 
 
@@ -387,29 +387,29 @@ Now subscribe some test users and play with this mailing-list.
 
 By monitoring `/var/log/mailman/error`, you'll maybe run into this error:
 
-    
+
     :::text
     IOError: [Errno 13] Permission denied: '/var/lib/mailman/archives/private/kev-test.mbox/kev-test.mbox'
-    
+
 
 
 
 This can be easily fixed with:
 
-    
+
     :::console
     $ chown -R list /var/lib/mailman/archives/private/
-    
+
 
 
 
 Once you're convinced that Mailman is working as expected, you can remove your temporary test mailing-list, and regenerate aliases to clean things up:
 
-    
+
     :::console
     $ rmlist -a  kev-test
-    $ /var/lib/mailman/bin/genaliases 
-    
+    $ /var/lib/mailman/bin/genaliases
+
 
 
 
@@ -422,7 +422,7 @@ Once you're convinced that Mailman is working as expected, you can remove your t
 
 Finally, if like me you [use Munin to monitor your machine](), then it's a good idea to let it graph some Mailman usage:
 
-    
+
     :::console
     $ wget http://exchange.munin-monitoring.org/plugins/mailman-queue-check/version/2/download --output-document=/usr/share/munin/plugins/mailman-queue-check
     $ wget http://exchange.munin-monitoring.org/plugins/mailman_subscribers/version/3/download --output-document=/usr/share/munin/plugins/mailman_subscribers
@@ -433,4 +433,4 @@ Finally, if like me you [use Munin to monitor your machine](), then it's a good 
     " > /etc/munin/plugin-conf.d/mailman
     $ chmod 755 /usr/share/munin/plugins/mailman*
     $ /etc/init.d/munin-node restart
-    
+

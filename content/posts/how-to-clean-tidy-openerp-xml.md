@@ -13,20 +13,20 @@ If Python is well-equiped to enforce coding styles (thanks to [pep8](http://pypi
 
 First, we have to install some command-line utilities:
 
-    
+
     :::console
     $ aptitude install libxml2-utils xsltproc
-    
+
 
 
 
 Override the default XML indention from 2 spaces to 4, before forcing the cleaning of each XML file found from our current folder:
 
-    
+
     :::console
     $ export XMLLINT_INDENT="    "
     $ find . -iname "*.xml" -exec xmllint --format --output "{}" "{}" \;
-    
+
 
 
 
@@ -34,18 +34,18 @@ Now we have a set of normalized XML content.
 
 Create an empty XSLT file named `tidy.xslt` and copy the following content in it:
 
-    
+
     :::xslt
     <?xml version="1.0"?>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    
+
       <!-- Produce an exact copy of the original XML content -->
       <xsl:template match="@*|node()">
         <xsl:copy>
           <xsl:apply-templates select="@*|node()"/>
         </xsl:copy>
       </xsl:template>
-    
+
       <!-- Insert blank lines between each child element of data tags -->
       <xsl:template match="data">
         <xsl:copy>
@@ -62,9 +62,9 @@ Create an empty XSLT file named `tidy.xslt` and copy the following content in it
         <xsl:text>
         </xsl:text>
       </xsl:template>
-    
+
     </xsl:stylesheet>
-    
+
 
 
 
@@ -72,7 +72,7 @@ The XSLT file above will separate with a blank line all children of all `data` t
 
 Finally, you can apply our XSLT to all our local XML files:
 
-    
+
     :::console
     $ find . -iname "*.xml" -exec xsltproc --output "{}" ./tidy.xslt "{}" \;
-    
+

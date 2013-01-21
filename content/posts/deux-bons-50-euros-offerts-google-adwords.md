@@ -13,13 +13,13 @@ D'après la brochure, ces bons ne sont utilisables que si les conditions suivant
 
 
 
-  
+
   1. le [compte AdWords](http://www.google.fr/AdWord) à été créé il y a moins de 14 jours,
 
-  
+
   2. l'adresse de facturation associée au compte est localisée en France,
 
-  
+
   3. le bon d'achat est utilisé avant le 31 décembre 2009.
 
 

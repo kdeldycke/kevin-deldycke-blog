@@ -13,10 +13,10 @@ One of them, [Maomium](http://maomium.com), was hacked last night. Someone creat
 
 Before the hack happened, my apache log show me that a person was looking for blogs powered by Wordpress 2.2 and open to registration:
 
-    
+
     :::console
     123.76-136-217.adsl-dyn.isp.belgacom.be www.maomium.com - [07/Jun/2007:00:51:55 +0200] "GET /category/wordpress/ HTTP/1.1" 200 2960 "http://www.google.be/search?hl=fr&q=%22powered+by+wordpress+2.2%22+Register&btnG=Rechercher&meta=" "Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.8.1.4) Gecko/20070515 Firefox/2.0.0.4"
-    
+
 
 
 
@@ -24,4 +24,4 @@ This person was my hacker. As you can see he's a belgian guy and his broadband p
 
 If you want to disect his behaviour, you can [download my apache log](http://kevin.deldycke.com/wp-content/uploads/2007/06/wordpress-22-register-new-user-hack.txt).
 
-This event show us that the Wordpress vulnerablility regarding guest account registration is still there. So the [advice given by CountZero](http://www.4null4.de/174/wp-users-disable-guest-account-registration-immediately/) **must** be applied ! 
+This event show us that the Wordpress vulnerablility regarding guest account registration is still there. So the [advice given by CountZero](http://www.4null4.de/174/wp-users-disable-guest-account-registration-immediately/) **must** be applied !

@@ -15,7 +15,7 @@ The amount of collected funds is currently at $3,041 from the $4,000 required to
 
 I started to play with Kdenlive several years ago with version 0.3. I even [created some RPM packages](http://kevin.deldycke.com/2007/04/kdenlive-04-for-mandriva-20070/) back then. Kdenlive suffered from heavy instabilities in its early days.
 
-But this was a long time ago and today it’s the most stable and practical video editing software available on Linux. It's the best open-source tool for amateur DSLR shooters, and is worth a try even if your primary desktop manager is not KDE. 
+But this was a long time ago and today it’s the most stable and practical video editing software available on Linux. It's the best open-source tool for amateur DSLR shooters, and is worth a try even if your primary desktop manager is not KDE.
 
 Today this software is the one I spend most of my time in at home (just after a web browser and a command-line terminal). And I've never felt as productive as the last 2 years: I [edited about 2 hours of videos](http://www.youtube.com/playlist?list=PL003033C52FE5047D) in that period.
 

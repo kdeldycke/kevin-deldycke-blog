@@ -89,22 +89,22 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
 
   2. Now we'll modify the `notes2mbox.py` script to set the password (via the `notesPasswd` variable) and location (`notesNsfPath` variable) of the `.nsf` file. Here are the modifications I applied:
 
-    
+
     :::diff
     --- notes2mbox.py.orig	2010-09-02 13:49:58.000000000 +0200
     +++ notes2mbox.py	2010-09-02 13:51:24.000000000 +0200
     @@ -14,8 +14,8 @@
      import NlconverterLib
-     
+
      #Constantes
     -notesPasswd = "foobar"
     -notesNsfPath = "C:\\archive.nsf"
     +notesPasswd = "XXXXXXXXXXXXX"
     +notesNsfPath = "C:\\winnlc-alpha-1\\kevin-notes-big-backup-part-1.nsf"
-     
+
      #Connection à Notes
      db = NlconverterLib.getNotesDb(notesNsfPath, notesPasswd)
-    
+
 
 
 
@@ -113,19 +113,19 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
 
   3. Before running the script, we have to register a Notes DLL used by nlconverter:
 
-    
+
     :::console
     regsvr32 "C:\Program Files\Notes\nlsxbe.dll"
-    
+
 
 
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/08/notes-nlsxbe-dll-registered1-300x96.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/notes-nlsxbe-dll-registered1.png)
 And make the Python interpreter available system-wide:
 
-    
+
     :::console
     C:\winnlc-alpha-1>SET Path=%Path%;C:\Python26
-    
+
 
 
 
@@ -134,10 +134,10 @@ And make the Python interpreter available system-wide:
 
   4. Now we can run the `notes2mbox.py` script:
 
-    
+
     :::console
     C:\winnlc-alpha-1>C:\Python26\python.exe notes2mbox.py
-    
+
 
 
 
@@ -147,7 +147,7 @@ If you're lucky, you'll get a nice mbox at the end of the process.
 
 But I was not and the `notes2mbox.py` ended up with the following error:
 
-    
+
     :::python
     Traceback (most recent call last):
       File "notes2mbox.py", line 21, in <module>
@@ -161,7 +161,7 @@ But I was not and the `notes2mbox.py` ended up with the following error:
       File "C:\Python26\lib\site-packages\win32com\client\dynamic.py", line 84, in _GetGoodDispatch
         IDispatch = pythoncom.CoCreateInstance(IDispatch, None, clsctx, pythoncom.IID_IDispatch)
     pywintypes.com_error: (-2147221231, 'ClassFactory ne peut pas fournir la classe demand\xe9e', None, None)
-    
+
 
 
 

@@ -13,10 +13,10 @@ So I decided to move the `http://kev.coolcavemen.com/static/repository` folder t
 
 To do this smoothly, I've just set up a generic `301` redirection thanks to Apache. This is the only line I added to my root `.htaccess` file to enable this:
 
-    
+
     :::text
     Redirect permanent /static/repository http://kevin.deldycke.free.fr/repository
-    
+
 
 
 

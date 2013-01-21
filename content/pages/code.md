@@ -19,13 +19,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: test web app based on CherryPy, Mako and MongoDB to play with Microsoft Live Messenger Connect API.
 
-  
+
   * **Role**: sole author.
 
-  
+
   * **Source code**: [on GitHub](http://github.com/kdeldycke/live_browser).
 
 
@@ -43,13 +43,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: an attempt to automate an OpenERP server and web client.
 
-  
+
   * **Role**: sole author.
 
-  
+
   * **Source code**: [on GitHub](http://github.com/kdeldycke/openerp.buildout).
 
 
@@ -67,13 +67,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: boilerplate codebase to publishing some OpenERP content on the web.
 
-  
+
   * **Role**: sole author.
 
-  
+
   * **Source code**: [on GitHub](http://github.com/kdeldycke/cherrypy_mako_formish_ooop_boilerplate).
 
 
@@ -92,13 +92,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: a tool to check availability of remote web pages.
 
-  
+
   * **Role**: sole author.
 
-  
+
   * **Source code**: [on GitHub](http://github.com/kdeldycke/webping).
 
 
@@ -117,13 +117,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: a WordPress plugin to import news, users, pages, images and forums from an [e107](http://www.e107.org) instance.
 
-  
+
   * **Role**: sole author.
 
-  
+
   * **Source code**: [on GitHub](http://github.com/kdeldycke/e107-importer) (main repository) and in [official WordPress Subversion](http://plugins.trac.wordpress.org/browser/e107-importer) (synced repository).
 
 
@@ -142,16 +142,16 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: web-based RSS/Atom feed aggregator running on Ruby on Rails.
 
-  
+
   * **Role**: co-author.
 
-  
+
   * **Source code**: [on GitHub](http://github.com/kdeldycke/feed-tracking-tool).
 
-  
+
   * **Related articles**: http://kevin.deldycke.com/tag/feed-tracking-tool/
 
 
@@ -171,13 +171,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: a collection of utility scripts, patches and hacks.
 
-  
+
   * **Role**: sole author.
 
-  
+
   * **Source code**: [on GitHub](http://github.com/kdeldycke/scripts).
 
 
@@ -196,13 +196,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: Python's buildout recipe to ease management and deployment of multiple [Trac](http://trac.edgewall.org) instances.
 
-  
+
   * **Role**: contributor.
 
-  
+
   * **Contributions**: [code](http://bitbucket.org/tarek/atomisator/changesets).
 
 
@@ -222,13 +222,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: a Zope-based CMS.
 
-  
+
   * **Role**: contributor.
 
-  
+
   * **Contributions**: [code (collective)](http://dev.plone.org/collective/search?q=kdeldycke&changeset=on), bug reports ([core](http://dev.plone.org/plone/search?q=kdeldycke&ticket=on), [collective](http://plone.org/author/kdeldycke)).
 
 
@@ -247,13 +247,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: a DMX light controlling software written QT.
 
-  
+
   * **Role**: contributor.
 
-  
+
   * **Contributions**: [bug reports](http://sourceforge.net/apps/trac/qlc/query?reporter=~kevin-deldycke), wiki edits, [dev mailing-list discussions](http://sourceforge.net/search/index.php?group_id=44856&type_of_search=mlists&ml_name=qlc-devel&words=%22Kevin+Deldycke%22).
 
 
@@ -272,13 +272,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: the most popular PHP blog engine.
 
-  
+
   * **Role**: contributor.
 
-  
+
   * **Contributions**: [bug reports & patches](http://core.trac.wordpress.org/query?reporter=~Coolkevman), [e107-importer plugin](http://wordpress.org/extend/plugins/e107-importer/).
 
 
@@ -297,13 +297,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: WordPress-based forums.
 
-  
+
   * **Role**: contibutor.
 
-  
+
   * **Contributions**: [bug reports](http://trac.bbpress.org/query?reporter=~Coolkevman).
 
 
@@ -322,13 +322,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: a non-linear video editor written in QT for KDE.
 
-  
+
   * **Role**: contributor.
 
-  
+
   * **Contributions**: [feature requests](http://google.com/search?q="kevin-deldycke"+site%3Akdenlive.org%2Fmantis%2F).
 
 
@@ -347,13 +347,13 @@ Currently, I'm more or less involved in these open-source projects:
 
 
 
-  
+
   * **Description**: a Lotus Notes to Mailbox conversion tool written in Python.
 
-  
+
   * **Role**: contributor.
 
-  
+
   * **Contributions**: [code](http://code.google.com/p/nlconverter/people/detail?u=kevin.deldycke).
 
 

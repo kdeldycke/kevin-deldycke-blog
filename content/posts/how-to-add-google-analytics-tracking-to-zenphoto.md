@@ -15,13 +15,13 @@ Why ? As you can see in [ticket #441 in Zenphoto bugtracker](http://www.zenphoto
 
 Here is the [downloadable patch file](http://kevin.deldycke.com/wp-content/uploads/2008/08/google-analytics-tracking-for-non-admin-users.patch), and its content:
 
-    
+
     :::diff
     diff -ru ./zenphoto-orig/zp-core/template-functions.php ./zenphoto/zp-core/template-functions.php
     --- ./zenphoto-orig/zp-core/template-functions.php  2008-08-15 07:43:05.000000000 +0200
     +++ ./zenphoto/zp-core/template-functions.php 2008-08-16 17:08:03.000000000 +0200
     @@ -147,7 +147,16 @@
-    
+
         echo "<li><a href=\"".$zf."/admin.php?logout$redirect\">".gettext("Logout")."</a></li>\n";
         echo "</ul></div>\n";
     - }
@@ -36,9 +36,9 @@ Here is the [downloadable patch file](http://kevin.deldycke.com/wp-content/uploa
     +</script>";
     +  }
      }
-    
+
      /**
-    
+
 
 
 
@@ -48,7 +48,7 @@ Do not forget to update the dummy Google Analytics account ID above (`UA-XXXXXX-
 
 And finally, to apply the patch, invoke the classic `patch` command:
 
-    
+
     :::console
     patch -p0 < ./google-analytics-tracking-for-non-admin-users.patch
-    
+

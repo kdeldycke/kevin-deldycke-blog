@@ -11,7 +11,7 @@ Last week I came across a showstopper bug on Mailman 2.1.9-7, the [current versi
 
 Here is the python traceback (from `/var/log/mailman/error` logfile) I get each time I've sent a mail to my brand new mailing-list:
 
-    
+
     :::console
     Dec 20 01:20:04 2008 (14275) Uncaught runner exception: len() of unsized object
     Dec 20 01:20:04 2008 (14275) Traceback (most recent call last):
@@ -40,15 +40,15 @@ Here is the python traceback (from `/var/log/mailman/error` logfile) I get each 
       File "/usr/lib/mailman/pythonlib/email/Charset.py", line 354, in encoded_header_len
         raise repr(s)
     TypeError: len() of unsized object
-    
+
     Dec 20 01:20:04 2008 (14275) SHUNTING: 1229732404.1069181+dcd89a08bf7911dac2db804b76cd42d20564c71c
-    
+
 
 
 
 Here is the corresponding (anonymized) mail sent to the mailing list from a Gmail account:
 
-    
+
     :::console
     Received: by 10.180.244.13 with HTTP; Fri, 19 Dec 2008 16:32:22 -0800 (PST)
     Message-ID: <1f7b086f0812192632x7427c0f7u2048609ddd50673@mail.gmail.com>
@@ -61,10 +61,10 @@ Here is the corresponding (anonymized) mail sent to the mailing list from a Gmai
     Content-Transfer-Encoding: base64
     Content-Disposition: inline
     Delivered-To: kevin@my-domain.com
-    
+
     LS0KS2V2LgogIOKAoiBiYW5kOiBodHRwOi8vY29vbGNhdmVtZW4uY29tCiAg4oCiIGJsb2c6IGh0
     dHA6Ly9rZXZpbi5kZWxkeWNrZS5jb20K
-    
+
 
 
 
@@ -72,7 +72,7 @@ And now my hackish tale. Based on a quick look at Mailman's source code, I made 
 
 Here is the [resulting patch](http://kevin.deldycke.com/wp-content/uploads/2008/12/mailman-219-7-charset-handling.patch) of my python-fu:
 
-    
+
     :::diff
     --- /usr/lib/mailman/pythonlib/email/Charset.py.orig   2008-12-28 19:46:23.000000000 +0100
     +++ /usr/lib/mailman/pythonlib/email/Charset.py        2008-12-20 01:42:37.000000000 +0100
@@ -82,9 +82,9 @@ Here is the [resulting patch](http://kevin.deldycke.com/wp-content/uploads/2008/
              else:
     +            return s is not None and len(str(s)) or 0
                  return len(s)
-    
+
          def header_encode(self, s, convert=False):
-    
+
 
 
 

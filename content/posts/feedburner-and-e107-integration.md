@@ -17,18 +17,18 @@ First, check that the e107 RSS feed plugin is activated. Then [create an account
 
 Then, create (or edit) the `http://www.my-domain.com/.htaccess` file, and add following code:
 
-    
+
     :::console
     RewriteEngine On
-    
+
     RewriteCond %{HTTP_USER_AGENT} !FeedBurner [NC]
     RewriteCond %{QUERY_STRING} ^(5|Comments)
     RewriteRule e107_plugins/rss_menu/rss\.php http://feeds.feedburner.com/myfeed-comments? [R=301,L]
-    
+
     RewriteCond %{HTTP_USER_AGENT} !FeedBurner [NC]
     RewriteCond %{QUERY_STRING} ^(1|News|.*)
     RewriteRule e107_plugins/rss_menu/rss\.php http://feeds.feedburner.com/myfeed? [R=301,L]
-    
+
 
 
 

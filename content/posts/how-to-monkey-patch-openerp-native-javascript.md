@@ -15,12 +15,12 @@ It's a custom view I created this month [at work](http://www.smile.fr/Solutions/
 
 The view above is produced by the following XML:
 
-    
+
     :::xml
     <?xml version="1.0" encoding="utf-8"?>
     <openerp>
         <data>
-    
+
             <!-- Multi product printing wizard -->
             <record model="ir.ui.view" id="label_wizard_product_form">
                 <field name="name">label.wizard.product.form</field>
@@ -35,7 +35,7 @@ The view above is produced by the following XML:
                     </form>
                 </field>
             </record>
-    
+
             <record model="ir.ui.view" id="label_wizard_product_line_tree">
                 <field name="name">label.wizard.product.line.tree</field>
                 <field name="model">label.wizard.product.line</field>
@@ -50,10 +50,10 @@ The view above is produced by the following XML:
                     </tree>
                 </field>
             </record>
-    
+
         </data>
     </openerp>
-    
+
 
 
 
@@ -69,14 +69,14 @@ My instinct told me that this default style could easily be overridden with some
 
 The code responsible for this behavior is located in the [`addons/openerp/static/javascript/m2o.js`](http://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js) file, in the [`ManyToOne.prototype.on_keydown`](http://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js#L267) method:
 
-    
+
     :::javascript
     ManyToOne.prototype.on_keydown = function(evt) {
         (...)
                 jQuery('div.autoTextResults[id$="' + this.name + '"]').width(w)
         (...)
     };
-    
+
 
 
 
@@ -86,7 +86,7 @@ And [thanks to Bryan Forbes' article](http://www.reigndropsfall.net/2010/06/15/m
 
 Here is the code I added in the XML view, just below the `line_ids` field:
 
-    
+
     :::xml
     <field name="line_ids" colspan="4" nolabel="1"/>
     <html>
@@ -103,7 +103,7 @@ Here is the code I added in the XML view, just below the `line_ids` field:
             });
         </script>
     </html>
-    
+
 
 
 

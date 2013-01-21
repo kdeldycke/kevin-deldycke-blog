@@ -11,15 +11,15 @@ tags: feed, feedalizer, hpricot, HTTP, monkey patch, parsing, proxy, RSS, ruby, 
 
 Here is a little code snippet that [monkey-patch](http://en.wikipedia.org/wiki/Monkey_patch) [Feedalizer](http://termos.vemod.net/feedalizer) to let it grab web content through a HTTP proxy:
 
-    
+
     :::ruby
     # HTTP proxy settings
     HTTP_PROXY_HOST = "123.456.78.90"
     HTTP_PROXY_PORT = 8080
-    
+
     # Calculate proxy URL
     HTTP_PROXY_URL = "http://#{HTTP_PROXY_HOST}:#{HTTP_PROXY_PORT}"
-    
+
     # Monkey patch feedalizer to support page grabbing through a proxy
     require 'feedalizer'
     class Feedalizer
@@ -30,7 +30,7 @@ Here is a little code snippet that [monkey-patch](http://en.wikipedia.org/wiki/M
         open(url, :proxy => HTTP_PROXY_URL) { |io| Hpricot(io) }
       end
     end
-    
+
 
 
 

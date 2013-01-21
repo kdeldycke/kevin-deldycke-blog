@@ -15,10 +15,10 @@ e107 migrated to full UTF-8 [years ago](http://e107.org/comment.php?comment.news
 
 To fix this, I first tried to use the following command I [found on the web](http://www.commandlinefu.com/commands/view/1575/convert-all-mysql-tables-and-fields-to-utf8):
 
-    
+
     :::console
     mysql --database=e107db -B -N -e "SHOW TABLES"  | awk '{print "ALTER TABLE", $1, "CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;"}' | mysql --database=e107db
-    
+
 
 
 
@@ -26,39 +26,39 @@ But this doesn't work, as it not only change the encoding of the table, but also
 
 Let's try something else. First, we'll export the database to a dump file, of which the encoding is forced to Latin-1:
 
-    
+
     :::console
     mysqldump -a -c -e --no-create-db --add-drop-table --default-character-set=latin1 --databases 'e107db' > ./e107-data.sql
-    
+
 
 
 
 Now the trick is to change the `CHARSET` parameter of all `CREATE TABLE` directives to UTF-8:
 
-    
+
     :::console
     sed -i 's/CHARSET=latin1/CHARSET=utf8/g' ./e107-data.sql
-    
+
 
 
 
 We'll also change the `NAMES` directive to force MySQL to handle imported data as UTF-8:
 
-    
+
     :::console
     sed -i 's/SET NAMES latin1/SET NAMES utf8/g' ./e107-data.sql
-    
+
 
 
 
 Then we're free to import the result in a new UTF-8 database:
 
-    
+
     :::console
     sed -i 's/USE `e107db`;/#USE `e107db`;/g' ./e107-data.sql
     mysql --execute="CREATE DATABASE e107db_new CHARACTER SET=utf8"
     mysql --database=e107db_new < ./e107-data.sql
-    
+
 
 
 

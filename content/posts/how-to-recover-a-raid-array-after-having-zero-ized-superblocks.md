@@ -11,17 +11,17 @@ Today `mdadm` send me a mail to warn that one of my hard drive (`/dev/hdd1`) was
 
 Assuming that this situation was about an inconsistent file index, I decided to reset the superblocks of the remaining physical disks:
 
-    
+
     :::console
     mdadm --zero-superblock /dev/hdc1
     mdadm --zero-superblock /dev/hdb1
-    
+
 
 
 
 I don't know why I decided to do so, but it was the stupidest idea of the week. After such a violent treatment, my array refused to start:
 
-    
+
     :::console
     [root@localhost ~]$ mdadm --assemble /dev/md0 --auto --scan --update=summaries --verbose
     mdadm: looking for devices for /dev/md0
@@ -30,7 +30,7 @@ I don't know why I decided to do so, but it was the stupidest idea of the week. 
     mdadm: no RAID superblock on /dev/hdb1
     mdadm: /dev/hdb1 has wrong raid level.
     mdadm: no devices found for /dev/md0
-    
+
 
 
 
@@ -40,16 +40,16 @@ I spend several minutes browsing the web without hope. I finally found [someone 
 
 The solution was to recreate the RAID array. This sound counter-intuitive: if we recreate a raid array over an existing one, it will be erased ! Right ? Wrong ! [As it is said on debian-user-french](http://lists.debian.org/debian-user-french/2006/03/msg00607.html), `mdadm` is smart enough to "see" that HDD of the new array were elements of a previous one. Knowing that, `mdadm` will try to do its best (i.e. if parameters match the previous array configuration) and rebuild the new array upon the previous one in a non-destructive way, by keeping HDD content.
 
-So, here is how I finally recovered my RAID array: 
+So, here is how I finally recovered my RAID array:
 
-    
+
     :::console
     [root@localhost ~]$ mdadm --create /dev/md0 --verbose --level=5 --raid-devices=3 /dev/hdc1 missing /dev/hdb1
     mdadm: layout defaults to left-symmetric
     mdadm: chunk size defaults to 64K
     mdadm: size set to 312568576K
     mdadm: array /dev/md0 started.
-    
+
 
 
 

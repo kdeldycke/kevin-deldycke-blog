@@ -13,10 +13,10 @@ And now the long story...
 
 Since the upgrade to Mandriva 2008.1, wifi stopped working on my laptop. I tried to install the 2008.1 on several machines. I tried to connect on different access points. I lowered security on the access point. I tried eveything. On desperation, I even tried to boot Windows to check that hardware was ok ! And the only log I had was this:
 
-    
+
     :::console
-    SIOCETHTOOL: Operation not supported 
-    
+    SIOCETHTOOL: Operation not supported
+
 
 
 
@@ -29,7 +29,7 @@ So I replaced it by `dhcpcd`, and against all expectations, it worked !
 
 And to not be annoyed by `dhcp_client` in the future, it's wise to definitely remove it:
 
-    
+
     :::console
     urpmi dhcp_client
-    
+

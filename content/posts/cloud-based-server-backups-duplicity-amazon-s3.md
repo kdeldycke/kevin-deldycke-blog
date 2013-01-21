@@ -17,19 +17,19 @@ Now that you have access to Amazon's cloud, let's create a bucket on S3. I used 
 
 Duplicity can use the [cheaper RRS storage](http://aws.amazon.com/about-aws/whats-new/2010/05/19/announcing-amazon-s3-reduced-redundancy-storage/), but you need at least version 0.6.09. Having a Debian Squeeze, the only way to get a recent version is to install it from the backports:
 
-    
+
     :::console
     $ apt-get -t squeeze-backports install duplicity python-boto
-    
+
 
 
 
 Then I created a simple symmetric key with GPG:
 
-    
+
     :::console
     $ gpg --gen-key
-    
+
 
 
 
@@ -37,35 +37,35 @@ You absolutely need to provide a passphrase, else Duplicity will refuse to run.
 
 Now update the script below with the GPG key passphrase and your AWS credentials:
 
-    
+
     :::bash
     # Do not let this script run more than once
     [ `ps axu | grep -v "grep" | grep --count "duplicity"` -gt 0 ] && exit 1
-    
+
     # Set some environment variables required by duplicity
     export PASSPHRASE=XXXXXXXXXX
     export AWS_ACCESS_KEY_ID=XXXXXXXXXX
     export AWS_SECRET_ACCESS_KEY=XXXXXXXXXX
-    
+
     # ~/.cache/duplicity/ should be excluded, as explained in http://comments.gmane.org/gmane.comp.sysutils.backup.duplicity.general/4449
     PARAMS='--exclude-device-files --exclude-other-filesystems --exclude **/.cache/** --exclude **/.thumbnails/** --exclude /mnt/ --exclude /tmp/ --exclude /dev/ --exclude /sys/ --exclude /proc/ --exclude /media/ --exclude /var/run/ --volsize 10 --s3-use-rrs --asynchronous-upload -vinfo'
     DEST='s3+http://com.example.server.backup'
-    
+
     # Export MySQL databases
     mysqldump --user=root --opt --all-databases > /home/kevin/mysql-backup.sql
-    
+
     # Do the backup
     duplicity $PARAMS --full-if-older-than 1M / $DEST
-    
+
     # Clean things up
     duplicity remove-older-than 1Y --force --extra-clean $PARAMS $DEST
     duplicity cleanup --force $PARAMS $DEST
-    
+
     # Remove temporary environment variables
     unset PASSPHRASE
     unset AWS_ACCESS_KEY_ID
     unset AWS_SECRET_ACCESS_KEY
-    
+
 
 
 
@@ -73,14 +73,14 @@ Before running duplicity, the script will dump all MySQL databases to a plain-te
 
 I saved the script above in `/home/kevin/s3-backup.sh` and `cron`-ed it:
 
-    
+
     :::console
     $ chmod 755 /home/kevin/s3-backup.sh
     $ echo "
     # Backup everything to an Amazon S3 storage
     0 1 * * * root /home/kevin/s3-backup.sh
     " > /etc/cron.d/s3-backup
-    
+
 
 
 

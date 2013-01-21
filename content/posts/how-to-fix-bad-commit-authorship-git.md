@@ -16,39 +16,39 @@ Let's fix this !
 
 First, get a local copy of the remote Git repository:
 
-    
+
     :::console
     git clone git@github.com:kdeldycke/kev-code.git
-    
+
 
 
 
 What was missing in my `~/.gitconfig` file were the following options:
 
-    
+
     :::text
     [user]
     name = Kevin Deldycke
     email = kevin@deldycke.com
-    
+
 
 
 
 These values can be set with Git command line with the following syntax:
 
-    
+
     :::console
     --author 'user.name <user.email>'
-    
+
 
 
 
 The commit I want to change is the latest in history, so I'll use the `--amend` directive to make my changes. Putting all things together, our final command becomes:
 
-    
+
     :::console
     git commit --amend --author 'Kevin Deldycke <kevin@deldycke.com>'
-    
+
 
 
 
@@ -57,26 +57,26 @@ After this, here is how the local branches looks like in [gitg](http://trac.novo
 
 Using the `git log -n1` command, we can compare the old commit:
 
-    
+
     :::console
     commit 81a26f03901918ed4a954d964b2659187f1cc988
     Author: kevin <kevin@laptop-kev.(none)>
     Date:   Mon Mar 8 22:49:43 2010 +0100
-    
+
         Update old shop logo with the brand new one
-    
+
 
 
 with the new one:
 
-    
+
     :::console
     commit adf4620f3d8a89746dd643dcefc3f900f0f69878
     Author: Kevin Deldycke <kevin@deldycke.com>
     Date:   Mon Mar 8 22:49:43 2010 +0100
-    
+
         Update old shop logo with the brand new one
-    
+
 
 
 
@@ -84,21 +84,21 @@ Notice the fixed authorship. The commit ID was also updated as it's just a hash 
 
 Now we can push our changes back to the remote repository:
 
-    
+
     :::console
     git push origin
-    
+
 
 
 
 But this doesn't work and throw the following error:
 
-    
+
     :::console
     To git@github.com:kdeldycke/kev-code.git
      ! [rejected]        master -> master (non-fast forward)
     error: failed to push some refs to 'git@github.com:kdeldycke/kev-code.git'
-    
+
 
 
 
@@ -106,10 +106,10 @@ This is Git protection mechanism in action. Modifying already-published commits 
 
 In our case we will force the remote repository to take our changes:
 
-    
+
     :::console
     git push origin +master:master
-    
+
 
 
 As I told you before this is bad, but nobody really cares: I'm the only person working on this repository ! ;)

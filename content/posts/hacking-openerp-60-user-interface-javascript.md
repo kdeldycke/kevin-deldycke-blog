@@ -13,29 +13,29 @@ First, you have to learn how to inject Javascript code in the web client. My met
 
 That being said, let's start with this simple snippet that will let you force the focus on a particular field, which is great to speed-up user data input on some complicated forms:
 
-    
+
     :::js
     $('#my_field_id').focus();
-    
+
 
 
 
 Once, in an heavily customized form, I had to simulate a click on a custom button each time a user would press the enter key, hence simulating a form submission. This can be done with the following code:
 
-    
+
     :::js
     $("input").keydown(function(e){
         if (e.keyCode === 13){
             $("#my_custom_button_id").trigger('click');
         };
     });
-    
+
 
 
 
 In another case of a highly customized view, I had to change the behavior of a `attrs="{'invisible': [('my_column_id', '=', True)]}"` directive, which make, by default, the targeted field invisible by using a `display: none;` CSS statement. I wanted the `attrs` to use the `visibility: hidden;` CSS instead, to let my field occupy its rendering area and not break the layout. Here is how I managed to take control of the default behavior:
 
-    
+
     :::js
     // Monkey-patch form_setVisible from addons/openerp/static/javascript/form_state.js
     var original_setVisible = form_setVisible;
@@ -45,7 +45,7 @@ In another case of a highly customized view, I had to change the behavior of a `
         // then replace it by a "visibility: hidden;" statement to let our "*template_id_*" fields keeps their rendering area.
         $("td.item-group[attrs*='template_id_']:hidden").show().css('visibility', 'hidden');
     };
-    
+
 
 
 
@@ -54,10 +54,10 @@ Here is the view type selector widget, which is appearing everywhere in OpenERP 
 
 To hide it, running the following jQuery is enough:
 
-    
+
     :::js
     $('#view-selector').hide();
-    
+
 
 
 
@@ -66,28 +66,28 @@ Here are the action buttons and the object navigation pager:
 
 If you want to hide the whole thing, then the following code will do:
 
-    
+
     :::js
     $('.wrapper.action-buttons').hide();
-    
+
 
 
 
 If you're only interested to hide the pager, use:
 
-    
+
     :::js
     $(".wrapper .pager").hide();
-    
+
 
 
 
 And if you want to hide all action buttons but the "Save and Edit" one, the Javascript code is:
 
-    
+
     :::js
     $(".wrapper.action-buttons li a:not([onclick*='save_and_edit'])").hide();
-    
+
 
 
 

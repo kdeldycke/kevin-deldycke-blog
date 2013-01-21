@@ -11,37 +11,37 @@ Qemu images can't be growed. In this example I will show you a little hack to gr
 
 First, convert your `qcow` image to a plain raw file:
 
-    
+
     :::console
     qemu-img convert system.qcow -O raw system.raw
-    
+
 
 
 
 Then, create a dummy file (filled with zeros) of the size of extra space you want to add to your image. In this case, 4GiB (=10GiB - 6GiB):
 
-    
+
     :::console
     dd if=/dev/zero of=zeros.raw bs=1024k count=4096
-    
+
 
 
 
 Fearlessly, add your extra space to your raw system image:
 
-    
+
     :::console
     cat system.raw zeros.raw > big10G.raw
-    
+
 
 
 
 After that you can boot qemu to verify that added free space is available:
 
-    
+
     :::console
     qemu -hda big10G.raw
-    
+
 
 
 
@@ -50,10 +50,10 @@ Here is an real case example of what you can see in a qemu image on which Window
 
 Now, to grow your primary partition, I suggest you to download a Live CD like [gparted Live CD](http://gparted.sourceforge.net/livecd.php) or [System Rescue CD](http://www.sysresccd.org), and boot on the `.iso` file with qemu:
 
-    
+
     :::console
     qemu -hda big10G.raw -cdrom gparted-livecd-0.3.4-5.iso -boot d
-    
+
 
 
 
@@ -61,10 +61,10 @@ This will allow you to grow and manipulate all your partitions safely thanks to 
 
 Finally you can convert back your `raw` image to a `qcow` one to not waste space:
 
-    
+
     :::console
     qemu-img convert big10G.raw -O qcow growed-system.qcow
-    
+
 
 
 

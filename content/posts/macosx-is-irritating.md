@@ -60,7 +60,7 @@ Bingo ! [This is a firmware issue](http://www.slashgear.com/macbook-pro-3-0gbps-
 
 I can now check that it really set SATA bandwidth back to 1.5 Gbps:
 
-    
+
     :::console
     $ cat /var/log/dmesg | grep Gbps
     [    0.800530] ahci 0000:00:0b.0: AHCI 0001.0200 32 slots 6 ports 1.5 Gbps 0x3 impl IDE mode
@@ -68,7 +68,7 @@ I can now check that it really set SATA bandwidth back to 1.5 Gbps:
     [    1.330112] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
     [    2.280096] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
     [    2.290110] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
-    
+
 
 
 

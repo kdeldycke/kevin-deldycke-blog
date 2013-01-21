@@ -9,12 +9,12 @@ tags: CSS, design, firefox, HTML, IE, layout, Web, webdesign
 
 Let's say you rely on a third party CSS framework that set the default layout of your content. The following CSS rule is part of the framework:
 
-    
+
     :::css
     img {
       width: 100%;
     }
-    
+
 
 
 
@@ -26,12 +26,12 @@ One solution (the laziest) is to remove those three lines from the original CSS 
 
 Another solution consist in overriding this `width` attribute in another CSS file that you will call after the original one. This case is covered by the [CSS 2.1 specification](http://www.w3.org/TR/CSS21/) which define the [`inherit` value](http://www.w3.org/TR/CSS21/cascade.html#value-def-inherit):
 
-    
+
     :::css
     img {
       width: inherit;
     }
-    
+
 
 
 
@@ -39,12 +39,12 @@ This solution is perfect and work as expected in Firefox. Unfortunately, and wit
 
 But today I found a trick to fix this in both Firefox and Internet Explorer. The workaround is to use the `auto` value instead of `inherit`:
 
-    
+
     :::css
     img {
       width: auto;
     }
-    
+
 
 
 

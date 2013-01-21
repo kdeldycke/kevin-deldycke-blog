@@ -24,13 +24,13 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 
 
-  
+
   * **Platform**: WordPress.
 
-  
+
   * **Type**: style for [K2 theme](http://getk2.com).
 
-  
+
   * **Description**: I created this style in collaboration with the designer [QPX](http://qpx.coolcavemen.com) for the [Multipolar](http://coolcavemen.com/discography/multipolar/)-era of [Cool Cavemen](http://coolcavemen.com)'s website.
 
 
@@ -54,13 +54,13 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 
 
-  
+
   * **Platform**: Drupal.
 
-  
+
   * **Type**: standalone theme.
 
-  
+
   * **Description**: This is a fork of the [Drupify theme](http://drupal.org/project/drupify) for Drupal 6.x. It just contain all the modifications and hacks I needed for [Cool Cavemen's shop](http://shop.coolcavemen.com).
 
 
@@ -84,13 +84,13 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 
 
-  
+
   * **Platform**: WordPress.
 
-  
+
   * **Type**: style for [K2 theme](http://getk2.com).
 
-  
+
   * **Description**: I used this theme on this blog until I replaced it with [Twenty-Ten](http://wordpress.org/extend/themes/twentyten) (default theme coming with WordPress 3.0).
 
 
@@ -114,13 +114,13 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 
 
-  
+
   * **Platform**: WordPress.
 
-  
+
   * **Type**: style for [K2 theme](http://getk2.com).
 
-  
+
   * **Description**: This is a port of the [legacy Sapphire 1.0 theme](http://www.michaelmartine.com/free-wordpress-themes/free-wordpress-theme-sapphire/) by [Michael Martine](http://www.michaelmartine.com).
 
 
@@ -144,13 +144,13 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 
 
-  
+
   * **Platform**: WordPress.
 
-  
+
   * **Type**: style for [K2 theme](http://getk2.com).
 
-  
+
   * **Description**: Based on K2 default style and only include tiny hacks and a custom header. Used on this site until [I switched to the Sapphire style](http://kevin.deldycke.com/2007/03/sapphire-style-for-k2-wordpress-theme/) above.
 
 
@@ -174,13 +174,13 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 
 
-  
+
   * **Platform**: [e107](http://e107.org).
 
-  
+
   * **Type**: standalone themes.
 
-  
+
   * **Description**: a collection of theme created between 2004 and 2008 for the Cool Cavemen band. A [retrospective of all these themes](http://kevin.deldycke.com/2011/06/cool-cavemen-webdesign-retrospective/) is available on this blog.
 
 

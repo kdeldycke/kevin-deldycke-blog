@@ -37,13 +37,13 @@ If my appalling attempts to impress with the trivia above did not worked on you,
 
 
 
-  
+
   * [![](http://kevin.deldycke.com/wp-content/uploads/2006/05/pdf-icon.gif) PDF resume](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg) ([![](http://kevin.deldycke.com/wp-content/uploads/2006/05/french-flag.png) CV en Français](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1JYITJ3JU9WYvQXWlpGqLO9LzhcfAxiqJSsV8WyVhyyY)). Status: up to date.
 
-  
+
   * [![](http://kevin.deldycke.com/wp-content/uploads/2006/05/linkedin-icon.png) LinkedIn profile](http://linkedin.com/in/kevindeldycke/en) ([![](http://kevin.deldycke.com/wp-content/uploads/2006/05/french-flag.png) version Française](http://linkedin.com/in/kevindeldycke/fr)). Status: synced.
 
-  
+
   * [![](http://kevin.deldycke.com/wp-content/uploads/2006/05/viadeo-icon.png) Viadeo profile](http://viadeo.com/en/profile/kevin.deldycke) ([![](http://kevin.deldycke.com/wp-content/uploads/2006/05/french-flag.png) version Française](http://viadeo.com/fr/profile/kevin.deldycke)). Status: missing details.
 
 

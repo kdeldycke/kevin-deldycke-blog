@@ -13,10 +13,10 @@ In this tiny how-to I'll explain you how to setup a machine as a NFS server and 
 
 First, on the server, install `nfs-utils`:
 
-    
+
     :::console
     urpmi nfs-utils
-    
+
 
 
 
@@ -24,20 +24,20 @@ The nfs-utils package provide a daemon for the kernel NFS server and related too
 
 Then edit the `/etc/exports` file to add the list of the local folders you wqnt to share:
 
-    
+
     :::console
     [root@localhost ~]# cat /etc/exports
     /mnt/hdd *(rw,insecure,all_squash)
-    
+
 
 
 
 Then, to apply change, restart the NFS server:
 
-    
+
     :::console
     /etc/init.d/nfs restart
-    
+
 
 
 
@@ -60,10 +60,10 @@ By the way, on the server, the only required services to activate at startup are
 
 On client side, you also need to install `nfs-utils`, in order to benefit `nfslock`:
 
-    
+
     :::console
     urpmi nfs-utils
-    
+
 
 
 
@@ -71,10 +71,10 @@ The latter is absolutely not required, but if it's a good idea to have it on the
 
 Then to auto-mount the distant shared folder, add the following line to your `/etc/fstab` file:
 
-    
+
     :::console
     192.168.1.22:/mnt/hdd /mnt/distant-hdd nfs user,noatime,rsize=8192,wsize=8192,soft 0 0
-    
+
 
 
 

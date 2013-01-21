@@ -9,10 +9,10 @@ tags: Cool Cavemen, Music, PHP, Web
 
 Here is a little piece of code I want to share with you. I created this some months ago for the [Cool Cavemen band](http://coolcavemen.com). They wanted to release all tracks of their new LP on their website, one track per week. That's the main purpose of the code below:
 
-    
+
     :::php
     <?php
-    
+
     function renderTracks() {
       # Track list
       $track_list = array(
@@ -34,7 +34,7 @@ Here is a little piece of code I want to share with you. I created this some mon
       $start_date = mktime(18, 0, 0, 12, 1, 2006);
       # Delay between each track publication. Look at strtotime() manual for details.
       $delay = "+1 week";
-    
+
       $today = mktime();
       $months = array(
            1 => "Janvier"
@@ -50,7 +50,7 @@ Here is a little piece of code I want to share with you. I created this some mon
         , 11 => "Novembre"
         , 12 => "Décembre"
       );
-    
+
       # Compute publishing date of each track
       $track_dates = array();
       $track_number = 0;
@@ -78,7 +78,7 @@ Here is a little piece of code I want to share with you. I created this some mon
       }
       # The end of the "new" track period is always today
       $new_stop_date = $today;
-    
+
       # HTML rendering of each track
       $track_number     = 0;
       $html_published   = "<table>";
@@ -134,15 +134,15 @@ Here is a little piece of code I want to share with you. I created this some mon
       }
       return $html_published.'</table><hr/>'.$html_unpublished.'</table>';
     }
-    
+
     ?>
-    
+
 
 
 
 Of course this code doesn't prevent someone to download the track if this person knows the exact URL. But having a bullet-proof system was not my priority: I had, at that time, to do something the quick and dirty way. So I give you this code as is it, without further explanations. This code is easy enough to let any rookie understand how it work.
 
-Here is the final result, from the user point of view (and with additional aesthetic enhancements): 
+Here is the final result, from the user point of view (and with additional aesthetic enhancements):
 [![cd-track-delayed-publishing](http://kevin.deldycke.com/wp-content/uploads/2007/02/cd-track-delayed-publishing-300x200.png)](http://kevin.deldycke.com/wp-content/uploads/2007/02/cd-track-delayed-publishing.png)
 
 

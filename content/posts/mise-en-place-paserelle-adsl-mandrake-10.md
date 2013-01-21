@@ -81,10 +81,10 @@ Connectez vous avec le login `root` et le mot de passe définit précédemment.
 
 Nous allons apprendre a installer avec `urpmi`. Installons `drakconf` (le panneau de config de Mandrake). Il ne nous servira que pour la configuration des interfaces réseau. Nous configurerons la sécurité avec `webmin`. On lance la commande:
 
-    
+
     :::console
     $ urpmi drakconf
-    
+
 
 
 
@@ -123,12 +123,12 @@ Ensuite nous allons utiliser `drakconf` pour configurer la connexion internet. T
 
 Vous pourrez voir a ce moment les lignes suivantes:
 
-    
+
     :::console
     activation eth0
     activation eth1
     activation de la connexion inter
-    
+
 
 
 
@@ -136,20 +136,20 @@ Si les trois tentatives se terminent par un échec, c'est simplement que vous av
 
 Et si tout se passe bien, lors du reboot, on a:
 
-    
+
     :::console
     activation eth0 -- OK
     checking internet connexion to start at boot -- OK
-    
+
 
 
 
 On peut ensuite vérifier qu'internet fonctionne en faisant un:
 
-    
+
     :::console
     $ ping google.com
-    
+
 
 
 
@@ -161,10 +161,10 @@ Nous allons maintenant partager la connexion internet avec le réseau interne. P
 
 Commençons par faire un:
 
-    
+
     :::console
     $ urpmi dhcp-server
-    
+
 
 
 
@@ -172,17 +172,17 @@ Le serveur sera automatiquement lancé au démarrage de la machine, mais il faut
 
 Nous allons faire une copie d'un exemple de fichier de configuration, puis nous l'éditions:
 
-    
+
     :::console
     $ cp /etc/dhcpd.conf.sample /etc/dhcp.conf
     $ vi /etc/dhcpd.conf
-    
+
 
 
 
 Modifiez ce dernier pour qu'il contienne quelquechose comme:
 
-    
+
     :::text
     ddns-update-style none;
     subnet 192.168.1.0 netmask 255.255.255.0 {
@@ -190,7 +190,7 @@ Modifiez ce dernier pour qu'il contienne quelquechose comme:
         default-lease-time 21600;
         max-lease-time 43200;
     }
-    
+
 
 
 
@@ -200,19 +200,19 @@ Maintenant que n'importe lequel de nos pc est capable de se connecter au réseau
 
 On installe donc le serveur SSH:
 
-    
+
     :::console
     $ urpmi openssh-server
-    
+
 
 
 
 Encore une fois, le serveur SSH sera lancé automatiquement lors du démarrage de la machine. Nous allons le vérifier en redémarrant la machine et en étant attentif au message:
 
-    
+
     :::console
     lancement de sshd [OK]
-    
+
 
 
 
@@ -257,7 +257,7 @@ Ne pas oublier de forcer l'interface `eth0` comme interface de recherche DHCP pa
 
 Au final, on a un fichier `/etc/dhcpd.conf` qui doit ressembler à ça:
 
-    
+
     :::text
     option subnet-mask 255.255.255.0;
     max-lease-time 43200;
@@ -270,28 +270,28 @@ Au final, on a un fichier `/etc/dhcpd.conf` qui doit ressembler à ça:
         range 192.168.1.128 192.168.1.254;
     }
     authoritative;
-    
+
 
 
 
 Nous allons installer `iptables` et le configurer:
 
-    
+
     :::console
     $ urpmi iptables
     $ echo 1 > /proc/sys/net/ipv4/ip_forward
     $ iptables -t nat -A POSTROUTING -o ppp+ -j MASQUERADE
     $ /etc/init.d/iptables save
-    
+
 
 
 
 Puis on édite `/etc/ssyconfig/network` pour y ajouter le paramètre suivant de façon à ce que l'IP forwaring soit activé au démarrage de la machine:
 
-    
+
     :::text
     FORWARD_IPV4=yes
-    
+
 
 
 
@@ -299,32 +299,32 @@ Nous allons configurer Urpmi pour qu'il puisse aller cherche tout seul les progr
 
 On supprime d'abord la référence au CD-ROM:
 
-    
+
     :::console
     $ urpmi.removemedia -a
-    
+
 
 
 
 Ensuite on ajoute les sources `main`, `contrib`, `updates` et `plf`:
 
-    
+
     :::console
     $ urpmi.addmedia plf-free ftp://ftp.free.fr/pub/Distributions_Linux/plf/mandrake/free/10.1 with hdlist.cz
     $ urpmi.addmedia plf-nonfree ftp://ftp.free.fr/pub/Distributions_Linux/plf/mandrake/non-free/10.1 with hdlist.cz
     $ urpmi.addmedia --update updates ftp://ftp.proxad.net/pub/Distributions_Linux/Mandrakelinux/official/updates/10.1/main_updates with media_info/hdlist.cz
     $ urpmi.addmedia main ftp://ftp.proxad.net/pub/Distributions_Linux/Mandrakelinux/official/10.1/i586/media/main with media_info/hdlist.cz
     $ urpmi.addmedia contrib ftp://ftp.proxad.net/pub/Distributions_Linux/Mandrakelinux/official/10.1/i586/media/contrib with media_info/hdlist.cz
-    
+
 
 
 
 Pour tester que l'installation depuis le net fonctionne parfaitement, on peut installer `vim-enhanced`:
 
-    
+
     :::console
     $ urpmi vim-enhanced
-    
+
 
 
 
@@ -332,10 +332,10 @@ Maintenant que nous pouvons chercher nos programmes depuis internet, le lecteur 
 
 Nous allons programmer une mises a jour de sécurité tous les soirs vers 2 heure du matin. Cette action est possible grâce à la commande:
 
-    
+
     :::console
     $ /usr/sbin/urpmi.update -a && /usr/sbin/urpmi --update --auto --auto-select
-    
+
 
 
 

@@ -13,7 +13,7 @@ Today, to dump a repository you don't manage, all the tools you need are availab
 
 First, let's create an empty local SVN repository:
 
-    
+
     :::console
     $ rm -rf ./svn-repo
     $ svnadmin create ./svn-repo
@@ -21,32 +21,32 @@ First, let's create an empty local SVN repository:
     $ echo "kevin = kevin" >> ./svn-repo/conf/passwd
     $ kill `ps -ef | grep svnserve | grep -v grep | awk '{print $2}'`
     $ svnserve --daemon --listen-port 3690 --root ./svn-repo
-    
+
 
 
 
 Now we have to make sure the synchronization utility is allowed to do anything it wants on our local repository:
 
-    
+
     :::console
     $ echo "#!/bin/sh" > ./svn-repo/hooks/pre-revprop-change
     $ chmod 755 ./svn-repo/hooks/pre-revprop-change
-    
+
 
 
 
 Then we have to initialize the synchronization between the remote SVN (`https://svn.example.com/svn/internal-project`) and the local SVN (`svn://localhost:3690`):
 
-    
+
     :::console
     svnsync init --sync-username "kevin" --sync-password "kevin" --source-username "kevin@example.com" --source-password "XXXXXX" svn://localhost:3690 https://svn.example.com/svn/internal-project
-    
+
 
 
 
 Once all of this configuration is done, we can start dumping the content of the remote repository to our local copy:
 
-    
+
     :::console
     svnsync --non-interactive --sync-username "kevin" --sync-password "kevin" --source-username "kevin@example.com" --source-password "XXXXXX" sync svn://localhost:3690
-    
+

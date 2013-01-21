@@ -26,7 +26,7 @@ I not only edited this video. I also was in charge of the [stage lighting design
 
 [![working-on-grand-ma-001](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-001-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-001.jpg)[![working-on-grand-ma-002](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-002-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-002.jpg)[![working-on-grand-ma-003](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-003-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-003.jpg)
 
-  
+
 
 
 It was the first time I had so much gear to work with (mostly [Martin Mac-2000](http://www.martin.com/product/product.asp?product=mac2000profile) and [Mac-700](http://martin.com/product/product.asp?product=mac700profile)), including the full-size version of the [Grand-MA v1 lighting console](http://en.audiofanzine.com/automatic-lighting-console/ma-lighting/GrandMA-Fullsize/). A week before the show, I played with [GrandMA's emulator](http://www.malighting.com/en/products/control/grandma-onpc.html) to get a glimpse of that desk's philosophy.
@@ -48,7 +48,7 @@ The audio is a multitrack recording taken directly from the [front of house](htt
 
 [![IMG_0492](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0492-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0492.jpg)[![IMG_0502](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0502-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0502.jpg)[![p1010733](http://kevin.deldycke.com/wp-content/uploads/2012/09/p1010733-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/p1010733.jpg)
 
-  
+
 
 
 The raw recording was later remixed by Thomas of the [SoundUp Studio](http://soundupstudio.com/).
@@ -56,7 +56,7 @@ The raw recording was later remixed by Thomas of the [SoundUp Studio](http://sou
 Using different software for audio and video editing, proved to be challenging. And we were worried about the effect of bad synchronization. After some research, it looks like humans tolerate an error below 100ms:
 
 
-> 
+>
 100 ms being the limit under which the temporal gap between audio and video cannot be noticed.
 — [Enforcing Multipoint Multimedia Synchronisation in Videoconferencing Applications](http://books.google.fr/books?id=3IdKbKOxZL4C&pg=PA69&lpg=PA69), Philippe Owezarski, LAAS-CNRS
 
@@ -84,7 +84,7 @@ Before using that workflow on all our tracks, we checked it was not introducing 
 
 [![export-PTFU-audio-ref](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-audio-ref-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-audio-ref.png)[![export-PTFU-master](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-master-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-master.png)
 
-  
+
 
 
 I introduced them when I tried to [get rid of video timecode artifacts](http://kevin.deldycke.com/2010/01/remove-videotape-timecode/). I messed with encoding parameters in Avidemux, and introduced delays. When I realized I could just use the crop filter in Kdenlive, instead of removing the timecode in an external software, I produced perfect timing. That's another big lesson of that project: stay in Kdenlive.

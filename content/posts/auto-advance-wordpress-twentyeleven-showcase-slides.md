@@ -11,7 +11,7 @@ WordPress default theme, [TwentyEleven](http://theme.wordpress.com/themes/twenty
 
 The problem with this mode to me was the lack of an auto-advance feature that will cycle through the slides every X seconds. Luckily I [found a way](http://pastebin.com/s6JEthVi) to automate implement this with some lines of JavaScript:
 
-    
+
     :::html
     <script type="text/javascript" charset="utf-8">
         // Auto-advance the showcase slider
@@ -27,7 +27,7 @@ The problem with this mode to me was the lack of an auto-advance feature that wi
             setInterval(function(){auto_advance()}, change_every * 1000);
         });
     </script>
-    
+
 
 
 

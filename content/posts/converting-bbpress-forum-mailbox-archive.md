@@ -13,17 +13,17 @@ I've just finished to migrate this forum from [bbPress](http://bbpress.org/) to 
 
 First, I simply opened a MySQL terminal on a local copy of our bbPress site:
 
-    
+
     :::console
     $ mysql -u root
     mysql> USE bbpress;
-    
+
 
 
 
 We have several forums there, we're only interested in the private one. Let's get its ID:
 
-    
+
     :::console
     mysql> SELECT ID, post_title FROM wp_posts WHERE post_type = "forum";
     +-------+----------------+
@@ -32,13 +32,13 @@ We have several forums there, we're only interested in the private one. Let's ge
     | 13884 | Private forum  |
     |  2891 | Public forum   |
     +-------+----------------+
-    
+
 
 
 
 For safety, check the number of topics and replies in our forum, to make sure we're on the right track:
 
-    
+
     :::console
     mysql> SELECT COUNT(ID) FROM wp_posts WHERE post_type = "topic" AND post_parent = 13884;
     +-----------+
@@ -52,13 +52,13 @@ For safety, check the number of topics and replies in our forum, to make sure we
     +-----------+
     |     18104 |
     +-----------+
-    
+
 
 
 
 We can now export the content of topics to a CSV file (`/tmp/forum-topic-export.csv`) directly from a MySQL query:
 
-    
+
     :::sql
     SELECT p.ID AS msg_id, p.ID AS topic_id, u.display_name AS realname, u.user_email AS from, p.post_date_gmt AS date, p.post_title AS subject, p.post_content AS body
         INTO OUTFILE '/tmp/forum-topic-export.csv'
@@ -69,13 +69,13 @@ We can now export the content of topics to a CSV file (`/tmp/forum-topic-export.
     FROM wp_posts AS p
     LEFT JOIN wp_users AS u ON p.post_author = u.ID
     WHERE p.post_type = "topic" AND p.post_parent = 13884;
-    
+
 
 
 
 Next, it is for replies to be exported (to `/tmp/forum-reply-export.csv`):
 
-    
+
     :::sql
     SELECT p.ID AS msg_id, p.post_parent AS topic_id, u.display_name AS realname, u.user_email AS from, p.post_date_gmt AS date, p.post_title AS subject, p.post_content AS body
         INTO OUTFILE '/tmp/forum-reply-export.csv'
@@ -90,7 +90,7 @@ Next, it is for replies to be exported (to `/tmp/forum-reply-export.csv`):
         FROM wp_posts
         WHERE post_type = "topic" AND post_parent = 13884
     );
-    
+
 
 
 
@@ -100,7 +100,7 @@ Once this is done, it's easy to transfer these mails to any mail account using, 
 
 Finally, once your confident enough (read: have lots of MySQL backups) that all your forum's threads were safely converted to mails, you're free to purge your bbPress databases of the content you just migrated:
 
-    
+
     :::sql
     DELETE
     FROM wp_posts
@@ -112,4 +112,4 @@ Finally, once your confident enough (read: have lots of MySQL backups) that all 
     DELETE
     FROM wp_posts
     WHERE post_parent = 13884;
-    
+

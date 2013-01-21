@@ -19,7 +19,7 @@ So I've written some CSS to beautify this, and make the final result aligns with
 
 And here is the CSS producing the result above:
 
-    
+
     :::css
     #crp_related ul {
       list-style: none;
@@ -69,7 +69,7 @@ And here is the CSS producing the result above:
       background: rgb(0.2, 0.2, 0.2);
       background: rgba(0, 0, 0, 0.8);
     }
-    
+
 
 
 

@@ -30,66 +30,66 @@ And here is their evaluation (0 is the lowest, 5 the highest note) of the payrol
 
 
 
-  
 
 
-    
+
+
 TinyERP
 
-    
+
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (1/5)
 
-  
 
 
-  
-    
+
+
+
 OpenBravo
 
-    
+
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (0/5)
 
-  
 
 
-  
-    
+
+
+
 Neogia
 
-    
+
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (0/5)
 
-  
 
 
-  
-    
+
+
+
 ERP5
 
-    
+
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-yellow.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (4/5)
 
-  
 
 
-  
-    
+
+
+
 Adempiere
 
-    
+
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (0/5)
 
-  
 
 
-  
-    
+
+
+
 Compiere GPL
 
-    
+
 ![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png)![](http://kevin.deldycke.com/wp-content/uploads/2008/06/star-transparent.png) (0/5)
 
-  
+
 
 
 

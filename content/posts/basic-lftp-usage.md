@@ -11,18 +11,18 @@ Here is a little log of a micro `lftp` session. I post it just to remind me some
 
 Connect to an ftp server and login as `myuser`:
 
-    
+
     :::text
     [kevin@localhost ~]$ lftp ftp://ftp.my-domain.com
     lftp ftp.my-domain.com:~> user myuser
     Password:
-    
+
 
 
 
 Get a list of basic commands:
 
-    
+
     :::console
     lftp myuser@ftp.my-domain.com:/www> help
             !<shell -command>                    (commands)
@@ -50,13 +50,13 @@ Get a list of basic commands:
             source <file>                       user <user |URL> [<pass>]
             version                             wait [<jobno>]
             zcat <files>                        zmore
-    
+
 
 
 
 Navigate in the file structure:
 
-    
+
     :::console
     lftp myuser@ftp.my-domain.com:~> ls
     drwx---r-x   2 myuser users         4096 Jan  9  2005 cgi-bin
@@ -69,23 +69,23 @@ Navigate in the file structure:
     -rwx---r-x   1 myuser users          168 Jan 10  2005 .htaccess
     drwxr-xr-x   3 myuser users         4096 Jan 10  2005 main_admin
     drwxr-xr-x  39 myuser users         4096 Aug  6 01:02 main_plugins
-    
+
 
 
 
 Upload file from local machine to ftp server:
 
-    
+
     :::console
     lftp myuser@ftp.my-domain.com:/www> put /home/kevin/class.php
     64714 bytes transferred in 8 seconds (7.9K/s)
-    
+
 
 
 
 Navigate, view, upload and exit:
 
-    
+
     :::console
     lftp myuser@ftp.my-domain.com:/www> ls
     -rwx---r-x   1 myuser users        64714 Aug 17 00:56 class.php
@@ -103,10 +103,10 @@ Navigate, view, upload and exit:
     -rwx---r-x   1 myuser users         4494 Jan 10  2005 message.php
     lftp myuser@ftp.my-domain.com:/www/main_admin> cat ./version.php
     < ?php
-    
+
     $globinfo['main_version'] = "v 0.0.1 (alpha)";
     $globinfo['main_build'] = "20050815";
-    
+
     100 bytes transferred
     lftp myuser@ftp.my-domain.com:/www/main_admin> put /home/kevin/
     .bash_history  .bash_logout  .bash_profile  .bashrc  .lftp/  .ssh/  .viminfo  class.php  main_admin/  tmp/
@@ -118,7 +118,7 @@ Navigate, view, upload and exit:
     -rwx---r-x   1 myuser users         4494 Jan 10  2005 message.php
     lftp myuser@ftp.my-domain.com:/www/main_admin> exit
     [kevin@localhost ~]$
-    
+
 
 
 

@@ -17,16 +17,16 @@ So here is how I setup Nut on Debian Squeeze to monitor my UPS.
 
 First things first, we have to install the main package and its USB driver:
 
-    
+
     :::console
     $ aptitude install nut nut-usb
-    
+
 
 
 
 Now let's configure Nut and run it:
 
-    
+
     :::console
     $ sed -i 's/MODE=none/MODE=standalone/g' /etc/nut/nut.conf
     $ echo '
@@ -59,7 +59,7 @@ Now let's configure Nut and run it:
     exit 0
     ' > /etc/nut/upssched-cmd
     $ /etc/init.d/nut restart
-    
+
 
 
 
@@ -67,25 +67,25 @@ As you can see you have lots of stuff to configure before Nut can do what it was
 
 You can now test that your system works by using the command below, which list statistics of a given UPS:
 
-    
+
     :::console
     $ upsc MGE-Ellipse750@localhost
-    
+
 
 
 
 But in some rare cases, your UPS will not be recognized and you'll have like me the following messages in your `/var/log/syslog`:
 
-    
+
     :::text
     May  5 16:12:36 paris-server upsmon[10773]: Poll UPS [MGE-Ellipse750@127.0.0.1] failed - Driver not connected
-    
+
 
 
 
 In this case, you should run Nut's driver in debug mode:
 
-    
+
     :::console
     $ /lib/nut/usbhid-ups -DDD -a MGE-Ellipse750
     Network UPS Tools - Generic HID driver 0.34 (2.4.3)
@@ -110,13 +110,13 @@ In this case, you should run Nut's driver in debug mode:
        0.190181     failed to claim USB device: could not claim interface 0: Operation not permitted
        0.190217     failed to detach kernel driver from USB device: could not detach kernel driver from interface 0: Operation not permitted
        0.190252     Can't claim USB device [0463:ffff]: could not detach kernel driver from interface 0: Operation not permitted
-    
+
 
 
 
 As you can see in messages above, Nut can't see my UPS. By chance, forcing nut to use the `root` user let it see my UPS:
 
-    
+
     :::console
     $ /lib/nut/usbhid-ups -DDD -u root -a MGE-Ellipse750
     Network UPS Tools - Generic HID driver 0.34 (2.4.3)
@@ -141,31 +141,31 @@ As you can see in messages above, Nut can't see my UPS. By chance, forcing nut t
        1.351456     Report Descriptor: (769 bytes) => 05 84 09 04 a1 01 09 24 a1 00 09 02 a1 00
        1.351509      55 00 65 00 85 01 75 01 95 05 15 00 25 01 05 85 09 d0 09 44 09 45 09 42 0b
     (...)
-    
+
 
 
 
 So the issue is now clear and is related to permissions. I was able to fix this issue by changing the permissions on the USB device corresponding to my UPS:
 
-    
+
     :::console
     $ chmod 0666 /dev/bus/usb/005/003
-    
+
 
 
 
 Another working way to fix this is to change the group of the device to `nut`:
 
-    
+
     :::console
     $ chown :nut /dev/bus/usb/005/003
-    
+
 
 
 
 BTW, to get the bus number (`005` here) and device number (`003` in my case) of your UPS, run `lsudb`:
 
-    
+
     :::console
     $ lsusb
     Bus 005 Device 003: ID 0463:ffff MGE UPS Systems UPS
@@ -174,7 +174,7 @@ BTW, to get the bus number (`005` here) and device number (`003` in my case) of 
     Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
     Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
     Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-    
+
 
 
 
@@ -182,20 +182,20 @@ Of course this fix is absolutely temporary, as you'll need to perform the change
 
 Based on clues from these bug reports you can fix Udev using different strategies. As I can't decide which one is the cleanest, I just did something that is quite brutal, but works. It consist of replacing in `/lib/udev/rules.d/91-permissions.rules` the line setting rights for USBfs-like devices:
 
-    
+
     :::diff
     --- /lib/udev/rules.d/91-permissions.rules-orig 2011-05-05 18:49:08.015538434 +0200
     +++ /lib/udev/rules.d/91-permissions.rules      2011-05-05 18:49:16.663537978 +0200
     @@ -33,7 +33,7 @@
-     
+
      # usbfs-like devices
      SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", \
     -                               MODE="0664"
     +                               MODE="0666"
-     
+
      # serial devices
-     SUBSYSTEM=="tty",   
-    
+     SUBSYSTEM=="tty",
+
 
 
 

@@ -15,20 +15,20 @@ The first tool you can use to convert a [Markdown](http://en.wikipedia.org/wiki/
 
 To install Pandoc and all its dependencies on my Ubuntu 11.04, I used the following command:
 
-    
+
     :::console
     $ aptitude install pandoc nbibtex texlive-latex-base texlive-latex-recommended texlive-latex-extra preview-latex-style dvipng texlive-fonts-recommended
-    
+
 
 
 
 Then I applied the PDF transformation on the [README.md](https://github.com/kdeldycke/openerp.buildout/blob/master/README.md) file from my [openerp.buildout GitHub project](https://github.com/kdeldycke/openerp.buildout):
 
-    
+
     :::console
     $ wget https://raw.github.com/kdeldycke/openerp.buildout/master/README.md
     $ markdown2pdf README.md -o readme-pandoc.pdf
-    
+
 
 
 
@@ -49,20 +49,20 @@ While trying to solve this issue, I stumble upon another tool...
 
 Gimli is written in Ruby, so let's install it the Ruby way:
 
-    
+
     :::console
     $ aptitude install rubygems wkhtmltopdf
     $ gem install gimli
-    
+
 
 
 
 Then we can convert our Markdown file to a PDF. The following will generate a README.pdf file in the current folder:
 
-    
+
     :::console
     $ /var/lib/gems/1.8/bin/gimli -f ./README.md
-    
+
 
 
 

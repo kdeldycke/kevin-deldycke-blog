@@ -15,7 +15,7 @@ I finally found the Holy Grail in [Gmvault](http://gmvault.org/), a recent open-
 
 To install it on Ubuntu, starts by getting [distribute](http://pypi.python.org/pypi/distribute), a Python dependency:
 
-    
+
     :::console
     $ sudo pip install --upgrade distribute
     Downloading/unpacking distribute
@@ -40,13 +40,13 @@ To install it on Ubuntu, starts by getting [distribute](http://pypi.python.org/p
         Creating /usr/local/lib/python2.7/dist-packages/setuptools.pth
     Successfully installed distribute
     Cleaning up...
-    
+
 
 
 
 Then install Gmvault itself:
 
-    
+
     :::console
     $ sudo pip install gmvault
     Downloading/unpacking gmvault
@@ -115,7 +115,7 @@ Then install Gmvault itself:
       Running setup.py install for gdata
     Successfully installed gmvault argparse Logbook IMAPClient gdata
     Cleaning up...
-    
+
 
 
 
@@ -123,10 +123,10 @@ Now [for authentication, please read the documentation](http://gmvault.org/in_de
 
 Finally, to start the backup of your remote Gmail account, just launch:
 
-    
+
     :::console
     $ gmvault sync me@example.com --resume
-    
+
 
 
 

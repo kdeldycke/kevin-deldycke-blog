@@ -13,22 +13,22 @@ In this post I will give you all the technical details to create a corner banner
 
 We will use the new [hooks](http://code.google.com/p/kaytwo/wiki/K2CSSandCustomCSS#PHP) from the brand new [K2 1.0RC6](http://getk2.com/2008/04/k2-release-candidate-6-released/). So first, we have to create a `functions.php` file in our style directory (example: `/wp-content/themes/k2/styles/my-style`). Then add the following PHP code in it:
 
-    
+
     :::php
     <?php
-    
+
     // Add HTML code required by our corner banner
     function add_corner_banner() {
       ?>
       <a id="cornerbanner" href="http://coolcavemen.com/news/new-website-beta-released/" title="New website released as beta version !"></a>
       <?php
     }
-    
+
     // Call add_corner_banner() method on each template_body_top hook
     add_action(‘template_body_top’, ‘add_corner_banner’);
-    
+
     ?>
-    
+
 
 
 
@@ -36,7 +36,7 @@ This code tell K2 to replace the `template_body_top` hook define in all K2 pages
 
 Then we need to add the following CSS code to our style (`/wp-content/themes/k2/styles/my-style/my-style.css`):
 
-    
+
     :::css
     #cornerbanner {
       background: url("/wp-content/themes/k2/styles/my-style/corner-banner.png") no-repeat;
@@ -49,7 +49,7 @@ Then we need to add the following CSS code to our style (`/wp-content/themes/k2/
       z-index: 999;
       text-decoration: none;
     }
-    
+
 
 
 
@@ -57,35 +57,35 @@ This CSS code refer to the [`corner-banner.png`](http://kevin.deldycke.com/wp-co
 
 This CSS code is designed for a top right banner. If you need a top left banner, replace:
 
-    
+
     :::css
       right: 0;
-    
+
 
 
 by
 
-    
+
     :::css
       left: 0;
-    
+
 
 
 
 This also work for horizontal positioning:
 
-    
+
     :::css
       top: 0;
-    
+
 
 
 can be replaced by
 
-    
+
     :::css
       bottom: 0;
-    
+
 
 
 

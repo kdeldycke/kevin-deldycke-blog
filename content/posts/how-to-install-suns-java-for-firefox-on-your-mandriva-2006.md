@@ -19,10 +19,10 @@ So, here is how I achieve this:
 
   2. As root, lauch:
 
-    
+
     :::console
     sh ./jre-1_5_0_06-linux-i586-rpm.bin
-    
+
 
 
 (name of the file can change depending of the version number).
@@ -33,10 +33,10 @@ So, here is how I achieve this:
 
   4. Back to the console, run:
 
-    
+
     :::console
     urpmi ./jre-1_5_0_06-linux-i586.rpm
-    
+
 
 
 
@@ -44,10 +44,10 @@ So, here is how I achieve this:
 
   5. Go to mozilla system-wide plugin directory:
 
-    
+
     :::console
     cd /usr/lib/mozilla/plugins
-    
+
 
 
 
@@ -55,10 +55,10 @@ So, here is how I achieve this:
 
   6. Create a symlink to the java plugin file:
 
-    
+
     :::console
     ln -s /usr/java/jre1.5.0_06/plugin/i386/ns7/libjavaplugin_oji.so
-    
+
 
 
 

@@ -12,10 +12,10 @@ tags: CLI, hg, mercurial
 
   * Checkout a distant repository:
 
-    
+
     :::console
     hg clone http://bitbucket.org/mirror/django
-    
+
 
 
 
@@ -24,10 +24,10 @@ tags: CLI, hg, mercurial
 
   * Commit all changes locally:
 
-    
+
     :::console
     hg commit -m "Here is my commit fixing bugs."
-    
+
 
 
 
@@ -36,10 +36,10 @@ tags: CLI, hg, mercurial
 
   * Push local commits to the remote repository:
 
-    
+
     :::console
     hg push
-    
+
 
 
 
@@ -48,10 +48,10 @@ tags: CLI, hg, mercurial
 
   * Apply latest changes of the remote repository to our local working copy:
 
-    
+
     :::console
     hg pull
-    
+
 
 
 
@@ -60,10 +60,10 @@ tags: CLI, hg, mercurial
 
   * Align the current repository to a specific revision:
 
-    
+
     :::console
     hg update -r 502
-    
+
 
 
 
@@ -72,10 +72,10 @@ tags: CLI, hg, mercurial
 
   * Restore all changes and files to the state they are in the distant repository:
 
-    
+
     :::console
     hg update -C
-    
+
 
 
 
@@ -84,19 +84,19 @@ tags: CLI, hg, mercurial
 
   * My minimal `~/.hgrc` config file:
 
-    
+
     :::text
     [ui]
     username = Kevin Deldycke <kevin@deldycke.com>
     verbose = True
-    
+
     [auth]
     # BitBucket creds
     bb.prefix = bitbucket.org
     bb.username = kdeldycke
     bb.password = XXXXXXXXXXX
     bb.schemes = https
-    
+
 
 
 
@@ -105,10 +105,10 @@ tags: CLI, hg, mercurial
 
   * Display the last 5 commits:
 
-    
+
     :::console
     hg log --limit 5
-    
+
 
 
 
@@ -117,10 +117,10 @@ tags: CLI, hg, mercurial
 
   * Display the local changes since last commit:
 
-    
+
     :::console
     hg diff
-    
+
 
 
 
@@ -129,10 +129,10 @@ tags: CLI, hg, mercurial
 
   * Undo the last local commit:
 
-    
+
     :::console
     hg rollback
-    
+
 
 
 
@@ -141,10 +141,10 @@ tags: CLI, hg, mercurial
 
   * Create a tag on a particular revision:
 
-    
+
     :::console
     hg tag -r 432 component-2.6.1
-    
+
 
 
 
@@ -153,10 +153,10 @@ tags: CLI, hg, mercurial
 
   * Create a bundle file containing all changes committed locally:
 
-    
+
     :::console
     hg bundle fix-bug.bundle
-    
+
 
 
 

@@ -9,10 +9,10 @@ tags: Linux, transcode, Video
 
 You need to extract all frames of a video and save them as `.jpg` images files ? Transcode can do the job for you thanks to this command line:
 
-    
+
     :::console
     transcode -i video.avi -y im
-    
+
 
 
 

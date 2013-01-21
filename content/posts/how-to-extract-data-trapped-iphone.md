@@ -48,7 +48,7 @@ Most, if not all, other kind of data and metadata are stored in SQLite databases
 
 Finally, just in case you want to extract iPhones data from another backup than the default backup, like from a backup of the backup (isn't that clear ?), making a symlink is enough to trick iPhone Backup Extractor:
 
-    
+
     :::console
     sh-3.2# pwd
     /Users/kevin/Library/Application Support/MobileSync
@@ -60,8 +60,8 @@ Finally, just in case you want to extract iPhones data from another backup than 
     drwx------+ 11 kevin  staff   374B Sep 15 19:29 ..
     lrwxr-xr-x   1 root   staff    99B Sep 16 21:56 Backup -> /Volumes/Untitled 1/laptop-kev-osx/mirror/Users/kevin/Library/Application Support/MobileSync/Backup
     drwxr-xr-x   4 kevin  staff   136B Aug 30 13:20 Backup-copy
-    sh-3.2# 
-    
+    sh-3.2#
+
 
 
 

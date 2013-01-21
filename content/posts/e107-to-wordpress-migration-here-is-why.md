@@ -13,17 +13,17 @@ Beside this, I run this blog, powered by [Wordpress](http://www.wordpress.org), 
 Akismet was the main reason, but here are the 3 others:
 
 
-  * Wordpress has [friendly URLs,  
+  * Wordpress has [friendly URLs,
 
 -- which is great from a search engine optimisation](http://tallecreative.com/designmudd/2005/07/06/wordpress-search-engine-friendly-urls/) point of view;
 
 
-  * Wordpress has [XML-RPC ping](http://codex.wordpress.org/Update_Services),  
+  * Wordpress has [XML-RPC ping](http://codex.wordpress.org/Update_Services),
 
 -- to publish posts to popular sites like [Feed Burner](http://www.feedburner.com), [Feedster](http://www.feedster.com), [Technorati](http://www.technorati.com) and [much more](http://pingomatic.com/) (= faster and easier content spreading through the net);
 
 
-  * Wordpress community is bigger,  
+  * Wordpress community is bigger,
 
 -- than the e107 one, which mean more plugins, more themes, bigger dynamics regarding code and security updates.
 

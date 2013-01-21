@@ -15,58 +15,58 @@ J'ai souscrit à l'[offre no!Box](http://www.ovh.fr/adsl/no_box.xml) avec un mod
 
 Et donc, après s’être connecté depuis un terminal sous Linux en telnet:
 
-    
+
     :::console
     $ telnel 192.168.1.254
-    
+
 
 
 
 Il ne reste qu'à exécuter les commandes suivantes depuis le prompt du modem:
 
-    
+
     :::console
     system reset factory yes proceed yes
     wireless mssid ifconfig ssid_id 0 secmode wpa-psk WPAPSKversion WPA2
-    
+
     ppp ifdelete intf Internet
     ppp relay flush
-    
+
     ip ifadd intf IPoE dest ethoa_8_35
     ip ifattach intf IPoE
-    
+
     dhcp client ifadd intf IPoE
     dhcp client rqoptions add intf IPoE option default-routers
     dhcp client rqoptions add intf IPoE option domain-name-servers
     dhcp client ifattach intf IPoE
-    
+
     ip ifadd intf Wan dest eth-wan
     ip ifattach intf Wan
     dhcp client ifadd intf Wan
     dhcp client rqoptions add intf Wan option default-routers
     dhcp client rqoptions add intf Wan option domain-name-servers
     dhcp client ifattach intf Wan
-    
+
     nat ifconfig intf Wan translation enabled
     nat ifconfig intf IPoE translation enabled
-    
+
     dhcp server config state enabled
-    
+
     service system ifadd name PING_RESPONDER group wan
-    
+
     dsd config state disabled
-    
+
     ip ipdelete addr 10.0.0.138
-    
+
     system config defaultconnection IPoE led green
-    
+
     env set var CONF_SERVICE value IPoE
-    
+
     cwmp config state=enabled mode=full periodicInform=enabled periodicInfInt=86400 maxEnvelopes=1
-    
+
     cwmp server config url=http://94.23.114.8:7777/
-    
+
     saveall
-    
+
     system reboot
-    
+

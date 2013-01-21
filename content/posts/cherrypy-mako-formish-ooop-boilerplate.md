@@ -13,16 +13,16 @@ This stack is composed of:
 
 
 
-  
+
   * [CherryPy](http://www.cherrypy.org/) to serve web content,
 
-  
+
   * [Mako](http://www.makotemplates.org/) for HTML templating,
 
-  
+
   * [Formish](http://github.com/ish) for HTML form generation and validation,
 
-  
+
   * [OOOP](http://github.com/lasarux/ooop) to talk to OpenERP server via web services.
 
 
