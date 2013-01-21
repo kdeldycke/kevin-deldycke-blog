@@ -17,39 +17,39 @@ The archive contained all my mails in plain-text and was organized like this:
 
   * friend-1
 
-    * in
+      * in
 
-      * mail-1.txt
+          * mail-1.txt
 
-      * mail-2.txt
+          * mail-2.txt
 
-      * attachement-1.jpg
+          * attachement-1.jpg
 
-      * attachement-2.pdf
+          * attachement-2.pdf
 
-      * ...
+          * ...
 
-    * out
+      * out
 
-      * mail-10.txt
+          * mail-10.txt
 
-      * mail-11.txt
+          * mail-11.txt
 
-      * attachement-10.jpg
+          * attachement-10.jpg
 
-      * attachement-11.pdf
+          * attachement-11.pdf
 
-      * ...
+          * ...
 
   * friend-2
 
-    * in
+      * in
 
-      * ...
+          * ...
 
-    * out
+      * out
 
-      * ...
+          * ...
 
   * ...
 

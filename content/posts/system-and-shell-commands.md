@@ -42,7 +42,7 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system
         :::console
         -bash: ./myscript.sh: /bin/bash^M: bad interpreter: No such file or directory
 
-  Then the fix consist of removing the bad characters:
+    Then the fix consist of removing the bad characters:
 
         :::console
         sed -i 's/\r//' ./myscript.sh
@@ -62,7 +62,7 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system
         :::console
         lsb_release -a
 
-  or
+    or
 
         :::console
         cat /etc/lsb-release

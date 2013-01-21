@@ -67,7 +67,7 @@ tags: CLI, Git, GitHub, Project management software, Software engineering, Versi
         :::text
         Cannot rewrite branch(es) with a dirty working directory.
 
-  In this case, you can get back a clean repository by removing all the unstaged changes:
+    In this case, you can get back a clean repository by removing all the unstaged changes:
 
         :::console
         git stash

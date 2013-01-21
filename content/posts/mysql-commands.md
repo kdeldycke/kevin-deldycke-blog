@@ -27,7 +27,7 @@ tags: CLI, Databases, MySQL, SQL
         :::console
         mysql --verbose --execute="PURGE BINARY LOGS BEFORE '`date +"%Y-%m-%d" -d last-week`';"
 
-And if you put this in a cron-tab, don't forget to escape percents:
+    And if you put this in a cron-tab, don't forget to escape percents:
 
         :::console
         mysql --verbose --execute="PURGE BINARY LOGS BEFORE '`date +\%Y-\%m-\%d -d last-week`';"
