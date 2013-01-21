@@ -2,8 +2,8 @@ Options +FollowSymLinks
 RewriteEngine on
 
 # Redirect everything to my beautiful subdomain
-RewriteCond %{HTTP_HOST} !^kevin\.deldycke\.net
-RewriteRule ^(.*)$ http://kevin.deldycke.net/$1
+RewriteCond %{HTTP_HOST} !^kevin\.deldycke\.com
+RewriteRule ^(.*)$ http://kevin.deldycke.com/$1
 
 # Redirect paginated URL to non-paginated root
 RedirectMatch 301 /tag/(.*?)/page/(.*)      /tag/$1/
