@@ -12,10 +12,10 @@ tags: CLI, i18n, l10n, Linux, translation
 
   * Check a `.po` file:
 
-    
-    :::console
-    msgfmt -c -v -o /dev/null file.po
-    
+
+        :::console
+        msgfmt -c -v -o /dev/null file.po
+
 
 
 
@@ -24,10 +24,10 @@ tags: CLI, i18n, l10n, Linux, translation
 
   * Wipe out a `.po` file and keep only translated messages:
 
-    
-    :::console
-    msgattrib --translated -o cleaned.po messy.po
-    
+
+        :::console
+        msgattrib --translated -o cleaned.po messy.po
+
 
 
 
@@ -36,10 +36,10 @@ tags: CLI, i18n, l10n, Linux, translation
 
   * Delete duplicate messages in a `.po` file:
 
-    
-    :::console
-    msguniq -o no_duplicate.po duplicate_content.po
-    
+
+        :::console
+        msguniq -o no_duplicate.po duplicate_content.po
+
 
 
 
@@ -48,10 +48,10 @@ tags: CLI, i18n, l10n, Linux, translation
 
   * Show differences between two `.po` files (thanks to Jérome !):
 
-    
-    :::console
-    msgcat -u file1.po file2.po > diff.po
-    
+
+        :::console
+        msgcat -u file1.po file2.po > diff.po
+
 
 
 
@@ -60,10 +60,10 @@ tags: CLI, i18n, l10n, Linux, translation
 
   * Generate a `.mo` file from a `.po` file:
 
-    
-    :::console
-    msgfmt -o target.mo source.po
-    
+
+        :::console
+        msgfmt -o target.mo source.po
+
 
 
 
@@ -72,12 +72,12 @@ tags: CLI, i18n, l10n, Linux, translation
 
   * If you want to have command-line tools use raw string instead of localized ones, add the following directives to your `~/.bash_profile`:
 
-    
-    :::console
-    export LANGUAGE=C
-    export LANG=C
-    export LC_MESSAGES=C
-    
+
+        :::console
+        export LANGUAGE=C
+        export LANG=C
+        export LC_MESSAGES=C
+
 
 
 

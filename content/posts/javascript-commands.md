@@ -12,10 +12,10 @@ tags: javascript, programming, Web
 
   * Print a message in the console:
 
-    
-    :::javascript
-    console.log("Debugging message");
-    
+
+        :::javascript
+        console.log("Debugging message");
+
 
 
 
@@ -24,10 +24,10 @@ tags: javascript, programming, Web
 
   * Add a breakpoint:
 
-    
-    :::javascript
-    debugger;
-    
+
+        :::javascript
+        debugger;
+
 
 
 

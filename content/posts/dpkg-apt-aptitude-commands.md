@@ -12,10 +12,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * List all installed packages:
 
-    
-    :::console
-    dpkg -l
-    
+
+        :::console
+        dpkg -l
+
 
 
 
@@ -24,10 +24,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Extract content of a package:
 
-    
-    :::console
-    ar vx mypackage.deb
-    
+
+        :::console
+        ar vx mypackage.deb
+
 
 
 
@@ -36,10 +36,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * List all recently installed packages:
 
-    
-    :::console
-    zcat -f /var/log/dpkg.log* | grep "\ install\ " | sort
-    
+
+        :::console
+        zcat -f /var/log/dpkg.log* | grep "\ install\ " | sort
+
 
 
 
@@ -48,10 +48,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Install a package from a lower-priority repository, like the backport repository:
 
-    
-    :::console
-    apt-get -t squeeze-backports install my-package
-    
+
+        :::console
+        apt-get -t squeeze-backports install my-package
+
 
 
 
@@ -60,11 +60,11 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Force reinstallation of a package:
 
-    
-    :::console
-    apt-get -d --reinstall install my-package
-    dpkg --install --force-confmiss /var/cache/apt/archives/my-package.deb
-    
+
+        :::console
+        apt-get -d --reinstall install my-package
+        dpkg --install --force-confmiss /var/cache/apt/archives/my-package.deb
+
 
 
 
@@ -73,10 +73,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Clean aptitude local cache:
 
-    
-    :::console
-    apt-get clean
-    
+
+        :::console
+        apt-get clean
+
 
 
 
@@ -85,10 +85,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Uninstall a package throughly (both program files and configuration):
 
-    
-    :::console
-    apt-get remove --purge my_package
-    
+
+        :::console
+        apt-get remove --purge my_package
+
 
 
 
@@ -97,10 +97,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Force removal of a package while ignoring all dependencies:
 
-    
-    :::console
-    dpkg --remove --force-depends libsomething
-    
+
+        :::console
+        dpkg --remove --force-depends libsomething
+
 
 
 
@@ -109,10 +109,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Remove orphaned pakages:
 
-    
-    :::console
-    deborphan | xargs apt-get -y remove --purge
-    
+
+        :::console
+        deborphan | xargs apt-get -y remove --purge
+
 
 
 
@@ -121,10 +121,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Show the changelog of a package (here, the linux kernel of Ubuntu):
 
-    
-    :::console
-    aptitude changelog linux-generic
-    
+
+        :::console
+        aptitude changelog linux-generic
+
 
 
 
@@ -133,10 +133,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Which package contain a given file:
 
-    
-    :::console
-    apt-file search file_to_search
-    
+
+        :::console
+        apt-file search file_to_search
+
 
 
 
@@ -145,10 +145,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Get the list of files of a package:
 
-    
-    :::console
-    apt-file list package_name
-    
+
+        :::console
+        apt-file list package_name
+
 
 
 
@@ -157,10 +157,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Remove `dpkg` lock file:
 
-    
-    :::console
-    rm /var/lib/dpkg/lock
-    
+
+        :::console
+        rm /var/lib/dpkg/lock
+
 
 
 
@@ -169,17 +169,17 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Hold a package with either `dpkg` or `aptitude`:
 
-    
-    :::console
-    echo "kdenlive hold" | dpkg --set-selections
-    
+
+        :::console
+        echo "kdenlive hold" | dpkg --set-selections
 
 
 
-    
-    :::console
-    aptitude hold kdenlive
-    
+
+
+        :::console
+        aptitude hold kdenlive
+
 
 
 
@@ -188,17 +188,17 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * Unhold a package:
 
-    
-    :::console
-    echo "kdenlive install" | dpkg --set-selections
-    
+
+        :::console
+        echo "kdenlive install" | dpkg --set-selections
 
 
 
-    
-    :::console
-    aptitude unhold kdenlive
-    
+
+
+        :::console
+        aptitude unhold kdenlive
+
 
 
 
@@ -207,10 +207,10 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * List holded packages:
 
-    
-    :::console
-    dpkg --get-selections | grep hold
-    
+
+        :::console
+        dpkg --get-selections | grep hold
+
 
 
 

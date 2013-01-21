@@ -12,10 +12,10 @@ tags: CLI, exiftool, image, imagemagick, JPEG, Linux, Metadata, mogrify, photo, 
 
   * Convert several files from a format to another:
 
-    
-    :::console
-    convert img_*.bmp img_%04d.png
-    
+
+        :::console
+        convert img_*.bmp img_%04d.png
+
 
 
 
@@ -24,10 +24,10 @@ tags: CLI, exiftool, image, imagemagick, JPEG, Linux, Metadata, mogrify, photo, 
 
   * Resize images of the current folder to progressive jpeg. Resized images will not be greater than 600x600, but the aspect ratio will be respected:
 
-    
-    :::console
-    convert -resize 600x600 -sharpen 1 -interlace Line * pict%04d.jpg
-    
+
+        :::console
+        convert -resize 600x600 -sharpen 1 -interlace Line * pict%04d.jpg
+
 
 
 
@@ -36,10 +36,10 @@ tags: CLI, exiftool, image, imagemagick, JPEG, Linux, Metadata, mogrify, photo, 
 
   * Remove all metadata of a JPEG file:
 
-    
-    :::console
-    exiftool -all= image.jpg
-    
+
+        :::console
+        exiftool -all= image.jpg
+
 
 
 
@@ -48,10 +48,10 @@ tags: CLI, exiftool, image, imagemagick, JPEG, Linux, Metadata, mogrify, photo, 
 
   * Remove recursively (and in-place) the color profile and comments embedded in all PNG images:
 
-    
-    :::console
-    mogrify -verbose -monitor -strip ./*.png
-    
+
+        :::console
+        mogrify -verbose -monitor -strip ./*.png
+
 
 
 
@@ -60,36 +60,34 @@ tags: CLI, exiftool, image, imagemagick, JPEG, Linux, Metadata, mogrify, photo, 
 
   * Massive in-place optimization of all PNG images available in sub-directories:
 
-    
-    :::console
-    find ./ -iname "*.png" -exec pngcrush "{}" "{}.crushed" \; -exec mv "{}.crushed" "{}" \;
-    
+
+        :::console
+        find ./ -iname "*.png" -exec pngcrush "{}" "{}.crushed" \; -exec mv "{}.crushed" "{}" \;
 
 
 
 
 
 
-  * 
-Same as above, but remove all known chunks, those encoding color profiles, gamma and text, and only keeps transparency chunks:
 
-    
-    :::console
-    find ./ -iname "*.png" -exec pngcrush -rem alla "{}" "{}.crushed" \; -exec mv "{}.crushed" "{}" \;
-    
+  * Same as above, but remove all known chunks, those encoding color profiles, gamma and text, and only keeps transparency chunks:
 
+
+        :::console
+        find ./ -iname "*.png" -exec pngcrush -rem alla "{}" "{}.crushed" \; -exec mv "{}.crushed" "{}" \;
 
 
 
 
 
-  * 
-Lossless optimization of JPEG files:
 
-    
-    :::console
-    find . -iname "*.jpg" -exec jpegtran -optimize -outfile "{}.optimized.jpeg" "{}" \;
-    
+
+  * Lossless optimization of JPEG files:
+
+
+        :::console
+        find . -iname "*.jpg" -exec jpegtran -optimize -outfile "{}.optimized.jpeg" "{}" \;
+
 
 
 

@@ -16,10 +16,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * List all installed packages:
 
-    
-    :::console
-    rpm -qa
-    
+
+        :::console
+        rpm -qa
+
 
 
 
@@ -27,10 +27,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Get the list of all installed packages and their architecture:
 
-    
-    :::console
-    rpm -qa --queryformat "%-40{NAME} %-8{ARCH}\n"
-    
+
+        :::console
+        rpm -qa --queryformat "%-40{NAME} %-8{ARCH}\n"
+
 
 
 
@@ -38,10 +38,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Same as above, but show `i586` packages only:
 
-    
-    :::console
-    rpm -qa --queryformat "%-40{NAME} %-8{ARCH}\n" | grep i586
-    
+
+        :::console
+        rpm -qa --queryformat "%-40{NAME} %-8{ARCH}\n" | grep i586
+
 
 
 
@@ -49,11 +49,11 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Downgrade a package to an old version:
 
-    
-    :::console
-    wget ftp://ftp.repository.org/mandrakelinux/official/10.0/package-1.0-1mdk.i586.rpm
-    rpm -Uvh --oldpackage package-1.0-1mdk.i586.rpm
-    
+
+        :::console
+        wget ftp://ftp.repository.org/mandrakelinux/official/10.0/package-1.0-1mdk.i586.rpm
+        rpm -Uvh --oldpackage package-1.0-1mdk.i586.rpm
+
 
 
 
@@ -61,10 +61,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Unpack/Deflate/Extract a RPM without installing it:
 
-    
-    :::console
-    rpm2cpio dummy.src.rpm | cpio -id
-    
+
+        :::console
+        rpm2cpio dummy.src.rpm | cpio -id
+
 
 
 
@@ -72,10 +72,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Evaluate `%mkrel 3` rpm macro:
 
-    
-    :::console
-    rpm --eval '%mkrel 3'
-    
+
+        :::console
+        rpm --eval '%mkrel 3'
+
 
 
 
@@ -83,10 +83,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Force removal of a package that has problems with embedded "pre-" and/or "post-" scripts:
 
-    
-    :::console
-    rpm -e --noscripts packagename
-    
+
+        :::console
+        rpm -e --noscripts packagename
+
 
 
 
@@ -104,10 +104,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * List all available packages with name containing `python`:
 
-    
-    :::console
-    urpmq --fuzzy python
-    
+
+        :::console
+        urpmq --fuzzy python
+
 
 
 
@@ -115,10 +115,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Find which RPM contain the file named `dummy`:
 
-    
-    :::console
-    urpmf dummy
-    
+
+        :::console
+        urpmf dummy
+
 
 
 
@@ -126,10 +126,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Get informations about the `dummy` RPM:
 
-    
-    :::console
-    urpmq -i dummy
-    
+
+        :::console
+        urpmq -i dummy
+
 
 
 
@@ -137,10 +137,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Get the list of all RPMs that require `python-psyco` package:
 
-    
-    :::console
-    urpmf --requires python-psyco
-    
+
+        :::console
+        urpmf --requires python-psyco
+
 
 
 
@@ -148,10 +148,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Get the list of all RPMs that provide `python-psyco` package:
 
-    
-    :::console
-    urpmf --provides python-psyco
-    
+
+        :::console
+        urpmf --provides python-psyco
+
 
 
 
@@ -159,10 +159,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * I use this command in a cron entry to update automatically and regularly my Mandriva:
 
-    
-    :::console
-    /usr/sbin/urpmi.update -a && /usr/sbin/urpmi --update --auto --auto-select
-    
+
+        :::console
+        /usr/sbin/urpmi.update -a && /usr/sbin/urpmi --update --auto --auto-select
+
 
 
 
@@ -170,10 +170,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Generate urpmi repository index and metadata of the current folder:
 
-    
-    :::console
-    genhdlist ./
-    
+
+        :::console
+        genhdlist ./
+
 
 
 
@@ -194,10 +194,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Install a new package:
 
-    
-    :::console
-    yum install subversion
-    
+
+        :::console
+        yum install subversion
+
 
 
 
@@ -205,10 +205,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Search for packages containing the `x11` string:
 
-    
-    :::console
-    yum search x11
-    
+
+        :::console
+        yum search x11
+
 
 
 
@@ -216,10 +216,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Get the list of packages that provide Python's Subversion bindings:
 
-    
-    :::console
-    yum provides "*/svn/__init__.py"
-    
+
+        :::console
+        yum provides "*/svn/__init__.py"
+
 
 
 
@@ -227,10 +227,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Update repository index:
 
-    
-    :::console
-    yum update
-    
+
+        :::console
+        yum update
+
 
 
 
@@ -238,10 +238,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Clear all caches (sometimes required to force a repository index update):
 
-    
-    :::console
-    yum clean all
-    
+
+        :::console
+        yum clean all
+
 
 
 
@@ -249,10 +249,10 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Generate [Yum](http://yum.baseurl.org) repository index and metadata of the current folder:
 
-    
-    :::console
-    createrepo -v ./
-    
+
+        :::console
+        createrepo -v ./
+
 
 
 

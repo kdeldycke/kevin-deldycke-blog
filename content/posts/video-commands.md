@@ -11,13 +11,13 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Here are some commands to get informations about the nature of a video:
 
-    
-    :::console
-    mplayer -frames 0 -identify ./video.avi
-    tcprobe -i ./video.avi
-    ffmpeg -i ./video.avi
-    file ./video.avi
-    
+
+        :::console
+        mplayer -frames 0 -identify ./video.avi
+        tcprobe -i ./video.avi
+        ffmpeg -i ./video.avi
+        file ./video.avi
+
 
 
 
@@ -36,10 +36,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Remux a flash video to an mp4 container without transcoding:
 
-    
-    :::console
-    ffmpeg -vcodec copy -acodec copy -i inpout.flv output.mp4
-    
+
+        :::console
+        ffmpeg -vcodec copy -acodec copy -i inpout.flv output.mp4
+
 
 
 
@@ -47,10 +47,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Concatenate a series of videos and transcode the audio output to a `flac` file. This [only works with certain multimedia container](http://ffmpeg.org/faq.html#SEC29) (MPEG-1, MPEG-2 PS, DV):
 
-    
-    :::console
-    cat M2U01802.MPG M2U01803.MPG M2U01804.MPG | ffmpeg -i - -acodec flac output.flac
-    
+
+        :::console
+        cat M2U01802.MPG M2U01803.MPG M2U01804.MPG | ffmpeg -i - -acodec flac output.flac
+
 
 
 
@@ -58,10 +58,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Remove the first 16 seconds of video and change container to Matroska:
 
-    
-    :::console
-    ffmpeg -ss 16 -i ./MVI_8763.MOV -vcodec copy -acodec copy ./MVI_8763.mkv
-    
+
+        :::console
+        ffmpeg -ss 16 -i ./MVI_8763.MOV -vcodec copy -acodec copy ./MVI_8763.mkv
+
 
 
 
@@ -69,10 +69,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Extract the first frame of a video (great to generate image preview):
 
-    
-    :::console
-    ffmpeg -i video.mov -r 1  -t 00:00:01 -f image2 images%05d.png
-    
+
+        :::console
+        ffmpeg -i video.mov -r 1  -t 00:00:01 -f image2 images%05d.png
+
 
 
 
@@ -80,10 +80,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Extract a frame every 10 seconds:
 
-    
-    :::console
-    ffmpeg -i video.mov -f image2 -r 1/10 preview-%04d.png
-    
+
+        :::console
+        ffmpeg -i video.mov -f image2 -r 1/10 preview-%04d.png
+
 
 
 
@@ -91,10 +91,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Transcode the video stream to the [lossless HuffYUV codec](http://en.wikipedia.org/wiki/Huffyuv):
 
-    
-    :::console
-    ffmpeg -i ./MVI_1714.MOV -vcodec huffyuv -sameq ./MVI_1714-lossless.avi
-    
+
+        :::console
+        ffmpeg -i ./MVI_1714.MOV -vcodec huffyuv -sameq ./MVI_1714-lossless.avi
+
 
 
 
@@ -113,10 +113,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Transcode the first video stream found in a `m3u` playlist to a 384 kbps MPEG-2 video and 48 kHz Vorbis audio, and serve the resulting stream ina Ogg container to `http://localhost:8888`. To save bandwisth we reduce by two the size of the video:
 
-    
-    :::console
-    vlc -vvv http://mafreebox.freebox.fr/freeboxtv/playlist.m3u --sout '#transcode{vcodec=mp2v,vb=384,scale=0.5,acodec=vorbis,ab=48,channels=1}:standard{access=http,mux=ogg,url=:8888}' -I ncurses 2> /dev/null
-    
+
+        :::console
+        vlc -vvv http://mafreebox.freebox.fr/freeboxtv/playlist.m3u --sout '#transcode{vcodec=mp2v,vb=384,scale=0.5,acodec=vorbis,ab=48,channels=1}:standard{access=http,mux=ogg,url=:8888}' -I ncurses 2> /dev/null
+
 
 
 
@@ -135,10 +135,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Merge multiple video into one:
 
-    
-    :::console
-    avimerge -i part1.avi part2.avi -o big-file.avi
-    
+
+        :::console
+        avimerge -i part1.avi part2.avi -o big-file.avi
+
 
 
 
@@ -146,10 +146,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Extract the raw subtitle stream. The `-a 0x21` option correspond to the subtitle stream's hexadecimal number (= 0x20 + id of the stream):
 
-    
-    :::console
-    tccat -i /space/st-tng/dic1/ -T 1 -L | tcextract -x ps1 -t vob -a 0x22 > subs-en
-    
+
+        :::console
+        tccat -i /space/st-tng/dic1/ -T 1 -L | tcextract -x ps1 -t vob -a 0x22 > subs-en
+
 
 
 
@@ -157,10 +157,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * List export video codecs:
 
-    
-    :::console
-    transcode -i . -y ffmpeg -F list
-    
+
+        :::console
+        transcode -i . -y ffmpeg -F list
+
 
 
 
@@ -179,10 +179,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Change the aspect ratio of a film for the playback. Standard aspect ratio are : 1.33 (4:3), 1.66 (1.66:1), 1.77 (16:9) and 2.35 (2.35:1):
 
-    
-    :::console
-    mplayer -aspect 2:1 ./video.avi
-    
+
+        :::console
+        mplayer -aspect 2:1 ./video.avi
+
 
 
 
@@ -190,10 +190,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Play the video with subtitles:
 
-    
-    :::console
-    mplayer -sub ./subtitle_file.txt ./video.avi
-    
+
+        :::console
+        mplayer -sub ./subtitle_file.txt ./video.avi
+
 
 
 
@@ -201,10 +201,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * This will extract audio track no. 128, downmix the AC3 sound to PCM and write the results to `file.wav`:
 
-    
-    :::console
-    mplayer -vo null -hardframedrop -aid 128 -ao pcm -aofile file.wav dvd://1
-    
+
+        :::console
+        mplayer -vo null -hardframedrop -aid 128 -ao pcm -aofile file.wav dvd://1
+
 
 
 
@@ -212,10 +212,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * This will extract the audio, convert it to PCM and write the resulting wave file to `audio.wav`:
 
-    
-    :::console
-    mplayer -vo null -hardframedrop -ao pcm:file=audio.wav myvideo.avi
-    
+
+        :::console
+        mplayer -vo null -hardframedrop -ao pcm:file=audio.wav myvideo.avi
+
 
 
 
@@ -223,10 +223,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Show all subtitles streams:
 
-    
-    :::console
-    mplayer -vo null -ao null -frames 0 -v 2 dvd://1 >&1 | grep sid
-    
+
+        :::console
+        mplayer -vo null -ao null -frames 0 -v 2 dvd://1 >&1 | grep sid
+
 
 
 
@@ -234,10 +234,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Create a rotated copy of the `file.avi` video (`rotate=1` : clockwise ; `rotate=2` : anti-clockwise):
 
-    
-    :::console
-    mencoder -vop rotate=2 -oac pcm -ovc lavc ./source.avi -o ./dest.avi
-    
+
+        :::console
+        mencoder -vop rotate=2 -oac pcm -ovc lavc ./source.avi -o ./dest.avi
+
 
 
 
@@ -245,10 +245,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Preview a video composed of all jpeg files from the current folder at 15fps (mplayer only support jpeg, png, tga and sgi formats):
 
-    
-    :::console
-    mplayer "mf://*.jpg" -mf fps=15
-    
+
+        :::console
+        mplayer "mf://*.jpg" -mf fps=15
+
 
 
 
@@ -256,10 +256,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Create a 15fps video from all jpeg files of the current folder:
 
-    
-    :::console
-    mencoder "mf://*.jpg" -mf fps=15 -ovc lavc -o ./dest.avi
-    
+
+        :::console
+        mencoder "mf://*.jpg" -mf fps=15 -ovc lavc -o ./dest.avi
+
 
 
 
@@ -267,10 +267,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Encode a SVCD to AVI file:
 
-    
-    :::console
-    mencoder -oac lavc -ovc lavc vcd://1 -o ./svcd.avi
-    
+
+        :::console
+        mencoder -oac lavc -ovc lavc vcd://1 -o ./svcd.avi
+
 
 
 
@@ -278,10 +278,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Transcode video to raw format (be carefull: usually the output video got annoying audio delay):
 
-    
-    :::console
-    mencoder -oac pcm -ovc raw -ofps 25 -noskip ./video.wmv -o ./video.avi
-    
+
+        :::console
+        mencoder -oac pcm -ovc raw -ofps 25 -noskip ./video.wmv -o ./video.avi
+
 
 
 
@@ -289,10 +289,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Encode a video using the default mpeg4 codec at 400 kbps for video and mp3 codec at constant 32 kbps bitrate for audio:
 
-    
-    :::console
-    mencoder -oac mp3lame -lameopts cbr:preset=32 -ovc lavc -lavcopts vbitrate=400 in.avi -o out.avi
-    
+
+        :::console
+        mencoder -oac mp3lame -lameopts cbr:preset=32 -ovc lavc -lavcopts vbitrate=400 in.avi -o out.avi
+
 
 
 
@@ -300,10 +300,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Enhance the sharpness of the video:
 
-    
-    :::console
-    mplayer video.avi -vf smartblur=.6:-.5:0,unsharp=l5x5:.8:c5x5:.4
-    
+
+        :::console
+        mplayer video.avi -vf smartblur=.6:-.5:0,unsharp=l5x5:.8:c5x5:.4
+
 
 
 
@@ -311,10 +311,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Cut a video to keep the first 5.4 seconds:
 
-    
-    :::console
-    mencoder big-file.avi -ss 0 -endpos 5.4 -ovc copy -oac copy -o cutted.avi
-    
+
+        :::console
+        mencoder big-file.avi -ss 0 -endpos 5.4 -ovc copy -oac copy -o cutted.avi
+
 
 
 
@@ -322,10 +322,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Cut a video to keep everything exept the first 5.4 seconds:
 
-    
-    :::console
-    mencoder big-file.avi -ss 5.4 -ovc copy -oac copy -o cutted.avi
-    
+
+        :::console
+        mencoder big-file.avi -ss 5.4 -ovc copy -oac copy -o cutted.avi
+
 
 
 
@@ -333,10 +333,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Show all `mplayer` filter list:
 
-    
-    :::console
-    mplayer -vf help
-    
+
+        :::console
+        mplayer -vf help
+
 
 
 
@@ -344,10 +344,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Get help of a particular filter (`eq2` in this example):
 
-    
-    :::console
-    mplayer -vf eq2=help
-    
+
+        :::console
+        mplayer -vf eq2=help
+
 
 
 
@@ -355,10 +355,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Here is the filter I use to light up a video taken in the dark with my cheap camera. Of course it add noise but thanks to this we can distinguish shapes in the dark.
 
-    
-    :::console
-    mencoder -vf eq2=1.61:1.95:0.54:2.43 -oac pcm -ovc lavc video.avi -o bright-vid.avi
-    
+
+        :::console
+        mencoder -vf eq2=1.61:1.95:0.54:2.43 -oac pcm -ovc lavc video.avi -o bright-vid.avi
+
 
 
 
@@ -366,10 +366,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * And this is the command to preview the result of the filter used above:
 
-    
-    :::console
-    mplayer video.avi -vf eq2=1.61:1.95:0.54:2.43
-    
+
+        :::console
+        mplayer video.avi -vf eq2=1.61:1.95:0.54:2.43
+
 
 
 
@@ -377,11 +377,11 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * This is how I convert raw videos taken with my digital camera into ISO standard MPEG-4 (DivX 5, XVID compatible) videos [to encode in grayscale, add `:gray` option to `-lavcopts`]:
 
-    
-    :::console
-    mencoder source.avi -ovc lavc -oac lavc -ffourcc DX50 -lavcopts vcodec=mpeg4:vbitrate=400:v4mv:mbd=2:trell:autoaspect:dia=2:acodec=mp3:abitrate=32:vpass=1 -vf hqdn3d -o output.avi
-    mencoder source.avi -ovc lavc -oac lavc -ffourcc DX50 -lavcopts vcodec=mpeg4:vbitrate=400:v4mv:mbd=2:trell:autoaspect:dia=2:acodec=mp3:abitrate=32:vpass=2 -vf hqdn3d -o output.avi
-    
+
+        :::console
+        mencoder source.avi -ovc lavc -oac lavc -ffourcc DX50 -lavcopts vcodec=mpeg4:vbitrate=400:v4mv:mbd=2:trell:autoaspect:dia=2:acodec=mp3:abitrate=32:vpass=1 -vf hqdn3d -o output.avi
+        mencoder source.avi -ovc lavc -oac lavc -ffourcc DX50 -lavcopts vcodec=mpeg4:vbitrate=400:v4mv:mbd=2:trell:autoaspect:dia=2:acodec=mp3:abitrate=32:vpass=2 -vf hqdn3d -o output.avi
+
 
 
 
@@ -389,10 +389,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Play all videos of the current folder fullscreen at 4x speed with 50% more brightness:
 
-    
-    :::console
-    mplayer -speed 4 -brightness 50 -fs ./*.avi
-    
+
+        :::console
+        mplayer -speed 4 -brightness 50 -fs ./*.avi
+
 
 
 
@@ -400,10 +400,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Extract audio stream from a video:
 
-    
-    :::console
-    mplayer -dumpaudio -dumpfile audio.ac3 video_source.mpg
-    
+
+        :::console
+        mplayer -dumpaudio -dumpfile audio.ac3 video_source.mpg
+
 
 
 
@@ -422,10 +422,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * List MLT audio codecs:
 
-    
-    :::console
-    melt -query "audio_codecs"
-    
+
+        :::console
+        melt -query "audio_codecs"
+
 
 
 
@@ -433,10 +433,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Extract to `chapter.txt` the chapter file of the track n°1 of the DVD:
 
-    
-    :::console
-    dvdxchap -t 1 /mnt/cdrom > chapter.txt
-    
+
+        :::console
+        dvdxchap -t 1 /mnt/cdrom > chapter.txt
+
 
 
 
@@ -444,10 +444,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
   * Test XV video driver output via gstreamer v0.10:
 
-    
-    :::console
-    gst-launch-0.10 videotestsrc ! xvimagesink
-    
+
+        :::console
+        gst-launch-0.10 videotestsrc ! xvimagesink
+
 
 
 

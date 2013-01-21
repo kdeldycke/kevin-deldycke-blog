@@ -12,10 +12,10 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
 
   * Download a web page an all its requisites:
 
-    
-    :::console
-    wget -r -p -nc -nH --level=1 http://pypi.python.org/simple/python-ldap/
-    
+
+        :::console
+        wget -r -p -nc -nH --level=1 http://pypi.python.org/simple/python-ldap/
+
 
 
 
@@ -24,10 +24,10 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
 
   * Create a PNG image of a rendered html page:
 
-    
-    :::console
-    kwebdesktop 1024 768 capture.png http://slashdot.org/
-    
+
+        :::console
+        kwebdesktop 1024 768 capture.png http://slashdot.org/
+
 
 
 
@@ -36,10 +36,10 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
 
   * Search in all files malformed HTML entities (in this case non-breakable spaces that doesn't end with a semicolon):
 
-    
-    :::console
-    grep -RIi --extended-regexp '&nbsp[^;]' ./
-    
+
+        :::console
+        grep -RIi --extended-regexp '&nbsp[^;]' ./
+
 
 
 
@@ -48,10 +48,10 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
 
   * Here is a one-liner I use to ping some pages on internet to force our corporate proxy to refresh its internal cache:
 
-    
-    :::console
-    for EGG in BeautifulSoup PIL Plone; do wget --server-response -O /dev/null http://pypi.python.org/simple/$EGG/; done
-    
+
+        :::console
+        for EGG in BeautifulSoup PIL Plone; do wget --server-response -O /dev/null http://pypi.python.org/simple/$EGG/; done
+
 
 
 
@@ -60,10 +60,10 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
 
   * Create a minimal self-signed unencrypted SSL certificate without issuer information and a validity period of 10 years:
 
-    
-    :::console
-    openssl req -x509 -nodes -subj '/' -days 3650 -newkey rsa:2048 -keyout self-signed.pem -out self-signed.pem
-    
+
+        :::console
+        openssl req -x509 -nodes -subj '/' -days 3650 -newkey rsa:2048 -keyout self-signed.pem -out self-signed.pem
+
 
 
 
@@ -72,13 +72,13 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
 
   * Create a pair of SSL self-signed certificate and (unencrypted) private key ([source](http://devsec.org/info/ssl-cert.html)):
 
-    
-    :::console
-    openssl genrsa -out private.key 2048
-    openssl req -new -subj '/' -key private.key -out certreq.csr
-    openssl x509 -req -days 3650 -in certreq.csr -signkey private.key -out self-signed.pem
-    rm certreq.csr
-    
+
+        :::console
+        openssl genrsa -out private.key 2048
+        openssl req -new -subj '/' -key private.key -out certreq.csr
+        openssl x509 -req -days 3650 -in certreq.csr -signkey private.key -out self-signed.pem
+        rm certreq.csr
+
 
 
 
@@ -87,10 +87,10 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
 
   * View certificate details:
 
-    
-    :::console
-    openssl x509 -noout -text -in self-signed.pem
-    
+
+        :::console
+        openssl x509 -noout -text -in self-signed.pem
+
 
 
 
@@ -99,10 +99,10 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
 
   * Fetch from a website its first certificate of the chain:
 
-    
-    :::console
-    openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > ~/gmail.pem
-    
+
+        :::console
+        openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > ~/gmail.pem
+
 
 
 
@@ -111,10 +111,10 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
 
   * Fetch the certificate from a website (the one returned is the last of the chain):
 
-    
-    :::console
-    openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | tac | sed -ne '1,/-BEGIN CERTIFICATE-/p' | tac > ./google.pem
-    
+
+        :::console
+        openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | tac | sed -ne '1,/-BEGIN CERTIFICATE-/p' | tac > ./google.pem
+
 
 
 

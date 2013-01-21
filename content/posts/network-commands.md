@@ -12,10 +12,10 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless
 
   * Get the list of all wireless networks reachable by the `wlan0` interface:
 
-    
-    :::console
-    iwlist wlan0 scanning | grep ESSID
-    
+
+        :::console
+        iwlist wlan0 scanning | grep ESSID
+
 
 
 
@@ -24,10 +24,10 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless
 
   * Get the IP address where a domain points to:
 
-    
-    :::console
-    host kevin.deldycke.com
-    
+
+        :::console
+        host kevin.deldycke.com
+
 
 
 
@@ -36,11 +36,11 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless
 
   * Get different kind of DNS records of the `example.com` domain:
 
-    
-    :::console
-    dig example.com CNAME
-    dig example.com MX
-    
+
+        :::console
+        dig example.com CNAME
+        dig example.com MX
+
 
 
 
@@ -49,11 +49,11 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless
 
   * Get some informations about open ports:
 
-    
-    :::console
-    netstat --taupen
-    netstat --lapute
-    
+
+        :::console
+        netstat --taupen
+        netstat --lapute
+
 
 
 
@@ -62,10 +62,10 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless
 
   * Watch network activity in real-time:
 
-    
-    :::console
-    watch -n 1 "lsof -i"
-    
+
+        :::console
+        watch -n 1 "lsof -i"
+
 
 
 

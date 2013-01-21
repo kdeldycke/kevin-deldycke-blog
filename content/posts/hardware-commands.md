@@ -12,10 +12,10 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
 
   * Change the keyboard layout in Debian (don't forget to logoff and logon to activate the new setting):
 
-    
-    :::console
-    dpkg-reconfigure keyboard-configuration
-    
+
+        :::console
+        dpkg-reconfigure keyboard-configuration
+
 
 
 
@@ -24,10 +24,10 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
 
   * Low-level format of the `hda` device:
 
-    
-    :::console
-    dd if=/dev/zero of=/dev/hda
-    
+
+        :::console
+        dd if=/dev/zero of=/dev/hda
+
 
 
 
@@ -36,10 +36,10 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
 
   * Same as above but for paranoïd, as random bits will be written 3 times before performing the "low-level format" (i.e. writting zeros):
 
-    
-    :::console
-    shred --verbose --force --iterations=3 --zero /dev/hda
-    
+
+        :::console
+        shred --verbose --force --iterations=3 --zero /dev/hda
+
 
 
 
@@ -48,10 +48,10 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
 
   * Remove the MBR:
 
-    
-    :::console
-    dd if=/dev/null of=/dev/hda bs=446 count=1
-    
+
+        :::console
+        dd if=/dev/null of=/dev/hda bs=446 count=1
+
 
 
 
@@ -60,11 +60,11 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
 
   * Restore the original Windows MBR:
 
-    
-    :::console
-    apt-get install mbr
-    install-mbr -i n -p D -t 0 /dev/hda
-    
+
+        :::console
+        apt-get install mbr
+        install-mbr -i n -p D -t 0 /dev/hda
+
 
 
 
@@ -73,10 +73,10 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
 
   * Guess the partition table of a device, including damaged ones:
 
-    
-    :::console
-    gpart -v /dev/md0
-    
+
+        :::console
+        gpart -v /dev/md0
+
 
 
 
@@ -85,10 +85,10 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
 
   * To add touchpad kernel support, add the following option to kernel at boot time:
 
-    
-    :::console
-    psmouse.proto=imps
-    
+
+        :::console
+        psmouse.proto=imps
+
 
 
 
@@ -97,10 +97,10 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
 
   * Sometimes, depending of the laptop I use, the mouse pointer disappear from the screen when I plug a VGA cable to a projector. In this case, I do a `CTRL + ALT + F1`, then I login as a normal user and finally I start a new X session:
 
-    
-    :::console
-    startx -- :1
-    
+
+        :::console
+        startx -- :1
+
 
 
 

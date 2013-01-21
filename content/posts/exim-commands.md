@@ -12,10 +12,10 @@ tags: CLI, E-mail, Exim, Linux, Mail transfer agents
 
   * List mails in the queue:
 
-    
-    :::console
-    exim -bp
-    
+
+        :::console
+        exim -bp
+
 
 
 
@@ -24,10 +24,10 @@ tags: CLI, E-mail, Exim, Linux, Mail transfer agents
 
   * View headers of a mail:
 
-    
-    :::console
-    exim -Mvh <mail-id>
-    
+
+        :::console
+        exim -Mvh <mail-id>
+
 
 
 
@@ -36,10 +36,10 @@ tags: CLI, E-mail, Exim, Linux, Mail transfer agents
 
   * View body of a mail:
 
-    
-    :::console
-    exim -Mvb <mail-id>
-    
+
+        :::console
+        exim -Mvb <mail-id>
+
 
 
 
@@ -48,10 +48,10 @@ tags: CLI, E-mail, Exim, Linux, Mail transfer agents
 
   * Remove a mail from the queue:
 
-    
-    :::console
-    exim -Mrm <mail-id>
-    
+
+        :::console
+        exim -Mrm <mail-id>
+
 
 
 
@@ -60,10 +60,10 @@ tags: CLI, E-mail, Exim, Linux, Mail transfer agents
 
   * Remove all frozen mails in the queue:
 
-    
-    :::console
-    exiqgrep -z -i | xargs exim -Mrm
-    
+
+        :::console
+        exiqgrep -z -i | xargs exim -Mrm
+
 
 
 
