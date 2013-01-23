@@ -11,18 +11,18 @@ In this little how-to I will show you how to backup a public SVN repository than
 
 First, create a local repository:
 
-    :::console
-    svk mirror //local https://username@svn.kde.org/home/kde
+    :::bash
+    $ svk mirror //local https://username@svn.kde.org/home/kde
 
 SVK will ask you to create a new repository. Tell it you want so:
 
-    :::console
+    :::text
     Repository /home/user/.svk/local does not exist, create? (y/n) y
 
 Then, sync the remote repository with the local one:
 
-    :::console
-    svk sync //local
+    :::bash
+    $ svk sync //local
 
 That's all !
 
@@ -32,6 +32,6 @@ Now you can play with your local repository (`/home/user/.svk/local` in this exe
 
 **_Update_**: If you want to generate a vanilla SVN dump out of your SVK local mirror, as suggest by [Thomas Mølhave](http://moelhave.dk) in his "[Remote Backup Of A Subversion (svn) Repository](http://moelhave.dk/2006/07/remote-mirroring-a-subversion-svn-repository/)" blog post, use `svnadmin`:
 
-    :::console
-    svnadmin dump -r2:HEAD ~/.svk/local > my-repository-dump
+    :::bash
+    $ svnadmin dump -r2:HEAD ~/.svk/local > my-repository-dump
 

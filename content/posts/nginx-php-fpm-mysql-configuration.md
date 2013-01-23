@@ -17,7 +17,7 @@ I'm mostly running WordPress instances on that server, so you'll see some refere
 
 First, let's tune MySQL. That's the easiest part of that article, as you only need to create a `.cnf` file in `/etc/mysql/conf.d/` and place there all your custom parameters. Here is the content of my `/etc/mysql/conf.d/kev.cnf`:
 
-    :::text
+    :::ini
     [mysqld]
     interactive_timeout = 50
     join_buffer = 1M
@@ -101,7 +101,7 @@ The second customization I made is not about performances but convenience. It ju
 
 Let's say my Wordpress blog is installed in `/var/www/my_wordpress`. To let it be served by Nginx, we add a configuration file for this site in `/etc/nginx/sites-available/my_wordpress`:
 
-    :::text
+    :::nginx
     server {
       server_name blog.example.com;
       root /var/www/my_wordpress/;
@@ -121,12 +121,12 @@ In the configuration above, you can see that I want my blog to be served at `htt
 
 Then don't forget to activate this site:
 
-    :::console
+    :::bash
     $ ln -s /etc/nginx/sites-available/my_wordpress /etc/nginx/sites-enabled/
 
 The file above refer to `/etc/nginx/wordpress.conf` which is where I place all the configuration directives common to all the WordPress blogs on my server. Here is the content of that file:
 
-    :::text
+    :::nginx
     # This order might seem weird - this is attempted to match last if rules below fail.
     # See: http://wiki.nginx.org/HttpCoreModule
     location / {
@@ -142,7 +142,7 @@ The file above refer to `/etc/nginx/wordpress.conf` which is where I place all t
 
 Again, this file make a reference to `php.conf`, which is the same as [the one featured in my previous article](http://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/). I only removed the `index` directive to place it elsewhere, and added a limit on the number of PHP requests a client can make:
 
-    :::text
+    :::nginx
     location ~ \.php$ {
       # Throttle requests to prevent abuse
       limit_req zone=antidos burst=5;
@@ -179,7 +179,7 @@ Again, this file make a reference to `php.conf`, which is the same as [the one f
 
 Here is where the `index` directive moved: `/etc/nginx/conf.d/kev.conf`. I also added there some tweaks and the global request throttling configuration:
 
-    :::text
+    :::nginx
     # Hide Nginx version
     server_tokens off;
 
@@ -194,7 +194,7 @@ Here is where the `index` directive moved: `/etc/nginx/conf.d/kev.conf`. I also 
 
 The `global.conf` file we saw in `/etc/nginx/wordpress.conf` refer to `/etc/nginx/global.conf`, which contain additional measures to remove cruft from log files and enhance security:
 
-    :::text
+    :::nginx
     # Do not log excessive request on common web content like favicon and robots.txt
     location = /favicon.ico {
       log_not_found off;
@@ -241,7 +241,7 @@ All of default Nginx configuration can't be overridden by additional files. We h
 
 That's all for our customizations. We can now restart all our servers:
 
-    :::console
+    :::bash
     $ /etc/init.d/mysql restart
     $ /etc/init.d/php5-fpm restart
     $ /etc/init.d/nginx restart

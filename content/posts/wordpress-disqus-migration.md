@@ -14,7 +14,7 @@ Articles of this blog features a lots of code. Comments are no exception and emb
 
 Let's update this notation directly in WordPress database:
 
-    :::console
+    :::bash
     $ mysqldump --opt kevblog wp_comments > ./comments.sql
     $ perl -pe 's/\[code lang=(.*?)\]/<pre><code class=\1>/g' ./comments.sql > comments-fixed.sql
     $ sed -i 's/\[\/code\]/<\/code><\/pre>/g' ./comments-fixed.sql

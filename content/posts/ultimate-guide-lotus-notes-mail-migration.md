@@ -5,7 +5,7 @@ slug: ultimate-guide-lotus-notes-mail-migration
 title: Ultimate guide of Lotus Notes mail migration
 wordpress_id: 1588
 category: English
-tags: Dovecot, E-mail, IBM Lotus Notes, IMAP, leopard, Linux, Mac OS X, mail conversion tools, maildir, Microsoft Windows, OSX, TCPIP port
+tags: Dovecot, E-mail, IBM Lotus Notes, IMAP, leopard, Linux, Mac OS X, mail conversion tools, maildir, Microsoft Windows, OSX, TCPIP port, Python
 
 The title may sounds pretentious but extracting mails out of Lotus Notes is soooo hard and complicated, that achieving such a task feels like winning an epic battle against the forces of evil.
 
@@ -35,7 +35,7 @@ But again, it seems that the Lotus Notes on my machine was crippled and/or corru
 
 And the command line gave me this:
 
-    :::python
+    :::pytb
     Traceback (most recent call last):
       File "notes2mbox.py", line 21, in <module>
         db = NlconverterLib.getNotesDb(notesNsfPath, notesPasswd)

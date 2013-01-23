@@ -9,7 +9,7 @@ tags: camera, firmware, gopro, Linux, ubuntu, upgrade, Video, wget
 
 The [GoPro HD Hero2](http://www.amazon.com/gp/product/B005WY3TI4/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B005WY3TI4&linkCode=as2&tag=kevideld-20) I just got was bundled with the `HD2.08.12.70` firmware:![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B005WY3TI4)
 
-    :::console
+    :::bash
     $ cat /media/9016-4EF8/MISC/version.txt
     {
     "info version":"1.0",
@@ -21,14 +21,14 @@ Since then a [new firmware was released](http://gopro.com/support/hd-hero2-firmw
 
 First, download the binary firmware:
 
-    :::console
+    :::bash
     $ wget http://software.gopro.com/Firmware/HD2/HD2-firmware.bin
     $ sha256sum ./HD2-firmware.bin
     3403348b39796ff1d775d759e6243d541b4d1db1c8c7992f5742bd258c7c5031  ./HD2-firmware.bin
 
 Then copy the binary file to the root of your mounted GoPro:
 
-    :::console
+    :::bash
     $ cp ./HD2-firmware.bin /media/9016-4EF8/
 
 Now unmount the GoPro, unplug it from your computer and make sure it's powered off.
@@ -49,7 +49,7 @@ It's time to trigger the firmware upgrade:
 
 You can now remove the `HD2-firmware.bin` file at the root of the camera, and check the firmware version:
 
-    :::console
+    :::bash
     $ rm /media/9016-4EF8/HD2-firmware.bin
     $ cat /media/9016-4EF8/MISC/version.txt
     {

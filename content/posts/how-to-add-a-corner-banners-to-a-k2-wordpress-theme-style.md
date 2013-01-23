@@ -13,7 +13,7 @@ In this post I will give you all the technical details to create a corner banner
 
 We will use the new [hooks](http://code.google.com/p/kaytwo/wiki/K2CSSandCustomCSS#PHP) from the brand new [K2 1.0RC6](http://getk2.com/2008/04/k2-release-candidate-6-released/). So first, we have to create a `functions.php` file in our style directory (example: `/wp-content/themes/k2/styles/my-style`). Then add the following PHP code in it:
 
-    :::php
+    :::html+php
     <?php
 
     // Add HTML code required by our corner banner

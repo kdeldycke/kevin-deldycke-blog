@@ -11,8 +11,8 @@ Here is a little log of a micro `lftp` session. I post it just to remind me some
 
 Connect to an ftp server and login as `myuser`:
 
-    :::text
-    [kevin@localhost ~]$ lftp ftp://ftp.my-domain.com
+    :::bash
+    $ lftp ftp://ftp.my-domain.com
     lftp ftp.my-domain.com:~> user myuser
     Password:
 
@@ -100,5 +100,5 @@ Navigate, view, upload and exit:
     -rwx---r-x   1 myuser users          100 Aug 17 00:58 version.php
     -rwx---r-x   1 myuser users         4494 Jan 10  2005 message.php
     lftp myuser@ftp.my-domain.com:/www/main_admin> exit
-    [kevin@localhost ~]$
+    $
 

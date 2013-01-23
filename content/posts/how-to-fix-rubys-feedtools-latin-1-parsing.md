@@ -62,8 +62,6 @@ Ok, so this fix the issue.
 But I'm not comfortable about this problem not solved cleanly. I still don't have a clue about which component should solve the problem definitively. But I have some ideas... Here are my propositions:
 
   1. Submit my monkey patch to FeedTools project for integration, or
-
   2. Merge my monkey patch upstream in legacy ruby CGI library, or
-
   3. Do not allow usage of HTML entities in feeds.
 

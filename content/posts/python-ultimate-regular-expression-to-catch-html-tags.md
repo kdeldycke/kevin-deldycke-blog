@@ -14,7 +14,7 @@ tags: HTML, programming, Python, regexp, Snippet, software, Web, xHTML
 
 And here is it applied in a trivial example (in a python shell):
 
-    :::python
+    :::pycon
     >>> import re
     >>>
     >>> content = """This is the <strong>content</strong> in which we want to

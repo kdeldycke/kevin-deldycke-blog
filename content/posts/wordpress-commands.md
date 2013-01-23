@@ -14,7 +14,7 @@ tags: Blog, MySQL, PHP, WordPress
 
   * This SQL query remove all revisions of posts having the `topic`, `reply` and `attachment` type (tested on WordPress 3.1.x):
 
-        :::sql
+        :::mysql
         DELETE child.*
         FROM wp_posts AS child
         LEFT JOIN wp_posts AS parent ON parent.ID = child.post_parent
@@ -22,7 +22,7 @@ tags: Blog, MySQL, PHP, WordPress
 
   * Count the number of posts, pages, revisions and comments produced by each user:
 
-        :::sql
+        :::mysql
         SELECT COUNT(u.ID) AS content_per_user, user_nicename, u.ID AS user_id
         FROM wp_users AS u
         LEFT JOIN wp_posts AS p ON p.post_author = u.ID

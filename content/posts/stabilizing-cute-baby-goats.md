@@ -25,7 +25,7 @@ I tried to stabilize the shots but was really disappointed by the results. The f
 
 I wanted to compile it from its [sources](http://github.com/georgmartius/vid.stab). But the [binary distribution](http://public.hronopik.de/vid.stab/download.php) available on the project website works out of the box. To save some effort, let's install the latter:
 
-    :::console
+    :::bash
     $ wget http://public.hronopik.de/vid.stab/files/vid.stab-0.93-transcode-1.1-binary-x86_64.tgz
     $ tar xvzf ./vid.stab-0.93-transcode-1.1-binary-x86_64.tgz
     $ sudo mv ./vid.stab-0.93-transcode-1.1-binary-x84_64/filter_*.so /usr/lib/transcode/
@@ -33,17 +33,17 @@ I wanted to compile it from its [sources](http://github.com/georgmartius/vid.sta
 
 Now, as explained in the [documentation](http://public.hronopik.de/vid.stab/features.php), you have to let transcode analyze the video:
 
-    :::console
+    :::bash
     $ transcode -J stabilize -i ./MVI_1714.MOV -y null,null -o dummy
 
 Only after this first pass you can apply the stabilizing transformations:
 
-    :::console
+    :::bash
     $ transcode -J transform -i ./MVI_1714.MOV -y ffmpeg -F huffyuv -o ./MVI_1714-stabilized.MOV
 
 If your not satisfied with the result, you can increase the area of tracking points with the `shakiness` parameter:
 
-    :::console
+    :::bash
     $ transcode -J stabilize=shakiness=8:show=1,preview -i ./MVI_1714.MOV -y null,null -o dummy
 
 In the command line above we added the `show=1,preview` parameters, which have the nice effect of displaying a preview of the work done behind the scene:
@@ -52,12 +52,12 @@ In the command line above we added the `show=1,preview` parameters, which have t
 
 And if you want to see the transformations applied in the final video, just deactivate the cropping and zooming mechanism:
 
-    :::console
+    :::bash
     $ transcode -J transform=crop=1:optzoom=0 -i ./MVI_1714.MOV -y ffmpeg -F huffyuv -o ./MVI_1714-stabilized.MOV
 
 Finally, here are some command helpers to automate the stabilization process for a massive amount of video:
 
-    :::console
+    :::bash
     $ find ./ -name "*.MOV" -exec transcode -J stabilize -i "{}" -y null,null -o dummy \;
     $ find ./ -name "*.MOV" -exec transcode -J transform -i "{}" -y ffmpeg -F huffyuv -o "{}.stabilized.avi" \;
 

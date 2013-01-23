@@ -21,49 +21,46 @@ This little article describe how to setup an automatic backup procedure to a rem
 
 First, install rsync on the client and on the server using:
 
-    :::console
-    urpmi rsync
+    :::bash
+    $ urpmi rsync
 
 ## Synchronization
 
 Then, to synchronise from the local machine to the distant server, just do:
 
-    :::console
-    rsync -avz -e ssh /home/client_user/Documents kevin@homeserver.com:/mnt/raid2/
+    :::bash
+    $ rsync -avz -e ssh /home/client_user/Documents kevin@homeserver.com:/mnt/raid2/
 
   * `/home/client_user/Documents` is the local folder we want to save (located in the home folder of the client user `client_user`),
-
   * `homeserver.com` is the distant server name (could be en IP address),
-
   * `kevin` is the distant user,
-
   * `/mnt/raid2/` is the distant folder where we want to save the local one.
 
 ## Croned synchronization
 
 First, create a pair of cryptographic keys (public, private):
 
-    :::console
-    ssh-keygen -t rsa
+    :::bash
+    $ ssh-keygen -t rsa
 
 Then, from the local machine as user `client_user`, register you on the distant server:
 
-    :::console
-    ssh-copy-id -i ~/.ssh/id_rsa.pub kevin@homeserver.com
+    :::bash
+    $ ssh-copy-id -i ~/.ssh/id_rsa.pub kevin@homeserver.com
 
 In case your distant machine's SSH server is running on another port than 22 (which is the default port), let's said 222, here is the command that emulate `ssh-copy-id` (as the later doesn't have a port parameter):
 
-    :::console
-    cat ~/.ssh/id_rsa.pub | ssh -p 222 kevin@homeserver.com "cat >> ~/.ssh/authorized_keys"
+    :::bash
+    $ cat ~/.ssh/id_rsa.pub | ssh -p 222 kevin@homeserver.com "cat >> ~/.ssh/authorized_keys"
 
 Create a script named `rsync_data_backup.sh` that contain the command you've used previously to synchronize your data:
 
-    :::console
-    rsync -avz -e ssh /home/client_user/Documents kevin@homeserver.com:/mnt/raid2/
+    :::bash
+    $ rsync -avz -e ssh /home/client_user/Documents kevin@homeserver.com:/mnt/raid2/
 
 To run this script with a cron entry, the (unsecure) solution found is to create a key without a passphrase. The cron entry could be something like:
 
-    :::console
+    :::text
     15 13 * * 1-5 client_user /home/client_user/rsync_data_backup.sh > /home/client_user/rsync_data_backup.log
 
 This crontab entry will automaticcaly synchronise our data each first-5 days of the week, at 13:15.

@@ -9,88 +9,88 @@ tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
 
   * List all installed packages:
 
-        :::console
-        dpkg -l
+        :::bash
+        $ dpkg -l
 
   * Extract content of a package:
 
-        :::console
-        ar vx mypackage.deb
+        :::bash
+        $ ar vx mypackage.deb
 
   * List all recently installed packages:
 
-        :::console
-        zcat -f /var/log/dpkg.log* | grep "\ install\ " | sort
+        :::bash
+        $ zcat -f /var/log/dpkg.log* | grep "\ install\ " | sort
 
   * Install a package from a lower-priority repository, like the backport repository:
 
-        :::console
-        apt-get -t squeeze-backports install my-package
+        :::bash
+        $ apt-get -t squeeze-backports install my-package
 
   * Force reinstallation of a package:
 
-        :::console
-        apt-get -d --reinstall install my-package
-        dpkg --install --force-confmiss /var/cache/apt/archives/my-package.deb
+        :::bash
+        $ apt-get -d --reinstall install my-package
+        $ dpkg --install --force-confmiss /var/cache/apt/archives/my-package.deb
 
   * Clean aptitude local cache:
 
-        :::console
-        apt-get clean
+        :::bash
+        $ apt-get clean
 
   * Uninstall a package throughly (both program files and configuration):
 
-        :::console
-        apt-get remove --purge my_package
+        :::bash
+        $ apt-get remove --purge my_package
 
   * Force removal of a package while ignoring all dependencies:
 
-        :::console
-        dpkg --remove --force-depends libsomething
+        :::bash
+        $ dpkg --remove --force-depends libsomething
 
   * Remove orphaned pakages:
 
-        :::console
-        deborphan | xargs apt-get -y remove --purge
+        :::bash
+        $ deborphan | xargs apt-get -y remove --purge
 
   * Show the changelog of a package (here, the linux kernel of Ubuntu):
 
-        :::console
-        aptitude changelog linux-generic
+        :::bash
+        $ aptitude changelog linux-generic
 
   * Which package contain a given file:
 
-        :::console
-        apt-file search file_to_search
+        :::bash
+        $ apt-file search file_to_search
 
   * Get the list of files of a package:
 
-        :::console
-        apt-file list package_name
+        :::bash
+        $ apt-file list package_name
 
   * Remove `dpkg` lock file:
 
-        :::console
-        rm /var/lib/dpkg/lock
+        :::bash
+        $ rm /var/lib/dpkg/lock
 
   * Hold a package with either `dpkg` or `aptitude`:
 
-        :::console
-        echo "kdenlive hold" | dpkg --set-selections
+        :::bash
+        $ echo "kdenlive hold" | dpkg --set-selections
 
-        :::console
-        aptitude hold kdenlive
+        :::bash
+        $ aptitude hold kdenlive
 
   * Unhold a package:
 
-        :::console
-        echo "kdenlive install" | dpkg --set-selections
+        :::bash
+        $ echo "kdenlive install" | dpkg --set-selections
 
-        :::console
-        aptitude unhold kdenlive
+        :::bash
+        $ aptitude unhold kdenlive
 
   * List holded packages:
 
-        :::console
-        dpkg --get-selections | grep hold
+        :::bash
+        $ dpkg --get-selections | grep hold
 

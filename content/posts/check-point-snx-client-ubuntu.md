@@ -13,7 +13,7 @@ The version I found to work on my Ubuntu 11.04 is the _SSL Network Extender (SNX
 
 Just for reference, the build working for me is numbered `800005013`, and here is a copy of what to expect when the connection succeed:
 
-    :::console
+    :::bash
     $ snx -s vpn.example.net -u my_user
     Check Point's Linux SNX
     build 800005013

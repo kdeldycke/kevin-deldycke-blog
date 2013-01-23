@@ -17,7 +17,7 @@ A ZenPhoto album is imported as a post with a `[gallery]` tag in it. All images 
 
 The script has some dependencies on Python modules. These can easily be installed on Debian by running as `root`:
 
-    :::console
+    :::bash
     $ sudo aptitude install python-pip python-lxml
     $ sudo pip install PyMySQL
 

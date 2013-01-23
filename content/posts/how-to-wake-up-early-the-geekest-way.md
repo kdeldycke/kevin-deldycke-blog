@@ -13,8 +13,8 @@ So, to simplify, I was abroad in a hotel, the sun was down since a while, I was 
 
 Here is how I've done it. First, as `root`, create an empty file in `/etc/cron.d/`. Let us call it `wake-up`:
 
-    :::console
-    touch /etc/cron.d/wake-up
+    :::bash
+    $ touch /etc/cron.d/wake-up
 
 Then edit it to put the following command:
 

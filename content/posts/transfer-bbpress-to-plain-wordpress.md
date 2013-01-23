@@ -17,7 +17,7 @@ A bbPress thread is imported as an empty page with the thread's title. All its r
 
 The dependencies of that script can be installed with the following commands:
 
-    :::console
+    :::bash
     $ sudo aptitude install python-pip python-lxml
     $ sudo pip install PyMySQL
 

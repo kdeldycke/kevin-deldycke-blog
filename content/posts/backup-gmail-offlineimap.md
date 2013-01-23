@@ -11,7 +11,7 @@ Gmail's content can be retrieved via IMAP, and we'll use this way to backup all 
 
 Let's start by creating a dedicated configuration file in your home directory. Its content is quite straight-forward, as you can see in my `/home/kevin/.offlineimaprc`, which backup two Gmail accounts:
 
-    :::text
+    :::ini
     [general]
     accounts = gmail_account1, gmail_account2
     maxsyncaccounts = 3

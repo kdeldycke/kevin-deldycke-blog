@@ -9,108 +9,108 @@ tags: CLI, database, Linux, PostgreSQL
 
   * Update the default configuration to allow direct authentication from the local machine:
 
-        :::console
-        sed -i 's/^local\s\+all\s\+all\s\+ident/local all all trust/g' /etc/postgresql/8.4/main/pg_hba.conf
+        :::bash
+        $ sed -i 's/^local\s\+all\s\+all\s\+ident/local all all trust/g' /etc/postgresql/8.4/main/pg_hba.conf
 
   * Same as above but for local IPv4 and IPv6 connexions:
 
-        :::console
-        sed -i 's/^host\s\+all\s\+all\s\+\(.*\)\s\+md5/host all all \1 trust/g' /etc/postgresql/8.4/main/pg_hba.conf
+        :::bash
+        $ sed -i 's/^host\s\+all\s\+all\s\+\(.*\)\s\+md5/host all all \1 trust/g' /etc/postgresql/8.4/main/pg_hba.conf
 
   * List databases:
 
-        :::console
-        psql --list -U kevin
+        :::bash
+        $ psql --list -U kevin
 
   * Create a new `kevin_db` database with the `kevin` user:
 
-        :::console
-        createdb -U kevin kevin_db
+        :::bash
+        $ createdb -U kevin kevin_db
 
   * Remove the database we created above:
 
-        :::console
-        dropdb kevin_db -U kevin
+        :::bash
+        $ dropdb kevin_db -U kevin
 
   * To connect to a particular database:
 
-        :::console
-        psql -d database_id
+        :::bash
+        $ psql -d database_id
 
   * Return the result of a query by aligning its row in a single line, separated by a space ([source](http://stackoverflow.com/a/1252191)):
 
-        :::console
-        psql --tuples-only --no-align -d database_id -c "SELECT id FROM res_users;" | sed ':a;N;$!ba;s/\n/ /g'
+        :::bash
+        $ psql --tuples-only --no-align -d database_id -c "SELECT id FROM res_users;" | sed ':a;N;$!ba;s/\n/ /g'
 
   * Show us how a table of a specific database can be recreated:
 
-        :::console
-        pg_dump my_database --schema-only --table=my_table
+        :::bash
+        $ pg_dump my_database --schema-only --table=my_table
 
   * Dump a database in a compressed format:
 
-        :::console
-        pg_dump my_database -v --format=c --file=/var/lib/postgresql/my_database-db-2011-12-19.dump
+        :::bash
+        $ pg_dump my_database -v --format=c --file=/var/lib/postgresql/my_database-db-2011-12-19.dump
 
   * Restore a compressed dump:
 
-        :::console
-        pg_restore -U my_user -d my_database /var/lib/postgresql/my_database-db-2011-12-19.dump
+        :::bash
+        $ pg_restore -U my_user -d my_database /var/lib/postgresql/my_database-db-2011-12-19.dump
 
   * Import an SQL file to a database:
 
-        :::console
-        psql --username kevin -d kevin_db < ./database_dump.sql
+        :::bash
+        $ psql --username kevin -d kevin_db < ./database_dump.sql
 
   * Search if `kevin` is a PostgreSQL user:
 
-        :::console
-        sudo -u postgres psql --tuples-only --no-align --command "SELECT usename FROM pg_user;" | grep --quiet 'kevin' && echo 'User found !' || echo 'User not found !'
+        :::bash
+        $ sudo -u postgres psql --tuples-only --no-align --command "SELECT usename FROM pg_user;" | grep --quiet 'kevin' && echo 'User found !' || echo 'User not found !'
 
   * Set the owner of a database:
 
-        :::sql
+        :::postgresql
         ALTER DATABASE db_id OWNER TO user_id;
 
   * Set the owner of all tables from the `MY_DB_ID` database to `MY_DB_USER` ([source](http://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql)):
 
-        :::console
-        for tbl in `psql -qAt -c "SELECT tablename FROM pg_tables WHERE schemaname = 'public';" MY_DB_ID` ; do psql -c "ALTER TABLE $tbl OWNER TO MY_DB_USER" MY_DB_ID ; done
+        :::bash
+        $ for tbl in `psql -qAt -c "SELECT tablename FROM pg_tables WHERE schemaname = 'public';" MY_DB_ID` ; do psql -c "ALTER TABLE $tbl OWNER TO MY_DB_USER" MY_DB_ID ; done
 
   * And to run the command above as the `postgres` user, while fixing sequences and views too, do:
 
-        :::console
-        su - postgres <<-'.'
-            DB_NAME=testdb
-            DB_USER=openerp
-            for tbl in `psql -qAt -c "SELECT tablename FROM pg_tables WHERE schemaname = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
-            for tbl in `psql -qAt -c "SELECT table_name FROM information_schema.views WHERE table_schema = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
-            for tbl in `psql -qAt -c "SELECT sequence_name FROM information_schema.sequences WHERE sequence_schema = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
-        .
+        :::bash
+        $ su - postgres <<-'.'
+        $     DB_NAME=testdb
+        $     DB_USER=openerp
+        $     for tbl in `psql -qAt -c "SELECT tablename FROM pg_tables WHERE schemaname = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
+        $     for tbl in `psql -qAt -c "SELECT table_name FROM information_schema.views WHERE table_schema = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
+        $     for tbl in `psql -qAt -c "SELECT sequence_name FROM information_schema.sequences WHERE sequence_schema = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
+        $ .
 
   * Remove from a table all rows older than a month:
 
-        :::console
-        sudo -u postgres psql -d database_id  --command "DELETE FROM smile_log WHERE log_date > current_date - interval '1 month';"
+        :::bash
+        $ sudo -u postgres psql -d database_id  --command "DELETE FROM smile_log WHERE log_date > current_date - interval '1 month';"
 
   * Extract an image that was saved in the database as base64 content, and save it on the file system:
 
-        :::console
-        psql -d my_database -tc "COPY (SELECT decode(convert_from(image_bin, 'UTF-8'), 'base64') FROM res_partner WHERE id = 25) TO '/var/lib/postgresql/logo.png';"
+        :::bash
+        $ psql -d my_database -tc "COPY (SELECT decode(convert_from(image_bin, 'UTF-8'), 'base64') FROM res_partner WHERE id = 25) TO '/var/lib/postgresql/logo.png';"
 
   * Monitor queries being run in real time:
 
-        :::console
-        watch -n 1 'sudo -u postgres psql --tuples-only --command "SELECT datname, procpid, date_trunc(\$\$second\$\$, age(current_timestamp, xact_start)), current_query FROM pg_stat_activity;"'
+        :::bash
+        $ watch -n 1 'sudo -u postgres psql --tuples-only --command "SELECT datname, procpid, date_trunc(\$\$second\$\$, age(current_timestamp, xact_start)), current_query FROM pg_stat_activity;"'
 
   * Disable all triggers of a table, excluding triggers that are used to implement foreign key constraints:
 
-        :::console
-        ALTER TABLE table_id DISABLE TRIGGER ALL;
+        :::bash
+        $ ALTER TABLE table_id DISABLE TRIGGER ALL;
 
   * List all constraints of your database ([source](http://solaimurugan.blogspot.com/2010/10/list-out-all-forien-key-constraints.html)):
 
-        :::sql
+        :::postgresql
         SELECT tc.constraint_name,
         tc.constraint_type,
         tc.table_name,

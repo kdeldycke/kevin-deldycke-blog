@@ -13,16 +13,16 @@ The old gallery was based on [autogallery](http://sourceforge.net/projects/e107a
 
 The first step is to copy the autogallery album structure, with all its content, to Zenphoto:
 
-    :::console
-    cd /www
-    cp -ax ./e107_plugins/autogallery/Gallery/* ./zenphoto/albums/
+    :::bash
+    $ cd /www
+    $ cp -ax ./e107_plugins/autogallery/Gallery/* ./zenphoto/albums/
 
 Then we delete all previews, thumbnails and XML metadatas, to keep in Zenphoto original assets only:
 
-    :::console
-    find ./zenphoto/albums/ -iname "*.xml" | xargs rm -f
-    find ./zenphoto/albums/ -iname "pv_*" | xargs rm -f
-    find ./zenphoto/albums/ -iname "th_*" | xargs rm -f
+    :::bash
+    $ find ./zenphoto/albums/ -iname "*.xml" | xargs rm -f
+    $ find ./zenphoto/albums/ -iname "pv_*" | xargs rm -f
+    $ find ./zenphoto/albums/ -iname "th_*" | xargs rm -f
 
 By now, you should be able to play with your medias using Zenphoto's admin interface.
 
@@ -142,12 +142,7 @@ I think code and comments are self-explainatory. And do not forget to update con
 And finally, for your information, I tested all of this on following versions:
 
   * e107 0.7.11
-
   * autogallery 2.61
-
   * Zenphoto 1.2
-
   * Python 2.5.2
-
   * Linux server
-

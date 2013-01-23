@@ -11,7 +11,7 @@ This post is not about optimization: it only describe a sure and fast way to get
 
 First, we'll get all our packages from an up-to-date [DotDeb repository](http://www.dotdeb.org/). If this is not already done, add those repositories to aptitude:
 
-    :::console
+    :::bash
     $ echo "deb http://packages.dotdeb.org squeeze all" > /etc/apt/sources.list.d/squeeze-dotdeb.list
     $ gpg --keyserver keys.gnupg.net --recv-key 89DF5277
     $ gpg -a --export 89DF5277 | apt-key add -
@@ -19,22 +19,19 @@ First, we'll get all our packages from an up-to-date [DotDeb repository](http://
 
 Now we can install the whole stack:
 
-    :::console
+    :::bash
     $ aptitude install nginx
     $ aptitude install php5-fpm php5-mysql php5-gd php5-curl
     $ aptitude install mysql-server
 
 FYI, here is the list of versions I installed:
-
   * Nginx 1.0.2
-
   * PHP 5.3.6
-
   * MySQL 5.1.57
 
 As a way to test that our setup is working, we'll serve a simple PHP file:
 
-    :::console
+    :::bash
     $ mkdir -p /var/www/example.com/
     $ cd /var/www/example.com/
     $ echo "
@@ -44,12 +41,12 @@ As a way to test that our setup is working, we'll serve a simple PHP file:
 
 Now let's create a minimal Nginx configuration file for this site:
 
-    :::console
+    :::bash
     $ touch /etc/nginx/sites-available/example.com
 
 In this brand new file,  put the following directives:
 
-    :::text
+    :::nginx
     server {
       server_name example.com;
       include /etc/nginx/php.conf;
@@ -64,7 +61,7 @@ This will only work if you've updated your DNS with an `A` record having `exampl
 
 Now it's time to create the `/etc/nginx/php.conf` file referenced in the Nginx configuration above. This file is where I put the generic setup making the bridge between Nginx and PHP-FPM. Here is what it should contain:
 
-    :::text
+    :::nginx
     index index.php index.html index.htm;
 
     location ~ \.php$ {
@@ -100,7 +97,7 @@ Now it's time to create the `/etc/nginx/php.conf` file referenced in the Nginx c
 
 Finally you can activate the site configuration and restart the whole stack:
 
-    :::console
+    :::bash
     $ ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
     $ /etc/init.d/mysql restart
     $ /etc/init.d/php5-fpm restart

@@ -11,7 +11,7 @@ tags: Apple, CLI, dm2img, dmg, HFS, Linux, Mandriva, RPM
 
 `dmg2img` is a command line utility to extract the content of an [Apple Disk Image](http://en.wikipedia.org/wiki/Apple_Disk_Image) `.dmg` file. Here is how I use it to access content:
 
-    :::console
-    dmg2img ./my-package.dmg
-    mount -t hfsplus -o loop ./my-package.img /media/my-mount-point
+    :::bash
+    $ dmg2img ./my-package.dmg
+    $ mount -t hfsplus -o loop ./my-package.img /media/my-mount-point
 

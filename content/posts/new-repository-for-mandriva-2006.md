@@ -13,6 +13,6 @@ I've created a RPM repository on this site to deposit third-party software I fou
 
 To add the repository to your urpmi database, in a terminal, do as root:
 
-    :::console
-    urpmi.addmedia kev-repository http://kevin.deldycke.com/static/repository/mandriva/2006.0/i586 with hdlist.cz
+    :::bash
+    $ urpmi.addmedia kev-repository http://kevin.deldycke.com/static/repository/mandriva/2006.0/i586 with hdlist.cz
 

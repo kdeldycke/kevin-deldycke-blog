@@ -44,6 +44,6 @@ Do not forget to update the dummy Google Analytics account ID above (`UA-XXXXXX-
 
 And finally, to apply the patch, invoke the classic `patch` command:
 
-    :::console
-    patch -p0 < ./google-analytics-tracking-for-non-admin-users.patch
+    :::bash
+    $ patch -p0 < ./google-analytics-tracking-for-non-admin-users.patch
 

@@ -13,7 +13,7 @@ I've just finished to migrate this forum from [bbPress](http://bbpress.org/) to 
 
 First, I simply opened a MySQL terminal on a local copy of our bbPress site:
 
-    :::console
+    :::bash
     $ mysql -u root
     mysql> USE bbpress;
 
@@ -46,7 +46,7 @@ For safety, check the number of topics and replies in our forum, to make sure we
 
 We can now export the content of topics to a CSV file (`/tmp/forum-topic-export.csv`) directly from a MySQL query:
 
-    :::sql
+    :::mysql
     SELECT p.ID AS msg_id, p.ID AS topic_id, u.display_name AS realname, u.user_email AS from, p.post_date_gmt AS date, p.post_title AS subject, p.post_content AS body
         INTO OUTFILE '/tmp/forum-topic-export.csv'
         FIELDS TERMINATED BY ','
@@ -59,7 +59,7 @@ We can now export the content of topics to a CSV file (`/tmp/forum-topic-export.
 
 Next, it is for replies to be exported (to `/tmp/forum-reply-export.csv`):
 
-    :::sql
+    :::mysql
     SELECT p.ID AS msg_id, p.post_parent AS topic_id, u.display_name AS realname, u.user_email AS from, p.post_date_gmt AS date, p.post_title AS subject, p.post_content AS body
         INTO OUTFILE '/tmp/forum-reply-export.csv'
         FIELDS TERMINATED BY ','
@@ -80,7 +80,7 @@ Once this is done, it's easy to transfer these mails to any mail account using, 
 
 Finally, once your confident enough (read: have lots of MySQL backups) that all your forum's threads were safely converted to mails, you're free to purge your bbPress databases of the content you just migrated:
 
-    :::sql
+    :::mysql
     DELETE
     FROM wp_posts
     WHERE post_parent IN (

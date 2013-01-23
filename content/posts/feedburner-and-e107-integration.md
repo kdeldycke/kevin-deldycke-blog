@@ -17,7 +17,7 @@ First, check that the e107 RSS feed plugin is activated. Then [create an account
 
 Then, create (or edit) the `http://www.my-domain.com/.htaccess` file, and add following code:
 
-    :::console
+    :::apache
     RewriteEngine On
 
     RewriteCond %{HTTP_USER_AGENT} !FeedBurner [NC]

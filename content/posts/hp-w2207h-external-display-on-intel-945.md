@@ -11,8 +11,8 @@ I recently had the oportunity to plug the [HP w2207h screen](http://www.amazon.c
 
 The laptop is powered by an [Intel 945 graphic chip](http://en.wikipedia.org/wiki/Intel_GMA#GMA_950):
 
-    :::console
-    [root@localhost ~]# lspci
+    :::bash
+    $ lspci
     00:00.0 Host bridge: Intel Corporation Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub (rev 03)
     00:02.0 VGA compatible controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
     00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS/GME, 943/940GML Express Integrated Graphics Controller (rev 03)
@@ -20,7 +20,7 @@ The laptop is powered by an [Intel 945 graphic chip](http://en.wikipedia.org/wik
 
 [After some googling](http://slforums.typo3-factory.net/lofiversion/index.php/t63508.html) and tests, I've designed the perfect `xorg.conf` for this configuration:
 
-    :::console
+    :::text
     # **********************************************************************
     # Refer to the xorg.conf man page for details about the format of
     # this file.

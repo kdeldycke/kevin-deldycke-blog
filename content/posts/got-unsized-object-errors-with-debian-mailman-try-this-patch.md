@@ -11,7 +11,7 @@ Last week I came across a showstopper bug on Mailman 2.1.9-7, the [current versi
 
 Here is the python traceback (from `/var/log/mailman/error` logfile) I get each time I've sent a mail to my brand new mailing-list:
 
-    :::console
+    :::pytb
     Dec 20 01:20:04 2008 (14275) Uncaught runner exception: len() of unsized object
     Dec 20 01:20:04 2008 (14275) Traceback (most recent call last):
       File "/usr/lib/mailman/Mailman/Queue/Runner.py", line 112, in _oneloop
@@ -44,7 +44,7 @@ Here is the python traceback (from `/var/log/mailman/error` logfile) I get each 
 
 Here is the corresponding (anonymized) mail sent to the mailing list from a Gmail account:
 
-    :::console
+    :::text
     Received: by 10.180.244.13 with HTTP; Fri, 19 Dec 2008 16:32:22 -0800 (PST)
     Message-ID: <1f7b086f0812192632x7427c0f7u2048609ddd50673@mail.gmail.com>
     Date: Sat, 20 Dec 2008 01:32:22 +0100

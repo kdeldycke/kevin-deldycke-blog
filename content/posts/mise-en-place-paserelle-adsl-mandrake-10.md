@@ -12,23 +12,14 @@ Voici un long article regroupant toutes mes notes sur mon projet de mise en plac
 Tout commence avec une épave de PC récupéré, composé de:
 
   * un écran
-
   * une carte graphique Matrox PCI G200
-
   * un bloc d'alimentation
-
   * un disque dur IDE de 6 Go
-
   * 128 Mo + 32 Mo de SD-RAM PC66
-
   * un processeur AMD K6 à 200Mhz
-
   * un lecteur CD-ROM IDE 52x
-
   * deux cartes réseaux ISA 3Com 3c509-b 10Mb avec RJ45
-
   * une clavier
-
   * une souris
 
 Le tout repose sur une carte-mère sans nom et monté dans une carcasse de châssis de type "tour".
@@ -67,7 +58,7 @@ Connectez vous avec le login `root` et le mot de passe définit précédemment.
 
 Nous allons apprendre a installer avec `urpmi`. Installons `drakconf` (le panneau de config de Mandrake). Il ne nous servira que pour la configuration des interfaces réseau. Nous configurerons la sécurité avec `webmin`. On lance la commande:
 
-    :::console
+    :::bash
     $ urpmi drakconf
 
 `urpmi` va chercher les dépendances indispensable à `drakconf` pour fonctionner. Il va les lister et vous demander si vous voulez les installer. Répondez par l'affirmative, et insérez le CD n°1 quand il vous le demande. Il va ensuite installer sous vos yeux tout les packages nécessaires.
@@ -75,17 +66,11 @@ Nous allons apprendre a installer avec `urpmi`. Installons `drakconf` (le pannea
 On lance ensuite `drakconf` en ligne de commande puis:
 
   * On entre dans le menu "network & internet".
-
   * Choisissez "connexion via LAN".
-
   * Il vous demandera éventuellement de choisir le driver de la carte manuellement si il ne peut le déterminer automatiquement. De même pour les paramètres du module/driver utilisé.
-
   * Choisissez ensuite de configurer `eth0`.
-
   * Puis demander une configuration de l'adresse IP manuelle, et non via le service `dhcp`. L'adresse IP sera `192.168.1.1/255.255.255.0` et la carte sera branchée à chaud sur le réseau et sera lancée au démarrage.
-
   * Ne changez pas la config dans l’écran suivant. Ni dans celui d’après (zeroconf).
-
   * Redémarrez enfin le réseau quand cela vous sera demandé.
 
 Nous allons maintenant vérifier que le réseau est parfaitement configuré. Faite un `ifconfig`. Normalement vous devez avoir trois interfaces: `eth1`, `lo` et `eth0`.
@@ -94,7 +79,7 @@ Ensuite nous allons utiliser `drakconf` pour configurer la connexion internet. T
 
 Vous pourrez voir a ce moment les lignes suivantes:
 
-    :::console
+    :::text
     activation eth0
     activation eth1
     activation de la connexion inter
@@ -103,13 +88,13 @@ Si les trois tentatives se terminent par un échec, c'est simplement que vous av
 
 Et si tout se passe bien, lors du reboot, on a:
 
-    :::console
+    :::text
     activation eth0 -- OK
     checking internet connexion to start at boot -- OK
 
 On peut ensuite vérifier qu'internet fonctionne en faisant un:
 
-    :::console
+    :::bash
     $ ping google.com
 
 Si finalement la connexion ne fonctionne pas, vérifier dans le fichier `/etc/sysconfig/network` que la variable `GATEWAYDEV` est positionnée sur l'interface ethernet qui est branchée au modem (`eth1` dans mon cas).
@@ -120,14 +105,14 @@ Nous allons maintenant partager la connexion internet avec le réseau interne. P
 
 Commençons par faire un:
 
-    :::console
+    :::bash
     $ urpmi dhcp-server
 
 Le serveur sera automatiquement lancé au démarrage de la machine, mais il faut le configurer.
 
 Nous allons faire une copie d'un exemple de fichier de configuration, puis nous l'éditions:
 
-    :::console
+    :::bash
     $ cp /etc/dhcpd.conf.sample /etc/dhcp.conf
     $ vi /etc/dhcpd.conf
 
@@ -147,12 +132,12 @@ Maintenant que n'importe lequel de nos pc est capable de se connecter au réseau
 
 On installe donc le serveur SSH:
 
-    :::console
+    :::bash
     $ urpmi openssh-server
 
 Encore une fois, le serveur SSH sera lancé automatiquement lors du démarrage de la machine. Nous allons le vérifier en redémarrant la machine et en étant attentif au message:
 
-    :::console
+    :::text
     lancement de sshd [OK]
 
 Au lieu de configurer à la main le serveur SSH, nous allons utiliser Webmin, qui est une interface de configuration et d'administration web à distance. On fait donc un `urpmi webmin` pour l'installer. De la même manière ce deamon va ce lancer au démarrage. On redémarrera la machine pour être sur qu'il démarre comme nous le souhaitons.
@@ -180,9 +165,7 @@ Maintenant je peut configurer entièrement ma passerelle via un PC extérieur.
 Dans Webmin, on va dans `server` > `DHCP` > `edit client options`, pour mettre à jour la configuration du serveur DHCP et communiquer les coordonnées de notre passerelle. Voici les nouveaux paramètres:
 
   * Subnet mask: `255.255.255.0`
-
   * Default router: `192.168.1.1` (= l'IP de notre routeur)
-
   * DNS serveur: choisir un des deux DNS fournis par votre FAI
 
 Ne pas oublier de forcer l'interface `eth0` comme interface de recherche DHCP par défaut, sinon le deamon aura du mal à démarrer au boot une fois sur deux.
@@ -204,7 +187,7 @@ Au final, on a un fichier `/etc/dhcpd.conf` qui doit ressembler à ça:
 
 Nous allons installer `iptables` et le configurer:
 
-    :::console
+    :::bash
     $ urpmi iptables
     $ echo 1 > /proc/sys/net/ipv4/ip_forward
     $ iptables -t nat -A POSTROUTING -o ppp+ -j MASQUERADE
@@ -219,12 +202,12 @@ Nous allons configurer Urpmi pour qu'il puisse aller cherche tout seul les progr
 
 On supprime d'abord la référence au CD-ROM:
 
-    :::console
+    :::bash
     $ urpmi.removemedia -a
 
 Ensuite on ajoute les sources `main`, `contrib`, `updates` et `plf`:
 
-    :::console
+    :::bash
     $ urpmi.addmedia plf-free ftp://ftp.free.fr/pub/Distributions_Linux/plf/mandrake/free/10.1 with hdlist.cz
     $ urpmi.addmedia plf-nonfree ftp://ftp.free.fr/pub/Distributions_Linux/plf/mandrake/non-free/10.1 with hdlist.cz
     $ urpmi.addmedia --update updates ftp://ftp.proxad.net/pub/Distributions_Linux/Mandrakelinux/official/updates/10.1/main_updates with media_info/hdlist.cz
@@ -233,14 +216,14 @@ Ensuite on ajoute les sources `main`, `contrib`, `updates` et `plf`:
 
 Pour tester que l'installation depuis le net fonctionne parfaitement, on peut installer `vim-enhanced`:
 
-    :::console
+    :::bash
     $ urpmi vim-enhanced
 
 Maintenant que nous pouvons chercher nos programmes depuis internet, le lecteur CD-ROM n'est plus utile. On arrête donc la machine avec la commande `shutdown -h now`, et on débranche physiquement le lecteur CD pour le ranger sur nos étagères. Lors du démarrage, le service `hardrake` va détecter l’absence du lecteur. Il va vous afficher une fenêtre de dialogue, que l'on va ignorer.
 
 Nous allons programmer une mises a jour de sécurité tous les soirs vers 2 heure du matin. Cette action est possible grâce à la commande:
 
-    :::console
+    :::bash
     $ /usr/sbin/urpmi.update -a && /usr/sbin/urpmi --update --auto --auto-select
 
 Dans Webmin, cela se passe dans `system` > `scheduled cron jobs`. Cliquer sur `create a new cron job` pour ajouter la commande ci-dessus.

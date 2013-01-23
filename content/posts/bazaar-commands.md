@@ -9,26 +9,26 @@ tags: bazaar, CLI, development, Launchpad, Linux, OpenERP, programming, Version 
 
   * Check-out in the local `openerp-server` folder the `6.0` branch of the OpenERP server project from Launchpad:
 
-        :::console
-        bzr branch lp:openobject-server/6.0 openerp-server
+        :::bash
+        $ bzr branch lp:openobject-server/6.0 openerp-server
 
   * Same command as above, but fetch a particular revision:
 
-        :::console
-        bzr branch lp:openobject-server/6.0 -r 3425 openerp-server
+        :::bash
+        $ bzr branch lp:openobject-server/6.0 -r 3425 openerp-server
 
   * Get revision number of the local copy we sit in:
 
-        :::console
-        bzr revno ./
+        :::bash
+        $ bzr revno ./
 
   * Change the repository to a previous revision:
 
-        :::console
-        bzr revert -r 1234
+        :::bash
+        $ bzr revert -r 1234
 
   * Remove lock file on the current repository:
 
-        :::console
-        bzr break-lock
+        :::bash
+        $ bzr break-lock
 

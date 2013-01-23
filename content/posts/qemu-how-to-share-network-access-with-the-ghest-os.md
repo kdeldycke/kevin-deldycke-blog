@@ -11,7 +11,7 @@ tags: iptables, Linux, Network, Qemu
 
 Create a file `/etc/qemu-ifup` that contain:
 
-    :::console
+    :::sh
     #!/bin/sh
     sudo modprobe tun
     sudo /sbin/ifconfig $1 up 10.0.2.2 netmask 255.255.255.0 broadcast 10.0.2.255
@@ -25,24 +25,24 @@ Create a file `/etc/qemu-ifup` that contain:
 
 Don't forget to give it execution permissions:
 
-    :::console
-    chmod 755 /etc/qemu-ifup
+    :::bash
+    $ chmod 755 /etc/qemu-ifup
 
 Start qemu with the following parameters:
 
-    :::console
-    qemu /home/kevin/qemu-mdk10.1.img -n /etc/qemu-ifup
+    :::bash
+    $ qemu /home/kevin/qemu-mdk10.1.img -n /etc/qemu-ifup
 
 Setup the network in your ghest OS in qemu:
 
-    :::console
-    ifconfig eth0 10.0.2.15
-    route add default gw 10.0.2.2
+    :::bash
+    $ ifconfig eth0 10.0.2.15
+    $ route add default gw 10.0.2.2
 
 Test the visibility of the guest OS from the host OS:
 
-    :::console
-    [root@localhost kevin]# ping 10.0.2.15
+    :::bash
+    $ ping 10.0.2.15
     PING 10.0.2.15 (10.0.2.15) 56(84) bytes of data.
     64 bytes from 10.0.2.15: icmp_seq=1 ttl=64 time=2.96 ms
     64 bytes from 10.0.2.15: icmp_seq=2 ttl=64 time=0.295 ms
@@ -54,8 +54,8 @@ Test the visibility of the guest OS from the host OS:
 
 Test the visibility of the host from the guest:
 
-    :::console
-    [root@localhost root]# ping 10.0.2.2
+    :::bash
+    $ ping 10.0.2.2
     PING 10.0.2.2 (10.0.2.2) 56(84) bytes of data.
     64 bytes from 10.0.2.2: icmp_seq=1 ttl=64 time=1.08 ms
     64 bytes from 10.0.2.2: icmp_seq=2 ttl=64 time=0.433 ms

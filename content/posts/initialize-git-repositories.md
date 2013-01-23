@@ -11,7 +11,7 @@ The first few days I used Git, I messed up my repository. I had to reset and rec
 
 To create a Git repository, nothing else is absolutely necessary than these few trivial commands:
 
-    :::console
+    :::bash
     $ mkdir kev-code
     $ cd kev-code/
     $ git init
@@ -22,12 +22,12 @@ In this situation, I came to the conclusion that it's a good idea to create an e
 
 So, let's create an empty commit:
 
-    :::console
+    :::bash
     $ git commit --allow-empty -m 'Initial commit'
 
 Then get the commit hash:
 
-    :::console
+    :::bash
     $ git log
     commit 395290bcdb8ffccfbff89e42cb976077fbd3c1b7
     Author: Kevin Deldycke <kevin@deldycke.com>
@@ -37,7 +37,7 @@ Then get the commit hash:
 
 We now change the commit date of our first commit to epoch start:
 
-    :::console
+    :::bash
     $ git filter-branch --env-filter '
     >     if [ $GIT_COMMIT = 395290bcdb8ffccfbff89e42cb976077fbd3c1b7 ]
     >     then
@@ -49,7 +49,7 @@ We now change the commit date of our first commit to epoch start:
 
 And check that the previous operation did what we expected:
 
-    :::console
+    :::bash
     $ git log
     commit 8fe2934d1552c97246836987f0ea08e10ba749ae
     Author: Kevin Deldycke <kevin@deldycke.com>
@@ -61,14 +61,14 @@ Looks good !
 
 For convenience, we'll now attach a tag to this initial commit. Let's call it `init`:
 
-    :::console
+    :::bash
     $ git tag "init"
 
 This will came handy later when we'll need to create a branch from here.
 
 It's time to push all changes to our brand new public repository:
 
-    :::console
+    :::bash
     $ git remote add origin git@github.com:kdeldycke/kev-code.git
     $ git status
     # On branch master

@@ -24,20 +24,20 @@ Before going further, you need to have a machine that is able to compile code, w
 
 First we create our project directory, then we download, from its SVN repository, the bootstrap code of buildout:
 
-    :::console
+    :::bash
     $ mkdir -p ~/plone-vanilla
     $ cd ~/plone-vanilla
     $ curl http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py --output ./bootstrap.py
 
 Then we create our buildout config file and edit it:
 
-    :::console
+    :::bash
     $ touch ./buildout.cfg
     $ vi ./buildout.cfg
 
 The `buildout.cfg` file should contain the following directives, which tell buildout to install Plone 3.2.3, Zope 2.10.8 and all their dependencies:
 
-    :::text
+    :::ini
     [buildout]
     find-links = http://dist.plone.org
                  http://download.zope.org/ppix
@@ -68,13 +68,13 @@ The `buildout.cfg` file should contain the following directives, which tell buil
 
 Now let's build our Plone and Zope environnement:
 
-    :::console
+    :::bash
     $ python2.4 ./bootstrap.py
     $ ./bin/buildout
 
 At the end, if your build process didn't fail, you'll be able to start your Zope server:
 
-    :::console
+    :::bash
     $ ./bin/zope-instance
     program: /Users/kevin/plone-vanilla/parts/zope-instance/bin/runzope
     daemon manager not running

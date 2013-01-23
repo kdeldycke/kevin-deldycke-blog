@@ -15,7 +15,7 @@ I finally found the Holy Grail in [Gmvault](http://gmvault.org/), a recent open-
 
 To install it on Ubuntu, starts by getting [distribute](http://pypi.python.org/pypi/distribute), a Python dependency:
 
-    :::console
+    :::bash
     $ sudo pip install --upgrade distribute
     Downloading/unpacking distribute
       Running setup.py egg_info for package distribute
@@ -42,7 +42,7 @@ To install it on Ubuntu, starts by getting [distribute](http://pypi.python.org/p
 
 Then install Gmvault itself:
 
-    :::console
+    :::bash
     $ sudo pip install gmvault
     Downloading/unpacking gmvault
       Downloading gmvault-1.7-beta.tar.gz (73Kb): 73Kb downloaded
@@ -115,7 +115,7 @@ Now [for authentication, please read the documentation](http://gmvault.org/in_de
 
 Finally, to start the backup of your remote Gmail account, just launch:
 
-    :::console
+    :::bash
     $ gmvault sync me@example.com --resume
 
 All you have to do next is to put the command above in a cron job to trigger a regular backup.

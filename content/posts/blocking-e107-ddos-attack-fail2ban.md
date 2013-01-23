@@ -15,7 +15,7 @@ I'm no exception and the old and decrepit part of Cool Cavemen's website [still 
 
 First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf` and put the following directives there:
 
-    :::text
+    :::ini
     # Fail2Ban configuration file
     # Notes.:  Regexp to catch all attemps to exploit an e107 vulnerability.
     # Author: Kevin Deldycke
@@ -31,7 +31,7 @@ First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf` 
 
 Then update you fail2ban config file (`/etc/fail2ban/jail.local` in my case) with the appropriate section:
 
-    :::text
+    :::ini
     [apache-e107ddos]
     enabled  = true
     filter   = apache-e107ddos
@@ -42,12 +42,12 @@ Then update you fail2ban config file (`/etc/fail2ban/jail.local` in my case) wit
 
 Then restart your fail2ban service:
 
-    :::console
+    :::bash
     $ /etc/init.d/fail2ban restart
 
 And you'll start to get those nice logs:
 
-    :::console
+    :::bash
     $ tail -F /var/log/fail2ban.log
     2010-06-23 16:05:37,417 fail2ban.actions: WARNING [apache-e107ddos] Ban 193.33.21.199
     2010-06-23 16:05:58,113 fail2ban.actions: WARNING [apache-e107ddos] Ban 89.108.116.226

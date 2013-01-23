@@ -20,9 +20,9 @@ Once, in an heavily customized form, I had to simulate a click on a custom butto
 
     :::js
     $("input").keydown(function(e){
-        if (e.keyCode === 13){
-            $("#my_custom_button_id").trigger('click');
-        };
+      if (e.keyCode === 13){
+        $("#my_custom_button_id").trigger('click');
+      };
     });
 
 In another case of a highly customized view, I had to change the behavior of a `attrs="{'invisible': [('my_column_id', '=', True)]}"` directive, which make, by default, the targeted field invisible by using a `display: none;` CSS statement. I wanted the `attrs` to use the `visibility: hidden;` CSS instead, to let my field occupy its rendering area and not break the layout. Here is how I managed to take control of the default behavior:
@@ -31,10 +31,10 @@ In another case of a highly customized view, I had to change the behavior of a `
     // Monkey-patch form_setVisible from addons/openerp/static/javascript/form_state.js
     var original_setVisible = form_setVisible;
     form_setVisible = function(container, field, visible) {
-        original_setVisible(container, field, visible);
-        // Revert OpenERP's invisible attribute default behaviour by removing the "display: none;" it has just set,
-        // then replace it by a "visibility: hidden;" statement to let our "*template_id_*" fields keeps their rendering area.
-        $("td.item-group[attrs*='template_id_']:hidden").show().css('visibility', 'hidden');
+      original_setVisible(container, field, visible);
+      // Revert OpenERP's invisible attribute default behaviour by removing the "display: none;" it has just set,
+      // then replace it by a "visibility: hidden;" statement to let our "*template_id_*" fields keeps their rendering area.
+      $("td.item-group[attrs*='template_id_']:hidden").show().css('visibility', 'hidden');
     };
 
 Here is the view type selector widget, which is appearing everywhere in OpenERP in the top-right corner:

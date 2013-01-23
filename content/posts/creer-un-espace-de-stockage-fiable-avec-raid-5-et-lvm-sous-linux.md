@@ -22,9 +22,7 @@ Supposons à partir de maintenant que l'OS est installé, pour nous concentrer u
 J'ai donc les devices suivants:
 
   * `/dev/hda` -> DD de 160 Go (40 Go pour l'OS et 120 Go de libre)
-
   * `/dev/sda` -> DD externe de 120 Go n°1
-
   * `/dev/sdb` -> DD externe de 120 Go n°2
 
 Nous voulons créer une matrice RAID 5 à partir de 3 x 120 Go. Plutôt que de faire une seule grosse partition de 120 Go par disque, nous allons créer dans chacun des disques trois partitions de 40 Go (3 x 3 x 40 Go = 3 x 120 Go). Nous construirons ensuite 3 unités RAID 5 de 3 x 40 Go puis nous les assemblerons via LVM. L'intérêt de diviser nos grosses partitions en plus petites est de réduire considérablement (par un facteur 3 dans notre cas) le temps de régénération de nos unités RAID en cas de corruption d'une partition.
@@ -39,27 +37,25 @@ _Note_: A partir de la 10.1, la version de `webmin` fournie avec la Mandrake sup
 
 Installation de mdadm:
 
-    :::console
-    urpmi mdadm
+    :::bash
+    $ urpmi mdadm
 
 Création des matrices:
 
-    :::console
-    mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/hda2 /dev/sda2 /dev/sdb2
-    mdadm --create --verbose /dev/md1 --level=5 --raid-devices=3 /dev/hda3 /dev/sda1 /dev/sdb1
-    mdadm --create --verbose /dev/md2 --level=5 --raid-devices=3 /dev/hda4 /dev/sda3 /dev/sdb3
+    :::bash
+    $ mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/hda2 /dev/sda2 /dev/sdb2
+    $ mdadm --create --verbose /dev/md1 --level=5 --raid-devices=3 /dev/hda3 /dev/sda1 /dev/sdb1
+    $ mdadm --create --verbose /dev/md2 --level=5 --raid-devices=3 /dev/hda4 /dev/sda3 /dev/sdb3
 
 Lors de la création, les paramètres par défaut sont suffisants. Pour information, les paramètres optimaux sont:
 
   * Parity: left symetric
-
   * Persistent super block
-
   * Chunk size: 32kb ou 64kb (pour nos partitions de 40 Go)
 
 Éditons le fichier de configuration `/etc/mdadm.conf`:
 
-    :::console
+    :::text
     DEVICE          /dev/sda*
     DEVICE          /dev/sdb*
     DEVICE          /dev/hda2
@@ -71,17 +67,17 @@ Lors de la création, les paramètres par défaut sont suffisants. Pour informat
 
 Avant d'aller plus loin, il faut attendre que les matrices soient construites:
 
-    :::console
-    watch -n1 'cat /proc/mdstat'
+    :::bash
+    $ watch -n1 'cat /proc/mdstat'
 
 Dans mon cas, cela à nécessité entre deux et trois heures pour chaque unité RAID.
 
 _Note_: avec la Mandrake 10.1, lors de la création des matrices RAID, on aurait eu des problèmes du type `raidstart failed : /dev/md1: No such file or directory`, qui peuvent être résolus en créant les device manuellement:
 
-    :::console
-    mknod /dev/md0 b 9 0
-    mknod /dev/md1 b 9 1
-    mknod /dev/md2 b 9 2
+    :::bash
+    $ mknod /dev/md0 b 9 0
+    $ mknod /dev/md1 b 9 1
+    $ mknod /dev/md2 b 9 2
 
 Ces commandes créent les unités RAID dont nous avons besoin. Malheureusement elles ne sont pas autodetectées au démarrage donc, dans le cas d'une mdk 10.1, il aurait fallu faire cette manip à chaque démarrage de la machine. Voila une bonne raison pour ne pas utiliser la version 10.1.
 
@@ -91,22 +87,22 @@ J'ai choisi LVM pour agréger les unités RAID, pour bénéficier d'un redimensi
 
 Installation de LVM:
 
-    :::console
-    urpmi lvm2
+    :::bash
+    $ urpmi lvm2
 
 On peut consulter la liste des disques parents sur le système avec `lvmdiskscan`.
 
 Ensuite il faut créer un volume physique (PV = Physical Volume) pour chaque unité RAID:
 
-    :::console
-    pvcreate /dev/md0
-    pvcreate /dev/md1
-    pvcreate /dev/md2
+    :::bash
+    $ pvcreate /dev/md0
+    $ pvcreate /dev/md1
+    $ pvcreate /dev/md2
 
 Créons maintenant un groupe de volumes contenant nos trois partitions :
 
-    :::console
-    vgcreate vg01 /dev/md0 /dev/md1 /dev/md2
+    :::bash
+    $ vgcreate vg01 /dev/md0 /dev/md1 /dev/md2
 
 (marche pas ???)
 
@@ -114,12 +110,12 @@ Créons maintenant un groupe de volumes contenant nos trois partitions :
 
 Si vous voulez utiliser du RAID linéaire plutôt que LVM, il faut créer une nouvelle unité RAID sur la base des trois premières:
 
-    :::console
-    mdadm --create --verbose /dev/md3 --level=linear --raid-devices=3 /dev/md0 /dev/md1 /dev/md2
+    :::bash
+    $ mdadm --create --verbose /dev/md3 --level=linear --raid-devices=3 /dev/md0 /dev/md1 /dev/md2
 
 Puis penser à mettre à jour `/etc/mdadm.conf`:
 
-    :::console
+    :::text
     DEVICE          /dev/sda*
     DEVICE          /dev/sdb*
     DEVICE          /dev/hda2
@@ -137,62 +133,58 @@ Puis penser à mettre à jour `/etc/mdadm.conf`:
 
 Formater en xfs:
 
-    :::console
-    mkfs.xfs -f /dev/md3
+    :::bash
+    $ mkfs.xfs -f /dev/md3
 
 J'ai choisi xfs comme filesystem car il peut être agrandit à chaud, lorsque la partition est montée.
 
 Pour monter le tout:
 
-    :::console
-    mkdir -p /mnt/data
-    mount /dev/md3 /mnt/data
+    :::bash
+    $ mkdir -p /mnt/data
+    $ mount /dev/md3 /mnt/data
 
 Et enfin, pour le montage automatique au démarrage de notre serveur, il faut ajouter la ligne suivante à notre fichier `/etc/fstab`:
 
-    :::console
+    :::text
     /dev/md3 /mnt/data xfs defaults 0 0
 
 ## Maintenance du système
 
   * Réintégrer une partition dans la matrice.
 
-Si une partition est éjectée d'une unité raid (par exemple `sda1` sur `md1`), il faut faire:
+    Si une partition est éjectée d'une unité raid (par exemple `sda1` sur `md1`), il faut faire:
 
-    :::console
-    cat /proc/mdstat
-    mdadm --examine /dev/sda1
-    mdadm /dev/md1 -a /dev/sda1
-    cat /proc/mdstat
+        :::bash
+        $ cat /proc/mdstat
+        $ mdadm --examine /dev/sda1
+        $ mdadm /dev/md1 -a /dev/sda1
+        $ cat /proc/mdstat
 
-La première commande montre que le RAID est dégradé. La seconde commande examine le status du disque qui à été éjecté de la matrice. La troisième ligne permet de réintégrer à chaud la partition dans la matrice. Et enfin la dernière commande nous montre l'avancement de la reconstruction de la matrice (ce qui peut prendre pas mal de temps).
+    La première commande montre que le RAID est dégradé. La seconde commande examine le status du disque qui à été éjecté de la matrice. La troisième ligne permet de réintégrer à chaud la partition dans la matrice. Et enfin la dernière commande nous montre l'avancement de la reconstruction de la matrice (ce qui peut prendre pas mal de temps).
 
   * Ré-assembler une matrice.
 
-La commande est du type:
+    La commande est du type:
 
-    :::console
-    mdadm --stop /dev/md0
-    mdadm --assemble /dev/md0
+        :::bash
+        $ mdadm --stop /dev/md0
+        $ mdadm --assemble /dev/md0
 
-Attention `--assemble` se base sur le fichier `/etc/mdadm.conf`.
+    Attention `--assemble` se base sur le fichier `/etc/mdadm.conf`.
 
   * Créer une unité RAID dégradée.
 
-La commande suivante créée une unité RAID 5 sur 3 disques durs, en indiquant que le premier est absent via le mot clé `missing`:
+    La commande suivante créée une unité RAID 5 sur 3 disques durs, en indiquant que le premier est absent via le mot clé `missing`:
 
-    :::console
-    mdadm --create /dev/md0 --level=5 --raid-devices=3 missing /dev/hda1 /dev/sda1
+        :::bash
+        $ mdadm --create /dev/md0 --level=5 --raid-devices=3 missing /dev/hda1 /dev/sda1
 
 ## De la lecture complémentaire sur RAID 5 et LVM
 
   * [Notes on Building a Linux Storage Server, by Martin Smith](http://www.ethics-gradient.net/myth/storage.html)
-
   * [Gentoo Install on Software RAID mirror and LVM2 on top of RAID](http://gentoo-wiki.com/HOWTO_Gentoo_Install_on_Software_RAID_mirror_and_LVM2_on_top_of_RAID)
-
   * [Disks are fun](http://scottstuff.net/blog/articles/2005/01/10/disks-are-fun)
-
   * [Anatomy of a Drive Failure](http://scottstuff.net/blog/articles/2005/01/08/anatomy-of-a-drive-failure)
-
   * [Changing RAID Drives Without Losing Data](http://www.digitalmapping.sk.ca/Networks/ExpandingRAID.htm)
 

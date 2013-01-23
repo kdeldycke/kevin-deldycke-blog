@@ -17,12 +17,12 @@ So here is how I setup Nut on Debian Squeeze to monitor my UPS.
 
 First things first, we have to install the main package and its USB driver:
 
-    :::console
+    :::bash
     $ aptitude install nut nut-usb
 
 Now let's configure Nut and run it:
 
-    :::console
+    :::bash
     $ sed -i 's/MODE=none/MODE=standalone/g' /etc/nut/nut.conf
     $ echo '
     [MGE-Ellipse750]
@@ -59,7 +59,7 @@ As you can see you have lots of stuff to configure before Nut can do what it was
 
 You can now test that your system works by using the command below, which list statistics of a given UPS:
 
-    :::console
+    :::bash
     $ upsc MGE-Ellipse750@localhost
 
 But in some rare cases, your UPS will not be recognized and you'll have like me the following messages in your `/var/log/syslog`:
@@ -69,7 +69,7 @@ But in some rare cases, your UPS will not be recognized and you'll have like me 
 
 In this case, you should run Nut's driver in debug mode:
 
-    :::console
+    :::bash
     $ /lib/nut/usbhid-ups -DDD -a MGE-Ellipse750
     Network UPS Tools - Generic HID driver 0.34 (2.4.3)
     USB communication driver 0.31
@@ -96,7 +96,7 @@ In this case, you should run Nut's driver in debug mode:
 
 As you can see in messages above, Nut can't see my UPS. By chance, forcing nut to use the `root` user let it see my UPS:
 
-    :::console
+    :::bash
     $ /lib/nut/usbhid-ups -DDD -u root -a MGE-Ellipse750
     Network UPS Tools - Generic HID driver 0.34 (2.4.3)
     USB communication driver 0.31
@@ -123,17 +123,17 @@ As you can see in messages above, Nut can't see my UPS. By chance, forcing nut t
 
 So the issue is now clear and is related to permissions. I was able to fix this issue by changing the permissions on the USB device corresponding to my UPS:
 
-    :::console
+    :::bash
     $ chmod 0666 /dev/bus/usb/005/003
 
 Another working way to fix this is to change the group of the device to `nut`:
 
-    :::console
+    :::bash
     $ chown :nut /dev/bus/usb/005/003
 
 BTW, to get the bus number (`005` here) and device number (`003` in my case) of your UPS, run `lsudb`:
 
-    :::console
+    :::bash
     $ lsusb
     Bus 005 Device 003: ID 0463:ffff MGE UPS Systems UPS
     Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub

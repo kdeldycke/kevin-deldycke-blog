@@ -15,26 +15,26 @@ Now, I have a Debian server as a target system. Unfortunately, eAccelerator is n
 
 Let's start the installation ! First, add the following lines to your `/etc/apt/sources.list` file:
 
-    :::text
+    :::sourceslist
     deb http://debian.mcmillan.net.nz/debian lenny awm
     deb-src http://debian.mcmillan.net.nz/debian lenny awm
     deb http://debian.schnuckelig.eu/ lenny main contrib non-free
 
 To kill annoying warning messages, register the cryptographic fingerprint of each repository:
 
-    :::console
+    :::bash
     $ gpg --keyserver keyring.debian.org --recv-keys 0x8f068012;
     $ gpg --export --armor 0x8f068012 | apt-key add -
     $ wget -O - http://debian.schnuckelig.eu/repository-key.gpg | apt-key add -
 
 Then, update your package database:
 
-    :::console
+    :::bash
     $ aptitude update
 
 And finally, you can install eAccelerator for PHP5 without any pain:
 
-    :::console
+    :::bash
     $ apt-get install php5-eaccelerator
 
 Happy [fine-tunning](http://eaccelerator.net/wiki/Settings) !

@@ -37,13 +37,13 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
   * Start a dumb HTTP server on port 8000 ([source](http://news.ycombinator.com/item?id=2042008)):
 
-        :::console
-        python -m SimpleHTTPServer 8000
+        :::bash
+        $ python -m SimpleHTTPServer 8000
 
   * Use [autopep8](http://pypi.python.org/pypi/autopep8/) to apply PEP8's coding style on all Python files:
 
-        :::console
-        find ./ -iname "*.py" -exec autopep8 --in-place "{}" \;
+        :::bash
+        $ find ./ -iname "*.py" -exec autopep8 --in-place "{}" \;
 
 ## Date manipulation
 
@@ -58,19 +58,20 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
   * Generate a binary distribution of the current package:
 
-        :::console
-        python ./setup.py sdist
+        :::bash
+        $ python ./setup.py sdist
 
   * Register, generate and upload to [PyPi](http://pypi.python.org) the current package as a source package, an egg and a dumb binary:
 
-        :::console
-        python ./setup.py register sdist bdist_egg bdist_dumb upload
+        :::bash
+        $ python ./setup.py register sdist bdist_egg bdist_dumb upload
 
   * Here is how my `~/.pypirc` looks like:
 
-        :::text
+        :::ini
         [pypirc]
         servers = pypi
+
         [server-login]
         username:kdeldycke
         password:XXXXXXX

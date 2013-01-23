@@ -11,7 +11,7 @@ Two months ago I was looking for a way to [let apache serve python scripts as pl
 
 What you need is a `.htaccess` file in the same directory as the files you want to serve, with the following directive in it:
 
-    :::text
+    :::apache
     AddType text/plain .php
 
 Be carefull: within the directory, anybody will be able to look the source code of all files with .php extension.

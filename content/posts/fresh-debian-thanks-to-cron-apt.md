@@ -13,13 +13,13 @@ This post is just a quick reminder to my future self, about how I setup `cron-ap
 
 First we install the package:
 
-    :::console
-    aptitude install cron-apt
+    :::bash
+    $ aptitude install cron-apt
 
 Then we configure it:
 
-    :::console
-    sed -i 's/# MAILON="error"/MAILON="always"/g' /etc/cron-apt/config
-    sed -i 's/# MAILTO="root"/MAILTO="user@example.com"/g' /etc/cron-apt/config
+    :::bash
+    $ sed -i 's/# MAILON="error"/MAILON="always"/g' /etc/cron-apt/config
+    $ sed -i 's/# MAILTO="root"/MAILTO="user@example.com"/g' /etc/cron-apt/config
 
 That's it !

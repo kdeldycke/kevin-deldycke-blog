@@ -11,12 +11,12 @@ Here is a tiny article about how I used [Lighttpd](http://www.lighttpd.net) to s
 
 First, install the required packages:
 
-    :::console
+    :::bash
     $ aptitude install lighttpd-mod-webdav
 
 As we want to provide a secure WebDAV access, we need to install [OpenSSL](http://www.openssl.org):
 
-    :::console
+    :::bash
     $ aptitude install openssl
 
 Then we create the file `/etc/lighttpd/clear-creds.lst`, that will contain credentials required for authentication, under the following form:
@@ -30,13 +30,13 @@ Logins and passwords are stored here in clear. This is stupid, but for this proj
 
 Now I want to serve WebDAV content within a secure channel. A self-signed SSL certificate will be enough. Let's generate one:
 
-    :::console
+    :::bash
     $ cd /etc/lighttpd/
     $ openssl req -x509 -nodes -subj '/' -days 3650 -newkey rsa:2048 -keyout server.pem -out server.pem
 
 We'll configure Lighttpd by loading the default parameters of modules we use:
 
-    :::console
+    :::bash
     $ cd /etc/lighttpd/conf-enabled/
     $ ln -s ../conf-available/05-auth.log
     $ ln -s ../conf-available/10-ssl.conf
@@ -44,14 +44,14 @@ We'll configure Lighttpd by loading the default parameters of modules we use:
 
 Now I create a custom configuration file:
 
-    :::console
+    :::bash
     $ touch /etc/lighttpd/conf-available/99-custom.conf
     $ cd /etc/lighttpd/conf-enabled/
     $ ln -s ../conf-available/99-custom.conf
 
 Here is the content of that `99-custom.conf` configuration file:
 
-    :::text
+    :::lighttpd
     # Hide server version
     server.tag = "lighttpd"
 
@@ -83,7 +83,7 @@ Here is the content of that `99-custom.conf` configuration file:
 
 And do not forget to restart the server:
 
-    :::console
+    :::bash
     $ /etc/init.d/lighttpd restart
 
 [![](http://kevin.deldycke.com/wp-content/uploads/2011/07/lighttpd-webdav-server-300x232.png)](http://kevin.deldycke.com/wp-content/uploads/2011/07/lighttpd-webdav-server.png)
@@ -91,6 +91,4 @@ And do not forget to restart the server:
 As you can see in the screenshot above, you can now:
 
   * Browse the file system in read/write mode with a WebDAV client via a `webdavs://12.34.56.78/` URL;
-
   * Access content in read-only mode with a browser by a classic `https://12.34.56.78/` URL.
-

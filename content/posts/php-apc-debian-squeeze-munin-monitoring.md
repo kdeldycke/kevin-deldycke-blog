@@ -9,7 +9,7 @@ tags: apx, Debian, debian squeeze, munin, nginx, PHP, Server, Web
 
 Installing [APC](http://php.net/manual/en/book.apc.php) on Debian Squeeze is as simple as installing the package:
 
-    :::console
+    :::bash
     $ aptitude install php5-apc
 
 In my case this package come from the PHP bundle distributed by the [Dotdeb repository](http://www.dotdeb.org).
@@ -18,7 +18,7 @@ If installing APC is easy, monitoring it with Munin requires some extra manipula
 
 The latter can't get APC statistics by itself: it need an extra PHP file to be served locally. As you can read in my previous article, [my Munin is powered by Nginx](http://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/). So now we'll setup Nginx to serve this extra PHP file:
 
-    :::console
+    :::bash
     $ mkdir -p /var/www/apc
     $ cd /var/www/apc
     $ wget http://munin-php-apc.googlecode.com/svn/trunk/php_apc/apc_info.php
@@ -26,7 +26,7 @@ The latter can't get APC statistics by itself: it need an extra PHP file to be s
 
 Then I need to update my `/etc/nginx/sites-available/munin` file (see [details about this file on my previous article](http://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/)) to have the second `server` section look like this:
 
-    :::text
+    :::nginx
     server {
       server_name localhost;
       include /etc/nginx/php.conf;
@@ -46,14 +46,14 @@ Here the included `/etc/nginx/php.conf` file is the one in which I've concentrat
 
 Let's get back to our Munin monitoring setup. I can restart now Nginx and check that I can access locally to my raw statistics:
 
-    :::console
+    :::bash
     $ /etc/init.d/nginx reload
     $ wget http://localhost/apc_info.php
     $ wget http://localhost/nginx_status
 
 The last step is to install and configure the Munin plugin:
 
-    :::console
+    :::bash
     $ aptitude install libwww-perl
     $ wget http://munin-php-apc.googlecode.com/svn/trunk/php_apc/php_apc_ --output-document=/usr/share/munin/plugins/php_apc_
     $ chmod -R 755 /usr/share/munin/plugins/

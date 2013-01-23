@@ -9,17 +9,17 @@ tags: Apache, Exim, fail2ban, security, Server, SSH, Web
 
 This always start with a package installation:
 
-    :::console
+    :::bash
     $ aptitude install fail2ban
 
 Then I simply create a local configuration file where I'll put all my custom config:
 
-    :::console
+    :::bash
     $ touch /etc/fail2ban/jail.local
 
 Here is the content of that file:
 
-    :::text
+    :::ini
     [DEFAULT]
     # Do not filter connexion from my apartment and from the server itself
     ignoreip  = 127.0.0.1 88.123.123.123 91.123.123.123
@@ -90,7 +90,7 @@ In such a case, a sure way to find the culprit is to use a brute force debugging
 
 For me, the problem was that I forgot to add my custom `exim-relay` filter to Fail2Ban. So I fixed my issue by creating an empty file at `/etc/fail2ban/filter.d/exim-relay.conf` in which I pasted the following content:
 
-    :::text
+    :::ini
     # Based on default exim.conf filter by Cyril Jaquier
     # Real life exemaple:
     # 2009-07-02 08:16:42 H=118-167-129-21.dynamic.hinet.net (91.121.198.84) [118.167.129.21] F=<titieueue@hotmail.com> rejected RCPT <s2288@mail2000.com.tw>: relay not permitted
@@ -112,7 +112,7 @@ For me, the problem was that I forgot to add my custom `exim-relay` filter to Fa
 
 Speaking of custom filters, here is one to filter DFind scans (file located at `/etc/fail2ban/filter.d/apache-w00tw00t.conf`):
 
-    :::text
+    :::ini
     # Based on http://howflow.com/tricks/block_w00tw00t_scan_hosts_with_fail2ban
     # Real life exemaple:
     # [Sat Jun 27 16:43:08 2009] [error] [client 94.23.57.77] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /w00tw00t.at.ISC.SANS.DFind:)
@@ -131,7 +131,7 @@ Speaking of custom filters, here is one to filter DFind scans (file located at `
 
 And here is the corresponding section from my `jail.local` file:
 
-    :::text
+    :::ini
     [apache-w00tw00t]
     enabled  = true
     filter   = apache-w00tw00t

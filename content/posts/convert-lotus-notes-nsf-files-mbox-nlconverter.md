@@ -71,25 +71,25 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
 
   3. Before running the script, we have to register a Notes DLL used by nlconverter:
 
-    :::console
+    :::bat
     regsvr32 "C:\Program Files\Notes\nlsxbe.dll"
 
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/08/notes-nlsxbe-dll-registered1-300x96.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/notes-nlsxbe-dll-registered1.png)
 And make the Python interpreter available system-wide:
 
-    :::console
+    :::bat
     C:\winnlc-alpha-1>SET Path=%Path%;C:\Python26
 
   4. Now we can run the `notes2mbox.py` script:
 
-    :::console
+    :::bat
     C:\winnlc-alpha-1>C:\Python26\python.exe notes2mbox.py
 
 If you're lucky, you'll get a nice mbox at the end of the process.
 
 But I was not and the `notes2mbox.py` ended up with the following error:
 
-    :::python
+    :::pytb
     Traceback (most recent call last):
       File "notes2mbox.py", line 21, in <module>
         db = NlconverterLib.getNotesDb(notesNsfPath, notesPasswd)
