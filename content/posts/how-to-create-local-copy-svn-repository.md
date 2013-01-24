@@ -5,7 +5,7 @@ slug: how-to-create-local-copy-svn-repository
 title: How-to create a local copy of a remote SVN repository
 wordpress_id: 5085
 category: English
-tags: Backup, code, Repository, SCM, Subversion, svk, svn
+tags: Backup, code, Repository, SCM, Subversion, svk, Subversion
 
 A long time ago, duplicating a remote Subversion repository required to have administration rights on the machine hosting the said repository. The only [solution back then was to use SVK](http://kevin.deldycke.com/2007/04/how-to-backup-mirror-a-public-svn-repository/), a defunct project that was adding a layer on top of SVN to make it a distributed [SCM](http://en.wikipedia.org/wiki/Revision_Control).
 
