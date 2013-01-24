@@ -1,22 +1,100 @@
-Options +FollowSymLinks
-RewriteEngine on
-
 # Redirect everything to my beautiful subdomain
 RewriteCond %{HTTP_HOST} !^kevin\.deldycke\.com
 RewriteRule ^(.*)$ http://kevin.deldycke.com/$1
 
-# Redirect paginated URL to non-paginated root
-RedirectMatch 301 /tag/(.*?)/page/(.*)      /tag/$1/
-RedirectMatch 301 /category/(.*)/page/(.*)  /category/$1/
+# General server config
+Options -FollowSymLinks -ExecCGI -Includes -IncludesNOEXEC -Indexes -MultiViews +SymLinksIfOwnerMatch
+RewriteEngine on
 
-# Article and index URL's changed from ending with a forward slash to ending with a ".html"
-#RedirectMatch 301 (.*\d{4}/\d{2}/.*?)/ $1.html
+# Force compression of text-based assets
+<IfModule mod_headers.c>
+  RequestHeader append Accept-Encoding "gzip,deflate"
+</IfModule>
+<IfModule filter_module>
+  FilterDeclare   COMPRESS
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/html
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/css
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/plain
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/xml
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/x-component
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/javascript
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/json
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xml
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xhtml+xml
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/rss+xml
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/atom+xml
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/vnd.ms-fontobject
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $image/svg+xml
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/x-font-ttf
+  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $font/opentype
+  FilterChain     COMPRESS
+  FilterProtocol  COMPRESS  DEFLATE change=yes;byteranges=no
+</IfModule>
 
-RedirectMatch 301 (/wp-content/uploads/)(.*) /static/uploads/$2
+# Force caching of static content
+<IfModule mod_expires.c>
+  ExpiresActive on
+
+  ExpiresByType text/html "access plus 1 day"
+
+  ExpiresByType image/jpg "access plus 60 days"
+  ExpiresByType image/png "access plus 60 days"
+  ExpiresByType image/gif "access plus 60 days"
+  ExpiresByType image/jpeg "access plus 60 days"
+
+  ExpiresByType text/css "access plus 1 day"
+
+  ExpiresByType image/x-icon "access plus 1 month"
+
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType audio/x-wav "access plus 1 month"
+  ExpiresByType audio/mpeg "access plus 1 month"
+  ExpiresByType video/mpeg "access plus 1 month"
+  ExpiresByType video/mp4 "access plus 1 month"
+  ExpiresByType video/quicktime "access plus 1 month"
+  ExpiresByType video/x-ms-wmv "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access 1 month"
+
+  ExpiresByType text/javascript "access plus 1 week"
+  ExpiresByType application/x-javascript "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+# Remove OVH cookie
+<IfModule mod_headers.c>
+  Header unset Set-Cookie
+</IfModule>
+
+# Structure redirects
+RedirectMatch 301 /wp-content/uploads/(.*) /static/uploads/$1
+RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
+
 
 #Redirect 301 /feed/ /feeds/all.atom.xml
 
+
+# Catch-all tag-like URLS
+#RedirectMatch 301 /tag/([^\/]+)/(.+)$ /tag/$1/
+#RedirectMatch 301 /tag/?$ /tags.html
+#RedirectMatch 301 /category/?$ /categories.html
+
+# WordPress' yearly and monthly archive pages are gone (HTTP 410 code)
+RedirectMatch gone /\d{4}/?$
+RedirectMatch gone /\d{4}/page/\d+/?$
+RedirectMatch gone /\d{4}/\d{2}/?$
+RedirectMatch gone /\d{4}/\d{2}/page/\d+/?$
+# Intermediate category are gone too
+RedirectMatch gone /category/lang/?$
+RedirectMatch gone /category/lang/page/\d+/?$
+# Paginated tags and categories are no more
+RedirectMatch gone /category/(.*)/page/\d+/?$
+RedirectMatch gone /tag/[^\/]+/page/\d+/?$
+# Other WordPress stuff
+RedirectMatch gone /author/[^\/]+/?$
+RedirectMatch gone /author/[^\/]+/page/\d+/?$
+RedirectMatch gone ^/wp-(admin|content|includes)/?.*$
+RedirectMatch gone ^/wp-.*\.php$
+
+# Generic error files
 #ErrorDocument 404 /pages/404-page-not-found.html
 #ErrorDocument 500 /pages/500-error.html
-
-Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes
