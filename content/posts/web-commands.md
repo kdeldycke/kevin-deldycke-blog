@@ -17,6 +17,11 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
         :::bash
         $ curl -i -H "Accept-Encoding: gzip,deflate" http://kevin.deldycke.com 2>&1 | grep gzip
 
+  * List all the diferrent MIME types of all the files in the `www` folder:
+
+        :::bash
+        $ find ./www -type f -exec mimetype -b "{}" \; | sort | uniq
+
   * Create a PNG image of a rendered html page:
 
         :::bash
