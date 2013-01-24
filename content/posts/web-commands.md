@@ -12,6 +12,11 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x5
         :::bash
         $ wget -r -p -nc -nH --level=1 http://pypi.python.org/simple/python-ldap/
 
+  * Test that your site is sending gzipped content:
+ 
+        :::bash
+        $ curl -i -H "Accept-Encoding: gzip,deflate" http://kevin.deldycke.com 2>&1 | grep gzip
+
   * Create a PNG image of a rendered html page:
 
         :::bash
