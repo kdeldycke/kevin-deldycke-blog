@@ -35,8 +35,8 @@ TAG_SAVE_AS = TAG_URL + 'index.html'
 CATEGORY_URL = 'category/lang/{slug}/'
 CATEGORY_SAVE_AS = CATEGORY_URL + 'index.html'
 
-AUTHOR_URL = 'author/{slug}/'
-AUTHOR_SAVE_AS = AUTHOR_URL + 'index.html'
+# Deactivate author URLs
+AUTHOR_SAVE_AS = False
 
 # Deactivate localization
 ARTICLE_LANG_SAVE_AS = False
@@ -46,8 +46,8 @@ PAGE_LANG_SAVE_AS = False
 #http://example.com/feed/rss/
 #http://example.com/feed/rss2/
 #http://example.com/feed/rdf/
-#http://example.com/feed/atom/
 FEED_RSS = 'feed/index.html'
+#http://example.com/feed/atom/
 FEED_ATOM = 'feed/atom/index.html'
 
 FEED_ALL_RSS = False
@@ -83,8 +83,9 @@ STATIC_PATHS = [
   ]
 
 FILES_TO_COPY = (
-    ('extra/htaccess', '.htaccess'),
     ('extra/robots.txt', 'robots.txt'),
+    ('extra/htaccess', '.htaccess'),
+    ('extra/htaccess-static', 'static/.htaccess'),
     )
 
 MENUITEMS = (
