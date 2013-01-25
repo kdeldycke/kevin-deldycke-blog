@@ -33,7 +33,7 @@ Resumes, CVs and profiles above are heavy on details you may not be interested i
 
 This blog is a way to share all my open-source contributions and experimentations. It's also an evolving notebook where I deposit tiny pieces of knowledge (_knowledgelets_?) I generate in my personal and professional activities. This blog is also the final container of all the unnecessary details I don't bother to keep in memory. It's so easy to clutter a mind nowadays... Sometimes, the [information this blog transport can be life-savers](http://kevin.deldycke.com/2008/07/heroic-journey-to-raid-5-data-recovery/). And that's when I realize the effort of maintaining a blog is not vain.
 
-I try to write everything in English, as a way to practice, and to make my knowledge available to the largest audience. As it's not my mother tongue, you’ll surely find mistakes. If you do, please be kind enough to comment on the blog so I can fix it as soon as possible. I sometimes write [posts in French](http://kevin.deldycke.com/category/lang/fr/) if I consider their content much more relevant to a French-speaking audience.
+I try to write everything in English, as a way to practice, and to make my knowledge available to the largest audience. As it's not my mother tongue, you’ll surely find mistakes. If you do, please be kind enough to comment on the blog so I can fix it as soon as possible. I sometimes write [posts in French](http://kevin.deldycke.com/category/francais/) if I consider their content much more relevant to a French-speaking audience.
 
 This blog was previously named _coolkevmen_, which is the nickname given to me by [Cool Cavemen](http://coolcavemen.com), and under which I appear in the [All Cool Hits](http://coolcavemen.com/discography/all-cool-hits/) EP credits.
 
