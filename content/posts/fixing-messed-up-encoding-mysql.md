@@ -5,7 +5,7 @@ slug: fixing-messed-up-encoding-mysql
 title: Fixing messed-up encoding in MySQL
 wordpress_id: 2994
 category: English
-tags: Character encoding, Databases, e107, Latin-1, MySQL, PHP, sed, SQL, unicode, UTF-8, Web
+tags: Character encoding, Databases, e107, Latin-1, MySQL, SQL, PHP, sed, SQL, unicode, UTF-8, Web
 
 [Currently working](http://kevin.deldycke.com/2011/03/e107-importer-1-1/) on my [e107 Importer plugin](http://wordpress.org/extend/plugins/e107-importer/), I was confronted today with badly-encoded data coming from my databases.
 

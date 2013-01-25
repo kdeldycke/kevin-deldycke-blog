@@ -5,7 +5,7 @@ slug: transfer-bbpress-to-plain-wordpress
 title: How-To transfer bbPress content to plain WordPress objects
 wordpress_id: 5265
 category: English
-tags: export, import, migration, MySQL, PHP, Python, WordPress, xml
+tags: export, import, migration, MySQL, SQL, PHP, Python, WordPress, xml
 
 I had two bbPress forums to archive for Cool Cavemen. The first one, which was private, was [exported as a mailing-list](http://kevin.deldycke.com/2012/10/converting-bbpress-forum-mailbox-archive/) last month.
 

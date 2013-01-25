@@ -4,7 +4,7 @@ layout: post
 slug: amarok-143-for-mandriva-2006-with-mysql-support
 title: Amarok 1.4.3 for Mandriva 2006 with MySQL support
 wordpress_id: 46
-tags: Amarok, KDE, Linux, Mandriva, Music, MySQL, RPM
+tags: Amarok, KDE, Linux, Mandriva, Music, MySQL, SQL, RPM
 
 [Amarok 1.4.3 is out](http://amarok.kde.org/content/view/81/66/) ! Here are the [brand new packages for Mandriva 2006](http://kevin.deldycke.com/static/repository/mandriva/2006.0/i586/). This version of Amarok is a backport from the cooker repository and is built to work with KDE 3.4.2 (which is the default version that came with the free download edition of Mandriva 2006). I've also added in [my repository](http://kevin.deldycke.com/mandriva-rpm-repository/) all the missing depencies: [TunePimp](http://musicbrainz.org/products/tunepimp/index.html) 0.4.2, [libmtp](http://libmtp.sourceforge.net) and libofa0.
 

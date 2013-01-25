@@ -5,7 +5,7 @@ slug: text-date-document-processing-commands
 title: Text, Date & Document processing commands
 wordpress_id: 89
 category: English
-tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, time, VIM
+tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM
 
   * Extract images from a PDF document:
 

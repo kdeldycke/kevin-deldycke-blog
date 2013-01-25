@@ -5,7 +5,7 @@ slug: maildir-deduplication-script-python
 title: Maildir deduplication script in Python
 wordpress_id: 1712
 category: English
-tags: E-mail, GitHub, Lotus Notes, Mac OS X, maildir, Python, Script
+tags: email, GitHub, Lotus Notes, Apple, Mac OS X, maildir, Python, Script
 
 Some months ago I wrote a tiny Python script which scan all folders and sub-folders of a Maildir, then remove duplicate mails.
 

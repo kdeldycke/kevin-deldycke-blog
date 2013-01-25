@@ -5,7 +5,7 @@ slug: php-apc-debian-squeeze-munin-monitoring
 title: PHP APC on Debian Squeeze with Munin monitoring
 wordpress_id: 3269
 category: English
-tags: apx, Debian, debian squeeze, munin, nginx, PHP, Server, Web
+tags: apx, Debian, Debian Squeeze, munin, nginx, PHP, Server, Web
 
 Installing [APC](http://php.net/manual/en/book.apc.php) on Debian Squeeze is as simple as installing the package:
 

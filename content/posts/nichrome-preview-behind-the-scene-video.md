@@ -5,7 +5,7 @@ slug: nichrome-preview-behind-the-scene-video
 title: Nichrome Preview (and Behind the Scene) video
 wordpress_id: 4022
 category: English
-tags: Canon EOS 7D, Cool Cavemen, Digital photography, Gimp, kdenlive, kubuntu, Linux, nichrome, outtakes, tokina
+tags: Canon EOS 7D, Cool Cavemen, Digital photography, Gimp, kdenlive, Kubuntu, Ubuntu, Linux, nichrome, outtakes, tokina
 
 Two months ago (October 8th) I shot a video for [Cool Cavemen](http://coolcavemen.com). I haven't talked about it on this blog yet, let's fix this right now:
 

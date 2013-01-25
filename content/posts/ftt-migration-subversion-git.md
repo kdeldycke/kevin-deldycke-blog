@@ -5,7 +5,7 @@ slug: ftt-migration-subversion-git
 title: FTT Migration from Subversion to Git
 wordpress_id: 3139
 category: English
-tags: Feed Tracking Tool, Git, GitHub, migration, Subversion
+tags: Feed Tracking Tool, Git, GitHub, migration, Subversion, Uperto
 
 [Last month I released the Feed Tracking Tool project](http://kevin.deldycke.com/2011/03/feed-tracking-tool-released-open-source-license/) (aka FTT) [on GitHub](http://github.com/kdeldycke/feed-tracking-tool). I reconstructed the code history from old tarballs. In the mean time, my friend at Uperto managed to recover the original Subversion repository from very old backups. Here is how I migrated the old SVN repository to GitHub.
 

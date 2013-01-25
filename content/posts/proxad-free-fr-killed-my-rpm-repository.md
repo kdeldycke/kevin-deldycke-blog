@@ -5,7 +5,7 @@ slug: proxad-free-fr-killed-my-rpm-repository
 title: Proxad / Free.fr killed my RPM repository !
 wordpress_id: 238
 category: English
-tags: free, Hosting, ISP, Mandriva, Proxad, Repository, RPM
+tags: free.fr, Hosting, ISP, Mandriva, Proxad, Repository, RPM
 
 My ISP, [Proxad/Free](http://free.fr), hardened its policy and do not allow any longer the use of the 10 GiB hosting (that they gracefully provide for free to their customer) for things other than "pure" website. I think my RPM repository, which [I moved there last year](http://kevin.deldycke.com/2007/02/repository-moved-thanks-to-apache-and-301-redirections/), fall in the "static storage" category, leading them to erase it some days ago.
 

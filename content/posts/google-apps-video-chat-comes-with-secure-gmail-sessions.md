@@ -5,7 +5,7 @@ slug: google-apps-video-chat-comes-with-secure-gmail-sessions
 title: Google Apps' video chat comes with secure Gmail sessions
 wordpress_id: 379
 category: English
-tags: chat, gmail, Google, google apps, h264, https, Jingle, mail, RTP, security, ssl, TLS, Video, Web, XMPP
+tags: chat, Gmail, Google, google apps, h264, https, Jingle, email, RTP, security, SSL, TLS, Video, Web, XMPP
 
 The story was spread by [all](http://www.gizmodo.com.au/2008/11/gmail_now_with_voice_chat_and_video.html) [top](http://www.readwriteweb.com/archives/google_launches_video_and_voic.php) [tech](http://arstechnica.com/news.ars/post/20081111-gmail-gains-voice-and-video-chat-via-mac-and-pc-plug-in.html) [blogs](http://www.techcrunch.com/2008/11/11/google-adds-voice-and-video-chat-to-gmail/) last week: [Google's Gmail now features a video chat](http://gmailblog.blogspot.com/2008/11/say-hello-to-gmail-voice-and-video-chat.html). And it requires the installation of a dedicated plugin.
 

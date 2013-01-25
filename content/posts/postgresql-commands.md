@@ -5,7 +5,7 @@ slug: postgresql-commands
 title: PostgreSQL commands
 wordpress_id: 3646
 category: English
-tags: CLI, database, Linux, PostgreSQL
+tags: CLI, database, Linux, PostgreSQL, SQL
 
   * Update the default configuration to allow direct authentication from the local machine:
 

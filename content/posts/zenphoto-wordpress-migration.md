@@ -5,7 +5,7 @@ slug: zenphoto-wordpress-migration
 title: ZenPhoto to WordPress Migration
 wordpress_id: 5186
 category: English
-tags: Debian, migration, MySQL, Pip, Python, WordPress, xml, Zenphoto
+tags: Debian, migration, MySQL, SQL, Pip, Python, WordPress, xml, Zenphoto
 
 For years I was using [ZenPhoto](http://www.zenphoto.org/) to host my photo galleries. Now [WordPress](http://wordpress.org) has made enough improvements in media management to make ZenPhoto redundant for my simple needs.
 

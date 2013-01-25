@@ -5,7 +5,7 @@ slug: mail-ingestor-py-ingest-raw-text-files-produce-mailbox
 title: mail_ingestor.py : Ingest Raw Text Files and Produce a Mailbox
 wordpress_id: 5097
 category: English
-tags: archive, Backup, E-mail, import, internet, mail, mailbox, Python, Web
+tags: archive, Backup, email, import email, mailbox, Python, Web
 
 I was late to the party. Me and the Internet only met in 2000, over a 36kbps phone-line modem.
 

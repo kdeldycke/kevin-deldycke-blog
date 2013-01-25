@@ -5,7 +5,7 @@ slug: 200-dollars-kdenlive-contribution
 title: I contributed $200 to Kdenlive and you should too !
 wordpress_id: 4700
 category: English
-tags: campaign, contribution, donation, fundaraising, KDE, kdenlive, Linux, open source, Video, Video editing software
+tags: campaign, contribution, donation, fundaraising, KDE, kdenlive, Linux, open source, Video
 
 I [just donated $200](https://twitter.com/#!/kdeldycke/status/182018605259567104) to the [Kdenlive](http://kdenlive.org) project, as they have [just started](http://kdenlive.org/users/ttill/kdenlive-fundraising-campaign) a [fundraising campaign](http://www.indiegogo.com/kdenlive-re) to refactor its core and make it future-proof:
 

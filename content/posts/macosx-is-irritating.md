@@ -5,7 +5,7 @@ slug: macosx-is-irritating
 title: MacOS X really starts to get irritating...
 wordpress_id: 932
 category: English
-tags: desktop, KDE, leopard, Mac OS X, rant
+tags: desktop, KDE, Mac OS X Leopard, Apple, Mac OS X, rant
 
 First, [unstable machine](http://twitter.com/kdeldycke/status/6158072244).
 

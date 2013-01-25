@@ -5,7 +5,7 @@ slug: wordpress-commands
 title: WordPress commands
 wordpress_id: 3410
 category: English
-tags: Blog, MySQL, PHP, WordPress
+tags: Blog, MySQL, SQL, PHP, WordPress
 
   * To activate the debug mode of WordPress, add the following PHP code in `wp-config.php`:
 

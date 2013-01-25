@@ -5,7 +5,7 @@ slug: ovh-configuration-modem-thomson-tg585-ipoe
 title: OVH: configuration du modem Thomson TG-585 en IPoE
 wordpress_id: 4988
 category: Français
-tags: adsl, dslam, ipoe, modem, nra, ovh, pppoe, telnet, thomson
+tags: ADSL, dslam, ipoe, Modem, nra, ovh, PPPoE, telnet, thomson
 
 [![](http://kevin.deldycke.com/wp-content/uploads/2012/07/thomson-tg585-ipoe-admin-panel-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2012/07/thomson-tg585-ipoe-admin-panel.png) OVH migre l'un après l'autre ses [points de collecte ADSL](http://www.ovh.fr/adsl/degroupage-nra-ovh.xml) vers leur infrastructure interne. Lors de la bascule, il faut reconfigurer son modem pour qu'il se connecte directement en `IPoE` et non plus en `PPPoE`.
 

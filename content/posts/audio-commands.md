@@ -5,7 +5,7 @@ slug: audio-commands
 title: Audio commands
 wordpress_id: 72
 category: English
-tags: alac, asf, Audio, CLI, cue-list, flac, Linux, lossless, midi, Ogg, shntool, sox, wave
+tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool, sox, wave
 
   * Convert `.ape` file to `.wav`:
 

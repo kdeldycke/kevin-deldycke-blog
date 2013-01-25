@@ -5,7 +5,7 @@ slug: web-commands
 title: Web commands
 wordpress_id: 1257
 category: English
-tags: certificate, CLI, HTML, KDE, konqueror, Linux, openssl, RSA, ssl, wget, x509
+tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509
 
   * Download a web page an all its requisites:
 

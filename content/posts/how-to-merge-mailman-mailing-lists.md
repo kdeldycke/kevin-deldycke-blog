@@ -5,7 +5,7 @@ slug: how-to-merge-mailman-mailing-lists
 title: How-to merge Mailman mailing-lists
 wordpress_id: 4000
 category: English
-tags: archive, Linux, mail, mailing list, mailman, merge, Python
+tags: archive, Linux, email, mailing list, mailman, merge, Python
 
 Let's say I have an old inactive mailing list (which ID is `old-ml`) for which I want to merge its archives to another one (called `active-ml`).
 

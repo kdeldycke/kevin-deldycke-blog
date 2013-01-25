@@ -5,7 +5,7 @@ slug: quartz-composer-behringer-bcf-2000-midi-controller-tests
 title: Quartz Composer & Behringer BCF-2000 MIDI controller tests
 wordpress_id: 2569
 category: English
-tags: Animation, Apple, berhinger, Canon EOS 7D, Creative Commons, jamendo, kdenlive, Mac, MacBook, midi, MIDI-controlled graphics, Quartz Composer, tokina, USB, Video, Visual
+tags: Animation, Apple, berhinger, Canon EOS 7D, Creative Commons, jamendo, kdenlive, MacBook, MacBook, midi, MIDI-controlled graphics, Quartz Composer, tokina, USB, Video, Visual
 
 A year ago I explored visual control by plugging a generic [Behringer BCF2000 MIDI controller](http://www.amazon.com/gp/product/B000CZ0RJ2/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000CZ0RJ2)![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B000CZ0RJ2&camp=217145&creative=399381) in Apple's [Quartz Composer](http://en.wikipedia.org/wiki/Quartz_Composer). My initial intention was to drive some animations and visuals during [Cool Cavemen](http://coolcavemen.com)'s live concerts. Now that's I've abandonned the idea of using Quartz Composer, it's time to share these stuff with you.
 

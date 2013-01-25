@@ -5,7 +5,7 @@ slug: ultimate-guide-lotus-notes-mail-migration
 title: Ultimate guide of Lotus Notes mail migration
 wordpress_id: 1588
 category: English
-tags: Dovecot, E-mail, IBM Lotus Notes, IMAP, leopard, Linux, Mac OS X, mail conversion tools, maildir, Microsoft Windows, OSX, TCPIP port, Python
+tags: Dovecot, email, Lotus Notes, IMAP, Mac OS X Leopard, Linux, Mac OS X, mail conversion tools, maildir, Microsoft, Windows, Apple, Mac OS X, TCPIP port, Python, Mac OS X Snow Leopard
 
 The title may sounds pretentious but extracting mails out of Lotus Notes is soooo hard and complicated, that achieving such a task feels like winning an epic battle against the forces of evil.
 

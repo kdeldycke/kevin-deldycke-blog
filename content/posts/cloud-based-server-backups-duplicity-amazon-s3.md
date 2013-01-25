@@ -5,7 +5,7 @@ slug: cloud-based-server-backups-duplicity-amazon-s3
 title: Cloud-based Server Backups with Duplicity and Amazon S3
 wordpress_id: 3557
 category: English
-tags: amason s3, amazon AWS, Backup, cloud-computing, cron, Debian, duplicity, Linux, MySQL, shell, squeeze, storage
+tags: Amazon S3, AWS, Backup, cloud-computing, cron, Debian, duplicity, Linux, MySQL, SQL, shell, Debian Squeeze, storage
 
 For years I was backing up my server with [`website-backup.py`](http://github.com/kdeldycke/scripts/blob/master/website-backup.py), a custom script I wrote to manage data mirroring, do incremental backups and monthly snapshots based on [`rdiff-backup`](http://www.nongnu.org/rdiff-backup/), `rsync`, `tar` and `bzip2`. All these data were pushed to a storage server hosted at home.
 

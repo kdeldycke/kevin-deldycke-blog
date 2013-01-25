@@ -5,7 +5,7 @@ slug: apache-commands
 title: Apache commands
 wordpress_id: 2674
 category: English
-tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web
+tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
 
   * Hide Subversion and Git directories content ([source](http://news.ycombinator.com/item?id=839016)):
 

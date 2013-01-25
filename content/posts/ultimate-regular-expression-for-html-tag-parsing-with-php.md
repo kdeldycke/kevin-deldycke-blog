@@ -5,7 +5,7 @@ slug: ultimate-regular-expression-for-html-tag-parsing-with-php
 title: Ultimate Regular Expression for HTML tag parsing with PHP
 wordpress_id: 148
 category: English
-tags: HTML, parsing, PCRE, PHP, regexp
+tags: HTML, parsing, PHP, Regular expression 
 
 _**Disclaimer**: this is a dirty hack ! To parse HTML or XML, use a dedicated library._
 

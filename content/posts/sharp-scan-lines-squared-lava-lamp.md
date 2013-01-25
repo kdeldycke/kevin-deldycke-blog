@@ -5,7 +5,7 @@ slug: sharp-scan-lines-squared-lava-lamp
 title: Sharp scan-lines & Squared lava-lamp
 wordpress_id: 2175
 category: English
-tags: Animation, Apple, Mac, QC Experiment, Quartz Composer, Video, Visual
+tags: Animation, Apple, MacBook, QC Experiment, Quartz Composer, Video, Visual
 
 Here are 2 new Quartz Composer compositions. Both of them are based on the same [kaleidoscope patch](http://kevin.deldycke.com/2010/10/kaleidoscope-001-002/) from my last post, but are processed before the final rendering. This gives some interesting visual effects that are quite distant to the original kaleidoscopes.
 

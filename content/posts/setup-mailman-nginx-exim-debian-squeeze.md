@@ -5,7 +5,7 @@ slug: setup-mailman-nginx-exim-debian-squeeze
 title: How-to setup Mailman + Nginx + Exim on Debian Squeeze
 wordpress_id: 3810
 category: English
-tags: Debian, debian squeeze, E-mail, Exim, fcgiwrap, Linux, mailing list, mailman, munin, nginx
+tags: Debian, Debian Squeeze, email, Exim, fcgiwrap, Linux, mailing list, mailman, munin, nginx
 
 ![](http://kevin.deldycke.com/wp-content/uploads/2011/09/mailman-logo.png) Before going further, please take note that I start this tutorial assuming that you already have a [minimal Exim setup](http://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/) running on your Debian machine.
 

@@ -5,7 +5,7 @@ slug: mise-en-place-paserelle-adsl-mandrake-10
 title: Mise en place d'une paserelle ADSL sous Mandrake 10
 wordpress_id: 4878
 category: Français
-tags: adsl, gateway, internet, Linux, Mandrake, Network, router
+tags: ADSL, gateway, Linux, Mandrake, Network, router, MBR, PPPoE, Modem
 
 Voici un long article regroupant toutes mes notes sur mon projet de mise en place d'une passerelle internet tournant sous Linux.
 

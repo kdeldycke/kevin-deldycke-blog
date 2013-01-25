@@ -5,7 +5,7 @@ slug: cool-cavemen-live-gayant-expo-part-ii
 title: Cool Cavemen live at Gayant Expo, part II.
 wordpress_id: 1008
 category: English
-tags: 720p, Cool Cavemen, Deinterlacing, Digital geometry, douai, gayant expo, Image processing, MPEG-2, Pixel aspect ratio, software video players, Video
+tags: 720p, Cool Cavemen, Deinterlacing, douai, gayant expo, Image processing, MPEG-2, Pixel aspect ratio, Video
 
 Here is "Funky Cops", the second Cool Cavemen's live song at Gayant Expo:
 

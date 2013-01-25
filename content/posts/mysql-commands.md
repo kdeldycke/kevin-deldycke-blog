@@ -5,7 +5,7 @@ slug: mysql-commands
 title: MySQL commands
 wordpress_id: 1222
 category: English
-tags: CLI, Databases, MySQL, SQL
+tags: CLI, Databases, MySQL, SQL, SQL
 
   * List all users in the current MySQL server:
 

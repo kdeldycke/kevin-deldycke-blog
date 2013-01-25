@@ -5,7 +5,7 @@ slug: light-painting-session-two
 title: Light Painting session II
 wordpress_id: 1059
 category: English
-tags: Apple, Canon EOS 7D, flashlight, iphone, light painting, long exposure, photo, photography
+tags: Apple, Canon EOS 7D, flashlight, iPhone, light painting, long exposure, photo, photography
 
 Here is another light painting session I've done 2 weeks ago with Jim:
 

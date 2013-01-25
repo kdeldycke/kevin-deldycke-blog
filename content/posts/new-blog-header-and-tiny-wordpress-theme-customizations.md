@@ -5,7 +5,7 @@ slug: new-blog-header-and-tiny-wordpress-theme-customizations
 title: New blog header and tiny WordPress theme customizations
 wordpress_id: 2742
 category: English
-tags: artwork, CSS, maomium, twentyten, Web, WordPress
+tags: artwork, CSS, maomium, TwentyTen, Web, WordPress, Ubercart
 
 I maintain a bunch of websites for friends on my server. In this context, [Maomium](http://maomium.com)'s owner owed me some bucks for his `.com` domain name. Here is the envelope I received yesterday with a check:
 [![](http://kevin.deldycke.com/wp-content/uploads/2011/01/maomium-thank-you-artwork-432x288.jpg)](http://kevin.deldycke.com/wp-content/uploads/2011/01/maomium-thank-you-artwork.jpg)

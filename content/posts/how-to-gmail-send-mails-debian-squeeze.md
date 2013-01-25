@@ -5,7 +5,7 @@ slug: how-to-gmail-send-mails-debian-squeeze
 title: How-to use GMail to send mails from Debian Squeeze
 wordpress_id: 3158
 category: English
-tags: Debian, Exim, gmail, google apps, Linux, mail, Server, squeeze
+tags: Debian, Exim, Gmail, google apps, Linux, email, Server, Debian Squeeze
 
 Here is quick guide on how I configured Exim 4 to let a Debian Squeeze server send mails through a GMail account. This article is just a rip-off of [a tutorial I found on the web](http://www.manu-j.com/blog/wordpress-exim4-ubuntu-gmail-smtp/75/), which is itself an updated version of [a Debian's Wiki page](http://wiki.debian.org/GmailAndExim4).
 

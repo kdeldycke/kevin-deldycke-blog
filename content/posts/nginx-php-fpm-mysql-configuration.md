@@ -5,7 +5,7 @@ slug: nginx-php-fpm-mysql-configuration
 title: My Nginx + PHP-FPM + MySQL configuration
 wordpress_id: 3594
 category: English
-tags: Debian, debian squeeze, Linux, MySQL, nginx, ovh, PHP, php-fpm, Server, virtual server, virtualization, Web, WordPress
+tags: Debian, Debian Squeeze, Linux, MySQL, SQL, nginx, ovh, PHP, php-fpm, Server, virtualization, Web, WordPress
 
 This article is a follow-up to the one I wrote 3 months ago, in which I explained how to [install a web stack based on Nginx, PHP-FPM and MySQL](http://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/) on a Debian Squeeze server. Now it's time to tune this basic install to get some performance out of it.
 

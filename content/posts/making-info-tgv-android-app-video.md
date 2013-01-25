@@ -5,7 +5,7 @@ slug: making-info-tgv-android-app-video
 title: Making of "Info TGV" Android app video
 wordpress_id: 1988
 category: English
-tags: Android, Canon EOS 7D, ffmpeg, free and open-source software, HTC, kdenlive, kubuntu, Linux, twitter, uperto, Video, x264, youtube
+tags: Android, Canon EOS 7D, ffmpeg, HTC, kdenlive, Kubuntu, Ubuntu, Linux, twitter, uperto, Video, x264, youtube
 
 Last week I was called by one of my co-worker from [Uperto](http://www.uperto.com) (the open-source division of [Devoteam](http://devoteam.com)). He knew I worked on some [video projects for my band](http://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great oportunity to play with my [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW), so I accepted ! :)![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTW&camp=217145&creative=399381)
 

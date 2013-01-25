@@ -5,7 +5,7 @@ slug: exim-commands
 title: Exim commands
 wordpress_id: 1617
 category: English
-tags: CLI, E-mail, Exim, Linux, Mail transfer agents
+tags: CLI, email, Exim, Linux, Mail transfer agents
 
   * List mails in the queue:
 

@@ -5,7 +5,7 @@ slug: flame-snow-quartz-composer-particle-system
 title: Flame & Snow, using Quartz Composer particle system
 wordpress_id: 2188
 category: English
-tags: Animation, Apple, Mac, QC Experiment, Quartz Composer, Video, Visual
+tags: Animation, Apple, MacBook, QC Experiment, Quartz Composer, Video, Visual
 
 After creating a [series of compositions](http://kevin.deldycke.com/2010/11/sharp-scan-lines-squared-lava-lamp/) based on my [kaleidoscopic patch](http://kevin.deldycke.com/2010/10/kaleidoscope-001-002/), I played with Quartz Composer's particle system, to create a flame and falling snow flakes:
 

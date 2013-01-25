@@ -5,7 +5,7 @@ slug: reusing-vintage-footage-cool-cavemens-concert-intro
 title: Reusing vintage footage for Cool Cavemen's concert intro
 wordpress_id: 4358
 category: English
-tags: Belgium, classic 21, concert, Cool Cavemen, Gimp, intro, kdenlive, radio, RTBF, tribute, ubuntu, Video, youtube
+tags: Belgium, classic 21, concert, Cool Cavemen, Gimp, intro, kdenlive, radio, RTBF, tribute, Ubuntu, Video, youtube
 
 The goal of that project was to illustrate a pre-recorded soundtrack. The latter being to Cool Cavemen what [The Ecstasy of Gold](http://en.wikipedia.org/wiki/The_Ecstasy_of_Gold) is to Metallica: a piece that is [played before each show](http://www.youtube.com/watch?v=PnX-wK2lVCQ) and serve as concert intro.
 

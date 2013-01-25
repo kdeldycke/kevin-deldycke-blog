@@ -5,7 +5,7 @@ slug: mge-ellipse-750-ups-debian-squeeze
 title: MGE Ellipse 750 UPS on Debian Squeeze
 wordpress_id: 440
 category: English
-tags: Debian, Linux, nut, Server, squeeze, udev, UPS, USB
+tags: Debian, Linux, nut, Server, Debian Squeeze, udev, UPS, USB
 
 My home server is protected by an [MGE Ellipse 750 UPS](http://www.mgeops.com/index.php/products__1/230v_products/ups/ellipse_asr) for years. I bought it for several reasons: it's affordable, has good capacity and is Ubuntu certified.
 

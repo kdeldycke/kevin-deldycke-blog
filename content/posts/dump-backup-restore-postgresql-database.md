@@ -5,7 +5,7 @@ slug: dump-backup-restore-postgresql-database
 title: Dump, backup and restore a PostgreSQL database
 wordpress_id: 4642
 category: English
-tags: Backup, Dump, Linux, PostgreSQL, RDBMS
+tags: Backup, Dump, Linux, PostgreSQL, SQL, RDBMS
 
 Between user rights, permissions, templates and encoding, believe me or not, but I had some troubles finding a consistent procedure to dump, backup and restore a [PostgreSQL](http://www.postgresql.org/) database. That's expected as I'm new to this RDBMS.
 

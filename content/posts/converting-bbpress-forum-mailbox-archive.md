@@ -5,7 +5,7 @@ slug: converting-bbpress-forum-mailbox-archive
 title: Converting a bbPress Forum to a Mailbox Archive
 wordpress_id: 5120
 category: English
-tags: Backup, bbpress, convertion, Cool Cavemen, csv, mail, mailbox, mbox, migration, MySQL, PHP, Python, SQL, WordPress
+tags: Backup, bbpress, convertion, Cool Cavemen, CSV, email, mailbox, mbox, migration, MySQL, SQL, PHP, Python, SQL, WordPress
 
 In my band [Cool Cavemen](http://coolcavemen.com), before using a private mailing-list to discuss internal stuff, we were using a private bbPress forum. This forum is no longer used but it still contains tons of old, but useful content.
 

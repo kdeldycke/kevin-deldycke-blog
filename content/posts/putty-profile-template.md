@@ -5,7 +5,7 @@ slug: putty-profile-template
 title: My PuTTY profile template
 wordpress_id: 1301
 category: English
-tags: PuTTY, shell, SSH, Template, terminal, windows
+tags: PuTTY, shell, SSH, Template, terminal, Windows
 
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/04/putty-template-preview-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2010/04/putty-template-preview.png) Inspired by a recent friend's post about an [annoying PuTTY behavior (fix included)](http://www.think-underground.com/post/2010/04/13/Supprimer-le-comportement-%C3%A9trange-du-pav%C3%A9-num%C3%A9rique-dans-Putty), here is [my template for PuTTY profiles](http://kevin.deldycke.com/static/documents/putty-template.reg).
 

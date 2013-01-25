@@ -5,7 +5,7 @@ slug: installation-guide-full-featured-debian-server
 title: Installation Guide for a full-featured Debian server
 wordpress_id: 3165
 category: English
-tags: apt, cron, Debian, Exim, fail2ban, Linux, maintenance, munin, MySQL, nginx, nut, PHP, Server, SMART, squeeze, system, Web
+tags: apt, cron, Debian, Exim, fail2ban, Linux, maintenance, munin, MySQL, SQL, nginx, nut, PHP, Server, SMART, Debian Squeeze, system, Web
 
 Here is a collection of articles I wrote during the past year. Together they form a guide that will let you setup a full-featured Debian server. All of these tutorials are based on the recent work I did to setup my personal server on Debian Squeeze.
 

@@ -5,7 +5,7 @@ slug: amarok-144-for-mandriva-2007-musicbrainz-repaired
 title: Amarok 1.4.4 for Mandriva 2007: MusicBrainz Repaired !
 wordpress_id: 106
 category: English
-tags: Amarok, Audio, KDE, Linux, Mandriva, Music, MySQL, RPM, urpmi
+tags: Amarok, Audio, KDE, Linux, Mandriva, Music, MySQL, SQL, RPM, urpmi
 
 [![amarok-144-with-musicbrainz1](http://kevin.deldycke.com/wp-content/uploads/2006/11/amarok-144-with-musicbrainz1-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2006/11/amarok-144-with-musicbrainz1.png) I'm happy to announce you that the latest version of Amarok for Mandriva 2007 now feature a fully functionnal MusicBrainz ! Look at the [screenshot](http://kevin.deldycke.com/wp-content/uploads/2006/11/amarok-144-with-musicbrainz.png) for evidences.
 

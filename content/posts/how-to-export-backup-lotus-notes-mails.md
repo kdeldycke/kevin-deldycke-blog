@@ -5,7 +5,7 @@ slug: how-to-export-backup-lotus-notes-mails
 title: How-to export/backup Lotus Notes mails
 wordpress_id: 1574
 category: English
-tags: Backup, Databases, E-mail, export, IBM Lotus Notes, windows
+tags: Backup, Databases, email, export, Lotus Notes, Windows
 
 You are using Lotus Notes as your mail platform. Unfortunately your mailbox has a quota you've already reached and you need space. A solution consist in exporting regularly your mails on your local machine to free up your inbox. Here is a little article documenting the export procedure using the fat desktop client.
 

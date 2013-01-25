@@ -5,7 +5,7 @@ slug: backup-gmail-offlineimap
 title: How-To Backup Gmail with OfflineImap
 wordpress_id: 4820
 category: English
-tags: Backup, E-mail, gmail, IMAP, Linux, mail, maildir, Python, ssl
+tags: Backup, email, Gmail, IMAP, Linux, maildir, Python, SSL
 
 Gmail's content can be retrieved via IMAP, and we'll use this way to backup all our mails thanks to [OfflineImap](http://offlineimap.org), a generic IMAP synchronization utility.
 

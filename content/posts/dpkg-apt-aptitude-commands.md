@@ -5,7 +5,7 @@ slug: dpkg-apt-aptitude-commands
 title: dpkg, APT & Aptitude commands
 wordpress_id: 460
 category: English
-tags: apt, aptitude, backport, CLI, Deb, Debian, dpkg, Linux, ubuntu
+tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
 
   * List all installed packages:
 

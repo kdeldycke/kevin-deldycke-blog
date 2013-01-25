@@ -5,7 +5,7 @@ slug: how-to-configure-grub-kubuntu
 title: How-to configure GRUB in (k)Ubuntu
 wordpress_id: 1065
 category: English
-tags: Booting, grub, kubuntu, Linux, System software, ubuntu
+tags: grub, Kubuntu, Ubuntu, Linux, Ubuntu, MBR
 
 Here is a little note to remind me how to customize [GRUB](http://www.gnu.org/software/grub/) the (k)Ubuntu way.
 

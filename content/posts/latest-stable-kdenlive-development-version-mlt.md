@@ -5,7 +5,7 @@ slug: latest-stable-kdenlive-development-version-mlt
 title: Using latest stable Kdenlive with a development version of MLT
 wordpress_id: 2217
 category: English
-tags: apt-get, aptitude, dpkg, Git, kdenlive, kubuntu, mlt, Video
+tags: apt-get, aptitude, dpkg, Git, kdenlive, Kubuntu, Ubuntu, mlt, Video
 
 Today I stumble upon a bug in the Kdenlive 0.7.8 running on my Kubuntu 10.10: the crop filter was messing with the display ratio of my video clips. Digging the web I [found a bug report](http://www.kdenlive.org/mantis/view.php?id=1814) that was really close to my problem. According to the comments, this issue was fixed in the upcoming version of MLT. Is that bug the one I encountered ? The only way to find out was to install the development version of MLT. Here is how I did it...
 

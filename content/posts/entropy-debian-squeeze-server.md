@@ -5,7 +5,7 @@ slug: entropy-debian-squeeze-server
 title: Better Entropy on a Debian Squeeze server
 wordpress_id: 3552
 category: English
-tags: Debian, entropy, haveged, Linux, random, security, squeeze
+tags: Debian, entropy, haveged, Linux, random, security, Debian Squeeze
 
 While generating a GPG key on my server, I got the following error:
 

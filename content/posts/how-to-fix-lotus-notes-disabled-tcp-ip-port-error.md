@@ -5,7 +5,7 @@ slug: how-to-fix-lotus-notes-disabled-tcp-ip-port-error
 title: How-to fix Lotus Notes' disabled TCPIP port error
 wordpress_id: 1777
 category: English
-tags: IBM Lotus Notes, leopard, Lotus Notes, Mac OS X, Network
+tags: Lotus Notes, Mac OS X Leopard, Lotus Notes, Apple, Mac OS X, Network
 
 Today I encountered this error message:
 [![](http://kevin.deldycke.com/wp-content/uploads/2010/08/lotus-notes-tcp-ip-error-300x122.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/lotus-notes-tcp-ip-error.png)

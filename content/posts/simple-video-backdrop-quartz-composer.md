@@ -5,7 +5,7 @@ slug: simple-video-backdrop-quartz-composer
 title: Simple video backdrop with Quartz Composer
 wordpress_id: 2198
 category: English
-tags: Animation, Apple, Cool Cavemen, live, Mac, QC Experiment, Quartz Composer, stage, Video, Visual
+tags: Animation, Apple, Cool Cavemen, live, MacBook, QC Experiment, Quartz Composer, stage, Video, Visual
 
 While playing with Quartz Composer, the only composition I made with a clear intention of using it was this one:
 

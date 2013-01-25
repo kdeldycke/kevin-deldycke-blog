@@ -5,7 +5,7 @@ slug: e107-importer-1-2-enhanced-bbcode-parser
 title: e107 Importer 1.2 is out, with an enhanced BBCode parser.
 wordpress_id: 3084
 category: English
-tags: Blog, code, e107, MySQL, PHP, Web, WordPress
+tags: Blog, code, e107, MySQL, SQL, PHP, Web, WordPress
 
 [![](http://kevin.deldycke.com/wp-content/uploads/2011/04/e107-importer-12-option-panel-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2011/04/e107-importer-12-option-panel.png) Here is a brand new version of my e107 Importer plugin. This release fix lots of nasty bugs. Better, I added an enhanced BBCode parser which try to clean-up what e107's parser output. This new parser also try to align the final HTML with what WordPress produce by default.
 

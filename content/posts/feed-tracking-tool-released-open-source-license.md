@@ -5,7 +5,7 @@ slug: feed-tracking-tool-released-open-source-license
 title: Feed Tracking Tool released under an Open-Source license
 wordpress_id: 3013
 category: English
-tags: code, feed, Git, GitHub, GPL, Pylons, Python, ruby, Ruby on Rails, uperto, Web
+tags: code, feed, Git, GitHub, GPL, Pylons, Python, ruby, Ruby on Rails, Uperto, Web
 
 I've just open-sourced the [Feed Tracking Tool project](http://github.com/kdeldycke/feed-tracking-tool) (aka "FTT"), my first (and only) [Ruby on Rails](http://rubyonrails.org/) experience.
 
