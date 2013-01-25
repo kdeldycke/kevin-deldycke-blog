@@ -6,17 +6,91 @@ RewriteRule ^(.*)$ http://kevin.deldycke.com/$1
 Options -FollowSymLinks -ExecCGI -Includes -IncludesNOEXEC -Indexes -MultiViews +SymLinksIfOwnerMatch
 RewriteEngine on
 
+# Remove OVH cookie
+<IfModule mod_headers.c>
+  Header unset Set-Cookie
+</IfModule>
+
+# WordPress redirects
+RedirectMatch 301 ^/wp-content/uploads/(.*) /static/uploads/$1
+RedirectMatch 301 ^/category/lang/en/(.*) /category/english/$1
+RedirectMatch 301 ^/category/lang/fr/(.*) /category/francais/$1
+RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
+
+# WordPress feeds for blog, tags and categories
+RedirectMatch 301 (.*)/feed/(rss2?|rdf)/?$ $1/feed/
+
+# Force mime type of feeds
+RewriteRule /feed/$ - [T=application/rss+xml]
+RewriteRule /feed/atom/$ - [T=application/atom+xml]
+
+# Site-wide comments feeds moved to Disqus
+RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ http://kevin-deldycke-blog.disqus.com/latest.rss
+
+# Catch-all tag-like URLS
+#RedirectMatch 301 /tag/([^\/]+)/(.+)$ /tag/$1/
+#RedirectMatch 301 /tag/?$ /tags.html
+#RedirectMatch 301 /category/?$ /categories.html
+
+# WordPress' yearly and monthly archive pages are gone (HTTP 410 code)
+RedirectMatch gone /\d{4}/?$
+RedirectMatch gone /\d{4}/page/\d+/?$
+RedirectMatch gone /\d{4}/\d{2}/?$
+RedirectMatch gone /\d{4}/\d{2}/page/\d+/?$
+# Intermediate category are gone too
+RedirectMatch gone /category/lang/?$
+RedirectMatch gone /category/lang/page/\d+/?$
+# Paginated tags and categories are no more
+RedirectMatch gone /category/(.*)/page/\d+/?$
+RedirectMatch gone /tag/[^\/]+/page/\d+/?$
+# Other WordPress stuff
+RedirectMatch gone /author/[^\/]+/?$
+RedirectMatch gone /author/[^\/]+/page/\d+/?$
+RedirectMatch gone ^/wp-(admin|content|includes)/?.*$
+RedirectMatch gone ^/wp-.*\.php$
+
+# Generic error files
+#ErrorDocument 404 /pages/404-page-not-found.html
+#ErrorDocument 500 /pages/500-error.html
+
 # Force compression of text-based assets
 <IfModule mod_headers.c>
   RequestHeader append Accept-Encoding "gzip,deflate"
 </IfModule>
 <IfModule filter_module>
+
+#TODO: I only have these mime type on my site
+# application/javascript
+# application/octet-stream
+# application/pdf
+# application/vnd.oasis.opendocument.presentation-template
+# application/x-gzip
+# application/xml
+# application/x-php
+# application/x-rpm
+# image/gif
+# image/jpeg
+# image/png
+# image/svg+xml
+# image/svg+xml-compressed
+# image/vnd.adobe.photoshop
+# image/vnd.microsoft.icon
+# image/x-xcf
+# text/css
+# text/html
+# text/plain
+# text/x-microdvd
+# text/x-ms-regedit
+# text/x-patch
+# text/x-python
+# text/x-tmplayer
+# video/quicktime
+
   FilterDeclare   COMPRESS
   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/html
   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/css
   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/plain
   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/xml
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/x-component
   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/javascript
   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/json
   FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xml
@@ -45,56 +119,11 @@ RewriteEngine on
   ExpiresByType text/css "access plus 1 day"
 
   ExpiresByType image/x-icon "access plus 1 month"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 month"
 
   ExpiresByType application/pdf "access plus 1 month"
-  ExpiresByType audio/x-wav "access plus 1 month"
-  ExpiresByType audio/mpeg "access plus 1 month"
-  ExpiresByType video/mpeg "access plus 1 month"
-  ExpiresByType video/mp4 "access plus 1 month"
-  ExpiresByType video/quicktime "access plus 1 month"
-  ExpiresByType video/x-ms-wmv "access plus 1 month"
-  ExpiresByType application/x-shockwave-flash "access 1 month"
 
   ExpiresByType text/javascript "access plus 1 week"
   ExpiresByType application/x-javascript "access plus 1 week"
   ExpiresByType application/javascript "access plus 1 week"
 </IfModule>
-
-# Remove OVH cookie
-<IfModule mod_headers.c>
-  Header unset Set-Cookie
-</IfModule>
-
-# Structure redirects
-RedirectMatch 301 /wp-content/uploads/(.*) /static/uploads/$1
-RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
-
-
-#Redirect 301 /feed/ /feeds/all.atom.xml
-
-
-# Catch-all tag-like URLS
-#RedirectMatch 301 /tag/([^\/]+)/(.+)$ /tag/$1/
-#RedirectMatch 301 /tag/?$ /tags.html
-#RedirectMatch 301 /category/?$ /categories.html
-
-# WordPress' yearly and monthly archive pages are gone (HTTP 410 code)
-RedirectMatch gone /\d{4}/?$
-RedirectMatch gone /\d{4}/page/\d+/?$
-RedirectMatch gone /\d{4}/\d{2}/?$
-RedirectMatch gone /\d{4}/\d{2}/page/\d+/?$
-# Intermediate category are gone too
-RedirectMatch gone /category/lang/?$
-RedirectMatch gone /category/lang/page/\d+/?$
-# Paginated tags and categories are no more
-RedirectMatch gone /category/(.*)/page/\d+/?$
-RedirectMatch gone /tag/[^\/]+/page/\d+/?$
-# Other WordPress stuff
-RedirectMatch gone /author/[^\/]+/?$
-RedirectMatch gone /author/[^\/]+/page/\d+/?$
-RedirectMatch gone ^/wp-(admin|content|includes)/?.*$
-RedirectMatch gone ^/wp-.*\.php$
-
-# Generic error files
-#ErrorDocument 404 /pages/404-page-not-found.html
-#ErrorDocument 500 /pages/500-error.html

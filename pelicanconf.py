@@ -32,7 +32,7 @@ FILENAME_METADATA = '(?P<slug>.*)'
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = TAG_URL + 'index.html'
 
-CATEGORY_URL = 'category/lang/{slug}/'
+CATEGORY_URL = 'category/{slug}/'
 CATEGORY_SAVE_AS = CATEGORY_URL + 'index.html'
 
 # Deactivate author URLs
@@ -42,16 +42,12 @@ AUTHOR_SAVE_AS = False
 ARTICLE_LANG_SAVE_AS = False
 PAGE_LANG_SAVE_AS = False
 
-#http://example.com/feed/
-#http://example.com/feed/rss/
-#http://example.com/feed/rss2/
-#http://example.com/feed/rdf/
 FEED_RSS = 'feed/index.html'
-#http://example.com/feed/atom/
 FEED_ATOM = 'feed/atom/index.html'
-
 FEED_ALL_RSS = False
 FEED_ALL_ATOM = False
+TRANSLATION_FEED_RSS = False
+TRANSLATION_FEED_ATOM = False
 
 #http://kevin.deldycke.com/tag/openerp/feed/
 TAG_FEED_RSS = 'tag/%s/feed/index.html'
