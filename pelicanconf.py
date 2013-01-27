@@ -102,7 +102,6 @@ LINKS =  (
     )
 
 PLUGINS = [
-    'pelican.plugins.related_posts',
     'pelican.plugins.sitemap',
     ]
 
