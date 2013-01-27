@@ -70,4 +70,6 @@ The last step is to install and configure the Munin plugin:
     $ /etc/init.d/munin-node restart
 
 And finally, after a while, you'll get those beautiful graphs:
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/06/php-apc-munin-graphs-300x300.png)](http://kevin.deldycke.com/wp-content/uploads/2011/06/php-apc-munin-graphs.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2011/06/php-apc-munin-graphs.png)
+

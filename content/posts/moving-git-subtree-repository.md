@@ -32,7 +32,8 @@ Instead of the command above, I could have use the `--subdirectory-filter` optio
 But this doesn't work in my case as my e107 Importer plugin didn't started its life straight in a dedicated folder. So this command squash some of the history I want to preserve.
 
 At this point I'm left with this following history:
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-subtree-cleanup-results-300x145.png)](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-subtree-cleanup-results.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-subtree-cleanup-results.png)
 
 This looks pretty good, as all the history of my plugin is kept in order. But tags unrelated to my plugin are still there. Let's remove them:
 
@@ -45,7 +46,8 @@ Now there is some commits polluting my history. These are left-overs of `git-mod
     $ git rebase --interactive init
 
 There, using my text editor, I deleted the entries corresponding to these unrelated commits (namely `c21a840`, `0dc1d76`, `37473a8` and `c6f9f64`), and hoped Git will be smart enough to reconstruct a clean history:
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-interactive-rebase-300x130.png)](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-interactive-rebase.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2011/01/git-interactive-rebase.png)
 
 Luckily, it worked for me. If Git complain about such abuse, you may ignore warnings and force it to continue:
 
@@ -71,7 +73,8 @@ And import the master branch we carefully crafted (including tags):
     $ git pull --tags origin master
 
 Now we can create on GitHub the new repository that will receive our exported project:
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/01/github-new-repository-form-300x212.png)](http://kevin.deldycke.com/wp-content/uploads/2011/01/github-new-repository-form.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2011/01/github-new-repository-form.png)
 
 It's time to push our changes. Let's replace our temporary origin to the new GitHub repository we just created:
 

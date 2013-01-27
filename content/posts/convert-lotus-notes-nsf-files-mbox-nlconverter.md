@@ -13,26 +13,39 @@ If you want to extract mails out of your `.nsf` database, this might be the tool
 
 ## Installing nlconverter and its dependencies
 
-Here is how I installed `nlconverter` on a [Windows 2000](http://www.amazon.com/gp/product/B0006HMWO4/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0006HMWO4) (SP4) machine:![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0006HMWO4&camp=217145&creative=399381)
+Here is how I installed `nlconverter` on a [Windows 2000](http://www.amazon.com/gp/product/B0006HMWO4/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0006HMWO4) (SP4) machine:
+
+![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0006HMWO4&camp=217145&creative=399381)
 
   1. First I downloaded and installed the [official Python builds for Windows](http://www.python.org/download/releases/) ([2.6.6 precisely](http://www.python.org/ftp/python/2.6.6/python-2.6.6.msi)):
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/001-python-266-install-on-windows-2000-300x255.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/001-python-266-install-on-windows-2000.png)
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/002-python-266-install-on-windows-2000-300x255.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/002-python-266-install-on-windows-2000.png)
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/003-python-266-install-on-windows-2000-300x255.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/003-python-266-install-on-windows-2000.png)
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/004-python-266-install-on-windows-2000-300x255.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/004-python-266-install-on-windows-2000.png)
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/005-python-266-install-on-windows-2000-300x255.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/005-python-266-install-on-windows-2000.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/001-python-266-install-on-windows-2000.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/002-python-266-install-on-windows-2000.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/003-python-266-install-on-windows-2000.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/004-python-266-install-on-windows-2000.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/005-python-266-install-on-windows-2000.png)
 
   2. Then [Python for Windows extensions](http://sourceforge.net/projects/pywin32/) ([build 214 for Python 2.6 in my case](http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.6.exe/download)):
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/001-pywin32-214-install-on-windows-2000-300x193.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/001-pywin32-214-install-on-windows-2000.png)
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/002-pywin32-214-install-on-windows-2000-300x193.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/002-pywin32-214-install-on-windows-2000.png)
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/003-pywin32-214-install-on-windows-2000-300x193.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/003-pywin32-214-install-on-windows-2000.png)
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/004-pywin32-214-install-on-windows-2000-300x193.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/004-pywin32-214-install-on-windows-2000.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/001-pywin32-214-install-on-windows-2000.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/002-pywin32-214-install-on-windows-2000.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/003-pywin32-214-install-on-windows-2000.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/004-pywin32-214-install-on-windows-2000.png)
 
   3. Finally I had to [download the latest `icalendar` archive](http://pypi.python.org/pypi/icalendar), then extract the `\iCalendar-1.2\src\icalendar` folder to `C:\Python26\Lib\site-packages\`:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/extract-icalendar-python-package-on-windows-300x217.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/extract-icalendar-python-package-on-windows.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/extract-icalendar-python-package-on-windows.png)
 
   4. Next step is to [download nlconverter](http://code.google.com/p/nlconverter/downloads) itself and extract it:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/nlconverter-install-on-windows-300x214.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/nlconverter-install-on-windows.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/nlconverter-install-on-windows.png)
 
 ## nlconverter GUI
 
@@ -41,7 +54,8 @@ First thing you have to do is to create an [export of your mails as a `.nsf` dat
 Now let's convert this `nsf` to a `mbox`. [nlconverter's FAQ](http://code.google.com/p/nlconverter/wiki/Faq) tells you to run the `gui.exe` program to perform the conversion.
 
 Unfortunately it didn't work for me:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/nlconverter-gui-fail-300x91.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/nlconverter-gui-fail.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/nlconverter-gui-fail.png)
 
 So I tried the alternative approach by using the command line.
 
@@ -50,7 +64,8 @@ So I tried the alternative approach by using the command line.
 Again, most of the things I'm writing here are based on [nlconverter's FAQ](http://code.google.com/p/nlconverter/wiki/Faq):
 
   1. First, we have to [download the `notes2mbox.py` script](http://nlconverter.googlecode.com/hg/notes2mbox.py) from [nlconverter's mercurial repository](http://code.google.com/p/nlconverter/source/browse/), as this file is not distributed in the `winnlc-alpha-1.zip` archive I unzipped previously. Let's put `notes2mbox.py` in `C:\winnlc-alpha-1\`:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/09/download-notes2mbox-python-script-300x167.png)](http://kevin.deldycke.com/wp-content/uploads/2010/09/download-notes2mbox-python-script.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/09/download-notes2mbox-python-script.png)
 
   2. Now we'll modify the `notes2mbox.py` script to set the password (via the `notesPasswd` variable) and location (`notesNsfPath` variable) of the `.nsf` file. Here are the modifications I applied:
 
@@ -74,7 +89,8 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
     :::bat
     regsvr32 "C:\Program Files\Notes\nlsxbe.dll"
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/notes-nlsxbe-dll-registered1-300x96.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/notes-nlsxbe-dll-registered1.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/notes-nlsxbe-dll-registered1.png)
+
 And make the Python interpreter available system-wide:
 
     :::bat

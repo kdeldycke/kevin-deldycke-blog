@@ -11,11 +11,11 @@ I'm a long time user of the [Contextual Related Posts plugin](http://wordpress.o
 
 The thing is that if you activate thumbnails, you'll end up with this kind of ugly list:
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/03/contextual-related-posts-default-style-300x240.png)](http://kevin.deldycke.com/wp-content/uploads/2012/03/contextual-related-posts-default-style.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2012/03/contextual-related-posts-default-style.png)
 
 So I've written some CSS to beautify this, and make the final result aligns with [TwentyEleven](http://theme.wordpress.com/themes/twentyeleven/) (WordPress default theme):
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/03/contextual-related-posts-custom-style-300x122.png)](http://kevin.deldycke.com/wp-content/uploads/2012/03/contextual-related-posts-custom-style.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2012/03/contextual-related-posts-custom-style.png)
 
 And here is the CSS producing the result above:
 
@@ -73,6 +73,6 @@ I've integrated this CSS code via a widget, using the same [technique I've detai
 
 This CSS was tested against the version 1.7.2 of _Contextual Related Posts_, and for reference, here is my plugin configuration:
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/03/contextual-related-posts-config-233x300.png)](http://kevin.deldycke.com/wp-content/uploads/2012/03/contextual-related-posts-config.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2012/03/contextual-related-posts-config.png)
 
 And FYI, my post default thumbnail is from KDE's [Oxygen icon set](http://www.oxygen-icons.org/), which I found on my system in `/usr/share/icons/oxygen/128x128/apps/knotes.png`.

@@ -14,4 +14,6 @@ http://www.youtube.com/watch?v=c-n-eZnF-uo
 As you can see, it's just [my band](http://coolcavemen.com)'s logo, subtly glowing (or breathing, as you wish). It's a simple but effective animated stage backdrop. I haven't used it in any of our concert, but next time a video projector is present on stage, I will ! :)
 
 As usual, here is the [source composition](http://kevin.deldycke.com/static/documents/glowing-cool-cavemen.qtz), and a preview of the patch:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/10/glowing-cool-cavemen-patch-300x211.png)](http://kevin.deldycke.com/wp-content/uploads/2010/10/glowing-cool-cavemen-patch.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/10/glowing-cool-cavemen-patch.png)
+

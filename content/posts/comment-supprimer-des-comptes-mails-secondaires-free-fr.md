@@ -14,10 +14,12 @@ Résultat: cela fait maintenant 10 ans que je traîne plus d'une vingtaine de co
 Il est temps de mettre fin à cette folie furieuse et de faire le ménage.
 
 La procédure de suppression de ces comptes mails chez Free n'est pas compliqué. La première chose à faire, si ce n'est pas déjà fait, consiste à rattacher ses comptes mails à son compte principal. Facile, ça se fait dans l'interface d'administration du compte:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/12/rattacher-compte-mail-300x172.png)](http://kevin.deldycke.com/wp-content/uploads/2010/12/rattacher-compte-mail.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/12/rattacher-compte-mail.png)
 
 Ensuite, il faut se rendre sur la [page d'assistance par mail](http://www.free.fr/assistance/mail.html). Là, il suffit d'écrire un message poli et précis, en choisissant bien _Gestion des comptes de messagerie_ comme destinataire:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/12/free-assistance-mail-300x217.png)](http://kevin.deldycke.com/wp-content/uploads/2010/12/free-assistance-mail.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/12/free-assistance-mail.png)
 
 Et pour les paresseux, voici le modèle à copier/coller:
 

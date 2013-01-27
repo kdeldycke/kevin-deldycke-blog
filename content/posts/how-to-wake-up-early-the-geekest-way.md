@@ -7,7 +7,9 @@ wordpress_id: 29
 category: English
 tags: life, Linux, mobile phone, mplayer, Music, travel
 
-[![Mobile Phone, Broken Screen](http://kevin.deldycke.com/wp-content/uploads/2006/08/pict4644-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2006/08/pict4644.jpg) I was in a country far far away last month. So far that there was no broadband access (yes, this is possible). Anyway... Generally I use my mobile phone as a clock and as an alarm clock. Unfortunalty I brake it down just before my night flight.
+![Mobile Phone, Broken Screen](http://kevin.deldycke.com/wp-content/uploads/2006/08/pict4644.jpg)
+
+I was in a country far far away last month. So far that there was no broadband access (yes, this is possible). Anyway... Generally I use my mobile phone as a clock and as an alarm clock. Unfortunalty I brake it down just before my night flight.
 
 So, to simplify, I was abroad in a hotel, the sun was down since a while, I was tired, and I had to wake up early. No electronic devices to help me, except my laptop... And then came the idea to combine `cron` and `mplayer` to automaticcaly play some MP3s at a given time.
 

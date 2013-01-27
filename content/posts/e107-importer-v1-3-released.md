@@ -7,7 +7,9 @@ wordpress_id: 3203
 category: English
 tags: Cool Cavemen, e107, importer, migration, PHP, Web, WordPress
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/05/e107-importer-v1-3-option-panel-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2011/05/e107-importer-v1-3-option-panel.png) A month after [the last one](http://kevin.deldycke.com/2011/04/e107-importer-1-2-enhanced-bbcode-parser/), here is a brand [new version of my e107 Importer](http://wordpress.org/extend/plugins/e107-importer/), numbered 1.3.
+![](http://kevin.deldycke.com/wp-content/uploads/2011/05/e107-importer-v1-3-option-panel.png)
+
+A month after [the last one](http://kevin.deldycke.com/2011/04/e107-importer-1-2-enhanced-bbcode-parser/), here is a brand [new version of my e107 Importer](http://wordpress.org/extend/plugins/e107-importer/), numbered 1.3.
 
 This version add loads of polishing and is not far from being feature-complete. I think I'm reaching the end of the active development of this plugin. I don't see the need to add new features.
 
@@ -33,4 +35,5 @@ That being said, here is the changelog of the brand new e107 Importer 1.3:
 
 Finally, while cleaning up my home folder, I stumble upon this old screenshot of [dash](http://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/comment-page-1/#comment-3300)'s old e107 site. This is what its maintenance page looked like the day she initiated the transition to WordPress using my script:
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2008/01/film-fanatix-com-maintenance-page-300x187.png)](http://kevin.deldycke.com/wp-content/uploads/2008/01/film-fanatix-com-maintenance-page.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2008/01/film-fanatix-com-maintenance-page.png)
+

@@ -7,7 +7,9 @@ wordpress_id: 655
 category: English
 tags: Apple, buildout, Mac OS X Leopard, MacBook, Apple, Mac OS X, Plone, Python, zope
 
-In this post I'll show you how I installed Python 2.4 on [Mac OS X Leopard](http://www.amazon.com/gp/product/B000FK88JK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000FK88JK) and how, starting from a bare Python environnement, we can build a stand-alone Zope 2.10 instance with Plone 3.2 thanks to `zc.buildout`.![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B000FK88JK&camp=217145&creative=399381)
+In this post I'll show you how I installed Python 2.4 on [Mac OS X Leopard](http://www.amazon.com/gp/product/B000FK88JK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000FK88JK) and how, starting from a bare Python environnement, we can build a stand-alone Zope 2.10 instance with Plone 3.2 thanks to `zc.buildout`.
+
+![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B000FK88JK&camp=217145&creative=399381)
 
 If your goal is to play with or evaluate Plone (or if you don't know what `zc.buildout` is), then this article will lead you to some troubles and pain. The Plone community maintain a collection of out-of-the-box and ready-to-use installers for all major platforms. So before going further, I strongly advise you to use the [official Plone installer for Mac OS X](http://plone.org/products/plone). This is much simpler and faster than the process described below.
 
@@ -16,7 +18,8 @@ Now that all Plone newcomers are redirected to the right place, I can start to t
 To get Python 2.4 on your machine, you can [install it from its source code](http://kb.ucla.edu/articles/installing-plone-v32-on-mac-os-x-105). But this is too much work for me. There should be a way to do it easier and faster... And there is.
 
 Browsing the net, I found the [repository of the "fat python" project](http://pythonmac.org/packages/py24-fat/), were you can find a [universal binary installer for Panther](http://pythonmac.org/packages/py24-fat/dmg/python-2.4.4-macosx2006-10-18.dmg). I've just installed it on my brand new Mac OS X 10.5.7 and it seems to works perfectly:
-[![python-2.4-shell-in-mac-os-x-leopard](http://kevin.deldycke.com/wp-content/uploads/2009/07/python-2.4-shell-in-mac-os-x-leopard-300x127.png)](http://kevin.deldycke.com/wp-content/uploads/2009/07/python-2.4-shell-in-mac-os-x-leopard.png)
+
+![python-2.4-shell-in-mac-os-x-leopard](http://kevin.deldycke.com/wp-content/uploads/2009/07/python-2.4-shell-in-mac-os-x-leopard.png)
 
 Now that the most annoying part (to me) is done, we can install Plone via [`zc.buildout`](http://pypi.python.org/pypi/zc.buildout).
 
@@ -91,10 +94,14 @@ At the end, if your build process didn't fail, you'll be able to start your Zope
     2009-07-20T20:42:59 INFO Zope Ready to handle requests
 
 Then you can fire up Safari, go to `http://localhost:8080/manage` (default Zope config), and login as the `admin` user (password: `admin`):
-[![safari-zope-login](http://kevin.deldycke.com/wp-content/uploads/2009/07/safari-zope-login-300x231.png)](http://kevin.deldycke.com/wp-content/uploads/2009/07/safari-zope-login.png)
+
+![safari-zope-login](http://kevin.deldycke.com/wp-content/uploads/2009/07/safari-zope-login.png)
 
 Create a Plone site:
-[![plone-site-creation](http://kevin.deldycke.com/wp-content/uploads/2009/07/plone-site-creation-300x249.png)](http://kevin.deldycke.com/wp-content/uploads/2009/07/plone-site-creation.png)
+
+![plone-site-creation](http://kevin.deldycke.com/wp-content/uploads/2009/07/plone-site-creation.png)
 
 Check that your using the right version of Plone in the control panel:
-[![plone-323-control-panel](http://kevin.deldycke.com/wp-content/uploads/2009/07/plone-323-control-panel-300x299.png)](http://kevin.deldycke.com/wp-content/uploads/2009/07/plone-323-control-panel.png)
+
+![plone-323-control-panel](http://kevin.deldycke.com/wp-content/uploads/2009/07/plone-323-control-panel.png)
+

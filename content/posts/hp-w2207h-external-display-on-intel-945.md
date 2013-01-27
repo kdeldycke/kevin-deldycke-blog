@@ -7,7 +7,9 @@ wordpress_id: 218
 category: English
 tags: chipset, display, external display, graphic, Hewlett Packard, Intel, laptop, Linux, Samsung, screen, X.org
 
-I recently had the oportunity to plug the [HP w2207h screen](http://www.amazon.com/gp/product/B00139S3U6/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B00139S3U6) (see [review #1](http://www.anandtech.com/displays/showdoc.aspx?i=3054) and [review #2](http://www.prad.de/en/monitore/review/2007/review-hp-w2207.html)) as an external display to my [Samsung Q35 laptop](http://kevin.deldycke.com/2006/10/samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop/). The external display has a native resolution of 1680x1050 and the laptop's is 1280x800.![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B00139S3U6&camp=217145&creative=399381)
+I recently had the oportunity to plug the [HP w2207h screen](http://www.amazon.com/gp/product/B00139S3U6/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B00139S3U6) (see [review #1](http://www.anandtech.com/displays/showdoc.aspx?i=3054) and [review #2](http://www.prad.de/en/monitore/review/2007/review-hp-w2207.html)) as an external display to my [Samsung Q35 laptop](http://kevin.deldycke.com/2006/10/samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop/). The external display has a native resolution of 1680x1050 and the laptop's is 1280x800.
+
+![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B00139S3U6&camp=217145&creative=399381)
 
 The laptop is powered by an [Intel 945 graphic chip](http://en.wikipedia.org/wiki/Intel_GMA#GMA_950):
 

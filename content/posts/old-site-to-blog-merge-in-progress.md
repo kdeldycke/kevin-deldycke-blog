@@ -7,7 +7,9 @@ wordpress_id: 68
 category: English
 tags: Blog, CMS, Web
 
-[![cps-to-wordpress](http://kevin.deldycke.com/wp-content/uploads/2006/10/cps-to-wordpress-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2006/10/cps-to-wordpress.png) I'm currently moving all the content from my old site to this blog. Here is the list of "new old" things I've manually imported:
+![cps-to-wordpress](http://kevin.deldycke.com/wp-content/uploads/2006/10/cps-to-wordpress.png)
+
+I'm currently moving all the content from my old site to this blog. Here is the list of "new old" things I've manually imported:
 
 **Articles:**
 

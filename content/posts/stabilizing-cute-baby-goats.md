@@ -15,13 +15,19 @@ http://www.youtube.com/watch?v=el6VMY8KZHo
 
 Yeah, I know, this is a naive video that belongs to [/r/aww](http://www.reddit.com/r/aww/). But any excuse is good to me when its all about playing with video.
 
-These kids (as baby goats are called) decided to come to this world the night I was around. In a hurry I grabbed my [Canon 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW) and filmed these newborns with a [Sigma 30mm f/1.4 EX DC HSM](http://www.amazon.com/gp/product/B0007U0GZM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0007U0GZM) to leverage its large aperture. And as expected, in the night, with no artificial light and no extra stabilization device, the resulting footage are extremely shaky.![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTW&camp=217145&creative=399381)![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0007U0GZM&camp=217145&creative=399381)
+These kids (as baby goats are called) decided to come to this world the night I was around. In a hurry I grabbed my [Canon 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW) and filmed these newborns with a [Sigma 30mm f/1.4 EX DC HSM](http://www.amazon.com/gp/product/B0007U0GZM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0007U0GZM) to leverage its large aperture. And as expected, in the night, with no artificial light and no extra stabilization device, the resulting footage are extremely shaky.
+
+![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTW&camp=217145&creative=399381)
+
+![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0007U0GZM&camp=217145&creative=399381)
 
 I tried to stabilize the shots but was really disappointed by the results. The final version of the video you watched above only feature the original footage, without any stabilization. But for posterity, here are some notes about the tools I played with.
 
 ## vid.stab
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/01/transcode-stabilizer-log-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/transcode-stabilizer-log.jpg) The first tool I tried was [vid.stab](http://public.hronopik.de/vid.stab/), a Transcode plugin that is now part of Transcode itself. But the 1.1.5 version that is bundled with the current Ubuntu 11.10 is quite old.
+![](http://kevin.deldycke.com/wp-content/uploads/2012/01/transcode-stabilizer-log.jpg)
+
+The first tool I tried was [vid.stab](http://public.hronopik.de/vid.stab/), a Transcode plugin that is now part of Transcode itself. But the 1.1.5 version that is bundled with the current Ubuntu 11.10 is quite old.
 
 I wanted to compile it from its [sources](http://github.com/georgmartius/vid.stab). But the [binary distribution](http://public.hronopik.de/vid.stab/download.php) available on the project website works out of the box. To save some effort, let's install the latter:
 
@@ -48,7 +54,7 @@ If your not satisfied with the result, you can increase the area of tracking poi
 
 In the command line above we added the `show=1,preview` parameters, which have the nice effect of displaying a preview of the work done behind the scene:
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/02/goat-tracking-300x169.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/02/goat-tracking.jpg)
+![](http://kevin.deldycke.com/wp-content/uploads/2012/02/goat-tracking.jpg)
 
 And if you want to see the transformations applied in the final video, just deactivate the cropping and zooming mechanism:
 

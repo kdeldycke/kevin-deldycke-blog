@@ -9,7 +9,9 @@ tags: Debian, Debian Squeeze, Linux, MySQL, SQL, nginx, ovh, PHP, php-fpm, Serve
 
 This article is a follow-up to the one I wrote 3 months ago, in which I explained how to [install a web stack based on Nginx, PHP-FPM and MySQL](http://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/) on a Debian Squeeze server. Now it's time to tune this basic install to get some performance out of it.
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/08/ovh-vps-3-virtual-server-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2011/08/ovh-vps-3-virtual-server.png) The setup I'll detail below runs on an [OVH VPS](http://www.ovh.co.uk/vps/) instance. This virtual server has 4 CPU cores at 1.5GHz, 1 Go RAM and 50 Gb HDD.
+![](http://kevin.deldycke.com/wp-content/uploads/2011/08/ovh-vps-3-virtual-server.png)
+
+The setup I'll detail below runs on an [OVH VPS](http://www.ovh.co.uk/vps/) instance. This virtual server has 4 CPU cores at 1.5GHz, 1 Go RAM and 50 Gb HDD.
 
 I'm mostly running WordPress instances on that server, so you'll see some reference of it in this post.
 

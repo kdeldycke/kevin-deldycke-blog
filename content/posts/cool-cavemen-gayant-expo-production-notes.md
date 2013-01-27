@@ -17,13 +17,19 @@ By gathering all kinds of footage from the event, I was able to generate this 1-
 
 ## Lighting Design
 
-I not only edited this video. I also was in charge of the [stage lighting design](http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Stage%20Lighting%20Design&linkCode=ur2&rh=i%3Aaps%2Ck%3AStage%20Lighting%20Design&tag=kevideld-20&url=search-alias%3Daps) of the concert:![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+I not only edited this video. I also was in charge of the [stage lighting design](http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Stage%20Lighting%20Design&linkCode=ur2&rh=i%3Aaps%2Ck%3AStage%20Lighting%20Design&tag=kevideld-20&url=search-alias%3Daps) of the concert:
 
-[![working-on-grand-ma-001](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-001-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-001.jpg)[![working-on-grand-ma-002](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-002-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-002.jpg)[![working-on-grand-ma-003](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-003-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-003.jpg)
+![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+
+![working-on-grand-ma-001](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-001.jpg)
+
+![working-on-grand-ma-002](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-002.jpg)
+
+![working-on-grand-ma-003](http://kevin.deldycke.com/wp-content/uploads/2012/09/working-on-grand-ma-003.jpg)
 
 It was the first time I had so much gear to work with (mostly [Martin Mac-2000](http://www.martin.com/product/product.asp?product=mac2000profile) and [Mac-700](http://martin.com/product/product.asp?product=mac700profile)), including the full-size version of the [Grand-MA v1 lighting console](http://en.audiofanzine.com/automatic-lighting-console/ma-lighting/GrandMA-Fullsize/). A week before the show, I played with [GrandMA's emulator](http://www.malighting.com/en/products/control/grandma-onpc.html) to get a glimpse of that desk's philosophy.
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/10/grand-ma-onpc-simulation-469x288.png)](http://kevin.deldycke.com/wp-content/uploads/2012/10/grand-ma-onpc-simulation.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2012/10/grand-ma-onpc-simulation.png)
 
 But this little training is not enough to get used to the GrandMA, let alone master it. So when it was time to play live, I choose simple lighting patterns and movements. Of course I made a lots of mistakes and the result was far from perfect, but it was good enough to keep the show running. Considering these conditions, my performance was a success ! :)
 
@@ -31,9 +37,15 @@ And I had a secret weapon: I knew I'll be the one editing the video. Being both 
 
 ## Synchronization
 
-The audio is a multitrack recording taken directly from the [front of house](http://en.wikipedia.org/wiki/Front_of_House) mixing console, and saved on a [MacBook](http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=apple%20macbook&linkCode=ur2&rh=i%3Aaps%2Ck%3Aapple%20macbook&tag=kevideld-20&url=search-alias%3Daps):![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+The audio is a multitrack recording taken directly from the [front of house](http://en.wikipedia.org/wiki/Front_of_House) mixing console, and saved on a [MacBook](http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=apple%20macbook&linkCode=ur2&rh=i%3Aaps%2Ck%3Aapple%20macbook&tag=kevideld-20&url=search-alias%3Daps):
 
-[![IMG_0492](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0492-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0492.jpg)[![IMG_0502](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0502-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0502.jpg)[![p1010733](http://kevin.deldycke.com/wp-content/uploads/2012/09/p1010733-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/09/p1010733.jpg)
+![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+
+![IMG_0492](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0492.jpg)
+
+![IMG_0502](http://kevin.deldycke.com/wp-content/uploads/2012/09/IMG_0502.jpg)
+
+![p1010733](http://kevin.deldycke.com/wp-content/uploads/2012/09/p1010733.jpg)
 
 The raw recording was later remixed by Thomas of the [SoundUp Studio](http://soundupstudio.com/).
 
@@ -45,16 +57,20 @@ Using different software for audio and video editing, proved to be challenging. 
 
 Now that we have our error margin, we need a workflow. We managed to design one based on a reference track extracted from the camera recording:
 
-  1. First, Thomas start to work on a song. When he has something to show us, he down-mix its [Cubase](http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Steinberg%20Cubase&linkCode=ur2&rh=i%3Aaps%2Ck%3ASteinberg%20Cubase&tag=kevideld-20&url=search-alias%3Daps) project and export intermediate results under the name `2010-01-29--igor--audio-desync.wav`. This allow all band members to give feedback.![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+  1. First, Thomas start to work on a song. When he has something to show us, he down-mix its [Cubase](http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Steinberg%20Cubase&linkCode=ur2&rh=i%3Aaps%2Ck%3ASteinberg%20Cubase&tag=kevideld-20&url=search-alias%3Daps) project and export intermediate results under the name `2010-01-29--igor--audio-desync.wav`. This allow all band members to give feedback.
+
+![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
 
   2. Once the final mix of the song is validated, I export the audio reference from my video edit (i.e. the plain recording from the cameras) under the name `2010-02-15--igor--audio-ref.wav`. We use this file as the reference audio track.
 
   3. Then, Thomas shift in time the `2010-01-29--igor--audio-desync.wav` file to precisely match the `2010-02-15--igor--audio-ref.wav` reference file, and save the result under the name `2010-02-16--igor--audio-sync.wav`. This is the file I import in Kdenlive and align with my video using the reference track.
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/11/kdenlive-fusion-timeline-460x288.png)](http://kevin.deldycke.com/wp-content/uploads/2012/11/kdenlive-fusion-timeline.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2012/11/kdenlive-fusion-timeline.png)
 
 Before using that workflow on all our tracks, we checked it was not introducing delays. Unfortunately, I detected some:
 
-[![export-PTFU-audio-ref](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-audio-ref-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-audio-ref.png)[![export-PTFU-master](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-master-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-master.png)
+![export-PTFU-audio-ref](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-audio-ref.png)
+
+![export-PTFU-master](http://kevin.deldycke.com/wp-content/uploads/2012/10/export-PTFU-master.png)
 
 I introduced them when I tried to [get rid of video timecode artifacts](http://kevin.deldycke.com/2010/01/remove-videotape-timecode/). I messed with encoding parameters in Avidemux, and introduced delays. When I realized I could just use the crop filter in Kdenlive, instead of removing the timecode in an external software, I produced perfect timing. That's another big lesson of that project: stay in Kdenlive.

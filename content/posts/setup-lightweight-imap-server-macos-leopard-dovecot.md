@@ -7,7 +7,9 @@ wordpress_id: 1309
 category: English
 tags: Dovecot, email, IMAP, Mac OS X Leopard, Apple, Mac OS X, maildir, SSL
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/04/dovecot-on-macosx-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2010/04/dovecot-on-macosx.png) Last week I needed a local IMAP server on MacOS X Leopard (10.5) for temporary testing. After struggling with [courier-imap](http://www.courier-mta.org/imap/) for hours, I've finally settled on [Dovecot](http://www.dovecot.org/). You'll see below how easy it is to install and configure it.
+![](http://kevin.deldycke.com/wp-content/uploads/2010/04/dovecot-on-macosx.png)
+
+Last week I needed a local IMAP server on MacOS X Leopard (10.5) for temporary testing. After struggling with [courier-imap](http://www.courier-mta.org/imap/) for hours, I've finally settled on [Dovecot](http://www.dovecot.org/). You'll see below how easy it is to install and configure it.
 
 We're lucky, [Dovecot is available in Mac Ports](http://www.macports.org/ports.php?by=name&substr=dovecot), so we can install it easily:
 
@@ -67,7 +69,7 @@ That's all !
 
 You can now access your local IMAP server with any client. Here is an example with [Thunderbird](http://www.mozillamessaging.com/thunderbird/):
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/04/thunderbird-macosx-local-imap-server-config-300x200.png)](http://kevin.deldycke.com/wp-content/uploads/2010/04/thunderbird-macosx-local-imap-server-config.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2010/04/thunderbird-macosx-local-imap-server-config.png)
 
 And if you have problems, the first reflex is to read dovecot's logs:
 

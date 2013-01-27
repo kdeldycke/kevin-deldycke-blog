@@ -11,11 +11,11 @@ Since November I'm working on a video project with footages taken with an analog
 
 Because of the analog nature of the filming process' first steps (on which I had no control), I ended up with some artefacts:
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/01/analog-videotape-timecode-300x225.png)](http://kevin.deldycke.com/wp-content/uploads/2010/01/analog-videotape-timecode.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2010/01/analog-videotape-timecode.png)
 
 See ? No ? Here is an upscaled version:
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/01/analog-videotape-timecode-upscaled-detail-300x56.png)](http://kevin.deldycke.com/wp-content/uploads/2010/01/analog-videotape-timecode-upscaled-detail.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2010/01/analog-videotape-timecode-upscaled-detail.png)
 
 Yes, that's it: there is white dots on top of each frame.
 
@@ -35,4 +35,5 @@ The removal process is really straightforward: I've just added a black rectangle
 
   5. Now you have to export the result using a reasonable video codec, and that's it !
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/01/avidemux-add-black-border-300x165.png)](http://kevin.deldycke.com/wp-content/uploads/2010/01/avidemux-add-black-border.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2010/01/avidemux-add-black-border.png)
+

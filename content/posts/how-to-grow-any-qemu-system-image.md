@@ -30,7 +30,8 @@ After that you can boot qemu to verify that added free space is available:
     $ qemu -hda big10G.raw
 
 Here is an real case example of what you can see in a qemu image on which Windows XP was installed:
-[![](http://kevin.deldycke.com/wp-content/uploads/2007/04/growed-image1-300x233.png)](http://kevin.deldycke.com/wp-content/uploads/2007/04/growed-image1.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2007/04/growed-image1.png)
 
 Now, to grow your primary partition, I suggest you to download a Live CD like [gparted Live CD](http://gparted.sourceforge.net/livecd.php) or [System Rescue CD](http://www.sysresccd.org), and boot on the `.iso` file with qemu:
 

@@ -9,9 +9,11 @@ tags: Apple, automount, fuse, KDE, Mac OS X Leopard, Linux, MacBook, Apple, Mac 
 
 I'm used to access distant machine's file systems via ssh. My favorite environment, [KDE](http://www.kde.org), makes things easy thanks to the support of [`sftp://`](http://wikipedia.org/wiki/SSH_file_transfer_protocol) URLs via a [kio_slave](http://wikipedia.org/wiki/KIO). MacOSX is not as friendly and don't have any built-in mechanism of that kind.
 
-To get similar features in Leopard, we have to rely on [MacFuse](http://code.google.com/p/macfuse/) and [sshfs](http://fuse.sourceforge.net/sshfs.html). I'll explain here how I've installed these components on [MacOSX 10.5](http://www.amazon.com/gp/product/B000FK88JK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000FK88JK).![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B000FK88JK&camp=217145&creative=399381)
+To get similar features in Leopard, we have to rely on [MacFuse](http://code.google.com/p/macfuse/) and [sshfs](http://fuse.sourceforge.net/sshfs.html). I'll explain here how I've installed these components on [MacOSX 10.5](http://www.amazon.com/gp/product/B000FK88JK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000FK88JK).
 
-[![MacFUSE_Banner](http://kevin.deldycke.com/wp-content/uploads/2009/09/MacFUSE_Banner-300x86.png)](http://kevin.deldycke.com/wp-content/uploads/2009/09/MacFUSE_Banner.png)
+![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B000FK88JK&camp=217145&creative=399381)
+
+![MacFUSE_Banner](http://kevin.deldycke.com/wp-content/uploads/2009/09/MacFUSE_Banner.png)
 
 First, [download the latest MacFuse dmg](http://code.google.com/p/macfuse/downloads/list) and install it. FYI, the version I've got was MacFuse 2.0.3,2.
 

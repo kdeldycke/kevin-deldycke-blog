@@ -14,9 +14,11 @@ WebPing is a script I started to work on in 2009 while working at [EDF](http://w
 WebPing is just a stupid Python script that is designed to be ticked regularly by a cron job. It try to fetch a list of URLs and store response times in an SQLite database. Then it create a static HTML report you're free to serve with any HTTP server (an [example Apache configuration](http://github.com/kdeldycke/webping/blob/master/apache.conf) is provided). The configuration of WebPing and the list of URLs it monitor is stored in a YAML file.
 
 The produced HTML report use the [Flot jQuery plugin](http://code.google.com/p/flot) to render graphs. Here is how the dashboard looks like:
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-dashboard-271x300.png)](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-dashboard.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-dashboard.png)
 
 Finally, WebPing is able to send reports and alerts by emails. Here is how a mail alert looks like:
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-email-alert-300x293.png)](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-email-alert.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-email-alert.png)
 
 Since I created WebPing, I found several other projects more or less developed around the same idea. See [Kong](http://github.com/ericholscher/django-kong), which is based on Django and [Twill](http://twill.idyll.org/), a web-oriented [DSL](http://en.wikipedia.org/wiki/Domain-specific_language). Another project I spotted after the facts was [multi-mechanize](http://code.google.com/p/multi-mechanize). Like Kong, it's written in Python. But I never played with one or the other.

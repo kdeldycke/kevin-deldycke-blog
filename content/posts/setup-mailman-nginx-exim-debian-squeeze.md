@@ -7,7 +7,9 @@ wordpress_id: 3810
 category: English
 tags: Debian, Debian Squeeze, email, Exim, fcgiwrap, Linux, mailing list, mailman, munin, nginx
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/09/mailman-logo.png) Before going further, please take note that I start this tutorial assuming that you already have a [minimal Exim setup](http://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/) running on your Debian machine.
+![](http://kevin.deldycke.com/wp-content/uploads/2011/09/mailman-logo.png)
+
+Before going further, please take note that I start this tutorial assuming that you already have a [minimal Exim setup](http://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/) running on your Debian machine.
 
 ## Mailman
 
@@ -54,7 +56,8 @@ Oh, and the first time you'll run Mailman, do a `start` as above, not a `restart
     Is qrunner even running?
 
 If everything is alright, you'll receive a mail similar to this one:
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/08/mailman-new-mailing-list-message-244x300.png)](http://kevin.deldycke.com/wp-content/uploads/2011/08/mailman-new-mailing-list-message.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2011/08/mailman-new-mailing-list-message.png)
 
 ## Nginx
 
@@ -115,7 +118,8 @@ All we have to do now is to activate the configuration above and restart our CGI
     $ /etc/init.d/nginx restart
 
 If everything's OK, going to `http://lists.example.com` will show you this:
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/08/mailman-default-welcome-screen-300x177.png)](http://kevin.deldycke.com/wp-content/uploads/2011/08/mailman-default-welcome-screen.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2011/08/mailman-default-welcome-screen.png)
 
 ## Exim
 

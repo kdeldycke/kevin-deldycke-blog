@@ -24,7 +24,7 @@ Then I applied the PDF transformation on the [README.md](https://github.com/kdel
 
 [The result](http://kevin.deldycke.com/wp-content/uploads/2012/01/readme-pandoc.pdf) is good, but not perfect. For example code blocks with long lines don't break at the end of the page:
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/01/pandoc-non-wraping-code-blocks-300x53.png)](http://kevin.deldycke.com/wp-content/uploads/2012/01/pandoc-non-wraping-code-blocks.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2012/01/pandoc-non-wraping-code-blocks.png)
 
 While trying to solve this issue, I stumble upon another tool...
 
@@ -45,4 +45,5 @@ Then we can convert our Markdown file to a PDF. The following will generate a RE
 
 The [resulting PDF](http://kevin.deldycke.com/wp-content/uploads/2012/01/readme-gimli.pdf) is really close to how GitHub renders Markdown content on its website. And it solve the bad code block style of Pandoc:
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/01/gimli-wraping-code-blocks-300x53.png)](http://kevin.deldycke.com/wp-content/uploads/2012/01/gimli-wraping-code-blocks.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2012/01/gimli-wraping-code-blocks.png)
+

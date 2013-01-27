@@ -7,7 +7,9 @@ wordpress_id: 844
 category: English
 tags: Apache, Blog, CLI, find, grep, Hosting, Linux, MySQL, SQL, sed, Server, Web, WordPress
 
-[![qpx-site-domain-migration](http://kevin.deldycke.com/wp-content/uploads/2009/09/qpx-site-domain-migration-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2009/09/qpx-site-domain-migration.png) I provide hosting for free to some of my friends. One of them, [QPX](http://qpx.coolcavemen.com), had a side project called [Lich'ti](http://www.myspace.com/espace_lichti). But the latter is no longer active, so he decided to not renew the `lich-ti.fr` domain.
+![qpx-site-domain-migration](http://kevin.deldycke.com/wp-content/uploads/2009/09/qpx-site-domain-migration.png)
+
+I provide hosting for free to some of my friends. One of them, [QPX](http://qpx.coolcavemen.com), had a side project called [Lich'ti](http://www.myspace.com/espace_lichti). But the latter is no longer active, so he decided to not renew the `lich-ti.fr` domain.
 
 If Lich'ti's domain name is dead, QPX's personal blog is not. His website is powered by WordPress and was available at `http://qpx.lich-ti.fr`. My job is now to move it to `http://qpx.coolcavemen.com`. In this post, I'll tell you how I've done it.
 

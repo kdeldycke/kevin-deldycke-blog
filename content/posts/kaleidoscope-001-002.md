@@ -12,9 +12,12 @@ To continue the series I initiated 2 weeks ago about my [Quartz Composer experim
 http://www.youtube.com/watch?v=xOdZrYSCDqI
 
 [Kaleidoscope #001 source](http://kevin.deldycke.com/static/documents/kaleidoscope-001.qtz) is available, and its patch looks like this:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/10/kaleidoscope-001-patch-300x211.png)](http://kevin.deldycke.com/wp-content/uploads/2010/10/kaleidoscope-001-patch.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/10/kaleidoscope-001-patch.png)
 
 http://www.youtube.com/watch?v=8LNgo2Esmps
 
 Again, here is [Kaleidoscope #002 source](http://kevin.deldycke.com/static/documents/kaleidoscope-002.qtz), and a screenshot of its patch:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/10/kaleidoscope-002-patch-300x187.png)](http://kevin.deldycke.com/wp-content/uploads/2010/10/kaleidoscope-002-patch.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/10/kaleidoscope-002-patch.png)
+

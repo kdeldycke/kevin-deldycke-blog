@@ -38,6 +38,7 @@ In another case of a highly customized view, I had to change the behavior of a `
     };
 
 Here is the view type selector widget, which is appearing everywhere in OpenERP in the top-right corner:
+
 ![](http://kevin.deldycke.com/wp-content/uploads/2012/05/openerp-view-type-selector-widget.png)
 
 To hide it, running the following jQuery is enough:
@@ -46,6 +47,7 @@ To hide it, running the following jQuery is enough:
     $('#view-selector').hide();
 
 Here are the action buttons and the object navigation pager:
+
 ![](http://kevin.deldycke.com/wp-content/uploads/2012/05/openerp-action-buttons-and-object-navigation.png)
 
 If you want to hide the whole thing, then the following code will do:

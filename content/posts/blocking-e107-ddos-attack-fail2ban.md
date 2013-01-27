@@ -11,7 +11,9 @@ Last month, a new security vulnerability was discovered in e107. If [a fix was r
 
 I'm no exception and the old and decrepit part of Cool Cavemen's website [still running on e107](http://coolcavemen.com/e107_plugins/forum/forum_viewforum.php?3) was attacked. This was enough to crash my tiny server. Unfortunately this [happened while I was on holidays](http://twitter.com/kdeldycke/status/17728248113). Without any time to address this issue properly, I decided to shutdown my web server. This explain why this blog and all Cool Cavemen's websites were dead during half of july.
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/08/munin-fail2ban-jails-weekly-stats-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2010/08/munin-fail2ban-jails-weekly-stats.png) Now [everything is back to normal](http://twitter.com/kdeldycke/status/19250530728) (I hope), thanks to [`fail2ban`](http://www.fail2ban.org). I created a set of rules ([based on this article](http://eromang.zataz.com/2010/07/13/byroenet-casper-bot-search-e107-rce-scanner/)) to dynamically catch [dDOS](http://en.wikipedia.org/wiki/Denial-of-service_attack) attempts and ban all IP addresses involved. Here is how I configured `fail2ban`...
+![](http://kevin.deldycke.com/wp-content/uploads/2010/08/munin-fail2ban-jails-weekly-stats.png)
+
+Now [everything is back to normal](http://twitter.com/kdeldycke/status/19250530728) (I hope), thanks to [`fail2ban`](http://www.fail2ban.org). I created a set of rules ([based on this article](http://eromang.zataz.com/2010/07/13/byroenet-casper-bot-search-e107-rce-scanner/)) to dynamically catch [dDOS](http://en.wikipedia.org/wiki/Denial-of-service_attack) attempts and ban all IP addresses involved. Here is how I configured `fail2ban`...
 
 First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf` and put the following directives there:
 

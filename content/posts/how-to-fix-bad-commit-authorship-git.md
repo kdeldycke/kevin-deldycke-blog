@@ -10,7 +10,8 @@ tags: commit, DVCS, Git, GitHub, history
 Several months ago I commited some code in my GitHub repository, but I did it from a temporary system. If I registered my authentication keys correctly to commit stuff, I forgot to create a minimal `~/.gitconfig` file with the right stuff in it.
 
 The result was not good looking, as my usual name and mail address were not attached to the commit:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/04/bad-git-commit-history-authorship-300x128.png)](http://kevin.deldycke.com/wp-content/uploads/2010/04/bad-git-commit-history-authorship.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/04/bad-git-commit-history-authorship.png)
 
 Let's fix this !
 
@@ -37,7 +38,8 @@ The commit I want to change is the latest in history, so I'll use the `--amend` 
     $ git commit --amend --author 'Kevin Deldycke <kevin@deldycke.com>'
 
 After this, here is how the local branches looks like in [gitg](http://trac.novowork.com/gitg/):
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/04/amended-git-commit-in-gitg-300x218.png)](http://kevin.deldycke.com/wp-content/uploads/2010/04/amended-git-commit-in-gitg.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/04/amended-git-commit-in-gitg.png)
 
 Using the `git log -n1` command, we can compare the old commit:
 
@@ -81,4 +83,6 @@ In our case we will force the remote repository to take our changes:
 As I told you before this is bad, but nobody really cares: I'm the only person working on this repository ! ;)
 
 Finally, you can contemplate the result on GitHub, a clean and tidy commit history:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/04/fixed-git-commit-history-authorship-300x128.png)](http://kevin.deldycke.com/wp-content/uploads/2010/04/fixed-git-commit-history-authorship.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/04/fixed-git-commit-history-authorship.png)
+

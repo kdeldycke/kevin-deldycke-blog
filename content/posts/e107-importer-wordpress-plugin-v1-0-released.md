@@ -7,7 +7,9 @@ wordpress_id: 2739
 category: English
 tags: Blog, CMS, e107, importer, migration, PHP, Web, WordPress
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/01/e107-importer-configuration-screen-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2011/01/e107-importer-configuration-screen.png) After [3 years in limbo](http://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/), here is a new stable version of my e107 Importer plugin for WordPress, proudly numbered 1.0 ! :)
+![](http://kevin.deldycke.com/wp-content/uploads/2011/01/e107-importer-configuration-screen.png)
+
+After [3 years in limbo](http://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/), here is a new stable version of my e107 Importer plugin for WordPress, proudly numbered 1.0 ! :)
 
 This is the first time this plugin is [available on the official WordPress plugin repository](http://wordpress.org/extend/plugins/e107-importer/). This means easy upgrades for you ! :)
 

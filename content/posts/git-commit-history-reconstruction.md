@@ -8,7 +8,9 @@ category: English
 tags: commit, Git, GitHub, history, Init, Software engineering
 
 Here is something I wanted to do for 3 years. I wanted to migrate my code repository from this:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/05/dumb-code-revision-control-system-237x300.png)](http://kevin.deldycke.com/wp-content/uploads/2010/05/dumb-code-revision-control-system.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/05/dumb-code-revision-control-system.png)
+
 to a proper [revision control system](http://en.wikipedia.org/wiki/Revision_control), like Subversion. And I wanted to reconstruct the commit history with all the proper dates. That's something I can't do with SVN.
 
 Then came Git. I knew that Git was powerful enough to let me manipulate the history (at my own risks). So I studied it during the last weeks until I found an acceptable way to do exactly what I had in mind. Here are my notes regarding this journey.
@@ -20,7 +22,9 @@ First, I need to get a local copy of my GitHub repository. That's the place wher
     $ git clone git@github.com:kdeldycke/kev-code.git
 
 In gitg, my untouched repository looks like this:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/05/git-repository-at-start-300x154.png)](http://kevin.deldycke.com/wp-content/uploads/2010/05/git-repository-at-start.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/05/git-repository-at-start.png)
+
 Notice all the pre-existing code.
 
 Let's create a `history-injection` branch from the `init` tag. The later is the root of my repository, as explained in my previous post on [how I initialize my Git repositories](http://kevin.deldycke.com/2010/05/initialize-git-repositories/).
@@ -55,7 +59,8 @@ I can repeat the last steps to reconstruct the commit history of my `website-bac
     $ (...)
 
 At last, the `history-injection` branch contain all version of `website-backup.py`:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/05/history-injection-branch-300x187.png)](http://kevin.deldycke.com/wp-content/uploads/2010/05/history-injection-branch.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/05/history-injection-branch.png)
 
 Now I'll use the `rebase` directive to insert the `history-injection` branch back in the main line (aka `master`). This insertion will take place just after the `init` tag. This translates to the following Git command:
 
@@ -70,12 +75,14 @@ I no longer need my temporary `history-injection` branch. Let's remove it:
     $ git branch -D history-injection
 
 Now you should have a unique and straight history line from `init` tag to `master` head. Like this:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/05/rebased-history-injection-branch-300x187.png)](http://kevin.deldycke.com/wp-content/uploads/2010/05/rebased-history-injection-branch.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/05/rebased-history-injection-branch.png)
 
 Commits appears to be ordered as they should but you may not be as lucky as me. In fact the recently merge commits are stuck at the "bottom" (just after the `init` tag, as we asked Git to do on rebase). And you may find you in a situation where commits of the whole master branch are not chronologically ordered.
 
 Here is such an example. It happened when I tried to rebase the full history of my `system-backup.py` script:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/05/system-backup-script-rebase-300x187.png)](http://kevin.deldycke.com/wp-content/uploads/2010/05/system-backup-script-rebase.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/05/system-backup-script-rebase.png)
 
 I haven't found a way to tell Git how to rebase by following commit dates. I know that something can be done with a command like:
 

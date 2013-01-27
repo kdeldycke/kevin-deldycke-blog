@@ -17,26 +17,27 @@ I'll try to produce [detailed production notes](http://kevin.deldycke.com/2012/0
 
 And finally, here are some stills from the video:
 
-[![burlesque-burglary-0011](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0011-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0011.jpg)
+![burlesque-burglary-0011](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0011.jpg)
 
-[![burlesque-burglary-0010](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0010-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0010.jpg)
+![burlesque-burglary-0010](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0010.jpg)
 
-[![burlesque-burglary-0009](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0009-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0009.jpg)
+![burlesque-burglary-0009](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0009.jpg)
 
-[![burlesque-burglary-0008](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0008-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0008.jpg)
+![burlesque-burglary-0008](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0008.jpg)
 
-[![burlesque-burglary-0007](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0007-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0007.jpg)
+![burlesque-burglary-0007](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0007.jpg)
 
-[![burlesque-burglary-0006](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0006-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0006.jpg)
+![burlesque-burglary-0006](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0006.jpg)
 
-[![burlesque-burglary-0005](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0005-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0005.jpg)
+![burlesque-burglary-0005](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0005.jpg)
 
-[![burlesque-burglary-0004](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0004-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0004.jpg)
+![burlesque-burglary-0004](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0004.jpg)
 
-[![burlesque-burglary-0003](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0003-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0003.jpg)
+![burlesque-burglary-0003](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0003.jpg)
 
-[![burlesque-burglary-0002](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0002-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0002.jpg)
+![burlesque-burglary-0002](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0002.jpg)
 
-[![burlesque-burglary-0001](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0001-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0001.jpg)
+![burlesque-burglary-0001](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0001.jpg)
 
-[![burlesque-burglary-0000](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0000-150x150.jpg)](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0000.jpg)
+![burlesque-burglary-0000](http://kevin.deldycke.com/wp-content/uploads/2012/01/burlesque-burglary-0000.jpg)
+

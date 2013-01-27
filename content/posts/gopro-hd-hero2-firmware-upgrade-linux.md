@@ -7,7 +7,9 @@ wordpress_id: 5290
 category: English
 tags: camera, firmware, gopro, Linux, Ubuntu, upgrade, Video, wget
 
-The [GoPro HD Hero2](http://www.amazon.com/gp/product/B005WY3TI4/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B005WY3TI4&linkCode=as2&tag=kevideld-20) I just got was bundled with the `HD2.08.12.70` firmware:![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B005WY3TI4)
+The [GoPro HD Hero2](http://www.amazon.com/gp/product/B005WY3TI4/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B005WY3TI4&linkCode=as2&tag=kevideld-20) I just got was bundled with the `HD2.08.12.70` firmware:
+
+![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B005WY3TI4)
 
     :::bash
     $ cat /media/9016-4EF8/MISC/version.txt

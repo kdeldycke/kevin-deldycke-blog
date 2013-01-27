@@ -82,6 +82,7 @@ It's time to push all changes to our brand new public repository:
      + 86bd2c7...8fe2934 master -> master (forced update)
 
 And here is the result on GitHub:
-[![](http://kevin.deldycke.com/wp-content/uploads/2010/05/git-first-commit-300x58.png)](http://kevin.deldycke.com/wp-content/uploads/2010/05/git-first-commit.png)
+
+![](http://kevin.deldycke.com/wp-content/uploads/2010/05/git-first-commit.png)
 
 Maybe this "first commit" trick is unnecessary. So, if you have a better understanding of the issue, or can explain me why this is stupid, please tell me ! :)
