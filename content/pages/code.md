@@ -39,7 +39,7 @@ Currently, I'm more or less involved in these open-source projects:
 
 * * *
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-dashboard-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-dashboard.png)
+[![](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-dashboard.png)](http://kevin.deldycke.com/wp-content/uploads/2011/08/webping-dashboard.png)
 
 ## [WebPing](http://github.com/kdeldycke/webping)
 
@@ -51,7 +51,7 @@ Currently, I'm more or less involved in these open-source projects:
 
 * * *
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/04/e107-importer-12-option-panel-e1302794331133-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2011/05/e107-importer-v1-3-option-panel.png)
+[![](http://kevin.deldycke.com/wp-content/uploads/2011/04/e107-importer-12-option-panel.png)](http://kevin.deldycke.com/wp-content/uploads/2011/05/e107-importer-v1-3-option-panel.png)
 
 ## [e107 Importer](http://wordpress.org/extend/plugins/e107-importer/)
 
@@ -75,7 +75,7 @@ Currently, I'm more or less involved in these open-source projects:
 
 * * *
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2006/04/gnu-gpl-logo-150x150.png)](http://kevin.deldycke.com/wp-content/uploads/2006/04/gnu-gpl-logo.png)
+[![](http://kevin.deldycke.com/wp-content/uploads/2006/04/gnu-gpl-logo.png)](http://kevin.deldycke.com/wp-content/uploads/2006/04/gnu-gpl-logo.png)
 
 ## [Scripts](http://github.com/kdeldycke/scripts)
 
@@ -97,7 +97,7 @@ Currently, I'm more or less involved in these open-source projects:
 
 * * *
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2006/04/plone-logo-e1302793993284-150x148.png)](http://kevin.deldycke.com/wp-content/uploads/2006/04/plone-logo.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2006/04/plone-logo.png)
 
 ## [Plone](http://plone.org)
 

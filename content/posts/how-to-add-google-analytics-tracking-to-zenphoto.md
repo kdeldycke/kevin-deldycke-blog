@@ -7,7 +7,7 @@ wordpress_id: 286
 category: English
 tags: analytics, Google, hack, patch, PHP, Snippet, Web, Zenphoto
 
-![](http://kevin.deldycke.com/wp-content/uploads/2008/08/zenphoto-12-150x23.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2008/08/zenphoto-12.png)
 
 This is the patch I apply on each [Zenphoto](http://www.zenphoto.org) I install and upgrade. This little hack add [Google Analytics](http://www.google.com/analytics/) tracking for all users except administrators.
 

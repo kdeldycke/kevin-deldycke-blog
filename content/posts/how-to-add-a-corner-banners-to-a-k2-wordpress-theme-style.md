@@ -7,7 +7,7 @@ wordpress_id: 226
 category: English
 tags: alpha, banner, corner, CSS, design, Gimp, HTML, IE, K2, Photoshop, PHP, PNG, qpx, style, Theme, transparency, Web, WordPress
 
-![](http://kevin.deldycke.com/wp-content/uploads/2008/06/beta-version-illustration-150x150.png)
+![](http://kevin.deldycke.com/wp-content/uploads/2008/06/beta-version-illustration.png)
 
 In this post I will give you all the technical details to create a corner banner for the wordpress K2 theme. This solution is uninstrusive as it can be bundled with a K2 style without modifying the K2 core theme.
 
