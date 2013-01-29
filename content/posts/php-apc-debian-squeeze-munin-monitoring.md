@@ -71,5 +71,5 @@ The last step is to install and configure the Munin plugin:
 
 And finally, after a while, you'll get those beautiful graphs:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/06/php-apc-munin-graphs.png)
+![](/static/uploads/2011/06/php-apc-munin-graphs.png)
 

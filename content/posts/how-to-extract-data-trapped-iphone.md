@@ -17,49 +17,49 @@ There is a nice OSX app simply called [iPhone Backup Extractor](http://supercraz
 
 So first thing you have to do is to backup your phone using iTunes:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-itunes-sync.png)
+![](/static/uploads/2010/09/iphone-itunes-sync.png)
 
 Then you can download and run the iPhone Backup Extractor app:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-backup-extrator.png)
+![](/static/uploads/2010/09/iphone-backup-extrator.png)
 
 Here you just have to click the _Read Backups_ button to get a list of all backups available on your machine. Then choose your latest backup:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/list-of-iphone-backups.png)
+![](/static/uploads/2010/09/list-of-iphone-backups.png)
 
 You'll get a list of all installed applications on your iPhone. As we are interested in "core" iPhone apps (SMSs, photos and so on), we'll choose the "iOS Files" item, then choose a place where to extract:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-backup-content.png)
+![](/static/uploads/2010/09/iphone-backup-content.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-backup-extraction-destination.png)
+![](/static/uploads/2010/09/iphone-backup-extraction-destination.png)
 
 Then the extraction itself will take place:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-backup-extraction.png)
+![](/static/uploads/2010/09/iphone-backup-extraction.png)
 
 You've just finished the essential part of the process. You now have a nice folder structure containing all the important informations that was trapped in your phone:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-backup-extraction-content.png)
+![](/static/uploads/2010/09/iphone-backup-extraction-content.png)
 
 Let's browse the file structure that was just created. You can see photos are available as is, in the `/iOS Files/Media/DCIM/XXXAPPLE/`:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-photo-location.png)
+![](/static/uploads/2010/09/iphone-photo-location.png)
 
 Most of other datas are located in the `/iOS Files/Library/` folder. For example here are voice messages:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-voicemessages-location.png)
+![](/static/uploads/2010/09/iphone-voicemessages-location.png)
 
 Again, `.amr` files here are playable as-is, like [VLC](http://www.videolan.org/vlc/) or [mplayer](http://www.mplayerhq.hu).
 
 Most, if not all, other kind of data and metadata are stored in SQLite databases (`.db` files). The best GUI I found to manipulate with these files under Mac OSX is [SQLite Database Browser](http://sourceforge.net/projects/sqlitebrowser/). See how I can easily extract to a CSV file all metadatas associated with my voice messages:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/sqlite-database-browser-opening.png)
+![](/static/uploads/2010/09/sqlite-database-browser-opening.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-voicemail-database-tables.png)
+![](/static/uploads/2010/09/iphone-voicemail-database-tables.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-voicemail-table-content.png)
+![](/static/uploads/2010/09/iphone-voicemail-table-content.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/sqlite-csv-table-export.png)
+![](/static/uploads/2010/09/sqlite-csv-table-export.png)
 
 Finally, just in case you want to extract iPhones data from another backup than the default backup, like from a backup of the backup (isn't that clear ?), making a symlink is enough to trick iPhone Backup Extractor:
 
@@ -78,5 +78,5 @@ Finally, just in case you want to extract iPhones data from another backup than 
 
 That's how I was able to extract my iPhone data from an old backup, and get back most of the [data I lost after my last iOS update](http://twitter.com/kdeldycke/status/22516008513):
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/09/iphone-backup-extractor-from-old-backup.png)
+![](/static/uploads/2010/09/iphone-backup-extractor-from-old-backup.png)
 

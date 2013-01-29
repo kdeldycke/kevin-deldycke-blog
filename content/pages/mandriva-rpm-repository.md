@@ -5,7 +5,7 @@ slug: mandriva-rpm-repository
 title: Mandriva RPMs
 wordpress_id: 10
 
-![](http://kevin.deldycke.com/wp-content/uploads/2007/04/mandriva-2007-blue-logo.png)
+![](/static/uploads/2007/04/mandriva-2007-blue-logo.png)
 
 All these Mandriva RPM repositories are **no longer maintained**.
 

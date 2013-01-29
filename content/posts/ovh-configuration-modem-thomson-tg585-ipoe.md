@@ -7,13 +7,13 @@ wordpress_id: 4988
 category: Français
 tags: ADSL, dslam, ipoe, Modem, nra, ovh, PPPoE, telnet, thomson
 
-![](http://kevin.deldycke.com/wp-content/uploads/2012/07/thomson-tg585-ipoe-admin-panel.png)
+![](/static/uploads/2012/07/thomson-tg585-ipoe-admin-panel.png)
 
 OVH migre l'un après l'autre ses [points de collecte ADSL](http://www.ovh.fr/adsl/degroupage-nra-ovh.xml) vers leur infrastructure interne. Lors de la bascule, il faut reconfigurer son modem pour qu'il se connecte directement en `IPoE` et non plus en `PPPoE`.
 
 J'ai souscrit à l'[offre no!Box](http://www.ovh.fr/adsl/no_box.xml) avec un modem [Thomson TG-585 v8](http://www.technicolorbroadbandpartner.com/dsl-modems-gateways/products/product-detail.php?id=214&seg=3). Ce modem ne supporte pas par défaut le protocole `IPoE`. Vous devez le reconfigurer, mais la procédure indiquée par OVH dans leur mails n'est pas très claire.
 
-![](http://kevin.deldycke.com/wp-content/uploads/2012/07/thomson-tg585-router-login.png)
+![](/static/uploads/2012/07/thomson-tg585-router-login.png)
 
 En fait, il faut appliquer la même procédure que celle indiquée pour le modem dit "PRO". On trouve ces [instructions sur le wiki d'OVH](http://guide.ovh.com/ADSLConfigIpoe), et je vous confirme qu'elles fonctionnent parfaitement pour le modem Thomson TG-585.
 

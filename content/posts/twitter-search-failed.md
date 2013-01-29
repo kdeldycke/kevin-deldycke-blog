@@ -15,7 +15,7 @@ Knew I explained the solution on Twitter.
 
 Tried to [search for it](http://search.twitter.com/search?q=ubercart+from%3Akdeldycke):
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/02/failed-twitter-search.png)
+![](/static/uploads/2010/02/failed-twitter-search.png)
 
 and failed !
 

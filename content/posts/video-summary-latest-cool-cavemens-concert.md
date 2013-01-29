@@ -33,7 +33,7 @@ The final video also include footage from various people in the audience:
 
 The video was edited with the latest version of Kdenlive and exported to a 1080p/24fps stream:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2012/03/kdenlive-project-screenshot.png)
+![](/static/uploads/2012/03/kdenlive-project-screenshot.png)
 
 If you enjoyed the music and atmosphere of the video, I urge you to go to the [next Cool Cavemen's concert](http://coolcavemen.com/2012/concert-aux-gres-a-douai-le-samedi-7-avril/). And because I know the majority of my readership can't be in the north of France next month, let me remind you there's still a [one hour video of our biggest 2009 concert](http://www.youtube.com/watch?v=qE-bis-wYxs&list=PL4BAA557B7144031F&feature=plcp) available online (on which I did all the lighting).
 

@@ -9,7 +9,7 @@ tags: campaign, contribution, donation, fundaraising, KDE, kdenlive, Linux, open
 
 I [just donated $200](https://twitter.com/#!/kdeldycke/status/182018605259567104) to the [Kdenlive](http://kdenlive.org) project, as they have [just started](http://kdenlive.org/users/ttill/kdenlive-fundraising-campaign) a [fundraising campaign](http://www.indiegogo.com/kdenlive-re) to refactor its core and make it future-proof:
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2012/03/kdenlive-fundraising-campaign.png)](http://www.indiegogo.com/kdenlive-re)
+[![](/static/uploads/2012/03/kdenlive-fundraising-campaign.png)](http://www.indiegogo.com/kdenlive-re)
 
 The amount of collected funds is currently at $3,041 from the $4,000 required to pay a developer to work full-time for 2 months. With only $959 remaining and 41 days left, you have no reason to not contribute to the best open-source video editor out there.
 

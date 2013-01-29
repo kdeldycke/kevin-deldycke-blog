@@ -7,7 +7,7 @@ wordpress_id: 29
 category: English
 tags: life, Linux, mobile phone, mplayer, Music, travel
 
-![Mobile Phone, Broken Screen](http://kevin.deldycke.com/wp-content/uploads/2006/08/pict4644.jpg)
+![Mobile Phone, Broken Screen](/static/uploads/2006/08/pict4644.jpg)
 
 I was in a country far far away last month. So far that there was no broadband access (yes, this is possible). Anyway... Generally I use my mobile phone as a clock and as an alarm clock. Unfortunalty I brake it down just before my night flight.
 

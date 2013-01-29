@@ -17,15 +17,15 @@ Here are some noisy photos I've taken with my [Canon 7D](http://www.amazon.com/g
 
 ![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0000ALKBU&camp=217145&creative=399373)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/08/midnight-in-paris-owen-wilson.jpg)
+![](/static/uploads/2010/08/midnight-in-paris-owen-wilson.jpg)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/08/midnight-in-paris-woody-allen.jpg)
+![](/static/uploads/2010/08/midnight-in-paris-woody-allen.jpg)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/08/midnight-in-paris-set-001.jpg)
+![](/static/uploads/2010/08/midnight-in-paris-set-001.jpg)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/08/midnight-in-paris-set-002.jpg)
+![](/static/uploads/2010/08/midnight-in-paris-set-002.jpg)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/08/midnight-in-paris-set-003.jpg)
+![](/static/uploads/2010/08/midnight-in-paris-set-003.jpg)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/08/midnight-in-paris-set-004.jpg)
+![](/static/uploads/2010/08/midnight-in-paris-set-004.jpg)
 

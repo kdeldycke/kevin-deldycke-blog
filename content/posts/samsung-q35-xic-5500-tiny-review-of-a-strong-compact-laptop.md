@@ -7,7 +7,7 @@ wordpress_id: 78
 category: English
 tags: fdisk, Hardware, laptop, life, MacBook
 
-![samsung-q35-xic-5500](http://kevin.deldycke.com/wp-content/uploads/2006/10/samsung-q35-xic-5500.jpg)
+![samsung-q35-xic-5500](/static/uploads/2006/10/samsung-q35-xic-5500.jpg)
 
 I'm the happy owner of a brand new [Samsung Q35 XIC-5500 laptop](http://www.samsung.com/fr/products/notebookcomputer/design/serieq/np_q35g001sef.asp?page=Specifications). Here is a review of the machine hardware, not the software.
 
@@ -15,13 +15,13 @@ The hard disk of the machine is supposed to be a 120 GB one, and as usual a hidd
 
 Now I'll tell you what I noticed about the aesthetic and the usability of the machine itself.
 
-![samsung-q35-touchpad](http://kevin.deldycke.com/wp-content/uploads/2006/10/samsung-q35-touchpad.jpg)
+![samsung-q35-touchpad](/static/uploads/2006/10/samsung-q35-touchpad.jpg)
 
 The touchpad has a good soft touch, but is located so close of the keyboard that I inadvertently activate it while typing. This is quite bad, especially when you write long texts. I think with some practice I'll be able to move my fingers to avoid this unintended behavior.
 
 I feared having a glossy screen but I'm finally happy. This one is not as reflexive as I thought, and bright colors are welcomed for watching movies. I still hadn't the opportunity to test it in a sunny environment. October is not the sunniest month in the north of France ! ;)
 
-![samsung-q35-strange-keys](http://kevin.deldycke.com/wp-content/uploads/2006/10/samsung-q35-strange-keys.jpg)
+![samsung-q35-strange-keys](/static/uploads/2006/10/samsung-q35-strange-keys.jpg)
 
 To keep the machine as compact as possible, some keys of the keyboard were located in unusual places. `Page Up / Page Down` keys are for example on the right and on the left of the `Upper` key. `Home` and `End` need the function (`Fn`) key to work. This slow me down because I use them a lot when programming or editing blog posts.
 

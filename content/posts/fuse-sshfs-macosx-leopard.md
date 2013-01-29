@@ -13,7 +13,7 @@ To get similar features in Leopard, we have to rely on [MacFuse](http://code.goo
 
 ![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B000FK88JK&camp=217145&creative=399381)
 
-![MacFUSE_Banner](http://kevin.deldycke.com/wp-content/uploads/2009/09/MacFUSE_Banner.png)
+![MacFUSE_Banner](/static/uploads/2009/09/MacFUSE_Banner.png)
 
 First, [download the latest MacFuse dmg](http://code.google.com/p/macfuse/downloads/list) and install it. FYI, the version I've got was MacFuse 2.0.3,2.
 

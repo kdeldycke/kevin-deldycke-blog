@@ -7,7 +7,7 @@ wordpress_id: 790
 category: English
 tags: Apple, CLI, dm2img, dmg, HFS, Linux, Mandriva, RPM
 
-![package](http://kevin.deldycke.com/wp-content/uploads/2009/08/package.png)
+![package](/static/uploads/2009/08/package.png)
 
 I've just created a RPM of [dmg2img](http://vu1tur.eu.org/tools/) for the x86_64 version of Mandriva 2009.1. The package is [available in my RPM repository](http://kevin.deldycke.com/static/repository/mandriva/2009.1/x86_64/).
 

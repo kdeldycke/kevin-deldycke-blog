@@ -11,17 +11,17 @@ Just for the record, here are screenshots of network errors and user interface g
 
 ![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001AXA056&camp=217145&creative=399373)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/12/IMG_2170.png)
+![](/static/uploads/2010/12/IMG_2170.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/12/IMG_3208.png)
+![](/static/uploads/2010/12/IMG_3208.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/12/IMG_2158.png)
+![](/static/uploads/2010/12/IMG_2158.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/12/IMG_2171.png)
+![](/static/uploads/2010/12/IMG_2171.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/12/IMG_3214.png)
+![](/static/uploads/2010/12/IMG_3214.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/12/IMG_2177.png)
+![](/static/uploads/2010/12/IMG_2177.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/12/IMG_0010.png)
+![](/static/uploads/2010/12/IMG_0010.png)
 

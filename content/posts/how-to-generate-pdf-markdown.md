@@ -22,9 +22,9 @@ Then I applied the PDF transformation on the [README.md](https://github.com/kdel
     $ wget https://raw.github.com/kdeldycke/openerp.buildout/master/README.md
     $ markdown2pdf README.md -o readme-pandoc.pdf
 
-[The result](http://kevin.deldycke.com/wp-content/uploads/2012/01/readme-pandoc.pdf) is good, but not perfect. For example code blocks with long lines don't break at the end of the page:
+[The result](/static/uploads/2012/01/readme-pandoc.pdf) is good, but not perfect. For example code blocks with long lines don't break at the end of the page:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2012/01/pandoc-non-wraping-code-blocks.png)
+![](/static/uploads/2012/01/pandoc-non-wraping-code-blocks.png)
 
 While trying to solve this issue, I stumble upon another tool...
 
@@ -43,7 +43,7 @@ Then we can convert our Markdown file to a PDF. The following will generate a RE
     :::bash
     $ /var/lib/gems/1.8/bin/gimli -f ./README.md
 
-The [resulting PDF](http://kevin.deldycke.com/wp-content/uploads/2012/01/readme-gimli.pdf) is really close to how GitHub renders Markdown content on its website. And it solve the bad code block style of Pandoc:
+The [resulting PDF](/static/uploads/2012/01/readme-gimli.pdf) is really close to how GitHub renders Markdown content on its website. And it solve the bad code block style of Pandoc:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2012/01/gimli-wraping-code-blocks.png)
+![](/static/uploads/2012/01/gimli-wraping-code-blocks.png)
 

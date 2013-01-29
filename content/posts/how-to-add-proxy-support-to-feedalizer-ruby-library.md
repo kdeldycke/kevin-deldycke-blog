@@ -7,7 +7,7 @@ wordpress_id: 233
 category: English
 tags: feed, feedalizer, hpricot, HTTP, monkey patch, parsing, proxy, RSS, ruby, Ruby on Rails, Snippet, Web
 
-![](http://kevin.deldycke.com/wp-content/uploads/2008/07/feedalizer.png)
+![](/static/uploads/2008/07/feedalizer.png)
 
 Here is a little code snippet that [monkey-patch](http://en.wikipedia.org/wiki/Monkey_patch) [Feedalizer](http://termos.vemod.net/feedalizer) to let it grab web content through a HTTP proxy:
 

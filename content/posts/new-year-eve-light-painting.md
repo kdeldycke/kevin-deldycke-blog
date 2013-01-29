@@ -11,8 +11,8 @@ During the first (cold) hours of 2010, I've [done some light painting](http://ma
 
 ![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTW&camp=217145&creative=399381)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/01/Lightpainting9.jpg)
+![](/static/uploads/2010/01/Lightpainting9.jpg)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/01/Lightpainting3.jpg)
+![](/static/uploads/2010/01/Lightpainting3.jpg)
 
 If you liked it, do not forget to [visit the whole gallery](http://maomium.com/zenphoto/light-painting/) on [Maomium](http://maomium.com) website and leave a comment !

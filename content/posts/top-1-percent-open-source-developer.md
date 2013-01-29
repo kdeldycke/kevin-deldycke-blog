@@ -9,7 +9,7 @@ tags: development, Ohloh, open source, Software engineering
 
 With all the [recent](http://kevin.deldycke.com/2011/01/e107-importer-wordpress-plugin-v1-0-released/) [active development](http://kevin.deldycke.com/2011/03/e107-importer-1-1/) on my [e107 Importer WordPress plugin](http://wordpress.org/extend/plugins/e107-importer/), I increased my public code contributions. This had the nice side effect of bumping my [ranking on Ohloh](http://www.ohloh.net/accounts/kevin) from #8 (bronze level) to #9 (silver level):
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/03/ohloh-rank-from-bronze-to-silver.png)
+![](/static/uploads/2011/03/ohloh-rank-from-bronze-to-silver.png)
 
 Other interesting statistic is that I'm now ranked as open-source developer number 5673 on a population of 438276. Which place me in the top 1.3% of the population ! :D
 

@@ -7,7 +7,7 @@ wordpress_id: 902
 category: Français
 tags: AdWords, Google,, bon de reduction, Google, pub, publicite, voucher, Web
 
-![google-adwords-50-euros-voucher](http://kevin.deldycke.com/wp-content/uploads/2009/12/google-adwords-50-euros-voucher.jpg)
+![google-adwords-50-euros-voucher](/static/uploads/2009/12/google-adwords-50-euros-voucher.jpg)
 
 J'ai deux bons d'achats de 50€ pour le service [Google AdWords](http://fr.wikipedia.org/wiki/AdWords). Ca traînent sur mon bureau depuis plusieurs semaines, et je ne peux pas les utiliser car j'ai [déjà profité cette année d'une offre similaire](http://twitter.com/kdeldycke/status/3169290268). Voilà pourquoi j'en offre aux deux premières personnes qui laissent un commentaire sous ce post.
 

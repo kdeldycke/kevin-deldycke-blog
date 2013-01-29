@@ -7,5 +7,5 @@ wordpress_id: 5377
 category: English
 tags: Android, chat
 
-![](http://kevin.deldycke.com/wp-content/uploads/2012/11/conversation.png)
+![](/static/uploads/2012/11/conversation.png)
 

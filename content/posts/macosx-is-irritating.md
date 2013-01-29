@@ -13,19 +13,19 @@ Then, regular crashes of the Finder and Safari.
 
 Now, weird font bugs:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2009/12/mac-osx-broken-menu-font.png)
+![](/static/uploads/2009/12/mac-osx-broken-menu-font.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2009/12/mac-osx-broken-shutdown-dialog.png)
+![](/static/uploads/2009/12/mac-osx-broken-shutdown-dialog.png)
 
 This madness will never stop... :(
 
-![](http://kevin.deldycke.com/wp-content/uploads/2009/12/mac-osx-leopard-display-bug.png)
+![](/static/uploads/2009/12/mac-osx-leopard-display-bug.png)
 
 Just found new species of bugs:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2009/12/mac-osx-black-top-menu-bug.png)
+![](/static/uploads/2009/12/mac-osx-black-top-menu-bug.png)
 
-![](http://kevin.deldycke.com/wp-content/uploads/2009/12/mac-osx-black-drop-down-menu-bug.png)
+![](/static/uploads/2009/12/mac-osx-black-drop-down-menu-bug.png)
 
 My 6 months test period of Leopard is over. Time to switch back to a Linux/KDE desktop.
 
@@ -41,7 +41,7 @@ My 6 months test period of Leopard is over. Time to switch back to a Linux/KDE d
 
 Still, my machine crash hard. Here is the kind of kernel crashes I have on kubuntu with this machine:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2009/12/mac-book-pro-linux-kernel-crash.jpg)
+![](/static/uploads/2009/12/mac-book-pro-linux-kernel-crash.jpg)
 
 I now suspect problems with the MacBook Pro's SATA controller. After all, my machine always freeze on high I/O load (disk backups, video transcoding, etc.). Wait. I remember of Apple pushing a new SATA firmware one year ago. Let me google this...
 
@@ -63,6 +63,6 @@ But the firmware downgrade didn't solved my problems at all. It's really time to
 
 For the record, here is what my MacBook looked like at boot in the end of June 2010, two days after the end of the 1-year warranty:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2009/12/mac-book-pro-broken-boot.jpg)
+![](/static/uploads/2009/12/mac-book-pro-broken-boot.jpg)
 
 At Paris' Genius Bar, I was told that my motherboard was dead, which cost 400€ to replace. And that's how I finally decided to [sell my MacBook Pro](http://twitter.com/#!/kdeldycke/status/29012034410) and get rid of all my Apple gear and proprietary software.

@@ -23,29 +23,29 @@ I fired up my Kdenlive (v0.8 on Kubuntu 11.04) and in a matter of hours, the pro
 
 The most boring part of the edit was the first step, in which we synced all clips together with the reference audio track. Here is how the timeline looked, with one track for each instrument:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-01.png)
+![](/static/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-01.png)
 
 We had to work around some annoying Kdenlive bugs, as it had some problems handling so much tracks in parallel. Fortunately these bugs were fixed in a matter of days with a new build of MLT.
 
 Next step was to mark out the structure of the song. Tomasito placed blue markers along the timeline, and we cut all tracks following that structure. It resulted in a matrix of clips:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-02.png)
+![](/static/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-02.png)
 
 Then for each segment, we choose the 4 clips that we wanted to show and deleted the others:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-04.png)
+![](/static/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-04.png)
 
 Then I created 4 special tracks to which I applied a global positioning and scaling effect, to have each track fill one corner of the screen. We moved there all the clips we selected in the previous step, and cleaned up the timeline a bit:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-05.png)
+![](/static/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-05.png)
 
 At this stage the project was mostly done. It was just a matter of adding intro, outro and fade in/out to obtain our final video:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-06.png)
+![](/static/uploads/2011/07/wish-you-looked-at-me-kdenlive-timeline-06.png)
 
 Tomasito basically did the whole editing of the project. And I have some evidences:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/07/tomasito-editing-session.jpg)
+![](/static/uploads/2011/07/tomasito-editing-session.jpg)
 
 I just showed him how to manipulate Kdenlive timelines, and cut/move/paste clips, and he was absolutely autonomous in a matter of minutes. I just did the transitions, the title cards integration and the screen splitting. I'm not sure I deserve the title of editor for this project, but he still insisted to add me in the credits... :)
 

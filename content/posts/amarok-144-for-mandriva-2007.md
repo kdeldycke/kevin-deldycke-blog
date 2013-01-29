@@ -7,7 +7,7 @@ wordpress_id: 82
 category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, Music, MySQL, SQL, RPM, urpmi
 
-![amarok-1-4-41](http://kevin.deldycke.com/wp-content/uploads/2006/10/amarok-1-4-41.png)
+![amarok-1-4-41](/static/uploads/2006/10/amarok-1-4-41.png)
 
 Here is the ultimate version of Amarok ! The [version 1.4.4 of Amarok was released today](http://amarok.kde.org/content/view/84/66/), and I've added it to [my brand new Mandriva 2007 repository](http://kevin.deldycke.com/mandriva-rpm-repository/). As a bonus, this RPM support three database system to store audio collections: SQLite (default), MySQL and Postgresql.
 

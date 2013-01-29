@@ -7,7 +7,7 @@ wordpress_id: 31
 category: English
 tags: Linux, Mandriva, security, Server, Tor
 
-![tor](http://kevin.deldycke.com/wp-content/uploads/2006/08/tor.png)
+![tor](/static/uploads/2006/08/tor.png)
 
 I backported [TOR, an onion routing system to communicate anonymously on the Internet](http://tor.eff.org) from cooker to Mandriva 2006.0. You can [find it in my repository](http://kevin.deldycke.com/static/repository/mandriva/2006.0/i586/).
 

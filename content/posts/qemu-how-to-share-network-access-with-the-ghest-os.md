@@ -7,7 +7,7 @@ wordpress_id: 65
 category: English
 tags: iptables, Linux, Network, Qemu
 
-![Qemu Network Sharing](http://kevin.deldycke.com/wp-content/uploads/2005/06/photo_f3.png)
+![Qemu Network Sharing](/static/uploads/2005/06/photo_f3.png)
 
 Create a file `/etc/qemu-ifup` that contain:
 

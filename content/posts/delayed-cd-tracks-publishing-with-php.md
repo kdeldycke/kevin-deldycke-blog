@@ -140,6 +140,6 @@ Of course this code doesn't prevent someone to download the track if this person
 
 Here is the final result, from the user point of view (and with additional aesthetic enhancements):
 
-![cd-track-delayed-publishing](http://kevin.deldycke.com/wp-content/uploads/2007/02/cd-track-delayed-publishing.png)
+![cd-track-delayed-publishing](/static/uploads/2007/02/cd-track-delayed-publishing.png)
 
-PS: If the code above contain formating errors (like bad html entities encoding, etc...), please look at the [file which contain the original code](http://kevin.deldycke.com/wp-content/uploads/2006/12/cd-track-delayed-publicationphp.txt) or its [colored html version](http://kevin.deldycke.com/wp-content/uploads/2006/12/cd-track-delayed-publicationphp.html).
+PS: If the code above contain formating errors (like bad html entities encoding, etc...), please look at the [file which contain the original code](/static/uploads/2006/12/cd-track-delayed-publicationphp.txt) or its [colored html version](/static/uploads/2006/12/cd-track-delayed-publicationphp.html).

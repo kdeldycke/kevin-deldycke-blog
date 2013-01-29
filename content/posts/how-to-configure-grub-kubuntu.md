@@ -9,7 +9,7 @@ tags: grub, Kubuntu, Ubuntu, Linux, Ubuntu, MBR
 
 Here is a little note to remind me how to customize [GRUB](http://www.gnu.org/software/grub/) the (k)Ubuntu way.
 
-![](http://kevin.deldycke.com/wp-content/uploads/2010/02/grub-kubuntu-custom-menu.jpg)
+![](/static/uploads/2010/02/grub-kubuntu-custom-menu.jpg)
 
 In fact the only important information I need to remember is the location of the file containing all GRUB options:
 

@@ -9,7 +9,7 @@ All the themes I customized or created from scratch for websites I managed.
 
 I don't plan to actively maintain them. But I'll be happy to merge patches and contributions. Feel free to send me code ! :)
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2007/04/cool-cavemen-preview.png)](http://kevin.deldycke.com/wp-content/uploads/2007/04/cool-cavemen-preview.png)
+[![](/static/uploads/2007/04/cool-cavemen-preview.png)](/static/uploads/2007/04/cool-cavemen-preview.png)
 
 ## [Cool Cavemen](http://github.com/kdeldycke/cool-cavemen-k2-theme/)
 
@@ -21,7 +21,7 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 * * *
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2007/04/drupify-fork-preview-e1291301163923.png)](http://kevin.deldycke.com/wp-content/uploads/2007/04/drupify-fork-preview.png)
+[![](/static/uploads/2007/04/drupify-fork-preview-e1291301163923.png)](/static/uploads/2007/04/drupify-fork-preview.png)
 
 ## [Drupify fork](http://github.com/kdeldycke/drupify-fork/)
 
@@ -33,7 +33,7 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 * * *
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2007/04/cool-blue-preview.png)](http://kevin.deldycke.com/wp-content/uploads/2007/04/cool-blue-preview.png)
+[![](/static/uploads/2007/04/cool-blue-preview.png)](/static/uploads/2007/04/cool-blue-preview.png)
 
 ## [Cool Blue](http://github.com/kdeldycke/cool-blue/)
 
@@ -45,7 +45,7 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 * * *
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2007/04/sapphire-style-for-k2-03-wordpress-theme.png)](http://kevin.deldycke.com/wp-content/uploads/2007/04/sapphire-style-for-k2-03-wordpress-theme.png)
+[![](/static/uploads/2007/04/sapphire-style-for-k2-03-wordpress-theme.png)](/static/uploads/2007/04/sapphire-style-for-k2-03-wordpress-theme.png)
 
 ## [Sapphire](http://github.com/kdeldycke/sapphire/)
 
@@ -57,7 +57,7 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 * * *
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2007/04/coolkevmen-for-k2-in-action1-e1291301553611.png)](http://kevin.deldycke.com/wp-content/uploads/2007/04/coolkevmen-for-k2-in-action1.png)
+[![](/static/uploads/2007/04/coolkevmen-for-k2-in-action1-e1291301553611.png)](/static/uploads/2007/04/coolkevmen-for-k2-in-action1.png)
 
 ## [Coolkevmen](http://github.com/kdeldycke/coolkevmen/)
 
@@ -69,7 +69,7 @@ I don't plan to actively maintain them. But I'll be happy to merge patches and c
 
 * * *
 
-[![](http://kevin.deldycke.com/wp-content/uploads/2011/06/new_look_3_mouseover.png)](http://kevin.deldycke.com/wp-content/uploads/2011/06/new_look_3_mouseover.png)
+[![](/static/uploads/2011/06/new_look_3_mouseover.png)](/static/uploads/2011/06/new_look_3_mouseover.png)
 
 ## [Cool Cavemen e107 themes](http://github.com/kdeldycke/cool-cavemen-e107-theme)
 

@@ -5,7 +5,7 @@ slug: about
 title: About
 wordpress_id: 20
 
-![](http://kevin.deldycke.com/wp-content/uploads/2006/05/avatar-orig.png) I'm **Kevin Deldycke**, a Software Engineer, Libre/Free Software Consultant and Python Developer.
+![](/static/uploads/2006/05/avatar-orig.png) I'm **Kevin Deldycke**, a Software Engineer, Libre/Free Software Consultant and Python Developer.
 
 ## Trivia
 
@@ -21,11 +21,11 @@ Finally in 2010, using some skewed statistics, I found that [I'm a top-1% develo
 
 If my appalling attempts to impress with the trivia above did not worked on you, you may be thrilled by the following soporific information on my professional background:
 
-  * [![](http://kevin.deldycke.com/wp-content/uploads/2006/05/pdf-icon.gif) PDF resume](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg) ([![](http://kevin.deldycke.com/wp-content/uploads/2006/05/french-flag.png) CV en Français](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1JYITJ3JU9WYvQXWlpGqLO9LzhcfAxiqJSsV8WyVhyyY)). Status: up to date.
+  * [![](/static/uploads/2006/05/pdf-icon.gif) PDF resume](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg) ([![](/static/uploads/2006/05/french-flag.png) CV en Français](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1JYITJ3JU9WYvQXWlpGqLO9LzhcfAxiqJSsV8WyVhyyY)). Status: up to date.
 
-  * [![](http://kevin.deldycke.com/wp-content/uploads/2006/05/linkedin-icon.png) LinkedIn profile](http://linkedin.com/in/kevindeldycke/en) ([![](http://kevin.deldycke.com/wp-content/uploads/2006/05/french-flag.png) version Française](http://linkedin.com/in/kevindeldycke/fr)). Status: synced.
+  * [![](/static/uploads/2006/05/linkedin-icon.png) LinkedIn profile](http://linkedin.com/in/kevindeldycke/en) ([![](/static/uploads/2006/05/french-flag.png) version Française](http://linkedin.com/in/kevindeldycke/fr)). Status: synced.
 
-  * [![](http://kevin.deldycke.com/wp-content/uploads/2006/05/viadeo-icon.png) Viadeo profile](http://viadeo.com/en/profile/kevin.deldycke) ([![](http://kevin.deldycke.com/wp-content/uploads/2006/05/french-flag.png) version Française](http://viadeo.com/fr/profile/kevin.deldycke)). Status: missing details.
+  * [![](/static/uploads/2006/05/viadeo-icon.png) Viadeo profile](http://viadeo.com/en/profile/kevin.deldycke) ([![](/static/uploads/2006/05/french-flag.png) version Française](http://viadeo.com/fr/profile/kevin.deldycke)). Status: missing details.
 
 Resumes, CVs and profiles above are heavy on details you may not be interested in as a recruiter. If to you these documents are too verbose and contain superfluous information, then that's absolutely normal. In fact, I designed these documents as a kind of extensive "professional activities databases". Not as resume _per se_. So feel free to pick there information you need and please ignore the rest.
 

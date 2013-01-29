@@ -7,7 +7,7 @@ wordpress_id: 890
 category: Français
 tags: band, Cool Cavemen, Creative Commons, interview, musique, oxyradio, podcast, radio
 
-![oxyradio-logo](http://kevin.deldycke.com/wp-content/uploads/2009/11/oxyradio-logo.png)
+![oxyradio-logo](/static/uploads/2009/11/oxyradio-logo.png)
 
 Après plusieurs semaines d'absence sur ce blog, je suis de retour avec un billet pour une fois [en français](http://kevin.deldycke.com/category/francais/). Il s'agit juste d'annoncer la mise en ligne d'une interview de [Cool Cavemen](http://coolcavemen.com) à laquelle j'ai participé.
 

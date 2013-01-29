@@ -7,7 +7,7 @@ wordpress_id: 524
 category: English
 tags: emoticons, geek, typography, unicode, UTF-8, xkcd
 
-[![xkcd-emoticons-with-parentheses-problem-exposed](http://kevin.deldycke.com/wp-content/uploads/2009/03/xkcd-emoticons-with-parentheses-problem-exposed.png)](http://xkcd.com/541/)
+[![xkcd-emoticons-with-parentheses-problem-exposed](/static/uploads/2009/03/xkcd-emoticons-with-parentheses-problem-exposed.png)](http://xkcd.com/541/)
 
 [xkcd comic #541 (titled "TED Talk")](http://xkcd.com/541/) expose a problem I've long been aware of: _how do you end parenthetical statements with emoticons ?_
 

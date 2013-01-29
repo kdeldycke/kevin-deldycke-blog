@@ -11,6 +11,6 @@ Today I've just received [another](http://kevin.deldycke.com/2008/12/give-away-o
 
 Here is a screenshot of the mail with the coupon code (`8WR9U9`):
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/08/23-and-me-50-dollars-coupon.png)
+![](/static/uploads/2011/08/23-and-me-50-dollars-coupon.png)
 
 Feel free to use the coupon as many times as you need !

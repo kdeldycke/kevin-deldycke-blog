@@ -9,7 +9,7 @@ tags: javascript, monkeypatch, OpenERP, Web, xml
 
 Here is a classic editable list in [OpenERP v6.0](http://www.openerp.com/node/607/2011/01):
 
-![](http://kevin.deldycke.com/wp-content/uploads/2012/01/editable-list.png)
+![](/static/uploads/2012/01/editable-list.png)
 
 It's a custom view I created this month [at work](http://www.smile.fr/Solutions/ERP) for one of our customer to let him select a list of products, then batch-print their labels on stickers.
 
@@ -55,7 +55,7 @@ The view above is produced by the following XML:
 
 If you start searching a product template with the first field, you'll get a pop-up similar to this one:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2012/01/fixed-width-popup-list.png)
+![](/static/uploads/2012/01/fixed-width-popup-list.png)
 
 As you can see, these kind of pop-up inherits the width of their parent field, which hide the end of all lines if they are too long. It becomes difficult to distinguish the items when all found objects have the same long prefix.
 
@@ -97,5 +97,5 @@ Here is the code I added in the XML view, just below the `line_ids` field:
 
 The result of this is a nice looking pop-up which doesn't break any vanilla Javascript of the OpenERP web client:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2012/01/variable-width-popup-list.png)
+![](/static/uploads/2012/01/variable-width-popup-list.png)
 

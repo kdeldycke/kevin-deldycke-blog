@@ -15,20 +15,20 @@ What's left to enlarge your capacity is [referrals](http://dropbox.com/account#r
 
 I only targeted the French audience because I feared the HN post would have temporarily inflated the cost of English keywords. Here are the daily stats of my campaign:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/12/dropbox-adwords-campaign-daily-stats.png)
+![](/static/uploads/2011/12/dropbox-adwords-campaign-daily-stats.png)
 
 And here are the ads I created:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/12/dropbox-adwords-campaign-text-ads-details.png)
+![](/static/uploads/2011/12/dropbox-adwords-campaign-text-ads-details.png)
 
 The paused ads above are those which didn't invited the user to install the Dropbox desktop client. And the latter action is absolutely required to unlock the bonus capacity.
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/12/dropbox-referrals.png)
+![](/static/uploads/2011/12/dropbox-referrals.png)
 
-And if your interested in all the details involved, here is a [keyword report](http://kevin.deldycke.com/wp-content/uploads/2011/12/dropbox-adwords-campaign-keyword-report.pdf).
+And if your interested in all the details involved, here is a [keyword report](/static/uploads/2011/12/dropbox-adwords-campaign-keyword-report.pdf).
 
 At the end it costs me 31.77€ to get 8Go of additional Dropbox capacity trough referrals:
 
-![](http://kevin.deldycke.com/wp-content/uploads/2011/12/dropbox-adwords-campaign-france-report.png)
+![](/static/uploads/2011/12/dropbox-adwords-campaign-france-report.png)
 
 That's not cheap, but was a fun hack and a great excuse to learn how to use Google AdWords. And next time I know what I'll do with [those](http://kevin.deldycke.com/2009/12/deux-bons-50-euros-offerts-google-adwords/) [AdWords coupons](http://kevin.deldycke.com/2010/02/google-adwords-bon-reduction-75-euros-offert/) I [regularly give away](http://kevin.deldycke.com/2010/10/75-euros-de-publicite-offerte-sur-google-adword/)... ;)
