@@ -50,8 +50,9 @@ RedirectMatch gone ^/wp-(admin|content|includes)/?.*$
 RedirectMatch gone ^/wp-.*\.php$
 
 # Generic error files
-#ErrorDocument 404 /pages/404-page-not-found.html
-#ErrorDocument 500 /pages/500-error.html
+ErrorDocument 404 /pages/404-not-found/
+ErrorDocument 410 /pages/410-gone/
+ErrorDocument 500 /pages/500-error/
 
 # Force compression of text-based assets
 <IfModule mod_headers.c>
