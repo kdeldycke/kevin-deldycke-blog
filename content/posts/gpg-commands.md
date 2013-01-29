@@ -16,16 +16,16 @@ tags: CLI, cryptography, GPG, Linux, security
 
         :::bash
         $ gpg --gen-key --batch <<EOF
-        $ Key-Type: RSA
-        $ Key-Length: 2048
-        $ Subkey-Type: RSA
-        $ Subkey-Length: 2048
-        $ Expire-Date: 0
-        $ Name-Real: Kevin
-        $ # Name-Email: kevin@deldycke.com
-        $ # Name-Comment: My auto-generated key
-        $ # Passphrase: my_secret_passphrase
-        $ EOF
+          Key-Type: RSA
+          Key-Length: 2048
+          Subkey-Type: RSA
+          Subkey-Length: 2048
+          Expire-Date: 0
+          Name-Real: Kevin
+          # Name-Email: kevin@deldycke.com
+          # Name-Comment: My auto-generated key
+          # Passphrase: my_secret_passphrase
+          EOF
 
   * List available keys for the current user:
 
