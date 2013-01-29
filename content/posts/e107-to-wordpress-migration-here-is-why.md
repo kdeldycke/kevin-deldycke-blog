@@ -12,34 +12,23 @@ Beside this, I run this blog, powered by [Wordpress](http://www.wordpress.org), 
 
 Akismet was the main reason, but here are the 3 others:
 
-  * Wordpress has [friendly URLs,
+  * Wordpress has [friendly URLs](http://tallecreative.com/designmudd/2005/07/06/wordpress-search-engine-friendly-urls/), which is great from a search engine optimisation point of view;
 
--- which is great from a search engine optimisation](http://tallecreative.com/designmudd/2005/07/06/wordpress-search-engine-friendly-urls/) point of view;
+  * Wordpress has [XML-RPC ping](http://codex.wordpress.org/Update_Services), to publish posts to popular sites like [Feed Burner](http://www.feedburner.com), [Feedster](http://www.feedster.com), [Technorati](http://www.technorati.com) and [much more](http://pingomatic.com/) (= faster and easier content spreading through the net);
 
-  * Wordpress has [XML-RPC ping](http://codex.wordpress.org/Update_Services),
-
--- to publish posts to popular sites like [Feed Burner](http://www.feedburner.com), [Feedster](http://www.feedster.com), [Technorati](http://www.technorati.com) and [much more](http://pingomatic.com/) (= faster and easier content spreading through the net);
-
-  * Wordpress community is bigger,
-
--- than the e107 one, which mean more plugins, more themes, bigger dynamics regarding code and security updates.
+  * Wordpress community is bigger, than the e107 one, which mean more plugins, more themes, bigger dynamics regarding code and security updates.
 
 By doing this migration, I expect to have :
 
   * a spam free site,
-
   * well-indexed content,
-
   * a better spreading of Cool Cavemen's news and activities.
 
 On the other hand, this migration make me loose some features :
 
   * Forums
-
   * Image Gallery
-
   * Newsletters
-
   * Event Calendar
 
 Even if those features are not built-in in Wordpress, I expect to find some plug-ins to fill the gap (I'll probably post the result of my investigations on that blog).
