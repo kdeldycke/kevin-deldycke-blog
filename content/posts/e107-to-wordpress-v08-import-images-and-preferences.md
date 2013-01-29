@@ -6,7 +6,7 @@ title: e107 to WordPress v0.8: import images and preferences
 wordpress_id: 170
 tags: Blog, CMS, e107, PHP, Web, WordPress
 
-The [8th version of my e107 to Wordpress import script](http://kevin.deldycke.com/static/scripts/wordpress-e107-importer-0.8.zip) is out ! This version is quite special because this is the first one that support all features I planned to implement in [the road map I write for the first alpha release](http://kevin.deldycke.com/2006/08/e107-to-wordpress-importer-alpha-version/).
+The [8th version of my e107 to Wordpress import script](http://wordpress.org/extend/plugins/e107-importer/) is out ! This version is quite special because this is the first one that support all features I planned to implement in [the road map I write for the first alpha release](http://kevin.deldycke.com/2006/08/e107-to-wordpress-importer-alpha-version/).
 
 Here is the changelog:
 

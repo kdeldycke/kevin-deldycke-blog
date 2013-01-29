@@ -6,7 +6,7 @@ title: Website Backup Script Updated: Take Care of Hidden Files now.
 wordpress_id: 132
 tags: Backup, FTP, lftp, Linux, Python, rdiff-backup, Server, Web
 
-I've [updated my website-backup python script](http://kevin.deldycke.com/static/scripts/website-backup-2006_12_25.py).
+I've [updated my website-backup python script](https://github.com/kdeldycke/scripts/blob/master/website-backup.py).
 
 Change log:
 

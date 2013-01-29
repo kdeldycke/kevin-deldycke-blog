@@ -9,7 +9,7 @@ tags: Blog, e107, PHP, Web, WordPress
 
 ![e107 to WordPress import plugin v0.7: News and Categories Imported screenshot](http://kevin.deldycke.com/wp-content/uploads/2007/03/e107-to-wordpress-v07-news-and-category-imported1.png)
 
-I've released a new version of my e107 migration script for WordPress. This release is [numbered v0.7](http://kevin.deldycke.com/static/scripts/wordpress-e107-importer-0.7.zip).
+I've released a new version of my e107 migration script for WordPress. This release is [numbered v0.7](http://wordpress.org/extend/plugins/e107-importer/).
 
 Here is the change-log:
 

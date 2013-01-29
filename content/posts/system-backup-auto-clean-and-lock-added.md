@@ -13,4 +13,4 @@ I've also added a locking mechanism to prevent the script to be run twice on the
 
 Finally, all `rsync` commands will now be run first to reduce the time-window during which all external machines are reached and, as mentionned above, because `rdiff-backup` can take lots of time to finish its job.
 
-Here is a [direct link to the new version of the script](http://kevin.deldycke.com/static/scripts/system-backup-2007_04_27.py). You can also find it in [my page dedicated to various linux scripts](http://kevin.deldycke.com/code/).
+Here is a [direct link to the new version of the script](http://wordpress.org/extend/plugins/e107-importer/). You can also find it in [my page dedicated to various linux scripts](http://kevin.deldycke.com/code/).

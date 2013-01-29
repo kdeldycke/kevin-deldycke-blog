@@ -9,7 +9,7 @@ tags: Blog, CMS, e107, PHP, Web, WordPress
 
 As I said yesterday, I will migrate my e107 content to Wordpress. My first step in this direction was to write a Wordpress import filter.
 
-So here is my [first draft of the e107 to Wordpress importer (direct link to php file)](http://kevin.deldycke.com/static/scripts/wordpress-e107-importer-0.1.php).
+So here is my [first draft of the e107 to Wordpress importer (direct link to php file)](http://wordpress.org/extend/plugins/e107-importer/).
 
 To use it, copy the e107.php file to your `wp-admin/import` folder. To launch the import, go to the `Import` page of your Wordpress administation panel, select e107, and fill required fields (user, password, database host, database name and table's prefix) to let the script reach your e107 datas. Then, follow steps and instructions until the end.
 
