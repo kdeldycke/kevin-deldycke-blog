@@ -79,6 +79,7 @@ STATIC_PATHS = [
   ]
 
 FILES_TO_COPY = (
+    ('extra/favicon.ico', 'favicon.ico'),
     ('extra/robots.txt', 'robots.txt'),
     ('extra/htaccess', '.htaccess'),
     ('extra/htaccess-static', 'static/.htaccess'),
