@@ -7,7 +7,7 @@ wordpress_id: 213
 category: English
 tags: Amarok, Audio, iCal, Mandriva, Music, MySQL, SQL, PostgreSQL, SQL, Python, Repository, RPM, rugg, televidilo
 
-![amarok-148.png](/static/uploads/2008/01/amarok-148.thumbnail.png)
+![amarok-148.png](/static/uploads/2008/01/amarok-148.png)
 
 I've just rebuild [Amarok 1.4.8](http://amarok.kde.org/fastforward_148) for Mandriva 2008.0 with MySQL and PostgreSQL support.
 

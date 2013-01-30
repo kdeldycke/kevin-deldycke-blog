@@ -7,7 +7,7 @@ wordpress_id: 201
 category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, Music, RPM
 
-![Amarok 1.4.7 for Mandriva 2007.1](/static/uploads/2007/08/amarok-147-logo.thumbnail.png)
+![Amarok 1.4.7 for Mandriva 2007.1](/static/uploads/2007/08/amarok-147-logo.png)
 
 I’ve just backported [Amarok 1.4.7](http://amarok.kde.org/en/node/243) from cooker to Mandriva 2007.1 (aka "Spring" edition).
 
