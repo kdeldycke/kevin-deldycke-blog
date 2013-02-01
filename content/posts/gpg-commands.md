@@ -1,9 +1,6 @@
-comments: true
 date: 2011-11-08 12:20:19
-layout: post
 slug: gpg-commands
 title: GPG commands
-wordpress_id: 3560
 category: English
 tags: CLI, cryptography, GPG, Linux, security
 

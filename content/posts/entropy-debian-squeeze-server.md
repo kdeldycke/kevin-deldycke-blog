@@ -1,9 +1,6 @@
-comments: true
 date: 2011-08-09 12:15:36
-layout: post
 slug: entropy-debian-squeeze-server
 title: Better Entropy on a Debian Squeeze server
-wordpress_id: 3552
 category: English
 tags: Debian, entropy, haveged, Linux, random, security, Debian Squeeze
 

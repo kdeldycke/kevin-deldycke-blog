@@ -1,9 +1,6 @@
-comments: true
 date: 2007-05-14 18:36:47
-layout: post
 slug: interreta-televidilo-for-mandriva-20071
 title: Interreta Televidilo for Mandriva 2007.1
-wordpress_id: 172
 category: English
 tags: french, Interreta Televidilo, Linux, Mandriva, RPM, TV, urpmi, Video
 

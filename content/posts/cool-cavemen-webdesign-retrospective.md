@@ -1,9 +1,6 @@
-comments: true
 date: 2011-06-14 12:38:26
-layout: post
 slug: cool-cavemen-webdesign-retrospective
 title: Cool Cavemen WebDesign Retrospective
-wordpress_id: 3302
 category: English
 tags: Cool Cavemen, CSS, e107, HTML, Template, Theme, Web, webdesign
 

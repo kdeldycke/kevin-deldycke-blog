@@ -1,9 +1,6 @@
-comments: true
 date: 2006-12-20 20:42:35
-layout: post
 slug: image-processing-commands
 title: Image Processing commands
-wordpress_id: 121
 category: English
 tags: CLI, exiftool, image, imagemagick, JPEG, Linux, Metadata, mogrify, photo, picture, pngcrush
 

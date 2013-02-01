@@ -1,9 +1,6 @@
-comments: true
 date: 2011-09-06 12:32:09
-layout: post
 slug: how-to-fix-flash-kubuntu
 title: How-to fix Flash on Kubuntu
-wordpress_id: 3890
 category: English
 tags: adobe, apt-get, flash, KDE, kpackagekit, Kubuntu, Ubuntu, Linux, package, plugin, Web
 

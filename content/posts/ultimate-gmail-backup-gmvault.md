@@ -1,9 +1,6 @@
-comments: true
 date: 2012-10-23 12:28:46
-layout: post
 slug: ultimate-gmail-backup-gmvault
 title: Ultimate Gmail backup with Gmvault
-wordpress_id: 5090
 category: English
 tags: Backup, Gmail, gmvault, Linux, email, Pip, Python, Ubuntu
 

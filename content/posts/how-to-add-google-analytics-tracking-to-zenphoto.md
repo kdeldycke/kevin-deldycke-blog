@@ -1,9 +1,6 @@
-comments: true
 date: 2008-08-16 22:49:55
-layout: post
 slug: how-to-add-google-analytics-tracking-to-zenphoto
 title: How-to add Google Analytics tracking to Zenphoto
-wordpress_id: 286
 category: English
 tags: analytics, Google, hack, patch, PHP, Snippet, Web, Zenphoto
 

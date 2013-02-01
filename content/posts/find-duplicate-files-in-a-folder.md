@@ -1,9 +1,6 @@
-comments: true
 date: 2006-10-29 22:25:40
-layout: post
 slug: find-duplicate-files-in-a-folder
 title: Find Duplicate Files in a Folder
-wordpress_id: 79
 category: English
 tags: CLI, Linux, Python
 

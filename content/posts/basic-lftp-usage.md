@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-18 23:15:49
-layout: post
 slug: basic-lftp-usage
 title: Basic lftp Usage
-wordpress_id: 189
 category: English
 tags: CLI, FTP, Hosting, lftp, Web
 

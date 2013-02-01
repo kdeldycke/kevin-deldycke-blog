@@ -1,9 +1,6 @@
-comments: true
 date: 2010-04-15 15:30:59
-layout: post
 slug: subversion-commands
 title: Subversion commands
-wordpress_id: 1281
 category: English
 tags: ack, CLI, find, grep, Linux, sed, shell, Subversion
 

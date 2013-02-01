@@ -1,9 +1,6 @@
-comments: true
 date: 2008-06-05 20:35:58
-layout: post
 slug: best-open-source-payroll-software
 title: I wrote the best Open-Source Payroll Software of the world !
-wordpress_id: 898
 category: English
 tags: company, consulting, erp, floss, free software, open source
 

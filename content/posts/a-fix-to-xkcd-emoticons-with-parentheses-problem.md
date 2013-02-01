@@ -1,9 +1,6 @@
-comments: true
 date: 2009-03-18 21:24:17
-layout: post
 slug: a-fix-to-xkcd-emoticons-with-parentheses-problem
 title: A fix to xkcd's emoticons + parentheses problem
-wordpress_id: 524
 category: English
 tags: emoticons, geek, typography, unicode, UTF-8, xkcd
 

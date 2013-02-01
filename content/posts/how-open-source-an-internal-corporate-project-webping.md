@@ -1,9 +1,6 @@
-comments: true
 date: 2011-08-30 12:18:01
-layout: post
 slug: how-open-source-an-internal-corporate-project-webping
 title: How I Open-Sourced an Internal Corporate Project (WebPing)
-wordpress_id: 3749
 category: English
 tags: CLI, Git, GitHub, Linux, Perl, Python, Regular expression, Subversion, trac, webping
 

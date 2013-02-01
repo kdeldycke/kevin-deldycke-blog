@@ -1,9 +1,6 @@
-comments: true
 date: 2011-05-09 11:35:32
-layout: post
 slug: e107-importer-v1-3-released
 title: e107 Importer v1.3 released
-wordpress_id: 3203
 category: English
 tags: Cool Cavemen, e107, importer, migration, PHP, Web, WordPress
 

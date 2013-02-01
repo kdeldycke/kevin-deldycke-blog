@@ -1,9 +1,6 @@
-comments: true
 date: 2006-10-22 18:26:55
-layout: post
 slug: mandriva-2007-is-out
 title: Mandriva 2007 is out !
-wordpress_id: 77
 category: English
 tags: Linux, Mandriva, RPM
 

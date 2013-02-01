@@ -1,9 +1,6 @@
-comments: true
 date: 2011-07-19 12:28:10
-layout: post
 slug: php-apc-debian-squeeze-munin-monitoring
 title: PHP APC on Debian Squeeze with Munin monitoring
-wordpress_id: 3269
 category: English
 tags: apx, Debian, Debian Squeeze, munin, nginx, PHP, Server, Web
 

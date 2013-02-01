@@ -1,9 +1,6 @@
-comments: true
 date: 2006-07-28 23:39:19
-layout: post
 slug: why-kqemu-doesnt-do-its-job
 title: Why kqemu doesn't do its job ?
-wordpress_id: 27
 tags: Linux, Qemu
 
 I was using [qemu](http://fabrice.bellard.free.fr/qemu/) for more than 1 year, but I only noticed today that [kqemu](http://fabrice.bellard.free.fr/qemu/qemu-accel.html), which is supposed to speed qemu up, was not working on my machine: there was absolutely no differences with or without kqemu.

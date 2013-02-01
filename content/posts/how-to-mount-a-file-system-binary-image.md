@@ -1,9 +1,6 @@
-comments: true
 date: 2005-05-29 05:08:58
-layout: post
 slug: how-to-mount-a-file-system-binary-image
 title: How-To Mount a File System Binary Image
-wordpress_id: 63
 category: English
 tags: CLI, Hardware, Linux
 

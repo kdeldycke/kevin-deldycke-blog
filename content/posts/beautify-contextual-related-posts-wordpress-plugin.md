@@ -1,9 +1,6 @@
-comments: true
 date: 2012-04-03 12:24:54
-layout: post
 slug: beautify-contextual-related-posts-wordpress-plugin
 title: Beautify Contextual Related Posts WordPress plugin
-wordpress_id: 4754
 category: English
 tags: CSS, plugin, Theme, twentyeleven, Web design, WordPress
 

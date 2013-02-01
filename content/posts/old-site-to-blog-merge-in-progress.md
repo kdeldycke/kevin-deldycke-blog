@@ -1,9 +1,6 @@
-comments: true
 date: 2006-10-12 22:53:13
-layout: post
 slug: old-site-to-blog-merge-in-progress
 title: Old Site to Blog: Merge in Progress
-wordpress_id: 68
 category: English
 tags: Blog, CMS, Web
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2009-09-07 21:11:03
-layout: post
 slug: fuse-sshfs-macosx-leopard
 title: Fuse and sshfs on MacOSX Leopard
-wordpress_id: 817
 category: English
 tags: Apple, automount, fuse, KDE, Mac OS X Leopard, Linux, MacBook, Apple, Mac OS X, mount, Network, sftp, SSH, sshfs, system
 

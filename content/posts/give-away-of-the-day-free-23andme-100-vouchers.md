@@ -1,9 +1,6 @@
-comments: true
 date: 2008-12-20 20:39:38
-layout: post
 slug: give-away-of-the-day-free-23andme-100-vouchers
 title: Give away of the day: free 23andMe $100 vouchers !
-wordpress_id: 388
 category: English
 tags: 23andMe, coupon, discount, DNA, genetics, voucher
 

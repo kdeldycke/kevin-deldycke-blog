@@ -1,9 +1,6 @@
-comments: true
 date: 2006-10-25 00:49:46
-layout: post
 slug: cd-burning-commands
 title: CD Burning commands
-wordpress_id: 73
 category: English
 tags: burning, cd, cdrdao, cdrecord, CLI, dvd, Hardware, Linux, mkisofs
 

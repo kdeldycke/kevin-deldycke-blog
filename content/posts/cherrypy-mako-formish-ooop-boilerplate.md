@@ -1,9 +1,6 @@
-comments: true
 date: 2011-08-23 12:58:37
-layout: post
 slug: cherrypy-mako-formish-ooop-boilerplate
 title: CherryPy + Mako + Formish + OOOP boilerplate
-wordpress_id: 3817
 category: English
 tags: cherrypy, formish, GitHub, GPL, mako, ooop, open source, OpenERP, Python
 

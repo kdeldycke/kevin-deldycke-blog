@@ -1,9 +1,6 @@
-comments: true
 date: 2009-05-10 21:01:29
-layout: post
 slug: smush-it-saves-you-image-bits
 title: smush.it saves you image's bits !
-wordpress_id: 615
 category: English
 tags: API, image, online service, optimization, Web, WordPress
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2010-02-28 12:39:32
-layout: post
 slug: system-and-shell-commands
 title: System & Shell commands
-wordpress_id: 965
 category: English
 tags: CLI, echo, kernel, Linux, nohup, shell, system
 

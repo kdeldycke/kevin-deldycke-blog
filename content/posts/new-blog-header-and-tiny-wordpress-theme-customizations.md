@@ -1,9 +1,6 @@
-comments: true
 date: 2011-01-18 23:48:58
-layout: post
 slug: new-blog-header-and-tiny-wordpress-theme-customizations
 title: New blog header and tiny WordPress theme customizations
-wordpress_id: 2742
 category: English
 tags: artwork, CSS, maomium, TwentyTen, Web, WordPress, Ubercart
 

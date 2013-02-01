@@ -1,9 +1,6 @@
-comments: true
 date: 2009-03-03 10:14:24
-layout: post
 slug: on-tour-with-cool-cavemen
 title: On tour with Cool Cavemen !
-wordpress_id: 518
 category: English
 tags: band, Cool Cavemen, light, lighting, live, rock, tour
 

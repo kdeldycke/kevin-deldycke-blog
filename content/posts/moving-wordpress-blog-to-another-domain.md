@@ -1,9 +1,6 @@
-comments: true
 date: 2009-09-21 20:59:10
-layout: post
 slug: moving-wordpress-blog-to-another-domain
 title: Moving a WordPress blog to another domain
-wordpress_id: 844
 category: English
 tags: Apache, Blog, CLI, find, grep, Hosting, Linux, MySQL, SQL, sed, Server, Web, WordPress
 

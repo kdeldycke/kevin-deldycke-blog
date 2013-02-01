@@ -1,9 +1,6 @@
-comments: true
 date: 2012-05-29 12:11:55
-layout: post
 slug: hacking-openerp-60-user-interface-javascript
 title: Hacking OpenERP 6.0 User Interface with Javascript
-wordpress_id: 4891
 category: English
 tags: HTML, javascript, jquery, OpenERP, smile
 

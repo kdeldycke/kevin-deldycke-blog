@@ -1,9 +1,6 @@
-comments: true
 date: 2012-07-17 12:34:17
-layout: post
 slug: displaying-upcoming-events-google-calendar-javascript
 title: Displaying Upcoming Events from a Google Calendar in Javascript
-wordpress_id: 4982
 category: English
 tags: events, Google Calendar, HTML, iCal, javascript, JSON, RSS
 

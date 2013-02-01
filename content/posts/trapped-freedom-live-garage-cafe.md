@@ -1,9 +1,6 @@
-comments: true
 date: 2011-02-08 12:46:45
-layout: post
 slug: trapped-freedom-live-garage-cafe
 title: Trapped in Freedom: live at Garage Café
-wordpress_id: 2867
 category: English
 tags: 1080p, Canon EOS 7D, Tamron, Trapped in Freedom, Video, youtube
 

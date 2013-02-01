@@ -1,9 +1,6 @@
-comments: true
 date: 2011-03-01 11:37:09
-layout: post
 slug: e107-importer-1-1
 title: e107 Importer 1.1 available !
-wordpress_id: 2938
 category: English
 tags: CMS, e107, import, migration, PHP, plugin, Web, WordPress
 

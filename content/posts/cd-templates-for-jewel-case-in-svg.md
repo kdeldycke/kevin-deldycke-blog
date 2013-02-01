@@ -1,9 +1,6 @@
-comments: true
 date: 2006-09-26 00:25:57
-layout: post
 slug: cd-templates-for-jewel-case-in-svg
 title: CD Templates for Jewel Case in SVG
-wordpress_id: 56
 category: English
 tags: Cool Cavemen, Creative Commons, inkscape, Music, svg, Template
 

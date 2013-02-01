@@ -1,9 +1,6 @@
-comments: true
 date: 2006-10-18 00:21:13
-layout: post
 slug: useful-commands-introduction
 title: Useful Commands: Introduction
-wordpress_id: 69
 category: English
 tags: Blog, CLI, CMS, Hosting, Linux, Web, WordPress
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2008-05-26 18:42:47
-layout: post
 slug: amarok-1-4-9-1-for-mandriva-2008-1
 title: Amarok 1.4.9.1 for Mandriva 2008.1
-wordpress_id: 223
 category: English
 tags: Amarok, backport, Mandriva, RPM
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2011-06-06 12:25:41
-layout: post
 slug: munin-monitor-debian-squeeze-server
 title: Using Munin to monitor a Debian Squeeze server
-wordpress_id: 3192
 category: English
 tags: acpi, Debian, fail2ban, Hardware, Linux, lm-sensors, munin, nginx, nut, RAID, Server, Debian Squeeze, Perl
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2010-01-07 18:52:18
-layout: post
 slug: new-year-eve-light-painting
 title: New Year's Eve Light Painting
-wordpress_id: 943
 category: English
 tags: Canon EOS 7D, DSLR, light painting, photo
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2007-05-27 20:45:12
-layout: post
 slug: feedburner-and-e107-integration
 title: FeedBurner and e107 integration
-wordpress_id: 175
 category: English
 tags: Apache, Atom, Blog, CMS, e107, feed, FeedBurner, htaccess, RDF, RSS, Server, Web, WordPress
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2010-07-28 11:54:54
-layout: post
 slug: exim-commands
 title: Exim commands
-wordpress_id: 1617
 category: English
 tags: CLI, email, Exim, Linux, Mail transfer agents
 

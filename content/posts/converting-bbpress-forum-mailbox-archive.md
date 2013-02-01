@@ -1,9 +1,6 @@
-comments: true
 date: 2012-10-02 12:37:23
-layout: post
 slug: converting-bbpress-forum-mailbox-archive
 title: Converting a bbPress Forum to a Mailbox Archive
-wordpress_id: 5120
 category: English
 tags: Backup, bbpress, convertion, Cool Cavemen, CSV, email, mailbox, mbox, migration, MySQL, SQL, PHP, Python, SQL, WordPress
 

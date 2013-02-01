@@ -1,9 +1,6 @@
-comments: true
 date: 2010-02-23 00:49:48
-layout: post
 slug: how-to-fork-cvs-project-git
 title: How-to fork a CVS project with Git
-wordpress_id: 1126
 category: English
 tags: CVS, Drupal, Fork, Git, GitHub, Project management software, Theme
 

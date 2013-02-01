@@ -1,9 +1,6 @@
-comments: true
 date: 2007-04-20 18:09:26
-layout: post
 slug: how-to-backup-mirror-a-public-svn-repository
 title: How-to Backup / Mirror a public SVN repository
-wordpress_id: 156
 category: English
 tags: Backup, Linux, SCM, Subversion, svk
 

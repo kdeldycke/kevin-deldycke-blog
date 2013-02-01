@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-25 23:26:35
-layout: post
 slug: how-to-publish-php-files-as-plain-text
 title: How to Publish .php files as Plain Text
-wordpress_id: 41
 category: English
 tags: Apache, Hosting, PHP, Server, Web
 

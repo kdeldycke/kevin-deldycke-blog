@@ -1,9 +1,6 @@
-comments: true
 date: 2011-05-24 12:18:08
-layout: post
 slug: fresh-debian-thanks-to-cron-apt
 title: Keep a Debian fresh thanks to cron-apt
-wordpress_id: 3171
 category: English
 tags: apt, aptitude, cron, cron-apt, Debian, Linux, sed
 

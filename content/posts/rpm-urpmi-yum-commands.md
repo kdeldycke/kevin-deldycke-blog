@@ -1,9 +1,6 @@
-comments: true
 date: 2006-11-29 01:01:55
-layout: post
 slug: rpm-urpmi-yum-commands
 title: RPM, Urpmi & Yum commands
-wordpress_id: 75
 category: English
 tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpmi, yum
 

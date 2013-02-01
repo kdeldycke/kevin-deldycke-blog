@@ -1,9 +1,6 @@
-comments: true
 date: 2010-02-21 20:58:09
-layout: post
 slug: git-commands
 title: Git commands
-wordpress_id: 1130
 category: English
 tags: CLI, Git, GitHub, Project management software, Software engineering, Version control
 

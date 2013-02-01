@@ -1,9 +1,6 @@
-comments: true
 date: 2007-08-12 17:00:45
-layout: post
 slug: system-backup-script-no-more-endless-lock
 title: System backup script: no more endless lock
-wordpress_id: 200
 tags: Backup, CLI, Linux, Python, rdiff-backup, rsync, Script, SSH, system
 
 I've just released a [new version of my `system-backup.py` script](https://github.com/kdeldycke/scripts/blob/master/system-backup.py).

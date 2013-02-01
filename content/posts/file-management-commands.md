@@ -1,9 +1,6 @@
-comments: true
 date: 2006-10-18 00:15:16
-layout: post
 slug: file-management-commands
 title: File Management commands
-wordpress_id: 70
 category: English
 tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox
 

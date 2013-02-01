@@ -1,9 +1,6 @@
-comments: true
 date: 2010-03-26 17:08:36
-layout: post
 slug: web-commands
 title: Web commands
-wordpress_id: 1257
 category: English
 tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509
 

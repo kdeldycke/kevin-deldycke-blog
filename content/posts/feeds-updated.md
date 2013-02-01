@@ -1,9 +1,6 @@
-comments: true
 date: 2010-05-18 12:45:29
-layout: post
 slug: feeds-updated
 title: Feeds updated !
-wordpress_id: 1459
 category: English
 tags: Aggregator, Apache, Atom, feed, FeedBurner, Google, RSS, WordPress
 
@@ -15,6 +12,5 @@ But since this [blog moved](http://kevin.deldycke.com/2009/09/moving-wordpress-b
 
   * For blog posts: [http://kevin.deldycke.com/feed](http://kevin.deldycke.com/feed)
 
-  * For blog comments: [http://kevin.deldycke.com/comments/feed](http://kevin.deldycke.com/comments/feed)
-
+  * For blog 
 In the future, I plan to support these URLs only. So please update your feed aggregation settings ! :)

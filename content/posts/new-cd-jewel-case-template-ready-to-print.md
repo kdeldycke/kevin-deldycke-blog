@@ -1,9 +1,6 @@
-comments: true
 date: 2006-11-15 00:47:21
-layout: post
 slug: new-cd-jewel-case-template-ready-to-print
 title: New CD Jewel Case Template ready to Print !
-wordpress_id: 92
 category: English
 tags: cd, Creative Commons, inkscape, Music, svg, Template
 

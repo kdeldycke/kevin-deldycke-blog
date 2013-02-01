@@ -1,9 +1,6 @@
-comments: true
 date: 2011-05-31 12:22:58
-layout: post
 slug: mge-ellipse-750-ups-debian-squeeze
 title: MGE Ellipse 750 UPS on Debian Squeeze
-wordpress_id: 440
 category: English
 tags: Debian, Linux, nut, Server, Debian Squeeze, udev, UPS, USB
 

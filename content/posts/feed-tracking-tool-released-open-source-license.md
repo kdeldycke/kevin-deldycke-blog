@@ -1,9 +1,6 @@
-comments: true
 date: 2011-03-28 12:12:51
-layout: post
 slug: feed-tracking-tool-released-open-source-license
 title: Feed Tracking Tool released under an Open-Source license
-wordpress_id: 3013
 category: English
 tags: code, feed, Git, GitHub, GPL, Pylons, Python, ruby, Ruby on Rails, Uperto, Web
 

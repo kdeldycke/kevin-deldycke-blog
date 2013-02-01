@@ -1,9 +1,6 @@
-comments: true
 date: 2011-12-13 12:41:07
-layout: post
 slug: wordpress-commands
 title: WordPress commands
-wordpress_id: 3410
 category: English
 tags: Blog, MySQL, SQL, PHP, WordPress
 

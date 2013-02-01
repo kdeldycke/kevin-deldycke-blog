@@ -1,6 +1,4 @@
-comments: true
 date: 2013-01-22 13:26:53
-layout: post
 slug: wordpress-disqus-migration
 title: WordPress to Disqus Migration
 category: English

@@ -1,9 +1,6 @@
-comments: true
 date: 2010-05-12 21:32:37
-layout: post
 slug: lotus-notes-rich-text-mime-conversion-error
 title: Lotus Notes' Rich Text to MIME conversion error
-wordpress_id: 1327
 category: English
 tags: email, Gimp, Lotus Notes, MIME
 

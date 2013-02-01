@@ -1,9 +1,6 @@
-comments: true
 date: 2010-11-02 22:39:55
-layout: post
 slug: sharp-scan-lines-squared-lava-lamp
 title: Sharp scan-lines & Squared lava-lamp
-wordpress_id: 2175
 category: English
 tags: Animation, Apple, MacBook, QC Experiment, Quartz Composer, Video, Visual
 

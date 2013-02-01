@@ -1,9 +1,6 @@
-comments: true
 date: 2011-04-18 12:15:28
-layout: post
 slug: ftt-migration-subversion-git
 title: FTT Migration from Subversion to Git
-wordpress_id: 3139
 category: English
 tags: Feed Tracking Tool, Git, GitHub, migration, Subversion, Uperto
 

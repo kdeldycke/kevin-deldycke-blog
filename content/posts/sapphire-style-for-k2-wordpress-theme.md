@@ -1,9 +1,6 @@
-comments: true
 date: 2007-03-21 12:49:41
-layout: post
 slug: sapphire-style-for-k2-wordpress-theme
 title: Sapphire style for K2 Wordpress theme
-wordpress_id: 146
 tags: Blog, CSS, K2, Template, Theme, Web, WordPress
 
 ![Sapphire custom style for K2 Wordpress Theme](/static/uploads/2007/03/k2-sapphire.png)

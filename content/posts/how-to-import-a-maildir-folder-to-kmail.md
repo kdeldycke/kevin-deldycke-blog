@@ -1,9 +1,6 @@
-comments: true
 date: 2007-11-27 00:21:18
-layout: post
 slug: how-to-import-a-maildir-folder-to-kmail
 title: How-to import a Maildir++ folder to Kmail
-wordpress_id: 207
 category: English
 tags: Backup, KDE, kmail, Linux, email, mailbox, maildir, Python, Script
 

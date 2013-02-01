@@ -1,9 +1,6 @@
-comments: true
 date: 2011-05-17 12:13:04
-layout: post
 slug: setting-hdds-smart-monitoring-debian-squeeze
 title: Setting up HDD's SMART monitoring on Debian Squeeze
-wordpress_id: 3169
 category: English
 tags: Debian, HDD, Linux, Server, smartmontools, Debian Squeeze
 

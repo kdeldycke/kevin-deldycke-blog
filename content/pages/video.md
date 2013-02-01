@@ -1,9 +1,6 @@
-comments: false
 date: 2010-01-28 20:10:32
-layout: page
 slug: video
 title: Videos
-wordpress_id: 970
 
 All video projects I've worked on as a director, editor, camera operator, concert lighting designer and/or actor ( :roll: ).
 

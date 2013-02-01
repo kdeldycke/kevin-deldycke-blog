@@ -1,9 +1,6 @@
-comments: true
 date: 2012-05-22 12:55:12
-layout: post
 slug: kdenlive-fundraising-campaign-tremendous-success
 title: Kdenlive fundraising campaign: a tremendous success !
-wordpress_id: 4952
 category: English
 tags: campaign, editing, Fundraising, KDE, kdenlive, NLE, Video
 

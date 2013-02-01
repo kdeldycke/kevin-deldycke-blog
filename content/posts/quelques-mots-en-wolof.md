@@ -1,9 +1,6 @@
-comments: true
 date: 2005-11-08 23:04:06
-layout: post
 slug: quelques-mots-en-wolof
 title: Quelques Mots en Wolof...
-wordpress_id: 131
 category: Français
 tags: french, life, Sénégal, travel, wolof
 

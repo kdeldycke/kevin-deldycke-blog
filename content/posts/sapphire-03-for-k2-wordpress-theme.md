@@ -1,9 +1,6 @@
-comments: true
 date: 2007-06-16 17:22:16
-layout: post
 slug: sapphire-03-for-k2-wordpress-theme
 title: Sapphire 0.3 for K2 Wordpress Theme
-wordpress_id: 194
 category: English
 tags: K2, style, Template, Theme, WordPress
 

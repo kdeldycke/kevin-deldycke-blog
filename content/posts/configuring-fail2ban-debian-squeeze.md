@@ -1,9 +1,6 @@
-comments: true
 date: 2011-06-21 12:25:16
-layout: post
 slug: configuring-fail2ban-debian-squeeze
 title: Configuring Fail2Ban on Debian Squeeze
-wordpress_id: 3236
 category: English
 tags: Apache, Exim, fail2ban, security, Server, SSH, Web
 

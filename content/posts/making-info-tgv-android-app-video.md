@@ -1,9 +1,6 @@
-comments: true
 date: 2010-09-29 15:28:15
-layout: post
 slug: making-info-tgv-android-app-video
 title: Making of "Info TGV" Android app video
-wordpress_id: 1988
 category: English
 tags: Android, Canon EOS 7D, ffmpeg, HTC, kdenlive, Kubuntu, Ubuntu, Linux, twitter, uperto, Video, x264, youtube
 

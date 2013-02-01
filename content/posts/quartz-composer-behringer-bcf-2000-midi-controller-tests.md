@@ -1,9 +1,6 @@
-comments: true
 date: 2010-12-14 00:58:38
-layout: post
 slug: quartz-composer-behringer-bcf-2000-midi-controller-tests
 title: Quartz Composer & Behringer BCF-2000 MIDI controller tests
-wordpress_id: 2569
 category: English
 tags: Animation, Apple, berhinger, Canon EOS 7D, Creative Commons, jamendo, kdenlive, MacBook, MacBook, midi, MIDI-controlled graphics, Quartz Composer, tokina, USB, Video, Visual
 

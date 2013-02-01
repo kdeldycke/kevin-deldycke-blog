@@ -1,9 +1,6 @@
-comments: true
 date: 2007-07-05 22:36:48
-layout: post
 slug: amarok-146-for-mandriva-20071
 title: Amarok 1.4.6 for Mandriva 2007.1
-wordpress_id: 196
 category: English
 tags: Amarok, KDE, Linux, Mandriva, Repository, RPM
 

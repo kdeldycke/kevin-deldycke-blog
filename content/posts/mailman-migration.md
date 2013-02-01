@@ -1,9 +1,6 @@
-comments: true
 date: 2011-10-04 12:00:44
-layout: post
 slug: mailman-migration
 title: Mailman migration
-wordpress_id: 3959
 category: English
 tags: Debian, Debian Squeeze, dns, Exim, mailman, spf
 

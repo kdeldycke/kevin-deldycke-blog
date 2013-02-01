@@ -1,9 +1,6 @@
-comments: true
 date: 2007-02-28 21:49:57
-layout: post
 slug: repository-moved-thanks-to-apache-and-301-redirections
 title: Repository Moved thanks to Apache and 301 Redirections
-wordpress_id: 142
 category: English
 tags: Apache, Blog, Hosting, htaccess, ISP, Linux, Mandriva, Repository, RPM, urpmi, Web
 

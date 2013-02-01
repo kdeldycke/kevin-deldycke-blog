@@ -1,9 +1,6 @@
-comments: true
 date: 2010-04-19 23:49:40
-layout: post
 slug: putty-profile-template
 title: My PuTTY profile template
-wordpress_id: 1301
 category: English
 tags: PuTTY, shell, SSH, Template, terminal, Windows
 

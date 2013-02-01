@@ -1,9 +1,6 @@
-comments: true
 date: 2007-04-09 07:01:35
-layout: post
 slug: system-backup-on-unreliable-link-thanks-to-rdiff-backup-and-rsync
 title: System Backup on Unreliable Link thanks to rdiff-backup and rsync
-wordpress_id: 160
 category: English
 tags: Backup, CLI, Linux, Python, rdiff-backup, rsync, Script, SSH
 

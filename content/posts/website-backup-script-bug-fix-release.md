@@ -1,9 +1,6 @@
-comments: true
 date: 2008-05-26 01:38:44
-layout: post
 slug: website-backup-script-bug-fix-release
 title: Website Backup Script: bug fix release
-wordpress_id: 222
 category: English
 tags: Backup, CLI, FTP, lftp, Linux, MySQL, SQL, mysqldump, Network, Python, rdiff-backup, rsync, Script, Server, SSH, Web
 

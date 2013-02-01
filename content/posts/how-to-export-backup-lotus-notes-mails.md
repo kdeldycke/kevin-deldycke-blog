@@ -1,9 +1,6 @@
-comments: true
 date: 2010-06-25 11:30:11
-layout: post
 slug: how-to-export-backup-lotus-notes-mails
 title: How-to export/backup Lotus Notes mails
-wordpress_id: 1574
 category: English
 tags: Backup, Databases, email, export, Lotus Notes, Windows
 

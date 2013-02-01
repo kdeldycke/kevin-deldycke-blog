@@ -1,9 +1,6 @@
-comments: true
 date: 2010-10-15 11:56:56
-layout: post
 slug: export-quartz-composer-video
 title: Export Quartz Composer to video
-wordpress_id: 2132
 category: English
 tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, Mac OS X Snow Leopard
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2008-07-31 20:48:22
-layout: post
 slug: how-to-fix-rubys-feedtools-latin-1-parsing
 title: How-to fix ruby's FeedTools latin-1 parsing
-wordpress_id: 236
 category: English
 tags: feed, FeedTools, monkey patch, parsing, patch, RSS, ruby, Ruby on Rails, Snippet, Web
 

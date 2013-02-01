@@ -1,9 +1,6 @@
-comments: true
 date: 2010-02-26 14:18:17
-layout: post
 slug: mysql-commands
 title: MySQL commands
-wordpress_id: 1222
 category: English
 tags: CLI, Databases, MySQL, SQL, SQL
 

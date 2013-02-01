@@ -1,9 +1,6 @@
-comments: true
 date: 2007-02-10 20:12:08
-layout: post
 slug: delayed-cd-tracks-publishing-with-php
 title: Delayed CD Tracks Publishing with PHP
-wordpress_id: 110
 category: English
 tags: Cool Cavemen, Music, PHP, Web
 

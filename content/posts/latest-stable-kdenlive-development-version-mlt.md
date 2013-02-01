@@ -1,9 +1,6 @@
-comments: true
 date: 2010-11-23 12:12:53
-layout: post
 slug: latest-stable-kdenlive-development-version-mlt
 title: Using latest stable Kdenlive with a development version of MLT
-wordpress_id: 2217
 category: English
 tags: apt-get, aptitude, dpkg, Git, kdenlive, Kubuntu, Ubuntu, mlt, Video
 

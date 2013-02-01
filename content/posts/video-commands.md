@@ -1,9 +1,6 @@
-comments: true
 date: 2006-11-08 00:31:27
-layout: post
 slug: video-commands
 title: Video commands
-wordpress_id: 71
 category: English
 tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, mplayer, subtitle, svcd, transcode, Video, xvid
 

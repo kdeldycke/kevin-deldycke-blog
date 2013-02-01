@@ -1,9 +1,6 @@
-comments: true
 date: 2011-02-01 12:20:34
-layout: post
 slug: moving-git-subtree-repository
 title: Moving a Git sub-tree to its own repository
-wordpress_id: 2697
 category: English
 tags: code, Git, GitHub
 

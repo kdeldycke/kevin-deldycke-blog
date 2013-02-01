@@ -1,9 +1,6 @@
-comments: true
 date: 2008-11-28 18:27:04
-layout: post
 slug: how-to-fix-wireless-dhcp-on-mandriva-20090
 title: How-to fix wireless DHCP on Mandriva 2009.0
-wordpress_id: 428
 category: English
 tags: dhcp, Linux, Mandriva, Network, urpmi, wifi, wireless
 

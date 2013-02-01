@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-19 19:58:09
-layout: post
 slug: you-installed-amarok-from-my-rpms-and-you-cant-play-some-files-here-is-the-fix
 title: You installed Amarok from my RPMs and can't play some files ? Here is the fix...
-wordpress_id: 34
 tags: Amarok, KDE, Linux, Mandriva, Music, RPM
 
 My two previous RPMs packages of Amarok ([1.4.1](http://kevin.deldycke.com/2006/07/amarok-141-for-mandriva-2006/) and [1.4.2beta1](http://kevin.deldycke.com/2006/08/amarok-142-beta1-for-mandriva-2006/)) for Mandriva 2006 were not able to play some files because of their file format. In a previous comment, [Promeneur tell us](http://kevin.deldycke.com/2006/07/amarok-141-for-mandriva-2006/#comment-45) that my 1.4.1 package was not able to play Mpeg2 files.

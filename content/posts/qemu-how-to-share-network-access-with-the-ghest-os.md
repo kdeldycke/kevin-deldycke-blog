@@ -1,9 +1,6 @@
-comments: true
 date: 2005-06-04 21:20:13
-layout: post
 slug: qemu-how-to-share-network-access-with-the-ghest-os
 title: Qemu: How-To Share Network Access with the Ghest OS
-wordpress_id: 65
 category: English
 tags: iptables, Linux, Network, Qemu
 

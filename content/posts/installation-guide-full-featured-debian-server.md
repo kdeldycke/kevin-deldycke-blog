@@ -1,9 +1,6 @@
-comments: true
 date: 2011-10-18 12:32:20
-layout: post
 slug: installation-guide-full-featured-debian-server
 title: Installation Guide for a full-featured Debian server
-wordpress_id: 3165
 category: English
 tags: apt, cron, Debian, Exim, fail2ban, Linux, maintenance, munin, MySQL, SQL, nginx, nut, PHP, Server, SMART, Debian Squeeze, system, Web
 

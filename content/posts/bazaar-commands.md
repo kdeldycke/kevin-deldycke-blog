@@ -1,9 +1,6 @@
-comments: true
 date: 2011-11-01 12:46:26
-layout: post
 slug: bazaar-commands
 title: Bazaar commands
-wordpress_id: 3638
 category: English
 tags: bazaar, CLI, development, Launchpad, Linux, OpenERP, programming, Version control
 

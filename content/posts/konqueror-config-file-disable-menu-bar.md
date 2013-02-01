@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-31 00:49:48
-layout: post
 slug: konqueror-config-file-disable-menu-bar
 title: Konqueror config file: disable menu bar
-wordpress_id: 44
 category: English
 tags: KDE, kmail, konqueror, Linux
 

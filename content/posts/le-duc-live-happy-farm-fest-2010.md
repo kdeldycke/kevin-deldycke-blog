@@ -1,9 +1,6 @@
-comments: true
 date: 2010-06-02 02:11:17
-layout: post
 slug: le-duc-live-happy-farm-fest-2010
 title: Le Duc live at Happy Farm Fest 2010
-wordpress_id: 1515
 category: English
 tags: Canon EOS 7D, concert, gig, Happy Farm Fest, Le Duc, live, sigma, Video, you tube
 

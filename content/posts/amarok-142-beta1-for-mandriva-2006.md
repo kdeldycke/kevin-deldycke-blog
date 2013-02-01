@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-19 17:52:37
-layout: post
 slug: amarok-142-beta1-for-mandriva-2006
 title: Amarok 1.4.2-beta1 for Mandriva 2006
-wordpress_id: 33
 tags: Amarok, KDE, Linux, Mandriva, Music, RPM
 
 The [first beta of amarok 1.4.2](http://amarok.kde.org/content/view/77) was out for about 2 weeks and today I backported it to Mandriva 2006. This new version is the first to include the [Advanced Tag Features (ATF) system](http://amarok.kde.org/amarokwiki/index.php/ATF) which is perfect for people with big and constantly evolving music collection.

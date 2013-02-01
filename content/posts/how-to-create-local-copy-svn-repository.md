@@ -1,9 +1,6 @@
-comments: true
 date: 2012-10-09 12:46:06
-layout: post
 slug: how-to-create-local-copy-svn-repository
 title: How-to create a local copy of a remote SVN repository
-wordpress_id: 5085
 category: English
 tags: Backup, code, Repository, SCM, Subversion, svk, Subversion
 

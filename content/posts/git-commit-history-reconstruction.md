@@ -1,9 +1,6 @@
-comments: true
 date: 2010-06-09 21:06:37
-layout: post
 slug: git-commit-history-reconstruction
 title: Commit history reconstruction with Git
-wordpress_id: 1403
 category: English
 tags: commit, Git, GitHub, history, Init, Software engineering
 

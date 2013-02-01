@@ -1,9 +1,6 @@
-comments: true
 date: 2012-03-27 12:24:42
-layout: post
 slug: video-summary-latest-cool-cavemens-concert
 title: Video summary of latest Cool Cavemen's concert
-wordpress_id: 4360
 category: English
 tags: 1080p, canon, Canon EOS 7D, concert, Cool Cavemen, gig, kdenlive, live, Music, point and shoot, sony, Tamron, Video, you tube
 

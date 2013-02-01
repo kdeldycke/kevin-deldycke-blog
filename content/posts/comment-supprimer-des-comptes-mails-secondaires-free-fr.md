@@ -1,9 +1,6 @@
-comments: true
 date: 2010-12-08 12:16:35
-layout: post
 slug: comment-supprimer-des-comptes-mails-secondaires-free-fr
 title: Comment supprimer des comptes mails secondaires @free.fr
-wordpress_id: 2488
 category: Français
 tags: free.fr, Gmail, ISP, email, Proxad
 

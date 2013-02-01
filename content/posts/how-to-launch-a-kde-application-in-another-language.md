@@ -1,9 +1,6 @@
-comments: true
 date: 2007-06-02 23:42:15
-layout: post
 slug: how-to-launch-a-kde-application-in-another-language
 title: How-to launch a KDE Application in Another Language
-wordpress_id: 190
 category: English
 tags: KDE, Linux
 

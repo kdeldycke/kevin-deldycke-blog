@@ -1,9 +1,6 @@
-comments: true
 date: 2012-05-15 12:24:12
-layout: post
 slug: backup-gmail-offlineimap
 title: How-To Backup Gmail with OfflineImap
-wordpress_id: 4820
 category: English
 tags: Backup, email, Gmail, IMAP, Linux, maildir, Python, SSL
 

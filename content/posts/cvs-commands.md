@@ -1,9 +1,6 @@
-comments: true
 date: 2006-11-15 00:57:50
-layout: post
 slug: cvs-commands
 title: CVS commands
-wordpress_id: 74
 category: English
 tags: CLI, CVS, KDE, Linux
 

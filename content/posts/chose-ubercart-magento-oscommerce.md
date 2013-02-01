@@ -1,9 +1,6 @@
-comments: true
 date: 2011-03-21 11:33:37
-layout: post
 slug: chose-ubercart-magento-oscommerce
 title: Why I chose Ubercart instead of Magento or osCommerce.
-wordpress_id: 2947
 category: English
 tags: CMS, Drupal, eCommerce, Magento, online shop, osCommerce, shop, Ubercart, Web
 

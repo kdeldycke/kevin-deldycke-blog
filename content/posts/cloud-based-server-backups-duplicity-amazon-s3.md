@@ -1,9 +1,6 @@
-comments: true
 date: 2011-09-13 12:35:33
-layout: post
 slug: cloud-based-server-backups-duplicity-amazon-s3
 title: Cloud-based Server Backups with Duplicity and Amazon S3
-wordpress_id: 3557
 category: English
 tags: Amazon S3, AWS, Backup, cloud-computing, cron, Debian, duplicity, Linux, MySQL, SQL, shell, Debian Squeeze, storage
 

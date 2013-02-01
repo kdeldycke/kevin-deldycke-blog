@@ -1,9 +1,6 @@
-comments: true
 date: 2010-02-06 18:07:57
-layout: post
 slug: google-adwords-bon-reduction-75-euros-offert
 title: Google AdWords: bon de réduction de 75€ offert !
-wordpress_id: 1046
 category: Français
 tags: AdWords, Google,, bon de reduction, France, Google, publicite, voucher, Web
 

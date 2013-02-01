@@ -1,9 +1,6 @@
-comments: true
 date: 2006-05-06 18:18:11
-layout: post
 slug: a-bunch-of-python-scripts
 title: A bunch of Python scripts
-wordpress_id: 19
 category: English
 tags: Linux, Python
 

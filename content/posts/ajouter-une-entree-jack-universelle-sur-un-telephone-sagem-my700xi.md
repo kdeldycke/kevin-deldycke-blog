@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-29 23:15:19
-layout: post
 slug: ajouter-une-entree-jack-universelle-sur-un-telephone-sagem-my700xi
 title: Ajouter une entrée Jack universelle sur un téléphone Sagem my700Xi
-wordpress_id: 303
 category: Français
 tags: écouteur, bricolage, electronique, GSM, my700Xi, portable, Sagem, téléphone
 

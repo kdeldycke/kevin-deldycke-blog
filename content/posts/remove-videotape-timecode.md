@@ -1,9 +1,6 @@
-comments: true
 date: 2010-01-14 11:30:15
-layout: post
 slug: remove-videotape-timecode
 title: Remove videotape timecode
-wordpress_id: 949
 category: English
 tags: analog, avidemux, timecode, Video, VITC
 

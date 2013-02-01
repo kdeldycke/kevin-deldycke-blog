@@ -1,9 +1,6 @@
-comments: true
 date: 2009-12-02 21:37:09
-layout: post
 slug: auto-saving-file-regular-intervals
 title: Auto-saving a file at regular intervals
-wordpress_id: 911
 category: English
 tags: Backup, cron, Linux, save
 

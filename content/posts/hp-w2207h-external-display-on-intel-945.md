@@ -1,9 +1,6 @@
-comments: true
 date: 2008-03-07 01:20:53
-layout: post
 slug: hp-w2207h-external-display-on-intel-945
 title: HP w2207h external display on Intel 945
-wordpress_id: 218
 category: English
 tags: chipset, display, external display, graphic, Hewlett Packard, Intel, laptop, Linux, Samsung, screen, X.org
 

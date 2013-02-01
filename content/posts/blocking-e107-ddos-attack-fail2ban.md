@@ -1,9 +1,6 @@
-comments: true
 date: 2010-08-03 21:09:54
-layout: post
 slug: blocking-e107-ddos-attack-fail2ban
 title: Blocking e107 dDOS attack with fail2ban
-wordpress_id: 1613
 category: English
 tags: Apache, Cool Cavemen, e107, fail2ban, Linux, PHP, security, Server, Web
 

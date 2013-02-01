@@ -1,9 +1,6 @@
-comments: true
 date: 2008-06-03 21:56:03
-layout: post
 slug: how-to-inherit-css-width-attributes-for-internet-explorer
 title: How-to inherit CSS width attributes for Internet Explorer
-wordpress_id: 225
 category: English
 tags: CSS, design, firefox, HTML, IE, layout, Web, webdesign
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2012-03-13 12:41:25
-layout: post
 slug: first-short-film-4m2-released
 title: 4m² : the first short I worked on
-wordpress_id: 4651
 Category: Front Page
 tags: Canon EOS 7D, cinematography, film, narrative, short, short film, Video, youtube
 

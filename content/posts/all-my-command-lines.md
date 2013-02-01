@@ -1,9 +1,6 @@
-comments: true
 date: 2006-12-27 21:48:32
-layout: post
 slug: all-my-command-lines
 title: All my command lines
-wordpress_id: 102
 Category: Front Page
 tags: CLI, Linux
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2012-02-28 12:18:53
-layout: post
 slug: stabilizing-cute-baby-goats
 title: Stabilizing Cute Baby Goats
-wordpress_id: 4550
 category: English
 tags: Canon EOS 7D, Linux, stabilization, transcode, Video
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2007-01-11 20:36:16
-layout: post
 slug: comment-ouvrir-un-boitier-disque-dur-externe-silvertouch
 title: Comment Ouvrir un Boîtier / Disque Dur Externe SilverTouch ?
-wordpress_id: 122
 category: Français
 tags: boitier externe, disque dur, informatique, ordinateur
 

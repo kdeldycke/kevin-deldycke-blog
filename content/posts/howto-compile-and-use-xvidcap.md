@@ -1,9 +1,6 @@
-comments: true
 date: 2005-06-27 13:41:39
-layout: post
 slug: howto-compile-and-use-xvidcap
 title: How-to Compile and Use xvidcap
-wordpress_id: 67
 category: English
 tags: CLI, Linux, Mandriva, mencoder, mplayer, Video, xvidcap
 

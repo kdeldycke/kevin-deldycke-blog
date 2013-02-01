@@ -1,9 +1,6 @@
-comments: true
 date: 2012-10-16 12:24:34
-layout: post
 slug: kdenlive-fundraising-campaign-tee-shirt
 title: Kdenlive Fundraising Campaign Tee-Shirt
-wordpress_id: 5193
 category: English
 tags: campaign, Fundraising, kdenlive, T-shirt
 

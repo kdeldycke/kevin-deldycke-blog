@@ -1,9 +1,6 @@
-comments: true
 date: 2012-04-17 12:46:34
-layout: post
 slug: add-warning-banner-openerp-web-client
 title: How-to add a warning banner to OpenERP's web client
-wordpress_id: 4635
 category: English
 tags: CSS, HTML, mako, OpenERP
 

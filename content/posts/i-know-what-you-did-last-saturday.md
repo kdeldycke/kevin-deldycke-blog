@@ -1,9 +1,6 @@
-comments: true
 date: 2010-02-15 22:22:29
-layout: post
 slug: i-know-what-you-did-last-saturday
 title: I know what you did last saturday...
-wordpress_id: 1080
 category: English
 tags: circle, loop, photo
 

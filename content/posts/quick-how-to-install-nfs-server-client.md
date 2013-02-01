@@ -1,9 +1,6 @@
-comments: true
 date: 2007-01-27 16:58:00
-layout: post
 slug: quick-how-to-install-nfs-server-client
 title: Quick How-To: Install NFS Server & Client
-wordpress_id: 134
 category: English
 tags: CLI, Linux, Mandriva, Network, NFS, Server
 

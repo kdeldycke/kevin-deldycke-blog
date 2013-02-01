@@ -1,9 +1,6 @@
-comments: false
 date: 2007-04-07 16:47:16
-layout: page
 slug: themes
 title: Themes
-wordpress_id: 157
 
 All the themes I customized or created from scratch for websites I managed.
 

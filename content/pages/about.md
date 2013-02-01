@@ -1,9 +1,6 @@
-comments: false
 date: 2006-05-08 17:58:35
-layout: page
 slug: about
 title: About
-wordpress_id: 20
 
 ![](/static/uploads/2006/05/avatar-orig.png) I'm **Kevin Deldycke**, a Software Engineer, Libre/Free Software Consultant and Python Developer.
 

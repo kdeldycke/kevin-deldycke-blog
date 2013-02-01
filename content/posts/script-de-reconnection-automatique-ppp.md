@@ -1,9 +1,6 @@
-comments: true
 date: 2005-04-04 00:07:45
-layout: post
 slug: script-de-reconnection-automatique-ppp
 title: Script de reconnection automatique PPP
-wordpress_id: 217
 category: Français
 tags: bash, Linux, Network, Script, shell, Snippet
 

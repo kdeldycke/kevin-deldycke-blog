@@ -1,9 +1,6 @@
-comments: true
 date: 2010-11-09 00:14:17
-layout: post
 slug: flame-snow-quartz-composer-particle-system
 title: Flame & Snow, using Quartz Composer particle system
-wordpress_id: 2188
 category: English
 tags: Animation, Apple, MacBook, QC Experiment, Quartz Composer, Video, Visual
 

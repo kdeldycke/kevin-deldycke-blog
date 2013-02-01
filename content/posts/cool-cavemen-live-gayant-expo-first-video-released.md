@@ -1,9 +1,6 @@
-comments: true
 date: 2010-01-28 20:31:36
-layout: post
 slug: cool-cavemen-live-gayant-expo-first-video-released
 title: Cool Cavemen live at Gayant Expo: first video released !
-wordpress_id: 967
 category: English
 tags: concert, Cool Cavemen, douai, gayant expo, live, Music, Video
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2011-02-14 16:43:51
-layout: post
 slug: pushing-git-subversion-wordpress-plugin-repository
 title: Pushing Git to Subversion: the case of WordPress plugin repository
-wordpress_id: 2776
 category: English
 tags: Git, Hosting, Linux, Subversion, Web, WordPress
 

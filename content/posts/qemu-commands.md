@@ -1,9 +1,6 @@
-comments: true
 date: 2005-06-04 15:34:01
-layout: post
 slug: qemu-commands
 title: Qemu commands
-wordpress_id: 64
 category: English
 tags: CLI, Linux, Qemu
 

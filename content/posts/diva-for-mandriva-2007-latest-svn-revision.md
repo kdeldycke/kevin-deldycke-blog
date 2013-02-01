@@ -1,9 +1,6 @@
-comments: true
 date: 2006-11-13 22:18:28
-layout: post
 slug: diva-for-mandriva-2007-latest-svn-revision
 title: Diva for Mandriva 2007: latest SVN revision.
-wordpress_id: 91
 category: English
 tags: diva, Gnome, gstreamer, Linux, Mandriva, RPM, urpmi, Video
 

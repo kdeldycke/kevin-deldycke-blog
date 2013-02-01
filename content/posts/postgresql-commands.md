@@ -1,9 +1,6 @@
-comments: true
 date: 2011-10-25 12:40:47
-layout: post
 slug: postgresql-commands
 title: PostgreSQL commands
-wordpress_id: 3646
 category: English
 tags: CLI, database, Linux, PostgreSQL, SQL
 

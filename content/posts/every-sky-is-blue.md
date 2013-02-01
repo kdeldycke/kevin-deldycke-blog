@@ -1,9 +1,6 @@
-comments: true
 date: 2007-01-04 21:54:19
-layout: post
 slug: every-sky-is-blue
 title: Every Sky is Blue...
-wordpress_id: 117
 category: English
 tags: Blog, life, Web
 

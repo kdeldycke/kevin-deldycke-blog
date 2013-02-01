@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-02 16:14:52
-layout: post
 slug: how-to-wake-up-early-the-geekest-way
 title: How to wake up early, the geekest way
-wordpress_id: 29
 category: English
 tags: life, Linux, mobile phone, mplayer, Music, travel
 

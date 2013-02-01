@@ -1,9 +1,6 @@
-comments: true
 date: 2010-12-01 19:01:15
-layout: post
 slug: automate-trac-instance-deployment-buildout
 title: Automate Trac instance deployment with Buildout
-wordpress_id: 2471
 category: English
 tags: buildout, htdigest, md5, Python, recipe, Red Hat, sasl, Subversion, trac, yum
 

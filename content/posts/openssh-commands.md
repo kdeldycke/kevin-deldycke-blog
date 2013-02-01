@@ -1,9 +1,6 @@
-comments: true
 date: 2010-03-26 11:29:01
-layout: post
 slug: openssh-commands
 title: OpenSSH commands
-wordpress_id: 1252
 category: English
 tags: CLI, Computer networking, find, Linux, openssh, proxy, rsync, scp, shell, SSH, tunnel, xargs
 

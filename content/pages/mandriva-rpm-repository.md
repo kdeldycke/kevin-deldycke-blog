@@ -1,9 +1,6 @@
-comments: false
 date: 2006-04-13 02:21:16
-layout: page
 slug: mandriva-rpm-repository
 title: Mandriva RPMs
-wordpress_id: 10
 
 ![](/static/uploads/2007/04/mandriva-2007-blue-logo.png)
 

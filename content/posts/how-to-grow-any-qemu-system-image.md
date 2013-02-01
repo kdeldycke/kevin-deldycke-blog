@@ -1,9 +1,6 @@
-comments: true
 date: 2007-04-08 16:10:56
-layout: post
 slug: how-to-grow-any-qemu-system-image
 title: How-to grow any Qemu system image
-wordpress_id: 151
 category: English
 tags: gparted, Linux, qcow, Qemu, system, Windows
 

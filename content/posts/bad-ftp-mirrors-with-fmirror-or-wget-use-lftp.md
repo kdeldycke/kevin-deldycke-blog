@@ -1,9 +1,6 @@
-comments: true
 date: 2006-04-29 19:02:30
-layout: post
 slug: bad-ftp-mirrors-with-fmirror-or-wget-use-lftp
 title: Bad FTP mirrors with fmirror or wget ? Use lftp !
-wordpress_id: 15
 category: English
 tags: Backup, CLI, fmirror, FTP, lftp, Linux, Web, wget
 

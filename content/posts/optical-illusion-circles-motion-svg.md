@@ -1,9 +1,6 @@
-comments: true
 date: 2010-04-14 19:26:39
-layout: post
 slug: optical-illusion-circles-motion-svg
 title: Optical illusion: circles in motion (SVG source included)
-wordpress_id: 1270
 category: English
 tags: Creative Commons, inkscape, optical illusion, svg, visuals
 

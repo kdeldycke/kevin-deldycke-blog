@@ -1,9 +1,6 @@
-comments: true
 date: 2007-03-25 11:17:09
-layout: post
 slug: website-backup-script-mysql-dumps-and-ssh-supported
 title: Website Backup Script: MySQL dumps and SSH supported.
-wordpress_id: 149
 category: English
 tags: Backup, CLI, FTP, lftp, Linux, MySQL, SQL, mysqldump, Network, Python, rdiff-backup, rsync, Script, Server, SSH, Web
 

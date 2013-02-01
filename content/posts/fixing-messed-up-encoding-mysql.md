@@ -1,9 +1,6 @@
-comments: true
 date: 2011-03-14 11:29:27
-layout: post
 slug: fixing-messed-up-encoding-mysql
 title: Fixing messed-up encoding in MySQL
-wordpress_id: 2994
 category: English
 tags: Character encoding, Databases, e107, Latin-1, MySQL, SQL, PHP, sed, SQL, unicode, UTF-8, Web
 

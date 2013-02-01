@@ -1,9 +1,6 @@
-comments: true
 date: 2007-11-24 01:45:29
-layout: post
 slug: sapphire-v04-style-for-wordpress-k2-theme
 title: Sapphire v0.4 style for wordpress K2 theme
-wordpress_id: 208
 category: English
 tags: K2, Theme, Web, WordPress
 

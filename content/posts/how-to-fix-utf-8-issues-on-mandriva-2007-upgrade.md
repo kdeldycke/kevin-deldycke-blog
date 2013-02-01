@@ -1,9 +1,6 @@
-comments: true
 date: 2006-12-11 00:37:35
-layout: post
 slug: how-to-fix-utf-8-issues-on-mandriva-2007-upgrade
 title: How-To fix UTF-8 Issues on Mandriva 2007 Upgrade
-wordpress_id: 118
 category: English
 tags: Linux, Mandriva
 

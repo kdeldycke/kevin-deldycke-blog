@@ -1,9 +1,6 @@
-comments: true
 date: 2006-11-22 01:09:21
-layout: post
 slug: i18n-l10n-commands
 title: i18n / l10n commands
-wordpress_id: 76
 category: English
 tags: CLI, i18n, l10n, Linux, translation
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2007-06-07 17:22:51
-layout: post
 slug: wordpress-22-security-hole-identity-theft
 title: Wordpress 2.2 Security Hole: Identity Theft
-wordpress_id: 191
 category: English
 tags: Apache, Blog, hack, log, security, Server, Web, WordPress
 

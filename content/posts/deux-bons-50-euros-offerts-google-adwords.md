@@ -1,9 +1,6 @@
-comments: true
 date: 2009-12-01 06:40:59
-layout: post
 slug: deux-bons-50-euros-offerts-google-adwords
 title: 2 bons de 50€ offerts pour Google AdWords
-wordpress_id: 902
 category: Français
 tags: AdWords, Google,, bon de reduction, Google, pub, publicite, voucher, Web
 

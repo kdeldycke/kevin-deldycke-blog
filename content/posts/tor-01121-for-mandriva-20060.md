@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-19 16:33:31
-layout: post
 slug: tor-01121-for-mandriva-20060
 title: Tor 0.1.1.21 for Mandriva 2006.0
-wordpress_id: 31
 category: English
 tags: Linux, Mandriva, security, Server, Tor
 

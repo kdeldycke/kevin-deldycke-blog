@@ -1,9 +1,6 @@
-comments: true
 date: 2010-10-07 13:26:53
-layout: post
 slug: mercurial-commands
 title: Mercurial commands
-wordpress_id: 2106
 category: English
 tags: CLI, hg, mercurial
 

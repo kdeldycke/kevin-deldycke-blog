@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-22 01:18:25
-layout: post
 slug: extract-all-frames-of-a-video-as-jpeg-images
 title: Extract All Frames of a Video as Jpeg Images
-wordpress_id: 38
 category: English
 tags: Linux, transcode, Video
 

@@ -1,9 +1,6 @@
-comments: true
 date: 2006-12-25 12:54:43
-layout: post
 slug: website-backup-script-updated-take-care-of-hidden-files-now
 title: Website Backup Script Updated: Take Care of Hidden Files now.
-wordpress_id: 132
 tags: Backup, FTP, lftp, Linux, Python, rdiff-backup, Server, Web
 
 I've [updated my website-backup python script](https://github.com/kdeldycke/scripts/blob/master/website-backup.py).

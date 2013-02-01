@@ -1,9 +1,6 @@
-comments: true
 date: 2008-05-13 00:12:44
-layout: post
 slug: qlc-2-6-1-for-mandriva-2008-1
 title: QLC 2.6.1 for Mandriva 2008.1
-wordpress_id: 220
 category: English
 tags: dmx, light, lighting, lights, Linux, LLA, Mandriva, Open DMX, QLC, Repository, RPM, stage lightning, USB
 

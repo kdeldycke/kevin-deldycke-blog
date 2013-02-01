@@ -1,9 +1,6 @@
-comments: true
 date: 2005-04-04 22:16:55
-layout: post
 slug: how-to-empty-cups-spool
 title: How-to empty CUPS spool
-wordpress_id: 276
 category: English
 tags: bash, CUPS, Linux, printing, Script, Server, shell, Snippet
 

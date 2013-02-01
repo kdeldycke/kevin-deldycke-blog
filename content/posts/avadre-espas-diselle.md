@@ -1,9 +1,6 @@
-comments: true
 date: 2009-01-07 11:28:09
-layout: post
 slug: avadre-espas-diselle
 title: Avadre: espas diselle
-wordpress_id: 484
 category: Français
 tags: humour, petite annonce, photo
 

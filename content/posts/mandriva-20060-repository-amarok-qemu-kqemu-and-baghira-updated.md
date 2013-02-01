@@ -1,9 +1,6 @@
-comments: true
 date: 2006-04-23 23:39:08
-layout: post
 slug: mandriva-20060-repository-amarok-qemu-kqemu-and-baghira-updated
 title: Mandriva 2006.0 rpms: amarok, qemu, kqemu and baghira updated.
-wordpress_id: 14
 tags: Amarok, baghira, KDE, Linux, Mandriva, Qemu, RPM
 
 I updated the baghira rpm with the 24/02/2006 CVS version. This version correct a very annoying bug I had with the previous RPM. Now Kpdf doesn't freeze anymore.

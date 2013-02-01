@@ -1,9 +1,6 @@
-comments: true
 date: 2010-11-16 08:20:02
-layout: post
 slug: simple-video-backdrop-quartz-composer
 title: Simple video backdrop with Quartz Composer
-wordpress_id: 2198
 category: English
 tags: Animation, Apple, Cool Cavemen, live, MacBook, QC Experiment, Quartz Composer, stage, Video, Visual
 

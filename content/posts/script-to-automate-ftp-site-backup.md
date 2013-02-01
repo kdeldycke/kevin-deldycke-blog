@@ -1,9 +1,6 @@
-comments: true
 date: 2006-04-30 23:14:46
-layout: post
 slug: script-to-automate-ftp-site-backup
 title: Script to Automate FTP site Backup.
-wordpress_id: 16
 category: English
 tags: Backup, bzip2, FTP, lftp, Linux, Python
 

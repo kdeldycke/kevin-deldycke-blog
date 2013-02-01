@@ -1,9 +1,6 @@
-comments: true
 date: 2010-05-25 21:18:48
-layout: post
 slug: initialize-git-repositories
 title: How I initialize my Git repositories
-wordpress_id: 928
 category: English
 tags: code, Git, GitHub, Repository
 

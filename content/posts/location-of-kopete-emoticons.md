@@ -1,9 +1,6 @@
-comments: true
 date: 2006-09-16 01:21:54
-layout: post
 slug: location-of-kopete-emoticons
 title: Location of Kopete Emoticons
-wordpress_id: 54
 category: English
 tags: emoticon, KDE, kopete, Linux, Theme
 

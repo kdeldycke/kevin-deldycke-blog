@@ -1,9 +1,6 @@
-comments: true
 date: 2012-09-18 12:38:05
-layout: post
 slug: zenphoto-wordpress-migration
 title: ZenPhoto to WordPress Migration
-wordpress_id: 5186
 category: English
 tags: Debian, migration, MySQL, SQL, Pip, Python, WordPress, xml, Zenphoto
 

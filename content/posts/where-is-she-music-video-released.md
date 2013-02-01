@@ -1,9 +1,6 @@
-comments: true
 date: 2012-08-21 12:37:05
-layout: post
 slug: where-is-she-music-video-released
 title: New music video: Where is she ?
-wordpress_id: 5030
 Category: Front Page
 tags: Cool Cavemen, Music, music video, omashay, saxophonist, song, Video, youtube
 

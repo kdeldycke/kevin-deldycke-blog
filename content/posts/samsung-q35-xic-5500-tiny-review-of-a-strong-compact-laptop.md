@@ -1,9 +1,6 @@
-comments: true
 date: 2006-10-29 00:53:36
-layout: post
 slug: samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop
 title: Samsung Q35 XIC-5500 : Tiny Review of a Strong Compact Laptop.
-wordpress_id: 78
 category: English
 tags: fdisk, Hardware, laptop, life, MacBook
 

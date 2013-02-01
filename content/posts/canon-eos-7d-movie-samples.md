@@ -1,9 +1,6 @@
-comments: true
 date: 2010-05-21 23:31:44
-layout: post
 slug: canon-eos-7d-movie-samples
 title: Canon EOS 7D Movie Samples
-wordpress_id: 1496
 category: English
 tags: 1080p, 480p, 720p, Canon EOS 7D, photography, sample, Video
 

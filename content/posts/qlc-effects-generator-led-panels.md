@@ -1,9 +1,6 @@
-comments: true
 date: 2010-08-10 21:42:14
-layout: post
 slug: qlc-effects-generator-led-panels
 title: QLC effects generator for LED panels
-wordpress_id: 1562
 category: English
 tags: Canon EOS 7D, Cool Cavemen, dmx, light, lighting, Linux, Python, QLC, Qt, Script, xml
 

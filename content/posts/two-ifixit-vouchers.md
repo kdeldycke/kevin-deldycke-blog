@@ -1,9 +1,6 @@
-comments: true
 date: 2010-10-19 21:26:44
-layout: post
 slug: two-ifixit-vouchers
 title: 2 x iFixit $5 voucher
-wordpress_id: 2228
 category: English
 tags: Apple, coupon, discount, Hardware, ifixit, iPad, iPhone, iPod, MacBook, shop, store, voucher
 

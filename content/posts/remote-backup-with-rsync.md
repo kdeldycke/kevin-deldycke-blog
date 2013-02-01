@@ -1,9 +1,6 @@
-comments: true
 date: 2005-04-21 14:20:43
-layout: post
 slug: remote-backup-with-rsync
 title: Remote Backup with rsync
-wordpress_id: 62
 category: English
 tags: Backup, CLI, Linux, Mandriva, rsync, SSH
 

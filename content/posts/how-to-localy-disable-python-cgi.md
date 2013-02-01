@@ -1,9 +1,6 @@
-comments: true
 date: 2006-05-01 00:19:53
-layout: post
 slug: how-to-localy-disable-python-cgi
 title: How-to locally Disable Python CGI scripts.
-wordpress_id: 17
 category: English
 tags: Apache, Linux, Python, Server, Web
 

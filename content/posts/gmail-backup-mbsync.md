@@ -1,9 +1,6 @@
-comments: true
 date: 2012-08-07 12:26:27
-layout: post
 slug: gmail-backup-mbsync
 title: Keep a Local Backup of Gmail thanks to mbsync
-wordpress_id: 5063
 category: English
 tags: Backup, Gmail, Google, IMAP, isync, Linux, email, mbsync
 

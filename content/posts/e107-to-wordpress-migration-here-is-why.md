@@ -1,9 +1,6 @@
-comments: true
 date: 2006-08-24 02:32:31
-layout: post
 slug: e107-to-wordpress-migration-here-is-why
 title: e107 to Wordpress Migration: Here is Why.
-wordpress_id: 39
 tags: akismet, Blog, CMS, e107, spam, Web, WordPress
 
 As you probably don't know, I'm the webmaster (this word sounds so 90's...) of [the Cool Cavemen Band website](http://coolcavemen.com), which is [powered by e107 Content Managment System](http://www.e107.org). Unfortunately we started some months ago to get lots of [comment spams](http://en.wikipedia.org/wiki/Comment_spam) (at least 10 per day), and [the number of them keeps increasing](http://coolcavemen.com/news.php?item.82). Another site I host and manage, [Maomium](http://maomium.com), is [also invaded by spammers](http://maomium.com/news.php?item.43).

@@ -1,9 +1,6 @@
-comments: true
 date: 2012-02-21 12:51:21
-layout: post
 slug: how-to-monkey-patch-openerp-native-javascript
 title: How-to monkey-patch OpenERP's native Javascript
-wordpress_id: 4522
 category: English
 tags: javascript, monkeypatch, OpenERP, Web, xml
 

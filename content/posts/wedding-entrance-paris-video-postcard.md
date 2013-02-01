@@ -1,9 +1,6 @@
-comments: true
 date: 2012-11-13 12:40:54
-layout: post
 slug: wedding-entrance-paris-video-postcard
 title: Wedding Entrance: Video Postcard of Paris
-wordpress_id: 5287
 category: English
 tags: camera, canon, Canon EOS 7D, glidecam, paris, sigma, steadycam, Tamron, tokina, wedding
 

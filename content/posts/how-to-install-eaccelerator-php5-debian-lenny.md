@@ -1,9 +1,6 @@
-comments: true
 date: 2009-08-25 00:06:16
-layout: post
 slug: how-to-install-eaccelerator-php5-debian-lenny
 title: eAccelerator for PHP5 on Debian Lenny
-wordpress_id: 800
 category: English
 tags: Apache, aptitude, Debian, eAccelerator, lenny, PHP, Repository, Server
 

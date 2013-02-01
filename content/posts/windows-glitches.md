@@ -1,9 +1,6 @@
-comments: true
 date: 2012-01-03 12:32:39
-layout: post
 slug: windows-glitches
 title: Windows glitches
-wordpress_id: 4367
 category: English
 tags: glitches, UI, Windows
 

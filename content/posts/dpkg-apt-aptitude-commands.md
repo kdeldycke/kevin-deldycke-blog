@@ -1,9 +1,6 @@
-comments: true
 date: 2008-12-28 19:25:36
-layout: post
 slug: dpkg-apt-aptitude-commands
 title: dpkg, APT & Aptitude commands
-wordpress_id: 460
 category: English
 tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
 

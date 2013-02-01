@@ -1,9 +1,6 @@
-comments: true
 date: 2012-03-06 12:17:58
-layout: post
 slug: dump-backup-restore-postgresql-database
 title: Dump, backup and restore a PostgreSQL database
-wordpress_id: 4642
 category: English
 tags: Backup, Dump, Linux, PostgreSQL, SQL, RDBMS
 

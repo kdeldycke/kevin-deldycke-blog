@@ -1,9 +1,6 @@
-comments: true
 date: 2006-10-18 00:17:10
-layout: post
 slug: archives-commands
 title: Archives commands
-wordpress_id: 2654
 category: English
 tags: 7zip, bzip2, CLI, Linux, tar, tarball, zip
 

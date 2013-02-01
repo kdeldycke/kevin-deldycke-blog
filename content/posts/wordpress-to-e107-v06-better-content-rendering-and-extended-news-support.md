@@ -1,9 +1,6 @@
-comments: true
 date: 2006-11-27 21:48:02
-layout: post
 slug: wordpress-to-e107-v06-better-content-rendering-and-extended-news-support
 title: Wordpress to e107 v0.6: Better Content Rendering and Extended News support
-wordpress_id: 103
 category: English
 tags: Blog, CMS, e107, PHP, WordPress
 

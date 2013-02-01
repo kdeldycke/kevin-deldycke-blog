@@ -1,9 +1,6 @@
-comments: true
 date: 2006-11-01 00:43:08
-layout: post
 slug: audio-commands
 title: Audio commands
-wordpress_id: 72
 category: English
 tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool, sox, wave
 

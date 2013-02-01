@@ -1,9 +1,6 @@
-comments: true
 date: 2006-10-30 01:27:12
-layout: post
 slug: website-backup-script-new-version-save-you-disk-space
 title: Website Backup script: New Version Save you Disk Space.
-wordpress_id: 80
 category: English
 tags: Backup, bzip2, CLI, FTP, lftp, Linux, Python, Web
 
