@@ -87,8 +87,6 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ find . -type f -printf "%f\n" | sort | uniq --repeated --all-repeated=separate
 
-## Dangerous Commands
-
   * Delete all `.pyc` and `.pyo` files in the system:
 
         :::bash
@@ -97,18 +95,28 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
   * Delete all empty files and folders (run this command several times to remove nested empty directories):
 
         :::bash
-        $ find . -empty -print -exec rm -rf "{}" \;
+        $ find ./ -empty -print -exec rm -rf "{}" \;
 
   * Remove empty directories found in all subfolders starting with a dot:
 
         :::bash
-        $ find . -type d -empty -ipath "./.*" -print -exec rm -rf "{}" \;
+        $ find ./ -type d -empty -ipath "./.*" -print -exec rm -rf "{}" \;
+
+  * Delete files ending with `.thumbnail.jpg` or `.thumbnail.png` files (case insensitive):
+
+        :::bash
+        $ find ./ -iregex ".*\.thumbnail\.\(jpg\|png\)$" -delete
+
+  * Same as above but instead for files ending with their dimensions, like `image-640x480.jpg` or `photo-2400x3200.png`:
+
+        :::bash
+        $ find ./ -iregex ".*-[0-9]+x[0-9]+\.\(jpg\|png\)$" -delete
 
   * I used those commands when I import big quantity of files from a window user:
 
         :::bash
-        $ find ./* -name "desktop.ini" -print -exec rm -f "{}" \;
-        $ find ./* -name "Thumbs.db" -print -exec rm -f "{}" \;
+        $ find ./ -name "desktop.ini" -print -exec rm -f "{}" \;
+        $ find ./ -name "Thumbs.db" -print -exec rm -f "{}" \;
 
   * Delete all files and folders in the current directory except the `README.txt` file:
 
