@@ -81,12 +81,12 @@ tags: CLI, database, Linux, PostgreSQL, SQL
 
         :::bash
         $ su - postgres <<-'.'
-        $     DB_NAME=testdb
-        $     DB_USER=openerp
-        $     for tbl in `psql -qAt -c "SELECT tablename FROM pg_tables WHERE schemaname = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
-        $     for tbl in `psql -qAt -c "SELECT table_name FROM information_schema.views WHERE table_schema = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
-        $     for tbl in `psql -qAt -c "SELECT sequence_name FROM information_schema.sequences WHERE sequence_schema = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
-        $ .
+            DB_NAME=testdb
+            DB_USER=openerp
+            for tbl in `psql -qAt -c "SELECT tablename FROM pg_tables WHERE schemaname = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
+            for tbl in `psql -qAt -c "SELECT table_name FROM information_schema.views WHERE table_schema = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
+            for tbl in `psql -qAt -c "SELECT sequence_name FROM information_schema.sequences WHERE sequence_schema = 'public';" $DB_NAME` ; do psql -c "ALTER TABLE $tbl OWNER TO $DB_USER" $DB_NAME ; done
+        .
 
   * Remove from a table all rows older than a month:
 
