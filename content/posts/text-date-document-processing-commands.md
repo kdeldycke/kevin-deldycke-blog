@@ -2,7 +2,7 @@ date: 2006-12-13 22:10:13
 slug: text-date-document-processing-commands
 title: Text, Date & Document processing commands
 category: English
-tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM
+tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, Perl, Regular expression
 
   * Extract images from a PDF document:
 
@@ -27,7 +27,12 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM
   * Remove trailing spaces and tabs in every XML files:
 
         :::bash
-        $ find /folder -iname"*.xml" -exec sed -i 's/[ \t]*$//' "{}" \;
+        $ find /folder -iname "*.xml" -exec sed -i 's/[ \t]*$//' "{}" \;
+
+  * Remove lines starting with `prefix1:` or `prefix2:` in all `.markdown` files:
+
+        :::bash
+        $ find /folder -iname "*.markdown" -exec perl -p -i -e 's/(prefix1|prefix2): .*\n//sg' "{}" \;
 
   * In place charset transcoding:
 
