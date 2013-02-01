@@ -5,7 +5,7 @@ slug: file-management-commands
 title: File Management commands
 wordpress_id: 70
 category: English
-tags: CLI, find, grep, Linux, Python, rename, sort, tail
+tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox
 
   * Create several folder with a similar pattern:
 
@@ -72,6 +72,11 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail
         :::bash
         $ rename 'y/A-Z/a-z/' *
 
+  * Renaming based on regular expression, for files matching another regular expression. The particular example below was used to fix some Dropbox conflicting files:
+
+        :::bash
+        $ find ./Dropbox -type f -name "* (kev-laptop's conflicted copy 2013-02-01)*" -execdir rename -f -v "s/(.*) \(kev-laptop's conflicted copy 2013-02-01\)(.*)/\1\2/" {} \;
+
   * Display the total size used by all PNG files in sub-directories:
 
         :::bash
@@ -109,4 +114,3 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail
 
         :::bash
         $ ls ./ -I "README.txt" | xargs rm -rf
-
