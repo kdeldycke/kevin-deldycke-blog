@@ -4,7 +4,7 @@ layout: post
 slug: wordpress-disqus-migration
 title: WordPress to Disqus Migration
 category: English
-tags: Comment, Disqus, HTML, migration, MySQL, SQL, Regular expression, WordPress
+tags: Comment, Disqus, HTML, migration, MySQL, SQL, Regular expression, WordPress, Perl
 
 I've just finished migrating all the comments of this blog from WordPress to [Disqus](http://disqus.com). Why using an external comment platform ? It's just that I plan to ditch WordPress entirely, and switch to a static site generator in the near future. Here are some details on my migration to Disqus.
 
