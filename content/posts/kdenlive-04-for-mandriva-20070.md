@@ -1,5 +1,4 @@
 date: 2007-04-07 10:35:12
-slug: kdenlive-04-for-mandriva-20070
 title: KDEnlive 0.4 for Mandriva 2007.0
 tags: KDE, kdenlive, Linux, Mandriva, RPM, Video
 

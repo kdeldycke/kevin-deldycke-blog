@@ -1,5 +1,4 @@
 date: 2010-01-28 20:10:32
-slug: video
 title: Videos
 
 All video projects I've worked on as a director, editor, camera operator, concert lighting designer and/or actor ( :roll: ).

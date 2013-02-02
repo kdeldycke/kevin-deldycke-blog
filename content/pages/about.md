@@ -1,5 +1,4 @@
 date: 2006-05-08 17:58:35
-slug: about
 title: About
 
 ![](/static/uploads/2006/05/avatar-orig.png) I'm **Kevin Deldycke**, a Software Engineer, Libre/Free Software Consultant and Python Developer.

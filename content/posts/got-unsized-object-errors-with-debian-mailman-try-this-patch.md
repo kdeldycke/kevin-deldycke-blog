@@ -1,5 +1,4 @@
 date: 2008-12-29 20:02:22
-slug: got-unsized-object-errors-with-debian-mailman-try-this-patch
 title: Got "unsized object" errors with Debian's Mailman ? Try this patch !
 category: English
 tags: bug, Debian, Debian Etch, hack, email, mailman, patch, Python

@@ -1,5 +1,4 @@
 date: 2011-01-11 11:53:50
-slug: apache-commands
 title: Apache commands
 category: English
 tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV

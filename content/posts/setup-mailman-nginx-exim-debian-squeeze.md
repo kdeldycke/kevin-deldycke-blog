@@ -1,5 +1,4 @@
 date: 2011-09-27 12:21:22
-slug: setup-mailman-nginx-exim-debian-squeeze
 title: How-to setup Mailman + Nginx + Exim on Debian Squeeze
 category: English
 tags: Debian, Debian Squeeze, email, Exim, fcgiwrap, Linux, mailing list, mailman, munin, nginx

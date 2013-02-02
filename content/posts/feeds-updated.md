@@ -1,5 +1,4 @@
 date: 2010-05-18 12:45:29
-slug: feeds-updated
 title: Feeds updated !
 category: English
 tags: Aggregator, Apache, Atom, feed, FeedBurner, Google, RSS, WordPress

@@ -1,5 +1,4 @@
 date: 2010-10-30 16:13:36
-slug: 75-euros-de-publicite-offerte-sur-google-adword
 title: 75€ de publicité offerte sur Google AdWord
 category: Français
 tags: AdWords, Google,, bon de reduction, coupon, Google, promo, publicite, voucher, Web

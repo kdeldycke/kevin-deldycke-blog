@@ -1,5 +1,4 @@
 date: 2011-01-24 12:52:08
-slug: e107-importer-wordpress-plugin-v1-0-released
 title: e107 Importer WordPress plugin v1.0 released !
 category: English
 tags: Blog, CMS, e107, importer, migration, PHP, Web, WordPress

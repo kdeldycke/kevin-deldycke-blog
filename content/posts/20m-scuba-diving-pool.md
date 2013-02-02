@@ -1,5 +1,4 @@
 date: 2012-11-20 12:14:07
-slug: 20m-scuba-diving-pool
 title: 20m Scuba Diving Pool
 Category: Front Page
 tags: gopro, kdenlive, open water diver, padi, pool, scuba diving, Underwater diving, Video, youtube

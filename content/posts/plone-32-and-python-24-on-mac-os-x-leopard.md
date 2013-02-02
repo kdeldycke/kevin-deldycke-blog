@@ -1,5 +1,4 @@
 date: 2009-07-20 21:39:58
-slug: plone-32-and-python-24-on-mac-os-x-leopard
 title: Plone 3.2 (and Python 2.4) on Mac OS X Leopard
 category: English
 tags: Apple, buildout, Mac OS X Leopard, MacBook, Apple, Mac OS X, Plone, Python, zope

@@ -1,5 +1,4 @@
 date: 2008-08-22 00:42:05
-slug: how-to-e107-autogallery-to-zenphoto-migration
 title: How-to: e107 autogallery to Zenphoto migration
 category: English
 tags: autogallery, e107, Linux, migration, MySQL, SQL, Python, Script, Snippet, SQL, Web, Zenphoto

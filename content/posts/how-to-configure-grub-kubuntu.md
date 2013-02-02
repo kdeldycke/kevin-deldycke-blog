@@ -1,5 +1,4 @@
 date: 2010-02-12 22:46:25
-slug: how-to-configure-grub-kubuntu
 title: How-to configure GRUB in (k)Ubuntu
 category: English
 tags: grub, Kubuntu, Ubuntu, Linux, Ubuntu, MBR

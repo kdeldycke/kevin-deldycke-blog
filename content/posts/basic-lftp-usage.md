@@ -1,5 +1,4 @@
 date: 2006-08-18 23:15:49
-slug: basic-lftp-usage
 title: Basic lftp Usage
 category: English
 tags: CLI, FTP, Hosting, lftp, Web

@@ -1,5 +1,4 @@
 date: 2010-07-28 11:54:54
-slug: exim-commands
 title: Exim commands
 category: English
 tags: CLI, email, Exim, Linux, Mail transfer agents

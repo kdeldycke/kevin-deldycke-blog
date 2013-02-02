@@ -1,5 +1,4 @@
 date: 2012-01-03 12:32:39
-slug: windows-glitches
 title: Windows glitches
 category: English
 tags: glitches, UI, Windows

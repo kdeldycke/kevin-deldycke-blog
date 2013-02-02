@@ -1,5 +1,4 @@
 date: 2011-07-05 12:16:12
-slug: e107-importer-plugin-wordpress-v1-4-released
 title: e107 Importer plugin for WordPress v1.4 released !
 category: English
 tags: Blog, e107, MySQL, SQL, PHP, plugin, Web, WordPress

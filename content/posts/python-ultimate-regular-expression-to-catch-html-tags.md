@@ -1,5 +1,4 @@
 date: 2008-07-08 00:24:26
-slug: python-ultimate-regular-expression-to-catch-html-tags
 title: Python ultimate regular expression to catch HTML tags
 category: English
 tags: HTML, programming, Python, Regular expression, Snippet, Web

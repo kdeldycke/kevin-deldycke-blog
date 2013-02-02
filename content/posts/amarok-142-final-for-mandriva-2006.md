@@ -1,5 +1,4 @@
 date: 2006-08-28 01:50:12
-slug: amarok-142-final-for-mandriva-2006
 title: Amarok 1.4.2 final for Mandriva 2006
 tags: Amarok, KDE, Linux, Mandriva, Music, RPM
 

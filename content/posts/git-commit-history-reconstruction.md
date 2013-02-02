@@ -1,5 +1,4 @@
 date: 2010-06-09 21:06:37
-slug: git-commit-history-reconstruction
 title: Commit history reconstruction with Git
 category: English
 tags: commit, Git, GitHub, history, Init, Software engineering

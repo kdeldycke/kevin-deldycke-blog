@@ -1,5 +1,4 @@
 date: 2009-03-18 21:24:17
-slug: a-fix-to-xkcd-emoticons-with-parentheses-problem
 title: A fix to xkcd's emoticons + parentheses problem
 category: English
 tags: emoticons, geek, typography, unicode, UTF-8, xkcd

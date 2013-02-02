@@ -1,5 +1,4 @@
 date: 2006-10-22 18:26:55
-slug: mandriva-2007-is-out
 title: Mandriva 2007 is out !
 category: English
 tags: Linux, Mandriva, RPM

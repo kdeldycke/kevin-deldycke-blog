@@ -1,5 +1,4 @@
 date: 2012-05-01 12:14:45
-slug: javascript-commands
 title: JavaScript commands
 category: English
 tags: javascript, programming, Web

@@ -1,5 +1,4 @@
 date: 2006-12-06 23:18:55
-slug: hardware-commands
 title: Hardware commands
 category: English
 tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org

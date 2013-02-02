@@ -1,5 +1,4 @@
 date: 2005-07-24 17:06:19
-slug: easy-mirroring-without-raid-the-poor-mans-disk-array
 title: Easy Mirroring Without RAID: the Poor Man''s Disk Array
 category: English
 tags: Backup, CLI, Hardware, kernel, Linux, openbrick, RAID, rsync, USB, XFS

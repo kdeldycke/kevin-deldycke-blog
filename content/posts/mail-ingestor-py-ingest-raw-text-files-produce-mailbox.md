@@ -1,5 +1,4 @@
 date: 2012-09-04 12:49:30
-slug: mail-ingestor-py-ingest-raw-text-files-produce-mailbox
 title: mail_ingestor.py : Ingest Raw Text Files and Produce a Mailbox
 category: English
 tags: archive, Backup, email, import email, mailbox, Python, Web

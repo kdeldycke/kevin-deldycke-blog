@@ -1,5 +1,4 @@
 date: 2010-09-02 15:17:43
-slug: convert-lotus-notes-nsf-files-mbox-nlconverter
 title: Convert Lotus Notes' nsf files to mbox with nlconverter
 category: English
 tags: CLI, email, GUI, Lotus Notes, iCal, mbox, nlconverter, Python, Script, Windows, Windows 2000

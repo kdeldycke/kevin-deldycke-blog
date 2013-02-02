@@ -1,5 +1,4 @@
 date: 2011-06-14 12:38:26
-slug: cool-cavemen-webdesign-retrospective
 title: Cool Cavemen WebDesign Retrospective
 category: English
 tags: Cool Cavemen, CSS, e107, HTML, Template, Theme, Web, webdesign

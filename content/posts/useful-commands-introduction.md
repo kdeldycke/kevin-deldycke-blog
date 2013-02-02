@@ -1,5 +1,4 @@
 date: 2006-10-18 00:21:13
-slug: useful-commands-introduction
 title: Useful Commands: Introduction
 category: English
 tags: Blog, CLI, CMS, Hosting, Linux, Web, WordPress

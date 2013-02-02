@@ -1,5 +1,4 @@
 date: 2011-04-05 16:37:43
-slug: e107-importer-1-2-enhanced-bbcode-parser
 title: e107 Importer 1.2 is out, with an enhanced BBCode parser.
 category: English
 tags: Blog, code, e107, MySQL, SQL, PHP, Web, WordPress

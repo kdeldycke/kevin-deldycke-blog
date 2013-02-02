@@ -1,5 +1,4 @@
 date: 2006-08-24 20:52:50
-slug: e107-to-wordpress-importer-alpha-version
 title: e107 to Wordpress Importer: Alpha version
 category: English
 tags: Blog, CMS, e107, PHP, Web, WordPress

@@ -1,5 +1,4 @@
 date: 2004-06-29 18:54:50
-slug: mise-en-place-paserelle-adsl-mandrake-10
 title: Mise en place d'une paserelle ADSL sous Mandrake 10
 category: Français
 tags: ADSL, gateway, Linux, Mandrake, Network, router, MBR, PPPoE, Modem

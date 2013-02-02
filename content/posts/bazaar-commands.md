@@ -1,5 +1,4 @@
 date: 2011-11-01 12:46:26
-slug: bazaar-commands
 title: Bazaar commands
 category: English
 tags: bazaar, CLI, development, Launchpad, Linux, OpenERP, programming, Version control

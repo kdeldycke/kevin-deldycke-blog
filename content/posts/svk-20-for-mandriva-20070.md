@@ -1,5 +1,4 @@
 date: 2007-04-07 14:34:25
-slug: svk-20-for-mandriva-20070
 title: SVK 2.0 for Mandriva 2007.0
 tags: Linux, Mandriva, RPM, Subversion, svk, urpmi
 

@@ -1,5 +1,4 @@
 date: 2009-05-31 18:23:59
-slug: qlc-300-for-mandriva-2009
 title: QLC 3.0.0 for Mandriva 2009.1
 category: English
 tags: dmx, light, lighting, lights, LLA, Mandriva, QLC, RPM, stage lightning

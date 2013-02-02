@@ -1,5 +1,4 @@
 date: 2010-02-09 19:33:56
-slug: light-painting-session-two
 title: Light Painting session II
 category: English
 tags: Apple, Canon EOS 7D, flashlight, iPhone, light painting, long exposure, photo, photography

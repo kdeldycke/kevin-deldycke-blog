@@ -1,5 +1,4 @@
 date: 2012-07-10 12:29:05
-slug: scenes-burlesque-burglary-music-video
 title: Behind the Scenes of Burlesque Burglary music video
 category: English
 tags: behind the scenes, Canon EOS 7D, Cool Cavemen, kdenlive, making of, music video, Video, youtube

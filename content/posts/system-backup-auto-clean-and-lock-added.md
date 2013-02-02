@@ -1,5 +1,4 @@
 date: 2007-04-27 20:41:51
-slug: system-backup-auto-clean-and-lock-added
 title: System Backup: Auto-Clean and Lock added
 category: English
 tags: Backup, Linux, Python, rdiff-backup, rsync, system

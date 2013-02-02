@@ -1,5 +1,4 @@
 date: 2011-11-08 12:20:19
-slug: gpg-commands
 title: GPG commands
 category: English
 tags: CLI, cryptography, GPG, Linux, security

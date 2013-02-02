@@ -1,5 +1,4 @@
 date: 2012-09-25 20:07:44
-slug: padi-open-water-diver
 title: PADI Open Water Diver
 category: Français
 tags: dive, diving, open water diver, padi, plongée

@@ -1,5 +1,4 @@
 date: 2006-11-15 00:47:21
-slug: new-cd-jewel-case-template-ready-to-print
 title: New CD Jewel Case Template ready to Print !
 category: English
 tags: cd, Creative Commons, inkscape, Music, svg, Template

@@ -1,5 +1,4 @@
 date: 2010-02-21 20:58:09
-slug: git-commands
 title: Git commands
 category: English
 tags: CLI, Git, GitHub, Project management software, Software engineering, Version control

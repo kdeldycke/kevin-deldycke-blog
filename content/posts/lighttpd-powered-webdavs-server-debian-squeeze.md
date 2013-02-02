@@ -1,5 +1,4 @@
 date: 2011-07-26 12:51:45
-slug: lighttpd-powered-webdavs-server-debian-squeeze
 title: Lighttpd-powered WebDAVs server on Debian Squeeze
 category: English
 tags: Debian, Debian Squeeze, lighttpd, Linux, OpenSSL, Server, SSL, Web, WebDAV

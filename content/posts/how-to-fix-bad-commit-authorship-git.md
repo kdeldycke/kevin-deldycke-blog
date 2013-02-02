@@ -1,5 +1,4 @@
 date: 2010-05-05 21:15:37
-slug: how-to-fix-bad-commit-authorship-git
 title: How-to fix bad commit authorship in Git
 category: English
 tags: commit, DVCS, Git, GitHub, history

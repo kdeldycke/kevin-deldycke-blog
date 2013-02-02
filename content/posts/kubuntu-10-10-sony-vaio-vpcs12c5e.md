@@ -1,5 +1,4 @@
 date: 2011-02-21 12:34:02
-slug: kubuntu-10-10-sony-vaio-vpcs12c5e
 title: Kubuntu 10.10 on Sony Vaio VPC-S12C5E
 category: English
 tags: grub, Kubuntu, Ubuntu, laptop, Linux, notebook, sony, touchpad, vaio

@@ -1,5 +1,4 @@
 date: 2010-08-19 20:56:03
-slug: maildir-deduplication-script-python
 title: Maildir deduplication script in Python
 category: English
 tags: email, GitHub, Lotus Notes, Apple, Mac OS X, maildir, Python, Script

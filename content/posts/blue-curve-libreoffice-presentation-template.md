@@ -1,5 +1,4 @@
 date: 2013-01-01 12:15:00
-slug: blue-curve-libreoffice-presentation-template
 title: LibreOffice templates: Blue Curve & Fancy Window Frame
 category: English
 tags: Creative Commons, libreoffice, openoffice, presentation, slide, Template

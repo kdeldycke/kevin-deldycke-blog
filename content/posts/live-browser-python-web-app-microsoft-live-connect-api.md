@@ -1,5 +1,4 @@
 date: 2011-12-06 12:27:03
-slug: live-browser-python-web-app-microsoft-live-connect-api
 title: Live Browser : a Python web app using Microsoft Live Connect API
 category: English
 tags: API, Boilerplate, bootstrap, cherrypy, cloud-computing, Git, GitHub, javascript, jquery, mako, Microsoft, Live connect, mongodb, OAuth, Python, Web

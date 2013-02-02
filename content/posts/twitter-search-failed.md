@@ -1,5 +1,4 @@
 date: 2010-02-25 22:18:24
-slug: twitter-search-failed
 title: Twitter search failed... :(
 category: English
 tags: Real-time web, search, Social media, twitter, Web

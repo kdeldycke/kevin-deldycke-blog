@@ -1,5 +1,4 @@
 date: 2007-08-18 17:43:28
-slug: amarok-147-for-mandriva-20071
 title: Amarok 1.4.7 for Mandriva 2007.1
 category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, Music, RPM

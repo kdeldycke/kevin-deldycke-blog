@@ -1,5 +1,4 @@
 date: 2012-03-20 14:32:37
-slug: 200-dollars-kdenlive-contribution
 title: I contributed $200 to Kdenlive and you should too !
 category: English
 tags: campaign, contribution, donation, fundaraising, KDE, kdenlive, Linux, open source, Video

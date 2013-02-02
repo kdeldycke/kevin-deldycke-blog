@@ -1,5 +1,4 @@
 date: 2006-10-18 00:17:10
-slug: archives-commands
 title: Archives commands
 category: English
 tags: 7zip, bzip2, CLI, Linux, tar, tarball, zip

@@ -1,5 +1,4 @@
 date: 2006-05-26 18:03:19
-slug: amarok-lyricwikiorg-plug-in
 title: Amarok LyricWiki.org plug-in
 tags: Amarok, KDE, Linux, Music, wiki
 

@@ -1,5 +1,4 @@
 date: 2011-04-11 16:25:54
-slug: network-commands
 title: Network commands
 category: English
 tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless

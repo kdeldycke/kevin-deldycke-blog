@@ -1,5 +1,4 @@
 date: 2011-08-02 15:28:28
-slug: 50-dollars-coupon-23andme
 title: $50 coupon for 23andMe
 category: English
 tags: 23andMe, coupon, discount, DNA, genetics, reduction, voucher

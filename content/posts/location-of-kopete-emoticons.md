@@ -1,5 +1,4 @@
 date: 2006-09-16 01:21:54
-slug: location-of-kopete-emoticons
 title: Location of Kopete Emoticons
 category: English
 tags: emoticon, KDE, kopete, Linux, Theme

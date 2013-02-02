@@ -1,5 +1,4 @@
 date: 2009-11-26 06:12:25
-slug: cool-cavemen-creative-commons-moi
 title: Cool Cavemen, les Creative Commons et moi
 category: Français
 tags: band, Cool Cavemen, Creative Commons, interview, musique, oxyradio, podcast, radio

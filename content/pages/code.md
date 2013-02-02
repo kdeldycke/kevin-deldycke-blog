@@ -1,5 +1,4 @@
 date: 2006-04-10 00:34:11
-slug: code
 title: Code
 
 In my professional and personal activities, I contribute to some open-source projects. You'll find a summary of [all my contributions on my Ohloh profile](http://ohloh.net/accounts/kevin).

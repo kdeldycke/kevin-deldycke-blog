@@ -1,5 +1,4 @@
 date: 2009-12-23 10:42:09
-slug: macosx-is-irritating
 title: MacOS X really starts to get irritating...
 category: English
 tags: desktop, KDE, Mac OS X Leopard, Apple, Mac OS X, rant

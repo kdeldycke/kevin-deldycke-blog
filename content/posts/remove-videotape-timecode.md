@@ -1,5 +1,4 @@
 date: 2010-01-14 11:30:15
-slug: remove-videotape-timecode
 title: Remove videotape timecode
 category: English
 tags: analog, avidemux, timecode, Video, VITC

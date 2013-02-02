@@ -1,5 +1,4 @@
 date: 2010-04-26 19:56:42
-slug: setup-lightweight-imap-server-macos-leopard-dovecot
 title: Setup a lightweight IMAP server on MacOS X Leopard with Dovecot
 category: English
 tags: Dovecot, email, IMAP, Mac OS X Leopard, Apple, Mac OS X, maildir, SSL

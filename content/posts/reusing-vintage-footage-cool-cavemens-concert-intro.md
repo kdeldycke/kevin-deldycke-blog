@@ -1,5 +1,4 @@
 date: 2012-01-17 12:14:30
-slug: reusing-vintage-footage-cool-cavemens-concert-intro
 title: Reusing vintage footage for Cool Cavemen's concert intro
 category: English
 tags: Belgium, classic 21, concert, Cool Cavemen, Gimp, intro, kdenlive, radio, RTBF, tribute, Ubuntu, Video, youtube

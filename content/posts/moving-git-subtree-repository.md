@@ -1,5 +1,4 @@
 date: 2011-02-01 12:20:34
-slug: moving-git-subtree-repository
 title: Moving a Git sub-tree to its own repository
 category: English
 tags: code, Git, GitHub

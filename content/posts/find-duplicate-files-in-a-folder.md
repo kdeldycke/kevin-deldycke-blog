@@ -1,5 +1,4 @@
 date: 2006-10-29 22:25:40
-slug: find-duplicate-files-in-a-folder
 title: Find Duplicate Files in a Folder
 category: English
 tags: CLI, Linux, Python

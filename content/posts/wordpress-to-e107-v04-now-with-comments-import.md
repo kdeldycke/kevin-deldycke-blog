@@ -1,5 +1,4 @@
 date: 2006-11-13 01:59:18
-slug: wordpress-to-e107-v04-now-with-comments-import
 title: Wordpress to e107 v0.4: now with Comments Import
 tags: Blog, CMS, e107, PHP, Web, WordPress
 

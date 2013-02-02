@@ -1,5 +1,4 @@
 date: 2010-02-28 12:39:32
-slug: system-and-shell-commands
 title: System & Shell commands
 category: English
 tags: CLI, echo, kernel, Linux, nohup, shell, system

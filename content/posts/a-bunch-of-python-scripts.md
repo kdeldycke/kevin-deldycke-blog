@@ -1,5 +1,4 @@
 date: 2006-05-06 18:18:11
-slug: a-bunch-of-python-scripts
 title: A bunch of Python scripts
 category: English
 tags: Linux, Python

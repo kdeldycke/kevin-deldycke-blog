@@ -1,5 +1,4 @@
 date: 2011-10-11 12:28:25
-slug: how-to-merge-mailman-mailing-lists
 title: How-to merge Mailman mailing-lists
 category: English
 tags: archive, Linux, email, mailing list, mailman, merge, Python

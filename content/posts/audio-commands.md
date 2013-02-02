@@ -1,5 +1,4 @@
 date: 2006-11-01 00:43:08
-slug: audio-commands
 title: Audio commands
 category: English
 tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool, sox, wave

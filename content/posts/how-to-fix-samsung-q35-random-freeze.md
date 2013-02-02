@@ -1,5 +1,4 @@
 date: 2008-02-02 19:36:47
-slug: how-to-fix-samsung-q35-random-freeze
 title: How to fix Samsung Q35 random freeze
 category: English
 tags: firmware, Hardware, optical drive

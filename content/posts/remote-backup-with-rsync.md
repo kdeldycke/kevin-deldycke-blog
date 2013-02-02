@@ -1,5 +1,4 @@
 date: 2005-04-21 14:20:43
-slug: remote-backup-with-rsync
 title: Remote Backup with rsync
 category: English
 tags: Backup, CLI, Linux, Mandriva, rsync, SSH

@@ -1,5 +1,4 @@
 date: 2006-09-03 21:04:46
-slug: e107-to-wordpress-importer-v02-with-bbcode-support
 title: e107 to Wordpress Importer: v0.2 with bbcode support
 tags: Blog, CMS, e107, PHP, Web, WordPress
 

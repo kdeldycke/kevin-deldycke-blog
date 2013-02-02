@@ -1,5 +1,4 @@
 date: 2007-01-02 13:27:47
-slug: mandriva-20070-screenshots-3d-desktop
 title: Mandriva 2007.0 Screenshots: 3D Desktop
 category: English
 tags: 3D, AIGLX, Celestia, Compiz, desktop, GPU, Intel, laptop, lspci, Mandriva, Samsung, X.org

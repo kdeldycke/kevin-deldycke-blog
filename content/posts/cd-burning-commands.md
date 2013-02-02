@@ -1,5 +1,4 @@
 date: 2006-10-25 00:49:46
-slug: cd-burning-commands
 title: CD Burning commands
 category: English
 tags: burning, cd, cdrdao, cdrecord, CLI, dvd, Hardware, Linux, mkisofs

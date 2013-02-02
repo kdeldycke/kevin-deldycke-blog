@@ -1,5 +1,4 @@
 date: 2006-05-19 23:26:55
-slug: how-to-install-suns-java-for-firefox-on-your-mandriva-2006
 title: How-to Install Sun's Java for Firefox on your Mandriva 2006
 category: English
 tags: firefox, Java, Linux, Mandriva, mozilla, RPM, Web

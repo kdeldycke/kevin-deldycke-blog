@@ -1,5 +1,4 @@
 date: 2007-07-05 22:18:52
-slug: mandriva-20071-rpms-for-x86_64-arch
 title: Mandriva 2007.1 RPMs for x86_64 arch.
 tags: Linux, Mandriva, Repository, RPM, urpmi, x86_64
 

@@ -1,5 +1,4 @@
 date: 2010-02-20 15:07:49
-slug: cool-cavemen-live-gayant-expo-part-ii
 title: Cool Cavemen live at Gayant Expo, part II.
 category: English
 tags: 720p, Cool Cavemen, Deinterlacing, douai, gayant expo, Image processing, MPEG-2, Pixel aspect ratio, Video

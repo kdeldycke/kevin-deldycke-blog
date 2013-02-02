@@ -1,5 +1,4 @@
 date: 2011-10-25 12:40:47
-slug: postgresql-commands
 title: PostgreSQL commands
 category: English
 tags: CLI, database, Linux, PostgreSQL, SQL

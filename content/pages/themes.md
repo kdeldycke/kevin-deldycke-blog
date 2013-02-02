@@ -1,5 +1,4 @@
 date: 2007-04-07 16:47:16
-slug: themes
 title: Themes
 
 All the themes I customized or created from scratch for websites I managed.

@@ -1,5 +1,4 @@
 date: 2012-01-24 14:28:23
-slug: burlesque-burglary-music-video-released
 title: Burlesque Burglary music video released
 category: English
 tags: Canon EOS 7D, Cool Cavemen, KDE, subtitle, Subtitling, translation, Video, youtube

@@ -1,5 +1,4 @@
 date: 2007-03-08 23:51:16
-slug: e107-to-wordpress-v07-support-categories-and-private-pages
 title: e107 to WordPress v0.7: support Categories and Private Pages
 category: English
 tags: Blog, e107, PHP, Web, WordPress

@@ -1,5 +1,4 @@
 date: 2007-03-07 22:48:52
-slug: how-to-recover-a-raid-array-after-having-zero-ized-superblocks
 title: How-to Recover a RAID array after having Zero-ized Superblocks
 category: English
 tags: Backup, Hardware, Linux, mdadm, RAID, Server

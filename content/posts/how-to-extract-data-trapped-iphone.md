@@ -1,5 +1,4 @@
 date: 2010-09-16 21:24:45
-slug: how-to-extract-data-trapped-iphone
 title: How-to extract data trapped into an iPhone
 category: English
 tags: Android, Apple, Backup, CSV, iPhone, iTunes, Apple, Mac OS X, Smartphones, SQLite, SQL, VLC

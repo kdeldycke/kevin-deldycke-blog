@@ -1,5 +1,4 @@
 date: 2011-05-24 12:18:08
-slug: fresh-debian-thanks-to-cron-apt
 title: Keep a Debian fresh thanks to cron-apt
 category: English
 tags: apt, aptitude, cron, cron-apt, Debian, Linux, sed

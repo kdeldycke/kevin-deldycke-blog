@@ -1,5 +1,4 @@
 date: 2006-11-15 00:57:50
-slug: cvs-commands
 title: CVS commands
 category: English
 tags: CLI, CVS, KDE, Linux

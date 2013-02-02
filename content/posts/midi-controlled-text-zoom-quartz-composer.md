@@ -1,5 +1,4 @@
 date: 2010-12-20 13:54:31
-slug: midi-controlled-text-zoom-quartz-composer
 title: MIDI-controlled Text Zoom in Quartz Composer
 category: English
 tags: Animation, Apple, berhinger, MacBook, midi, MIDI-controlled graphics, Quartz Composer, USB, Visual

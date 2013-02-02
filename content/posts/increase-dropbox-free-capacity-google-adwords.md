@@ -1,5 +1,4 @@
 date: 2011-12-20 12:00:12
-slug: increase-dropbox-free-capacity-google-adwords
 title: Increase Dropbox free capacity with Google AdWords
 category: English
 tags: AdWords, Google,, coupons, dropbox, Google, Kfilebox, Kubuntu, Ubuntu

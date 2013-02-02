@@ -1,5 +1,4 @@
 date: 2011-12-27 12:44:02
-slug: auto-advance-wordpress-twentyeleven-showcase-slides
 title: Auto-advance WordPress' TwentyEleven showcase slides
 category: English
 tags: javascript, showcase, Template, Theme, twentyeleven, WordPress

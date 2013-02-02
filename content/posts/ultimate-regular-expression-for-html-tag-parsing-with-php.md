@@ -1,5 +1,4 @@
 date: 2007-03-23 23:27:09
-slug: ultimate-regular-expression-for-html-tag-parsing-with-php
 title: Ultimate Regular Expression for HTML tag parsing with PHP
 category: English
 tags: HTML, parsing, PHP, Regular expression 

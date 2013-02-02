@@ -1,5 +1,4 @@
 date: 2006-10-31 01:29:55
-slug: amarok-144-for-mandriva-2007
 title: Amarok 1.4.4 for Mandriva 2007
 category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, Music, MySQL, SQL, RPM, urpmi

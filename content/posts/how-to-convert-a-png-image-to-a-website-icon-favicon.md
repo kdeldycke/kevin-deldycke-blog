@@ -1,5 +1,4 @@
 date: 2006-09-15 23:19:36
-slug: how-to-convert-a-png-image-to-a-website-icon-favicon
 title: How to Convert a Png image to a Website Icon (favicon)
 category: English
 tags: CLI, Linux, Theme, Web

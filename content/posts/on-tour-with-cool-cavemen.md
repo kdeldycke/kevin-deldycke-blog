@@ -1,5 +1,4 @@
 date: 2009-03-03 10:14:24
-slug: on-tour-with-cool-cavemen
 title: On tour with Cool Cavemen !
 category: English
 tags: band, Cool Cavemen, light, lighting, live, rock, tour

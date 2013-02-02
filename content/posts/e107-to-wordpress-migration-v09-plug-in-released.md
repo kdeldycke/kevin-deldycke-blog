@@ -1,5 +1,4 @@
 date: 2008-01-11 22:44:58
-slug: e107-to-wordpress-migration-v09-plug-in-released
 title: e107 to Wordpress migration : v0.9 plug-in released
 category: English
 tags: e107, migration, plugin, WordPress

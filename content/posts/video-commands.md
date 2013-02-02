@@ -1,5 +1,4 @@
 date: 2006-11-08 00:31:27
-slug: video-commands
 title: Video commands
 category: English
 tags: Audio, CLI, divx, dvd, ffmpeg, kdenlive, Linux, melt, mencoder, mlt, MP4, mplayer, subtitle, svcd, transcode, Video, xvid, TV, VLC

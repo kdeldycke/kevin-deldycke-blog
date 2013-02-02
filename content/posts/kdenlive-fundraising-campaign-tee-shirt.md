@@ -1,5 +1,4 @@
 date: 2012-10-16 12:24:34
-slug: kdenlive-fundraising-campaign-tee-shirt
 title: Kdenlive Fundraising Campaign Tee-Shirt
 category: English
 tags: campaign, Fundraising, kdenlive, T-shirt

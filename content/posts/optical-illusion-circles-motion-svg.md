@@ -1,5 +1,4 @@
 date: 2010-04-14 19:26:39
-slug: optical-illusion-circles-motion-svg
 title: Optical illusion: circles in motion (SVG source included)
 category: English
 tags: Creative Commons, inkscape, optical illusion, svg, visuals

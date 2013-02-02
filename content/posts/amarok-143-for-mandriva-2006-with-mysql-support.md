@@ -1,5 +1,4 @@
 date: 2006-09-06 00:03:26
-slug: amarok-143-for-mandriva-2006-with-mysql-support
 title: Amarok 1.4.3 for Mandriva 2006 with MySQL support
 tags: Amarok, KDE, Linux, Mandriva, Music, MySQL, SQL, RPM
 

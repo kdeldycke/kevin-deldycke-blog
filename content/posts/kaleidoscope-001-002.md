@@ -1,5 +1,4 @@
 date: 2010-10-25 17:00:57
-slug: kaleidoscope-001-002
 title: Kaleidoscope #001 and #002
 category: English
 tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual

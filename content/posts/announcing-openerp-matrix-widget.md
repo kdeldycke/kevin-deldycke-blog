@@ -1,5 +1,4 @@
 date: 2012-08-28 12:20:05
-slug: announcing-openerp-matrix-widget
 title: Announcing Matrix Widget for OpenERP 6.0
 category: English
 tags: GitHub, javascript, mako, matrix, OpenERP, Python, smile, widget, ERP

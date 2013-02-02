@@ -1,5 +1,4 @@
 date: 2006-04-10 00:30:38
-slug: av-sync-problems-vlc-better-than-mencoder
 title: A/V sync problems: VLC better than Mencoder
 category: English
 tags: Linux, mencoder, Video, VLC

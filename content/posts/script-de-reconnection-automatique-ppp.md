@@ -1,5 +1,4 @@
 date: 2005-04-04 00:07:45
-slug: script-de-reconnection-automatique-ppp
 title: Script de reconnection automatique PPP
 category: Français
 tags: bash, Linux, Network, Script, shell, Snippet

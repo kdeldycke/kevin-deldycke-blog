@@ -1,5 +1,4 @@
 date: 2011-06-28 12:50:59
-slug: nginx-php-fpm-mysql-debian-squeeze-server
 title: Nginx + PHP-FPM + MySQL on a Debian Squeeze server
 category: English
 tags: Debian, Debian Squeeze, Linux, MySQL, SQL, nginx, PHP, php-fpm, Server, Web

@@ -1,5 +1,4 @@
 date: 2007-02-28 21:49:57
-slug: repository-moved-thanks-to-apache-and-301-redirections
 title: Repository Moved thanks to Apache and 301 Redirections
 category: English
 tags: Apache, Blog, Hosting, htaccess, ISP, Linux, Mandriva, Repository, RPM, urpmi, Web

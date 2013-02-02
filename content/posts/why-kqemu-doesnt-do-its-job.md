@@ -1,5 +1,4 @@
 date: 2006-07-28 23:39:19
-slug: why-kqemu-doesnt-do-its-job
 title: Why kqemu doesn't do its job ?
 tags: Linux, Qemu
 

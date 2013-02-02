@@ -1,5 +1,4 @@
 date: 2007-04-17 19:07:57
-slug: how-to-block-ads-in-konqueror
 title: How-to Block Ads in Konqueror
 category: English
 tags: ad, KDE, konqueror, Linux

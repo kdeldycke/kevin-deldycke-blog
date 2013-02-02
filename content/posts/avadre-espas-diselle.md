@@ -1,5 +1,4 @@
 date: 2009-01-07 11:28:09
-slug: avadre-espas-diselle
 title: Avadre: espas diselle
 category: Français
 tags: humour, petite annonce, photo

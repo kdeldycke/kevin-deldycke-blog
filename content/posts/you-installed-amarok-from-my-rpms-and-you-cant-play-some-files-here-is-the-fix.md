@@ -1,5 +1,4 @@
 date: 2006-08-19 19:58:09
-slug: you-installed-amarok-from-my-rpms-and-you-cant-play-some-files-here-is-the-fix
 title: You installed Amarok from my RPMs and can't play some files ? Here is the fix...
 tags: Amarok, KDE, Linux, Mandriva, Music, RPM
 

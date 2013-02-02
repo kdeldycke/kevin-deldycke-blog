@@ -1,5 +1,4 @@
 date: 2006-11-29 01:01:55
-slug: rpm-urpmi-yum-commands
 title: RPM, Urpmi & Yum commands
 category: English
 tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpmi, yum

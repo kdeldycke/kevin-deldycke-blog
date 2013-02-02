@@ -1,5 +1,4 @@
 date: 2011-03-07 11:32:02
-slug: top-1-percent-open-source-developer
 title: I'm Top 1% Open-Source Developer ! (and that's a lie)
 category: English
 tags: development, Ohloh, open source, Software engineering

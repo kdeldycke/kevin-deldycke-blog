@@ -1,5 +1,4 @@
 date: 2008-06-07 19:34:20
-slug: how-to-add-a-corner-banners-to-a-k2-wordpress-theme-style
 title: How-to add a corner banner to a K2 Wordpress theme's style
 category: English
 tags: alpha, banner, corner, CSS, design, Gimp, HTML, IE, K2, Photoshop, PHP, PNG, qpx, style, Theme, transparency, Web, WordPress

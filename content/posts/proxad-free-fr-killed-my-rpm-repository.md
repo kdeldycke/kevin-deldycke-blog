@@ -1,5 +1,4 @@
 date: 2008-07-15 01:54:33
-slug: proxad-free-fr-killed-my-rpm-repository
 title: Proxad / Free.fr killed my RPM repository !
 category: English
 tags: free.fr, Hosting, ISP, Mandriva, Proxad, Repository, RPM

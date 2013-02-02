@@ -1,5 +1,4 @@
 date: 2007-01-04 21:54:19
-slug: every-sky-is-blue
 title: Every Sky is Blue...
 category: English
 tags: Blog, life, Web

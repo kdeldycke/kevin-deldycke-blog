@@ -1,5 +1,4 @@
 date: 2010-03-26 17:08:36
-slug: web-commands
 title: Web commands
 category: English
 tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509

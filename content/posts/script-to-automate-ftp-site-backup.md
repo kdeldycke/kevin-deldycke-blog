@@ -1,5 +1,4 @@
 date: 2006-04-30 23:14:46
-slug: script-to-automate-ftp-site-backup
 title: Script to Automate FTP site Backup.
 category: English
 tags: Backup, bzip2, FTP, lftp, Linux, Python

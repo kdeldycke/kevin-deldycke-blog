@@ -1,5 +1,4 @@
 date: 2011-01-04 12:04:12
-slug: python-commands
 title: Python commands
 category: English
 tags: ascii, Computer programming, date, dateutil, development, distutils, encoding, PEP8, PyPi, Python, socket, unicode, URL, urllib2, Web

@@ -1,5 +1,4 @@
 date: 2006-08-20 17:10:26
-slug: blog-theme-update
 title: Blog Theme Update
 tags: Blog, K2, Theme, Web, WordPress
 

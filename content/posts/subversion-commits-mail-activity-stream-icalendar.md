@@ -1,5 +1,4 @@
 date: 2010-06-16 21:53:46
-slug: subversion-commits-mail-activity-stream-icalendar
 title: Subversion commits and mail activity stream in iCalendar
 category: English
 tags: code, commit, Git, GitHub, iCal, email, maildir, Ohloh, Python, Repository, Script, Subversion

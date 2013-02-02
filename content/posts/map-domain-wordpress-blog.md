@@ -1,5 +1,4 @@
 date: 2012-07-31 12:31:08
-slug: map-domain-wordpress-blog
 title: How-To map a non-US domain name to a WordPress.com blog
 category: English
 tags: Blog, dns SOA, WordPress, WordPress.com

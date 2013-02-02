@@ -1,5 +1,4 @@
 date: 2012-11-06 12:39:02
-slug: cool-cavemen-gayant-expo-production-notes
 title: Cool Cavemen at Gayant Expo: production notes
 Category: Front Page
 tags: band, concert, Cool Cavemen, douai, France, gayant expo, kdenlive, lighting designer, live, Martin Mac, SoundUp studio, Video, youtube

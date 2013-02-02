@@ -1,5 +1,4 @@
 date: 2006-12-27 21:48:32
-slug: all-my-command-lines
 title: All my command lines
 Category: Front Page
 tags: CLI, Linux

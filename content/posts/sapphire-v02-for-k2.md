@@ -1,5 +1,4 @@
 date: 2007-04-19 15:45:29
-slug: sapphire-v02-for-k2
 title: Sapphire v0.2 for K2
 tags: Blog, CSS, K2, Template, Theme, Web, WordPress
 

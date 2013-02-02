@@ -1,5 +1,4 @@
 date: 2010-09-09 12:40:11
-slug: ultimate-guide-lotus-notes-mail-migration
 title: Ultimate guide of Lotus Notes mail migration
 category: English
 tags: Dovecot, email, Lotus Notes, IMAP, Mac OS X Leopard, Linux, Mac OS X, maildir, Microsoft, Windows, Apple, Mac OS X, TCPIP port, Python, Mac OS X Snow Leopard

@@ -1,5 +1,4 @@
 date: 2007-03-21 12:49:41
-slug: sapphire-style-for-k2-wordpress-theme
 title: Sapphire style for K2 Wordpress theme
 tags: Blog, CSS, K2, Template, Theme, Web, WordPress
 
