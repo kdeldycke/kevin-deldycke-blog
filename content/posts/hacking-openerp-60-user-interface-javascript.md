@@ -2,7 +2,7 @@ date: 2012-05-29 12:11:55
 slug: hacking-openerp-60-user-interface-javascript
 title: Hacking OpenERP 6.0 User Interface with Javascript
 category: English
-tags: HTML, javascript, jquery, OpenERP, smile
+tags: HTML, javascript, jquery, OpenERP, smile, ERP
 
 OpenERP 6.1's web client comes with a cleaner Javascript framework which [features some hook mechanism](http://planet.domsense.com/en/2012/01/openerp-new-web-client-6-1-javascript-hooks/) to simplify customization. In the mean time, I still have to work on older OpenERP 6.0 for customers who haven't migrated yet. So let me present you a tiny collection of ugly (but working) Javascript hacks I use to customize some aspects of the user interface.
 

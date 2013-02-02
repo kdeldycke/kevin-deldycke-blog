@@ -2,7 +2,7 @@ date: 2012-09-11 12:33:09
 slug: merging-git-outdated-subversion-fork
 title: Merging back Git changes to an outdated Subversion fork
 category: English
-tags: Git, GitHub, merge, OpenERP, Subversion
+tags: Git, GitHub, merge, OpenERP, Subversion, ERP
 
 When working on an OpenERP project for a customer, we (sadly too frequently) have to keep in its private SVN repository a local copy of a module. I feel quite dirty when doing so but I have to admit it's a pragmatic approach. Especially when you have to quickly add loads of customizations on a tight schedule.
 

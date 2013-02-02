@@ -2,7 +2,7 @@ date: 2006-12-20 20:42:35
 slug: image-processing-commands
 title: Image Processing commands
 category: English
-tags: CLI, exiftool, image, imagemagick, JPEG, Linux, Metadata, mogrify, photo, picture, pngcrush
+tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush
 
   * Convert several files from a format to another:
 

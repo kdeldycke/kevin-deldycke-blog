@@ -2,7 +2,7 @@ date: 2008-06-05 20:35:58
 slug: best-open-source-payroll-software
 title: I wrote the best Open-Source Payroll Software of the world !
 category: English
-tags: company, consulting, erp, floss, free software, open source
+tags: company, consulting, ERP, floss, free software, open source, OpenERP, ERP5, OpenBravo, Neogia, Adempiere, Compiere
 
 ... at least [according Smile](http://www.smile.fr), a french consulting company ! :)
 

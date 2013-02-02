@@ -2,7 +2,7 @@ date: 2008-03-07 01:20:53
 slug: hp-w2207h-external-display-on-intel-945
 title: HP w2207h external display on Intel 945
 category: English
-tags: chipset, display, external display, graphic, Hewlett Packard, Intel, laptop, Linux, Samsung, screen, X.org
+tags: chipset, display, graphic, Hewlett Packard, Intel, laptop, Linux, Samsung, screen, X.org
 
 I recently had the oportunity to plug the [HP w2207h screen](http://www.amazon.com/gp/product/B00139S3U6/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B00139S3U6) (see [review #1](http://www.anandtech.com/displays/showdoc.aspx?i=3054) and [review #2](http://www.prad.de/en/monitore/review/2007/review-hp-w2207.html)) as an external display to my [Samsung Q35 laptop](http://kevin.deldycke.com/2006/10/samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop/). The external display has a native resolution of 1680x1050 and the laptop's is 1280x800.
 

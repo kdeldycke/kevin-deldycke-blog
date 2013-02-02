@@ -2,7 +2,7 @@ date: 2009-08-25 00:06:16
 slug: how-to-install-eaccelerator-php5-debian-lenny
 title: eAccelerator for PHP5 on Debian Lenny
 category: English
-tags: Apache, aptitude, Debian, eAccelerator, lenny, PHP, Repository, Server
+tags: Apache, aptitude, Debian, eAccelerator, Debian Lenny, PHP, Repository, Server
 
 [eAccelerator](http://eaccelerator.net) is an _open-source PHP accelerator, optimizer, and dynamic content cache_ (to quote the official website of the project). It can effectively speed-up PHP processing on a server by caching bytecode.
 
