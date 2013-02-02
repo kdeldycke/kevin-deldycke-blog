@@ -23,6 +23,11 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ find ./ -type f | wc -l
 
+  * List all file extensions found in a folder:
+
+        :::bash
+        $ find ./ -type f | rev | cut -d "." -f 1 | sort | uniq | rev
+
   * Show the 10 biggest files in MiB found amoung the current directory and its subfolders:
 
         :::bash
