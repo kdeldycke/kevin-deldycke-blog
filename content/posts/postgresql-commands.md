@@ -63,6 +63,11 @@ tags: CLI, database, Linux, PostgreSQL, SQL
         :::bash
         $ sudo -u postgres psql --tuples-only --no-align --command "SELECT usename FROM pg_user;" | grep --quiet 'kevin' && echo 'User found !' || echo 'User not found !'
 
+  * Force rebuilding of all caches of a database:
+
+        :::bash
+        $ psql -d db_id --command "REINDEX DATABASE db_id;"
+
   * Set the owner of a database:
 
         :::postgresql
