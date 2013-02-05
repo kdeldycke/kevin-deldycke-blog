@@ -1,7 +1,7 @@
 date: 2011-10-04 12:00:44
 title: Mailman migration
 category: English
-tags: Debian, Debian Squeeze, dns, Exim, mailman, spf
+tags: Debian, Debian Squeeze, dns, Exim, mailman, spf, Debian Lenny
 
 Last week I detailed how I configured [Mailman with Exim and Nginx on a Debian Squeeze](http://kevin.deldycke.com/2011/09/setup-mailman-nginx-exim-debian-squeeze/). Here are some more notes on how I migrated my mailing lists from my old server (Lenny with Mailman 2.1.11) to the new Mailman installation (Squeeze with Mailman 2.1.13).
 
