@@ -65,7 +65,7 @@ And create a new site:
 
 Basically, that's it. You're now free to tweak the configuration and structure of your site.
 
-The next important step is to migrate our content. We can't import as is the XML file WordPress produces. We need to massage some data first.
+The next important step is to migrate our content. We can't import the XML file WordPress produces as is. We need to massage some data first.
 
 During my [Disqus migration](http://kevin.deldycke.com/2013/01/wordpress-disqus-migration/), I had to update the markup of the code blocks. Same thing apply here. I need to replace occurrences of:
 
@@ -86,12 +86,12 @@ The magic command to perform that job is:
     :::bash
     $ sed -e 's/\[\/code\]/<\/code><\/pre>/g' -e 's/\[code lang=\(.*\)\]/<pre><code class=\1>/g' < ./wordpress.xml > ./wordpress-fixed.xml
 
-Pelican is consume by default [reStructuredText](http://en.wikipedia.org/wiki/ReStructuredText) content, but it supports [Markdown](http://en.wikipedia.org/wiki/Markdown) too. To convert WordPress content to Markdown, the command is:
+Pelican consumes by default [reStructuredText](http://en.wikipedia.org/wiki/ReStructuredText) content, but it supports [Markdown](http://en.wikipedia.org/wiki/Markdown) too. To convert WordPress content to Markdown, the command is:
 
     :::bash
     $ pelican-import --wpfile -m markdown -o ./content/ ./wordpress-fixed.xml
 
-The thing is Pelican's built-in importer produces files requiring, in my opinion, too much cleaning afterwards.
+The thing is, Pelican's built-in importer produces files requiring, in my opinion, too much cleaning afterwards.
 
 I was right to choose Markdown over reStructuredText: the former is much more popular that the latter. Plenty of tools are available. [exitwp](https://github.com/thomasf/exitwp) is the one I was looking for. It's a WordPress to Jekyll importer written in Python.
 
