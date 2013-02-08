@@ -5,7 +5,7 @@ tags: Apple, CLI, dm2img, dmg, HFS, Linux, Mandriva, RPM
 
 ![package](/static/uploads/2009/08/package.png)
 
-I've just created a RPM of [dmg2img](http://vu1tur.eu.org/tools/) for the x86_64 version of Mandriva 2009.1. The package is [available in my RPM repository](http://kevin.deldycke.com/static/repository/mandriva/2009.1/x86_64/).
+I've just created a RPM of [dmg2img](http://vu1tur.eu.org/tools/) for the x86_64 version of Mandriva 2009.1. The package is [available in my RPM repository](http://github.com/kdeldycke/mandriva-specs).
 
 `dmg2img` is a command line utility to extract the content of an [Apple Disk Image](http://en.wikipedia.org/wiki/Apple_Disk_Image) `.dmg` file. Here is how I use it to access content:
 

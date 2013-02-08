@@ -75,7 +75,6 @@ THEME = "theme"
 STATIC_PATHS = [
   'uploads',
   'documents',
-  'repository',
   ]
 
 FILES_TO_COPY = (
@@ -96,7 +95,6 @@ MENUITEMS = (
 # Blogroll
 LINKS =  (
     # TODO: change archive URL to /archives/index.html
-    ('Mandriva RPMs', '/mandriva-rpm-repository/'),
     ('Categories', '/categories.html'),
     ('Archives', '/archives.html'),
     ('Tags', '/tags.html'),

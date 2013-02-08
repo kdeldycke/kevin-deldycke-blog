@@ -49,6 +49,10 @@ RedirectMatch gone /author/[^\/]+/page/\d+/?$
 RedirectMatch gone ^/wp-(admin|content|includes)/?.*$
 RedirectMatch gone ^/wp-.*\.php$
 
+# Content redirects
+RedirectMatch 301 ^/mandriva-rpm-repository https://github.com/kdeldycke/mandriva-specs
+RedirectMatch 301 ^/static/repository       https://github.com/kdeldycke/mandriva-specs
+
 # Generic error files
 ErrorDocument 404 /404-not-found/
 ErrorDocument 410 /410-gone/
