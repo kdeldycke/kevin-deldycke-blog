@@ -16,6 +16,7 @@ RedirectMatch 301 ^/wp-content/uploads/(.*) /static/uploads/$1
 RedirectMatch 301 ^/category/lang/en/(.*) /category/english/$1
 RedirectMatch 301 ^/category/lang/fr/(.*) /category/francais/$1
 RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
+RedirectMatch 301 ^/archives/.* /archives.html
 
 # WordPress feeds for blog, tags and categories
 RedirectMatch 301 (.*)/feed/(rss2?|rdf)/?$ $1/feed/

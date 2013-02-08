@@ -94,7 +94,6 @@ MENUITEMS = (
 
 # Blogroll
 LINKS =  (
-    # TODO: change archive URL to /archives/index.html
     ('Categories', '/categories.html'),
     ('Archives', '/archives.html'),
     ('Tags', '/tags.html'),
