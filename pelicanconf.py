@@ -57,8 +57,6 @@ TAG_FEED_ATOM = 'tag/%s/feed/atom/index.html'
 CATEGORY_FEED_RSS = 'category/%s/feed/index.html'
 CATEGORY_FEED_ATOM = 'category/%s/feed/atom/index.html'
 
-#TODO: http://kevin.deldycke.com/comments/feed/
-
 FEED_MAX_ITEMS = 10
 DEFAULT_CATEGORY = 'English'
 DEFAULT_ORPHANS = 2
