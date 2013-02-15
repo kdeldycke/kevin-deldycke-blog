@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+  Code
+{% endblock %}
+
+
+{% block top_center %}
+  <h1>
+    <a href="/code/" rel="bookmark" title="Permalink to Code">Code</a>
+  </h1>
+{% endblock %}
+
+
+
+{% block content %}
+  {% set PROJECTS = [
+      { 'name':        "OpenERP"
+      , 'description': "Currently working full-time on OpenERP as a consultant at Smile, the biggest Open-Source company in France."
+      , 'roles':       ["Contributor", "Translator"]
+      , 'tools':       ["Python", "PostgreSQL", "Javascript", "Backbone.js", "Mako", "HTML", "XML", "CSS"]
+      , 'links':       ["http://bugs.debian.org/cgi-bin/pkgreport.cgi?submitter=kevin%40deldycke.com"]
+      },
+      { 'name':        "openerp.buildout"
+      , 'description': "Automate OpenERP server and web-client installation, deployment and configuration."
+      , 'inactive':    False
+      , 'roles':       ["Author"]
+      , 'tools':       ["Python", "Buildout", "Bash", "System"]
+      , 'links':       ["http://github.com/kdeldycke/openerp.buildout"]
+      },
+      { 'name':        "CherryPy + Mako + Formish + OOOP boilerplate"
+      , 'description': "Boilerplate codebase to publishing OpenERP content on the web."
+      , 'inactive':    True
+      , 'roles':       ["Author"]
+      , 'tools':       ["Python", "CherryPy", "Mako", "HTML", "CSS", "Javascript"]
+      , 'links':       ["http://github.com/kdeldycke/cherrypy_mako_formish_ooop_boilerplate"]
+      },
+      { 'name':        "WebPing"
+      , 'description': "Check availability of web pages."
+      , 'thumbnail':   "/static/uploads/2011/08/webping-dashboard.png"
+      , 'inactive':    True
+      , 'roles':       ["Author"]
+      , 'tools':       ["Python", "HTML", "CSS", "Javascript"]
+      , 'links':       ["http://github.com/kdeldycke/webping"]
+      },
+      { 'name':        "Live browser"
+      , 'description': "Web app with no particular goal but play with Microsoft Live Messenger Connect API."
+      , 'inactive':    True
+      , 'roles':       ["Author"]
+      , 'tools':       ["Python", "CherryPy", "Mako", "MongoDB"]
+      , 'links':       ["https://github.com/kdeldycke/live_browser"]
+      },
+      { 'name':        "e107 Importer"
+      , 'description': "WordPress plugin to import news, users, pages, images and forums from [e107](http://www.e107.org)."
+      , 'thumbnail':   "/static/uploads/2011/05/e107-importer-v1-3-option-panel.png"
+      , 'inactive':    True
+      , 'roles':       ["Author"]
+      , 'tools':       ["PHP", "MySQL", "WordPress"]
+      , 'links':       ["http://wordpress.org/extend/plugins/e107-importer/", "http://github.com/kdeldycke/e107-importer"]
+      },
+      { 'name':        "Feed Tracking Tool"
+      , 'description': "Web-based RSS/Atom feed aggregator."
+      , 'inactive':    True
+      , 'roles':       ["Author"]
+      , 'tools':       ["Ruby on Rails", "MySQL", "HTML", "CSS"]
+      , 'links':       ["http://kevin.deldycke.com/2011/03/feed-tracking-tool-released-open-source-license/", "http://github.com/kdeldycke/feed-tracking-tool"]
+      },
+      { 'name':        "Scripts"
+      , 'description': "A collection of utility scripts, patches and hacks."
+      , 'thumbnail':   "/static/uploads/2006/04/gnu-gpl-logo.png"
+      , 'roles':       ["Author"]
+      , 'tools':       ["Python", "Bash", "PHP", "MySQL"]
+      , 'links':       ["http://github.com/kdeldycke/scripts"]
+      },
+      { 'name':        "pbp.recipe.trac"
+      , 'description': "Buildout recipe to automate management and deployment of multiple [Trac](http://trac.edgewall.org) instances."
+      , 'roles':       ["Contributor"]
+      , 'tools':       ["Python", "Trac", "Buildout"]
+      , 'links':       ["http://pypi.python.org/pypi/pbp.recipe.trac", "http://bitbucket.org/tarek/atomisator/"]
+      },
+      { 'name':        "Plone"
+      , 'description': "Zope-based CMS."
+      , 'thumbnail':   "/static/uploads/2006/04/plone-logo.png"
+      , 'roles':       ["Contributor", "Bug reports"]
+      , 'tools':       ["Python", "ZODB"]
+      , 'links':       ["http://plone.org/author/kdeldycke", "http://dev.plone.org/collective/search?q=kdeldycke&changeset=on", "http://dev.plone.org/plone/search?q=kdeldycke&ticket=on"]
+      },
+      { 'name':        "QLC"
+      , 'description': "DMX light controlling software written QT."
+      , 'roles':       ["Bug reports", "Documentation"]
+      , 'links':       ["http://sourceforge.net/apps/trac/qlc/query?reporter=~kevin-deldycke", "http://sourceforge.net/search/index.php?group_id=44856&type_of_search=mlists&ml_name=qlc-devel&words=%22Kevin+Deldycke%22"]
+      },
+      { 'name':        "WordPress"
+      , 'descripton':  "The most popular PHP blog engine."
+      , 'roles':       ["Patches", "Bug reports"]
+      , 'links':       ["http://core.trac.wordpress.org/query?reporter=~Coolkevman"]
+      },
+      { 'name':        "Debian"
+      , 'roles':       ["Bug reports"]
+      , 'links':       ["http://bugs.debian.org/cgi-bin/pkgreport.cgi?submitter=kevin%40deldycke.com"]
+      },
+      { 'name':        "bbPress"
+      , 'descripton':  "WordPress-based forums."
+      , 'roles':       ["Bug reports"]
+      , 'links':       ["http://trac.bbpress.org/query?reporter=~Coolkevman"]
+      },
+      { 'name':        "Kdenlive"
+      , 'descripton':  "Non-linear video editor written in QT for KDE."
+      , 'roles':       ["Bug reports"]
+      , 'links':       ["http://google.com/search?q=%22kevin-deldycke%22+site%3Akdenlive.org%2Fmantis%2F"]
+      },
+      { 'name':        "nlconverter"
+      , 'descripton':  "Lotus Notes to Mailbox conversion tool written in Python."
+      , 'roles':       ["Contributor"]
+      , 'links':       ["http://code.google.com/p/nlconverter/people/detail?u=kevin.deldycke"]
+      },
+      { 'name':        "Mandriva"
+      , 'inactive':    True
+      , 'roles':       ["Contributor"]
+      , 'links':       ["http://kevin.deldycke.com/2013/02/mandriva-repositories-retired/", "https://github.com/kdeldycke/mandriva-specs"]
+      },
+      ]
+  %}
+
+  <p>In my professional and personal activities, I contribute to some open-source projects. You'll find a summary of <a href="http://ohloh.net/accounts/kevin">all my contributions on my Ohloh profile</a>.</p>
+
+  <p>These projects are mostly one-time scripts, very old and very specific. I doubt you'll be able to use them as-is. Until you update and tweak them to fit your needs. In this case, don't hesitate to send me code and patches. Basically, that's why all this code <a href="http://github.com/kdeldycke">is hosted on GitHub</a>: to ease fork and contributions.</p>
+
+  <p>The code here is generally poorly written. Either because my coding style has improved since I wrote them, or because I didn't bother to make the code elegant after I finished my first working iteration.</p>
+
+  <p>All these projects are kept in a dormant state. That's another way to say that they're inactive, and I no longer maintain them. But I let me the possibility to reactivate them depending on my needs or external contributions.</p>
+
+  <p>Before reporting me bugs, make sure that you already <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">read the famous "How to Report Bugs Effectively" document</a>. Else, both you and me will waste precious time.</p>
+
+  <p>This mean that I refuse feature requests. Until you implement them and send me code. I only accept patches and contributions.</p>
+
+
+  <!--h2>Communities</h2>
+
+  <ul>
+    <li></li>
+    <li></li>
+  </ul-->
+
+
+  <h2>Projects</h2>
+
+  <ul class="thumbnails">
+    {% set ICONS = { 'github.com': 'icon-github-alt'
+                   , 'kevin.deldycke.com': 'icon-bullhorn'
+                   , 'type_of_search=mlists': 'icon-envelope-alt'
+                   , 'bitbucket.org': '⛁'
+                   }
+    %}
+
+    {% for project in PROJECTS %}
+      <li class="span3">
+        <div class="thumbnail">
+          {% if project.inactive %}
+            <div class="progress progress-danger progress-striped">
+              <div class="bar" style="width: 100%;"><strong>Unmaintained</strong></div>
+            </div>
+          {% endif %}
+          {% if project.thumbnail %}
+            <img alt="{{ project.name }} screenshot" src="{{ project.thumbnail }}"/>
+          {% endif %}
+          <h4>{{ project.name }}</h4>
+          {% if project.description %}
+            <p>{{ project.description }}</p>
+          {% endif %}
+          {% if project.roles or project.tools %}
+            <p>
+              {% for role in project.roles %}
+                <span class="label label-success">{{ role }}</span>
+              {% endfor %}
+              {% for tool in project.tools %}
+                <span class="label label-info">{{ tool }}</span>
+              {% endfor %}
+            </p>
+          {% endif %}
+          {% if project.links %}
+            <p class="clearfix">
+              {% for link in project.links %}
+                {% set link_icon = ['icon-home'] %}
+                {% for (domain, icon) in ICONS.items() %}
+                  {% if link.find(domain) != -1 %}
+                    {% if link_icon.append(icon) %}{% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% set link_icon = link_icon[-1] %}
+                {% set icon_name_size = link_icon|length() %}
+                <a href="{{ link }}" class="pull-left link-circle">
+                  {% if icon_name_size > 1 %}
+                    <i class="{{ link_icon }}"></i>
+                  {% else %}
+                    <strong>{{ link_icon }}</strong>
+                  {% endif %}
+                </a>
+              {% endfor %}
+            </p>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}

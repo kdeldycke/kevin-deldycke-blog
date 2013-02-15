@@ -26,6 +26,10 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = PAGE_URL + 'index.html'
 PAGE_DIR = 'pages'
 
+TEMPLATE_PAGES = {
+  'templates/code.html': 'code/index.html',
+  }
+
 # Force Pelican to use the file name as the slug, instead of derivating it from the title.
 FILENAME_METADATA = '(?P<slug>.*)'
 
