@@ -1,3 +1,4 @@
+{% set LAYOUT = 'full-width' %}
 {% extends "base.html" %}
 
 
@@ -9,6 +10,7 @@
 {% block top_center %}
   <h1>
     <a href="/code/" rel="bookmark" title="Permalink to Code">Code</a>
+    <small>Projects I've created, or contributed to</small>
   </h1>
 {% endblock %}
 
@@ -52,11 +54,11 @@
       , 'links':       ["https://github.com/kdeldycke/live_browser"]
       },
       { 'name':        "e107 Importer"
-      , 'description': "WordPress plugin to import news, users, pages, images and forums from [e107](http://www.e107.org)."
+      , 'description': "WordPress plugin to import news, users, pages, images and forums from e107."
       , 'thumbnail':   "/static/uploads/2011/05/e107-importer-v1-3-option-panel.png"
       , 'inactive':    True
       , 'roles':       ["Author"]
-      , 'tools':       ["PHP", "MySQL", "WordPress"]
+      , 'tools':       ["e107", "PHP", "MySQL", "WordPress"]
       , 'links':       ["http://wordpress.org/extend/plugins/e107-importer/", "http://github.com/kdeldycke/e107-importer"]
       },
       { 'name':        "Feed Tracking Tool"
@@ -74,7 +76,7 @@
       , 'links':       ["http://github.com/kdeldycke/scripts"]
       },
       { 'name':        "pbp.recipe.trac"
-      , 'description': "Buildout recipe to automate management and deployment of multiple [Trac](http://trac.edgewall.org) instances."
+      , 'description': "Buildout recipe to automate management and deployment of multiple Trac instances."
       , 'roles':       ["Contributor"]
       , 'tools':       ["Python", "Trac", "Buildout"]
       , 'links':       ["http://pypi.python.org/pypi/pbp.recipe.trac", "http://bitbucket.org/tarek/atomisator/"]
@@ -94,7 +96,7 @@
       { 'name':        "WordPress"
       , 'descripton':  "The most popular PHP blog engine."
       , 'roles':       ["Patches", "Bug reports"]
-      , 'links':       ["http://core.trac.wordpress.org/query?reporter=~Coolkevman"]
+      , 'links':       ["http://profiles.wordpress.org/Coolkevman/", "http://core.trac.wordpress.org/query?reporter=~Coolkevman"]
       },
       { 'name':        "Debian"
       , 'roles':       ["Bug reports"]
@@ -116,12 +118,85 @@
       , 'links':       ["http://code.google.com/p/nlconverter/people/detail?u=kevin.deldycke"]
       },
       { 'name':        "Mandriva"
+      , 'thumbnail':   "/static/uploads/2007/04/mandriva-2007-blue-logo.png"
       , 'inactive':    True
       , 'roles':       ["Contributor"]
       , 'links':       ["http://kevin.deldycke.com/2013/02/mandriva-repositories-retired/", "https://github.com/kdeldycke/mandriva-specs"]
       },
       ]
   %}
+
+
+  <!--h2>Communities</h2>
+
+  <ul>
+    <li></li>
+    <li></li>
+  </ul-->
+
+  <div class="masonry">
+    {% set ICONS = { 'github.com': 'icon-github-alt'
+                   , 'kevin.deldycke.com': 'icon-bullhorn'
+                   , 'type_of_search=mlists': 'icon-envelope-alt'
+                   , 'bitbucket.org': '⛁'
+                   }
+    %}
+
+    {% for project in PROJECTS %}
+
+      <div class="thumbnail span3">
+        {% if project.inactive %}
+          <div class="progress progress-danger progress-striped">
+            <div class="bar" style="width: 100%;"><strong>Unmaintained</strong></div>
+          </div>
+        {% endif %}
+        {% if project.thumbnail %}
+          <img alt="{{ project.name }} screenshot" src="{{ project.thumbnail }}"/>
+        {% endif %}
+        <h4>{{ project.name }}</h4>
+        {% if project.description %}
+          <p>{{ project.description }}</p>
+        {% endif %}
+        {% if project.roles or project.tools %}
+          <p>
+            {% for role in project.roles %}
+              <span class="label label-success">{{ role }}</span>
+            {% endfor %}
+            {% for tool in project.tools %}
+              <!-- TODO: link to tag pages, sorted by popularity, similar to what is done in articles.html code -->
+              <span class="label label">{{ tool }}</span>
+            {% endfor %}
+          </p>
+        {% endif %}
+        {% if project.links %}
+          <p class="clearfix">
+            {% for link in project.links %}
+              {% set link_icon = ['icon-home'] %}
+              {% for (domain, icon) in ICONS.items() %}
+                {% if link.find(domain) != -1 %}
+                  {% if link_icon.append(icon) %}{% endif %}
+                {% endif %}
+              {% endfor %}
+              {% set link_icon = link_icon[-1] %}
+              {% set icon_name_size = link_icon|length() %}
+              <a href="{{ link }}" class="pull-left link-circle">
+                {% if icon_name_size > 1 %}
+                  <i class="{{ link_icon }}"></i>
+                {% else %}
+                  <strong>{{ link_icon }}</strong>
+                {% endif %}
+              </a>
+            {% endfor %}
+          </p>
+        {% endif %}
+      </div>
+
+    {% endfor %}
+  </div>
+
+
+<div class="span6">
+  <h2>On the status of my project...</h2>
 
   <p>In my professional and personal activities, I contribute to some open-source projects. You'll find a summary of <a href="http://ohloh.net/accounts/kevin">all my contributions on my Ohloh profile</a>.</p>
 
@@ -134,75 +209,6 @@
   <p>Before reporting me bugs, make sure that you already <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">read the famous "How to Report Bugs Effectively" document</a>. Else, both you and me will waste precious time.</p>
 
   <p>This mean that I refuse feature requests. Until you implement them and send me code. I only accept patches and contributions.</p>
-
-
-  <!--h2>Communities</h2>
-
-  <ul>
-    <li></li>
-    <li></li>
-  </ul-->
-
-
-  <h2>Projects</h2>
-
-  <ul class="thumbnails">
-    {% set ICONS = { 'github.com': 'icon-github-alt'
-                   , 'kevin.deldycke.com': 'icon-bullhorn'
-                   , 'type_of_search=mlists': 'icon-envelope-alt'
-                   , 'bitbucket.org': '⛁'
-                   }
-    %}
-
-    {% for project in PROJECTS %}
-      <li class="span3">
-        <div class="thumbnail">
-          {% if project.inactive %}
-            <div class="progress progress-danger progress-striped">
-              <div class="bar" style="width: 100%;"><strong>Unmaintained</strong></div>
-            </div>
-          {% endif %}
-          {% if project.thumbnail %}
-            <img alt="{{ project.name }} screenshot" src="{{ project.thumbnail }}"/>
-          {% endif %}
-          <h4>{{ project.name }}</h4>
-          {% if project.description %}
-            <p>{{ project.description }}</p>
-          {% endif %}
-          {% if project.roles or project.tools %}
-            <p>
-              {% for role in project.roles %}
-                <span class="label label-success">{{ role }}</span>
-              {% endfor %}
-              {% for tool in project.tools %}
-                <span class="label label-info">{{ tool }}</span>
-              {% endfor %}
-            </p>
-          {% endif %}
-          {% if project.links %}
-            <p class="clearfix">
-              {% for link in project.links %}
-                {% set link_icon = ['icon-home'] %}
-                {% for (domain, icon) in ICONS.items() %}
-                  {% if link.find(domain) != -1 %}
-                    {% if link_icon.append(icon) %}{% endif %}
-                  {% endif %}
-                {% endfor %}
-                {% set link_icon = link_icon[-1] %}
-                {% set icon_name_size = link_icon|length() %}
-                <a href="{{ link }}" class="pull-left link-circle">
-                  {% if icon_name_size > 1 %}
-                    <i class="{{ link_icon }}"></i>
-                  {% else %}
-                    <strong>{{ link_icon }}</strong>
-                  {% endif %}
-                </a>
-              {% endfor %}
-            </p>
-          {% endif %}
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+</div>
 
 {% endblock %}
