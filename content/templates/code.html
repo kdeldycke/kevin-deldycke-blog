@@ -24,6 +24,13 @@
       , 'tools':       ["Python", "PostgreSQL", "Javascript", "Backbone.js", "Mako", "HTML", "XML", "CSS"]
       , 'links':       ["http://bugs.debian.org/cgi-bin/pkgreport.cgi?submitter=kevin%40deldycke.com"]
       },
+      { 'name':        "OpenERP Matrix Widget"
+      , 'description': "A matrix widget for OpenERP's web client."
+      , 'thumbnail':   "/static/uploads/2012/08/2-level-editable-additional-lines-matrix.png"
+      , 'roles':       ["Author"]
+      , 'tools':       ["Javascript", "Mako", "HTML", "CSS"]
+      , 'links':       ["http://kevin.deldycke.com/2012/08/announcing-openerp-matrix-widget/", "https://github.com/Smile-SA/smile_openerp_matrix_widget"]
+      },
       { 'name':        "openerp.buildout"
       , 'description': "Automate OpenERP server and web-client installation, deployment and configuration."
       , 'inactive':    False
@@ -147,7 +154,7 @@
       <div class="thumbnail span3">
         {% if project.inactive %}
           <div class="progress progress-danger progress-striped">
-            <div class="bar" style="width: 100%;"><strong>Unmaintained</strong></div>
+            <div class="bar" style="width: 100%;"><strong>Inactive</strong></div>
           </div>
         {% endif %}
         {% if project.thumbnail %}
