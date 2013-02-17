@@ -21,11 +21,11 @@ And here is their evaluation (0 is the lowest, 5 the highest note) of the payrol
 
 ERP | Evaluation
 --- | ---
-TinyERP | ![](/static/uploads/2008/06/star-yellow.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) (1/5)
-OpenBravo | ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) (0/5)
-Neogia | ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) (0/5)
-ERP5 | ![](/static/uploads/2008/06/star-yellow.png) ![](/static/uploads/2008/06/star-yellow.png) ![](/static/uploads/2008/06/star-yellow.png) ![](/static/uploads/2008/06/star-yellow.png) ![](/static/uploads/2008/06/star-transparent.png) (4/5)
-Adempiere | ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) (0/5)
-Compiere GPL | ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) ![](/static/uploads/2008/06/star-transparent.png) (0/5)
+TinyERP | <i class="icon-star"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
+OpenBravo | <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
+Neogia | <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
+ERP5 | <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
+Adempiere | <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
+Compiere GPL | <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
 
 Sorry for the shameless self-promotion, but I was so happy to get this distinction that I couldn't resist... :)
