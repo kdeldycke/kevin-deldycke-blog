@@ -38,11 +38,3 @@ As for the image header, it was a gift of Jim from [Maomium](http://maomium.com)
 ## Disclaimer
 
 All opinions expressed in this blog are my own personal opinions and are not endorsed by, nor do they represent the opinions of my previous, current and future employers or any of its affiliates, partners or customers.
-
-## Copyright (code & content)
-
-Unless contrary mention, the licensing terms below applies on this whole blog:
-
-[![GNU GPL v2.0 licence](http://creativecommons.org/images/license/40gnugpl.gif)](http://www.fsf.org/licensing/licenses/gpl.html) All the code and softwares published on this blog are released under a [GNU/GPL licence](http://www.fsf.org/licensing/licenses/gpl.html), [v2.0](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html) and any later version.
-
-[![Creative Commons Attribution-Share Alike 3.0 license](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)](http://creativecommons.org/licenses/by-sa/3.0/) All other written content on this blog is published under a [Creative Commons Attribution-Share Alike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/).
