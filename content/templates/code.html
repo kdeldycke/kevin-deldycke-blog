@@ -107,7 +107,8 @@
       },
       { 'name':        "Debian"
       , 'roles':       ["Bug reports"]
-      , 'links':       ["http://kevin.deldycke.com/tag/debian/", "http://bugs.debian.org/cgi-bin/pkgreport.cgi?submitter=kevin%40deldycke.com"]
+      , 'tools':       ["Debian"]
+      , 'links':       ["http://bugs.debian.org/cgi-bin/pkgreport.cgi?submitter=kevin%40deldycke.com"]
       },
       { 'name':        "bbPress"
       , 'descripton':  "WordPress-based forums."
@@ -134,12 +135,11 @@
   %}
 
 
-  <!--h2>Communities</h2>
+  {% set all_tags = [] %}
+  {% for tag, articles in tags %}
+    {% if all_tags.append({'name': tag.name, 'url': tag.url, 'articles': articles|length()}) %}{% endif %}
+  {% endfor %}
 
-  <ul>
-    <li></li>
-    <li></li>
-  </ul-->
 
   <div class="masonry">
     {% set ICONS = { 'github.com': 'icon-github-alt'
@@ -149,8 +149,30 @@
                    }
     %}
 
-    {% for project in PROJECTS %}
+    <div class="thumbnail span3">
+      <h4>Software & Tech. communities</h4>
+      {% set TECH_LINKS = [
+              ("Stack Overflow", "http://stackoverflow.com/users/487610/kevin-deldycke")
+            , ("Hacker News", "http://news.ycombinator.com/user?id=kdeldycke")
+            , ("SourceForge", "http://sourceforge.net/users/kevin-deldycke")
+            , ("Google code", "http://code.google.com/u/kevin@deldycke.com/")
+            , ("WordPress", "http://profiles.wordpress.org/Coolkevman/")
+            , ("Launchpad", "http://launchpad.net/~kevin-deldycke")
+            , ("CoderWall", "http://coderwall.com/kdeldycke")
+            , ("BitBucket", "http://bitbucket.org/kdeldycke")
+            , ("GitHub", "http://github.com/kdeldycke")
+            , ("Ohloh", "http://ohloh.net/accounts/kevin")
+            , ("PyPi", "http://pypi.python.org/pypi?%3Aaction=search&amp;term=deldycke")
+            ]
+      %}
+      <ul class="xoxo blogroll">
+        {% for (name, link) in TECH_LINKS %}
+          <li><a href="{{ link }}" rel="me"><img src="http://g.etfv.co/{{ '/'.join(link.split('/', 3)[:3]) }}?defaulticon=lightpng" width="16" height="16" alt="{{ name }} profile"/> {{ name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
 
+    {% for project in PROJECTS %}
       <div class="thumbnail span3">
         {% if project.inactive %}
           <div class="progress progress-danger progress-striped">
@@ -169,9 +191,19 @@
             {% for role in project.roles %}
               <span class="label label-success">{{ role }}</span>
             {% endfor %}
+            {% for tag in all_tags|sort(reverse = True, attribute = 'articles') %}
+              {% if tag.name in project.tools %}
+                <a href="{{ SITEURL }}/{{ tag.url }}" rel="tooltip" class="label" data-placement="bottom" data-original-title="{{ tag.articles }} article{{ 's' if tag.articles > 1 else '' }} with this tag">{{ tag.name }}</a>
+              {% endif %}
+            {% endfor %}
+            {% set tag_names = [] %}
+            {% for tag in all_tags %}
+              {% if tag_names.append(tag.name) %}{% endif %}
+            {% endfor %}
             {% for tool in project.tools %}
-              <!-- TODO: link to tag pages, sorted by popularity, similar to what is done in articles.html code -->
-              <span class="label label">{{ tool }}</span>
+              {% if tool not in tag_names %}
+                <span class="label">{{ tool }}</span>
+              {% endif %}
             {% endfor %}
           </p>
         {% endif %}
