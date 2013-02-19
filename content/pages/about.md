@@ -19,7 +19,7 @@ If my appalling attempts to impress with the trivia above did not worked on you,
 
 Format | Language | Status
 ---|---|---
-PDF resume | [English](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg) ● [French](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1JYITJ3JU9WYvQXWlpGqLO9LzhcfAxiqJSsV8WyVhyyY) | Up to date
+PDF | [English](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg) ● [French](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1JYITJ3JU9WYvQXWlpGqLO9LzhcfAxiqJSsV8WyVhyyY) | Up to date
 LinkedIn | [English](http://linkedin.com/in/kevindeldycke/en) ● [French](http://linkedin.com/in/kevindeldycke/fr) | Synced
 Viadeo | [English](http://viadeo.com/en/profile/kevin.deldycke) ● [French](http://viadeo.com/fr/profile/kevin.deldycke) | Missing details
 
