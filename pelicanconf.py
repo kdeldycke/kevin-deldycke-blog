@@ -23,6 +23,7 @@ PAGE_SAVE_AS = PAGE_URL + 'index.html'
 PAGE_DIR = 'pages'
 
 TEMPLATE_PAGES = {
+  'templates/videos.html': 'video/index.html',
   'templates/code.html': 'code/index.html',
   }
 
