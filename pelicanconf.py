@@ -13,10 +13,6 @@ MARKUP = 'md'
 # Don't forget to install "pip install mdx_video"
 MD_EXTENSIONS = ['codehilite', 'extra', 'video']
 
-# TODO: explore
-#DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives',]
-#PAGINATED_DIRECT_TEMPLATES = ['index',]
-
 # Force the same URL structure as WordPress
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
