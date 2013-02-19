@@ -35,7 +35,7 @@ Then you'll need the `-extra` packages, which can't be installed with `-dev` pac
 
 This [issue was already reported](https://bugs.launchpad.net/ubuntu/+source/libav/+bug/1038781). But we're lucky: someone contributed on that ticket a [nice script](https://launchpadlibrarian.net/126008181/mk_libav-extra-dev.sh) to help you build the missing link.
 
-Let's fetch it and make it producde a collection of new `libav` packages:
+Let's fetch it and make it produce a collection of new `libav` packages:
 
     :::bash
     $ mkdir new_libav
