@@ -193,7 +193,7 @@
             {% endfor %}
             {% for tag in all_tags|sort(reverse = True, attribute = 'articles') %}
               {% if tag.name in project.tools %}
-                <a href="{{ SITEURL }}/{{ tag.url }}" rel="tooltip" class="label" data-placement="bottom" data-original-title="{{ tag.articles }} article{{ 's' if tag.articles > 1 else '' }} with this tag">{{ tag.name }}</a>
+                {{ m.render_tag(tag) }}
               {% endif %}
             {% endfor %}
             {% set tag_names = [] %}
