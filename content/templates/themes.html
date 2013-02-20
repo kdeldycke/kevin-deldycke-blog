@@ -1,0 +1,73 @@
+{% extends "projects.html" %}
+
+{% block title %}
+  Themes
+{% endblock %}
+
+{% block top_center %}
+  <h1>
+    <a href="/themes/" rel="bookmark" title="Permalink to Themes">Themes</a>
+    <small>I customized or created from scratch</small>
+  </h1>
+{% endblock %}
+
+
+{% set PROJECTS = [
+    { 'name':  "Kevin's blog"
+    , 'desc':  "This is the theme of that very same blog."
+    , 'thumb': ""
+    , 'roles': ["Pelican"]
+    , 'tools': ["Jinja", "Python", "Twitter Bootstrap", "Javascript"]
+    , 'links': ["https://github.com/kdeldycke/kevin-deldycke-blog"]
+    },
+    { 'name':  "Maomium-inspired theme"
+    , 'desc':  "The "
+    , 'thumb': ""
+    , 'roles': ["WordPress"]
+    , 'tools': []
+    , 'links': []
+    },
+    { 'name':  "Cool Cavemen 2009"
+    , 'desc':  "<a href='http://getk2.com'>K2 style</a> designed in collaboration with <a href='http://qpx.coolcavemen.com'>QPX</a> for the <a href='http://coolcavemen.com/discography/multipolar/'>Multipolar</a>-era website of Cool Cavemen."
+    , 'thumb': "/static/uploads/2007/04/cool-cavemen-preview.png"
+    , 'roles': ["WordPress"]
+    , 'tools': ["K2", "PHP", "HTML", "CSS", "Javascript"]
+    , 'links': ["http://github.com/kdeldycke/cool-cavemen-k2-theme/"]
+    },
+    { 'name':  "Drupify fork"
+    , 'desc':  "Fork of the <a href='http://drupal.org/project/drupify'>Drupify theme</a> for Drupal 6.x for the now defunct Cool Cavemen's online shop."
+    , 'thumb': "/static/uploads/2007/04/drupify-fork-preview.png"
+    , 'roles': ["Drupal"]
+    , 'tools': ["PHP", "CSS"]
+    , 'links': ["http://github.com/kdeldycke/drupify-fork/"]
+    },
+    { 'name':  "Cool Blue"
+    , 'desc':  "Old style of this blog based on <a href='http://getk2.com'>K2 theme</a>."
+    , 'thumb': "/static/uploads/2007/04/cool-blue-preview.png"
+    , 'roles': ["WordPress"]
+    , 'tools': ["PHP", "HTML", "CSS"]
+    , 'links': ["http://github.com/kdeldycke/cool-blue/"]
+    },
+    { 'name':  "Sapphire for K2"
+    , 'desc':  "K2 port of <a href='http://www.michaelmartine.com/free-wordpress-themes/free-wordpress-theme-sapphire/'>legacy Sapphire theme</a> by <a href='http://www.michaelmartine.com'>Michael Martine</a>"
+    , 'thumb': "/static/uploads/2007/04/sapphire-style-for-k2-03-wordpress-theme.png"
+    , 'roles': ["WordPress"]
+    , 'tools': ["K2", "PHP", "HTML", "CSS"]
+    , 'links': ["http://github.com/kdeldycke/sapphire/"]
+    },
+    { 'name':  "Coolkevmen"
+    , 'desc':  "A simple style for K2 theme with all my tiny hacks and a custom header. Used on this site until I switched to Sapphire."
+    , 'thumb': "/static/uploads/2007/04/coolkevmen-for-k2-in-action1.png"
+    , 'roles': ["WordPress"]
+    , 'tools': ["K2", "PHP", "HTML", "CSS", "Javascript"]
+    , 'links': ["http://github.com/kdeldycke/coolkevmen/"]
+    },
+    { 'name':  "Cool Cavemen e107 themes"
+    , 'desc':  "Collection of themes <a href='http://kevin.deldycke.com/2011/06/cool-cavemen-webdesign-retrospective/'>created between 2004 and 2008</a> for Cool Cavemen."
+    , 'thumb': "/static/uploads/2011/06/new_look_3_mouseover.png"
+    , 'roles': ["e107"]
+    , 'tools': ["PHP", "HTML", "CSS"]
+    , 'links': ["http://github.com/kdeldycke/cool-cavemen-e107-theme"]
+    },
+    ]
+%}

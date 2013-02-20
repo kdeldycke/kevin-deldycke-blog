@@ -25,6 +25,7 @@ PAGE_DIR = 'pages'
 TEMPLATE_PAGES = {
   'templates/videos.html': 'video/index.html',
   'templates/code.html': 'code/index.html',
+  'templates/themes.html': 'themes/index.html',
   }
 
 # Force Pelican to use the file name as the slug, instead of derivating it from the title.
