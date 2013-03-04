@@ -74,6 +74,7 @@ tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
         :::bash
         $ echo "kdenlive hold" | dpkg --set-selections
 
+
         :::bash
         $ aptitude hold kdenlive
 
@@ -81,6 +82,7 @@ tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
 
         :::bash
         $ echo "kdenlive install" | dpkg --set-selections
+
 
         :::bash
         $ aptitude unhold kdenlive
