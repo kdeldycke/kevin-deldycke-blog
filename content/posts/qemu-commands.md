@@ -30,6 +30,11 @@ Some useful command to help running and setup qemu...
         :::bash
         $ qemu-img convert /home/kevin/qemu-disk-image.qcow -O raw /home/kevin/qemu-disk-image.raw
 
+  * Convert `raw` image to a `qcow` image:
+
+        :::bash
+        $ qemu-img convert -f raw qemu-disk-image.raw -O qcow2 qemu-disk-image.qcow
+
   * Mount a RAW disk image:
 
         :::bash
