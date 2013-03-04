@@ -13,6 +13,11 @@ tags: disk, image, VirtualBox, virtualization
         :::bash
         $ VBoxManage modifyhd disk.vdi --resize 20000
 
+  * Convert a VirtualBox image to a raw image:
+
+        :::bash
+        $ VBoxManage clonehd --format RAW disk.vdi disk.img
+
   * List virtual machines:
 
         :::bash
