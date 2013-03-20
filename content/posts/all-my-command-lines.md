@@ -53,7 +53,11 @@ Here is a collection of commands lines, code and configuration snippets I collec
 
   * [CVS](http://kevin.deldycke.com/2006/11/cvs-commands/)
 
+  * [VirtualBox](http://kevin.deldycke.com/2012/05/virtualbox-commands/)
+
   * [Qemu](http://kevin.deldycke.com/2005/06/qemu-commands/)
+
+  * [libvirt](http://kevin.deldycke.com/2013/03/libvirt-commands/)
 
   * [Exim](http://kevin.deldycke.com/2010/07/exim-commands/)
 
@@ -62,7 +66,5 @@ Here is a collection of commands lines, code and configuration snippets I collec
   * [JavaScript](http://kevin.deldycke.com/2012/05/javascript-commands/)
 
   * [WordPress](http://kevin.deldycke.com/2011/12/wordpress-commands/)
-
-  * [VirtualBox](http://kevin.deldycke.com/2012/05/virtualbox-commands/)
 
 For the context, you can read this [introduction](http://kevin.deldycke.com/2006/10/useful-commands-introduction/).
