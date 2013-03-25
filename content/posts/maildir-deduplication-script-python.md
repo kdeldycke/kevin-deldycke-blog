@@ -13,4 +13,4 @@ I created this script to clean up a Maildir folder I messed up after moving repe
 
 This variable header make mails looks different from the point of view of the script. That's explain why I implemented the `HEADERS_TO_IGNORE` parameter with the default set to `X-MIMETrack`.
 
-The [script is available on my GitHub](http://github.com/kdeldycke/scripts/blob/master/maildir-deduplicate.py) repository. It was tested on MacOS X 10.6 with python 2.6.2 but should work on other systems and versions as the code is really simple (and stupid).
+The [script is available on GitHub](https://github.com/kdeldycke/maildir-deduplicate). It was tested on MacOS X 10.6 with python 2.6.2 but should work on other systems and versions as the code is really simple (and stupid).
