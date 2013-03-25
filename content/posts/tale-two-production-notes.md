@@ -25,7 +25,7 @@ The original photos were not consistent. To make them work as a slideshow, they 
 
 ![](/static/uploads/2013/03/blender-timlapse-stabilization.jpg)
 
-While I could feel the power the tracking tools, my limited knowledge of Blender stopped me. I abandoned this approach. But one day for sure, I'll give Blender the time it deserves.
+While I could feel the power of the tracking tools, my limited knowledge of Blender stopped me. I abandoned this approach. But one day for sure, I'll give Blender the time it deserves.
 
 
 ## vid.stab & Kdenlive
