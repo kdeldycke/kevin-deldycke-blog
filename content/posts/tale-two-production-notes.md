@@ -25,7 +25,7 @@ The original photos were not consistent. To make them work as a slideshow, they 
 
 ![](/static/uploads/2013/03/blender-timlapse-stabilization.jpg)
 
-While I could feel the power the tracking tools, my limited knowledge of Blender stopped me. I abandoned this approach. But one day for sure, I'll give Blender the time it deserves.
+While I could feel the power of the tracking tools, my limited knowledge of Blender stopped me. I abandoned this approach. But one day for sure, I'll give Blender the time it deserves.
 
 
 ## vid.stab & Kdenlive
@@ -85,6 +85,6 @@ Then I used that mask to blend the photos with a background fiber texture from [
     :::bash
     $ find ./ -iname "pict*.png" -exec composite "{}" ./stressed_linen-1080p.png ./Masque-02.png "{}"-composed.png \;
 
-Finally I send these pre-rendered keyframes to slowmoVideo to produce a 4 minutes ultra-slow-motion. Tomasito edited the result to add a title and credits.
+Finally I send these pre-rendered keyframes to slowmoVideo to produce a 4 minutes ultra-slow-motion. Then Tomasito added a title and credits.
 
-There is no magic and the final result could have been better if properly shot. What's missing was a steady canvas and good camera positioning, and of course a lower delay between photos.
+There is no magic and the final result could have been better if properly shot. What's missing was a steady canvas and good camera positioning, and of course a lower delay between photos. These are the perfect conditions to produce a proper timelapse, and I'm sure we'll demonstrate that in a future project.
