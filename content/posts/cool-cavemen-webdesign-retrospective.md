@@ -9,7 +9,7 @@ Before settling on its current name, the Cool Cavemen project was referred to by
 
 ![](/static/uploads/2011/06/2004_11_13.png)
 
-In fact the [original HTML mockup](http://coolcavemen.com/2004_11_01-first-cavemen/index.html) this theme is based on still exists. It is dated back to November 1st, 2004, which is now the official [Cool Cavemen anniversary](http://coolcavemen.com/2005/joyeux-anniversaire-cool-cavemen-bientot-le-premier-cd/). The theme above was created two weeks later.
+In fact the [original HTML mockup](http://web.archive.org/web/20120429001808/http://coolcavemen.com/2004_11_01-first-cavemen/index.html) this theme is based on still exists. It is dated back to November 1st, 2004, which is now the official [Cool Cavemen anniversary](http://coolcavemen.com/2005/joyeux-anniversaire-cool-cavemen-bientot-le-premier-cd/). The theme above was created two weeks later.
 
 When I created the Cool Cavemen's site, I choose e107. Back then I perceived it to be the only Open Source PHP-based CMS having the best balance between a clean and a powerful theme engine. That was my opinion before decided to [switch to WordPress](http://kevin.deldycke.com/2006/08/e107-to-wordpress-migration-here-is-why/).
 
@@ -61,3 +61,8 @@ The final update we made was when our [Raw EP](http://coolcavemen.com/discograph
 
 ![](/static/uploads/2011/06/coolcavemen.png)
 
+Then I switched to WordPress:
+
+![](/static/uploads/2011/06/cool-cavemen-2008-raw-ep-k2-theme.png)
+
+The new theme was based on [K2](http://getk2.com), on which I added a [corner banner](http://kevin.deldycke.com/2008/06/how-to-add-a-corner-banners-to-a-k2-wordpress-theme-style/) while it was on beta.
