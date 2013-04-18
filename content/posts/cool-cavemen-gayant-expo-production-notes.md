@@ -47,9 +47,10 @@ The raw recording was later remixed by Thomas of the [SoundUp Studio](http://sou
 
 Using different software for audio and video editing, proved to be challenging. And we were worried about the effect of bad synchronization. After some research, it looks like humans tolerate an error below 100ms:
 
->
-100 ms being the limit under which the temporal gap between audio and video cannot be noticed.
-— [Enforcing Multipoint Multimedia Synchronisation in Videoconferencing Applications](http://books.google.fr/books?id=3IdKbKOxZL4C&pg=PA69&lpg=PA69), Philippe Owezarski, LAAS-CNRS
+<blockquote>
+  <p>100 ms being the limit under which the temporal gap between audio and video cannot be noticed.</p>
+  <small>Philippe Owezarski (LAAS-CNRS), <cite title="Enforcing Multipoint Multimedia Synchronisation in Videoconferencing Applications"><a href="http://books.google.fr/books?id=3IdKbKOxZL4C&amp;pg=PA69&amp;lpg=PA69">Enforcing Multipoint Multimedia Synchronisation in Videoconferencing Applications</a></cite></small>
+</blockquote>
 
 Now that we have our error margin, we need a workflow. We managed to design one based on a reference track extracted from the camera recording:
 
