@@ -67,4 +67,4 @@ That's all ! My solution is not supposed to work (and was not tested) with Inter
 
 I've provided you with all the technical details to create a corner banner and add it to your K2 style seamlessly. It's now up to you to adapt it to your needs. Be Creative ! Oh, and by the way, when you'll change the banner PNG file, do not forget to update the CSS code with your image width and height.
 
-**Update**: [my friend QPX](http://qpx.coolcavemen.com) sent me an alternative banner made with photoshop: here is the [ready-to-use PNG file](/static/uploads/2008/06/corner-banner-qpx.png) and the [photoshop source file](/static/uploads/2008/06/corner-banner-qpx.psd).
+**Update**: [my friend QPX](http://wqpx.wordpress.com) sent me an alternative banner made with photoshop: here is the [ready-to-use PNG file](/static/uploads/2008/06/corner-banner-qpx.png) and the [photoshop source file](/static/uploads/2008/06/corner-banner-qpx.psd).

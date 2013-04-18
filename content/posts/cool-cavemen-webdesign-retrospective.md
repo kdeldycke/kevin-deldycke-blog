@@ -57,7 +57,7 @@ The last one had an interactive header, with tiny sketches showing up on mouse o
 
 Unfortunately we didn't found any of these themes matching the Cool Cavemen spirit (whatever that is). If these [alternatives were publicly discussed](http://coolcavemen.com/forums/topic/nouveaux-look-du-site/), we decided that no one was going to replace our previous theme.
 
-The final update we made was when our [Raw EP](http://coolcavemen.com/discography/raw/) was released. We basically applied filters on the header to match Raw's cover. We also updated our logo to use the one designed for us by [QPX](http://qpx.coolcavemen.com):
+The final update we made was when our [Raw EP](http://coolcavemen.com/discography/raw/) was released. We basically applied filters on the header to match Raw's cover. We also updated our logo to use the one designed for us by [QPX](http://wqpx.wordpress.com):
 
 ![](/static/uploads/2011/06/coolcavemen.png)
 
