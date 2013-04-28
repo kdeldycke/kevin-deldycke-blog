@@ -9,7 +9,6 @@ SITESUBTITLE = "Open-Source Software Engineer"
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 LOCALE = 'C'
-MARKUP = 'md'
 # Don't forget to install "pip install mdx_video"
 MD_EXTENSIONS = ['codehilite', 'extra', 'video']
 
@@ -36,6 +35,9 @@ TAG_SAVE_AS = TAG_URL + 'index.html'
 
 CATEGORY_URL = 'category/{slug}/'
 CATEGORY_SAVE_AS = CATEGORY_URL + 'index.html'
+
+YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
 
 # Deactivate author URLs
 AUTHOR_SAVE_AS = False

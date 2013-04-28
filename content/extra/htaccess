@@ -18,6 +18,10 @@ RedirectMatch 301 ^/category/lang/fr/(.*) /category/francais/$1
 RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
 RedirectMatch 301 ^/archives/.* /archives.html
 
+# Yearly and monthly archive are no longer paginated
+RedirectMatch 301 ^/(\d{4})/page/\d+/?.* /$1/
+RedirectMatch 301 ^/(\d{4}/\d{2})/page/\d+/?.* /$1/
+
 # WordPress feeds for blog, tags and categories
 RedirectMatch 301 (.*)/feed/(rss2?|rdf)/?$ $1/feed/
 
@@ -33,11 +37,6 @@ RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ http://kevin-deldycke-b
 #RedirectMatch 301 /tag/?$ /tags.html
 #RedirectMatch 301 /category/?$ /categories.html
 
-# WordPress' yearly and monthly archive pages are gone (HTTP 410 code)
-RedirectMatch gone /\d{4}/?$
-RedirectMatch gone /\d{4}/page/\d+/?$
-RedirectMatch gone /\d{4}/\d{2}/?$
-RedirectMatch gone /\d{4}/\d{2}/page/\d+/?$
 # Intermediate category are gone too
 RedirectMatch gone /category/lang/?$
 RedirectMatch gone /category/lang/page/\d+/?$
