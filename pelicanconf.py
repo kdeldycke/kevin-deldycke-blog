@@ -102,8 +102,9 @@ LINKS =  (
     ('Tags', '/tags.html'),
     )
 
+PLUGIN_PATH = '../pelican-plugins'
 PLUGINS = [
-    'pelican.plugins.sitemap',
+    'sitemap',
     ]
 
 # TODO: align default SITEMAP config to http://wordpress.org/extend/plugins/google-sitemap-generator/stats/
