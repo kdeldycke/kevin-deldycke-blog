@@ -18,6 +18,11 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush
         :::bash
         $ exiftool -all= image.jpg
 
+  * Prefix all JPEG filename with their EXIF date:
+
+        :::bash
+        $ for i in *.jpg; do exiv2 -v -r '%Y%m%d_%H%M%S_:basename:' rename "$i"; done
+
   * Remove recursively (and in-place) the color profile and comments embedded in all PNG images:
 
         :::bash
