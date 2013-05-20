@@ -33,7 +33,7 @@ My 6 months test period of Leopard is over. Time to switch back to a Linux/KDE d
   * upgraded Kubuntu from Karmic Koala (9.10) to Lucid Lynx (10.04),
   * changed my HDD to a SSD (a [160 Go Intel X25-M Postville](http://www.amazon.com/gp/product/B002IGT7IU/ref=as_li_ss_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002IGT7IU)).
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002IGT7IU)
+
 
 Still, my machine crash hard. Here is the kind of kernel crashes I have on kubuntu with this machine:
 

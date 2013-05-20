@@ -7,7 +7,7 @@ I'm used to access distant machine's file systems via ssh. My favorite environme
 
 To get similar features in Leopard, we have to rely on [MacFuse](http://code.google.com/p/macfuse/) and [sshfs](http://fuse.sourceforge.net/sshfs.html). I'll explain here how I've installed these components on [MacOSX 10.5](http://www.amazon.com/gp/product/B000FK88JK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000FK88JK).
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B000FK88JK&camp=217145&creative=399381)
+
 
 ![MacFUSE_Banner](/static/uploads/2009/09/MacFUSE_Banner.png)
 

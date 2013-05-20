@@ -11,7 +11,7 @@ If this video was [released 4 months ago](http://kevin.deldycke.com/2012/01/burl
 
 Being a newly self-proclaimed (but inexperienced) videographer, I was actively looking for shooting something, anything. A quick and dirty music video will provide a great excuse to test my newly purchased [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW). So we arranged to meet at the [SoundUp Studio](http://soundupstudio.com) to shoot a video for [Burlesque Burglary](http://coolcavemen.com/disc/song/burlesque-burglary/). 
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTW&camp=217145&creative=399381)
+
 
 During this period, I was working on a 1-hour [video of Cool Cavemen's 2009 biggest concert](http://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/). The editing process of the latter was quite frustrating as I [only had 3½ cameras](http://kevin.deldycke.com/2010/02/cool-cavemen-live-gayant-expo-part-ii/). Not enough to decently cover a live performance.
 
@@ -31,25 +31,25 @@ After all theses shots, the band was warmed up and comfortable enough to start s
 
 I shot everything with a [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://www.amazon.com/gp/product/B002NEGTTM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002NEGTTM) lens. This lens is quite sharp for a non-L series, but the final video doesn't do justice to it: several shots could have been better, but I had limited knowledge of photography at that time, and had no good focus technique. 
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTM&camp=217145&creative=399373)
+
 
 But that lens has a really good optical stabilizer, which was a huge relief as I hadn't bought a tripod yet. In fact all shots of the video were hand-held. For some in which I needed better steadiness, I used a [Gorillapod](http://www.amazon.com/gp/product/B002FGTWOC/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002FGTWOC) to give me extra contact-point. This is far from being a comfortable but it did the job, at the price of back-pain at the end of the day. 
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002FGTWOC&camp=217145&creative=399381)
+
 
 I also used my only other lens, the [Canon EF 50mm f/1.8 II](http://www.amazon.com/gp/product/B00007E7JU/ref=as_li_ss_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B00007E7JU), to film some instrument's close-ups. But only one or two of these takes made it to the final version of the video. 
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B00007E7JU)
+
 
 To keep color temperature consistent, I made a custom white-balance using a [white card](http://www.amazon.com/gp/product/B002P5DNY8/ref=as_li_ss_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002P5DNY8). Here is Vince holding it for me: 
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002P5DNY8)
+
 
 ![](/static/uploads/2012/05/vince-holding-white-card.jpg)
 
 To light the room, I placed behind the camera 4 x [250 W tungsten lamps](http://www.amazon.com/gp/product/B005G97EOU/ref=as_li_ss_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B005G97EOU), each pair lodged in a StarWay Clap-500 fixture: 
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B005G97EOU)
+
 
 ![](/static/uploads/2012/05/starway-clap-500-blinder.jpg)
 

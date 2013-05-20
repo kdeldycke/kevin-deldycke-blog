@@ -5,7 +5,7 @@ tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, M
 
 [Quartz Composer](http://en.wikipedia.org/wiki/Quartz_Composer) is a really nice piece of software for [visualists](http://createdigitalmotion.com). It allows you to create animated and/or interactive compositions mixing sounds, images, effects, user inputs and any other kind of data. In fact, Quartz Composer was the main reason I bought a [MacBook Pro](http://www.amazon.com/gp/product/B002QQ8H8I/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002QQ8H8I) 18 months ago.
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002QQ8H8I&camp=217145&creative=399373)
+
 
 The first composition I created was this simple kaleidoscopic effect with shifting colors:
 
@@ -23,7 +23,7 @@ If creating a composition is really simple and straightforward, exporting the re
 
 I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-to-movie) v1.3b plugin. But it didn't worked on my [Snow Leopard](http://www.amazon.com/gp/product/B001AMHWP8/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B001AMHWP8),
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001AMHWP8&camp=217145&creative=399381) throwing me this exception every time:
+ throwing me this exception every time:
 
 ![](/static/uploads/2010/10/quartz-composer-export-to-movie-exception.png)
 
@@ -54,7 +54,7 @@ I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-t
 
 So I tried the old trick of [importing compositions in iMovie](http://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was possible in the past with [iMovie](http://www.amazon.com/gp/product/B003XKRZES/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B003XKRZES) '06, [Apple removed this feature in iMovie '09](http://www.quartzcompositions.com/phpBB2/viewtopic.php?t=594).
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B003XKRZES&camp=217145&creative=399381)
+
 
 My last chance was another plugin: [Movie Exporter](http://quartzcomposer.com/plugins/6-movie-exporter) (v0.0.20091011). As the other one, you have to drop your original composition in a _Render in Image_ macro block and export the resulting stream to the _Movie Exporter_ block:
 

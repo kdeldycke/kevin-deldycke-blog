@@ -53,7 +53,7 @@ After these two failed attempts, I was quite depressed and not far from surrende
 
 This is the only method that worked for me, and basically, is the same as the first one, but on Mac OS X. Additionally, it involves a local mail server. This procedure was tested several times on [Leopard (OSX 10.5)](http://www.amazon.com/gp/product/B000FK88JK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000FK88JK).
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B000FK88JK&camp=217145&creative=399381)
+
 
   1. First things first, [download the trial version of Lotus Notes](http://www.ibm.com/developerworks/downloads/ls/lsndad/?S_TACT=105AGX28&S_CMP=TRIALS) client for Mac OS X (unfortunately you have to register) and install it. I used Lotus Notes 7.0.3 for Mac OS X Leopard (10.5):
 
@@ -185,7 +185,7 @@ My ultimate action was to [convert the Dovecot maildir to Kmail maildir](http://
 
 The same procedure as in method #3 can be performed with the trial version of the Lotus Notes client v8.5, running on [Mac OS X Snow Leopard (10.6)](http://www.amazon.com/gp/product/B001AMHWP8/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B001AMHWP8).
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001AMHWP8&camp=217145&creative=399381) Here are the equivalent screenshots:
+ Here are the equivalent screenshots:
 
 ![](/static/uploads/2010/09/010-lotus-notes-mac-install.png)
 
@@ -239,7 +239,7 @@ The same procedure as in method #3 can be performed with the trial version of th
 
 I just tried the first method again (IMAP connection with Note's fat client). But this time I installed Lotus Notes 8.5.2 trial version on a fresh [Windows XP](http://www.amazon.com/gp/product/B0002423YK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0002423YK) running within a QEMU instance.
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0002423YK&camp=217145&creative=399381) As you can see, it works:
+ As you can see, it works:
 
 ![](/static/uploads/2010/09/lotus-notes-imap-mail-migration-via-qemu.png)
 

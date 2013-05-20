@@ -9,9 +9,9 @@ http://www.youtube.com/watch?v=RpFqhcihQbw
 
 That video was mostly shot with my [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW) in 1080p at 24fps, with a [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](http://www.amazon.com/gp/product/B002LVUIXA/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002LVUIXA). 
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTW&camp=217145&creative=399381)
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002LVUIXA&camp=217145&creative=399381)
+
+
 
 The final video also include footage from various people in the audience:
 
@@ -21,11 +21,11 @@ The final video also include footage from various people in the audience:
 
   * and finally Sylvie shot at 480p/30fps with [Dam](http://coolcavemen.com/biography/dam/)'s point-and-shoot camera, the one he uses for his [guitar cover videos](http://www.youtube.com/user/damdahu/featured).
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0043AT7AM)
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0029U0X0Q)
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001SER45Q&camp=217145&creative=399381)
+
+
+
 
 The video was edited with the latest version of Kdenlive and exported to a 1080p/24fps stream:
 

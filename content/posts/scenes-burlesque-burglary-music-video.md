@@ -13,9 +13,9 @@ http://www.youtube.com/watch?v=yNCtfnQp1uw
 
 I created this video using leftovers from the recording session. Which means the video material was all produced by a [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW) and a [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://www.amazon.com/gp/product/B002NEGTTM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002NEGTTM) lens, at 1080p, 25 fps and a 1/50s shutter speed. 
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTW&camp=217145&creative=399381) 
+ 
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTM&camp=217145&creative=399373)
+
 
 If you're a long-time reader of that blog, it's not a surprise for you that I edited it with [Kdenlive](http://kdenlive.org). Here is my final timeline, for reference and inspiration:
 

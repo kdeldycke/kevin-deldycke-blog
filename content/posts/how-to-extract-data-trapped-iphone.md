@@ -5,7 +5,7 @@ tags: Android, Apple, Backup, CSV, iPhone, iTunes, Apple, Mac OS X, Smartphones,
 
 After 2 years using an [iPhone 3G](http://www.amazon.com/gp/product/B001AXA056/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B001AXA056), it's time for me to [switch to the Android world](http://twitter.com/kdeldycke/status/24219289221). [My Apple era is over](http://twitter.com/kdeldycke/status/22007247873), I need a plateform that is more linux and open-source friendly.
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001AXA056&camp=217145&creative=399373)
+
 
 Before erasing and [selling my iPhone](http://twitter.com/kdeldycke/status/24687160120), I want to backup and extract all the data I produced with it and that is still trapped inside. This mean photos, SMSs, voice messages, safari bookmarks, etc...
 

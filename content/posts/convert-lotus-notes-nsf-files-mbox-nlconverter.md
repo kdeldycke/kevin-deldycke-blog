@@ -11,7 +11,7 @@ If you want to extract mails out of your `.nsf` database, this might be the tool
 
 Here is how I installed `nlconverter` on a [Windows 2000](http://www.amazon.com/gp/product/B0006HMWO4/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0006HMWO4) (SP4) machine:
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B0006HMWO4&camp=217145&creative=399381)
+
 
   1. First I downloaded and installed the [official Python builds for Windows](http://www.python.org/download/releases/) ([2.6.6 precisely](http://www.python.org/ftp/python/2.6.6/python-2.6.6.msi)):
 

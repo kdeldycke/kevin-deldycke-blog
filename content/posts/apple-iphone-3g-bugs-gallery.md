@@ -5,7 +5,7 @@ tags: Apple, bugs, iPhone, orange
 
 Just for the record, here are screenshots of network errors and user interface glitches I collected during 2 years of an [iPhone 3G](http://www.amazon.com/gp/product/B001AXA056/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B001AXA056) use:
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B001AXA056&camp=217145&creative=399373)
+
 
 ![](/static/uploads/2010/12/IMG_2170.png)
 

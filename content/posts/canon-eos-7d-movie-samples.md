@@ -7,7 +7,7 @@ tags: 1080p, 480p, 720p, Canon EOS 7D, photography, sample, Video
 
 Here is a collection of Eiffel Tower's videos I took today with my [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW). These quick and dirty clips were shots this late afternoon.
 
-![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTW&camp=217145&creative=399381)
+
 
 Please don't look at the image quality. That's not the point. We're interested in bitstream, video/audio codecs and media container here.
 
@@ -29,7 +29,7 @@ Again, these files were extracted right out of the camera, without any modificat
 
 Even if these details have no importance, here are some parameters under which these clips were shots (may be useful for debugging):
 
-  * Lens: [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://www.amazon.com/gp/product/B002NEGTTM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002NEGTTM) ![](http://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B002NEGTTM&camp=217145&creative=399373)
+  * Lens: [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://www.amazon.com/gp/product/B002NEGTTM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002NEGTTM) 
   * IS: On
   * ISO: 100
   * Exposition compensation: 0
