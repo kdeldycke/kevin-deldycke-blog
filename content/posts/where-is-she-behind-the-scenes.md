@@ -79,14 +79,14 @@ http://www.youtube.com/watch?v=EGh-DZjIjHg
 
 Tomasito edited alone the source footage (1080p, 23.976 fps, 1/50s shutter) in Kdenlive:
 
-![](/static/uploads/2013/where-is-she-ungraded-kdenlive-timeline.png)
+![](/static/uploads/2013/where-is-she-ungraded-kdenlive-timeline.jpg)
 
 
 At that stage, I just helped him by creating the seamless split screens:
 
-![](/static/uploads/2013/where-is-she-split-screen-001.png)
+![](/static/uploads/2013/where-is-she-split-screen-001.jpg)
 
-![](/static/uploads/2013/where-is-she-split-screen-002.png)
+![](/static/uploads/2013/where-is-she-split-screen-002.jpg)
 
 
 ## Color correction
