@@ -70,9 +70,11 @@ And some extra photos of the shooting:
 ![](/static/uploads/2013/where-is-she-behind-the-scenes-021.jpg)
 
 
-The [wedding entrance](http://kevin.deldycke.com/2012/11/wedding-entrance-paris-video-postcard/) video was the first time I used my [Glidecam HD-2000](http://www.amazon.com/gp/product/B0020LB0MO/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0020LB0MO&linkCode=as2&tag=kevideld-20). But *Where is she ?* was the [first publicly released video](http://kevin.deldycke.com/2012/08/where-is-she-music-video-released/) featuring my new toy:
+The [wedding entrance](http://kevin.deldycke.com/2012/11/wedding-entrance-paris-video-postcard/) video was the first time I used my [Glidecam HD-2000](http://www.amazon.com/gp/product/B0020LB0MO/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0020LB0MO&linkCode=as2&tag=kevideld-20). But *Where is she ?* was the [first publicly released video](http://kevin.deldycke.com/2012/08/where-is-she-music-video-released/) featuring my new toy. And while filming with it in Monrmartre, a police patrol car paid us a visit:
 
 http://www.youtube.com/watch?v=EGh-DZjIjHg
+
+No need to say the music video was produced in guerilla style, without any warning nor permission... ;)
 
 
 ## Editing
