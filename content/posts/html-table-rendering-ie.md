@@ -2,7 +2,6 @@ date: 2013-06-17 12:32
 title: Fix big HTML table rendering in IE
 category: English
 tags: Internet Explorer, Microsoft, OpenERP, HTML, webdesign
-status: skip
 
 It is well-known since the burst of the dot-com bubble that [tables are bad for layout](http://en.wikipedia.org/wiki/Tableless_web_design). But tables still makes perfect sense to present huge quantities of tabular data.
 
