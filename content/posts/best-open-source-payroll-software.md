@@ -38,12 +38,12 @@ You can download the [English translation](http://web.archive.org/web/2005092410
 
 <iframe src="http://www.docstoc.com/docs/document-preview.aspx?doc_id=42926223" width="574" height="613" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
 
-This document had enough influence to be cited in two academic papers in 2006 and 2009:
+This document had enough influence to be cited in four academic papers from 2006 to 2009:
 
   * [A comparison of Open Source ERP Systems](http://www.big.tuwien.ac.at/system/theses/20/papers.pdf):
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/3902152" width="574" height="613" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
-
   * [A Research on Corporate ERP Systems used for Supermarket Supply Chain Inventory Management in Turkey](http://www.slideshare.net/Agcristi/a-research-on-corporate-enterprise-resource-planning-erp):
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/3815702" width="574" height="613" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+  * [Open Source Enterprise Resource Planning Systems](http://behdasht.gov.ir/uploads/101_195_baresiye%20ERP%20haye%20matn%20baz.pdf)
+
+  * [Comparatif ERP5 / COMPIERE](http://wiki.itin.fr/index.php/Comparatif_ERP5_/_COMPIERE_MT09_FR)
