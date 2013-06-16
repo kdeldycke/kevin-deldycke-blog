@@ -25,7 +25,7 @@ And you know how I fixed this ? I fearlessly added the following piece of JavaSc
 
     :::javascript
     // Fix IE9 cells misalignment
-    matrix.find("table tr").contents().filter(function() {
+    $("table tr").contents().filter(function() {
         return this.nodeType == 3;
     }).remove();
 
