@@ -3,7 +3,7 @@ title: How-to add a corner banner to a K2 Wordpress theme's style
 category: English
 tags: alpha, banner, corner, CSS, design, Gimp, HTML, IE, K2, Photoshop, PHP, PNG, qpx, style, Theme, transparency, Web, WordPress
 
-![](/static/uploads/2008/06/beta-version-illustration.png)
+![](/static/uploads/2008/beta-version-illustration.png)
 
 In this post I will give you all the technical details to create a corner banner for the wordpress K2 theme. This solution is uninstrusive as it can be bundled with a K2 style without modifying the K2 core theme.
 
@@ -41,7 +41,7 @@ Then we need to add the following CSS code to our style (`/wp-content/themes/k2/
       text-decoration: none;
     }
 
-This CSS code refer to the [`corner-banner.png`](/static/uploads/2008/06/corner-banner.png) which is a 205x205 px PNG image with an alpha channel to simulate shadows and fine transparency. Here is the [Gimp `xcf` source file](/static/uploads/2008/06/corner-banner.xcf) I used to generate it.
+This CSS code refer to the [`corner-banner.png`](/static/uploads/2008/corner-banner.png) which is a 205x205 px PNG image with an alpha channel to simulate shadows and fine transparency. Here is the [Gimp `xcf` source file](/static/uploads/2008/corner-banner.xcf) I used to generate it.
 
 This CSS code is designed for a top right banner. If you need a top left banner, replace:
 
@@ -67,4 +67,4 @@ That's all ! My solution is not supposed to work (and was not tested) with Inter
 
 I've provided you with all the technical details to create a corner banner and add it to your K2 style seamlessly. It's now up to you to adapt it to your needs. Be Creative ! Oh, and by the way, when you'll change the banner PNG file, do not forget to update the CSS code with your image width and height.
 
-**Update**: [my friend QPX](http://wqpx.wordpress.com) sent me an alternative banner made with photoshop: here is the [ready-to-use PNG file](/static/uploads/2008/06/corner-banner-qpx.png) and the [photoshop source file](/static/uploads/2008/06/corner-banner-qpx.psd).
+**Update**: [my friend QPX](http://wqpx.wordpress.com) sent me an alternative banner made with photoshop: here is the [ready-to-use PNG file](/static/uploads/2008/corner-banner-qpx.png) and the [photoshop source file](/static/uploads/2008/corner-banner-qpx.psd).

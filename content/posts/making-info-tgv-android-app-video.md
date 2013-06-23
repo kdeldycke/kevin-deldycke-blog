@@ -35,11 +35,11 @@ Here is a snapshot of this first test on my [Samsung Galaxy S](http://www.amazon
 
 
 
-![](/static/uploads/2010/09/original-video-settings.png)
+![](/static/uploads/2010/original-video-settings.png)
 
 Here is how this first test setup looked like:
 
-![](/static/uploads/2010/09/2010-09-20-17.30.40.jpg)
+![](/static/uploads/2010/2010-09-20-17.30.40.jpg)
 
 All these parameters were calibrated for an afternoon shooting session, but we really started to record in the evening (look at the phone's clock in the video!). Because of this delay, I lost the white stripe of natural light coming from the top of the background. At the last minute, I started to play with the white balance. Then I changed my mind and removed the ND-filter. And closed the lens to f/3.5 to get a more manageable depth of field. In a word, I messed up all my initial settings resulting in a final video looking worse (in my opinion) compared to my first test. _The better is the enemy of the good_...
 
@@ -47,7 +47,7 @@ But there is something I'm quite happy with from my last minute changes: dimming
 
 Here is a photo of the final setup, in which I marked the focus plan with black electric tape:
 
-![](/static/uploads/2010/09/2010-09-21-15.25.45.jpg)
+![](/static/uploads/2010/2010-09-21-15.25.45.jpg)
 
 As you can see in the final video, I have some aliasing issues due to the [pixelated nature of the phone's screen](http://en.wikipedia.org/wiki/Active-matrix_OLED) and the [line skipping happening on 7D's CMOS sensor](http://vimeo.com/11000025). I tried to reduce the aliasing by moving the phone to a distance were the natural softness of the Sigma lens will occur. I didn't really succeed as it's really hard to maintain a constant distance to the lens while holding the phone by hand.
 
@@ -55,7 +55,7 @@ Yes, I could have tried to put the phone on a stand but I really wanted to show 
 
 By the way, about hands: there a trick involved here. The left hand is mine, but the right one is my co-worker's. There was a big advantage using this technic: with an eye on the 7D's rear LCD monitor, I can fully concentrate on the image and micro-adjust the distance of the phone to the lens. In the same time, my co-worker can focus (pardon the pun) on the action and follow the script. The only time when you can see my right hand is when I take the [Acer Liquid E](http://mobile.acer.com/en/phones/liquide/) to demonstrate the propagation of messages via Twitter:
 
-![](/static/uploads/2010/09/htc-desire-and-acer-liquid-e.png)
+![](/static/uploads/2010/htc-desire-and-acer-liquid-e.png)
 
 ## Video editing
 
@@ -63,11 +63,11 @@ For video editing, I knew I'll not be able to manipulate my 7D's files natively.
 
 So I did the entire video editing with Kdenlive. Here is what the final project looks like in the timeline:
 
-![](/static/uploads/2010/09/kdenlive-info-tgv-project-timeline.png)
+![](/static/uploads/2010/kdenlive-info-tgv-project-timeline.png)
 
 Inter-title cards were created from scratch with [Gimp](http://www.gimp.org):
 
-![](/static/uploads/2010/09/gimp-title-card-editing.png)
+![](/static/uploads/2010/gimp-title-card-editing.png)
 
 ## Audio
 
@@ -79,7 +79,7 @@ Let's talk audio now. I personally want to thanks [Tomasito, Cool Cavemen's saxo
 
 
 
-![](/static/uploads/2010/09/shure-beta-57a-microphone-on-gorillapod.jpg)
+![](/static/uploads/2010/shure-beta-57a-microphone-on-gorillapod.jpg)
 
 I wanted to record the speach on my linux machine but I didn't managed to compile the [Line 6 open-source drivers](http://line6.com/community/thread/4031). In fact the module compiled but refused to load:
 
@@ -128,7 +128,7 @@ Again, as we were in a hurry, we didn't paid close attention to the way Arnaud w
 
 When I gave the raw recording to [Thomas](http://coolcavemen.com/biography/jimy-wong/) for mixing, he didn't take long for him to realize how bad we were at recording ! Even without knowing how we proceed to record and what the setup looked like, he pointed out all the stuff we did wrong. I know him for a long time now, but he still amaze me with his technical and practical knowledge about audio stuff. I really want to thanks him for his help on this project !
 
-![](/static/uploads/2010/09/tom-at-work-in-sound-up-studio.png)
+![](/static/uploads/2010/tom-at-work-in-sound-up-studio.png)
 
 By the way, if you're looking to record/mix/master any audio material (from a simple voice-over to a full band), I really recommend you to [contact his studio](http://soundupstudio.com). And tell him you heard of him by reading my blog, he may give you a discount ! ;)
 

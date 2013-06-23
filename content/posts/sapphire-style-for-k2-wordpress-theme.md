@@ -2,7 +2,7 @@ date: 2007-03-21 12:49:41
 title: Sapphire style for K2 Wordpress theme
 tags: Blog, CSS, K2, Template, Theme, Web, WordPress
 
-![Sapphire custom style for K2 Wordpress Theme](/static/uploads/2007/03/k2-sapphire.png)
+![Sapphire custom style for K2 Wordpress Theme](/static/uploads/2007/k2-sapphire.png)
 
 Yesterday I've build a new [K2](http://getk2.com) style based on [the legacy Sapphire 1.0 Wordpress theme](http://www.michaelmartine.com/free-wordpress-themes/free-wordpress-theme-sapphire/) by [Michael Martine](http://www.michaelmartine.com). This is the result of my love to the blue bend of Sapphire and the versatility of K2.
 

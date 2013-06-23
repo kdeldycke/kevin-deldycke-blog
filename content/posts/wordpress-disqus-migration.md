@@ -33,7 +33,7 @@ After all these updates, my comments where ready to be [exported to Disqus](http
 
 If most of my comments were successfully imported, some were left-out. The importer was not able to find their parents:
 
-![Disqus comment import: unable to find parent post](/static/uploads/2013/01/disqus-import-error.png)
+![Disqus comment import: unable to find parent post](/static/uploads/2013/disqus-import-error.png)
 
 But the reported error was not true: parent's IDs were good and referenced an existing comment. Besides, comments Disqus was not able to import were correctly placed in their thread on my original WordPress blog.
 
@@ -83,4 +83,4 @@ I then decided to forced anonymous comments to bear a generic author's name:
 
 I then sent the fixed WordPress XML export to Disqus as-is, which imported my 24 missing comments:
 
-![Disqus comment import: missing comments imported](/static/uploads/2013/01/disqus-import-complete.png)
+![Disqus comment import: missing comments imported](/static/uploads/2013/disqus-import-complete.png)

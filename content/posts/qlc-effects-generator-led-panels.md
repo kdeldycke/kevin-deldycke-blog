@@ -7,24 +7,24 @@ Here is another script I wrote some months ago. It's called [`qlc-effects-genera
 
 I used it to create some effects for my 4 el-cheapo [Mac-Mah LED wider panels](http://fr.audiofanzine.com/projecteur-traditionnel-divers/mac-mah/WIDER-PANEL-RGB-648-LEDS-DMX/). This script helped me generate column and row presets of my 4x8 pixels LED matrix for some basic colors:
 
-![](/static/uploads/2010/06/qlc-wider-panel-presets.png)
+![](/static/uploads/2010/qlc-wider-panel-presets.png)
 
 Here are some photos of my preliminary tests at home:
 
-![](/static/uploads/2010/08/4-mac-mah-wider-led-panel-fushia.jpg)
+![](/static/uploads/2010/4-mac-mah-wider-led-panel-fushia.jpg)
 
-![](/static/uploads/2010/08/4-mac-mah-wider-led-panel-blue.jpg)
+![](/static/uploads/2010/4-mac-mah-wider-led-panel-blue.jpg)
 
-![](/static/uploads/2010/08/4-mac-mah-wider-led-panel-red.jpg)
+![](/static/uploads/2010/4-mac-mah-wider-led-panel-red.jpg)
 
-![](/static/uploads/2010/08/4-mac-mah-wider-led-panel-white.jpg)
+![](/static/uploads/2010/4-mac-mah-wider-led-panel-white.jpg)
 
 And finally photos of the panels on stage ([taken by Toma Heroow](http://www.heroow.fr/2009/11/18/cool-cavemen/) during [Cool Cavemen's concert in last november](http://coolcavemen.com/2009/mametzik-mad-fest-chez-march/)):
 
-![](/static/uploads/2010/08/img_0516-scaled.jpg)
+![](/static/uploads/2010/img_0516-scaled.jpg)
 
-![](/static/uploads/2010/08/img_0583-scaled.jpg)
+![](/static/uploads/2010/img_0583-scaled.jpg)
 
-![](/static/uploads/2010/08/img_0519-scaled.jpg)
+![](/static/uploads/2010/img_0519-scaled.jpg)
 
 As usual, use and hack this script at you own risks, and feel free to send me bug reports and contributions ! :)

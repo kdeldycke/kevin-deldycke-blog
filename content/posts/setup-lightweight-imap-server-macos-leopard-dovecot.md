@@ -3,7 +3,7 @@ title: Setup a lightweight IMAP server on MacOS X Leopard with Dovecot
 category: English
 tags: Dovecot, email, IMAP, Mac OS X Leopard, Apple, Mac OS X, maildir, SSL
 
-![](/static/uploads/2010/04/dovecot-on-macosx.png)
+![](/static/uploads/2010/dovecot-on-macosx.png)
 
 Last week I needed a local IMAP server on MacOS X Leopard (10.5) for temporary testing. After struggling with [courier-imap](http://www.courier-mta.org/imap/) for hours, I've finally settled on [Dovecot](http://www.dovecot.org/). You'll see below how easy it is to install and configure it.
 
@@ -65,7 +65,7 @@ That's all !
 
 You can now access your local IMAP server with any client. Here is an example with [Thunderbird](http://www.mozillamessaging.com/thunderbird/):
 
-![](/static/uploads/2010/04/thunderbird-macosx-local-imap-server-config.png)
+![](/static/uploads/2010/thunderbird-macosx-local-imap-server-config.png)
 
 And if you have problems, the first reflex is to read dovecot's logs:
 

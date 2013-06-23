@@ -3,7 +3,7 @@ title: Diva for Mandriva 2007: latest SVN revision.
 category: English
 tags: diva, Gnome, gstreamer, Linux, Mandriva, RPM, urpmi, Video
 
-![diva-002-trunk1](/static/uploads/2006/11/diva-002-trunk1.png)
+![diva-002-trunk1](/static/uploads/2006/diva-002-trunk1.png)
 
 I've compiled a new RPM of [Diva](http://www.diva-project.org) for Mandriva 2007. This RPM is the cutting-edge version of Diva based on the latest SVN revision of the project (r315). You can [find it in my repository](http://github.com/kdeldycke/mandriva-specs).
 

@@ -15,7 +15,7 @@ To get Python 2.4 on your machine, you can [install it from its source code](htt
 
 Browsing the net, I found the [repository of the "fat python" project](http://pythonmac.org/packages/py24-fat/), were you can find a [universal binary installer for Panther](http://pythonmac.org/packages/py24-fat/dmg/python-2.4.4-macosx2006-10-18.dmg). I've just installed it on my brand new Mac OS X 10.5.7 and it seems to works perfectly:
 
-![python-2.4-shell-in-mac-os-x-leopard](/static/uploads/2009/07/python-2.4-shell-in-mac-os-x-leopard.png)
+![python-2.4-shell-in-mac-os-x-leopard](/static/uploads/2009/python-2.4-shell-in-mac-os-x-leopard.png)
 
 Now that the most annoying part (to me) is done, we can install Plone via [`zc.buildout`](http://pypi.python.org/pypi/zc.buildout).
 
@@ -91,13 +91,13 @@ At the end, if your build process didn't fail, you'll be able to start your Zope
 
 Then you can fire up Safari, go to `http://localhost:8080/manage` (default Zope config), and login as the `admin` user (password: `admin`):
 
-![safari-zope-login](/static/uploads/2009/07/safari-zope-login.png)
+![safari-zope-login](/static/uploads/2009/safari-zope-login.png)
 
 Create a Plone site:
 
-![plone-site-creation](/static/uploads/2009/07/plone-site-creation.png)
+![plone-site-creation](/static/uploads/2009/plone-site-creation.png)
 
 Check that your using the right version of Plone in the control panel:
 
-![plone-323-control-panel](/static/uploads/2009/07/plone-323-control-panel.png)
+![plone-323-control-panel](/static/uploads/2009/plone-323-control-panel.png)
 

@@ -3,13 +3,13 @@ title: How-to add Google Analytics tracking to Zenphoto
 category: English
 tags: analytics, Google, hack, patch, PHP, Snippet, Web, Zenphoto
 
-![](/static/uploads/2008/08/zenphoto-12.png)
+![](/static/uploads/2008/zenphoto-12.png)
 
 This is the patch I apply on each [Zenphoto](http://www.zenphoto.org) I install and upgrade. This little hack add [Google Analytics](http://www.google.com/analytics/) tracking for all users except administrators.
 
 Why ? As you can see in [ticket #441 in Zenphoto bugtracker](http://www.zenphoto.org/trac/ticket/441), there is no intention of adding support of GA in Zenphoto, even as an optional plugin. Hence my tiny hack. And for the non-admin stuff, I like having unbiased statistics: on low-audience websites, administrators can generate more traffic than legitimate users (if not all...).
 
-Here is the [downloadable patch file](/static/uploads/2008/08/google-analytics-tracking-for-non-admin-users.patch), and its content:
+Here is the [downloadable patch file](/static/uploads/2008/google-analytics-tracking-for-non-admin-users.patch), and its content:
 
     :::diff
     diff -ru ./zenphoto-orig/zp-core/template-functions.php ./zenphoto/zp-core/template-functions.php

@@ -3,7 +3,7 @@ title: Quick How-To: Install NFS Server & Client
 category: English
 tags: CLI, Linux, Mandriva, Network, NFS, Server
 
-![nfs.png](/static/uploads/2007/01/nfs.png)
+![nfs.png](/static/uploads/2007/nfs.png)
 
 In this tiny how-to I'll explain you how to setup a machine as a NFS server and an other one as a client. This example was written based on my experiences on Mandriva, but all commands should almost be the same for other distributions.
 

@@ -7,7 +7,7 @@ Let's say you have a local copy of a mail folder you want to browse with [Kmail]
 
 Instinctively, I assumed that my folder was of the [Maildir format](http://en.wikipedia.org/wiki/Maildir), and Kmail local mails too. So I tried to copy my `~/Maildir` folder from the mail server to my local machine (`~/.kde/share/apps/kmail/mail/`). And that was the result in Kmail:
 
-![kmail-no-sub-folders.png](/static/uploads/2007/11/kmail-no-sub-folders.png)
+![kmail-no-sub-folders.png](/static/uploads/2007/kmail-no-sub-folders.png)
 
 It looks good but it's not: there is no sub-folders !
 

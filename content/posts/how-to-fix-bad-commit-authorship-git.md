@@ -7,7 +7,7 @@ Several months ago I commited some code in my GitHub repository, but I did it fr
 
 The result was not good looking, as my usual name and mail address were not attached to the commit:
 
-![](/static/uploads/2010/04/bad-git-commit-history-authorship.png)
+![](/static/uploads/2010/bad-git-commit-history-authorship.png)
 
 Let's fix this !
 
@@ -35,7 +35,7 @@ The commit I want to change is the latest in history, so I'll use the `--amend` 
 
 After this, here is how the local branches looks like in [gitg](http://trac.novowork.com/gitg/):
 
-![](/static/uploads/2010/04/amended-git-commit-in-gitg.png)
+![](/static/uploads/2010/amended-git-commit-in-gitg.png)
 
 Using the `git log -n1` command, we can compare the old commit:
 
@@ -80,5 +80,5 @@ As I told you before this is bad, but nobody really cares: I'm the only person w
 
 Finally, you can contemplate the result on GitHub, a clean and tidy commit history:
 
-![](/static/uploads/2010/04/fixed-git-commit-history-authorship.png)
+![](/static/uploads/2010/fixed-git-commit-history-authorship.png)
 

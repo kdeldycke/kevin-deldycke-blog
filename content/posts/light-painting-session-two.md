@@ -5,7 +5,7 @@ tags: Apple, Canon EOS 7D, flashlight, iPhone, light painting, long exposure, ph
 
 Here is another light painting session I've done 2 weeks ago with Jim:
 
-![](/static/uploads/2010/02/maomium-light-painting-session-two-preview.jpg)
+![](/static/uploads/2010/maomium-light-painting-session-two-preview.jpg)
 
 This time we used a more powerfull light source: a simple [Apple's iPhone](http://www.amazon.com/gp/product/B001AXA056/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B001AXA056) at full brightness.
 

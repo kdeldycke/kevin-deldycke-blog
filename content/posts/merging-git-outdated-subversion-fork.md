@@ -7,7 +7,7 @@ When working on an OpenERP project for a customer, we (sadly too frequently) hav
 
 Months later, the tainted copy residing in SVN starts rotting, stucked with its customizations in an old version of the module. Meanwhile, the original module was updated at a fast pace and kept all its freshness and purity. It's time to reconcile the two versions and backport commits from Git to Subversion. The graph below sums up the situation:
 
-![](/static/uploads/2012/09/git-svn-parallel-branches.png)
+![](/static/uploads/2012/git-svn-parallel-branches.png)
 
 The arrow at the bottom between Git and Subversion is what we have done when we decided to copy the module in the customer's project repository. The top arrow is what we want to do.
 

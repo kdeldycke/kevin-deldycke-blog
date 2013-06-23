@@ -3,7 +3,7 @@ title: Auto-saving a file at regular intervals
 category: English
 tags: Backup, cron, Linux, save
 
-![editing-cron-with-vi](/static/uploads/2009/12/editing-cron-with-vi.jpg)
+![editing-cron-with-vi](/static/uploads/2009/editing-cron-with-vi.jpg)
 
 Here is a way to autosave a file at regular intervals: use `cron` !
 

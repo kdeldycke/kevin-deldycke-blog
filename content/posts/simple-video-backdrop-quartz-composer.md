@@ -11,5 +11,5 @@ As you can see, it's just [my band](http://coolcavemen.com)'s logo, subtly glowi
 
 As usual, here is the [source composition](http://kevin.deldycke.com/static/documents/glowing-cool-cavemen.qtz), and a preview of the patch:
 
-![](/static/uploads/2010/10/glowing-cool-cavemen-patch.png)
+![](/static/uploads/2010/glowing-cool-cavemen-patch.png)
 

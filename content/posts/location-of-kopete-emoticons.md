@@ -3,7 +3,7 @@ title: Location of Kopete Emoticons
 category: English
 tags: emoticon, KDE, kopete, Linux, Theme
 
-![kopete-emoticons](/static/uploads/2006/09/kopete-emoticons.png)
+![kopete-emoticons](/static/uploads/2006/kopete-emoticons.png)
 
 Just in case your are looking for [Kopete](http://kopete.kde.org) emoticons, they are stored in `/usr/share/emoticons`...
 

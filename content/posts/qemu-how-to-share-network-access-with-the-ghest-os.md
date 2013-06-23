@@ -3,7 +3,7 @@ title: Qemu: How-To Share Network Access with the Ghest OS
 category: English
 tags: iptables, Linux, Network, Qemu
 
-![Qemu Network Sharing](/static/uploads/2005/06/photo_f3.png)
+![Qemu Network Sharing](/static/uploads/2005/photo_f3.png)
 
 Create a file `/etc/qemu-ifup` that contain:
 

@@ -3,7 +3,7 @@ title: e107 Importer WordPress plugin v1.0 released !
 category: English
 tags: Blog, CMS, e107, importer, migration, PHP, Web, WordPress
 
-![](/static/uploads/2011/01/e107-importer-configuration-screen.png)
+![](/static/uploads/2011/e107-importer-configuration-screen.png)
 
 After [3 years in limbo](http://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/), here is a new stable version of my e107 Importer plugin for WordPress, proudly numbered 1.0 ! :)
 

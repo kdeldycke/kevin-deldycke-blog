@@ -17,15 +17,15 @@ I not only edited this video. I also was in charge of the [stage lighting design
 
 ![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
 
-![working-on-grand-ma-001](/static/uploads/2012/09/working-on-grand-ma-001.jpg)
+![working-on-grand-ma-001](/static/uploads/2012/working-on-grand-ma-001.jpg)
 
-![working-on-grand-ma-002](/static/uploads/2012/09/working-on-grand-ma-002.jpg)
+![working-on-grand-ma-002](/static/uploads/2012/working-on-grand-ma-002.jpg)
 
-![working-on-grand-ma-003](/static/uploads/2012/09/working-on-grand-ma-003.jpg)
+![working-on-grand-ma-003](/static/uploads/2012/working-on-grand-ma-003.jpg)
 
 It was the first time I had so much gear to work with (mostly [Martin Mac-2000](http://www.martin.com/product/product.asp?product=mac2000profile) and [Mac-700](http://martin.com/product/product.asp?product=mac700profile)), including the full-size version of the [Grand-MA v1 lighting console](http://en.audiofanzine.com/automatic-lighting-console/ma-lighting/GrandMA-Fullsize/). A week before the show, I played with [GrandMA's emulator](http://www.malighting.com/en/products/control/grandma-onpc.html) to get a glimpse of that desk's philosophy.
 
-![](/static/uploads/2012/10/grand-ma-onpc-simulation.png)
+![](/static/uploads/2012/grand-ma-onpc-simulation.png)
 
 But this little training is not enough to get used to the GrandMA, let alone master it. So when it was time to play live, I choose simple lighting patterns and movements. Of course I made a lots of mistakes and the result was far from perfect, but it was good enough to keep the show running. Considering these conditions, my performance was a success ! :)
 
@@ -37,11 +37,11 @@ The audio is a multitrack recording taken directly from the [front of house](htt
 
 ![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
 
-![IMG_0492](/static/uploads/2012/09/IMG_0492.jpg)
+![IMG_0492](/static/uploads/2012/IMG_0492.jpg)
 
-![IMG_0502](/static/uploads/2012/09/IMG_0502.jpg)
+![IMG_0502](/static/uploads/2012/IMG_0502.jpg)
 
-![p1010733](/static/uploads/2012/09/p1010733.jpg)
+![p1010733](/static/uploads/2012/p1010733.jpg)
 
 The raw recording was later remixed by Thomas of the [SoundUp Studio](http://soundupstudio.com/).
 
@@ -62,12 +62,12 @@ Now that we have our error margin, we need a workflow. We managed to design one 
 
   3. Then, Thomas shift in time the `2010-01-29--igor--audio-desync.wav` file to precisely match the `2010-02-15--igor--audio-ref.wav` reference file, and save the result under the name `2010-02-16--igor--audio-sync.wav`. This is the file I import in Kdenlive and align with my video using the reference track.
 
-![](/static/uploads/2012/11/kdenlive-fusion-timeline.png)
+![](/static/uploads/2012/kdenlive-fusion-timeline.png)
 
 Before using that workflow on all our tracks, we checked it was not introducing delays. Unfortunately, I detected some:
 
-![export-PTFU-audio-ref](/static/uploads/2012/10/export-PTFU-audio-ref.png)
+![export-PTFU-audio-ref](/static/uploads/2012/export-PTFU-audio-ref.png)
 
-![export-PTFU-master](/static/uploads/2012/10/export-PTFU-master.png)
+![export-PTFU-master](/static/uploads/2012/export-PTFU-master.png)
 
 I introduced them when I tried to [get rid of video timecode artifacts](http://kevin.deldycke.com/2010/01/remove-videotape-timecode/). I messed with encoding parameters in Avidemux, and introduced delays. When I realized I could just use the crop filter in Kdenlive, instead of removing the timecode in an external software, I produced perfect timing. That's another big lesson of that project: stay in Kdenlive.

@@ -27,14 +27,14 @@ I choose the arm for its accessibility: if something goes wrong or the GoPro get
 
 The video was edited with Kdenlive:
 
-![](/static/uploads/2012/11/kdenlive.jpg)
+![](/static/uploads/2012/kdenlive.jpg)
 
 All footage above water are straight out of the camera. But underwater, below 3 meters, I tried to fix colors by increasing magenta tones. Here is a comparison between the raw footage and its color corrected version:
 
-![](/static/uploads/2012/11/underwater-color-correction-before-after.jpg)
+![](/static/uploads/2012/underwater-color-correction-before-after.jpg)
 
 And here is the stack of filters I used to achieve the result above.
 
-![](/static/uploads/2012/11/underwater-color-correction-filters.jpg)
+![](/static/uploads/2012/underwater-color-correction-filters.jpg)
 
 Next step: the ocean ! :)

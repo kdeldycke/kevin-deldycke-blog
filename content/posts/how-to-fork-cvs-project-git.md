@@ -49,7 +49,7 @@ Then we create a temporary copy of Drupify's CVS repository:
 
 The new Git repository automatically created is named `drupify-copy`. Here is how it looks like in [GitX](http://gitx.frim.nl) (notice tags and branches):
 
-![](/static/uploads/2010/02/git-cvs-import-in-gitx.png)
+![](/static/uploads/2010/git-cvs-import-in-gitx.png)
 
 To keep things clean and tidy, I want to relocate all the content of this repository to a `drupify-fork` folder. [Inspired by Pedro Melo](http://www.simplicidade.org/notes/archives/2009/04/merging_two_unr.html), we'll use the [`git filter-branch`](http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html) to do this job:
 
@@ -86,7 +86,7 @@ By default, `filter-branch` creates a backup of the tree using references prefix
 
 We're not the only ones to not see through this mess. GitX seems to be confused too:
 
-![](/static/uploads/2010/02/gitx-confused-by-git-branch-filter-backups.png)
+![](/static/uploads/2010/gitx-confused-by-git-branch-filter-backups.png)
 
 But [according Jakub Narębski on the Git mailing-list](http://n2.nabble.com/Removing-some-files-from-history-tp1344670p1344919.html), we can safely removes Git's backups:
 
@@ -111,7 +111,7 @@ After the cleaning, references are back to normal:
 
 We can then fire up GitX to get the ultimate proof that the relocation operation didn't change anything, but the base folder (and SHA hashes):
 
-![](/static/uploads/2010/02/history-tree-in-gitx-after-folder-change.png)
+![](/static/uploads/2010/history-tree-in-gitx-after-folder-change.png)
 
 It's time to import all this code in our main repository. First, get a local copy of our public [GitHub](http://github.com/) code base:
 
@@ -256,7 +256,7 @@ We can remove the attached `drupify` repository and its local `drupify-copy` sou
 
 At this stage, here is what our repository looks like:
 
-![](/static/uploads/2010/02/cvs-fork-merged-to-git-with-full-history.png)
+![](/static/uploads/2010/cvs-fork-merged-to-git-with-full-history.png)
 
 To keep all the details that were created by `git cvsimport`, we can add by hand all the missing refs. The only difference with the original ones is that I unified the namespace with a `drupify/` prefix:
 
@@ -270,6 +270,6 @@ To keep all the details that were created by `git cvsimport`, we can add by hand
 
 And finally, we can contemplate our work:
 
-![](/static/uploads/2010/02/final-cvs-import-and-merge-with-refs.png)
+![](/static/uploads/2010/final-cvs-import-and-merge-with-refs.png)
 
 This let me work cleanly on the CVS branch I wanted to in the first place. But there is one missing thing: all other tracked remote branches were not merged properly. I really wanted to import all of them (especially the `DRUPAL-5` branch), to keep a perfect copy of the original CSV tree. But I failed to find a way. Does anyone have a clue ?

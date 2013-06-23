@@ -7,17 +7,17 @@ Just for the record, here are screenshots of network errors and user interface g
 
 
 
-![](/static/uploads/2010/12/IMG_2170.png)
+![](/static/uploads/2010/IMG_2170.png)
 
-![](/static/uploads/2010/12/IMG_3208.png)
+![](/static/uploads/2010/IMG_3208.png)
 
-![](/static/uploads/2010/12/IMG_2158.png)
+![](/static/uploads/2010/IMG_2158.png)
 
-![](/static/uploads/2010/12/IMG_2171.png)
+![](/static/uploads/2010/IMG_2171.png)
 
-![](/static/uploads/2010/12/IMG_3214.png)
+![](/static/uploads/2010/IMG_3214.png)
 
-![](/static/uploads/2010/12/IMG_2177.png)
+![](/static/uploads/2010/IMG_2177.png)
 
-![](/static/uploads/2010/12/IMG_0010.png)
+![](/static/uploads/2010/IMG_0010.png)
 

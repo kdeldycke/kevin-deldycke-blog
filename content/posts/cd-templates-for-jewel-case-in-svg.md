@@ -23,13 +23,13 @@ Sometimes this black [strip is made of transparent polystyrene](http://www.amazo
 
 You can download those templates as SVG files under the [Creative Commons Attribution licence](http://creativecommons.org/licenses/by/2.5/). Here is the [direct link to the SVG versions of the templates](http://kevin.deldycke.com/static/documents/). Below are PNG versions for convenience :
 
-![CD Jewel Case Template - Leaflet](/static/uploads/2006/09/cd-template-jewel-case-leaflet.png)
+![CD Jewel Case Template - Leaflet](/static/uploads/2006/cd-template-jewel-case-leaflet.png)
 
-![CD Jewel Case Template - Back Cover](/static/uploads/2006/09/cd-template-jewel-case-back.png)
+![CD Jewel Case Template - Back Cover](/static/uploads/2006/cd-template-jewel-case-back.png)
 
-![CD Template - CD Face](/static/uploads/2006/09/cd-template-cd-face.png)
+![CD Template - CD Face](/static/uploads/2006/cd-template-cd-face.png)
 
-![CD Jewel Case Template - Inside Back Cover](/static/uploads/2006/09/cd-template-jewel-case-inside-back-cover.png)
+![CD Jewel Case Template - Inside Back Cover](/static/uploads/2006/cd-template-jewel-case-inside-back-cover.png)
 
-![CD Jewel Case Template - Front + Back Composition](/static/uploads/2006/09/cd-template-jewel-case-front-back-composition.png)
+![CD Jewel Case Template - Front + Back Composition](/static/uploads/2006/cd-template-jewel-case-front-back-composition.png)
 

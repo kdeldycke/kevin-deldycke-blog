@@ -9,7 +9,7 @@ To get similar features in Leopard, we have to rely on [MacFuse](http://code.goo
 
 
 
-![MacFUSE_Banner](/static/uploads/2009/09/MacFUSE_Banner.png)
+![MacFUSE_Banner](/static/uploads/2009/MacFUSE_Banner.png)
 
 First, [download the latest MacFuse dmg](http://code.google.com/p/macfuse/downloads/list) and install it. FYI, the version I've got was MacFuse 2.0.3,2.
 

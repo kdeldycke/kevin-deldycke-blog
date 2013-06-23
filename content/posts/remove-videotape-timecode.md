@@ -7,11 +7,11 @@ Since November I'm working on a video project with footages taken with an analog
 
 Because of the analog nature of the filming process' first steps (on which I had no control), I ended up with some artefacts:
 
-![](/static/uploads/2010/01/analog-videotape-timecode.png)
+![](/static/uploads/2010/analog-videotape-timecode.png)
 
 See ? No ? Here is an upscaled version:
 
-![](/static/uploads/2010/01/analog-videotape-timecode-upscaled-detail.png)
+![](/static/uploads/2010/analog-videotape-timecode-upscaled-detail.png)
 
 Yes, that's it: there is white dots on top of each frame.
 
@@ -31,5 +31,5 @@ The removal process is really straightforward: I've just added a black rectangle
 
   5. Now you have to export the result using a reasonable video codec, and that's it !
 
-![](/static/uploads/2010/01/avidemux-add-black-border.png)
+![](/static/uploads/2010/avidemux-add-black-border.png)
 
