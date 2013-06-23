@@ -138,4 +138,3 @@ Here is the final result, from the user point of view (and with additional aesth
 
 ![cd-track-delayed-publishing](/static/uploads/2007/02/cd-track-delayed-publishing.png)
 
-PS: If the code above contain formating errors (like bad html entities encoding, etc...), please look at the [file which contain the original code](/static/uploads/2006/12/cd-track-delayed-publicationphp.txt) or its [colored html version](/static/uploads/2006/12/cd-track-delayed-publicationphp.html).
