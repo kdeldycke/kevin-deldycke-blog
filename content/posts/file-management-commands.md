@@ -23,6 +23,11 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ find ./ -type f | wc -l
 
+  * List number of files accross all subfolders sharing the same name, whatever their extension is:
+
+        :::bash
+        $ find . -type f -exec basename {} \; | sed 's/\(.*\)\..*/\1/' | sort | uniq -c | grep -v "^[ \t]*1 "
+
   * List all file extensions found in a folder:
 
         :::bash
