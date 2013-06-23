@@ -4,7 +4,6 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Kevin Deldycke'
 SITENAME = u'Kevin Deldycke'
-SITEURL = 'http://kevin.deldycke.com'
 SITESUBTITLE = "Open-Source Software Engineer"
 
 TIMEZONE = 'Europe/Paris'
