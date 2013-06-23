@@ -32,6 +32,9 @@ RewriteRule /feed/atom/$ - [T=application/atom+xml]
 # Site-wide comments feeds moved to Disqus
 RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ http://kevin-deldycke-blog.disqus.com/latest.rss
 
+# Monthly-static assets are now sorted by year only
+RedirectMatch 301 ^/static/uploads/(\d+)/\d+/(.*) /static/uploads/$1/$2
+
 # Catch-all tag-like URLS
 #RedirectMatch 301 /tag/([^\/]+)/(.+)$ /tag/$1/
 #RedirectMatch 301 /tag/?$ /tags.html
