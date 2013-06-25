@@ -40,9 +40,9 @@ You can download the [English translation](http://web.archive.org/web/2005092410
 
 This document had enough influence to be cited in four academic papers from 2006 to 2009:
 
-  * [A comparison of Open Source ERP Systems](http://www.big.tuwien.ac.at/system/theses/20/papers.pdf):
+  * [A comparison of Open Source ERP Systems](http://www.big.tuwien.ac.at/system/theses/20/papers.pdf)
 
-  * [A Research on Corporate ERP Systems used for Supermarket Supply Chain Inventory Management in Turkey](http://www.slideshare.net/Agcristi/a-research-on-corporate-enterprise-resource-planning-erp):
+  * [A Research on Corporate ERP Systems used for Supermarket Supply Chain Inventory Management in Turkey](http://www.slideshare.net/Agcristi/a-research-on-corporate-enterprise-resource-planning-erp)
 
   * [Open Source Enterprise Resource Planning Systems](http://behdasht.gov.ir/uploads/101_195_baresiye%20ERP%20haye%20matn%20baz.pdf)
 
