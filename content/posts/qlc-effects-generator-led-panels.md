@@ -19,7 +19,7 @@ Here are some photos of my preliminary tests at home:
 
 ![](/static/uploads/2010/4-mac-mah-wider-led-panel-white.jpg)
 
-And finally photos of the panels on stage ([taken by Toma Heroow](http://www.heroow.fr/2009/11/18/cool-cavemen/) during [Cool Cavemen's concert in last november](http://coolcavemen.com/2009/mametzik-mad-fest-chez-march/)):
+And finally photos of the panels on stage ([taken by Toma Heroow](http://web.archive.org/web/20100605092334/http://www.heroow.fr/2009/11/18/cool-cavemen/) during [Cool Cavemen's concert in last november](http://coolcavemen.com/2009/mametzik-mad-fest-chez-march/)):
 
 ![](/static/uploads/2010/img_0516-scaled.jpg)
 
