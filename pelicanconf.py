@@ -101,7 +101,7 @@ LINKS =  (
     ('Tags', '/tags.html'),
     )
 
-PLUGIN_PATH = '../pelican-plugins'
+PLUGIN_PATH = 'plugins'
 PLUGINS = [
     'sitemap',
     ]
