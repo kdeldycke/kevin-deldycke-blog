@@ -72,7 +72,7 @@ DISPLAY_PAGES_ON_MENU = False
 DISQUS_SITENAME = "kevin-deldycke-blog"
 GOOGLE_ANALYTICS = "UA-657524-1"
 
-THEME = "theme"
+THEME = "plumage"
 
 STATIC_PATHS = [
   'uploads',
