@@ -1,6 +1,6 @@
 [submodule "plumage"]
 	path = plumage
-	url = https://github.com/kdeldycke/plumage
+	url = git@github.com:kdeldycke/plumage.git
 [submodule "plugins"]
 	path = plugins
 	url = https://github.com/getpelican/pelican-plugins
