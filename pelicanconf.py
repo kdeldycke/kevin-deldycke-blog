@@ -71,6 +71,7 @@ DISPLAY_PAGES_ON_MENU = False
 
 DISQUS_SITENAME = "kevin-deldycke-blog"
 GOOGLE_ANALYTICS = "UA-657524-1"
+GOOGLE_ANALYTICS_DOMAIN = "deldycke.com"
 
 THEME = "plumage"
 
@@ -103,6 +104,7 @@ LINKS =  (
 
 PLUGIN_PATH = 'plugins'
 PLUGINS = [
+    'neighbors',
     'sitemap',
     ]
 
