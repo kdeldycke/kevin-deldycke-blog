@@ -1,9 +1,15 @@
+# Local backups
 *~
 
+# Python
 *.py[cod]
 
 # Pelican
 *.pid
+output
+
+# Translations
+*.mo
 
 # Kevin private stuff
 Makefile
