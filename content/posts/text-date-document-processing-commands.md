@@ -63,6 +63,11 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::bash
         $ date --date=@1234567890
 
+  * Split a PDF into pages:
+
+        :::bash
+        $ pdftk doc.pdf burst
+
   * Merge 2 PDF documents:
 
         :::bash
