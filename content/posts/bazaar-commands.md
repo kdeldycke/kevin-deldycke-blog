@@ -38,3 +38,7 @@ tags: bazaar, CLI, development, Launchpad, Linux, OpenERP, programming, Version 
         :::bash
         $ bzr break-lock
 
+  * Produce a patch from uncommited local changes with absolute path:
+
+        :::bash
+        $ bzr diff --prefix=`pwd`/:`pwd`/ > server.patch
