@@ -87,6 +87,7 @@ FILES_TO_COPY = (
 
 PLUGIN_PATH = 'plugins'
 PLUGINS = [
+    'optimize_images',
     'related_posts',
     'neighbors',
     'sitemap',

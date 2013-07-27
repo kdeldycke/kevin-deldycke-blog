@@ -21,7 +21,6 @@ TODO
       * https://pypi.python.org/pypi/pelicangit
       * http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/
   * Fix Google Analytics bouncing rate ? See: http://drawingablank.me/blog/fix-your-bounce-rate.html
-  * Auto-optimize images ? See: https://github.com/getpelican/pelican-plugins/tree/master/optimize_images
   * Move to Amazon S3 ? See:
       * http://lexual.com/blog/setup-pelican-blog-on-s3/
       * http://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html
