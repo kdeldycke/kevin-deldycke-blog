@@ -10,6 +10,7 @@ DEFAULT_LANG = u'en'
 LOCALE = 'C'
 # Don't forget to install "pip install mdx_video"
 MD_EXTENSIONS = ['codehilite', 'extra', 'video']
+TYPOGRIFY = True
 
 # Force the same URL structure as WordPress
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
