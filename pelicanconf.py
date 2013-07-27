@@ -89,6 +89,7 @@ FILES_TO_COPY = (
 PLUGIN_PATH = 'plugins'
 PLUGINS = [
     'related_posts',
+    #'thumbnailer',
     'neighbors',
     'sitemap',
     ]
@@ -110,6 +111,13 @@ SITEMAP = {
         'pages': 'monthly'
     }
 }
+
+IMAGE_PATH = "uploads"
+#THUMBNAIL_DIR = ""
+THUMBNAIL_SIZES = {
+    'thumbnail': '578x?',
+    }
+DEFAULT_TEMPLATE = """<a href="{url}" class="zoomable" title="{filename}"><img src="{thumbnail}" alt="{filename}"></a>"""
 
 
 ### Theme-specific settings
