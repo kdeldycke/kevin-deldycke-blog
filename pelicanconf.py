@@ -115,7 +115,7 @@ SITEMAP = {
 IMAGE_PATH = "uploads"
 #THUMBNAIL_DIR = ""
 THUMBNAIL_SIZES = {
-    'thumbnail': '578x?',
+    'thumbnail': '462x?',
     }
 DEFAULT_TEMPLATE = """<a href="{url}" class="zoomable" title="{filename}"><img src="{thumbnail}" alt="{filename}"></a>"""
 
