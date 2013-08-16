@@ -156,7 +156,6 @@ ARTICLE_EDIT_LINK = 'https://github.com/kdeldycke/kevin-deldycke-blog/edit/maste
 SOCIAL_TITLE = "Contact"
 SOCIAL = (
     ('@kdeldycke', 'http://twitter.com/kdeldycke'),
-    ('kevin@deldycke.com', 'mailto:kevin@deldycke.com'),
     )
 
 LINKS_TITLE = "Professional profiles"
