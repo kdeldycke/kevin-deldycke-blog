@@ -8,6 +8,7 @@ Version 0.3 of [Plumage](https://github.com/kdeldycke/plumage), my theme for [Pe
 It's the first version to include contributions from other developers. Thanks to [Cedric Bosdonnat](https://github.com/cbosdo) & [Jeff Smith](https://github.com/jeffreyksmithjr) ! :)
 
 Here is the changelog:
+
   * Add auto-zoom of images based on Magnific Popup.
   * Let the content take the available width if there is no right or left sidebars.
   * Add an dynamic feed link in footer.
