@@ -1,7 +1,7 @@
 date: 2011-04-11 16:25:54
 title: Network commands
 category: English
-tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless
+tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, driftnet, images
 
   * Get the list of all wireless networks reachable by the `wlan0` interface:
 
@@ -30,3 +30,7 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless
         :::bash
         $ watch -n 1 "lsof -i"
 
+  * Save all images passing through `eth0`:
+
+        :::bash
+        $ driftnet -i eth0 -a -d ./http-pics
