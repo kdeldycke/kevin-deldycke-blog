@@ -10,10 +10,10 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-DELETE_OUTPUT_DIRECTORY = True
-
 SITEURL = 'http://kevin.deldycke.com'
 RELATIVE_URLS = False
+
+DELETE_OUTPUT_DIRECTORY = True
 
 PLUGINS += [
     'optimize_images',
