@@ -25,7 +25,7 @@ TEMPLATE_PAGES = {
     'templates/videos.html': 'video/index.html',
     'templates/code.html': 'code/index.html',
     'templates/themes.html': 'themes/index.html',
-    }
+}
 
 # Force Pelican to use the file name as the slug, instead of derivating it from the title.
 FILENAME_METADATA = '(?P<slug>.*)'
@@ -78,7 +78,7 @@ STATIC_PATHS = [
     'uploads',
     'documents',
     'extra',
-    ]
+]
 
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
@@ -93,7 +93,7 @@ PLUGINS = [
     #'thumbnailer',
     'neighbors',
     'sitemap',
-    ]
+]
 
 
 ### Plugin-specific settings
@@ -119,7 +119,7 @@ IMAGE_PATH = "uploads"
 #THUMBNAIL_DIR = ""
 THUMBNAIL_SIZES = {
     'thumbnail': '462x?',
-    }
+}
 DEFAULT_TEMPLATE = """<a href="{url}" class="zoomable" title="{filename}"><img src="{thumbnail}" alt="{filename}"></a>"""
 
 
@@ -136,7 +136,7 @@ MENUITEMS = (
     ('Code', '/code/'),
     ('Themes', '/themes/'),
     ('About', '/about/'),
-    )
+)
 
 GOOGLE_SEARCH = 'partner-pub-0142056597033291:1880158713'
 
@@ -159,7 +159,7 @@ ARTICLE_EDIT_LINK = 'https://github.com/kdeldycke/kevin-deldycke-blog/edit/maste
 SOCIAL_TITLE = "Contact"
 SOCIAL = (
     ('@kdeldycke', 'http://twitter.com/kdeldycke'),
-    )
+)
 
 LINKS_TITLE = "Professional profiles"
 LINKS = (
@@ -167,7 +167,7 @@ LINKS = (
     ('Careers 2.0', 'http://careers.stackoverflow.com/kdeldycke'),
     ('LinkedIn', 'http://linkedin.com/in/kevindeldycke/en'),
     ('Viadeo', 'http://viadeo.com/fr/profile/kevin.deldycke'),
-    )
+)
 
 COPYRIGHT = "Unless contrary mention, the licensing terms below applies:<br/>Code and software released under <a href='http://www.fsf.org/licensing/licenses/gpl.html'>GNU/GPL licence v2.0</a>;<br/>Other content published under <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-Share Alike 3.0 license</a>."
 
