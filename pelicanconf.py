@@ -64,7 +64,7 @@ TAG_FEED_ATOM = 'tag/%s/feed/atom/index.html'
 CATEGORY_FEED_RSS = 'category/%s/feed/index.html'
 CATEGORY_FEED_ATOM = 'category/%s/feed/atom/index.html'
 
-FEED_MAX_ITEMS = 10
+FEED_MAX_ITEMS = 5
 DEFAULT_CATEGORY = 'English'
 DEFAULT_ORPHANS = 2
 DEFAULT_PAGINATION = 5
@@ -97,6 +97,8 @@ PLUGINS = [
 
 
 ### Plugin-specific settings
+
+RELATED_POSTS_MAX = 3
 
 # TODO: align default SITEMAP config to http://wordpress.org/extend/plugins/google-sitemap-generator/stats/
 SITEMAP = {
