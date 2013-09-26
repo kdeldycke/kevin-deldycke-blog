@@ -97,6 +97,8 @@ PLUGINS = [
 
 ### Plugin-specific settings
 
+RELATED_POSTS_MAX = 3
+
 # TODO: align default SITEMAP config to http://wordpress.org/extend/plugins/google-sitemap-generator/stats/
 SITEMAP = {
     'format': 'xml',
