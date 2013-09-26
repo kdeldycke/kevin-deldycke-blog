@@ -9,7 +9,7 @@ So here is my MIDI playground:
 
 ![](/static/uploads/2010/quartz-composer-midi-playground.png)
 
-Nothing exceptionnal to see here. It's just a bunch of dumb patches to control the color of the background screen and its intensity. The latter can be modulated by pulses with different profiles, and also by the sound captured by the [MacBook](http://www.amazon.com/gp/product/B002QQ8H8I/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002QQ8H8I)'s microphone. The [source composition is downloadable](http://kevin.deldycke.com/static/documents/midi-controlled-playground.qtz).
+Nothing exceptionnal to see here. It's just a bunch of dumb patches to control the color of the background screen and its intensity. The latter can be modulated by pulses with different profiles, and also by the sound captured by the [MacBook](http://www.amazon.com/gp/product/B002QQ8H8I/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002QQ8H8I)'s microphone. The [source composition is downloadable](http://kevin.deldycke.com/documents/midi-controlled-playground.qtz).
 
 
 

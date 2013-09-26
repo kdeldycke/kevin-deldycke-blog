@@ -9,4 +9,4 @@ Using a contrast trick it appears that [circles are in motions](http://en.wikipe
 
 ![](/static/uploads/2010/optical-illusion-circles-in-motion-preview.png)
 
-And as the title say, you can [download my original SVG source file](http://kevin.deldycke.com/static/documents/optical-illusion-circles-in-motion.svgz) (released under a [Creative Commons BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/)).
+And as the title say, you can [download my original SVG source file](http://kevin.deldycke.com/documents/optical-illusion-circles-in-motion.svgz) (released under a [Creative Commons BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/)).

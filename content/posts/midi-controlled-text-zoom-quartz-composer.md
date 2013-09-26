@@ -7,7 +7,7 @@ To end my [series of experimentations with Quartz Composer](http://kevin.deldyck
 
 ![](/static/uploads/2010/patch-of-midi-controlled-text-zoom-in-quartz-composer.png)
 
-It's [based on the previous one](http://kevin.deldycke.com/2010/12/quartz-composer-behringer-bcf-2000-midi-controller-tests/) and is also driven by a [Berhinger BCF-2000 MIDI controller](http://www.amazon.com/gp/product/B000CZ0RJ2/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000CZ0RJ2) . The purpose of this composition is to zoom a piece of text, give it some kind of velocity and change its color. Again, nothing fancy here: it's just a simple patch, which [source is available for download](http://kevin.deldycke.com/static/documents/text-zoom-in-out.qtz).
+It's [based on the previous one](http://kevin.deldycke.com/2010/12/quartz-composer-behringer-bcf-2000-midi-controller-tests/) and is also driven by a [Berhinger BCF-2000 MIDI controller](http://www.amazon.com/gp/product/B000CZ0RJ2/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000CZ0RJ2) . The purpose of this composition is to zoom a piece of text, give it some kind of velocity and change its color. Again, nothing fancy here: it's just a simple patch, which [source is available for download](http://kevin.deldycke.com/documents/text-zoom-in-out.qtz).
 
 As for the last time, I recorded a little demo to pratice my new videomaking skills (and to find a justification for buying more video gear ;) ):
 

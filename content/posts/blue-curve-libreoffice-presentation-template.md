@@ -17,5 +17,5 @@ Second presentation template is [Fancy Window Frame](http://templates.libreoffic
 
 Here is its [direct download link](http://templates.libreoffice.org/template-center/fancy-window-frame/releases/1.0/fancy-window-frame.otp).
 
-As for all my document contributions, these templates are distributed under a [Creative Commons BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/). And if for any reason the LibreOffice repository is down, here are mirror of the templates served from my site: [Blue Curve](http://kevin.deldycke.com/static/documents/blue-curve.otp) & [Fancy Window Frame](http://kevin.deldycke.com/static/documents/fancy-window-frame.otp).
+As for all my document contributions, these templates are distributed under a [Creative Commons BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/). And if for any reason the LibreOffice repository is down, here are mirror of the templates served from my site: [Blue Curve](http://kevin.deldycke.com/documents/blue-curve.otp) & [Fancy Window Frame](http://kevin.deldycke.com/documents/fancy-window-frame.otp).
 

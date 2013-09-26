@@ -21,7 +21,7 @@ Sometimes this black [strip is made of transparent polystyrene](http://www.amazo
 
 
 
-You can download those templates as SVG files under the [Creative Commons Attribution licence](http://creativecommons.org/licenses/by/2.5/). Here is the [direct link to the SVG versions of the templates](http://kevin.deldycke.com/static/documents/). Below are PNG versions for convenience :
+You can download those templates as SVG files under the [Creative Commons Attribution licence](http://creativecommons.org/licenses/by/2.5/). Here is the [direct link to the SVG versions of the templates](http://kevin.deldycke.com/documents/). Below are PNG versions for convenience :
 
 ![CD Jewel Case Template - Leaflet](/static/uploads/2006/cd-template-jewel-case-leaflet.png)
 

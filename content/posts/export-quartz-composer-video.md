@@ -11,7 +11,7 @@ The first composition I created was this simple kaleidoscopic effect with shifti
 
 http://www.youtube.com/watch?v=a7YNLp7xy8k
 
-The [source composition](http://kevin.deldycke.com/static/documents/kaleidoscope-000.qtz) is available under a [Creative Commons 3.0 BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/). And here is the screenshot of the main patch:
+The [source composition](http://kevin.deldycke.com/documents/kaleidoscope-000.qtz) is available under a [Creative Commons 3.0 BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/). And here is the screenshot of the main patch:
 
 ![](/static/uploads/2010/kaleidoscope-000-main-patch.png)
 
