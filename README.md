@@ -16,13 +16,9 @@ TODO
   * Deduplicate articles' tags.
   * Simplify Amazon affiliates links ? See: http://www.linktrackr.com/blog/amazon-affiliate-link/
   * Automate Amazon link creation: https://github.com/rdegges/python-amazonify
-  * Automate blog building and publishing on commit update with Fabric ? See:
-      * https://github.com/getpelican/pelican/commit/30192b2318b71cac718f8e116edc288611701085
-      * http://stackful-dev.com/easier-pelican-blogging-with-fabric-automation.html
+ * Use a free OpenShift instance to host a script monitoring Github commits ? See:
+      * https://www.openshift.com
       * https://pypi.python.org/pypi/pelicangit
-      * http://blog.xlarrakoetxea.org/posts/2012/10/creating-a-blog-with-pelican/
-      * http://alexpgates.com/blog/2013/06/whats-under-the-hood.html
-  * Use a free OpenShift instance to host a script monitoring commits on blog's Github ? https://www.openshift.com
   * Fix Google Analytics bouncing rate ? See: http://drawingablank.me/blog/fix-your-bounce-rate.html
   * Move to Amazon S3 ? See:
       * http://lexual.com/blog/setup-pelican-blog-on-s3/
