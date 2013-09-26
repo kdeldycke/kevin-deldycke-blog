@@ -84,8 +84,8 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/htaccess': {'path': '.htaccess'},
-    'extra/htaccess-static': {'path': 'static/.htaccess'},
-    }
+    'extra/htaccess-static': {'path': 'documents/.htaccess'},
+}
 
 PLUGIN_PATH = 'plugins'
 PLUGINS = [
