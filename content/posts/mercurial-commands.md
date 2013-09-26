@@ -1,7 +1,7 @@
 date: 2010-10-07 13:26:53
 title: Mercurial commands
 category: English
-tags: CLI, hg, mercurial
+tags: CLI, Mercurial
 
   * Checkout a distant repository:
 
