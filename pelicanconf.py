@@ -77,13 +77,14 @@ THEME = "plumage"
 STATIC_PATHS = [
     'uploads',
     'documents',
+    'extra',
     ]
 
-FILES_TO_COPY = (
-    ('extra/favicon.ico', 'favicon.ico'),
-    ('extra/robots.txt', 'robots.txt'),
-    ('extra/htaccess', '.htaccess'),
-    ('extra/htaccess-static', 'static/.htaccess'),
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/htaccess': {'path': '.htaccess'},
+    'extra/htaccess-static': {'path': 'static/.htaccess'},
     )
 
 PLUGIN_PATH = 'plugins'
