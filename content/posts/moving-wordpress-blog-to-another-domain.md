@@ -3,7 +3,7 @@ title: Moving a WordPress blog to another domain
 category: English
 tags: Apache, Blog, CLI, find, grep, Hosting, Linux, MySQL, SQL, sed, Server, Web, WordPress
 
-![qpx-site-domain-migration](/static/uploads/2009/qpx-site-domain-migration.png)
+![qpx-site-domain-migration](/uploads/2009/qpx-site-domain-migration.png)
 
 I provide hosting for free to some of my friends. One of them, [QPX](http://wqpx.wordpress.com), had a side project called [Lich'ti](http://www.myspace.com/espace_lichti). But the latter is no longer active, so he decided to not renew the `lich-ti.fr` domain.
 

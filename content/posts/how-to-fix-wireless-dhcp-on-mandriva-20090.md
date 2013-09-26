@@ -18,7 +18,7 @@ Then came the 2009.0 release. I though that an upgrade will cure my malediction.
 
 So I replaced it by `dhcpcd`, and against all expectations, it worked !
 
-![](/static/uploads/2008/mandriva-net-applet-wireless-dhcp.png)
+![](/uploads/2008/mandriva-net-applet-wireless-dhcp.png)
 
 And to not be annoyed by `dhcp_client` in the future, it's wise to definitely remove it:
 

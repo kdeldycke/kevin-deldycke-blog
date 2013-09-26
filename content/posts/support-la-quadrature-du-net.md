@@ -8,4 +8,4 @@ They didn't reached their fundraising goal last year, but it doesn't matter: [do
 
 As a gift, you'll received decimals of Pi:
 
-![](/static/uploads/2013/quadradure-du-net-pi-decimals.jpg)
+![](/uploads/2013/quadradure-du-net-pi-decimals.jpg)

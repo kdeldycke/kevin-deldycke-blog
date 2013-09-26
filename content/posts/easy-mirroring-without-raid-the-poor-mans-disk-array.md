@@ -9,7 +9,7 @@ I had the [project to setup a RAID 5 array using 3*120 Gb hard drives in USB enc
 
 Because of the urgency of reliable storage (and because I don't want to waste time compiling and fine-tuning kernels), I decided to do it using traditionnal IDE host. So I plugged two 120Gb HDD on my machine as master device, one on each IDE channel.
 
-![Open Brick NG and RAID-1-like setup](/static/uploads/2005/photo_f3.jpg)
+![Open Brick NG and RAID-1-like setup](/uploads/2005/photo_f3.jpg)
 
 Then I made a big XFS partition on each, and update my `/etc/fstab`:
 

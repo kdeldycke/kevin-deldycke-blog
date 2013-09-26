@@ -82,7 +82,7 @@ And do not forget to restart the server:
     :::bash
     $ /etc/init.d/lighttpd restart
 
-![](/static/uploads/2011/lighttpd-webdav-server.png)
+![](/uploads/2011/lighttpd-webdav-server.png)
 
 As you can see in the screenshot above, you can now:
 

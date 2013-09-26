@@ -3,7 +3,7 @@ title: Canon EOS 7D Movie Samples
 category: English
 tags: 1080p, 480p, 720p, Canon EOS 7D, photography, sample, Video
 
-![](/static/uploads/2010/eiffel-tower-video-sample-preview.jpg)
+![](/uploads/2010/eiffel-tower-video-sample-preview.jpg)
 
 Here is a collection of Eiffel Tower's videos I took today with my [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW). These quick and dirty clips were shots this late afternoon.
 

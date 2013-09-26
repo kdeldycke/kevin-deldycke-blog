@@ -7,6 +7,6 @@ Je suis en train de valider mon niveau [PADI Open Water Diver](http://www.amazon
 
 
 
-![](/static/uploads/2012/padi-open-water-diver-photo.jpg)
+![](/uploads/2012/padi-open-water-diver-photo.jpg)
 
 Reste à valider la suite en milieu naturel ! :)

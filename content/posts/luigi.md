@@ -3,4 +3,4 @@ title: Luigi
 category: Français
 tags: chat, SMS
 
-![](/static/uploads/2013/luigi.png)
+![](/uploads/2013/luigi.png)

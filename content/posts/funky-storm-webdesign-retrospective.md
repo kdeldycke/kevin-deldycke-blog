@@ -6,18 +6,18 @@ After my [collection of Cool Cavemen themes](http://kevin.deldycke.com/2011/06/c
 
 The first iteration of the site looked like this:
 
-![](/static/uploads/2013/funky-storm-com.png)
+![](/uploads/2013/funky-storm-com.png)
 
 At the end of 2002 I tried to get rid of my [custom backend code](http://kevin.deldycke.com/2013/08/funky-storm-source-code-released/), and migrate the content to [SPIP](http://www.spip.net). In 2003 I was approaching the end of that daunting task, when a huge disk crash annihilated all my efforts.
 
 The only thing left of that work is a [static mockup](https://github.com/kdeldycke/funky-storm/blob/master/index_dev.htm):
 
-![](/static/uploads/2013/2003-funky-storm-redesign-mockup.png)
+![](/uploads/2013/2003-funky-storm-redesign-mockup.png)
 
 After that, the site theme never changed and stayed the same up to the last days of the band. And this despite an attempt in 2004 to update the banner of the mockup above:
 
-![](/static/uploads/2013/funky-storm-top-banner-update.png)
+![](/uploads/2013/funky-storm-top-banner-update.png)
 
 This iteration was based on an unreleased Funky Storm wallpaper:
 
-![](/static/uploads/2013/funky-storm-wallpaper.png)
+![](/uploads/2013/funky-storm-wallpaper.png)

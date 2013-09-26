@@ -3,7 +3,7 @@ title: Give away of the day: free 23andMe $100 vouchers !
 category: English
 tags: 23andMe, coupon, discount, DNA, genetics, voucher
 
-![](/static/uploads/2008/23andme-v2-upgrade-kit.jpg)
+![](/uploads/2008/23andme-v2-upgrade-kit.jpg)
 
 I ordered a [23andMe](http://23andme.com) v1 kit (_[Time's invention of the year 2008](http://www.time.com/time/specials/packages/article/0,28804,1852747_1854493,00.html)_) in early march. The [version 2 of the "personal genetic kit"](http://23andme.com/howitworks/) was [released some months ago](http://blog.wired.com/wiredscience/2008/09/23andme-cuts-it.html).
 

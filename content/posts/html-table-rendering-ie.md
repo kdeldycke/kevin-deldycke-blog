@@ -7,7 +7,7 @@ It is well-known since the burst of the dot-com bubble that [tables are bad for 
 
 The thing is, Internet Explorer can't cope with big HTML tables. So when it encounters a huge number of cells, IE9 starts to shift them randomly:
 
-![](/static/uploads/2013/go-home-internet-explorer-you-are-drunk.png)
+![](/uploads/2013/go-home-internet-explorer-you-are-drunk.png)
 
 You can [go here to reproduce this issue](http://jsfiddle.net/kiranmn/kYRnV/).
 

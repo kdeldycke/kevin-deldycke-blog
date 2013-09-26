@@ -58,7 +58,7 @@ Here is the corresponding (anonymized) mail sent to the mailing list from a Gmai
 
 And now my hackish tale. Based on a quick look at Mailman's source code, I made an educated guess that this error is just a side effect of the wrong assumption that the `s` variable in the `Charset.encoded_header_len()` method is always a string. So I came up with the following evil patch to handle (gracefully, I hope) the case of `s` being `None`.
 
-Here is the [resulting patch](/static/uploads/2008/mailman-219-7-charset-handling.patch) of my python-fu:
+Here is the [resulting patch](/uploads/2008/mailman-219-7-charset-handling.patch) of my python-fu:
 
     :::diff
     --- /usr/lib/mailman/pythonlib/email/Charset.py.orig   2008-12-28 19:46:23.000000000 +0100

@@ -3,7 +3,7 @@ title: Google AdWords: bon de réduction de 75€ offert !
 category: Français
 tags: AdWords, Google,, bon de reduction, France, Google, publicite, voucher, Web
 
-![](/static/uploads/2010/google-ad-words-75-euros-coupon.jpg)
+![](/uploads/2010/google-ad-words-75-euros-coupon.jpg)
 
 On dirait que Google cherche à promouvoir agressivement en France [AdWords](http://www.google.fr/AdWord), son service de régie publicitaire en ligne. Après avoir eu entre les mains plusieurs bons de réductions ([100 euros](http://twitter.com/kdeldycke/status/3169290268) et [50 euros](http://kevin.deldycke.com/2009/12/deux-bons-50-euros-offerts-google-adwords/)) ces derniers mois, j'ai reçu aujourd'hui par courrier un bon de 75 euros.
 

@@ -7,13 +7,13 @@ Sorting my archives, I uncovered an old collection of presentations I created in
 
 First, here is [Blue Curve](http://templates.libreoffice.org/template-center/blue-curve-1):
 
-![blue-curve-preview](/static/uploads/2012/blue-curve-preview.jpg)
+![blue-curve-preview](/uploads/2012/blue-curve-preview.jpg)
 
 You can [download the file](http://templates.libreoffice.org/template-center/blue-curve-1/releases/1.0/blue-curve.otp) from the [official LibreOffice templates](http://templates.libreoffice.org/template-center) website.
 
 Second presentation template is [Fancy Window Frame](http://templates.libreoffice.org/template-center/fancy-window-frame):
 
-![fancy-window-frame-preview](/static/uploads/2012/fancy-window-frame-preview.jpg)
+![fancy-window-frame-preview](/uploads/2012/fancy-window-frame-preview.jpg)
 
 Here is its [direct download link](http://templates.libreoffice.org/template-center/fancy-window-frame/releases/1.0/fancy-window-frame.otp).
 

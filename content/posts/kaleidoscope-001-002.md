@@ -9,11 +9,11 @@ http://www.youtube.com/watch?v=xOdZrYSCDqI
 
 [Kaleidoscope #001 source](http://kevin.deldycke.com/documents/kaleidoscope-001.qtz) is available, and its patch looks like this:
 
-![](/static/uploads/2010/kaleidoscope-001-patch.png)
+![](/uploads/2010/kaleidoscope-001-patch.png)
 
 http://www.youtube.com/watch?v=8LNgo2Esmps
 
 Again, here is [Kaleidoscope #002 source](http://kevin.deldycke.com/documents/kaleidoscope-002.qtz), and a screenshot of its patch:
 
-![](/static/uploads/2010/kaleidoscope-002-patch.png)
+![](/uploads/2010/kaleidoscope-002-patch.png)
 

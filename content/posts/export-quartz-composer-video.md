@@ -13,11 +13,11 @@ http://www.youtube.com/watch?v=a7YNLp7xy8k
 
 The [source composition](http://kevin.deldycke.com/documents/kaleidoscope-000.qtz) is available under a [Creative Commons 3.0 BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/). And here is the screenshot of the main patch:
 
-![](/static/uploads/2010/kaleidoscope-000-main-patch.png)
+![](/uploads/2010/kaleidoscope-000-main-patch.png)
 
 And this is how I designed the color wheel sub-patch:
 
-![](/static/uploads/2010/kaleidoscope-000-color-wheel-macro-patch.png)
+![](/uploads/2010/kaleidoscope-000-color-wheel-macro-patch.png)
 
 If creating a composition is really simple and straightforward, exporting the result to a video file is another story...
 
@@ -25,7 +25,7 @@ I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-t
 
  throwing me this exception every time:
 
-![](/static/uploads/2010/quartz-composer-export-to-movie-exception.png)
+![](/uploads/2010/quartz-composer-export-to-movie-exception.png)
 
     :::text
     0x8272938b: -[QCContext renderPatch:time:arguments:]
@@ -58,11 +58,11 @@ So I tried the old trick of [importing compositions in iMovie](http://blogs.ipon
 
 My last chance was another plugin: [Movie Exporter](http://quartzcomposer.com/plugins/6-movie-exporter) (v0.0.20091011). As the other one, you have to drop your original composition in a _Render in Image_ macro block and export the resulting stream to the _Movie Exporter_ block:
 
-![](/static/uploads/2010/movie-exporter-patch.png)
+![](/uploads/2010/movie-exporter-patch.png)
 
 It did the trick but it looked like I messed things up: my goal was to export a 720p clip. But compression artifacts are so present in the final video that I think the exported images are blow-ups of a rendering executed at a much lower resolution. The rendering in the preview panel support this hypothesis:
 
-![](/static/uploads/2010/kaleidoscope-viewer.png)
+![](/uploads/2010/kaleidoscope-viewer.png)
 
 Another big problem with this video export lies in the framerate: it cannot be set. For this composition the plugin exported a clip at 11fps. Which is far from fluid. I guess it's because of the plugin grabbing images in real-time instead of taking the necessary time to render them one by one.
 

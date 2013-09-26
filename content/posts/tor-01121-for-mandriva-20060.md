@@ -3,7 +3,7 @@ title: Tor 0.1.1.21 for Mandriva 2006.0
 category: English
 tags: Linux, Mandriva, security, Server, Tor
 
-![tor](/static/uploads/2006/tor.png)
+![tor](/uploads/2006/tor.png)
 
 I backported [TOR, an onion routing system to communicate anonymously on the Internet](http://tor.eff.org) from cooker to Mandriva 2006.0. You can [find it in my repository](http://github.com/kdeldycke/mandriva-specs).
 

@@ -3,7 +3,7 @@ title: FeedBurner and e107 integration
 category: English
 tags: Apache, Atom, Blog, CMS, e107, feed, FeedBurner, htaccess, RDF, RSS, Server, Web, WordPress
 
-![](/static/uploads/2007/e107-and-feedburner.png)
+![](/uploads/2007/e107-and-feedburner.png)
 
 In the context of my [plan to move an e107-based website to Wordpress](http://kevin.deldycke.com/2006/08/e107-to-wordpress-migration-here-is-why/), I need to take care of my RSS subscribers. To let people (and search engines) get my content via old URLs, I will use [Apache redirections](http://en.wikipedia.org/wiki/URL_redirection) to do this transparently and permanently. My final goal is to have a Wordpress website with all RSS feeds (blog posts and comments) managed by [FeedBurner](http://www.feedburner.com), to gather statistics about my audience.
 

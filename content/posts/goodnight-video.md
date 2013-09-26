@@ -9,7 +9,7 @@ http://www.youtube.com/watch?v=bAKmRTV7Lek
 
 The video is [based on a series of 70 sketches](http://omashay.com/2013/02/22/goodnight-the-video/) Tomasito's made for a college project:
 
-![](/static/uploads/2013/goodnight-drawings-keyframes.jpg)
+![](/uploads/2013/goodnight-drawings-keyframes.jpg)
 
 He wanted to explore the possibilities of reusing them for a music video. I had the perfect secret weapon for this kind of job: [slowmoVideo](http://slowmovideo.granjow.net/), an open-source clone of [Twixtor](http://www.revisionfx.com/products/twixtor/).
 

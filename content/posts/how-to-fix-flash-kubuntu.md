@@ -7,7 +7,7 @@ If like me you want the greatest and latest Flash version on your Kubuntu, you p
 
 Everything will be great after that. Until the day this repository is updated, which will break the Flash plugin if you attempt an upgrade with KPackageKit.
 
-![](/static/uploads/2011/kpackagekit-flash.png)
+![](/uploads/2011/kpackagekit-flash.png)
 
 The Flash package does not contain the binary plugin itself, but is just an empty shell which download the plugin from the web to your machine. And for this operation to work as expected, the package need to be in a terminal environment.
 

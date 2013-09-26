@@ -79,6 +79,6 @@ It's time to push all changes to our brand new public repository:
 
 And here is the result on GitHub:
 
-![](/static/uploads/2010/git-first-commit.png)
+![](/uploads/2010/git-first-commit.png)
 
 Maybe this "first commit" trick is unnecessary. So, if you have a better understanding of the issue, or can explain me why this is stupid, please tell me ! :)

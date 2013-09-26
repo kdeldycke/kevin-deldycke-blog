@@ -31,8 +31,8 @@ I wanted to track stocks and prices for each combination. And this degree of com
 
 And then I found Ubercart, which allowed me to do exactly what I wanted. Here is for example prices and stocks for a [black Cool Cavemen tee-shirt](http://shop.coolcavemen.com/white-logo-black-tee-shirt):
 
-![](/static/uploads/2011/ubercart-product-options.png)
+![](/uploads/2011/ubercart-product-options.png)
 
-![](/static/uploads/2011/ubercart-product-stocks.png)
+![](/uploads/2011/ubercart-product-stocks.png)
 
 I use Ubercart since 2008 and I'm really happy with it. The future is interesting, as [Ubercart was forked](http://www.drupalcommerce.org/about/history) as the [Drupal Commerce](http://www.drupalcommerce.org) project [a year ago](http://www.bywombats.com/blog/01-14-2010/rose-any-other-name). I'm waiting for the 1.0 release of the latter to decide if it is worth switching to the fork or not. But having it based on Drupal 7 is good news, as Ubertcart still stick to the (old) Drupal 6.

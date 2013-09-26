@@ -30,7 +30,7 @@ Sorry for the shameless self-promotion, but I was so happy to get this distincti
 
 The payroll modules were one of my biggest [contribution as a core developer on ERP5](https://www.ohloh.net/p/erp5/contributors/18391049963153). It was capable of [producing the paysheets](http://web.archive.org/web/20110128111823/http://www.erp5.org/workspaces/project/erp5_payroll/erp5_pay_sheet_for_n/view) of all Nexedi's employees. Here is an example:
 
-![](/static/uploads/2008/erp5-final-paysheet.png)
+![](/uploads/2008/erp5-final-paysheet.png)
 
 These modules were so extensive that I wrote a detailed tutorial based on them. As it was the only comprehensive documentation available on ERP5, my work virtually became the [ERP5's bible for developers](http://web.archive.org/web/20050924101245/http://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39) for a while.
 

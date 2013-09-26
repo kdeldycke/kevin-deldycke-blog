@@ -19,6 +19,6 @@ My server is running Debian Squeeze. Luckily, a [package is available](http://pa
 
 Now you can get a proof that `haveged` is running by monitoring your entropy. Here is for example the Munin graph of my server, on which you can clearly see the big jump in available entropy:
 
-![](/static/uploads/2011/increased-entropy-with-haveged.png)
+![](/uploads/2011/increased-entropy-with-haveged.png)
 
 If I'm not sure about the quality of the [randomness it generate on virtual machines](http://jakob.engbloms.se/archives/1374), `haveged` is still a really practical solution for lack of entropy on a server.

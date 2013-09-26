@@ -9,7 +9,7 @@ You can give the script a list of email headers to ignore while it compares mail
 
 I created this script to clean up a Maildir folder I messed up after moving repeatedly tons of mails from a Lotus Notes database. As you can see below, the same mail imported twice contain a variable header based on the date and time the import was performed:
 
-![](/static/uploads/2010/lotus-notes-x-mimetrack-mail-header.png)
+![](/uploads/2010/lotus-notes-x-mimetrack-mail-header.png)
 
 This variable header make mails looks different from the point of view of the script. That's explain why I implemented the `HEADERS_TO_IGNORE` parameter with the default set to `X-MIMETrack`.
 

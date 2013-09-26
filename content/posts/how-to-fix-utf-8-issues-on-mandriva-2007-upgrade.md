@@ -3,7 +3,7 @@ title: How-To fix UTF-8 Issues on Mandriva 2007 Upgrade
 category: English
 tags: Linux, Mandriva
 
-![bad-file-character-encoding-utf-81](/static/uploads/2006/bad-file-character-encoding-utf-81.png)
+![bad-file-character-encoding-utf-81](/uploads/2006/bad-file-character-encoding-utf-81.png)
 
 If you updated your Mandriva from 2006 to 2007 and you've done that manually, some of your files in your home directory may look like the one on the screenshot. This is due to the adoption of [UTF-8](http://en.wikipedia.org/wiki/UTF-8) as the default character encoding for file systems in Mandriva. Normally the conversion is done automatically at install, so if you've upgrade your Mandriva manually...
 

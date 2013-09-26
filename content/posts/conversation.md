@@ -3,5 +3,5 @@ title: Conversation
 category: English
 tags: Android, chat
 
-![](/static/uploads/2012/conversation.png)
+![](/uploads/2012/conversation.png)
 

@@ -13,15 +13,15 @@ Here are some noisy photos I've taken with my [Canon 7D](http://www.amazon.com/g
 
 
 
-![](/static/uploads/2010/midnight-in-paris-owen-wilson.jpg)
+![](/uploads/2010/midnight-in-paris-owen-wilson.jpg)
 
-![](/static/uploads/2010/midnight-in-paris-woody-allen.jpg)
+![](/uploads/2010/midnight-in-paris-woody-allen.jpg)
 
-![](/static/uploads/2010/midnight-in-paris-set-001.jpg)
+![](/uploads/2010/midnight-in-paris-set-001.jpg)
 
-![](/static/uploads/2010/midnight-in-paris-set-002.jpg)
+![](/uploads/2010/midnight-in-paris-set-002.jpg)
 
-![](/static/uploads/2010/midnight-in-paris-set-003.jpg)
+![](/uploads/2010/midnight-in-paris-set-003.jpg)
 
-![](/static/uploads/2010/midnight-in-paris-set-004.jpg)
+![](/uploads/2010/midnight-in-paris-set-004.jpg)
 

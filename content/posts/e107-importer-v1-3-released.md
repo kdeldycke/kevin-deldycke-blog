@@ -3,7 +3,7 @@ title: e107 Importer v1.3 released
 category: English
 tags: Cool Cavemen, e107, importer, migration, PHP, Web, WordPress
 
-![](/static/uploads/2011/e107-importer-v1-3-option-panel.png)
+![](/uploads/2011/e107-importer-v1-3-option-panel.png)
 
 A month after [the last one](http://kevin.deldycke.com/2011/04/e107-importer-1-2-enhanced-bbcode-parser/), here is a brand [new version of my e107 Importer](http://wordpress.org/extend/plugins/e107-importer/), numbered 1.3.
 
@@ -31,5 +31,5 @@ That being said, here is the changelog of the brand new e107 Importer 1.3:
 
 Finally, while cleaning up my home folder, I stumble upon this old screenshot of [dash](http://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/comment-page-1/#comment-3300)'s old e107 site. This is what its maintenance page looked like the day she initiated the transition to WordPress using my script:
 
-![](/static/uploads/2008/film-fanatix-com-maintenance-page.png)
+![](/uploads/2008/film-fanatix-com-maintenance-page.png)
 
