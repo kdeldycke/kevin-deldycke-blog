@@ -85,7 +85,7 @@ EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/htaccess': {'path': '.htaccess'},
     'extra/htaccess-static': {'path': 'static/.htaccess'},
-    )
+    }
 
 PLUGIN_PATH = 'plugins'
 PLUGINS = [
