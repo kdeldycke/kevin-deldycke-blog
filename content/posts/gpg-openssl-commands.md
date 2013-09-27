@@ -1,7 +1,12 @@
 date: 2011-11-08 12:20:19
-title: GPG commands
+title: GPG & OpenSSL commands
 category: English
-tags: CLI, cryptography, GPG, Linux, security
+tags: CLI, cryptography, GPG, Linux, security, OpenSSL, SSL
+
+  * Generate a random password:
+
+        :::bash
+        $ openssl rand -base64 18
 
   * Generate a key (interactive mode):
 
@@ -37,4 +42,3 @@ tags: CLI, cryptography, GPG, Linux, security
 
         :::bash
         $ gpg --multifile --decrypt archive.*.tar.gpg
-

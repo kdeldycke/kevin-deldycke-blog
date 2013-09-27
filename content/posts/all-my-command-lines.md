@@ -20,7 +20,7 @@ Here is a collection of commands lines, code and configuration snippets I collec
   * [dpkg, APT & Aptitude](http://kevin.deldycke.com/2008/12/dpkg-apt-aptitude-commands/)
   * [RPM, Urpmi & Yum](http://kevin.deldycke.com/2006/11/rpm-urpmi-yum-commands/)
   * [OpenSSH](http://kevin.deldycke.com/2010/03/openssh-commands/)
-  * [GPG](http://kevin.deldycke.com/2011/11/gpg-commands/)
+  * [GPG & OpenSSL](http://kevin.deldycke.com/2011/11/gpg-openssl-commands/)
   * [i18n / l10n](http://kevin.deldycke.com/2006/11/i18n-l10n-commands/)
   * [MySQL](http://kevin.deldycke.com/2010/02/mysql-commands/)
   * [PostgreSQL](http://kevin.deldycke.com/2011/10/postgresql-commands)
