@@ -1,7 +1,7 @@
 date: 2012-11-20 12:14:07
 title: 20m Scuba Diving Pool
 Category: Front Page
-tags: gopro, kdenlive, open water diver, padi, pool, scuba diving, Underwater diving, Video, youtube
+tags: GoPro, Kdenlive, open water diver, PADI, pool, scuba diving, Underwater diving, Video, YouTube
 
 Here is my last dive at the pool, the last indoor dive required to validate my [PADI Open Water Diver](http://www.amazon.com/gp/product/B003JX0AUK/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B003JX0AUK&linkCode=as2&tag=kevideld-20) certification:
 

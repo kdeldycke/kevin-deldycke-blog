@@ -1,6 +1,6 @@
 date: 2013-08-28 12:00
 title: Funky Storm WebDesign Retrospective
-tags: Funky Storm, web, wedesign, HTML, CSS
+tags: Funky Storm, Web, wedesign, HTML, CSS
 
 After my [collection of Cool Cavemen themes](http://kevin.deldycke.com/2011/06/cool-cavemen-webdesign-retrospective/), here is a little set of old [Funky Storm](http://funky-storm.com) web assets.
 

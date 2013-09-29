@@ -1,7 +1,7 @@
 date: 2013-07-01 12:48
 title: How-to keep natural glitches from videos
 category: English
-tags: kdenlive, mplayer, avconv, libav, ffmpeg, video, youtube, audio
+tags: Kdenlive, mplayer, avconv, libav, ffmpeg, video, YouTube, audio
 
 In my ultimate attempt to recover the archives I lost some years ago in a RAID-5 crash, I managed to save some images and videos. But most files, if not all, were heavily corrupted.
 

@@ -1,7 +1,7 @@
 date: 2012-11-06 12:39:02
 title: Cool Cavemen at Gayant Expo: production notes
 Category: Front Page
-tags: band, concert, Cool Cavemen, douai, France, gayant expo, kdenlive, lighting designer, live, Martin Mac, SoundUp studio, Video, youtube
+tags: band, concert, Cool Cavemen, Douai, France, gayant expo, Kdenlive, lighting designer, live, Martin Mac, SoundUp studio, Video, youtube
 
 I've just realized I've never really finished the [series of posts](http://kevin.deldycke.com/tag/gayant-expo/) I [started in 2010](http://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/), a series about my longest video project: the [biggest concert](http://coolcavemen.com/2009/concert-a-gayant-expo-les-photos/) we performed with [Cool Cavemen](http://coolcavemen.com) in 2009.
 

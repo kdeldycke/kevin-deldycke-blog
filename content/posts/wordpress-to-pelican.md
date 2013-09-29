@@ -1,7 +1,7 @@
 date: 2013-02-06 12:03:26
 title: WordPress to Pelican
 Category: English
-tags: WordPress, Pelican, Python, migration, blog, web, PHP, MySQL, sed, Markdown, reStructuredText, ZenPhoto
+tags: WordPress, Pelican, Python, migration, blog, Web, PHP, MySQL, sed, Markdown, reStructuredText, ZenPhoto
 
 You probably noticed this blog dramatically changed lately and was sometimes broken. That's because I was in the middle of migrating it from [WordPress](http://wordpress.org) to a static site generator.
 

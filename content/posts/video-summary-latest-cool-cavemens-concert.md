@@ -1,13 +1,13 @@
 date: 2012-03-27 12:24:42
 title: Video summary of latest Cool Cavemen's concert
 category: English
-tags: 1080p, canon, Canon EOS 7D, concert, Cool Cavemen, gig, kdenlive, live, Music, point and shoot, sony, Tamron, Video, you tube
+tags: 1080p, canon, Canon EOS 7D, concert, Cool Cavemen, gig, Kdenlive, live, Music, point and shoot, sony, Tamron, Video, YouTube
 
 I've just finished editing the video summary of the [latest Cool Cavemen's concert](http://coolcavemen.com/2011/menu-de-samedi-a-douai/). It's now [available on YouTube](http://www.youtube.com/watch?v=RpFqhcihQbw):
 
 http://www.youtube.com/watch?v=RpFqhcihQbw
 
-That video was mostly shot with my [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW) in 1080p at 24fps, with a [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](http://www.amazon.com/gp/product/B002LVUIXA/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002LVUIXA). 
+That video was mostly shot with my [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW) in 1080p at 24fps, with a [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](http://www.amazon.com/gp/product/B002LVUIXA/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002LVUIXA).
 
 
 

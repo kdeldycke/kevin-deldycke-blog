@@ -1,7 +1,7 @@
 date: 2013-05-20 12:32:37
 title: Behind the Scenes of Omashay's "Where is she ?"
 category: English
-tags: video, youtube, kdenlive, music video, omashay, behind the scenes, making of
+tags: video, YouTube, Kdenlive, music video, Omashay, behind the scenes, making of
 
 
 Back from holidays, and it's time for me to clear my backlog of draft articles. Here is the last and missing piece of my 2012 production notes series.
