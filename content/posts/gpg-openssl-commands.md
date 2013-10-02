@@ -1,7 +1,7 @@
 date: 2011-11-08 12:20:19
 title: GPG & OpenSSL commands
 category: English
-tags: CLI, cryptography, GPG, Linux, security, OpenSSL, SSL
+tags: CLI, cryptography, GPG, Linux, security, OpenSSL, SSL, RSA
 
   * Generate a random password:
 

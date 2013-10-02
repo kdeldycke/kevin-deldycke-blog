@@ -1,7 +1,7 @@
 date: 2009-09-07 21:11:03
 title: Fuse and sshfs on MacOSX Leopard
 category: English
-tags: Apple, automount, fuse, KDE, Mac OS X Leopard, Linux, MacBook, Apple, Mac OS X, mount, Network, sftp, SSH, sshfs, system
+tags: Apple, automount, fuse, KDE, Mac OS X Leopard, Linux, MacBook, Apple, Mac OS X, mount, Network, sftp, SSH, sshfs, system, RSA
 
 I'm used to access distant machine's file systems via ssh. My favorite environment, [KDE](http://www.kde.org), makes things easy thanks to the support of [`sftp://`](http://wikipedia.org/wiki/SSH_file_transfer_protocol) URLs via a [kio_slave](http://wikipedia.org/wiki/KIO). MacOSX is not as friendly and don't have any built-in mechanism of that kind.
 

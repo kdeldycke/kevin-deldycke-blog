@@ -1,7 +1,7 @@
 date: 2006-08-02 16:14:52
 title: How to wake up early, the geekest way
 category: English
-tags: life, Linux, mobile phone, mplayer, Music, travel
+tags: life, Linux, mobile phone, mplayer, Music, Travel, Cool Cavemen
 
 ![Mobile Phone, Broken Screen](/uploads/2006/pict4644.jpg)
 
