@@ -1,7 +1,7 @@
 date: 2012-11-13 12:40:54
 title: Wedding Entrance: Video Postcard of Paris
 category: English
-tags: camera, canon, Canon EOS 7D, glidecam, paris, sigma, steadycam, Tamron, tokina, wedding
+tags: camera, Canon EOS 7D, glidecam, paris, sigma, steadycam, Tamron, tokina, wedding
 
 One of my [best friend was just married](http://www.melaniethomas2012.com) this year, and to participate to this huge event, I helped him create a video for its wedding entrance. It's a video postcard of Paris with close friends and family:
 

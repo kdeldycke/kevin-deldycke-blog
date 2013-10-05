@@ -1,7 +1,7 @@
 date: 2012-03-27 12:24:42
 title: Video summary of latest Cool Cavemen's concert
 category: English
-tags: 1080p, canon, Canon EOS 7D, concert, Cool Cavemen, gig, Kdenlive, live, Music, point and shoot, sony, Tamron, Video, YouTube
+tags: 1080p, Canon EOS 7D, concert, Cool Cavemen, gig, Kdenlive, live, Music, point and shoot, sony, Tamron, Video, YouTube
 
 I've just finished editing the video summary of the [latest Cool Cavemen's concert](http://coolcavemen.com/2011/menu-de-samedi-a-douai/). It's now [available on YouTube](http://www.youtube.com/watch?v=RpFqhcihQbw):
 
