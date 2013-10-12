@@ -11,58 +11,72 @@ ErrorDocument 404 /404-not-found/
 ErrorDocument 410 /410-gone/
 ErrorDocument 500 /500-error/
 
-# Content redirects
+# Catch-all tag-like URLS
+#RedirectMatch 301 /tag/([^\/]+)/(.+)$ /tag/$1/
+#RedirectMatch 301 /tag/?$ /tags/
+#RedirectMatch 301 /category/?$ /categories.html
+#RedirectMatch 301 /categories/?$ /categories.html
+
+# Content moved during Pelican exploitation
 RedirectMatch 301 ^/static/uploads/(.*) /uploads/$1
 RedirectMatch 301 ^/static/documents/(.*) /documents/$1
 RedirectMatch 301 ^/tags.html /tags/
 RedirectMatch 301 ^/mandriva-rpm-repository https://github.com/kdeldycke/mandriva-specs
 RedirectMatch 301 ^/static/repository       https://github.com/kdeldycke/mandriva-specs
 
+# Monthly-static assets are now sorted by year only
+RedirectMatch 301 ^/static/uploads/(\d+)/\d+/(.*) /static/uploads/$1/$2
+
 # Force mime type of feeds
 RewriteRule /feed/$ - [T=application/rss+xml]
 RewriteRule /feed/atom/$ - [T=application/atom+xml]
 
-# Remove OVH cookie
-<IfModule mod_headers.c>
-    Header unset Set-Cookie
-</IfModule>
 
-# WordPress redirects
+### WordPress redirects
+
+# Support old WordPress URLs
 RedirectMatch 301 ^/wp-content/uploads/(.*) /uploads/$1
 RedirectMatch 301 ^/category/lang/en/(.*) /category/english/$1
 RedirectMatch 301 ^/category/lang/fr/(.*) /category/francais/$1
-RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
 RedirectMatch 301 ^/archives/.* /archives.html
 
 # Yearly and monthly archive are no longer paginated
 RedirectMatch 301 ^/(\d{4})/page/\d+/?.* /$1/
 RedirectMatch 301 ^/(\d{4}/\d{2})/page/\d+/?.* /$1/
 
-# WordPress feeds for blog, tags and categories
+# WordPress made a distinction between RSS 1.0, RSS 2.0 and RDF feeds while Pelican doesn't
 RedirectMatch 301 (.*)/feed/(rss2?|rdf)/?$ $1/feed/
-
-# Site-wide comments feeds moved to Disqus
-RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ http://kevin-deldycke-blog.disqus.com/latest.rss
-
-# Monthly-static assets are now sorted by year only
-RedirectMatch 301 ^/static/uploads/(\d+)/\d+/(.*) /uploads/$1/$2
-
-# Catch-all tag-like URLS
-#RedirectMatch 301 /tag/([^\/]+)/(.+)$ /tag/$1/
-#RedirectMatch 301 /tag/?$ /tags.html
-#RedirectMatch 301 /category/?$ /categories.html
 
 # Intermediate category are gone too
 RedirectMatch gone /category/lang/?$
 RedirectMatch gone /category/lang/page/\d+/?$
+
 # Paginated tags and categories are no more
 RedirectMatch gone /category/(.*)/page/\d+/?$
 RedirectMatch gone /tag/[^\/]+/page/\d+/?$
-# Other WordPress stuff
+
+# Misc WordPress stuff
 RedirectMatch gone /author/[^\/]+/?$
 RedirectMatch gone /author/[^\/]+/page/\d+/?$
 RedirectMatch gone ^/wp-(admin|content|includes)/?.*$
 RedirectMatch gone ^/wp-.*\.php$
+
+
+### Disqus redirects
+
+# Links to a particular comment are no longer supported following Disqus migration
+RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
+
+# Site-wide comments feeds moved to Disqus
+RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ http://kevin-deldycke-blog.disqus.com/latest.rss
+
+
+### HTTP tweaks (caching, optimizations, mime-types)
+
+# Remove OVH cookie
+<IfModule mod_headers.c>
+    Header unset Set-Cookie
+</IfModule>
 
 # Force compression of text-based assets
 <IfModule mod_headers.c>
