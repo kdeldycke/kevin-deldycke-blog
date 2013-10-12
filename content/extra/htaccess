@@ -11,21 +11,21 @@ ErrorDocument 404 /404-not-found/
 ErrorDocument 410 /410-gone/
 ErrorDocument 500 /500-error/
 
-# Catch-all tag-like URLS
+# Catch-alls for tag-like URLs
 #RedirectMatch 301 /tag/([^\/]+)/(.+)$ /tag/$1/
-#RedirectMatch 301 /tag/?$ /tags/
-#RedirectMatch 301 /category/?$ /categories.html
-#RedirectMatch 301 /categories/?$ /categories.html
+RedirectMatch 301 /tag/?$ /tags/
+RedirectMatch 301 /category/?$ /categories.html
+RedirectMatch 301 /categories/?$ /categories.html
 
 # Content moved during Pelican exploitation
+RedirectMatch 301 ^/tags.html /tags/
 RedirectMatch 301 ^/static/uploads/(.*) /uploads/$1
 RedirectMatch 301 ^/static/documents/(.*) /documents/$1
-RedirectMatch 301 ^/tags.html /tags/
 RedirectMatch 301 ^/mandriva-rpm-repository https://github.com/kdeldycke/mandriva-specs
 RedirectMatch 301 ^/static/repository       https://github.com/kdeldycke/mandriva-specs
 
 # Monthly-static assets are now sorted by year only
-RedirectMatch 301 ^/static/uploads/(\d+)/\d+/(.*) /static/uploads/$1/$2
+RedirectMatch 301 ^/uploads/(\d+)/\d+/(.*) /uploads/$1/$2
 
 # Force mime type of feeds
 RewriteRule /feed/$ - [T=application/rss+xml]
