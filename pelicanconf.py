@@ -32,7 +32,8 @@ WITH_FUTURE_DATES = False
 # Force Pelican to use the file name as the slug, instead of derivating it from the title.
 FILENAME_METADATA = '(?P<slug>.*)'
 
-TAGS_SAVE_AS = 'tags.html'
+TAGS_URL = 'tags/'
+TAGS_SAVE_AS = TAGS_URL + 'index.html'
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = TAG_URL + 'index.html'
 
