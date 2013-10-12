@@ -72,11 +72,14 @@ CATEGORY_FEED_ATOM = 'category/%s/feed/atom/index.html'
 
 FEED_MAX_ITEMS = 5
 DEFAULT_CATEGORY = 'English'
-DEFAULT_ORPHANS = 2
-DEFAULT_PAGINATION = 5
 DEFAULT_DATE_FORMAT = '%b. %d, %Y'
 REVERSE_ARCHIVE_ORDER = True
 DISPLAY_PAGES_ON_MENU = False
+
+# Pagination
+DEFAULT_ORPHANS = 2
+DEFAULT_PAGINATION = 5
+# TODO: set PAGINATION_PATTERNS to produce nice URLs like index/page/23/ instead of indexXX.html
 
 THEME = "plumage"
 
