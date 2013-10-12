@@ -11,14 +11,17 @@ ErrorDocument 404 /404-not-found/
 ErrorDocument 410 /410-gone/
 ErrorDocument 500 /500-error/
 
-# Catch-alls for tag-like URLs
+# Catch-all for tag-like URLs
 #RedirectMatch 301 /tag/([^\/]+)/(.+)$ /tag/$1/
 RedirectMatch 301 /tag/?$ /tags/
-RedirectMatch 301 /category/?$ /categories.html
-RedirectMatch 301 /categories/?$ /categories.html
+RedirectMatch 301 /category/?$ /categories/
+RedirectMatch 301 /categories/?$ /categories/
+RedirectMatch 301 /archives/?$ /archives/
 
 # Content moved during Pelican exploitation
 RedirectMatch 301 ^/tags.html /tags/
+RedirectMatch 301 ^/categories.html /categories/
+RedirectMatch 301 ^/archives.html /archives/
 RedirectMatch 301 ^/static/uploads/(.*) /uploads/$1
 RedirectMatch 301 ^/static/documents/(.*) /documents/$1
 RedirectMatch 301 ^/mandriva-rpm-repository https://github.com/kdeldycke/mandriva-specs
@@ -38,7 +41,6 @@ RewriteRule /feed/atom/$ - [T=application/atom+xml]
 RedirectMatch 301 ^/wp-content/uploads/(.*) /uploads/$1
 RedirectMatch 301 ^/category/lang/en/(.*) /category/english/$1
 RedirectMatch 301 ^/category/lang/fr/(.*) /category/francais/$1
-RedirectMatch 301 ^/archives/.* /archives.html
 
 # Yearly and monthly archive are no longer paginated
 RedirectMatch 301 ^/(\d{4})/page/\d+/?.* /$1/

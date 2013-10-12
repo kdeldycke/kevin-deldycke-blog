@@ -32,17 +32,20 @@ TEMPLATE_PAGES = {
     'templates/themes.html': 'themes/index.html',
 }
 
-TAGS_URL = 'tags/'
-TAGS_SAVE_AS = TAGS_URL + 'index.html'
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = TAG_URL + 'index.html'
 
 CATEGORY_URL = 'category/{slug}/'
 CATEGORY_SAVE_AS = CATEGORY_URL + 'index.html'
 
-ARCHIVES_SAVE_AS = 'archives.html'
 YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
+
+# Tags, categories and archives are Direct Templates, so they don't have a
+# <NAME>_URL option.
+TAGS_SAVE_AS = 'tags/index.html'
+CATEGORIES_SAVE_AS = 'categories/index.html'
+ARCHIVES_SAVE_AS = 'archives/index.html'
 
 # Deactivate author URLs
 AUTHOR_SAVE_AS = False
