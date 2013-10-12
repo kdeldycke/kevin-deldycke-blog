@@ -12,6 +12,11 @@ LOCALE = 'C'
 MD_EXTENSIONS = ['codehilite', 'extra', 'video']
 TYPOGRIFY = True
 
+# Do not publish articles set in the future
+WITH_FUTURE_DATES = False
+# Force Pelican to use the file name as the slug, instead of derivating it from the title.
+FILENAME_METADATA = '(?P<slug>.*)'
+
 # Force the same URL structure as WordPress
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
@@ -26,11 +31,6 @@ TEMPLATE_PAGES = {
     'templates/code.html': 'code/index.html',
     'templates/themes.html': 'themes/index.html',
 }
-
-# Do not publish articles set in the future
-WITH_FUTURE_DATES = False
-# Force Pelican to use the file name as the slug, instead of derivating it from the title.
-FILENAME_METADATA = '(?P<slug>.*)'
 
 TAGS_URL = 'tags/'
 TAGS_SAVE_AS = TAGS_URL + 'index.html'
