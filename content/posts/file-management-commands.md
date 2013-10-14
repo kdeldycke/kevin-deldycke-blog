@@ -93,11 +93,6 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ find . -type f -printf "%f\n" | sort | uniq --repeated --all-repeated=separate
 
-  * Delete all `.pyc` and `.pyo` files in the system:
-
-        :::bash
-        $ find / -name "*.py[co]" | xargs rm
-
   * Delete all empty files and folders (run this command several times to remove nested empty directories):
 
         :::bash
@@ -121,8 +116,8 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
   * I used those commands when I import big quantity of files from a window user:
 
         :::bash
-        $ find ./ -name "desktop.ini" -print -exec rm -f "{}" \;
-        $ find ./ -name "Thumbs.db" -print -exec rm -f "{}" \;
+        $ find ./ -name "desktop.ini" -print -delete
+        $ find ./ -name "Thumbs.db" -print -delete
 
   * Delete all files and folders in the current directory except the `README.txt` file:
 
