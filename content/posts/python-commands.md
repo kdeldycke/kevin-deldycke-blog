@@ -41,6 +41,12 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
         :::bash
         $ find ./ -iname "*.py" -exec autopep8 --in-place "{}" \;
 
+  * Delete all `.pyc` and `.pyo` files in the system:
+
+        :::bash
+        $ find / -name "*.py[co]" -delete
+        
+
 ## Date manipulation
 
   * Add a month to the current date:
