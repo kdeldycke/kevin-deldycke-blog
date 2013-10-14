@@ -1,7 +1,7 @@
 date: 2011-01-04 12:04:12
 title: Python commands
 category: English
-tags: ascii, Computer programming, date, dateutil, development, distutils, encoding, PEP8, PyPi, Python, socket, unicode, URL, urllib2, Web
+tags: ascii, Computer programming, date, dateutil, development, distutils, encoding, PEP8, PyPi, PDB, Python, socket, unicode, URL, urllib2, Web, PyLint, Fabric, pip
 
   * Add a [Python's debugger](http://docs.python.org/library/pdb.html) break point:
 
@@ -56,6 +56,7 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
         import dateutil
         datetime.date.today() + dateutil.relativedelta(months=1)
 
+
 ## Package management
 
   * Generate a binary distribution of the current package:
@@ -68,13 +69,14 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
         :::bash
         $ python ./setup.py register sdist bdist_egg bdist_dumb upload
 
-  * Here is how my `~/.pypirc` looks like:
 
-        :::ini
-        [pypirc]
-        servers = pypi
+## Configuration
 
-        [server-login]
-        username:kdeldycke
-        password:XXXXXXX
+I maintain a set of default configuration files in my [`dotfiles` repository](https://github.com/kdeldycke/dotfiles):
 
+  * PDB: [`~/.pdbrc`](https://github.com/kdeldycke/dotfiles/blob/master/.pdbrc) & [`~/.pdbrc.py`](https://github.com/kdeldycke/dotfiles/blob/master/.pdbrc.py)
+  * Pip: [`~/.pip/pip.conf`](https://github.com/kdeldycke/dotfiles/blob/master/.pip/pip.conf)
+  * PyPi: [`~/.pypirc`](https://github.com/kdeldycke/dotfiles/blob/master/.pypirc)
+  * PEP 8: [`~/.config/pep8`](https://github.com/kdeldycke/dotfiles/blob/master/.config/pep8)
+  * PyLint: [`~/.pylintrc`](https://github.com/kdeldycke/dotfiles/blob/master/.pylintrc)
+  * Fabric: [`~/.fabricrc`](https://github.com/kdeldycke/dotfiles/blob/master/.fabricrc)
