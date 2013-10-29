@@ -93,9 +93,9 @@ At that stage, I just helped him by creating the seamless split screens:
 
 ## Color correction
 
-As I said in [Kdenlive's forum](http://kdenlive.org/forum/music-video-paris-color-grading-example#comment-18744), the color correction was a first. I never worked on a project for which any serious color correction was done. Until *Where is she ?*.
+As I said in [Kdenlive's forum](http://forum.kde.org/viewtopic.php?f=266&t=112313#p270103), the color correction was a first. I never worked on a project for which any serious color correction was done. Until *Where is she ?*.
 
-I was worried by the final look of it because, [as Marko pointed out](http://kdenlive.org/forum/music-video-paris-color-grading-example#comment-18690) in the thread, the footage was captured in all sorts of lighting conditions. It's hard to keep a consistent exposure between all these locations, especially with the tight latitude of a [Canon 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20) (even with a [fine-tuned neutral color profile](http://prolost.com/flat)).
+I was worried by the final look of it because, [as Marko pointed out](http://forum.kde.org/viewtopic.php?f=266&t=112313#p270102) in the thread, the footage was captured in all sorts of lighting conditions. It's hard to keep a consistent exposure between all these locations, especially with the tight latitude of a [Canon 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20) (even with a [fine-tuned neutral color profile](http://prolost.com/flat)).
 
 Robin did all the color correction in Kdenlive and for him, it was a first too. The goal wasn't to apply create a strong style. Color grading was more or less a technical mean, to keep the exposure jumping from shot to shot. Robin invested lots of time in this project and the result exceeded our expectations. The final video is fairly consistent and the cut between scenes is smooth compared to the raw footage.
 
