@@ -9,45 +9,45 @@ http://www.youtube.com/watch?v=SejUVkC5JHs
 
 I shot the video in a week-end (plus an extra afternoon), at 24 fps in 1080p, with the following equipment:
 
-  * [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW)
+  * [Canon EOS 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20)
 
 
 
-  * [Canon EF 70-200mm f/2.8L IS II USM](http://www.amazon.com/gp/product/B0033PRWSW/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0033PRWSW&linkCode=as2&tag=kevideld-20)
+  * [Canon EF 70-200mm f/2.8L IS II USM](http://www.amazon.com/dp/B0033PRWSW/?tag=kevideld-20)
 
 
 
-  * [Sigma 30mm f/1.4 EX DC HSM](http://www.amazon.com/gp/product/B0007U0GZM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0007U0GZM)
+  * [Sigma 30mm f/1.4 EX DC HSM](http://www.amazon.com/dp/B0007U0GZM/?tag=kevideld-20)
 
 
 
-  * [Tokina 11-16mm f/2.8](http://www.amazon.com/gp/product/B0014Z3XMC/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B0014Z3XMC)
+  * [Tokina 11-16mm f/2.8](http://www.amazon.com/dp/B0014Z3XMC/?tag=kevideld-20)
 
 
 
-  * [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](http://www.amazon.com/gp/product/B002LVUIXA/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002LVUIXA)
+  * [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](http://www.amazon.com/dp/B002LVUIXA/?tag=kevideld-20)
 
 
 
-  * [HDV-Z96 LED light](http://www.amazon.com/gp/product/B003UCGDSS/ref=as_li_ss_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B003UCGDSS)
+  * [HDV-Z96 LED light](http://www.amazon.com/dp/B003UCGDSS/?tag=kevideld-20)
 
 
 
-  * [Manfrotto 055XPROB Pro Tripod Legs](http://www.amazon.com/gp/product/B000UMX7FI/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000UMX7FI&linkCode=as2&tag=kevideld-20)
+  * [Manfrotto 055XPROB Pro Tripod Legs](http://www.amazon.com/dp/B000UMX7FI/?tag=kevideld-20)
 
 
 
-  * [Manfrotto 701HDV Pro Fluid Video Mini Head](http://www.amazon.com/gp/product/B001AT314M/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B001AT314M&linkCode=as2&tag=kevideld-20)
+  * [Manfrotto 701HDV Pro Fluid Video Mini Head](http://www.amazon.com/dp/B001AT314M/?tag=kevideld-20)
 
 
 
   * a basic Canon Monopod 100
 
-  * And finally, my brand new [Glidecam HD-2000](http://www.amazon.com/gp/product/B0020LB0MO/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0020LB0MO&linkCode=as2&tag=kevideld-20)
+  * And finally, my brand new [Glidecam HD-2000](http://www.amazon.com/dp/B0020LB0MO/?tag=kevideld-20)
 
 
 
-It was the first time I used my Glidecam, and the [Tokina 11-16mm](http://www.amazon.com/gp/product/B0014Z3XMC/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B0014Z3XMC)
+It was the first time I used my Glidecam, and the [Tokina 11-16mm](http://www.amazon.com/dp/B0014Z3XMC/?tag=kevideld-20)
 
  is a good match for this hand-held stabilizer.
 

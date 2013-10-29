@@ -3,7 +3,7 @@ title: Plone 3.2 (and Python 2.4) on Mac OS X Leopard
 category: English
 tags: Apple, buildout, Mac OS X Leopard, MacBook, Apple, Mac OS X, Plone, Python, zope
 
-In this post I'll show you how I installed Python 2.4 on [Mac OS X Leopard](http://www.amazon.com/gp/product/B000FK88JK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B000FK88JK) and how, starting from a bare Python environnement, we can build a stand-alone Zope 2.10 instance with Plone 3.2 thanks to `zc.buildout`.
+In this post I'll show you how I installed Python 2.4 on [Mac OS X Leopard](http://www.amazon.com/dp/B000FK88JK/?tag=kevideld-20) and how, starting from a bare Python environnement, we can build a stand-alone Zope 2.10 instance with Plone 3.2 thanks to `zc.buildout`.
 
 
 

@@ -32,18 +32,18 @@ Eventually this analog timeline led to some sketches and spreadsheets to prepare
 
 The following gear was involved in the making of this video:
 
-  * [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW)
-  * [Canon EOS 600D (Rebel T3i / Kiss X5)](http://www.amazon.com/gp/product/B004M170YC/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B004M170YC&linkCode=as2&tag=kevideld-20)
-  * [Canon EF 70-200mm f/2.8L IS II USM](http://www.amazon.com/gp/product/B0033PRWSW/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0033PRWSW&linkCode=as2&tag=kevideld-20)
-  * [Sigma 30mm f/1.4 EX DC HSM](http://www.amazon.com/gp/product/B0007U0GZM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0007U0GZM)
-  * [Tokina 11-16mm f/2.8](http://www.amazon.com/gp/product/B0014Z3XMC/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B0014Z3XMC)
-  * [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](http://www.amazon.com/gp/product/B002LVUIXA/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002LVUIXA)
-  * [Canon EF-S 18-55mm f/3.5-5.6 IS II](http://www.amazon.com/gp/product/B000V5K3FG/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000V5K3FG&linkCode=as2&tag=kevideld-20)
-  * [Manfrotto 055XPROB Pro Tripod Legs](http://www.amazon.com/gp/product/B000UMX7FI/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000UMX7FI&linkCode=as2&tag=kevideld-20)
-  * [Manfrotto 701HDV Pro Fluid Video Mini Head](http://www.amazon.com/gp/product/B001AT314M/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B001AT314M&linkCode=as2&tag=kevideld-20)
-  * [Glidecam HD-2000](http://www.amazon.com/gp/product/B0020LB0MO/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0020LB0MO&linkCode=as2&tag=kevideld-20)
+  * [Canon EOS 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20)
+  * [Canon EOS 600D (Rebel T3i / Kiss X5)](http://www.amazon.com/dp/B004M170YC/?tag=kevideld-20)
+  * [Canon EF 70-200mm f/2.8L IS II USM](http://www.amazon.com/dp/B0033PRWSW/?tag=kevideld-20)
+  * [Sigma 30mm f/1.4 EX DC HSM](http://www.amazon.com/dp/B0007U0GZM/?tag=kevideld-20)
+  * [Tokina 11-16mm f/2.8](http://www.amazon.com/dp/B0014Z3XMC/?tag=kevideld-20)
+  * [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](http://www.amazon.com/dp/B002LVUIXA/?tag=kevideld-20)
+  * [Canon EF-S 18-55mm f/3.5-5.6 IS II](http://www.amazon.com/dp/B000V5K3FG/?tag=kevideld-20)
+  * [Manfrotto 055XPROB Pro Tripod Legs](http://www.amazon.com/dp/B000UMX7FI/?tag=kevideld-20)
+  * [Manfrotto 701HDV Pro Fluid Video Mini Head](http://www.amazon.com/dp/B001AT314M/?tag=kevideld-20)
+  * [Glidecam HD-2000](http://www.amazon.com/dp/B0020LB0MO/?tag=kevideld-20)
   * a basic Canon Monopod 100
-  * [LCD ViewFinder](http://www.amazon.com/gp/product/B003A2BU5E/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B003A2BU5E)
+  * [LCD ViewFinder](http://www.amazon.com/dp/B003A2BU5E/?tag=kevideld-20)
 
 
 I shot the video in 2012 in two days (1 & 18 May) with some help from Robin (who makes a cameo appearance as the upset tourist). Here is the **behind the scenes video**:
@@ -70,7 +70,7 @@ And some extra photos of the shooting:
 ![](/uploads/2013/where-is-she-behind-the-scenes-021.jpg)
 
 
-The [wedding entrance](http://kevin.deldycke.com/2012/11/wedding-entrance-paris-video-postcard/) video was the first time I used my [Glidecam HD-2000](http://www.amazon.com/gp/product/B0020LB0MO/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0020LB0MO&linkCode=as2&tag=kevideld-20). But *Where is she ?* was the [first publicly released video](http://kevin.deldycke.com/2012/08/where-is-she-music-video-released/) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
+The [wedding entrance](http://kevin.deldycke.com/2012/11/wedding-entrance-paris-video-postcard/) video was the first time I used my [Glidecam HD-2000](http://www.amazon.com/dp/B0020LB0MO/?tag=kevideld-20). But *Where is she ?* was the [first publicly released video](http://kevin.deldycke.com/2012/08/where-is-she-music-video-released/) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
 
 http://www.youtube.com/watch?v=EGh-DZjIjHg
 
@@ -95,7 +95,7 @@ At that stage, I just helped him by creating the seamless split screens:
 
 As I said in [Kdenlive's forum](http://kdenlive.org/forum/music-video-paris-color-grading-example#comment-18744), the color correction was a first. I never worked on a project for which any serious color correction was done. Until *Where is she ?*.
 
-I was worried by the final look of it because, [as Marko pointed out](http://kdenlive.org/forum/music-video-paris-color-grading-example#comment-18690) in the thread, the footage was captured in all sorts of lighting conditions. It's hard to keep a consistent exposure between all these locations, especially with the tight latitude of a [Canon 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW) (even with a [fine-tuned neutral color profile](http://prolost.com/flat)).
+I was worried by the final look of it because, [as Marko pointed out](http://kdenlive.org/forum/music-video-paris-color-grading-example#comment-18690) in the thread, the footage was captured in all sorts of lighting conditions. It's hard to keep a consistent exposure between all these locations, especially with the tight latitude of a [Canon 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20) (even with a [fine-tuned neutral color profile](http://prolost.com/flat)).
 
 Robin did all the color correction in Kdenlive and for him, it was a first too. The goal wasn't to apply create a strong style. Color grading was more or less a technical mean, to keep the exposure jumping from shot to shot. Robin invested lots of time in this project and the result exceeded our expectations. The final video is fairly consistent and the cut between scenes is smooth compared to the raw footage.
 

@@ -3,7 +3,7 @@ title: Apple iPhone 3G bugs gallery
 category: English
 tags: Apple, bugs, iPhone, orange
 
-Just for the record, here are screenshots of network errors and user interface glitches I collected during 2 years of an [iPhone 3G](http://www.amazon.com/gp/product/B001AXA056/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B001AXA056) use:
+Just for the record, here are screenshots of network errors and user interface glitches I collected during 2 years of an [iPhone 3G](http://www.amazon.com/dp/B001AXA056/?tag=kevideld-20) use:
 
 
 

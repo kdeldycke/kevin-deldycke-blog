@@ -5,7 +5,7 @@ tags: Alexander III bridge, Canon EOS 7D, cinema, midnight in paris, Owen Wilson
 
 Last night, I was going back home from a photo trip with friends, when I spotted a film crew on [Alexander III bridge in Paris](http://en.wikipedia.org/wiki/Pont_Alexandre_III). It happened to be the shooting of some scenes for the next Woody Allen movie: [Midnight in Paris](http://www.imdb.com/title/tt1605783/).
 
-Here are some noisy photos I've taken with my [Canon 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW) and a [15-85mm f/3.5-5.6](http://www.amazon.com/gp/product/B002NEGTTM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002NEGTTM). If only I had a [fast telephoto lens](http://www.amazon.com/gp/product/B0000ALKBU/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B0000ALKBU)... :(
+Here are some noisy photos I've taken with my [Canon 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20) and a [15-85mm f/3.5-5.6](http://www.amazon.com/dp/B002NEGTTM/?tag=kevideld-20). If only I had a [fast telephoto lens](http://www.amazon.com/dp/B0000ALKBU/?tag=kevideld-20)... :(
 
 
 

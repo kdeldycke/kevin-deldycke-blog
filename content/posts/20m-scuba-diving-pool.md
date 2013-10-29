@@ -3,13 +3,13 @@ title: 20m Scuba Diving Pool
 Category: Front Page
 tags: GoPro, Kdenlive, open water diver, PADI, pool, scuba diving, Underwater diving, Video, YouTube
 
-Here is my last dive at the pool, the last indoor dive required to validate my [PADI Open Water Diver](http://www.amazon.com/gp/product/B003JX0AUK/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B003JX0AUK&linkCode=as2&tag=kevideld-20) certification:
+Here is my last dive at the pool, the last indoor dive required to validate my [PADI Open Water Diver](http://www.amazon.com/dp/B003JX0AUK/?tag=kevideld-20) certification:
 
 
 
 http://www.youtube.com/watch?v=LPpoNwjrg-4
 
-It was the first time I used my brand new [GoPro HD Hero2](http://www.amazon.com/gp/product/B005WY3TI4/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B005WY3TI4&linkCode=as2&tag=kevideld-20) and its [dedicated dive housing](http://www.amazon.com/gp/product/B0090A5P0Q/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0090A5P0Q&linkCode=as2&tag=kevideld-20). Everything was recorded in 1080p at 25fps with the widest FOV setting available (170°).
+It was the first time I used my brand new [GoPro HD Hero2](http://www.amazon.com/dp/B005WY3TI4/?tag=kevideld-20) and its [dedicated dive housing](http://www.amazon.com/dp/B0090A5P0Q/?tag=kevideld-20). Everything was recorded in 1080p at 25fps with the widest FOV setting available (170°).
 
 
 
@@ -19,7 +19,7 @@ Before bringing my camera, I asked the permission to both my instructor and the 
 
 I'm aware of task overloading issues. And I found out that a GoPro mitigate these risks: with its big battery life and a huge SD-card, I just start it before the dive and forget it. The lack of LCD screen on that camera, if making framing nearly impossible, doesn't distract you from your environment and its dangers. But this real-life test demonstrated again how stabilization is essential to produce good footage.
 
-The camera was [attached to my left wrist](http://www.amazon.com/gp/product/B0047I1S02/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0047I1S02&linkCode=as2&tag=kevideld-20). The rationale was that having something on my head was a bad idea: it could prevent me from accessing and purging my mask. I can't risk (yet) to be blind.
+The camera was [attached to my left wrist](http://www.amazon.com/dp/B0047I1S02/?tag=kevideld-20). The rationale was that having something on my head was a bad idea: it could prevent me from accessing and purging my mask. I can't risk (yet) to be blind.
 
 
 

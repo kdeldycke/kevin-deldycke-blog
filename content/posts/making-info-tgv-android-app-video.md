@@ -3,7 +3,7 @@ title: Making of "Info TGV" Android app video
 category: English
 tags: Android, Canon EOS 7D, ffmpeg, HTC, Kdenlive, Kubuntu, Ubuntu, Linux, Twitter, Uperto, Video, x264, YouTube, SoundUp studio
 
-Last week I was called by one of my co-worker from [Uperto](http://www.uperto.com) (the open-source division of [Devoteam](http://devoteam.com)). He knew I worked on some [video projects for my band](http://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great oportunity to play with my [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW), so I accepted ! :)
+Last week I was called by one of my co-worker from [Uperto](http://www.uperto.com) (the open-source division of [Devoteam](http://devoteam.com)). He knew I worked on some [video projects for my band](http://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great oportunity to play with my [Canon EOS 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20), so I accepted ! :)
 
 
 
@@ -17,21 +17,21 @@ Now let's talk about what happened behind the scenes ! :)
 
 ## Shooting
 
-In all of my projects, I want to use free and open-source software, and push their usage for every step of the creation workflow. For video recording, there is no open-source firmware for the 7D. Sadly, the [Magic Lantern](http://magiclantern.wikia.com) community seems to have [reached a dead-end regarding 7D support](http://groups.google.com/group/ml-devel/browse_thread/thread/648f25d8d543e58). I'm quite sad as I choosed the 7D a year ago for 2 things: its video capabilities and the potential hackability of this camera (extrapolating Magic Lantern's success on the [5D Mark II](http://www.amazon.com/gp/product/B001G5ZTLS/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B001G5ZTLS)). But this doesn't stop me to get usable footages. Far from it.
+In all of my projects, I want to use free and open-source software, and push their usage for every step of the creation workflow. For video recording, there is no open-source firmware for the 7D. Sadly, the [Magic Lantern](http://magiclantern.wikia.com) community seems to have [reached a dead-end regarding 7D support](http://groups.google.com/group/ml-devel/browse_thread/thread/648f25d8d543e58). I'm quite sad as I choosed the 7D a year ago for 2 things: its video capabilities and the potential hackability of this camera (extrapolating Magic Lantern's success on the [5D Mark II](http://www.amazon.com/dp/B001G5ZTLS/?tag=kevideld-20)). But this doesn't stop me to get usable footages. Far from it.
 
 
 
-For this video, I choose to use my [Sigma 30mm f/1.4 lens](http://www.amazon.com/gp/product/B0007U0GZM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0007U0GZM) as it's the fastest lens I have today.
+For this video, I choose to use my [Sigma 30mm f/1.4 lens](http://www.amazon.com/dp/B0007U0GZM/?tag=kevideld-20) as it's the fastest lens I have today.
 
- I wanted to reduce the depth of field as much as I can to emphasize the screen of the [HTC Desire](http://www.amazon.com/gp/product/B0038JDF3E/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B0038JDF3E), as all the important "action" takes place in the plane of the phone's screen.
-
-
-
-So I set my 7D to record in 1080p at 25 fps, open the lens at f/1.4 and set the shutter speed to a [traditional 1/50s](http://en.wikipedia.org/wiki/Shutter_angle). I then set the ISO to 160 (which is the lowest [native ISO value available on the 7D](http://brendanhbanks.tumblr.com/post/392272676/the-5d-and-7ds-native-iso-levels-are-160-320)). Still, the final image was over-exposed so I attached a [variable ND-filter](http://www.amazon.com/gp/product/B003RDF2MS/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B003RDF2MS) to the lens and tuned it until I had an acceptable result. I finally customized the white balance to match the ambient light temperature.
+ I wanted to reduce the depth of field as much as I can to emphasize the screen of the [HTC Desire](http://www.amazon.com/dp/B0038JDF3E/?tag=kevideld-20), as all the important "action" takes place in the plane of the phone's screen.
 
 
 
-Here is a snapshot of this first test on my [Samsung Galaxy S](http://www.amazon.com/gp/product/B003SIDVRA/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B003SIDVRA) (notice the strong [vignetting](http://en.wikipedia.org/wiki/Vignetting) created by the ND-filter):
+So I set my 7D to record in 1080p at 25 fps, open the lens at f/1.4 and set the shutter speed to a [traditional 1/50s](http://en.wikipedia.org/wiki/Shutter_angle). I then set the ISO to 160 (which is the lowest [native ISO value available on the 7D](http://brendanhbanks.tumblr.com/post/392272676/the-5d-and-7ds-native-iso-levels-are-160-320)). Still, the final image was over-exposed so I attached a [variable ND-filter](http://www.amazon.com/dp/B003RDF2MS/?tag=kevideld-20) to the lens and tuned it until I had an acceptable result. I finally customized the white balance to match the ambient light temperature.
+
+
+
+Here is a snapshot of this first test on my [Samsung Galaxy S](http://www.amazon.com/dp/B003SIDVRA/?tag=kevideld-20) (notice the strong [vignetting](http://en.wikipedia.org/wiki/Vignetting) created by the ND-filter):
 
 
 
@@ -71,7 +71,7 @@ Inter-title cards were created from scratch with [Gimp](http://www.gimp.org):
 
 ## Audio
 
-Let's talk audio now. I personally want to thanks [Tomasito, Cool Cavemen's saxophonist](http://coolcavemen.com/biography/tomasito/), who lends me his [Shure Beta57A microphone](http://www.amazon.com/gp/product/B0002BACAK/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0002BACAK) and his [Line 6 POD Studio UX1](http://www.amazon.com/gp/product/B001EKECAY/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B001EKECAY) interface for this project. With [electrical tape](http://en.wikipedia.org/wiki/Electrical_tape), I attached the microphone on my [Gorillapod](http://www.amazon.com/gp/product/B002FGTWOC/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002FGTWOC), which serves as a mic stand. I used this setup to record Arnaud's voice:
+Let's talk audio now. I personally want to thanks [Tomasito, Cool Cavemen's saxophonist](http://coolcavemen.com/biography/tomasito/), who lends me his [Shure Beta57A microphone](http://www.amazon.com/dp/B0002BACAK/?tag=kevideld-20) and his [Line 6 POD Studio UX1](http://www.amazon.com/dp/B001EKECAY/?tag=kevideld-20) interface for this project. With [electrical tape](http://en.wikipedia.org/wiki/Electrical_tape), I attached the microphone on my [Gorillapod](http://www.amazon.com/dp/B002FGTWOC/?tag=kevideld-20), which serves as a mic stand. I used this setup to record Arnaud's voice:
 
 
 

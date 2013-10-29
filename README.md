@@ -14,8 +14,6 @@ TODO
   * Test different ad placements: http://news.ycombinator.com/item?id=4974511
   * Get rid of /year/month/ for articles ? Or get rid of month only ?
   * Deduplicate articles' tags.
-  * Simplify Amazon affiliates links ? See: http://www.linktrackr.com/blog/amazon-affiliate-link/
-  * Automate Amazon link creation: https://github.com/rdegges/python-amazonify
   * Use a free OpenShift instance to host a script monitoring Github commits ? See:
       * https://www.openshift.com
       * https://pypi.python.org/pypi/pelicangit

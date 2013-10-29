@@ -9,7 +9,7 @@ If you want to extract mails out of your `.nsf` database, this might be the tool
 
 ## Installing nlconverter and its dependencies
 
-Here is how I installed `nlconverter` on a [Windows 2000](http://www.amazon.com/gp/product/B0006HMWO4/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B0006HMWO4) (SP4) machine:
+Here is how I installed `nlconverter` on a [Windows 2000](http://www.amazon.com/dp/B0006HMWO4/?tag=kevideld-20) (SP4) machine:
 
 
 

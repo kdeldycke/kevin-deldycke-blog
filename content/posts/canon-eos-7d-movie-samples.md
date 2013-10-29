@@ -5,7 +5,7 @@ tags: 1080p, 480p, 720p, Canon EOS 7D, photography, sample, Video
 
 ![](/uploads/2010/eiffel-tower-video-sample-preview.jpg)
 
-Here is a collection of Eiffel Tower's videos I took today with my [Canon EOS 7D](http://www.amazon.com/gp/product/B002NEGTTW/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399381&creativeASIN=B002NEGTTW). These quick and dirty clips were shots this late afternoon.
+Here is a collection of Eiffel Tower's videos I took today with my [Canon EOS 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20). These quick and dirty clips were shots this late afternoon.
 
 
 
@@ -29,7 +29,7 @@ Again, these files were extracted right out of the camera, without any modificat
 
 Even if these details have no importance, here are some parameters under which these clips were shots (may be useful for debugging):
 
-  * Lens: [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://www.amazon.com/gp/product/B002NEGTTM/ref=as_li_tf_tl?ie=UTF8&tag=kevideld-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=B002NEGTTM) 
+  * Lens: [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://www.amazon.com/dp/B002NEGTTM/?tag=kevideld-20) 
   * IS: On
   * ISO: 100
   * Exposition compensation: 0
