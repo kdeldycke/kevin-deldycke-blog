@@ -18,9 +18,6 @@ TODO
       * https://www.openshift.com
       * https://pypi.python.org/pypi/pelicangit
   * Fix Google Analytics bouncing rate ? See: http://drawingablank.me/blog/fix-your-bounce-rate.html
-  * Move to Amazon S3 ? See:
-      * http://lexual.com/blog/setup-pelican-blog-on-s3/
-      * http://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html
   * Migrate Resume from Google Docs to web-based page in Pelican ? Inspiration:
       * https://wrapbootstrap.com/theme/simply-minimal-responsive-resume-WB0DCP565
   * Use pelican-titlecase. See: https://github.com/jrarseneau/pelican-titlecase/issues/1
