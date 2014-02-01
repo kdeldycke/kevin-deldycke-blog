@@ -21,6 +21,10 @@ TODO
   * Migrate Resume from Google Docs to web-based page in Pelican ? Inspiration:
       * https://wrapbootstrap.com/theme/simply-minimal-responsive-resume-WB0DCP565
   * Use pelican-titlecase. See: https://github.com/jrarseneau/pelican-titlecase/issues/1
+  * Automate and script S3 deployment with:
+      * https://github.com/heyimalex/s3tup
+      * https://github.com/boto/boto
+  * Migrate `/content/extra/htaccess` rules to [S3 routing rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html#configure-bucket-as-website-routing-rule-syntax).
 
 
 License
