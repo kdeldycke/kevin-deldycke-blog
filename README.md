@@ -25,7 +25,8 @@ TODO
       * https://github.com/heyimalex/s3tup
       * https://github.com/boto/boto
   * Migrate `/content/extra/htaccess` rules to [S3 routing rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html#configure-bucket-as-website-routing-rule-syntax).
-
+  * Activate AWS CloudFront ? (See: http://paulstamatiou.com/hosting-on-amazon-s3-with-cloudfront/ ) 
+  
 
 License
 -------
