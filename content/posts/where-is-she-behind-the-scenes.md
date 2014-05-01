@@ -97,7 +97,7 @@ As I said in [Kdenlive's forum](http://forum.kde.org/viewtopic.php?f=266&t=11231
 
 I was worried by the final look of it because, [as Marko pointed out](http://forum.kde.org/viewtopic.php?f=266&t=112313#p270102) in the thread, the footage was captured in all sorts of lighting conditions. It's hard to keep a consistent exposure between all these locations, especially with the tight latitude of a [Canon 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20) (even with a [fine-tuned neutral color profile](http://prolost.com/flat)).
 
-Robin did all the color correction in Kdenlive and for him, it was a first too. The goal wasn't to apply create a strong style. Color grading was more or less a technical mean, to keep the exposure jumping from shot to shot. Robin invested lots of time in this project and the result exceeded our expectations. The final video is fairly consistent and the cut between scenes is smooth compared to the raw footage.
+Robin did all the color correction in Kdenlive and for him, it was a first too. The goal wasn't to create a strong style. Color grading was more or less a technical mean, to keep the exposure jumping from shot to shot. Robin invested lots of time in this project and the result exceeded our expectations. The final video is fairly consistent and the cut between scenes is smooth compared to the raw footage.
 
 I'd love to show you screenshots of the timeline with all its color parameters. Unfortunately we used an old development version, and when I try to re-open the project with the current version I have on my machine, I end up with this errors before completely crashing Kdenlive:
 
