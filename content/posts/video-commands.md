@@ -12,6 +12,13 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         $ ffmpeg -i ./video.avi
         $ file ./video.avi
 
+## libAV
+
+  * Re-encode a yuv422p video into a lossless h264, but this time in yuv420p:
+
+        :::bash
+        $ avconv -i yuv422p.mkv -c:v libx264 -pix_fmt yuv420p -preset veryslow -qp 0 yuv420p.mkv
+
 ## FFmpeg
 
   * Remux a flash video to an mp4 container without transcoding:
