@@ -6,6 +6,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   * Here are some commands to get informations about the nature of a video:
 
         :::bash
+        $ avprobe ./video.avi
         $ mplayer -frames 0 -identify ./video.avi
         $ tcprobe -i ./video.avi
         $ ffmpeg -i ./video.avi
