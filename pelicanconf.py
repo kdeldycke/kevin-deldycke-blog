@@ -5,6 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = u'Kevin Deldycke'
 SITENAME = u'Kevin Deldycke'
 
+PATH = 'content'
+
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 LOCALE = 'C'
