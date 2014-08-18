@@ -22,11 +22,11 @@ FILENAME_METADATA = '(?P<slug>.*)'
 # Force the same URL structure as WordPress
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
-ARTICLE_DIR = 'posts'
+ARTICLE_PATHS = ['posts']
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = PAGE_URL + 'index.html'
-PAGE_DIR = 'pages'
+PAGE_PATHS = ['pages']
 
 TEMPLATE_PAGES = {
     'templates/videos.html': 'video/index.html',
@@ -98,7 +98,7 @@ EXTRA_PATH_METADATA = {
     'extra/htaccess-static': {'path': 'documents/.htaccess'},
 }
 
-PLUGIN_PATH = 'plugins'
+PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'related_posts',
     #'thumbnailer',
