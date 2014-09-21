@@ -19,6 +19,11 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         :::bash
         $ avconv -i yuv422p.mkv -c:v libx264 -pix_fmt yuv420p -preset veryslow -qp 0 yuv420p.mkv
 
+  * Re-encode a lossless h264 video with a lower bitrate:
+
+        :::bash
+        $ avconv -i lossless.mkv -b:v 45M -preset veryfast lower-bitrate.mkv
+
 ## FFmpeg
 
   * Remux a flash video to an mp4 container without transcoding:
