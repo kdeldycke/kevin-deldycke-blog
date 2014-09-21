@@ -80,6 +80,44 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         :::bash
         $ transcode -i . -y ffmpeg -F list
 
+  * Batch stabilization script:
+
+        :::bash
+        SEARCH_FOLDER="/home/kevin/project/raw_sources"
+        DEST_FOLDER="/home/kevin/project/stabilized"
+
+        for FILE_PATH in $(find "$SEARCH_FOLDER" -name "*.mp4")
+        do
+            FILE_NAME=$(basename "$FILE_PATH")
+
+            STAB_FILE="$DEST_FOLDER/$FILE_NAME.trf"
+            if [ ! -e "$STAB_FILE" ]; then
+                # vis.stab's deshake/stabilize documentation:
+                # https://github.com/georgmartius/vid.stab/blob/36173857bfc0fa111983a5934f2cc6322969e928/transcode/filter_deshake.c#L75-L106
+                transcode -J stabilize=result="$STAB_FILE" -i "$FILE_PATH" -y null,null -o dummy
+            fi
+
+            FINAL_FILE="$DEST_FOLDER/$FILE_NAME-stabilized.mkv"
+
+            if [ ! -e "$FINAL_FILE" ]; then
+
+                # Create a stabilized stream of JPG files at 100% quality.
+                FRAME_BASEPATH="$DEST_FOLDER/$FILE_NAME.stabilized_"
+                # vid.stab's transform documentation:
+                # https://github.com/georgmartius/vid.stab/blob/36173857bfc0fa111983a5934f2cc6322969e928/src/transform.h#L122-L149
+                transcode -J transform=input="$STAB_FILE" -i "$FILE_PATH" -y jpg,null -F 100 -o "$FRAME_BASEPATH"
+
+                # Convert to a lossless h264 video in 4:2:0 color space.
+                FRAME_RATE=$(tcprobe -i "$FILE_PATH" | grep "frame rate:" | cut -d ':' -f 2 | cut -d ' ' -f 3)
+                avconv -r $FRAME_RATE -i "$FRAME_BASEPATH%06d.jpg" -c:v libx264 -pix_fmt yuv420p -preset veryfast -qp 0 "$FINAL_FILE"
+
+                find "$DEST_FOLDER" -name "$FRAME_BASENAME*.jpg" -delete
+
+            fi
+
+        done
+
+
 ## Mplayer / Mencoder
 
   * Change the aspect ratio of a film for the playback. Standard aspect ratio are : 1.33 (4:3), 1.66 (1.66:1), 1.77 (16:9) and 2.35 (2.35:1):
