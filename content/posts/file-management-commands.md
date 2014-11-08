@@ -71,7 +71,12 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
   * Rename all mp3 files in the current folder by adding a "sub-extension":
 
         :::bash
-        $ rename "s/\.mp3/\.my-sub-extension\.mp3/g" *.mp3
+        $ rename 's/\.mp3/\.my-sub-extension\.mp3/' *.mp3
+
+  * Prefix all files in the current folder:
+
+        :::bash
+        $ rename 's/(.*)$/prefix-$1/' *
 
   * Convert all files in the current folder to lower case:
 
@@ -104,7 +109,7 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         $ find ./ -type d -empty -ipath "./.*" -print -exec rm -rf "{}" \;
 
   * Delete files ending with `.thumbnail.jpg` or `.thumbnail.png` files (case insensitive):
-
+re
         :::bash
         $ find ./ -iregex ".*\.thumbnail\.\(jpg\|png\)$" -delete
 
