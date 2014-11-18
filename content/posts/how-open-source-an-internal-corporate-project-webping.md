@@ -43,7 +43,7 @@ As WebPing was not alone in the original Subversion repository, we need to clean
     :::bash
     $ git filter-branch --force --prune-empty --tree-filter 'find ./ -not -ipath "*webping*" -and -not -path "./other-project/trunk/tools/web-ping*" -and -not -path "./other-project/trunk/tools" -and -not -path "./other-project/trunk" -and -not -path "./other-project" -and -not -path "./.git*" -and -not -path "./" | xargs rm -rf' -- --all
 
-Strangely enough, my `init` tag went of after the command above. So I had to rebased it to get it in line:
+Strangely enough, my `init` tag went off after the command above. So I had to rebased it to get it in line:
 
     :::bash
     $ git rebase init master
