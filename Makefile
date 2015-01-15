@@ -35,7 +35,7 @@ endif
 help:
 	@echo 'Makefile for a pelican Web site                                        '
 	@echo '                                                                       '
-	@echo 'Usage:                                                                 '
+        @echo 'Usage:                                                                 '
 	@echo '   make html                        (re)generate the web site          '
 	@echo '   make clean                       remove the generated files         '
 	@echo '   make regenerate                  regenerate files upon modification '
