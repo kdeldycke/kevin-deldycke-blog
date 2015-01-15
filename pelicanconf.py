@@ -50,19 +50,19 @@ CATEGORIES_SAVE_AS = 'categories/index.html'
 ARCHIVES_SAVE_AS = 'archives/index.html'
 
 # Deactivate author URLs
-AUTHOR_SAVE_AS = False
-AUTHORS_SAVE_AS = False
+AUTHOR_SAVE_AS = None
+AUTHORS_SAVE_AS = None
 
 # Deactivate localization
-ARTICLE_LANG_SAVE_AS = False
-PAGE_LANG_SAVE_AS = False
+ARTICLE_LANG_SAVE_AS = None
+PAGE_LANG_SAVE_AS = None
 
 FEED_RSS = 'feed/index.html'
 FEED_ATOM = 'feed/atom/index.html'
-FEED_ALL_RSS = False
-FEED_ALL_ATOM = False
-TRANSLATION_FEED_RSS = False
-TRANSLATION_FEED_ATOM = False
+FEED_ALL_RSS = None
+FEED_ALL_ATOM = None
+TRANSLATION_FEED_RSS = None
+TRANSLATION_FEED_ATOM = None
 
 #http://kevin.deldycke.com/tag/openerp/feed/
 TAG_FEED_RSS = 'tag/%s/feed/index.html'
