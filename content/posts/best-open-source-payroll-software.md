@@ -34,9 +34,7 @@ The payroll modules were one of my biggest [contribution as a core developer on 
 
 These modules were so extensive that I wrote a detailed tutorial based on them. As it was the only comprehensive documentation available on ERP5, my work virtually became the [ERP5's bible for developers](http://web.archive.org/web/20050924101245/http://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39) for a while.
 
-You can download the [English translation](http://web.archive.org/web/20050924101245/http://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39) or read the original [French version](http://www.docstoc.com/docs/42926223/D%C3%A9veloppez-votre-propre-ERP-gr%C3%A2ce-aux-Business-Templates-ERP5) online:
-
-<iframe src="http://www.docstoc.com/docs/document-preview.aspx?doc_id=42926223" width="574" height="613" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+The [English translation is available for download](http://web.archive.org/web/20050924101245/http://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39), while the original French version (titled <em>Développez votre propre ERP grâce aux Business Templates ERP5</em>) is has disappeared from the web.
 
 This document had enough influence to be cited in four academic papers from 2006 to 2009:
 
