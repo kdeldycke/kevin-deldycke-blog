@@ -75,11 +75,6 @@ RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ http://kevin-deldycke-b
 
 ### HTTP tweaks (caching, optimizations, mime-types)
 
-# Remove OVH cookie
-<IfModule mod_headers.c>
-    Header unset Set-Cookie
-</IfModule>
-
 # Force compression of text-based assets
 <IfModule mod_headers.c>
   RequestHeader append Accept-Encoding "gzip,deflate"
