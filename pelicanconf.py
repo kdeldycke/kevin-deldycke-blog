@@ -54,8 +54,8 @@ CATEGORIES_SAVE_AS = 'categories/index.html'
 ARCHIVES_SAVE_AS = 'archives/index.html'
 
 # Deactivate author URLs
-AUTHOR_SAVE_AS = None
-AUTHORS_SAVE_AS = None
+AUTHOR_SAVE_AS = False
+AUTHORS_SAVE_AS = False
 
 # Deactivate localization
 ARTICLE_LANG_SAVE_AS = None
