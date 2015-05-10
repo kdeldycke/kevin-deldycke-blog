@@ -5,7 +5,7 @@ tags: Apple, automount, fuse, KDE, Mac OS X Leopard, Linux, MacBook, Apple, Mac 
 
 I'm used to access distant machine's file systems via ssh. My favorite environment, [KDE](http://www.kde.org), makes things easy thanks to the support of [`sftp://`](http://wikipedia.org/wiki/SSH_file_transfer_protocol) URLs via a [kio_slave](http://wikipedia.org/wiki/KIO). MacOSX is not as friendly and don't have any built-in mechanism of that kind.
 
-To get similar features in Leopard, we have to rely on [MacFuse](http://code.google.com/p/macfuse/) and [sshfs](http://fuse.sourceforge.net/sshfs.html). I'll explain here how I've installed these components on [MacOSX 10.5](http://www.amazon.com/dp/B000FK88JK/?tag=kevideld-20).
+To get similar features in Leopard, we have to rely on [MacFuse](http://code.google.com/p/macfuse/) and [sshfs](http://fuse.sourceforge.net/sshfs.html). I'll explain here how I've installed these components on [MacOSX 10.5](http://amzn.com/B000FK88JK/?tag=kevideld-20).
 
 
 

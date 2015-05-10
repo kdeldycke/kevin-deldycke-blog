@@ -7,7 +7,7 @@ Here is another light painting session I've done 2 weeks ago with Jim:
 
 ![](/uploads/2010/maomium-light-painting-session-two-preview.jpg)
 
-This time we used a more powerfull light source: a simple [Apple's iPhone](http://www.amazon.com/dp/B001AXA056/?tag=kevideld-20) at full brightness.
+This time we used a more powerfull light source: a simple [Apple's iPhone](http://amzn.com/B001AXA056/?tag=kevideld-20) at full brightness.
 
  We also played with several colors, thanks to the [free Flashlight app](http://itunes.apple.com/app/flashlight/id285281827).
 

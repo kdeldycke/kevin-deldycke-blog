@@ -11,7 +11,7 @@ As usual with Cool Cavemen, and to our delight, it boils down to a mountain of c
 
 http://www.youtube.com/watch?v=yNCtfnQp1uw
 
-I created this video using leftovers from the recording session. Which means the video material was all produced by a [Canon EOS 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20) and a [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://www.amazon.com/dp/B002NEGTTM/?tag=kevideld-20) lens, at 1080p, 25 fps and a 1/50s shutter speed.
+I created this video using leftovers from the recording session. Which means the video material was all produced by a [Canon EOS 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20) and a [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://amzn.com/B002NEGTTM/?tag=kevideld-20) lens, at 1080p, 25 fps and a 1/50s shutter speed.
 
 
 

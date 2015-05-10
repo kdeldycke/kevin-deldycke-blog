@@ -3,7 +3,7 @@ title: How-to extract data trapped into an iPhone
 category: English
 tags: Android, Apple, Backup, CSV, iPhone, iTunes, Apple, Mac OS X, Smartphones, SQLite, SQL, VLC
 
-After 2 years using an [iPhone 3G](http://www.amazon.com/dp/B001AXA056/?tag=kevideld-20), it's time for me to [switch to the Android world](http://twitter.com/kdeldycke/status/24219289221). [My Apple era is over](http://twitter.com/kdeldycke/status/22007247873), I need a plateform that is more linux and open-source friendly.
+After 2 years using an [iPhone 3G](http://amzn.com/B001AXA056/?tag=kevideld-20), it's time for me to [switch to the Android world](http://twitter.com/kdeldycke/status/24219289221). [My Apple era is over](http://twitter.com/kdeldycke/status/22007247873), I need a plateform that is more linux and open-source friendly.
 
 
 

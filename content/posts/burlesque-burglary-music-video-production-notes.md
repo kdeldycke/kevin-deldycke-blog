@@ -9,7 +9,7 @@ http://www.youtube.com/watch?v=JYQ0YehsLyU
 
 If this video was [released 4 months ago](http://kevin.deldycke.com/2012/01/burlesque-burglary-music-video-released/), it was shot 2 years earlier: the 3rd of January 2010. We choose that day as it was the only occasion before a long time for which all Cool Cavemen musicians were available for something other than a gig or a rehearsal.
 
-Being a newly self-proclaimed (but inexperienced) videographer, I was actively looking for shooting something, anything. A quick and dirty music video will provide a great excuse to test my newly purchased [Canon EOS 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20). So we arranged to meet at the [SoundUp Studio](http://soundupstudio.com) to shoot a video for [Burlesque Burglary](http://coolcavemen.com/disc/song/burlesque-burglary/).
+Being a newly self-proclaimed (but inexperienced) videographer, I was actively looking for shooting something, anything. A quick and dirty music video will provide a great excuse to test my newly purchased [Canon EOS 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20). So we arranged to meet at the [SoundUp Studio](http://soundupstudio.com) to shoot a video for [Burlesque Burglary](http://coolcavemen.com/disc/song/burlesque-burglary/).
 
 
 
@@ -29,25 +29,25 @@ http://www.youtube.com/watch?v=sVBPoOqxxJQ
 
 After all theses shots, the band was warmed up and comfortable enough to start suggesting ideas. So we started to shot some specific sequences to illustrate some very specific parts of the song.
 
-I shot everything with a [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://www.amazon.com/dp/B002NEGTTM/?tag=kevideld-20) lens. This lens is quite sharp for a non-L series, but the final video doesn't do justice to it: several shots could have been better, but I had limited knowledge of photography at that time, and had no good focus technique.
+I shot everything with a [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://amzn.com/B002NEGTTM/?tag=kevideld-20) lens. This lens is quite sharp for a non-L series, but the final video doesn't do justice to it: several shots could have been better, but I had limited knowledge of photography at that time, and had no good focus technique.
 
 
 
-But that lens has a really good optical stabilizer, which was a huge relief as I hadn't bought a tripod yet. In fact all shots of the video were hand-held. For some in which I needed better steadiness, I used a [Gorillapod](http://www.amazon.com/dp/B002FGTWOC/?tag=kevideld-20) to give me extra contact-point. This is far from being a comfortable but it did the job, at the price of back-pain at the end of the day.
+But that lens has a really good optical stabilizer, which was a huge relief as I hadn't bought a tripod yet. In fact all shots of the video were hand-held. For some in which I needed better steadiness, I used a [Gorillapod](http://amzn.com/B002FGTWOC/?tag=kevideld-20) to give me extra contact-point. This is far from being a comfortable but it did the job, at the price of back-pain at the end of the day.
 
 
 
-I also used my only other lens, the [Canon EF 50mm f/1.8 II](http://www.amazon.com/dp/B00007E7JU/?tag=kevideld-20), to film some instrument's close-ups. But only one or two of these takes made it to the final version of the video.
+I also used my only other lens, the [Canon EF 50mm f/1.8 II](http://amzn.com/B00007E7JU/?tag=kevideld-20), to film some instrument's close-ups. But only one or two of these takes made it to the final version of the video.
 
 
 
-To keep color temperature consistent, I made a custom white-balance using a [white card](http://www.amazon.com/dp/B002P5DNY8/?tag=kevideld-20). Here is Vince holding it for me:
+To keep color temperature consistent, I made a custom white-balance using a [white card](http://amzn.com/B002P5DNY8/?tag=kevideld-20). Here is Vince holding it for me:
 
 
 
 ![](/uploads/2012/vince-holding-white-card.jpg)
 
-To light the room, I placed behind the camera 4 x [250 W tungsten lamps](http://www.amazon.com/dp/B005G97EOU/?tag=kevideld-20), each pair lodged in a StarWay Clap-500 fixture:
+To light the room, I placed behind the camera 4 x [250 W tungsten lamps](http://amzn.com/B005G97EOU/?tag=kevideld-20), each pair lodged in a StarWay Clap-500 fixture:
 
 
 

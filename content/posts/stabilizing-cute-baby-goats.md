@@ -13,7 +13,7 @@ http://www.youtube.com/watch?v=el6VMY8KZHo
 
 Yeah, I know, this is a naive video that belongs to [/r/aww](http://www.reddit.com/r/aww/). But any excuse is good to me when its all about playing with video.
 
-These kids (as baby goats are called) decided to come to this world the night I was around. In a hurry I grabbed my [Canon 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20) and filmed these newborns with a [Sigma 30mm f/1.4 EX DC HSM](http://www.amazon.com/dp/B0007U0GZM/?tag=kevideld-20) to leverage its large aperture. And as expected, in the night, with no artificial light and no extra stabilization device, the resulting footage are extremely shaky.
+These kids (as baby goats are called) decided to come to this world the night I was around. In a hurry I grabbed my [Canon 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20) and filmed these newborns with a [Sigma 30mm f/1.4 EX DC HSM](http://amzn.com/B0007U0GZM/?tag=kevideld-20) to leverage its large aperture. And as expected, in the night, with no artificial light and no extra stabilization device, the resulting footage are extremely shaky.
 
 
 

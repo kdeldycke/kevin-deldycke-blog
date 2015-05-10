@@ -3,7 +3,7 @@ title: PADI Open Water Diver
 category: Français
 tags: dive, diving, open water diver, padi, plongée
 
-Je suis en train de valider mon niveau [PADI Open Water Diver](http://www.amazon.com/dp/B003JX0AUK/?tag=kevideld-20). Et la plongée en milieu protégé, c'est fait:
+Je suis en train de valider mon niveau [PADI Open Water Diver](http://amzn.com/B003JX0AUK/?tag=kevideld-20). Et la plongée en milieu protégé, c'est fait:
 
 
 

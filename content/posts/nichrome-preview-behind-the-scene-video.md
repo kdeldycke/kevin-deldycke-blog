@@ -11,11 +11,11 @@ The song is [Nichrome](http://coolcavemen.com/discography/songs-and-lyrics/nichr
 
 Demos are used not only for reference, but also for rehearsals when a band member is missing. That's the case in this video: there is no bass player, but his parts are played in all musician's headphones. Shooting the video in this playback setup is a huge advantage for me, as it removes all issues related to audio/video synchronizations and tempo deviations.
 
-I shot with my [Canon EOS 7D](http://www.amazon.com/dp/B002NEGTTW/?tag=kevideld-20)  (1080p, 23.976 fps, 1/50s shutter speed) and a [Tokina 11-16mm f/2.8](http://www.amazon.com/dp/B0014Z3XMC/?tag=kevideld-20)  wide open. I used this lens over my [8mm f/3.5 Fish-Eye](http://www.amazon.com/dp/B002OP5AY0/?tag=kevideld-20)  to save the distorting effects of the latter for others projects.
+I shot with my [Canon EOS 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20)  (1080p, 23.976 fps, 1/50s shutter speed) and a [Tokina 11-16mm f/2.8](http://amzn.com/B0014Z3XMC/?tag=kevideld-20)  wide open. I used this lens over my [8mm f/3.5 Fish-Eye](http://amzn.com/B002OP5AY0/?tag=kevideld-20)  to save the distorting effects of the latter for others projects.
 
 Shades of magenta were produced by 2 [PAR-56 LED cans](http://www.boutique-electroconcept.com/product_info.php?cPath=39_53&products_id=361) (controlled in DMX with [QLC](http://qlc.sourceforge.net/)). I did not initially planned to bring them, but they were lying in the trunk of my car and I never filmed them, so I took the opportunity. Unfortunately, as you can see in the video, the frequency of the [PWM](http://en.wikipedia.org/wiki/Pulse-width_modulation) that is driving the LEDs is not high enough and generate ugly flickers.
 
-ISO was set to auto as the lighting conditions were really messy. A quick test in the darkest area of the room showed me that ISOs were pushed too high, increasing the noise too much. I avoided this issue by mounting an [HDV-Z96 LED light](http://www.amazon.com/dp/B003UCGDSS/?tag=kevideld-20)  with its CTO diffuser filter, and carefully set its light level (around 60%):
+ISO was set to auto as the lighting conditions were really messy. A quick test in the darkest area of the room showed me that ISOs were pushed too high, increasing the noise too much. I avoided this issue by mounting an [HDV-Z96 LED light](http://amzn.com/B003UCGDSS/?tag=kevideld-20)  with its CTO diffuser filter, and carefully set its light level (around 60%):
 
 ![](/uploads/2011/canon-7D-with-HDV-Z96-LED-light.jpg)
 

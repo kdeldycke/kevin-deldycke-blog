@@ -9,7 +9,7 @@ http://www.youtube.com/watch?v=iHi0lwhTqqc
 
 [
 
-![](http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B001SER45Q&MarketPlace=US&ID=AsinImage&WS=1&tag=kevideld-20&ServiceVersion=20070822)](http://www.amazon.com/dp/B001SER45Q/?tag=kevideld-20) All the video material was shot by Tomasito itself, with his [Canon PowerShot SX200IS](http://www.amazon.com/dp/B001SER45Q/?tag=kevideld-20) point-and-shoot camera. This camera produce 30fps 720p clips.
+![](http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B001SER45Q&MarketPlace=US&ID=AsinImage&WS=1&tag=kevideld-20&ServiceVersion=20070822)](http://amzn.com/B001SER45Q/?tag=kevideld-20) All the video material was shot by Tomasito itself, with his [Canon PowerShot SX200IS](http://amzn.com/B001SER45Q/?tag=kevideld-20) point-and-shoot camera. This camera produce 30fps 720p clips.
 
 
 

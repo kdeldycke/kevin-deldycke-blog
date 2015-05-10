@@ -3,7 +3,7 @@ title: Export Quartz Composer to video
 category: English
 tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, Mac OS X Snow Leopard
 
-[Quartz Composer](http://en.wikipedia.org/wiki/Quartz_Composer) is a really nice piece of software for [visualists](http://createdigitalmotion.com). It allows you to create animated and/or interactive compositions mixing sounds, images, effects, user inputs and any other kind of data. In fact, Quartz Composer was the main reason I bought a [MacBook Pro](http://www.amazon.com/dp/B002QQ8H8I/?tag=kevideld-20) 18 months ago.
+[Quartz Composer](http://en.wikipedia.org/wiki/Quartz_Composer) is a really nice piece of software for [visualists](http://createdigitalmotion.com). It allows you to create animated and/or interactive compositions mixing sounds, images, effects, user inputs and any other kind of data. In fact, Quartz Composer was the main reason I bought a [MacBook Pro](http://amzn.com/B002QQ8H8I/?tag=kevideld-20) 18 months ago.
 
 
 
@@ -21,7 +21,7 @@ And this is how I designed the color wheel sub-patch:
 
 If creating a composition is really simple and straightforward, exporting the result to a video file is another story...
 
-I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-to-movie) v1.3b plugin. But it didn't worked on my [Snow Leopard](http://www.amazon.com/dp/B001AMHWP8/?tag=kevideld-20),
+I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-to-movie) v1.3b plugin. But it didn't worked on my [Snow Leopard](http://amzn.com/B001AMHWP8/?tag=kevideld-20),
 
  throwing me this exception every time:
 
@@ -52,7 +52,7 @@ I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-t
     0x86d70922: -[NSApplication run]
     0x00001d2b
 
-So I tried the old trick of [importing compositions in iMovie](http://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was possible in the past with [iMovie](http://www.amazon.com/dp/B003XKRZES/?tag=kevideld-20) '06, [Apple removed this feature in iMovie '09](http://www.quartzcompositions.com/phpBB2/viewtopic.php?t=594).
+So I tried the old trick of [importing compositions in iMovie](http://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was possible in the past with [iMovie](http://amzn.com/B003XKRZES/?tag=kevideld-20) '06, [Apple removed this feature in iMovie '09](http://www.quartzcompositions.com/phpBB2/viewtopic.php?t=594).
 
 
 

@@ -31,7 +31,7 @@ My 6 months test period of Leopard is over. Time to switch back to a Linux/KDE d
 
   * updated MacOS X from Leopard to Snow Leopard,
   * upgraded Kubuntu from Karmic Koala (9.10) to Lucid Lynx (10.04),
-  * changed my HDD to a SSD (a [160 Go Intel X25-M Postville](http://www.amazon.com/dp/B002IGT7IU/?tag=kevideld-20)).
+  * changed my HDD to a SSD (a [160 Go Intel X25-M Postville](http://amzn.com/B002IGT7IU/?tag=kevideld-20)).
 
 
 
