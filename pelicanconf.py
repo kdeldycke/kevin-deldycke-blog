@@ -10,7 +10,6 @@ PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 LOCALE = 'C'
-# Don't forget to install "pip install mdx_video"
 MD_EXTENSIONS = [
     'codehilite',
     'extra',
@@ -20,11 +19,12 @@ TYPOGRIFY = True
 
 # Do not publish articles set in the future
 # WITH_FUTURE_DATES = False
-# Temporaryly set this option to True while we wait a fix in Pelican 3.6.
+# XXX Temporaryly set this option to True while we wait a fix in Pelican 3.6.
 # See: https://github.com/getpelican/pelican/pull/1525
 WITH_FUTURE_DATES = True
 
-# Force Pelican to use the file name as the slug, instead of derivating it from the title.
+# Force Pelican to use the file name as the slug, instead of derivating it from
+# the title.
 FILENAME_METADATA = '(?P<slug>.*)'
 
 # Force the same URL structure as WordPress
@@ -89,7 +89,8 @@ DISPLAY_PAGES_ON_MENU = False
 # Pagination
 DEFAULT_ORPHANS = 2
 DEFAULT_PAGINATION = 5
-# TODO: set PAGINATION_PATTERNS to produce nice URLs like index/page/23/ instead of indexXX.html
+# TODO: set PAGINATION_PATTERNS to produce nice URLs like index/page/23/
+# instead of indexXX.html
 
 THEME = "plumage"
 
@@ -119,18 +120,19 @@ PLUGINS = [
 
 RELATED_POSTS_MAX = 3
 
-# TODO: align default SITEMAP config to http://wordpress.org/extend/plugins/google-sitemap-generator/stats/
+# TODO: align default SITEMAP config to
+# http://wordpress.org/extend/plugins/google-sitemap-generator/stats/
 SITEMAP = {
     'format': 'xml',
     'priorities': {
         'articles': 0.5,
         'indexes': 0.5,
-        'pages': 0.5
+        'pages': 0.5,
     },
     'changefreqs': {
         'articles': 'monthly',
         'indexes': 'daily',
-        'pages': 'monthly'
+        'pages': 'monthly',
     }
 }
 
@@ -163,13 +165,14 @@ LEFT_SIDEBAR = """
     <!--<div data-spy="affix" data-offset-top="0">-->
     <!--<h4>Sponsors</h4>-->
     <script type="text/javascript"><!--
-      google_ad_client = "pub-0142056597033291";
-      google_ad_slot = "9501596707";
-      google_ad_width = 160;
-      google_ad_height = 600;
-      //-->
+        google_ad_client = "pub-0142056597033291";
+        google_ad_slot = "9501596707";
+        google_ad_width = 160;
+        google_ad_height = 600;
+        //-->
     </script>
-    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+    <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
     <!--</div>-->
     """
 
@@ -182,7 +185,8 @@ SOCIAL = (
 
 LINKS_TITLE = "Professional profiles"
 LINKS = (
-    ('PDF resume', 'http://docs.google.com/document/export?format=pdf&amp;id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg'),
+    ('PDF resume', 'http://docs.google.com/document/export?format=pdf&amp;id='
+     '1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg'),
     ('Careers 2.0', 'http://careers.stackoverflow.com/kdeldycke'),
     ('LinkedIn', 'http://linkedin.com/in/kevindeldycke/en'),
     ('Viadeo', 'http://viadeo.com/fr/profile/kevin.deldycke'),
