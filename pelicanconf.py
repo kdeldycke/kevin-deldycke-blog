@@ -11,7 +11,11 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 LOCALE = 'C'
 # Don't forget to install "pip install mdx_video"
-MD_EXTENSIONS = ['codehilite', 'extra', 'video']
+MD_EXTENSIONS = [
+    'codehilite',
+    'extra',
+    'video',
+]
 TYPOGRIFY = True
 
 # Do not publish articles set in the future
