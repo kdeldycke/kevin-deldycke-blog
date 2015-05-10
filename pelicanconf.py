@@ -14,7 +14,7 @@ LOCALE = 'C'
 MD_EXTENSIONS = [
     'codehilite',
     'extra',
-    'video',
+    'mdx_video',
 ]
 TYPOGRIFY = True
 
