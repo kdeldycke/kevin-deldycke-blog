@@ -29,7 +29,7 @@ Again, these files were extracted right out of the camera, without any modificat
 
 Even if these details have no importance, here are some parameters under which these clips were shots (may be useful for debugging):
 
-  * Lens: [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://amzn.com/B002NEGTTM/?tag=kevideld-20)
+  * Lens: [Canon EF-S 15-85 mm f/3,5-5,6 IS USM](http://amzn.com/B002NEGTTM/?tag=kevideld-20) 
   * IS: On
   * ISO: 100
   * Exposition compensation: 0

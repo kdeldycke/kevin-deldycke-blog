@@ -3,7 +3,7 @@ title: Trapped in Freedom: live at Garage Café
 category: English
 tags: 1080p, Canon EOS 7D, Tamron, Trapped in Freedom, Video, youtube
 
-Some weeks ago I was at a local bar to see [Trapped in Freedom](http://www.myspace.com/trappedinfreedom). This band is composed of friends, and is also a side project involving [Jimy Wong](http://coolcavemen.com/biography/jimy-wong/) from [Cool Cavemen](http://coolcavemen.com), again as a drummer. This was a perfect excuse to test my brand new [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](http://amzn.com/B002LVUIXA/?tag=kevideld-20).
+Some weeks ago I was at a local bar to see [Trapped in Freedom](http://www.myspace.com/trappedinfreedom). This band is composed of friends, and is also a side project involving [Jimy Wong](http://coolcavemen.com/biography/jimy-wong/) from [Cool Cavemen](http://coolcavemen.com), again as a drummer. This was a perfect excuse to test my brand new [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](http://amzn.com/B002LVUIXA/?tag=kevideld-20). 
 
 
 
