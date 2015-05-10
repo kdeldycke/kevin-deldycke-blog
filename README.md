@@ -30,6 +30,14 @@ And in another:
 Then go to [http://localhost:8000](http://localhost:8000).
 
 
+Deployment
+----------
+
+We use `make` for deployment as `fab` is not wired yet:
+
+    $ make s3_upload
+
+
 TODO
 ----
 
