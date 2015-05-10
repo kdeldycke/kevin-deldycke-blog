@@ -22,7 +22,7 @@ These links are ugly and requires a second URL for the 1-pixel image tracker.
 I just discovered that you can [use a shorter version](http://blog.crazybob.org/2008/10/how-to-create-simple-amazon-affiliate.html) of the link. Which make the markup cleaner:
 
     :::markdown
-    My brand new [GoPro Hero3](http://amzn.com/B00F3F0GLU/?tag=kevideld-20) is awesome.
+    My brand new [GoPro Hero3](http://www.amazon.com/dp/B00F3F0GLU/?tag=kevideld-20) is awesome.
 
 And here's how I've transformed, in all my Markdown articles, the long Amazon links to their short form.
 
@@ -35,3 +35,13 @@ Then I converted all links in one batch with this magic one-liner:
 
     :::bash
     $ find ./* -iname "*.md" -exec perl -0777 -i -pe "s/\(http:\/\/www\.amazon\.com\/gp\/product\/(.*?)\/.*?\)/\(http:\/\/www\.amazon\.com\/dp\/\1\/\?tag=kevideld-20\)/gs" "{}" \;
+
+You can even go further (thanks [Elias](#comment-1404886079) for the tip) and use Amazon's URL shortener to get the following short links:
+
+    :::markdown
+    My brand new [GoPro Hero3](http://amzn.com/B00F3F0GLU/?tag=kevideld-20) is awesome.
+
+This is the `sed` command I used to convert all links from the previous form to this new scheme:
+
+    :::bash
+    $ find ./* -iname "*.md" -exec perl -0777 -i -pe "s/\(http:\/\/www\.amazon\.com\/dp\/(.*?)\)/\(http:\/\/amzn\.com\/\1\)/gs" "{}" \;
