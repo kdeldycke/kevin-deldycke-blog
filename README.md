@@ -7,6 +7,15 @@ which is powered by [Pelican](http://getpelican.com), a static site generator wr
 The theme it uses is called [Plumage](https://github.com/kdeldycke/plumage).
 
 
+Installation
+------------
+
+Install Pelican and its dependencies:
+
+    $ sudo aptitude install -y python-markdown python-pygments python-beautifulsoup pandoc python-smartypants s3cmd
+    $ pip install --upgrade pelican mdx_video typogrify Fabric
+
+
 TODO
 ----
 
