@@ -16,6 +16,20 @@ Install Pelican and its dependencies:
     $ pip install --upgrade pelican mdx_video typogrify Fabric
 
 
+Development
+-----------
+
+In one terminal, run:
+
+    $ fab regenerate
+
+And in another:
+
+    $ fab serve
+
+Then go to [http://localhost:8000](http://localhost:8000).
+
+
 TODO
 ----
 
