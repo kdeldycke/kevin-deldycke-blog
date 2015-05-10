@@ -184,7 +184,7 @@ LINKS = (
     ('Viadeo', 'http://viadeo.com/fr/profile/kevin.deldycke'),
 )
 
-COPYRIGHT = "Unless contrary mention, the licensing terms below applies:<br/>Code and software released under <a href='http://www.fsf.org/licensing/licenses/gpl.html'>GNU/GPL licence v2.0</a>;<br/>Other content published under <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-Share Alike 3.0 license</a>."
+COPYRIGHT = "Unless contrary mentioned, the licensing terms below applies:<br/>Code and software released under <a href='http://www.fsf.org/licensing/licenses/gpl.html'>GNU/GPL licence v2.0</a>;<br/>Other content published under <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-Share Alike 3.0 license</a>."
 DISQUS_SITENAME = 'kevin-deldycke-blog'
 GOOGLE_ANALYTICS = 'UA-657524-1'
 GOOGLE_ANALYTICS_DOMAIN = 'deldycke.com'
