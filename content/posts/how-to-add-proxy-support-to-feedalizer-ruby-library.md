@@ -5,7 +5,10 @@ tags: feed, feedalizer, hpricot, HTTP, parsing, proxy, RSS, Ruby, Ruby on Rails
 
 ![](/uploads/2008/feedalizer.png)
 
-Here is a little code snippet that [monkey-patch](http://en.wikipedia.org/wiki/Monkey_patch) [Feedalizer](http://termos.vemod.net/feedalizer) to let it grab web content through a HTTP proxy:
+Here is a little code snippet which
+[monkey-patch](http://en.wikipedia.org/wiki/Monkey_patch)
+[Feedalizer](http://termos.vemod.net/feedalizer) to let it grab web content
+through a HTTP proxy:
 
     :::ruby
     # HTTP proxy settings
@@ -26,11 +29,18 @@ Here is a little code snippet that [monkey-patch](http://en.wikipedia.org/wiki/M
       end
     end
 
-This fix, written for a [Ruby on Rails](http://www.rubyonrails.org)-based project, lay in the `environment.rb` file, but I wonder if this is the right place and the right way of doing it... Anyway, it works for me ! :)
+This fix, written for a [Ruby on Rails](http://www.rubyonrails.org)-based
+project, lay in the `environment.rb` file, but I wonder if this is the right
+place and the right way of doing it... Anyway, it works for me ! :)
 
-**Update**: A [post from Matthew Higgins' blog that answer my question](http://www.strictlyuntyped.com/2008/06/rails-where-to-put-other-files.html) above has just shown up in my feed aggregator. What's he telling us ? That I'm a naughty programmer :
+**Update**: A
+[post from Matthew Higgins' blog that answer my question](http://www.strictlyuntyped.com/2008/06/rails-where-to-put-other-files.html)
+above has just shown up in my feed aggregator. What's he telling us ? That I'm a
+naughty programmer :
 
-> Previous to 2.0, naughty developers pasted code at the bottom of `environment.rb`, and the `config/initializer` folder was a welcome convention to help organize this madness.
+> Previous to 2.0, naughty developers pasted code at the bottom of
+`environment.rb`, and the `config/initializer` folder was a welcome convention
+to help organize this madness.
 
-For your instance, the code in this post is extracted from an "old" (prior to RoR 2.0) project, thus explaining my naughtyness... ;)
-
+For your instance, the code in this post is extracted from an "old" (prior to
+RoR 2.0) project, thus explaining my naughtyness... ;)

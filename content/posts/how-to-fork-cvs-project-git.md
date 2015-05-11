@@ -3,9 +3,19 @@ title: How-to fork a CVS project with Git
 category: English
 tags: CVS, Drupal, Fork, Git, GitHub, Theme
 
-This week I've decided to put [my work on Cool Cavemen's concert videos](http://kevin.deldycke.com/2010/02/cool-cavemen-live-gayant-expo-part-ii/) aside, and work instead on refreshing [our online store](http://shop.coolcavemen.com). After all, [fans are requesting this](http://www.youtube.com/watch?v=qE-bis-wYxs#show_link_8i9W6PA9rEcKAmnYaXfANlo9U1TASUD9jXw7PtUS3n0), so I can't escape my duty...
+This week I've decided to put
+[my work on Cool Cavemen's concert videos](http://kevin.deldycke.com/2010/02/cool-cavemen-live-gayant-expo-part-ii/)
+aside, and work instead on refreshing
+[our online store](https://coolcavemen.bandcamp.com). After all,
+[fans are requesting this](http://www.youtube.com/watch?v=qE-bis-wYxs#show_link_8i9W6PA9rEcKAmnYaXfANlo9U1TASUD9jXw7PtUS3n0),
+so I can't escape my duty...
 
-The theme the store is based on is [Drupify](http://drupal.org/project/drupify), an adaptation of the [RokWebify Joomla theme](http://www.rockettheme.com/joomla-downloads/folder/115-rokwebify). All these themes are licensed under the GPL, so I have to share all my modifications with the community. This is a great opportunity to seriously experiment with [Git](http://git-scm.com) (at last !).
+The theme the store is based on is [Drupify](http://drupal.org/project/drupify),
+an adaptation of the
+[RokWebify Joomla theme](http://www.rockettheme.com/joomla-downloads/folder/115-rokwebify).
+All these themes are licensed under the GPL, so I have to share all my
+modifications with the community. This is a great opportunity to seriously
+experiment with [Git](http://git-scm.com) (at last !).
 
 Here is my plan:
 
@@ -14,11 +24,15 @@ Here is my plan:
   3. ???
   4. [Profit !](http://knowyourmeme.com/memes/profit) :D
 
-Problem: [Drupify lives in a CVS repository](http://drupalcode.org/viewvc/drupal/contributions/themes/drupify/).
+Problem:
+[Drupify lives in a CVS repository](http://drupalcode.org/viewvc/drupal/contributions/themes/drupify/).
 
-Solution: Git features a [`cvsimport`](http://kernel.org/pub/software/scm/git-core/docs/git-cvsimport.html) command.
+Solution: Git features a [`cvsimport`](http://kernel.org/pub/software/scm/git-core/docs/git-cvsimport.html)
+command.
 
-Before going further, we need to install [`cvsps`](http://www.cobite.com/cvsps/). For [MacPorts](http://www.macports.org) users, this is as simple as:
+Before going further, we need to install
+[`cvsps`](http://www.cobite.com/cvsps/). For [MacPorts](http://www.macports.org)
+users, this is as simple as:
 
     :::bash
     $ sudo port install cvsps
@@ -47,11 +61,17 @@ Then we create a temporary copy of Drupify's CVS repository:
     cvs rlog: Logging contributions/themes/drupify/css
     cvs rlog: Logging contributions/themes/drupify/images
 
-The new Git repository automatically created is named `drupify-copy`. Here is how it looks like in [GitX](http://gitx.frim.nl) (notice tags and branches):
+The new Git repository automatically created is named `drupify-copy`. Here is
+how it looks like in [GitX](http://gitx.frim.nl) (notice tags and branches):
 
 ![](/uploads/2010/git-cvs-import-in-gitx.png)
 
-To keep things clean and tidy, I want to relocate all the content of this repository to a `drupify-fork` folder. [Inspired by Pedro Melo](http://www.simplicidade.org/notes/archives/2009/04/merging_two_unr.html), we'll use the [`git filter-branch`](http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html) to do this job:
+To keep things clean and tidy, I want to relocate all the content of this
+repository to a `drupify-fork` folder.
+[Inspired by Pedro Melo](http://www.simplicidade.org/notes/archives/2009/04/merging_two_unr.html),
+we'll use the
+[`git filter-branch`](http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html)
+to do this job:
 
     :::bash
     $ cd drupify-copy
@@ -67,9 +87,12 @@ To keep things clean and tidy, I want to relocate all the content of this reposi
     Ref 'refs/heads/origin' was rewritten
     Ref 'refs/tags/DRUPAL-6--1-0' was rewritten
 
-The command we just used alter all the commits, in a way that let Drupify act as if it was located, since the beginning of its history, in the `drupify-fork` sub-directory.
+The command we just used alter all the commits, in a way that let Drupify act as
+if it was located, since the beginning of its history, in the `drupify-fork`
+sub-directory.
 
-By default, `filter-branch` creates a backup of the tree using references prefixed by `refs/original/`:
+By default, `filter-branch` creates a backup of the tree using references
+prefixed by `refs/original/`:
 
     :::bash
     $ git show-ref
@@ -84,11 +107,14 @@ By default, `filter-branch` creates a backup of the tree using references prefix
     957bb22704bc8188c0421b68cbb2f52a3fdcdef6 refs/original/refs/tags/DRUPAL-6--1-0
     ee44c42250a2552c1dbef2f7165d65179e1d19c6 refs/tags/DRUPAL-6--1-0
 
-We're not the only ones to not see through this mess. GitX seems to be confused too:
+We're not the only ones to not see through this mess. GitX seems to be confused
+too:
 
 ![](/uploads/2010/gitx-confused-by-git-branch-filter-backups.png)
 
-But [according Jakub Narębski on the Git mailing-list](http://n2.nabble.com/Removing-some-files-from-history-tp1344670p1344919.html), we can safely removes Git's backups:
+But
+[according Jakub Narębski on the Git mailing-list](http://n2.nabble.com/Removing-some-files-from-history-tp1344670p1344919.html),
+we can safely removes Git's backups:
 
     :::bash
     $ rm -Rf .git/refs/original
@@ -109,11 +135,13 @@ After the cleaning, references are back to normal:
     e5907fac0160febbd91f0cda73633b3e6eafa2a9 refs/heads/origin
     ee44c42250a2552c1dbef2f7165d65179e1d19c6 refs/tags/DRUPAL-6--1-0
 
-We can then fire up GitX to get the ultimate proof that the relocation operation didn't change anything, but the base folder (and SHA hashes):
+We can then fire up GitX to get the ultimate proof that the relocation
+operation didn't change anything, but the base folder (and SHA hashes):
 
 ![](/uploads/2010/history-tree-in-gitx-after-folder-change.png)
 
-It's time to import all this code in our main repository. First, get a local copy of our public [GitHub](http://github.com/) code base:
+It's time to import all this code in our main repository. First, get a local
+copy of our public [GitHub](http://github.com/) code base:
 
     :::bash
     $ cd
@@ -144,7 +172,8 @@ Now let's include our temporary `drupify-copy` as a tracked remote repository:
     From ../drupify-copy
      * [new tag]         DRUPAL-6--1-0 -> DRUPAL-6--1-0
 
-As you can see, all the little particularities of the remote repository are well tracked (HEAD, branches and tags are there):
+As you can see, all the little particularities of the remote repository are well
+tracked (HEAD, branches and tags are there):
 
     :::bash
     $ git remote show drupify
@@ -172,7 +201,9 @@ Another way to check this is to list all tracked remote branches:
       drupify/origin
       origin/HEAD -> origin/master
 
-It's time to merge all our tracked remote code (from `drupify-copy`) in our local repository (`kev-code`). The branch I'm interested in is `DRUPAL-6--1`, as it holds the latest Drupify code for Drupal 6.x:
+It's time to merge all our tracked remote code (from `drupify-copy`) in our
+local repository (`kev-code`). The branch I'm interested in is `DRUPAL-6--1`, as
+it holds the latest Drupify code for Drupal 6.x:
 
     :::bash
     $ git merge drupify/DRUPAL-6--1
@@ -247,7 +278,8 @@ It's time to merge all our tracked remote code (from `drupify-copy`) in our loca
      create mode 100644 drupify-fork/style.css
      create mode 100644 drupify-fork/template.php
 
-We can remove the attached `drupify` repository and its local `drupify-copy` source:
+We can remove the attached `drupify` repository and its local `drupify-copy`
+source:
 
     :::bash
     $ git remote rm drupify
@@ -258,7 +290,9 @@ At this stage, here is what our repository looks like:
 
 ![](/uploads/2010/cvs-fork-merged-to-git-with-full-history.png)
 
-To keep all the details that were created by `git cvsimport`, we can add by hand all the missing refs. The only difference with the original ones is that I unified the namespace with a `drupify/` prefix:
+To keep all the details that were created by `git cvsimport`, we can add by hand
+all the missing refs. The only difference with the original ones is that I
+unified the namespace with a `drupify/` prefix:
 
     :::bash
     $ git update-ref refs/heads/drupify/DRUPAL-6--1 8930672
@@ -272,4 +306,8 @@ And finally, we can contemplate our work:
 
 ![](/uploads/2010/final-cvs-import-and-merge-with-refs.png)
 
-This let me work cleanly on the CVS branch I wanted to in the first place. But there is one missing thing: all other tracked remote branches were not merged properly. I really wanted to import all of them (especially the `DRUPAL-5` branch), to keep a perfect copy of the original CSV tree. But I failed to find a way. Does anyone have a clue ?
+This let me work cleanly on the CVS branch I wanted to in the first place. But
+there is one missing thing: all other tracked remote branches were not merged
+properly. I really wanted to import all of them (especially the `DRUPAL-5`
+branch), to keep a perfect copy of the original CSV tree. But I failed to find a
+way. Does anyone have a clue ?

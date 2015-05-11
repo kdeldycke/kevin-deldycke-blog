@@ -5,6 +5,10 @@ tags: band, Cool Cavemen, Stage lighting, live, tour
 
 ![fly-concert-recto-04-150-dpi](/uploads/2009/fly-concert-recto-04-150-dpi.png)
 
-This week I'm [on tour with Cool Cavemen](http://coolcavemen.com/2009/tournee-nationale/). I'll try to cover this event on twitter. You can [follow our adventures live](http://twitter.com/kdeldycke) through my account.
+This week I'm
+[on tour with Cool Cavemen](http://coolcavemen.com/2009/tournee-nationale/).
+I'll try to cover this event on twitter. You can
+[follow our adventures live](http://twitter.com/kdeldycke) through my account.
 
-And if you're on twitter, don't miss the [official feed of the band](http://twitter.com/coolcavemen) ! :)
+And if you're on twitter, don't miss the
+[official feed of the band](http://twitter.com/coolcavemen) ! :)

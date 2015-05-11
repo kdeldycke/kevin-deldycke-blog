@@ -3,18 +3,32 @@ title: How I initialize my Git repositories
 category: English
 tags: code, Git, GitHub
 
-The first few days I used Git, I messed up my repository. I had to reset and recreate it from scratch several times. With enough trials and errors, I came up with an idea of how I should initialize my repositories. Let me explain in this post why `git init` is not enough to me.
+The first few days I used Git, I messed up my repository. I had to reset and
+recreate it from scratch several times. With enough trials and errors, I came up
+with an idea of how I should initialize my repositories. Let me explain in this
+post why `git init` is not enough to me.
 
-To create a Git repository, nothing else is absolutely necessary than these few trivial commands:
+To create a Git repository, nothing else is absolutely necessary than these few
+trivial commands:
 
     :::bash
     $ mkdir kev-code
     $ cd kev-code/
     $ git init
 
-But after reading [some documentation](http://www-cs-students.stanford.edu/~blynn/gitmagic/apa.html#_initial_commit) and user experiences on the web, it looks like Git has some limitations when dealing with the root of a repository history. As I plan to heavily manipulate the commit history (to do some kind of [code archaeology and history reconstruction](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)), I need to have the widest time latitude to play with commits.
+But after reading
+[some documentation](http://www-cs-students.stanford.edu/~blynn/gitmagic/apa.html#_initial_commit)
+and user experiences on the web, it looks like Git has some limitations when
+dealing with the root of a repository history. As I plan to heavily manipulate
+the commit history (to do some kind of
+[code archaeology and history reconstruction](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)),
+I need to have the widest time latitude to play with commits.
 
-In this situation, I came to the conclusion that it's a good idea to create an empty commit at the start of your repository life, and date it to the start of epoch. In the future, I'll be able to leverage this intial commit as an ordinary history point from which I can start a branch. Then in this branch I'll be free to mess up the history, until merging my changes back in the mainline tree.
+In this situation, I came to the conclusion that it's a good idea to create an
+empty commit at the start of your repository life, and date it to the start of
+epoch. In the future, I'll be able to leverage this intial commit as an ordinary
+history point from which I can start a branch. Then in this branch I'll be free
+to mess up the history, until merging my changes back in the mainline tree.
 
 So, let's create an empty commit:
 
@@ -55,7 +69,8 @@ And check that the previous operation did what we expected:
 
 Looks good !
 
-For convenience, we'll now attach a tag to this initial commit. Let's call it `init`:
+For convenience, we'll now attach a tag to this initial commit. Let's call it
+`init`:
 
     :::bash
     $ git tag "init"
@@ -81,4 +96,6 @@ And here is the result on GitHub:
 
 ![](/uploads/2010/git-first-commit.png)
 
-Maybe this "first commit" trick is unnecessary. So, if you have a better understanding of the issue, or can explain me why this is stupid, please tell me ! :)
+Maybe this "first commit" trick is unnecessary. So, if you have a better
+understanding of the issue, or can explain me why this is stupid, please tell
+me ! :)

@@ -3,30 +3,66 @@ title: Nichrome Preview (and Behind the Scene) video
 category: English
 tags: Canon EOS 7D, Cool Cavemen, Gimp, Kdenlive, Kubuntu, Ubuntu, Linux, nichrome, outtakes, tokina, EXIF
 
-Two months ago (October 8th) I shot a video for [Cool Cavemen](http://coolcavemen.com). I haven't talked about it on this blog yet, let's fix this right now:
+Two months ago (October 8th) I shot a video for
+[Cool Cavemen](http://coolcavemen.com). I haven't talked about it on this blog
+yet, let's fix this right now:
 
 http://www.youtube.com/watch?v=P1B-DUgKS9M
 
-The song is [Nichrome](http://coolcavemen.com/discography/songs-and-lyrics/nichrome/), which is a brand new song that will be available on Cool Cavemen's upcoming album (to be released in 2012). This is the first time Nichrome is made public. The video is only a preview of the song: it only contains the first 2 minutes and the audio track is a [demo](http://en.wikipedia.org/wiki/Demo_(music)), not the final studio version.
+The song is
+[Nichrome](http://coolcavemen.com/discography/songs-and-lyrics/nichrome/), which
+is a brand new song that will be available on Cool Cavemen's upcoming album (to
+be released in 2012). This is the first time Nichrome is made public. The video
+is only a preview of the song: it only contains the first 2 minutes and the
+audio track is a [demo](http://en.wikipedia.org/wiki/Demo_(music)), not the
+final studio version.
 
-Demos are used not only for reference, but also for rehearsals when a band member is missing. That's the case in this video: there is no bass player, but his parts are played in all musician's headphones. Shooting the video in this playback setup is a huge advantage for me, as it removes all issues related to audio/video synchronizations and tempo deviations.
+Demos are used not only for reference, but also for rehearsals when a band
+member is missing. That's the case in this video: there is no bass player, but
+his parts are played in all musician's headphones. Shooting the video in this
+playback setup is a huge advantage for me, as it removes all issues related to
+audio/video synchronizations and tempo deviations.
 
-I shot with my [Canon EOS 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20)  (1080p, 23.976 fps, 1/50s shutter speed) and a [Tokina 11-16mm f/2.8](http://amzn.com/B0014Z3XMC/?tag=kevideld-20)  wide open. I used this lens over my [8mm f/3.5 Fish-Eye](http://amzn.com/B002OP5AY0/?tag=kevideld-20)  to save the distorting effects of the latter for others projects.
+I shot with my [Canon EOS 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20)
+(1080p, 23.976 fps, 1/50s shutter speed) and a
+[Tokina 11-16mm f/2.8](http://amzn.com/B0014Z3XMC/?tag=kevideld-20) wide open.
+I used this lens over my
+[8mm f/3.5 Fish-Eye](http://amzn.com/B002OP5AY0/?tag=kevideld-20) to save the
+distorting effects of the latter for others projects.
 
-Shades of magenta were produced by 2 [PAR-56 LED cans](http://www.boutique-electroconcept.com/product_info.php?cPath=39_53&products_id=361) (controlled in DMX with [QLC](http://qlc.sourceforge.net/)). I did not initially planned to bring them, but they were lying in the trunk of my car and I never filmed them, so I took the opportunity. Unfortunately, as you can see in the video, the frequency of the [PWM](http://en.wikipedia.org/wiki/Pulse-width_modulation) that is driving the LEDs is not high enough and generate ugly flickers.
+Shades of magenta were produced by 2
+[PAR-56 LED cans](http://www.boutique-electroconcept.com/product_info.php?cPath=39_53&products_id=361)
+(controlled in DMX with [QLC](http://qlc.sourceforge.net/)). I did not initially
+planned to bring them, but they were lying in the trunk of my car and I never
+filmed them, so I took the opportunity. Unfortunately, as you can see in the
+video, the frequency of the
+[PWM](http://en.wikipedia.org/wiki/Pulse-width_modulation) that is driving the
+LEDs is not high enough and generate ugly flickers.
 
-ISO was set to auto as the lighting conditions were really messy. A quick test in the darkest area of the room showed me that ISOs were pushed too high, increasing the noise too much. I avoided this issue by mounting an [HDV-Z96 LED light](http://amzn.com/B003UCGDSS/?tag=kevideld-20)  with its CTO diffuser filter, and carefully set its light level (around 60%):
+ISO was set to auto as the lighting conditions were really messy. A quick test
+in the darkest area of the room showed me that ISOs were pushed too high,
+increasing the noise too much. I avoided this issue by mounting an
+[HDV-Z96 LED light](http://amzn.com/B003UCGDSS/?tag=kevideld-20) with its CTO
+diffuser filter, and carefully set its light level (around 60%):
 
 ![](/uploads/2011/canon-7D-with-HDV-Z96-LED-light.jpg)
 
-According EXIF data, ISO did not get over 2500 with this method, and was measured at 5000 in the darkest place. Average seems to be around 600. But take these numbers with a big grain of salt as I have no better sources than the `.THM` preview files generated by the camera for each `.MOV` clip.
+According EXIF data, ISO did not get over 2500 with this method, and was
+measured at 5000 in the darkest place. Average seems to be around 600. But take
+these numbers with a big grain of salt as I have no better sources than the
+`.THM` preview files generated by the camera for each `.MOV` clip.
 
-Meta-data also tells me that the white balance was set to auto at 2900K but I remember having set it manually to keep consist images colors. Always according EXIF, color profile was set to standard.
+Meta-data also tells me that the white balance was set to auto at 2900K but I
+remember having set it manually to keep consist images colors. Always according
+EXIF, color profile was set to standard.
 
-Finally, I created the title cards in Gimp and edited the video in Kdenlive (on Kubuntu 11.04):
+Finally, I created the title cards in Gimp and edited the video in Kdenlive
+(on Kubuntu 11.04):
 
 ![](/uploads/2011/nichrome-preview-kdenlive-timeline.png)
 
-And two weeks after releasing Nichrome's preview video, I edited another one with all left-overs. Here are the outtakes (which may not be as funny to you as for a French-speaking person, sorry):
+And two weeks after releasing Nichrome's preview video, I edited another one
+with all left-overs. Here are the outtakes (which may not be as funny to you as
+for a French-speaking person, sorry):
 
 http://www.youtube.com/watch?v=dXoXtC55alc

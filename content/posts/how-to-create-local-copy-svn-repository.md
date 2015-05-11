@@ -3,9 +3,14 @@ title: How-to create a local copy of a remote SVN repository
 category: English
 tags: Backup, Code, SCM, Subversion, SVK
 
-A long time ago, duplicating a remote Subversion repository required to have administration rights on the machine hosting the said repository. The only [solution back then was to use SVK](http://kevin.deldycke.com/2007/04/how-to-backup-mirror-a-public-svn-repository/), a defunct project that was adding a layer on top of SVN to make it a distributed [SCM](http://en.wikipedia.org/wiki/Revision_Control).
+A long time ago, duplicating a remote Subversion repository required to have
+administration rights on the machine hosting the said repository. The only
+[solution back then was to use SVK](http://kevin.deldycke.com/2007/04/how-to-backup-mirror-a-public-svn-repository/),
+a defunct project that was adding a layer on top of SVN to make it a distributed
+[SCM](http://en.wikipedia.org/wiki/Revision_Control).
 
-Today, to dump a repository you don't manage, all the tools you need are available with the standard Subversion distribution.
+Today, to dump a repository you don't manage, all the tools you need are
+available with the standard Subversion distribution.
 
 First, let's create an empty local SVN repository:
 
@@ -17,19 +22,22 @@ First, let's create an empty local SVN repository:
     $ kill `ps -ef | grep svnserve | grep -v grep | awk '{print $2}'`
     $ svnserve --daemon --listen-port 3690 --root ./svn-repo
 
-Now we have to make sure the synchronization utility is allowed to do anything it wants on our local repository:
+Now we have to make sure the synchronization utility is allowed to do anything
+it wants on our local repository:
 
     :::bash
     $ echo "#!/bin/sh" > ./svn-repo/hooks/pre-revprop-change
     $ chmod 755 ./svn-repo/hooks/pre-revprop-change
 
-Then we have to initialize the synchronization between the remote SVN (`https://svn.example.com/svn/internal-project`) and the local SVN (`svn://localhost:3690`):
+Then we have to initialize the synchronization between the remote SVN
+(`https://svn.example.com/svn/internal-project`) and the local SVN
+(`svn://localhost:3690`):
 
     :::bash
     $ svnsync init --sync-username "kevin" --sync-password "kevin" --source-username "kevin@example.com" --source-password "XXXXXX" svn://localhost:3690 https://svn.example.com/svn/internal-project
 
-Once all of this configuration is done, we can start dumping the content of the remote repository to our local copy:
+Once all of this configuration is done, we can start dumping the content of
+the remote repository to our local copy:
 
     :::bash
     $ svnsync --non-interactive --sync-username "kevin" --sync-password "kevin" --source-username "kevin@example.com" --source-password "XXXXXX" sync svn://localhost:3690
-
