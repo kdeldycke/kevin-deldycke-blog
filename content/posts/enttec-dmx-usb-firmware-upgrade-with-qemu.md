@@ -1,7 +1,7 @@
 date: 2009-05-14 21:55:57
 title: Enttec DMX-USB firmware upgrade with Qemu
 category: English
-tags: dmx, enttec, firmware, Hardware, lighting, lights, Linux, Qemu, stage lightning, USB
+tags: DMX, enttec, firmware, Hardware, Linux, Qemu, Stage lighting, USB
 
 A year ago, I brought a [Enttec Pro USB/DMX widget](http://www.enttec.com/dmxusb.php). Since then, a new firmware was released. If it doesn't fix any critical bug to me, I still _have to_ upgrade it (don't mind asking why... ;) ). And to make things fun (read "dangerous"), I choose to do it with Qemu.
 

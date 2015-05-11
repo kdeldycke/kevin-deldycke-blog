@@ -1,7 +1,7 @@
 date: 2010-05-25 21:18:48
 title: How I initialize my Git repositories
 category: English
-tags: code, Git, GitHub, Repository
+tags: code, Git, GitHub
 
 The first few days I used Git, I messed up my repository. I had to reset and recreate it from scratch several times. With enough trials and errors, I came up with an idea of how I should initialize my repositories. Let me explain in this post why `git init` is not enough to me.
 

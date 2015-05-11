@@ -1,7 +1,7 @@
 date: 2011-12-01 00:12:39
 title: Nichrome Preview (and Behind the Scene) video
 category: English
-tags: Canon EOS 7D, Cool Cavemen, Digital photography, Gimp, Kdenlive, Kubuntu, Ubuntu, Linux, nichrome, outtakes, tokina, EXIF
+tags: Canon EOS 7D, Cool Cavemen, Gimp, Kdenlive, Kubuntu, Ubuntu, Linux, nichrome, outtakes, tokina, EXIF
 
 Two months ago (October 8th) I shot a video for [Cool Cavemen](http://coolcavemen.com). I haven't talked about it on this blog yet, let's fix this right now:
 

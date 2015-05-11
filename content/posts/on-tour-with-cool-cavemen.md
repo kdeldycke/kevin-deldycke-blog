@@ -1,7 +1,7 @@
 date: 2009-03-03 10:14:24
 title: On tour with Cool Cavemen !
 category: English
-tags: band, Cool Cavemen, light, lighting, live, rock, tour
+tags: band, Cool Cavemen, Stage lighting, live, tour
 
 ![fly-concert-recto-04-150-dpi](/uploads/2009/fly-concert-recto-04-150-dpi.png)
 

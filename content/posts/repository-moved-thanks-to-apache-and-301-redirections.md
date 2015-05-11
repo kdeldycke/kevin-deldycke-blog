@@ -1,7 +1,7 @@
 date: 2007-02-28 21:49:57
 title: Repository Moved thanks to Apache and 301 Redirections
 category: English
-tags: Apache, Blog, Hosting, htaccess, ISP, Linux, Mandriva, Repository, RPM, urpmi, Web
+tags: Apache, Hosting, htaccess, ISP, Linux, Mandriva, RPM, urpmi
 
 Since the creation of my personal Mandriva repository ([10 months ago](http://kevin.deldycke.com/2006/04/new-repository-for-mandriva-2006/)) the number of my RPMs did not cease to increase. Currently all RPMs and SRPMs from 2006.0 and 2007.0 take 383MiB of space.
 

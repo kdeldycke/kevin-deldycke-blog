@@ -1,7 +1,7 @@
 date: 2008-06-07 19:34:20
 title: How-to add a corner banner to a K2 Wordpress theme's style
 category: English
-tags: alpha, banner, corner, CSS, design, Gimp, HTML, IE, K2, Photoshop, PHP, PNG, qpx, style, Theme, transparency, Web, WordPress
+tags: CSS, Gimp, HTML, Internet Explorer, K2, Photoshop, PHP, PNG, Theme, WordPress
 
 ![](/uploads/2008/beta-version-illustration.png)
 

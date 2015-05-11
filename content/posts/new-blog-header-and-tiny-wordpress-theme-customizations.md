@@ -1,7 +1,7 @@
 date: 2011-01-18 23:48:58
 title: New blog header and tiny WordPress theme customizations
 category: English
-tags: artwork, CSS, maomium, TwentyTen, Web, WordPress, Ubercart
+tags: artwork, CSS, maomium, WordPress, Ubercart
 
 I maintain a bunch of websites for friends on my server. In this context, [Maomium](http://maomium.com)'s owner owed me some bucks for his `.com` domain name. Here is the envelope I received yesterday with a check:
 

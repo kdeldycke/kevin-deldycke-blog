@@ -1,7 +1,7 @@
 date: 2011-01-24 12:52:08
 title: e107 Importer WordPress plugin v1.0 released !
 category: English
-tags: Blog, CMS, e107, importer, migration, PHP, Web, WordPress
+tags: CMS, e107, importer, migration, PHP, WordPress, Kubrick
 
 ![](/uploads/2011/e107-importer-configuration-screen.png)
 

@@ -1,7 +1,7 @@
 date: 2004-06-29 18:54:50
 title: Mise en place d'une paserelle ADSL sous Mandrake 10
 category: Français
-tags: ADSL, gateway, Linux, Mandrake, Network, router, MBR, PPPoE, Modem
+tags: ADSL, gateway, Linux, Mandriva, Network, router, MBR, PPPoE, Modem
 
 Voici un long article regroupant toutes mes notes sur mon projet de mise en place d'une passerelle internet tournant sous Linux.
 

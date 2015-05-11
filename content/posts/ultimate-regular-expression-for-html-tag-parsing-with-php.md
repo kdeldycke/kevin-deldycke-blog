@@ -1,7 +1,7 @@
 date: 2007-03-23 23:27:09
 title: Ultimate Regular Expression for HTML tag parsing with PHP
 category: English
-tags: HTML, parsing, PHP, Regular expression 
+tags: HTML, parsing, PHP, Regular expression
 
 _**Disclaimer**: this is a dirty hack ! To parse HTML or XML, use a dedicated library._
 

@@ -1,7 +1,7 @@
 date: 2007-06-16 17:22:16
 title: Sapphire 0.3 for K2 Wordpress Theme
 category: English
-tags: K2, style, Template, Theme, WordPress
+tags: K2, CSS, Template, Theme, WordPress
 
 I've updated [my Sapphire adaptation](http://kevin.deldycke.com/2007/03/sapphire-style-for-k2-wordpress-theme/) for the [new K2 v0.9.6 release](http://getk2.com/2007/06/k2-v096-released/).
 

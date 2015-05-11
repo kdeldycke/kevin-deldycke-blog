@@ -1,7 +1,7 @@
 date: 2010-02-21 20:58:09
 title: Git commands
 category: English
-tags: CLI, Git, GitHub, Project management software, Software engineering, Version control
+tags: CLI, Git, GitHub, Software engineering
 
   * Get a clean local copy of [my GitHub repository](http://github.com/kdeldycke/scripts) with read & write access:
 
