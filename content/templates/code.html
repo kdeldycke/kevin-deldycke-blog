@@ -17,14 +17,12 @@
     <div class="details">
       <h4>Software & Tech. communities</h4>
       {% set TECH_LINKS = [
-              ("Stack Overflow", "http://stackoverflow.com/users/487610/kevin-deldycke")
-            , ("Hacker News", "http://news.ycombinator.com/user?id=kdeldycke")
-            , ("Launchpad", "http://launchpad.net/~kevin-deldycke")
-            , ("BitBucket", "http://bitbucket.org/kdeldycke")
-            , ("GitHub", "http://github.com/kdeldycke")
-            , ("Ohloh", "http://ohloh.net/accounts/kevin")
-            , ("PyPi", "http://warehouse.python.org/user/kdeldycke/")
-            ]
+            ("GitHub", "http://github.com/kdeldycke"),
+            ("PyPi", "http://warehouse.python.org/user/kdeldycke/"),
+            ("Stack Overflow", "http://stackoverflow.com/users/487610/kevin-deldycke"),
+            ("Hacker News", "http://news.ycombinator.com/user?id=kdeldycke"),
+            ("Ohloh", "http://ohloh.net/accounts/kevin"),
+        ]
       %}
       <ul>
         {% for (name, link) in TECH_LINKS %}
