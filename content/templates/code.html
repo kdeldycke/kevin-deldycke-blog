@@ -7,30 +7,22 @@
 {% block top_center %}
   <h1>
     <a href="/code/" rel="bookmark" title="Permalink to Code">Code</a>
-    <small>Projects I've been involved in</small>
+    <small>Projects I've been involved in.</small>
   </h1>
-{% endblock %}
 
-
-{% block project_pre_content %}
-  <div class="thumbnail span3">
-    <div class="details">
-      <h4>Software & Tech. communities</h4>
-      {% set TECH_LINKS = [
-            ("GitHub", "http://github.com/kdeldycke"),
-            ("PyPi", "http://warehouse.python.org/user/kdeldycke/"),
-            ("Stack Overflow", "http://stackoverflow.com/users/487610/kevin-deldycke"),
-            ("Hacker News", "http://news.ycombinator.com/user?id=kdeldycke"),
-            ("Ohloh", "http://ohloh.net/accounts/kevin"),
-        ]
-      %}
-      <ul>
-        {% for (name, link) in TECH_LINKS %}
-          <li>{{ m.render_link_icon(link, name) }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+  {% set TECH_LINKS = [
+        ("GitHub", "http://github.com/kdeldycke"),
+        ("PyPi", "http://warehouse.python.org/user/kdeldycke/"),
+        ("Stack Overflow", "http://stackoverflow.com/users/487610/kevin-deldycke"),
+        ("Hacker News", "http://news.ycombinator.com/user?id=kdeldycke"),
+        ("Ohloh", "http://ohloh.net/accounts/kevin"),
+    ]
+  %}
+  <ul class="nav nav-pills">
+    {% for (name, link) in TECH_LINKS %}
+      <li>{{ m.render_link_icon(link, name) }}</li>
+    {% endfor %}
+  </ul>
 {% endblock %}
 
 
