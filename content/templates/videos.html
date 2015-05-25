@@ -13,262 +13,278 @@
 
 
 {% set PROJECTS = [
-    { 'name':  "Nemo 33: World's Deepest Pool"
+    { 'name': "Creepy Night Dive at Nemo 33"
+    , 'thumb': "/uploads/2015/creepy-night-dive-preview.jpg"
+    , 'thumb_link': "http://www.youtube.com/watch?v=a5YcLLaGJDU"
+    , 'roles': ["Documentary"]
+    , 'tools': ["2015"]
+    },
+    { 'name': "Aldabra Giant Tortoise (world's largest)"
+    , 'thumb': "/uploads/2014/giant-tortoises-preview.jpg"
+    , 'thumb_link': "http://www.youtube.com/watch?v=CzFmVD3Xfp0"
+    , 'roles': ["Documentary"]
+    , 'tools': ["2014"]
+    },
+    { 'name': "<em>Style 59</em> — Cool Cavemen"
+    , 'thumb': "/uploads/2014/style-59-preview.jpg"
+    , 'thumb_link': "http://www.youtube.com/watch?v=rWuqFmhGRgQ"
+    , 'roles': ["Music Video"]
+    , 'tools': ["2014"]
+    },
+    { 'name': "Seychelles Scuba Diving"
+    , 'thumb': "/uploads/2014/seychelles-scuba-preview.jpg"
+    , 'thumb_link': "http://www.youtube.com/watch?v=X8MoCluY7bE"
+    , 'roles': ["Documentary"]
+    , 'tools': ["2014"]
+    },
+    { 'name': "Whale Shark - Seychelles"
+    , 'thumb': "/uploads/2014/whale-shark-preview.jpg"
+    , 'thumb_link': "http://www.youtube.com/watch?v=ENDVg8VN6R8"
+    , 'roles': ["Documentary"]
+    , 'tools': ["2014"]
+    },
+    { 'name': "Nemo 33: World's Deepest Pool"
     , 'thumb': "/uploads/2013/nemo33-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=-sfFKZ2PvlE"
     , 'roles': ["Documentary"]
     , 'tools': ["2013"]
     },
-    { 'name':  "Glitch drummer"
+    { 'name': "Glitch drummer"
     , 'thumb': "/uploads/2013/glitch-drummer-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=zVaXnD7PxHI"
     , 'roles': ["Live music"]
     , 'tools': ["2013"]
     , 'links': ["http://kevin.deldycke.com/2013/07/keep-video-natural-glitches/"]
     },
-    { 'name':  "10227"
+    { 'name': "10227"
     , 'thumb': "/uploads/2013/10227-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=E5L7m2hjBbQ"
     , 'roles': ["Narrative"]
     , 'tools': ["2013"]
     },
-    { 'name':  "Color grading of <em>10227</em>"
+    { 'name': "Color grading of <em>10227</em>"
     , 'thumb': "/uploads/2013/10227-color-grading-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=rtdE4EWBZ_E"
     , 'roles': ["Documentary"]
     , 'tools': ["2013"]
     },
-    { 'name':  "Omashay — <em>Tale of Two</em>"
-    , 'desc':  "Painting timelapse."
+    { 'name': "<em>Tale of Two</em> — Omashay"
+    , 'desc': "Painting timelapse."
     , 'thumb': "/uploads/2013/tale-of-two-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=4HtfugU_mGg"
     , 'roles': ["Music video"]
     , 'tools': ["2013"]
     , 'links': ["http://kevin.deldycke.com/2013/03/tale-two-production-notes/"]
     },
-    { 'name':  "Omashay — <em>Goodnight</em>"
-    , 'desc':  "When original hand-drawing meet artificial slow-motion."
+    { 'name': "<em>Goodnight</em> — Omashay"
+    , 'desc': "When original hand-drawing meet artificial slow-motion."
     , 'thumb': "/uploads/2013/goodnight-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=bAKmRTV7Lek"
     , 'roles': ["Music video"]
     , 'tools': ["2013"]
     , 'links': ["http://kevin.deldycke.com/2013/03/goodnight-video/"]
     },
-    { 'name':  "The making of <em>Where is she ?</em>"
-    , 'desc':  ""
+    { 'name': "The making of <em>Where is she ?</em>"
     , 'thumb': "/uploads/2013/where-is-she-making-of.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=xtLz6jfSp-I"
     , 'roles': ["Documentary"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2013/05/where-is-she-behind-the-scenes/"]
     },
-    { 'name':  "20m Scuba Diving Pool"
-    , 'desc':  "First dive of my life at 20m."
+    { 'name': "20m Scuba Diving Pool"
+    , 'desc': "First dive of my life at 20m."
     , 'thumb': "/uploads/2010/20m-pool-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=LPpoNwjrg-4"
     , 'roles': ["Documentary"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2012/11/20m-scuba-diving-pool/"]
     },
-    { 'name':  "Mel+Tom Wedding Entrance"
-    , 'desc':  ""
+    { 'name': "Mel+Tom Wedding Entrance"
     , 'thumb': "/uploads/2010/mel-tom-wedding-entrance-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=SejUVkC5JHs"
     , 'roles': ["Narrative"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2012/11/wedding-entrance-paris-video-postcard/"]
     },
-    { 'name':  "Color grading of <em>Where is she ?</em>"
-    , 'desc':  ""
+    { 'name': "Color grading of <em>Where is she ?</em>"
     , 'thumb': "/uploads/2010/where-is-she-color-grading-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=t6cCQV2Jt2U"
     , 'roles': ["Documentary"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2013/05/where-is-she-behind-the-scenes/"]
     },
-    { 'name':  "Omashay — <em>Where is she ?</em>"
-    , 'desc':  "A postcard of Paris I shot in 2 days."
+    { 'name': "<em>Where is she ?</em> — Omashay"
+    , 'desc': "A postcard of Paris I shot in 2 days."
     , 'thumb': "/uploads/2010/where-is-she-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=YjE_uIRVnv8"
     , 'roles': ["Music video"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2012/08/where-is-she-music-video-released/", "http://kevin.deldycke.com/2013/05/where-is-she-behind-the-scenes/"]
     },
-    { 'name':  "Making of <em>Burlesque Burgrary</em>"
-    , 'desc':  ""
+    { 'name': "Making of <em>Burlesque Burgrary</em>"
     , 'thumb': "/uploads/2010/burlesque-burglary-making-of-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=yNCtfnQp1uw"
     , 'roles': ["Documentary"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2012/07/scenes-burlesque-burglary-music-video/"]
     },
-    { 'name':  "<em>Burlesque Burglary</em> (multicam)"
-    , 'desc':  "Simulated multi-camera version of the official video."
+    { 'name': "<em>Burlesque Burglary</em> (multicam)"
+    , 'desc': "Simulated multi-camera version of the official video."
     , 'thumb': "/uploads/2010/burlesque-burglary-multicam-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=sVBPoOqxxJQ"
     , 'roles': ["Music video"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2012/01/burlesque-burglary-music-video-released/"]
     },
-    { 'name':  "Cool Cavemen, MJC de Douai"
-    , 'desc':  "A night in the backstages with Cool Cavemen."
+    { 'name': "Cool Cavemen, MJC de Douai"
+    , 'desc': "A night in the backstages with Cool Cavemen."
     , 'thumb': "/uploads/2010/cool-cavemen-mjc-2011-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=RpFqhcihQbw"
     , 'roles': ["Documentary"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2012/03/video-summary-latest-cool-cavemens-concert/"]
     },
-    { 'name':  "4m²"
-    , 'desc':  "Why all the narratives I work on have to end in tears ?"
+    { 'name': "4m²"
+    , 'desc': "Why all the narratives I work on have to end in tears ?"
     , 'thumb': "/uploads/2012/002.png"
     , 'thumb_link': "http://www.youtube.com/watch?v=91y6L3QKiRk"
     , 'roles': ["Narrative"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2012/03/first-short-film-4m2-released/"]
     },
-    { 'name':  "Tomasito's Sax Solo in the Park"
-    , 'desc':  "Those cavemen can't go outside without being noticed."
+    { 'name': "Tomasito's Sax Solo in the Park"
+    , 'desc': "Those cavemen can't go outside without being noticed."
     , 'thumb': "/uploads/2010/park-sax-solo-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=IaL7kTyAogE"
     , 'roles': ["Live music"]
     , 'tools': ["2012"]
     , 'links': []
     },
-    { 'name':  "Cute Newborn Kids (Baby Goats)"
-    , 'desc':  "My only attempt at a cutexploitation film."
+    { 'name': "Cute Newborn Kids (Baby Goats)"
+    , 'desc': "My only attempt at a cutexploitation film."
     , 'thumb': "/uploads/2010/newborn-kids-baby-goats-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=el6VMY8KZHo"
     , 'roles': ["Documentary"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2012/02/stabilizing-cute-baby-goats/"]
     },
-    { 'name':  "Cool Cavemen — <em>Burlesque Burglary</em>"
-    , 'desc':  "My first one-man project: entirely directed, shot and edited by yours truly."
+    { 'name': "<em>Burlesque Burglary</em> — Cool Cavemen"
+    , 'desc': "My first one-man project: entirely directed, shot and edited by yours truly."
     , 'thumb': "/uploads/2012/burlesque-burglary-0007.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=JYQ0YehsLyU"
     , 'roles': ["Music video"]
     , 'tools': ["2012"]
     , 'links': ["http://kevin.deldycke.com/2012/06/burlesque-burglary-music-video-production-notes/"]
     },
-    { 'name':  "Cool Cavemen — <em>Radio Concert Intro</em>"
-    , 'desc':  ""
+    { 'name': "<em>Radio Concert Intro</em> — Cool Cavemen"
     , 'thumb': "/uploads/2010/cool-cavemen-radio-concert-intro-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=wJeyu-xEL_0"
     , 'roles': ["Remix"]
     , 'tools': ["2011"]
     , 'links': ["http://kevin.deldycke.com/2012/01/reusing-vintage-footage-cool-cavemens-concert-intro/"]
     },
-    { 'name':  "Cool Cavemen — <em>Belgique mon Namurrr</em>"
-    , 'desc':  "I am the Judge Dredd of concerts. I am the light !"
+    { 'name': "<em>Belgique mon Namurrr</em> — Cool Cavemen"
+    , 'desc': "I am the Judge Dredd of concerts. I am the light !"
     , 'thumb': "/uploads/2010/belgique-mon-namurrr-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=PnX-wK2lVCQ"
     , 'roles': ["Live music"]
     , 'tools': ["2011"]
     , 'links': ["http://kevin.deldycke.com/2012/03/video-summary-latest-cool-cavemens-concert/"]
     },
-    { 'name':  "Cool Cavemen — <em>Nichrome</em>'s outtakes"
-    , 'desc':  ""
+    { 'name': "<em>Nichrome</em>'s outtakes — Cool Cavemen"
     , 'thumb': "/uploads/2010/nichrome-outtakes.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=dXoXtC55alc"
     , 'roles': ["Documentary"]
     , 'tools': ["2011"]
     , 'links': ["http://kevin.deldycke.com/2011/12/nichrome-preview-behind-the-scene-video/"]
     },
-    { 'name':  "Cool Cavemen — <em>Nichrome</em> (preview)"
-    , 'desc':  "The only evidence that Cool Cavemen still has unreleased songs."
+    { 'name': "<em>Nichrome</em> (preview) — Cool Cavemen"
+    , 'desc': "The only evidence that Cool Cavemen still has unreleased songs."
     , 'thumb': "/uploads/2010/nichrome-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=P1B-DUgKS9M"
     , 'roles': ["Music video"]
     , 'tools': ["2011"]
     , 'links': ["http://kevin.deldycke.com/2011/12/nichrome-preview-behind-the-scene-video/"]
     },
-    { 'name':  "Cool Cavemen — <em>Drunk Dream</em> (acoustic)"
-    , 'desc':  "Can you believe they managed to shoot that video upside-down ?"
+    { 'name': "<em>Drunk Dream</em> (acoustic) — Cool Cavemen"
+    , 'desc': "Can you believe they managed to shoot that video upside-down ?"
     , 'thumb': "/uploads/2010/drunk-dream-acoustic-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=FQnwFnM-8lA"
     , 'roles': ["Live music"]
     , 'tools': ["2011"]
     , 'links': []
     },
-    { 'name':  "Omashay — <em>Wish you looked at me</em>"
-    , 'desc':  ""
+    { 'name': "<em>Wish you looked at me</em> — Omashay"
     , 'thumb_link': "http://www.youtube.com/watch?v=iHi0lwhTqqc"
     , 'thumb': "/uploads/2010/omashay-wish-you-looked-at-me-preview.png"
     , 'roles': ["Music video"]
     , 'tools': ["2011"]
     , 'links': ["http://kevin.deldycke.com/2011/07/making-of-omashay-wish-you-looked-at-me-music-video/"]
     },
-    { 'name':  "Trapped in Freedom at Garage Café"
-    , 'desc':  ""
+    { 'name': "Trapped in Freedom at Garage Café"
     , 'thumb_link': "http://www.youtube.com/watch?v=HlSmuJVQT8A&list=PL41DAE605B668609A"
     , 'thumb': "/uploads/2010/trapped-in-freedom-preview.jpg"
     , 'roles': ["Live music"]
     , 'tools': ["2011"]
     , 'links': ["http://kevin.deldycke.com/2011/02/trapped-freedom-live-garage-cafe/"]
     },
-    { 'name':  "MIDI-controlled graphics"
-    , 'desc':  "Quartz Composer, a MacBook and a Behringer BCF-2000."
+    { 'name': "MIDI-controlled graphics"
+    , 'desc': "Quartz Composer, a MacBook and a Behringer BCF-2000."
     , 'thumb': "/uploads/2010/midi-controller-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=I8JN40Vq_do&list=PL81EA3460858682F3"
     , 'roles': ["Motion graphics"]
     , 'tools': ["2010"]
     , 'links': ["http://kevin.deldycke.com/tag/midi-controlled-graphics/"]
     },
-    { 'name':  "Quartz Composer experiments"
-    , 'desc':  ""
+    { 'name': "Quartz Composer experiments"
     , 'thumb': "/uploads/2010/squared-lave-lamp-preview.png"
     , 'thumb_link': "http://www.youtube.com/watch?v=b8BuwhgaG-8&list=PLAD4B8BDC252A15E1"
     , 'roles': ["Motion graphics"]
     , 'tools': ["2010"]
     , 'links': ["http://kevin.deldycke.com/tag/qc_experiment/"]
     },
-    { 'name':  "Kaleidoscope series"
-    , 'desc':  "My first steps into Quartz Composer."
+    { 'name': "Kaleidoscope series"
+    , 'desc': "My first steps into Quartz Composer."
     , 'thumb': "/uploads/2010/kaleidoscope-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=a7YNLp7xy8k&list=PLF26819BF36910C57"
     , 'roles': ["Motion graphics"]
     , 'tools': ["2010"]
     , 'links': ["http://kevin.deldycke.com/tag/kaleidoscope/"]
     },
-    { 'name':  "<em>Info TGV</em>: Android app by Uperto"
-    , 'desc':  ""
+    { 'name': "<em>Info TGV</em>: Android app by Uperto"
     , 'thumb': "/uploads/2010/info-tgv-android-app-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=puDy-twV-Y4"
     , 'roles': ["Corporate"]
     , 'tools': ["2010"]
     , 'links': ["http://kevin.deldycke.com/2010/09/making-info-tgv-android-app-video/"]
     },
-    { 'name':  "Le Duc Factory at HappyFarmFest"
-    , 'desc':  ""
+    { 'name': "Le Duc Factory at HappyFarmFest"
     , 'thumb': "/uploads/2010/happy-farm-leduc.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=mrHZ4Wh9sCY"
     , 'roles': ["Live music"]
     , 'tools': ["2010"]
     , 'links': ["http://kevin.deldycke.com/2010/06/le-duc-live-happy-farm-fest-2010/"]
     },
-    { 'name':  "Cool Cavemen at Gayant Expo"
-    , 'desc':  "A crowd of 3000 persons. My biggest concert as a lighting designer. I'll be forever grateful to my band for this amazing oportunity."
+    { 'name': "Cool Cavemen at Gayant Expo"
+    , 'desc': "A crowd of 3000 persons. My biggest concert as a lighting designer. I'll be forever grateful to my band for this amazing oportunity."
     , 'thumb': "/uploads/2010/gayant-expo-live-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=qE-bis-wYxs&list=PL4BAA557B7144031F&feature=plcp"
     , 'roles': ["Live music"]
     , 'tools': ["2010"]
     , 'links': ["http://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/", "http://kevin.deldycke.com/2010/02/cool-cavemen-live-gayant-expo-part-ii/", "http://kevin.deldycke.com/2012/11/cool-cavemen-gayant-expo-production-notes/"]
     },
-    { 'name':  "Cool Cavemen — <em>Fusion</em>"
-    , 'desc':  ""
+    { 'name': "<em>Fusion</em> — Cool Cavemen"
     , 'thumb': "/uploads/2010/fusion-live-at-sin-le-noble-video-preview.png"
     , 'thumb_link': "http://www.youtube.com/watch?v=ADv4kUZC_-c"
     , 'roles': ["Live music"]
     , 'tools': ["2008"]
-    , 'links': []
     },
-    { 'name':  "Cool Cavemen — <em>Kinda Country</em>"
-    , 'desc':  "This was shot on DSLR. Nothing exceptional. But there is a twist: we were in 2007. I was definitely ahead of the curve."
+    { 'name': "<em>Kinda Country</em> — Cool Cavemen"
+    , 'desc': "This was shot on DSLR. Nothing exceptional. But there is a twist: we were in 2007. I was definitely ahead of the curve."
     , 'thumb': "/uploads/2010/kinda-country-preview.jpg"
     , 'thumb_link': "http://www.youtube.com/watch?v=eelHRVgGxZg"
     , 'roles': ["Live music"]
     , 'tools': ["2007"]
-    , 'links': []
     },
     ]
 %}
