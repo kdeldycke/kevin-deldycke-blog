@@ -25,7 +25,6 @@ Format | Language | Status
 ---|---|---
 PDF | [English](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg) ● [French](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1JYITJ3JU9WYvQXWlpGqLO9LzhcfAxiqJSsV8WyVhyyY) | Up to date
 LinkedIn | [English](http://linkedin.com/in/kevindeldycke/en) ● [French](http://linkedin.com/in/kevindeldycke/fr) | Synced
-Viadeo | [English](http://viadeo.com/en/profile/kevin.deldycke) ● [French](http://viadeo.com/fr/profile/kevin.deldycke) | Missing details
 
 Resumes, CVs and profiles above are heavy on details you may not be interested in as a recruiter. If to you these documents are too verbose and contain superfluous information, then that's absolutely normal.
 
