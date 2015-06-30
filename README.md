@@ -59,6 +59,11 @@ TODO
   * Activate AWS CloudFront ? (See: http://paulstamatiou.com/hosting-on-amazon-s3-with-cloudfront/ )
   * Create an autoindex plugin: activate it to produce index of /documents, then get rid of
     htaccess-static.
+  * Add static site search:
+      * http://blog.new-bamboo.co.uk/2013/02/26/full-text-search-in-your-browser
+      * http://lunrjs.com/
+      * https://github.com/getpelican/pelican/issues/170
+      * https://github.com/slashdotdash/jekyll-lunr-js-search
 
 
 License
