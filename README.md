@@ -56,7 +56,9 @@ TODO
       * https://github.com/heyimalex/s3tup
       * https://github.com/boto/boto
   * Migrate `/content/extra/htaccess` rules to [S3 routing rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html#configure-bucket-as-website-routing-rule-syntax) and/or use https://pypi.python.org/pypi/pelican-alias for redirects ?
-  * Activate AWS CloudFront ? (See: http://paulstamatiou.com/hosting-on-amazon-s3-with-cloudfront/ )
+  * Activate AWS CloudFront ? See:
+      * http://paulstamatiou.com/hosting-on-amazon-s3-with-cloudfront/ 
+      * http://pmac.io/2014/06/pelican-s3-cloudfront/
   * Create an autoindex plugin: activate it to produce index of /documents, then get rid of
     htaccess-static.
   * Add static site search:
