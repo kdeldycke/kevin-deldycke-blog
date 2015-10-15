@@ -1,8 +1,9 @@
 Kevin Deldycke's blog
 =====================
 
-These are the source files of the content of my [blog](http://kevin.deldycke.com),
-which is powered by [Pelican](http://getpelican.com), a static site generator written in Python.
+These are the source files of the content of my [blog
+](http://kevin.deldycke.com), which is powered by [Pelican
+](http://getpelican.com), a static site generator written in Python.
 
 The theme it uses is called [Plumage](https://github.com/kdeldycke/plumage).
 
@@ -57,7 +58,7 @@ TODO
       * https://github.com/boto/boto
   * Migrate `/content/extra/htaccess` rules to [S3 routing rules](http://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html#configure-bucket-as-website-routing-rule-syntax) and/or use https://pypi.python.org/pypi/pelican-alias for redirects ?
   * Activate AWS CloudFront ? See:
-      * http://paulstamatiou.com/hosting-on-amazon-s3-with-cloudfront/ 
+      * http://paulstamatiou.com/hosting-on-amazon-s3-with-cloudfront/
       * http://pmac.io/2014/06/pelican-s3-cloudfront/
   * Create an autoindex plugin: activate it to produce index of /documents, then get rid of
     htaccess-static.
@@ -75,5 +76,7 @@ The content of this repository is copyrighted (c) 2004-2015 Kevin Deldycke.
 
 Unless contrary mention, the licensing terms below applies:
 
-  * Code and software released under [GNU/GPL licence, v2.0](http://www.fsf.org/licensing/licenses/gpl.html).
-  * Other content published under [Creative Commons Attribution-Share Alike 3.0 license](http://creativecommons.org/licenses/by-sa/3.0/).
+  * Code and software released under [GNU/GPL licence, v2.0
+    ](http://www.fsf.org/licensing/licenses/gpl.html).
+  * Other content published under [Creative Commons Attribution-Share Alike 3.0
+    license](http://creativecommons.org/licenses/by-sa/3.0/).
