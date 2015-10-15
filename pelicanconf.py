@@ -18,10 +18,7 @@ MD_EXTENSIONS = [
 TYPOGRIFY = True
 
 # Do not publish articles set in the future
-# WITH_FUTURE_DATES = False
-# XXX Temporaryly set this option to True while we wait a fix in Pelican 3.6.
-# See: https://github.com/getpelican/pelican/pull/1525
-WITH_FUTURE_DATES = True
+WITH_FUTURE_DATES = False
 
 # Force Pelican to use the file name as the slug, instead of derivating it from
 # the title.
