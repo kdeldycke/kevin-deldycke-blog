@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
+# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
 AUTHOR = u'Kevin Deldycke'
@@ -140,7 +140,8 @@ IMAGE_PATH = "uploads"
 THUMBNAIL_SIZES = {
     'thumbnail': '462x?',
 }
-DEFAULT_TEMPLATE = """<a href="{url}" class="zoomable" title="{filename}"><img src="{thumbnail}" alt="{filename}"></a>"""
+DEFAULT_TEMPLATE = """<a href="{url}" class="zoomable" title="{filename}">
+<img src="{thumbnail}" alt="{filename}"></a>"""
 
 
 ### Theme-specific settings
@@ -190,7 +191,14 @@ LINKS = (
     ('LinkedIn', 'http://linkedin.com/in/kevindeldycke/en'),
 )
 
-COPYRIGHT = "Unless contrary mentioned, the licensing terms below applies:<br/>Code and software released under <a href='http://www.fsf.org/licensing/licenses/gpl.html'>GNU/GPL licence v2.0</a>;<br/>Other content published under <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-Share Alike 3.0 license</a>."
+COPYRIGHT = """Unless contrary mentioned, the licensing terms below applies:
+<br/>
+Code and software released under <a
+href='http://www.fsf.org/licensing/licenses/gpl.html'>GNU/GPL licence v2.0</a>;
+<br/>
+Other content published under <a
+href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons
+Attribution-Share Alike 3.0 license</a>."""
 
 DISQUS_SITENAME = 'kevin-deldycke-blog'
 
