@@ -69,11 +69,11 @@ FEED_ALL_ATOM = None
 TRANSLATION_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
 
-#http://kevin.deldycke.com/tag/openerp/feed/
+# http://kevin.deldycke.com/tag/openerp/feed/
 TAG_FEED_RSS = 'tag/%s/feed/index.html'
 TAG_FEED_ATOM = 'tag/%s/feed/atom/index.html'
 
-#http://example.com/category/categoryname/feed
+# http://example.com/category/categoryname/feed
 CATEGORY_FEED_RSS = 'category/%s/feed/index.html'
 CATEGORY_FEED_ATOM = 'category/%s/feed/atom/index.html'
 
