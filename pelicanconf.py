@@ -69,6 +69,8 @@ FEED_ALL_RSS = None
 FEED_ALL_ATOM = None
 TRANSLATION_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 # http://kevin.deldycke.com/tag/openerp/feed/
 TAG_FEED_RSS = 'tag/%s/feed/index.html'
@@ -178,12 +180,12 @@ LEFT_SIDEBAR = """
 
 ARTICLE_EDIT_LINK = 'https://github.com/kdeldycke/kevin-deldycke-blog/edit/master/content/posts/%(slug)s.md'
 
-SOCIAL_TITLE = "Contact"
+SOCIAL_WIDGET_NAME = "Contact"
 SOCIAL = (
     ('@kdeldycke', 'http://twitter.com/kdeldycke'),
 )
 
-LINKS_TITLE = "Professional profiles"
+LINKS_WIDGET_NAME = "Professional profiles"
 LINKS = (
     ('PDF resume', 'http://docs.google.com/document/export?format=pdf&amp;id='
      '1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg'),
@@ -203,4 +205,3 @@ Attribution-Share Alike 3.0 license</a>."""
 DISQUS_SITENAME = 'kevin-deldycke-blog'
 
 GOOGLE_ANALYTICS = 'UA-657524-1'
-GOOGLE_ANALYTICS_DOMAIN = 'deldycke.com'
