@@ -45,9 +45,6 @@ TODO
   * Test different ad placements: http://news.ycombinator.com/item?id=4974511
   * Get rid of /year/month/ for articles ? Or get rid of month only ?
   * Deduplicate articles' tags.
-  * Use a free OpenShift instance to host a script monitoring Github commits ? See:
-      * https://www.openshift.com
-      * https://pypi.python.org/pypi/pelicangit
   * Fix Google Analytics bouncing rate ? See: http://drawingablank.me/blog/fix-your-bounce-rate.html
   * Migrate Resume from Google Docs to web-based page in Pelican ? Inspiration:
       * https://wrapbootstrap.com/theme/simply-minimal-responsive-resume-WB0DCP565
