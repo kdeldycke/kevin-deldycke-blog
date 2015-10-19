@@ -37,6 +37,7 @@ TEMPLATE_PAGES = {
     'templates/videos.html': 'video/index.html',
     'templates/code.html': 'code/index.html',
     'templates/themes.html': 'themes/index.html',
+    '../plumage/templates/search.html': 'search.html',
 }
 
 TAG_URL = 'tag/{slug}/'
@@ -108,6 +109,7 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'related_posts',
     #'thumbnailer',
+    'tipue_search',
     'neighbors',
     'sitemap',
 ]
@@ -156,7 +158,7 @@ MENUITEMS = (
     ('About', '/about/'),
 )
 
-GOOGLE_SEARCH = 'partner-pub-0142056597033291:1880158713'
+TIPUE_SEARCH = True
 
 LEFT_SIDEBAR = """
     <!--<div data-spy="affix" data-offset-top="0">-->
