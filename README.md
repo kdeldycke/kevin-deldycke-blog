@@ -13,8 +13,7 @@ Installation
 
 Install Pelican and its dependencies:
 
-    $ sudo aptitude install -y python-markdown python-pygments python-beautifulsoup pandoc python-smartypants s3cmd
-    $ pip install --upgrade pelican mdx_video typogrify Fabric
+    $ pip install --upgrade pelican Markdown mdx_video typogrify beautifulsoup4 Fabric s3cmd
 
 
 Development
