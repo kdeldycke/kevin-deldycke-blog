@@ -1,5 +1,5 @@
 date: 2015-09-28 21:19:53
-title: Fixing a messed pull request with over differences.
+title: How-to reconcile metadata differences of a messed up pull-request 
 category: English
 tags: CLI, Git, GitHub, Linux, Babel, l10n, i18n, Python
 
