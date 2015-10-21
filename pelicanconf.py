@@ -81,6 +81,7 @@ CATEGORY_FEED_RSS = 'category/%s/feed/index.html'
 CATEGORY_FEED_ATOM = 'category/%s/feed/atom/index.html'
 
 FEED_MAX_ITEMS = 5
+USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = 'English'
 DEFAULT_DATE_FORMAT = '%b. %d, %Y'
 REVERSE_ARCHIVE_ORDER = True
