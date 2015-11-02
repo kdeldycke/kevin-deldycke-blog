@@ -33,6 +33,10 @@ Then go to [http://localhost:8000](http://localhost:8000).
 Deployment
 ----------
 
+Setup `s3cmd`:
+
+    $ s3cmd --configure
+
 We use `make` for deployment as `fab` is not wired yet:
 
     $ make s3_upload
