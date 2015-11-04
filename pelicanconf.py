@@ -149,10 +149,10 @@ DEFAULT_TEMPLATE = """<a href="{url}" class="zoomable" title="{filename}">
 
 ### Theme-specific settings
 
-SITE_THUMBNAIL = '/uploads/2006/avatar-orig.png'
-SITE_THUMBNAIL_TEXT = 'Official avatar since MMIV'
+SITE_THUMBNAIL = '/uploads/2015/profile-photo-squared-thumbnail.jpg'
+SITE_THUMBNAIL_TEXT = 'Might come with a beard'
 
-SITESUBTITLE = "Open-Source Software Engineer"
+SITESUBTITLE = "Technical quasi-debt producer"
 
 MENUITEMS = (
     ('Home', '/'),
