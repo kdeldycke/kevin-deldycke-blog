@@ -25,15 +25,18 @@ payroll systems for each ERP (from page 88):
 
 ERP | Evaluation
 --- | ---
-TinyERP | <i class="icon-star"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
-OpenBravo | <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
-Neogia | <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
-ERP5 | <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i>
-Adempiere | <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
-Compiere GPL | <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i> <i class="icon-star-empty"></i>
+TinyERP | <i class="icon-star"></i>
+OpenBravo | --
+Neogia | --
+ERP5 | <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i>
+Adempiere | --
+Compiere GPL | --
+
+As you can see I not only got the first place: I wiped out the competition.
 
 Sorry for the shameless self-promotion, but I was so happy to get this
-distinction that I couldn't resist... :)
+distinction after so many pain trying to transform laws into code that I
+couldn't resist... :)
 
 The payroll modules were one of my biggest [contribution as a core developer on
 ERP5](https://www.ohloh.net/p/erp5/contributors/18391049963153). It was capable
@@ -69,3 +72,8 @@ This document had enough influence to be cited in four academic papers from
 
   * [Comparatif ERP5 /
   COMPIERE](http://wiki.itin.fr/index.php/Comparatif_ERP5_/_COMPIERE_MT09_FR)
+
+The irony is that after leaving the open-source ERP world in 2007, I was
+recruited by Smile in 2011, the very same company which produced the original
+white paper. My job? Working full on [OpenERP]({tag}openerp), the direct
+competitor of ERP5.
