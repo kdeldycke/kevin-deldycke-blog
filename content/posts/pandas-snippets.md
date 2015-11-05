@@ -1,4 +1,4 @@
-date: 2015-10-21 12:00:00
+date: 2015-11-05 12:00:00
 title: Pandas snippets
 category: English
 tags: Pandas, Computer programming, date, development, Python, Data, Analytics, NumPy
@@ -53,9 +53,6 @@ All snippets below are initialized with the following Python code:
         :::python
         >>> df.index.values
         array([0, 1, 2, 3, 4])
-
-
-
 
 
 Other resources:
