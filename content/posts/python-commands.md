@@ -76,9 +76,9 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
 I maintain a set of default configuration files in my [`dotfiles` repository](https://github.com/kdeldycke/dotfiles):
 
-  * PDB: [`~/.pdbrc`](https://github.com/kdeldycke/dotfiles/blob/master/.pdbrc) & [`~/.pdbrc.py`](https://github.com/kdeldycke/dotfiles/blob/master/.pdbrc.py)
-  * Pip: [`~/.pip/pip.conf`](https://github.com/kdeldycke/dotfiles/blob/master/.pip/pip.conf)
-  * PyPi: [`~/.pypirc`](https://github.com/kdeldycke/dotfiles/blob/master/.pypirc)
-  * PEP 8: [`~/.config/pep8`](https://github.com/kdeldycke/dotfiles/blob/master/.config/pep8)
-  * PyLint: [`~/.pylintrc`](https://github.com/kdeldycke/dotfiles/blob/master/.pylintrc)
-  * Fabric: [`~/.fabricrc`](https://github.com/kdeldycke/dotfiles/blob/master/.fabricrc)
+  * PDB: [`~/.pdbrc`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pdbrc) & [`~/.pdbrc.py`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pdbrc.py)
+  * Pip: [`~/.pip/pip.conf`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pip/pip.conf)
+  * PyPi: [`~/.pypirc`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pypirc)
+  * PEP 8: [`~/.config/pep8`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.config/pep8)
+  * PyLint: [`~/.pylintrc`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pylintrc)
+  * Fabric: [`~/.fabricrc`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.fabricrc)
