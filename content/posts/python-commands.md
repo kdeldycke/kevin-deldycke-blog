@@ -51,6 +51,8 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
 ## Date and time
 
+I personnaly recommend using the [`Arrow`](http://crsmithdev.com/arrow/) package. But if you can't, here are pure-python snippets:
+
   * Add a month to the current date:
 
         :::python
