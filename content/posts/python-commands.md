@@ -18,6 +18,8 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
         :::python
         getSafeURL = lambda s: '-'.join([w for w in ''.join([c.isalnum() and c or '-' for c in s.lower()]).split('-') if w])
+ 
+  Better: use [`awesome-slugify`](https://pypi.python.org/pypi/awesome-slugify) package.
 
   * Sort a list of dicts by dict-key ([source](http://code.pui.ch/2007/07/23/python-sort-a-list-of-dicts-by-dict-key/)):
 
