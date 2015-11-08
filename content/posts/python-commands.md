@@ -49,7 +49,7 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
         $ find / -name "*.py[co]" -delete
         
 
-## Date manipulation
+## Date and time
 
   * Add a month to the current date:
 
@@ -57,6 +57,11 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
         import datetime
         import dateutil
         datetime.date.today() + dateutil.relativedelta(months=1)
+
+
+## Data
+
+  * [Pandas snippets](http://kevin.deldycke.com/2015/11/pandas-snippets/)
 
 
 ## Package management
