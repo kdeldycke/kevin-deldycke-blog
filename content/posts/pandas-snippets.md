@@ -96,35 +96,79 @@ All snippets below are initialized with the following Python code:
 
 
   * Transform a timeline of [`arrow`](http://crsmithdev.com/arrow/) objects to Pandas' internal Timestamp index:
-  
+
         :::python
         >>> df = pd.DataFrame({'int_ts': pd.Series(np.random.randint(9999999999, size=5))})
         >>> df
-               int_ts
-        0  4324228164
-        1  9618753903
-        2  8393343044
-        3  7226161665
-        4  2309375336
+              int_ts
+        0  761088975
+        1  900402905
+        2  924263705
+        3  636666598
+        4  501201802
+
         >>> import arrow
         >>> df['dt_arrow'] = df.int_ts.map(arrow.get)
         >>> df
-               int_ts                   dt_arrow
-        0  4324228164  2107-01-11T22:29:24+00:00
-        1  9618753903  2274-10-22T04:05:03+00:00
-        2  8393343044  2235-12-23T04:10:44+00:00
-        3  7226161665  2198-12-27T03:07:45+00:00
-        4  2309375336  2043-03-07T21:08:56+00:00
+              int_ts                   dt_arrow
+        0  761088975  1994-02-12T21:36:15+00:00
+        1  900402905  1998-07-14T07:55:05+00:00
+        2  924263705  1999-04-16T11:55:05+00:00
+        3  636666598  1990-03-05T19:49:58+00:00
+        4  501201802  1985-11-18T22:43:22+00:00
+
         >>> from operator import attrgetter
         >>> df['dt_index'] = pd.to_datetime(df['dt_arrow'].apply(attrgetter('datetime')), utc=True)
         >>> df
-               int_ts                   dt_arrow                   dt_index
-        0  4324228164  2107-01-11T22:29:24+00:00  2107-01-11 22:29:24+00:00
-        1  9618753903  2274-10-22T04:05:03+00:00  2274-10-22 04:05:03+00:00
-        2  8393343044  2235-12-23T04:10:44+00:00  2235-12-23 04:10:44+00:00
-        3  7226161665  2198-12-27T03:07:45+00:00  2198-12-27 03:07:45+00:00
-        4  2309375336  2043-03-07T21:08:56+00:00  2043-03-07 21:08:56+00:00
- 
+              int_ts                   dt_arrow            dt_index
+        0  761088975  1994-02-12T21:36:15+00:00 1994-02-12 21:36:15
+        1  900402905  1998-07-14T07:55:05+00:00 1998-07-14 07:55:05
+        2  924263705  1999-04-16T11:55:05+00:00 1999-04-16 11:55:05
+        3  636666598  1990-03-05T19:49:58+00:00 1990-03-05 19:49:58
+        4  501201802  1985-11-18T22:43:22+00:00 1985-11-18 22:43:22
+
+        >>> df.set_index('dt_index', inplace=True)
+        >>> df.sort(inplace=True)
+        >>> df
+                                int_ts                   dt_arrow
+        dt_index
+        1985-11-18 22:43:22  501201802  1985-11-18T22:43:22+00:00
+        1990-03-05 19:49:58  636666598  1990-03-05T19:49:58+00:00
+        1994-02-12 21:36:15  761088975  1994-02-12T21:36:15+00:00
+        1998-07-14 07:55:05  900402905  1998-07-14T07:55:05+00:00
+        1999-04-16 11:55:05  924263705  1999-04-16T11:55:05+00:00
+
+  Now that we have a properly indexed timeline, we can use built-in Pandas
+  methods. Here is how to compute the maximum value of samples [per year
+  ](http://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases):
+
+        >>> df['int_ts'].resample('AS')
+        dt_index
+        1985-01-01    501201802
+        1986-01-01          NaN
+        1987-01-01          NaN
+        1988-01-01          NaN
+        1989-01-01          NaN
+        1990-01-01    636666598
+        1991-01-01          NaN
+        1992-01-01          NaN
+        1993-01-01          NaN
+        1994-01-01    761088975
+        1995-01-01          NaN
+        1996-01-01          NaN
+        1997-01-01          NaN
+        1998-01-01    900402905
+        1999-01-01    924263705
+        Freq: AS-JAN, Name: int_ts, dtype: float64
+
+  Same as above but taking the highest value by shifting decade:
+
+        >>> df['int_ts'].resample('10AS', how=max)
+        dt_index
+        1985-01-01    761088975
+        1995-01-01    924263705
+        Freq: 10AS-JAN, Name: int_ts, dtype: int64
+
 
 Other resources:
 
