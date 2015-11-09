@@ -95,6 +95,36 @@ All snippets below are initialized with the following Python code:
         99   0
 
 
+  * Transform a timeline of [`arrow`](http://crsmithdev.com/arrow/) objects to Pandas' internal Timestamp index:
+  
+        :::python
+        >>> df = pd.DataFrame({'int_ts': pd.Series(np.random.randint(9999999999, size=5))})
+        >>> df
+               int_ts
+        0  4324228164
+        1  9618753903
+        2  8393343044
+        3  7226161665
+        4  2309375336
+        >>> import arrow
+        >>> df['dt_arrow'] = df.int_ts.map(arrow.get)
+        >>> df
+               int_ts                   dt_arrow
+        0  4324228164  2107-01-11T22:29:24+00:00
+        1  9618753903  2274-10-22T04:05:03+00:00
+        2  8393343044  2235-12-23T04:10:44+00:00
+        3  7226161665  2198-12-27T03:07:45+00:00
+        4  2309375336  2043-03-07T21:08:56+00:00
+        >>> df['dt_index'] = pd.to_datetime(df['dt_arrow'].apply(attrgetter('datetime')), utc=True)
+        >>> df
+               int_ts                   dt_arrow                   dt_index
+        0  4324228164  2107-01-11T22:29:24+00:00  2107-01-11 22:29:24+00:00
+        1  9618753903  2274-10-22T04:05:03+00:00  2274-10-22 04:05:03+00:00
+        2  8393343044  2235-12-23T04:10:44+00:00  2235-12-23 04:10:44+00:00
+        3  7226161665  2198-12-27T03:07:45+00:00  2198-12-27 03:07:45+00:00
+        4  2309375336  2043-03-07T21:08:56+00:00  2043-03-07 21:08:56+00:00
+ 
+
 Other resources:
 
   * [Pandas official documentation
