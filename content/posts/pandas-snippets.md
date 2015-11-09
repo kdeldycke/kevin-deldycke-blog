@@ -83,6 +83,18 @@ All snippets below are initialized with the following Python code:
         99  27   0
 
 
+  * Deduplicate `c` data points at the same `a` index, with the highest `c` value taking precedence:
+
+        :::python
+        >>> df['c'].reset_index().groupby('a').max()
+            c
+        a
+        17  97
+        30  64
+        35  14
+        99   0
+
+
 Other resources:
 
   * [Pandas official documentation
