@@ -20,7 +20,7 @@ All snippets below are initialized with the following Python code:
         1  30   3  13
         2  17  69  97
         3  99  27   0
-        4  62  53  64
+        4  30  53  64
 
 
   * Add labels to columns:
@@ -33,7 +33,7 @@ All snippets below are initialized with the following Python code:
         1  30   3  13
         2  17  69  97
         3  99  27   0
-        4  62  53  64
+        4  30  53  64
 
 
   * Drop all but `a` and `c` columns:
@@ -45,7 +45,7 @@ All snippets below are initialized with the following Python code:
         1  30  13
         2  17  97
         3  99   0
-        4  62  64
+        4  30  64
 
 
   * Get a NumPy array of index values:
@@ -53,6 +53,20 @@ All snippets below are initialized with the following Python code:
         :::python
         >>> df.index.values
         array([0, 1, 2, 3, 4])
+
+
+  * Make column `a` the index:
+
+        :::python
+        >>> df.set_index('a', inplace=True)
+        >>> df
+            b   c
+        a
+        35  66  14
+        30   3  13
+        17  69  97
+        99  27   0
+        30  53  64
 
 
 Other resources:
