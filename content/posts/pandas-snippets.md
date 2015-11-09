@@ -115,6 +115,7 @@ All snippets below are initialized with the following Python code:
         2  8393343044  2235-12-23T04:10:44+00:00
         3  7226161665  2198-12-27T03:07:45+00:00
         4  2309375336  2043-03-07T21:08:56+00:00
+        >>> from operator import attrgetter
         >>> df['dt_index'] = pd.to_datetime(df['dt_arrow'].apply(attrgetter('datetime')), utc=True)
         >>> df
                int_ts                   dt_arrow                   dt_index
