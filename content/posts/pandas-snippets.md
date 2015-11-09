@@ -69,6 +69,20 @@ All snippets below are initialized with the following Python code:
         30  53  64
 
 
+  * Sort along the index:
+
+        :::python
+        >>> df.sort(inplace=True)
+        >>> df
+            b   c
+        a
+        17  69  97
+        30  53  64
+        30   3  13
+        35  66  14
+        99  27   0
+
+
 Other resources:
 
   * [Pandas official documentation
