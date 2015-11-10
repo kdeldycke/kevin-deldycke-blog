@@ -37,8 +37,9 @@ TEMPLATE_PAGES = {
     'templates/videos.html': 'video/index.html',
     'templates/code.html': 'code/index.html',
     'templates/themes.html': 'themes/index.html',
-    '../plumage/templates/search.html': 'search.html',
 }
+
+DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives', 'search']
 
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = TAG_URL + 'index.html'
