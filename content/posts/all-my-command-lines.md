@@ -34,6 +34,7 @@ Here is a collection of commands lines, code and configuration snippets I collec
   * [libvirt](http://kevin.deldycke.com/2013/03/libvirt-commands/)
   * [Exim](http://kevin.deldycke.com/2010/07/exim-commands/)
   * [Python](http://kevin.deldycke.com/2011/01/python-commands/)
+  * [Pandas](http://kevin.deldycke.com/2015/11/pandas-snippets/)
   * [JavaScript](http://kevin.deldycke.com/2012/05/javascript-commands/)
   * [WordPress](http://kevin.deldycke.com/2011/12/wordpress-commands/)
 
