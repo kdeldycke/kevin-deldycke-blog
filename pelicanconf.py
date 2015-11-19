@@ -109,13 +109,16 @@ EXTRA_PATH_METADATA = {
     'extra/htaccess-static': {'path': 'documents/.htaccess'},
 }
 
-PLUGIN_PATHS = ['plugins']
+PLUGIN_PATHS = ['plugins-core', 'plugins-third-party']
 PLUGINS = [
+    # Core plugins
     'related_posts',
-    #'thumbnailer',
+    # 'thumbnailer',
     'tipue_search',
     'neighbors',
     'sitemap',
+    # Third-party plugins.
+    'titlecase',
 ]
 
 

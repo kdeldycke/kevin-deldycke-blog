@@ -1,6 +1,9 @@
 [submodule "plumage"]
 	path = plumage
 	url = git@github.com:kdeldycke/plumage.git
-[submodule "plugins"]
-	path = plugins
+[submodule "plugins-core"]
+	path = plugins-core
 	url = https://github.com/getpelican/pelican-plugins
+[submodule "titlecase"]
+	path = plugins-third-party/titlecase
+	url = https://github.com/jrarseneau/pelican-titlecase.git
