@@ -15,9 +15,18 @@ Install Pelican and its dependencies:
 
     $ pip install --upgrade pelican Markdown mdx_video typogrify beautifulsoup4 Fabric s3cmd
 
+Then fetch a copy of the repository:
+
+    $ git clone --recursive https://github.com/kdeldycke/dotfiles.git
+
 
 Development
 -----------
+
+Update to latest sub-modules:
+
+    $ git submodule init
+    $ git submodule update --remote --merge
 
 In one terminal, run:
 
