@@ -13,7 +13,7 @@ Installation
 
 Install Pelican and its dependencies:
 
-    $ pip install --upgrade pelican Markdown mdx_video typogrify beautifulsoup4 Fabric s3cmd
+    $ pip install --upgrade pelican Markdown mdx_video mdx_titlecase typogrify beautifulsoup4 Fabric s3cmd
 
 Then fetch a copy of the repository:
 

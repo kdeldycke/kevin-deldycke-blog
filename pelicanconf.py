@@ -14,6 +14,7 @@ MD_EXTENSIONS = [
     'codehilite',
     'extra',
     'mdx_video',
+    'mdx_titlecase',
 ]
 TYPOGRIFY = True
 
@@ -109,7 +110,7 @@ EXTRA_PATH_METADATA = {
     'extra/htaccess-static': {'path': 'documents/.htaccess'},
 }
 
-PLUGIN_PATHS = ['plugins-core', 'plugins-third-party']
+PLUGIN_PATHS = ['plugins-core']
 PLUGINS = [
     # Core plugins
     'related_posts',
@@ -117,8 +118,6 @@ PLUGINS = [
     'tipue_search',
     'neighbors',
     'sitemap',
-    # Third-party plugins.
-    'titlecase',
 ]
 
 
