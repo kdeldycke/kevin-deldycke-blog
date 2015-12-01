@@ -68,3 +68,7 @@ tags: CLI, Git, GitHub, Software engineering
         :::bash
         $ git stash
 
+
+Other resources:
+
+  * [git tips and tricks](https://github.com/git-tips/tips#git-tips)
