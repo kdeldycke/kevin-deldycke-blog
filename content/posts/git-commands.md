@@ -71,4 +71,5 @@ tags: CLI, Git, GitHub, Software engineering
 
 Other resources:
 
-  * [git tips and tricks](https://github.com/git-tips/tips#git-tips)
+  * [Git tips and tricks](https://github.com/git-tips/tips#git-tips)
+  * [Awesome git addons](https://github.com/stevemao/awesome-git-addons)
