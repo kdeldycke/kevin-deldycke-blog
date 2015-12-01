@@ -1,3 +1,4 @@
+---
 date: 2012-03-20 14:32:37
 title: I contributed $200 to Kdenlive and you should too !
 category: English

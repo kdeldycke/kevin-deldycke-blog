@@ -1,3 +1,4 @@
+---
 date: 2006-05-11 00:38:52
 title: New Mandriva RPM for the v0.2.2 Rugg release
 tags: Linux, Mandriva, RPM, rugg

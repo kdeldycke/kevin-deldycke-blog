@@ -1,3 +1,4 @@
+---
 date: 2006-12-06 23:18:55
 title: Hardware commands
 category: English

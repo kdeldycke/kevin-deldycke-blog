@@ -1,3 +1,4 @@
+---
 date: 2009-03-18 21:24:17
 title: A fix to xkcd's emoticons + parentheses problem
 category: English

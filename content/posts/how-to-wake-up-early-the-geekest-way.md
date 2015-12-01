@@ -1,3 +1,4 @@
+---
 date: 2006-08-02 16:14:52
 title: How to wake up early, the geekest way
 category: English

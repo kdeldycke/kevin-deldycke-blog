@@ -1,3 +1,4 @@
+---
 date: 2011-03-14 11:29:27
 title: Fixing messed-up encoding in MySQL
 category: English

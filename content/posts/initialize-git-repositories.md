@@ -1,3 +1,4 @@
+---
 date: 2010-05-25 21:18:48
 title: How I initialize my Git repositories
 category: English

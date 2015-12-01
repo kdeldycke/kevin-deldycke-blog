@@ -1,3 +1,4 @@
+---
 date: 2010-12-28 11:51:49
 title: Apple iPhone 3G bugs gallery
 category: English

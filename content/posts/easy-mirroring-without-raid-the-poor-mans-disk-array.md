@@ -1,3 +1,4 @@
+---
 date: 2005-07-24 17:06:19
 title: Easy Mirroring Without RAID: the Poor Man''s Disk Array
 category: English

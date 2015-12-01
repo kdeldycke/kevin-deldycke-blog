@@ -1,3 +1,4 @@
+---
 date: 2011-12-01 00:12:39
 title: Nichrome Preview (and Behind the Scene) video
 category: English

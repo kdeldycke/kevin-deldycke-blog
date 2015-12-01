@@ -1,3 +1,4 @@
+---
 date: 2008-05-13 00:12:44
 title: QLC 2.6.1 for Mandriva 2008.1
 category: English

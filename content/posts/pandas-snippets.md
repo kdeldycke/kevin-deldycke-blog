@@ -1,3 +1,4 @@
+---
 date: 2015-11-05 12:00:00
 title: Pandas snippets
 category: English

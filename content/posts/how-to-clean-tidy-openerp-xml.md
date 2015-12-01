@@ -1,3 +1,4 @@
+---
 date: 2012-12-18 12:30:05
 title: How-to clean and tidy up OpenERP's XML
 category: English

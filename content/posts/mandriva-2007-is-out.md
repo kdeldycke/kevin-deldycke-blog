@@ -1,3 +1,4 @@
+---
 date: 2006-10-22 18:26:55
 title: Mandriva 2007 is out !
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2011-05-24 12:18:08
 title: Keep a Debian fresh thanks to cron-apt
 category: English

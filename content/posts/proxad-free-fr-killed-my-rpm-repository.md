@@ -1,3 +1,4 @@
+---
 date: 2008-07-15 01:54:33
 title: Proxad / Free.fr killed my RPM repository !
 category: English

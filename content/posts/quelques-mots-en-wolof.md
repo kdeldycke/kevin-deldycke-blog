@@ -1,3 +1,4 @@
+---
 date: 2005-11-08 23:04:06
 title: Quelques Mots en Wolof...
 category: Français

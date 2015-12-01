@@ -1,3 +1,4 @@
+---
 date: 2005-06-04 15:34:01
 title: Qemu commands
 category: English

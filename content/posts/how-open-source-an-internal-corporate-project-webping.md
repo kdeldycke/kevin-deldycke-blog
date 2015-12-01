@@ -1,3 +1,4 @@
+---
 date: 2011-08-30 12:18:01
 title: How I Open-Sourced an Internal Corporate Project (WebPing)
 category: English

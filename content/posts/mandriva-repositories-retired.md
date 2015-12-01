@@ -1,3 +1,4 @@
+---
 date: 2013-02-12 12:02:07
 title: Mandriva repositories retired
 category: English

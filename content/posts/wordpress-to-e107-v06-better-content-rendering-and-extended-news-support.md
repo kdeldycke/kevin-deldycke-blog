@@ -1,3 +1,4 @@
+---
 date: 2006-11-27 21:48:02
 title: Wordpress to e107 v0.6: Better Content Rendering and Extended News support
 category: English

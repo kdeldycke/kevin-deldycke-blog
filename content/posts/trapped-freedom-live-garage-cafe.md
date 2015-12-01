@@ -1,3 +1,4 @@
+---
 date: 2011-02-08 12:46:45
 title: Trapped in Freedom: live at Garage Café
 category: English

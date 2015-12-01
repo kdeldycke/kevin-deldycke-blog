@@ -1,3 +1,4 @@
+---
 date: 2010-02-12 22:46:25
 title: How-to configure GRUB in (k)Ubuntu
 category: English

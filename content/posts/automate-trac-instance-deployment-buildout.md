@@ -1,3 +1,4 @@
+---
 date: 2010-12-01 19:01:15
 title: Automate Trac instance deployment with Buildout
 category: English

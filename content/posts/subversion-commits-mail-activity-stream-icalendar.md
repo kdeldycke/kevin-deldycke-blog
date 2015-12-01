@@ -1,3 +1,4 @@
+---
 date: 2010-06-16 21:53:46
 title: Subversion commits and mail activity stream in iCalendar
 category: English

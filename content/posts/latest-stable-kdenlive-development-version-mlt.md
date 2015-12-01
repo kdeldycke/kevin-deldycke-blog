@@ -1,3 +1,4 @@
+---
 date: 2010-11-23 12:12:53
 title: Using latest stable Kdenlive with a development version of MLT
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2007-04-17 19:07:57
 title: How-to Block Ads in Konqueror
 category: English

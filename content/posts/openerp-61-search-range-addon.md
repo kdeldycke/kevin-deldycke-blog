@@ -1,3 +1,4 @@
+---
 date: 2013-04-23 12:25:36
 title: Addon to restore search range in OpenERP 6.1
 category: English

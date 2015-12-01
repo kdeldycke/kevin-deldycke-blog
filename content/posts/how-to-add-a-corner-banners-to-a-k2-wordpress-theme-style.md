@@ -1,3 +1,4 @@
+---
 date: 2008-06-07 19:34:20
 title: How-to add a corner banner to a K2 Wordpress theme's style
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2010-05-12 21:32:37
 title: Lotus Notes' Rich Text to MIME conversion error
 category: English

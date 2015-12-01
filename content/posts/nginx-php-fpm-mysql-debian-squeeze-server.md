@@ -1,3 +1,4 @@
+---
 date: 2011-06-28 12:50:59
 title: Nginx + PHP-FPM + MySQL on a Debian Squeeze server
 category: English

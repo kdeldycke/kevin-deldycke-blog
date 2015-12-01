@@ -1,3 +1,4 @@
+---
 date: 2012-04-17 12:46:34
 title: How-to add a warning banner to OpenERP's web client
 category: English

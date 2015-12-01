@@ -1,3 +1,4 @@
+---
 date: 2009-05-14 21:55:57
 title: Enttec DMX-USB firmware upgrade with Qemu
 category: English

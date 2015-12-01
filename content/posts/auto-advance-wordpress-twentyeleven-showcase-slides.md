@@ -1,3 +1,4 @@
+---
 date: 2011-12-27 12:44:02
 title: Auto-advance WordPress' TwentyEleven showcase slides
 category: English

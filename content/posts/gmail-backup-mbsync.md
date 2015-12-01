@@ -1,3 +1,4 @@
+---
 date: 2012-08-07 12:26:27
 title: Keep a Local Backup of Gmail thanks to mbsync
 category: English

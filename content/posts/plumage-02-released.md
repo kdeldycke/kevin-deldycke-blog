@@ -1,3 +1,4 @@
+---
 date: 2013-07-24 12:46
 title: Plumage 0.2 released
 category: English

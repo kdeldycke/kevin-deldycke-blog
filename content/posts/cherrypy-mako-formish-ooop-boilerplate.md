@@ -1,3 +1,4 @@
+---
 date: 2011-08-23 12:58:37
 title: CherryPy + Mako + Formish + OOOP boilerplate
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2005-06-04 21:20:13
 title: Qemu: How-To Share Network Access with the Ghest OS
 category: English

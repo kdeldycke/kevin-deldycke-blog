@@ -1,3 +1,4 @@
+---
 date: 2013-09-08 12:00
 title: Plumage 0.3 released
 category: English

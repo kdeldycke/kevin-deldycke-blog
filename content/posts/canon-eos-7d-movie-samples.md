@@ -1,3 +1,4 @@
+---
 date: 2010-05-21 23:31:44
 title: Canon EOS 7D Movie Samples
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2006-07-29 17:22:04
 title: Amarok 1.4.1 for Mandriva 2006
 tags: Amarok, KDE, Linux, Mandriva, Music, RPM

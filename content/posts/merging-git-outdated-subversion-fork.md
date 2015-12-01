@@ -1,3 +1,4 @@
+---
 date: 2012-09-11 12:33:09
 title: Merging back Git changes to an outdated Subversion fork
 category: English

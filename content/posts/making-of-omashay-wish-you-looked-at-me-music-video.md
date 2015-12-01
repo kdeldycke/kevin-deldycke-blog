@@ -1,3 +1,4 @@
+---
 date: 2011-07-12 12:45:11
 title: Making of Omashay's "Wish You Looked at Me" music video
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2011-06-06 12:25:41
 title: Using Munin to monitor a Debian Squeeze server
 category: English

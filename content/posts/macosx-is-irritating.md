@@ -1,3 +1,4 @@
+---
 date: 2009-12-23 10:42:09
 title: MacOS X really starts to get irritating...
 category: English

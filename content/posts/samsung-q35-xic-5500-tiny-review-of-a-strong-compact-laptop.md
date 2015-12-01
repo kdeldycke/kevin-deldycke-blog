@@ -1,3 +1,4 @@
+---
 date: 2006-10-29 00:53:36
 title: Samsung Q35 XIC-5500 : Tiny Review of a Strong Compact Laptop.
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2006-10-12 22:53:13
 title: Old Site to Blog: Merge in Progress
 category: English

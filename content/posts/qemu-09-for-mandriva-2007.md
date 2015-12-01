@@ -1,3 +1,4 @@
+---
 date: 2007-03-30 14:45:28
 title: Qemu 0.9 for Mandriva 2007
 tags: Linux, Mandriva, Qemu, RPM, urpmi

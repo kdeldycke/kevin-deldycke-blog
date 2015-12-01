@@ -1,3 +1,4 @@
+---
 date: 2012-05-29 12:11:55
 title: Hacking OpenERP 6.0 User Interface with Javascript
 category: English

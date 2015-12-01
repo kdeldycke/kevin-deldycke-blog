@@ -1,3 +1,4 @@
+---
 date: 2012-02-21 12:51:21
 title: How-to monkey-patch OpenERP's native Javascript
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2013-06-04 12:48
 title: maildir-deduplicate.py moved to its own repository
 category: English

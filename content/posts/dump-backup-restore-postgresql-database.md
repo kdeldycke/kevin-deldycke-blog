@@ -1,3 +1,4 @@
+---
 date: 2012-03-06 12:17:58
 title: Dump, backup and restore a PostgreSQL database
 category: English

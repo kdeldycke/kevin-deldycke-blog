@@ -1,3 +1,4 @@
+---
 date: 2010-12-20 13:54:31
 title: MIDI-controlled Text Zoom in Quartz Composer
 category: English

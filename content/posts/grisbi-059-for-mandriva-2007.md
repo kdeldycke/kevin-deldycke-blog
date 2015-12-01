@@ -1,3 +1,4 @@
+---
 date: 2006-12-03 01:56:38
 title: Grisbi 0.5.9 for Mandriva 2007
 category: English

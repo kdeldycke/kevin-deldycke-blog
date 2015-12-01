@@ -1,3 +1,4 @@
+---
 date: 2011-10-11 12:28:25
 title: How-to merge Mailman mailing-lists
 category: English

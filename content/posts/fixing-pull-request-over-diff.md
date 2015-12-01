@@ -1,3 +1,4 @@
+---
 date: 2015-09-28 21:19:53
 title: How-to reconcile metadata differences of a messed up pull-request 
 category: English

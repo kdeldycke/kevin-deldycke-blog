@@ -1,3 +1,4 @@
+---
 date: 2005-04-19 00:24:44
 title: Créer un Espace de Stockage Fiable avec RAID 5 et LVM sous Linux
 category: Français

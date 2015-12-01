@@ -1,3 +1,4 @@
+---
 date: 2014-02-15 12:00
 title: Plumage 0.4 released
 category: English

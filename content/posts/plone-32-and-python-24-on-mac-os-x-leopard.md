@@ -1,3 +1,4 @@
+---
 date: 2009-07-20 21:39:58
 title: Plone 3.2 (and Python 2.4) on Mac OS X Leopard
 category: English

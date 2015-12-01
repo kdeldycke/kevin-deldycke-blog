@@ -1,3 +1,4 @@
+---
 date: 2005-04-04 22:16:55
 title: How-to empty CUPS spool
 category: English

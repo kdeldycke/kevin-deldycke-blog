@@ -1,3 +1,4 @@
+---
 date: 2011-02-01 12:20:34
 title: Moving a Git sub-tree to its own repository
 category: English

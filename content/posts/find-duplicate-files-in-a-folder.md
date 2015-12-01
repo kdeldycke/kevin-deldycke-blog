@@ -1,3 +1,4 @@
+---
 date: 2006-10-29 22:25:40
 title: Find Duplicate Files in a Folder
 category: English

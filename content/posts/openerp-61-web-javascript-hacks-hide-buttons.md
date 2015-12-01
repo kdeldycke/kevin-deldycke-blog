@@ -1,3 +1,4 @@
+---
 date: 2013-03-14 12:25:36
 title: OpenERP 6.1 web client hacks: hide buttons with Javascript
 category: English

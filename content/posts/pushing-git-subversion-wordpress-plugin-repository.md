@@ -1,3 +1,4 @@
+---
 date: 2011-02-14 16:43:51
 title: Pushing Git to Subversion: the case of WordPress plugin repository
 category: English

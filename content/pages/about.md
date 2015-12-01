@@ -1,3 +1,4 @@
+---
 title: About
 
 <img class="thumbnail" width="250px"

@@ -1,3 +1,4 @@
+---
 date: 2011-05-17 12:13:04
 title: Setting up HDD's SMART monitoring on Debian Squeeze
 category: English

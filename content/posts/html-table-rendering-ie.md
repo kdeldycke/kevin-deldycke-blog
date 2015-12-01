@@ -1,3 +1,4 @@
+---
 date: 2013-06-17 12:32
 title: Fix big HTML table rendering in IE
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2010-08-10 21:42:14
 title: QLC effects generator for LED panels
 category: English

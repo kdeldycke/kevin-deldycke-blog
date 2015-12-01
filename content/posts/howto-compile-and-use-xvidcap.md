@@ -1,3 +1,4 @@
+---
 date: 2005-06-27 13:41:39
 title: How-to Compile and Use xvidcap
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2011-05-31 12:22:58
 title: MGE Ellipse 750 UPS on Debian Squeeze
 category: English

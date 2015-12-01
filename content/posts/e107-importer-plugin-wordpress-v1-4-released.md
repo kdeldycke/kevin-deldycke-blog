@@ -1,3 +1,4 @@
+---
 date: 2011-07-05 12:16:12
 title: e107 Importer plugin for WordPress v1.4 released !
 category: English

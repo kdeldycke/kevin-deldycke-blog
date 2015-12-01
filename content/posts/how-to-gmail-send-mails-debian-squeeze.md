@@ -1,3 +1,4 @@
+---
 date: 2011-05-03 12:10:18
 title: How-to use GMail to send mails from Debian Squeeze
 category: English

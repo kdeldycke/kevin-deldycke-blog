@@ -1,3 +1,4 @@
+---
 date: 2010-11-02 22:39:55
 title: Sharp scan-lines & Squared lava-lamp
 category: English

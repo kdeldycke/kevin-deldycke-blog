@@ -1,3 +1,4 @@
+---
 date: 2010-04-19 23:49:40
 title: My PuTTY profile template
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2013-07-07 12:32
 title: Compile BFGMiner for scrypt-based CPU mining
 category: English

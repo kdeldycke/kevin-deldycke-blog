@@ -1,3 +1,4 @@
+---
 date: 2010-04-14 19:26:39
 title: Optical illusion: circles in motion (SVG source included)
 category: English

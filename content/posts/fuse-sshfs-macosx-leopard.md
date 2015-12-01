@@ -1,3 +1,4 @@
+---
 date: 2009-09-07 21:11:03
 title: Fuse and sshfs on MacOSX Leopard
 category: English

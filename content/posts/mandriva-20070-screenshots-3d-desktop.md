@@ -1,3 +1,4 @@
+---
 date: 2007-01-02 13:27:47
 title: Mandriva 2007.0 Screenshots: 3D Desktop
 category: English

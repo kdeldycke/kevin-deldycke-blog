@@ -1,3 +1,4 @@
+---
 date: 2012-05-01 12:14:45
 title: JavaScript commands
 category: English

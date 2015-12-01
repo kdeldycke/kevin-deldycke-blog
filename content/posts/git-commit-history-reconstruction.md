@@ -1,3 +1,4 @@
+---
 date: 2010-06-09 21:06:37
 title: Commit history reconstruction with Git
 category: English

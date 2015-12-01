@@ -1,3 +1,4 @@
+---
 date: 2012-02-28 12:18:53
 title: Stabilizing Cute Baby Goats
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2010-08-19 20:56:03
 title: Maildir deduplication script in Python
 category: English

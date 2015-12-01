@@ -1,3 +1,4 @@
+---
 date: 2013-07-01 12:48
 title: How-to keep natural glitches from videos
 category: English

@@ -1,3 +1,4 @@
+---
 date: 2011-09-20 12:22:13
 title: My Nginx + PHP-FPM + MySQL configuration
 category: English

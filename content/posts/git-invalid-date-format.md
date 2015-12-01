@@ -1,3 +1,4 @@
+---
 date: 2013-06-23 12:48
 title: Git fatal error: invalid date format: 0 +0000
 category: English

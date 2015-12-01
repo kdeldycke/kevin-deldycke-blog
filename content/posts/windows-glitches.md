@@ -1,3 +1,4 @@
+---
 date: 2012-01-03 12:32:39
 title: Windows glitches
 category: English

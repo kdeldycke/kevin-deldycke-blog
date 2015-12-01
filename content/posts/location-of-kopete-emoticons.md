@@ -1,3 +1,4 @@
+---
 date: 2006-09-16 01:21:54
 title: Location of Kopete Emoticons
 category: English

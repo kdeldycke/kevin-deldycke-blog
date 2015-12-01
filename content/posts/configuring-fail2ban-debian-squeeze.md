@@ -1,3 +1,4 @@
+---
 date: 2011-06-21 12:25:16
 title: Configuring Fail2Ban on Debian Squeeze
 category: English

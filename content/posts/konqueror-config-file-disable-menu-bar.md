@@ -1,3 +1,4 @@
+---
 date: 2006-08-31 00:49:48
 title: Konqueror config file: disable menu bar
 category: English

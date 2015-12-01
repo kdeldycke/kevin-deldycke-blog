@@ -1,3 +1,4 @@
+---
 date: 2010-05-05 21:15:37
 title: How-to fix bad commit authorship in Git
 category: English

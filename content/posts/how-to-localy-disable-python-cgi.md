@@ -1,3 +1,4 @@
+---
 date: 2006-05-01 00:19:53
 title: How-to locally Disable Python CGI scripts.
 category: English

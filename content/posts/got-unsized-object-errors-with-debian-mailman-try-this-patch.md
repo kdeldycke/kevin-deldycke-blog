@@ -1,3 +1,4 @@
+---
 date: 2008-12-29 20:02:22
 title: Got "unsized object" errors with Debian's Mailman ? Try this patch !
 category: English

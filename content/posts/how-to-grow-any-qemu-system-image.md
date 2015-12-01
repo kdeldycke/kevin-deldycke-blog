@@ -1,3 +1,4 @@
+---
 date: 2007-04-08 16:10:56
 title: How-to grow any Qemu system image
 category: English

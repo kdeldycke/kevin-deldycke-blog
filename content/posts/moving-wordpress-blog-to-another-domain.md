@@ -1,3 +1,4 @@
+---
 date: 2009-09-21 20:59:10
 title: Moving a WordPress blog to another domain
 category: English

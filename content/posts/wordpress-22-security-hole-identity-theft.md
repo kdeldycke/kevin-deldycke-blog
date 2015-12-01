@@ -1,3 +1,4 @@
+---
 date: 2007-06-07 17:22:51
 title: Wordpress 2.2 Security Hole: Identity Theft
 category: English

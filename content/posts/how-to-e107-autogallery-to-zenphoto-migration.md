@@ -1,3 +1,4 @@
+---
 date: 2008-08-22 00:42:05
 title: How-to: e107 autogallery to Zenphoto migration
 category: English

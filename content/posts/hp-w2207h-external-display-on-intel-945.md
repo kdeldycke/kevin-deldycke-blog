@@ -1,3 +1,4 @@
+---
 date: 2008-03-07 01:20:53
 title: HP w2207h external display on Intel 945
 category: English

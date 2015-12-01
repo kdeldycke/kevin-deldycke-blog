@@ -1,3 +1,4 @@
+---
 date: 2006-04-29 19:02:30
 title: Bad FTP mirrors with fmirror or wget ? Use lftp !
 category: English

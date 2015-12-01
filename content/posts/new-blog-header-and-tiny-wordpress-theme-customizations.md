@@ -1,3 +1,4 @@
+---
 date: 2011-01-18 23:48:58
 title: New blog header and tiny WordPress theme customizations
 category: English

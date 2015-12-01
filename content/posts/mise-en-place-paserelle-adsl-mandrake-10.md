@@ -1,3 +1,4 @@
+---
 date: 2004-06-29 18:54:50
 title: Mise en place d'une paserelle ADSL sous Mandrake 10
 category: Français

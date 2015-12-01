@@ -1,3 +1,4 @@
+---
 date: 2012-04-03 12:24:54
 title: Beautify Contextual Related Posts WordPress plugin
 category: English

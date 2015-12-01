@@ -1,3 +1,4 @@
+---
 date: 2010-12-14 00:58:38
 title: Quartz Composer & Behringer BCF-2000 MIDI controller tests
 category: English

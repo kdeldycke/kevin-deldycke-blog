@@ -1,3 +1,4 @@
+---
 date: 2006-04-10 00:30:38
 title: A/V sync problems: VLC better than Mencoder
 category: English

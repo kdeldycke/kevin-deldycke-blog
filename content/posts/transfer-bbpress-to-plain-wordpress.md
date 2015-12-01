@@ -1,3 +1,4 @@
+---
 date: 2012-10-30 12:42:53
 title: How-To transfer bbPress content to plain WordPress objects
 category: English

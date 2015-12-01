@@ -1,3 +1,4 @@
+---
 date: 2006-09-26 00:25:57
 title: CD Templates for Jewel Case in SVG
 category: English

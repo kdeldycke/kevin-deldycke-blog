@@ -1,3 +1,4 @@
+---
 date: 2012-11-27 12:45:55
 title: Linux GoPro HD Hero2 Firmware Upgrade
 category: English

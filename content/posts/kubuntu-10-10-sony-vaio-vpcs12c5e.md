@@ -1,3 +1,4 @@
+---
 date: 2011-02-21 12:34:02
 title: Kubuntu 10.10 on Sony Vaio VPC-S12C5E
 category: English

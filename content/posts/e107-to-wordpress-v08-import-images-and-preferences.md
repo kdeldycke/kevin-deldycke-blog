@@ -1,3 +1,4 @@
+---
 date: 2007-05-11 12:26:57
 title: e107 to WordPress v0.8: import images and preferences
 tags: Blog, CMS, e107, PHP, Web, WordPress

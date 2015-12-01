@@ -1,3 +1,4 @@
+---
 date: 2011-10-18 12:32:20
 title: Installation Guide for a full-featured Debian server
 category: English

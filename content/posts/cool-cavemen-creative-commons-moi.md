@@ -1,3 +1,4 @@
+---
 date: 2009-11-26 06:12:25
 title: Cool Cavemen, les Creative Commons et moi
 category: Français

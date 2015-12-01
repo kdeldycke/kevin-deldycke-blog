@@ -1,3 +1,4 @@
+---
 date: 2006-12-11 00:37:35
 title: How-To fix UTF-8 Issues on Mandriva 2007 Upgrade
 category: English

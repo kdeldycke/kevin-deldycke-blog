@@ -1,3 +1,4 @@
+---
 date: 2012-08-28 12:20:05
 title: Announcing Matrix Widget for OpenERP 6.0
 category: English
