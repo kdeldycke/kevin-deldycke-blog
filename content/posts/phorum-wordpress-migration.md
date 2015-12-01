@@ -2,6 +2,7 @@
 date: 2013-08-08 12:00
 title: Phorum 3.x to WordPress migration script
 tags: Python, Linux, Phorum, WordPress, migration, script, GitHub, Cool Cavemen, Funky Storm, Debian, aptitude, pip, lxml, bbcode, PyMySQL, MySQL, PHP
+---
 
 Before <a href="http://coolcavemen.com">Cool Cavemen</a>, there was <a href="http://funky-storm.com/">Funky Storm</a>. The band is long gone but I still keep an online presence as a sort of web memorial. Recently I added there an old copy of <a href="http://funky-storm.com/forum/">the forum</a>.
 

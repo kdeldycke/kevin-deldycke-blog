@@ -3,6 +3,7 @@ date: 2010-11-16 08:20:02
 title: Simple video backdrop with Quartz Composer
 category: English
 tags: Animation, Apple, Cool Cavemen, live, MacBook, QC Experiment, Quartz Composer, stage, Video, Visual
+---
 
 While playing with Quartz Composer, the only composition I made with a clear intention of using it was this one:
 

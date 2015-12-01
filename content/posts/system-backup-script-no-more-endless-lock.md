@@ -2,6 +2,7 @@
 date: 2007-08-12 17:00:45
 title: System backup script: no more endless lock
 tags: Backup, CLI, Linux, Python, rdiff-backup, rsync, Script, SSH, system
+---
 
 I've just released a [new version of my `system-backup.py` script](https://github.com/kdeldycke/scripts/blob/master/system-backup.py).
 

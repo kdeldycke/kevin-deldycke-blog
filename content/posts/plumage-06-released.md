@@ -3,6 +3,7 @@
 title: Plumage 0.5 and 0.6 released
 category: English
 tags: Plumage, Pelican, Python, Jinja, theme, HTML, CSS, Javascript
+---
 
 After more than a year in stasis, I just released both version 0.5 and version
 0.6  of my [Plumage theme](https://github.com/kdeldycke/plumage) for Pelican.

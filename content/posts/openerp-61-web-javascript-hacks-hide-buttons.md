@@ -3,6 +3,7 @@ date: 2013-03-14 12:25:36
 title: OpenERP 6.1 web client hacks: hide buttons with Javascript
 category: English
 tags: OpenERP, Javascript, Backbone.js, jQuery, Web
+---
 
 Last year I published two articles on hacking OpenERP 6.0 user interface, one to demonstrate [how to monkey-patch native Javascript behavior](http://kevin.deldycke.com/2012/02/how-to-monkey-patch-openerp-native-javascript/), the other to show how to [tweak widgets](http://kevin.deldycke.com/2012/05/hacking-openerp-60-user-interface-javascript/)
 

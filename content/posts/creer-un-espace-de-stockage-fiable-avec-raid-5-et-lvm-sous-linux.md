@@ -3,6 +3,7 @@ date: 2005-04-19 00:24:44
 title: Créer un Espace de Stockage Fiable avec RAID 5 et LVM sous Linux
 category: Français
 tags: Backup, boitier externe, CLI, disque dur, firewire, Hardware, informatique, Linux, LVM, Mandriva, mdadm, openbrick, ordinateur, RAID, USB, XFS
+---
 
 Cet article explique comment créer un espace de stockage redondant et fiable en utilisant du matériel grand public et bon marché. Cela est possible par la combinaison de Linux, des mécanismes RAID logiciel et du gestionnaire de volumes logiques LVM.
 

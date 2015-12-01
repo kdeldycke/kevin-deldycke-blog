@@ -3,6 +3,7 @@ date: 2010-02-12 22:46:25
 title: How-to configure GRUB in (k)Ubuntu
 category: English
 tags: grub, Kubuntu, Ubuntu, Linux, Ubuntu, MBR
+---
 
 Here is a little note to remind me how to customize [GRUB](http://www.gnu.org/software/grub/) the (k)Ubuntu way.
 

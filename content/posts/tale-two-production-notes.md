@@ -3,6 +3,7 @@ date: 2013-03-26 12:32:37
 title: Tale of Two: production notes
 category: English
 tags: Kdenlive, Linux, Omashay, timelapse, slow-motion, slowmoVideo, imagemagick, transcode, vid.stab, Blender
+---
 
 This is the fourth video I've work on for [Omashay](http://omashay.com):
 

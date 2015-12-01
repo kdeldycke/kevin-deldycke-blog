@@ -3,6 +3,7 @@ date: 2010-09-29 15:28:15
 title: Making of "Info TGV" Android app video
 category: English
 tags: Android, Canon EOS 7D, ffmpeg, HTC, Kdenlive, Kubuntu, Ubuntu, Linux, Twitter, Uperto, Video, x264, YouTube, SoundUp studio
+---
 
 Last week I was called by one of my co-worker from [Uperto](http://www.uperto.com) (the open-source division of [Devoteam](http://devoteam.com)). He knew I worked on some [video projects for my band](http://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great oportunity to play with my [Canon EOS 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20), so I accepted ! :)
 

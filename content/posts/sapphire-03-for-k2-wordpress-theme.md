@@ -3,6 +3,7 @@ date: 2007-06-16 17:22:16
 title: Sapphire 0.3 for K2 Wordpress Theme
 category: English
 tags: K2, CSS, Template, Theme, WordPress
+---
 
 I've updated
 [my Sapphire adaptation](http://kevin.deldycke.com/2007/03/sapphire-style-for-k2-wordpress-theme/)

@@ -2,6 +2,7 @@
 date: 2013-10-28 12:00
 title: dotfiles for OSX and Kubuntu
 tags: GitHub, Python, vim, Apple, Mac OS X, Kubuntu, Solarized
+---
 
 It's finally time to announce the availability of [all my dotfiles on
 GitHub](https://github.com/kdeldycke/dotfiles). I've started the project 2 months ago and now

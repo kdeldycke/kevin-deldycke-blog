@@ -3,6 +3,7 @@ date: 2010-12-01 19:01:15
 title: Automate Trac instance deployment with Buildout
 category: English
 tags: buildout, htdigest, md5, Python, Red Hat, sasl, Subversion, trac, yum, Mercurial
+---
 
 Recently, I started to contribute to [pbp.recipe.trac](http://pypi.python.org/pypi/pbp.recipe.trac), a [Buildout](http://www.buildout.org) recipe aimed to simplify the management and configuration of [Trac](http://trac.edgewall.org) instances.
 

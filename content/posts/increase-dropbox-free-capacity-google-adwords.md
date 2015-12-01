@@ -3,6 +3,7 @@ date: 2011-12-20 12:00:12
 title: Increase Dropbox free capacity with Google AdWords
 category: English
 tags: AdWords, Google,, coupons, dropbox, Google, Kfilebox, Kubuntu, Ubuntu
+---
 
 I started to use Dropbox 6 months ago at work, but I only use it for personal files since November. Now that I seamlessly integrated it on my Kubuntu thanks to [Kfilebox](http://kdropbox.deuteros.es), it quickly became clear that Dropbox will potentially be part of my everyday computer life. But before definitely integrate an external dependency to my workflow, I had to test Dropbox further, which requires me to go beyond the default 2Go account.
 

@@ -3,6 +3,7 @@ date: 2007-01-02 13:27:47
 title: Mandriva 2007.0 Screenshots: 3D Desktop
 category: English
 tags: 3D, Celestia, Compiz, desktop, GPU, Intel, laptop, lspci, Mandriva, Samsung, X.org
+---
 
 For some months, [I own a Samsung Q35 laptop](http://kevin.deldycke.com/2006/10/samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop/) which is powered by a Mandriva 2007.0.
 

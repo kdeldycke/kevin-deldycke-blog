@@ -3,6 +3,7 @@ date: 2006-09-26 00:25:57
 title: CD Templates for Jewel Case in SVG
 category: English
 tags: Cool Cavemen, Creative Commons, inkscape, Music, SVG, Template, Compact disc
+---
 
 My friends, the [Cool Cavemen band](http://coolcavemen.com), are on the way to complete the sound recording phase of their next LP. Now come the time to think about the CD artwork, and to package the music they've choose the standard [Jewel Case format](http://en.wikipedia.org/wiki/Jewel_case).
 

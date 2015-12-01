@@ -3,6 +3,7 @@ date: 2010-06-09 21:06:37
 title: Commit history reconstruction with Git
 category: English
 tags: commit, Git, GitHub, history, Init, Software engineering
+---
 
 Here is something I wanted to do for 3 years. I wanted to migrate my code repository from this:
 

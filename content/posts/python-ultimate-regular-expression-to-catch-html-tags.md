@@ -3,6 +3,7 @@ date: 2008-07-08 00:24:26
 title: Python ultimate regular expression to catch HTML tags
 category: English
 tags: HTML, programming, Python, Regular expression
+---
 
 1 year and 3 months ago I've came with a
 [PHP regexp to parse HTML tag soup](http://kevin.deldycke.com/2007/03/ultimate-regular-expression-for-html-tag-parsing-with-php/).

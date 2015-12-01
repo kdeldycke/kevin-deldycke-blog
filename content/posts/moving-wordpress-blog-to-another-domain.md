@@ -3,6 +3,7 @@ date: 2009-09-21 20:59:10
 title: Moving a WordPress blog to another domain
 category: English
 tags: Apache, Blog, CLI, find, grep, Hosting, Linux, MySQL, SQL, sed, Server, Web, WordPress
+---
 
 ![qpx-site-domain-migration](/uploads/2009/qpx-site-domain-migration.png)
 

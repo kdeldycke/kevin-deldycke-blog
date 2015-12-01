@@ -3,6 +3,7 @@ date: 2013-06-23 12:48
 title: Git fatal error: invalid date format: 0 +0000
 category: English
 tags: Git, GitHub, maildir, python, code
+---
 
 [Moving `maildir-deduplicate.py` to its own repository](http://kevin.deldycke.com/2013/06/maildir-deduplicate-moved/)
 was tricky, as I wanted to keep the commit history.

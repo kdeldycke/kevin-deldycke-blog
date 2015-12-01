@@ -3,6 +3,7 @@ date: 2007-03-08 23:51:16
 title: e107 to WordPress v0.7: support Categories and Private Pages
 category: English
 tags: Blog, e107, PHP, Web, WordPress
+---
 
 ![e107 to WordPress import plugin v0.7: News and Categories Imported screenshot](/uploads/2007/e107-to-wordpress-v07-news-and-category-imported1.png)
 

@@ -2,6 +2,7 @@
 date: 2013-06-09 12:41
 title: Support La Quadrature du Net !
 tags: La Quadrature du Net, fundraising, donation, campaign, contribution, rights, freedom, Internet, advocacy, Free Software Foundation, Electronic Frontier Foundation
+---
 
 6 months ago [I gave 100€](https://twitter.com/kdeldycke/status/273711292026597376) to [La Quadrature du Net](http://www.laquadrature.net). It's an advocacy group defending the rights and freedoms of citizens on the Internet. Its reputation is well established and its actions are internationally recognized by the [Electronic Frontier Foundation](https://www.eff.org/) and the [Free Software Foundation](http://www.fsf.org/).
 

@@ -3,6 +3,7 @@ date: 2011-07-12 12:45:11
 title: Making of Omashay's "Wish You Looked at Me" music video
 category: English
 tags: 1080p, 720p, Cool Cavemen, editing, Kdenlive, Linux, Music, music video, omashay, Video, youtube
+---
 
 Last month I edited the [Wish You Looked at Me video clip](http://omashay.com/wish-you-looked-at-me-video-clip/) for the [Omashay project](http://omashay.com). This is a side-project of [Cool Cavemen's saxophonist](http://coolcavemen.com/biography/tomasito/). The video is finally available on YouTube:
 

@@ -3,6 +3,7 @@ date: 2012-09-25 20:07:44
 title: PADI Open Water Diver
 category: Français
 tags: Scuba Diving, Pool
+---
 
 Je suis en train de valider mon niveau
 [PADI Open Water Diver](http://amzn.com/B003JX0AUK/?tag=kevideld-20). Et la

@@ -2,6 +2,7 @@
 date: 2006-05-11 00:38:52
 title: New Mandriva RPM for the v0.2.2 Rugg release
 tags: Linux, Mandriva, RPM, rugg
+---
 
 A [new version of Rugg was released two weeks ago](http://groups.google.fr/group/rugg/browse_thread/thread/c213eb23d2ba8981/afe7da6486a731fe). So I did a [new RPM for Mandriva 2006](https://github.com/kdeldycke/mandriva-specs/tree/master/2006.0/Rugg-0.2.2-1).
 

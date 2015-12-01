@@ -3,6 +3,7 @@ date: 2010-06-02 02:11:17
 title: Le Duc live at Happy Farm Fest 2010
 category: English
 tags: Canon EOS 7D, concert, gig, Happy Farm Fest, Le Duc, live, sigma, Video, YouTube
+---
 
 Here is an unedited video of
 [Le Duc](http://www.facebook.com/group.php?gid=20312134675), a band I shot last

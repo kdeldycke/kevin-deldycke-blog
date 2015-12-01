@@ -3,6 +3,7 @@ date: 2011-07-26 12:51:45
 title: Lighttpd-powered WebDAVs server on Debian Squeeze
 category: English
 tags: Debian, Debian Squeeze, lighttpd, Linux, OpenSSL, Server, SSL, WebDAV, RSA
+---
 
 Here is a tiny article about how I used [Lighttpd](http://www.lighttpd.net) to serve content over [WebDAV](http://wikipedia.org/wiki/WebDAV).
 

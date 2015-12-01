@@ -3,6 +3,7 @@ date: 2007-03-25 11:17:09
 title: Website Backup Script: MySQL dumps and SSH supported.
 category: English
 tags: Backup, CLI, FTP, lftp, Linux, MySQL, SQL, mysqldump, Network, Python, rdiff-backup, rsync, Script, Server, SSH, Web
+---
 
 [Three months after the last version](http://kevin.deldycke.com/2006/12/website-backup-script-updated-take-care-of-hidden-files-now/), here is a big update of [my backup scripts for websites](https://github.com/kdeldycke/scripts/blob/master/website-backup.py). The script was greatly improved and among new features, the most important is the support of backups over SSH and backups of MySQL databases.
 

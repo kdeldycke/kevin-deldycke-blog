@@ -3,6 +3,7 @@ date: 2011-08-30 12:18:01
 title: How I Open-Sourced an Internal Corporate Project (WebPing)
 category: English
 tags: CLI, Git, GitHub, Linux, Perl, Python, Regular expression, Subversion, trac, webping
+---
 
 [2 weeks ago I released WebPing](http://kevin.deldycke.com/2011/08/webping-open-sourced/). This article is more or less the same I wrote 4 months ago when I [released the FTT project](http://kevin.deldycke.com/2011/03/feed-tracking-tool-released-open-source-license/) and needed to [move it from SVN to Git](http://kevin.deldycke.com/2011/04/ftt-migration-subversion-git/). But this time I added more details on how I removed all sensible informations that were hard-coded in the project files.
 

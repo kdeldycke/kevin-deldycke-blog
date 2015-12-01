@@ -3,6 +3,7 @@ date: 2006-11-13 22:18:28
 title: Diva for Mandriva 2007: latest SVN revision.
 category: English
 tags: diva, Gnome, gstreamer, Linux, Mandriva, RPM, urpmi, Video
+---
 
 ![diva-002-trunk1](/uploads/2006/diva-002-trunk1.png)
 

@@ -3,6 +3,7 @@ date: 2005-11-08 23:04:06
 title: Quelques Mots en Wolof...
 category: Français
 tags: french, life, Sénégal, travel, wolof
+---
 
 Juste quelques mots en [Wolof](http://fr.wikipedia.org/wiki/Wolof) que j'ai appris aujourd'hui:
 

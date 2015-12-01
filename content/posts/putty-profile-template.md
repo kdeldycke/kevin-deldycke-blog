@@ -3,6 +3,7 @@ date: 2010-04-19 23:49:40
 title: My PuTTY profile template
 category: English
 tags: PuTTY, shell, SSH, Template, terminal, Windows
+---
 
 ![](/uploads/2010/putty-template-preview.png)
 

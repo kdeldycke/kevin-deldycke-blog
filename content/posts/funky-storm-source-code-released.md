@@ -2,6 +2,7 @@
 date: 2013-08-22 12:00
 title: funky-storm.com source code released after 11 years
 tags: Funky Storm, PHP, MySQL, GitHub
+---
 
 [funky-storm.com](http://funky-storm.com) was the [first website I ever published](http://web.archive.org/web/20020515000000*/http://www.funkystorm.free.fr/) online, 11 years ago. Blogs were something new and there was virtually no mature open-source publishing platform, apart forums. Without any other options, I created my band's website from scratch.
 

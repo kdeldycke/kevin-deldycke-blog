@@ -3,6 +3,7 @@ date: 2010-06-16 21:53:46
 title: Subversion commits and mail activity stream in iCalendar
 category: English
 tags: code, commit, Git, GitHub, iCal, email, maildir, Ohloh, Python, Script, Subversion
+---
 
 Last week I
 [consolidated all my code](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)

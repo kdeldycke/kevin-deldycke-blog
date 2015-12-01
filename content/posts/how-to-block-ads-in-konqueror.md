@@ -3,6 +3,7 @@ date: 2007-04-17 19:07:57
 title: How-to Block Ads in Konqueror
 category: English
 tags: ad, KDE, konqueror, Linux
+---
 
 Starting from version 3.5, [Konqueror](http://www.konqueror.org) feature an ad blocker mechanism based on regular expressions. Here is a little how-to to help you install an efficient filter set.
 

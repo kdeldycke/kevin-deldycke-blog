@@ -3,6 +3,7 @@ date: 2013-07-07 12:32
 title: Compile BFGMiner for scrypt-based CPU mining
 category: English
 tags: scrypt, CPU, Linux, BFGMiner, crypto-currency, Bitcoin, Litecoin, Kubuntu 13.04
+---
 
 I wanted to try [mining](https://en.wikipedia.org/wiki/Bitcoin_miners#Bitcoin_mining) on my Kubuntu 13.04. Not to get rich, but simply to verify that the production of [crypto-currencies](https://en.wikipedia.org/wiki/Cryptocurrency) really was decentralized, and also to learn how-to mine.
 

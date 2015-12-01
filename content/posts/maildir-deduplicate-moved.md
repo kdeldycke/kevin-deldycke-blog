@@ -3,6 +3,7 @@ date: 2013-06-04 12:48
 title: maildir-deduplicate.py moved to its own repository
 category: English
 tags: Git, GitHub, maildir, python, code
+---
 
 [In 2010 I created `maildir-deduplicate.py`](http://kevin.deldycke.com/2010/08/maildir-deduplication-script-python/),
 a one-of script to detect and remove duplicate copies of emails.

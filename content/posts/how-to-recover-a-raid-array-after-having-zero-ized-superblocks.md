@@ -3,6 +3,7 @@ date: 2007-03-07 22:48:52
 title: How-to Recover a RAID array after having Zero-ized Superblocks
 category: English
 tags: Backup, Hardware, Linux, mdadm, RAID, Server
+---
 
 Today `mdadm` send me a mail to warn that one of my hard drive (`/dev/hdd1`) was ejected from my RAID-5 array. After some manipulations (no writes, just reads on the file system to get informations) and reboots, I ended up with a file system in a strange state: the folder structure was totally messed up and lots of files disappeared.
 

@@ -3,6 +3,7 @@ date: 2012-04-10 12:22:14
 title: Check Point's SNX client on Ubuntu 11.04
 category: English
 tags: check point, Linux, Network, snx, SSL, Ubuntu, VPN
+---
 
 Last month I had no other alternative but to reach a server through a [Check Point](http://wikipedia.org/wiki/Check_Point)'s VPN. Fortunately the editor provides a Linux client to access its proprietary stack.
 

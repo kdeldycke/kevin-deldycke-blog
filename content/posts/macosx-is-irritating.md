@@ -3,6 +3,7 @@ date: 2009-12-23 10:42:09
 title: MacOS X really starts to get irritating...
 category: English
 tags: desktop, KDE, Mac OS X Leopard, Apple, Mac OS X, rant
+---
 
 First, [unstable machine](http://twitter.com/kdeldycke/status/6158072244).
 

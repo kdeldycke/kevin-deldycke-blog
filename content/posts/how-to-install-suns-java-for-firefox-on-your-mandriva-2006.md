@@ -3,6 +3,7 @@ date: 2006-05-19 23:26:55
 title: How-to Install Sun's Java for Firefox on your Mandriva 2006
 category: English
 tags: firefox, Java, Linux, Mandriva, mozilla, RPM, Web
+---
 
 One week ago I succeed to install the Sun's Java Runtime Environment (JRE) on my Mandriva 2006. I avoid to use proprietary softwares as long as I can. Unfortunately I needed it to fill my annual tax form online...
 

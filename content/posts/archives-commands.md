@@ -3,6 +3,7 @@ date: 2006-10-18 00:17:10
 title: Archives commands
 category: English
 tags: 7zip, bzip2, CLI, Linux, tar, tarball, zip
+---
 
   * Extract `.tar.gz` file:
 

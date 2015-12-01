@@ -3,6 +3,7 @@ date: 2006-10-18 00:21:13
 title: Useful Commands: Introduction
 category: English
 tags: Blog, CLI, CMS, Hosting, Linux, Web, WordPress
+---
 
 In april '06, I've decided to no longer use [Nuxeo's CPS](http://www.cps-project.org) and start a new online adventure with this blog.
 

@@ -3,6 +3,7 @@ date: 2008-06-05 20:35:58
 title: I wrote the best Open-Source Payroll Software of the world !
 category: English
 tags: consulting, ERP, free software, open source, OpenERP, ERP5, OpenBravo, Neogia, Adempiere, Compiere
+---
 
 ... at least [according Smile](http://www.smile.fr), a French consulting
 company. In their latest white paper ([available for download

@@ -3,6 +3,7 @@ date: 2006-08-22 01:18:25
 title: Extract All Frames of a Video as Jpeg Images
 category: English
 tags: Linux, transcode, Video
+---
 
 You need to extract all frames of a video and save them as `.jpg` images files ? Transcode can do the job for you thanks to this command line:
 

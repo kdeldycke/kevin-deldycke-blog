@@ -3,6 +3,7 @@ date: 2011-03-21 11:33:37
 title: Why I chose Ubercart instead of Magento or osCommerce.
 category: English
 tags: CMS, Drupal, Magento, osCommerce, Online Store, Ubercart
+---
 
 About a year ago a friend asked me why I chose the
 [Ubercart](http://www.ubercart.org)/[Drupal](http://drupal.org) combo as the

@@ -3,6 +3,7 @@ date: 2013-01-01 12:15:00
 title: LibreOffice templates: Blue Curve & Fancy Window Frame
 category: English
 tags: Creative Commons, libreoffice, openoffice, presentation, slide, Template
+---
 
 Sorting my archives, I uncovered an old collection of presentations I created in 2001/2002 when I was a student. I've just generated out of these original slides templates for LibreOffice.
 

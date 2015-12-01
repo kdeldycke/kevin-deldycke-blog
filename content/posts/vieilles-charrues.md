@@ -3,6 +3,7 @@ date: 2013-09-24 12:48
 title: Vieilles Charrues
 category: English
 tags: Kdenlive, video, YouTube, Music festival
+---
 
 Was dancing alone on one foot. Then a group of people joined me in my improvisation. I naturally took the lead to push the collective further:
 

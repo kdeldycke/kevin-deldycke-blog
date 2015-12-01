@@ -3,6 +3,7 @@ date: 2008-07-24 23:20:27
 title: Heroic journey to RAID-5 data recovery
 category: English
 tags: array, Backup, disk, drive, Hardware, HDD, Linux, mdadm, monitoring, RAID, Server, system, UPS
+---
 
 Last week there was a power grid failure which break down my server's RAID array. I have no [UPS](http://en.wikipedia.org/wiki/Uninterruptible_power_supply) (as I'm a skinflint) and no automatic email alerts (because I'm too lazy to set it up). As a result, for 5 days, my 3-disk [RAID-5 array](http://en.wikipedia.org/wiki/RAID_5) was relying on only 2 disks until I noticed the issue...
 

@@ -3,6 +3,7 @@ date: 2006-12-20 20:42:35
 title: Image Processing commands
 category: English
 tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush
+---
 
   * Convert several files from a format to another:
 

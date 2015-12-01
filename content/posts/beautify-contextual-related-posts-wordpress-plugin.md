@@ -3,6 +3,7 @@ date: 2012-04-03 12:24:54
 title: Beautify Contextual Related Posts WordPress plugin
 category: English
 tags: CSS, plugin, Theme, TwentyEleven, Web design, WordPress
+---
 
 I'm a long time user of the [Contextual Related Posts plugin](http://wordpress.org/extend/plugins/contextual-related-posts/) for WordPress.
 

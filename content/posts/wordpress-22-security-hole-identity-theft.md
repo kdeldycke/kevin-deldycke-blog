@@ -3,6 +3,7 @@ date: 2007-06-07 17:22:51
 title: Wordpress 2.2 Security Hole: Identity Theft
 category: English
 tags: Apache, Blog, hack, log, security, Server, Web, WordPress
+---
 
 I'm running 4 Wordpress blogs, for me and my friends. All of them are updated to latest version of Wordpress as soon as a new one is available.
 

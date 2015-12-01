@@ -3,6 +3,7 @@ date: 2010-08-03 21:09:54
 title: Blocking e107 dDOS attack with fail2ban
 category: English
 tags: Apache, Cool Cavemen, e107, fail2ban, Linux, PHP, security, Server, Web
+---
 
 Last month, a new security vulnerability was discovered in e107. If [a fix was released quickly](http://e107.org/comment.php?comment.news.867), some instances on the web were left unpatched. These sites are easy target for <strike>hackers</strike> script-kiddies, and [a generalized dDOS attack was carry out](http://e107.org/comment.php?comment.news.868) on every e107 websites out there.
 

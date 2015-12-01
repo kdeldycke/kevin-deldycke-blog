@@ -3,6 +3,7 @@ date: 2010-08-25 17:36:59
 title: How-to fix Lotus Notes' disabled TCPIP port error
 category: English
 tags: Lotus Notes, Mac OS X Leopard, Lotus Notes, Apple, Mac OS X, Network
+---
 
 Today I encountered this error message:
 

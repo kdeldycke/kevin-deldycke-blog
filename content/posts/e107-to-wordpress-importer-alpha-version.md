@@ -3,6 +3,7 @@ date: 2006-08-24 20:52:50
 title: e107 to Wordpress Importer: Alpha version
 category: English
 tags: Blog, CMS, e107, PHP, Web, WordPress
+---
 
 As I said yesterday, I will migrate my e107 content to Wordpress. My first step in this direction was to write a Wordpress import filter.
 

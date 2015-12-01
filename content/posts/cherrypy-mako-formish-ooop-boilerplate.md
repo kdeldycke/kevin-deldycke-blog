@@ -3,6 +3,7 @@ date: 2011-08-23 12:58:37
 title: CherryPy + Mako + Formish + OOOP boilerplate
 category: English
 tags: CherryPy, formish, GitHub, GPL, mako, ooop, open source, OpenERP, Python
+---
 
 After [WebPing last week](http://kevin.deldycke.com/2011/08/webping-open-sourced/), here is another release of Open-Source code. This time it's my boilerplate codebase I created to integrate some Python components with the goal of publishing [OpenERP](http://www.openerp.com/) content on the web.
 

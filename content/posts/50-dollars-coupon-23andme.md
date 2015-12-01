@@ -3,6 +3,7 @@ date: 2011-08-02 15:28:28
 title: $50 coupon for 23andMe
 category: English
 tags: 23andMe, coupon, discount, DNA, genetics, reduction, voucher
+---
 
 Today I've just received [another](http://kevin.deldycke.com/2008/12/give-away-of-the-day-free-23andme-100-vouchers/) [23andMe](https://www.23andme.com/) coupon by email. This time it's only valid for a short period of time (until August 9, 2011), but there is no restriction on how many people can use it.
 

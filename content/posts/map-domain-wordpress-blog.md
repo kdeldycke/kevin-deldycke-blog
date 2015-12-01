@@ -3,6 +3,7 @@ date: 2012-07-31 12:31:08
 title: How-To map a non-US domain name to a WordPress.com blog
 category: English
 tags: Blog, dns SOA, WordPress
+---
 
 I'm currently migrating most of my self-hosted WordPress blogs from my server to [WordPress.com hosting](https://en.wordpress.com/features/), which allows you to [use your own domain](http://en.support.wordpress.com/domain-mapping).
 

@@ -3,6 +3,7 @@ date: 2010-12-08 12:16:35
 title: Comment supprimer des comptes mails secondaires @free.fr
 category: Français
 tags: free.fr, Gmail, ISP, email, Proxad
+---
 
 Ça fait maintenant 10 ans que je suis client chez [Free](http://free.fr). Durant mes premières années de fréquentation du web, j'avais décidé de créer autant de comptes mails `@free.fr` que de variations possibles avec mon nom et prénom. Ne riez pas. Je l'ai vraiment fait. J'avais même poussé le vice jusqu'à doubler les variations avec le préfixe `www`. Pourquoi ? Pour avoir des espaces d'hébergement associés (_Pages Perso_) avec une jolie URL du type `http://www.kevin.deldycke.free.fr`.
 

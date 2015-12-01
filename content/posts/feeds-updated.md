@@ -3,6 +3,7 @@ date: 2010-05-18 12:45:29
 title: Feeds updated !
 category: English
 tags: Aggregator, Apache, Atom, feed, FeedBurner, Google, RSS, WordPress
+---
 
 ![](/uploads/2010/Newspaper-Feed.png)
 

@@ -3,6 +3,7 @@ date: 2012-09-04 12:49:30
 title: mail_ingestor.py : Ingest Raw Text Files and Produce a Mailbox
 category: English
 tags: archive, Backup, email, import email, mailbox, Python, Web
+---
 
 I was late to the party. Me and the Internet only met in 2000, over a 36kbps phone-line modem.
 

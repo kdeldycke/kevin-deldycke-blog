@@ -3,6 +3,7 @@ date: 2015-12-01 10:44:31
 title: Browser Integration of Disconnect.me search
 category: English
 tags: security, Tor, privacy, StartPage, disconnect.me, search, browser, Google, Chrome
+---
 
 [Tor browser](https://www.torproject.org/projects/torbrowser.html.en) recently
 [switched its default search

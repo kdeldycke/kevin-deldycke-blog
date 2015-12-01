@@ -3,6 +3,7 @@ date: 2012-08-07 12:26:27
 title: Keep a Local Backup of Gmail thanks to mbsync
 category: English
 tags: Backup, Gmail, Google, IMAP, isync, Linux, email, mbsync, OpenSSL, SSL
+---
 
 I used to keep a [local backup of my Gmail mails with OfflineImap](http://kevin.deldycke.com/2012/05/backup-gmail-offlineimap/). But I never felt comfortable with this solution because of OfflineImap being fully bidirectional. Which means my mails in the cloud are not protected from me messing with their local versions.
 

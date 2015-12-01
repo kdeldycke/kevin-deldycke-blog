@@ -3,6 +3,7 @@ date: 2011-10-25 12:40:47
 title: PostgreSQL commands
 category: English
 tags: CLI, database, Linux, PostgreSQL, SQL
+---
 
   * Update the default configuration to allow direct authentication from the local machine:
 

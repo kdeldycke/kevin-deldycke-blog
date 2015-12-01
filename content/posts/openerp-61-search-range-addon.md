@@ -3,6 +3,7 @@ date: 2013-04-23 12:25:36
 title: Addon to restore search range in OpenERP 6.1
 category: English
 tags: OpenERP, Javascript, Backbone.js, jQuery, Web, addon
+---
 
 In OpenERP 6.1, the default search widget for dates and floats [no longer feature a range](https://bugs.launchpad.net/openerp-web/+bug/926390/):
 

@@ -2,6 +2,7 @@
 date: 2006-08-20 17:10:26
 title: Blog Theme Update
 tags: Blog, K2, Theme, CSS, WordPress
+---
 
 I've updated my blog theme from
 [K2](https://web.archive.org/web/20150107112837/http://getk2.com/about/)

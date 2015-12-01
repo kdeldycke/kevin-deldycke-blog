@@ -3,6 +3,7 @@ date: 2007-01-04 21:54:19
 title: Every Sky is Blue...
 category: English
 tags: Blog, life, Web
+---
 
 By randomly browsing the net, I've found a [cloud photo from Croatia](http://tallecreative.com/designmudd/2005/06/13/croatia-pics/) which look like the one I put as a header of this blog.
 

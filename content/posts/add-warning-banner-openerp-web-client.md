@@ -3,6 +3,7 @@ date: 2012-04-17 12:46:34
 title: How-to add a warning banner to OpenERP's web client
 category: English
 tags: CSS, HTML, mako, OpenERP, ERP
+---
 
 When working with multiple OpenERP instances in different stages, you can be sure your customer will one day mix up your pre-production and production instance, which can have catastrophic effects.
 

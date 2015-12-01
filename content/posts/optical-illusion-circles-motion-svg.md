@@ -3,6 +3,7 @@ date: 2010-04-14 19:26:39
 title: Optical illusion: circles in motion (SVG source included)
 category: English
 tags: Creative Commons, inkscape, optical illusion, svg, visuals
+---
 
 Here is an optical illusion I generated with [Inkscape](http://www.inkscape.org). I created this file some years ago and found it recently while cleaning my archives.
 

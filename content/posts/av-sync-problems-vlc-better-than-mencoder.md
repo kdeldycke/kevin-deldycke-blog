@@ -3,6 +3,7 @@ date: 2006-04-10 00:30:38
 title: A/V sync problems: VLC better than Mencoder
 category: English
 tags: Linux, mencoder, Video, VLC
+---
 
 Today I tried to transcode a bunch of videos using my favorite script. I need to do this because the videos produced with my cheap camera use Mjpeg as video codec and raw-data as audio codec. This result of incredible large files. To share my videos with friends, I transcode them to mpeg4/mp3 files. This is all the dirty work my script is supposed to handle.
 

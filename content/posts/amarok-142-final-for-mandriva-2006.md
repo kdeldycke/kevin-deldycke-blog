@@ -2,6 +2,7 @@
 date: 2006-08-28 01:50:12
 title: Amarok 1.4.2 final for Mandriva 2006
 tags: Amarok, KDE, Linux, Mandriva, Music, RPM
+---
 
 [Amarok 1.4.2 final is out](http://amarok.kde.org/content/view/80) and here are [my RPMs for Mandriva 2006](http://github.com/kdeldycke/mandriva-specs). To install them, I advise you to add my repository to your local urpmi database.
 

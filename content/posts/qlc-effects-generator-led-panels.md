@@ -3,6 +3,7 @@ date: 2010-08-10 21:42:14
 title: QLC effects generator for LED panels
 category: English
 tags: Canon EOS 7D, Cool Cavemen, DMX, Stage lighting, Linux, Python, QLC, Qt, Script, XML
+---
 
 Here is another script I wrote some months ago. It's called
 [`qlc-effects-generator.py`](http://github.com/kdeldycke/scripts/blob/master/qlc-effects-generator.py).

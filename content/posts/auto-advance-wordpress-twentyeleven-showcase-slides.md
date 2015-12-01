@@ -3,6 +3,7 @@ date: 2011-12-27 12:44:02
 title: Auto-advance WordPress' TwentyEleven showcase slides
 category: English
 tags: javascript, showcase, Template, Theme, twentyeleven, WordPress
+---
 
 WordPress default theme, [TwentyEleven](http://theme.wordpress.com/themes/twentyeleven/), has a built-in [showcase mode](http://twentyelevendemo.wordpress.com/showcase/) that is displaying a set a slides (composed of sticky posts) at the top of a page. This mode can be activated by creating a static page and set its _Template_ page attribute to _Showcase Template_.
 

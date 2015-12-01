@@ -3,6 +3,7 @@ date: 2011-02-14 16:43:51
 title: Pushing Git to Subversion: the case of WordPress plugin repository
 category: English
 tags: Git, Hosting, Linux, Subversion, WordPress
+---
 
 [Some weeks ago](http://kevin.deldycke.com/2011/02/moving-git-subtree-repository/) I moved my e107 Importer project from a [big fat Git repository](http://github.com/kdeldycke/scripts) to [its own](http://github.com/kdeldycke/e107-importer).
 

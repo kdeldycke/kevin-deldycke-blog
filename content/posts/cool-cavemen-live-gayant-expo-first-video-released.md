@@ -3,6 +3,7 @@ date: 2010-01-28 20:31:36
 title: Cool Cavemen live at Gayant Expo: first video released !
 category: English
 tags: concert, Cool Cavemen, douai, gayant expo, live, Music, Video
+---
 
 After several months of work, [nit-picking](http://kevin.deldycke.com/2010/01/remove-videotape-timecode/) and [drama](http://twitter.com/kdeldycke/status/6158072244), I've finally released [Cool Cavemen's "Pump the Funk Up" video](http://www.youtube.com/watch?v=qE-bis-wYxs):
 

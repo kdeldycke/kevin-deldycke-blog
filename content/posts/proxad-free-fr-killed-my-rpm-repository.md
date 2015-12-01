@@ -3,6 +3,7 @@ date: 2008-07-15 01:54:33
 title: Proxad / Free.fr killed my RPM repository !
 category: English
 tags: free.fr, Hosting, ISP, Mandriva, RPM
+---
 
 My ISP, [Free](http://free.fr), hardened its policy and do not allow any
 longer the use of the 10 GiB hosting (that they gracefully provide for free to

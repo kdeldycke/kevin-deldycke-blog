@@ -3,6 +3,7 @@ date: 2010-02-25 22:18:24
 title: Twitter search failed... :(
 category: English
 tags: Real-time web, search, Social media, Twitter, Web
+---
 
 Had an issue with [ÜberCart](http://www.ubercart.org/) tonight.
 

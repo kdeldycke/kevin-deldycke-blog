@@ -3,6 +3,7 @@ date: 2012-12-18 12:30:05
 title: How-to clean and tidy up OpenERP's XML
 category: English
 tags: CLI, lint, Linux, OpenERP, xml, XSLT, ERP
+---
 
 Based on internal metrics, half of the OpenERP custom code I produce for my customers is Python. The other half is XML (_sigh_).
 

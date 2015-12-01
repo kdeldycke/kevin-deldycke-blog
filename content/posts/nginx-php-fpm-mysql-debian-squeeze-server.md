@@ -3,6 +3,7 @@ date: 2011-06-28 12:50:59
 title: Nginx + PHP-FPM + MySQL on a Debian Squeeze server
 category: English
 tags: Debian, Debian Squeeze, Linux, MySQL, SQL, nginx, PHP, php-fpm, Server, Web
+---
 
 This post is not about optimization: it only describe a sure and fast way to get all those 3 components talk to each other. This article will help you bootstrap a minimal setup, something that I wouldn't recommend for a production server without serious tweaking (to get both high performances and security).
 

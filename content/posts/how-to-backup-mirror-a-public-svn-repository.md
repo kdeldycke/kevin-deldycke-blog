@@ -3,6 +3,7 @@ date: 2007-04-20 18:09:26
 title: How-to Backup / Mirror a public SVN repository
 category: English
 tags: Backup, Linux, SCM, Subversion, SVK
+---
 
 In this little how-to I will show you how to backup a public SVN repository
 thanks to [SVK](http://svk.bestpractical.com), a tool build upon SVN framework

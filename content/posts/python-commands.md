@@ -3,6 +3,7 @@ date: 2011-01-04 12:04:12
 title: Python commands
 category: English
 tags: ascii, Computer programming, date, dateutil, development, distutils, encoding, PEP8, PyPi, PDB, Python, socket, unicode, URL, urllib2, HTTP, PyLint, Fabric, pip
+---
 
   * Add a [Python's debugger](http://docs.python.org/library/pdb.html) break point:
 

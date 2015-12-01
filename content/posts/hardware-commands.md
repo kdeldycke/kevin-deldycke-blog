@@ -3,6 +3,7 @@ date: 2006-12-06 23:18:55
 title: Hardware commands
 category: English
 tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
+---
 
   * Change the keyboard layout in Debian (don't forget to logoff and logon to activate the new setting):
 

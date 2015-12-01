@@ -2,6 +2,7 @@
 date: 2006-09-03 21:04:46
 title: e107 to Wordpress Importer: v0.2 with bbcode support
 tags: Blog, CMS, e107, PHP, Web, WordPress
+---
 
 Here is the [second alpha release of my e107 to Wordpress import plug-in](http://wordpress.org/extend/plugins/e107-importer/). This release add [bbcode](http://en.wikipedia.org/wiki/BBCode) support to news content, based on original code from the e107 project. This mean that all your e107 news that use bbcode will be automattically transformed in pure html code to fit in Wordpress.
 

@@ -3,6 +3,7 @@ date: 2005-04-21 14:20:43
 title: Remote Backup with rsync
 category: English
 tags: Backup, CLI, Linux, Mandriva, rsync, SSH, RSA
+---
 
 This little article describe how to setup an automatic backup procedure to a remote machine via the rsync tool.
 

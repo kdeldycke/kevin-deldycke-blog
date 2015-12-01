@@ -3,6 +3,7 @@ date: 2008-07-31 20:48:22
 title: How-to fix ruby's FeedTools latin-1 parsing
 category: English
 tags: feed, FeedTools, parsing, patch, RSS, Ruby, Ruby on Rails
+---
 
 ![](/uploads/2008/feedtools-logo.png)
 

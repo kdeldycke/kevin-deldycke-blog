@@ -3,6 +3,7 @@ date: 2005-06-04 21:20:13
 title: Qemu: How-To Share Network Access with the Ghest OS
 category: English
 tags: iptables, Linux, Network, Qemu
+---
 
 ![Qemu Network Sharing](/uploads/2005/photo_f3.png)
 

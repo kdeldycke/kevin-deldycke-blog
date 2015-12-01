@@ -3,6 +3,7 @@ date: 2008-11-28 18:27:04
 title: How-to fix wireless DHCP on Mandriva 2009.0
 category: English
 tags: dhcp, Linux, Mandriva, Network, urpmi, wifi, wireless
+---
 
 In two words: `dhcp_client` sucks !
 

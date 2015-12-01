@@ -3,6 +3,7 @@ date: 2006-04-13 02:13:35
 title: New Repository for Mandriva 2006
 category: English
 tags: baghira, Linux, Mandriva, RPM, Wormux
+---
 
 Hi all !
 

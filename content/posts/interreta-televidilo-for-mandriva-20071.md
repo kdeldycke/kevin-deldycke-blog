@@ -3,6 +3,7 @@ date: 2007-05-14 18:36:47
 title: Interreta Televidilo for Mandriva 2007.1
 category: English
 tags: french, Interreta Televidilo, Linux, Mandriva, RPM, TV, urpmi, Video
+---
 
 ![Interreta Televidilo v0.6 on mandriva 2007.1 (spring)](/uploads/2007/interreta-televidilo-v06-on-mandriva-20071-spring1.png)
 

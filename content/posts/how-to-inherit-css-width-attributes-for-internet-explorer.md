@@ -3,6 +3,7 @@ date: 2008-06-03 21:56:03
 title: How-to inherit CSS width attributes for Internet Explorer
 category: English
 tags: CSS, Firefox, HTML, Internet Explorer
+---
 
 Let's say you rely on a third party CSS framework that set the default layout of
 your content. The following CSS rule is part of the framework:

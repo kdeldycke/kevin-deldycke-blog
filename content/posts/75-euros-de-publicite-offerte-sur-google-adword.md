@@ -3,6 +3,7 @@ date: 2010-10-30 16:13:36
 title: 75€ de publicité offerte sur Google AdWord
 category: Français
 tags: AdWords, Google,, bon de reduction, coupon, Google, promo, publicite, voucher, Web
+---
 
 [Meme chose](http://kevin.deldycke.com/2010/02/google-adwords-bon-reduction-75-euros-offert/) qu'il y a 9 mois, j'ai reçu un bon d'achat de 75€ de pub pour [AdWords](http://www.google.fr/AdWord).
 

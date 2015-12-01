@@ -3,6 +3,7 @@ date: 2006-10-18 00:15:16
 title: File Management commands
 category: English
 tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox
+---
 
   * Create several folder with a similar pattern:
 

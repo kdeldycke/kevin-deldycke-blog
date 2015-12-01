@@ -1,5 +1,6 @@
 ---
 title: About
+---
 
 <img class="thumbnail" width="250px"
 style="float: left; margin-right: 20px; margin-bottom: 20px"

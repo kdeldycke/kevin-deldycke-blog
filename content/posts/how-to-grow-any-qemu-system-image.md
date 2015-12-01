@@ -3,6 +3,7 @@ date: 2007-04-08 16:10:56
 title: How-to grow any Qemu system image
 category: English
 tags: gparted, Linux, qcow, Qemu, system, Windows
+---
 
 Qemu images can't be growed. In this example I will show you a little hack to grow a 6GiB `qcow` image to a 10GiB image. Beware: these operations can take a lot of time to perform and require lots of free space.
 

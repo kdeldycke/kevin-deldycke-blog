@@ -3,6 +3,7 @@ date: 2006-11-02 23:19:03
 title: Website Backup script: Incremental Backup feature added.
 category: English
 tags: Backup, bzip2, CLI, FTP, lftp, Linux, Network, Python, Web
+---
 
 I've changed my backup strategy today, so I updated my [website-backup.py script](https://github.com/kdeldycke/scripts/blob/master/website-backup.py). You can find the latest version of the script on [my script page](http://kevin.deldycke.com/code/).
 

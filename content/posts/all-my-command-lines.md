@@ -3,6 +3,7 @@ date: 2006-12-27 21:48:32
 title: All my command lines
 Category: Front Page
 tags: CLI, Linux
+---
 
 Here is a collection of commands lines, code and configuration snippets I collected for several years while working as an Open-Source Software Engineer:
 

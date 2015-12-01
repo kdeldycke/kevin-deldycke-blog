@@ -3,6 +3,7 @@ date: 2010-02-23 00:49:48
 title: How-to fork a CVS project with Git
 category: English
 tags: CVS, Drupal, Fork, Git, GitHub, Theme
+---
 
 This week I've decided to put
 [my work on Cool Cavemen's concert videos](http://kevin.deldycke.com/2010/02/cool-cavemen-live-gayant-expo-part-ii/)

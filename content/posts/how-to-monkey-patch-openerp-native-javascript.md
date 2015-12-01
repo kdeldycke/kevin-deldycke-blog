@@ -3,6 +3,7 @@ date: 2012-02-21 12:51:21
 title: How-to monkey-patch OpenERP's native Javascript
 category: English
 tags: javascript, monkeypatch, OpenERP, Web, xml, ERP
+---
 
 Here is a classic editable list in [OpenERP v6.0](http://www.openerp.com/node/607/2011/01):
 

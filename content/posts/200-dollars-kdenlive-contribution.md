@@ -3,6 +3,7 @@ date: 2012-03-20 14:32:37
 title: I contributed $200 to Kdenlive and you should too !
 category: English
 tags: campaign, contribution, donation, fundaraising, KDE, Kdenlive, Linux, open source, Video
+---
 
 I [just donated $200](https://twitter.com/#!/kdeldycke/status/182018605259567104) to the [Kdenlive](http://kdenlive.org) project, as they have [just started](http://kdenlive.org/users/ttill/kdenlive-fundraising-campaign) a [fundraising campaign](http://www.indiegogo.com/kdenlive-re) to refactor its core and make it future-proof:
 

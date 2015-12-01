@@ -3,6 +3,7 @@ date: 2007-02-10 20:12:08
 title: Delayed CD Tracks Publishing with PHP
 category: English
 tags: Cool Cavemen, Music, PHP, Web
+---
 
 Here is a little piece of code I want to share with you. I created this some months ago for the [Cool Cavemen band](http://coolcavemen.com). They wanted to release all tracks of their new LP on their website, one track per week. That's the main purpose of the code below:
 

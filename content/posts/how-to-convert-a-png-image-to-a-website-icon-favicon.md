@@ -3,6 +3,7 @@ date: 2006-09-15 23:19:36
 title: How to Convert a Png image to a Website Icon (favicon)
 category: English
 tags: CLI, Linux, Theme, Web
+---
 
 I know how to convert a [bitmap image](http://en.wikipedia.org/wiki/Windows_bitmap) to a website icon, thanks to the following one-line linux command:
 

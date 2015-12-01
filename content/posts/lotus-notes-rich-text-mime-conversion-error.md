@@ -3,6 +3,7 @@ date: 2010-05-12 21:32:37
 title: Lotus Notes' Rich Text to MIME conversion error
 category: English
 tags: email, Gimp, Lotus Notes, MIME
+---
 
 Today I encountered a strange error while using Lotus Notes. I had a "_Cannot convert Notes Rich Text message to MIME message_" error:
 

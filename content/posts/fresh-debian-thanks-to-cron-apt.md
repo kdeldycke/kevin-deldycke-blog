@@ -3,6 +3,7 @@ date: 2011-05-24 12:18:08
 title: Keep a Debian fresh thanks to cron-apt
 category: English
 tags: apt, aptitude, cron, cron-apt, Debian, Linux, sed
+---
 
 As I [mentioned in an old comment](http://kevin.deldycke.com/2008/12/dpkg-apt-aptitude-commands/comment-page-1/#comment-4726), I use `cron-apt` to keep my Debian servers fresh.
 

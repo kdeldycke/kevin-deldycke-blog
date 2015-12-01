@@ -3,6 +3,7 @@ date: 2005-05-29 05:08:58
 title: How-To Mount a File System Binary Image
 category: English
 tags: CLI, Hardware, Linux
+---
 
 ## Obtain a binary image
 

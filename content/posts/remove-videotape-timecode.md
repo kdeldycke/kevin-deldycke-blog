@@ -3,6 +3,7 @@ date: 2010-01-14 11:30:15
 title: Remove videotape timecode
 category: English
 tags: analog, avidemux, timecode, Video, VITC
+---
 
 Since November I'm working on a video project with footages taken with an analog system. This mean that some videos were shots with analog cameras, recorded on a videotape, then transcoded to a MPEG-2 stream.
 

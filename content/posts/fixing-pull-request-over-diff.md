@@ -3,6 +3,7 @@ date: 2015-09-28 21:19:53
 title: How-to reconcile metadata differences of a messed up pull-request 
 category: English
 tags: CLI, Git, GitHub, Linux, Babel, l10n, i18n, Python
+---
 
 I was browsing upcoming changes in [Babel
 ](https://github.com/python-babel/babel) today when I spotted a typo. For these

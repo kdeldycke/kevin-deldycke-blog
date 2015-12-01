@@ -3,6 +3,7 @@ date: 2008-07-16 22:40:53
 title: How-to add proxy support to Feedalizer ruby library
 category: English
 tags: feed, feedalizer, hpricot, HTTP, parsing, proxy, RSS, Ruby, Ruby on Rails
+---
 
 ![](/uploads/2008/feedalizer.png)
 

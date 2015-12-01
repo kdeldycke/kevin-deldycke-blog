@@ -3,6 +3,7 @@ date: 2009-12-02 21:37:09
 title: Auto-saving a file at regular intervals
 category: English
 tags: Backup, cron, Linux, save
+---
 
 ![editing-cron-with-vi](/uploads/2009/editing-cron-with-vi.jpg)
 

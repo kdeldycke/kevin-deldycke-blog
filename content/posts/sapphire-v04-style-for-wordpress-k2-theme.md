@@ -3,6 +3,7 @@ date: 2007-11-24 01:45:29
 title: Sapphire v0.4 style for wordpress K2 theme
 category: English
 tags: K2, Theme, Web, WordPress
+---
 
 Here is my
 [latest version (0.4) of Sapphire](https://github.com/kdeldycke/sapphire/archive/sapphire-0.4.zip)

@@ -3,6 +3,7 @@ date: 2011-05-17 12:13:04
 title: Setting up HDD's SMART monitoring on Debian Squeeze
 category: English
 tags: Debian, HDD, Linux, Server, smartmontools, Debian Squeeze
+---
 
 Here is how I setup SMART monitoring and maintenance of an array of Hard-Disk Drives running a Debian Squeeze.
 

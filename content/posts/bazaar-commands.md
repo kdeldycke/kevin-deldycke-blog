@@ -3,6 +3,7 @@ date: 2011-11-01 12:46:26
 title: Bazaar commands
 category: English
 tags: bazaar, CLI, development, Launchpad, Linux, OpenERP, programming
+---
 
   * Check-out in the local `openerp-server` folder the `6.0` branch of the OpenERP server project from Launchpad:
 

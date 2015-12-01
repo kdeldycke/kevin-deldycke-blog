@@ -3,6 +3,7 @@ date: 2010-10-15 11:56:56
 title: Export Quartz Composer to video
 category: English
 tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, Mac OS X Snow Leopard
+---
 
 [Quartz Composer](http://en.wikipedia.org/wiki/Quartz_Composer) is a really nice piece of software for [visualists](http://createdigitalmotion.com). It allows you to create animated and/or interactive compositions mixing sounds, images, effects, user inputs and any other kind of data. In fact, Quartz Composer was the main reason I bought a [MacBook Pro](http://amzn.com/B002QQ8H8I/?tag=kevideld-20) 18 months ago.
 

@@ -3,6 +3,7 @@ date: 2006-11-27 21:48:02
 title: Wordpress to e107 v0.6: Better Content Rendering and Extended News support
 category: English
 tags: Blog, CMS, e107, PHP, WordPress
+---
 
 ![](/uploads/2006/e107-to-wordpres-061.png) Here is the [version 0.6 of my tool to import e107 content in Wordpress](http://wordpress.org/extend/plugins/e107-importer/). Comparing to [v0.5](http://kevin.deldycke.com/2006/11/wordpress-to-e107-v05-static-pages-import-added/), this 6th alpha version render content as it is rendered in e107 thanks to the use of user's website preferences. This release also handle news extended part nicely (look at [screenshot](/uploads/2006/e107-to-wordpres-06.png)
 

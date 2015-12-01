@@ -3,6 +3,7 @@ date: 2007-06-02 23:42:15
 title: How-to launch a KDE Application in Another Language
 category: English
 tags: KDE, Linux
+---
 
 This is a old discussion I had at least 9 months ago with people from the `#kde` IRC channel.
 

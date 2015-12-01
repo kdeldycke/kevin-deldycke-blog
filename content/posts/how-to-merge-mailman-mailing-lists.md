@@ -3,6 +3,7 @@ date: 2011-10-11 12:28:25
 title: How-to merge Mailman mailing-lists
 category: English
 tags: archive, Linux, email, mailing list, mailman, merge, Python
+---
 
 Let's say I have an old inactive mailing list (which ID is `old-ml`) for which I want to merge its archives to another one (called `active-ml`).
 
