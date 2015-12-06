@@ -111,7 +111,7 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         $ find ./ -type d -empty -ipath "./.*" -print -exec rm -rf "{}" \;
 
   * Delete files ending with `.thumbnail.jpg` or `.thumbnail.png` files (case insensitive):
-re
+
         :::bash
         $ find ./ -iregex ".*\.thumbnail\.\(jpg\|png\)$" -delete
 
