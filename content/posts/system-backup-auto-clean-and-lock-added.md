@@ -2,7 +2,7 @@
 date: 2007-04-27 20:41:51
 title: System Backup: Auto-Clean and Lock added
 category: English
-tags: Backup, Linux, Python, rdiff-backup, rsync, system
+tags: Backup, Linux, Python, rdiff-backup, rsync, system, cron
 ---
 
 I've updated the [system backup script I've released 3 weeks ago](http://kevin.deldycke.com/2007/04/system-backup-on-unreliable-link-thanks-to-rdiff-backup-and-rsync/) to let it clean automatically `rdiff-backup` folders. This is mandatory because incremental backup process is transactionnal and a power failure or a reboot can break the consistency of the `rdiff-backup` data repository. So even if such a misfortune happened, the script will be able to revert backups to a previously consistent state.
