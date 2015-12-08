@@ -30,6 +30,16 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::bash
         $ find /folder -iname "*.xml" -exec sed -i 's/[ \t]*$//' "{}" \;
 
+  * Place a new `---` line at the start of each `.markdown` files ([see result](https://github.com/kdeldycke/kevin-deldycke-blog/commit/19d1b082e93966f82873ce9d8de238a889d371b7)):
+
+        :::bash
+        $ find ./folder -iname "*.markdown" -exec sed -i '1s/^/---\n/' "{}" \;
+
+  * Place a new `---` line before the first empty line of each `.markdown` files ([see result](https://github.com/kdeldycke/kevin-deldycke-blog/commit/8628d53284e41917159e344ea45ad9e9d16b90b1)):
+
+        :::bash
+        $ find ./folder -iname "*.markdown" -exec sed -i '0,/^$/s//---\n/' "{}" \;
+
   * Remove lines starting with `prefix1:` or `prefix2:` in all `.markdown` files:
 
         :::bash
