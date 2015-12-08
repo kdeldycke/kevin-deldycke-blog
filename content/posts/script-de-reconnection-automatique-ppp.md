@@ -2,7 +2,7 @@
 date: 2005-04-04 00:07:45
 title: Script de reconnection automatique PPP
 category: Français
-tags: Linux, Network, Script, shell
+tags: Linux, Network, Script, shell, cron
 ---
 
 Voici un petit script trivial en bash qui, couplé à `cron`, me permet de maintenir ma connexion internet 56kbps fournie par Free.fr (en attendant l'arrivée du modem ADSL):
