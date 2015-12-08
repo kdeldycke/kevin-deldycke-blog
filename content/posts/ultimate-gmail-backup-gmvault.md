@@ -2,7 +2,7 @@
 date: 2012-10-23 12:28:46
 title: Ultimate Gmail backup with Gmvault
 category: English
-tags: Backup, Gmail, gmvault, Linux, email, Pip, Python, Ubuntu
+tags: Backup, Gmail, gmvault, Linux, email, Pip, Python, Ubuntu, cron
 ---
 
 For several weeks, I started a quest to find the best solution to locally backup a Gmail account.
