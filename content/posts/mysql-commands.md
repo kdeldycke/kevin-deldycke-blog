@@ -2,7 +2,7 @@
 date: 2010-02-26 14:18:17
 title: MySQL commands
 category: English
-tags: CLI, Databases, MySQL, SQL, SQL
+tags: CLI, Databases, MySQL, SQL, SQL, cron
 ---
 
   * List all users in the current MySQL server:
