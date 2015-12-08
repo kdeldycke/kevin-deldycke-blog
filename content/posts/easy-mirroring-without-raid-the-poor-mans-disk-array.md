@@ -1,8 +1,8 @@
 ---
 date: 2005-07-24 17:06:19
-title: Easy Mirroring Without RAID: the Poor Man''s Disk Array
+title: Easy Mirroring Without RAID: the Poor Man's Disk Array
 category: English
-tags: Backup, CLI, Hardware, kernel, Linux, openbrick, RAID, rsync, USB, XFS
+tags: Backup, CLI, Hardware, kernel, Linux, openbrick, RAID, rsync, USB, XFS, cron
 ---
 
 This howto explain how to use `rsync` to build a data mirroring mechanism on a local machine, with two hard drives, ala [RAID 1](http://en.wikipedia.org/wiki/RAID1), but without RAID 1 (!).
