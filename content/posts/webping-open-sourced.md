@@ -2,7 +2,7 @@
 date: 2011-08-16 12:10:06
 title: WebPing Open-sourced !
 category: English
-tags: Apache, email, flot, GitHub, HTML, HTTP, javascript, jquery, munin, nagios, Plone, Python, Server, SQLite, SQL, Web, webping, yaml
+tags: Apache, email, flot, GitHub, HTML, HTTP, javascript, jquery, munin, nagios, Plone, Python, Server, SQLite, SQL, Web, webping, yaml, cron
 ---
 
 I've just released WebPing under a GPL license. It's available right now on a [GitHub repository](http://github.com/kdeldycke/webping).
