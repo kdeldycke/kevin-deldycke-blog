@@ -75,3 +75,4 @@ Other resources:
 
   * [Git tips and tricks](https://github.com/git-tips/tips#git-tips)
   * [Awesome git addons](https://github.com/stevemao/awesome-git-addons)
+  * [My `.gitconfig` configuration file](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.gitconfig)
