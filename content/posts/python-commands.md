@@ -63,6 +63,21 @@ I personnaly recommend using the [`Arrow`](http://crsmithdev.com/arrow/) package
         datetime.date.today() + dateutil.relativedelta(months=1)
 
 
+## Jinja
+
+To generate curly braces:
+
+        :::python
+        >>> from jinja2 import Template
+        >>> Template(u""" Yo! """).render()
+        u' Yo! '
+        >>> Template(u""" {{'{{'}} """).render()
+        u' {{ '
+        >>> Template(u""" {{'{'}} """).render()
+        u' { '
+        >>> Template(u""" {{'{'}}machin{{'}'}} """).render()
+        u' {machin} '
+
 ## Data
 
   * [Pandas snippets](http://kevin.deldycke.com/2015/11/pandas-snippets/)
