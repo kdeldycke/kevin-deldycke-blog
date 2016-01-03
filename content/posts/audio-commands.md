@@ -10,6 +10,13 @@ tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool
         :::bash
         $ ffmpeg -i audio.wma -b:a 192k audio.mp3
 
+  * Convert all `.wma` files to VBR `.mp3` at [quality range number
+    #4](https://trac.ffmpeg.org/wiki/Encode/MP3#VBREncoding):
+
+        :::bash
+        $ find . -iname "*.wma" -exec ffmpeg -i "{}" -q:a 4 "{}.mp3" \;
+        $ rename 's/\.wma\.mp3/\.mp3/' *.mp3
+
   * Convert `.ape` file to `.wav`:
 
         :::bash
