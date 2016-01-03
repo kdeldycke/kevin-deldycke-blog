@@ -176,3 +176,5 @@ Other resources:
   ](https://stackoverflow.com/questions/tagged/pandas)
   * [Becky Sweger's snippets
   ](https://gist.github.com/bsweger/e5817488d161f37dcbd2)
+  * [My own Pandas rants tweets
+  ](https://twitter.com/search?q=%23pandas%20%40kdeldycke)
