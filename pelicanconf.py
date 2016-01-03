@@ -209,4 +209,3 @@ Attribution-Share Alike 3.0 license</a>."""
 DISQUS_SITENAME = 'kevin-deldycke-blog'
 
 GOOGLE_ANALYTICS = 'UA-657524-1'
-GOOGLE_ANALYTICS_PROPERTY = 'auto'
