@@ -5,6 +5,11 @@ category: English
 tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool, sox, wave
 ---
 
+  * Convert `.wma` file to 192 kpbs `.mp3`:
+
+        :::bash
+        $ ffmpeg -i audio.wma -b:a 192k audio.mp3
+
   * Convert `.ape` file to `.wav`:
 
         :::bash
