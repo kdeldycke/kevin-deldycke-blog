@@ -2,8 +2,16 @@
 date: 2006-12-06 23:18:55
 title: Hardware commands
 category: English
-tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org
+tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D
 ---
+
+  * Get the number of shutter count of a DSLR (Canon EOS 7D in my case):
+
+        :::bash
+        $ gphoto2 --get-config /main/status/shuttercounter
+        Label: Shutter Counter
+        Type: TEXT
+        Current: 49238
 
   * Change the keyboard layout in Debian (don't forget to logoff and logon to activate the new setting):
 
