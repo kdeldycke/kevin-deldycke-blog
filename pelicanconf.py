@@ -40,7 +40,8 @@ TEMPLATE_PAGES = {
     'templates/themes.html': 'themes/index.html',
 }
 
-DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives', 'search']
+DIRECT_TEMPLATES = [
+    'index', 'tags', 'categories', 'authors', 'archives', 'search']
 
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = TAG_URL + 'index.html'
