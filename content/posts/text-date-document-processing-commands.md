@@ -5,6 +5,11 @@ category: English
 tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, Perl, Regular expression
 ---
 
+  * Convert a PDF to a JPEG file at 150 dpi:
+
+        :::bash
+        $ convert -density 150 ./document.pdf ./document.jpg
+
   * Extract images from a PDF document:
 
         :::bash
