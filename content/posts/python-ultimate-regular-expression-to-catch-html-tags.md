@@ -2,7 +2,7 @@
 date: 2008-07-08 00:24:26
 title: Python ultimate regular expression to catch HTML tags
 category: English
-tags: HTML, programming, Python, Regular expression, BeautifoulSoup
+tags: HTML, programming, Python, Regular expression, BeautifoulSoup, lxml
 ---
 
 _**Disclaimer**: this is a dirty hack ! To parse HTML or XML, use a dedicated
