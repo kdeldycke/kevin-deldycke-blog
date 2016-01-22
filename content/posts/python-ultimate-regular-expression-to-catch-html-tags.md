@@ -2,11 +2,17 @@
 date: 2008-07-08 00:24:26
 title: Python ultimate regular expression to catch HTML tags
 category: English
-tags: HTML, programming, Python, Regular expression
+tags: HTML, programming, Python, Regular expression, BeautifoulSoup
 ---
+
+_**Disclaimer**: this is a dirty hack ! To parse HTML or XML, use a dedicated
+library like the good old 
+[`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4) or 
+[`lxml.html`](http://lxml.de/lxmlhtml.html).
 
 1 year and 3 months ago I've came with a
 [PHP regexp to parse HTML tag soup](http://kevin.deldycke.com/2007/03/ultimate-regular-expression-for-html-tag-parsing-with-php/).
+
 Here is an improved version, in Python (my favorite language so far), that is
 normally much prone to detect strange HTML tags. It also support attributes
 without value so it's closer to the
