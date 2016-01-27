@@ -122,6 +122,8 @@ TODO
   * CSS typography: http://www.newnet-soft.com/blog/csstypography
   * Upgrade to Bootstrap 3.x
   * Use http://startbootstrap.com/modern-business for first page ?
+  * Colors inspiration: https://news.ycombinator.com/item?id=10434486
+  * Image gallery inspiration: https://github.com/Jack000/Expose
 
 
 License
