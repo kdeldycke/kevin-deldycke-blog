@@ -129,7 +129,7 @@ TODO
 License
 -------
 
-The content of this repository is copyrighted (c) 2004-2015 Kevin Deldycke.
+The content of this repository is copyrighted (c) 2004-2016 Kevin Deldycke.
 
 Unless contrary mention, the licensing terms below applies:
 
