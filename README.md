@@ -1,7 +1,7 @@
 Kevin Deldycke's blog
 =====================
 
-These are the source files of the content of my 
+These are the source files of the content of my
 [blog](http://kevin.deldycke.com), which is powered by
 [Pelican](http://getpelican.com), a static site generator written in Python.
 
@@ -133,7 +133,7 @@ The content of this repository is copyrighted (c) 2004-2016 Kevin Deldycke.
 
 Unless contrary mention, the licensing terms below applies:
 
-  * Code and software released under [GNU/GPL licence, 
+  * Code and software released under [GNU/GPL licence,
     v2.0](http://www.fsf.org/licensing/licenses/gpl.html).
   * Other content published under [Creative Commons Attribution-Share Alike 3.0
     license](http://creativecommons.org/licenses/by-sa/3.0/).
