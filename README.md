@@ -17,7 +17,7 @@ Install Pelican and its dependencies:
 
 Then fetch a copy of the repository:
 
-    $ git clone --recursive https://github.com/kdeldycke/dotfiles.git
+    $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git
 
 
 Development
