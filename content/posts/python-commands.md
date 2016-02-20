@@ -20,7 +20,7 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
         :::python
         getSafeURL = lambda s: '-'.join([w for w in ''.join([c.isalnum() and c or '-' for c in s.lower()]).split('-') if w])
- 
+
   Better: use [`awesome-slugify`](https://pypi.python.org/pypi/awesome-slugify) package.
 
   * Sort a list of dicts by dict-key ([source](http://code.pui.ch/2007/07/23/python-sort-a-list-of-dicts-by-dict-key/)):
@@ -49,7 +49,7 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
         :::bash
         $ find / -name "*.py[co]" -delete
-        
+
 
 ## Date and time
 
@@ -67,16 +67,17 @@ I personnaly recommend using the [`Arrow`](http://crsmithdev.com/arrow/) package
 
 To generate curly braces:
 
-        :::python
-        >>> from jinja2 import Template
-        >>> Template(u""" Yo! """).render()
-        u' Yo! '
-        >>> Template(u""" {{'{{'}} """).render()
-        u' {{ '
-        >>> Template(u""" {{'{'}} """).render()
-        u' { '
-        >>> Template(u""" {{'{'}}machin{{'}'}} """).render()
-        u' {machin} '
+    :::python
+    >>> from jinja2 import Template
+    >>> Template(u""" Yo! """).render()
+    u' Yo! '
+    >>> Template(u""" {{'{{'}} """).render()
+    u' {{ '
+    >>> Template(u""" {{'{'}} """).render()
+    u' { '
+    >>> Template(u""" {{'{'}}machin{{'}'}} """).render()
+    u' {machin} '
+
 
 ## Data
 
