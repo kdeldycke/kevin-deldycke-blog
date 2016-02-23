@@ -98,7 +98,6 @@ TODO
       * https://github.com/getpelican/pelican-plugins/tree/master/assets
   * Inline and embed all CSS in the page ? See: http://www.peterbe.com/plog/100-percent-inline-css
   * Use LESS version of bootstrap for cleaner customizations ?
-  * Check and fix style on mobile (especially ugly margins)
   * Look at app-template for code inspiration and ideas:
       *  https://github.com/nprapps/app-template/blob/master/templates/_base.html
       *  https://github.com/nprapps/app-template/blob/master/render_utils.py
@@ -119,9 +118,8 @@ TODO
       * http://codepen.io/Twikito/pen/Jeaub
       * To center the zoom icon, we can use one of these trick: http://codepen.io/shshaw/full/gEiDt
   * CSS typography: http://www.newnet-soft.com/blog/csstypography
-  * Upgrade to Bootstrap 3.x
+  * Upgrade to Bootstrap 4.x
   * Use http://startbootstrap.com/modern-business for first page ?
-  * Colors inspiration: https://news.ycombinator.com/item?id=10434486
   * Image gallery inspiration: https://github.com/Jack000/Expose
 
 
