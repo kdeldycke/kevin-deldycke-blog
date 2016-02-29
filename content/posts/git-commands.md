@@ -35,6 +35,11 @@ tags: CLI, Git, GitHub, Software engineering
         :::bash
         $ git log --graph --all --pretty=oneline --abbrev-commit --date-order
 
+  * Revert a particular commit:
+
+        :::bash
+        $ git revert 119ff8
+
   * Destroy all your local changes and get back a sane repository:
 
         :::bash
