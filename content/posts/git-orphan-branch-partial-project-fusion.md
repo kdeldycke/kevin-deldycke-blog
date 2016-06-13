@@ -124,7 +124,9 @@ Then publish that new `orphan` branch upstream:
 
 At this point I encourage you to [check in your
 GUI](https://sixohthree.com/1955/git-subtree-merges-orphaned-branches-and-github)
-that the said orphan branch is really detached from your usual branches.
+that the said orphan branch is really detached from your usual branches:
+
+![](/uploads/2015/gitlab-network-view-orphan-branch.png)
 
 Time to import the branch we cleaned from the source repository:
 
