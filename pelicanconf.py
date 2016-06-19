@@ -113,7 +113,6 @@ EXTRA_PATH_METADATA = {
 
 PLUGIN_PATHS = ['plugins-core']
 PLUGINS = [
-    # Core plugins
     'related_posts',
     # 'thumbnailer',
     'tipue_search',
@@ -125,22 +124,6 @@ PLUGINS = [
 ### Plugin-specific settings
 
 RELATED_POSTS_MAX = 3
-
-# TODO: align default SITEMAP config to
-# http://wordpress.org/extend/plugins/google-sitemap-generator/stats/
-SITEMAP = {
-    'format': 'xml',
-    'priorities': {
-        'articles': 0.5,
-        'indexes': 0.5,
-        'pages': 0.5,
-    },
-    'changefreqs': {
-        'articles': 'monthly',
-        'indexes': 'daily',
-        'pages': 'monthly',
-    }
-}
 
 IMAGE_PATH = "uploads"
 #THUMBNAIL_DIR = ""
