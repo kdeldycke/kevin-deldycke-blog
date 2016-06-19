@@ -13,6 +13,3 @@ output
 
 # Kevin private stuff
 Makefile
-
-# Huge binary content
-content/documents/*
