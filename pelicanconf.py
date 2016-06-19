@@ -185,17 +185,17 @@ LEFT_SIDEBAR = """
 
 ARTICLE_EDIT_LINK = 'https://github.com/kdeldycke/kevin-deldycke-blog/edit/master/content/posts/%(slug)s.md'
 
-SOCIAL_WIDGET_NAME = "Contact"
+SOCIAL_WIDGET_NAME = "Online presence"
 SOCIAL = (
-    ('@kdeldycke', 'http://twitter.com/kdeldycke'),
+    ("Twitter", 'https://twitter.com/kdeldycke'),
+    ("Github", 'https://github.com/kdeldycke'),
 )
 
 LINKS_WIDGET_NAME = "Professional profiles"
 LINKS = (
+    ('LinkedIn', 'https://linkedin.com/in/kevindeldycke/en'),
     ('PDF resume', 'http://docs.google.com/document/export?format=pdf&amp;id='
      '1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg'),
-    ('Careers 2.0', 'http://careers.stackoverflow.com/kdeldycke'),
-    ('LinkedIn', 'http://linkedin.com/in/kevindeldycke/en'),
 )
 
 COPYRIGHT = """Unless contrary mentioned, the licensing terms below applies:
