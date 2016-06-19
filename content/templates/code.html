@@ -20,7 +20,7 @@
   %}
   <ul class="nav nav-pills">
     {% for (name, link) in TECH_LINKS %}
-      <li>{{ m.render_link_icon(link, name) }}</li>
+      <li>{{ m.render_link_icon(link, name, FAVICON_LINKS) }}</li>
     {% endfor %}
   </ul>
 {% endblock %}
