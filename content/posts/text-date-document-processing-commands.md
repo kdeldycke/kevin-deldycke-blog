@@ -50,6 +50,11 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::bash
         $ find /folder -iname "*.markdown" -exec perl -p -i -e 's/(prefix1|prefix2): .*\n//sg' "{}" \;
 
+  * Append the content of the `addendum.txt` file to all `.markdown` files:
+
+        :::bash
+        $ find ./folder -iname "*.markdown" -print -exec bash -c 'cat ./addendum.txt >> "{}"' \;
+
   * In place charset transcoding:
 
         :::bash
