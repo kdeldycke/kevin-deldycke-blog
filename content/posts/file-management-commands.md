@@ -131,7 +131,7 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ ls ./ -I "README.txt" | xargs rm -rf
 
-  * Search for `string` contained in all files named `MANIFEST.in`, and print the result:
+  * Search for `string` contained in all files named `MANIFEST.in`, and print their folder path:
 
         :::bash
-        $ find . -name "MANIFEST.in" -print -exec bash -c 'grep --silent "string" "{}" && echo "Found!" || echo "Not found!"' \;
+        $ find . -name "MANIFEST.in" -exec bash -c 'grep --silent "string" "{}" && echo $(dirname "{}")' \;
