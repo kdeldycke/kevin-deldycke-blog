@@ -119,7 +119,6 @@ TODO
       * To center the zoom icon, we can use one of these trick: http://codepen.io/shshaw/full/gEiDt
   * CSS typography: http://www.newnet-soft.com/blog/csstypography
   * Upgrade to Bootstrap 4.x
-  * Use http://startbootstrap.com/modern-business for first page ?
   * Image gallery inspiration: https://github.com/Jack000/Expose
 
 
