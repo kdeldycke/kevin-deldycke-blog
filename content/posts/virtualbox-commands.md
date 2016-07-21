@@ -18,8 +18,12 @@ tags: disk, image, VirtualBox, virtualization
   * Convert a VirtualBox image to a raw image:
 
         :::bash
-        $ VBoxManage clonehd --format RAW disk.vdi disk.img
+        $ VBoxManage clonehd --format RAW disk.vdi disk.raw
 
+  * Convert a raw image to a VirtualBox image:
+
+        :::bash
+        $ VBoxManage convertdd disk.raw disk.vdi --format VDI
 
   * List virtual machines:
 
