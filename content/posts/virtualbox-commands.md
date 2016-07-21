@@ -20,6 +20,7 @@ tags: disk, image, VirtualBox, virtualization
         :::bash
         $ VBoxManage clonehd --format RAW disk.vdi disk.img
 
+
   * List virtual machines:
 
         :::bash
