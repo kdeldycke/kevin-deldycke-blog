@@ -139,7 +139,7 @@ DEFAULT_TEMPLATE = """<a href="{url}" class="zoomable" title="{filename}">
 SITE_THUMBNAIL = '/uploads/2015/profile-photo-squared-thumbnail.jpg'
 SITE_THUMBNAIL_TEXT = 'Might come with a beard'
 
-SITESUBTITLE = "Technical quasi-debt producer"
+SITESUBTITLE = "Professional Yak Shaver"
 
 MENUITEMS = (
     ('Home', '/'),
