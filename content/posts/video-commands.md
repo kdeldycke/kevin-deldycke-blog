@@ -66,7 +66,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
 ## VLC
 
-  * Transcode the first video stream found in a `m3u` playlist to a 384 kbps MPEG-2 video and 48 kHz Vorbis audio, and serve the resulting stream ina Ogg container to `http://localhost:8888`. To save bandwisth we reduce by two the size of the video:
+  * Transcode the first video stream found in a `m3u` playlist to a 384 kbps MPEG-2 video and 48 kHz Vorbis audio, and serve the resulting stream ina Ogg container to `http://localhost:8888`. To save bandwidth we reduce by two the size of the video:
 
         :::bash
         $ vlc -vvv http://mafreebox.freebox.fr/freeboxtv/playlist.m3u --sout '#transcode{vcodec=mp2v,vb=384,scale=0.5,acodec=vorbis,ab=48,channels=1}:standard{access=http,mux=ogg,url=:8888}' -I ncurses 2> /dev/null
