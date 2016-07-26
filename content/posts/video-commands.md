@@ -58,6 +58,12 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         :::bash
         $ ffmpeg -i ./MVI_1714.MOV -vcodec huffyuv -sameq ./MVI_1714-lossless.avi
 
+  * Produce a dummy 10 seconds video of a solid pink background at 1080p/60fps:
+
+        :::bash
+        $ ffmpeg -f lavfi -i "color=color=pink:size=1920x1080" -r 60 -t 10 -c:v libx264 dummy.mp4
+
+
 ## VLC
 
   * Transcode the first video stream found in a `m3u` playlist to a 384 kbps MPEG-2 video and 48 kHz Vorbis audio, and serve the resulting stream ina Ogg container to `http://localhost:8888`. To save bandwisth we reduce by two the size of the video:
