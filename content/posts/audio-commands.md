@@ -27,6 +27,12 @@ tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool
         :::bash
         $ shntool split -f album.cue -o flac album.flac
 
+  * Split a raw `BIN`/`CUE` copy of a CD-DA image and transcode each track as a flac:
+
+        :::bash
+        $ ffmpeg -f s16le -ar 44.1k -ac 2 -i ./CDDA_COPY.BIN ./cdda.wav
+        $ shntool split -f ./CDDA_COPY.CUE -o flac ./cdda.wav
+
   * Merge several .wav file to one file named `merged.wav`:
 
         :::bash
