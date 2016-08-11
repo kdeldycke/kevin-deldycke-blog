@@ -11,10 +11,6 @@ The theme it uses is called [Plumage](https://github.com/kdeldycke/plumage).
 Installation
 ------------
 
-Install Pelican and its dependencies:
-
-    $ pip install --upgrade pelican Markdown mdx_video mdx_titlecase typogrify beautifulsoup4 Fabric s3cmd
-
 Fetch a copy of the repository:
 
     $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git
