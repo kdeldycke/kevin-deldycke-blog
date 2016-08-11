@@ -15,9 +15,14 @@ Install Pelican and its dependencies:
 
     $ pip install --upgrade pelican Markdown mdx_video mdx_titlecase typogrify beautifulsoup4 Fabric s3cmd
 
-Then fetch a copy of the repository:
+Fetch a copy of the repository:
 
     $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git
+
+Install dependencies:
+
+    $ cd kevin-deldycke-blog
+    $ pip install -r requirements.txt
 
 
 Development
