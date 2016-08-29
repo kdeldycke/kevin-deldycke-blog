@@ -78,7 +78,7 @@ Make column `a` the index:
 Sort along the index:
 
     :::python
-    >>> df.sort(inplace=True)
+    >>> df.sort_index(inplace=True)
     >>> df
         b   c
     a
@@ -134,7 +134,7 @@ Pandas' internal Timestamp index:
     4  501201802  1985-11-18T22:43:22+00:00 1985-11-18 22:43:22
 
     >>> df.set_index('dt_index', inplace=True)
-    >>> df.sort(inplace=True)
+    >>> df.sort_index(inplace=True)
     >>> df
                             int_ts                   dt_arrow
     dt_index
