@@ -59,7 +59,7 @@ Check if column `a` is already sorted by comparing initial and value-sorted inde
     [0, 1, 2, 3, 4]
     >>> df.a.sort_values().index.tolist()
     [2, 4, 1, 0, 3]
-    >>> assert df.a.index.tolist() == df.a.sort_values().index.tolist()
+    >>> df.a.index.tolist() == df.a.sort_values().index.tolist()
     False
 
 Make column `a` the index:
