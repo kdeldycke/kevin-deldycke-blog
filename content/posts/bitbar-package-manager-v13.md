@@ -7,7 +7,7 @@ tags: GitHub, Python, Apple, Mac OS X, BitBar, Homebrew, Cask, node.js, atom, ap
 Only a couple of days since the [release of v1.0
 ](http://kevin.deldycke.com/2016/07/package-manager-plugin-bitbar/), and here
 is [Package Manager v1.3
-](https://getbitbar.com/plugins/Dev/Homebrew/package_manager.7h.py)!
+](https://getbitbar.com/plugins/Dev/PackageManager/package_manager.7h.py)!
 
 ![](/uploads/2016/package_manager_v13_screenshot.png)
 
