@@ -130,4 +130,4 @@ The content of this repository is copyrighted (c) 2004-2016 Kevin Deldycke.
 
 Unless contrary mention, the content of this repository is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC
-BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+BY-NC-SA 4.0) license](LICENSE).
