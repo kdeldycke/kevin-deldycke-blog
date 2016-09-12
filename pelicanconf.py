@@ -181,12 +181,9 @@ LINKS = (
      '1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg'),
 )
 
-COPYRIGHT = """Unless contrary mentioned, the licensing terms below applies:
-Code and software released under <a
-href='http://www.fsf.org/licensing/licenses/gpl.html'>GNU/GPL licence v2.0</a>;
-Other content published under <a
-href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons
-Attribution-Share Alike 3.0 license</a>."""
+COPYRIGHT = """Unless contrary mentioned, the content of this site is published
+under a <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International license</a>."""
 
 DISQUS_SITENAME = 'kevin-deldycke-blog'
 

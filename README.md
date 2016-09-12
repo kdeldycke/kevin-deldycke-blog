@@ -128,9 +128,6 @@ License
 
 The content of this repository is copyrighted (c) 2004-2016 Kevin Deldycke.
 
-Unless contrary mention, the licensing terms below applies:
-
-  * Code and software released under [GNU/GPL licence,
-    v2.0](http://www.fsf.org/licensing/licenses/gpl.html).
-  * Other content published under [Creative Commons Attribution-Share Alike 3.0
-    license](http://creativecommons.org/licenses/by-sa/3.0/).
+Unless contrary mention, the content of this repository is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC
+BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
