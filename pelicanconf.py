@@ -172,6 +172,7 @@ SOCIAL_WIDGET_NAME = "Online presence"
 SOCIAL = (
     ("Twitter", 'https://twitter.com/kdeldycke'),
     ("Github", 'https://github.com/kdeldycke'),
+    ("Keybase.io", 'https://keybase.io/kdeldycke'),
 )
 
 LINKS_WIDGET_NAME = "Professional profiles"
