@@ -17,8 +17,8 @@ Fetch a copy of the repository:
 
 Install dependencies:
 
-    $ cd kevin-deldycke-blog
-    $ pip install -r requirements.txt
+    $ cd ./kevin-deldycke-blog
+    $ pip install -r ./requirements.txt
 
 
 Development
