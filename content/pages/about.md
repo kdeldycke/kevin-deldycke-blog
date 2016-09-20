@@ -78,7 +78,7 @@ quickly fix errors. I sometimes write [in French]({category}francais) to target
 a French-speaking audience.
 
 This blog was previously titled *coolkevmen*. This is the nickname under which
-I appear in the creadits of the [All Cool
+I appear in the credits of the [All Cool
 Hits](http://coolcavemen.com/disc/all-cool-hits/) album, by my friends the
 [Cool Cavemen](http://coolcavemen.com).
 
