@@ -1,15 +1,15 @@
 ---
 date: 2016-10-07 11:40:00
-title: How-to initialize PostgreSQL in OSX?
+title: How-to initialize PostgreSQL in OS X?
 category: English
-tags: CLI, database, OSX, PostgreSQL, SQL, Apple, Mac OS X, Apple, Mac OS X El Capitan
+tags: CLI, database, macOS, PostgreSQL, SQL, Apple, OS X 10.11 El Capitan
 ---
 
-A little note on how I setup and bootstrap local PostgreSQL databases on OSX
+A little note on how I setup and bootstrap local PostgreSQL databases on OS X
 machines.
 
-Instructions below were tested on OSX 10.11 El Capitan, and target the 9.4.x series of
-PostgreSQL.
+Instructions below were tested on OS X El Capitan, and target the 9.4.x series
+of PostgreSQL.
 
 Install and setup PostgreSQL:
 

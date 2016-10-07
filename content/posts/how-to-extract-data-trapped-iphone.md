@@ -2,16 +2,23 @@
 date: 2010-09-16 21:24:45
 title: How-to extract data trapped into an iPhone
 category: English
-tags: Android, Apple, Backup, CSV, iPhone, iTunes, Apple, Mac OS X, Smartphones, SQLite, SQL, VLC
+tags: Android, Apple, Backup, CSV, iPhone, iTunes, Apple, macOS, Smartphones, SQLite, SQL, VLC, Mac OS X 10.6 Snow Leopard
 ---
 
-After 2 years using an [iPhone 3G](http://amzn.com/B001AXA056/?tag=kevideld-20), it's time for me to [switch to the Android world](http://twitter.com/kdeldycke/status/24219289221). [My Apple era is over](http://twitter.com/kdeldycke/status/22007247873), I need a plateform that is more linux and open-source friendly.
+After 2 years using an [iPhone 3G
+](http://amzn.com/B001AXA056/?tag=kevideld-20), it's time for me to [switch to
+the Android world](http://twitter.com/kdeldycke/status/24219289221). [My Apple
+era is over](http://twitter.com/kdeldycke/status/22007247873), I need a
+plateform that is more Linux and open-source friendly.
 
+Before erasing and [selling my iPhone
+](http://twitter.com/kdeldycke/status/24687160120), I want to backup and
+extract all the data I produced with it and that is still trapped inside. This
+mean photos, SMSs, voice messages, safari bookmarks, etc...
 
-
-Before erasing and [selling my iPhone](http://twitter.com/kdeldycke/status/24687160120), I want to backup and extract all the data I produced with it and that is still trapped inside. This mean photos, SMSs, voice messages, safari bookmarks, etc...
-
-There is a nice OSX app simply called [iPhone Backup Extractor](http://supercrazyawesome.com) which let you get these data. Instead of getting data directly from the iPhone, it reads its backups made by iTunes.
+There is a nice OS X app simply called [iPhone Backup Extractor
+](http://supercrazyawesome.com) which let you get these data. Instead of
+getting data directly from the iPhone, it reads its backups made by iTunes.
 
 So first thing you have to do is to backup your phone using iTunes:
 
@@ -21,11 +28,14 @@ Then you can download and run the iPhone Backup Extractor app:
 
 ![](/uploads/2010/iphone-backup-extrator.png)
 
-Here you just have to click the _Read Backups_ button to get a list of all backups available on your machine. Then choose your latest backup:
+Here you just have to click the _Read Backups_ button to get a list of all
+backups available on your machine. Then choose your latest backup:
 
 ![](/uploads/2010/list-of-iphone-backups.png)
 
-You'll get a list of all installed applications on your iPhone. As we are interested in "core" iPhone apps (SMSs, photos and so on), we'll choose the "iOS Files" item, then choose a place where to extract:
+You'll get a list of all installed applications on your iPhone. As we are
+interested in "core" iPhone apps (SMSs, photos and so on), we'll choose the
+"iOS Files" item, then choose a place where to extract:
 
 ![](/uploads/2010/iphone-backup-content.png)
 
@@ -35,21 +45,30 @@ Then the extraction itself will take place:
 
 ![](/uploads/2010/iphone-backup-extraction.png)
 
-You've just finished the essential part of the process. You now have a nice folder structure containing all the important informations that was trapped in your phone:
+You've just finished the essential part of the process. You now have a nice
+folder structure containing all the important informations that was trapped in
+your phone:
 
 ![](/uploads/2010/iphone-backup-extraction-content.png)
 
-Let's browse the file structure that was just created. You can see photos are available as is, in the `/iOS Files/Media/DCIM/XXXAPPLE/`:
+Let's browse the file structure that was just created. You can see photos are
+available as is, in the `/iOS Files/Media/DCIM/XXXAPPLE/`:
 
 ![](/uploads/2010/iphone-photo-location.png)
 
-Most of other datas are located in the `/iOS Files/Library/` folder. For example here are voice messages:
+Most of other datas are located in the `/iOS Files/Library/` folder. For
+example here are voice messages:
 
 ![](/uploads/2010/iphone-voicemessages-location.png)
 
-Again, `.amr` files here are playable as-is, like [VLC](http://www.videolan.org/vlc/) or [mplayer](http://www.mplayerhq.hu).
+Again, `.amr` files here are playable as-is, like [VLC
+](http://www.videolan.org/vlc/) or [mplayer](http://www.mplayerhq.hu).
 
-Most, if not all, other kind of data and metadata are stored in SQLite databases (`.db` files). The best GUI I found to manipulate with these files under Mac OSX is [SQLite Database Browser](http://sourceforge.net/projects/sqlitebrowser/). See how I can easily extract to a CSV file all metadatas associated with my voice messages:
+Most, if not all, other kind of data and metadata are stored in SQLite
+databases (`.db` files). The best GUI I found to manipulate with these files
+under Mac OS X is [SQLite Database Browser
+](http://sourceforge.net/projects/sqlitebrowser/). See how I can easily extract
+to a CSV file all metadatas associated with my voice messages:
 
 ![](/uploads/2010/sqlite-database-browser-opening.png)
 
@@ -59,7 +78,9 @@ Most, if not all, other kind of data and metadata are stored in SQLite databases
 
 ![](/uploads/2010/sqlite-csv-table-export.png)
 
-Finally, just in case you want to extract iPhones data from another backup than the default backup, like from a backup of the backup (isn't that clear ?), making a symlink is enough to trick iPhone Backup Extractor:
+Finally, just in case you want to extract iPhones data from another backup than
+the default backup, like from a backup of the backup (isn't that clear ?),
+making a symlink is enough to trick iPhone Backup Extractor:
 
     :::sh
     sh-3.2# pwd
@@ -74,7 +95,8 @@ Finally, just in case you want to extract iPhones data from another backup than 
     drwxr-xr-x   4 kevin  staff   136B Aug 30 13:20 Backup-copy
     sh-3.2#
 
-That's how I was able to extract my iPhone data from an old backup, and get back most of the [data I lost after my last iOS update](http://twitter.com/kdeldycke/status/22516008513):
+That's how I was able to extract my iPhone data from an old backup, and get
+back most of the [data I lost after my last iOS update
+](http://twitter.com/kdeldycke/status/22516008513):
 
 ![](/uploads/2010/iphone-backup-extractor-from-old-backup.png)
-

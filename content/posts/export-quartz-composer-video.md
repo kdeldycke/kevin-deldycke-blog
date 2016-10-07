@@ -2,18 +2,26 @@
 date: 2010-10-15 11:56:56
 title: Export Quartz Composer to video
 category: English
-tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, Mac OS X Snow Leopard
+tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, Mac OS X 10.6 Snow Leopard
 ---
 
-[Quartz Composer](http://en.wikipedia.org/wiki/Quartz_Composer) is a really nice piece of software for [visualists](http://createdigitalmotion.com). It allows you to create animated and/or interactive compositions mixing sounds, images, effects, user inputs and any other kind of data. In fact, Quartz Composer was the main reason I bought a [MacBook Pro](http://amzn.com/B002QQ8H8I/?tag=kevideld-20) 18 months ago.
+[Quartz Composer](http://en.wikipedia.org/wiki/Quartz_Composer) is a really
+nice piece of software for [visualists](http://createdigitalmotion.com). It
+allows you to create animated and/or interactive compositions mixing sounds,
+images, effects, user inputs and any other kind of data. In fact, Quartz
+Composer was the main reason I bought a
+[MacBook Pro](http://amzn.com/B002QQ8H8I/?tag=kevideld-20) 18 months ago.
 
-
-
-The first composition I created was this simple kaleidoscopic effect with shifting colors:
+The first composition I created was this simple kaleidoscopic effect with
+shifting colors:
 
 http://www.youtube.com/watch?v=a7YNLp7xy8k
 
-The [source composition](http://kevin.deldycke.com/documents/kaleidoscope-000.qtz) is available under a [Creative Commons 3.0 BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/). And here is the screenshot of the main patch:
+The [source composition
+](http://kevin.deldycke.com/documents/kaleidoscope-000.qtz) is available under
+a [Creative Commons 3.0 BY-SA license
+](http://creativecommons.org/licenses/by-sa/3.0/). And here is the screenshot
+of the main patch:
 
 ![](/uploads/2010/kaleidoscope-000-main-patch.png)
 
@@ -21,11 +29,14 @@ And this is how I designed the color wheel sub-patch:
 
 ![](/uploads/2010/kaleidoscope-000-color-wheel-macro-patch.png)
 
-If creating a composition is really simple and straightforward, exporting the result to a video file is another story...
+If creating a composition is really simple and straightforward, exporting the
+result to a video file is another story...
 
-I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-to-movie) v1.3b plugin. But it didn't worked on my [Snow Leopard](http://amzn.com/B001AMHWP8/?tag=kevideld-20),
-
- throwing me this exception every time:
+I first tried the [Export to Movie
+](http://quartzcomposer.com/plugins/1-export-to-movie) v1.3b plugin. But it
+didn't worked on my [Mac OS X Snow Leopard
+](http://amzn.com/B001AMHWP8/?tag=kevideld-20), throwing me this exception
+every time:
 
 ![](/uploads/2010/quartz-composer-export-to-movie-exception.png)
 
@@ -54,20 +65,37 @@ I first tried the [Export to Movie](http://quartzcomposer.com/plugins/1-export-t
     0x86d70922: -[NSApplication run]
     0x00001d2b
 
-So I tried the old trick of [importing compositions in iMovie](http://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was possible in the past with [iMovie](http://amzn.com/B003XKRZES/?tag=kevideld-20) '06, [Apple removed this feature in iMovie '09](http://www.quartzcompositions.com/phpBB2/viewtopic.php?t=594).
+So I tried the old trick of [importing compositions in iMovie
+](http://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was
+possible in the past with [iMovie](http://amzn.com/B003XKRZES/?tag=kevideld-20)
+'06, [Apple removed this feature in iMovie '09
+](http://www.quartzcompositions.com/phpBB2/viewtopic.php?t=594).
 
-
-
-My last chance was another plugin: [Movie Exporter](http://quartzcomposer.com/plugins/6-movie-exporter) (v0.0.20091011). As the other one, you have to drop your original composition in a _Render in Image_ macro block and export the resulting stream to the _Movie Exporter_ block:
+My last chance was another plugin: [Movie Exporter
+](http://quartzcomposer.com/plugins/6-movie-exporter) (`v0.0.20091011`). As the
+other one, you have to drop your original composition in a _Render in Image_
+macro block and export the resulting stream to the _Movie Exporter_ block:
 
 ![](/uploads/2010/movie-exporter-patch.png)
 
-It did the trick but it looked like I messed things up: my goal was to export a 720p clip. But compression artifacts are so present in the final video that I think the exported images are blow-ups of a rendering executed at a much lower resolution. The rendering in the preview panel support this hypothesis:
+It did the trick but it looked like I messed things up: my goal was to export a
+720p clip. But compression artifacts are so present in the final video that I
+think the exported images are blow-ups of a rendering executed at a much lower
+resolution. The rendering in the preview panel support this hypothesis:
 
 ![](/uploads/2010/kaleidoscope-viewer.png)
 
-Another big problem with this video export lies in the framerate: it cannot be set. For this composition the plugin exported a clip at 11fps. Which is far from fluid. I guess it's because of the plugin grabbing images in real-time instead of taking the necessary time to render them one by one.
+Another big problem with this video export lies in the framerate: it cannot be
+set. For this composition the plugin exported a clip at 11fps. Which is far
+from fluid. I guess it's because of the plugin grabbing images in real-time
+instead of taking the necessary time to render them one by one.
 
-At the end, because of the reduced number of options available to export QC's compositions to movies, and because of the proprietary nature of the platform, I don't want to invest more time and energy in Quartz Composer.
+At the end, because of the reduced number of options available to export QC's
+compositions to movies, and because of the proprietary nature of the platform,
+I don't want to invest more time and energy in Quartz Composer.
 
-I did some more experiments with it last year. I plan to share them with you and published them in the coming weeks. Then I'll be free to sell my Apple machine and switch back to a full Open-Source stack (I'm thinking of [Processing](http://processing.org), [PureData](http://en.wikipedia.org/wiki/Pure_Data) and their derivates here).
+I did some more experiments with it last year. I plan to share them with you
+and published them in the coming weeks. Then I'll be free to sell my Apple
+machine and switch back to a full Open-Source stack (I'm thinking of
+[Processing](http://processing.org),
+[PureData](http://en.wikipedia.org/wiki/Pure_Data) and their derivates here).

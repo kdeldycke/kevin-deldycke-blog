@@ -1,15 +1,20 @@
 ---
 date: 2010-04-26 19:56:42
-title: Setup a lightweight IMAP server on MacOS X Leopard with Dovecot
+title: Setup a lightweight IMAP server on Mac OS X Leopard with Dovecot
 category: English
-tags: Dovecot, email, IMAP, Mac OS X Leopard, Apple, Mac OS X, maildir, OpenSSL, SSL
+tags: Dovecot, email, IMAP, Mac OS X 10.5 Leopard, Apple, macOS, maildir, OpenSSL, SSL
 ---
 
 ![](/uploads/2010/dovecot-on-macosx.png)
 
-Last week I needed a local IMAP server on MacOS X Leopard (10.5) for temporary testing. After struggling with [courier-imap](http://www.courier-mta.org/imap/) for hours, I've finally settled on [Dovecot](http://www.dovecot.org/). You'll see below how easy it is to install and configure it.
+Last week I needed a local IMAP server on Mac OS X Leopard for temporary
+testing. After struggling with [courier-imap](http://www.courier-mta.org/imap/)
+for hours, I've finally settled on [Dovecot](http://www.dovecot.org/). You'll
+see below how easy it is to install and configure it.
 
-We're lucky, [Dovecot is available in Mac Ports](http://www.macports.org/ports.php?by=name&substr=dovecot), so we can install it easily:
+We're lucky, [Dovecot is available in MacPorts
+](http://www.macports.org/ports.php?by=name&substr=dovecot), so we can install
+it easily:
 
     :::bash
     $ port install dovecot
@@ -19,7 +24,8 @@ It's time to configure it. We start with the default configuration template:
     :::bash
     $ cp /opt/local/etc/dovecot/dovecot-example.conf /opt/local/etc/dovecot/dovecot.conf
 
-Then we can edit the `dovecot.conf` configuration file as we wish. FYI, here are my modifications:
+Then we can edit the `dovecot.conf` configuration file as we wish. FYI, here
+are my modifications:
 
     :::diff
     --- /opt/local/etc/dovecot/dovecot-example.conf	2010-04-23 14:29:52.000000000 +0200
@@ -65,11 +71,12 @@ And finally, we can launch the Dovecot server itself as `root`:
 
 That's all !
 
-You can now access your local IMAP server with any client. Here is an example with [Thunderbird](http://www.mozillamessaging.com/thunderbird/):
+You can now access your local IMAP server with any client. Here is an example
+with [Thunderbird](http://www.mozillamessaging.com/thunderbird/):
 
 ![](/uploads/2010/thunderbird-macosx-local-imap-server-config.png)
 
-And if you have problems, the first reflex is to read dovecot's logs:
+And if you have problems, the first reflex is to read Dovecot's logs:
 
     :::bash
     $ tail -F /var/log/mail.log

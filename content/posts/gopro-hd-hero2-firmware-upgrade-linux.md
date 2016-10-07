@@ -2,12 +2,11 @@
 date: 2012-11-27 12:45:55
 title: Linux GoPro HD Hero2 Firmware Upgrade
 category: English
-tags: camera, firmware, gopro, Linux, Ubuntu, upgrade, Video, wget
+tags: camera, firmware, gopro, Linux, Ubuntu, upgrade, Video, wget, macOS
 ---
 
-The [GoPro HD Hero2](http://amzn.com/B005WY3TI4/?tag=kevideld-20) I just got was bundled with the `HD2.08.12.70` firmware:
-
-
+The [GoPro HD Hero2](http://amzn.com/B005WY3TI4/?tag=kevideld-20) I just got
+was bundled with the `HD2.08.12.70` firmware:
 
     :::bash
     $ cat /media/9016-4EF8/MISC/version.txt
@@ -17,7 +16,12 @@ The [GoPro HD Hero2](http://amzn.com/B005WY3TI4/?tag=kevideld-20) I just got was
     "camera type":"HD2",
     }
 
-Since then a [new firmware was released](http://gopro.com/support/hd-hero2-firmware-update/) (called the ["ProTune feature" update](http://gopro.com/software-app/cineform-studio/)) which adds higher video bitrate (35Mbps), a neutral color profile and 24 fps recording. But GoPro only provides installer for Windows and MacOS X. Here is how I managed to upgrade the firmware under Ubuntu 12.04.
+Since then a [new firmware was released
+](http://gopro.com/support/hd-hero2-firmware-update/) (called the ["ProTune
+feature" update](http://gopro.com/software-app/cineform-studio/)) which adds
+higher video bitrate (35Mbps), a neutral color profile and 24 fps recording.
+But GoPro only provides installer for Windows and Mac OS X. Here is how I
+managed to upgrade the firmware under Ubuntu 12.04.
 
 First, download the binary firmware:
 
@@ -31,7 +35,8 @@ Then copy the binary file to the root of your mounted GoPro:
     :::bash
     $ cp ./HD2-firmware.bin /media/9016-4EF8/
 
-Now unmount the GoPro, unplug it from your computer and make sure it's powered off.
+Now unmount the GoPro, unplug it from your computer and make sure it's powered
+off.
 
 It's time to trigger the firmware upgrade:
 
@@ -39,15 +44,20 @@ It's time to trigger the firmware upgrade:
 
   2. Release the shutter button.
 
-  3. Press and release the power button. The camera front will display "press 1".
+  3. Press and release the power button. The camera front will display "press
+  1".
 
-  4. Again, press and release the power button. The camera will now display "press 2".
+  4. Again, press and release the power button. The camera will now display
+  "press 2".
 
-  5. Then press and release the power button, again. The camera is now installing the v70 upgrade, then turn itself off.
+  5. Then press and release the power button, again. The camera is now
+  installing the `v70` upgrade, then turn itself off.
 
-  6. Power the camera on, to now upgrade to v198. The camera will turn itself off at the end.
+  6. Power the camera on, to now upgrade to `v198`. The camera will turn itself
+  off at the end.
 
-You can now remove the `HD2-firmware.bin` file at the root of the camera, and check the firmware version:
+You can now remove the `HD2-firmware.bin` file at the root of the camera, and
+check the firmware version:
 
     :::bash
     $ rm /media/9016-4EF8/HD2-firmware.bin
@@ -58,4 +68,6 @@ You can now remove the `HD2-firmware.bin` file at the root of the camera, and ch
     "camera type":"HD2",
     }
 
-Note that the configuration is lost and you have to set back the date and time of the camera. As for the ProTune feature, it must be activated from a new item in the configuration menu of the HD Hero2.
+Note that the configuration is lost and you have to set back the date and time
+of the camera. As for the ProTune feature, it must be activated from a new item
+in the configuration menu of the HD Hero2.

@@ -2,12 +2,12 @@
 date: 2015-11-19 16:32:12
 title: How to solve SSL errors on pip install
 category: English
-tags: development, Python, socket, urllib3, HTTP, pip, requests, Apple, Mac OS X, Mac OS X El Capitan
+tags: development, Python, socket, urllib3, HTTP, pip, requests, Apple, macOS, OS X 10.11 El Capitan
 ---
 
 Was trying to install [`alembic`](https://alembic.readthedocs.org) in a
 [`virtualenv`](https://virtualenv.readthedocs.org) with [`pip`
-](https://pip.readthedocs.org), on and OSX 10.11 machine:
+](https://pip.readthedocs.org), on an OS X El Capitan machine:
 
     :::bash
     $ pip install alembic
