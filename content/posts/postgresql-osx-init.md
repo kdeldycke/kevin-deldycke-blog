@@ -11,7 +11,7 @@ machines.
 Instructions below were tested on OSX 10.11 El Capitan, and target the 9.4.x series of
 PostgreSQL.
 
-1. Install and setup PostgreSQL:
+Install and setup PostgreSQL:
 
     :::bash
     $ brew update
@@ -33,7 +33,7 @@ PostgreSQL.
 
     $ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
-2. Initialize PostgreSQL:
+Initialize PostgreSQL:
 
     :::bash
     $ dropdb test_db
@@ -45,7 +45,7 @@ PostgreSQL.
 
     $ tail -F /usr/local/var/postgres/server.log
 
-3. Load up a dumped database:
+Load up a dumped database:
 
     :::bash
     $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -d test_db ~/dump/2016-10-10-test_db.dump
