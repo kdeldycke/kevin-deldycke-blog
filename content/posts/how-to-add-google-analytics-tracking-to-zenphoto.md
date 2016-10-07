@@ -12,7 +12,7 @@ and upgrade. This little hack add
 [Google Analytics](http://www.google.com/analytics/) tracking for all users
 except administrators.
 
-Why ? As you can see in
+Why? As you can see in
 [ticket #441 in Zenphoto bugtracker](http://www.zenphoto.org/trac/ticket/441),
 there is no intention of adding support of GA in Zenphoto, even as an optional
 plugin. Hence my tiny hack. And for the non-admin stuff, I like having unbiased

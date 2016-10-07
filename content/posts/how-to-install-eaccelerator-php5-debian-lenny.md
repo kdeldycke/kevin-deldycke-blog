@@ -12,7 +12,7 @@ bytecode.
 
 As Wikipedia tells you,
 [several tools of this kind exists](http://wikipedia.org/wiki/List_of_PHP_accelerators).
-Why choosing eAccelerator in particular ? I really have no clue... I've never
+Why choosing eAccelerator in particular? I really have no clue... I've never
 used any of these tools, so I had to start somewhere. That's as simple as that!
 
 Now, I have a Debian server as a target system. Unfortunately, eAccelerator is

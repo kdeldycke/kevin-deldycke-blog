@@ -17,4 +17,4 @@ But this was a long time ago and today it’s the most stable and practical vide
 
 Today this software is the one I spend most of my time in at home (just after a web browser and a command-line terminal). And I've never felt as productive as the last 2 years: I [edited about 2 hours of videos](http://www.youtube.com/playlist?list=PL003033C52FE5047D) in that period.
 
-Kdenlive must continue to grow. And because I want to use it in my future projects, it makes sense to make a donation. So what are you waiting for contributing too ? :)
+Kdenlive must continue to grow. And because I want to use it in my future projects, it makes sense to make a donation. So what are you waiting for contributing too? :)

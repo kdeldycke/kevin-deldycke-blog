@@ -79,7 +79,7 @@ to a CSV file all metadatas associated with my voice messages:
 ![](/uploads/2010/sqlite-csv-table-export.png)
 
 Finally, just in case you want to extract iPhones data from another backup than
-the default backup, like from a backup of the backup (isn't that clear ?),
+the default backup, like from a backup of the backup (isn't that clear?),
 making a symlink is enough to trick iPhone Backup Extractor:
 
     :::sh

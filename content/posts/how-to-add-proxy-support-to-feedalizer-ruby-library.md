@@ -37,7 +37,7 @@ place and the right way of doing it... Anyway, it works for me! :)
 
 **Update**: A
 [post from Matthew Higgins' blog that answer my question](http://www.strictlyuntyped.com/2008/06/rails-where-to-put-other-files.html)
-above has just shown up in my feed aggregator. What's he telling us ? That I'm a
+above has just shown up in my feed aggregator. What's he telling us? That I'm a
 naughty programmer :
 
 > Previous to 2.0, naughty developers pasted code at the bottom of

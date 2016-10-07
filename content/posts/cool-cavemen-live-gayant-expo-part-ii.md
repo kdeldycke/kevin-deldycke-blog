@@ -41,6 +41,6 @@ The second strategy is the "minimizing" strategy which, you can guess from its n
 
 For this project, I finally went by the first stategy. I choosed to render the project to a 720p video at 25 fps, with a 1:1 pixel ratio and 16:9 display ratio. Also known as... [HD-Ready](http://en.wikipedia.org/wiki/Hd_ready)!
 
-Why this format ? It's the most popular one that closely match the characteristics we established three paragraphs above. It's also quite standard, and "gives a chance" to the second video source to display in full resolution. I also felt that it will cause less pain when confronted to the wide range of software video players out there.
+Why this format? It's the most popular one that closely match the characteristics we established three paragraphs above. It's also quite standard, and "gives a chance" to the second video source to display in full resolution. I also felt that it will cause less pain when confronted to the wide range of software video players out there.
 
 Now that I have decided which format to use, I can create a project in my video editor with the right parameters and start the editing process. But this is another topic for another post!

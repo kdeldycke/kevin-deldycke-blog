@@ -70,7 +70,7 @@ Finally, the command below fixed this issue once and for all:
 As you can see it sets the dates further in time (100000000 seconds after
 epoch).
 
-And you know why this works ? Because recent version of
+And you know why this works? Because recent version of
 [Git don't allow dates with less than 9 digits](http://stackoverflow.com/a/5093714/487610).
 
 That was not excepted, but it allowed me to proceed in my repository migration.

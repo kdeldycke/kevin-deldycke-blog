@@ -1,6 +1,6 @@
 ---
 date: 2013-05-20 12:32:37
-title: Behind the Scenes of Omashay's "Where is she ?"
+title: Behind the Scenes of Omashay's "Where is she?"
 category: English
 tags: video, YouTube, Kdenlive, music video, Omashay, behind the scenes, making of
 ---
@@ -8,7 +8,7 @@ tags: video, YouTube, Kdenlive, music video, Omashay, behind the scenes, making 
 
 Back from holidays, and it's time for me to clear my backlog of draft articles. Here is the last and missing piece of my 2012 production notes series.
 
-Let's rewind to year ago, when [*Where is she ?* was released](http://kevin.deldycke.com/2012/08/where-is-she-music-video-released/):
+Let's rewind to year ago, when [*Where is she?* was released](http://kevin.deldycke.com/2012/08/where-is-she-music-video-released/):
 
 http://www.youtube.com/watch?v=YjE_uIRVnv8
 
@@ -72,7 +72,7 @@ And some extra photos of the shooting:
 ![](/uploads/2013/where-is-she-behind-the-scenes-021.jpg)
 
 
-The [wedding entrance](http://kevin.deldycke.com/2012/11/wedding-entrance-paris-video-postcard/) video was the first time I used my [Glidecam HD-2000](http://amzn.com/B0020LB0MO/?tag=kevideld-20). But *Where is she ?* was the [first publicly released video](http://kevin.deldycke.com/2012/08/where-is-she-music-video-released/) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
+The [wedding entrance](http://kevin.deldycke.com/2012/11/wedding-entrance-paris-video-postcard/) video was the first time I used my [Glidecam HD-2000](http://amzn.com/B0020LB0MO/?tag=kevideld-20). But *Where is she?* was the [first publicly released video](http://kevin.deldycke.com/2012/08/where-is-she-music-video-released/) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
 
 http://www.youtube.com/watch?v=EGh-DZjIjHg
 
@@ -95,7 +95,7 @@ At that stage, I just helped him by creating the seamless split screens:
 
 ## Color correction
 
-As I said in [Kdenlive's forum](http://forum.kde.org/viewtopic.php?f=266&t=112313#p270103), the color correction was a first. I never worked on a project for which any serious color correction was done. Until *Where is she ?*.
+As I said in [Kdenlive's forum](http://forum.kde.org/viewtopic.php?f=266&t=112313#p270103), the color correction was a first. I never worked on a project for which any serious color correction was done. Until *Where is she?*.
 
 I was worried by the final look of it because, [as Marko pointed out](http://forum.kde.org/viewtopic.php?f=266&t=112313#p270102) in the thread, the footage was captured in all sorts of lighting conditions. It's hard to keep a consistent exposure between all these locations, especially with the tight latitude of a [Canon 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20) (even with a [fine-tuned neutral color profile](http://prolost.com/flat)).
 

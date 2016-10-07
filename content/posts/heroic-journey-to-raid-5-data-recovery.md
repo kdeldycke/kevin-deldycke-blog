@@ -29,7 +29,7 @@ This is "normal" as my server tried to mount the [ext3 filesystem](http://en.wik
 
 I skip here the epic substory in which I wasted days in a search of a working keyboard, but I let you imagine how such adventures makes my week...
 
-Eventually, I was able to analyze the situation in details. My first reflex ? Check that disks are not physically dead:
+Eventually, I was able to analyze the situation in details. My first reflex? Check that disks are not physically dead:
 
     :::bash
     $ fdisk -l /dev/sda
@@ -52,7 +52,7 @@ which output the status table below (probably inaccurate as I reconstructed it a
        2       8       33        2      active sync   /dev/sdc1
        3       8       17        3      spare
 
-What this table told us ?
+What this table told us?
 
   * The array is up, but not running. One of its device (`sdc1`) was clean and active, but it's not enough to get a working RAID-5.
 

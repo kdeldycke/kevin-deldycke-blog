@@ -61,7 +61,7 @@ By the way, about hands: there a trick involved here. The left hand is mine, but
 
 ## Video editing
 
-For video editing, I knew I'll not be able to manipulate my 7D's files natively. At least not with the default packages bundled with my [Kubuntu 10.04](http://www.kubuntu.org/news/10.04-lts-release). So monday morning I started to compile the trunk version of [x264](http://www.videolan.org/developers/x264.html), [FFmpeg](http://ffmpeg.org) and [MLT](http://mltframework.org). Then I realized a brand new version of [Kdenlive (v0.7.8) was released](http://www.kdenlive.org/users/j-b-m/kdenlive-078-released). How did I missed such an important news about my favorite [NLE](http://en.wikipedia.org/wiki/Video_editing_software) ? :) Compliments must go to the Kdenlive team for providing up to date packages and all their dependencies!
+For video editing, I knew I'll not be able to manipulate my 7D's files natively. At least not with the default packages bundled with my [Kubuntu 10.04](http://www.kubuntu.org/news/10.04-lts-release). So monday morning I started to compile the trunk version of [x264](http://www.videolan.org/developers/x264.html), [FFmpeg](http://ffmpeg.org) and [MLT](http://mltframework.org). Then I realized a brand new version of [Kdenlive (v0.7.8) was released](http://www.kdenlive.org/users/j-b-m/kdenlive-078-released). How did I missed such an important news about my favorite [NLE](http://en.wikipedia.org/wiki/Video_editing_software)? :) Compliments must go to the Kdenlive team for providing up to date packages and all their dependencies!
 
 So I did the entire video editing with Kdenlive. Here is what the final project looks like in the timeline:
 

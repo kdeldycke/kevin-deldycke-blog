@@ -332,4 +332,4 @@ handle large quantity of mails. :(
   And as I don't plan to own Apple hardware and software in a near future, such
   a command should be 100% free software and running on Linux. I really think
   there is a "market" for a free software component able to read and understand
-  `.nsf` files. Any motivated volunteer ? ;)
+  `.nsf` files. Any motivated volunteer? ;)

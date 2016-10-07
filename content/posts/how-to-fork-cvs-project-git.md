@@ -312,4 +312,4 @@ This let me work cleanly on the CVS branch I wanted to in the first place. But
 there is one missing thing: all other tracked remote branches were not merged
 properly. I really wanted to import all of them (especially the `DRUPAL-5`
 branch), to keep a perfect copy of the original CSV tree. But I failed to find a
-way. Does anyone have a clue ?
+way. Does anyone have a clue?

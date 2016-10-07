@@ -56,7 +56,7 @@ Here is a little piece of code I want to share with you. I created this some mon
       $new_start_date = $start_date;
       foreach($track_list as $track_title => $track_file) {
         $track_number++;
-        # Is the track always published ?
+        # Is the track always published?
         if (in_array($track_number, $always_visible)) {
           # Set publishing date to the start date
           $track_dates[$track_number] = $start_date;
@@ -87,11 +87,11 @@ Here is a little piece of code I want to share with you. I created this some mon
         $track_date   = $track_dates[$track_number];
         $track_html   = '';
         $publish_date = '';
-        # Is the track published ?
+        # Is the track published?
         if ($track_dates[$track_number] < $today) {
           $published = True;
         }
-        # Is the track new ?
+        # Is the track new?
         if (($new_start_date <= $track_date) and
             ($track_date <= $new_stop_date)) {
           $new = True;

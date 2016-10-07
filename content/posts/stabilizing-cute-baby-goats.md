@@ -7,7 +7,7 @@ tags: Canon EOS 7D, Linux, stabilization, transcode, Video
 
 ![](/uploads/2012/newborn-kids-baby-goats-preview.jpg)
 
-## Stabilizing WHAT ?!?
+## Stabilizing WHAT?!?
 
 Baby goats. Cute baby goats. Yes, you're reading it right. Look:
 

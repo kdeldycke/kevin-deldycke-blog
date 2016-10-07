@@ -5,7 +5,7 @@ category: English
 tags: apt-get, aptitude, dpkg, Git, Kdenlive, Kubuntu, Ubuntu, mlt, Video
 ---
 
-Today I stumble upon a bug in the Kdenlive 0.7.8 running on my Kubuntu 10.10: the crop filter was messing with the display ratio of my video clips. Digging the web I [found a bug report](http://www.kdenlive.org/mantis/view.php?id=1814) that was really close to my problem. According to the comments, this issue was fixed in the upcoming version of MLT. Is that bug the one I encountered ? The only way to find out was to install the development version of MLT. Here is how I did it...
+Today I stumble upon a bug in the Kdenlive 0.7.8 running on my Kubuntu 10.10: the crop filter was messing with the display ratio of my video clips. Digging the web I [found a bug report](http://www.kdenlive.org/mantis/view.php?id=1814) that was really close to my problem. According to the comments, this issue was fixed in the upcoming version of MLT. Is that bug the one I encountered? The only way to find out was to install the development version of MLT. Here is how I did it...
 
 First, make sure to [use the latest stable Kdenlive stack](http://www.kdenlive.org/download-kdenlive-0) for you system. For me, the [Sunab's alternative repository for Kubuntu 10.10](https://launchpad.net/~sunab/+archive/kdenlive-release/?field.series_filter=maverick) was the ultimate source:
 

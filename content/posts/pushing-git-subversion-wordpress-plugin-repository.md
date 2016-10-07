@@ -182,7 +182,7 @@ But this mean I [had to clean up tags](http://plugins.trac.wordpress.org/changes
 
 ## Pushing new commits
 
-All of the above only works with an newly created plugin structure on WordPress plugin repository. What if we want to push new commits to Subversion once we've already pushed part of our Git history ?
+All of the above only works with an newly created plugin structure on WordPress plugin repository. What if we want to push new commits to Subversion once we've already pushed part of our Git history?
 
 First, let's make our life miserable and delete all our local repositories:
 

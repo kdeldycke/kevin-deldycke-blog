@@ -19,7 +19,7 @@ X](http://plone.org/products/plone). This is much simpler and faster than the
 process described below.
 
 Now that all Plone newcomers are redirected to the right place, I can start to
-talk about how to install Python 2.4 on Mac OS X. Why the 2.4 release ? That's
+talk about how to install Python 2.4 on Mac OS X. Why the 2.4 release? That's
 simple: Mac OS X Leopard ships with Python 2.5, but Plone 3 requires
 Python 2.4.
 

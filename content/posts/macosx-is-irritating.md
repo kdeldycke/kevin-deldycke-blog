@@ -67,7 +67,7 @@ I can now check that it really set SATA bandwidth back to 1.5 Gbps:
 But the firmware downgrade didn't solved my problems at all. It's really time
 to trash this MacBook Pro. [Anyone to suggest
 ](http://twitter.com/kdeldycke/status/14657317476) a good laptop that works
-fine on Kubuntu ?
+fine on Kubuntu?
 
 
 ## Update (June 2010)

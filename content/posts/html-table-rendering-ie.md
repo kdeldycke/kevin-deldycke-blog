@@ -23,7 +23,7 @@ After some research, I found out the root cause of this issue. It's the presence
 
 This issue seems to have been [known since April 2011](http://social.msdn.microsoft.com/Forums/en-US/iewebdevelopment/thread/28d78780-c95c-4c35-9695-237ebb912d90) (at least), but hasn't been addressed by Microsoft yet.
 
-And you know how I fixed this ? I fearlessly added the following piece of JavaScript in my initialization code:
+And you know how I fixed this? I fearlessly added the following piece of JavaScript in my initialization code:
 
     :::javascript
     // Fix IE9 cells misalignment

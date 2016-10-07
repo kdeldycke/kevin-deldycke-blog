@@ -17,7 +17,7 @@ After some googling, I found what was wrong: my `~/Maildir` folder is not a Mail
 
 To fix this, I've created a tiny python [script to migrate a Maildir++ folder to Kmail](http://github.com/kdeldycke/scripts/blob/master/maildir%2B%2B2kmail.py).
 
-How-to use it ? Simply:
+How-to use it? Simply:
 
   1. [Download it](http://github.com/kdeldycke/scripts/blob/master/maildir%2B%2B2kmail.py) to your disk,
 
