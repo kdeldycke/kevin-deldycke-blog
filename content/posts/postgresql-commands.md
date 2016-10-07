@@ -144,5 +144,5 @@ tags: CLI, database, Linux, PostgreSQL, SQL
 
         WHERE lower(tc.constraint_type) in ('foreign key');
 
-  * And finally, here is a list of [great monitoring one-liners](http://linuxhow-tos.blogspot.com/2011/03/monitor-postgresql-with-queries.html).
+  * And finally, here is a list of [great monitoring one-liners](https://kasimani.wordpress.com/2011/03/15/monitor-postgresql-with-queries/).
 
