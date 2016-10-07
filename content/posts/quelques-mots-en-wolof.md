@@ -11,7 +11,7 @@ Juste quelques mots en [Wolof](http://fr.wikipedia.org/wiki/Wolof) que j'ai appr
 
   * `[beu lundi]` -> a lundi
 
-  * `[kokala]` -> qui c'est ? (aggressif)
+  * `[kokala]` -> qui c'est&nbsp;? (aggressif)
 
 Aprés la korité, aprés la tabaski, on se souhaite la bonne année:
 

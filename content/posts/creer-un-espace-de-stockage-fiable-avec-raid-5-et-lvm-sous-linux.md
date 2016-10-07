@@ -102,7 +102,7 @@ Créons maintenant un groupe de volumes contenant nos trois partitions :
     :::bash
     $ vgcreate vg01 /dev/md0 /dev/md1 /dev/md2
 
-(marche pas ???)
+(marche pas&nbsp;???)
 
 ## Étape 3-bis: Agréger les matrices avec du RAID linéaire au lieu d'utiliser LVM
 
