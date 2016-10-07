@@ -17,5 +17,5 @@ Aprés la korité, aprés la tabaski, on se souhaite la bonne année:
 
   * personne 1: `[dewenati]` -> bonne année
 
-  * personne 2: `[fakeldewan]` -> a l'année prochaine !
+  * personne 2: `[fakeldewan]` -> a l'année prochaine&nbsp;!
 

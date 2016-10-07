@@ -11,4 +11,4 @@ plongée en milieu protégé, c'est fait:
 
 ![](/uploads/2012/padi-open-water-diver-photo.jpg)
 
-Reste à valider la suite en milieu naturel ! :)
+Reste à valider la suite en milieu naturel&nbsp;! :)

@@ -21,5 +21,5 @@ podcast](http://www.oxyradio.net/podcast-121.html).
 Pour résumer mon intervention, j'explique comment et pourquoi j'ai conseillé au
 groupe de distribuer leurs compositions sous une licence Creative Commons.
 Bref, une interview sympa, même si au final je me rend compte que je suis un
-peu rouillé. J'ai vraiment besoin de pratiquer plus régulièrement l'exercice !
+peu rouillé. J'ai vraiment besoin de pratiquer plus régulièrement l'exercice&nbsp;!
 ;)

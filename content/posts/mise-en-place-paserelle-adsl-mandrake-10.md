@@ -91,8 +91,8 @@ moment isolé.
 Il est temps de redémarrer l’ordinateur, sans oublier de retirer le CD du
 lecteur. Ce premier démarrage va nous permettre de vérifier que le système est
 capable de se lancer automatiquement dans une configuration minimale. Si vous
-obtenez une invite de login, vous avez gagné ! Vous avez un système qui démarre
-avec le minimum à bord !
+obtenez une invite de login, vous avez gagné&nbsp;! Vous avez un système qui démarre
+avec le minimum à bord&nbsp;!
 
 Connectez vous avec le login `root` et le mot de passe définit précédemment.
 
@@ -145,7 +145,7 @@ Vous pourrez voir a ce moment les lignes suivantes:
     activation de la connexion inter
 
 Si les trois tentatives se terminent par un échec, c'est simplement que vous
-avez connecté le modem et le réseau sur les mauvaises cartes ! Échangez donc le
+avez connecté le modem et le réseau sur les mauvaises cartes&nbsp;! Échangez donc le
 branchement des prises RJ-45, et redémarrez le PC. Pour redémarrer on peut faire
 un `ctrl+alt+suppr`. On aurait pu faire ça plus rapidement et proprement mais je
 veux vous faire voir qu'internet et le réseau se mettent en route
@@ -239,7 +239,7 @@ lancer au démarrage. On redémarrera la machine pour être sur qu'il démarre c
 nous le souhaitons.
 
 Encore une fois, le message `lancement de webmin [OK]` nous en apporte la
-preuve !
+preuve&nbsp;!
 
 Maintenant, pour utiliser Webmin, munissez vous de n'importe quel navigateur web
 depuis un PC sur votre réseau local et fait le pointer sur
