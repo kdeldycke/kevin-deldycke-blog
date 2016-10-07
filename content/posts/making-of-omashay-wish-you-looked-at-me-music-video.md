@@ -81,4 +81,4 @@ But it's a simple yet effective concept that require absolutely no investment
 (apart time). This also gave me the opportunity to play again with Kdenlive and
 assess its user-friendliness and edit capabilities on a real project. But at
 the end, it was just a great excuse to work with a friend on a little video
-project ! :)
+project! :)

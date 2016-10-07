@@ -10,7 +10,7 @@ been [available soon](https://github.com/getpelican/pelican-themes/pull/193) in 
 [Pelican's themes repository](https://github.com/getpelican/pelican-themes).
 
 This version include some contributions from a new user. Thanks to [Stratos
-Gerakakis](https://github.com/stratosgear) for your bug fixes ! :)
+Gerakakis](https://github.com/stratosgear) for your bug fixes! :)
 
 As you can see in the changelog, it includes some additional features on the project template and
 lots of third-party libraries updates:

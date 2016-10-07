@@ -20,4 +20,4 @@ Then we configure it:
     $ sed -i 's/# MAILON="error"/MAILON="always"/g' /etc/cron-apt/config
     $ sed -i 's/# MAILTO="root"/MAILTO="user@example.com"/g' /etc/cron-apt/config
 
-That's it !
+That's it!

@@ -1,6 +1,6 @@
 ---
 date: 2010-05-18 12:45:29
-title: Feeds updated !
+title: Feeds updated!
 category: English
 tags: Aggregator, Apache, Atom, feed, FeedBurner, Google, RSS, WordPress
 ---
@@ -14,4 +14,4 @@ But since this [blog moved](http://kevin.deldycke.com/2009/09/moving-wordpress-b
   * For blog posts: [http://kevin.deldycke.com/feed](http://kevin.deldycke.com/feed)
 
   * For blog 
-In the future, I plan to support these URLs only. So please update your feed aggregation settings ! :)
+In the future, I plan to support these URLs only. So please update your feed aggregation settings! :)

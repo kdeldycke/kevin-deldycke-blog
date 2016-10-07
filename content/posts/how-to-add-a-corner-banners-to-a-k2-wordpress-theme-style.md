@@ -27,7 +27,7 @@ first, we have to create a `functions.php` file in our style directory (example:
       <a
         id="cornerbanner"
         href="http://coolcavemen.com/news/new-website-beta-released/"
-        title="New website released as beta version !">
+        title="New website released as beta version!">
       </a>
       <?php
     }
@@ -85,7 +85,7 @@ can be replaced by
     :::css
       bottom: 0;
 
-That's all ! My solution is not supposed to work (and was not tested) with
+That's all! My solution is not supposed to work (and was not tested) with
 Internet Explorer as the latter is known to have
 [terrible PNG transparency support](http://en.wikipedia.org/wiki/Portable_Network_Graphics#Web_browser_support_for_PNG).
 You can still apply fixes on my code using
@@ -95,7 +95,7 @@ You can still apply fixes on my code using
 
 I've provided you with all the technical details to create a corner banner and
 add it to your K2 style seamlessly. It's now up to you to adapt it to your
-needs. Be Creative ! Oh, and by the way, when you'll change the banner PNG file,
+needs. Be Creative! Oh, and by the way, when you'll change the banner PNG file,
 do not forget to update the CSS code with your image width and height.
 
 **Update**: [my friend QPX](http://wqpx.wordpress.com) sent me an alternative

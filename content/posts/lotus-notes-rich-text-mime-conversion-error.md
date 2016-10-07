@@ -35,7 +35,7 @@ Here is my procedure to make these mails pass through the conversion error:
 
   5. Finally, save mail modifications in Notes and you'll be able to move the mail without the conversion error.
 
-This is really dirty, and isn't bearable past a few mails. But that's the only solution I found so far. Of course if you have a superior/automated way to address this lame bug, I'll be happy to hear that ! :)
+This is really dirty, and isn't bearable past a few mails. But that's the only solution I found so far. Of course if you have a superior/automated way to address this lame bug, I'll be happy to hear that! :)
 
 ## Update (Dec. 2010)
 

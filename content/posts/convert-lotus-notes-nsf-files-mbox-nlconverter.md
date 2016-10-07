@@ -7,7 +7,7 @@ tags: CLI, email, GUI, Lotus Notes, iCal, mbox, nlconverter, Python, Script, Win
 
 There is a great piece of software called [nlconverter](http://code.google.com/p/nlconverter/). It's a tool designed to convert Lotus Notes' `.nsf` files to `mbox`. It rely on win32's COM/DDE API so it can only be used on Windows.
 
-If you want to extract mails out of your `.nsf` database, this might be the tool you're looking for. Bonus point: it's written in Python ! ;)
+If you want to extract mails out of your `.nsf` database, this might be the tool you're looking for. Bonus point: it's written in Python! ;)
 
 ## Installing nlconverter and its dependencies
 
@@ -117,4 +117,4 @@ But I was not and the `notes2mbox.py` ended up with the following error:
         IDispatch = pythoncom.CoCreateInstance(IDispatch, None, clsctx, pythoncom.IID_IDispatch)
     pywintypes.com_error: (-2147221231, 'ClassFactory ne peut pas fournir la classe demand\xe9e', None, None)
 
-As you can see, I tried hard to make nlconverter working, without any success. But this should not stop you to try. In fact I suspect the Lotus Notes installed on my machine to be crippled or corrupted (can't really tell). So you may be more lucky than me. In any case, feel free to report any success or failure in the comment section below !
+As you can see, I tried hard to make nlconverter working, without any success. But this should not stop you to try. In fact I suspect the Lotus Notes installed on my machine to be crippled or corrupted (can't really tell). So you may be more lucky than me. In any case, feel free to report any success or failure in the comment section below!

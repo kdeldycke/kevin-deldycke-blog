@@ -43,7 +43,7 @@ Finally you can convert back your `raw` image to a `qcow` one to not waste space
     :::bash
     $ qemu-img convert big10G.raw -O qcow growed-system.qcow
 
-That's all !
+That's all!
 
 By the way, I think it's possible to perform the second and third step of this how-to in a single operation using `dd` only.
 

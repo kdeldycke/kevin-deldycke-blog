@@ -32,6 +32,6 @@ The first rewrite rule will redirect all URLs that start with `http://www.my-dom
 
 The second rewrite rule will redirect all other URLs that start with `http://www.my-domain.com/e107_plugins/rss_menu/rss.php` (including `http://www.my-domain.com/e107_plugins/rss_menu/rss.php?1` and `http://www.my-domain.com/e107_plugins/rss_menu/rss.php?News`) to `http://feeds.feedburner.com/myfeed`.
 
-That's all ! Thanks to this server-side redirection, nobody will notice that the feeds have moved and no subscriber will be bothered to update their [aggregator](http://en.wikipedia.org/wiki/Aggregator).
+That's all! Thanks to this server-side redirection, nobody will notice that the feeds have moved and no subscriber will be bothered to update their [aggregator](http://en.wikipedia.org/wiki/Aggregator).
 
 In my case, the only remaining task to do is to move my e107 website to Wordpress then install [FeedSmith plugin](http://blogs.feedburner.com/feedburner/archives/2007/05/feedburner_adopts_twoyearold_r_1.php). But that's another story... ;)

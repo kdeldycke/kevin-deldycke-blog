@@ -29,7 +29,7 @@ another that will allow your client to listen to the network. In my case,
 
 ![](/uploads/2010/lotus-notes-location-switch.png)
 
-Problem solved ! :)
+Problem solved! :)
 
 FYI, this error can still be encountered in Lotus Notes 8.5 on Mac OS X
 Snow Leopard. In this context, the solution is exactly the same.

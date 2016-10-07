@@ -23,7 +23,7 @@ And you'll get an export screen that'll let you choose where to create a local c
 
 This will generate a `.nsf` file containing all your current mail.
 
-Now that you have a backup, you are free to delete all your mails in Lotus Notes. By following this procedure regulary, you can create yearly or monthly archives of you mails without reaching the mailbox quota ! For example, this is how my local archive folder looks like:
+Now that you have a backup, you are free to delete all your mails in Lotus Notes. By following this procedure regulary, you can create yearly or monthly archives of you mails without reaching the mailbox quota! For example, this is how my local archive folder looks like:
 
 ![](/uploads/2010/lotus-notes-exported-mail-archives.png)
 

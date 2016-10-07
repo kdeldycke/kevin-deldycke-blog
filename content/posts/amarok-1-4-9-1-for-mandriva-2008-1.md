@@ -19,4 +19,4 @@ my builds (especially the full SQLite, MySQL and Postgresql database support)
 are now included in the "officialy" backported RPM. So starting from Mandriva
 2008.1, you don't need my Amarok backports. All you need is the love from the
 official backport repository (FTP URL given above). I'm happy as this mean more
-free time for me and less things to maintain ! ;)
+free time for me and less things to maintain! ;)

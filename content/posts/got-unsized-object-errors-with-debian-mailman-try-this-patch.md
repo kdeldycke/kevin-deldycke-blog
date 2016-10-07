@@ -1,6 +1,6 @@
 ---
 date: 2008-12-29 20:02:22
-title: Got "unsized object" errors with Debian's Mailman ? Try this patch !
+title: Got "unsized object" errors with Debian's Mailman ? Try this patch!
 category: English
 tags: bug, Debian, Debian Etch, hack, email, mailman, patch, Python
 ---
@@ -74,6 +74,6 @@ Here is the [resulting patch](/uploads/2008/mailman-219-7-charset-handling.patch
 
          def header_encode(self, s, convert=False):
 
-And it do the trick ! Of course I can't guarantee that this patch is the way to definitely fix the bug. And it may corrupt data. So **use it only if you're as crazy as me** ! :D
+And it do the trick! Of course I can't guarantee that this patch is the way to definitely fix the bug. And it may corrupt data. So **use it only if you're as crazy as me**! :D
 
 But I know, I know... As a responsible and serious hacker (sigh), I should report this bug to the Debian or Mailman project. But I'm still not familiar with Dedian's way of reporting bugs (and to be honest, I feel lazy these days :p ). Maybe, one day...

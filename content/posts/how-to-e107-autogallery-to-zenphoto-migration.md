@@ -24,7 +24,7 @@ Then we delete all previews, thumbnails and XML metadatas, to keep in Zenphoto o
 
 By now, you should be able to play with your medias using Zenphoto's admin interface.
 
-But if you're unlucky as I was, you will find a strange bug which break down drag'n'drop album sorting. The fix I found was to remove, in photo filenames, the numerical prefix (and the following dot) set by autogallery to define the sort order. This operation should be performed, _before_ the copy from autogallery to Zenphoto (= the first command in this post). By the way, if you know a one-liner to do this, please, please... share ! :)
+But if you're unlucky as I was, you will find a strange bug which break down drag'n'drop album sorting. The fix I found was to remove, in photo filenames, the numerical prefix (and the following dot) set by autogallery to define the sort order. This operation should be performed, _before_ the copy from autogallery to Zenphoto (= the first command in this post). By the way, if you know a one-liner to do this, please, please... share! :)
 
 To migrate comments, I have no automatic solution. I choose to do this manually, editing the database by hand. In my case it was the quickest way as I only had a dozen of comments to migrate.
 

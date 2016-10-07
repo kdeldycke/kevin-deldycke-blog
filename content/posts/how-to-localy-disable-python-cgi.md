@@ -10,5 +10,5 @@ Since the beggining of this blog, my collection of python scripts were not reada
     :::apache
     RemoveHandler .py
 
-That's all ! This will let apache serve `.py` files as normal plain text files. [More info about RemoveHandler](http://httpd.apache.org/docs/1.3/mod/mod_mime.html.en#removehandler) can be found in official apache documentation.
+That's all! This will let apache serve `.py` files as normal plain text files. [More info about RemoveHandler](http://httpd.apache.org/docs/1.3/mod/mod_mime.html.en#removehandler) can be found in official apache documentation.
 

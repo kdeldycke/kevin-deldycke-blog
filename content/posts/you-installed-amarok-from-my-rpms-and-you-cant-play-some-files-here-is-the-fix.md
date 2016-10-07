@@ -8,4 +8,4 @@ My two previous RPMs packages of Amarok ([1.4.1](http://kevin.deldycke.com/2006/
 
 I myself experienced a similar problem: both 1.4.1 and 1.4.2beta1 were not able to play any of my Flac files. Apart the "`There is no audio channel!`" error message, I had no other information to help me track the bug.
 
-Then I remembered that I was using [PFL RPMs](http://plf.zarb.org/about.php) beside official Mandriva ones. So I updated plf-non-free and plf-free repositories. So I installed all packages whose name followed the "`xine-_something_-1.1.1`" pattern. Just after that Amarok was playing Flac files as expected !
+Then I remembered that I was using [PFL RPMs](http://plf.zarb.org/about.php) beside official Mandriva ones. So I updated plf-non-free and plf-free repositories. So I installed all packages whose name followed the "`xine-_something_-1.1.1`" pattern. Just after that Amarok was playing Flac files as expected!

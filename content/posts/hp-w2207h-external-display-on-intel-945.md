@@ -113,7 +113,7 @@ What I've learned so far during these experiments:
 
   * [XRandR](http://www.x.org/wiki/Projects/XRandR) and its friend [KRandRTray](http://www.novell.com/coolsolutions/trench/16034.html) make screen positionning user-friendly...
 
-  * ...until you play with the `xrandr`'s "`--off`" option ! After I manually called it, this parameter disabled all my screens, forever, and at each boot. I've randomly deleted xorg-related files, but I still didn't know how I solved this mess. If you have a better understanding of how `xrandr` store its configuration, please let me know !
+  * ...until you play with the `xrandr`'s "`--off`" option! After I manually called it, this parameter disabled all my screens, forever, and at each boot. I've randomly deleted xorg-related files, but I still didn't know how I solved this mess. If you have a better understanding of how `xrandr` store its configuration, please let me know!
 
-  * Dual screening is awesome ! :D
+  * Dual screening is awesome! :D
 

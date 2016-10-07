@@ -24,4 +24,4 @@ They can easely be installed on Debian with the following commands:
     $ aptitude install python-pip python-lxml
     $ pip install PyMySQL bbcode
 
-The script is <a href="https://github.com/kdeldycke/scripts/blob/master/phorum-to-wordpress.py">available on GitHub</a> so feel free to send pull request ! :)
+The script is <a href="https://github.com/kdeldycke/scripts/blob/master/phorum-to-wordpress.py">available on GitHub</a> so feel free to send pull request! :)

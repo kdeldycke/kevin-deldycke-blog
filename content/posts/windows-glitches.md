@@ -5,7 +5,7 @@ category: English
 tags: glitches, UI, Windows
 ---
 
-Using the holidays to tidy up my archives, I stumble upon old screenshots of Windows glitches I encountered when I was a student. Yes, the base platform at school was Windows, but it was 10 years ago (if this can constitute a valid excuse to not use Linux). Wait. What ? 10 years ago ? How time flies !
+Using the holidays to tidy up my archives, I stumble upon old screenshots of Windows glitches I encountered when I was a student. Yes, the base platform at school was Windows, but it was 10 years ago (if this can constitute a valid excuse to not use Linux). Wait. What ? 10 years ago ? How time flies!
 
 Anyway. Without further ado, let's start this moment of pure nostalgia with a 1.74 Gb floppy disk:
 

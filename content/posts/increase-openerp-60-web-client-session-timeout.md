@@ -14,6 +14,6 @@ Today I was asked to keep users logged-in on OpenERP's 6.0 web client. The latte
 
 Now this will keep any client sessions opened for 12 hours (12h * 60 minutes = 720 minutes) before expiring. This is enough to keep employees not complaining about having to login to OpenERP several times a day.
 
-Problem solved !
+Problem solved!
 
-Oh, and another way to address this issue consist in implementing some kind of Single Sign-On. And you know what ? We have that in store thanks to the [`smile_sso` module for OpenERP](https://github.com/Smile-SA/smile_openerp_addons_6.0/tree/master/smile_sso) ! :)
+Oh, and another way to address this issue consist in implementing some kind of Single Sign-On. And you know what ? We have that in store thanks to the [`smile_sso` module for OpenERP](https://github.com/Smile-SA/smile_openerp_addons_6.0/tree/master/smile_sso)! :)

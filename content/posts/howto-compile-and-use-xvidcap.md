@@ -5,7 +5,7 @@ category: English
 tags: CLI, Linux, Mandriva, mencoder, mplayer, Video, xvidcap
 ---
 
-## Compile gvidcap !
+## Compile gvidcap!
 
 Get the last stable source code archive on [xvidcap Sourceforge project page](http://sourceforge.net/projects/xvidcap) or download it from the [CVS](http://cvs.sourceforge.net/viewcvs.py/xvidcap):
 
@@ -31,7 +31,7 @@ Quick test:
     :::bash
     $ ./src/gvidcap &
 
-## Use gvidcap !
+## Use gvidcap!
 
 Raw capture:
 

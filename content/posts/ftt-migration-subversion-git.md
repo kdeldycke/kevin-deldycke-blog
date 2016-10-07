@@ -122,7 +122,7 @@ At the end of this code review, I just found references to our internal architec
     $ git filter-branch --force --prune-empty --tree-filter 'find . -type f -exec sed -i "s/192\.168\.0\.2/12\.34\.56\.78/g"         "{}" \;' -- --all
     $ git filter-branch --force --prune-empty --tree-filter 'find . -type f -exec sed -i "s/user qdesert/user *******/g"             "{}" \;' -- --all
 
-After all these modifications, I was pretty sure my code was ready to be published. But better safe than sorry, I spent a couple of minutes to do a second deep code review to check that I didn't missed anything. And to push the reviewing process even further, I offer a beer at the local bar for anyone finding sensible information in FTT's code base ! :)
+After all these modifications, I was pretty sure my code was ready to be published. But better safe than sorry, I spent a couple of minutes to do a second deep code review to check that I didn't missed anything. And to push the reviewing process even further, I offer a beer at the local bar for anyone finding sensible information in FTT's code base! :)
 
 The last things I did was to delete the old FTT's GitHub repository and recreate it. Then I fixed my first commit date, cleaned Git's local backup and pushed my carefully crafted repository to its new GitHub's home:
 

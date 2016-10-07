@@ -45,6 +45,6 @@ rectangle over these dots to hide them. Here is how to do it:
   4. Use the dialog to set a 2 pixels top border;
 
   5. Now you have to export the result using a reasonable video codec, and
-  that's it !
+  that's it!
 
 ![](/uploads/2010/avidemux-add-black-border.png)

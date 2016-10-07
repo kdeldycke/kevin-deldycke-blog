@@ -1,6 +1,6 @@
 ---
 date: 2012-05-22 12:55:12
-title: Kdenlive fundraising campaign: a tremendous success !
+title: Kdenlive fundraising campaign: a tremendous success!
 category: English
 tags: campaign, Fundraising, KDE, Kdenlive, NLE, Video
 ---
@@ -15,9 +15,9 @@ like other $100+ contributors, I was offered a place to write a [testimonial
 
 If I won some bragging rights, this is minor news compared to how much the
 community participated: the initial goal was set to $4000 but collected funds
-ended up at $7419. Almost twice as much as expected ! That's were the good news
+ended up at $7419. Almost twice as much as expected! That's were the good news
 is: there is no doubt Kdenlive is well supported by a dedicated and generous
 community.
 
 It makes me happy as I feel I bet on the right horse when choosing Kdenlive to
-edit my humble videos. Long live to Kdenlive ! :)
+edit my humble videos. Long live to Kdenlive! :)

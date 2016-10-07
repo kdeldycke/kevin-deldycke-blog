@@ -1,6 +1,6 @@
 ---
 date: 2011-03-07 11:32:02
-title: I'm Top 1% Open-Source Developer ! (and that's a lie)
+title: I'm Top 1% Open-Source Developer! (and that's a lie)
 category: English
 tags: development, Ohloh, open source, Software engineering
 ---
@@ -9,7 +9,7 @@ With all the [recent](http://kevin.deldycke.com/2011/01/e107-importer-wordpress-
 
 ![](/uploads/2011/ohloh-rank-from-bronze-to-silver.png)
 
-Other interesting statistic is that I'm now ranked as open-source developer number 5673 on a population of 438276. Which place me in the top 1.3% of the population ! :D
+Other interesting statistic is that I'm now ranked as open-source developer number 5673 on a population of 438276. Which place me in the top 1.3% of the population! :D
 
 That's exciting, but irrelevant. Ohloh stats must be taken with a huge grain of salt.
 
@@ -23,4 +23,4 @@ That's exciting, but irrelevant. Ohloh stats must be taken with a huge grain of 
 
   5. And most importantly, the best contributions are not always tied to high commit activity or number of added code lines. Thinks about removing old/dead/legacy code and refactoring. These may be the best code contributions a project will see.
 
-That's why Ohloh stats must not be taken for granted. But this doesn't remove the fun you can get from them. Especially when they put me in a favorable light ! ;)
+That's why Ohloh stats must not be taken for granted. But this doesn't remove the fun you can get from them. Especially when they put me in a favorable light! ;)

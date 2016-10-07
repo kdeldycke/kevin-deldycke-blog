@@ -25,4 +25,4 @@ packages. All the sources of these packages came from the
 ["LLA, OpenDMX USB and Q Light Controller Tutorial" tutorial](http://opendmx.net/index.php/LLA,_OpenDMX_USB_and_Q_Light_Controller_Tutorial).
 
 I haven't played with QLC yet: I've just started it and as you can see on the
-screenshot it seems to work. Happy testing ! ;)
+screenshot it seems to work. Happy testing! ;)

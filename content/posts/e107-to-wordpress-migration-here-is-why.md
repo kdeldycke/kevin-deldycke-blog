@@ -31,4 +31,4 @@ On the other hand, this migration make me loose some features :
 
 Even if those features are not built-in in Wordpress, I expect to find some plug-ins to fill the gap (I'll probably post the result of my investigations on that blog).
 
-To conclude, I would like to thanks the whole e107 team for their impressive and hard work. I would also like to thank members of the e107 community who helped me to resolve bugs and problems. I enjoyed my 2 years as e107 user, but my needs changed and to reflects this I had to change softwares too. Sorry e107 !
+To conclude, I would like to thanks the whole e107 team for their impressive and hard work. I would also like to thank members of the e107 community who helped me to resolve bugs and problems. I enjoyed my 2 years as e107 user, but my needs changed and to reflects this I had to change softwares too. Sorry e107!

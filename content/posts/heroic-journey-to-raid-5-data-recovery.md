@@ -18,9 +18,9 @@ My `/dev/sda1` disk was kicked out of the array, so I did the right stuff which 
     :::bash
     $ mdadm /dev/md0 -a /dev/sda1
 
-Then, in an unlucky combination of cosmic ray bombardment, spooky action at a distance and astrological misalignment, half-way to the end of the rebuilding process (which can take up to 5 hours), another disk failed ! It was late, I was tired and utterly worried about losing 1.5 To of precious data. In such a bad shape, I was afraid to worsen the situation. So I decided to shutdown the server and sleep on the problem.
+Then, in an unlucky combination of cosmic ray bombardment, spooky action at a distance and astrological misalignment, half-way to the end of the rebuilding process (which can take up to 5 hours), another disk failed! It was late, I was tired and utterly worried about losing 1.5 To of precious data. In such a bad shape, I was afraid to worsen the situation. So I decided to shutdown the server and sleep on the problem.
 
-The next day I tried to boot my server to find it (surprise !) stuck in the middle of the boot process, with the famous message:
+The next day I tried to boot my server to find it (surprise!) stuck in the middle of the boot process, with the famous message:
 
     :::text
     hit control-D to continue or give root password to fix manually
@@ -96,7 +96,7 @@ Here I've got the idea of recreating the raid array without `sdb1`, relying only
     :::bash
     $ mdadm --create /dev/md0 --assume-clean --level=5 --verbose --raid-devices=3 /dev/sda1 missing /dev/sdc1
 
-And it worked ! :D
+And it worked! :D
 
 I mounted the `md0` partition and cleaned it up:
 

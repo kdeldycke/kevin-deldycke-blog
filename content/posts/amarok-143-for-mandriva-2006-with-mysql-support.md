@@ -4,7 +4,7 @@ title: Amarok 1.4.3 for Mandriva 2006 with MySQL support
 tags: Amarok, KDE, Linux, Mandriva, Music, MySQL, SQL, RPM
 ---
 
-[Amarok 1.4.3 is out](http://amarok.kde.org/content/view/81/66/) ! Here are the
+[Amarok 1.4.3 is out](http://amarok.kde.org/content/view/81/66/)! Here are the
 [brand new packages for Mandriva
 2006](http://github.com/kdeldycke/mandriva-specs). This version of Amarok is a
 backport from the cooker repository and is built to work with KDE 3.4.2 (which

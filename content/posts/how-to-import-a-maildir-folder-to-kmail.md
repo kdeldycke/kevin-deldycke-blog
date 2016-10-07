@@ -11,7 +11,7 @@ Instinctively, I assumed that my folder was of the [Maildir format](http://en.wi
 
 ![kmail-no-sub-folders.png](/uploads/2007/kmail-no-sub-folders.png)
 
-It looks good but it's not: there is no sub-folders !
+It looks good but it's not: there is no sub-folders!
 
 After some googling, I found what was wrong: my `~/Maildir` folder is not a Maildir, but a [Maildir++](http://www.inter7.com/courierimap/README.maildirquota.html) folder. This kind of folder is handle by popular IMAP [MTA](http://en.wikipedia.org/wiki/Mail_transfer_agent) like [qmail](http://cr.yp.to/qmail.html), [Dovecot](http://www.dovecot.org) and [courier-imap](http://www.courier-mta.org) (which was used on the mail server where my `~/Maildir` come from). There is some advantages of using the "`++`" flavor of Maildir over the classic one, like quotas and sub-folders. Unfortunately [Kmail is not able to read the Maildir++ folder structure](http://groups.google.com/group/comp.windows.x.kde/browse_thread/thread/1c74818b4175b3ec#487b5c78311a07c7).
 
@@ -25,6 +25,6 @@ How-to use it ? Simply:
 
   3. Give it execution privileges,
 
-  4. Run it !
+  4. Run it!
 
-I advise you to try it first in a safe environment (like under a temporary user account). And don't forget to backup everything before playing with it: because this script work for me doesn't mean that it will work for you ! ;)
+I advise you to try it first in a safe environment (like under a temporary user account). And don't forget to backup everything before playing with it: because this script work for me doesn't mean that it will work for you! ;)

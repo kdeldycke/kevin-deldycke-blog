@@ -18,4 +18,4 @@ This person was my hacker. As you can see he's a belgian guy and his broadband p
 
 If you want to disect his behaviour, you can [download my apache log](/uploads/2007/wordpress-22-register-new-user-hack.txt).
 
-This event show us that the Wordpress vulnerablility regarding guest account registration is still there. So the [advice given by CountZero](http://www.4null4.de/174/wp-users-disable-guest-account-registration-immediately/) **must** be applied !
+This event show us that the Wordpress vulnerablility regarding guest account registration is still there. So the [advice given by CountZero](http://www.4null4.de/174/wp-users-disable-guest-account-registration-immediately/) **must** be applied!

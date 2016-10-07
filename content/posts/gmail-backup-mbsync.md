@@ -9,7 +9,7 @@ I used to keep a [local backup of my Gmail mails with OfflineImap](http://kevin.
 
 In the mean time I found out about [mbsync](http://isync.sourceforge.net/mbsync.html) (from the [isync project](https://sourceforge.net/projects/isync/)). It particularly features fine-grained options to let you defined which source is authoritative, thus restricting the synchronization to one direction.
 
-Let's install mbsync and its dependencies !
+Let's install mbsync and its dependencies!
 
     :::bash
     $ sudo aptitude install isync ca-certificates

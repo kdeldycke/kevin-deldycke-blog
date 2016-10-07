@@ -1,6 +1,6 @@
 ---
 date: 2011-08-16 12:10:06
-title: WebPing Open-sourced !
+title: WebPing Open-sourced!
 category: English
 tags: Apache, email, flot, GitHub, HTML, HTTP, javascript, jquery, munin, nagios, Plone, Python, Server, SQLite, SQL, Web, webping, yaml, cron
 ---

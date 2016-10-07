@@ -71,7 +71,7 @@ He planned to published the video, but the final editing step was postponed by s
 
 Until last January when, after [some efforts](http://kevin.deldycke.com/2013/02/slowmo-video-ubuntu-12-10/), I managed to [produce something with slowmoVideo](http://kevin.deldycke.com/2013/03/goodnight-video/). We resurected the project.
 
-I applied the raw slowmoVideo transformation on the initial set of photos. And the result was good enough. But Tomasito wanted more, and stabilized all the 70 images of the original set by hand !
+I applied the raw slowmoVideo transformation on the initial set of photos. And the result was good enough. But Tomasito wanted more, and stabilized all the 70 images of the original set by hand!
 
 After this herculean task, I cropped & resized the images to fit the 1080p resolution:
 

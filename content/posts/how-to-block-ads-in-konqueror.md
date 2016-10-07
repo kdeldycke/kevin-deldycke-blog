@@ -19,6 +19,6 @@ Starting from version 3.5, [Konqueror](http://www.konqueror.org) feature an ad b
 
   5. Use the `Import...` button to load the "Filterset.G" file you previoulsy downloaded
 
-  6. Enjoy ad-free web sites !
+  6. Enjoy ad-free web sites!
 
 By the way, I hope to see the [feature suggested by Andreas Frische](http://bugs.kde.org/show_bug.cgi?id=143495) to get some attention by the Konqueror community: it would be nice to have an integrated auto-updater of filter set in Konqueror (and make this how-to deprecated).

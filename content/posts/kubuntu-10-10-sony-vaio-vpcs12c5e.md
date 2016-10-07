@@ -19,6 +19,6 @@ The only annoying thing in 10.10 is the non-responding touchpad. But a [fix can 
 
   3. Reboot
 
-Now about the laptop itself: construction quality is below my previous [MacBook](http://amzn.com/B002QQ8H8I/?tag=kevideld-20) (cheap plastic instead of aluminum) and battery autonomy is not impressive. A bios update seems to address the latter. Haven't done it yet as it requires to re-install Windows (*sigh*). But overall that's a good lightweight machine to get things done, especially with its 8 Gb of RAM, 4 cores and a SSD ! :)
+Now about the laptop itself: construction quality is below my previous [MacBook](http://amzn.com/B002QQ8H8I/?tag=kevideld-20) (cheap plastic instead of aluminum) and battery autonomy is not impressive. A bios update seems to address the latter. Haven't done it yet as it requires to re-install Windows (*sigh*). But overall that's a good lightweight machine to get things done, especially with its 8 Gb of RAM, 4 cores and a SSD! :)
 
 

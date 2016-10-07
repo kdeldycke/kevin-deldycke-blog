@@ -69,7 +69,7 @@ And finally, we can launch the Dovecot server itself as `root`:
     :::bash
     $ dovecot
 
-That's all !
+That's all!
 
 You can now access your local IMAP server with any client. Here is an example
 with [Thunderbird](http://www.mozillamessaging.com/thunderbird/):

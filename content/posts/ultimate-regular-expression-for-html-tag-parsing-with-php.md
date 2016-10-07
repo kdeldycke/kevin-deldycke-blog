@@ -5,7 +5,7 @@ category: English
 tags: HTML, parsing, PHP, Regular expression
 ---
 
-_**Disclaimer**: this is a dirty hack ! To parse HTML or XML, use a dedicated
+_**Disclaimer**: this is a dirty hack! To parse HTML or XML, use a dedicated
 library._
 
 Tonight I found the ultimate

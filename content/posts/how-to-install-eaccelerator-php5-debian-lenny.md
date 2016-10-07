@@ -24,7 +24,7 @@ The former provides a version of eAccelerator for the `i386`, the latter for the
 `amd64` architecture. In this how-to, I've combined the 2 repositories to give
 both 32 bits and 64 bits users a chance to use eAccelerator on Lenny.
 
-Let's start the installation ! First, add the following lines to your
+Let's start the installation! First, add the following lines to your
 `/etc/apt/sources.list` file:
 
     :::sourceslist
@@ -50,4 +50,4 @@ And finally, you can install eAccelerator for PHP5 without any pain:
     :::bash
     $ apt-get install php5-eaccelerator
 
-Happy [fine-tunning](http://eaccelerator.net/wiki/Settings) !
+Happy [fine-tunning](http://eaccelerator.net/wiki/Settings)!

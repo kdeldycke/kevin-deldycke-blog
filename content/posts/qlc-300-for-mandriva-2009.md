@@ -16,4 +16,4 @@ compile on my machine. You can find the
 [QLC RPM in my repository](http://github.com/kdeldycke/mandriva-specs).
 
 In the end, this RPM is quite a prototype. I didn't checked that it works well
-beyond the UI (check the screenshot for a proof). So use it at your own risks !
+beyond the UI (check the screenshot for a proof). So use it at your own risks!

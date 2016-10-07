@@ -13,4 +13,4 @@ So, if you are using my kqemu RPM for Mandriva 2006, don't forget to add the fol
     :::text
     tmpfs    /dev/shm    tmpfs    defaults    0  0
 
-Then reboot your OS to enjoy the speed up !
+Then reboot your OS to enjoy the speed up!

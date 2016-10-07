@@ -69,7 +69,7 @@ And check that the previous operation did what we expected:
 
         Initial commit
 
-Looks good !
+Looks good!
 
 For convenience, we'll now attach a tag to this initial commit. Let's call it
 `init`:
@@ -100,4 +100,4 @@ And here is the result on GitHub:
 
 Maybe this "first commit" trick is unnecessary. So, if you have a better
 understanding of the issue, or can explain me why this is stupid, please tell
-me ! :)
+me! :)

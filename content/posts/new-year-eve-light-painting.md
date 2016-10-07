@@ -13,4 +13,4 @@ During the first (cold) hours of 2010, I've [done some light painting](http://ma
 
 ![](/uploads/2010/Lightpainting3.jpg)
 
-If you liked it, do not forget to [visit the whole gallery](http://maomium.com/zenphoto/light-painting/) on [Maomium](http://maomium.com) website and leave a comment !
+If you liked it, do not forget to [visit the whole gallery](http://maomium.com/zenphoto/light-painting/) on [Maomium](http://maomium.com) website and leave a comment!

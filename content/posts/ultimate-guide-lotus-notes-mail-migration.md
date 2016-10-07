@@ -230,7 +230,7 @@ A [workaround can be found in this article
   ](http://kevin.deldycke.com/2010/08/maildir-deduplication-script-python/) I
   wrote. It will help you clean-up your Maildir folder.
 
-  22. That's it ! You now have a standard Maildir of your Lotus Notes mails,
+  22. That's it! You now have a standard Maildir of your Lotus Notes mails,
   located in your user home directory (`~/Maildir`):
 
 ![](/uploads/2010/maildir-containing-lotus-notes-mails.png)
@@ -321,7 +321,7 @@ handle large quantity of mails. :(
 
   * Lotus Notes sucks. [Everybody knows that
   ](http://www.guardian.co.uk/technology/2006/feb/09/guardianweeklytechnologysection),
-  but I feel liberated saying that ! ;)
+  but I feel liberated saying that! ;)
 
   * The smartest thing to do is to avoid Notes like the plague in the first
   place. Sadly when working for the man, it's not always possible... :(

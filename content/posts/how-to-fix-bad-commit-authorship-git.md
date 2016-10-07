@@ -11,7 +11,7 @@ The result was not good looking, as my usual name and mail address were not atta
 
 ![](/uploads/2010/bad-git-commit-history-authorship.png)
 
-Let's fix this !
+Let's fix this!
 
 First, get a local copy of the remote Git repository:
 
@@ -78,7 +78,7 @@ In our case we will force the remote repository to take our changes:
     :::bash
     $ git push origin +master:master
 
-As I told you before this is bad, but nobody really cares: I'm the only person working on this repository ! ;)
+As I told you before this is bad, but nobody really cares: I'm the only person working on this repository! ;)
 
 Finally, you can contemplate the result on GitHub, a clean and tidy commit history:
 

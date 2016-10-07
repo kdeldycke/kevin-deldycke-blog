@@ -1,6 +1,6 @@
 ---
 date: 2007-02-14 22:27:14
-title: My First Wordpress Patch !
+title: My First Wordpress Patch!
 tags: Blog, kubrick, patch, PHP, Template, Theme, Web, WordPress
 ---
 

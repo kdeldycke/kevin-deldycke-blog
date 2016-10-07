@@ -157,4 +157,4 @@ Based on clues from these bug reports you can fix Udev using different strategie
      # serial devices
      SUBSYSTEM=="tty",
 
-Now all you have to do is to unplug the power cord and wait until your machine gracefully shut down as soon as batteries are low ! :)
+Now all you have to do is to unplug the power cord and wait until your machine gracefully shut down as soon as batteries are low! :)

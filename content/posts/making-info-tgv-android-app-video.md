@@ -5,7 +5,7 @@ category: English
 tags: Android, Canon EOS 7D, ffmpeg, HTC, Kdenlive, Kubuntu, Ubuntu, Linux, Twitter, Uperto, Video, x264, YouTube, SoundUp studio
 ---
 
-Last week I was called by one of my co-worker from [Uperto](http://www.uperto.com) (the open-source division of [Devoteam](http://devoteam.com)). He knew I worked on some [video projects for my band](http://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great oportunity to play with my [Canon EOS 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20), so I accepted ! :)
+Last week I was called by one of my co-worker from [Uperto](http://www.uperto.com) (the open-source division of [Devoteam](http://devoteam.com)). He knew I worked on some [video projects for my band](http://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great oportunity to play with my [Canon EOS 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20), so I accepted! :)
 
 
 
@@ -15,7 +15,7 @@ Here is the final video we managed to create:
 
 http://www.youtube.com/watch?v=puDy-twV-Y4
 
-Now let's talk about what happened behind the scenes ! :)
+Now let's talk about what happened behind the scenes! :)
 
 ## Shooting
 
@@ -53,7 +53,7 @@ Here is a photo of the final setup, in which I marked the focus plan with black 
 
 As you can see in the final video, I have some aliasing issues due to the [pixelated nature of the phone's screen](http://en.wikipedia.org/wiki/Active-matrix_OLED) and the [line skipping happening on 7D's CMOS sensor](http://vimeo.com/11000025). I tried to reduce the aliasing by moving the phone to a distance were the natural softness of the Sigma lens will occur. I didn't really succeed as it's really hard to maintain a constant distance to the lens while holding the phone by hand.
 
-Yes, I could have tried to put the phone on a stand but I really wanted to show the app on a real phone, into real hands, as to make it clear there was no special effects or compositing in action. The application is real, it's running on bare metal, it's not a mockup, showing that Uperto has tough engineers getting things done ! ;)
+Yes, I could have tried to put the phone on a stand but I really wanted to show the app on a real phone, into real hands, as to make it clear there was no special effects or compositing in action. The application is real, it's running on bare metal, it's not a mockup, showing that Uperto has tough engineers getting things done! ;)
 
 By the way, about hands: there a trick involved here. The left hand is mine, but the right one is my co-worker's. There was a big advantage using this technic: with an eye on the 7D's rear LCD monitor, I can fully concentrate on the image and micro-adjust the distance of the phone to the lens. In the same time, my co-worker can focus (pardon the pun) on the action and follow the script. The only time when you can see my right hand is when I take the [Acer Liquid E](http://mobile.acer.com/en/phones/liquide/) to demonstrate the propagation of messages via Twitter:
 
@@ -61,7 +61,7 @@ By the way, about hands: there a trick involved here. The left hand is mine, but
 
 ## Video editing
 
-For video editing, I knew I'll not be able to manipulate my 7D's files natively. At least not with the default packages bundled with my [Kubuntu 10.04](http://www.kubuntu.org/news/10.04-lts-release). So monday morning I started to compile the trunk version of [x264](http://www.videolan.org/developers/x264.html), [FFmpeg](http://ffmpeg.org) and [MLT](http://mltframework.org). Then I realized a brand new version of [Kdenlive (v0.7.8) was released](http://www.kdenlive.org/users/j-b-m/kdenlive-078-released). How did I missed such an important news about my favorite [NLE](http://en.wikipedia.org/wiki/Video_editing_software) ? :) Compliments must go to the Kdenlive team for providing up to date packages and all their dependencies !
+For video editing, I knew I'll not be able to manipulate my 7D's files natively. At least not with the default packages bundled with my [Kubuntu 10.04](http://www.kubuntu.org/news/10.04-lts-release). So monday morning I started to compile the trunk version of [x264](http://www.videolan.org/developers/x264.html), [FFmpeg](http://ffmpeg.org) and [MLT](http://mltframework.org). Then I realized a brand new version of [Kdenlive (v0.7.8) was released](http://www.kdenlive.org/users/j-b-m/kdenlive-078-released). How did I missed such an important news about my favorite [NLE](http://en.wikipedia.org/wiki/Video_editing_software) ? :) Compliments must go to the Kdenlive team for providing up to date packages and all their dependencies!
 
 So I did the entire video editing with Kdenlive. Here is what the final project looks like in the timeline:
 
@@ -128,11 +128,11 @@ Against my will, and to not waste time, I resigned myself to use a Windows machi
 
 Again, as we were in a hurry, we didn't paid close attention to the way Arnaud was speaking in the mic. Thus the quality of the original take was not fantastic. To me it was good enough for the intended purpose.
 
-When I gave the raw recording to [Thomas](http://coolcavemen.com/biography/jimy-wong/) for mixing, he didn't take long for him to realize how bad we were at recording ! Even without knowing how we proceed to record and what the setup looked like, he pointed out all the stuff we did wrong. I know him for a long time now, but he still amaze me with his technical and practical knowledge about audio stuff. I really want to thanks him for his help on this project !
+When I gave the raw recording to [Thomas](http://coolcavemen.com/biography/jimy-wong/) for mixing, he didn't take long for him to realize how bad we were at recording! Even without knowing how we proceed to record and what the setup looked like, he pointed out all the stuff we did wrong. I know him for a long time now, but he still amaze me with his technical and practical knowledge about audio stuff. I really want to thanks him for his help on this project!
 
 ![](/uploads/2010/tom-at-work-in-sound-up-studio.png)
 
-By the way, if you're looking to record/mix/master any audio material (from a simple voice-over to a full band), I really recommend you to [contact his studio](http://soundupstudio.com). And tell him you heard of him by reading my blog, he may give you a discount ! ;)
+By the way, if you're looking to record/mix/master any audio material (from a simple voice-over to a full band), I really recommend you to [contact his studio](http://soundupstudio.com). And tell him you heard of him by reading my blog, he may give you a discount! ;)
 
 ## Epilogue
 
@@ -142,4 +142,4 @@ The whole project was completed in no time and virtually no budget thanks to the
 
 This project was a great oportunity for me to test my video skills. In a sense, it was my first professionnal assignment: I had a limited time, an inflexible deadline and a clear goal. But still, this type of activity falls into my hobby category. I have so much things to learn...
 
-This project is also the first time I edit 1080p footage from my 7D in Kdenlive. This doesn't mean it's the first time I shoot with my 7D. In fact I shoot videos in various formats and setup for about a year. But my shooting skills only starts to be acceptable. My other projects involving 7D footages are currently on hold for various reasons (mostly more important stuff to do). That's why I hadn't published anything on the web since then. But I expect this situation to change soon ! :D
+This project is also the first time I edit 1080p footage from my 7D in Kdenlive. This doesn't mean it's the first time I shoot with my 7D. In fact I shoot videos in various formats and setup for about a year. But my shooting skills only starts to be acceptable. My other projects involving 7D footages are currently on hold for various reasons (mostly more important stuff to do). That's why I hadn't published anything on the web since then. But I expect this situation to change soon! :D

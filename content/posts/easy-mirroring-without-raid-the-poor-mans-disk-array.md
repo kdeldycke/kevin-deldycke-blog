@@ -27,7 +27,7 @@ The idea is now to use `/mnt/hd1` to store and manipulate my datas, then `rsync`
     :::bash
     $ rsync -a --delete --delete-excluded --delete-after /mnt/hd1/ /mnt/hd1_mirror/
 
-And voilà !
+And voilà!
 
 As you guess, this solution is far from perfect, and has major inconvenients regarding RAID 1:
 

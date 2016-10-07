@@ -63,7 +63,7 @@ tags: CLI, database, Linux, PostgreSQL, SQL
   * Search if `kevin` is a PostgreSQL user:
 
         :::bash
-        $ sudo -u postgres psql --tuples-only --no-align --command "SELECT usename FROM pg_user;" | grep --quiet 'kevin' && echo 'User found !' || echo 'User not found !'
+        $ sudo -u postgres psql --tuples-only --no-align --command "SELECT usename FROM pg_user;" | grep --quiet 'kevin' && echo 'User found!' || echo 'User not found!'
 
   * Force rebuilding of all caches of a database:
 

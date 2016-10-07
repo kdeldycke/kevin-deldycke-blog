@@ -11,7 +11,7 @@ Then I wanted to have my plugin to be available on WordPress.org. In fact, [this
 
 This article details how I managed to push to Subversion all my developments activity taking place in Git.
 
-Before going further: be careful ! It's really easy to mess things up. After all, we're trying to push code on a public Subversion repository. We must be certain of what we are doing here. Risks of deleting stuff that are not ours are great.
+Before going further: be careful! It's really easy to mess things up. After all, we're trying to push code on a public Subversion repository. We must be certain of what we are doing here. Risks of deleting stuff that are not ours are great.
 
 ## The simulation
 
@@ -217,6 +217,6 @@ Well, that's what I exactly did:
     $ git rebase --interactive --preserve-merges refs/remotes/trunk
     $ git svn dcommit
 
-And it magically fixed the issue ! :)
+And it magically fixed the issue! :)
 
-I'm quite happy now to have a clearly identified workflow to push my Git updates to Subversion ! :)
+I'm quite happy now to have a clearly identified workflow to push my Git updates to Subversion! :)

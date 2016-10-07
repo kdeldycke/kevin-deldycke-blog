@@ -1,6 +1,6 @@
 ---
 date: 2009-03-03 10:14:24
-title: On tour with Cool Cavemen !
+title: On tour with Cool Cavemen!
 category: English
 tags: band, Cool Cavemen, Stage lighting, live, tour
 ---
@@ -13,4 +13,4 @@ I'll try to cover this event on twitter. You can
 [follow our adventures live](http://twitter.com/kdeldycke) through my account.
 
 And if you're on twitter, don't miss the
-[official feed of the band](http://twitter.com/coolcavemen) ! :)
+[official feed of the band](http://twitter.com/coolcavemen)! :)

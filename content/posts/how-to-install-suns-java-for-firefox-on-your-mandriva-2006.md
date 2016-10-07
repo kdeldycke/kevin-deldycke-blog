@@ -35,8 +35,8 @@ So, here is how I achieve this:
         :::bash
         $ ln -s /usr/java/jre1.5.0_06/plugin/i386/ns7/libjavaplugin_oji.so
 
-  7. Finished !
+  7. Finished!
 
 To check that java is well installed, type `about:plugins` in your Firefox browser URL field and check that java plug-in appear on the list.
 
-Happy tax form filling !
+Happy tax form filling!

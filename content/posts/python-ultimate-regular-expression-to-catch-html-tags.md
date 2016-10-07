@@ -5,7 +5,7 @@ category: English
 tags: HTML, programming, Python, Regular expression, BeautifoulSoup, lxml
 ---
 
-_**Disclaimer**: this is a dirty hack ! To parse HTML or XML, use a dedicated
+_**Disclaimer**: this is a dirty hack! To parse HTML or XML, use a dedicated
 library like the good old 
 [`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4) or 
 [`lxml.html`](http://lxml.de/lxmlhtml.html).

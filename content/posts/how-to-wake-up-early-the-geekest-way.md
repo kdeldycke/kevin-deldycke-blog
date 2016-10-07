@@ -27,7 +27,7 @@ _Random Tips:_
 
   * Take care of time zone (system time and local time are very different).
 
-  * Check that your volume is not muted and crank the volume up !
+  * Check that your volume is not muted and crank the volume up!
 
   * Run the `mplayer /home/kevin/music/CoolCavemen/AllCoolHits/*.flac > /dev/null 2>&1 /dev/null` command alone in another terminal before you go to sleep to be sure it work (i.e. to check that all sound-related sub-systems are loaded).
 

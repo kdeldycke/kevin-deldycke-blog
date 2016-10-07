@@ -15,7 +15,7 @@ Randall reveal two possible solutions:
 
   2. ... Linux (or BSD :) ) would...
 
-Of course, none of these are acceptable ! But today, I think I've found the definitive solution...
+Of course, none of these are acceptable! But today, I think I've found the definitive solution...
 
 As you may know, unicode comes with loads of weird characters. The weirdest are called [dingbats](http://wikipedia.org/wiki/Dingbat). Beside this family, you'll find [the weirdest of the weirdest](http://wikipedia.org/wiki/Miscellaneous_Symbols), which contain 2 interesting symbols:
 
@@ -27,4 +27,4 @@ So using the latest, our statement become:
 
 > ... Linux (or BSD ☺) would...
 
-Problem solved ! :D
+Problem solved! :D

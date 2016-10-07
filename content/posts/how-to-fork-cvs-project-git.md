@@ -17,14 +17,14 @@ an adaptation of the
 [RokWebify Joomla theme](http://www.rockettheme.com/joomla-downloads/folder/115-rokwebify).
 All these themes are licensed under the GPL, so I have to share all my
 modifications with the community. This is a great opportunity to seriously
-experiment with [Git](http://git-scm.com) (at last !).
+experiment with [Git](http://git-scm.com) (at last!).
 
 Here is my plan:
 
   1. Make an exact copy of Drupify's code base in my GitHub repository.
   2. Hack it in this playground.
   3. ???
-  4. [Profit !](http://knowyourmeme.com/memes/profit) :D
+  4. [Profit!](http://knowyourmeme.com/memes/profit) :D
 
 Problem:
 [Drupify lives in a CVS repository](http://drupalcode.org/viewvc/drupal/contributions/themes/drupify/).

@@ -1,6 +1,6 @@
 ---
 date: 2008-06-05 20:35:58
-title: I wrote the best Open-Source Payroll Software of the world !
+title: I wrote the best Open-Source Payroll Software of the world!
 category: English
 tags: consulting, ERP, free software, open source, OpenERP, ERP5, OpenBravo, Neogia, Adempiere, Compiere
 ---
@@ -20,7 +20,7 @@ Which roughly translates to:
 
 > ERP5 even manage payroll, while any other free software ERP has gone as far
 
-Hey wait. I wrote this module !
+Hey wait. I wrote this module!
 
 And here is their final evaluation (0 is the lowest, 5 the highest note) of all
 payroll systems for each ERP (from page 88):

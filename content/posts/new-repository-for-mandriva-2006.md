@@ -5,7 +5,7 @@ category: English
 tags: baghira, Linux, Mandriva, RPM, Wormux
 ---
 
-Hi all !
+Hi all!
 
 I've created a RPM repository on this site to deposit third-party software I found all around the net. At that time, available packages are [Wormux](http://www.wormux.org) v0.7 and [Baghira](http://baghira.sourceforge.net) v0.7.
 

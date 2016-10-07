@@ -17,8 +17,8 @@ Cool Cavemen is
 which means we're approaching the end of the
 [Multipolar](http://coolcavemen.bandcamp.com/album/multipolar)-era. This is the
 right time to dig out what is, without a doubt, the video condensing all the
-spirit and intensity of the period. Look at those dancing people ! Look how they
-like our music ! Look how musicians have fun on stage ! :)
+spirit and intensity of the period. Look at those dancing people! Look how they
+like our music! Look how musicians have fun on stage! :)
 
 http://www.youtube.com/watch?v=qE-bis-wYxs&list;=SP4BAA557B7144031F
 
@@ -58,7 +58,7 @@ But this little training is not enough to get used to the GrandMA, let alone
 master it. So when it was time to play live, I choose simple lighting patterns
 and movements. Of course I made a lots of mistakes and the result was far from
 perfect, but it was good enough to keep the show running. Considering these
-conditions, my performance was a success ! :)
+conditions, my performance was a success! :)
 
 And I had a secret weapon: I knew I'll be the one editing the video. Being both
 the lighting designer and the video editor, I was able to hide all the things

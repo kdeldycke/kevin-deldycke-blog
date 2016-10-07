@@ -33,7 +33,7 @@ through a HTTP proxy:
 
 This fix, written for a [Ruby on Rails](http://www.rubyonrails.org)-based
 project, lay in the `environment.rb` file, but I wonder if this is the right
-place and the right way of doing it... Anyway, it works for me ! :)
+place and the right way of doing it... Anyway, it works for me! :)
 
 **Update**: A
 [post from Matthew Higgins' blog that answer my question](http://www.strictlyuntyped.com/2008/06/rails-where-to-put-other-files.html)

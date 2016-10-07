@@ -42,7 +42,7 @@ Then we're free to import the result in a new UTF-8 database:
     $ mysql --execute="CREATE DATABASE e107db_new CHARACTER SET=utf8"
     $ mysql --database=e107db_new < ./e107-data.sql
 
-And now, accentuated characters appears as they should in our database, meaning we've fixed all the mess ! :)
+And now, accentuated characters appears as they should in our database, meaning we've fixed all the mess! :)
 
 ![](/uploads/2011/e107-utf8-encoded-mysql-tables.png)
 

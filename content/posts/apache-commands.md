@@ -46,7 +46,7 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
 
         :::apache
         BrowserMatchNoCase ".*MSIE\s[1-6].*" IS_DISGUSTING_BROWSER
-        Header add X-advice-of-the-day "Save a kitten: use Firefox !" env=IS_DISGUSTING_BROWSER
+        Header add X-advice-of-the-day "Save a kitten: use Firefox!" env=IS_DISGUSTING_BROWSER
 
   * Prevent WebDAV connexions (thanks Guillaume!):
 

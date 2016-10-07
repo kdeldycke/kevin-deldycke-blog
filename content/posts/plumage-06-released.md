@@ -14,4 +14,4 @@ realized that some odd rendering bugs that I tough was just affecting me were
 in fact widespread. I found the time to finally squashed them and they're now
 fixed in this latest releases.
 
-I you are still using Plumage, it's time to upgrade !
+I you are still using Plumage, it's time to upgrade!

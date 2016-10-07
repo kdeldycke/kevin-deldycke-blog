@@ -1,6 +1,6 @@
 ---
 date: 2011-01-24 12:52:08
-title: e107 Importer WordPress plugin v1.0 released !
+title: e107 Importer WordPress plugin v1.0 released!
 category: English
 tags: CMS, e107, importer, migration, PHP, WordPress, Kubrick
 ---
@@ -10,11 +10,11 @@ tags: CMS, e107, importer, migration, PHP, WordPress, Kubrick
 After
 [3 years in limbo](http://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/),
 here is a new stable version of my e107 Importer plugin for WordPress, proudly
-numbered 1.0 ! :)
+numbered 1.0! :)
 
 This is the first time this plugin is
 [available on the official WordPress plugin repository](http://wordpress.org/extend/plugins/e107-importer/).
-This means easy upgrades for you ! :)
+This means easy upgrades for you! :)
 
 I've heavily updated the plugin to use the latest WordPress import framework, so
 everything is now cleanly integrated.

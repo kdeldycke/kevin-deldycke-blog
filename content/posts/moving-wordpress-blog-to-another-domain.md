@@ -17,7 +17,7 @@ to move it to `http://qpx.coolcavemen.com`. In this post, I'll tell you how I've
 done it.
 
 Before going further, backup everything, and be ready to revert back to your
-original situation at any moment ! What works for me will not necessary works
+original situation at any moment! What works for me will not necessary works
 for you...
 
 To play nice with your visitors, you can

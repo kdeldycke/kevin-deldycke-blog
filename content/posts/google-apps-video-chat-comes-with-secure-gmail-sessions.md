@@ -17,4 +17,4 @@ Not only that, Google also backported to Apps' Gmail the [much awaited HTTPs opt
 
 ![](/uploads/2008/gmail-force-https.png)
 
-These two updates are quite interesting to note. I long as I remember (and I might be wrong), Google Apps components were always out-of-sync with their legacy equivalent. So this maybe a sign of change in a really good direction for Google Apps users ! :)
+These two updates are quite interesting to note. I long as I remember (and I might be wrong), Google Apps components were always out-of-sync with their legacy equivalent. So this maybe a sign of change in a really good direction for Google Apps users! :)

@@ -87,7 +87,7 @@ I haven't found a way to tell Git how to rebase by following commit dates. I kno
     :::bash
     $ git rebase --interactive init
 
-But I haven't succeeded yet. So I left these commits unsorted for now. I may write another blog post in the future if I find a way to cleanly sort them. In the mean time, If you have a solution, I'll be happy to ear that !
+But I haven't succeeded yet. So I left these commits unsorted for now. I may write another blog post in the future if I find a way to cleanly sort them. In the mean time, If you have a solution, I'll be happy to ear that!
 
 Finally, when we have something that looks good, we can push our changes to our remote GitHub repository:
 
@@ -99,4 +99,4 @@ But Git will complain: changing already-pushed commits is bad. As I [explained s
     :::bash
     $ git push origin +master:master
 
-Et voilà ! By repeating these steps several times, I moved my code to GitHub, with a consistent and clean commit history.
+Et voilà! By repeating these steps several times, I moved my code to GitHub, with a consistent and clean commit history.

@@ -15,7 +15,7 @@ Tried to [search for it](http://search.twitter.com/search?q=ubercart+from%3Akdel
 
 ![](/uploads/2010/failed-twitter-search.png)
 
-and failed !
+and failed!
 
 And all I was looking for was [this little tweet](http://twitter.com/kdeldycke/status/1508913388).
 

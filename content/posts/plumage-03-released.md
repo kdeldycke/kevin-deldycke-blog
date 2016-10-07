@@ -7,7 +7,7 @@ tags: Plumage, Pelican, Python, Jinja, theme, HTML, CSS, Javascript
 
 Version 0.3 of [Plumage](https://github.com/kdeldycke/plumage), my theme for [Pelican](http://getpelican.com) has been released. It is also available in the official [Pelican's themes repository](https://github.com/getpelican/pelican-themes).
 
-It's the first version to include contributions from other developers. Thanks to [Cedric Bosdonnat](https://github.com/cbosdo) & [Jeff Smith](https://github.com/jeffreyksmithjr) ! :)
+It's the first version to include contributions from other developers. Thanks to [Cedric Bosdonnat](https://github.com/cbosdo) & [Jeff Smith](https://github.com/jeffreyksmithjr)! :)
 
 Here is the changelog:
 

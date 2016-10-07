@@ -54,4 +54,4 @@ And here is the stack of filters I used to achieve the result above.
 
 ![](/uploads/2012/underwater-color-correction-filters.jpg)
 
-Next step: the ocean ! :)
+Next step: the ocean! :)

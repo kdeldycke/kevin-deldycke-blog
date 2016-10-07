@@ -20,7 +20,7 @@ tags: CLI, i18n, l10n, Linux, translation
         :::bash
         $ msguniq -o no_duplicate.po duplicate_content.po
 
-  * Show differences between two `.po` files (thanks to Jérome !):
+  * Show differences between two `.po` files (thanks to Jérome!):
 
         :::bash
         $ msgcat -u file1.po file2.po > diff.po

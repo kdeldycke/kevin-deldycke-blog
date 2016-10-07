@@ -14,7 +14,7 @@ As describe in its technical specification this machine include an [Intel GMA 95
     00:02.0 VGA compatible controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
     00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
 
-This chipset is recognized out of the box by `drakconf` and thanks to this GUI, I was able to setup X.org with [AIGLX](http://en.wikipedia.org/wiki/AIGLX) in no more than 2 clicks !
+This chipset is recognized out of the box by `drakconf` and thanks to this GUI, I was able to setup X.org with [AIGLX](http://en.wikipedia.org/wiki/AIGLX) in no more than 2 clicks!
 
 ![Mandriva 2007.0 : Drakconf, a GUI to setup 3D Desktop](/uploads/2007/mandriva-20070-drakconf-3d-desktop-control-panel.png)
 
@@ -36,4 +36,4 @@ Here are some screenshots of the resulting 3D desktop:
 
 ![opengl-software-and-3d-desktop-flicker-bug.jpg](/uploads/2007/opengl-software-and-3d-desktop-flicker-bug.jpg)
 
-As you can see there is still some bugs but I had to test many softwares to find one which had problems with the 3D desktop. Except [Celestia](http://www.shatters.net/celestia), everything was working as usual. Beside this, I just had to redefine some shotcuts in [Compiz](http://compiz.org) (to match the default KDE shortcuts) and I was feeling at home ! :)
+As you can see there is still some bugs but I had to test many softwares to find one which had problems with the 3D desktop. Except [Celestia](http://www.shatters.net/celestia), everything was working as usual. Beside this, I just had to redefine some shotcuts in [Compiz](http://compiz.org) (to match the default KDE shortcuts) and I was feeling at home! :)

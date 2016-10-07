@@ -41,7 +41,7 @@ Shooting everything in playback was an obvious decision, to ease
 synchronization. Later during the recording session, I noticed it had a nice
 effect on musicians, as it reduce their cognitive load: they don't have to
 focus on producing accurate music with their instruments, which makes them more
-physically active ! :)
+physically active! :)
 
 I then decided to emulate a multiple camera setup by shooting each musician
 separately for the duration of the entire song. I didn't let one guy alone on

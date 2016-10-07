@@ -57,6 +57,6 @@ http://www.youtube.com/watch?v=MCEDSft8Lf0
 
 There's 4 long takes in the video. The third was the most challenging, as I had to climb the stairs while following the action.
 
-You'll notice that some movements are too fast and some others are wobbly. Probably because my gear was not well balanced, mainly because I didn't had enough practice at the time. But it doesn't hurt the final result and I'm impressed by what some simple SteadyCam shots bring to the project. My Glidecam was a wise investment ! :)
+You'll notice that some movements are too fast and some others are wobbly. Probably because my gear was not well balanced, mainly because I didn't had enough practice at the time. But it doesn't hurt the final result and I'm impressed by what some simple SteadyCam shots bring to the project. My Glidecam was a wise investment! :)
 
-If I shot the whole video, the groom and his brother did the audio mix and video edit. Kudos to them ! :)
+If I shot the whole video, the groom and his brother did the audio mix and video edit. Kudos to them! :)

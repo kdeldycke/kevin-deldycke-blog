@@ -41,4 +41,4 @@ during
 ![](/uploads/2010/img_0519-scaled.jpg)
 
 As usual, use and hack this script at you own risks, and feel free to send me
-bug reports and contributions ! :)
+bug reports and contributions! :)
