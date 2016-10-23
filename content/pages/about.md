@@ -43,6 +43,10 @@ software of the world.
 - Created and managed the African subsidiary of my first employer.
 - Part of the [top-1% of open-source
 developers](http://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
+- 1,000+ stars for my GitHub repository about [Falsehoods Programmers Believe
+in](https://github.com/kdeldycke/awesome-falsehood).
+- 1,000,000+ views for my video on [Nemo 33, The Deepest Pool in the 
+World](https://www.youtube.com/watch?v=-sfFKZ2PvlE).
 - Made dozen of [people joining me in a viral
 dance](http://kevin.deldycke.com/2013/09/vieilles-charrues/).
 
