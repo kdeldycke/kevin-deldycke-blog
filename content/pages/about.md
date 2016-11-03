@@ -17,7 +17,7 @@ I'm designing and implementing data-crunching pipelines to manage the
 operationnal and business aspects of the infrastructure.
 
 This involves working daily with [Python]({tag}python) (my language of choice
-since 2003), [Pandas]({tag}pandas), Cassandra, Spark,
+since 2003), [Pandas]({tag}pandas), [Cassandra]({tag}cassandra), Spark,
 [PostgreSQL]({tag}postgresql) and the likes.
 
 ---------
