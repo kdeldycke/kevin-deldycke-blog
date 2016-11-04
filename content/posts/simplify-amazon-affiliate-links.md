@@ -2,7 +2,7 @@
 date: 2013-11-05 12:00:00
 title: How-to simplify Amazon affiliate links
 category: English
-tags: Amazon, ads, campaign, affiliates, Markdown, find, sed, Linux
+tags: Amazon, ads, campaign, affiliates, Markdown, find, sed, Linux, Regular expression
 ---
 
 From the beginning on this blog, I'm using the long-form of URLs for Amazon referrals. Here's one for the [GoPro Hero3](http://amzn.com/B00F3F0GLU/?tag=kevideld-20) in HTML:
