@@ -2,7 +2,7 @@
 date: 2010-03-26 17:08:36
 title: Web commands
 category: English
-tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509
+tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509, Regular expression
 ---
 
   * Download a web page an all its requisites:
