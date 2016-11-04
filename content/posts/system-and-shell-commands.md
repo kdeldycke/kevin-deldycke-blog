@@ -2,7 +2,7 @@
 date: 2010-02-28 12:39:32
 title: System & Shell commands
 category: English
-tags: CLI, echo, kernel, Linux, nohup, shell, system, cron
+tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression
 ---
 
   * Run a process detached to the current terminal:
