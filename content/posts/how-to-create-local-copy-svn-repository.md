@@ -2,7 +2,7 @@
 date: 2012-10-09 12:46:06
 title: How-to create a local copy of a remote SVN repository
 category: English
-tags: Backup, Code, SCM, Subversion, SVK
+tags: Backup, Code, SCM, Subversion, SVK, Regular expression
 ---
 
 A long time ago, duplicating a remote Subversion repository required to have
