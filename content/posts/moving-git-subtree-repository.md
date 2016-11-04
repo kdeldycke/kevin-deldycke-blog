@@ -2,7 +2,7 @@
 date: 2011-02-01 12:20:34
 title: Moving a Git sub-tree to its own repository
 category: English
-tags: code, Git, GitHub
+tags: code, Git, GitHub, Regular expression
 ---
 
 Coming from Subversion (and with [Plone collective repository](http://dev.plone.org/collective/browser) structure in mind), I've [recently moved all my tiny software projects](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/) in a big standalone Git repository (named `kev-code`). Now that I figured out that GitHub allows you to create unlimited amount of repositories, as long as they are open-source public projects, it make sense to emancipate some of my projects to their own repository. How do I move a sub-tree to its own repository? That's what I talk about in this article.
