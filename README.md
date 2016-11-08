@@ -57,7 +57,6 @@ TODO
 
 ### Content
 
-  * Deduplicate articles' tags.
   * Migrate Resume from Google Docs to web-based page in Pelican ? Inspiration:
       * https://wrapbootstrap.com/theme/simply-minimal-responsive-resume-WB0DCP565
   * Create an autoindex plugin: activate it to produce index of /documents, then get rid of
