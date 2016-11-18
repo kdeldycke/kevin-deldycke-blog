@@ -2,7 +2,7 @@
 date: 2006-11-01 00:43:08
 title: Audio commands
 category: English
-tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool, sox, wave
+tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool, sox, PCM, id3v2
 ---
 
   * Convert `.wma` file to 192 kpbs `.mp3`:
@@ -80,6 +80,11 @@ tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool
 
         :::bash
         $ play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +20
+        
+  * Set album tag on all MP3 files found:
+
+        :::bash
+        $ find . -iname '*.mp3' -print -exec id3v2 --album "Album name" "{}" \;
 
 Other related ressources:
 
