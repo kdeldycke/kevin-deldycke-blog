@@ -33,7 +33,7 @@ Solution: Git features a [`cvsimport`](http://kernel.org/pub/software/scm/git-co
 command.
 
 Before going further, we need to install
-[`cvsps`](http://www.cobite.com/cvsps/). For [MacPorts](http://www.macports.org)
+[`cvsps`](https://web-beta.archive.org/web/20160125062146/http://www.cobite.com:80/cvsps/). For [MacPorts](http://www.macports.org)
 users, this is as simple as:
 
     :::bash
