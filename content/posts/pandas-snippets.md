@@ -182,6 +182,8 @@ Other resources:
 
   * [Pandas official documentation
   ](http://pandas.pydata.org/pandas-docs/stable/)
+  * [Pandas Cheat Sheet
+  ](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
   * [Stack Overflow's pandas questions
   ](https://stackoverflow.com/questions/tagged/pandas)
   * [Becky Sweger's snippets
