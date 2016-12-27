@@ -13,17 +13,17 @@ here is a glorious list of meta falsehoods:
 ## Falsehoods
 
 1. Falsehoods are true.
+1. Falsehoods are false.
 1. Falsehoods are universal.
 1. Falsehoods do not change with time.
 1. There's only one way to express a falsehood.
-1. No falsehoods overlaps each other.
+1. No falsehoods overlap another.
 1. There are no falsehoods which are mutually exclusive.
-1. A falsehoods correspond to a real-world usage.
+1. A falsehood correspond to a real-world usage.
 
 ## Falsehood lists
 
 1. All falsehoods can be listed.
-1. Falsehood lists are complete.
 1. Falsehood lists are a new trend.
 1. Falsehood lists are regularly updated.
 1. There exists a falsehoods list that is entirely true.
