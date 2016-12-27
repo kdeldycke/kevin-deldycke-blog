@@ -1,6 +1,6 @@
 ---
 date: 2016-12-27 10:23:00
-title: Falsehoods Programmers Believe About Ffalsehoods Lists
+title: Falsehoods Programmers Believe About Falsehoods Lists
 tags: falsehoods, software engineering, programming
 ---
 
