@@ -16,3 +16,4 @@ here is a glorious list of meta falsehoods:
 1. Every falsehood that is true CAN be accounted for.
 1. Making your code compatible with a falsehood doesn't come with a price.
 1. There are no falsehoods which are mutually exclusive.
+1. Falsehood lists are written by programmers with expertise in other matters.
