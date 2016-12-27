@@ -48,6 +48,8 @@ here is a glorious list of meta falsehoods:
 1. Reading falsehoods lists make you an expert.
 1. Writing falsehoods lists make you a better programmer.
 1. Writing falsehoods lists make you an expert.
+1. Writer of falsehood lists are [immune to their edicted
+falsehoods](https://twitter.com/benjiweber/status/785422755843956736).
 1. Compiling falsehoods lists make you a better programmer.
 1. There are programmers who do not believe in any falsehood.
 1. Only programmers are subjected to falsehoods.
