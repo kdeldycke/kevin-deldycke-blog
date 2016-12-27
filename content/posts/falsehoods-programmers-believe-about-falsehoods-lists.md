@@ -56,4 +56,5 @@ here is a glorious list of meta falsehoods:
 
 ## Meta
 
+1. This list of falsehoods doesn't apply to itself.
 1. This list exists.
