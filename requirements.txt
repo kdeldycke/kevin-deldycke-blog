@@ -1,4 +1,4 @@
-pelican
+pelican >= 3.7
 Markdown
 mdx_video
 mdx_titlecase

@@ -10,12 +10,16 @@ PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 LOCALE = 'C'
-MD_EXTENSIONS = [
-    'codehilite',
-    'extra',
-    'mdx_video',
-    'mdx_titlecase',
-]
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'mdx_video': {},
+        'mdx_titlecase': {},
+    },
+    'output_format': 'html5',
+}
 TYPOGRIFY = True
 
 # Do not publish articles set in the future
