@@ -31,6 +31,8 @@ here is a glorious list of meta falsehoods:
 1. Falsehood lists are terse.
 1. Falsehood lists are illustrated with counter-examples.
 1. Falsehood lists follow the same format.
+1. Falsehood lists are sorted.
+1. Falsehoods in lists are numbered.
 
 ## Implementation
 
