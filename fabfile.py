@@ -37,9 +37,8 @@ def build():
     local('pelican -s pelicanconf.py')
 
 def rebuild():
-    """`clean` then `build`"""
-    clean()
-    build()
+    """`build` with the delete switch"""
+    local('pelican -d -s pelicanconf.py')
 
 def regenerate():
     """Automatically regenerate site upon file modification"""
@@ -90,5 +89,4 @@ def publish():
 def gh_pages():
     """Publish to GitHub Pages"""
     rebuild()
-    local("ghp-import -b {github_pages_branch} {deploy_path}".format(**env))
-    local("git push origin {github_pages_branch}".format(**env))
+    local("ghp-import -b {github_pages_branch} {deploy_path} -p".format(**env))
