@@ -43,6 +43,7 @@ here is a glorious list of meta falsehoods:
 
 ## Audience
 
+1. Falsehoods are widely shared by their belivers.
 1. Falsehood lists are for programmers.
 1. Falsehood lists are written by programmers.
 1. Falsehood lists are written by people with expertise in the matter.
