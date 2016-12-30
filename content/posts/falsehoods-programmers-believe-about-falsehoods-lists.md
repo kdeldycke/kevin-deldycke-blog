@@ -57,7 +57,7 @@ falsehoods](https://twitter.com/benjiweber/status/785422755843956736).
 1. There are programmers who do not believe in any falsehood.
 1. Only programmers are subjected to falsehoods.
 1. Programmers can change their beliefs.
-1. Discussing falsehoods is not a waste of time.
+1. Discussing falsehoods is never a waste of time.
 
 ## Meta
 
