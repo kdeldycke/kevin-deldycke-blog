@@ -117,6 +117,7 @@ EXTRA_PATH_METADATA = {
 
 PLUGIN_PATHS = ['plugins-core']
 PLUGINS = [
+    'deadlinks',
     'related_posts',
     # 'thumbnailer',
     'tipue_search',
@@ -126,6 +127,8 @@ PLUGINS = [
 
 
 ### Plugin-specific settings
+
+DEADLINK_VALIDATION = True
 
 RELATED_POSTS_MAX = 3
 
