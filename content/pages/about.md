@@ -49,6 +49,8 @@ in](https://github.com/kdeldycke/awesome-falsehood).
 World](https://www.youtube.com/watch?v=-sfFKZ2PvlE).
 - Led dozen of peoples in a [viral dance at a music
 festival](http://kevin.deldycke.com/2013/09/vieilles-charrues/).
+- Have been [mentionned by Patrick McKenzie (a.k.a.
+`patio11`)](https://twitter.com/patio11/status/813894523772207104).
 - Have been [mentionned along Bruce
 Schneier](https://twitter.com/kdeldycke/status/792066994640150528) once (shady
 claim, but still).
