@@ -5,9 +5,17 @@ category: English
 tags: scrypt, CPU, Linux, BFGMiner, crypto-currency, Bitcoin, Litecoin, Kubuntu 13.04
 ---
 
-I wanted to try [mining](https://en.wikipedia.org/wiki/Bitcoin_miners#Bitcoin_mining) on my Kubuntu 13.04. Not to get rich, but simply to verify that the production of [crypto-currencies](https://en.wikipedia.org/wiki/Cryptocurrency) really was decentralized, and also to learn how-to mine.
+I wanted to try
+[mining](https://en.wikipedia.org/wiki/Bitcoin_miners#Bitcoin_mining) on my
+Kubuntu 13.04. Not to get rich, but simply to verify that the production of
+[crypto-currencies](https://en.wikipedia.org/wiki/Cryptocurrency) really was
+decentralized, and also to learn how-to mine.
 
-I first tried mining [Bitcoin](http://bitcoin.org) with [BFGMiner](http://bfgminer.org). I choose the later over [cgminer](https://github.com/ckolivas/cgminer) because that's the only one I found to be readily [available from an Ubuntu PPA](https://launchpad.net/~unit3/+archive/bfgminer):
+I first tried mining [Bitcoin](http://bitcoin.org) with
+[BFGMiner](http://bfgminer.org). I choose the later over
+[cgminer](https://github.com/ckolivas/cgminer) because that's the only one I
+found to be readily [available from an Ubuntu
+PPA](https://launchpad.net/~unit3/+archive/bfgminer):
 
     :::bash
     $ sudo tee -a /etc/apt/sources.list <<-EOF
@@ -16,7 +24,10 @@ I first tried mining [Bitcoin](http://bitcoin.org) with [BFGMiner](http://bfgmin
       EOF
     $ sudo aptitude install bfgminer
 
-Unfortunately the version was not up to date, and was not compiled for mining [scrypt](https://en.wikipedia.org/wiki/Scrypt)-based coins like [Litecoin](https://litecoin.org/). Here is how I built BFGMiner with this support.
+Unfortunately the version was not up to date, and was not compiled for mining
+[scrypt](https://en.wikipedia.org/wiki/Scrypt)-based coins like
+[Litecoin](https://litecoin.org). Here is how I built BFGMiner with this
+support.
 
 Install the dependencies:
 

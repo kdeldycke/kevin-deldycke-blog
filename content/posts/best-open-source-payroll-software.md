@@ -41,8 +41,8 @@ distinction after so many pain trying to transform laws into code that I
 couldn't resist... :)
 
 The payroll modules were one of my biggest [contribution as a core developer on
-ERP5](https://www.ohloh.net/p/erp5/contributors/18391049963153). It was capable
-of [producing the
+ERP5](https://www.openhub.net/p/erp5/contributors/18391049963153). It was
+capable of [producing the
 paysheets](http://web.archive.org/web/20110128111823/http://www.erp5.org/workspaces/project/erp5_payroll/erp5_pay_sheet_for_n/view)
 of all Nexedi's employees. Here is an example:
 
@@ -73,7 +73,7 @@ This document had enough influence to be cited in four academic papers from
   Systems](http://behdasht.gov.ir/uploads/101_195_baresiye%20ERP%20haye%20matn%20baz.pdf)
 
   * [Comparatif ERP5 /
-  COMPIERE](http://wiki.itin.fr/index.php/Comparatif_ERP5_/_COMPIERE_MT09_FR)
+  COMPIERE](https://web.archive.org/web/20101010002846/http://wiki.itin.fr/index.php/Comparatif_ERP5_/_COMPIERE_MT09_FR)
 
 The irony is that after leaving the open-source ERP world in 2007, I was
 recruited by Smile in 2011, the very same company which produced the original

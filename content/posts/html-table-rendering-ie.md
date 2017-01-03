@@ -31,6 +31,6 @@ And you know how I fixed this? I fearlessly added the following piece of JavaScr
         return this.nodeType == 3;
     }).remove();
 
-The code above just strips all extra spaces from tables it find. You can [see this hack in action](https://github.com/Smile-SA/smile_openerp_matrix_widget/commit/c9646dd344e6bc05d5b9f8d33bd3cd6116e1c0f3) in my [matrix widget for OpenERP 6.0](http://kevin.deldycke.com/2012/08/announcing-openerp-matrix-widget/).
+The code above just strips all extra spaces from tables it find. You can [see this hack in action](https://github.com/kdeldycke/smile_openerp_matrix_widget/commit/c9646dd344e6bc05d5b9f8d33bd3cd6116e1c0f3) in my [matrix widget for OpenERP 6.0](http://kevin.deldycke.com/2012/08/announcing-openerp-matrix-widget/).
 
 This is ugly, but makes my customer happy. Life is full of contradictions. And that's normal.

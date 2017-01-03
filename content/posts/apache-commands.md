@@ -61,7 +61,13 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
         SetEnvIf Request_Method "OPTIONS" CLIENT_PROBE
         Header set Allow "GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE" env=CLIENT_PROBE
 
-  * At work, we had to engineer a convoluted software architecture for our intranet to fit the network security policy of our customer. This had a bad side effect of letting the [web statistic collector](http://www.nedstat.com) delete all cookies but its own, thus breaking intranet's authentication. So we (thanks Matthieu!) came up with this unmaintainable hack on Apache side to hide our intranet's cookies to NedStat's Javascript embedded code:
+  * At work, we had to engineer a convoluted software architecture for our
+  intranet to fit the network security policy of our customer. This had a bad
+  side effect of letting the [web statistic
+  collector](https://web.archive.org/web/20111008000404/http://www.nedstat.com)
+  delete all cookies but its own, thus breaking intranet's authentication. So
+  we (thanks Matthieu!) came up with this unmaintainable hack on Apache side to
+  hide our intranet's cookies to NedStat's Javascript embedded code:
 
         :::apache
         <LocationMatch "/(.*)">

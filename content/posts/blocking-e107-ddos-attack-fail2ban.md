@@ -5,15 +5,34 @@ category: English
 tags: Apache, Cool Cavemen, e107, fail2ban, Linux, PHP, security, Server, Web, Regular expression
 ---
 
-Last month, a new security vulnerability was discovered in e107. If [a fix was released quickly](http://e107.org/comment.php?comment.news.867), some instances on the web were left unpatched. These sites are easy target for <strike>hackers</strike> script-kiddies, and [a generalized dDOS attack was carry out](http://e107.org/comment.php?comment.news.868) on every e107 websites out there.
+Last month, a new security vulnerability was discovered in e107. If [a fix was
+released quickly](http://e107.org/comment.php?comment.news.867), some instances
+on the web were left unpatched. These sites are easy target for
+<strike>hackers</strike> script-kiddies, and [a generalized dDOS attack was
+carry out](http://e107.org/comment.php?comment.news.868) on every e107 websites
+out there.
 
-I'm no exception and the old and decrepit part of Cool Cavemen's website [still running on e107](http://coolcavemen.com/e107_plugins/forum/forum_viewforum.php?3) was attacked. This was enough to crash my tiny server. Unfortunately this [happened while I was on holidays](http://twitter.com/kdeldycke/status/17728248113). Without any time to address this issue properly, I decided to shutdown my web server. This explain why this blog and all Cool Cavemen's websites were dead during half of july.
+I'm no exception and the old and decrepit part of Cool Cavemen's website [still
+running on
+e107](https://web.archive.org/web/20110418072200/http://coolcavemen.com/e107_plugins/forum/forum_viewforum.php?3)
+was attacked. This was enough to crash my tiny server. Unfortunately this
+[happened while I was on
+holidays](http://twitter.com/kdeldycke/status/17728248113). Without any time to
+address this issue properly, I decided to shutdown my web server. This explain
+why this blog and all Cool Cavemen's websites were dead during half of july.
 
 ![](/uploads/2010/munin-fail2ban-jails-weekly-stats.png)
 
-Now [everything is back to normal](http://twitter.com/kdeldycke/status/19250530728) (I hope), thanks to [`fail2ban`](http://www.fail2ban.org). I created a set of rules ([based on this article](http://eromang.zataz.com/2010/07/13/byroenet-casper-bot-search-e107-rce-scanner/)) to dynamically catch [dDOS](http://en.wikipedia.org/wiki/Denial-of-service_attack) attempts and ban all IP addresses involved. Here is how I configured `fail2ban`...
+Now [everything is back to
+normal](http://twitter.com/kdeldycke/status/19250530728) (I hope), thanks to
+[`fail2ban`](http://www.fail2ban.org). I created a set of rules ([based on this
+article](http://eromang.zataz.com/2010/07/13/byroenet-casper-bot-search-e107-rce-scanner/))
+to dynamically catch
+[dDOS](http://en.wikipedia.org/wiki/Denial-of-service_attack) attempts and ban
+all IP addresses involved. Here is how I configured `fail2ban`...
 
-First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf` and put the following directives there:
+First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf`
+and put the following directives there:
 
     :::ini
     # Fail2Ban configuration file
@@ -29,7 +48,8 @@ First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf` 
                 <HOST>\s-\s-\s.*perl post
     ignoreregex =
 
-Then update you fail2ban config file (`/etc/fail2ban/jail.local` in my case) with the appropriate section:
+Then update you fail2ban config file (`/etc/fail2ban/jail.local` in my case)
+with the appropriate section:
 
     :::ini
     [apache-e107ddos]
@@ -58,4 +78,3 @@ And you'll start to get those nice logs:
     2010-06-23 16:06:44,227 fail2ban.actions: WARNING [apache-e107ddos] 69.41.162.10 already banned
     2010-06-23 16:06:54,238 fail2ban.actions: WARNING [apache-e107ddos] 69.73.147.90 already banned
     2010-06-23 16:07:50,305 fail2ban.actions: WARNING [apache-e107ddos] Ban 80.55.107.74
-

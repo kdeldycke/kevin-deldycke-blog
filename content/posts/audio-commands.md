@@ -80,7 +80,7 @@ tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool
 
         :::bash
         $ play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +20
-        
+
   * Set album tag on all MP3 files found:
 
         :::bash
@@ -89,5 +89,5 @@ tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool
 Other related ressources:
 
   * [Sox examples](http://linuxcommand.org/man_pages/soxexam1.html)
-  * [Audio Processing Pipelines](http://linuxgazette.net/issue73/chung.html)
-
+  * [Audio Processing
+  Pipelines](https://web.archive.org/web/20140325123348/http://linuxgazette.net/issue73/chung.html)
