@@ -135,3 +135,8 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
 
         :::bash
         $ find . -name "MANIFEST.in" -exec bash -c 'grep --silent "string" "{}" && echo $(dirname "{}")' \;
+
+  * Search for upper-cased strings with underscore in all files:
+
+        :::bash
+        $ grep --only-matching --no-filename -RIe '[A-Z_]\{4,\}' . | sort | uniq
