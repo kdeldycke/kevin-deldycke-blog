@@ -2,7 +2,7 @@
 date: 2009-12-01 06:40:59
 title: 2 bons de 50€ offerts pour Google AdWords
 category: Français
-tags: AdWords, Google,, bon de reduction, Google, pub, publicite, voucher, Web
+tags: AdWords, Google, bon de reduction, pub, voucher, Web
 ---
 
 ![google-adwords-50-euros-voucher](/uploads/2009/google-adwords-50-euros-voucher.jpg)
