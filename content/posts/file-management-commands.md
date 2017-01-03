@@ -2,7 +2,7 @@
 date: 2006-10-18 00:15:16
 title: File Management commands
 category: English
-tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox
+tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox, git
 ---
 
   * Create several folder with a similar pattern:
@@ -136,7 +136,7 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ find . -name "MANIFEST.in" -exec bash -c 'grep --silent "string" "{}" && echo $(dirname "{}")' \;
 
-  * Search for upper-cased strings with underscore of a minimanl length of 4 in all files:
+  * Search for 4+ characters long upper-cased strings with underscore, in all files but the `README.md`, `LICENSE` and Git metadata:
 
         :::bash
-        $ grep --only-matching --no-filename -RIe '[A-Z_]\{4,\}' . | sort | uniq
+        $ grep --only-matching --no-filename --exclude=./{README.md,LICENSE,.git\*} -RIe '[A-Z_]\{4,\}' . | sort | uniq
