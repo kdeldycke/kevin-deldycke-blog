@@ -19,6 +19,10 @@ MARKDOWN = {
         'mdx_titlecase': {},
     },
     'output_format': 'html5',
+    # Allow numbered lists to not start with 1. Used in following article:
+    # http://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/
+    # See: https://pythonhosted.org/Markdown/reference.html#lazy_ol
+    'lazy_ol': False,
 }
 TYPOGRIFY = True
 

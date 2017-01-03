@@ -13,53 +13,53 @@ here is a glorious list of meta falsehoods:
 ## Falsehoods
 
 1. Falsehoods are true.
-1. Falsehoods are false.
-1. Falsehoods are universal.
-1. Falsehoods do not change with time.
-1. There's only one way to express a falsehood.
-1. No falsehoods overlap another.
-1. There are no falsehoods which are mutually exclusive.
-1. A falsehood correspond to a real-world usage.
+2. Falsehoods are false.
+3. Falsehoods are universal.
+4. Falsehoods do not change with time.
+5. There's only one way to express a falsehood.
+6. No falsehoods overlap another.
+7. There are no falsehoods which are mutually exclusive.
+8. A falsehood correspond to a real-world usage.
 
 ## Falsehood lists
 
-1. All falsehoods can be listed.
-1. Falsehood lists are a new trend.
-1. Falsehood lists are regularly updated.
-1. There exists a falsehoods list that is entirely true.
-1. Falsehood lists covers one subject.
-1. Falsehood lists are terse.
-1. Falsehood lists are illustrated with counter-examples.
-1. Falsehood lists follow the same format.
-1. Falsehood lists are sorted.
-1. Falsehoods in lists are numbered.
+9. All falsehoods can be listed.
+10. Falsehood lists are a new trend.
+11. Falsehood lists are regularly updated.
+12. There exists a falsehoods list that is entirely true.
+13. Falsehood lists covers one subject.
+14. Falsehood lists are terse.
+15. Falsehood lists are illustrated with counter-examples.
+16. Falsehood lists follow the same format.
+17. Falsehood lists are sorted.
+18. Falsehoods in lists are numbered.
 
 ## Implementation
 
-1. Every falsehood should be accounted for.
-1. Every falsehood can be accounted for.
-1. Making your code compatible with a falsehood doesn't come with a price.
-1. Falsehoods are addressed by standards.
+19. Every falsehood should be accounted for.
+20. Every falsehood can be accounted for.
+21. Making your code compatible with a falsehood doesn't come with a price.
+22. Falsehoods are addressed by standards.
 
 ## Audience
 
-1. Only widely believed falsehoods are listed.
-1. Falsehood lists are for programmers.
-1. Falsehood lists are written by programmers.
-1. Falsehood lists are written by people with expertise in the matter.
-1. Reading falsehoods lists make you a better programmer.
-1. Reading falsehoods lists make you an expert.
-1. Writing falsehoods lists make you a better programmer.
-1. Writing falsehoods lists make you an expert.
-1. Writer of falsehood lists are [immune to their edicted
+23. Only widely believed falsehoods are listed.
+24. Falsehood lists are for programmers.
+25. Falsehood lists are written by programmers.
+26. Falsehood lists are written by people with expertise in the matter.
+27. Reading falsehoods lists make you a better programmer.
+28. Reading falsehoods lists make you an expert.
+29. Writing falsehoods lists make you a better programmer.
+30. Writing falsehoods lists make you an expert.
+31. Writer of falsehood lists are [immune to their edicted
 falsehoods](https://twitter.com/benjiweber/status/785422755843956736).
-1. Compiling falsehoods lists make you a better programmer.
-1. There are programmers who do not believe in any falsehood.
-1. Only programmers are subjected to falsehoods.
-1. Programmers can change their beliefs.
-1. Discussing falsehoods is never a waste of time.
+32. Compiling falsehoods lists make you a better programmer.
+33. There are programmers who do not believe in any falsehood.
+34. Only programmers are subjected to falsehoods.
+35. Programmers can change their beliefs.
+36. Discussing falsehoods is never a waste of time.
 
 ## Meta
 
-1. This list of falsehoods doesn't apply to itself.
-1. This list exists.
+37. This list of falsehoods doesn't apply to itself.
+38. This list exists.
