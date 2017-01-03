@@ -17,7 +17,7 @@ offre aux deux premières personnes qui laissent un commentaire sous ce post.
 D'après la brochure, ces bons ne sont utilisables que si les conditions
 suivantes sont réunies:
 
-1. le [compte AdWords](http://www.google.fr/AdWord) à été créé il y a moins de
+1. le [compte AdWords](https://adwords.google.com) à été créé il y a moins de
 14 jours,
 2. l'adresse de facturation associée au compte est localisée en France,
 3. le bon d'achat est utilisé avant le 31 décembre 2009.

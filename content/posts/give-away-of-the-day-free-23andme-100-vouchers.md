@@ -10,7 +10,7 @@ tags: 23andMe, coupon, discount, DNA, genetics, voucher
 I ordered a [23andMe](https://www.23andme.com) v1 kit (_[Time's invention of
 the year 2008](http://www.time.com/time/specials/packages/article/0,28804,1852747_1854493,00.html)_)
 in early march. The [version 2 of the "personal genetic
-kit"](http://23andme.com/howitworks/) was [released some months
+kit"](https://www.23andme.com/en-int/howitworks/) was [released some months
 ago](http://blog.wired.com/wiredscience/2008/09/23andme-cuts-it.html).
 
 As a late v1 customer, they offered me a free v2 upgrade. Even if I had to pay

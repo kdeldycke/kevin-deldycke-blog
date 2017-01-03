@@ -8,7 +8,7 @@ tags: AdWords, Google, bon de reduction, France, Google, voucher, Web
 ![](/uploads/2010/google-ad-words-75-euros-coupon.jpg)
 
 On dirait que Google cherche à promouvoir agressivement en France
-[AdWords](http://www.google.fr/AdWord), son service de régie publicitaire en
+[AdWords](https://adwords.google.com), son service de régie publicitaire en
 ligne. Après avoir eu entre les mains plusieurs bons de réductions ([100
 euros](http://twitter.com/kdeldycke/status/3169290268) et [50
 euros](http://kevin.deldycke.com/2009/12/deux-bons-50-euros-offerts-google-adwords/))
