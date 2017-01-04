@@ -31,7 +31,7 @@ WITH_FUTURE_DATES = False
 
 # Force Pelican to use the file name as the slug, instead of derivating it from
 # the title.
-FILENAME_METADATA = '(?P<slug>.*)'
+SLUGIFY_SOURCE = 'basename'
 
 # Force the same URL structure as WordPress
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
