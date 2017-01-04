@@ -72,6 +72,7 @@ AUTHORS_SAVE_AS = False
 
 # Deactivate localization
 ARTICLE_LANG_SAVE_AS = None
+DRAFT_LANG_SAVE_AS = None
 PAGE_LANG_SAVE_AS = None
 
 FEED_RSS = 'feed/index.html'
