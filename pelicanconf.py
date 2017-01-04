@@ -196,8 +196,9 @@ LINKS = (
 )
 
 COPYRIGHT = """Unless contrary mentioned, the content of this site is published
-under a <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative
-Commons Attribution-NonCommercial-ShareAlike 4.0 International license</a>."""
+under a <a rel='license'
+href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International license</a>."""
 
 DISQUS_SITENAME = 'kevin-deldycke-blog'
 
