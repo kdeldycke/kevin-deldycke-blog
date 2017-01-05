@@ -103,7 +103,7 @@ Then we have to create an Nginx configuration file dedicated to Mailman. Assumin
 
     server {
       server_name *.lists.example.com .lists.example.org .lists.example.net;
-      rewrite ^ https://lists.example.com$request_uri? permanent;
+      rewrite ^ http://lists.example.com$request_uri? permanent;
     }
 
 The configuration above is a mix between [the one available on Nginx wiki](https://wiki.nginx.org/Mailman) and the `/usr/share/doc/fcgiwrap/examples/nginx.conf` example file that come with the Debian package.
@@ -115,7 +115,7 @@ All we have to do now is to activate the configuration above and restart our CGI
     $ /etc/init.d/fcgiwrap restart
     $ /etc/init.d/nginx restart
 
-If everything's OK, going to `https://lists.example.com` will show you this:
+If everything's OK, going to `http://lists.example.com` will show you this:
 
 ![](/uploads/2011/mailman-default-welcome-screen.png)
 
@@ -132,9 +132,9 @@ First, we have to update `/etc/mailman/mm_cfg.py` (the global Mailman configurat
      #-------------------------------------------------------------
      # If you change these, you have to configure your http server
      # accordingly (Alias and ScriptAlias directives in most httpds)
-    -DEFAULT_URL_PATTERN = 'https://%s/cgi-bin/mailman/'
+    -DEFAULT_URL_PATTERN = 'http://%s/cgi-bin/mailman/'
     -PRIVATE_ARCHIVE_URL = '/cgi-bin/mailman/private'
-    +DEFAULT_URL_PATTERN = 'https://%s/mailman/'
+    +DEFAULT_URL_PATTERN = 'http://%s/mailman/'
     +PRIVATE_ARCHIVE_URL = '/mailman/private'
      IMAGE_LOGOS         = '/images/mailman/'
 

@@ -114,10 +114,13 @@ Let's say my Wordpress blog is installed in `/var/www/my_wordpress`. To let it b
     server {
       listen 80 default_server;
       server_name .example.com .example.org .example.net;
-      rewrite ^ https://blog.example.com$request_uri? permanent;
+      rewrite ^ http://blog.example.com$request_uri? permanent;
     }
 
-In the configuration above, you can see that I want my blog to be served at `https://blog.example.com`. I also added some domain redirections in the form of a second `server` section, and a way to better display my static file repository by letting Nginx generate index pages.
+In the configuration above, you can see that I want my blog to be served at
+`http://blog.example.com`. I also added some domain redirections in the form of
+a second `server` section, and a way to better display my static file
+repository by letting Nginx generate index pages.
 
 Then don't forget to activate this site:
 

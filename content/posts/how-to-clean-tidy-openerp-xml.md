@@ -26,7 +26,7 @@ Create an empty XSLT file named `tidy.xslt` and copy the following content in it
 
     :::xslt
     <?xml version="1.0"?>
-    <xsl:stylesheet version="1.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform">
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
       <!-- Produce an exact copy of the original XML content -->
       <xsl:template match="@*|node()">

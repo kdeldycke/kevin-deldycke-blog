@@ -118,7 +118,7 @@ Zope server:
     ------
     2009-07-20T20:42:59 INFO Zope Ready to handle requests
 
-Then you can fire up Safari, go to `https://localhost:8080/manage` (default
+Then you can fire up Safari, go to `http://localhost:8080/manage` (default
 Zope config), and login as the `admin` user (password: `admin`):
 
 ![safari-zope-login](/uploads/2009/safari-zope-login.png)

@@ -46,8 +46,8 @@ Let's get back to our Munin monitoring setup. I can restart now Nginx and check 
 
     :::bash
     $ /etc/init.d/nginx reload
-    $ wget https://localhost/apc_info.php
-    $ wget https://localhost/nginx_status
+    $ wget http://localhost/apc_info.php
+    $ wget http://localhost/nginx_status
 
 The last step is to install and configure the Munin plugin:
 
@@ -63,7 +63,7 @@ The last step is to install and configure the Munin plugin:
     $ ln -s /usr/share/munin/plugins/php_apc_ /etc/munin/plugins/php_apc_rates
     $ echo "[php_apc_*]
     user root
-    env.url https://localhost/apc_info.php?auto
+    env.url http://localhost/apc_info.php?auto
     " > /etc/munin/plugin-conf.d/php_apc
     $ /etc/init.d/munin-node restart
 

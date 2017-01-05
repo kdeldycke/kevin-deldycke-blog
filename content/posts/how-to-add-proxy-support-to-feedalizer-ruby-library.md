@@ -18,7 +18,7 @@ through a HTTP proxy:
     HTTP_PROXY_PORT = 8080
 
     # Calculate proxy URL
-    HTTP_PROXY_URL = "https://#{HTTP_PROXY_HOST}:#{HTTP_PROXY_PORT}"
+    HTTP_PROXY_URL = "http://#{HTTP_PROXY_HOST}:#{HTTP_PROXY_PORT}"
 
     # Monkey patch feedalizer to support page grabbing through a proxy
     require 'feedalizer'

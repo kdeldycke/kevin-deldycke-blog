@@ -51,7 +51,7 @@ And create a new site:
     > What will be the title of this web site? Kevin Deldycke
     > Who will be the author of this web site? Kevin Deldycke
     > What will be the default language of this web site? [en]
-    > Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) Y
+    > Do you want to specify a URL prefix? e.g., http://example.com   (Y/n) Y
     > What is your URL prefix? (see above example; no trailing slash) https://kevin.deldycke.com
     > Do you want to enable article pagination? (Y/n) n
     > Do you want to generate a Makefile to easily manage your website? (Y/n) Y

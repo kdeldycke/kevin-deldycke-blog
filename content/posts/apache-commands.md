@@ -39,7 +39,7 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
           ServerAlias *.example.com
           ServerAlias example.net *.example.net
           ServerAlias example.org *.example.org
-          RedirectMatch permanent (.*) https://example.com$1
+          RedirectMatch permanent (.*) http://example.com$1
         </VirtualHost>
 
   * Insert dynamic headers in HTTP responses depending on the browser:

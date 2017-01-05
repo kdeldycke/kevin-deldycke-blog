@@ -62,5 +62,5 @@ old URLs to the new domain, with apache directives similar to this one:
     :::apache
     <VirtualHost *:80>
       ServerName qpx.lich-ti.fr
-      RedirectMatch permanent (.*) https://qpx.coolcavemen.com$1
+      RedirectMatch permanent (.*) http://qpx.coolcavemen.com$1
     </VirtualHost>
