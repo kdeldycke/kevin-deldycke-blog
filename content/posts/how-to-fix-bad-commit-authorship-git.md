@@ -35,7 +35,7 @@ The commit I want to change is the latest in history, so I'll use the `--amend` 
     :::bash
     $ git commit --amend --author 'Kevin Deldycke <kevin@deldycke.com>'
 
-After this, here is how the local branches looks like in [gitg](http://trac.novowork.com/gitg/):
+After this, here is how the local branches looks like in [gitg](https://trac.novowork.com/gitg/):
 
 ![](/uploads/2010/amended-git-commit-in-gitg.png)
 
@@ -71,7 +71,7 @@ But this doesn't work and throw the following error:
      ! [rejected]        master -> master (non-fast forward)
     error: failed to push some refs to 'git@github.com:kdeldycke/kev-code.git'
 
-This is Git protection mechanism in action. Modifying already-published commits like this is [a bad idea](http://stackoverflow.com/questions/253055/how-do-i-push-amended-commit-to-the-remote-git-repo). It can break updates of other developers' repository (if they already have pulled the commit we're trying to change).
+This is Git protection mechanism in action. Modifying already-published commits like this is [a bad idea](https://stackoverflow.com/questions/253055/how-do-i-push-amended-commit-to-the-remote-git-repo). It can break updates of other developers' repository (if they already have pulled the commit we're trying to change).
 
 In our case we will force the remote repository to take our changes:
 

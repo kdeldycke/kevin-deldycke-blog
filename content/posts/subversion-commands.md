@@ -56,7 +56,7 @@ tags: ack, CLI, find, grep, Linux, sed, shell, Subversion, Regular expression
         :::bash
         $ grep -Ii "string to search" $(find . | grep -v .svn)
 
-  Other alternative: use [ack](http://petdance.com/ack/).
+  Other alternative: use [ack](https://petdance.com/ack/).
 
   * Use `sed` to replace text in all files except in subversion metadatas:
 

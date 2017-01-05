@@ -5,9 +5,9 @@ category: English
 tags: autogallery, e107, Linux, migration, MySQL, SQL, Python, Script, Web, Zenphoto, Cool Cavemen
 ---
 
-These past few days I was working on the [Cool Cavemen's photo gallery](http://coolcavemen.com/photos) to move it to a shiny new one, powered by [Zenphoto](http://zenphoto.org). In this post I will roughly describe how I've done it, code and commands included.
+These past few days I was working on the [Cool Cavemen's photo gallery](https://coolcavemen.com/photos) to move it to a shiny new one, powered by [Zenphoto](https://zenphoto.org). In this post I will roughly describe how I've done it, code and commands included.
 
-The old gallery was based on [autogallery](http://sourceforge.net/projects/e107autogallery), a [e107](http://e107.org) plugin. We assume here that both e107 and Zenphoto are well configured and installed at the root of you web hosting space (`/www` in this case).
+The old gallery was based on [autogallery](https://sourceforge.net/projects/e107autogallery), a [e107](https://e107.org) plugin. We assume here that both e107 and Zenphoto are well configured and installed at the root of you web hosting space (`/www` in this case).
 
 The first step is to copy the autogallery album structure, with all its content, to Zenphoto:
 

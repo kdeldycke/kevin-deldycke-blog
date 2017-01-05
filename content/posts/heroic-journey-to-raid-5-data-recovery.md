@@ -5,7 +5,7 @@ category: English
 tags: array, Backup, disk, drive, Hardware, HDD, Linux, mdadm, monitoring, RAID, Server, system, UPS
 ---
 
-Last week there was a power grid failure which break down my server's RAID array. I have no [UPS](http://en.wikipedia.org/wiki/Uninterruptible_power_supply) (as I'm a skinflint) and no automatic email alerts (because I'm too lazy to set it up). As a result, for 5 days, my 3-disk [RAID-5 array](http://en.wikipedia.org/wiki/RAID_5) was relying on only 2 disks until I noticed the issue...
+Last week there was a power grid failure which break down my server's RAID array. I have no [UPS](https://en.wikipedia.org/wiki/Uninterruptible_power_supply) (as I'm a skinflint) and no automatic email alerts (because I'm too lazy to set it up). As a result, for 5 days, my 3-disk [RAID-5 array](https://en.wikipedia.org/wiki/RAID_5) was relying on only 2 disks until I noticed the issue...
 
 By using a combination of following commands, I was soon aware of the gravity of the situation:
 
@@ -25,7 +25,7 @@ The next day I tried to boot my server to find it (surprise!) stuck in the middl
     :::text
     hit control-D to continue or give root password to fix manually
 
-This is "normal" as my server tried to mount the [ext3 filesystem](http://en.wikipedia.org/wiki/Ext3) from the `/dev/md0` partition that was just assembled by `mdadm`. Of course `md0`, if assembled and available to the system, was not running because only one disk, out of three, was in a clean state.
+This is "normal" as my server tried to mount the [ext3 filesystem](https://en.wikipedia.org/wiki/Ext3) from the `/dev/md0` partition that was just assembled by `mdadm`. Of course `md0`, if assembled and available to the system, was not running because only one disk, out of three, was in a clean state.
 
 I skip here the epic substory in which I wasted days in a search of a working keyboard, but I let you imagine how such adventures makes my week...
 
@@ -36,7 +36,7 @@ Eventually, I was able to analyze the situation in details. My first reflex? Che
     $ fdisk -l /dev/sdb
     $ fdisk -l /dev/sdc
 
-"Linux raid partitions" (type code "`fd`") are still there. Good. I assumed here that disks where not physically damaged. Maybe I should have looked at [S.M.A.R.T.](http://en.wikipedia.org/wiki/Self-Monitoring,_Analysis,_and_Reporting_Technology) datas and statistics (via [smartmontools](http://smartmontools.sourceforge.net)). But remember, I'm lazy (and a bit crazy).
+"Linux raid partitions" (type code "`fd`") are still there. Good. I assumed here that disks where not physically damaged. Maybe I should have looked at [S.M.A.R.T.](https://en.wikipedia.org/wiki/Self-Monitoring,_Analysis,_and_Reporting_Technology) datas and statistics (via [smartmontools](https://smartmontools.sourceforge.net)). But remember, I'm lazy (and a bit crazy).
 
 The next step was to get informations about the RAID array itself using:
 
@@ -104,14 +104,14 @@ I mounted the `md0` partition and cleaned it up:
     $ fsck.ext3 -v /dev/md0
     $ mount /dev/md0
 
-I updated my [mdadm](http://neil.brown.name/blog/mdadm) configuration before rebooting my server:
+I updated my [mdadm](https://neil.brown.name/blog/mdadm) configuration before rebooting my server:
 
     :::bash
     $ mdadm --detail --scan >> /etc/mdadm/mdadm.conf
     $ vi /etc/mdadm/mdadm.conf
     $ reboot
 
-But history repeat itself, and again, the system hang up during boot. Except this time I knew what was happening: the boot process detected the remaining `sdb1` device as part of the old array (the one before the regeneration I did above) and tried to run it. [Remembering my last year post](http://kevin.deldycke.com/2007/03/how-to-recover-a-raid-array-after-having-zero-ized-superblocks/), I zero-ized the superblock of `sdb1`:
+But history repeat itself, and again, the system hang up during boot. Except this time I knew what was happening: the boot process detected the remaining `sdb1` device as part of the old array (the one before the regeneration I did above) and tried to run it. [Remembering my last year post](https://kevin.deldycke.com/2007/03/how-to-recover-a-raid-array-after-having-zero-ized-superblocks/), I zero-ized the superblock of `sdb1`:
 
     :::bash
     $ mdadm -S /dev/md0

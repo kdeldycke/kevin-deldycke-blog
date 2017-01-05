@@ -5,15 +5,15 @@ category: English
 tags: Amazon S3, AWS, Backup, cloud-computing, cron, Debian, duplicity, Linux, MySQL, SQL, shell, Debian Squeeze, storage
 ---
 
-For years I was backing up my server with [`website-backup.py`](http://github.com/kdeldycke/scripts/blob/master/website-backup.py), a custom script I wrote to manage data mirroring, do incremental backups and monthly snapshots based on [`rdiff-backup`](http://www.nongnu.org/rdiff-backup/), `rsync`, `tar` and `bzip2`. All these data were pushed to a storage server hosted at home.
+For years I was backing up my server with [`website-backup.py`](https://github.com/kdeldycke/scripts/blob/master/website-backup.py), a custom script I wrote to manage data mirroring, do incremental backups and monthly snapshots based on [`rdiff-backup`](https://www.nongnu.org/rdiff-backup/), `rsync`, `tar` and `bzip2`. All these data were pushed to a storage server hosted at home.
 
-I've just replaced my script with [duplicity](http://duplicity.nongnu.org), a tool written by the same author of `rdiff-backup`. And [Amazon S3 cloud storage](http://aws.amazon.com/s3/) replaced my home server. Here is how I did it.
+I've just replaced my script with [duplicity](https://duplicity.nongnu.org), a tool written by the same author of `rdiff-backup`. And [Amazon S3 cloud storage](https://aws.amazon.com/s3/) replaced my home server. Here is how I did it.
 
-First, we need to create an account on [Amazon AWS](http://aws.amazon.com). This is easy and fast. My account was activated in minutes.
+First, we need to create an account on [Amazon AWS](https://aws.amazon.com). This is easy and fast. My account was activated in minutes.
 
 Now that you have access to Amazon's cloud, let's create a bucket on S3. I used the reversed domain name of the server, which give me a bucket name like `com.example.server.backup`. With this naming scheme, I can identify the purpose of the bucket by its label only.
 
-Duplicity can use the [cheaper RRS storage](http://aws.amazon.com/about-aws/whats-new/2010/05/19/announcing-amazon-s3-reduced-redundancy-storage/), but you need at least version 0.6.09. Having a Debian Squeeze, the only way to get a recent version is to install it from the backports:
+Duplicity can use the [cheaper RRS storage](https://aws.amazon.com/about-aws/whats-new/2010/05/19/announcing-amazon-s3-reduced-redundancy-storage/), but you need at least version 0.6.09. Having a Debian Squeeze, the only way to get a recent version is to install it from the backports:
 
     :::bash
     $ apt-get -t squeeze-backports install duplicity python-boto
@@ -36,9 +36,9 @@ Now update the script below with the GPG key passphrase and your AWS credentials
     export AWS_ACCESS_KEY_ID=XXXXXXXXXX
     export AWS_SECRET_ACCESS_KEY=XXXXXXXXXX
 
-    # ~/.cache/duplicity/ should be excluded, as explained in http://comments.gmane.org/gmane.comp.sysutils.backup.duplicity.general/4449
+    # ~/.cache/duplicity/ should be excluded, as explained in https://comments.gmane.org/gmane.comp.sysutils.backup.duplicity.general/4449
     PARAMS='--exclude-device-files --exclude-other-filesystems --exclude **/.cache/** --exclude **/.thumbnails/** --exclude /mnt/ --exclude /tmp/ --exclude /dev/ --exclude /sys/ --exclude /proc/ --exclude /media/ --exclude /var/run/ --volsize 10 --s3-use-rrs --asynchronous-upload -vinfo'
-    DEST='s3+http://com.example.server.backup'
+    DEST='s3+https://com.example.server.backup'
 
     # Export MySQL databases
     mysqldump --user=root --opt --all-databases > /home/kevin/mysql-backup.sql

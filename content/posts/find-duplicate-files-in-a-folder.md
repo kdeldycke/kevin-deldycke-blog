@@ -5,4 +5,4 @@ category: English
 tags: CLI, Linux, Python
 ---
 
-[Here is a simple script](http://github.com/kdeldycke/scripts/blob/master/findDuplicates.py) I created today that use `md5sum` to track duplicate files in a folder.
+[Here is a simple script](https://github.com/kdeldycke/scripts/blob/master/findDuplicates.py) I created today that use `md5sum` to track duplicate files in a folder.

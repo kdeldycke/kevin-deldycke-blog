@@ -7,7 +7,7 @@ tags: CLI, Linux, Mandriva, mencoder, mplayer, Video, xvidcap
 
 ## Compile gvidcap!
 
-Get the last stable source code archive on [xvidcap Sourceforge project page](http://sourceforge.net/projects/xvidcap) or download it from the [CVS](http://cvs.sourceforge.net/viewcvs.py/xvidcap):
+Get the last stable source code archive on [xvidcap Sourceforge project page](https://sourceforge.net/projects/xvidcap) or download it from the [CVS](https://cvs.sourceforge.net/viewcvs.py/xvidcap):
 
     :::bash
     $ cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xvidcap co -P xvidcap
@@ -60,7 +60,7 @@ Make a video from successive screenshots:
 
 Documentation:
 
-  * [http://www.linux-magazine.com/issue/45/DeskTOPia_xvidcap.pdf](http://www.linux-magazine.com/issue/45/DeskTOPia_xvidcap.pdf)
-  * [http://www.jarre-de-the.net/faq/pdf/faq.pdf](http://www.jarre-de-the.net/faq/pdf/faq.pdf)
-  * [http://www.tuxbihan.org/IMG/pdf/gvidcap.pdf](http://www.tuxbihan.org/IMG/pdf/gvidcap.pdf)
-  * [http://www.csit.fsu.edu/~beason/recordMovie](http://www.csit.fsu.edu/~beason/recordMovie)
+  * [https://www.linux-magazine.com/issue/45/DeskTOPia_xvidcap.pdf](https://www.linux-magazine.com/issue/45/DeskTOPia_xvidcap.pdf)
+  * [https://www.jarre-de-the.net/faq/pdf/faq.pdf](https://www.jarre-de-the.net/faq/pdf/faq.pdf)
+  * [https://www.tuxbihan.org/IMG/pdf/gvidcap.pdf](https://www.tuxbihan.org/IMG/pdf/gvidcap.pdf)
+  * [https://www.csit.fsu.edu/~beason/recordMovie](https://www.csit.fsu.edu/~beason/recordMovie)

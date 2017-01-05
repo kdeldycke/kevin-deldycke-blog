@@ -11,7 +11,7 @@ Some of the natural glitches introduced were interesting. I decided to test some
 
 Here is one video resulting of these experimentations:
 
-http://www.youtube.com/watch?v=zVaXnD7PxHI
+https://www.youtube.com/watch?v=zVaXnD7PxHI
 
 To generate this video, I first extracted all frames to PNG and moved them to a dedicated folder:
 

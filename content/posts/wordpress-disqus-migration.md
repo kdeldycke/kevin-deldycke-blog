@@ -6,7 +6,7 @@ tags: Comment, Disqus, HTML, migration, MySQL, SQL, Regular expression, WordPres
 ---
 
 I've just finished migrating all the comments of this blog from WordPress to
-[Disqus](http://disqus.com). Why using an external comment platform? It's just
+[Disqus](https://disqus.com). Why using an external comment platform? It's just
 that I plan to ditch WordPress entirely, and switch to a static site generator
 in the near future. Here are some details on my migration to Disqus.
 
@@ -15,9 +15,9 @@ I had to massage some data.
 
 Articles of this blog features a lots of code. Comments are no exception and
 embed snippets too. Code blocks are rendered by the [SyntaxHighlighter Evolved
-WordPress plugin](http://wordpress.org/extend/plugins/syntaxhighlighter/). This
+WordPress plugin](https://wordpress.org/extend/plugins/syntaxhighlighter/). This
 extension use square brackets to enclose code. [Disqus uses standard HTML
-tags](http://help.disqus.com/customer/portal/articles/665057).
+tags](https://help.disqus.com/customer/portal/articles/665057).
 
 Let's update this notation directly in WordPress database:
 
@@ -28,13 +28,13 @@ Let's update this notation directly in WordPress database:
     $ mysql kevblog < ./comments-fixed.sql
 
 [Disqus doesn't support HTML
-lists](http://help.disqus.com/customer/portal/articles/466253-what-html-tags-are-allowed-within-comments).
+lists](https://help.disqus.com/customer/portal/articles/466253-what-html-tags-are-allowed-within-comments).
 So I manually updated WordPress comments to remove occurrences of `<ul>` and
 `<ol>`, and replace `<li>` by an UTF-8 `•`
-[bullet](http://en.wikipedia.org/wiki/Bullet_(typography)).
+[bullet](https://en.wikipedia.org/wiki/Bullet_(typography)).
 
 Another issue: if [Disqus support images in
-comment](http://blog.disqus.com/post/3764930816/fun-with-images), in imported
+comment](https://blog.disqus.com/post/3764930816/fun-with-images), in imported
 comments they are left as HTML tags and therefore not rendered by Disqus. I was
 the only one on my blog posting images in comments. So I simply moved them to
 the corresponding parent article.
@@ -50,7 +50,7 @@ threading with a series of MySQL queries:
     (...)
 
 After all these updates, my comments where ready to be [exported to
-Disqus](http://help.disqus.com/customer/portal/articles/466255-exporting-comments-from-wordpress-to-disqus).
+Disqus](https://help.disqus.com/customer/portal/articles/466255-exporting-comments-from-wordpress-to-disqus).
 
 If most of my comments were successfully imported, some were left-out. The
 importer was not able to find their parents:

@@ -5,7 +5,7 @@ category: English
 tags: bug, Debian, Debian Etch, hack, email, mailman, patch, Python
 ---
 
-Last week I came across a showstopper bug on Mailman 2.1.9-7, the [current version of Mailman package distributed with Debian Etch](http://packages.debian.org/etch/mailman).
+Last week I came across a showstopper bug on Mailman 2.1.9-7, the [current version of Mailman package distributed with Debian Etch](https://packages.debian.org/etch/mailman).
 
 Here is the python traceback (from `/var/log/mailman/error` logfile) I get each time I've sent a mail to my brand new mailing-list:
 

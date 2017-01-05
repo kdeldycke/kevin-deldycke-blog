@@ -6,29 +6,29 @@ tags: Apache, Cool Cavemen, e107, fail2ban, Linux, PHP, security, Server, Web, R
 ---
 
 Last month, a new security vulnerability was discovered in e107. If [a fix was
-released quickly](http://e107.org/comment.php?comment.news.867), some instances
+released quickly](https://e107.org/comment.php?comment.news.867), some instances
 on the web were left unpatched. These sites are easy target for
 <strike>hackers</strike> script-kiddies, and [a generalized dDOS attack was
-carry out](http://e107.org/comment.php?comment.news.868) on every e107 websites
+carry out](https://e107.org/comment.php?comment.news.868) on every e107 websites
 out there.
 
 I'm no exception and the old and decrepit part of Cool Cavemen's website [still
 running on
-e107](https://web.archive.org/web/20110418072200/http://coolcavemen.com/e107_plugins/forum/forum_viewforum.php?3)
+e107](https://web.archive.org/web/20110418072200/https://coolcavemen.com/e107_plugins/forum/forum_viewforum.php?3)
 was attacked. This was enough to crash my tiny server. Unfortunately this
 [happened while I was on
-holidays](http://twitter.com/kdeldycke/status/17728248113). Without any time to
+holidays](https://twitter.com/kdeldycke/status/17728248113). Without any time to
 address this issue properly, I decided to shutdown my web server. This explain
 why this blog and all Cool Cavemen's websites were dead during half of july.
 
 ![](/uploads/2010/munin-fail2ban-jails-weekly-stats.png)
 
 Now [everything is back to
-normal](http://twitter.com/kdeldycke/status/19250530728) (I hope), thanks to
-[`fail2ban`](http://www.fail2ban.org). I created a set of rules ([based on this
-article](http://eromang.zataz.com/2010/07/13/byroenet-casper-bot-search-e107-rce-scanner/))
+normal](https://twitter.com/kdeldycke/status/19250530728) (I hope), thanks to
+[`fail2ban`](https://www.fail2ban.org). I created a set of rules ([based on this
+article](https://eromang.zataz.com/2010/07/13/byroenet-casper-bot-search-e107-rce-scanner/))
 to dynamically catch
-[dDOS](http://en.wikipedia.org/wiki/Denial-of-service_attack) attempts and ban
+[dDOS](https://en.wikipedia.org/wiki/Denial-of-service_attack) attempts and ban
 all IP addresses involved. Here is how I configured `fail2ban`...
 
 First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf`

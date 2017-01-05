@@ -8,12 +8,12 @@ tags: Apache, Blog, CLI, find, grep, Hosting, Linux, MySQL, SQL, sed, Server, We
 ![qpx-site-domain-migration](/uploads/2009/qpx-site-domain-migration.png)
 
 I provide hosting for free to some of my friends. One of them,
-[QPX](http://wqpx.wordpress.com/), had a side project called *Lich'ti*. But the
+[QPX](https://wqpx.wordpress.com/), had a side project called *Lich'ti*. But the
 latter is no longer active, so he decided to not renew the `lich-ti.fr` domain.
 
 If the *Lich'ti* domain name is dead, QPX's personal blog is not. His website is
-powered by WordPress and was available at `http://qpx.lich-ti.fr`. My job is now
-to move it to `http://qpx.coolcavemen.com`. In this post, I'll tell you how I've
+powered by WordPress and was available at `https://qpx.lich-ti.fr`. My job is now
+to move it to `https://qpx.coolcavemen.com`. In this post, I'll tell you how I've
 done it.
 
 Before going further, backup everything, and be ready to revert back to your
@@ -21,7 +21,7 @@ original situation at any moment! What works for me will not necessary works
 for you...
 
 To play nice with your visitors, you can
-[setup a temporary maintenance page](http://www.milienzo.com/2007/05/16/how-to-display-a-maintenance-page-whilst-upgrading-wordpress/)
+[setup a temporary maintenance page](https://www.milienzo.com/2007/05/16/how-to-display-a-maintenance-page-whilst-upgrading-wordpress/)
 while we're performing the migration.
 
 Let's start the migration by replacing, in the files served by Apache, all
@@ -62,5 +62,5 @@ old URLs to the new domain, with apache directives similar to this one:
     :::apache
     <VirtualHost *:80>
       ServerName qpx.lich-ti.fr
-      RedirectMatch permanent (.*) http://qpx.coolcavemen.com$1
+      RedirectMatch permanent (.*) https://qpx.coolcavemen.com$1
     </VirtualHost>

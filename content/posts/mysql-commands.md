@@ -45,12 +45,12 @@ tags: CLI, Databases, MySQL, SQL, SQL, cron
         :::bash
         $ [ `ps axu | grep -v "grep" | grep --count "mysql"` -le 0 ] && /etc/init.d/mysql restart
 
-  * Monitor the queries being run ([source](http://blog.urfix.com/25-%E2%80%93-sick-linux-commands/)):
+  * Monitor the queries being run ([source](https://blog.urfix.com/25-%E2%80%93-sick-linux-commands/)):
 
         :::bash
         $ watch -n 1 mysqladmin --user=XXXXX --password=XXXXX processlist
 
-  * Get the list of default configuration parameters the server will use regardless of the values set in config files ([source](http://dev.mysql.com/doc/refman/5.1/en/server-system-variables.html)):
+  * Get the list of default configuration parameters the server will use regardless of the values set in config files ([source](https://dev.mysql.com/doc/refman/5.1/en/server-system-variables.html)):
 
         :::bash
         $ mysqld --no-defaults --verbose --help

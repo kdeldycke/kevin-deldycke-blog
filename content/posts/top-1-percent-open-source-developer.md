@@ -5,7 +5,7 @@ category: English
 tags: development, Ohloh, open source, Software engineering
 ---
 
-With all the [recent](http://kevin.deldycke.com/2011/01/e107-importer-wordpress-plugin-v1-0-released/) [active development](http://kevin.deldycke.com/2011/03/e107-importer-1-1/) on my [e107 Importer WordPress plugin](http://wordpress.org/extend/plugins/e107-importer/), I increased my public code contributions. This had the nice side effect of bumping my [ranking on Ohloh](http://www.ohloh.net/accounts/kevin) from #8 (bronze level) to #9 (silver level):
+With all the [recent](https://kevin.deldycke.com/2011/01/e107-importer-wordpress-plugin-v1-0-released/) [active development](https://kevin.deldycke.com/2011/03/e107-importer-1-1/) on my [e107 Importer WordPress plugin](https://wordpress.org/extend/plugins/e107-importer/), I increased my public code contributions. This had the nice side effect of bumping my [ranking on Ohloh](https://www.ohloh.net/accounts/kevin) from #8 (bronze level) to #9 (silver level):
 
 ![](/uploads/2011/ohloh-rank-from-bronze-to-silver.png)
 
@@ -13,7 +13,7 @@ Other interesting statistic is that I'm now ranked as open-source developer numb
 
 That's exciting, but irrelevant. Ohloh stats must be taken with a huge grain of salt.
 
-  1. Some code are duplicated: my WordPress plugin is both present in my [personal GitHub repository](http://github.com/kdeldycke/e107-importer) and in [WordPress official plugin repository](http://plugins.trac.wordpress.org/browser/e107-importer/), inflating contributions on this project by 2.
+  1. Some code are duplicated: my WordPress plugin is both present in my [personal GitHub repository](https://github.com/kdeldycke/e107-importer) and in [WordPress official plugin repository](https://plugins.trac.wordpress.org/browser/e107-importer/), inflating contributions on this project by 2.
 
   2. Not all open-source projects are tracked in Ohloh. Which make developer registered on Ohloh seems to be part of a smaller community.
 

@@ -7,15 +7,15 @@ tags: 720p, Cool Cavemen, Deinterlacing, douai, gayant expo, Image processing, M
 
 Here is "Funky Cops", the second Cool Cavemen's live song at Gayant Expo:
 
-http://www.youtube.com/watch?v=3sI35h0t4-8
+https://www.youtube.com/watch?v=3sI35h0t4-8
 
-I [released this video two weeks ago](http://coolcavemen.com/2010/video-funky-cops-live-gayant-expo/) for Cool Cavemen. As I try to release one video every week, I give a high priority to the editing work. This leaves me with little time to write on this blog.
+I [released this video two weeks ago](https://coolcavemen.com/2010/video-funky-cops-live-gayant-expo/) for Cool Cavemen. As I try to release one video every week, I give a high priority to the editing work. This leaves me with little time to write on this blog.
 
 But starting from now, I plan to publish a blog post for each video. I'll use these articles to write about one aspect of the work involved behind the scene.
 
-In the [first post of the series](http://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/), I gave you the context in which the concert was performed. Today the post is dedicated to video formats. First, let's talk about the video sources...
+In the [first post of the series](https://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/), I gave you the context in which the concert was performed. Today the post is dedicated to video formats. First, let's talk about the video sources...
 
-The concert was shot with 4 cameras. Among them, only two were of the same kinds. Those were part of the live broadcasting system of the event. This explain the "[mise en abyme](http://en.wikipedia.org/wiki/Mise_en_abyme)" effect in the background screen:
+The concert was shot with 4 cameras. Among them, only two were of the same kinds. Those were part of the live broadcasting system of the event. This explain the "[mise en abyme](https://en.wikipedia.org/wiki/Mise_en_abyme)" effect in the background screen:
 
 ![](/uploads/2010/funky-cops-mise-en-abyme.png)
 
@@ -23,13 +23,13 @@ At the end of the gig, I wasn't be able to retrieve two continuous feeds. Instea
 
 As a result, I ended with 3 video sources:
 
-  1. A DVD-like video stream ([576i](http://en.wikipedia.org/wiki/576i)) produced by my consumer-grade camera ([now for sale at 0.01€ on ebay](http://twitter.com/kdeldycke/status/9299604161)). It produces 720x576 pixels [interlaced frames](http://en.wikipedia.org/wiki/Interlace) at 25 fps, with a [pixel ratio](http://en.wikipedia.org/wiki/Pixel_aspect_ratio) of 16:15 (giving 768x576 pixels frames at 1:1) and a final [display ratio](http://en.wikipedia.org/wiki/Display_aspect_ratio) of 4:3. All encoded as a 9 Mbps MPEG-2 stream in a MPEG-PS container.
+  1. A DVD-like video stream ([576i](https://en.wikipedia.org/wiki/576i)) produced by my consumer-grade camera ([now for sale at 0.01€ on ebay](https://twitter.com/kdeldycke/status/9299604161)). It produces 720x576 pixels [interlaced frames](https://en.wikipedia.org/wiki/Interlace) at 25 fps, with a [pixel ratio](https://en.wikipedia.org/wiki/Pixel_aspect_ratio) of 16:15 (giving 768x576 pixels frames at 1:1) and a final [display ratio](https://en.wikipedia.org/wiki/Display_aspect_ratio) of 4:3. All encoded as a 9 Mbps MPEG-2 stream in a MPEG-PS container.
 
-  2. A [720p](http://en.wikipedia.org/wiki/720p) video stream: 1280x720 pixels progressive frames at 30 fps, with 1:1 pixel ratio and 16:9 display ratio, encoded as variable bitrate MJPEG stream in a QuickTime container.
+  2. A [720p](https://en.wikipedia.org/wiki/720p) video stream: 1280x720 pixels progressive frames at 30 fps, with 1:1 pixel ratio and 16:9 display ratio, encoded as variable bitrate MJPEG stream in a QuickTime container.
 
-  3. The already-edited video stream ([Half-D1](http://www.videohelp.com/glossary?H#Half%20D1)) from unidentified Sony cameras: 352x576 pixels interlaced frames at 25 fps, with a pixel ratio of 24:11 (giving 768x576 pixels frames at 1:1) and a final display ratio of 4:3. The file was a 6 Mbps MPEG-2 stream in a MPEG-PS container.
+  3. The already-edited video stream ([Half-D1](https://www.videohelp.com/glossary?H#Half%20D1)) from unidentified Sony cameras: 352x576 pixels interlaced frames at 25 fps, with a pixel ratio of 24:11 (giving 768x576 pixels frames at 1:1) and a final display ratio of 4:3. The file was a 6 Mbps MPEG-2 stream in a MPEG-PS container.
 
-All those informations were extracted thanks to `ffmeg`, `mplayer` and `tcprobe` (see [all the command lines involved](http://kevin.deldycke.com/2006/11/video-commands/)).
+All those informations were extracted thanks to `ffmeg`, `mplayer` and `tcprobe` (see [all the command lines involved](https://kevin.deldycke.com/2006/11/video-commands/)).
 
 As you can see, this is an absolute mess! There is no consistency! And now, before starting the video editing itself, I have this important decision to make: choose the final video format, in which my project will be rendered.
 
@@ -37,9 +37,9 @@ Let me explain how I did it. But before, I have to tell you something. To me, an
 
 The first one is the "maximizing" strategy. It consists of keeping the best parts from all video sources. Based on formats described above, this means 1280x720 pixels progressive frames at 50 fps, with 1:1 pixel ratio and 16:9 display ratio. In this process we create non-existent informations by scaling and interpolating spatial and temporal data.
 
-The second strategy is the "minimizing" strategy which, you can guess from its name, is the exact opposite of the first one. Here we discard spatial and temporal informations until we reach a sub-format shared by all sources. In our example, this gives 352x288 pixels frames at 30 fps, with a pixel ratio of 24:22 and a display ratio of 4:3. There, 288 is half 576, which is the result of using a [deinterlacing "bob" filter](http://en.wikipedia.org/wiki/Deinterlacing#Field_Extension_Deinterlacing) on video streams #1 and #3 to get 50 fps. And for the pixel ratio, as we "bobbed" the interlaced videos, we keep the worst horizontal scaling and multiply the vertical scaling by two, which give us 24:22.
+The second strategy is the "minimizing" strategy which, you can guess from its name, is the exact opposite of the first one. Here we discard spatial and temporal informations until we reach a sub-format shared by all sources. In our example, this gives 352x288 pixels frames at 30 fps, with a pixel ratio of 24:22 and a display ratio of 4:3. There, 288 is half 576, which is the result of using a [deinterlacing "bob" filter](https://en.wikipedia.org/wiki/Deinterlacing#Field_Extension_Deinterlacing) on video streams #1 and #3 to get 50 fps. And for the pixel ratio, as we "bobbed" the interlaced videos, we keep the worst horizontal scaling and multiply the vertical scaling by two, which give us 24:22.
 
-For this project, I finally went by the first stategy. I choosed to render the project to a 720p video at 25 fps, with a 1:1 pixel ratio and 16:9 display ratio. Also known as... [HD-Ready](http://en.wikipedia.org/wiki/Hd_ready)!
+For this project, I finally went by the first stategy. I choosed to render the project to a 720p video at 25 fps, with a 1:1 pixel ratio and 16:9 display ratio. Also known as... [HD-Ready](https://en.wikipedia.org/wiki/Hd_ready)!
 
 Why this format? It's the most popular one that closely match the characteristics we established three paragraphs above. It's also quite standard, and "gives a chance" to the second video source to display in full resolution. I also felt that it will cause less pain when confronted to the wide range of software video players out there.
 

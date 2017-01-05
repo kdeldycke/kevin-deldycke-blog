@@ -100,7 +100,7 @@ taking precedence:
     35  14
     99   0
 
-Transform a timeline of [`arrow`](http://crsmithdev.com/arrow/) objects to
+Transform a timeline of [`arrow`](https://crsmithdev.com/arrow/) objects to
 Pandas' internal Timestamp index:
 
     :::python
@@ -146,7 +146,7 @@ Pandas' internal Timestamp index:
 
 Now that we have a properly indexed timeline, we can use built-in Pandas
 methods. Here is how to compute the maximum value of samples [per year
-](http://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases):
+](https://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases):
 
     :::python
     >>> df['int_ts'].resample('AS')
@@ -181,7 +181,7 @@ Same as above but taking the highest value by shifting decade:
 Other resources:
 
   * [Pandas official documentation
-  ](http://pandas.pydata.org/pandas-docs/stable/)
+  ](https://pandas.pydata.org/pandas-docs/stable/)
   * [Pandas Cheat Sheet
   ](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
   * [Stack Overflow's pandas questions

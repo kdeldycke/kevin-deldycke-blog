@@ -30,7 +30,7 @@ tags: disk, image, VirtualBox, virtualization
         :::bash
         $ VBoxManage list vms
 
-  * Fix broken NAT ([source](http://askubuntu.com/questions/216865/vitualbox-nat-stopped-working-after-ubuntu-upgrade-to-12-10)):
+  * Fix broken NAT ([source](https://askubuntu.com/questions/216865/vitualbox-nat-stopped-working-after-ubuntu-upgrade-to-12-10)):
 
         :::bash
         $ VBoxManage modifyvm "name" --natdnshostresolver1 on

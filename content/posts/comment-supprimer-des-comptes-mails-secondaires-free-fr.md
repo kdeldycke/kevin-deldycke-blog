@@ -5,9 +5,9 @@ category: Français
 tags: free.fr, Gmail, ISP, email, Proxad
 ---
 
-Ça fait maintenant 10 ans que je suis client chez [Free](http://free.fr). Durant mes premières années de fréquentation du web, j'avais décidé de créer autant de comptes mails `@free.fr` que de variations possibles avec mon nom et prénom. Ne riez pas. Je l'ai vraiment fait. J'avais même poussé le vice jusqu'à doubler les variations avec le préfixe `www`. Pourquoi&nbsp;? Pour avoir des espaces d'hébergement associés (_Pages Perso_) avec une jolie URL du type `http://www.kevin.deldycke.free.fr`.
+Ça fait maintenant 10 ans que je suis client chez [Free](https://free.fr). Durant mes premières années de fréquentation du web, j'avais décidé de créer autant de comptes mails `@free.fr` que de variations possibles avec mon nom et prénom. Ne riez pas. Je l'ai vraiment fait. J'avais même poussé le vice jusqu'à doubler les variations avec le préfixe `www`. Pourquoi&nbsp;? Pour avoir des espaces d'hébergement associés (_Pages Perso_) avec une jolie URL du type `https://www.kevin.deldycke.free.fr`.
 
-Résultat: cela fait maintenant 10 ans que je traîne plus d'une vingtaine de comptes mails chez Free. J'ai eu mal le jour ou j'ai changé de crémerie pour aller chez Google. Pour continuer à recevoir tous les mails envoyés chez Free, j'ai mis en place une arborescence de comptes Gmail. C'était la seule solution pour contourner les limites de l'[outil de récupération des messages](http://mail.google.com/support/bin/answer.py?answer=21288), qui est [limité à 5 comptes externes](http://kb.mozillazine.org/Using_Gmail_with_Thunderbird_and_Mozilla_Suite#Mail_fetcher).
+Résultat: cela fait maintenant 10 ans que je traîne plus d'une vingtaine de comptes mails chez Free. J'ai eu mal le jour ou j'ai changé de crémerie pour aller chez Google. Pour continuer à recevoir tous les mails envoyés chez Free, j'ai mis en place une arborescence de comptes Gmail. C'était la seule solution pour contourner les limites de l'[outil de récupération des messages](https://mail.google.com/support/bin/answer.py?answer=21288), qui est [limité à 5 comptes externes](https://kb.mozillazine.org/Using_Gmail_with_Thunderbird_and_Mozilla_Suite#Mail_fetcher).
 
 Il est temps de mettre fin à cette folie furieuse et de faire le ménage.
 
@@ -15,7 +15,7 @@ La procédure de suppression de ces comptes mails chez Free n'est pas compliqué
 
 ![](/uploads/2010/rattacher-compte-mail.png)
 
-Ensuite, il faut se rendre sur la [page d'assistance par mail](http://www.free.fr/assistance/mail.html). Là, il suffit d'écrire un message poli et précis, en choisissant bien _Gestion des comptes de messagerie_ comme destinataire:
+Ensuite, il faut se rendre sur la [page d'assistance par mail](https://www.free.fr/assistance/mail.html). Là, il suffit d'écrire un message poli et précis, en choisissant bien _Gestion des comptes de messagerie_ comme destinataire:
 
 ![](/uploads/2010/free-assistance-mail.png)
 

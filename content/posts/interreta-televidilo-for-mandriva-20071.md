@@ -11,6 +11,6 @@ tags: french, Interreta Televidilo, Linux, Mandriva, RPM, TV, urpmi, Video
 I've just made a RPM of [Interreta Televidilo
 v0.6](https://github.com/kdeldycke/mandriva-specs/tree/master/2007.1/televidilo-0.6-2)
 for Mandriva 2007.1 (aka "Spring"). [Interreta
-Televidilo](https://web.archive.org/web/20111019071359/http://televidilo.bouil.org/)
+Televidilo](https://web.archive.org/web/20111019071359/https://televidilo.bouil.org/)
 is a GUI that aggregate video stream of french TVs available for free on the
 internet.

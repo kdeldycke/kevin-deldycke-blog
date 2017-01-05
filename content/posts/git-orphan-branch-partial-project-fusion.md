@@ -11,11 +11,11 @@ commit history, from the first to the second.
 
 That's a topic I already addressed. See
 for instance my previous articles on [an internal corporate project I
-open-sourced](http://kevin.deldycke.com/2011/08/how-open-source-an-internal-corporate-project-webping/),
+open-sourced](https://kevin.deldycke.com/2011/08/how-open-source-an-internal-corporate-project-webping/),
 a [migration from SVN to
-Git](http://kevin.deldycke.com/2011/04/ftt-migration-subversion-git/), and
+Git](https://kevin.deldycke.com/2011/04/ftt-migration-subversion-git/), and
 [Git sub-tree
-cleaning](http://kevin.deldycke.com/2011/02/moving-git-subtree-repository/).
+cleaning](https://kevin.deldycke.com/2011/02/moving-git-subtree-repository/).
 
 Should we really keep revisiting the subject again and again? Yes, cause things
 have changed! [Since v1.7.2](https://git-scm.com/docs/git-checkout/1.7.2), Git

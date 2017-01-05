@@ -10,4 +10,4 @@ tags: Amarok, Audio, KDE, Linux, Mandriva, RPM
 I've just backported [Amarok
 1.4.5](https://community.kde.org/Amarok/Archives/Release:1.4.5) from cooker to
 Mandriva 2007. As usual, everything is in [my personal RPM
-repository](http://github.com/kdeldycke/mandriva-specs).
+repository](https://github.com/kdeldycke/mandriva-specs).

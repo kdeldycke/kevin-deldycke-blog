@@ -28,7 +28,7 @@ I created this to let my customer use his proprietary job scheduler to trigger O
     assert options.cron_name
 
     # Query helpers
-    sock = xmlrpclib.ServerProxy('http://localhost:8069/xmlrpc/object')
+    sock = xmlrpclib.ServerProxy('https://localhost:8069/xmlrpc/object')
     q = lambda * a: sock.execute(options.db_name, 1, options.password, *a)
 
     try:

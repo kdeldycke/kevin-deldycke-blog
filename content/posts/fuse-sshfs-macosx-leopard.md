@@ -6,29 +6,29 @@ tags: Apple, automount, fuse, KDE, Mac OS X 10.5 Leopard, Linux, MacBook, macOS,
 ---
 
 I'm used to access distant machine's file systems via SSH. My favorite
-environment, [KDE](http://www.kde.org), makes things easy thanks to the support
-of [`sftp://`](http://wikipedia.org/wiki/SSH_file_transfer_protocol) URLs via a
-[KIO slave](http://wikipedia.org/wiki/KIO). Mac OS X is not as friendly and
+environment, [KDE](https://www.kde.org), makes things easy thanks to the support
+of [`sftp://`](https://wikipedia.org/wiki/SSH_file_transfer_protocol) URLs via a
+[KIO slave](https://wikipedia.org/wiki/KIO). Mac OS X is not as friendly and
 don't have any built-in mechanism of that kind.
 
 To get similar features in Leopard, we have to rely on [MacFuse
-](http://code.google.com/p/macfuse/) and [sshfs
-](http://fuse.sourceforge.net/sshfs.html). I'll explain here how I've installed
+](https://code.google.com/p/macfuse/) and [sshfs
+](https://fuse.sourceforge.net/sshfs.html). I'll explain here how I've installed
 these components on [Mac OS X Leopard
-](http://amzn.com/B000FK88JK/?tag=kevideld-20).
+](https://amzn.com/B000FK88JK/?tag=kevideld-20).
 
 ![MacFUSE_Banner](/uploads/2009/MacFUSE_Banner.png)
 
 First, [download the latest MacFuse `dmg`
-](http://code.google.com/p/macfuse/downloads/list) and install it. FYI, the
+](https://code.google.com/p/macfuse/downloads/list) and install it. FYI, the
 version I've got was `2.0.3,2`.
 
 Then, download the sshfs executable for Leopard, either the [gzipped version
-](http://osxbook.com/download/sshfs/sshfs-static-leopard.gz) or the binary
+](https://osxbook.com/download/sshfs/sshfs-static-leopard.gz) or the binary
 [from the SVN
-](http://macfuse.googlecode.com/svn/trunk/filesystems/sshfs/binary/) as
+](https://macfuse.googlecode.com/svn/trunk/filesystems/sshfs/binary/) as
 [explained in the MacFuse wiki
-](http://code.google.com/p/macfuse/wiki/MACFUSE_FS_SSHFS).
+](https://code.google.com/p/macfuse/wiki/MACFUSE_FS_SSHFS).
 
 From a terminal, rename the binary:
 
@@ -48,10 +48,10 @@ From now you can test `sshfs` mounting with the following command:
 
 I personally had a problem here: `sshfs` complained about a missing library. I
 fixed this by downloading the required file from the [MacFusion project
-](http://www.macfusionapp.org) and copying it beside the sshfs binary:
+](https://www.macfusionapp.org) and copying it beside the sshfs binary:
 
     :::bash
-    $ sudo wget http://www.macfusionapp.org/trac/export/86/trunk/SSHFS/sshnodelay.so
+    $ sudo wget https://www.macfusionapp.org/trac/export/86/trunk/SSHFS/sshnodelay.so
     $ sudo mv ./sshnodelay.so /usr/local/bin/
     $ sudo chmod +x /usr/local/bin/sshnodelay.so
 

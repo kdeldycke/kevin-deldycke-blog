@@ -7,7 +7,7 @@ tags: CLI, lint, Linux, OpenERP, xml, XSLT, ERP
 
 Based on internal metrics, half of the OpenERP custom code I produce for my customers is Python. The other half is XML (_sigh_).
 
-If Python is well-equiped to enforce coding styles (thanks to [pep8](http://pypi.python.org/pypi/pep8), [pyflakes](http://pypi.python.org/pypi/pyflakes), [pylint](http://pypi.python.org/pypi/pylint) and [the](http://pypi.python.org/pypi/autopep8) [likes](http://pypi.python.org/pypi/flake8)), it's another story for XML. After some investigations and experiments, here is the best way I found to automate the cleaning of huge quantities of XML content.
+If Python is well-equiped to enforce coding styles (thanks to [pep8](https://pypi.python.org/pypi/pep8), [pyflakes](https://pypi.python.org/pypi/pyflakes), [pylint](https://pypi.python.org/pypi/pylint) and [the](https://pypi.python.org/pypi/autopep8) [likes](https://pypi.python.org/pypi/flake8)), it's another story for XML. After some investigations and experiments, here is the best way I found to automate the cleaning of huge quantities of XML content.
 
 First, we have to install some command-line utilities:
 
@@ -26,7 +26,7 @@ Create an empty XSLT file named `tidy.xslt` and copy the following content in it
 
     :::xslt
     <?xml version="1.0"?>
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:stylesheet version="1.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform">
 
       <!-- Produce an exact copy of the original XML content -->
       <xsl:template match="@*|node()">

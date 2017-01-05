@@ -19,11 +19,11 @@ trivial commands:
     $ git init
 
 But after reading
-[some documentation](http://www-cs-students.stanford.edu/~blynn/gitmagic/apa.html#_initial_commit)
+[some documentation](https://www-cs-students.stanford.edu/~blynn/gitmagic/apa.html#_initial_commit)
 and user experiences on the web, it looks like Git has some limitations when
 dealing with the root of a repository history. As I plan to heavily manipulate
 the commit history (to do some kind of
-[code archaeology and history reconstruction](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)),
+[code archaeology and history reconstruction](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)),
 I need to have the widest time latitude to play with commits.
 
 In this situation, I came to the conclusion that it's a good idea to create an

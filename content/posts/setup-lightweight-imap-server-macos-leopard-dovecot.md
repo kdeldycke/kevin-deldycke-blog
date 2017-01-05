@@ -8,12 +8,12 @@ tags: Dovecot, email, IMAP, Mac OS X 10.5 Leopard, Apple, macOS, maildir, OpenSS
 ![](/uploads/2010/dovecot-on-macosx.png)
 
 Last week I needed a local IMAP server on Mac OS X Leopard for temporary
-testing. After struggling with [courier-imap](http://www.courier-mta.org/imap/)
-for hours, I've finally settled on [Dovecot](http://www.dovecot.org/). You'll
+testing. After struggling with [courier-imap](https://www.courier-mta.org/imap/)
+for hours, I've finally settled on [Dovecot](https://www.dovecot.org/). You'll
 see below how easy it is to install and configure it.
 
 We're lucky, [Dovecot is available in MacPorts
-](http://www.macports.org/ports.php?by=name&substr=dovecot), so we can install
+](https://www.macports.org/ports.php?by=name&substr=dovecot), so we can install
 it easily:
 
     :::bash
@@ -72,7 +72,7 @@ And finally, we can launch the Dovecot server itself as `root`:
 That's all!
 
 You can now access your local IMAP server with any client. Here is an example
-with [Thunderbird](http://www.mozillamessaging.com/thunderbird/):
+with [Thunderbird](https://www.mozillamessaging.com/thunderbird/):
 
 ![](/uploads/2010/thunderbird-macosx-local-imap-server-config.png)
 

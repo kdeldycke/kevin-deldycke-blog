@@ -4,9 +4,9 @@ title: funky-storm.com source code released after 11 years
 tags: Funky Storm, PHP, MySQL, GitHub
 ---
 
-[funky-storm.com](http://funky-storm.com) was the [first website I ever published](http://web.archive.org/web/20020515000000*/http://www.funkystorm.free.fr/) online, 11 years ago. Blogs were something new and there was virtually no mature open-source publishing platform, apart forums. Without any other options, I created my band's website from scratch.
+[funky-storm.com](https://funky-storm.com) was the [first website I ever published](https://web.archive.org/web/20020515000000*/https://www.funkystorm.free.fr/) online, 11 years ago. Blogs were something new and there was virtually no mature open-source publishing platform, apart forums. Without any other options, I created my band's website from scratch.
 
-I still have the source and I've just consolidated it in a [GitHub repository](https://github.com/kdeldycke/funky-storm) (thanks to my [history reconstruction process](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)). Here is the detailed procedure:
+I still have the source and I've just consolidated it in a [GitHub repository](https://github.com/kdeldycke/funky-storm) (thanks to my [history reconstruction process](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)). Here is the detailed procedure:
 
     :::bash
     $ rm -rf ./funky-storm
@@ -42,4 +42,4 @@ This project was horrible from a software engineering point of view. And that's 
 
 The lack of code quality didn't prevent the website to do its job. Quite the contrary: we were the only band of our area with such an online presence. And before the coming of MySpace, that was enough to differentiate us from the crowd of ephemeral bands of the local scene.
 
-But that's another story, which you can reconstruct by browsing (in French) the archives on [the new funky-storm.com](http://funky-storm.com)...
+But that's another story, which you can reconstruct by browsing (in French) the archives on [the new funky-storm.com](https://funky-storm.com)...

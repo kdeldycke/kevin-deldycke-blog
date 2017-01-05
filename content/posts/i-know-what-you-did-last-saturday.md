@@ -5,6 +5,6 @@ category: English
 tags: circle, loop, photo
 ---
 
-[![](/uploads/2010/mysterious-photographer.jpg)](http://be.st.free.fr/perso/doku.php/photo/trip)
+[![](/uploads/2010/mysterious-photographer.jpg)](https://be.st.free.fr/perso/doku.php/photo/trip)
 
-[Now get the rest of the story](http://be.st.free.fr/perso/doku.php/photo/trip)...
+[Now get the rest of the story](https://be.st.free.fr/perso/doku.php/photo/trip)...

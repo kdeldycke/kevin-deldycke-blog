@@ -5,11 +5,11 @@ category: English
 tags: chipset, display, graphic, Hewlett Packard, Intel, laptop, Linux, Samsung, screen, X.org
 ---
 
-I recently had the oportunity to plug the [HP w2207h screen](http://amzn.com/B00139S3U6/?tag=kevideld-20) (see [review #1](http://www.anandtech.com/displays/showdoc.aspx?i=3054) and [review #2](http://www.prad.de/en/monitore/review/2007/review-hp-w2207.html)) as an external display to my [Samsung Q35 laptop](http://kevin.deldycke.com/2006/10/samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop/). The external display has a native resolution of 1680x1050 and the laptop's is 1280x800.
+I recently had the oportunity to plug the [HP w2207h screen](https://amzn.com/B00139S3U6/?tag=kevideld-20) (see [review #1](https://www.anandtech.com/displays/showdoc.aspx?i=3054) and [review #2](https://www.prad.de/en/monitore/review/2007/review-hp-w2207.html)) as an external display to my [Samsung Q35 laptop](https://kevin.deldycke.com/2006/10/samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop/). The external display has a native resolution of 1680x1050 and the laptop's is 1280x800.
 
 
 
-The laptop is powered by an [Intel 945 graphic chip](http://en.wikipedia.org/wiki/Intel_GMA#GMA_950):
+The laptop is powered by an [Intel 945 graphic chip](https://en.wikipedia.org/wiki/Intel_GMA#GMA_950):
 
     :::bash
     $ lspci
@@ -18,7 +18,7 @@ The laptop is powered by an [Intel 945 graphic chip](http://en.wikipedia.org/wik
     00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS/GME, 943/940GML Express Integrated Graphics Controller (rev 03)
     (...)
 
-[After some googling](http://slforums.typo3-factory.net/lofiversion/index.php/t63508.html) and tests, I've designed the perfect `xorg.conf` for this configuration:
+[After some googling](https://slforums.typo3-factory.net/lofiversion/index.php/t63508.html) and tests, I've designed the perfect `xorg.conf` for this configuration:
 
     :::text
     # **********************************************************************
@@ -109,9 +109,9 @@ The laptop is powered by an [Intel 945 graphic chip](http://en.wikipedia.org/wik
 
 What I've learned so far during these experiments:
 
-  * With DRI, [virtual screen can't be greater than 2048x2048](http://www.thinkwiki.org/wiki/Xorg_RandR_1.2#the_Virtual_screen) for Intel 945 (or less) chips. This explain why my screens are one above the other instead of side-by-side.
+  * With DRI, [virtual screen can't be greater than 2048x2048](https://www.thinkwiki.org/wiki/Xorg_RandR_1.2#the_Virtual_screen) for Intel 945 (or less) chips. This explain why my screens are one above the other instead of side-by-side.
 
-  * [XRandR](http://www.x.org/wiki/Projects/XRandR) and its friend [KRandRTray](http://www.novell.com/coolsolutions/trench/16034.html) make screen positionning user-friendly...
+  * [XRandR](https://www.x.org/wiki/Projects/XRandR) and its friend [KRandRTray](https://www.novell.com/coolsolutions/trench/16034.html) make screen positionning user-friendly...
 
   * ...until you play with the `xrandr`'s "`--off`" option! After I manually called it, this parameter disabled all my screens, forever, and at each boot. I've randomly deleted xorg-related files, but I still didn't know how I solved this mess. If you have a better understanding of how `xrandr` store its configuration, please let me know!
 

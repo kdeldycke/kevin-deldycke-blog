@@ -5,11 +5,11 @@ category: English
 tags: Debian, Debian Squeeze, Linux, MySQL, SQL, nginx, ovh, PHP, php-fpm, Server, virtualization, Web, WordPress
 ---
 
-This article is a follow-up to the one I wrote 3 months ago, in which I explained how to [install a web stack based on Nginx, PHP-FPM and MySQL](http://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/) on a Debian Squeeze server. Now it's time to tune this basic install to get some performance out of it.
+This article is a follow-up to the one I wrote 3 months ago, in which I explained how to [install a web stack based on Nginx, PHP-FPM and MySQL](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/) on a Debian Squeeze server. Now it's time to tune this basic install to get some performance out of it.
 
 ![](/uploads/2011/ovh-vps-3-virtual-server.png)
 
-The setup I'll detail below runs on an [OVH VPS](http://www.ovh.co.uk/vps/) instance. This virtual server has 4 CPU cores at 1.5GHz, 1 Go RAM and 50 Gb HDD.
+The setup I'll detail below runs on an [OVH VPS](https://www.ovh.co.uk/vps/) instance. This virtual server has 4 CPU cores at 1.5GHz, 1 Go RAM and 50 Gb HDD.
 
 I'm mostly running WordPress instances on that server, so you'll see some reference of it in this post.
 
@@ -50,7 +50,7 @@ First, let's tune MySQL. That's the easiest part of that article, as you only ne
     read_buffer = 16M
     write_buffer = 16M
 
-Most of these parameters were set for my particular usage and with insights from the [MySQL Tuning Primer Script](http://launchpad.net/mysql-tuning-primer).
+Most of these parameters were set for my particular usage and with insights from the [MySQL Tuning Primer Script](https://launchpad.net/mysql-tuning-primer).
 
 ## PHP-FPM
 
@@ -81,7 +81,7 @@ The second customization I made is not about performances but convenience. It ju
     @@ -725,7 +725,7 @@
 
      ; Maximum size of POST data that PHP will accept.
-     ; http://php.net/post-max-size
+     ; https://php.net/post-max-size
     -post_max_size = 8M
     +post_max_size = 15M
 
@@ -90,7 +90,7 @@ The second customization I made is not about performances but convenience. It ju
     @@ -876,7 +876,7 @@
 
      ; Maximum allowed size for uploaded files.
-     ; http://php.net/upload-max-filesize
+     ; https://php.net/upload-max-filesize
     -upload_max_filesize = 2M
     +upload_max_filesize = 15M
 
@@ -114,10 +114,10 @@ Let's say my Wordpress blog is installed in `/var/www/my_wordpress`. To let it b
     server {
       listen 80 default_server;
       server_name .example.com .example.org .example.net;
-      rewrite ^ http://blog.example.com$request_uri? permanent;
+      rewrite ^ https://blog.example.com$request_uri? permanent;
     }
 
-In the configuration above, you can see that I want my blog to be served at `http://blog.example.com`. I also added some domain redirections in the form of a second `server` section, and a way to better display my static file repository by letting Nginx generate index pages.
+In the configuration above, you can see that I want my blog to be served at `https://blog.example.com`. I also added some domain redirections in the form of a second `server` section, and a way to better display my static file repository by letting Nginx generate index pages.
 
 Then don't forget to activate this site:
 
@@ -128,7 +128,7 @@ The file above refer to `/etc/nginx/wordpress.conf` which is where I place all t
 
     :::nginx
     # This order might seem weird - this is attempted to match last if rules below fail.
-    # See: http://wiki.nginx.org/HttpCoreModule
+    # See: https://wiki.nginx.org/HttpCoreModule
     location / {
       try_files $uri $uri/ /index.php?q=$uri&$args;
     }
@@ -140,7 +140,7 @@ The file above refer to `/etc/nginx/wordpress.conf` which is where I place all t
 
     include php.conf;
 
-Again, this file make a reference to `php.conf`, which is the same as [the one featured in my previous article](http://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/). I only removed the `index` directive to place it elsewhere, and added a limit on the number of PHP requests a client can make:
+Again, this file make a reference to `php.conf`, which is the same as [the one featured in my previous article](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/). I only removed the `index` directive to place it elsewhere, and added a limit on the number of PHP requests a client can make:
 
     :::nginx
     location ~ \.php$ {
@@ -148,7 +148,7 @@ Again, this file make a reference to `php.conf`, which is the same as [the one f
       limit_req zone=antidos burst=5;
 
       # Zero-day exploit defense.
-      # http://forum.nginx.org/read.php?2,88845,page=3
+      # https://forum.nginx.org/read.php?2,88845,page=3
       # Won't work properly (404 error) if the file is not stored on this server, which is entirely possible with php-fpm/php-fcgi.
       # Comment the 'try_files' line out if you set up php-fpm/php-fcgi on another machine.  And then cross your fingers that you won't get hacked.
       try_files $uri =404;
@@ -156,7 +156,7 @@ Again, this file make a reference to `php.conf`, which is the same as [the one f
       fastcgi_split_path_info ^(.+\.php)(/.+)$;
       include /etc/nginx/fastcgi_params;
 
-      # As explained in http://kbeezie.com/view/php-self-path-nginx/ some fastcgi_param are missing from fastcgi_params.
+      # As explained in https://kbeezie.com/view/php-self-path-nginx/ some fastcgi_param are missing from fastcgi_params.
       # Keep these parameters for compatibility with old PHP scripts using them.
       fastcgi_param PATH_INFO       $fastcgi_path_info;
       fastcgi_param PATH_TRANSLATED $document_root$fastcgi_path_info;

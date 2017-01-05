@@ -6,17 +6,17 @@ tags: 1080p, 720p, Cool Cavemen, Kdenlive, Linux, Music, music video, omashay, V
 ---
 
 Last month I edited the [Wish You Looked at Me video clip
-](http://omashay.com/wish-you-looked-at-me-video-clip/) for the [Omashay
-project](http://omashay.com). This is a side-project of [Cool Cavemen's
-saxophonist](http://coolcavemen.com/biography/tomasito/). The video is finally
+](https://omashay.com/wish-you-looked-at-me-video-clip/) for the [Omashay
+project](https://omashay.com). This is a side-project of [Cool Cavemen's
+saxophonist](https://coolcavemen.com/biography/tomasito/). The video is finally
 available on YouTube:
 
-http://www.youtube.com/watch?v=iHi0lwhTqqc
+https://www.youtube.com/watch?v=iHi0lwhTqqc
 
-[![](http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B001SER45Q&MarketPlace=US&ID=AsinImage&WS=1&tag=kevideld-20&ServiceVersion=20070822)
-](http://amzn.com/B001SER45Q/?tag=kevideld-20) All the video material was shot
+[![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B001SER45Q&MarketPlace=US&ID=AsinImage&WS=1&tag=kevideld-20&ServiceVersion=20070822)
+](https://amzn.com/B001SER45Q/?tag=kevideld-20) All the video material was shot
 by Tomasito itself, with his [Canon PowerShot SX200IS
-](http://amzn.com/B001SER45Q/?tag=kevideld-20) point-and-shoot camera. This
+](https://amzn.com/B001SER45Q/?tag=kevideld-20) point-and-shoot camera. This
 camera produce 30fps 720p clips.
 
 He came to me with all these `.mov` files, and the idea of combining them into
@@ -73,8 +73,8 @@ I deserve the title of editor for this project, but he still insisted to add me
 in the credits... :)
 
 Of course split-screen is [far from new
-](http://monsterkidclassichorrorforum.yuku.com/reply/304973/Oldest-Split-Screen-effect#reply-304973)
-and [was done](http://www.youtube.com/watch?v=vsMIuuV05uc) [a million times
+](https://monsterkidclassichorrorforum.yuku.com/reply/304973/Oldest-Split-Screen-effect#reply-304973)
+and [was done](https://www.youtube.com/watch?v=vsMIuuV05uc) [a million times
 before
 ](https://en.wikipedia.org/wiki/Split_screen_(video_production)#Notable_uses_of_split-screen).
 But it's a simple yet effective concept that require absolutely no investment

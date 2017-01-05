@@ -6,14 +6,14 @@ tags: CMS, Drupal, Magento, osCommerce, Online Store, Ubercart
 ---
 
 About a year ago a friend asked me why I chose the
-[Ubercart](http://www.ubercart.org)/[Drupal](http://drupal.org) combo as the
+[Ubercart](https://www.ubercart.org)/[Drupal](https://drupal.org) combo as the
 engine for [Cool Cavemen's online shop](https://coolcavemen.bandcamp.com). He
-specifically asked me why not choose [Magento](http://www.magentocommerce.com)
-or [osCommerce](http://www.oscommerce.com). I never really took the time to
+specifically asked me why not choose [Magento](https://www.magentocommerce.com)
+or [osCommerce](https://www.oscommerce.com). I never really took the time to
 answer him. Let's fix this.
 
 First, I selected a couple of web eCommerce solution based on the same
-[requirements upon which I choose WordPress](http://kevin.deldycke.com/2006/08/e107-to-wordpress-migration-here-is-why/)
+[requirements upon which I choose WordPress](https://kevin.deldycke.com/2006/08/e107-to-wordpress-migration-here-is-why/)
 some years ago. Namely:
 
   * Open-source free software
@@ -54,9 +54,9 @@ for example prices and stocks for a
 ![](/uploads/2011/ubercart-product-stocks.png)
 
 I use Ubercart since 2008 and I'm really happy with it. The future is
-interesting, as [Ubercart was forked](http://www.drupalcommerce.org/about/history)
-as the [Drupal Commerce](http://www.drupalcommerce.org) project
-[a year ago](http://www.bywombats.com/blog/01-14-2010/rose-any-other-name). I'm
+interesting, as [Ubercart was forked](https://www.drupalcommerce.org/about/history)
+as the [Drupal Commerce](https://www.drupalcommerce.org) project
+[a year ago](https://www.bywombats.com/blog/01-14-2010/rose-any-other-name). I'm
 waiting for the 1.0 release of the latter to decide if it is worth switching to
 the fork or not. But having it based on Drupal 7 is good news, as Ubertcart
 still stick to the (old) Drupal 6.

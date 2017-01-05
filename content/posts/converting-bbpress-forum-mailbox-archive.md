@@ -5,9 +5,9 @@ category: English
 tags: Backup, bbpress, convertion, Cool Cavemen, CSV, email, mailbox, mbox, migration, MySQL, SQL, PHP, Python, SQL, WordPress
 ---
 
-In my band [Cool Cavemen](http://coolcavemen.com), before using a private mailing-list to discuss internal stuff, we were using a private bbPress forum. This forum is no longer used but it still contains tons of old, but useful content.
+In my band [Cool Cavemen](https://coolcavemen.com), before using a private mailing-list to discuss internal stuff, we were using a private bbPress forum. This forum is no longer used but it still contains tons of old, but useful content.
 
-I've just finished to migrate this forum from [bbPress](http://bbpress.org/) to a [mailbox](http://en.wikipedia.org/wiki/Mbox) archive. Here is how I did it.
+I've just finished to migrate this forum from [bbPress](https://bbpress.org/) to a [mailbox](https://en.wikipedia.org/wiki/Mbox) archive. Here is how I did it.
 
 First, I simply opened a MySQL terminal on a local copy of our bbPress site:
 
@@ -74,7 +74,7 @@ Next, it is for replies to be exported (to `/tmp/forum-reply-export.csv`):
 
 I then wrote a [tiny Python script](https://github.com/kdeldycke/scripts/blob/master/bbpress-to-mailbox.py) to parse those CSV files and transform each forum post to an email. All these email are then consolidated in a single mailbox file.
 
-Once this is done, it's easy to transfer these mails to any mail account using, for example, the [ImportExportTools plugin](https://addons.mozilla.org/thunderbird/addon/importexporttools/) for [Thunderbird](http://www.mozilla.org/thunderbird/).
+Once this is done, it's easy to transfer these mails to any mail account using, for example, the [ImportExportTools plugin](https://addons.mozilla.org/thunderbird/addon/importexporttools/) for [Thunderbird](https://www.mozilla.org/thunderbird/).
 
 Finally, once your confident enough (read: have lots of MySQL backups) that all your forum's threads were safely converted to mails, you're free to purge your bbPress databases of the content you just migrated:
 

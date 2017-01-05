@@ -1,6 +1,6 @@
 # Redirect everything to my beautiful subdomain
 RewriteCond %{HTTP_HOST} !^kevin\.deldycke\.com
-RewriteRule ^(.*)$ http://kevin.deldycke.com/$1
+RewriteRule ^(.*)$ https://kevin.deldycke.com/$1
 
 # General server config
 Options -FollowSymLinks -ExecCGI -Includes -IncludesNOEXEC -Indexes -MultiViews +SymLinksIfOwnerMatch
@@ -70,7 +70,7 @@ RedirectMatch gone ^/wp-.*\.php$
 RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
 
 # Site-wide comments feeds moved to Disqus
-RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ http://kevin-deldycke-blog.disqus.com/latest.rss
+RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ https://kevin-deldycke-blog.disqus.com/latest.rss
 
 
 ### HTTP tweaks (caching, optimizations, mime-types)

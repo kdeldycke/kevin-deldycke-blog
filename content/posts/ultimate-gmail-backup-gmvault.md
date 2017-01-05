@@ -7,11 +7,11 @@ tags: Backup, Gmail, gmvault, Linux, email, Pip, Python, Ubuntu, cron
 
 For several weeks, I started a quest to find the best solution to locally backup a Gmail account.
 
-I [tried `offline-imap`](http://kevin.deldycke.com/2012/05/backup-gmail-offlineimap/), but it is bidirectional and can push back to your Gmail account local mistakes. Then I [played with `mbsync`](http://kevin.deldycke.com/2012/08/gmail-backup-mbsync/), but it [doesn't support sub-folders/tags](http://www.mail-archive.com/isync-devel@lists.sourceforge.net/msg00220.html).
+I [tried `offline-imap`](https://kevin.deldycke.com/2012/05/backup-gmail-offlineimap/), but it is bidirectional and can push back to your Gmail account local mistakes. Then I [played with `mbsync`](https://kevin.deldycke.com/2012/08/gmail-backup-mbsync/), but it [doesn't support sub-folders/tags](https://www.mail-archive.com/isync-devel@lists.sourceforge.net/msg00220.html).
 
-I finally found the Holy Grail in [Gmvault](http://gmvault.org/), a recent open-source project especially designed for the task and all its subtleties.
+I finally found the Holy Grail in [Gmvault](https://gmvault.org/), a recent open-source project especially designed for the task and all its subtleties.
 
-To install it on Ubuntu, starts by getting [distribute](http://pypi.python.org/pypi/distribute), a Python dependency:
+To install it on Ubuntu, starts by getting [distribute](https://pypi.python.org/pypi/distribute), a Python dependency:
 
     :::bash
     $ sudo pip install --upgrade distribute
@@ -109,7 +109,7 @@ Then install Gmvault itself:
     Successfully installed gmvault argparse Logbook IMAPClient gdata
     Cleaning up...
 
-Now [for authentication, please read the documentation](http://gmvault.org/in_depth.html#authentication). It's quite easy and straightforward.
+Now [for authentication, please read the documentation](https://gmvault.org/in_depth.html#authentication). It's quite easy and straightforward.
 
 Finally, to start the backup of your remote Gmail account, just launch:
 

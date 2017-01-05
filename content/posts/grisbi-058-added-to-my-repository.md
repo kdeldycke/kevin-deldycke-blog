@@ -5,5 +5,5 @@ tags: accounting, grisbi, Linux, Mandriva, RPM
 ---
 
 I added the last version of
-[Grisbi (v 0.5.8), a personnal accounting system](http://www.grisbi.org), to my
+[Grisbi (v 0.5.8), a personnal accounting system](https://www.grisbi.org), to my
 Mandriva 2006.0 repository.

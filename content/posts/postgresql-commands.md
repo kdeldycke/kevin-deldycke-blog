@@ -35,7 +35,7 @@ tags: CLI, database, Linux, PostgreSQL, SQL, Regular expression
         :::bash
         $ psql -d database_id
 
-  * Return the result of a query by aligning its row in a single line, separated by a space ([source](http://stackoverflow.com/a/1252191)):
+  * Return the result of a query by aligning its row in a single line, separated by a space ([source](https://stackoverflow.com/a/1252191)):
 
         :::bash
         $ psql --tuples-only --no-align -d database_id -c "SELECT id FROM res_users;" | sed ':a;N;$!ba;s/\n/ /g'
@@ -75,7 +75,7 @@ tags: CLI, database, Linux, PostgreSQL, SQL, Regular expression
         :::postgresql
         ALTER DATABASE db_id OWNER TO user_id;
 
-  * Set the owner of all tables from the `MY_DB_ID` database to `MY_DB_USER` ([source](http://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql)):
+  * Set the owner of all tables from the `MY_DB_ID` database to `MY_DB_USER` ([source](https://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql)):
 
         :::bash
         $ for tbl in `psql -qAt -c "SELECT tablename FROM pg_tables WHERE schemaname = 'public';" MY_DB_ID` ; do psql -c "ALTER TABLE $tbl OWNER TO MY_DB_USER" MY_DB_ID ; done
@@ -111,7 +111,7 @@ tags: CLI, database, Linux, PostgreSQL, SQL, Regular expression
         :::bash
         $ ALTER TABLE table_id DISABLE TRIGGER ALL;
 
-  * List all constraints of your database ([source](http://solaimurugan.blogspot.com/2010/10/list-out-all-forien-key-constraints.html)):
+  * List all constraints of your database ([source](https://solaimurugan.blogspot.com/2010/10/list-out-all-forien-key-constraints.html)):
 
         :::postgresql
         SELECT tc.constraint_name,

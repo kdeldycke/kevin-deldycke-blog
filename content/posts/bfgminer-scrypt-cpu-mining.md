@@ -11,16 +11,16 @@ Kubuntu 13.04. Not to get rich, but simply to verify that the production of
 [crypto-currencies](https://en.wikipedia.org/wiki/Cryptocurrency) really was
 decentralized, and also to learn how-to mine.
 
-I first tried mining [Bitcoin](http://bitcoin.org) with
-[BFGMiner](http://bfgminer.org). I choose the later over
+I first tried mining [Bitcoin](https://bitcoin.org) with
+[BFGMiner](https://bfgminer.org). I choose the later over
 [cgminer](https://github.com/ckolivas/cgminer) because that's the only one I
 found to be readily [available from an Ubuntu
 PPA](https://launchpad.net/~unit3/+archive/bfgminer):
 
     :::bash
     $ sudo tee -a /etc/apt/sources.list <<-EOF
-        deb http://ppa.launchpad.net/unit3/bfgminer/ubuntu quantal main
-        deb-src http://ppa.launchpad.net/unit3/bfgminer/ubuntu quantal main
+        deb https://ppa.launchpad.net/unit3/bfgminer/ubuntu quantal main
+        deb-src https://ppa.launchpad.net/unit3/bfgminer/ubuntu quantal main
       EOF
     $ sudo aptitude install bfgminer
 
@@ -60,7 +60,7 @@ Then create a config file in `~/.bfgminer/bfgminer.conf`:
         "pool-priority" : "0"
       },
       {
-        "url" : "http://p2pool.org:9327",
+        "url" : "https://p2pool.org:9327",
         "user" : "LTxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         "pass" : "password",
         "pool-priority" : "1"

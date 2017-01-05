@@ -17,7 +17,7 @@ Worse, `datetime` search field in OpenERP 6.1 [no longer let you set the time](h
 
 To fix these issues, I've created [`web_smile_search_range`](https://github.com/Smile-SA/smile_openerp_addons_6.1/tree/master/web_smile_search_range) a module which is available since 2012, but I never advertised it on this blog.
 
-This module is based on an [open-source addon from Credativ](http://bazaar.launchpad.net/~credativ/credativ-openerp/addons-6.1/files/head:/web_searchdaterange/). I extended the later to:
+This module is based on an [open-source addon from Credativ](https://bazaar.launchpad.net/~credativ/credativ-openerp/addons-6.1/files/head:/web_searchdaterange/). I extended the later to:
 
   * Replace single `date`, `datetime` and `float` search fields to a range.
   * Allow selection of time in `datetime` search fields.

@@ -8,12 +8,12 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
   * Download a web page an all its requisites:
 
         :::bash
-        $ wget -r -p -nc -nH --level=1 http://pypi.python.org/simple/python-ldap/
+        $ wget -r -p -nc -nH --level=1 https://pypi.python.org/simple/python-ldap/
 
   * Test that your site is sending gzipped content:
  
         :::bash
-        $ curl -i -H "Accept-Encoding: gzip,deflate" http://kevin.deldycke.com 2>&1 | grep gzip
+        $ curl -i -H "Accept-Encoding: gzip,deflate" https://kevin.deldycke.com 2>&1 | grep gzip
 
   * List all the diferrent MIME types of all the files in the `www` folder:
 
@@ -23,7 +23,7 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
   * Create a PNG image of a rendered html page:
 
         :::bash
-        $ kwebdesktop 1024 768 capture.png http://slashdot.org/
+        $ kwebdesktop 1024 768 capture.png https://slashdot.org/
 
   * Search in all files malformed HTML entities (in this case non-breakable spaces that doesn't end with a semicolon):
 
@@ -33,14 +33,14 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
   * Here is a one-liner I use to ping some pages on internet to force our corporate proxy to refresh its internal cache:
 
         :::bash
-        $ for EGG in BeautifulSoup PIL Plone; do wget --server-response -O /dev/null http://pypi.python.org/simple/$EGG/; done
+        $ for EGG in BeautifulSoup PIL Plone; do wget --server-response -O /dev/null https://pypi.python.org/simple/$EGG/; done
 
   * Create a minimal self-signed unencrypted SSL certificate without issuer information and a validity period of 10 years:
 
         :::bash
         $ openssl req -x509 -nodes -subj '/' -days 3650 -newkey rsa:2048 -keyout self-signed.pem -out self-signed.pem
 
-  * Create a pair of SSL self-signed certificate and (unencrypted) private key ([source](http://devsec.org/info/ssl-cert.html)):
+  * Create a pair of SSL self-signed certificate and (unencrypted) private key ([source](https://devsec.org/info/ssl-cert.html)):
 
         :::bash
         $ openssl genrsa -out private.key 2048

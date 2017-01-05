@@ -5,15 +5,15 @@ category: English
 tags: Character encoding, Databases, e107, Latin-1, MySQL, SQL, PHP, sed, SQL, unicode, UTF-8, Web, Regular expression
 ---
 
-[Currently working](http://kevin.deldycke.com/2011/03/e107-importer-1-1/) on my [e107 Importer plugin](http://wordpress.org/extend/plugins/e107-importer/), I was confronted today with badly-encoded data coming from my databases.
+[Currently working](https://kevin.deldycke.com/2011/03/e107-importer-1-1/) on my [e107 Importer plugin](https://wordpress.org/extend/plugins/e107-importer/), I was confronted today with badly-encoded data coming from my databases.
 
-e107 migrated to full UTF-8 [years ago](http://e107.org/comment.php?comment.news.735), but I must have messed the upgrade process at the time. That was my conclusion when I took a close look to my tables: all of them seems to be set to Latin-1 but contain UTF-8 data. Here are screenshots from [SQLBuddy](http://www.sqlbuddy.com) (a great light-weight MySQL manager) showing just that:
+e107 migrated to full UTF-8 [years ago](https://e107.org/comment.php?comment.news.735), but I must have messed the upgrade process at the time. That was my conclusion when I took a close look to my tables: all of them seems to be set to Latin-1 but contain UTF-8 data. Here are screenshots from [SQLBuddy](https://www.sqlbuddy.com) (a great light-weight MySQL manager) showing just that:
 
 ![](/uploads/2011/e107-latin1-encoded-mysql-tables.png)
 
 ![](/uploads/2011/utf8-encoded-data-in-latin1-tables.png)
 
-To fix this, I first tried to use the following command I [found on the web](http://www.commandlinefu.com/commands/view/1575/convert-all-mysql-tables-and-fields-to-utf8):
+To fix this, I first tried to use the following command I [found on the web](https://www.commandlinefu.com/commands/view/1575/convert-all-mysql-tables-and-fields-to-utf8):
 
     :::bash
     $ mysql --database=e107db -B -N -e "SHOW TABLES"  | awk '{print "ALTER TABLE", $1, "CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;"}' | mysql --database=e107db
@@ -48,4 +48,4 @@ And now, accentuated characters appears as they should in our database, meaning 
 
 ![](/uploads/2011/fixed-utf8-data-in-tables.png)
 
-PS: I [found another alternative method](http://en.gentoo-wiki.com/wiki/Convert_latin1_to_UTF-8_in_MySQL#Alternative_Method) (look at the end of the linked page) which consists of temporarily handling `TEXT` fields as `BLOB`, to have MySQL treat them as binary content (thus skipping character transcoding). Haven't tested this but sounds tricky.
+PS: I [found another alternative method](https://en.gentoo-wiki.com/wiki/Convert_latin1_to_UTF-8_in_MySQL#Alternative_Method) (look at the end of the linked page) which consists of temporarily handling `TEXT` fields as `BLOB`, to have MySQL treat them as binary content (thus skipping character transcoding). Haven't tested this but sounds tricky.

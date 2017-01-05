@@ -4,9 +4,9 @@ title: Phorum 3.x to WordPress migration script
 tags: Python, Linux, Phorum, WordPress, migration, script, GitHub, Cool Cavemen, Funky Storm, Debian, aptitude, pip, lxml, bbcode, PyMySQL, MySQL, PHP
 ---
 
-Before <a href="http://coolcavemen.com">Cool Cavemen</a>, there was <a href="http://funky-storm.com/">Funky Storm</a>. The band is long gone but I still keep an online presence as a sort of web memorial. Recently I added there an old copy of <a href="http://funky-storm.com/forum/">the forum</a>.
+Before <a href="https://coolcavemen.com">Cool Cavemen</a>, there was <a href="https://funky-storm.com/">Funky Storm</a>. The band is long gone but I still keep an online presence as a sort of web memorial. Recently I added there an old copy of <a href="https://funky-storm.com/forum/">the forum</a>.
 
-The original forum was powered by a <a href="http://www.phorum.org">Phorum</a> 3.x instance. The current incarnation of the website runs on WordPress. So I produced some months ago a quick & dirty Python <a href="https://github.com/kdeldycke/scripts/blob/master/phorum-to-wordpress.py">script to migrate Phorum content to WordPress</a>.
+The original forum was powered by a <a href="https://www.phorum.org">Phorum</a> 3.x instance. The current incarnation of the website runs on WordPress. So I produced some months ago a quick & dirty Python <a href="https://github.com/kdeldycke/scripts/blob/master/phorum-to-wordpress.py">script to migrate Phorum content to WordPress</a>.
 
 The script browse Phorum's MySQL database and generate an XML file. The XML produced respect the WXR dialect (WordPress eXtended RSS), which means the file can be directly imported to a plain WordPress site.
 

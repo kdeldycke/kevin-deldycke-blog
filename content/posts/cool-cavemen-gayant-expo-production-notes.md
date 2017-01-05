@@ -6,33 +6,33 @@ tags: band, concert, Cool Cavemen, Douai, France, gayant expo, Kdenlive, Stage L
 ---
 
 I've just realized I've never really finished the
-[series of posts](http://kevin.deldycke.com/tag/gayant-expo/) I
-[started in 2010](http://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/),
+[series of posts](https://kevin.deldycke.com/tag/gayant-expo/) I
+[started in 2010](https://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/),
 a series about my longest video project: the
-[biggest concert](http://coolcavemen.com/2009/concert-a-gayant-expo-les-photos/)
-we performed with [Cool Cavemen](http://coolcavemen.com) in 2009.
+[biggest concert](https://coolcavemen.com/2009/concert-a-gayant-expo-les-photos/)
+we performed with [Cool Cavemen](https://coolcavemen.com) in 2009.
 
 Cool Cavemen is
-[working right now on a new album](http://coolcavemen.com/2011/le-grand-retour/),
+[working right now on a new album](https://coolcavemen.com/2011/le-grand-retour/),
 which means we're approaching the end of the
-[Multipolar](http://coolcavemen.bandcamp.com/album/multipolar)-era. This is the
+[Multipolar](https://coolcavemen.bandcamp.com/album/multipolar)-era. This is the
 right time to dig out what is, without a doubt, the video condensing all the
 spirit and intensity of the period. Look at those dancing people! Look how they
 like our music! Look how musicians have fun on stage! :)
 
-http://www.youtube.com/watch?v=qE-bis-wYxs&list;=SP4BAA557B7144031F
+https://www.youtube.com/watch?v=qE-bis-wYxs&list;=SP4BAA557B7144031F
 
 By gathering all kinds of footage from the event, I was able to generate this
 1-hour coverage of the concert. It took me the whole year of 2010 to edit and
 publish it, one song at a time. This delay was mostly due to lacks of time, an
-[unstable MacBook](http://kevin.deldycke.com/2009/12/macosx-is-irritating/comment-page-1/#comment-8006)
+[unstable MacBook](https://kevin.deldycke.com/2009/12/macosx-is-irritating/comment-page-1/#comment-8006)
 and numerous Kdenlive crashes, all of these forcing me to re-create and redo my
 projects from scratch several times (_sigh_).
 
 ## Lighting Design
 
 I not only edited this video. I also was in charge of the
-[stage lighting design](http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Stage%20Lighting%20Design&linkCode=ur2&rh=i%3Aaps%2Ck%3AStage%20Lighting%20Design&tag=kevideld-20&url=search-alias%3Daps)
+[stage lighting design](https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Stage%20Lighting%20Design&linkCode=ur2&rh=i%3Aaps%2Ck%3AStage%20Lighting%20Design&tag=kevideld-20&url=search-alias%3Daps)
 of the concert:
 
 ![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
@@ -44,12 +44,12 @@ of the concert:
 ![working-on-grand-ma-003](/uploads/2012/working-on-grand-ma-003.jpg)
 
 It was the first time I had so much gear to work with (mostly
-[Martin Mac-2000](http://www.martin.com/product/product.asp?product=mac2000profile)
-and [Mac-700](http://martin.com/product/product.asp?product=mac700profile)),
+[Martin Mac-2000](https://www.martin.com/product/product.asp?product=mac2000profile)
+and [Mac-700](https://martin.com/product/product.asp?product=mac700profile)),
 including the full-size version of the
-[Grand-MA v1 lighting console](http://en.audiofanzine.com/automatic-lighting-console/ma-lighting/GrandMA-Fullsize/).
+[Grand-MA v1 lighting console](https://en.audiofanzine.com/automatic-lighting-console/ma-lighting/GrandMA-Fullsize/).
 A week before the show, I played with
-[GrandMA's emulator](http://www.malighting.com/en/products/control/grandma-onpc.html)
+[GrandMA's emulator](https://www.malighting.com/en/products/control/grandma-onpc.html)
 to get a glimpse of that desk's philosophy.
 
 ![](/uploads/2012/grand-ma-onpc-simulation.png)
@@ -67,9 +67,9 @@ that didn't fell right, and fix all the timing issue after the facts.
 ## Synchronization
 
 The audio is a multitrack recording taken directly from the
-[front of house](http://en.wikipedia.org/wiki/Front_of_House) mixing console,
+[front of house](https://en.wikipedia.org/wiki/Front_of_House) mixing console,
 and saved on a
-[MacBook](http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=apple%20macbook&linkCode=ur2&rh=i%3Aaps%2Ck%3Aapple%20macbook&tag=kevideld-20&url=search-alias%3Daps):
+[MacBook](https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=apple%20macbook&linkCode=ur2&rh=i%3Aaps%2Ck%3Aapple%20macbook&tag=kevideld-20&url=search-alias%3Daps):
 
 ![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
 
@@ -80,7 +80,7 @@ and saved on a
 ![p1010733](/uploads/2012/p1010733.jpg)
 
 The raw recording was later remixed by Thomas of the
-[SoundUp Studio](http://soundupstudio.com/).
+[SoundUp Studio](https://soundupstudio.com/).
 
 Using different software for audio and video editing, proved to be challenging.
 And we were worried about the effect of bad synchronization. After some
@@ -91,7 +91,7 @@ research, it looks like humans tolerate an error below 100ms:
   cannot be noticed.</p>
   <small>Philippe Owezarski (LAAS-CNRS), <cite title="Enforcing Multipoint
   Multimedia Synchronisation in Videoconferencing Applications"><a
-  href="http://books.google.fr/books?id=3IdKbKOxZL4C&amp;pg=PA69&amp;lpg=PA69">
+  href="https://books.google.fr/books?id=3IdKbKOxZL4C&amp;pg=PA69&amp;lpg=PA69">
   Enforcing Multipoint Multimedia Synchronisation in Videoconferencing
   Applications</a></cite></small>
 </blockquote>
@@ -101,7 +101,7 @@ based on a reference track extracted from the camera recording:
 
   1. First, Thomas start to work on a song. When he has something to show us, he
      down-mix its
-     [Cubase](http://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Steinberg%20Cubase&linkCode=ur2&rh=i%3Aaps%2Ck%3ASteinberg%20Cubase&tag=kevideld-20&url=search-alias%3Daps)
+     [Cubase](https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Steinberg%20Cubase&linkCode=ur2&rh=i%3Aaps%2Ck%3ASteinberg%20Cubase&tag=kevideld-20&url=search-alias%3Daps)
      project and export intermediate results under the name
      `2010-01-29--igor--audio-desync.wav`. This allow all band members to give
      feedback.
@@ -129,7 +129,7 @@ delays. Unfortunately, I detected some:
 ![export-PTFU-master](/uploads/2012/export-PTFU-master.png)
 
 I introduced them when I tried to
-[get rid of video timecode artifacts](http://kevin.deldycke.com/2010/01/remove-videotape-timecode/).
+[get rid of video timecode artifacts](https://kevin.deldycke.com/2010/01/remove-videotape-timecode/).
 I messed with encoding parameters in Avidemux, and introduced delays. When I
 realized I could just use the crop filter in Kdenlive, instead of removing the
 timecode in an external software, I produced perfect timing. That's another big

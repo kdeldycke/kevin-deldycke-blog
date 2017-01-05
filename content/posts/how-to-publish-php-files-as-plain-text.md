@@ -5,7 +5,7 @@ category: English
 tags: Apache, Hosting, PHP, Server, Web
 ---
 
-Two months ago I was looking for a way to [let apache serve python scripts as plain text](http://kevin.deldycke.com/2006/05/how-to-localy-disable-python-cgi/). Today I had the same problem with php files. Here is my solution.
+Two months ago I was looking for a way to [let apache serve python scripts as plain text](https://kevin.deldycke.com/2006/05/how-to-localy-disable-python-cgi/). Today I had the same problem with php files. Here is my solution.
 
 What you need is a `.htaccess` file in the same directory as the files you want to serve, with the following directive in it:
 

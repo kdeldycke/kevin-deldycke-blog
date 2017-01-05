@@ -5,7 +5,7 @@ category: English
 tags: desktop, KDE, Mac OS X 10.5 Leopard, Apple, macOS, rant
 ---
 
-First, [unstable machine](http://twitter.com/kdeldycke/status/6158072244).
+First, [unstable machine](https://twitter.com/kdeldycke/status/6158072244).
 
 Then, regular crashes of the Finder and Safari.
 
@@ -36,7 +36,7 @@ desktop.
   * updated Mac OS X from Leopard to Snow Leopard,
   * upgraded Kubuntu from Karmic Koala (9.10) to Lucid Lynx (10.04),
   * changed my HDD to a SSD (a [160 Go Intel X25-M Postville
-  ](http://amzn.com/B002IGT7IU/?tag=kevideld-20)).
+  ](https://amzn.com/B002IGT7IU/?tag=kevideld-20)).
 
 Still, my machine crash hard. Here is the kind of kernel crashes I have on
 Kubuntu with this machine:
@@ -49,9 +49,9 @@ Wait. I remember of Apple pushing a new SATA firmware one year ago. Let me
 google this...
 
 Bingo! [This is a firmware issue
-](http://www.slashgear.com/macbook-pro-3-0gbps-sata-upgrade-breaking-third-party-drives-2648050/)!
+](https://www.slashgear.com/macbook-pro-3-0gbps-sata-upgrade-breaking-third-party-drives-2648050/)!
 I knew it! So I just followed [these instructions
-](http://forums.macrumors.com/showpost.php?p=8414998&postcount=305) this
+](https://forums.macrumors.com/showpost.php?p=8414998&postcount=305) this
 afternoon to downgrade my firmware to EFI 1.6.
 
 I can now check that it really set SATA bandwidth back to 1.5 Gbps:
@@ -66,7 +66,7 @@ I can now check that it really set SATA bandwidth back to 1.5 Gbps:
 
 But the firmware downgrade didn't solved my problems at all. It's really time
 to trash this MacBook Pro. [Anyone to suggest
-](http://twitter.com/kdeldycke/status/14657317476) a good laptop that works
+](https://twitter.com/kdeldycke/status/14657317476) a good laptop that works
 fine on Kubuntu?
 
 
@@ -79,5 +79,5 @@ For the record, here is what my MacBook looked like at boot in the end of June
 
 At Paris' Genius Bar, I was told that my motherboard was dead, which cost 400€
 to replace. And that's how I finally decided to [sell my MacBook Pro
-](http://twitter.com/#!/kdeldycke/status/29012034410) and get rid of all my
+](https://twitter.com/#!/kdeldycke/status/29012034410) and get rid of all my
 Apple gear and proprietary software.

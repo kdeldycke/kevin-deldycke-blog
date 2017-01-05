@@ -6,34 +6,34 @@ tags: CVS, Drupal, Fork, Git, GitHub, Theme
 ---
 
 This week I've decided to put
-[my work on Cool Cavemen's concert videos](http://kevin.deldycke.com/2010/02/cool-cavemen-live-gayant-expo-part-ii/)
+[my work on Cool Cavemen's concert videos](https://kevin.deldycke.com/2010/02/cool-cavemen-live-gayant-expo-part-ii/)
 aside, and work instead on refreshing
 [our online store](https://coolcavemen.bandcamp.com). After all,
-[fans are requesting this](http://www.youtube.com/watch?v=qE-bis-wYxs#show_link_8i9W6PA9rEcKAmnYaXfANlo9U1TASUD9jXw7PtUS3n0),
+[fans are requesting this](https://www.youtube.com/watch?v=qE-bis-wYxs#show_link_8i9W6PA9rEcKAmnYaXfANlo9U1TASUD9jXw7PtUS3n0),
 so I can't escape my duty...
 
-The theme the store is based on is [Drupify](http://drupal.org/project/drupify),
+The theme the store is based on is [Drupify](https://drupal.org/project/drupify),
 an adaptation of the
-[RokWebify Joomla theme](http://www.rockettheme.com/joomla-downloads/folder/115-rokwebify).
+[RokWebify Joomla theme](https://www.rockettheme.com/joomla-downloads/folder/115-rokwebify).
 All these themes are licensed under the GPL, so I have to share all my
 modifications with the community. This is a great opportunity to seriously
-experiment with [Git](http://git-scm.com) (at last!).
+experiment with [Git](https://git-scm.com) (at last!).
 
 Here is my plan:
 
   1. Make an exact copy of Drupify's code base in my GitHub repository.
   2. Hack it in this playground.
   3. ???
-  4. [Profit!](http://knowyourmeme.com/memes/profit) :D
+  4. [Profit!](https://knowyourmeme.com/memes/profit) :D
 
 Problem:
-[Drupify lives in a CVS repository](http://drupalcode.org/viewvc/drupal/contributions/themes/drupify/).
+[Drupify lives in a CVS repository](https://drupalcode.org/viewvc/drupal/contributions/themes/drupify/).
 
-Solution: Git features a [`cvsimport`](http://kernel.org/pub/software/scm/git-core/docs/git-cvsimport.html)
+Solution: Git features a [`cvsimport`](https://kernel.org/pub/software/scm/git-core/docs/git-cvsimport.html)
 command.
 
 Before going further, we need to install
-[`cvsps`](https://web-beta.archive.org/web/20160125062146/http://www.cobite.com:80/cvsps/). For [MacPorts](http://www.macports.org)
+[`cvsps`](https://web-beta.archive.org/web/20160125062146/https://www.cobite.com:80/cvsps/). For [MacPorts](https://www.macports.org)
 users, this is as simple as:
 
     :::bash
@@ -41,8 +41,8 @@ users, this is as simple as:
     Password:
     --->  Computing dependencies for cvsps
     --->  Fetching cvsps
-    --->  Attempting to fetch cvsps-2.1.tar.gz from http://arn.se.distfiles.macports.org/cvsps
-    --->  Attempting to fetch cvsps-2.1.tar.gz from http://distfiles.macports.org/cvsps
+    --->  Attempting to fetch cvsps-2.1.tar.gz from https://arn.se.distfiles.macports.org/cvsps
+    --->  Attempting to fetch cvsps-2.1.tar.gz from https://distfiles.macports.org/cvsps
     --->  Verifying checksum(s) for cvsps
     --->  Extracting cvsps
     --->  Applying patches to cvsps
@@ -64,15 +64,15 @@ Then we create a temporary copy of Drupify's CVS repository:
     cvs rlog: Logging contributions/themes/drupify/images
 
 The new Git repository automatically created is named `drupify-copy`. Here is
-how it looks like in [GitX](http://gitx.frim.nl) (notice tags and branches):
+how it looks like in [GitX](https://gitx.frim.nl) (notice tags and branches):
 
 ![](/uploads/2010/git-cvs-import-in-gitx.png)
 
 To keep things clean and tidy, I want to relocate all the content of this
 repository to a `drupify-fork` folder.
-[Inspired by Pedro Melo](http://www.simplicidade.org/notes/archives/2009/04/merging_two_unr.html),
+[Inspired by Pedro Melo](https://www.simplicidade.org/notes/archives/2009/04/merging_two_unr.html),
 we'll use the
-[`git filter-branch`](http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html)
+[`git filter-branch`](https://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html)
 to do this job:
 
     :::bash
@@ -115,7 +115,7 @@ too:
 ![](/uploads/2010/gitx-confused-by-git-branch-filter-backups.png)
 
 But
-[according Jakub Narębski on the Git mailing-list](http://n2.nabble.com/Removing-some-files-from-history-tp1344670p1344919.html),
+[according Jakub Narębski on the Git mailing-list](https://n2.nabble.com/Removing-some-files-from-history-tp1344670p1344919.html),
 we can safely removes Git's backups:
 
     :::bash
@@ -143,7 +143,7 @@ operation didn't change anything, but the base folder (and SHA hashes):
 ![](/uploads/2010/history-tree-in-gitx-after-folder-change.png)
 
 It's time to import all this code in our main repository. First, get a local
-copy of our public [GitHub](http://github.com/) code base:
+copy of our public [GitHub](https://github.com/) code base:
 
     :::bash
     $ cd

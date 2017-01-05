@@ -5,16 +5,16 @@ category: English
 tags: Backup, Gmail, Google, IMAP, isync, Linux, email, mbsync, OpenSSL, SSL, Regular expression
 ---
 
-I used to keep a [local backup of my Gmail mails with OfflineImap](http://kevin.deldycke.com/2012/05/backup-gmail-offlineimap/). But I never felt comfortable with this solution because of OfflineImap being fully bidirectional. Which means my mails in the cloud are not protected from me messing with their local versions.
+I used to keep a [local backup of my Gmail mails with OfflineImap](https://kevin.deldycke.com/2012/05/backup-gmail-offlineimap/). But I never felt comfortable with this solution because of OfflineImap being fully bidirectional. Which means my mails in the cloud are not protected from me messing with their local versions.
 
-In the mean time I found out about [mbsync](http://isync.sourceforge.net/mbsync.html) (from the [isync project](https://sourceforge.net/projects/isync/)). It particularly features fine-grained options to let you defined which source is authoritative, thus restricting the synchronization to one direction.
+In the mean time I found out about [mbsync](https://isync.sourceforge.net/mbsync.html) (from the [isync project](https://sourceforge.net/projects/isync/)). It particularly features fine-grained options to let you defined which source is authoritative, thus restricting the synchronization to one direction.
 
 Let's install mbsync and its dependencies!
 
     :::bash
     $ sudo aptitude install isync ca-certificates
 
-Just in case, don't forget to [enable IMAP access to you Gmail account](http://support.google.com/mail/bin/answer.py?hl=en&answer=77695).
+Just in case, don't forget to [enable IMAP access to you Gmail account](https://support.google.com/mail/bin/answer.py?hl=en&answer=77695).
 
 Create a new destination directory and an empty configuration file:
 

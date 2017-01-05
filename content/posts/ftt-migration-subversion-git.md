@@ -5,7 +5,7 @@ category: English
 tags: Feed Tracking Tool, Git, GitHub, migration, Subversion, Uperto, Regular expression
 ---
 
-[Last month I released the Feed Tracking Tool project](http://kevin.deldycke.com/2011/03/feed-tracking-tool-released-open-source-license/) (aka FTT) [on GitHub](http://github.com/kdeldycke/feed-tracking-tool). I reconstructed the code history from old tarballs. In the mean time, my friend at Uperto managed to recover the original Subversion repository from very old backups. Here is how I migrated the old SVN repository to GitHub.
+[Last month I released the Feed Tracking Tool project](https://kevin.deldycke.com/2011/03/feed-tracking-tool-released-open-source-license/) (aka FTT) [on GitHub](https://github.com/kdeldycke/feed-tracking-tool). I reconstructed the code history from old tarballs. In the mean time, my friend at Uperto managed to recover the original Subversion repository from very old backups. Here is how I migrated the old SVN repository to GitHub.
 
 First, I started a local Subversion server with the repository my co-worker gave me:
 
@@ -16,7 +16,7 @@ First, I started a local Subversion server with the repository my co-worker gave
     $ kill `ps -ef | grep svnserve | awk '{print $2}'`
     $ svnserve --daemon --listen-port 3690 --root ./ftt-svn
 
-Then I created a local Git repository, using [my initialization routine](http://kevin.deldycke.com/2010/05/initialize-git-repositories/):
+Then I created a local Git repository, using [my initialization routine](https://kevin.deldycke.com/2010/05/initialize-git-repositories/):
 
     :::bash
     $ rm -rf ./ftt-git
@@ -89,7 +89,7 @@ While exploring my own backups of the FTT project, I stumble upon a preliminary 
     $ git rebase --onto mockup-injection init master
     $ git branch -D mockup-injection
 
-The procedure above come from my "[Commit history reconstruction](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)" article.
+The procedure above come from my "[Commit history reconstruction](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)" article.
 
 Now I can tag by hand all FTT releases.
 

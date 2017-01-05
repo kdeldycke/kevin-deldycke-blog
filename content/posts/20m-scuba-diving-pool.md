@@ -6,14 +6,14 @@ tags: GoPro, Kdenlive, Pool, Scuba Diving, Video, YouTube
 ---
 
 Here is my last dive at the pool, the last indoor dive required to validate my
-[PADI Open Water Diver](http://amzn.com/B003JX0AUK/?tag=kevideld-20)
+[PADI Open Water Diver](https://amzn.com/B003JX0AUK/?tag=kevideld-20)
 certification:
 
-http://www.youtube.com/watch?v=LPpoNwjrg-4
+https://www.youtube.com/watch?v=LPpoNwjrg-4
 
 It was the first time I used my brand new
-[GoPro HD Hero2](http://amzn.com/B005WY3TI4/?tag=kevideld-20) and its
-[dedicated dive housing](http://amzn.com/B0090A5P0Q/?tag=kevideld-20).
+[GoPro HD Hero2](https://amzn.com/B005WY3TI4/?tag=kevideld-20) and its
+[dedicated dive housing](https://amzn.com/B0090A5P0Q/?tag=kevideld-20).
 Everything was recorded in 1080p at 25fps with the widest FOV setting
 available (170°).
 
@@ -30,7 +30,7 @@ dangers. But this real-life test demonstrated again how stabilization is
 essential to produce good footage.
 
 The camera was
-[attached to my left wrist](http://amzn.com/B0047I1S02/?tag=kevideld-20). The
+[attached to my left wrist](https://amzn.com/B0047I1S02/?tag=kevideld-20). The
 rationale was that having something on my head was a bad idea: it could prevent
 me from accessing and purging my mask. I can't risk (yet) to be blind.
 

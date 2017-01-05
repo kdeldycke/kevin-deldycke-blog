@@ -7,13 +7,13 @@ tags: analytics, Google, hack, patch, PHP, Zenphoto, SSL
 
 ![](/uploads/2008/zenphoto-12.png)
 
-This is the patch I apply on each [Zenphoto](http://www.zenphoto.org) I install
+This is the patch I apply on each [Zenphoto](https://www.zenphoto.org) I install
 and upgrade. This little hack add
-[Google Analytics](http://www.google.com/analytics/) tracking for all users
+[Google Analytics](https://www.google.com/analytics/) tracking for all users
 except administrators.
 
 Why? As you can see in
-[ticket #441 in Zenphoto bugtracker](http://www.zenphoto.org/trac/ticket/441),
+[ticket #441 in Zenphoto bugtracker](https://www.zenphoto.org/trac/ticket/441),
 there is no intention of adding support of GA in Zenphoto, even as an optional
 plugin. Hence my tiny hack. And for the non-admin stuff, I like having unbiased
 statistics: on low-audience websites, administrators can generate more traffic
@@ -34,7 +34,7 @@ and its content:
     - }
     + } else {
     +    echo "<script type=\"text/javascript\">
-    +var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");
+    +var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"https://www.\");
     +document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));
     +</script>
     +<script type=\"text/javascript\">
@@ -47,7 +47,7 @@ and its content:
      /**
 
 This patch was generated from a
-[Zenphoto v1.2](http://www.zenphoto.org/2008/08/zenphoto-12-release-announcement/)
+[Zenphoto v1.2](https://www.zenphoto.org/2008/08/zenphoto-12-release-announcement/)
 and will likely not work with any other version.
 
 Do not forget to update the dummy Google Analytics account ID above

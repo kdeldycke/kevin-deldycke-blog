@@ -12,9 +12,9 @@ for the wordpress K2 theme. This solution is uninstrusive as it can be bundled
 with a K2 style without modifying the K2 core theme.
 
 We will use the new
-[hooks](http://code.google.com/p/kaytwo/wiki/K2CSSandCustomCSS#PHP) from the
+[hooks](https://code.google.com/p/kaytwo/wiki/K2CSSandCustomCSS#PHP) from the
 brand new
-[K2 1.0RC6](https://web.archive.org/web/20140627211340/http://getk2.com/2008/04/k2-release-candidate-6-released/). So
+[K2 1.0RC6](https://web.archive.org/web/20140627211340/https://getk2.com/2008/04/k2-release-candidate-6-released/). So
 first, we have to create a `functions.php` file in our style directory (example:
 `/wp-content/themes/k2/styles/my-style`). Then add the following PHP code in it:
 
@@ -26,7 +26,7 @@ first, we have to create a `functions.php` file in our style directory (example:
       ?>
       <a
         id="cornerbanner"
-        href="http://coolcavemen.com/news/new-website-beta-released/"
+        href="https://coolcavemen.com/news/new-website-beta-released/"
         title="New website released as beta version!">
       </a>
       <?php
@@ -87,18 +87,18 @@ can be replaced by
 
 That's all! My solution is not supposed to work (and was not tested) with
 Internet Explorer as the latter is known to have
-[terrible PNG transparency support](http://en.wikipedia.org/wiki/Portable_Network_Graphics#Web_browser_support_for_PNG).
+[terrible PNG transparency support](https://en.wikipedia.org/wiki/Portable_Network_Graphics#Web_browser_support_for_PNG).
 You can still apply fixes on my code using
-[iepngfix](http://www.twinhelix.com/css/iepngfix/),
-[jquery](http://jquery.andreaseberhard.de/pngFix/) or
-[PNG8 images](http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/).
+[iepngfix](https://www.twinhelix.com/css/iepngfix/),
+[jquery](https://jquery.andreaseberhard.de/pngFix/) or
+[PNG8 images](https://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/).
 
 I've provided you with all the technical details to create a corner banner and
 add it to your K2 style seamlessly. It's now up to you to adapt it to your
 needs. Be Creative! Oh, and by the way, when you'll change the banner PNG file,
 do not forget to update the CSS code with your image width and height.
 
-**Update**: [my friend QPX](http://wqpx.wordpress.com) sent me an alternative
+**Update**: [my friend QPX](https://wqpx.wordpress.com) sent me an alternative
 banner made with photoshop: here is the
 [ready-to-use PNG file](/uploads/2008/corner-banner-qpx.png) and the
 [Photoshop source file](/uploads/2008/corner-banner-qpx.psd).

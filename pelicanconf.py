@@ -20,7 +20,7 @@ MARKDOWN = {
     },
     'output_format': 'html5',
     # Allow numbered lists to not start with 1. Used in following article:
-    # http://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/
+    # https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/
     # See: https://pythonhosted.org/Markdown/reference.html#lazy_ol
     'lazy_ol': False,
 }
@@ -84,11 +84,11 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# http://kevin.deldycke.com/tag/openerp/feed/
+# https://kevin.deldycke.com/tag/openerp/feed/
 TAG_FEED_RSS = 'tag/%s/feed/index.html'
 TAG_FEED_ATOM = 'tag/%s/feed/atom/index.html'
 
-# http://example.com/category/categoryname/feed
+# https://example.com/category/categoryname/feed
 CATEGORY_FEED_RSS = 'category/%s/feed/index.html'
 CATEGORY_FEED_ATOM = 'category/%s/feed/atom/index.html'
 
@@ -191,7 +191,7 @@ SOCIAL = (
 LINKS_WIDGET_NAME = "Professional profiles"
 LINKS = (
     ('LinkedIn', 'https://linkedin.com/in/kevindeldycke/en'),
-    ('PDF resume', 'http://docs.google.com/document/export?format=pdf&amp;id='
+    ('PDF resume', 'https://docs.google.com/document/export?format=pdf&amp;id='
      '1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg'),
 )
 

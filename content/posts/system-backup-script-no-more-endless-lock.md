@@ -6,7 +6,7 @@ tags: Backup, CLI, Linux, Python, rdiff-backup, rsync, Script, SSH, system
 
 I've just released a [new version of my `system-backup.py` script](https://github.com/kdeldycke/scripts/blob/master/system-backup.py).
 
-The main update is about the lock file, which I implemented in the [last version](http://kevin.deldycke.com/2007/04/system-backup-auto-clean-and-lock-added/) to keep the script to run twice (or more) in parallel. This is a nice feature to avoid overlapping processes that fight each other to use the same ressources. But in some extreme cases (reboot or power failure during backup, ...), the lock file will remain and so will prevent the script to start (until you notice the problem and remove the lock file manually). This new version take care of this problem and is now able to remove the lock automatically if a timeout is reached. It also kill all remaining child processes.
+The main update is about the lock file, which I implemented in the [last version](https://kevin.deldycke.com/2007/04/system-backup-auto-clean-and-lock-added/) to keep the script to run twice (or more) in parallel. This is a nice feature to avoid overlapping processes that fight each other to use the same ressources. But in some extreme cases (reboot or power failure during backup, ...), the lock file will remain and so will prevent the script to start (until you notice the problem and remove the lock file manually). This new version take care of this problem and is now able to remove the lock automatically if a timeout is reached. It also kill all remaining child processes.
 
 Here is the detailed changelog:
 

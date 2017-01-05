@@ -7,6 +7,6 @@ tags: Cool Cavemen, Music, music video, omashay, saxophonist, song, Video, youtu
 
 ![](/uploads/2012/where-is-she-banner.jpg)
 
-The last music video I worked on these past few months was just released. Here is [Where is she?](http://omashay.com/compositions/sounds/where-is-she-song/) an original song from [Omashay](http://omashay.com), the side-project of [Cool Cavemen's saxophonist](http://coolcavemen.com/biography/tomasito/):
+The last music video I worked on these past few months was just released. Here is [Where is she?](https://omashay.com/compositions/sounds/where-is-she-song/) an original song from [Omashay](https://omashay.com), the side-project of [Cool Cavemen's saxophonist](https://coolcavemen.com/biography/tomasito/):
 
-http://www.youtube.com/watch?v=YjE_uIRVnv8
+https://www.youtube.com/watch?v=YjE_uIRVnv8

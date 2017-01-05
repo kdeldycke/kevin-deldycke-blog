@@ -71,12 +71,12 @@ tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool
         :::bash
         $ gst-launch-0.10 audiotestsrc ! alsasink
 
-  * Generate cyclic pink noise ([source](http://news.ycombinator.com/item?id=3547169)):
+  * Generate cyclic pink noise ([source](https://news.ycombinator.com/item?id=3547169)):
 
         :::bash
         $ play -t sl -r48000 -c2 - synth -1 pinknoise tremolo .1 40 <  /dev/zero
 
-  * Generate background low frequency noise ([source](http://news.ycombinator.com/item?id=3547169)):
+  * Generate background low frequency noise ([source](https://news.ycombinator.com/item?id=3547169)):
 
         :::bash
         $ play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +20
@@ -88,6 +88,6 @@ tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool
 
 Other related ressources:
 
-  * [Sox examples](http://linuxcommand.org/man_pages/soxexam1.html)
+  * [Sox examples](https://linuxcommand.org/man_pages/soxexam1.html)
   * [Audio Processing
-  Pipelines](https://web.archive.org/web/20140325123348/http://linuxgazette.net/issue73/chung.html)
+  Pipelines](https://web.archive.org/web/20140325123348/https://linuxgazette.net/issue73/chung.html)

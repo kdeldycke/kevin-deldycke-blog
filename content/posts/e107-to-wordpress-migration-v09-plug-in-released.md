@@ -7,7 +7,7 @@ tags: e107, migration, plugin, WordPress
 
 ![](/uploads/2008/e107-to-wordpress.png)
 
-[9 months after the last one](http://kevin.deldycke.com/2007/05/e107-to-wordpress-v08-import-images-and-preferences/), here is the [new version (v0.9) of my e107 to Wordpress import plug-in](http://wordpress.org/extend/plugins/e107-importer/)!
+[9 months after the last one](https://kevin.deldycke.com/2007/05/e107-to-wordpress-v08-import-images-and-preferences/), here is the [new version (v0.9) of my e107 to Wordpress import plug-in](https://wordpress.org/extend/plugins/e107-importer/)!
 
 Change log:
 
@@ -19,7 +19,7 @@ Change log:
 
   * Better database management,
 
-  * Work with latest [Wordpress v2.3.2](http://wordpress.org/development/2007/12/wordpress-232/) and [e107 v0.7.11](http://e107.org/news.php?item.824),
+  * Work with latest [Wordpress v2.3.2](https://wordpress.org/development/2007/12/wordpress-232/) and [e107 v0.7.11](https://e107.org/news.php?item.824),
 
   * Code cleaned up! ;)
 

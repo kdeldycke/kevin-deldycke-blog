@@ -10,13 +10,13 @@ tags: band, Cool Cavemen, Creative Commons, interview, musique, oxyradio, podcas
 Après plusieurs semaines d'absence sur ce blog, je suis de retour avec un
 billet pour une fois [en français]({category}francais). Il s'agit juste
 d'annoncer la mise en ligne d'une interview de [Cool
-Cavemen](http://coolcavemen.com) à laquelle j'ai participé.
+Cavemen](https://coolcavemen.com) à laquelle j'ai participé.
 
 L'interview à été réalisée pour le second épisode de _Paroles d'Artistes_, une
-emission proposée par [OxyRadio](http://www.oxyradio.net), une webradio libre
-[retransmise sur Freebox](http://www.oxyradio.net/news-55.html). Diffusée
+emission proposée par [OxyRadio](https://www.oxyradio.net), une webradio libre
+[retransmise sur Freebox](https://www.oxyradio.net/news-55.html). Diffusée
 vendredi dernier, l'interview est désormais [disponible sous forme de
-podcast](http://www.oxyradio.net/podcast-121.html).
+podcast](https://www.oxyradio.net/podcast-121.html).
 
 Pour résumer mon intervention, j'explique comment et pourquoi j'ai conseillé au
 groupe de distribuer leurs compositions sous une licence Creative Commons.

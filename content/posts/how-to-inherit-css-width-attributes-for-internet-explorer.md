@@ -24,8 +24,8 @@ modify the original CSS file (I like to avoid patches on third party tools and
 
 Another solution consist in overriding this `width` attribute in another CSS
 file that you will call after the original one. This case is covered by the
-[CSS 2.1 specification](http://www.w3.org/TR/CSS21/) which define the
-[`inherit` value](http://www.w3.org/TR/CSS21/cascade.html#value-def-inherit):
+[CSS 2.1 specification](https://www.w3.org/TR/CSS21/) which define the
+[`inherit` value](https://www.w3.org/TR/CSS21/cascade.html#value-def-inherit):
 
     :::css
     img {
@@ -34,7 +34,7 @@ file that you will call after the original one. This case is covered by the
 
 This solution is perfect and work as expected in Firefox. Unfortunately, and
 without any surprise, it doesn't with Microsoft's browser as
-[IE has anecdotical support of CSS's `inherit`](http://www.sitepoint.com/blogs/2007/11/22/in-all-fairness-%e2%80%a6-internet-explorer-still-stinks/).
+[IE has anecdotical support of CSS's `inherit`](https://www.sitepoint.com/blogs/2007/11/22/in-all-fairness-%e2%80%a6-internet-explorer-still-stinks/).
 
 But today I found a trick to fix this in both Firefox and Internet Explorer. The
 workaround is to use the `auto` value instead of `inherit`:
@@ -45,7 +45,7 @@ workaround is to use the `auto` value instead of `inherit`:
     }
 
 I've tested it with both
-[Firefox 3.0rc1](http://blog.mozilla.com/blog/2008/05/20/firefox-3-release-candidate-now-available-for-download/)
+[Firefox 3.0rc1](https://blog.mozilla.com/blog/2008/05/20/firefox-3-release-candidate-now-available-for-download/)
 and Internet Explorer 6.0.2800.1106CO.
 
 Of course this solution is not generic: it only work in my case because `img`

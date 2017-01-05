@@ -6,18 +6,18 @@ tags: Android, Apple, Backup, CSV, iPhone, iTunes, Apple, macOS, Smartphones, SQ
 ---
 
 After 2 years using an [iPhone 3G
-](http://amzn.com/B001AXA056/?tag=kevideld-20), it's time for me to [switch to
-the Android world](http://twitter.com/kdeldycke/status/24219289221). [My Apple
-era is over](http://twitter.com/kdeldycke/status/22007247873), I need a
+](https://amzn.com/B001AXA056/?tag=kevideld-20), it's time for me to [switch to
+the Android world](https://twitter.com/kdeldycke/status/24219289221). [My Apple
+era is over](https://twitter.com/kdeldycke/status/22007247873), I need a
 plateform that is more Linux and open-source friendly.
 
 Before erasing and [selling my iPhone
-](http://twitter.com/kdeldycke/status/24687160120), I want to backup and
+](https://twitter.com/kdeldycke/status/24687160120), I want to backup and
 extract all the data I produced with it and that is still trapped inside. This
 mean photos, SMSs, voice messages, safari bookmarks, etc...
 
 There is a nice OS X app simply called [iPhone Backup Extractor
-](http://supercrazyawesome.com) which let you get these data. Instead of
+](https://supercrazyawesome.com) which let you get these data. Instead of
 getting data directly from the iPhone, it reads its backups made by iTunes.
 
 So first thing you have to do is to backup your phone using iTunes:
@@ -62,12 +62,12 @@ example here are voice messages:
 ![](/uploads/2010/iphone-voicemessages-location.png)
 
 Again, `.amr` files here are playable as-is, like [VLC
-](http://www.videolan.org/vlc/) or [mplayer](http://www.mplayerhq.hu).
+](https://www.videolan.org/vlc/) or [mplayer](https://www.mplayerhq.hu).
 
 Most, if not all, other kind of data and metadata are stored in SQLite
 databases (`.db` files). The best GUI I found to manipulate with these files
 under Mac OS X is [SQLite Database Browser
-](http://sourceforge.net/projects/sqlitebrowser/). See how I can easily extract
+](https://sourceforge.net/projects/sqlitebrowser/). See how I can easily extract
 to a CSV file all metadatas associated with my voice messages:
 
 ![](/uploads/2010/sqlite-database-browser-opening.png)
@@ -97,6 +97,6 @@ making a symlink is enough to trick iPhone Backup Extractor:
 
 That's how I was able to extract my iPhone data from an old backup, and get
 back most of the [data I lost after my last iOS update
-](http://twitter.com/kdeldycke/status/22516008513):
+](https://twitter.com/kdeldycke/status/22516008513):
 
 ![](/uploads/2010/iphone-backup-extractor-from-old-backup.png)

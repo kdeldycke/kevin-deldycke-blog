@@ -5,7 +5,7 @@ category: English
 tags: CLI, Computer networking, find, Linux, openssh, proxy, rsync, scp, shell, SSH, tunnel, xargs
 ---
 
-  * Here is the syntax that makes `scp` support spaces ([source](http://rasterweb.net/raster/2005/01/27/scp-and-spaces/)):
+  * Here is the syntax that makes `scp` support spaces ([source](https://rasterweb.net/raster/2005/01/27/scp-and-spaces/)):
 
         :::bash
         $ scp foo.com:"/home/fubar/some\ folder/file.txt" ./
@@ -20,7 +20,7 @@ tags: CLI, Computer networking, find, Linux, openssh, proxy, rsync, scp, shell, 
         :::bash
         $ ssh -T -N -C -L 8081:proxy.company.com:8080 kevin@authorized-server.company.com
 
-  * Use `rsync` over different SSH port ([source](http://lists.samba.org/archive/rsync/2001-November/000495.html)):
+  * Use `rsync` over different SSH port ([source](https://lists.samba.org/archive/rsync/2001-November/000495.html)):
 
         :::bash
         $ rsync --progress -vrae 'ssh -p 8022' /home/user/docs/ bill@server:/home/user/docs/

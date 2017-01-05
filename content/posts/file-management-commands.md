@@ -10,7 +10,7 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ mkdir -p ./folder/subfolder{001,002,003}
 
-  * Create a symbolic link ([source](http://news.ycombinator.com/item?id=1984792)):
+  * Create a symbolic link ([source](https://news.ycombinator.com/item?id=1984792)):
 
         :::bash
         $ ln -s target link_name

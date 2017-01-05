@@ -6,9 +6,9 @@ tags: K2, CSS, Template, Theme, WordPress
 ---
 
 I've updated
-[my Sapphire adaptation](http://kevin.deldycke.com/2007/03/sapphire-style-for-k2-wordpress-theme/)
+[my Sapphire adaptation](https://kevin.deldycke.com/2007/03/sapphire-style-for-k2-wordpress-theme/)
 for the
-[new K2 v0.9.6 release](https://web.archive.org/web/20140626230528/http://getk2.com/2007/06/k2-v096-released/).
+[new K2 v0.9.6 release](https://web.archive.org/web/20140626230528/https://getk2.com/2007/06/k2-v096-released/).
 
 ![](/uploads/2007/sapphire-style-for-k2-03-wordpress-theme.png)
 

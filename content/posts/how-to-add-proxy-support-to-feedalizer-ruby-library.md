@@ -8,8 +8,8 @@ tags: feed, feedalizer, hpricot, HTTP, parsing, proxy, RSS, Ruby, Ruby on Rails
 ![](/uploads/2008/feedalizer.png)
 
 Here is a little code snippet which
-[monkey-patch](http://en.wikipedia.org/wiki/Monkey_patch)
-[Feedalizer](http://termos.vemod.net/feedalizer) to let it grab web content
+[monkey-patch](https://en.wikipedia.org/wiki/Monkey_patch)
+[Feedalizer](https://termos.vemod.net/feedalizer) to let it grab web content
 through a HTTP proxy:
 
     :::ruby
@@ -18,7 +18,7 @@ through a HTTP proxy:
     HTTP_PROXY_PORT = 8080
 
     # Calculate proxy URL
-    HTTP_PROXY_URL = "http://#{HTTP_PROXY_HOST}:#{HTTP_PROXY_PORT}"
+    HTTP_PROXY_URL = "https://#{HTTP_PROXY_HOST}:#{HTTP_PROXY_PORT}"
 
     # Monkey patch feedalizer to support page grabbing through a proxy
     require 'feedalizer'
@@ -31,12 +31,12 @@ through a HTTP proxy:
       end
     end
 
-This fix, written for a [Ruby on Rails](http://www.rubyonrails.org)-based
+This fix, written for a [Ruby on Rails](https://www.rubyonrails.org)-based
 project, lay in the `environment.rb` file, but I wonder if this is the right
 place and the right way of doing it... Anyway, it works for me! :)
 
 **Update**: A
-[post from Matthew Higgins' blog that answer my question](http://www.strictlyuntyped.com/2008/06/rails-where-to-put-other-files.html)
+[post from Matthew Higgins' blog that answer my question](https://www.strictlyuntyped.com/2008/06/rails-where-to-put-other-files.html)
 above has just shown up in my feed aggregator. What's he telling us? That I'm a
 naughty programmer :
 

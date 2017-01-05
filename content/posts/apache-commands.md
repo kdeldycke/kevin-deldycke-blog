@@ -5,7 +5,7 @@ category: English
 tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
 ---
 
-  * Hide Subversion and Git directories content ([source](http://news.ycombinator.com/item?id=839016)):
+  * Hide Subversion and Git directories content ([source](https://news.ycombinator.com/item?id=839016)):
 
         :::apache
         RedirectMatch 404 /\.(svn|git)(/|$)
@@ -39,7 +39,7 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
           ServerAlias *.example.com
           ServerAlias example.net *.example.net
           ServerAlias example.org *.example.org
-          RedirectMatch permanent (.*) http://example.com$1
+          RedirectMatch permanent (.*) https://example.com$1
         </VirtualHost>
 
   * Insert dynamic headers in HTTP responses depending on the browser:
@@ -64,7 +64,7 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
   * At work, we had to engineer a convoluted software architecture for our
   intranet to fit the network security policy of our customer. This had a bad
   side effect of letting the [web statistic
-  collector](https://web.archive.org/web/20111008000404/http://www.nedstat.com)
+  collector](https://web.archive.org/web/20111008000404/https://www.nedstat.com)
   delete all cookies but its own, thus breaking intranet's authentication. So
   we (thanks Matthieu!) came up with this unmaintainable hack on Apache side to
   hide our intranet's cookies to NedStat's Javascript embedded code:

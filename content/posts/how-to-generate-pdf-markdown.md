@@ -7,7 +7,7 @@ tags: convertion, Gimli, GitHub, LaTeX, Linux, markdown, natty, pandoc, pdf, rub
 
 ## Pandoc
 
-The first tool you can use to convert a [Markdown](http://en.wikipedia.org/wiki/Markdown) file to PDF is [Pandoc](http://johnmacfarlane.net/pandoc/).
+The first tool you can use to convert a [Markdown](https://en.wikipedia.org/wiki/Markdown) file to PDF is [Pandoc](https://johnmacfarlane.net/pandoc/).
 
 To install Pandoc and all its dependencies on my Ubuntu 11.04, I used the following command:
 

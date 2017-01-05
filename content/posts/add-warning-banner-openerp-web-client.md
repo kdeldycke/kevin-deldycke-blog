@@ -11,7 +11,7 @@ A quick and dirty hack to prevent such events is to add a hard-coded warning mes
 
 ![](/uploads/2012/openerp-login-screen-with-alert-banner.png)
 
-The result above was produced on OpenERP 6.0 thanks to the following patch on the [`header.mako`](http://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/controllers/templates/header.mako) template file:
+The result above was produced on OpenERP 6.0 thanks to the following patch on the [`header.mako`](https://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/controllers/templates/header.mako) template file:
 
     :::diff
     --- addons/openerp/controllers/templates/header.mako.orig       2012-02-20 11:13:08.228864937 +0000

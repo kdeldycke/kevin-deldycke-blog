@@ -5,9 +5,9 @@ category: English
 tags: CherryPy, OpenERP, Python, Single sign-on, Smile, SSO, timeout, Web, ERP
 ---
 
-Another week working with [OpenERP](http://openerp.com) means another trick learned to answer some intricate customer's needs.
+Another week working with [OpenERP](https://openerp.com) means another trick learned to answer some intricate customer's needs.
 
-Today I was asked to keep users logged-in on OpenERP's 6.0 web client. The latter being powered by [CherryPy](http://cherrypy.org), it was a matter of adding the following configuration directive in the web client configuration file to increase the session timeout:
+Today I was asked to keep users logged-in on OpenERP's 6.0 web client. The latter being powered by [CherryPy](https://cherrypy.org), it was a matter of adding the following configuration directive in the web client configuration file to increase the session timeout:
 
     :::ini
     tools.sessions.timeout = 720

@@ -28,7 +28,7 @@ consulting, energy, transport and government agencies.
 
 I graduated with a Master’s in Software and Industrial Engineering from
 [*École Centrale de Lille*'s IG2I
-department](http://www.ec-lille.fr/en/degree/ig2l-en.html).
+department](https://www.ec-lille.fr/en/degree/ig2l-en.html).
 
 
 ## Achievements
@@ -38,17 +38,17 @@ pipeline](https://scaleway.com/faq/billing/) which Scaleway relies on to
 collect payments every month. All the revenue Scaleway is generating is
 established and consolidated by my pipeline.
 - Wrote the [best open-source
-payroll](http://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
+payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
 software of the world.
 - Created and managed the African subsidiary of my first employer.
 - [Top-1% of open-source
-developers](http://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
+developers](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
 - 2,000+ stars for my GitHub repository about [Falsehoods Programmers Believe
 in](https://github.com/kdeldycke/awesome-falsehood).
 - 1,000,000+ views for my video on [Nemo 33, The Deepest Pool in the
 World](https://www.youtube.com/watch?v=-sfFKZ2PvlE).
 - Led dozen of peoples in a [viral dance at a music
-festival](http://kevin.deldycke.com/2013/09/vieilles-charrues/).
+festival](https://kevin.deldycke.com/2013/09/vieilles-charrues/).
 - Have been [mentionned by Patrick McKenzie (a.k.a.
 `patio11`)](https://twitter.com/patio11/status/813894523772207104).
 - Have been [mentionned along Bruce
@@ -64,8 +64,8 @@ background:
 
 Format | Language
 ---|---
-PDF | [English](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg) ● [French](http://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1JYITJ3JU9WYvQXWlpGqLO9LzhcfAxiqJSsV8WyVhyyY)
-LinkedIn | [English](http://linkedin.com/in/kevindeldycke/en) ● [French](http://linkedin.com/in/kevindeldycke/fr)
+PDF | [English](https://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg) ● [French](https://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1JYITJ3JU9WYvQXWlpGqLO9LzhcfAxiqJSsV8WyVhyyY)
+LinkedIn | [English](https://linkedin.com/in/kevindeldycke/en) ● [French](https://linkedin.com/in/kevindeldycke/fr)
 
 Resumes, CVs and profiles above are heavy on irrelevant details. And that's
 absolutely intentional. I designed these to form an extensive *professional
@@ -88,9 +88,9 @@ a French-speaking audience.
 
 This blog was previously titled *coolkevmen*. This is the nickname under which
 I appear in the credits of the [All Cool
-Hits](http://coolcavemen.com/disc/all-cool-hits/) album, by my friends the
-[Cool Cavemen](http://coolcavemen.com).
+Hits](https://coolcavemen.com/disc/all-cool-hits/) album, by my friends the
+[Cool Cavemen](https://coolcavemen.com).
 
 Previous versions of this blog [featured
-artwork](http://kevin.deldycke.com/2011/01/new-blog-header-and-tiny-wordpress-theme-customizations/)
-by Jim from [Maomium](http://maomium.com).
+artwork](https://kevin.deldycke.com/2011/01/new-blog-header-and-tiny-wordpress-theme-customizations/)
+by Jim from [Maomium](https://maomium.com).

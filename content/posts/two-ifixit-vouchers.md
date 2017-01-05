@@ -5,7 +5,7 @@ category: English
 tags: Apple, coupon, discount, Hardware, ifixit, iPad, iPhone, iPod, MacBook, Online Store, voucher
 ---
 
-I've just got 2 coupons from [iFixit](http://www.ifixit.com/Parts-Store).
+I've just got 2 coupons from [iFixit](https://www.ifixit.com/Parts-Store).
 They'll give you $5 off on your next purchase. As I plan to get rid off of all
 my Apple hardware very soon, I don't need them anymore.
 

@@ -9,7 +9,7 @@ Here is something I wanted to do for 3 years. I wanted to migrate my code reposi
 
 ![](/uploads/2010/dumb-code-revision-control-system.png)
 
-to a proper [revision control system](http://en.wikipedia.org/wiki/Revision_control), like Subversion. And I wanted to reconstruct the commit history with all the proper dates. That's something I can't do with SVN.
+to a proper [revision control system](https://en.wikipedia.org/wiki/Revision_control), like Subversion. And I wanted to reconstruct the commit history with all the proper dates. That's something I can't do with SVN.
 
 Then came Git. I knew that Git was powerful enough to let me manipulate the history (at my own risks). So I studied it during the last weeks until I found an acceptable way to do exactly what I had in mind. Here are my notes regarding this journey.
 
@@ -25,7 +25,7 @@ In gitg, my untouched repository looks like this:
 
 Notice all the pre-existing code.
 
-Let's create a `history-injection` branch from the `init` tag. The later is the root of my repository, as explained in my previous post on [how I initialize my Git repositories](http://kevin.deldycke.com/2010/05/initialize-git-repositories/).
+Let's create a `history-injection` branch from the `init` tag. The later is the root of my repository, as explained in my previous post on [how I initialize my Git repositories](https://kevin.deldycke.com/2010/05/initialize-git-repositories/).
 
     :::bash
     $ git branch history-injection init
@@ -94,7 +94,7 @@ Finally, when we have something that looks good, we can push our changes to our 
     :::bash
     $ git push origin
 
-But Git will complain: changing already-pushed commits is bad. As I [explained several weeks ago](http://kevin.deldycke.com/2010/05/how-to-fix-bad-commit-authorship-git/), it's dangerous but I don't care. I'm the only user of this repository. So let's bypass Git's wise warnings:
+But Git will complain: changing already-pushed commits is bad. As I [explained several weeks ago](https://kevin.deldycke.com/2010/05/how-to-fix-bad-commit-authorship-git/), it's dangerous but I don't care. I'm the only user of this repository. So let's bypass Git's wise warnings:
 
     :::bash
     $ git push origin +master:master

@@ -4,7 +4,7 @@ title: e107 to WordPress v0.8: import images and preferences
 tags: Blog, CMS, e107, PHP, Web, WordPress
 ---
 
-The [8th version of my e107 to Wordpress import script](http://wordpress.org/extend/plugins/e107-importer/) is out! This version is quite special because this is the first one that support all features I planned to implement in [the road map I write for the first alpha release](http://kevin.deldycke.com/2006/08/e107-to-wordpress-importer-alpha-version/).
+The [8th version of my e107 to Wordpress import script](https://wordpress.org/extend/plugins/e107-importer/) is out! This version is quite special because this is the first one that support all features I planned to implement in [the road map I write for the first alpha release](https://kevin.deldycke.com/2006/08/e107-to-wordpress-importer-alpha-version/).
 
 Here is the changelog:
 
@@ -16,7 +16,7 @@ Here is the changelog:
 
   * An existing user on the blog can be detected and updated automatically,
 
-  * Fix the [profanity filter bug](http://kevin.deldycke.com/2006/11/wordpress-to-e107-v06-better-content-rendering-and-extended-news-support/#comment-2499),
+  * Fix the [profanity filter bug](https://kevin.deldycke.com/2006/11/wordpress-to-e107-v06-better-content-rendering-and-extended-news-support/#comment-2499),
 
-  * Tested with latest [Wordpress 2.1.3](http://wordpress.org/development/2007/04/wordpress-213-and-2010/).
+  * Tested with latest [Wordpress 2.1.3](https://wordpress.org/development/2007/04/wordpress-213-and-2010/).
 

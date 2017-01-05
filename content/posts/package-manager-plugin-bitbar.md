@@ -7,7 +7,7 @@ tags: GitHub, Python, Apple, macOS, BitBar, Homebrew, Cask
 I just released [Package Manager v1.0
 ](https://getbitbar.com/plugins/Dev/MetaPackageManager/meta_package_manager.7h.py),
 a plugin for [BitBar](https://getbitbar.com/), which centralize both [Homebrew
-](http://brew.sh/) and [Cask](https://caskroom.github.io/) available updates
+](https://brew.sh/) and [Cask](https://caskroom.github.io/) available updates
 under a unique menu entry:
 
 ![](/uploads/2016/package_manager_plugin_bitbar_v1_screenshot.png)

@@ -5,7 +5,7 @@ category: English
 tags: camera, firmware, gopro, Linux, Ubuntu, upgrade, Video, wget, macOS
 ---
 
-The [GoPro HD Hero2](http://amzn.com/B005WY3TI4/?tag=kevideld-20) I just got
+The [GoPro HD Hero2](https://amzn.com/B005WY3TI4/?tag=kevideld-20) I just got
 was bundled with the `HD2.08.12.70` firmware:
 
     :::bash
@@ -17,8 +17,8 @@ was bundled with the `HD2.08.12.70` firmware:
     }
 
 Since then a [new firmware was released
-](http://gopro.com/support/hd-hero2-firmware-update/) (called the ["ProTune
-feature" update](http://gopro.com/software-app/cineform-studio/)) which adds
+](https://gopro.com/support/hd-hero2-firmware-update/) (called the ["ProTune
+feature" update](https://gopro.com/software-app/cineform-studio/)) which adds
 higher video bitrate (35Mbps), a neutral color profile and 24 fps recording.
 But GoPro only provides installer for Windows and Mac OS X. Here is how I
 managed to upgrade the firmware under Ubuntu 12.04.
@@ -26,7 +26,7 @@ managed to upgrade the firmware under Ubuntu 12.04.
 First, download the binary firmware:
 
     :::bash
-    $ wget http://software.gopro.com/Firmware/HD2/HD2-firmware.bin
+    $ wget https://software.gopro.com/Firmware/HD2/HD2-firmware.bin
     $ sha256sum ./HD2-firmware.bin
     3403348b39796ff1d775d759e6243d541b4d1db1c8c7992f5742bd258c7c5031  ./HD2-firmware.bin
 

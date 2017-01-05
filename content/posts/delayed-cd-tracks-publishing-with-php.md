@@ -5,7 +5,7 @@ category: English
 tags: Cool Cavemen, Music, PHP, Web
 ---
 
-Here is a little piece of code I want to share with you. I created this some months ago for the [Cool Cavemen band](http://coolcavemen.com). They wanted to release all tracks of their new LP on their website, one track per week. That's the main purpose of the code below:
+Here is a little piece of code I want to share with you. I created this some months ago for the [Cool Cavemen band](https://coolcavemen.com). They wanted to release all tracks of their new LP on their website, one track per week. That's the main purpose of the code below:
 
     :::php
     <?php
@@ -104,7 +104,7 @@ Here is a little piece of code I want to share with you. I created this some mon
         # Create a direct download link for each track format
         if ($published) {
           foreach($track_format as $format_ext => $format_name) {
-            $track_html .= sprintf( '<a href="http://coolcavemen.com/%s%s">'
+            $track_html .= sprintf( '<a href="https://coolcavemen.com/%s%s">'
                                   , $track_file
                                   , $format_ext
                                   );

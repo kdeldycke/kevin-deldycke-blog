@@ -60,7 +60,7 @@ tags: 7zip, bzip2, CLI, Linux, tar, tarball, zip
         :::bash
         $ gzip -dc archive.tar.gz | bzip2 > archive.tar.bz2
 
-  * Extract content from [self-extracting shell archives](http://en.wikipedia.org/wiki/Shar):
+  * Extract content from [self-extracting shell archives](https://en.wikipedia.org/wiki/Shar):
 
         :::bash
         $ unshar archive.sh

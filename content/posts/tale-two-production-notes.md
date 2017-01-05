@@ -5,9 +5,9 @@ category: English
 tags: Kdenlive, Linux, Omashay, timelapse, slow-motion, slowmoVideo, imagemagick, transcode, vid.stab, Blender
 ---
 
-This is the fourth video I've work on for [Omashay](http://omashay.com):
+This is the fourth video I've work on for [Omashay](https://omashay.com):
 
-http://www.youtube.com/watch?v=4HtfugU_mGg
+https://www.youtube.com/watch?v=4HtfugU_mGg
 
 This video is a timelapse of a painting Tomasito made in 2007. It's based on a series of photos he took every 10 minutes:
 
@@ -16,14 +16,14 @@ This video is a timelapse of a painting Tomasito made in 2007. It's based on a s
 
 ## slowmoVideo
 
-I tried to produce a timelapse out of these images a year ago. In fact, that was the original project I was referring to in my [previous article](http://kevin.deldycke.com/2013/03/goodnight-video/), the project which triggered my initial interest into [slowmoVideo](http://slowmovideo.granjow.net/).
+I tried to produce a timelapse out of these images a year ago. In fact, that was the original project I was referring to in my [previous article](https://kevin.deldycke.com/2013/03/goodnight-video/), the project which triggered my initial interest into [slowmoVideo](https://slowmovideo.granjow.net/).
 
 But the experiment failed and I abandoned this endeavor. Instead of slow-motion, and because of the low timing resolution of the photos, I assumed a simple slideshow would do it.
 
 
 ## Blender
 
-The original photos were not consistent. To make them work as a slideshow, they required some stabilization. I tried the new [tracking features of Blender](http://wiki.blender.org/index.php/Doc:2.6/Manual/Motion_Tracking):
+The original photos were not consistent. To make them work as a slideshow, they required some stabilization. I tried the new [tracking features of Blender](https://wiki.blender.org/index.php/Doc:2.6/Manual/Motion_Tracking):
 
 ![](/uploads/2013/blender-timlapse-stabilization.jpg)
 
@@ -32,7 +32,7 @@ While I could feel the power of the tracking tools, my limited knowledge of Blen
 
 ## vid.stab & Kdenlive
 
-My plan B for stabilization was [Transcode's vid.stab plugin](http://kevin.deldycke.com/2012/02/stabilizing-cute-baby-goats/).
+My plan B for stabilization was [Transcode's vid.stab plugin](https://kevin.deldycke.com/2012/02/stabilizing-cute-baby-goats/).
 
 But it can't read images: it only takes videos for input. So we'll produce a video file of a simple slideshow in Kdenlive, then feed the result to vid.stab.
 
@@ -69,7 +69,7 @@ He planned to published the video, but the final editing step was postponed by s
 
 ## slowmoVideo, again
 
-Until last January when, after [some efforts](http://kevin.deldycke.com/2013/02/slowmo-video-ubuntu-12-10/), I managed to [produce something with slowmoVideo](http://kevin.deldycke.com/2013/03/goodnight-video/). We resurected the project.
+Until last January when, after [some efforts](https://kevin.deldycke.com/2013/02/slowmo-video-ubuntu-12-10/), I managed to [produce something with slowmoVideo](https://kevin.deldycke.com/2013/03/goodnight-video/). We resurected the project.
 
 I applied the raw slowmoVideo transformation on the initial set of photos. And the result was good enough. But Tomasito wanted more, and stabilized all the 70 images of the original set by hand!
 
@@ -78,11 +78,11 @@ After this herculean task, I cropped & resized the images to fit the 1080p resol
     :::bash
     $ convert -resize 1920x1080 -background black -gravity center -extent 1920x1080 ./manually-stab-keyframes/* pict%04d.png
 
-[As for Goodnight](http://kevin.deldycke.com/2013/03/goodnight-video/), we tried to get rid of the wide black bars on the sides. [QPX](http://wqpx.wordpress.com) created for us a mask made of paint strokes:
+[As for Goodnight](https://kevin.deldycke.com/2013/03/goodnight-video/), we tried to get rid of the wide black bars on the sides. [QPX](https://wqpx.wordpress.com) created for us a mask made of paint strokes:
 
 ![](/uploads/2013/video-mask.png)
 
-Then I used that mask to blend the photos with a background fiber texture from [Subtle Patterns](http://subtlepatterns.com):
+Then I used that mask to blend the photos with a background fiber texture from [Subtle Patterns](https://subtlepatterns.com):
 
     :::bash
     $ find ./ -iname "pict*.png" -exec composite "{}" ./stressed_linen-1080p.png ./Masque-02.png "{}"-composed.png \;

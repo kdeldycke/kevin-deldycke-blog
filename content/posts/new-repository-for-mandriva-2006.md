@@ -7,10 +7,10 @@ tags: baghira, Linux, Mandriva, RPM, Wormux
 
 Hi all!
 
-I've created a RPM repository on this site to deposit third-party software I found all around the net. At that time, available packages are [Wormux](http://www.wormux.org) v0.7 and [Baghira](http://baghira.sourceforge.net) v0.7.
+I've created a RPM repository on this site to deposit third-party software I found all around the net. At that time, available packages are [Wormux](https://www.wormux.org) v0.7 and [Baghira](https://baghira.sourceforge.net) v0.7.
 
 To add the repository to your urpmi database, in a terminal, do as root:
 
     :::bash
-    $ urpmi.addmedia kev-repository http://kevin.deldycke.com/static/repository/mandriva/2006.0/i586 with hdlist.cz
+    $ urpmi.addmedia kev-repository https://kevin.deldycke.com/static/repository/mandriva/2006.0/i586 with hdlist.cz
 

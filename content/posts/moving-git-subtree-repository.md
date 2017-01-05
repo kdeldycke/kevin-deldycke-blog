@@ -5,11 +5,11 @@ category: English
 tags: code, Git, GitHub, Regular expression
 ---
 
-Coming from Subversion (and with [Plone collective repository](http://dev.plone.org/collective/browser) structure in mind), I've [recently moved all my tiny software projects](http://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/) in a big standalone Git repository (named `kev-code`). Now that I figured out that GitHub allows you to create unlimited amount of repositories, as long as they are open-source public projects, it make sense to emancipate some of my projects to their own repository. How do I move a sub-tree to its own repository? That's what I talk about in this article.
+Coming from Subversion (and with [Plone collective repository](https://dev.plone.org/collective/browser) structure in mind), I've [recently moved all my tiny software projects](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/) in a big standalone Git repository (named `kev-code`). Now that I figured out that GitHub allows you to create unlimited amount of repositories, as long as they are open-source public projects, it make sense to emancipate some of my projects to their own repository. How do I move a sub-tree to its own repository? That's what I talk about in this article.
 
-First, there is an automated way of performing this task with [git-subtree](http://github.com/apenwarr/git-subtree). You should try it first. For some reasons I didn't investigate, git-subtree didn't worked for me. So I'll explain now how I did it by hand.
+First, there is an automated way of performing this task with [git-subtree](https://github.com/apenwarr/git-subtree). You should try it first. For some reasons I didn't investigate, git-subtree didn't worked for me. So I'll explain now how I did it by hand.
 
-The idea is to revisit the history of my bloated Git repository and massively delete everything that is not related to the sub-folder I'm looking to export. In this case, I try to make a dedicated repository for my [e107 importer for WordPress](http://wordpress.org/extend/plugins/e107-importer/).
+The idea is to revisit the history of my bloated Git repository and massively delete everything that is not related to the sub-folder I'm looking to export. In this case, I try to make a dedicated repository for my [e107 importer for WordPress](https://wordpress.org/extend/plugins/e107-importer/).
 
 Let's start by getting a local copy of my source repository:
 
@@ -22,7 +22,7 @@ Then I'll use the `filter-branch` action with a combination of `find` and `rm` t
     :::bash
     $ git filter-branch --prune-empty --tree-filter 'find ./ -maxdepth 1 -not -path "./e107*" -and -not -path "./wordpress-e107*" -and -not -path "./.git" -and -not -path "./" -print -exec rm -rf "{}" \;' -- --all
 
-Instead of the command above, I could have use the `--subdirectory-filter` option ([as suggested by _jamessan_ on Stack Overflow](http://stackoverflow.com/questions/1662753/export-subtree-in-git-with-history/1662787#1662787)):
+Instead of the command above, I could have use the `--subdirectory-filter` option ([as suggested by _jamessan_ on Stack Overflow](https://stackoverflow.com/questions/1662753/export-subtree-in-git-with-history/1662787#1662787)):
 
     :::bash
     $ git filter-branch --prune-empty --subdirectory-filter e107-importer -- --all
@@ -38,7 +38,7 @@ This looks pretty good, as all the history of my plugin is kept in order. But ta
     :::bash
     $ git tag -d coolkevmen-0.3 cool-blue-0.1 sapphire-0.1 sapphire-0.2 sapphire-0.3 sapphire-0.4
 
-Now there is some commits polluting my history. These are left-overs of `git-modules` additions. I [tried to removed them](http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule/1260982#1260982), but it didn't worked. Also left in the history are unwanted merges and empty commits [from an old CVS import](http://kevin.deldycke.com/2010/02/how-to-fork-cvs-project-git/). To clean this up, I started an interactive rebase:
+Now there is some commits polluting my history. These are left-overs of `git-modules` additions. I [tried to removed them](https://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule/1260982#1260982), but it didn't worked. Also left in the history are unwanted merges and empty commits [from an old CVS import](https://kevin.deldycke.com/2010/02/how-to-fork-cvs-project-git/). To clean this up, I started an interactive rebase:
 
     :::bash
     $ git rebase --interactive init
@@ -93,7 +93,7 @@ Then, I've altered some commit messages to fix inconsistencies due to sub-folder
     :::bash
     $ git filter-branch --msg-filter 'sed "s/Move the script to a dedicated folder/Rename script/g"' -- --all
 
-Finally, at the bottom of the history, I still have my initial commit (a personal habit of mine when I [initialize my Git repositories](http://kevin.deldycke.com/2010/05/initialize-git-repositories/)). But its date was updated by the first `filter-branch` call. Let's set its date back to epoch:
+Finally, at the bottom of the history, I still have my initial commit (a personal habit of mine when I [initialize my Git repositories](https://kevin.deldycke.com/2010/05/initialize-git-repositories/)). But its date was updated by the first `filter-branch` call. Let's set its date back to epoch:
 
     :::bash
     $ git filter-branch --force --env-filter \

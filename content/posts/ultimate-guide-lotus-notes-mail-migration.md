@@ -24,7 +24,7 @@ desktop client (were your emails currently resides) as an IMAP client.
 Essentially, what you have to do is just to create a secondary account linked
 to an IMAP server, like Gmail, etc. This works well and is [explained in
 details in this tutorial
-](http://salesittech.blogspot.com/2009/02/transfer-lotus-notes-email-to-gmail-and.html).
+](https://salesittech.blogspot.com/2009/02/transfer-lotus-notes-email-to-gmail-and.html).
 
 But sometimes your Notes client is behind firewalls and proxys. So you can't
 reach the Internet.
@@ -40,7 +40,7 @@ So I had to found another approach.
 ## Method #2: using `nlconverter`
 
 This method is [explored in details in my previous article
-](http://kevin.deldycke.com/2010/09/convert-lotus-notes-nsf-files-mbox-nlconverter/).
+](https://kevin.deldycke.com/2010/09/convert-lotus-notes-nsf-files-mbox-nlconverter/).
 
 But again, it seems that the Lotus Notes on my machine was crippled and/or
 corrupted. The `nlconverter` GUI gave me this error:
@@ -73,17 +73,17 @@ new (but complicated) strategy.
 This is the only method that worked for me, and basically, is the same as the
 first one, but on Mac OS X. Additionally, it involves a local mail server. This
 procedure was tested several times on [Mac OS X Leopard
-](http://amzn.com/B000FK88JK/?tag=kevideld-20).
+](https://amzn.com/B000FK88JK/?tag=kevideld-20).
 
   1. First things first, [download the trial version of Lotus Notes
-  ](http://www.ibm.com/developerworks/downloads/ls/lsndad/?S_TACT=105AGX28&S_CMP=TRIALS)
+  ](https://www.ibm.com/developerworks/downloads/ls/lsndad/?S_TACT=105AGX28&S_CMP=TRIALS)
   client for Mac OS X (unfortunately you have to register) and install it. I
   used Lotus Notes 7.0.3 for Mac OS X Leopard:
 
 ![](/uploads/2010/lotus-notes-mac-osx-leopard-install.png)
 
   2. You'll be welcomed by a [wizard
-  ](http://en.wikipedia.org/wiki/Wizard_(software)):
+  ](https://en.wikipedia.org/wiki/Wizard_(software)):
 
 ![](/uploads/2010/lotus-notes-wizard-screen-1.png)
 
@@ -125,12 +125,12 @@ You can now launch Lotus Notes:
   9. The next step is to go back to the machine (Windows for me) from which
   you're running the Notes client containing all the mails you plan to migrate.
   From there, [export your mail database
-  ](http://kevin.deldycke.com/2010/06/how-to-export-backup-lotus-notes-mails/):
+  ](https://kevin.deldycke.com/2010/06/how-to-export-backup-lotus-notes-mails/):
 
 ![](/uploads/2010/export-screen.png)
 
 All details of this operation can be found in [this dedicated article
-](http://kevin.deldycke.com/2010/06/how-to-export-backup-lotus-notes-mails/).
+](https://kevin.deldycke.com/2010/06/how-to-export-backup-lotus-notes-mails/).
 
   10. Then go back to your Mac OS X machine and import your freshly exported
   `.nsf` database. This is as simple as opening the file via the `File` >
@@ -164,7 +164,7 @@ the "_Start trusting the signer to execute this action_" option before clicking
 ![](/uploads/2010/dovecot-on-macosx.png)
 
 As you can see I [used Dovecot, and all is explained here
-](http://kevin.deldycke.com/2010/04/setup-lightweight-imap-server-macos-leopard-dovecot/).
+](https://kevin.deldycke.com/2010/04/setup-lightweight-imap-server-macos-leopard-dovecot/).
 
   14. Now it's time to create a new account in Lotus Notes to access this local
   IMAP server. Click on the `Address Book` in your toolbar and add a new
@@ -202,7 +202,7 @@ Just close it to get your local IMAP mail view:
 
 In this case, please have a look at my other [article explaining how to open
 TCPIP port in Lotus Notes
-](http://kevin.deldycke.com/2010/08/how-to-fix-lotus-notes-disabled-tcp-ip-port-error/).
+](https://kevin.deldycke.com/2010/08/how-to-fix-lotus-notes-disabled-tcp-ip-port-error/).
 
   19. For this step, just copy or cut, then paste, mails from your local `.nsf`
   database to your local IMAP account:
@@ -222,12 +222,12 @@ TCPIP port in Lotus Notes
 ![](/uploads/2010/notes-rich-text-to-mime-conversion-error.png)
 
 A [workaround can be found in this article
-](http://kevin.deldycke.com/2010/05/lotus-notes-rich-text-mime-conversion-error/).
+](https://kevin.deldycke.com/2010/05/lotus-notes-rich-text-mime-conversion-error/).
 
   21. Finally, if like me you've played a lot with mails during the transfer
   step above, you may ends up with loads of duplicate mails. In this case have
   a look at the [deduplication script
-  ](http://kevin.deldycke.com/2010/08/maildir-deduplication-script-python/) I
+  ](https://kevin.deldycke.com/2010/08/maildir-deduplication-script-python/) I
   wrote. It will help you clean-up your Maildir folder.
 
   22. That's it! You now have a standard Maildir of your Lotus Notes mails,
@@ -236,17 +236,17 @@ A [workaround can be found in this article
 ![](/uploads/2010/maildir-containing-lotus-notes-mails.png)
 
 My ultimate action was to [convert the Dovecot maildir to Kmail maildir
-](http://kevin.deldycke.com/2007/11/how-to-import-a-maildir-folder-to-kmail/),
+](https://kevin.deldycke.com/2007/11/how-to-import-a-maildir-folder-to-kmail/),
 as I wanted to use Kmail to finally upload everything in Gmail. But you can use
 anything that suit your needs, like [thunderbird
-](http://www.mozillamessaging.com/thunderbird/) or any mail conversion tools.
+](https://www.mozillamessaging.com/thunderbird/) or any mail conversion tools.
 
 
 ## Method #4: Lotus Notes client v8.5 on Mac OS X Leopard
 
 The same procedure as in method #3 can be performed with the trial version of
 the Lotus Notes client v8.5, running on [Mac OS X Snow Leopard
-](http://amzn.com/B001AMHWP8/?tag=kevideld-20).
+](https://amzn.com/B001AMHWP8/?tag=kevideld-20).
 
 Here are the equivalent screenshots:
 
@@ -303,7 +303,7 @@ Here are the equivalent screenshots:
 
 I just tried the first method again (IMAP connection with Note's fat client).
 But this time I installed Lotus Notes 8.5.2 trial version on a fresh [Windows
-XP](http://amzn.com/B0002423YK/?tag=kevideld-20) running within a QEMU
+XP](https://amzn.com/B0002423YK/?tag=kevideld-20) running within a QEMU
 instance.
 
 As you can see, it works:
@@ -320,7 +320,7 @@ handle large quantity of mails. :(
 ## Conclusion
 
   * Lotus Notes sucks. [Everybody knows that
-  ](http://www.guardian.co.uk/technology/2006/feb/09/guardianweeklytechnologysection),
+  ](https://www.guardian.co.uk/technology/2006/feb/09/guardianweeklytechnologysection),
   but I feel liberated saying that! ;)
 
   * The smartest thing to do is to avoid Notes like the plague in the first

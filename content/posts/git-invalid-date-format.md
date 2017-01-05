@@ -5,10 +5,10 @@ category: English
 tags: Git, GitHub, maildir, python, code, datetime
 ---
 
-[Moving `maildir-deduplicate.py` to its own repository](http://kevin.deldycke.com/2013/06/maildir-deduplicate-moved/)
+[Moving `maildir-deduplicate.py` to its own repository](https://kevin.deldycke.com/2013/06/maildir-deduplicate-moved/)
 was tricky, as I wanted to keep the commit history.
 
-[I followed my old notes from a previous article](http://kevin.deldycke.com/2011/02/moving-git-subtree-repository/)
+[I followed my old notes from a previous article](https://kevin.deldycke.com/2011/02/moving-git-subtree-repository/)
 and started the migration process:
 
     :::bash
@@ -25,7 +25,7 @@ script from the revision tree, I stumble upon a puzzling error:
 
 The bad commit the message refers to is the first one. It's a special commit I
 create everytime I
-[initialize a Git repository](http://kevin.deldycke.com/2010/05/initialize-git-repositories/).
+[initialize a Git repository](https://kevin.deldycke.com/2010/05/initialize-git-repositories/).
 
 From the error message, I suspected a wrong date format. So I reseted it:
 
@@ -71,6 +71,6 @@ As you can see it sets the dates further in time (100000000 seconds after
 epoch).
 
 And you know why this works? Because recent version of
-[Git don't allow dates with less than 9 digits](http://stackoverflow.com/a/5093714/487610).
+[Git don't allow dates with less than 9 digits](https://stackoverflow.com/a/5093714/487610).
 
 That was not excepted, but it allowed me to proceed in my repository migration.

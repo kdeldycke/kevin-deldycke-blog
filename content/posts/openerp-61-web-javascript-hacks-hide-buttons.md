@@ -5,9 +5,9 @@ category: English
 tags: OpenERP, Javascript, Backbone.js, jQuery, Web
 ---
 
-Last year I published two articles on hacking OpenERP 6.0 user interface, one to demonstrate [how to monkey-patch native Javascript behavior](http://kevin.deldycke.com/2012/02/how-to-monkey-patch-openerp-native-javascript/), the other to show how to [tweak widgets](http://kevin.deldycke.com/2012/05/hacking-openerp-60-user-interface-javascript/)
+Last year I published two articles on hacking OpenERP 6.0 user interface, one to demonstrate [how to monkey-patch native Javascript behavior](https://kevin.deldycke.com/2012/02/how-to-monkey-patch-openerp-native-javascript/), the other to show how to [tweak widgets](https://kevin.deldycke.com/2012/05/hacking-openerp-60-user-interface-javascript/)
 
-Both methods are based on an injection of inline Javascript code via XML view definition. In OpenERP 6.1, as [highlighted by Timothy](http://kevin.deldycke.com/2012/02/how-to-monkey-patch-openerp-native-javascript/#comment-769313088) you can no longer leverage this dirty trick: Javascript is stripped out of the XML stream.
+Both methods are based on an injection of inline Javascript code via XML view definition. In OpenERP 6.1, as [highlighted by Timothy](https://kevin.deldycke.com/2012/02/how-to-monkey-patch-openerp-native-javascript/#comment-769313088) you can no longer leverage this dirty trick: Javascript is stripped out of the XML stream.
 
 But I found new ways of hacking OpenERP's web client in 6.1. Following these discoveries, I've created a the [experimental `web_smile_hide_buttons` addon](https://github.com/Smile-SA/smile_openerp_addons_6.1/tree/master/web_smile_hide_buttons/) to hide the hard-coded `create` and `duplicate` buttons on `form` views.
 

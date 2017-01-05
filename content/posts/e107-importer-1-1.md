@@ -5,11 +5,11 @@ category: English
 tags: CMS, e107, import, migration, PHP, plugin, Web, WordPress, bbpress
 ---
 
-[A month after the 1.0 release](http://kevin.deldycke.com/2011/01/e107-importer-wordpress-plugin-v1-0-released/), here is my [e107 Importer v1.1 for WordPress](http://wordpress.org/extend/plugins/e107-importer/)!
+[A month after the 1.0 release](https://kevin.deldycke.com/2011/01/e107-importer-wordpress-plugin-v1-0-released/), here is my [e107 Importer v1.1 for WordPress](https://wordpress.org/extend/plugins/e107-importer/)!
 
 ![](/uploads/2011/e107-importer-option-panel.png)
 
-The biggest new feature is support of e107 forum import to the [bbPress WordPress plugin](http://wordpress.org/extend/plugins/bbpress/). This plugin is still in alpha and was not released yet. This mean you have to [fetch it from its Subversion repository](http://trac.bbpress.org/browser/branches/plugin?rev=2942). And be careful to get the recommended version (SVN release 2942).
+The biggest new feature is support of e107 forum import to the [bbPress WordPress plugin](https://wordpress.org/extend/plugins/bbpress/). This plugin is still in alpha and was not released yet. This mean you have to [fetch it from its Subversion repository](https://trac.bbpress.org/browser/branches/plugin?rev=2942). And be careful to get the recommended version (SVN release 2942).
 
 Because of the experimental status of forum import, the default option of e107 Importer is to not import forums. I decided to include this feature anyway to get feedbacks. So please don't consider forum import as a highly reliable. It may work for you or may not. And please write detailed bug reports.
 

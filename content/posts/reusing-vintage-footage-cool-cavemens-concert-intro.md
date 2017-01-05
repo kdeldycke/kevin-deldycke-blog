@@ -5,15 +5,15 @@ category: English
 tags: Belgium, classic 21, concert, Cool Cavemen, Gimp, intro, Kdenlive, radio, RTBF, tribute, Ubuntu, Video, YouTube
 ---
 
-The goal of that project was to illustrate a pre-recorded soundtrack. The latter being to Cool Cavemen what [The Ecstasy of Gold](http://en.wikipedia.org/wiki/The_Ecstasy_of_Gold) is to Metallica: a piece that is [played before each show](http://www.youtube.com/watch?v=PnX-wK2lVCQ) and serve as concert intro.
+The goal of that project was to illustrate a pre-recorded soundtrack. The latter being to Cool Cavemen what [The Ecstasy of Gold](https://en.wikipedia.org/wiki/The_Ecstasy_of_Gold) is to Metallica: a piece that is [played before each show](https://www.youtube.com/watch?v=PnX-wK2lVCQ) and serve as concert intro.
 
-It's an original mockup of a radio broadcast, and a tribute to [Classic 21](http://www.rtbf.be/classic21/) ([ex "Radio 21"](http://en.wikipedia.org/wiki/Classic_21)), the (best) Belgian radio station we used to listen to as teenagers, and still do.
+It's an original mockup of a radio broadcast, and a tribute to [Classic 21](https://www.rtbf.be/classic21/) ([ex "Radio 21"](https://en.wikipedia.org/wiki/Classic_21)), the (best) Belgian radio station we used to listen to as teenagers, and still do.
 
-Footage used to produce this video is public domain material [found at archive.org](http://www.archive.org/details/movies). If you're curious, the detailed list of all sources is available in the credits, at the end of the video.
+Footage used to produce this video is public domain material [found at archive.org](https://www.archive.org/details/movies). If you're curious, the detailed list of all sources is available in the credits, at the end of the video.
 
-[As for my previous project](http://kevin.deldycke.com/2011/12/nichrome-preview-behind-the-scene-video/), I have to warn you that it may not look as funny as for French-speaking audience. That being said, here is the final result:
+[As for my previous project](https://kevin.deldycke.com/2011/12/nichrome-preview-behind-the-scene-video/), I have to warn you that it may not look as funny as for French-speaking audience. That being said, here is the final result:
 
-http://www.youtube.com/watch?v=wJeyu-xEL_0
+https://www.youtube.com/watch?v=wJeyu-xEL_0
 
 The challenge of this project was to have video of people speaking in sync with the audio. I suffered a lot trying to make it as convincing as possible. If the final result is far from perfect, I find it to be believable enough for the amount of time I invested in.
 

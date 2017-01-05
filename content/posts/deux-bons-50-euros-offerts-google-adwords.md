@@ -8,10 +8,10 @@ tags: AdWords, Google, bon de reduction, pub, voucher, Web
 ![google-adwords-50-euros-voucher](/uploads/2009/google-adwords-50-euros-voucher.jpg)
 
 J'ai deux bons d'achats de 50€ pour le service [Google
-AdWords](http://fr.wikipedia.org/wiki/AdWords). Ca traînent sur mon bureau
+AdWords](https://fr.wikipedia.org/wiki/AdWords). Ca traînent sur mon bureau
 depuis plusieurs semaines, et je ne peux pas les utiliser car j'ai [déjà
 profité cette année d'une offre
-similaire](http://twitter.com/kdeldycke/status/3169290268). Voilà pourquoi j'en
+similaire](https://twitter.com/kdeldycke/status/3169290268). Voilà pourquoi j'en
 offre aux deux premières personnes qui laissent un commentaire sous ce post.
 
 D'après la brochure, ces bons ne sont utilisables que si les conditions

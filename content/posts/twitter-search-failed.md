@@ -5,18 +5,18 @@ category: English
 tags: search, Social, Twitter
 ---
 
-Had an issue with [ÜberCart](http://www.ubercart.org/) tonight.
+Had an issue with [ÜberCart](https://www.ubercart.org/) tonight.
 
 Was sure I already solved it.
 
 Knew I explained the solution on Twitter.
 
-Tried to [search for it](http://search.twitter.com/search?q=ubercart+from%3Akdeldycke):
+Tried to [search for it](https://search.twitter.com/search?q=ubercart+from%3Akdeldycke):
 
 ![](/uploads/2010/failed-twitter-search.png)
 
 and failed!
 
-And all I was looking for was [this little tweet](http://twitter.com/kdeldycke/status/1508913388).
+And all I was looking for was [this little tweet](https://twitter.com/kdeldycke/status/1508913388).
 
-Is [Twitter's search](http://search.twitter.com) supposed to work? :(
+Is [Twitter's search](https://search.twitter.com) supposed to work? :(

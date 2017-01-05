@@ -7,13 +7,13 @@ tags: Blog, e107, PHP, Web, WordPress
 
 ![e107 to WordPress import plugin v0.7: News and Categories Imported screenshot](/uploads/2007/e107-to-wordpress-v07-news-and-category-imported1.png)
 
-I've released a new version of my e107 migration script for WordPress. This release is [numbered v0.7](http://wordpress.org/extend/plugins/e107-importer/).
+I've released a new version of my e107 migration script for WordPress. This release is [numbered v0.7](https://wordpress.org/extend/plugins/e107-importer/).
 
 Here is the change-log:
 
   * Import e107 news categories.
 
-  * Mails can be sent to each user to warn them about their new password. This is the only solution I found to fix [the issue about reseted passwords](http://kevin.deldycke.com/2006/11/wordpress-to-e107-v06-better-content-rendering-and-extended-news-support/#comment-2422).
+  * Mails can be sent to each user to warn them about their new password. This is the only solution I found to fix [the issue about reseted passwords](https://kevin.deldycke.com/2006/11/wordpress-to-e107-v06-better-content-rendering-and-extended-news-support/#comment-2422).
 
   * Thanks to the 2.1 branch of Wordpress, static pages can be set as private. This version of my script use this feature.
 
@@ -25,4 +25,4 @@ Here is the change-log:
 
   * Some little UI imporvements (to match admin UI consistency).
 
-Because of its de-facto standard status, my import script is now packaged as a `.zip` file. It can be downloaded from [my Linux Scripts section](http://kevin.deldycke.com/code/).
+Because of its de-facto standard status, my import script is now packaged as a `.zip` file. It can be downloaded from [my Linux Scripts section](https://kevin.deldycke.com/code/).

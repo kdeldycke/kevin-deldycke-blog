@@ -5,7 +5,7 @@ category: English
 tags: acpi, Debian, fail2ban, Hardware, Linux, lm-sensors, munin, nginx, nut, RAID, Server, Debian Squeeze, Perl, Regular expression
 ---
 
-Again, here is a tutorial article exposing the recipe I use to cook a [Munin](http://en.wikipedia.org/wiki/Munin_(network_monitoring_application)) on a Debian Squeeze.
+Again, here is a tutorial article exposing the recipe I use to cook a [Munin](https://en.wikipedia.org/wiki/Munin_(network_monitoring_application)) on a Debian Squeeze.
 
 As usual, let's start by installing the main Munin package:
 
@@ -14,14 +14,14 @@ As usual, let's start by installing the main Munin package:
 
 FYI, the version that aptitude choose to install was Munin 1.4.5. The default configuration coming along will make it produce graphs and HTML content to `/var/cache/munin/www`. Now we need to serve these pages via a web server.
 
-As I wanted to play with [nginx](http://en.wikipedia.org/wiki/Nginx) for a long time, I will use this opportunity to serve Munin's content. The default version coming with Squeeze is quite old, so we'll get the latest version from the [Dotdeb](http://www.dotdeb.org/) repository:
+As I wanted to play with [nginx](https://en.wikipedia.org/wiki/Nginx) for a long time, I will use this opportunity to serve Munin's content. The default version coming with Squeeze is quite old, so we'll get the latest version from the [Dotdeb](https://www.dotdeb.org/) repository:
 
     :::bash
-    $ echo "deb http://packages.dotdeb.org squeeze all" > /etc/apt/sources.list.d/squeeze-dotdeb.list
+    $ echo "deb https://packages.dotdeb.org squeeze all" > /etc/apt/sources.list.d/squeeze-dotdeb.list
     $ aptitude update
     $ aptitude install nginx
 
-And if you don't want to get those error messages about untrusted packages, don't forget to [add Dotdeb's keys to your keyring](http://www.dotdeb.org/2010/07/11/dotdeb-packages-are-now-signed/).
+And if you don't want to get those error messages about untrusted packages, don't forget to [add Dotdeb's keys to your keyring](https://www.dotdeb.org/2010/07/11/dotdeb-packages-are-now-signed/).
 
 We can now test that nginx is working by starting it up then fetch the default served page:
 
@@ -53,7 +53,7 @@ Now we have to activate it before restarting nginx:
     $ ln -s  /etc/nginx/sites-available/munin /etc/nginx/sites-enabled/munin
     $ /etc/init.d/nginx restart
 
-Now we are free to point our browser to the `http://munin.example.com` URL to get our graphs.
+Now we are free to point our browser to the `https://munin.example.com` URL to get our graphs.
 
 You'll see that by default, Munin refer to your machine as `localhost.localdomain`. It's time to tweak Munin a little to get nice reports:
 
@@ -81,7 +81,7 @@ It's also good to have a clue about your connectivity to the rest of the world:
     $ ln -s /usr/share/munin/plugins/ping_  /etc/munin/plugins/ping_ovh.fr
     $ ln -s /usr/share/munin/plugins/ping_  /etc/munin/plugins/ping_example.com
 
-I also like to have insight about my [automated backups](http://kevin.deldycke.com/2011/09/cloud-based-server-backups-duplicity-amazon-s3/):
+I also like to have insight about my [automated backups](https://kevin.deldycke.com/2011/09/cloud-based-server-backups-duplicity-amazon-s3/):
 
     :::bash
     $ ln -s /usr/share/munin/plugins/ps_ /etc/munin/plugins/ps_duplicity
@@ -106,7 +106,7 @@ I sometimes have a Fail2Ban deamon running on a server, so that's a good thing t
     user root
     " > /etc/munin/plugin-conf.d/fail2ban
 
-[Having an UPS](http://kevin.deldycke.com/2011/05/mge-ellipse-750-ups-debian-squeeze/), it's good to monitor it too. Here is for the UPS on the local system having the `MGE-Ellipse750` ID (as defined in your `/etc/nut/ups.conf` file):
+[Having an UPS](https://kevin.deldycke.com/2011/05/mge-ellipse-750-ups-debian-squeeze/), it's good to monitor it too. Here is for the UPS on the local system having the `MGE-Ellipse750` ID (as defined in your `/etc/nut/ups.conf` file):
 
     :::bash
     $ ln -s /usr/share/munin/plugins/nutups_   /etc/munin/plugins/nutups_MGE-Ellipse750_voltages
@@ -130,16 +130,16 @@ And if you have a MySQL server running on the machine, that's a good idea to get
     $ ln -s /usr/share/munin/plugins/mysql_queries     /etc/munin/plugins/
     $ ln -s /usr/share/munin/plugins/mysql_bytes       /etc/munin/plugins/
 
-I also use some other Munin plugins coming from [Munin exchange](http://exchange.munin-monitoring.org):
+I also use some other Munin plugins coming from [Munin exchange](https://exchange.munin-monitoring.org):
 
     :::bash
-    $ wget http://exchange.munin-monitoring.org/plugins/mysql_size_all/version/1/download --output-document=/usr/share/munin/plugins/mysql_size_all
+    $ wget https://exchange.munin-monitoring.org/plugins/mysql_size_all/version/1/download --output-document=/usr/share/munin/plugins/mysql_size_all
     $ ln -s /usr/share/munin/plugins/mysql_size_all /etc/munin/plugins/
 
 An here is how I monitor my RAID array:
 
     :::bash
-    $ wget http://exchange.munin-monitoring.org/plugins/raid/version/3/download --output-document=/usr/share/munin/plugins/raid
+    $ wget https://exchange.munin-monitoring.org/plugins/raid/version/3/download --output-document=/usr/share/munin/plugins/raid
     $ ln -s /usr/share/munin/plugins/raid /etc/munin/plugins/
     $ echo "[raid]
     user root

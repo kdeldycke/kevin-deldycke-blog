@@ -5,7 +5,7 @@ category: English
 tags: CLI, Git, GitHub, Software engineering
 ---
 
-  * Get a clean local copy of [my GitHub repository](http://github.com/kdeldycke/scripts) with read & write access:
+  * Get a clean local copy of [my GitHub repository](https://github.com/kdeldycke/scripts) with read & write access:
 
         :::bash
         $ git clone git@github.com:kdeldycke/scripts.git

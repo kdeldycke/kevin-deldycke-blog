@@ -5,7 +5,7 @@ category: English
 tags: adobe, apt-get, flash, KDE, kpackagekit, Kubuntu, Ubuntu, Linux, package, plugin, Web
 ---
 
-If like me you want the greatest and latest Flash version on your Kubuntu, you probably added the [SevenMachine's repository](http://launchpad.net/~sevenmachines/+archive/flash) to your sources. Else, you should, as it's where you'll find all the fresh Flash packages, for both 32 bits and 64 bits architectures.
+If like me you want the greatest and latest Flash version on your Kubuntu, you probably added the [SevenMachine's repository](https://launchpad.net/~sevenmachines/+archive/flash) to your sources. Else, you should, as it's where you'll find all the fresh Flash packages, for both 32 bits and 64 bits architectures.
 
 Everything will be great after that. Until the day this repository is updated, which will break the Flash plugin if you attempt an upgrade with KPackageKit.
 

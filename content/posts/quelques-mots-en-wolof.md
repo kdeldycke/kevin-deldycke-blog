@@ -5,7 +5,7 @@ category: Français
 tags: french, life, Sénégal, travel, wolof
 ---
 
-Juste quelques mots en [Wolof](http://fr.wikipedia.org/wiki/Wolof) que j'ai appris aujourd'hui:
+Juste quelques mots en [Wolof](https://fr.wikipedia.org/wiki/Wolof) que j'ai appris aujourd'hui:
 
   * `[beu soubeu]` -> a demain
 

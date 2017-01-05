@@ -10,7 +10,7 @@ theme](https://github.com/kdeldycke/plumage) for Pelican.
 
 This one come with a big new feature thanks to [Renato
 Cunha](https://github.com/trovao), who made a huge contribution by integrating
-[Tipue Search](http://www.tipue.com/search/), providing fully static
+[Tipue Search](https://www.tipue.com/search/), providing fully static
 search over all content of a Pelican site.
 
 Some tiny adjustments were also made on analytics tracking code with

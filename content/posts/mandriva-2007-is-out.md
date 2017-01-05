@@ -7,5 +7,5 @@ tags: Linux, Mandriva, RPM
 
 ![mandriva-2007-logo](/uploads/2006/mandriva-2007-logo.png)
 
-Everybody know that, the [new version of Mandriva is out](http://www.mandriva.com/community/news/mandriva_linux_2007_is_out). Starting from now, my 2006.0 repository will not be updated nor maintained. Instead, use [my brand new 2007.0 repository](http://github.com/kdeldycke/mandriva-specs), which is empty for the moment :p .
+Everybody know that, the [new version of Mandriva is out](https://www.mandriva.com/community/news/mandriva_linux_2007_is_out). Starting from now, my 2006.0 repository will not be updated nor maintained. Instead, use [my brand new 2007.0 repository](https://github.com/kdeldycke/mandriva-specs), which is empty for the moment :p .
 

@@ -5,7 +5,7 @@ category: English
 tags: Blog, e107, MySQL, SQL, PHP, plugin, Web, WordPress
 ---
 
-I just released the version 1.4 of my [e107 Importer plugin for WordPress](http://wordpress.org/extend/plugins/e107-importer/).
+I just released the version 1.4 of my [e107 Importer plugin for WordPress](https://wordpress.org/extend/plugins/e107-importer/).
 
 This is a special release as it ends the active development cycle. **I officially declare this plugin unmaintained**. I don't plan to work on it again.
 

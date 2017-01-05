@@ -9,11 +9,11 @@ tags: Blog, code, e107, MySQL, SQL, PHP, Web, WordPress
 
 Here is a brand new version of my e107 Importer plugin. This release fix lots of nasty bugs. Better, I added an enhanced BBCode parser which try to clean-up what e107's parser output. This new parser also try to align the final HTML with what WordPress produce by default.
 
-As usual, my [plugin is available on the official WordPress plugin directory](http://wordpress.org/extend/plugins/e107-importer/).
+As usual, my [plugin is available on the official WordPress plugin directory](https://wordpress.org/extend/plugins/e107-importer/).
 
 Here is the detailed changelog:
 
-  * Upgrade e107 code to match latest [0.7.25-rc1](http://e107.org/news.php?item.879).
+  * Upgrade e107 code to match latest [0.7.25-rc1](https://e107.org/news.php?item.879).
 
   * Fix variable bleeding when importing items in batches.
 

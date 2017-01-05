@@ -4,13 +4,13 @@ title: Funky Storm WebDesign Retrospective
 tags: Funky Storm, Web, wedesign, HTML, CSS
 ---
 
-After my [collection of Cool Cavemen themes](http://kevin.deldycke.com/2011/06/cool-cavemen-webdesign-retrospective/), here is a little set of old [Funky Storm](http://funky-storm.com) web assets.
+After my [collection of Cool Cavemen themes](https://kevin.deldycke.com/2011/06/cool-cavemen-webdesign-retrospective/), here is a little set of old [Funky Storm](https://funky-storm.com) web assets.
 
 The first iteration of the site looked like this:
 
 ![](/uploads/2013/funky-storm-com.png)
 
-At the end of 2002 I tried to get rid of my [custom backend code](http://kevin.deldycke.com/2013/08/funky-storm-source-code-released/), and migrate the content to [SPIP](http://www.spip.net). In 2003 I was approaching the end of that daunting task, when a huge disk crash annihilated all my efforts.
+At the end of 2002 I tried to get rid of my [custom backend code](https://kevin.deldycke.com/2013/08/funky-storm-source-code-released/), and migrate the content to [SPIP](https://www.spip.net). In 2003 I was approaching the end of that daunting task, when a huge disk crash annihilated all my efforts.
 
 The only thing left of that work is a [static mockup](https://github.com/kdeldycke/funky-storm/blob/master/index_dev.htm):
 

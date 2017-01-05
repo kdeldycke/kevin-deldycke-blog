@@ -6,7 +6,7 @@ tags: Backup, Linux, SCM, Subversion, SVK
 ---
 
 In this little how-to I will show you how to backup a public SVN repository
-thanks to [SVK](http://svk.bestpractical.com), a tool build upon SVN framework
+thanks to [SVK](https://svk.bestpractical.com), a tool build upon SVN framework
 that add decentralized capabilities.
 
 First, create a local repository:
@@ -33,8 +33,8 @@ Now you can play with your local repository (`/home/user/.svk/local` in this
 exemple) as if it was a normal SVN repository!
 
 **_Update_**: If you want to generate a vanilla SVN dump out of your SVK local
-mirror, as suggest by [Thomas Mølhave](http://moelhave.dk) in his
-"[Remote Backup Of A Subversion (svn) Repository](http://moelhave.dk/2006/07/remote-mirroring-a-subversion-svn-repository/)"
+mirror, as suggest by [Thomas Mølhave](https://moelhave.dk) in his
+"[Remote Backup Of A Subversion (svn) Repository](https://moelhave.dk/2006/07/remote-mirroring-a-subversion-svn-repository/)"
 blog post, use `svnadmin`:
 
     :::bash

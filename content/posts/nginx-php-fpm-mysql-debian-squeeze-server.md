@@ -7,10 +7,10 @@ tags: Debian, Debian Squeeze, Linux, MySQL, SQL, nginx, PHP, php-fpm, Server, We
 
 This post is not about optimization: it only describe a sure and fast way to get all those 3 components talk to each other. This article will help you bootstrap a minimal setup, something that I wouldn't recommend for a production server without serious tweaking (to get both high performances and security).
 
-First, we'll get all our packages from an up-to-date [DotDeb repository](http://www.dotdeb.org/). If this is not already done, add those repositories to aptitude:
+First, we'll get all our packages from an up-to-date [DotDeb repository](https://www.dotdeb.org/). If this is not already done, add those repositories to aptitude:
 
     :::bash
-    $ echo "deb http://packages.dotdeb.org squeeze all" > /etc/apt/sources.list.d/squeeze-dotdeb.list
+    $ echo "deb https://packages.dotdeb.org squeeze all" > /etc/apt/sources.list.d/squeeze-dotdeb.list
     $ gpg --keyserver keys.gnupg.net --recv-key 89DF5277
     $ gpg -a --export 89DF5277 | apt-key add -
     $ aptitude update
@@ -64,7 +64,7 @@ Now it's time to create the `/etc/nginx/php.conf` file referenced in the Nginx c
 
     location ~ \.php$ {
       # Zero-day exploit defense.
-      # http://forum.nginx.org/read.php?2,88845,page=3
+      # https://forum.nginx.org/read.php?2,88845,page=3
       # Won't work properly (404 error) if the file is not stored on this server, which is entirely possible with php-fpm/php-fcgi.
       # Comment the 'try_files' line out if you set up php-fpm/php-fcgi on another machine.  And then cross your fingers that you won't get hacked.
       try_files $uri =404;
@@ -72,7 +72,7 @@ Now it's time to create the `/etc/nginx/php.conf` file referenced in the Nginx c
       fastcgi_split_path_info ^(.+\.php)(/.+)$;
       include /etc/nginx/fastcgi_params;
 
-      # As explained in http://kbeezie.com/view/php-self-path-nginx/ some fastcgi_param are missing from fastcgi_params.
+      # As explained in https://kbeezie.com/view/php-self-path-nginx/ some fastcgi_param are missing from fastcgi_params.
       # Keep these parameters for compatibility with old PHP scripts using them.
       fastcgi_param PATH_INFO       $fastcgi_path_info;
       fastcgi_param PATH_TRANSLATED $document_root$fastcgi_path_info;
@@ -101,7 +101,7 @@ Finally you can activate the site configuration and restart the whole stack:
     $ /etc/init.d/php5-fpm restart
     $ /etc/init.d/nginx restart
 
-If everything's OK on your DNS, pointing your browser to `http://example.com` will show you the famous page produced by `phpinfo()`:
+If everything's OK on your DNS, pointing your browser to `https://example.com` will show you the famous page produced by `phpinfo()`:
 
 ![](/uploads/2011/phpinfo-536.png)
 

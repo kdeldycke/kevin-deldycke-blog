@@ -5,7 +5,7 @@ category: English
 tags: grub, Kubuntu, Ubuntu, Linux, Ubuntu, MBR
 ---
 
-Here is a little note to remind me how to customize [GRUB](http://www.gnu.org/software/grub/) the (k)Ubuntu way.
+Here is a little note to remind me how to customize [GRUB](https://www.gnu.org/software/grub/) the (k)Ubuntu way.
 
 ![](/uploads/2010/grub-kubuntu-custom-menu.jpg)
 

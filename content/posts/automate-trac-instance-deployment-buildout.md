@@ -5,13 +5,13 @@ category: English
 tags: buildout, htdigest, md5, Python, Red Hat, sasl, Subversion, trac, yum, Mercurial, Regular expression
 ---
 
-Recently, I started to contribute to [pbp.recipe.trac](http://pypi.python.org/pypi/pbp.recipe.trac), a [Buildout](http://www.buildout.org) recipe aimed to simplify the management and configuration of [Trac](http://trac.edgewall.org) instances.
+Recently, I started to contribute to [pbp.recipe.trac](https://pypi.python.org/pypi/pbp.recipe.trac), a [Buildout](https://www.buildout.org) recipe aimed to simplify the management and configuration of [Trac](https://trac.edgewall.org) instances.
 
-I've taken interest in [this piece of code](http://bitbucket.org/tarek/atomisator/src/tip/packages/pbp.recipe.trac/) the day I realized the Trac instance we used at work was still running on the old 0.10.x series. Even if we spend the majority of our time there, nobody has taken care of our little Trac: it was not updated for 3 years. If you add to this a sudden need for multi-repository support (as our team is adopting other internal projects), you have enough incentives to upgrade our Trac and automate its maintenance.
+I've taken interest in [this piece of code](https://bitbucket.org/tarek/atomisator/src/tip/packages/pbp.recipe.trac/) the day I realized the Trac instance we used at work was still running on the old 0.10.x series. Even if we spend the majority of our time there, nobody has taken care of our little Trac: it was not updated for 3 years. If you add to this a sudden need for multi-repository support (as our team is adopting other internal projects), you have enough incentives to upgrade our Trac and automate its maintenance.
 
 So here is how I migrated our legacy Trac 0.10 instance to a brand new 0.12 thanks to Buildout and pbp.recipe.trac.
 
-First, let's install all system dependencies using your distribution package management tool. My target server is running an [RHEL](http://www.redhat.com/rhel/) 5.4, so I'll invoke [Yum](http://fedoraproject.org/wiki/Tools/yum):
+First, let's install all system dependencies using your distribution package management tool. My target server is running an [RHEL](https://www.redhat.com/rhel/) 5.4, so I'll invoke [Yum](https://fedoraproject.org/wiki/Tools/yum):
 
     :::bash
     $ sudo yum install subversion subversion-python sqlite-devel cyrus-sasl-lib cyrus-sasl-md5 mercurial
@@ -67,14 +67,14 @@ It's time to edit the file at the core of the process: `buildout.cfg`. Here is m
                           svn          | branches               | /*/trunk, /*/branches/*
                           svn          | tags                   | /*/tags/*
 
-I now encourage you to use my `buildout.cfg` above as a template and customize it to your needs. Please read [pbp.recipe.trac documentation](http://pypi.python.org/pypi/pbp.recipe.trac#detailed-documentation) carefully to set the recipe options to values you like.
+I now encourage you to use my `buildout.cfg` above as a template and customize it to your needs. Please read [pbp.recipe.trac documentation](https://pypi.python.org/pypi/pbp.recipe.trac#detailed-documentation) carefully to set the recipe options to values you like.
 
 Before going further, we need a `bootstrap.py` script. This script will take care of all stuff required by a bare Python interpreter to handle a Buildout project from scratch. Let's download the latest version:
 
     :::bash
-    $ wget http://svn.zope.org/repos/main/zc.buildout/trunk/bootstrap/bootstrap.py
+    $ wget https://svn.zope.org/repos/main/zc.buildout/trunk/bootstrap/bootstrap.py
 
-Now we can initialize our Buildout environment. The `--distribute` option here is necessary to get [something more modern](http://pypi.python.org/pypi/distribute#about-the-fork) than the [abandoned `setuptools`](http://pypi.python.org/pypi/setuptools):
+Now we can initialize our Buildout environment. The `--distribute` option here is necessary to get [something more modern](https://pypi.python.org/pypi/distribute#about-the-fork) than the [abandoned `setuptools`](https://pypi.python.org/pypi/setuptools):
 
     :::bash
     $ python ./bootstrap.py --distribute
@@ -151,7 +151,7 @@ And now we can start the Subversion server in the background:
     :::bash
     $ svnserve --daemon --listen-port 3690 --root ./repos/
 
-Last step, we launch [Trac's standalone webserver](http://trac.edgewall.org/wiki/TracStandalone):
+Last step, we launch [Trac's standalone webserver](https://trac.edgewall.org/wiki/TracStandalone):
 
     :::bash
     $ ./bin/tracd --port 8000 --single-env --auth="*,htdigest,trac" ./parts/my-trac

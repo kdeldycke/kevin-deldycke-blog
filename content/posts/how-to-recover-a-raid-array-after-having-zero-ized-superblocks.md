@@ -26,9 +26,9 @@ I don't know why I decided to do so, but it was the stupidest idea of the week. 
 
 At this moment I was sure that all my data assets were lost. I was desperate. My only alternative was to ask Google. So I did.
 
-I spend several minutes browsing the web without hope. I finally found [someone in the same situation as mine](http://lists.debian.org/debian-user-french/2006/03/msg00602.html) (sorry, in french) on debian-user-french mailing list.
+I spend several minutes browsing the web without hope. I finally found [someone in the same situation as mine](https://lists.debian.org/debian-user-french/2006/03/msg00602.html) (sorry, in french) on debian-user-french mailing list.
 
-The solution was to recreate the RAID array. This sound counter-intuitive: if we recreate a raid array over an existing one, it will be erased! Right? Wrong! [As it is said on debian-user-french](http://lists.debian.org/debian-user-french/2006/03/msg00607.html), `mdadm` is smart enough to "see" that HDD of the new array were elements of a previous one. Knowing that, `mdadm` will try to do its best (i.e. if parameters match the previous array configuration) and rebuild the new array upon the previous one in a non-destructive way, by keeping HDD content.
+The solution was to recreate the RAID array. This sound counter-intuitive: if we recreate a raid array over an existing one, it will be erased! Right? Wrong! [As it is said on debian-user-french](https://lists.debian.org/debian-user-french/2006/03/msg00607.html), `mdadm` is smart enough to "see" that HDD of the new array were elements of a previous one. Knowing that, `mdadm` will try to do its best (i.e. if parameters match the previous array configuration) and rebuild the new array upon the previous one in a non-destructive way, by keeping HDD content.
 
 So, here is how I finally recovered my RAID array:
 

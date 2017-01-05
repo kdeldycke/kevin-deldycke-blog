@@ -5,7 +5,7 @@ category: English
 tags: Backup, Dump, Linux, PostgreSQL, SQL, RDBMS
 ---
 
-Between user rights, permissions, templates and encoding, believe me or not, but I had some troubles finding a consistent procedure to dump, backup and restore a [PostgreSQL](http://www.postgresql.org/) database. That's expected as I'm new to this RDBMS.
+Between user rights, permissions, templates and encoding, believe me or not, but I had some troubles finding a consistent procedure to dump, backup and restore a [PostgreSQL](https://www.postgresql.org/) database. That's expected as I'm new to this RDBMS.
 
 So here is the sequence of commands I use to dump a database from a server and copy it to another:
 

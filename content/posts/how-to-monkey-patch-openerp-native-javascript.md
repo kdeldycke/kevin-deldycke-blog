@@ -5,11 +5,11 @@ category: English
 tags: javascript, monkeypatch, OpenERP, Web, xml, ERP
 ---
 
-Here is a classic editable list in [OpenERP v6.0](http://www.openerp.com/node/607/2011/01):
+Here is a classic editable list in [OpenERP v6.0](https://www.openerp.com/node/607/2011/01):
 
 ![](/uploads/2012/editable-list.png)
 
-It's a custom view I created this month [at work](http://www.smile.fr/Solutions/ERP) for one of our customer to let him select a list of products, then batch-print their labels on stickers.
+It's a custom view I created this month [at work](https://www.smile.fr/Solutions/ERP) for one of our customer to let him select a list of products, then batch-print their labels on stickers.
 
 The view above is produced by the following XML:
 
@@ -59,9 +59,9 @@ As you can see, these kind of pop-up inherits the width of their parent field, w
 
 Now I want to get rid of this behavior and let the pop-up menu take all the necessary width it needs to fully display its content.
 
-My instinct told me that this default style could easily be overridden with some static CSS directives. But digging deeper into [OpenERP web client code](http://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/files), I realized that the width is dynamically set by the `many2one` widget itself.
+My instinct told me that this default style could easily be overridden with some static CSS directives. But digging deeper into [OpenERP web client code](https://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/files), I realized that the width is dynamically set by the `many2one` widget itself.
 
-The code responsible for this behavior is located in the [`addons/openerp/static/javascript/m2o.js`](http://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js) file, in the [`ManyToOne.prototype.on_keydown`](http://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js#L267) method:
+The code responsible for this behavior is located in the [`addons/openerp/static/javascript/m2o.js`](https://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js) file, in the [`ManyToOne.prototype.on_keydown`](https://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js#L267) method:
 
     :::javascript
     ManyToOne.prototype.on_keydown = function(evt) {
@@ -72,7 +72,7 @@ The code responsible for this behavior is located in the [`addons/openerp/static
 
 My goal is now to alter this default behavior, without touching the code in `m2o.js`.
 
-And [thanks to Bryan Forbes' article](http://www.reigndropsfall.net/2010/06/15/monkey-patching/), I engineered a method to [monkey patch](http://wikipedia.org/wiki/Monkey_patch) the original `ManyToOne.prototype.on_keydown` Javascript method.
+And [thanks to Bryan Forbes' article](https://www.reigndropsfall.net/2010/06/15/monkey-patching/), I engineered a method to [monkey patch](https://wikipedia.org/wiki/Monkey_patch) the original `ManyToOne.prototype.on_keydown` Javascript method.
 
 Here is the code I added in the XML view, just below the `line_ids` field:
 

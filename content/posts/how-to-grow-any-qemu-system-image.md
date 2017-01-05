@@ -31,12 +31,12 @@ Here is an real case example of what you can see in a qemu image on which Window
 
 ![](/uploads/2007/growed-image1.png)
 
-Now, to grow your primary partition, I suggest you to download a Live CD like [gparted Live CD](http://gparted.sourceforge.net/livecd.php) or [System Rescue CD](http://www.sysresccd.org), and boot on the `.iso` file with qemu:
+Now, to grow your primary partition, I suggest you to download a Live CD like [gparted Live CD](https://gparted.sourceforge.net/livecd.php) or [System Rescue CD](https://www.sysresccd.org), and boot on the `.iso` file with qemu:
 
     :::bash
     $ qemu -hda big10G.raw -cdrom gparted-livecd-0.3.4-5.iso -boot d
 
-This will allow you to grow and manipulate all your partitions safely thanks to [parted](http://www.gnu.org/software/parted/index.shtml) and other open source system tools.
+This will allow you to grow and manipulate all your partitions safely thanks to [parted](https://www.gnu.org/software/parted/index.shtml) and other open source system tools.
 
 Finally you can convert back your `raw` image to a `qcow` one to not waste space:
 
@@ -47,4 +47,4 @@ That's all!
 
 By the way, I think it's possible to perform the second and third step of this how-to in a single operation using `dd` only.
 
-_Update_: I missed it, but this issue is also described in the FAQ from the [unofficial #qemu wiki](http://kidsquid.com/cgi-bin/moin.cgi) (look at "[How do I resize a disk image?](http://kidsquid.com/cgi-bin/moin.cgi/FrequentlyAskedQuestions#head-b46370d3ad030e6c1712338f0e5112228c51212a)" question).
+_Update_: I missed it, but this issue is also described in the FAQ from the [unofficial #qemu wiki](https://kidsquid.com/cgi-bin/moin.cgi) (look at "[How do I resize a disk image?](https://kidsquid.com/cgi-bin/moin.cgi/FrequentlyAskedQuestions#head-b46370d3ad030e6c1712338f0e5112228c51212a)" question).

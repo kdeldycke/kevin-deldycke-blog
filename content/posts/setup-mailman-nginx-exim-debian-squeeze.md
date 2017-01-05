@@ -7,11 +7,11 @@ tags: Debian, Debian Squeeze, email, Exim, fcgiwrap, Linux, mailing list, mailma
 
 ![](/uploads/2011/mailman-logo.png)
 
-Before going further, please take note that I start this tutorial assuming that you already have a [minimal Exim setup](http://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/) running on your Debian machine.
+Before going further, please take note that I start this tutorial assuming that you already have a [minimal Exim setup](https://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/) running on your Debian machine.
 
 ## Mailman
 
-Now that you have the context, let's proceed with [Mailman](http://www.list.org/) install:
+Now that you have the context, let's proceed with [Mailman](https://www.list.org/) install:
 
     :::bash
     $ aptitude install mailman
@@ -61,7 +61,7 @@ If everything is alright, you'll receive a mail similar to this one:
 
 Now we have to configure our HTTP server to make the administration interface available from the web. If Apache is the recommended server to use with Mailman, Nginx is already running on my machine, so let's use it instead.
 
-First, as [explained on Nginx wiki](http://wiki.nginx.org/Fcgiwrap) we need to install `fcgiwrap`:
+First, as [explained on Nginx wiki](https://wiki.nginx.org/Fcgiwrap) we need to install `fcgiwrap`:
 
     :::bash
     $ aptitude install fcgiwrap
@@ -103,10 +103,10 @@ Then we have to create an Nginx configuration file dedicated to Mailman. Assumin
 
     server {
       server_name *.lists.example.com .lists.example.org .lists.example.net;
-      rewrite ^ http://lists.example.com$request_uri? permanent;
+      rewrite ^ https://lists.example.com$request_uri? permanent;
     }
 
-The configuration above is a mix between [the one available on Nginx wiki](http://wiki.nginx.org/Mailman) and the `/usr/share/doc/fcgiwrap/examples/nginx.conf` example file that come with the Debian package.
+The configuration above is a mix between [the one available on Nginx wiki](https://wiki.nginx.org/Mailman) and the `/usr/share/doc/fcgiwrap/examples/nginx.conf` example file that come with the Debian package.
 
 All we have to do now is to activate the configuration above and restart our CGI and HTTP server:
 
@@ -115,7 +115,7 @@ All we have to do now is to activate the configuration above and restart our CGI
     $ /etc/init.d/fcgiwrap restart
     $ /etc/init.d/nginx restart
 
-If everything's OK, going to `http://lists.example.com` will show you this:
+If everything's OK, going to `https://lists.example.com` will show you this:
 
 ![](/uploads/2011/mailman-default-welcome-screen.png)
 
@@ -132,9 +132,9 @@ First, we have to update `/etc/mailman/mm_cfg.py` (the global Mailman configurat
      #-------------------------------------------------------------
      # If you change these, you have to configure your http server
      # accordingly (Alias and ScriptAlias directives in most httpds)
-    -DEFAULT_URL_PATTERN = 'http://%s/cgi-bin/mailman/'
+    -DEFAULT_URL_PATTERN = 'https://%s/cgi-bin/mailman/'
     -PRIVATE_ARCHIVE_URL = '/cgi-bin/mailman/private'
-    +DEFAULT_URL_PATTERN = 'http://%s/mailman/'
+    +DEFAULT_URL_PATTERN = 'https://%s/mailman/'
     +PRIVATE_ARCHIVE_URL = '/mailman/private'
      IMAGE_LOGOS         = '/images/mailman/'
 
@@ -260,7 +260,7 @@ Then we have to update the Exim configuration template. If like me you haven't c
      ### retry/00_exim4-config_header
      #####################################################
 
-Don't apply this diff as-is, as the original file contain the modifications I previously made to [let Exim use Gmail to send mails](http://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/).
+Don't apply this diff as-is, as the original file contain the modifications I previously made to [let Exim use Gmail to send mails](https://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/).
 
 Then we have to update the Exim meta-configuration that is stored in `/etc/exim4/update-exim4.conf.conf`. There we specify our host (`lists.example.com`) and public IP address (`123.456.78.90`):
 
@@ -331,8 +331,8 @@ Once you're convinced that Mailman is working as expected, you can remove your t
 Finally, if like me you [use Munin to monitor your machine](), then it's a good idea to let it graph some Mailman usage:
 
     :::bash
-    $ wget http://exchange.munin-monitoring.org/plugins/mailman-queue-check/version/2/download --output-document=/usr/share/munin/plugins/mailman-queue-check
-    $ wget http://exchange.munin-monitoring.org/plugins/mailman_subscribers/version/3/download --output-document=/usr/share/munin/plugins/mailman_subscribers
+    $ wget https://exchange.munin-monitoring.org/plugins/mailman-queue-check/version/2/download --output-document=/usr/share/munin/plugins/mailman-queue-check
+    $ wget https://exchange.munin-monitoring.org/plugins/mailman_subscribers/version/3/download --output-document=/usr/share/munin/plugins/mailman_subscribers
     $ ln -s /usr/share/munin/plugins/mailman-queue-check /etc/munin/plugins/
     $ ln -s /usr/share/munin/plugins/mailman_subscribers /etc/munin/plugins/
     $ echo "[mailman*]

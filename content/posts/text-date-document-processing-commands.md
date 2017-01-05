@@ -75,7 +75,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::bash
         $ env LC_TIME=en date +"%a %b %d %Y"
 
-  * Get the number of seconds since [epoch](http://en.wikipedia.org/wiki/Epoch_%28reference_date%29#Notable_epoch_dates_in_computing):
+  * Get the number of seconds since [epoch](https://en.wikipedia.org/wiki/Epoch_%28reference_date%29#Notable_epoch_dates_in_computing):
 
         :::bash
         $ date +%s
@@ -100,7 +100,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::bash
         $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=bigfile.pdf ./*
 
-  * VIM: [no autoindent on paste](http://vim.wikia.com/wiki/How_to_stop_auto_indenting).
+  * VIM: [no autoindent on paste](https://vim.wikia.com/wiki/How_to_stop_auto_indenting).
 
-  * a list of [`sed` one-liners](http://sed.sourceforge.net/sed1line.txt).
+  * a list of [`sed` one-liners](https://sed.sourceforge.net/sed1line.txt).
 

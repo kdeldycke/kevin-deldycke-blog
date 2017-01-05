@@ -33,7 +33,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         :::bash
         $ ffmpeg -vcodec copy -acodec copy -i inpout.flv output.mp4
 
-  * Concatenate a series of videos and transcode the audio output to a `flac` file. This [only works with certain multimedia container](http://ffmpeg.org/faq.html#SEC29) (MPEG-1, MPEG-2 PS, DV):
+  * Concatenate a series of videos and transcode the audio output to a `flac` file. This [only works with certain multimedia container](https://ffmpeg.org/faq.html#SEC29) (MPEG-1, MPEG-2 PS, DV):
 
         :::bash
         $ cat M2U01802.MPG M2U01803.MPG M2U01804.MPG | ffmpeg -i - -acodec flac output.flac
@@ -53,7 +53,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         :::bash
         $ ffmpeg -i video.mov -f image2 -r 1/10 preview-%04d.png
 
-  * Transcode the video stream to the [lossless HuffYUV codec](http://en.wikipedia.org/wiki/Huffyuv):
+  * Transcode the video stream to the [lossless HuffYUV codec](https://en.wikipedia.org/wiki/Huffyuv):
 
         :::bash
         $ ffmpeg -i ./MVI_1714.MOV -vcodec huffyuv -sameq ./MVI_1714-lossless.avi
@@ -66,10 +66,10 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
 ## VLC
 
-  * Transcode the first video stream found in a `m3u` playlist to a 384 kbps MPEG-2 video and 48 kHz Vorbis audio, and serve the resulting stream ina Ogg container to `http://localhost:8888`. To save bandwidth we reduce by two the size of the video:
+  * Transcode the first video stream found in a `m3u` playlist to a 384 kbps MPEG-2 video and 48 kHz Vorbis audio, and serve the resulting stream ina Ogg container to `https://localhost:8888`. To save bandwidth we reduce by two the size of the video:
 
         :::bash
-        $ vlc -vvv http://mafreebox.freebox.fr/freeboxtv/playlist.m3u --sout '#transcode{vcodec=mp2v,vb=384,scale=0.5,acodec=vorbis,ab=48,channels=1}:standard{access=http,mux=ogg,url=:8888}' -I ncurses 2> /dev/null
+        $ vlc -vvv https://mafreebox.freebox.fr/freeboxtv/playlist.m3u --sout '#transcode{vcodec=mp2v,vb=384,scale=0.5,acodec=vorbis,ab=48,channels=1}:standard{access=http,mux=ogg,url=:8888}' -I ncurses 2> /dev/null
 
 ## Transcode
 

@@ -7,7 +7,7 @@ tags: campaign, contribution, donation, fundaraising, KDE, Kdenlive, Linux, open
 
 I [just donated
 $200](https://twitter.com/#!/kdeldycke/status/182018605259567104) to the
-[Kdenlive](http://kdenlive.org) project, as they have [just
+[Kdenlive](https://kdenlive.org) project, as they have [just
 started](https://web.archive.org/web/20160318001247/https://kdenlive.org/users/ttill/kdenlive-fundraising-campaign)
 a [fundraising
 campaign](https://www.indiegogo.com/projects/kdenlive-refactoring) to refactor
@@ -22,7 +22,7 @@ video editor out there.
 
 I started to play with Kdenlive several years ago with version 0.3. I even
 [created some RPM
-packages](http://kevin.deldycke.com/2007/04/kdenlive-04-for-mandriva-20070/)
+packages](https://kevin.deldycke.com/2007/04/kdenlive-04-for-mandriva-20070/)
 back then. Kdenlive suffered from heavy instabilities in its early days.
 
 But this was a long time ago and today it’s the most stable and practical video
@@ -33,7 +33,7 @@ KDE.
 Today this software is the one I spend most of my time in at home (just after a
 web browser and a command-line terminal). And I've never felt as productive as
 the last 2 years: I [edited about 2 hours of
-videos](http://www.youtube.com/playlist?list=PL003033C52FE5047D) in that
+videos](https://www.youtube.com/playlist?list=PL003033C52FE5047D) in that
 period.
 
 Kdenlive must continue to grow. And because I want to use it in my future

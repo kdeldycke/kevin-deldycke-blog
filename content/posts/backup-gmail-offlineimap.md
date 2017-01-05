@@ -6,7 +6,7 @@ tags: Backup, email, Gmail, IMAP, Linux, maildir, Python, SSL, cron
 ---
 
 Gmail's content can be retrieved via IMAP, and we'll use this way to backup all
-our mails thanks to [OfflineImap](http://offlineimap.org), a generic IMAP
+our mails thanks to [OfflineImap](https://offlineimap.org), a generic IMAP
 synchronization utility.
 
 Let's start by creating a dedicated configuration file in your home directory.
@@ -58,7 +58,7 @@ Its content is quite straight-forward, as you can see in my
     folderfilter = lambda foldername: foldername not in ['[Gmail]/%s' % f for f in ['All Mail', 'Trash', 'Spam', 'Starred', 'Important']]
 
 Notice how we use a Python lambda expressions to [filter
-out](http://www.offlineimap.org/doc/nametrans.html#folderfilter) some Gmail's
+out](https://www.offlineimap.org/doc/nametrans.html#folderfilter) some Gmail's
 virtual folders.
 
 Then all you have to do is to launch the `offlineimap` command-line itself with

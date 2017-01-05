@@ -9,9 +9,9 @@ Cet article explique comment créer un espace de stockage redondant et fiable en
 
 _**Mise à jour**: Le but initial était d'utiliser des boîtiers externes USB pour construire une matrice RAID. En réalité je n'ai jamais pu obtenir de résultats convaincants car les disques USB ne sont pas aussi fiables que des disques dur IDE classique. Je m'explique: une partie seulement des instructions IDE trouvent leurs équivalents dans le protocole USB, limitant ainsi l'accès bas niveau aux disques durs externes par le kernel linux. Voila pourquoi cet article reste inachevé et que certaines parties ci-dessous peuvent paraître décousues._
 
-Pour commencer une [explication de la technologie RAID](http://fr.wikipedia.org/wiki/RAID_%28informatique%29) et de ses intérêts n'est pas superflu.
+Pour commencer une [explication de la technologie RAID](https://fr.wikipedia.org/wiki/RAID_%28informatique%29) et de ses intérêts n'est pas superflu.
 
-Je dispose de 2 disques durs de 120 Go, que je met chacun dans un boîtier externe USB 2. Je les branche ensuite sur mon [OpenBrick NG](http://web.archive.org/web/20060822232700/http://www.storever.com/product/openbrick/openbrick-ng) qui possède sur son port IDE0 un disque dur de 160 Go qui héberge l'OS. L'OS en question est une Mandrakelinux 10.0 installée sur les 40 premiers gigas du disque IDE, dans des partitions classiques qui ne seront pas protégées par le RAID. J'ai choisi une Mandrakelinux 10.0 car à l'époque la Mandriva 2005 n'était pas encore disponible et la Mandrake 10.1 à un `udev` buggé qui ne créée pas les devices RAID (donc impossibilité d'activer automatiquement le RAID au démarrage).
+Je dispose de 2 disques durs de 120 Go, que je met chacun dans un boîtier externe USB 2. Je les branche ensuite sur mon [OpenBrick NG](https://web.archive.org/web/20060822232700/https://www.storever.com/product/openbrick/openbrick-ng) qui possède sur son port IDE0 un disque dur de 160 Go qui héberge l'OS. L'OS en question est une Mandrakelinux 10.0 installée sur les 40 premiers gigas du disque IDE, dans des partitions classiques qui ne seront pas protégées par le RAID. J'ai choisi une Mandrakelinux 10.0 car à l'époque la Mandriva 2005 n'était pas encore disponible et la Mandrake 10.1 à un `udev` buggé qui ne créée pas les devices RAID (donc impossibilité d'activer automatiquement le RAID au démarrage).
 
 Supposons à partir de maintenant que l'OS est installé, pour nous concentrer uniquement sur la configuration et la mise en route du RAID.
 
@@ -31,7 +31,7 @@ Les partitions à créer sont de type Linux RAID. On pourra éventuellement fair
 
 Nous utiliserons `mdadm` pour la gestion de notre RAID.
 
-_Note_: A partir de la 10.1, la version de `webmin` fournie avec la Mandrake supporte `mdadm`. Pour arriver à nos fins par ce moyen, on pourras s'inspirer d'un [article sur la mise en place d'un RAID via webmin](http://froverio.online.fr/articles.php?lng=fr&pg=55).
+_Note_: A partir de la 10.1, la version de `webmin` fournie avec la Mandrake supporte `mdadm`. Pour arriver à nos fins par ce moyen, on pourras s'inspirer d'un [article sur la mise en place d'un RAID via webmin](https://froverio.online.fr/articles.php?lng=fr&pg=55).
 
 Installation de mdadm:
 
@@ -180,9 +180,9 @@ Et enfin, pour le montage automatique au démarrage de notre serveur, il faut aj
 
 ## De la lecture complémentaire sur RAID 5 et LVM
 
-  * [Notes on Building a Linux Storage Server, by Martin Smith](http://www.ethics-gradient.net/myth/storage.html)
-  * [Gentoo Install on Software RAID mirror and LVM2 on top of RAID](http://gentoo-wiki.com/HOWTO_Gentoo_Install_on_Software_RAID_mirror_and_LVM2_on_top_of_RAID)
-  * [Disks are fun](http://scottstuff.net/blog/articles/2005/01/10/disks-are-fun)
-  * [Anatomy of a Drive Failure](http://scottstuff.net/blog/articles/2005/01/08/anatomy-of-a-drive-failure)
-  * [Changing RAID Drives Without Losing Data](http://www.digitalmapping.sk.ca/Networks/ExpandingRAID.htm)
+  * [Notes on Building a Linux Storage Server, by Martin Smith](https://www.ethics-gradient.net/myth/storage.html)
+  * [Gentoo Install on Software RAID mirror and LVM2 on top of RAID](https://gentoo-wiki.com/HOWTO_Gentoo_Install_on_Software_RAID_mirror_and_LVM2_on_top_of_RAID)
+  * [Disks are fun](https://scottstuff.net/blog/articles/2005/01/10/disks-are-fun)
+  * [Anatomy of a Drive Failure](https://scottstuff.net/blog/articles/2005/01/08/anatomy-of-a-drive-failure)
+  * [Changing RAID Drives Without Losing Data](https://www.digitalmapping.sk.ca/Networks/ExpandingRAID.htm)
 

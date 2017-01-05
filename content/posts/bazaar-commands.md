@@ -15,7 +15,7 @@ tags: bazaar, CLI, development, Launchpad, Linux, OpenERP, programming
         :::bash
         $ bzr branch lp:openobject-server/6.0 -r 3425 openerp-server
 
-  * Check-out the current head of a branch, without its history. This is particularly useful when working on large repositories with huge history ([source](http://doc.bazaar.canonical.com/beta/en/user-guide/using_checkouts.html#getting-a-lightweight-checkout)):
+  * Check-out the current head of a branch, without its history. This is particularly useful when working on large repositories with huge history ([source](https://doc.bazaar.canonical.com/beta/en/user-guide/using_checkouts.html#getting-a-lightweight-checkout)):
 
         :::bash
         $ bzr checkout --lightweight lp:openobject-addons/7.0 addons

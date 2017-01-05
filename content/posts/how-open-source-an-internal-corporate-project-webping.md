@@ -5,7 +5,7 @@ category: English
 tags: CLI, Git, GitHub, Linux, Perl, Python, Regular expression, Subversion, trac, webping
 ---
 
-[2 weeks ago I released WebPing](http://kevin.deldycke.com/2011/08/webping-open-sourced/). This article is more or less the same I wrote 4 months ago when I [released the FTT project](http://kevin.deldycke.com/2011/03/feed-tracking-tool-released-open-source-license/) and needed to [move it from SVN to Git](http://kevin.deldycke.com/2011/04/ftt-migration-subversion-git/). But this time I added more details on how I removed all sensible informations that were hard-coded in the project files.
+[2 weeks ago I released WebPing](https://kevin.deldycke.com/2011/08/webping-open-sourced/). This article is more or less the same I wrote 4 months ago when I [released the FTT project](https://kevin.deldycke.com/2011/03/feed-tracking-tool-released-open-source-license/) and needed to [move it from SVN to Git](https://kevin.deldycke.com/2011/04/ftt-migration-subversion-git/). But this time I added more details on how I removed all sensible informations that were hard-coded in the project files.
 
 ## Subversion to Git migration
 
@@ -83,14 +83,14 @@ For example, here is the commands which allowed me to remove all references to h
     :::bash
     $ git filter-branch --force --prune-empty --tree-filter 'find . -type f -exec perl -i -pe "s/([\w-.]*?)\.(company(-intranet|-extention)?)\.(fr|com|net|org)/intranet\.example\.com/g" "{}" \;' -- --all
 
-The Perl one-liner embedded in the command above will only apply the regular expression on a line-by-line basis. If you want to have the regexp applied on the whole content of each file, you have to use Perl's _slurp_ mode ([source of that tip](http://www.math.uiuc.edu/~hildebr/computer/perltips.html)):
+The Perl one-liner embedded in the command above will only apply the regular expression on a line-by-line basis. If you want to have the regexp applied on the whole content of each file, you have to use Perl's _slurp_ mode ([source of that tip](https://www.math.uiuc.edu/~hildebr/computer/perltips.html)):
 
     :::bash
     $ git filter-branch --force --prune-empty --tree-filter 'perl -0777 -i -pe "s/MAILING_LIST\s*=\s*\[(.*?)\]/MAILING_LIST = \[\]/gs" ./web-ping.py' -- --all
 
 The specific example above helped me removed the content of the `MAILING_LIST` Python list found in `web-ping.py`, in order to protect from spam the email addresses of my former co-workers that were unfortunately hard-coded in that variable.
 
-Another place to hunt for sensible information is commit messages. These can be easily modified thanks to the `--msg-filter` option. Here is how I removed references to our internal [Trac](http://trac.edgewall.org/) tickets:
+Another place to hunt for sensible information is commit messages. These can be easily modified thanks to the `--msg-filter` option. Here is how I removed references to our internal [Trac](https://trac.edgewall.org/) tickets:
 
     :::bash
     $ git filter-branch --force --msg-filter 'sed "s/ (see ticket:666)//g"' -- --all
@@ -118,7 +118,7 @@ The last useful command I use was the following, to fix author's name and email:
 
 By using a dozen variations of the commands above, and carefully reviewing the code, I was able to engineer a clean code history.
 
-But I certainly have been a little too blunt with these regular expressions. Some of them were able to act on binary content. As a result, I [had to restore static images](http://github.com/kdeldycke/webping/commit/8c72cbee1a4f72066ffe9fa82b2b06baadca9f24) to their original copy.
+But I certainly have been a little too blunt with these regular expressions. Some of them were able to act on binary content. As a result, I [had to restore static images](https://github.com/kdeldycke/webping/commit/8c72cbee1a4f72066ffe9fa82b2b06baadca9f24) to their original copy.
 
 ## Final steps
 

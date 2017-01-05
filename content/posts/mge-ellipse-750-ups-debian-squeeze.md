@@ -5,11 +5,11 @@ category: English
 tags: Debian, Linux, nut, Server, Debian Squeeze, udev, UPS, USB, Regular expression
 ---
 
-My home server is protected by an [MGE Ellipse 750 UPS](http://www.mgeops.com/index.php/products__1/230v_products/ups/ellipse_asr) for years. I bought it for several reasons: it's affordable, has good capacity and is Ubuntu certified.
+My home server is protected by an [MGE Ellipse 750 UPS](https://www.mgeops.com/index.php/products__1/230v_products/ups/ellipse_asr) for years. I bought it for several reasons: it's affordable, has good capacity and is Ubuntu certified.
 
-I also read back then [rumors](http://blog.mansonthomas.com/2008/10/setting-up-ups-link-with-ubuntu-server.html) implying that Nut's maintainer was employed by MGE. Having a hardware manufacturer employing a fellow open-source hacker has certainly influenced my purchase decision.
+I also read back then [rumors](https://blog.mansonthomas.com/2008/10/setting-up-ups-link-with-ubuntu-server.html) implying that Nut's maintainer was employed by MGE. Having a hardware manufacturer employing a fellow open-source hacker has certainly influenced my purchase decision.
 
-MGE is no more and has been [merged with EATON](http://www.eaton.com/Eaton/OurCompany/NewsEvents/NewsReleases/CT_136576). But my UPS is still supported, and the release of Debian Squeeze is a good opportunity to consolidate my knowledge in the form of this tutorial.
+MGE is no more and has been [merged with EATON](https://www.eaton.com/Eaton/OurCompany/NewsEvents/NewsReleases/CT_136576). But my UPS is still supported, and the release of Debian Squeeze is a good opportunity to consolidate my knowledge in the form of this tutorial.
 
 So here is how I setup Nut on Debian Squeeze to monitor my UPS.
 
@@ -140,7 +140,7 @@ BTW, to get the bus number (`005` here) and device number (`003` in my case) of 
     Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
     Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
-Of course this fix is absolutely temporary, as you'll need to perform the change above after every reboot. This is far from practical. In fact, as describe in this [Fedora 10 bug report](http://bugzilla.redhat.com/show_bug.cgi?id=488368), but also in [some](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=529664) [other](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=334105) Debian [bug report](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=325878), this issue is directly tied to conflicting Udev rules.
+Of course this fix is absolutely temporary, as you'll need to perform the change above after every reboot. This is far from practical. In fact, as describe in this [Fedora 10 bug report](https://bugzilla.redhat.com/show_bug.cgi?id=488368), but also in [some](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=529664) [other](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=334105) Debian [bug report](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=325878), this issue is directly tied to conflicting Udev rules.
 
 Based on clues from these bug reports you can fix Udev using different strategies. As I can't decide which one is the cleanest, I just did something that is quite brutal, but works. It consist of replacing in `/lib/udev/rules.d/91-permissions.rules` the line setting rights for USBfs-like devices:
 

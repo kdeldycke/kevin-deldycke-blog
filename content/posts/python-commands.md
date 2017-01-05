@@ -5,7 +5,7 @@ category: English
 tags: ascii, Computer programming, date, dateutil, development, distutils, encoding, PEP8, PyPi, PDB, Python, socket, unicode, URL, urllib2, HTTP, PyLint, Fabric, pip
 ---
 
-  * Add a [Python's debugger](http://docs.python.org/library/pdb.html) break point:
+  * Add a [Python's debugger](https://docs.python.org/library/pdb.html) break point:
 
         :::python
         import pdb; pdb.set_trace()
@@ -23,24 +23,24 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
   Better: use [`awesome-slugify`](https://pypi.python.org/pypi/awesome-slugify) package.
 
-  * Sort a list of dicts by dict-key ([source](http://code.pui.ch/2007/07/23/python-sort-a-list-of-dicts-by-dict-key/)):
+  * Sort a list of dicts by dict-key ([source](https://code.pui.ch/2007/07/23/python-sort-a-list-of-dicts-by-dict-key/)):
 
         :::python
         import operator
         [dict(a=1, b=2, c=3), dict(a=2, b=2, c=2), dict(a=3, b=2, c=1)].sort(key=operator.itemgetter('c'))
 
-  * Set `urllib2` timeout ([source](http://www.voidspace.org.uk/python/articles/urllib2.shtml)):
+  * Set `urllib2` timeout ([source](https://www.voidspace.org.uk/python/articles/urllib2.shtml)):
 
         :::python
         import socket
         socket.setdefaulttimeout(10)
 
-  * Start a dumb HTTP server on port 8000 ([source](http://news.ycombinator.com/item?id=2042008)):
+  * Start a dumb HTTP server on port 8000 ([source](https://news.ycombinator.com/item?id=2042008)):
 
         :::bash
         $ python -m SimpleHTTPServer 8000
 
-  * Use [autopep8](http://pypi.python.org/pypi/autopep8/) to apply PEP8's coding style on all Python files:
+  * Use [autopep8](https://pypi.python.org/pypi/autopep8/) to apply PEP8's coding style on all Python files:
 
         :::bash
         $ find ./ -iname "*.py" -exec autopep8 --in-place "{}" \;
@@ -53,7 +53,7 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
 ## Date and time
 
-I personnaly recommend using the [`Arrow`](http://crsmithdev.com/arrow/) package. But if you can't, here are pure-python snippets:
+I personnaly recommend using the [`Arrow`](https://crsmithdev.com/arrow/) package. But if you can't, here are pure-python snippets:
 
   * Add a month to the current date:
 
@@ -81,7 +81,7 @@ To generate curly braces:
 
 ## Data
 
-  * [Pandas snippets](http://kevin.deldycke.com/2015/11/pandas-snippets/)
+  * [Pandas snippets](https://kevin.deldycke.com/2015/11/pandas-snippets/)
 
 
 ## Package management
@@ -91,7 +91,7 @@ To generate curly braces:
         :::bash
         $ python ./setup.py sdist
 
-  * Register, generate and upload to [PyPi](http://pypi.python.org) the current package as a source package, an egg and a dumb binary:
+  * Register, generate and upload to [PyPi](https://pypi.python.org) the current package as a source package, an egg and a dumb binary:
 
         :::bash
         $ python ./setup.py register sdist bdist_egg bdist_dumb upload

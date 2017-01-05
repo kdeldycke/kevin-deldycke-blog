@@ -6,9 +6,9 @@ tags: GitHub, javascript, mako, matrix, OpenERP, Python, smile, widget, ERP
 ---
 
 For about a year I'm working on a prototype of a matrix widget for OpenERP.
-This component was sponsored by my employer [Smile](http://smile.fr) and is
+This component was sponsored by my employer [Smile](https://smile.fr) and is
 currently [used in
-production](http://www.smile.fr/References/References-par-domaine/Public-et-collectivites/Inra3)
+production](https://www.smile.fr/References/References-par-domaine/Public-et-collectivites/Inra3)
 by two customers. The [code is available on
 Github](https://github.com/kdeldycke/smile_openerp_matrix_widget) under an
 OpenSource license.

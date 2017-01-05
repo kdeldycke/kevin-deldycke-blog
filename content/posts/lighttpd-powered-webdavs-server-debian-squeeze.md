@@ -5,14 +5,14 @@ category: English
 tags: Debian, Debian Squeeze, lighttpd, Linux, OpenSSL, Server, SSL, WebDAV, RSA
 ---
 
-Here is a tiny article about how I used [Lighttpd](http://www.lighttpd.net) to serve content over [WebDAV](http://wikipedia.org/wiki/WebDAV).
+Here is a tiny article about how I used [Lighttpd](https://www.lighttpd.net) to serve content over [WebDAV](https://wikipedia.org/wiki/WebDAV).
 
 First, install the required packages:
 
     :::bash
     $ aptitude install lighttpd-mod-webdav
 
-As we want to provide a secure WebDAV access, we need to install [OpenSSL](http://www.openssl.org):
+As we want to provide a secure WebDAV access, we need to install [OpenSSL](https://www.openssl.org):
 
     :::bash
     $ aptitude install openssl
@@ -77,7 +77,7 @@ Here is the content of that `99-custom.conf` configuration file:
     webdav.is-readonly = "disable"
 
     # Customize directory listings a bit
-    dir-listing.set-footer = "<a href='http://example.com'>Company</a>'s document repository."
+    dir-listing.set-footer = "<a href='https://example.com'>Company</a>'s document repository."
 
 And do not forget to restart the server:
 

@@ -14,4 +14,4 @@ The trick is to know that `cron` need percents to be escaped by a backslash in t
     :::text
     */10 * * * * kevin cp "/home/kevin/Desktop/Projects/Very Important Project/project.file" "/home/kevin/Desktop/Projects/Very Important Project/project.file-backup-`date +\%s`"
 
-Quick and dirty, but may saves you precious time on [unstable machines](http://twitter.com/kdeldycke/status/6158072244)! ;)
+Quick and dirty, but may saves you precious time on [unstable machines](https://twitter.com/kdeldycke/status/6158072244)! ;)

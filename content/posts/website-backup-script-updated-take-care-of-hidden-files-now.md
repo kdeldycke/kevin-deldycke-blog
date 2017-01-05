@@ -14,4 +14,4 @@ Change log:
 
   * Defensive incremental backup policy: keep 32 last backups instead of 32 days of backup.
 
-I also added a debug mode as [suggested by Sacha](http://kevin.deldycke.com/2006/11/website-backup-script-incremental-backup-feature-added/#comment-957).
+I also added a debug mode as [suggested by Sacha](https://kevin.deldycke.com/2006/11/website-backup-script-incremental-backup-feature-added/#comment-957).

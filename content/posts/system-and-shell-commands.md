@@ -20,7 +20,7 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression
         :::bash
         $ echo $?
 
-  * Run the last command as `root` ([source](http://blog.hardikr.com/post/2337320222/sudo-previous-command)):
+  * Run the last command as `root` ([source](https://blog.hardikr.com/post/2337320222/sudo-previous-command)):
 
         :::bash
         $ sudo !!
@@ -50,12 +50,12 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression
         :::bash
         $ strings ./firmware.bin | less
 
-  * Free up some memory by clearing RAM caches ([source](http://www.scottklarr.com/topic/134/linux-how-to-clear-the-cache-from-memory/)):
+  * Free up some memory by clearing RAM caches ([source](https://www.scottklarr.com/topic/134/linux-how-to-clear-the-cache-from-memory/)):
 
         :::bash
         $ sync ; echo 3 > /proc/sys/vm/drop_caches
 
-  * Display which distro is running the system ([source](http://news.ycombinator.com/item?id=1973441)):
+  * Display which distro is running the system ([source](https://news.ycombinator.com/item?id=1973441)):
 
         :::bash
         $ lsb_release -a

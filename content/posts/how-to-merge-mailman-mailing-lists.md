@@ -9,11 +9,11 @@ Let's say I have an old inactive mailing list (which ID is `old-ml`) for which I
 
 To do so, I have to merge the two mbox files holding all mails since the creation of these mailing-lists. I first tried to use `cat` to concatenate the two mbox files be it didn't work.
 
-Luckily, I found a [Python script to merge 2 mbox files](http://mail.python.org/pipermail/mailman-users/2008-March/060937.html) while sorting all mails by date. Here is how I uses it:
+Luckily, I found a [Python script to merge 2 mbox files](https://mail.python.org/pipermail/mailman-users/2008-March/060937.html) while sorting all mails by date. Here is how I uses it:
 
     :::bash
     $ cd /var/lib/mailman/archives/private
-    $ wget http://mail.python.org/pipermail/mailman-users/attachments/20080322/80455064/attachment.txt --output-document=mbmerge.py
+    $ wget https://mail.python.org/pipermail/mailman-users/attachments/20080322/80455064/attachment.txt --output-document=mbmerge.py
     $ python ./mbmerge.py ./old-ml.mbox/old-ml.mbox ./active-ml.mbox/active-ml.mbox > ./active-ml.mbox/active-ml.mbox.new
 
 Then I switched the current mbox with the one generated above and asked mailman to regenerate the static HTML archives:

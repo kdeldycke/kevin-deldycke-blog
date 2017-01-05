@@ -11,11 +11,11 @@ tags: Canon EOS 7D, Linux, stabilization, transcode, Video
 
 Baby goats. Cute baby goats. Yes, you're reading it right. Look:
 
-http://www.youtube.com/watch?v=el6VMY8KZHo
+https://www.youtube.com/watch?v=el6VMY8KZHo
 
-Yeah, I know, this is a naive video that belongs to [/r/aww](http://www.reddit.com/r/aww/). But any excuse is good to me when its all about playing with video.
+Yeah, I know, this is a naive video that belongs to [/r/aww](https://www.reddit.com/r/aww/). But any excuse is good to me when its all about playing with video.
 
-These kids (as baby goats are called) decided to come to this world the night I was around. In a hurry I grabbed my [Canon 7D](http://amzn.com/B002NEGTTW/?tag=kevideld-20) and filmed these newborns with a [Sigma 30mm f/1.4 EX DC HSM](http://amzn.com/B0007U0GZM/?tag=kevideld-20) to leverage its large aperture. And as expected, in the night, with no artificial light and no extra stabilization device, the resulting footage are extremely shaky.
+These kids (as baby goats are called) decided to come to this world the night I was around. In a hurry I grabbed my [Canon 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20) and filmed these newborns with a [Sigma 30mm f/1.4 EX DC HSM](https://amzn.com/B0007U0GZM/?tag=kevideld-20) to leverage its large aperture. And as expected, in the night, with no artificial light and no extra stabilization device, the resulting footage are extremely shaky.
 
 
 
@@ -27,17 +27,17 @@ I tried to stabilize the shots but was really disappointed by the results. The f
 
 ![](/uploads/2012/transcode-stabilizer-log.jpg)
 
-The first tool I tried was [vid.stab](http://public.hronopik.de/vid.stab/), a Transcode plugin that is now part of Transcode itself. But the 1.1.5 version that is bundled with the current Ubuntu 11.10 is quite old.
+The first tool I tried was [vid.stab](https://public.hronopik.de/vid.stab/), a Transcode plugin that is now part of Transcode itself. But the 1.1.5 version that is bundled with the current Ubuntu 11.10 is quite old.
 
-I wanted to compile it from its [sources](http://github.com/georgmartius/vid.stab). But the [binary distribution](http://public.hronopik.de/vid.stab/download.php) available on the project website works out of the box. To save some effort, let's install the latter:
+I wanted to compile it from its [sources](https://github.com/georgmartius/vid.stab). But the [binary distribution](https://public.hronopik.de/vid.stab/download.php) available on the project website works out of the box. To save some effort, let's install the latter:
 
     :::bash
-    $ wget http://public.hronopik.de/vid.stab/files/vid.stab-0.93-transcode-1.1-binary-x86_64.tgz
+    $ wget https://public.hronopik.de/vid.stab/files/vid.stab-0.93-transcode-1.1-binary-x86_64.tgz
     $ tar xvzf ./vid.stab-0.93-transcode-1.1-binary-x86_64.tgz
     $ sudo mv ./vid.stab-0.93-transcode-1.1-binary-x84_64/filter_*.so /usr/lib/transcode/
     $ rm -rf ./vid.stab-0.93-transcode-1.1-binary-x8*
 
-Now, as explained in the [documentation](http://public.hronopik.de/vid.stab/features.php), you have to let transcode analyze the video:
+Now, as explained in the [documentation](https://public.hronopik.de/vid.stab/features.php), you have to let transcode analyze the video:
 
     :::bash
     $ transcode -J stabilize -i ./MVI_1714.MOV -y null,null -o dummy
@@ -73,11 +73,11 @@ I told you I was disappointed by the results. For example, in the first shot of 
 
 Even in shots where the contrast is in our favor, software stabilization don't always produce nice output. If by chance the tracking points are set on the right objects (those that should be considered motionless), the results may not be pleasing, as it may expose inappropriate skewed perspective, shifting motion-blur and spacial deformation.
 
-While a little bit smarter, [YouTube's embedded stabilization effect](http://youtube-global.blogspot.com/2011/03/lights-camera-edit-new-features-for.html) still suffer from these same short-comings. If it  tries to smooth out consecutive transformations better than `vid.stab`, it still fails to produce nice output devoid of unattractive artifacts.
+While a little bit smarter, [YouTube's embedded stabilization effect](https://youtube-global.blogspot.com/2011/03/lights-camera-edit-new-features-for.html) still suffer from these same short-comings. If it  tries to smooth out consecutive transformations better than `vid.stab`, it still fails to produce nice output devoid of unattractive artifacts.
 
-Another tool worth trying is [VirtualDub](http://www.virtualdub.org), which you can run under [Wine](http://www.winehq.org) and leverage its [deshaker plugin](http://www.guthspot.se/video/deshaker.htm). But I didn't tested it.
+Another tool worth trying is [VirtualDub](https://www.virtualdub.org), which you can run under [Wine](https://www.winehq.org) and leverage its [deshaker plugin](https://www.guthspot.se/video/deshaker.htm). But I didn't tested it.
 
-Last but not least, [Blender can be used to stabilize videos](http://www.youtube.com/watch?v=OJujeSQctEk). Again I haven't tried this yet, but I think it's the best investment of you time, since the new tracking features make Blender a powerful tool for 3D integration.
+Last but not least, [Blender can be used to stabilize videos](https://www.youtube.com/watch?v=OJujeSQctEk). Again I haven't tried this yet, but I think it's the best investment of you time, since the new tracking features make Blender a powerful tool for 3D integration.
 
 ## Conclusion (tl;dr)
 

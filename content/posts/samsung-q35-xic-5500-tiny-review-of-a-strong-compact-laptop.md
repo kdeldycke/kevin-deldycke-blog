@@ -7,7 +7,7 @@ tags: fdisk, Hardware, laptop, life, MacBook
 
 ![samsung-q35-xic-5500](/uploads/2006/samsung-q35-xic-5500.jpg)
 
-I'm the happy owner of a brand new [Samsung Q35 XIC-5500 laptop](http://www.samsung.com/fr/products/notebookcomputer/design/serieq/np_q35g001sef.asp?page=Specifications). Here is a review of the machine hardware, not the software.
+I'm the happy owner of a brand new [Samsung Q35 XIC-5500 laptop](https://www.samsung.com/fr/products/notebookcomputer/design/serieq/np_q35g001sef.asp?page=Specifications). Here is a review of the machine hardware, not the software.
 
 The hard disk of the machine is supposed to be a 120 GB one, and as usual a hidden partition is reserved for windows backups. I deleted this one and reformatted the whole disk. After this operation, fdisk (`fdisk -l /dev/hda`) report me a total usable space of 112.4 GiB. Not bad.
 
@@ -31,4 +31,4 @@ The battery is unpleasant because half of it appear outside the laptop case. But
 
 Finally the laptop is not ultra-mobile. It's a very compact laptop (only 1.9 Kg), but not "ultra": it has big margins around the keyboard and the screen, and is as large as usual 14” laptops. It is also as thick as others, because of the optical drive.
 
-_My Conclusion_: If you need an ultra light laptop or if you are a gamer, this is not a machine for you. But if you need a light-weight notebook with everything heavy laptops have (including the optical drive), it's a very good deal. I paid mine 1160 € on a French online store. This laptop is not an object of design. But for 100 € more than a [13” MacBook](http://amzn.com/B002C7489S/?tag=kevideld-20),  you have a compact machine with superior hardware: Core 2 Duo, 1GB of RAM, 120GB HDD, 7 hours of max autonomy and 1280x800 screen. This is why I choose this machine, and I'm very happy with it! :)
+_My Conclusion_: If you need an ultra light laptop or if you are a gamer, this is not a machine for you. But if you need a light-weight notebook with everything heavy laptops have (including the optical drive), it's a very good deal. I paid mine 1160 € on a French online store. This laptop is not an object of design. But for 100 € more than a [13” MacBook](https://amzn.com/B002C7489S/?tag=kevideld-20),  you have a compact machine with superior hardware: Core 2 Duo, 1GB of RAM, 120GB HDD, 7 hours of max autonomy and 1280x800 screen. This is why I choose this machine, and I'm very happy with it! :)

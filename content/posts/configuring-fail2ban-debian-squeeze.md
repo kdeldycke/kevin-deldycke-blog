@@ -111,7 +111,7 @@ For me, the problem was that I forgot to add my custom `exim-relay` filter to Fa
 Speaking of custom filters, here is one to filter DFind scans (file located at `/etc/fail2ban/filter.d/apache-w00tw00t.conf`):
 
     :::ini
-    # Based on http://howflow.com/tricks/block_w00tw00t_scan_hosts_with_fail2ban
+    # Based on https://howflow.com/tricks/block_w00tw00t_scan_hosts_with_fail2ban
     # Real life exemaple:
     # [Sat Jun 27 16:43:08 2009] [error] [client 94.23.57.77] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /w00tw00t.at.ISC.SANS.DFind:)
 

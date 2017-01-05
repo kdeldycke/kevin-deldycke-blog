@@ -7,9 +7,9 @@ tags: Backup, Code, SCM, Subversion, SVK, Regular expression
 
 A long time ago, duplicating a remote Subversion repository required to have
 administration rights on the machine hosting the said repository. The only
-[solution back then was to use SVK](http://kevin.deldycke.com/2007/04/how-to-backup-mirror-a-public-svn-repository/),
+[solution back then was to use SVK](https://kevin.deldycke.com/2007/04/how-to-backup-mirror-a-public-svn-repository/),
 a defunct project that was adding a layer on top of SVN to make it a distributed
-[SCM](http://en.wikipedia.org/wiki/Revision_Control).
+[SCM](https://en.wikipedia.org/wiki/Revision_Control).
 
 Today, to dump a repository you don't manage, all the tools you need are
 available with the standard Subversion distribution.

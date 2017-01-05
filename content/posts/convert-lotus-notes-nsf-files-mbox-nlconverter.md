@@ -5,17 +5,17 @@ category: English
 tags: CLI, email, GUI, Lotus Notes, iCal, mbox, nlconverter, Python, Script, Windows, Windows 2000, Mercurial
 ---
 
-There is a great piece of software called [nlconverter](http://code.google.com/p/nlconverter/). It's a tool designed to convert Lotus Notes' `.nsf` files to `mbox`. It rely on win32's COM/DDE API so it can only be used on Windows.
+There is a great piece of software called [nlconverter](https://code.google.com/p/nlconverter/). It's a tool designed to convert Lotus Notes' `.nsf` files to `mbox`. It rely on win32's COM/DDE API so it can only be used on Windows.
 
 If you want to extract mails out of your `.nsf` database, this might be the tool you're looking for. Bonus point: it's written in Python! ;)
 
 ## Installing nlconverter and its dependencies
 
-Here is how I installed `nlconverter` on a [Windows 2000](http://amzn.com/B0006HMWO4/?tag=kevideld-20) (SP4) machine:
+Here is how I installed `nlconverter` on a [Windows 2000](https://amzn.com/B0006HMWO4/?tag=kevideld-20) (SP4) machine:
 
 
 
-  1. First I downloaded and installed the [official Python builds for Windows](http://www.python.org/download/releases/) ([2.6.6 precisely](http://www.python.org/ftp/python/2.6.6/python-2.6.6.msi)):
+  1. First I downloaded and installed the [official Python builds for Windows](https://www.python.org/download/releases/) ([2.6.6 precisely](https://www.python.org/ftp/python/2.6.6/python-2.6.6.msi)):
 
 ![](/uploads/2010/001-python-266-install-on-windows-2000.png)
 
@@ -27,7 +27,7 @@ Here is how I installed `nlconverter` on a [Windows 2000](http://amzn.com/B0006H
 
 ![](/uploads/2010/005-python-266-install-on-windows-2000.png)
 
-  2. Then [Python for Windows extensions](http://sourceforge.net/projects/pywin32/) ([build 214 for Python 2.6 in my case](http://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.6.exe/download)):
+  2. Then [Python for Windows extensions](https://sourceforge.net/projects/pywin32/) ([build 214 for Python 2.6 in my case](https://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.6.exe/download)):
 
 ![](/uploads/2010/001-pywin32-214-install-on-windows-2000.png)
 
@@ -37,19 +37,19 @@ Here is how I installed `nlconverter` on a [Windows 2000](http://amzn.com/B0006H
 
 ![](/uploads/2010/004-pywin32-214-install-on-windows-2000.png)
 
-  3. Finally I had to [download the latest `icalendar` archive](http://pypi.python.org/pypi/icalendar), then extract the `\iCalendar-1.2\src\icalendar` folder to `C:\Python26\Lib\site-packages\`:
+  3. Finally I had to [download the latest `icalendar` archive](https://pypi.python.org/pypi/icalendar), then extract the `\iCalendar-1.2\src\icalendar` folder to `C:\Python26\Lib\site-packages\`:
 
 ![](/uploads/2010/extract-icalendar-python-package-on-windows.png)
 
-  4. Next step is to [download nlconverter](http://code.google.com/p/nlconverter/downloads) itself and extract it:
+  4. Next step is to [download nlconverter](https://code.google.com/p/nlconverter/downloads) itself and extract it:
 
 ![](/uploads/2010/nlconverter-install-on-windows.png)
 
 ## nlconverter GUI
 
-First thing you have to do is to create an [export of your mails as a `.nsf` database](http://kevin.deldycke.com/2010/06/how-to-export-backup-lotus-notes-mails/). Follow the previous link to get the instructions.
+First thing you have to do is to create an [export of your mails as a `.nsf` database](https://kevin.deldycke.com/2010/06/how-to-export-backup-lotus-notes-mails/). Follow the previous link to get the instructions.
 
-Now let's convert this `nsf` to a `mbox`. [nlconverter's FAQ](http://code.google.com/p/nlconverter/wiki/Faq) tells you to run the `gui.exe` program to perform the conversion.
+Now let's convert this `nsf` to a `mbox`. [nlconverter's FAQ](https://code.google.com/p/nlconverter/wiki/Faq) tells you to run the `gui.exe` program to perform the conversion.
 
 Unfortunately it didn't work for me:
 
@@ -59,9 +59,9 @@ So I tried the alternative approach by using the command line.
 
 ## nlconverter command line
 
-Again, most of the things I'm writing here are based on [nlconverter's FAQ](http://code.google.com/p/nlconverter/wiki/Faq):
+Again, most of the things I'm writing here are based on [nlconverter's FAQ](https://code.google.com/p/nlconverter/wiki/Faq):
 
-  1. First, we have to [download the `notes2mbox.py` script](http://nlconverter.googlecode.com/hg/notes2mbox.py) from [nlconverter's mercurial repository](http://code.google.com/p/nlconverter/source/browse/), as this file is not distributed in the `winnlc-alpha-1.zip` archive I unzipped previously. Let's put `notes2mbox.py` in `C:\winnlc-alpha-1\`:
+  1. First, we have to [download the `notes2mbox.py` script](https://nlconverter.googlecode.com/hg/notes2mbox.py) from [nlconverter's mercurial repository](https://code.google.com/p/nlconverter/source/browse/), as this file is not distributed in the `winnlc-alpha-1.zip` archive I unzipped previously. Let's put `notes2mbox.py` in `C:\winnlc-alpha-1\`:
 
 ![](/uploads/2010/download-notes2mbox-python-script.png)
 

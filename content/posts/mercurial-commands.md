@@ -8,7 +8,7 @@ tags: CLI, Mercurial
   * Checkout a distant repository:
 
         :::bash
-        $ hg clone http://bitbucket.org/mirror/django
+        $ hg clone https://bitbucket.org/mirror/django
 
   * Commit all changes locally:
 

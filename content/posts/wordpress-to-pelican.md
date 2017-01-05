@@ -5,19 +5,19 @@ Category: English
 tags: WordPress, Pelican, Python, migration, blog, Web, PHP, MySQL, sed, Markdown, reStructuredText, ZenPhoto, Cool Cavemen, Regular expression
 ---
 
-You probably noticed this blog dramatically changed lately and was sometimes broken. That's because I was in the middle of migrating it from [WordPress](http://wordpress.org) to a static site generator.
+You probably noticed this blog dramatically changed lately and was sometimes broken. That's because I was in the middle of migrating it from [WordPress](https://wordpress.org) to a static site generator.
 
-In the last few years, tweaking and maintaining my server proved to be a challenging but rewarding experience. Most of the [knowledge I acquired](http://kevin.deldycke.com/tag/debian/) in the process has landed in my bag of tricks and makes me more productive than I was before.
+In the last few years, tweaking and maintaining my server proved to be a challenging but rewarding experience. Most of the [knowledge I acquired](https://kevin.deldycke.com/tag/debian/) in the process has landed in my bag of tricks and makes me more productive than I was before.
 
 But now that I've learned what I had to learn, the adventure turned into a chore. It's time to save time. And money. And ditch this machine for good.
 
-Another factor in this decision was [the end of Cool Cavemen](http://coolcavemen.com/2012/12/22/cool-cavemen-the-end/). My band announced their last album to be released this year. Since the beginning we were armed with a website, an online shop, multiple internal tools and a strong web presence to support our activities. There's no longer any need of all of these.
+Another factor in this decision was [the end of Cool Cavemen](https://coolcavemen.com/2012/12/22/cool-cavemen-the-end/). My band announced their last album to be released this year. Since the beginning we were armed with a website, an online shop, multiple internal tools and a strong web presence to support our activities. There's no longer any need of all of these.
 
-So I closed the [Drupal shop](http://kevin.deldycke.com/2011/03/chose-ubercart-magento-oscommerce/) and [moved it to Bandcamp](http://coolcavemen.com/2012/05/27/cool-cavemen-bandcamp-baisse-prix/). I merged [ZenPhoto galleries into WordPress](http://kevin.deldycke.com/2012/09/zenphoto-wordpress-migration/). All WordPress sites I hosted [moved to wordpress.com](http://en.support.wordpress.com/moving-a-blog/#moving-from-wordpress-org). bbPress forums were closed: I [archived private forums to emails](http://kevin.deldycke.com/2012/10/converting-bbpress-forum-mailbox-archive/), and [public ones to plain WordPress content](http://kevin.deldycke.com/2012/10/transfer-bbpress-to-plain-wordpress/). As for Mailman mailing-lists, they were archived and the ones remaining active moved to Google Groups.
+So I closed the [Drupal shop](https://kevin.deldycke.com/2011/03/chose-ubercart-magento-oscommerce/) and [moved it to Bandcamp](https://coolcavemen.com/2012/05/27/cool-cavemen-bandcamp-baisse-prix/). I merged [ZenPhoto galleries into WordPress](https://kevin.deldycke.com/2012/09/zenphoto-wordpress-migration/). All WordPress sites I hosted [moved to wordpress.com](https://en.support.wordpress.com/moving-a-blog/#moving-from-wordpress-org). bbPress forums were closed: I [archived private forums to emails](https://kevin.deldycke.com/2012/10/converting-bbpress-forum-mailbox-archive/), and [public ones to plain WordPress content](https://kevin.deldycke.com/2012/10/transfer-bbpress-to-plain-wordpress/). As for Mailman mailing-lists, they were archived and the ones remaining active moved to Google Groups.
 
 Listing all of this work today makes me realize that I spent most of 2012 preparing the retirement of my server. And my band. Until only one thing remained: this blog.
 
-The next evolution of this site couldn't be anything but a bunch of statically generated pages. First, static websites are cool. They're also fast and cheap. And they don't requires a [full nginx/PHP/MySQL stack](http://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/) to be managed, upgraded and [monitored](http://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/).
+The next evolution of this site couldn't be anything but a bunch of statically generated pages. First, static websites are cool. They're also fast and cheap. And they don't requires a [full nginx/PHP/MySQL stack](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/) to be managed, upgraded and [monitored](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/).
 
 I started my quest for a tool:
 
@@ -25,7 +25,7 @@ I started my quest for a tool:
   * supporting Markdown and
   * supported by an active community.
 
-After a little survey, the remaining contenders were [Pelican](http://getpelican.com) and [Nikola](http://nikola.ralsina.com.ar).
+After a little survey, the remaining contenders were [Pelican](https://getpelican.com) and [Nikola](https://nikola.ralsina.com.ar).
 
 If I like Nikola for its fast release cycles and huge list of configurable features, I ultimately choose Pelican. I found it was easier for the latter to naturally match my previous WordPress URLs (good for SEO).
 
@@ -51,8 +51,8 @@ And create a new site:
     > What will be the title of this web site? Kevin Deldycke
     > Who will be the author of this web site? Kevin Deldycke
     > What will be the default language of this web site? [en]
-    > Do you want to specify a URL prefix? e.g., http://example.com   (Y/n) Y
-    > What is your URL prefix? (see above example; no trailing slash) http://kevin.deldycke.com
+    > Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) Y
+    > What is your URL prefix? (see above example; no trailing slash) https://kevin.deldycke.com
     > Do you want to enable article pagination? (Y/n) n
     > Do you want to generate a Makefile to easily manage your website? (Y/n) Y
     > Do you want an auto-reload & simpleHTTP script to assist with theme and site development? (Y/n) Y
@@ -69,7 +69,7 @@ Basically, that's it. You're now free to tweak the configuration and structure o
 
 The next important step is to migrate our content. We can't import the XML file WordPress produces as is. We need to massage some data first.
 
-During my [Disqus migration](http://kevin.deldycke.com/2013/01/wordpress-disqus-migration/), I had to update the markup of the code blocks. Same thing apply here. I need to replace occurrences of:
+During my [Disqus migration](https://kevin.deldycke.com/2013/01/wordpress-disqus-migration/), I had to update the markup of the code blocks. Same thing apply here. I need to replace occurrences of:
 
     :::bbcode
     [code lang="shell"]
@@ -88,7 +88,7 @@ The magic command to perform that job is:
     :::bash
     $ sed -e 's/\[\/code\]/<\/code><\/pre>/g' -e 's/\[code lang=\(.*\)\]/<pre><code class=\1>/g' < ./wordpress.xml > ./wordpress-fixed.xml
 
-Pelican consumes by default [reStructuredText](http://en.wikipedia.org/wiki/ReStructuredText) content, but it supports [Markdown](http://en.wikipedia.org/wiki/Markdown) too. To convert WordPress content to Markdown, the command is:
+Pelican consumes by default [reStructuredText](https://en.wikipedia.org/wiki/ReStructuredText) content, but it supports [Markdown](https://en.wikipedia.org/wiki/Markdown) too. To convert WordPress content to Markdown, the command is:
 
     :::bash
     $ pelican-import --wpfile -m markdown -o ./content/ ./wordpress-fixed.xml

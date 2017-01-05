@@ -11,5 +11,5 @@ and now things are stable enough to publish this blog post.
 It's an hybrid repository which support both OS X and Kubuntu. This collection
 of configuration files are mainly aimed at Python developers working in vim.
 All color schemes are based on [Solarized
-](http://ethanschoonover.com/solarized) and most, if not all, command lines
+](https://ethanschoonover.com/solarized) and most, if not all, command lines
 produces colored output.
