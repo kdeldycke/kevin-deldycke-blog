@@ -5,16 +5,25 @@ category: English
 tags: CLI, lint, Linux, OpenERP, xml, XSLT, ERP
 ---
 
-Based on internal metrics, half of the OpenERP custom code I produce for my customers is Python. The other half is XML (_sigh_).
+Based on internal metrics, half of the OpenERP custom code I produce for my
+customers is Python. The other half is XML (_sigh_).
 
-If Python is well-equiped to enforce coding styles (thanks to [pep8](https://pypi.python.org/pypi/pep8), [pyflakes](https://pypi.python.org/pypi/pyflakes), [pylint](https://pypi.python.org/pypi/pylint) and [the](https://pypi.python.org/pypi/autopep8) [likes](https://pypi.python.org/pypi/flake8)), it's another story for XML. After some investigations and experiments, here is the best way I found to automate the cleaning of huge quantities of XML content.
+If Python is well-equiped to enforce coding styles (thanks to
+[pep8](https://pypi.python.org/pypi/pep8),
+[pyflakes](https://pypi.python.org/pypi/pyflakes),
+[pylint](https://pypi.python.org/pypi/pylint) and
+[the](https://pypi.python.org/pypi/autopep8)
+[likes](https://pypi.python.org/pypi/flake8)), it's another story for XML.
+After some investigations and experiments, here is the best way I found to
+automate the cleaning of huge quantities of XML content.
 
 First, we have to install some command-line utilities:
 
     :::bash
     $ aptitude install libxml2-utils xsltproc
 
-Override the default XML indention from 2 spaces to 4, before forcing the cleaning of each XML file found from our current folder:
+Override the default XML indention from 2 spaces to 4, before forcing the
+cleaning of each XML file found from our current folder:
 
     :::bash
     $ export XMLLINT_INDENT="    "
@@ -22,7 +31,8 @@ Override the default XML indention from 2 spaces to 4, before forcing the cleani
 
 Now we have a set of normalized XML content.
 
-Create an empty XSLT file named `tidy.xslt` and copy the following content in it:
+Create an empty XSLT file named `tidy.xslt` and copy the following content in
+it:
 
     :::xslt
     <?xml version="1.0"?>
@@ -54,10 +64,12 @@ Create an empty XSLT file named `tidy.xslt` and copy the following content in it
 
     </xsl:stylesheet>
 
-The XSLT file above will separate with a blank line all children of all `data` tags. If this particular example is designed for OpenERP's XML, you can update the second and third `xsl:template` block to produce files fitting your taste and style.
+The XSLT file above will separate with a blank line all children of all `data`
+tags. If this particular example is designed for OpenERP's XML, you can update
+the second and third `xsl:template` block to produce files fitting your taste
+and style.
 
 Finally, you can apply our XSLT to all our local XML files:
 
     :::bash
     $ find . -iname "*.xml" -exec xsltproc --output "{}" ./tidy.xslt "{}" \;
-

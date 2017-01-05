@@ -8,13 +8,14 @@ tags: Apache, Blog, CLI, find, grep, Hosting, Linux, MySQL, SQL, sed, Server, We
 ![qpx-site-domain-migration](/uploads/2009/qpx-site-domain-migration.png)
 
 I provide hosting for free to some of my friends. One of them,
-[QPX](https://wqpx.wordpress.com/), had a side project called *Lich'ti*. But the
-latter is no longer active, so he decided to not renew the `lich-ti.fr` domain.
+[QPX](https://wqpx.wordpress.com/), had a side project called *Lich'ti*. But
+the latter is no longer active, so he decided to not renew the `lich-ti.fr`
+domain.
 
-If the *Lich'ti* domain name is dead, QPX's personal blog is not. His website is
-powered by WordPress and was available at `https://qpx.lich-ti.fr`. My job is now
-to move it to `https://qpx.coolcavemen.com`. In this post, I'll tell you how I've
-done it.
+If the *Lich'ti* domain name is dead, QPX's personal blog is not. His website
+is powered by WordPress and was available at `https://qpx.lich-ti.fr`. My job
+is now to move it to `https://qpx.coolcavemen.com`. In this post, I'll tell you
+how I've done it.
 
 Before going further, backup everything, and be ready to revert back to your
 original situation at any moment! What works for me will not necessary works
@@ -47,7 +48,8 @@ And we replace all strings of the old domain by the new one:
     :::bash
     $ sed 's/qpx.lich-ti.fr/qpx.coolcavemen.com/g' qpx_dump.sql > new_qpx.sql
 
-Finally, we re-inject the modified database content after clearing the original:
+Finally, we re-inject the modified database content after clearing the
+original:
 
     :::bash
     $ mysql -p --host=localhost --port=3306 --user=root --execute='DROP DATABASE `qpx_blog`;'

@@ -5,28 +5,35 @@ category: English
 tags: Debian, Debian Squeeze, lighttpd, Linux, OpenSSL, Server, SSL, WebDAV, RSA
 ---
 
-Here is a tiny article about how I used [Lighttpd](https://www.lighttpd.net) to serve content over [WebDAV](https://wikipedia.org/wiki/WebDAV).
+Here is a tiny article about how I used [Lighttpd](https://www.lighttpd.net) to
+serve content over [WebDAV](https://wikipedia.org/wiki/WebDAV).
 
 First, install the required packages:
 
     :::bash
     $ aptitude install lighttpd-mod-webdav
 
-As we want to provide a secure WebDAV access, we need to install [OpenSSL](https://www.openssl.org):
+As we want to provide a secure WebDAV access, we need to install
+[OpenSSL](https://www.openssl.org):
 
     :::bash
     $ aptitude install openssl
 
-Then we create the file `/etc/lighttpd/clear-creds.lst`, that will contain credentials required for authentication, under the following form:
+Then we create the file `/etc/lighttpd/clear-creds.lst`, that will contain
+credentials required for authentication, under the following form:
 
     :::text
     user1:password1
     user2:password2
     user3:password3
 
-Logins and passwords are stored here in clear. This is stupid, but for this project I was looking to setup a quick and dirty server. For temporary tests this setup is OK, but I encourage you to switch to a better credential storage system.
+Logins and passwords are stored here in clear. This is stupid, but for this
+project I was looking to setup a quick and dirty server. For temporary tests
+this setup is OK, but I encourage you to switch to a better credential storage
+system.
 
-Now I want to serve WebDAV content within a secure channel. A self-signed SSL certificate will be enough. Let's generate one:
+Now I want to serve WebDAV content within a secure channel. A self-signed SSL
+certificate will be enough. Let's generate one:
 
     :::bash
     $ cd /etc/lighttpd/
@@ -88,5 +95,7 @@ And do not forget to restart the server:
 
 As you can see in the screenshot above, you can now:
 
-  * Browse the file system in read/write mode with a WebDAV client via a `webdavs://12.34.56.78/` URL;
-  * Access content in read-only mode with a browser by a classic `https://12.34.56.78/` URL.
+  * Browse the file system in read/write mode with a WebDAV client via a
+  `webdavs://12.34.56.78/` URL;
+  * Access content in read-only mode with a browser by a classic
+  `https://12.34.56.78/` URL.

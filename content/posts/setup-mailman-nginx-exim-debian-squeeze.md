@@ -7,25 +7,32 @@ tags: Debian, Debian Squeeze, email, Exim, fcgiwrap, Linux, mailing list, mailma
 
 ![](/uploads/2011/mailman-logo.png)
 
-Before going further, please take note that I start this tutorial assuming that you already have a [minimal Exim setup](https://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/) running on your Debian machine.
+Before going further, please take note that I start this tutorial assuming that
+you already have a [minimal Exim
+setup](https://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/)
+running on your Debian machine.
 
 ## Mailman
 
-Now that you have the context, let's proceed with [Mailman](https://www.list.org/) install:
+Now that you have the context, let's proceed with
+[Mailman](https://www.list.org/) install:
 
     :::bash
     $ aptitude install mailman
 
-During the installation, you'll be prompted about the languages files you want Mailman web interface support. English is enough for me.
+During the installation, you'll be prompted about the languages files you want
+Mailman web interface support. English is enough for me.
 
-Now Mailman requires a meta-mailing-list from which it will send all mails related to subscription, reminders and all:
+Now Mailman requires a meta-mailing-list from which it will send all mails
+related to subscription, reminders and all:
 
     :::bash
     $ newlist mailman kevin@deldycke.com
 
 You'll then be prompted for a password.
 
-After that, Mailman will provide you with a list of directives to add to `/etc/aliases`:
+After that, Mailman will provide you with a list of directives to add to
+`/etc/aliases`:
 
     :::text
     mailman:              "|/var/lib/mailman/mail/mailman post mailman"
@@ -46,7 +53,8 @@ You can now restart the Mailman server:
     :::bash
     $ /etc/init.d/mailman start
 
-Oh, and the first time you'll run Mailman, do a `start` as above, not a `restart`, else you'll end up with this error:
+Oh, and the first time you'll run Mailman, do a `start` as above, not a
+`restart`, else you'll end up with this error:
 
     :::console
     Restarting Mailman master qrunner: mailmanctl PID unreadable in: /var/run/mailman/mailman.pid
@@ -59,14 +67,20 @@ If everything is alright, you'll receive a mail similar to this one:
 
 ## Nginx
 
-Now we have to configure our HTTP server to make the administration interface available from the web. If Apache is the recommended server to use with Mailman, Nginx is already running on my machine, so let's use it instead.
+Now we have to configure our HTTP server to make the administration interface
+available from the web. If Apache is the recommended server to use with
+Mailman, Nginx is already running on my machine, so let's use it instead.
 
-First, as [explained on Nginx wiki](https://wiki.nginx.org/Fcgiwrap) we need to install `fcgiwrap`:
+First, as [explained on Nginx wiki](https://wiki.nginx.org/Fcgiwrap) we need to
+install `fcgiwrap`:
 
     :::bash
     $ aptitude install fcgiwrap
 
-Then we have to create an Nginx configuration file dedicated to Mailman. Assuming we want all mailing-lists managed under the `lists.example.com` domain, here are the directives you have to put in a new `/etc/nginx/sites-available/mailman` file:
+Then we have to create an Nginx configuration file dedicated to Mailman.
+Assuming we want all mailing-lists managed under the `lists.example.com`
+domain, here are the directives you have to put in a new
+`/etc/nginx/sites-available/mailman` file:
 
     :::nginx
     server {
@@ -106,9 +120,13 @@ Then we have to create an Nginx configuration file dedicated to Mailman. Assumin
       rewrite ^ http://lists.example.com$request_uri? permanent;
     }
 
-The configuration above is a mix between [the one available on Nginx wiki](https://wiki.nginx.org/Mailman) and the `/usr/share/doc/fcgiwrap/examples/nginx.conf` example file that come with the Debian package.
+The configuration above is a mix between [the one available on Nginx
+wiki](https://wiki.nginx.org/Mailman) and the
+`/usr/share/doc/fcgiwrap/examples/nginx.conf` example file that come with the
+Debian package.
 
-All we have to do now is to activate the configuration above and restart our CGI and HTTP server:
+All we have to do now is to activate the configuration above and restart our
+CGI and HTTP server:
 
     :::bash
     $ ln -s /etc/nginx/sites-available/mailman /etc/nginx/sites-enabled/
@@ -121,9 +139,13 @@ If everything's OK, going to `http://lists.example.com` will show you this:
 
 ## Exim
 
-Now we have to setup the MTA. All informations here are coming from the documentation you can find on your Debian system in `/usr/share/doc/mailman/README.Exim4.Debian.gz`.
+Now we have to setup the MTA. All informations here are coming from the
+documentation you can find on your Debian system in
+`/usr/share/doc/mailman/README.Exim4.Debian.gz`.
 
-First, we have to update `/etc/mailman/mm_cfg.py` (the global Mailman configuration file). We'll aligned there the default URLs, hosts and MTA-related parameters:
+First, we have to update `/etc/mailman/mm_cfg.py` (the global Mailman
+configuration file). We'll aligned there the default URLs, hosts and
+MTA-related parameters:
 
     :::diff
     --- /etc/mailman/mm_cfg.py.orig    2011-08-31 22:28:53.000000000 +0200
@@ -162,7 +184,9 @@ First, we have to update `/etc/mailman/mm_cfg.py` (the global Mailman configurat
      #-------------------------------------------------------------
      # Uncomment if you want to filter mail with SpamAssassin. For
 
-Then we have to update the Exim configuration template. If like me you haven't choose to split configuration into small files, here are the modifications you have to add to `/etc/exim4/exim4.conf.template`:
+Then we have to update the Exim configuration template. If like me you haven't
+choose to split configuration into small files, here are the modifications you
+have to add to `/etc/exim4/exim4.conf.template`:
 
     :::diff
     --- /etc/exim4/exim4.conf.template.orig 2011-09-07 23:34:53.000000000 +0200
@@ -260,9 +284,13 @@ Then we have to update the Exim configuration template. If like me you haven't c
      ### retry/00_exim4-config_header
      #####################################################
 
-Don't apply this diff as-is, as the original file contain the modifications I previously made to [let Exim use Gmail to send mails](https://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/).
+Don't apply this diff as-is, as the original file contain the modifications I
+previously made to [let Exim use Gmail to send
+mails](https://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/).
 
-Then we have to update the Exim meta-configuration that is stored in `/etc/exim4/update-exim4.conf.conf`. There we specify our host (`lists.example.com`) and public IP address (`123.456.78.90`):
+Then we have to update the Exim meta-configuration that is stored in
+`/etc/exim4/update-exim4.conf.conf`. There we specify our host
+(`lists.example.com`) and public IP address (`123.456.78.90`):
 
     :::text
     dc_eximconfig_configtype='smarthost'
@@ -320,7 +348,8 @@ This can be easily fixed with:
     :::bash
     $ chown -R list /var/lib/mailman/archives/private/
 
-Once you're convinced that Mailman is working as expected, you can remove your temporary test mailing-list, and regenerate aliases to clean things up:
+Once you're convinced that Mailman is working as expected, you can remove your
+temporary test mailing-list, and regenerate aliases to clean things up:
 
     :::bash
     $ rmlist -a  kev-test
@@ -328,7 +357,8 @@ Once you're convinced that Mailman is working as expected, you can remove your t
 
 ## Munin monitoring
 
-Finally, if like me you [use Munin to monitor your machine](), then it's a good idea to let it graph some Mailman usage:
+Finally, if like me you [use Munin to monitor your machine](), then it's a good
+idea to let it graph some Mailman usage:
 
     :::bash
     $ wget https://exchange.munin-monitoring.org/plugins/mailman-queue-check/version/2/download --output-document=/usr/share/munin/plugins/mailman-queue-check
@@ -340,4 +370,3 @@ Finally, if like me you [use Munin to monitor your machine](), then it's a good 
     " > /etc/munin/plugin-conf.d/mailman
     $ chmod 755 /usr/share/munin/plugins/mailman*
     $ /etc/init.d/munin-node restart
-

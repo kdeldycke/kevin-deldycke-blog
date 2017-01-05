@@ -5,16 +5,25 @@ category: English
 tags: apx, Debian, Debian Squeeze, munin, nginx, PHP, Server, Web
 ---
 
-Installing [APC](https://php.net/manual/en/book.apc.php) on Debian Squeeze is as simple as installing the package:
+Installing [APC](https://php.net/manual/en/book.apc.php) on Debian Squeeze is
+as simple as installing the package:
 
     :::bash
     $ aptitude install php5-apc
 
-In my case this package come from the PHP bundle distributed by the [Dotdeb repository](https://www.dotdeb.org).
+In my case this package come from the PHP bundle distributed by the [Dotdeb
+repository](https://www.dotdeb.org).
 
-If installing APC is easy, monitoring it with Munin requires some extra manipulations. There is currently no good [APC plugin available on Munin Exhange](https://exchange.munin-monitoring.org/plugins/search?keyword=apc). So we'll use the external [munin-php-apc project](https://code.google.com/p/munin-php-apc/) instead.
+If installing APC is easy, monitoring it with Munin requires some extra
+manipulations. There is currently no good [APC plugin available on Munin
+Exhange](https://exchange.munin-monitoring.org/plugins/search?keyword=apc). So
+we'll use the external [munin-php-apc
+project](https://code.google.com/p/munin-php-apc/) instead.
 
-The latter can't get APC statistics by itself: it need an extra PHP file to be served locally. As you can read in my previous article, [my Munin is powered by Nginx](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/). So now we'll setup Nginx to serve this extra PHP file:
+The latter can't get APC statistics by itself: it need an extra PHP file to be
+served locally. As you can read in my previous article, [my Munin is powered by
+Nginx](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/).
+So now we'll setup Nginx to serve this extra PHP file:
 
     :::bash
     $ mkdir -p /var/www/apc
@@ -22,7 +31,10 @@ The latter can't get APC statistics by itself: it need an extra PHP file to be s
     $ wget https://munin-php-apc.googlecode.com/svn/trunk/php_apc/apc_info.php
     $ chown -R www-data:www-data /var/www/apc
 
-Then I need to update my `/etc/nginx/sites-available/munin` file (see [details about this file on my previous article](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/)) to have the second `server` section look like this:
+Then I need to update my `/etc/nginx/sites-available/munin` file (see [details
+about this file on my previous
+article](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/))
+to have the second `server` section look like this:
 
     :::nginx
     server {
@@ -40,9 +52,14 @@ Then I need to update my `/etc/nginx/sites-available/munin` file (see [details a
       }
     }
 
-Here the included `/etc/nginx/php.conf` file is the one in which I've concentrate all the Nginx directives required to activate PHP file parsing. The content and the mechanism behind this file is describe in my [article on setting up Nginx with PHP-FPM](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/).
+Here the included `/etc/nginx/php.conf` file is the one in which I've
+concentrate all the Nginx directives required to activate PHP file parsing. The
+content and the mechanism behind this file is describe in my [article on
+setting up Nginx with
+PHP-FPM](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/).
 
-Let's get back to our Munin monitoring setup. I can restart now Nginx and check that I can access locally to my raw statistics:
+Let's get back to our Munin monitoring setup. I can restart now Nginx and check
+that I can access locally to my raw statistics:
 
     :::bash
     $ /etc/init.d/nginx reload
@@ -70,4 +87,3 @@ The last step is to install and configure the Munin plugin:
 And finally, after a while, you'll get those beautiful graphs:
 
 ![](/uploads/2011/php-apc-munin-graphs.png)
-

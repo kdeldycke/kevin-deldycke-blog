@@ -5,9 +5,11 @@ category: English
 tags: OpenERP, Python, script, CLI, cron, scheduler, job
 ---
 
-Here is a simple Python script to trigger an `ir.cron` job from the command-line system.
+Here is a simple Python script to trigger an `ir.cron` job from the
+command-line system.
 
-I created this to let my customer use his proprietary job scheduler to trigger OpenERP tasks. It was tested on OpenERP 6.1.
+I created this to let my customer use his proprietary job scheduler to trigger
+OpenERP tasks. It was tested on OpenERP 6.1.
 
     :::python
     #!/usr/bin/python
