@@ -5,4 +5,4 @@ mdx_titlecase
 typogrify
 beautifulsoup4
 Fabric
-s3cmd
+awscli
