@@ -51,7 +51,11 @@ Setup `s3cmd`:
 
     $ s3cmd --configure
 
-We use `make` for deployment as `fab` is not wired yet:
+Prepare site for publishing:
+
+    $ pelican ./content -o ./output -s ./publishconf.py --verbose
+
+Upload content to S3 bucket:
 
     $ s3cmd sync ./output/ s3://kevin.deldycke.com --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve
 
