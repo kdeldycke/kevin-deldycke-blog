@@ -14,6 +14,7 @@ Installation
 Fetch a copy of the repository:
 
     $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git
+    $ cd ./kevin-deldycke-blog
 
 To fetch and/or reset submodules to their commited reference:
 
@@ -21,7 +22,6 @@ To fetch and/or reset submodules to their commited reference:
 
 Install dependencies:
 
-    $ cd ./kevin-deldycke-blog
     $ pip install -r ./requirements.txt
 
 
