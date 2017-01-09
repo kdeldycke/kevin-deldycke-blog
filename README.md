@@ -53,7 +53,7 @@ Setup `s3cmd`:
 
 We use `make` for deployment as `fab` is not wired yet:
 
-    $ make s3_upload
+    $ s3cmd sync ./output/ s3://kevin.deldycke.com --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve
 
 
 TODO
