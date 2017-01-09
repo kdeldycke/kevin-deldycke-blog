@@ -47,6 +47,10 @@ Then go to [http://localhost:8000](http://localhost:8000).
 Deployment
 ----------
 
+Prepare site for publishing:
+
+    $ pelican ./content -o ./output -s ./publishconf.py --verbose
+
 Setup AWS CLI:
 
     $ aws configure
@@ -63,11 +67,7 @@ Setup AWS CLI:
     $ cat ~/.aws/config
     [default]
 
-Prepare site for publishing:
-
-    $ pelican ./content -o ./output -s ./publishconf.py --verbose
-
-Create the destination bucket if doesn't exist yet:
+Create the destination bucket if it doesn't exist yet:
 
     $ aws s3 mb s3://kevin.deldycke.com
 
