@@ -28,7 +28,7 @@ Install dependencies:
 Development
 -----------
 
-Update to latest sub-modules:
+Update to latest submodules:
 
     $ git submodule init
     $ git submodule update --remote --merge
