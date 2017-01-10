@@ -167,15 +167,15 @@ TIPUE_SEARCH = True
 LEFT_SIDEBAR = """
     <!--<div data-spy="affix" data-offset-top="0">-->
     <!--<h4>Sponsors</h4>-->
-    <script type="text/javascript"><!--
-        google_ad_client = "pub-0142056597033291";
-        google_ad_slot = "9501596707";
-        google_ad_width = 160;
-        google_ad_height = 600;
-        //-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 160x600, created 7/7/08 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:160px;height:600px"
+         data-ad-client="ca-pub-0142056597033291"
+         data-ad-slot="9501596707"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <script type="text/javascript"
-        src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
     <!--</div>-->
     """
 
