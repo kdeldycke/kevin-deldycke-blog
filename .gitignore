@@ -10,6 +10,3 @@ output
 
 # Translations
 *.mo
-
-# Kevin private stuff
-Makefile
