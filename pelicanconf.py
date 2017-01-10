@@ -168,11 +168,12 @@ LEFT_SIDEBAR = """
     <!--<div data-spy="affix" data-offset-top="0">-->
     <!--<h4>Sponsors</h4>-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- 160x600, created 7/7/08 -->
+    <!-- Responsive Ad -->
     <ins class="adsbygoogle"
-         style="display:inline-block;width:160px;height:600px"
+         style="display:block"
          data-ad-client="ca-pub-0142056597033291"
-         data-ad-slot="9501596707"></ins>
+         data-ad-slot="9726265119"
+         data-ad-format="auto"></ins>
     <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
