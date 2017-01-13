@@ -88,6 +88,49 @@ Register and install a new [Let's Encrypt](https://letsencrypt.org)
 certificate:
 
     $ AWS_ACCESS_KEY_ID="(...)" AWS_SECRET_ACCESS_KEY="(...)" certbot --agree-tos -a certbot-s3front:auth --certbot-s3front:auth-s3-bucket kevin.deldycke.com -i certbot-s3front:installer --certbot-s3front:installer-cf-distribution-id (...) -d kevin.deldycke.com --config-dir ./letsencrypt --logs-dir ./letsencrypt/logs --work-dir ./letsencrypt --non-interactive --email kevin@deldycke.com
+    Saving debug log to ./letsencrypt/logs/letsencrypt.log
+    Obtaining a new certificate
+    Performing the following challenges:
+    http-01 challenge for kevin.deldycke.com
+    Found credentials in environment variables.
+    Calling s3:put_object with {'Body': u'(...)', u'Bucket': 'kevin.deldycke.com', 'Key': u'.well-known/acme-challenge/(...)', 'ACL': 'public-read'}
+    Starting new HTTPS connection (1): s3.amazonaws.com
+    Waiting for verification...
+    Cleaning up challenges
+    Starting new HTTPS connection (1): s3.amazonaws.com
+    Generating key (2048 bits): ./letsencrypt/keys/0000_key-certbot.pem
+    Creating CSR: ./letsencrypt/csr/0000_csr-certbot.pem
+    Non-standard path(s), might not work with crontab installed by your operating system package manager
+    Starting new HTTPS connection (1): iam.amazonaws.com
+    Starting new HTTPS connection (1): cloudfront.amazonaws.com
+    An error occurred (NoSuchEntity) when calling the DeleteServerCertificate operation: The Server Certificate with name le-kevin.deldycke.com cannot be found.
+
+    -------------------------------------------------------------------------------
+    Congratulations! You have successfully enabled https://kevin.deldycke.com
+
+    You should test your configuration at:
+    https://www.ssllabs.com/ssltest/analyze.html?d=kevin.deldycke.com
+    -------------------------------------------------------------------------------
+
+    IMPORTANT NOTES:
+     - Congratulations! Your certificate and chain have been saved at
+       ./letsencrypt/live/kevin.deldycke.com/fullchain.pem.
+       Your cert will expire on 2017-04-10. To obtain a new or tweaked
+       version of this certificate in the future, simply run certbot again
+       with the "certonly" option. To non-interactively renew *all* of
+       your certificates, run "certbot renew"
+     - If you lose your account credentials, you can recover through
+       e-mails sent to kevin@deldycke.com.
+     - Your account credentials have been saved in your Certbot
+       configuration directory at
+       ./letencrypt. You should
+       make a secure backup of this folder now. This configuration
+       directory will also contain certificates and private keys obtained
+       by Certbot so making regular backups of this folder is ideal.
+     - If you like Certbot, please consider supporting our work by:
+
+       Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+       Donating to EFF:                    https://eff.org/donate-le
 
 
 TODO
