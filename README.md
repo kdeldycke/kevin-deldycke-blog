@@ -84,6 +84,11 @@ And to check metadata, for the `index.html` file at the root for example:
 
     $ aws s3api head-object --bucket kevin.deldycke.com --key index.html
 
+Register and install a new [Let's Encrypt](https://letsencrypt.org)
+certificate:
+
+    $ AWS_ACCESS_KEY_ID="(...)" AWS_SECRET_ACCESS_KEY="(...)" certbot --agree-tos -a certbot-s3front:auth --certbot-s3front:auth-s3-bucket kevin.deldycke.com -i certbot-s3front:installer --certbot-s3front:installer-cf-distribution-id (...) -d kevin.deldycke.com --config-dir ./letsencrypt --logs-dir ./letsencrypt/logs --work-dir ./letsencrypt --non-interactive --email kevin@deldycke.com
+
 
 TODO
 ----

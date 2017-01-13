@@ -6,3 +6,4 @@ typogrify
 beautifulsoup4
 Fabric
 awscli
+certbot-s3front
