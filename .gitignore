@@ -10,3 +10,6 @@ output
 
 # Translations
 *.mo
+
+# Let's Encrypt
+letsencrypt/logs/*.log*
