@@ -10,6 +10,11 @@ tags: CLI, cryptography, GPG, Linux, security, OpenSSL, SSL, RSA
         :::bash
         $ openssl rand -base64 18
 
+  *  Examine ASN.1 structure of a [CSR](https://en.wikipedia.org/wiki/Certificate_signing_request):
+
+        :::bash
+        $ openssl asn1parse -i -in ./0000_csr-certbot.pem
+
   * Generate a key (interactive mode):
 
         :::bash
