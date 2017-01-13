@@ -13,4 +13,5 @@ output
 
 # Let's Encrypt
 privkey*.pem
+letsencrypt/keys/*.pem
 letsencrypt/logs/*.log*
