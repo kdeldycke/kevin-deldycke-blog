@@ -12,4 +12,5 @@ output
 *.mo
 
 # Let's Encrypt
+privkey*.pem
 letsencrypt/logs/*.log*
