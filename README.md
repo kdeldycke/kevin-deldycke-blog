@@ -108,9 +108,6 @@ TODO
 
 ### Deployment
 
-  * Automate and script S3 deployment with:
-      * https://github.com/heyimalex/s3tup
-      * https://github.com/boto/boto
   * Activate AWS CloudFront ? See:
       * https://paulstamatiou.com/hosting-on-amazon-s3-with-cloudfront/
       * https://pmac.io/2014/06/pelican-s3-cloudfront/
