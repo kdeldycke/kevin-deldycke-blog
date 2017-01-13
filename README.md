@@ -106,12 +106,6 @@ TODO
   * Reuse edit link logic from https://github.com/pmclanahan/pelican-edit-url ?
   * Migrate `/content/extra/htaccess` rules to [S3 routing rules](https://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html#configure-bucket-as-website-routing-rule-syntax) and/or use https://pypi.python.org/pypi/pelican-alias for redirects ?
 
-### Deployment
-
-  * Activate AWS CloudFront ? See:
-      * https://paulstamatiou.com/hosting-on-amazon-s3-with-cloudfront/
-      * https://pmac.io/2014/06/pelican-s3-cloudfront/
-
 ### Theme
 
   * Re-use previous artworks from Maomium ?
