@@ -1,10 +1,4 @@
 pelican >= 3.7
-# Pin-down Jinja to bypass variable scoping in for loop in 2.9. This cause
-# side-by-side ellipsis items to not be detected when rendering pagination
-# widget in Plumage:
-# https://github.com/kdeldycke/plumage/blob/0.8/templates/pagination.html#L20
-# Also see: https://github.com/pallets/jinja/issues/641
-jinja2 < 2.9
 Markdown
 mdx_video
 mdx_titlecase
