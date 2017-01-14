@@ -22,7 +22,7 @@ To fetch and/or reset submodules to their commited reference:
 
 Install dependencies:
 
-    $ pip install -r ./requirements.txt
+    $ pip install --upgrade -r ./requirements.txt
 
 
 Development
