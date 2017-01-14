@@ -14,13 +14,17 @@ MARKDOWN = {
     'extension_configs': {
         # https://pythonhosted.org/Markdown/extensions/index.html#officially-supported-extensions
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
-        'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
         'markdown.extensions.sane_lists': {},
         'markdown.extensions.smarty': {},
         'markdown.extensions.toc': {'permalink': True},
         'mdx_video': {},
         'mdx_titlecase': {},
+        # https://facelessuser.github.io/pymdown-extensions/
+        'pymdownx.extra': {},
+        'pymdownx.caret': {'superscript': True},
+        'pymdownx.magiclink': {},
+        'pymdownx.smartsymbols': {},
     },
     'output_format': 'html5',
     # Allow numbered lists to not start with 1. Used in following article:

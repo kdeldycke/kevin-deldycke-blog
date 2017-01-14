@@ -8,6 +8,7 @@ jinja2 < 2.9
 Markdown
 mdx_video
 mdx_titlecase
+pymdown-extensions
 typogrify
 beautifulsoup4
 Fabric
