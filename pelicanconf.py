@@ -12,6 +12,7 @@ DEFAULT_LANG = u'en'
 LOCALE = 'C'
 MARKDOWN = {
     'extension_configs': {
+        # https://pythonhosted.org/Markdown/extensions/index.html#officially-supported-extensions
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
