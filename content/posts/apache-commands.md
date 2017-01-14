@@ -79,11 +79,11 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
 
   * Kill all apache processes and restart the service:
 
-        :::bash
+        :::shell-session
         $ /etc/init.d/apache2 stop ; pkill -9 -u www-data ; /etc/init.d/apache2 restart
 
   * Restart Apache service if no process found:
 
-        :::bash
+        :::shell-session
         $ [ `ps axu | grep -v "grep" | grep --count "www-data"` -le 0 ] && /etc/init.d/apache2 restart
 
