@@ -31,7 +31,7 @@ list of [Falsehoods Programmers Believe About Package Managers
 And silly because, well, `mpm` actually [tries to implement
 ](https://github.com/kdeldycke/meta-package-manager/issues/10) an XKCD joke:
 
-![XKCD #1654](http://imgs.xkcd.com/comics/universal_install_script.png)
+![XKCD #1654](https://imgs.xkcd.com/comics/universal_install_script.png)
 
 Of course another classic XKCDs might apply to this endeavor:
 [*Standards*](https://xkcd.com/927/).
