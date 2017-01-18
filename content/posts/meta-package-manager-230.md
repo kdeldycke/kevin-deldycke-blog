@@ -9,10 +9,11 @@ Last time I [mentioned
 Manager Plugin*, it was a simple [standalone Python script for BitBar
 ](https://getbitbar.com/plugins/Dev/MetaPackageManager/meta_package_manager.7h.py).
 
-The BitBar plugin is still actively maintained, but all its core
-functionalities are now provided by an independent Python module: [Meta
-Package Manager](https://pypi.python.org/pypi/meta-package-manager). The latest
-version, [2.3.0, has recently been released
+The BitBar plugin is [still actively maintained
+](https://meta-package-manager.readthedocs.io/en/develop/bitbar.html), but all
+its core functionalities are now provided by an independent Python module:
+[Meta Package Manager](https://pypi.python.org/pypi/meta-package-manager). The
+latest version, [2.3.0, has recently been released
 ](https://github.com/kdeldycke/meta-package-manager/blob/v2.3.0/CHANGES.rst#230-2017-12-15).
 
 This Python module also install a new CLI called `mpm`, which aims to provide a
