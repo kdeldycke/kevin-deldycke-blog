@@ -50,6 +50,12 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
         :::bash
         $ find / -name "*.py[co]" -delete
 
+  * Print Python's 3-elements version number:
+
+        :::bash
+        $ python -c "from __future__ import print_function; import sys; print('.'.join(map(str, sys.version_info[:3])))"
+        2.7.13
+
 
 ## Date and time
 
