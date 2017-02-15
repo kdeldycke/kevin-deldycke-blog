@@ -110,6 +110,6 @@ I maintain a set of default configuration files in my [`dotfiles` repository](ht
   * PDB: [`~/.pdbrc`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pdbrc) & [`~/.pdbrc.py`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pdbrc.py)
   * Pip: [`~/.pip/pip.conf`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pip/pip.conf)
   * PyPi: [`~/.pypirc`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pypirc)
-  * PEP 8: [`~/.config/pep8`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.config/pep8)
+  * Pycodestyle: [`~/.config/pycodestyle`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.config/pycodestyle)
   * PyLint: [`~/.pylintrc`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.pylintrc)
   * Fabric: [`~/.fabricrc`](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-common/.fabricrc)
