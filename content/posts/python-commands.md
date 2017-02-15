@@ -54,7 +54,16 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
         :::bash
         $ python -c "from __future__ import print_function; import sys; print('.'.join(map(str, sys.version_info[:3])))"
-        2.7.13
+        2.7.6
+
+  * Compare Python version for use in shell scripts:
+
+        :::bash
+        $ python -c "import sys; exit(sys.version_info[:3] < (2, 7, 9))"
+        $ if [[ $? != 0 ]]; then
+        >     echo "Old Python detected.";
+        > fi
+        Old Python detected.
 
 
 ## Date and time
