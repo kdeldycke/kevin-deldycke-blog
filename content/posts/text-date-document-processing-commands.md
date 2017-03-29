@@ -102,5 +102,5 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 
   * VIM: [no autoindent on paste](https://vim.wikia.com/wiki/How_to_stop_auto_indenting).
 
-  * a list of [`sed` one-liners](https://sed.sourceforge.net/sed1line.txt).
+  * a list of [`sed` one-liners](http://sed.sourceforge.net/sed1line.txt).
 
