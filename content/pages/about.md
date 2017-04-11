@@ -37,14 +37,14 @@ department](https://www.ec-lille.fr/en/degree/ig2l-en.html).
 pipeline](https://scaleway.com/faq/billing/), generating
 multi-million dollars of revenue (and growing!). The whole
 thing. All by myself.
+- 5,000+ stars for my GitHub repository about [Falsehoods Programmers Believe
+in](https://github.com/kdeldycke/awesome-falsehood).
 - Wrote the [best open-source
 payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
 software of the world.
 - Created and managed the African subsidiary of my first employer.
 - [Top-1% of open-source
 developers](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
-- 5,000+ stars for my GitHub repository about [Falsehoods Programmers Believe
-in](https://github.com/kdeldycke/awesome-falsehood).
 - 1,000,000+ views for my video on [Nemo 33, The Deepest Pool in the
 World](https://www.youtube.com/watch?v=-sfFKZ2PvlE).
 - Led dozen of peoples in a [viral dance at a music
