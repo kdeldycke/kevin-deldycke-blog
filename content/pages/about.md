@@ -33,10 +33,10 @@ department](https://www.ec-lille.fr/en/degree/ig2l-en.html).
 
 ## Achievements
 
-- Designed, implemented and operated alone the whole telemetry and [billing
-pipeline](https://scaleway.com/faq/billing/) which Scaleway relies on to
-collect payments every month. All the revenue Scaleway is generating is
-established and consolidated by my pipeline.
+- Designed, implemented and operated Scaleway's [billing
+pipeline](https://scaleway.com/faq/billing/), generating
+multi-million dollars of revenue (and growing!). The whole
+thing. All by myself.
 - Wrote the [best open-source
 payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
 software of the world.
