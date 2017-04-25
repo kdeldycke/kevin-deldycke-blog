@@ -37,6 +37,8 @@ department](https://www.ec-lille.fr/en/degree/ig2l-en.html).
 pipeline](https://scaleway.com/faq/billing/), generating
 multi-million dollars of revenue (and growing!). The whole
 thing. All by myself.
+- [Top GitHub
+developer](https://kevin.deldycke.com/2017/04/github-top-developer/).
 - 5,000+ stars for my GitHub repository about [Falsehoods Programmers Believe
 in](https://github.com/kdeldycke/awesome-falsehood).
 - Wrote the [best open-source
