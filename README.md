@@ -132,7 +132,7 @@ certificate:
        Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
        Donating to EFF:                    https://eff.org/donate-le
 
-To renew the cert, you just need to re-run the command above.
+To **renew the cert**, you just need to re-run the command above.
 
 
 TODO
