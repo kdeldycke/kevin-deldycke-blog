@@ -47,8 +47,11 @@ software of the world.
 - Created and managed the African subsidiary of my first employer.
 - [Top-1% of open-source
 developers](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
-- 1,000,000+ views for my video on [Nemo 33, The Deepest Pool in the
+- 1,300,000+ views for my video on [Nemo 33: First Deepest Pool in the
 World](https://www.youtube.com/watch?v=-sfFKZ2PvlE).
+- Was [interviewed on The Venue
+Report](https://venuereport.com/blog/take-a-plunge-into-one-of-the-world-s-deepest-indoor-swimming-pool/),
+a curated travel & events platform featuring outstanding locations around the world.
 - Led dozen of peoples in a [viral dance at a music
 festival](https://kevin.deldycke.com/2013/09/vieilles-charrues/).
 - Have been [mentionned by Patrick McKenzie (a.k.a.
