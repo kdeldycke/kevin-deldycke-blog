@@ -2,7 +2,7 @@
 date: 2006-12-06 23:18:55
 title: Hardware commands
 category: English
-tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D
+tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D, dmidecode
 ---
 
   * Get the number of shutter count of a DSLR (Canon EOS 7D in my case):
@@ -17,6 +17,12 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
 
         :::bash
         $ dpkg-reconfigure keyboard-configuration
+
+  * Get Mac hardware model:
+
+        :::bash
+        $ sudo dmidecode -s system-product-name
+        MacBookAir5,2
 
   * Low-level format of the `hda` device:
 
