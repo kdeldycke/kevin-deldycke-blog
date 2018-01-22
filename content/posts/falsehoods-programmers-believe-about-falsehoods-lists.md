@@ -36,30 +36,30 @@ here is a glorious list of meta falsehoods:
 
 ## Implementation
 
-19. Every falsehood should be accounted for.
-20. Every falsehood can be accounted for.
-21. Making your code compatible with a falsehood doesn't come with a price.
-22. Falsehoods are addressed by standards.
+ * Every falsehood should be accounted for.
+ * Every falsehood can be accounted for.
+ * Making your code compatible with a falsehood doesn't come with a price.
+ * Falsehoods are addressed by standards.
 
 ## Audience
 
-23. Only widely believed falsehoods are listed.
-24. Falsehood lists are for programmers.
-25. Falsehood lists are written by programmers.
-26. Falsehood lists are written by people with expertise in the matter.
-27. Reading falsehoods lists make you a better programmer.
-28. Reading falsehoods lists make you an expert.
-29. Writing falsehoods lists make you a better programmer.
-30. Writing falsehoods lists make you an expert.
-31. Writer of falsehood lists are [immune to their edicted
+ * Only widely believed falsehoods are listed.
+ * Falsehood lists are for programmers.
+ * Falsehood lists are written by programmers.
+ * Falsehood lists are written by people with expertise in the matter.
+ * Reading falsehoods lists make you a better programmer.
+ * Reading falsehoods lists make you an expert.
+ * Writing falsehoods lists make you a better programmer.
+ * Writing falsehoods lists make you an expert.
+ * Writer of falsehood lists are [immune to their edicted
 falsehoods](https://twitter.com/benjiweber/status/785422755843956736).
-32. Compiling falsehoods lists make you a better programmer.
-33. There are programmers who do not believe in any falsehood.
-34. Only programmers are subjected to falsehoods.
-35. Programmers can change their beliefs.
-36. Discussing falsehoods is never a waste of time.
+ * Compiling falsehoods lists make you a better programmer.
+ * There are programmers who do not believe in any falsehood.
+ * Only programmers are subjected to falsehoods.
+ * Programmers can change their beliefs.
+ * Discussing falsehoods is never a waste of time.
 
 ## Meta
 
-37. This list of falsehoods doesn't apply to itself.
-38. This list exists.
+ * This list of falsehoods doesn't apply to itself.
+ * This list exists.
