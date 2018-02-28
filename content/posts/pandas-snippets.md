@@ -181,12 +181,15 @@ Same as above but taking the highest value by shifting decade:
 Other resources:
 
   * [Pandas official documentation
-  ](https://pandas.pydata.org/pandas-docs/stable/)
+  ](https://pandas.pydata.org/pandas-docs/stable/), especially its
+  [Cookbook](https://pandas.pydata.org/pandas-docs/stable/cookbook.html).
   * [Pandas Cheat Sheet
-  ](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
+  ](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf).
   * [Stack Overflow's pandas questions
-  ](https://stackoverflow.com/questions/tagged/pandas)
+  ](https://stackoverflow.com/questions/tagged/pandas).
   * [Becky Sweger's snippets
-  ](https://gist.github.com/bsweger/e5817488d161f37dcbd2)
+  ](https://gist.github.com/bsweger/e5817488d161f37dcbd2).
+  * [Pandas Exercises](https://github.com/guipsamora/pandas_exercises).
+  * [100 data puzzles for pandas](https://github.com/ajcr/100-pandas-puzzles).
   * [My own Pandas rants tweets
-  ](https://twitter.com/search?q=%23pandas%20%40kdeldycke)
+  ](https://twitter.com/search?q=%23pandas%20%40kdeldycke).
