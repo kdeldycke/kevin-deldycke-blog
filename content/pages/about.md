@@ -39,7 +39,7 @@ multi-million dollars of revenue (and growing!). The whole
 thing. All by myself.
 - [Top GitHub
 developer](https://kevin.deldycke.com/2017/04/github-top-developer/).
-- 6,000+ GitHub stars for my repository about [Falsehoods Programmers Believe
+- 7,000+ GitHub stars for my repository about [Falsehoods Programmers Believe
 in](https://github.com/kdeldycke/awesome-falsehood).
 - Wrote the [best open-source
 payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
