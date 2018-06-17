@@ -16,6 +16,3 @@ Markdown = "*"
 mdx_video = "*"
 mdx_titlecase = "*"
 invoke = "*"
-
-[requires]
-python_version = "2.7"
