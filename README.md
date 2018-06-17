@@ -35,11 +35,11 @@ Update to latest submodules:
 
 In one terminal, run:
 
-    $ fab regenerate
+    $ invoke regenerate
 
 And in another:
 
-    $ fab serve
+    $ invoke serve
 
 Then go to [http://localhost:8000](http://localhost:8000).
 
