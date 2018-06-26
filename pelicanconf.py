@@ -19,7 +19,7 @@ MARKDOWN = {
         'markdown.extensions.smarty': {},
         'markdown.extensions.toc': {'permalink': True},
         'mdx_video': {},
-        'mdx_titlecase': {},
+        'mdx_titlecase.mdx_titlecase:TitlecaseExtension': {},
         # https://facelessuser.github.io/pymdown-extensions/
         'pymdownx.extra': {},
         'pymdownx.caret': {'superscript': True},
