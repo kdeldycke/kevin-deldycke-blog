@@ -32,6 +32,11 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
         :::bash
         $ ffmpeg -vcodec copy -acodec copy -i inpout.flv output.mp4
+ 
+  * Remove audio:
+
+        :::bash
+        $ ffmpeg -i ./input.mp4 -an -vcodec copy ./input-no-audio.mp4
 
   * Concatenate a series of videos and transcode the audio output to a `flac`
   file. This [only works with certain multimedia
