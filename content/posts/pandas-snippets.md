@@ -193,3 +193,4 @@ Other resources:
   * [100 data puzzles for pandas](https://github.com/ajcr/100-pandas-puzzles).
   * [My own Pandas rants tweets
   ](https://twitter.com/search?q=%23pandas%20%40kdeldycke).
+  * [NumPy Tricks and Pitfalls](https://nbviewer.jupyter.org/github/vlad17/np-learn/blob/master/presentation.ipynb?flush_cache=true)
