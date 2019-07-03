@@ -182,7 +182,7 @@ Other resources:
 
   * [Pandas official documentation
   ](https://pandas.pydata.org/pandas-docs/stable/), especially its
-  [Cookbook](https://pandas.pydata.org/pandas-docs/stable/cookbook.html).
+  [Cookbook](https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html).
   * [Pandas Cheat Sheet
   ](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf).
   * [Stack Overflow's pandas questions
