@@ -2,7 +2,7 @@
 date: 2006-12-27 21:48:32
 title: All my command lines
 Category: Front Page
-tags: CLI, Linux
+tags: CLI, Linux, macOS
 ---
 
 Here is a collection of commands lines, code and configuration snippets I collected for several years while working as an Open-Source Software Engineer:
@@ -39,5 +39,6 @@ Here is a collection of commands lines, code and configuration snippets I collec
   * [Pandas](https://kevin.deldycke.com/2015/11/pandas-snippets/)
   * [JavaScript](https://kevin.deldycke.com/2012/05/javascript-commands/)
   * [WordPress](https://kevin.deldycke.com/2011/12/wordpress-commands/)
-
+  * [macOS](https://kevin.deldycke.com/2019/07/macos-commands/)
+  
 For the context, you can read this [introduction](https://kevin.deldycke.com/2006/10/useful-commands-introduction/).
