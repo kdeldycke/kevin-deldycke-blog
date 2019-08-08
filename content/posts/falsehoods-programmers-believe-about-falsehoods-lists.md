@@ -25,16 +25,17 @@ here is a glorious list of meta falsehoods:
 
 9. All falsehoods can be listed.
 10. Falsehood lists are a new trend.
-11. Falsehood lists are regularly updated.
-12. There exists a falsehoods list that is entirely true.
-13. Falsehood lists covers one subject.
-14. Falsehood lists are terse.
-15. Falsehood lists are illustrated with counter-examples.
-16. Falsehood lists follow the same format.
-18. Falsehood lists are sorted.
-17. Falsehood lists don't repeat themselves.
+11. Falsehood lists are a [good way of communication](http://cachestocaches.com/2019/8/myths-list-antipattern/).
+12. Falsehood lists are regularly updated.
+13. There exists a falsehoods list that is entirely true.
+14. Falsehood lists covers one subject.
+15. Falsehood lists are terse.
+16. Falsehood lists are illustrated with counter-examples.
+18. Falsehood lists follow the same format.
+17. Falsehood lists are sorted.
 19. Falsehood lists don't repeat themselves.
-20. Falsehoods in lists are numbered.
+20. Falsehood lists don't repeat themselves.
+21. Falsehoods in lists are numbered.
 
 ## Implementation
 
