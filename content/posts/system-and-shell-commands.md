@@ -2,7 +2,7 @@
 date: 2010-02-28 12:39:32
 title: System & Shell commands
 category: English
-tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression
+tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, bash
 ---
 
   * Run a process detached to the current terminal:
@@ -82,3 +82,7 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression
         $ chkconfig sshd --del
         $ chkconfig sshd --add
 
+Other resources:
+
+  * [Pure bash bible](https://github.com/dylanaraps/pure-bash-bible).
+  * [Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls).
