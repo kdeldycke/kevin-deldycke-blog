@@ -2,7 +2,7 @@
 date: 2006-12-13 22:10:13
 title: Text, Date & Document processing commands
 category: English
-tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, Perl, Regular expression
+tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, Perl, Regular expression, GhostScript
 ---
 
   * Convert a PDF to a JPEG file at 150 dpi:
@@ -98,8 +98,13 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
   * Same as above, but for all PDFs of the current folder. This also have the nice side effect of removing all DRMs :) :
 
         :::bash
-        $ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=bigfile.pdf ./*
+        $ gs -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -q -sOutputFile=bigfile.pdf ./*
+        
+  * Reduce size of PDF (see [GhostScript `-dPDFSETTINGS` documentation](https://web.mit.edu/ghostscript/www/Ps2pdf.htm#Options)):
 
+        :::bash
+        $ gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -q -o small-output.pdf large-input.pdf
+ 
   * VIM: [no autoindent on paste](https://vim.wikia.com/wiki/How_to_stop_auto_indenting).
 
   * a list of [`sed` one-liners](http://sed.sourceforge.net/sed1line.txt).
