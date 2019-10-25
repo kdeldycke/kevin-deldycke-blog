@@ -15,6 +15,11 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::bash
         $ pdfimages -j document.pdf prefix
 
+  * Compile all JPEG files in the current folder into a single PDF at 150 dpi:
+
+        :::bash
+        $ convert -density 150 ./*.jpg ./document.pdf
+
   * Text replacement:
 
         :::bash
