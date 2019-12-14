@@ -70,6 +70,11 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         :::bash
         $ ffmpeg -f lavfi -i "color=color=pink:size=1920x1080" -r 60 -t 10 -c:v libx264 dummy.mp4
 
+  * Produce a video from a static image and an audio file. That's the way I produced [Cool Cavemen's video tracks](https://www.youtube.com/channel/UCklBE-RIZESco4bp5kg80eA) for YouTube. Hence the special video filter option which crop the image to a square and scale it to a 1080x1080 pixels video:
+
+        :::bash
+        $ ffmpeg -loop 1 -y -i ./album-front-cover.jpg -i ./track-01.flac -c:v libx264 -tune stillimage -vf "crop='min(in_h,in_w)':'min(in_h,in_w)',scale=-2:1080" -c:a copy -shortest ./track-01-video.mkv
+
 
 ## VLC
 
