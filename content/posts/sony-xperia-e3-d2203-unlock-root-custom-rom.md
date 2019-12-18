@@ -1,3 +1,10 @@
+---
+date: 2019-12-18
+title: How-to Unlock, Root and Upgrade a Sony Xperia E3
+category: English
+tags: Android, Smartphone, Sony, ROM, bootloader, brew, fastboot, adb, macOS
+---
+
 Got hold of a second-hand [Sony Xperia E3](https://en.wikipedia.org/wiki/Sony_Xperia_E3) a couple of weeks ago and was surprised by its general build quality and IPS screen for a 2014 phone.
 
 Of course it was loaded with crapware and bloatware both from the ISP and manufacturer.
@@ -10,7 +17,7 @@ This process was tested with the following devices:
 * MacBook Air (macOS 10.14 Mojave)
 
 
-# Factory Reset
+## Factory Reset
 
 First things first, let's clean up that phone using the standard functions:
 
@@ -23,7 +30,7 @@ First things first, let's clean up that phone using the standard functions:
 1. Factory reset the phone.
 
 
-# Unlock Bootloader
+## Unlock Bootloader
 
 Phone was locked, tied to an Orange contract. Sony's got all the services online to properly unlock the phone, and the warranty has been expired for a long time. So let's proceed!
 
@@ -94,7 +101,7 @@ There are several ways of feeding that key to the phone. My method here describe
 All the steps above have been performed with the stock ecosystem: firmware, ROM and OS are all standard. Now we will delves into the dark side.
 
 
-# Root Phone
+## Root Phone
 
 We'll now root the phone.
 
@@ -123,7 +130,7 @@ We'll now root the phone.
 1. Use the file manager to browse into the SD card, [find the APK, install it and run KingRoot](https://kingroot.net/tutorials).
 
 
-# Flash Custom Recovery
+## Flash Custom Recovery
 
 The custom ROM I'll provide here only targets Sony Xperia E3 D2203 LTE model with the stock 4.4.2 Android.
 
