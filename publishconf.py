@@ -14,7 +14,3 @@ SITEURL = 'https://kevin.deldycke.com'
 RELATIVE_URLS = False
 
 DELETE_OUTPUT_DIRECTORY = True
-
-PLUGINS += [
-    'optimize_images',
-    ]
