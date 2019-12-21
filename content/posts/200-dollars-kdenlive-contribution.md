@@ -13,7 +13,7 @@ a [fundraising
 campaign](https://www.indiegogo.com/projects/kdenlive-refactoring) to refactor
 its core and make it future-proof:
 
-[![](/uploads/2012/kdenlive-fundraising-campaign.png)](https://www.indiegogo.com/projects/kdenlive-refactoring)
+[![](../uploads/2012/kdenlive-fundraising-campaign.png)](https://www.indiegogo.com/projects/kdenlive-refactoring)
 
 The amount of collected funds is currently at $3,041 from the $4,000 required
 to pay a developer to work full-time for 2 months. With only $959 remaining and
@@ -33,7 +33,7 @@ KDE.
 Today this software is the one I spend most of my time in at home (just after a
 web browser and a command-line terminal). And I've never felt as productive as
 the last 2 years: I [edited about 2 hours of
-videos](https://www.youtube.com/playlist?list=PL003033C52FE5047D) in that
+videos](https://www.youtube.com/playlist?list=PL95D32FAA4D6FD6A5) in that
 period.
 
 Kdenlive must continue to grow. And because I want to use it in my future
