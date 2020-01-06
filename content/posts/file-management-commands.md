@@ -5,40 +5,48 @@ category: English
 tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox, git, rmlint
 ---
 
-  * Create several folder with a similar pattern:
-
-        :::bash
-        $ mkdir -p ./folder/subfolder{001,002,003}
-
-  * Create a symbolic link ([source](https://news.ycombinator.com/item?id=1984792)):
-
-        :::bash
-        $ ln -s target link_name
-
-  * List size in MiB of subfolders and files in the current folder and display them sorted by size:
-
-        :::bash
-        $ du -cm * | sort -nr
+## Listing
 
   * Count the number of files in a folder:
 
         :::bash
         $ find ./ -type f | wc -l
 
-  * List number of files accross all subfolders sharing the same name, whatever their extension is:
-
-        :::bash
-        $ find . -type f -exec basename {} \; | sed 's/\(.*\)\..*/\1/' | sort | uniq -c | grep -v "^[ \t]*1 "
-
   * List all file extensions found in a folder:
 
         :::bash
         $ find ./ -type f | rev | cut -d "." -f 1 | sort | uniq | rev
 
+  * List all files sharing the same name within the sub folders:
+
+        :::bash
+        $ find . -type f -printf "%f\n" | sort | uniq --repeated --all-repeated=separate
+
+  * List number of files accross all subfolders sharing the same name, whatever their extension is:
+
+        :::bash
+        $ find . -type f -exec basename {} \; | sed 's/\(.*\)\..*/\1/' | sort | uniq -c | grep -v "^[ \t]*1 "
+
+
+## Size & Space
+
+  * List size in MiB of subfolders and files in the current folder and display them sorted by size:
+
+        :::bash
+        $ du -cm * | sort -nr
+
   * Show the 10 biggest files in MiB found amoung the current directory and its subfolders:
 
         :::bash
         $ find . -type f -exec du -m "{}" \; | sort -nr | head -n 10
+
+  * Display the total size used by all PNG files in sub-directories:
+
+        :::bash
+        $ find ./ -iname "*.png" -exec du -k "{}" \; | awk '{c+=$1} END {printf "%s KB\n", c}'
+
+
+## Search
 
   * Case insensitive search from the current folder of all files that have the string `dummy` in their filename:
 
@@ -70,35 +78,54 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ find ./ -printf "%AY-%Am-%Ad %AT %p\n" | sort | tail -n10
 
-  * Rename all mp3 files in the current folder by adding a "sub-extension":
+  * Search for `string` contained in all files named `MANIFEST.in`, and print their folder path:
 
         :::bash
-        $ rename 's/\.mp3/\.my-sub-extension\.mp3/' *.mp3
+        $ find . -name "MANIFEST.in" -exec bash -c 'grep --silent "string" "{}" && echo $(dirname "{}")' \;
 
-  * Prefix all files in the current folder:
+  * Search for 4+ characters long upper-cased strings with underscore, in all files but the `README.md`, `LICENSE` and Git metadata:
 
         :::bash
-        $ rename 's/(.*)$/prefix-$1/' *
+        $ grep --only-matching --no-filename --exclude=./{README.md,LICENSE,.git\*} -RIe '[A-Z_]\{4,\}' . | sort | uniq
+
+
+## Creation
+
+  * Create several folder with a similar pattern:
+
+        :::bash
+        $ mkdir -p ./folder/subfolder{001,002,003}
+
+  * Create a symbolic link ([source](https://news.ycombinator.com/item?id=1984792)):
+
+        :::bash
+        $ ln -s target link_name
+
+
+## Renaming
 
   * Convert all files in the current folder to lower case:
 
         :::bash
         $ rename 'y/A-Z/a-z/' *
 
+  * Prefix all files in the current folder:
+
+        :::bash
+        $ rename 's/(.*)$/prefix-$1/' *
+
+  * Rename all mp3 files in the current folder by adding a "sub-extension":
+
+        :::bash
+        $ rename 's/\.mp3/\.my-sub-extension\.mp3/' *.mp3
+
   * Renaming based on regular expression, for files matching another regular expression. The particular example below was used to fix some Dropbox conflicting files:
 
         :::bash
         $ find ./Dropbox -type f -name "* (kev-laptop's conflicted copy 2013-02-01)*" -execdir rename -f -v "s/(.*) \(kev-laptop's conflicted copy 2013-02-01\)(.*)/\1\2/" {} \;
 
-  * Display the total size used by all PNG files in sub-directories:
 
-        :::bash
-        $ find ./ -iname "*.png" -exec du -k "{}" \; | awk '{c+=$1} END {printf "%s KB\n", c}'
-
-  * List all files sharing the same name within the sub folders:
-
-        :::bash
-        $ find . -type f -printf "%f\n" | sort | uniq --repeated --all-repeated=separate
+## Cleaning-up
 
   * Delete all empty files and folders (run this command several times to remove nested empty directories):
 
@@ -130,16 +157,6 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
 
         :::bash
         $ ls ./ -I "README.txt" | xargs rm -rf
-
-  * Search for `string` contained in all files named `MANIFEST.in`, and print their folder path:
-
-        :::bash
-        $ find . -name "MANIFEST.in" -exec bash -c 'grep --silent "string" "{}" && echo $(dirname "{}")' \;
-
-  * Search for 4+ characters long upper-cased strings with underscore, in all files but the `README.md`, `LICENSE` and Git metadata:
-
-        :::bash
-        $ grep --only-matching --no-filename --exclude=./{README.md,LICENSE,.git\*} -RIe '[A-Z_]\{4,\}' . | sort | uniq
 
   * Remove all duplicates in `backup-set1` and `backup-set2` if and only if they're already present in `backup-set3` (i.e. the reference folder marked by the `//` separator), but do not alter the latter in anyway (effect of the `--keep-all-tagged` option). To make things extra-safe we use `--no-crossdev` to not jump to other physical disks:
 
