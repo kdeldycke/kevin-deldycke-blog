@@ -103,7 +103,7 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
   * Delete all empty files and folders (run this command several times to remove nested empty directories):
 
         :::bash
-        $ find ./ -empty -print -exec rm -rf "{}" \;
+        $ find ./ -empty -print -delete
 
   * Remove empty directories found in all subfolders starting with a dot:
 
