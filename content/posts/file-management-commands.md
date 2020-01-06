@@ -105,20 +105,20 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ find ./ -empty -print -delete
 
-  * Remove empty directories found in all subfolders starting with a dot:
+  * Remove empty directories found in all subfolders starting with `prefix`:
 
         :::bash
-        $ find ./ -type d -empty -ipath "./.*" -print -exec rm -rf "{}" \;
+        $ find ./ -type d -empty -ipath "./prefix*" -print -delete
 
   * Delete files ending with `.thumbnail.jpg` or `.thumbnail.png` files (case insensitive):
 
         :::bash
-        $ find ./ -iregex ".*\.thumbnail\.\(jpg\|png\)$" -delete
+        $ find ./ -iregex ".*\.thumbnail\.\(jpg\|png\)$" -print -delete
 
   * Same as above but instead for files ending with their dimensions, like `image-640x480.jpg` or `photo-2400x3200.png`:
 
         :::bash
-        $ find ./ -iregex ".*-[0-9]+x[0-9]+\.\(jpg\|png\)$" -delete
+        $ find ./ -iregex ".*-[0-9]+x[0-9]+\.\(jpg\|png\)$" -print -delete
 
   * I used those commands when I import big quantity of files from a window user:
 
