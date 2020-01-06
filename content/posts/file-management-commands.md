@@ -158,7 +158,13 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::bash
         $ ls ./ -I "README.txt" | xargs rm -rf
 
-  * Remove all duplicates in `backup-set1` and `backup-set2` if and only if they're already present in `backup-set3` (i.e. the reference folder marked by the `//` separator), but do not alter the latter in anyway (effect of the `--keep-all-tagged` option). To make things extra-safe we use `--no-crossdev` to not jump to other physical disks:
+  * Remove all duplicates within the whole pool of files (including `--hidden` ones) build up from `folder-1`, `folder-2` and `folder-3` directories. In a set of duplicates, the first file in alphabeticcaly sorted named path is kept (`-S p` option).
+
+        :::bash
+        $ rmlint --progress --hidden -S p ./folder-1 ./folder-2 ./folder-3
+        $ ./rmlint.sh
+
+  * Remove all duplicates in `backup-set1` and `backup-set2` if and only if they're already present in `backup-set3` (i.e. the reference folder tagged after the `//` separator), but do not alter the latter in anyway (thanks to the `--keep-all-tagged` option). To make things extra-safe we use `--no-crossdev` to not jump to other physical file systems:
 
         :::bash
         $ rmlint --progress --hidden --no-crossdev --keep-all-tagged ./backup-set1/ ./backup-set2/ // ./backup-set3/
