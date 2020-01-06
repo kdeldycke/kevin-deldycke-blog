@@ -2,7 +2,7 @@
 date: 2006-10-18 00:15:16
 title: File Management commands
 category: English
-tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox, git
+tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox, git, rmlint
 ---
 
   * Create several folder with a similar pattern:
@@ -140,3 +140,9 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
 
         :::bash
         $ grep --only-matching --no-filename --exclude=./{README.md,LICENSE,.git\*} -RIe '[A-Z_]\{4,\}' . | sort | uniq
+
+  * Remove all duplicates in `backup-set1` and `backup-set2` if and only if they're already present in `backup-set3` (i.e. the reference folder marked by the `//` separator), but do not alter the latter in anyway (effect of the `--keep-all-tagged` option). To make things extra-safe we use `--no-crossdev` to not jump to other physical disks:
+
+        :::bash
+        $ rmlint --progress --hidden --no-crossdev --keep-all-tagged ./backup-set1/ ./backup-set2/ // ./backup-set3/
+        $ ./rmlint.sh 
