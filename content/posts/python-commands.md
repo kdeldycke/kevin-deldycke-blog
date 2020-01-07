@@ -2,23 +2,25 @@
 date: 2011-01-04 12:04:12
 title: Python commands
 category: English
-tags: ascii, Computer programming, date, dateutil, development, distutils, encoding, PEP8, PyPi, PDB, Python, socket, unicode, URL, urllib2, HTTP, PyLint, Fabric, pip
+tags: ascii, Computer programming, date, dateutil, development, distutils, encoding, PEP8, PyPi, PDB, Python, socket, unicode, URL, urllib2, HTTP, PyLint, Fabric, pip, boltons
 ---
 
 ## Strings
 
- * Replace accentuated characters by their ASCII equivalent in a unicode string:
+  * Replace accentuated characters by their ASCII equivalent in a unicode string:
 
         :::python
         import unicodedata
         unicodedata.normalize('NFKD', u"éèàçÇÉÈ²³¼ÀÁÂÃÄÅËÍÑÒÖÜÝåïš™").encode('ascii', 'ignore')
  
-  * Lambda function to transform a string to a URL-friendly ID:
+  * Cleanest way I found to produce slugified / tokenized strings, based on [`boltons.strutils`](https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.slugify):
 
         :::python
-        get_safe_url = lambda s: '-'.join([w for w in ''.join([c.isalnum() and c or '-' for c in s.lower()]).split('-') if w])
+        >>> from boltons import strutils
+        >>> strutils.slugify(' aBc De F   1 23 4! -- ! 56--78 - -9- %$& +eée-', '-', ascii=True)
+        b'abc-de-f-1-23-4-56-78-9-eee'
 
-    Better: use [`awesome-slugify`](https://pypi.python.org/pypi/awesome-slugify) package.
+    Alternative: use [`awesome-slugify`](https://pypi.python.org/pypi/awesome-slugify) package.
 
 
 ## Sorting
