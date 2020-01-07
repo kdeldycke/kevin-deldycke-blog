@@ -16,7 +16,7 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
   * Lambda function to transform a string to a URL-friendly ID:
 
         :::python
-        getSafeURL = lambda s: '-'.join([w for w in ''.join([c.isalnum() and c or '-' for c in s.lower()]).split('-') if w])
+        get_safe_url = lambda s: '-'.join([w for w in ''.join([c.isalnum() and c or '-' for c in s.lower()]).split('-') if w])
 
     Better: use [`awesome-slugify`](https://pypi.python.org/pypi/awesome-slugify) package.
 
@@ -92,7 +92,7 @@ I recommend using [`Arrow`](https://crsmithdev.com/arrow/). But if you can't, he
   * Use [autopep8](https://pypi.python.org/pypi/autopep8/) to apply PEP8's coding style on all Python files:
 
         :::bash
-        $ find ./ -iname "*.py" -exec autopep8 --in-place "{}" \;
+        $ find ./ -iname "*.py" -print -exec autopep8 --in-place "{}" \;
 
 
 ## Configuration
