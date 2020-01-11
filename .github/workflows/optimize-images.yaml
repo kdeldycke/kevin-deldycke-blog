@@ -2,8 +2,9 @@
 #   * https://calibreapp.com/blog/compress-images-in-prs/
 #   * https://github.com/marketplace/actions/image-actions
 
-name: Compress images
-on: pull_request
+name: Optimize images
+on: [push, pull_request]
+
 jobs:
   build:
     name: calibreapp/image-actions
