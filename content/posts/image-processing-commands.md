@@ -2,7 +2,7 @@
 date: 2006-12-20 20:42:35
 title: Image Processing commands
 category: English
-tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush
+tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, mozjpeg
 ---
 
 ## Conversion
@@ -50,6 +50,11 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush
 
         :::bash
         $ find . -iname "*.jpg" -exec jpegtran -optimize -outfile "{}.optimized.jpeg" "{}" \;
+
+  * Convert a PNG file to an optimized JPEG:
+
+        :::bash
+        $ convert ./original.png TGA:- | cjpeg -optimize -progressive -quality 70 -outfile compressed-image.jpg -targa
 
 
 ## Metadata
