@@ -27,7 +27,12 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush
   
         :::bash
         $ convert ./original.png -trim ./trimmed.png
+
+  * Add a 5% white border around the image:
   
+        :::bash
+        $ convert ./original.png -bordercolor White -border 5%x5% ./original-with-border.pmg
+
 
 ## Optimization
 
