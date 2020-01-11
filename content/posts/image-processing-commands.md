@@ -21,6 +21,14 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush
         $ convert -resize 600x600 -sharpen 1 -interlace Line * pict%04d.jpg
 
 
+## Cropping
+
+  * Remove all whitespace (or any solid-color) surrounding the `original.png` image:
+  
+        :::bash
+        $ convert ./original.png -trim ./trimmed.png
+  
+
 ## Optimization
 
   * Massive in-place optimization of all PNG images available in sub-directories:
