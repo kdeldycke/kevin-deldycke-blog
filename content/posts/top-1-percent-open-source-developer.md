@@ -2,10 +2,10 @@
 date: 2011-03-07 11:32:02
 title: I'm Top 1% Open-Source Developer! (and that's a lie)
 category: English
-tags: development, Ohloh, open source, Software engineering
+tags: development, Open Hub, open source, Software engineering
 ---
 
-With all the [recent](https://kevin.deldycke.com/2011/01/e107-importer-wordpress-plugin-v1-0-released/) [active development](https://kevin.deldycke.com/2011/03/e107-importer-1-1/) on my [e107 Importer WordPress plugin](https://wordpress.org/extend/plugins/e107-importer/), I increased my public code contributions. This had the nice side effect of bumping my [ranking on Ohloh](https://www.ohloh.net/accounts/kevin) from #8 (bronze level) to #9 (silver level):
+With all the [recent](https://kevin.deldycke.com/2011/01/e107-importer-wordpress-plugin-v1-0-released/) [active development](https://kevin.deldycke.com/2011/03/e107-importer-1-1/) on my [e107 Importer WordPress plugin](https://wordpress.org/extend/plugins/e107-importer/), I increased my public code contributions. This had the nice side effect of bumping my [ranking on Ohloh](https://www.openhub.net/accounts/kevin) from #8 (bronze level) to #9 (silver level):
 
 ![](/uploads/2011/ohloh-rank-from-bronze-to-silver.png)
 
