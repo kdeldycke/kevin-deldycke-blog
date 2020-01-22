@@ -126,6 +126,8 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 ## Edition
 
   * VIM: [no autoindent on paste](https://vim.wikia.com/wiki/How_to_stop_auto_indenting).
+  
+  * [Get rid of Non-Breaking space](https://hauweele.net/~gawen/blog/?p=32) on Linux systems by the way X.org's `~/.xmodmap` config file.
 
 
 ## Additional References
