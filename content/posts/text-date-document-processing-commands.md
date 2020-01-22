@@ -5,20 +5,8 @@ category: English
 tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, Perl, Regular expression, GhostScript
 ---
 
-  * Convert a PDF to a JPEG file at 150 dpi:
 
-        :::bash
-        $ convert -density 150 ./document.pdf ./document.jpg
-
-  * Extract images from a PDF document:
-
-        :::bash
-        $ pdfimages -j document.pdf prefix
-
-  * Compile all JPEG files in the current folder into a single PDF at 150 dpi:
-
-        :::bash
-        $ convert -density 150 ./*.jpg ./document.pdf
+## Search & Replace
 
   * Text replacement:
 
@@ -60,15 +48,13 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::bash
         $ find ./folder -iname "*.markdown" -print -exec bash -c 'cat ./addendum.txt >> "{}"' \;
 
-  * In place charset transcoding:
-
-        :::bash
-        $ recode utf-8..latin-1 utf8text.txt
-
-  * Remove all accented characters in a string (thanks to Matthieu for the tip):
+  * Replace all accentuated characters by their non-accentuated variants (thanks Matthieu for the tip):
 
         :::bash
         $ echo "éÈça-$" | iconv -t ASCII//translit
+
+
+## Date & Time
 
   * Get the date of last week:
 
@@ -90,6 +76,32 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::bash
         $ date --date=@1234567890
 
+
+## Transcoding
+
+  * In place charset transcoding:
+
+        :::bash
+        $ recode utf-8..latin-1 utf8text.txt
+
+
+## PDF
+
+  * Convert a PDF to a JPEG file at 150 dpi:
+
+        :::bash
+        $ convert -density 150 ./document.pdf ./document.jpg
+
+  * Extract images from a PDF document:
+
+        :::bash
+        $ pdfimages -j document.pdf prefix
+
+  * Compile all JPEG files in the current folder into a single PDF at 150 dpi:
+
+        :::bash
+        $ convert -density 150 ./*.jpg ./document.pdf
+
   * Split a PDF into pages:
 
         :::bash
@@ -109,8 +121,13 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 
         :::bash
         $ gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -q -o small-output.pdf large-input.pdf
- 
+
+
+## Edition
+
   * VIM: [no autoindent on paste](https://vim.wikia.com/wiki/How_to_stop_auto_indenting).
 
-  * a list of [`sed` one-liners](http://sed.sourceforge.net/sed1line.txt).
 
+## Additional References
+
+  * A list of [`sed` one-liners](http://sed.sourceforge.net/sed1line.txt).
