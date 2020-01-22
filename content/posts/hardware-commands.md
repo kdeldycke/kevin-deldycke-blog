@@ -5,24 +5,15 @@ category: English
 tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D, dmidecode
 ---
 
-  * Get the number of shutter count of a DSLR (Canon EOS 7D in my case):
-
-        :::bash
-        $ gphoto2 --get-config /main/status/shuttercounter
-        Label: Shutter Counter
-        Type: TEXT
-        Current: 49238
-
-  * Change the keyboard layout in Debian (don't forget to logoff and logon to activate the new setting):
-
-        :::bash
-        $ dpkg-reconfigure keyboard-configuration
+## Computer
 
   * Get Mac hardware model:
 
         :::bash
         $ sudo dmidecode -s system-product-name
         MacBookAir5,2
+
+## Disk
 
   * Low-level format of the `hda` device:
 
@@ -50,13 +41,34 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
         :::bash
         $ gpart -v /dev/md0
 
+
+## Keyboard
+
+  * Change the keyboard layout in Debian (don't forget to logoff and logon to activate the new setting):
+
+        :::bash
+        $ dpkg-reconfigure keyboard-configuration
+
+
+## Trackpad
+
   * To add touchpad kernel support, add the following option to kernel at boot time:
 
         :::bash
         $ psmouse.proto=imps
 
-  * Sometimes, depending of the laptop I use, the mouse pointer disappear from the screen when I plug a VGA cable to a projector. In this case, I do a `CTRL + ALT + F1`, then I login as a normal user and finally I start a new X session:
+  * Sometimes, depending of the laptop I use, the mouse pointer disappear from the screen when I plug a VGA cable to a projector. In this case, I resort to a `CTRL + ALT + F1`, then I login as a normal user and finally I start a new X session:
 
         :::bash
         $ startx -- :1
 
+
+## Camera
+
+  * Get the number of shutter count of a DSLR (Canon EOS 7D in my case):
+
+        :::bash
+        $ gphoto2 --get-config /main/status/shuttercounter
+        Label: Shutter Counter
+        Type: TEXT
+        Current: 49238
