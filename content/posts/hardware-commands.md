@@ -49,8 +49,33 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
         :::bash
         $ dpkg-reconfigure keyboard-configuration
 
+  * X.orgs' configuration (`~/.Xmodmap`) to remap function and command keys of a Mac keyboard ([source](https://github.com/kdeldycke/dotfiles/blob/cc9d00879f14036498615067349f1d75fcd96bf5/dotfiles-linux/.Xmodmap#L10-L24)):
+
+        ! --- Remove Cmd keys
+        ! Remaps the keys (reading left-to-right):
+        !    -FROM-
+        !  Fn Control_L Alt_L Super_L Space Super_R Alt_R
+        !    -TO-
+        !  Fn Control_L Alt_L Alt_L Space Alt_R Alt_R
+        !
+        keycode 133 = Alt_L Meta_L Alt_L Meta_L
+        keycode 134 = ISO_Level3_Shift
+        clear Mod1
+        clear Mod4
+        clear Mod5
+        add Mod1 = Alt_L Alt_R Meta_L
+        add Mod4 = Super_L Super_R Super_L Hyper_L
+        add Mod5 = ISO_Level3_Shift Mode_switch
+
 
 ## Trackpad
+
+  * X.orgs' configuration (`~/.Xmodmap`) to either set natural or reverse scrolling for Mac trackpads ([source](https://github.com/kdeldycke/dotfiles/blob/cc9d00879f14036498615067349f1d75fcd96bf5/dotfiles-linux/.Xmodmap#L1-L4)):
+
+        ! --- Reverse Scrolling
+        !pointer = 1 2 3 5 4 6 7 8 9 10 11 12 13 14 15
+        ! --- Natural Scrolling
+        pointer = 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
   * To add touchpad kernel support, add the following option to kernel at boot time:
 
