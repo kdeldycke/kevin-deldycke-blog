@@ -53,6 +53,19 @@ tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
         $ dpkg --install --force-confmiss /var/cache/apt/archives/my-package.deb
 
 
+## Upgrade
+
+  * Upgrade package listing and metadata:
+
+        :::bash
+        $ sudo apt update
+
+  * Force `yes` so that package maintainer's version of config files always prevails:
+  
+        :::bash
+        $ sudo apt upgrade -y --force-yes
+
+
 ## Holding
 
   * Hold a package with either `dpkg` or `aptitude`:
