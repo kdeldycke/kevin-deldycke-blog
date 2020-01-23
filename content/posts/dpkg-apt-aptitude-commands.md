@@ -5,51 +5,18 @@ category: English
 tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
 ---
 
+
+## Search
+
   * List all installed packages:
 
         :::bash
         $ dpkg -l
 
-  * Extract content of a package:
-
-        :::bash
-        $ ar vx mypackage.deb
-
   * List all recently installed packages:
 
         :::bash
         $ zcat -f /var/log/dpkg.log* | grep "\ install\ " | sort
-
-  * Install a package from a lower-priority repository, like the backport repository:
-
-        :::bash
-        $ apt-get -t squeeze-backports install my-package
-
-  * Force reinstallation of a package:
-
-        :::bash
-        $ apt-get -d --reinstall install my-package
-        $ dpkg --install --force-confmiss /var/cache/apt/archives/my-package.deb
-
-  * Clean aptitude local cache:
-
-        :::bash
-        $ apt-get clean
-
-  * Uninstall a package throughly (both program files and configuration):
-
-        :::bash
-        $ apt-get remove --purge my_package
-
-  * Force removal of a package while ignoring all dependencies:
-
-        :::bash
-        $ dpkg --remove --force-depends libsomething
-
-  * Remove orphaned pakages:
-
-        :::bash
-        $ deborphan | xargs apt-get -y remove --purge
 
   * Show the changelog of a package (here, the linux kernel of Ubuntu):
 
@@ -66,10 +33,27 @@ tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
         :::bash
         $ apt-file list package_name
 
-  * Remove `dpkg` lock file:
+  * Extract content of a package:
 
         :::bash
-        $ rm /var/lib/dpkg/lock
+        $ ar vx mypackage.deb
+
+
+## Install
+
+  * Install a package from a lower-priority repository, like the backport repository:
+
+        :::bash
+        $ apt-get -t squeeze-backports install my-package
+
+  * Force reinstallation of a package:
+
+        :::bash
+        $ apt-get -d --reinstall install my-package
+        $ dpkg --install --force-confmiss /var/cache/apt/archives/my-package.deb
+
+
+## Holding
 
   * Hold a package with either `dpkg` or `aptitude`:
 
@@ -95,4 +79,34 @@ tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
 
         :::bash
         $ dpkg --get-selections | grep hold
+        
+       
+ ## Uninstall
 
+  * Uninstall a package throughly (both program files and configuration):
+
+        :::bash
+        $ apt-get remove --purge my_package
+
+  * Force removal of a package while ignoring all dependencies:
+
+        :::bash
+        $ dpkg --remove --force-depends libsomething
+
+  * Remove orphaned pakages:
+
+        :::bash
+        $ deborphan | xargs apt-get -y remove --purge
+
+
+## Clean-up
+
+  * Clean aptitude local cache:
+
+        :::bash
+        $ apt-get clean
+
+  * Remove `dpkg` lock file:
+
+        :::bash
+        $ rm /var/lib/dpkg/lock
