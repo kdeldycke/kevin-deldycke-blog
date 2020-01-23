@@ -5,6 +5,9 @@ category: English
 tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, bash
 ---
 
+
+## Processes
+
   * Run a process detached to the current terminal:
 
         :::bash
@@ -14,6 +17,9 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
         :::bash
         $ su sys_user -s /bin/bash -c "my_command"
+
+
+## Shell
 
   * Get the exit code of the latest runned command:
 
@@ -29,6 +35,11 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
         :::bash
         $ whoami
+        
+  * List of most used commands:
+
+        :::bash
+        $ history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 
   * List cron jobs of the current user:
 
@@ -50,10 +61,16 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
         :::bash
         $ strings ./firmware.bin | less
 
+
+## Memory
+
   * Free up some memory by clearing RAM caches ([source](https://www.scottklarr.com/topic/134/linux-how-to-clear-the-cache-from-memory/)):
 
         :::bash
         $ sync ; echo 3 > /proc/sys/vm/drop_caches
+
+
+## Distribution
 
   * Display which distro is running the system ([source](https://news.ycombinator.com/item?id=1973441)):
 
@@ -65,10 +82,8 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
         :::bash
         $ cat /etc/lsb-release
 
-  * List of most used commands:
 
-        :::bash
-        $ history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+## Services
 
   * Disable a service on Debian/Ubuntu, then re-enable it:
 
@@ -82,7 +97,8 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
         $ chkconfig sshd --del
         $ chkconfig sshd --add
 
-Other resources:
+
+## Other Resources
 
   * [Pure bash bible](https://github.com/dylanaraps/pure-bash-bible).
   * [Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls).
