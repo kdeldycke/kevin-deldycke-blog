@@ -98,6 +98,16 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
         $ chkconfig sshd --add
 
 
+## Boot
+
+  * Speed-up Grub boot, but always show the boot menu:
+  
+        :::bash
+        $ sudo sed -i 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=1/g' /etc/default/grub
+        $ sudo sed -i 's/GRUB_HIDDEN_TIMEOUT/#GRUB_HIDDEN_TIMEOUT/g' /etc/default/grub
+        $ sudo update-grub
+
+
 ## Other Resources
 
   * [Pure bash bible](https://github.com/dylanaraps/pure-bash-bible).
