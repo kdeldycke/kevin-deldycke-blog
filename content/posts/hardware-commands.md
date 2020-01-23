@@ -41,6 +41,16 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
         :::bash
         $ gpart -v /dev/md0
 
+  * Search for a Linux partition:
+
+        :::bash
+        $ sudo fdisk -d /dev/disk0 | cut -d ',' -f 3 | grep --quiet "0x83"
+        $ if [[ $? -ne 0 ]]; then
+        >     echo "No Linux partition found."
+        > else
+        >     echo "Linux partition found."
+        > fi
+
 
 ## Keyboard
 
