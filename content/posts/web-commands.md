@@ -31,6 +31,14 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
         :::bash
         $ for EGG in BeautifulSoup PIL Plone; do wget --server-response -O /dev/null https://pypi.python.org/simple/$EGG/; done
 
+  * Debug mysterious numbers ([source](https://news.ycombinator.com/item?id=22037088)):
+
+        :::bash
+        $ echo 'obase=16; 1195725856' | bc | xxd -r -ps | od -cb
+        0000000   G   E   T    
+                107 105 124 040
+        0000004
+
 
 ## Certificates
 
