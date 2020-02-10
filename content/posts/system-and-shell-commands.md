@@ -108,6 +108,14 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
         $ sudo update-grub
 
 
+## Fonts 
+
+  * List fonts available on the system:
+  
+        :::bash
+        $ fc-list | cut -d ':' -f 2 | sort | uniq
+
+
 ## Other Resources
 
   * [Pure bash bible](https://github.com/dylanaraps/pure-bash-bible).
