@@ -53,7 +53,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   * Extract the first frame of a video (great to generate image preview):
 
         :::bash
-        $ ffmpeg -i video.mov -r 1  -t 00:00:01 -f image2 images%05d.png
+        $ ffmpeg -i video.mov -r 1 -t 00:00:01 -f image2 images%05d.png
 
   * Extract a frame every 10 seconds:
 
