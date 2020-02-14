@@ -8,23 +8,12 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   * Here are some commands to get informations about the nature of a video:
 
         :::bash
+        $ ffmpeg -i ./video.avi
+        $ file ./video.avi
         $ avprobe ./video.avi
         $ mplayer -frames 0 -identify ./video.avi
         $ tcprobe -i ./video.avi
-        $ ffmpeg -i ./video.avi
-        $ file ./video.avi
 
-## libAV
-
-  * Re-encode a yuv422p video into a lossless h264, but this time in yuv420p:
-
-        :::bash
-        $ avconv -i yuv422p.mkv -c:v libx264 -pix_fmt yuv420p -preset veryslow -qp 0 yuv420p.mkv
-
-  * Re-encode a lossless h264 video with a lower bitrate:
-
-        :::bash
-        $ avconv -i lossless.mkv -b:v 45M -preset veryfast lower-bitrate.mkv
 
 ## FFmpeg
 
@@ -96,60 +85,18 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         :::bash
         $ vlc -vvv https://mafreebox.freebox.fr/freeboxtv/playlist.m3u --sout '#transcode{vcodec=mp2v,vb=384,scale=0.5,acodec=vorbis,ab=48,channels=1}:standard{access=http,mux=ogg,url=:8888}' -I ncurses 2> /dev/null
 
-## Transcode
 
-  * Merge multiple video into one:
+## libAV
 
-        :::bash
-        $ avimerge -i part1.avi part2.avi -o big-file.avi
-
-  * Extract the raw subtitle stream. The `-a 0x21` option correspond to the
-  subtitle stream's hexadecimal number (= 0x20 + id of the stream):
+  * Re-encode a yuv422p video into a lossless h264, but this time in yuv420p:
 
         :::bash
-        $ tccat -i /space/st-tng/dic1/ -T 1 -L | tcextract -x ps1 -t vob -a 0x22 > subs-en
+        $ avconv -i yuv422p.mkv -c:v libx264 -pix_fmt yuv420p -preset veryslow -qp 0 yuv420p.mkv
 
-  * List export video codecs:
-
-        :::bash
-        $ transcode -i . -y ffmpeg -F list
-
-  * Batch stabilization script:
+  * Re-encode a lossless h264 video with a lower bitrate:
 
         :::bash
-        SEARCH_FOLDER="/home/kevin/project/raw_sources"
-        DEST_FOLDER="/home/kevin/project/stabilized"
-
-        for FILE_PATH in $(find "$SEARCH_FOLDER" -name "*.mp4")
-        do
-            FILE_NAME=$(basename "$FILE_PATH")
-
-            STAB_FILE="$DEST_FOLDER/$FILE_NAME.trf"
-            if [ ! -e "$STAB_FILE" ]; then
-                # vis.stab's deshake/stabilize documentation:
-                # https://github.com/georgmartius/vid.stab/blob/36173857bfc0fa111983a5934f2cc6322969e928/transcode/filter_deshake.c#L75-L106
-                transcode -J stabilize=result="$STAB_FILE" -i "$FILE_PATH" -y null,null -o dummy
-            fi
-
-            FINAL_FILE="$DEST_FOLDER/$FILE_NAME-stabilized.mkv"
-
-            if [ ! -e "$FINAL_FILE" ]; then
-
-                # Create a stabilized stream of JPG files at 100% quality.
-                FRAME_BASEPATH="$DEST_FOLDER/$FILE_NAME.stabilized_"
-                # vid.stab's transform documentation:
-                # https://github.com/georgmartius/vid.stab/blob/36173857bfc0fa111983a5934f2cc6322969e928/src/transform.h#L122-L149
-                transcode -J transform=input="$STAB_FILE" -i "$FILE_PATH" -y jpg,null -F 100 -o "$FRAME_BASEPATH"
-
-                # Convert to a lossless h264 video in 4:2:0 color space.
-                FRAME_RATE=$(tcprobe -i "$FILE_PATH" | grep "frame rate:" | cut -d ':' -f 2 | cut -d ' ' -f 3)
-                avconv -r $FRAME_RATE -i "$FRAME_BASEPATH%06d.jpg" -c:v libx264 -pix_fmt yuv420p -preset veryfast -qp 0 "$FINAL_FILE"
-
-                find "$DEST_FOLDER" -name "$FRAME_BASENAME*.jpg" -delete
-
-            fi
-
-        done
+        $ avconv -i lossless.mkv -b:v 45M -preset veryfast lower-bitrate.mkv
 
 
 ## Mplayer / Mencoder
@@ -271,6 +218,63 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
         :::bash
         $ mplayer -dumpaudio -dumpfile audio.ac3 video_source.mpg
+
+
+## Transcode
+
+  * Merge multiple video into one:
+
+        :::bash
+        $ avimerge -i part1.avi part2.avi -o big-file.avi
+
+  * Extract the raw subtitle stream. The `-a 0x21` option correspond to the
+  subtitle stream's hexadecimal number (= 0x20 + id of the stream):
+
+        :::bash
+        $ tccat -i /space/st-tng/dic1/ -T 1 -L | tcextract -x ps1 -t vob -a 0x22 > subs-en
+
+  * List export video codecs:
+
+        :::bash
+        $ transcode -i . -y ffmpeg -F list
+
+  * Batch stabilization script:
+
+        :::bash
+        SEARCH_FOLDER="/home/kevin/project/raw_sources"
+        DEST_FOLDER="/home/kevin/project/stabilized"
+
+        for FILE_PATH in $(find "$SEARCH_FOLDER" -name "*.mp4")
+        do
+            FILE_NAME=$(basename "$FILE_PATH")
+
+            STAB_FILE="$DEST_FOLDER/$FILE_NAME.trf"
+            if [ ! -e "$STAB_FILE" ]; then
+                # vis.stab's deshake/stabilize documentation:
+                # https://github.com/georgmartius/vid.stab/blob/36173857bfc0fa111983a5934f2cc6322969e928/transcode/filter_deshake.c#L75-L106
+                transcode -J stabilize=result="$STAB_FILE" -i "$FILE_PATH" -y null,null -o dummy
+            fi
+
+            FINAL_FILE="$DEST_FOLDER/$FILE_NAME-stabilized.mkv"
+
+            if [ ! -e "$FINAL_FILE" ]; then
+
+                # Create a stabilized stream of JPG files at 100% quality.
+                FRAME_BASEPATH="$DEST_FOLDER/$FILE_NAME.stabilized_"
+                # vid.stab's transform documentation:
+                # https://github.com/georgmartius/vid.stab/blob/36173857bfc0fa111983a5934f2cc6322969e928/src/transform.h#L122-L149
+                transcode -J transform=input="$STAB_FILE" -i "$FILE_PATH" -y jpg,null -F 100 -o "$FRAME_BASEPATH"
+
+                # Convert to a lossless h264 video in 4:2:0 color space.
+                FRAME_RATE=$(tcprobe -i "$FILE_PATH" | grep "frame rate:" | cut -d ':' -f 2 | cut -d ' ' -f 3)
+                avconv -r $FRAME_RATE -i "$FRAME_BASEPATH%06d.jpg" -c:v libx264 -pix_fmt yuv420p -preset veryfast -qp 0 "$FINAL_FILE"
+
+                find "$DEST_FOLDER" -name "$FRAME_BASENAME*.jpg" -delete
+
+            fi
+
+        done
+
 
 ## Others
 
