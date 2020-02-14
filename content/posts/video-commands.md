@@ -80,6 +80,11 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         :::bash
         $ ffmpeg -loop 1 -y -i ./album-front-cover.jpg -i ./track-01.flac -c:v libx264 -tune stillimage -vf "scale=-2:1080:force_original_aspect_ratio=1,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:black" -c:a copy -shortest ./track-01-video.mkv
 
+* Extract a segment of a video and produce a gif animation out of it. The extracted fragment is from the absolute time reference of `00:24:52.4` to `00:24:57.0`. The first video stream is selected (`[0:v]`), and the audio naturraly discarded. Framerate is reduced to 12 fps, and horizontal size to 480 pixels while keeping the aspect ratio. It use special filters to [generate a global optimized color palette](http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html). The first subtitle track (`si=0`) embedded in the original `source.mp4` file is burned down, in a bold Arial Black font at 26pt (as per [ASS specs](http://moodub.free.fr/video/ass-specs.doc)).
+
+        :::bash
+        $ ffmpeg -i ./source.mp4 -ss 00:24:52.4 -to 00:24:57.0 -filter_complex "[0:v] fps=12,scale=width=480:height=-1,subtitles=source.mp4:si=0:force_style='FontName=Arial Black,Bold=-1,FontSize=26',split [a][b];[a] palettegen [p];[b][p] paletteuse" ./meme.gif
+
 
 ## VLC
 
