@@ -72,7 +72,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   * Extract a segment of a video and produce a gif animation out of it. The extracted fragment is from the absolute time reference of `00:24:52.4` to `00:24:57.0`. The first video stream is selected (`[0:v]`), and the audio naturraly discarded. Framerate is reduced to 12 fps, and horizontal size to 480 pixels while keeping the aspect ratio. It use special filters to [generate a global optimized color palette](http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html) limited to 64 colors. The first subtitle track (`si=0`) embedded in the original `source.mp4` file is burned down, in a bold Arial Black font at 26pt (as per [ASS specs](http://moodub.free.fr/video/ass-specs.doc)).
 
         :::bash
-        $ ffmpeg -i ./source.mp4 -ss 00:24:52.4 -to 00:24:57.0 -filter_complex "[0:v] fps=12,scale=width=480:height=-1,subtitles=source.mp4:si=0:force_style='FontName=Arial Black,Bold=-1,FontSize=26',split [a][b];[a] palettegen=64 [p];[b][p] paletteuse" ./meme.gif
+        $ ffmpeg -i ./source.mp4 -ss 00:24:52.4 -to 00:24:57.0 -filter_complex "[0:v] fps=12,scale=width=480:height=-1:flags=lanczos,subtitles=source.mp4:si=0:force_style='FontName=Arial Black,Bold=-1,FontSize=26',split [a][b];[a] palettegen=64 [p];[b][p] paletteuse" ./meme.gif
 
       To pinpoint the right moment to cut your segment, here is a variation of the above to produce a set of timecoded frames with embeded subtitles for preview:
   
