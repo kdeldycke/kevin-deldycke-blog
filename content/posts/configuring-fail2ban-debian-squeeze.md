@@ -7,12 +7,12 @@ tags: Apache, Exim, fail2ban, security, Server, SSH, Web
 
 This always start with a package installation:
 
-    :::bash
+    :::shell-session
     $ aptitude install fail2ban
 
 Then I simply create a local configuration file where I'll put all my custom config:
 
-    :::bash
+    :::shell-session
     $ touch /etc/fail2ban/jail.local
 
 Here is the content of that file:

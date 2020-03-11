@@ -7,67 +7,67 @@ tags: CLI, database, Linux, PostgreSQL, SQL, Regular expression
 
   * Update the default configuration to allow direct authentication from the local machine:
 
-        :::bash
+        :::shell-session
         $ sed -i 's/^local\s\+all\s\+all\s\+ident/local all all trust/g' /etc/postgresql/8.4/main/pg_hba.conf
 
   * Same as above but for local IPv4 and IPv6 connexions:
 
-        :::bash
+        :::shell-session
         $ sed -i 's/^host\s\+all\s\+all\s\+\(.*\)\s\+md5/host all all \1 trust/g' /etc/postgresql/8.4/main/pg_hba.conf
 
   * List databases:
 
-        :::bash
+        :::shell-session
         $ psql --list -U kevin
 
   * Create a new `kevin_db` database with the `kevin` user:
 
-        :::bash
+        :::shell-session
         $ createdb -U kevin kevin_db
 
   * Remove the database we created above:
 
-        :::bash
+        :::shell-session
         $ dropdb kevin_db -U kevin
 
   * To connect to a particular database:
 
-        :::bash
+        :::shell-session
         $ psql -d database_id
 
   * Return the result of a query by aligning its row in a single line, separated by a space ([source](https://stackoverflow.com/a/1252191)):
 
-        :::bash
+        :::shell-session
         $ psql --tuples-only --no-align -d database_id -c "SELECT id FROM res_users;" | sed ':a;N;$!ba;s/\n/ /g'
 
   * Show us how a table of a specific database can be recreated:
 
-        :::bash
+        :::shell-session
         $ pg_dump my_database --schema-only --table=my_table
 
   * Dump a database in a compressed format:
 
-        :::bash
+        :::shell-session
         $ pg_dump my_database -v --format=c --file=/var/lib/postgresql/my_database-db-2011-12-19.dump
 
   * Restore a compressed dump:
 
-        :::bash
+        :::shell-session
         $ pg_restore -U my_user -d my_database /var/lib/postgresql/my_database-db-2011-12-19.dump
 
   * Import an SQL file to a database:
 
-        :::bash
+        :::shell-session
         $ psql --username kevin -d kevin_db < ./database_dump.sql
 
   * Search if `kevin` is a PostgreSQL user:
 
-        :::bash
+        :::shell-session
         $ sudo -u postgres psql --tuples-only --no-align --command "SELECT usename FROM pg_user;" | grep --quiet 'kevin' && echo 'User found!' || echo 'User not found!'
 
   * Force rebuilding of all caches of a database:
 
-        :::bash
+        :::shell-session
         $ psql -d db_id --command "REINDEX DATABASE db_id;"
 
   * Set the owner of a database:
@@ -77,12 +77,12 @@ tags: CLI, database, Linux, PostgreSQL, SQL, Regular expression
 
   * Set the owner of all tables from the `MY_DB_ID` database to `MY_DB_USER` ([source](https://stackoverflow.com/questions/1348126/modify-owner-on-all-tables-simultaneously-in-postgresql)):
 
-        :::bash
+        :::shell-session
         $ for tbl in `psql -qAt -c "SELECT tablename FROM pg_tables WHERE schemaname = 'public';" MY_DB_ID` ; do psql -c "ALTER TABLE $tbl OWNER TO MY_DB_USER" MY_DB_ID ; done
 
   * And to run the command above as the `postgres` user, while fixing sequences and views too, do:
 
-        :::bash
+        :::shell-session
         $ su - postgres <<-'.'
             DB_NAME=testdb
             DB_USER=openerp
@@ -93,22 +93,22 @@ tags: CLI, database, Linux, PostgreSQL, SQL, Regular expression
 
   * Remove from a table all rows older than a month:
 
-        :::bash
+        :::shell-session
         $ sudo -u postgres psql -d database_id  --command "DELETE FROM smile_log WHERE log_date > current_date - interval '1 month';"
 
   * Extract an image that was saved in the database as base64 content, and save it on the file system:
 
-        :::bash
+        :::shell-session
         $ psql -d my_database -tc "COPY (SELECT decode(convert_from(image_bin, 'UTF-8'), 'base64') FROM res_partner WHERE id = 25) TO '/var/lib/postgresql/logo.png';"
 
   * Monitor queries being run in real time:
 
-        :::bash
+        :::shell-session
         $ watch -n 1 'sudo -u postgres psql --tuples-only --command "SELECT datname, procpid, date_trunc(\$\$second\$\$, age(current_timestamp, xact_start)), current_query FROM pg_stat_activity;"'
 
   * Disable all triggers of a table, excluding triggers that are used to implement foreign key constraints:
 
-        :::bash
+        :::shell-session
         $ ALTER TABLE table_id DISABLE TRIGGER ALL;
 
   * List all constraints of your database ([source](https://solaimurugan.blogspot.com/2010/10/list-out-all-forien-key-constraints.html)):

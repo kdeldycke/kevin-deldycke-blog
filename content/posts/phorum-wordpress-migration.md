@@ -20,7 +20,7 @@ The script requires the following python modules:
 
 They can easely be installed on Debian with the following commands:
 
-    :::bash
+    :::shell-session
     $ aptitude install python-pip python-lxml
     $ pip install PyMySQL bbcode
 

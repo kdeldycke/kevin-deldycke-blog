@@ -19,13 +19,13 @@ To prevent any big mistake, we'll test our commands on a local subversion reposi
 
 Let's create one:
 
-    :::bash
+    :::shell-session
     $ rm -rf svn-repo
     $ svnadmin create ./svn-repo
 
 Now we'll launch a local Subversion server with a minimal config:
 
-    :::bash
+    :::shell-session
     $ sed -i 's/# password-db = passwd/password-db = passwd/' ./svn-repo/conf/svnserve.conf
     $ echo "kevin = kevin" >> ./svn-repo/conf/passwd
     $ kill `ps -ef | grep svnserve | awk '{print $2}'`
@@ -33,7 +33,7 @@ Now we'll launch a local Subversion server with a minimal config:
 
 To test our server, let's checkout a local working copy from it:
 
-    :::bash
+    :::shell-session
     $ rm -rf svn-working-copy
     $ svn co svn://localhost:3690 svn-working-copy
     $ cd svn-working-copy/
@@ -41,7 +41,7 @@ To test our server, let's checkout a local working copy from it:
 
 To simulate an already active Subversion repository, we'll make a first commit with a structure mimicking [WordPress' plugin repository](https://plugins.trac.wordpress.org):
 
-    :::bash
+    :::shell-session
     $ mkdir -p e107-importer/{trunk,branches,tags}
     $ svn add *
     $ svn commit -m "Create a WordPress-like repository structure" --username kevin
@@ -50,7 +50,7 @@ To simulate an already active Subversion repository, we'll make a first commit w
 
 Now that we have a place to hack, we can experiment on Git side. We start with a copy of my plugin repository:
 
-    :::bash
+    :::shell-session
     $ cd ..
     $ rm -rf e107-importer
     $ git clone git@github.com:kdeldycke/e107-importer.git
@@ -58,18 +58,18 @@ Now that we have a place to hack, we can experiment on Git side. We start with a
 
 Thanks to [git-svn](https://www.kernel.org/pub/software/scm/git/docs/git-svn.html), we can attach a remote Subversion repository:
 
-    :::bash
+    :::shell-session
     $ git svn init --trunk=e107-importer/trunk --branches=e107-importer/branches --tags=e107-importer/tags --username kevin  svn://localhost:3690
 
 Get get a copy of Subversion's content:
 
-    :::bash
+    :::shell-session
     $ git svn fetch
     r1 = d969aa9a11684a1cd2ba0b3eab0a3ee72a62af51 (refs/remotes/trunk)
 
 Now we will rebase our whole Git tree to Subversion's trunk:
 
-    :::bash
+    :::shell-session
     $ git rebase trunk
 
 According gitg, the result of this is 2 parallel trees:
@@ -83,7 +83,7 @@ I resigned myself and passed over this. After all, the initial commit played its
 
 As for the tags, I just re-added them by hand. I forced their creation, as Git keeps them attached to the original parallel tree:
 
-    :::bash
+    :::shell-session
     $ git tag -f "e107-importer-0.1" 728ec8689d13350bbfc1f2d9dc17dda2b8a8fdbf
     $ git tag -f "e107-importer-0.2" 8049b92265a41f594e97020bae6f3aa74b6a7fb1
     $ git tag -f "e107-importer-0.3" 9505aa0656ba61f39cd6cb91c76c1e7279c68473
@@ -96,12 +96,12 @@ As for the tags, I just re-added them by hand. I forced their creation, as Git k
 
 Now we are ready to push the code to the remote Subversion repository:
 
-    :::bash
+    :::shell-session
     $ git svn dcommit
 
 Things seems to have worked, as if you go back to your local copy of the simulated remote SVN, you'll get all your code base and its history:
 
-    :::bash
+    :::shell-session
     $ cd ..
     $ cd svn-working-copy
     $ svn up
@@ -111,7 +111,7 @@ If commit order is preserved, dates are not, because unlike Git, Subversion only
 
 But here I was hoping that Git-svn was smart enough to create tags automatically. They weren't, and my `tags` folder remained empty. That may be due to the nature of tags in Subversion, which are just branches. I don't know. At the end I just decided to create tags by hand on Subversion side:
 
-    :::bash
+    :::shell-session
     $ svn copy svn://localhost:3690/e107-importer/trunk@2  svn://localhost:3690/e107-importer/tags/0.1 -m "Tag e107-importer 0.1"
     $ svn copy svn://localhost:3690/e107-importer/trunk@4  svn://localhost:3690/e107-importer/tags/0.2 -m "Tag e107-importer 0.2"
     $ svn copy svn://localhost:3690/e107-importer/trunk@5  svn://localhost:3690/e107-importer/tags/0.3 -m "Tag e107-importer 0.3"
@@ -128,13 +128,13 @@ Now that our commit simulation worked somehow, we can perform them in the real w
 
 First, initialize a copy of the Git repository:
 
-    :::bash
+    :::shell-session
     $ rm -rf e107-importer-git
     $ git clone git@github.com:kdeldycke/e107-importer.git e107-importer-git
 
 Let's attach Subversion to Git:
 
-    :::bash
+    :::shell-session
     $ cd e107-importer-git
     $ git svn init --trunk=trunk --branches=branches --tags=tags https://plugins.svn.wordpress.org/e107-importer
 
@@ -142,7 +142,7 @@ Here you might want to do a `git svn fetch` as we did before. But this will take
 
 To speed things up, and [following a tip from Nicolas Kuttler](https://www.nkuttler.de/post/using-git-for-wordpress-development/), we'll search for the revision we're interested in (the start of our plugin subfolder life), then fetch from here:
 
-    :::bash
+    :::shell-session
     $ svn log --limit 1 https://plugins.svn.wordpress.org/e107-importer
     ------------------------------------------------------------------------
     r333566 | plugin-master | 2011-01-17 17:09:40 +0100 (Mon, 17 Jan 2011) | 1 line
@@ -154,7 +154,7 @@ To speed things up, and [following a tip from Nicolas Kuttler](https://www.nkutt
 
 And now we can send our massive payload, after rebasing our `master` branch to SVN's `trunk`:
 
-    :::bash
+    :::shell-session
     $ git rebase trunk
     $ git svn dcommit --username=Coolkevman
 
@@ -162,12 +162,12 @@ We can then [contemplate our work in the official WordPress plugin repository](h
 
 There is one problem though: git-svn has [left empty folders because of renaming](https://plugins.trac.wordpress.org/changeset/336234). Let's fix this:
 
-    :::bash
+    :::shell-session
     $ svn rm https://plugins.svn.wordpress.org/e107-importer/trunk/bbcode -m "Git-svn doesn't delete empty folders on move." --username=Coolkevman
 
 Last thing to do is to tag our old versions on Subversion, as we did in our simulation:
 
-    :::bash
+    :::shell-session
     $ svn copy https://plugins.svn.wordpress.org/e107-importer/trunk@336229 https://plugins.svn.wordpress.org/e107-importer/tags/0.1 -m "Tag e107-importer 0.1"
     $ svn copy https://plugins.svn.wordpress.org/e107-importer/trunk@336231 https://plugins.svn.wordpress.org/e107-importer/tags/0.2 -m "Tag e107-importer 0.2"
     $ svn copy https://plugins.svn.wordpress.org/e107-importer/trunk@336232 https://plugins.svn.wordpress.org/e107-importer/tags/0.3 -m "Tag e107-importer 0.3"
@@ -186,7 +186,7 @@ All of the above only works with an newly created plugin structure on WordPress 
 
 First, let's make our life miserable and delete all our local repositories:
 
-    :::bash
+    :::shell-session
     $ cd ..
     $ rm -rf e107-importer-git
 
@@ -194,7 +194,7 @@ Now, if we replay the steps above, the `git rebase trunk` command will ends with
 
 This involves [Git's graft](https://git.wiki.kernel.org/index.php/GraftPoint):
 
-    :::bash
+    :::shell-session
     $ git clone git@github.com:kdeldycke/e107-importer.git e107-importer-git
     $ cd e107-importer-git
     $ git svn init --trunk=trunk --branches=branches --tags=tags https://plugins.svn.wordpress.org/e107-importer
@@ -213,7 +213,7 @@ The last command will not end well, with Git complaining about unmerged differen
 
 Well, that's what I exactly did:
 
-    :::bash
+    :::shell-session
     $ git rebase --interactive --preserve-merges refs/remotes/trunk
     $ git svn dcommit
 

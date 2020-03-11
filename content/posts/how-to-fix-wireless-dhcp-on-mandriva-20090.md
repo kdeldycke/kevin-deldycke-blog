@@ -24,6 +24,6 @@ So I replaced it by `dhcpcd`, and against all expectations, it worked!
 
 And to not be annoyed by `dhcp_client` in the future, it's wise to definitely remove it:
 
-    :::bash
+    :::shell-session
     $ urpmi dhcp_client
 

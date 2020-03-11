@@ -10,12 +10,12 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
   * Run a process detached to the current terminal:
 
-        :::bash
+        :::shell-session
         $ nohup my_command &
 
   * Run a process with a shell for a system user which has none (i.e. its default shell is set to `/bin/false` in `/etc/passwd`):
 
-        :::bash
+        :::shell-session
         $ su sys_user -s /bin/bash -c "my_command"
 
 
@@ -23,42 +23,42 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
   * Get the exit code of the latest runned command:
 
-        :::bash
+        :::shell-session
         $ echo $?
 
   * Run the last command as `root` ([source](https://blog.hardikr.com/post/2337320222/sudo-previous-command)):
 
-        :::bash
+        :::shell-session
         $ sudo !!
 
   * Show the user under which I'm currently logged in:
 
-        :::bash
+        :::shell-session
         $ whoami
         
   * List of most used commands:
 
-        :::bash
+        :::shell-session
         $ history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 
   * List cron jobs of the current user:
 
-        :::bash
+        :::shell-session
         $ crontab -l
 
   * If you have the following error:
 
-        :::bash
+        :::shell-session
         $ -bash: ./myscript.sh: /bin/bash^M: bad interpreter: No such file or directory
 
     Then the fix consist of removing the bad characters:
 
-        :::bash
+        :::shell-session
         $ sed -i 's/\r//' ./myscript.sh
 
   * Extract strings from a binary file:
 
-        :::bash
+        :::shell-session
         $ strings ./firmware.bin | less
 
 
@@ -66,7 +66,7 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
   * Free up some memory by clearing RAM caches ([source](https://www.scottklarr.com/topic/134/linux-how-to-clear-the-cache-from-memory/)):
 
-        :::bash
+        :::shell-session
         $ sync ; echo 3 > /proc/sys/vm/drop_caches
 
 
@@ -74,12 +74,12 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
   * Display which distro is running the system ([source](https://news.ycombinator.com/item?id=1973441)):
 
-        :::bash
+        :::shell-session
         $ lsb_release -a
 
     or
 
-        :::bash
+        :::shell-session
         $ cat /etc/lsb-release
 
 
@@ -87,13 +87,13 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
   * Disable a service on Debian/Ubuntu, then re-enable it:
 
-        :::bash
+        :::shell-session
         $ update-rc.d my-service-name remove
         $ update-rc.d my-service-name defaults
 
   * Same thing as above but on a RedHat-like system:
 
-        :::bash
+        :::shell-session
         $ chkconfig sshd --del
         $ chkconfig sshd --add
 
@@ -102,7 +102,7 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
   * Speed-up Grub boot, but always show the boot menu:
   
-        :::bash
+        :::shell-session
         $ sudo sed -i 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=1/g' /etc/default/grub
         $ sudo sed -i 's/GRUB_HIDDEN_TIMEOUT/#GRUB_HIDDEN_TIMEOUT/g' /etc/default/grub
         $ sudo update-grub
@@ -112,7 +112,7 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
   * List fonts available on the system:
   
-        :::bash
+        :::shell-session
         $ fc-list | cut -d ':' -f 2 | sort | uniq
 
 

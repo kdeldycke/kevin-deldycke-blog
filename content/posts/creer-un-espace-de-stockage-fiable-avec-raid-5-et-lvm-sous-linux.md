@@ -35,12 +35,12 @@ _Note_: A partir de la 10.1, la version de `webmin` fournie avec la Mandrake sup
 
 Installation de mdadm:
 
-    :::bash
+    :::shell-session
     $ urpmi mdadm
 
 Création des matrices:
 
-    :::bash
+    :::shell-session
     $ mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/hda2 /dev/sda2 /dev/sdb2
     $ mdadm --create --verbose /dev/md1 --level=5 --raid-devices=3 /dev/hda3 /dev/sda1 /dev/sdb1
     $ mdadm --create --verbose /dev/md2 --level=5 --raid-devices=3 /dev/hda4 /dev/sda3 /dev/sdb3
@@ -65,14 +65,14 @@ Lors de la création, les paramètres par défaut sont suffisants. Pour informat
 
 Avant d'aller plus loin, il faut attendre que les matrices soient construites:
 
-    :::bash
+    :::shell-session
     $ watch -n1 'cat /proc/mdstat'
 
 Dans mon cas, cela à nécessité entre deux et trois heures pour chaque unité RAID.
 
 _Note_: avec la Mandrake 10.1, lors de la création des matrices RAID, on aurait eu des problèmes du type `raidstart failed : /dev/md1: No such file or directory`, qui peuvent être résolus en créant les device manuellement:
 
-    :::bash
+    :::shell-session
     $ mknod /dev/md0 b 9 0
     $ mknod /dev/md1 b 9 1
     $ mknod /dev/md2 b 9 2
@@ -85,21 +85,21 @@ J'ai choisi LVM pour agréger les unités RAID, pour bénéficier d'un redimensi
 
 Installation de LVM:
 
-    :::bash
+    :::shell-session
     $ urpmi lvm2
 
 On peut consulter la liste des disques parents sur le système avec `lvmdiskscan`.
 
 Ensuite il faut créer un volume physique (PV = Physical Volume) pour chaque unité RAID:
 
-    :::bash
+    :::shell-session
     $ pvcreate /dev/md0
     $ pvcreate /dev/md1
     $ pvcreate /dev/md2
 
 Créons maintenant un groupe de volumes contenant nos trois partitions :
 
-    :::bash
+    :::shell-session
     $ vgcreate vg01 /dev/md0 /dev/md1 /dev/md2
 
 (marche pas&nbsp;???)
@@ -108,7 +108,7 @@ Créons maintenant un groupe de volumes contenant nos trois partitions :
 
 Si vous voulez utiliser du RAID linéaire plutôt que LVM, il faut créer une nouvelle unité RAID sur la base des trois premières:
 
-    :::bash
+    :::shell-session
     $ mdadm --create --verbose /dev/md3 --level=linear --raid-devices=3 /dev/md0 /dev/md1 /dev/md2
 
 Puis penser à mettre à jour `/etc/mdadm.conf`:
@@ -131,14 +131,14 @@ Puis penser à mettre à jour `/etc/mdadm.conf`:
 
 Formater en xfs:
 
-    :::bash
+    :::shell-session
     $ mkfs.xfs -f /dev/md3
 
 J'ai choisi xfs comme filesystem car il peut être agrandit à chaud, lorsque la partition est montée.
 
 Pour monter le tout:
 
-    :::bash
+    :::shell-session
     $ mkdir -p /mnt/data
     $ mount /dev/md3 /mnt/data
 
@@ -153,7 +153,7 @@ Et enfin, pour le montage automatique au démarrage de notre serveur, il faut aj
 
     Si une partition est éjectée d'une unité raid (par exemple `sda1` sur `md1`), il faut faire:
 
-        :::bash
+        :::shell-session
         $ cat /proc/mdstat
         $ mdadm --examine /dev/sda1
         $ mdadm /dev/md1 -a /dev/sda1
@@ -165,7 +165,7 @@ Et enfin, pour le montage automatique au démarrage de notre serveur, il faut aj
 
     La commande est du type:
 
-        :::bash
+        :::shell-session
         $ mdadm --stop /dev/md0
         $ mdadm --assemble /dev/md0
 
@@ -175,7 +175,7 @@ Et enfin, pour le montage automatique au démarrage de notre serveur, il faut aj
 
     La commande suivante créée une unité RAID 5 sur 3 disques durs, en indiquant que le premier est absent via le mot clé `missing`:
 
-        :::bash
+        :::shell-session
         $ mdadm --create /dev/md0 --level=5 --raid-devices=3 missing /dev/hda1 /dev/sda1
 
 ## De la lecture complémentaire sur RAID 5 et LVM

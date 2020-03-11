@@ -9,7 +9,7 @@ This post is not about optimization: it only describe a sure and fast way to get
 
 First, we'll get all our packages from an up-to-date [DotDeb repository](https://www.dotdeb.org/). If this is not already done, add those repositories to aptitude:
 
-    :::bash
+    :::shell-session
     $ echo "deb https://packages.dotdeb.org squeeze all" > /etc/apt/sources.list.d/squeeze-dotdeb.list
     $ gpg --keyserver keys.gnupg.net --recv-key 89DF5277
     $ gpg -a --export 89DF5277 | apt-key add -
@@ -17,7 +17,7 @@ First, we'll get all our packages from an up-to-date [DotDeb repository](https:/
 
 Now we can install the whole stack:
 
-    :::bash
+    :::shell-session
     $ aptitude install nginx
     $ aptitude install php5-fpm php5-mysql php5-gd php5-curl
     $ aptitude install mysql-server
@@ -29,7 +29,7 @@ FYI, here is the list of versions I installed:
 
 As a way to test that our setup is working, we'll serve a simple PHP file:
 
-    :::bash
+    :::shell-session
     $ mkdir -p /var/www/example.com/
     $ cd /var/www/example.com/
     $ echo "
@@ -39,7 +39,7 @@ As a way to test that our setup is working, we'll serve a simple PHP file:
 
 Now let's create a minimal Nginx configuration file for this site:
 
-    :::bash
+    :::shell-session
     $ touch /etc/nginx/sites-available/example.com
 
 In this brand new file,  put the following directives:
@@ -95,7 +95,7 @@ Now it's time to create the `/etc/nginx/php.conf` file referenced in the Nginx c
 
 Finally you can activate the site configuration and restart the whole stack:
 
-    :::bash
+    :::shell-session
     $ ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
     $ /etc/init.d/mysql restart
     $ /etc/init.d/php5-fpm restart

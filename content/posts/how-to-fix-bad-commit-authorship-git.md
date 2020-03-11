@@ -15,7 +15,7 @@ Let's fix this!
 
 First, get a local copy of the remote Git repository:
 
-    :::bash
+    :::shell-session
     $ git clone git@github.com:kdeldycke/kev-code.git
 
 What was missing in my `~/.gitconfig` file were the following options:
@@ -32,7 +32,7 @@ These values can be set with Git command line with the following syntax:
 
 The commit I want to change is the latest in history, so I'll use the `--amend` directive to make my changes. Putting all things together, our final command becomes:
 
-    :::bash
+    :::shell-session
     $ git commit --amend --author 'Kevin Deldycke <kevin@deldycke.com>'
 
 After this, here is how the local branches looks like in [gitg](https://trac.novowork.com/gitg/):
@@ -61,7 +61,7 @@ Notice the fixed authorship. The commit ID was also updated as it's just a hash 
 
 Now we can push our changes back to the remote repository:
 
-    :::bash
+    :::shell-session
     $ git push origin
 
 But this doesn't work and throw the following error:
@@ -75,7 +75,7 @@ This is Git protection mechanism in action. Modifying already-published commits 
 
 In our case we will force the remote repository to take our changes:
 
-    :::bash
+    :::shell-session
     $ git push origin +master:master
 
 As I told you before this is bad, but nobody really cares: I'm the only person working on this repository! ;)

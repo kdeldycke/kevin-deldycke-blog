@@ -9,21 +9,21 @@ Last week I detailed how I configured [Mailman with Exim and Nginx on a Debian S
 
 First, I remove the default `mailman` meta-list as I will retrieve the one from the old server:
 
-    :::bash
+    :::shell-session
     $ /etc/init.d/mailman stop
     $ rmlist -a mailman
     $ /var/lib/mailman/bin/genaliases
 
 Then I copy mailing-list data from the old server to the new:
 
-    :::bash
+    :::shell-session
     $ rsync --progress -vrae "ssh -C" /var/lib/mailman/lists    root@new.example.com:/var/lib/mailman/
     $ rsync --progress -vrae "ssh -C" /var/lib/mailman/archives root@new.example.com:/var/lib/mailman/
     $ rsync --progress -vrae "ssh -C" /var/lib/mailman/data     root@new.example.com:/var/lib/mailman/
 
 Back to our new server, fix some rights, check all lists are there, and run the automatic update:
 
-    :::bash
+    :::shell-session
     $ chown -R list:list /var/lib/mailman/
     $ /etc/init.d/mailman start
     $ list_lists
@@ -31,7 +31,7 @@ Back to our new server, fix some rights, check all lists are there, and run the 
 
 Now let Mailman check its databases and fix permission:
 
-    :::bash
+    :::shell-session
     $ check_db -a -v
     $ check_perms -f -v
 
@@ -42,7 +42,7 @@ At this point you may get this error in your `/var/log/exim4/mainlog`:
 
 This can be fixed with ([source](https://bugs.launchpad.net/ubuntu/+source/mailman/+bug/728879)):
 
-    :::bash
+    :::shell-session
     $ chgrp Debian-exim /var/lib/mailman/data/virtual-mailman
 
 You may also encounter this error:
@@ -52,12 +52,12 @@ You may also encounter this error:
 
 In this case regenerating Mailman aliases should fix the issue:
 
-    :::bash
+    :::shell-session
     $ /var/lib/mailman/bin/genaliases
 
 By the way, to test that Exim is routing mails as expected, your can use the following command:
 
-    :::bash
+    :::shell-session
     $ exim -bt kev-test@lists.example.com
     R: system_aliases for kev-test@lists.example.com
     R: mailman_router for kev-test@lists.example.com

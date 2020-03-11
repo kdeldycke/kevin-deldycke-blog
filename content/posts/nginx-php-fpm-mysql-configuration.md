@@ -140,7 +140,7 @@ repository by letting Nginx generate index pages.
 
 Then don't forget to activate this site:
 
-    :::bash
+    :::shell-session
     $ ln -s /etc/nginx/sites-available/my_wordpress /etc/nginx/sites-enabled/
 
 The file above refer to `/etc/nginx/wordpress.conf` which is where I place all
@@ -270,7 +270,7 @@ have to change `/etc/nginx/nginx.conf` itself:
 
 That's all for our customizations. We can now restart all our servers:
 
-    :::bash
+    :::shell-session
     $ /etc/init.d/mysql restart
     $ /etc/init.d/php5-fpm restart
     $ /etc/init.d/nginx restart

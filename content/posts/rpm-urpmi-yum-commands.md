@@ -9,75 +9,75 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * List all installed packages:
 
-        :::bash
+        :::shell-session
         $ rpm -qa
 
   * Get the list of all installed packages and their architecture:
 
-        :::bash
+        :::shell-session
         $ rpm -qa --queryformat "%-40{NAME} %-8{ARCH}\n"
 
   * Same as above, but show `i586` packages only:
 
-        :::bash
+        :::shell-session
         $ rpm -qa --queryformat "%-40{NAME} %-8{ARCH}\n" | grep i586
 
   * Downgrade a package to an old version:
 
-        :::bash
+        :::shell-session
         $ wget ftp://ftp.repository.org/mandrakelinux/official/10.0/package-1.0-1mdk.i586.rpm
         $ rpm -Uvh --oldpackage package-1.0-1mdk.i586.rpm
 
   * Unpack/Deflate/Extract a RPM without installing it:
 
-        :::bash
+        :::shell-session
         $ rpm2cpio dummy.src.rpm | cpio -id
 
   * Evaluate `%mkrel 3` rpm macro:
 
-        :::bash
+        :::shell-session
         $ rpm --eval '%mkrel 3'
 
   * Force removal of a package that has problems with embedded "pre-" and/or "post-" scripts:
 
-        :::bash
+        :::shell-session
         $ rpm -e --noscripts packagename
 
 ## Urpmi
 
   * List all available packages with name containing `python`:
 
-        :::bash
+        :::shell-session
         $ urpmq --fuzzy python
 
   * Find which RPM contain the file named `dummy`:
 
-        :::bash
+        :::shell-session
         $ urpmf dummy
 
   * Get informations about the `dummy` RPM:
 
-        :::bash
+        :::shell-session
         $ urpmq -i dummy
 
   * Get the list of all RPMs that require `python-psyco` package:
 
-        :::bash
+        :::shell-session
         $ urpmf --requires python-psyco
 
   * Get the list of all RPMs that provide `python-psyco` package:
 
-        :::bash
+        :::shell-session
         $ urpmf --provides python-psyco
 
   * I use this command in a cron entry to update automatically and regularly my Mandriva:
 
-        :::bash
+        :::shell-session
         $ /usr/sbin/urpmi.update -a && /usr/sbin/urpmi --update --auto --auto-select
 
   * Generate urpmi repository index and metadata of the current folder:
 
-        :::bash
+        :::shell-session
         $ genhdlist ./
 
   * [APT/URPMI commands list](https://linux.ensimag.fr/urpmiapt.html)
@@ -86,31 +86,31 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
 
   * Install a new package:
 
-        :::bash
+        :::shell-session
         $ yum install subversion
 
   * Search for packages containing the `x11` string:
 
-        :::bash
+        :::shell-session
         $ yum search x11
 
   * Get the list of packages that provide Python's Subversion bindings:
 
-        :::bash
+        :::shell-session
         $ yum provides "*/svn/__init__.py"
 
   * Update repository index:
 
-        :::bash
+        :::shell-session
         $ yum update
 
   * Clear all caches (sometimes required to force a repository index update):
 
-        :::bash
+        :::shell-session
         $ yum clean all
 
   * Generate [Yum](https://yum.baseurl.org) repository index and metadata of the current folder:
 
-        :::bash
+        :::shell-session
         $ createrepo -v ./
 

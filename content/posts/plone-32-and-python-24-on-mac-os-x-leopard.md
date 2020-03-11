@@ -50,14 +50,14 @@ Mac OS X copy.
 First we create our project directory, then we download, from its SVN
 repository, the bootstrap code of buildout:
 
-    :::bash
+    :::shell-session
     $ mkdir -p ~/plone-vanilla
     $ cd ~/plone-vanilla
     $ curl https://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py --output ./bootstrap.py
 
 Then we create our buildout config file and edit it:
 
-    :::bash
+    :::shell-session
     $ touch ./buildout.cfg
     $ vi ./buildout.cfg
 
@@ -95,14 +95,14 @@ buildout to install Plone 3.2.3, Zope 2.10.8 and all their dependencies:
 
 Now let's build our Plone and Zope environnement:
 
-    :::bash
+    :::shell-session
     $ python2.4 ./bootstrap.py
     $ ./bin/buildout
 
 At the end, if your build process didn't fail, you'll be able to start your
 Zope server:
 
-    :::bash
+    :::shell-session
     $ ./bin/zope-instance
     program: /Users/kevin/plone-vanilla/parts/zope-instance/bin/runzope
     daemon manager not running

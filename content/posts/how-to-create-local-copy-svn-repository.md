@@ -16,7 +16,7 @@ available with the standard Subversion distribution.
 
 First, let's create an empty local SVN repository:
 
-    :::bash
+    :::shell-session
     $ rm -rf ./svn-repo
     $ svnadmin create ./svn-repo
     $ sed -i 's/# password-db = passwd/password-db = passwd/' ./svn-repo/conf/svnserve.conf
@@ -27,7 +27,7 @@ First, let's create an empty local SVN repository:
 Now we have to make sure the synchronization utility is allowed to do anything
 it wants on our local repository:
 
-    :::bash
+    :::shell-session
     $ echo "#!/bin/sh" > ./svn-repo/hooks/pre-revprop-change
     $ chmod 755 ./svn-repo/hooks/pre-revprop-change
 
@@ -35,11 +35,11 @@ Then we have to initialize the synchronization between the remote SVN
 (`https://svn.example.com/svn/internal-project`) and the local SVN
 (`svn://localhost:3690`):
 
-    :::bash
+    :::shell-session
     $ svnsync init --sync-username "kevin" --sync-password "kevin" --source-username "kevin@example.com" --source-password "XXXXXX" svn://localhost:3690 https://svn.example.com/svn/internal-project
 
 Once all of this configuration is done, we can start dumping the content of
 the remote repository to our local copy:
 
-    :::bash
+    :::shell-session
     $ svnsync --non-interactive --sync-username "kevin" --sync-password "kevin" --source-username "kevin@example.com" --source-password "XXXXXX" sync svn://localhost:3690

@@ -15,19 +15,19 @@ Now that you have access to Amazon's cloud, let's create a bucket on S3. I used 
 
 Duplicity can use the [cheaper RRS storage](https://aws.amazon.com/about-aws/whats-new/2010/05/19/announcing-amazon-s3-reduced-redundancy-storage/), but you need at least version 0.6.09. Having a Debian Squeeze, the only way to get a recent version is to install it from the backports:
 
-    :::bash
+    :::shell-session
     $ apt-get -t squeeze-backports install duplicity python-boto
 
 Then I created a simple symmetric key with GPG:
 
-    :::bash
+    :::shell-session
     $ gpg --gen-key
 
 You absolutely need to provide a passphrase, else Duplicity will refuse to run.
 
 Now update the script below with the GPG key passphrase and your AWS credentials:
 
-    :::bash
+    :::shell-session
     # Do not let this script run more than once
     [ `ps axu | grep -v "grep" | grep --count "duplicity"` -gt 0 ] && exit 1
 
@@ -59,7 +59,7 @@ Before running duplicity, the script will dump all MySQL databases to a plain-te
 
 I saved the script above in `/home/kevin/s3-backup.sh` and `cron`-ed it:
 
-    :::bash
+    :::shell-session
     $ chmod 755 /home/kevin/s3-backup.sh
     $ echo "
     # Backup everything to an Amazon S3 storage

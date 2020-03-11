@@ -7,32 +7,32 @@ tags: CLI, i18n, l10n, Linux, translation
 
   * Check a `.po` file:
 
-        :::bash
+        :::shell-session
         $ msgfmt -c -v -o /dev/null file.po
 
   * Wipe out a `.po` file and keep only translated messages:
 
-        :::bash
+        :::shell-session
         $ msgattrib --translated -o cleaned.po messy.po
 
   * Delete duplicate messages in a `.po` file:
 
-        :::bash
+        :::shell-session
         $ msguniq -o no_duplicate.po duplicate_content.po
 
   * Show differences between two `.po` files (thanks to Jérome!):
 
-        :::bash
+        :::shell-session
         $ msgcat -u file1.po file2.po > diff.po
 
   * Generate a `.mo` file from a `.po` file:
 
-        :::bash
+        :::shell-session
         $ msgfmt -o target.mo source.po
 
   * If you want to have command-line tools use raw string instead of localized ones, add the following directives to your `~/.bash_profile`:
 
-        :::bash
+        :::shell-session
         $ export LANGUAGE=C
         $ export LANG=C
         $ export LC_MESSAGES=C

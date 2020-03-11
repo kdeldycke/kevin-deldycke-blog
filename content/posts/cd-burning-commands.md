@@ -7,27 +7,27 @@ tags: burning, Compact disc, cdrdao, cdrecord, CLI, DVD, Hardware, Linux, mkisof
 
   * List all CD devices:
 
-        :::bash
+        :::shell-session
         $ cdrdao scanbus
 
   * Blank a CD-RW:
 
-        :::bash
+        :::shell-session
         $ cdrdao blank --device ATA:0,1,0 --driver generic-mmc
 
   * Burn an ISO:
 
-        :::bash
+        :::shell-session
         $ cdrecord -v speed=8 dev=ATA:0,1,0 ./geexbox-0.98-fr.iso
 
   * Generate an ISO image of a CD-ROM:
 
-        :::bash
+        :::shell-session
         $ dd if=/dev/cdrom of=/tmp/cdrom-image.iso
 
   * Create an ISO from a local directory:
 
-        :::bash
+        :::shell-session
         $ mkisofs -R -r -l -J -V volid -o /tmp/cdrom-image.iso src
 
     `volid` is the volume ID to be written into the master block;
@@ -38,16 +38,16 @@ tags: burning, Compact disc, cdrdao, cdrecord, CLI, DVD, Hardware, Linux, mkisof
 
   * Mount a local ISO image as if it's a physical CD-Rom:
 
-        :::bash
+        :::shell-session
         $ mount -t iso9660 -o loop /tmp/cdrom-image.iso /media/cd-image/
 
   * Mount an UDF file system image:
 
-        :::bash
+        :::shell-session
         $ fuseiso -p dvd.img /media/dvd-image/
 
   * Convert a [Nero's proprietary `.nrg` CD image](https://en.wikipedia.org/wiki/NRG_(file_format)) to standard ISO file:
 
-        :::bash
+        :::shell-session
         $ nrg2iso dvd-image.nrg dvd-image.iso
 

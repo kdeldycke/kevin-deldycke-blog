@@ -11,7 +11,7 @@ I recently had the oportunity to plug the [HP w2207h screen](https://amzn.com/B0
 
 The laptop is powered by an [Intel 945 graphic chip](https://en.wikipedia.org/wiki/Intel_GMA#GMA_950):
 
-    :::bash
+    :::shell-session
     $ lspci
     00:00.0 Host bridge: Intel Corporation Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub (rev 03)
     00:02.0 VGA compatible controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)

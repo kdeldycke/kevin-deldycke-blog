@@ -8,7 +8,7 @@ tags: apx, Debian, Debian Squeeze, munin, nginx, PHP, Server, Web
 Installing [APC](https://php.net/manual/en/book.apc.php) on Debian Squeeze is
 as simple as installing the package:
 
-    :::bash
+    :::shell-session
     $ aptitude install php5-apc
 
 In my case this package come from the PHP bundle distributed by the [Dotdeb
@@ -25,7 +25,7 @@ served locally. As you can read in my previous article, [my Munin is powered by
 Nginx](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/).
 So now we'll setup Nginx to serve this extra PHP file:
 
-    :::bash
+    :::shell-session
     $ mkdir -p /var/www/apc
     $ cd /var/www/apc
     $ wget https://munin-php-apc.googlecode.com/svn/trunk/php_apc/apc_info.php
@@ -61,14 +61,14 @@ PHP-FPM](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-s
 Let's get back to our Munin monitoring setup. I can restart now Nginx and check
 that I can access locally to my raw statistics:
 
-    :::bash
+    :::shell-session
     $ /etc/init.d/nginx reload
     $ wget http://localhost/apc_info.php
     $ wget http://localhost/nginx_status
 
 The last step is to install and configure the Munin plugin:
 
-    :::bash
+    :::shell-session
     $ aptitude install libwww-perl
     $ wget https://munin-php-apc.googlecode.com/svn/trunk/php_apc/php_apc_ --output-document=/usr/share/munin/plugins/php_apc_
     $ chmod -R 755 /usr/share/munin/plugins/

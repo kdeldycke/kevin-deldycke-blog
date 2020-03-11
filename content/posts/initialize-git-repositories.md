@@ -13,7 +13,7 @@ post why `git init` is not enough to me.
 To create a Git repository, nothing else is absolutely necessary than these few
 trivial commands:
 
-    :::bash
+    :::shell-session
     $ mkdir kev-code
     $ cd kev-code/
     $ git init
@@ -34,12 +34,12 @@ to mess up the history, until merging my changes back in the mainline tree.
 
 So, let's create an empty commit:
 
-    :::bash
+    :::shell-session
     $ git commit --allow-empty -m 'Initial commit'
 
 Then get the commit hash:
 
-    :::bash
+    :::shell-session
     $ git log
     commit 395290bcdb8ffccfbff89e42cb976077fbd3c1b7
     Author: Kevin Deldycke <kevin@deldycke.com>
@@ -49,7 +49,7 @@ Then get the commit hash:
 
 We now change the commit date of our first commit to epoch start:
 
-    :::bash
+    :::shell-session
     $ git filter-branch --env-filter '
     >     if [ $GIT_COMMIT = 395290bcdb8ffccfbff89e42cb976077fbd3c1b7 ]
     >     then
@@ -61,7 +61,7 @@ We now change the commit date of our first commit to epoch start:
 
 And check that the previous operation did what we expected:
 
-    :::bash
+    :::shell-session
     $ git log
     commit 8fe2934d1552c97246836987f0ea08e10ba749ae
     Author: Kevin Deldycke <kevin@deldycke.com>
@@ -74,14 +74,14 @@ Looks good!
 For convenience, we'll now attach a tag to this initial commit. Let's call it
 `init`:
 
-    :::bash
+    :::shell-session
     $ git tag "init"
 
 This will came handy later when we'll need to create a branch from here.
 
 It's time to push all changes to our brand new public repository:
 
-    :::bash
+    :::shell-session
     $ git remote add origin git@github.com:kdeldycke/kev-code.git
     $ git status
     # On branch master

@@ -9,13 +9,13 @@ Last week there was a power grid failure which break down my server's RAID array
 
 By using a combination of following commands, I was soon aware of the gravity of the situation:
 
-    :::bash
+    :::shell-session
     $ cat /proc/mdstat
     $ mdadm --examine /dev/sda1
 
 My `/dev/sda1` disk was kicked out of the array, so I did the right stuff which consisted of reconstructing the array:
 
-    :::bash
+    :::shell-session
     $ mdadm /dev/md0 -a /dev/sda1
 
 Then, in an unlucky combination of cosmic ray bombardment, spooky action at a distance and astrological misalignment, half-way to the end of the rebuilding process (which can take up to 5 hours), another disk failed! It was late, I was tired and utterly worried about losing 1.5 To of precious data. In such a bad shape, I was afraid to worsen the situation. So I decided to shutdown the server and sleep on the problem.
@@ -31,7 +31,7 @@ I skip here the epic substory in which I wasted days in a search of a working ke
 
 Eventually, I was able to analyze the situation in details. My first reflex? Check that disks are not physically dead:
 
-    :::bash
+    :::shell-session
     $ fdisk -l /dev/sda
     $ fdisk -l /dev/sdb
     $ fdisk -l /dev/sdc
@@ -40,7 +40,7 @@ Eventually, I was able to analyze the situation in details. My first reflex? Che
 
 The next step was to get informations about the RAID array itself using:
 
-    :::bash
+    :::shell-session
     $ mdadm --detail /dev/md0
 
 which output the status table below (probably inaccurate as I reconstructed it afterwards):
@@ -62,7 +62,7 @@ What this table told us?
 
 Then I stopped the array and tried to fearlessly (re)assemble it using 3 differents methods:
 
-    :::bash
+    :::shell-session
     $ mdadm -S /dev/md0
     $ mdadm -A /dev/md0
     $ mdadm --assemble /dev/md0 --verbose /dev/sd[abc]1
@@ -76,7 +76,7 @@ It always failed with messages like:
 
 So I examined each drive from `mdadm`'s point of view:
 
-    :::bash
+    :::shell-session
     $ mdadm -E /dev/sda1
     $ mdadm -E /dev/sdb1
     $ mdadm -E /dev/sdc1
@@ -93,33 +93,33 @@ which indicate that `sda1` and `sdc1` are somewhat synced (share the same number
 
 Here I've got the idea of recreating the raid array without `sdb1`, relying only on `sda1` and `sdc1`, by using the "magic" (hence dangerous) `--assume-clean` option. The latter doesn't build, erase or initialize a new array. It just try to assemble it "as is". Here is the command:
 
-    :::bash
+    :::shell-session
     $ mdadm --create /dev/md0 --assume-clean --level=5 --verbose --raid-devices=3 /dev/sda1 missing /dev/sdc1
 
 And it worked! :D
 
 I mounted the `md0` partition and cleaned it up:
 
-    :::bash
+    :::shell-session
     $ fsck.ext3 -v /dev/md0
     $ mount /dev/md0
 
 I updated my [mdadm](https://neil.brown.name/blog/mdadm) configuration before rebooting my server:
 
-    :::bash
+    :::shell-session
     $ mdadm --detail --scan >> /etc/mdadm/mdadm.conf
     $ vi /etc/mdadm/mdadm.conf
     $ reboot
 
 But history repeat itself, and again, the system hang up during boot. Except this time I knew what was happening: the boot process detected the remaining `sdb1` device as part of the old array (the one before the regeneration I did above) and tried to run it. [Remembering my last year post](https://kevin.deldycke.com/2007/03/how-to-recover-a-raid-array-after-having-zero-ized-superblocks/), I zero-ized the superblock of `sdb1`:
 
-    :::bash
+    :::shell-session
     $ mdadm -S /dev/md0
     $ mdadm --zero-superblock /dev/sdb1
 
 A server reboot proved I was right and my `md0` partition was automagically mounted in altered state:
 
-    :::bash
+    :::shell-session
     $ cat /proc/mdstat
     Personalities : [raid6] [raid5] [raid4]
     md0 : active raid5 sdb1[3] sda1[0] sdc1[2]
@@ -129,7 +129,7 @@ A server reboot proved I was right and my `md0` partition was automagically moun
 
 I just had to re-add `sdb1` to fill the available slot and update the mdadm configuration to get back my array in its initial state:
 
-    :::bash
+    :::shell-session
     $ mdadm --manage /dev/md0 --add /dev/sdb1
     $ mdadm --detail --scan >> /etc/mdadm/mdadm.conf
     $ vi /etc/mdadm/mdadm.conf

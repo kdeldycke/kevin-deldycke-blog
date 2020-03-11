@@ -11,6 +11,6 @@ I've upgraded my `TSSTcorp CD/DVDW TS-L632D` drive from the `SC02` to `SC04` fir
 
 By the way, to get the model name and revision of your optical drive under linux, use:
 
-    :::bash
+    :::shell-session
     $ cdrdao scanbus
 

@@ -9,7 +9,7 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
 
   * Convert several files from a format to another:
 
-        :::bash
+        :::shell-session
         $ convert img_*.bmp img_%04d.png
 
 
@@ -17,7 +17,7 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
 
   * Resize images of the current folder to progressive jpeg. Resized images will not be greater than 600x600, but the aspect ratio will be respected:
 
-        :::bash
+        :::shell-session
         $ convert -resize 600x600 -sharpen 1 -interlace Line * pict%04d.jpg
 
 
@@ -25,12 +25,12 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
 
   * Remove all whitespace (or any solid-color) surrounding the `original.png` image:
   
-        :::bash
+        :::shell-session
         $ convert ./original.png -trim ./trimmed.png
 
   * Add a 5% white border around the image:
   
-        :::bash
+        :::shell-session
         $ convert ./original.png -bordercolor White -border 5%x5% ./original-with-border.pmg
 
 
@@ -38,22 +38,22 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
 
   * Massive in-place optimization of all PNG images available in sub-directories:
 
-        :::bash
+        :::shell-session
         $ find ./ -iname "*.png" -exec pngcrush "{}" "{}.crushed" \; -exec mv "{}.crushed" "{}" \;
 
   * Same as above, but remove all known chunks, those encoding color profiles, gamma and text, and only keeps transparency chunks:
 
-        :::bash
+        :::shell-session
         $ find ./ -iname "*.png" -exec pngcrush -rem alla "{}" "{}.crushed" \; -exec mv "{}.crushed" "{}" \;
 
   * Lossless optimization of JPEG files:
 
-        :::bash
+        :::shell-session
         $ find . -iname "*.jpg" -exec jpegtran -optimize -outfile "{}.optimized.jpeg" "{}" \;
 
   * Convert a PNG file to an optimized JPEG:
 
-        :::bash
+        :::shell-session
         $ convert ./original.png TGA:- | cjpeg -optimize -progressive -quality 70 -outfile compressed-image.jpg -targa
 
 
@@ -61,15 +61,15 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
 
   * Remove all metadata of a JPEG file:
 
-        :::bash
+        :::shell-session
         $ exiftool -all= image.jpg
 
   * Prefix all JPEG filename with their EXIF date:
 
-        :::bash
+        :::shell-session
         $ for i in *.jpg; do exiv2 -v -r '%Y%m%d_%H%M%S_:basename:' rename "$i"; done
 
   * Remove recursively (and in-place) the color profile and comments embedded in all PNG images:
 
-        :::bash
+        :::shell-session
         $ mogrify -verbose -monitor -strip ./*.png

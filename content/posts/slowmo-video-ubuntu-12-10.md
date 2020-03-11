@@ -9,12 +9,12 @@ tags: video, Slow Motion, Ubuntu, Ubuntu 12.10, Kubuntu, aptitude, apt-get, shel
 
 If you try to follow the [procedure from the project documentation](https://slowmovideo.granjow.net/download.php#h2_Compiling) under Kubuntu 12.10, you'll not go very far. Because you'll start by installing the default `-dev` packages of `libavutil`:
 
-    :::bash
+    :::shell-session
     $ sudo aptitude install libavcodec-dev libavdevice-dev libavfilter-dev libavformat-dev libavutil-dev libswscale-dev
 
 Then you'll need the `-extra` packages, which can't be installed with `-dev` packages:
 
-    :::bash
+    :::shell-session
     $ sudo aptitude install libavcodec-extra-53
     The following NEW packages will be installed:
       libavcodec-extra-53{b} libavutil-extra-51{ab} libvo-aacenc0{a} libvo-amrwbenc0{a}
@@ -39,7 +39,7 @@ This [issue was already reported](https://bugs.launchpad.net/ubuntu/+source/liba
 
 Let's fetch it and make it produce a collection of new `libav` packages:
 
-    :::bash
+    :::shell-session
     $ mkdir new_libav
     $ cd new_libav
     $ wget https://launchpadlibrarian.net/126008181/mk_libav-extra-dev.sh
@@ -48,14 +48,14 @@ Let's fetch it and make it produce a collection of new `libav` packages:
 
 You can then install the working `libav` packages:
 
-    :::bash
+    :::shell-session
     $ sudo dpkg --install ./lib*.deb
     $ cd ..
     $ rm -rf ./new_libav
 
 Now, we can follow the standard slowmoVideo instructions:
 
-    :::bash
+    :::shell-session
     $ sudo aptitude install build-essential cmake git ffmpeg libavformat-dev libavcodec-dev libswscale-dev libqt4-dev freeglut3-dev libglew1.5-dev libsdl1.2-dev libjpeg-dev libopencv-video-dev libopencv-highgui-dev
     $ cd ~
     $ git clone git://github.com/slowmoVideo/slowmoVideo.git

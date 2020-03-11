@@ -7,7 +7,7 @@ tags: Linux, Network, Script, shell, cron
 
 Voici un petit script trivial en bash qui, couplé à `cron`, me permet de maintenir ma connexion internet 56kbps fournie par Free.fr (en attendant l'arrivée du modem ADSL):
 
-    :::bash
+    :::shell-session
     #!/bin/bash
     # Script de reconnection automatique
 

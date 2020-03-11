@@ -13,7 +13,7 @@ of PostgreSQL.
 
 Install and setup PostgreSQL:
 
-    :::bash
+    :::shell-session
     $ brew update
     $ brew install postgresql94 ossp-uuid
 
@@ -35,7 +35,7 @@ Install and setup PostgreSQL:
 
 Initialize PostgreSQL:
 
-    :::bash
+    :::shell-session
     $ dropdb test_db
 
     $ createdb -E UTF8 -T template0 test_db
@@ -47,5 +47,5 @@ Initialize PostgreSQL:
 
 Load up a dumped database:
 
-    :::bash
+    :::shell-session
     $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -d test_db ~/dump/2016-10-10-test_db.dump

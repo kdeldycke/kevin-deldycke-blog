@@ -19,13 +19,13 @@ automate the cleaning of huge quantities of XML content.
 
 First, we have to install some command-line utilities:
 
-    :::bash
+    :::shell-session
     $ aptitude install libxml2-utils xsltproc
 
 Override the default XML indention from 2 spaces to 4, before forcing the
 cleaning of each XML file found from our current folder:
 
-    :::bash
+    :::shell-session
     $ export XMLLINT_INDENT="    "
     $ find . -iname "*.xml" -exec xmllint --format --output "{}" "{}" \;
 
@@ -71,5 +71,5 @@ and style.
 
 Finally, you can apply our XSLT to all our local XML files:
 
-    :::bash
+    :::shell-session
     $ find . -iname "*.xml" -exec xsltproc --output "{}" ./tidy.xslt "{}" \;

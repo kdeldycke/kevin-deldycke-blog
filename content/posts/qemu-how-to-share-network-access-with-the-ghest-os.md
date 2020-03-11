@@ -23,23 +23,23 @@ Create a file `/etc/qemu-ifup` that contain:
 
 Don't forget to give it execution permissions:
 
-    :::bash
+    :::shell-session
     $ chmod 755 /etc/qemu-ifup
 
 Start qemu with the following parameters:
 
-    :::bash
+    :::shell-session
     $ qemu /home/kevin/qemu-mdk10.1.img -n /etc/qemu-ifup
 
 Setup the network in your ghest OS in qemu:
 
-    :::bash
+    :::shell-session
     $ ifconfig eth0 10.0.2.15
     $ route add default gw 10.0.2.2
 
 Test the visibility of the guest OS from the host OS:
 
-    :::bash
+    :::shell-session
     $ ping 10.0.2.15
     PING 10.0.2.15 (10.0.2.15) 56(84) bytes of data.
     64 bytes from 10.0.2.15: icmp_seq=1 ttl=64 time=2.96 ms
@@ -52,7 +52,7 @@ Test the visibility of the guest OS from the host OS:
 
 Test the visibility of the host from the guest:
 
-    :::bash
+    :::shell-session
     $ ping 10.0.2.2
     PING 10.0.2.2 (10.0.2.2) 56(84) bytes of data.
     64 bytes from 10.0.2.2: icmp_seq=1 ttl=64 time=1.08 ms

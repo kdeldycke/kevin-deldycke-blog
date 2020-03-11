@@ -30,12 +30,12 @@ And here's how I've transformed, in all my Markdown articles, the long Amazon li
 
 First, I simply removed all 1-pixel trackers:
 
-    :::bash
+    :::shell-session
     $ find ./* -iname "*.md" -exec perl -0777 -i -pe "s/\!\[\]\(http:\/\/www\.assoc-amazon\.com.*?\)//gs" "{}" \;
 
 Then I converted all links in one batch with this magic one-liner:
 
-    :::bash
+    :::shell-session
     $ find ./* -iname "*.md" -exec perl -0777 -i -pe "s/\(http:\/\/www\.amazon\.com\/gp\/product\/(.*?)\/.*?\)/\(http:\/\/www\.amazon\.com\/dp\/\1\/\?tag=kevideld-20\)/gs" "{}" \;
 
 You can even go further (thanks [Elias](#comment-1404886079) for the tip) and use Amazon's URL shortener to get the following short links:
@@ -45,5 +45,5 @@ You can even go further (thanks [Elias](#comment-1404886079) for the tip) and us
 
 This is the `sed` command I used to convert all links from the previous form to this new scheme:
 
-    :::bash
+    :::shell-session
     $ find ./* -iname "*.md" -exec perl -0777 -i -pe "s/\(http:\/\/www\.amazon\.com\/dp\/(.*?)\)/\(http:\/\/amzn\.com\/\1\)/gs" "{}" \;

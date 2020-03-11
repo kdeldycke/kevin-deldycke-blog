@@ -17,7 +17,7 @@ running on your Debian machine.
 Now that you have the context, let's proceed with
 [Mailman](https://www.list.org/) install:
 
-    :::bash
+    :::shell-session
     $ aptitude install mailman
 
 During the installation, you'll be prompted about the languages files you want
@@ -26,7 +26,7 @@ Mailman web interface support. English is enough for me.
 Now Mailman requires a meta-mailing-list from which it will send all mails
 related to subscription, reminders and all:
 
-    :::bash
+    :::shell-session
     $ newlist mailman kevin@deldycke.com
 
 You'll then be prompted for a password.
@@ -50,7 +50,7 @@ This update is not necessary, as Exim will handle them automatically.
 
 You can now restart the Mailman server:
 
-    :::bash
+    :::shell-session
     $ /etc/init.d/mailman start
 
 Oh, and the first time you'll run Mailman, do a `start` as above, not a
@@ -74,7 +74,7 @@ Mailman, Nginx is already running on my machine, so let's use it instead.
 First, as [explained on Nginx wiki](https://wiki.nginx.org/Fcgiwrap) we need to
 install `fcgiwrap`:
 
-    :::bash
+    :::shell-session
     $ aptitude install fcgiwrap
 
 Then we have to create an Nginx configuration file dedicated to Mailman.
@@ -128,7 +128,7 @@ Debian package.
 All we have to do now is to activate the configuration above and restart our
 CGI and HTTP server:
 
-    :::bash
+    :::shell-session
     $ ln -s /etc/nginx/sites-available/mailman /etc/nginx/sites-enabled/
     $ /etc/init.d/fcgiwrap restart
     $ /etc/init.d/nginx restart
@@ -324,7 +324,7 @@ Finally, our hostname must be a FQDN, so we have to add it to `/etc/hosts`:
 
 Then we have to regenerate Exim's configuration before restarting Mailman:
 
-    :::bash
+    :::shell-session
     $ update-exim4.conf --verbose
     $ /etc/init.d/exim4 restart
     $ /etc/init.d/mailman restart
@@ -333,7 +333,7 @@ Then we have to regenerate Exim's configuration before restarting Mailman:
 
 You can now test your setup by creating a test mailing-list:
 
-    :::bash
+    :::shell-session
     $ newlist kev-test
 
 Now subscribe some test users and play with this mailing-list.
@@ -345,13 +345,13 @@ By monitoring `/var/log/mailman/error`, you'll maybe run into this error:
 
 This can be easily fixed with:
 
-    :::bash
+    :::shell-session
     $ chown -R list /var/lib/mailman/archives/private/
 
 Once you're convinced that Mailman is working as expected, you can remove your
 temporary test mailing-list, and regenerate aliases to clean things up:
 
-    :::bash
+    :::shell-session
     $ rmlist -a  kev-test
     $ /var/lib/mailman/bin/genaliases
 
@@ -360,7 +360,7 @@ temporary test mailing-list, and regenerate aliases to clean things up:
 Finally, if like me you [use Munin to monitor your machine](), then it's a good
 idea to let it graph some Mailman usage:
 
-    :::bash
+    :::shell-session
     $ wget https://exchange.munin-monitoring.org/plugins/mailman-queue-check/version/2/download --output-document=/usr/share/munin/plugins/mailman-queue-check
     $ wget https://exchange.munin-monitoring.org/plugins/mailman_subscribers/version/3/download --output-document=/usr/share/munin/plugins/mailman_subscribers
     $ ln -s /usr/share/munin/plugins/mailman-queue-check /etc/munin/plugins/

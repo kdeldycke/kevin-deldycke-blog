@@ -11,20 +11,20 @@ In this tiny how-to I'll explain you how to setup a machine as a NFS server and 
 
 First, on the server, install `nfs-utils`:
 
-    :::bash
+    :::shell-session
     $ urpmi nfs-utils
 
 The nfs-utils package provide a daemon for the kernel NFS server and related tools. It is a much higher level of performance than the traditional Linux NFS server used by most users.
 
 Then edit the `/etc/exports` file to add the list of the local folders you wqnt to share:
 
-    :::bash
+    :::shell-session
     [root@localhost ~]# cat /etc/exports
     /mnt/hdd *(rw,insecure,all_squash)
 
 Then, to apply change, restart the NFS server:
 
-    :::bash
+    :::shell-session
     $ /etc/init.d/nfs restart
 
 In this example I simply wanted to share the `/mnt/big-disk` directory and all its sub-folders with anybody, with read and write access. I did this because the server was in a closed LAN, with only one client, that's why no security, authentification or credentials to manage.
@@ -37,7 +37,7 @@ By the way, on the server, the only required services to activate at startup are
 
 On client side, you also need to install `nfs-utils`, in order to benefit `nfslock`:
 
-    :::bash
+    :::shell-session
     $ urpmi nfs-utils
 
 The latter is absolutely not required, but if it's a good idea to have it on the client side.

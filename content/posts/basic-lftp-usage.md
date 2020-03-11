@@ -9,7 +9,7 @@ Here is a little log of a micro `lftp` session. I post it just to remind me some
 
 Connect to an ftp server and login as `myuser`:
 
-    :::bash
+    :::shell-session
     $ lftp ftp://ftp.my-domain.com
     lftp ftp.my-domain.com:~> user myuser
     Password:

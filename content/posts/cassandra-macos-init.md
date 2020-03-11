@@ -13,14 +13,14 @@ Instructions below were tested on macOS Sierra, and aim to spawn a 3-nodes
 
 Install [`ccm`](https://github.com/pcmanus/ccm) and its dependencies:
 
-    :::bash
+    :::shell-session
     $ brew install ant
     $ brew cask install java
     $ pip install --upgrade ccm
 
 Just in case we messed up a previous installation, let's clean things up:
 
-    :::bash
+    :::shell-session
     $ ccm switch test21
     $ ccm stop test21
     $ killall java
@@ -30,13 +30,13 @@ Just in case we messed up a previous installation, let's clean things up:
 Create a new 3-nodes cluster named `test21` with the latest Cassandra release
 of the 2.1.x series:
 
-    :::bash
+    :::shell-session
     $ ccm create test21 -v 2.1 -n 3
 
 Here is an example on how we can alter the common configuration of all nodes of
 the cluster. In this case to bump all timeouts ten times:
 
-    :::bash
+    :::shell-session
     $ tee -a ~/.ccm/test21/cluster.conf <<-EOF
     config_options: {
         read_request_timeout_in_ms: 50000,
@@ -50,26 +50,26 @@ the cluster. In this case to bump all timeouts ten times:
 Also had to sometimes increase Java's heap size, like to accommodate large data
 imports:
 
-    :::bash
+    :::shell-session
     $ export CCM_MAX_HEAP_SIZE="12G"
     $ export CCM_HEAP_NEWSIZE="2400M"
 
 Before starting the server, we need to create missing local network interfaces,
 one for each node:
 
-    :::bash
+    :::shell-session
     $ sudo ifconfig lo0 alias 127.0.0.1 up
     $ sudo ifconfig lo0 alias 127.0.0.2 up
     $ sudo ifconfig lo0 alias 127.0.0.3 up
 
 We can now start the cluster:
 
-    :::bash
+    :::shell-session
     $ ccm start test21
 
 To get the state of the cluster:
 
-    :::bash
+    :::shell-session
     $ ccm status
     Cluster: 'test21'
     -----------------
@@ -79,7 +79,7 @@ To get the state of the cluster:
 
 Or a much more detailed status:
 
-    :::bash
+    :::shell-session
     $ ccm status -v
     Cluster: 'test21'
     -----------------
@@ -119,7 +119,7 @@ Or a much more detailed status:
 To get the detailed data ownership status, you need to get through a node and
 point to an existing column family:
 
-    :::bash
+    :::shell-session
     $ ccm node1 status my_column_family
 
     Datacenter: datacenter1
@@ -133,12 +133,12 @@ point to an existing column family:
 
 For debugging, a node's log is available through `ccm`:
 
-    :::bash
+    :::shell-session
     $ ccm node1 showlog
 
 And you can directly query through that node:
 
-    :::bash
+    :::shell-session
     $ TZ=UTC cqlsh --cqlversion=3.2.1 127.0.0.1
     Connected to test21 at 127.0.0.1:9042.
     [cqlsh 5.0.1 | Cassandra 2.1.12 | CQL spec 3.2.1 | Native protocol v3]
@@ -149,7 +149,7 @@ And you can directly query through that node:
 
 Finally, to restore a bunch of table snapshots from your production cluster:
 
-    :::bash
+    :::shell-session
     $ TABLES="table1 table2 table3"
     $ DUMP_FOLDER="${HOME}/dump/2016-09-12/"
     $ for host_folder in $(ls "${DUMP_FOLDER}"); do
@@ -162,7 +162,7 @@ Finally, to restore a bunch of table snapshots from your production cluster:
 
 Forcing a repair on each table after a massive import can't be bad:
 
-    :::bash
+    :::shell-session
     $ for table in ${TABLES}; do
     >     ccm node1 nodetool repair my_column_family ${table};
     > done

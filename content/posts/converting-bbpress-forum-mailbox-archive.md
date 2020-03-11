@@ -11,7 +11,7 @@ I've just finished to migrate this forum from [bbPress](https://bbpress.org/) to
 
 First, I simply opened a MySQL terminal on a local copy of our bbPress site:
 
-    :::bash
+    :::shell-session
     $ mysql -u root
     mysql> USE bbpress;
 

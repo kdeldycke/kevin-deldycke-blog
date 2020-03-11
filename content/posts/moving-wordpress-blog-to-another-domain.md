@@ -28,30 +28,30 @@ while we're performing the migration.
 Let's start the migration by replacing, in the files served by Apache, all
 occurrences of the old domain name by the new one:
 
-    :::bash
+    :::shell-session
     $ find /var/www/qpx-blog -mount -print -type f -exec sed -i 's/qpx.lich-ti.fr/qpx.coolcavemen.com/g' "{}" \;
 
 If you have doubts about the efficiency of the command above, you can check the
 presence of the string we're looking to replace via this command:
 
-    :::bash
+    :::shell-session
     $ grep -RIi "qpx.lich-ti.fr" ./*
 
 Then, we dump the database containing all WordPress content and config to a
 local file (the command will prompt for password):
 
-    :::bash
+    :::shell-session
     $ mysqldump -p --host=localhost --port=3306 --user=root --opt --databases "qpx_blog" > qpx_dump.sql
 
 And we replace all strings of the old domain by the new one:
 
-    :::bash
+    :::shell-session
     $ sed 's/qpx.lich-ti.fr/qpx.coolcavemen.com/g' qpx_dump.sql > new_qpx.sql
 
 Finally, we re-inject the modified database content after clearing the
 original:
 
-    :::bash
+    :::shell-session
     $ mysql -p --host=localhost --port=3306 --user=root --execute='DROP DATABASE `qpx_blog`;'
     $ mysql -p --host=localhost --port=3306 --user=root < new_qpx.sql
 

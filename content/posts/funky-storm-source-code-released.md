@@ -8,7 +8,7 @@ tags: Funky Storm, PHP, MySQL, GitHub
 
 I still have the source and I've just consolidated it in a [GitHub repository](https://github.com/kdeldycke/funky-storm) (thanks to my [history reconstruction process](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)). Here is the detailed procedure:
 
-    :::bash
+    :::shell-session
     $ rm -rf ./funky-storm
     $ mkdir funky-storm
     $ cd funky-storm

@@ -9,7 +9,7 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
 
   * Get Mac hardware model:
 
-        :::bash
+        :::shell-session
         $ sudo dmidecode -s system-product-name
         MacBookAir5,2
 
@@ -17,33 +17,33 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
 
   * Low-level format of the `hda` device:
 
-        :::bash
+        :::shell-session
         $ dd if=/dev/zero of=/dev/hda
 
   * Same as above but for paranoïd, as random bits will be written 3 times before performing the "low-level format" (i.e. writting zeros):
 
-        :::bash
+        :::shell-session
         $ shred --verbose --force --iterations=3 --zero /dev/hda
 
   * Remove the MBR:
 
-        :::bash
+        :::shell-session
         $ dd if=/dev/null of=/dev/hda bs=446 count=1
 
   * Restore the original Windows MBR:
 
-        :::bash
+        :::shell-session
         $ apt-get install mbr
         $ install-mbr -i n -p D -t 0 /dev/hda
 
   * Guess the partition table of a device, including damaged ones:
 
-        :::bash
+        :::shell-session
         $ gpart -v /dev/md0
 
   * Search for a Linux partition:
 
-        :::bash
+        :::shell-session
         $ sudo fdisk -d /dev/disk0 | cut -d ',' -f 3 | grep --quiet "0x83"
         $ if [[ $? -ne 0 ]]; then
         >     echo "No Linux partition found."
@@ -56,7 +56,7 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
 
   * Change the keyboard layout in Debian (don't forget to logoff and logon to activate the new setting):
 
-        :::bash
+        :::shell-session
         $ dpkg-reconfigure keyboard-configuration
 
   * X.orgs' configuration (`~/.Xmodmap`) to remap function and command keys of a Mac keyboard ([source](https://github.com/kdeldycke/dotfiles/blob/cc9d00879f14036498615067349f1d75fcd96bf5/dotfiles-linux/.Xmodmap#L10-L24)):
@@ -89,12 +89,12 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
 
   * To add touchpad kernel support, add the following option to kernel at boot time:
 
-        :::bash
+        :::shell-session
         $ psmouse.proto=imps
 
   * Sometimes, depending of the laptop I use, the mouse pointer disappear from the screen when I plug a VGA cable to a projector. In this case, I resort to a `CTRL + ALT + F1`, then I login as a normal user and finally I start a new X session:
 
-        :::bash
+        :::shell-session
         $ startx -- :1
 
 
@@ -102,7 +102,7 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
 
   * Get the number of shutter count of a DSLR (Canon EOS 7D in my case):
 
-        :::bash
+        :::shell-session
         $ gphoto2 --get-config /main/status/shuttercounter
         Label: Shutter Counter
         Type: TEXT

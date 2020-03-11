@@ -17,7 +17,7 @@ I first tried mining [Bitcoin](https://bitcoin.org) with
 found to be readily [available from an Ubuntu
 PPA](https://launchpad.net/~unit3/+archive/bfgminer):
 
-    :::bash
+    :::shell-session
     $ sudo tee -a /etc/apt/sources.list <<-EOF
         deb https://ppa.launchpad.net/unit3/bfgminer/ubuntu quantal main
         deb-src https://ppa.launchpad.net/unit3/bfgminer/ubuntu quantal main
@@ -31,12 +31,12 @@ support.
 
 Install the dependencies:
 
-    :::bash
+    :::shell-session
     $ sudo aptitude install build-essential autoconf libtool libjansson-dev libcurl4-gnutls-dev libncurses5-dev libudev-dev libusb-1.0-0-dev yasm uthash-dev
 
 Get a copy of the latest version and prepare the environment:
 
-    :::bash
+    :::shell-session
     $ cd ~
     $ git clone https://github.com/luke-jr/bfgminer.git
     $ cd bfgminer/
@@ -44,7 +44,7 @@ Get a copy of the latest version and prepare the environment:
 
 Then I built it while enabling scrypt and CPU optimizations:
 
-    :::bash
+    :::shell-session
     $ ./configure --enable-cpumining --enable-scrypt
     $ make
 
@@ -88,5 +88,5 @@ Then create a config file in `~/.bfgminer/bfgminer.conf`:
 
 And your ready to launch the miner:
 
-    :::bash
+    :::shell-session
     $ ~/bfgminer/bfgminer

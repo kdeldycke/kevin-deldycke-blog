@@ -10,13 +10,13 @@ serve content over [WebDAV](https://wikipedia.org/wiki/WebDAV).
 
 First, install the required packages:
 
-    :::bash
+    :::shell-session
     $ aptitude install lighttpd-mod-webdav
 
 As we want to provide a secure WebDAV access, we need to install
 [OpenSSL](https://www.openssl.org):
 
-    :::bash
+    :::shell-session
     $ aptitude install openssl
 
 Then we create the file `/etc/lighttpd/clear-creds.lst`, that will contain
@@ -35,13 +35,13 @@ system.
 Now I want to serve WebDAV content within a secure channel. A self-signed SSL
 certificate will be enough. Let's generate one:
 
-    :::bash
+    :::shell-session
     $ cd /etc/lighttpd/
     $ openssl req -x509 -nodes -subj '/' -days 3650 -newkey rsa:2048 -keyout server.pem -out server.pem
 
 We'll configure Lighttpd by loading the default parameters of modules we use:
 
-    :::bash
+    :::shell-session
     $ cd /etc/lighttpd/conf-enabled/
     $ ln -s ../conf-available/05-auth.log
     $ ln -s ../conf-available/10-ssl.conf
@@ -49,7 +49,7 @@ We'll configure Lighttpd by loading the default parameters of modules we use:
 
 Now I create a custom configuration file:
 
-    :::bash
+    :::shell-session
     $ touch /etc/lighttpd/conf-available/99-custom.conf
     $ cd /etc/lighttpd/conf-enabled/
     $ ln -s ../conf-available/99-custom.conf
@@ -88,7 +88,7 @@ Here is the content of that `99-custom.conf` configuration file:
 
 And do not forget to restart the server:
 
-    :::bash
+    :::shell-session
     $ /etc/init.d/lighttpd restart
 
 ![](/uploads/2011/lighttpd-webdav-server.png)

@@ -24,7 +24,7 @@ At that moment I have to explain you that my machine is an [OpenBrick NG](https:
 
 The idea is now to use `/mnt/hd1` to store and manipulate my datas, then `rsync` that drive with his alter-ego (`/mnt/hd1_mirror`) every night. To do that, I've just added the following command in a cron entry:
 
-    :::bash
+    :::shell-session
     $ rsync -a --delete --delete-excluded --delete-after /mnt/hd1/ /mnt/hd1_mirror/
 
 And voilà!

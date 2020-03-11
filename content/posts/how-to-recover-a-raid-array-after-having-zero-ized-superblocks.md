@@ -9,13 +9,13 @@ Today `mdadm` send me a mail to warn that one of my hard drive (`/dev/hdd1`) was
 
 Assuming that this situation was about an inconsistent file index, I decided to reset the superblocks of the remaining physical disks:
 
-    :::bash
+    :::shell-session
     $ mdadm --zero-superblock /dev/hdc1
     $ mdadm --zero-superblock /dev/hdb1
 
 I don't know why I decided to do so, but it was the stupidest idea of the week. After such a violent treatment, my array refused to start:
 
-    :::bash
+    :::shell-session
     $ mdadm --assemble /dev/md0 --auto --scan --update=summaries --verbose
     mdadm: looking for devices for /dev/md0
     mdadm: no RAID superblock on /dev/hdc1
@@ -32,7 +32,7 @@ The solution was to recreate the RAID array. This sound counter-intuitive: if we
 
 So, here is how I finally recovered my RAID array:
 
-    :::bash
+    :::shell-session
     $ mdadm --create /dev/md0 --verbose --level=5 --raid-devices=3 /dev/hdc1 missing /dev/hdb1
     mdadm: layout defaults to left-symmetric
     mdadm: chunk size defaults to 64K

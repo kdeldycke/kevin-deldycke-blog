@@ -36,7 +36,7 @@ Before going further, we need to install
 [`cvsps`](https://web-beta.archive.org/web/20160125062146/https://www.cobite.com:80/cvsps/). For [MacPorts](https://www.macports.org)
 users, this is as simple as:
 
-    :::bash
+    :::shell-session
     $ sudo port install cvsps
     Password:
     --->  Computing dependencies for cvsps
@@ -55,7 +55,7 @@ users, this is as simple as:
 
 Then we create a temporary copy of Drupify's CVS repository:
 
-    :::bash
+    :::shell-session
     $ git cvsimport -a -k -d:pserver:anonymous:anonymous@cvs.drupal.org:/cvs/drupal-contrib -C drupify-copy contributions/themes/drupify
     Initialized empty Git repository in /Users/kevin/drupify-copy/.git/
     parse error on user@server in pserver
@@ -75,7 +75,7 @@ we'll use the
 [`git filter-branch`](https://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html)
 to do this job:
 
-    :::bash
+    :::shell-session
     $ cd drupify-copy
     $ git filter-branch -f --prune-empty --tree-filter '
       mkdir -p /tmp/drupify-fork;
@@ -96,7 +96,7 @@ sub-directory.
 By default, `filter-branch` creates a backup of the tree using references
 prefixed by `refs/original/`:
 
-    :::bash
+    :::shell-session
     $ git show-ref
     4c33470f0f59bcfe7d0d88ee64945bb5625d6d02 refs/heads/DRUPAL-5
     8930672eaf97eefa8f9d4ed9f5144f466a97728f refs/heads/DRUPAL-6--1
@@ -118,7 +118,7 @@ But
 [according Jakub Narębski on the Git mailing-list](https://n2.nabble.com/Removing-some-files-from-history-tp1344670p1344919.html),
 we can safely removes Git's backups:
 
-    :::bash
+    :::shell-session
     $ rm -Rf .git/refs/original
     $ git gc --prune=now
     Counting objects: 106, done.
@@ -129,7 +129,7 @@ we can safely removes Git's backups:
 
 After the cleaning, references are back to normal:
 
-    :::bash
+    :::shell-session
     $ git show-ref
     4c33470f0f59bcfe7d0d88ee64945bb5625d6d02 refs/heads/DRUPAL-5
     8930672eaf97eefa8f9d4ed9f5144f466a97728f refs/heads/DRUPAL-6--1
@@ -145,7 +145,7 @@ operation didn't change anything, but the base folder (and SHA hashes):
 It's time to import all this code in our main repository. First, get a local
 copy of our public [GitHub](https://github.com/) code base:
 
-    :::bash
+    :::shell-session
     $ cd
     $ git clone git@github.com:kdeldycke/kev-code.git
     Initialized empty Git repository in /Users/kevin/kev-code/.git/
@@ -156,7 +156,7 @@ copy of our public [GitHub](https://github.com/) code base:
 
 Now let's include our temporary `drupify-copy` as a tracked remote repository:
 
-    :::bash
+    :::shell-session
     $ cd kev-code/
     $ git remote add drupify ../drupify-copy
     $ git fetch drupify
@@ -177,7 +177,7 @@ Now let's include our temporary `drupify-copy` as a tracked remote repository:
 As you can see, all the little particularities of the remote repository are well
 tracked (HEAD, branches and tags are there):
 
-    :::bash
+    :::shell-session
     $ git remote show drupify
     * remote drupify
       Fetch URL: ../drupify-copy
@@ -195,7 +195,7 @@ tracked (HEAD, branches and tags are there):
 
 Another way to check this is to list all tracked remote branches:
 
-    :::bash
+    :::shell-session
     $ git branch -r
       drupify/DRUPAL-5
       drupify/DRUPAL-6--1
@@ -207,7 +207,7 @@ It's time to merge all our tracked remote code (from `drupify-copy`) in our
 local repository (`kev-code`). The branch I'm interested in is `DRUPAL-6--1`, as
 it holds the latest Drupify code for Drupal 6.x:
 
-    :::bash
+    :::shell-session
     $ git merge drupify/DRUPAL-6--1
     Merge made by recursive.
      drupify-fork/README.txt               |   16 +
@@ -283,7 +283,7 @@ it holds the latest Drupify code for Drupal 6.x:
 We can remove the attached `drupify` repository and its local `drupify-copy`
 source:
 
-    :::bash
+    :::shell-session
     $ git remote rm drupify
     $ cd ..
     $ rm -rf ./drupify-copy
@@ -296,7 +296,7 @@ To keep all the details that were created by `git cvsimport`, we can add by hand
 all the missing refs. The only difference with the original ones is that I
 unified the namespace with a `drupify/` prefix:
 
-    :::bash
+    :::shell-session
     $ git update-ref refs/heads/drupify/DRUPAL-6--1 8930672
     $ git update-ref refs/heads/drupify/master e5907fa
     $ git update-ref refs/heads/drupify/origin e5907fa

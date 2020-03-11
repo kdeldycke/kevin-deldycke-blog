@@ -54,7 +54,7 @@ I recommend using [`Arrow`](https://crsmithdev.com/arrow/). But if you can't, he
 
   * Start a dumb HTTP server on port 8000 ([source](https://news.ycombinator.com/item?id=2042008)):
 
-        :::bash
+        :::shell-session
         $ python -m SimpleHTTPServer 8000
 
 
@@ -67,7 +67,7 @@ I recommend using [`Arrow`](https://crsmithdev.com/arrow/). But if you can't, he
 
   * Delete all `.pyc` and `.pyo` files in the system:
 
-        :::bash
+        :::shell-session
         $ find / -name "*.py[co]" -print -delete
 
 
@@ -75,13 +75,13 @@ I recommend using [`Arrow`](https://crsmithdev.com/arrow/). But if you can't, he
 
   * Print Python's 3-elements version number:
 
-        :::bash
+        :::shell-session
         $ python -c "from __future__ import print_function; import sys; print('.'.join(map(str, sys.version_info[:3])))"
         2.7.6
 
   * Compare Python version for use in shell scripts:
 
-        :::bash
+        :::shell-session
         $ python -c "import sys; exit(sys.version_info[:3] < (2, 7, 9))"
         $ if [[ $? != 0 ]]; then
         >     echo "Old Python detected.";
@@ -93,7 +93,7 @@ I recommend using [`Arrow`](https://crsmithdev.com/arrow/). But if you can't, he
 
   * Use [autopep8](https://pypi.python.org/pypi/autopep8/) to apply PEP8's coding style on all Python files:
 
-        :::bash
+        :::shell-session
         $ find ./ -iname "*.py" -print -exec autopep8 --in-place "{}" \;
 
 
@@ -113,12 +113,12 @@ I maintain a set of default configuration files in my [`dotfiles` repository](ht
 
   * Generate a binary distribution of the current package:
 
-        :::bash
+        :::shell-session
         $ python ./setup.py sdist
 
   * Register, generate and upload to [PyPi](https://pypi.python.org) the current package as a source package, an egg and a dumb binary:
 
-        :::bash
+        :::shell-session
         $ python ./setup.py register sdist bdist_egg bdist_dumb upload
 
 

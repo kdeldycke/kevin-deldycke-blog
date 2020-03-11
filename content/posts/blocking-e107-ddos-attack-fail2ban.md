@@ -62,12 +62,12 @@ with the appropriate section:
 
 Then restart your fail2ban service:
 
-    :::bash
+    :::shell-session
     $ /etc/init.d/fail2ban restart
 
 And you'll start to get those nice logs:
 
-    :::bash
+    :::shell-session
     $ tail -F /var/log/fail2ban.log
     2010-06-23 16:05:37,417 fail2ban.actions: WARNING [apache-e107ddos] Ban 193.33.21.199
     2010-06-23 16:05:58,113 fail2ban.actions: WARNING [apache-e107ddos] Ban 89.108.116.226

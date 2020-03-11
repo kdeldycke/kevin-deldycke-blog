@@ -13,17 +13,17 @@ So here is how I migrated our legacy Trac 0.10 instance to a brand new 0.12 than
 
 First, let's install all system dependencies using your distribution package management tool. My target server is running an [RHEL](https://www.redhat.com/rhel/) 5.4, so I'll invoke [Yum](https://fedoraproject.org/wiki/Tools/yum):
 
-    :::bash
+    :::shell-session
     $ sudo yum install subversion subversion-python sqlite-devel cyrus-sasl-lib cyrus-sasl-md5 mercurial
 
 On Debian/Ubuntu, equivalent packages should be installed with `apt-get`:
 
-    :::bash
+    :::shell-session
     $ sudo apt-get install subversion python-subversion libsqlite-dev cyrus-sasl-lib cyrus-sasl-md5 mercurial
 
 Now we create an empty structure that will host our Trac instance:
 
-    :::bash
+    :::shell-session
     $ mkdir ~/trac-home
     $ cd ~/trac-home
     $ touch ./buildout.cfg
@@ -71,22 +71,22 @@ I now encourage you to use my `buildout.cfg` above as a template and customize i
 
 Before going further, we need a `bootstrap.py` script. This script will take care of all stuff required by a bare Python interpreter to handle a Buildout project from scratch. Let's download the latest version:
 
-    :::bash
+    :::shell-session
     $ wget https://svn.zope.org/repos/main/zc.buildout/trunk/bootstrap/bootstrap.py
 
 Now we can initialize our Buildout environment. The `--distribute` option here is necessary to get [something more modern](https://pypi.python.org/pypi/distribute#about-the-fork) than the [abandoned `setuptools`](https://pypi.python.org/pypi/setuptools):
 
-    :::bash
+    :::shell-session
     $ python ./bootstrap.py --distribute
 
 And then we can ask Buildout to construct our the instance:
 
-    :::bash
+    :::shell-session
     $ ./bin/buildout
 
 Now that we have an empty Trac 0.12 instance, we will migrate there our legacy Subversion repositories:
 
-    :::bash
+    :::shell-session
     $ svnadmin create ./repos/my-repo-1
     $ svnadmin create ./repos/my-repo-2
     $ svnadmin create ./repos/my-repo-3
@@ -98,18 +98,18 @@ Note that in this case my first two subversion repositories are still running on
 
 Let's copy the data from our legacy Trac instance. By studying the differences between a default Trac instance and the legacy one I was working on, I came to the conclusion that I only needed to move attachments and the main database. Of course this is my personal case and your's may be a little bit different:
 
-    :::bash
+    :::shell-session
     $ scp -rC root@legacy.example.net:/software/trac/project/attachments ./parts/my-trac/
     $ scp -rC root@legacy.example.net:/software/trac/project/db/trac.db  ./parts/my-trac/db/
 
 We need to call Buildout a second time to update our the project with all the data we've just migrated:
 
-    :::bash
+    :::shell-session
     $ ./bin/buildout
 
 Now we'll activate and configure SASL-based authentication in all Subversion repositories:
 
-    :::bash
+    :::shell-session
     $ sed -i 's/# use-sasl = true/use-sasl = true/' ./repos/my-repo-1/conf/svnserve.conf
     $ sed -i 's/# use-sasl = true/use-sasl = true/' ./repos/my-repo-2/conf/svnserve.conf
     $ sed -i 's/# use-sasl = true/use-sasl = true/' ./repos/my-repo-3/conf/svnserve.conf
@@ -119,14 +119,14 @@ Now we'll activate and configure SASL-based authentication in all Subversion rep
 
 Create a password database with our users:
 
-    :::bash
+    :::shell-session
     $ saslpasswd2 -f sasl.db -u svn kevin
     $ saslpasswd2 -f sasl.db -u svn bob
     $ ...
 
 Setup SASL authentication on the system (please change the `sasl.conf` location below according your file structure):
 
-    :::bash
+    :::shell-session
     $ touch ./sasl.conf
     $ sudo ln -s /home/kevin/trac-home/sasl.conf /etc/sasl2/svn.conf
 
@@ -140,7 +140,7 @@ And put the following content in the `sasl.conf` file we just created above (don
 
 It's time to create and populate the password file used by Trac, with all the users we created 3 steps above:
 
-    :::bash
+    :::shell-session
     $ touch ./htdigest
     $ htdigest ./htdigest trac kevin
     $ htdigest ./htdigest trac bob
@@ -148,12 +148,12 @@ It's time to create and populate the password file used by Trac, with all the us
 
 And now we can start the Subversion server in the background:
 
-    :::bash
+    :::shell-session
     $ svnserve --daemon --listen-port 3690 --root ./repos/
 
 Last step, we launch [Trac's standalone webserver](https://trac.edgewall.org/wiki/TracStandalone):
 
-    :::bash
+    :::shell-session
     $ ./bin/tracd --port 8000 --single-env --auth="*,htdigest,trac" ./parts/my-trac
 
 You can now reach Trac from your browser, on the following URL:
@@ -163,7 +163,7 @@ You can now reach Trac from your browser, on the following URL:
 
 A final test consist in getting some code from Subversion:
 
-    :::bash
+    :::shell-session
     $ svn co svn://trac.example.net:3690/my-repo-1
 
 From now on, and that's where the fun begins, each time a new Trac version is released on PyPi, I just have to:

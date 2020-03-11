@@ -17,7 +17,7 @@ En fait, il faut appliquer la même procédure que celle indiquée pour le modem
 
 Et donc, après s’être connecté depuis un terminal sous Linux en telnet:
 
-    :::bash
+    :::shell-session
     $ telnel 192.168.1.254
 
 Il ne reste qu'à exécuter les commandes suivantes depuis le prompt du modem:

@@ -9,7 +9,7 @@ Was trying to install [`alembic`](https://alembic.readthedocs.org) in a
 [`virtualenv`](https://virtualenv.readthedocs.org) with [`pip`
 ](https://pip.readthedocs.org), on an OS X El Capitan machine:
 
-    :::bash
+    :::shell-session
     $ pip install alembic
     Collecting alembic
     (...)
@@ -69,7 +69,7 @@ By sheer luck I found the culprit in the name of the `cryptography` package.
 
 After uninstalling it I was finally able to properly install `alembic`:
 
-    :::bash
+    :::shell-session
     $ pip uninstall cryptography
     Uninstalling cryptography-1.1:
     (...)

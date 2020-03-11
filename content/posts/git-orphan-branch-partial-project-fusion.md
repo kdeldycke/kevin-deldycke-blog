@@ -25,7 +25,7 @@ sharing the same root until their merging point.
 We start with the source repository. The code we're about to move is available
 in the `develop` branch:
 
-    :::bash
+    :::shell-session
     $ git clone https://github.com/kdeldycke/source-project.git
     $ cd ./source-project
     $ git checkout develop
@@ -33,7 +33,7 @@ in the `develop` branch:
 To prevent any bad move, we detach the local copy of the repository from its
 remote branches:
 
-    :::bash
+    :::shell-session
     $ git remote rm origin
 
 Now we can start cleaning the `develop` branch to only keep the subset of code
@@ -41,7 +41,7 @@ we'd like to move.
 
 First we remove other branches and all tags:
 
-    :::bash
+    :::shell-session
     $ git branch -D master
     $ git tag -d `git tag | grep -E '.'`
 
@@ -57,14 +57,14 @@ I then managed to produce a one-liner `find` command satisfying all these path
 constraints. Combined with the `filter-branch` action, I was allowed me to
 remove all content but these path within the whole commit history:
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'find . -type f -not -ipath "*lib*" -and -not -ipath "*script*" -and -not -ipath "./.git*" -and -not -path "." -print -exec rm -rf "{}" \;' -- --all
 
 I revisited the new commit log which was way cleaner. But the command above was
 too much coarse-grained, so I had to repeat the operation again to get the
 exact sub-tree I was looking for:
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'find . -type f -iname ".gitignore" -print -exec rm -rf "{}" \;' -- --all
     $ git filter-branch --force --prune-empty --tree-filter 'if [ -d ./calibration ]; then rm -rf ./calibration; fi' -- --all
     $ git filter-branch --force --prune-empty --tree-filter 'if [ -f ./script_tools.py ]; then mkdir -p ./folder3/scripts; mv ./script_tools.py ./folder3/scripts/; fi' -- --all
@@ -72,12 +72,12 @@ exact sub-tree I was looking for:
 Now that I have the perfect history for the minimal subset of code I'm
 targeting, we can flatten the commit log:
 
-    :::bash
+    :::shell-session
     $ git rebase --root
 
 Rebasing is not an exact science and you might end-up with empty commits:
 
-    :::bash
+    :::shell-session
     (...)
     Could not apply 2a4f66a6fa114846bb80c3d488e41a186bce4894...
     The previous cherry-pick is now empty, possibly due to conflict resolution.
@@ -91,27 +91,27 @@ Rebasing is not an exact science and you might end-up with empty commits:
 In which case I simply ignore the problem and order the rebasing action to
 continue as many times necessary to let the process complete:
 
-    :::bash
+    :::shell-session
     $ git rebase --continue
     $ git rebase --continue
     $ git rebase --continue
 
 Finally, we clean-up:
 
-    :::bash
+    :::shell-session
     $ git reflog expire --all
     $ git gc --aggressive --prune
 
 Let's now switch to the repository that will become the new home for our code:
 
-    :::bash
+    :::shell-session
     $ cd ..
     $ git clone https://github.com/kdeldycke/destination-project.git
     $ cd ./destination-project
 
 We create a new detached, orphan branch:
 
-    :::bash
+    :::shell-session
     $ git symbolic-ref HEAD refs/heads/orphan
     $ rm .git/index
     $ git clean -fdx
@@ -119,7 +119,7 @@ We create a new detached, orphan branch:
 
 Then publish that new `orphan` branch upstream:
 
-    :::bash
+    :::shell-session
     $ git push --set-upstream origin orphan
 
 At this point I encourage you to [check in your
@@ -130,19 +130,19 @@ that the said orphan branch is really detached from your usual branches:
 
 Time to import the branch we cleaned from the source repository:
 
-    :::bash
+    :::shell-session
     $ git checkout orphan
     $ git remote add code_import ../source-project
     $ git fetch code_import
 
 We then replace our `orphan` branch by the code we just imported:
 
-    :::bash
+    :::shell-session
     $ git rebase code_import/develop
 
 Once everything's at your taste, we can remove the relationship with the source
 project and push the newly populated `orphan` branch upstream:
 
-    :::bash
+    :::shell-session
     $ git branch -r -D code_import/develop
     $ git push --force --set-upstream origin orphan

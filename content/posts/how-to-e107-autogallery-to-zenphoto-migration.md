@@ -11,13 +11,13 @@ The old gallery was based on [autogallery](https://sourceforge.net/projects/e107
 
 The first step is to copy the autogallery album structure, with all its content, to Zenphoto:
 
-    :::bash
+    :::shell-session
     $ cd /www
     $ cp -ax ./e107_plugins/autogallery/Gallery/* ./zenphoto/albums/
 
 Then we delete all previews, thumbnails and XML metadatas, to keep in Zenphoto original assets only:
 
-    :::bash
+    :::shell-session
     $ find ./zenphoto/albums/ -iname "*.xml" | xargs rm -f
     $ find ./zenphoto/albums/ -iname "pv_*" | xargs rm -f
     $ find ./zenphoto/albums/ -iname "th_*" | xargs rm -f

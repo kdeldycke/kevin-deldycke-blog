@@ -7,32 +7,32 @@ tags: CLI, Mercurial
 
   * Checkout a distant repository:
 
-        :::bash
+        :::shell-session
         $ hg clone https://bitbucket.org/mirror/django
 
   * Commit all changes locally:
 
-        :::bash
+        :::shell-session
         $ hg commit -m "Here is my commit fixing bugs."
 
   * Push local commits to the remote repository:
 
-        :::bash
+        :::shell-session
         $ hg push
 
   * Apply latest changes of the remote repository to our local working copy:
 
-        :::bash
+        :::shell-session
         $ hg pull
 
   * Align the current repository to a specific revision:
 
-        :::bash
+        :::shell-session
         $ hg update -r 502
 
   * Restore all changes and files to the state they are in the distant repository:
 
-        :::bash
+        :::shell-session
         $ hg update -C
 
   * My minimal `~/.hgrc` config file:
@@ -51,26 +51,26 @@ tags: CLI, Mercurial
 
   * Display the last 5 commits:
 
-        :::bash
+        :::shell-session
         $ hg log --limit 5
 
   * Display the local changes since last commit:
 
-        :::bash
+        :::shell-session
         $ hg diff
 
   * Undo the last local commit:
 
-        :::bash
+        :::shell-session
         $ hg rollback
 
   * Create a tag on a particular revision:
 
-        :::bash
+        :::shell-session
         $ hg tag -r 432 component-2.6.1
 
   * Create a bundle file containing all changes committed locally:
 
-        :::bash
+        :::shell-session
         $ hg bundle fix-bug.bundle
 

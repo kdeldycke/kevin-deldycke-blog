@@ -7,32 +7,32 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, dri
 
   * Get the list of all wireless networks reachable by the `wlan0` interface:
 
-        :::bash
+        :::shell-session
         $ iwlist wlan0 scanning | grep ESSID
 
   * Get the IP address where a domain points to:
 
-        :::bash
+        :::shell-session
         $ host kevin.deldycke.com
 
   * Get different kind of DNS records of the `example.com` domain:
 
-        :::bash
+        :::shell-session
         $ dig example.com CNAME
         $ dig example.com MX
 
   * Get some informations about open ports:
 
-        :::bash
+        :::shell-session
         $ netstat --taupen
         $ netstat --lapute
 
   * Watch network activity in real-time:
 
-        :::bash
+        :::shell-session
         $ watch -n 1 "lsof -i"
 
   * Save all images passing through `eth0`:
 
-        :::bash
+        :::shell-session
         $ driftnet -i eth0 -a -d ./http-pics

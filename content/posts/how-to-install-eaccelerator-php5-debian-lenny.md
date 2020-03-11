@@ -35,19 +35,19 @@ Let's start the installation! First, add the following lines to your
 To kill annoying warning messages, register the cryptographic fingerprint of
 each repository:
 
-    :::bash
+    :::shell-session
     $ gpg --keyserver keyring.debian.org --recv-keys 0x8f068012;
     $ gpg --export --armor 0x8f068012 | apt-key add -
     $ wget -O - https://debian.schnuckelig.eu/repository-key.gpg | apt-key add -
 
 Then, update your package database:
 
-    :::bash
+    :::shell-session
     $ aptitude update
 
 And finally, you can install eAccelerator for PHP5 without any pain:
 
-    :::bash
+    :::shell-session
     $ apt-get install php5-eaccelerator
 
 Happy [fine-tunning](https://eaccelerator.net/wiki/Settings)!

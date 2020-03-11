@@ -9,14 +9,14 @@ tags: CLI, Hardware, Linux
 
 We have a USB key with a file system on it, and we want to save its content. We do a binary image using:
 
-    :::bash
+    :::shell-session
     $ dd if=/dev/sda1 of=/home/kevin/usb_key.img
 
 ## Mount the image file
 
 Get informations about the file system of the image file using:
 
-    :::bash
+    :::shell-session
     $ fdisk -l -u /home/kevin/usb_key.img
 
 This show you something like that:
@@ -36,11 +36,11 @@ Get the sector number where the partition start (56) and the size of sectors (51
 
 Then setup a loopback block device based on the image:
 
-    :::bash
+    :::shell-session
     $ losetup -o 28672 /dev/loop0 /home/kevin/usb_key.img
 
 Now you can mount your USB key:
 
-    :::bash
+    :::shell-session
     $ mount /dev/loop0 /mnt/usb_key/
 

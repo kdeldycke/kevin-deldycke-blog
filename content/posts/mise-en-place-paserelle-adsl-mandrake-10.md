@@ -101,7 +101,7 @@ panneau de config de Mandrake). Il ne nous servira que pour la configuration des
 interfaces réseau. Nous configurerons la sécurité avec `webmin`. On lance la
 commande:
 
-    :::bash
+    :::shell-session
     $ urpmi drakconf
 
 `urpmi` va chercher les dépendances indispensable à `drakconf` pour fonctionner.
@@ -159,7 +159,7 @@ Et si tout se passe bien, lors du reboot, on a:
 
 On peut ensuite vérifier qu'internet fonctionne en faisant un:
 
-    :::bash
+    :::shell-session
     $ ping google.com
 
 Si finalement la connexion ne fonctionne pas, vérifier dans le fichier
@@ -177,7 +177,7 @@ notre réseau local.
 
 Commençons par faire un:
 
-    :::bash
+    :::shell-session
     $ urpmi dhcp-server
 
 Le serveur sera automatiquement lancé au démarrage de la machine, mais il faut
@@ -186,7 +186,7 @@ le configurer.
 Nous allons faire une copie d'un exemple de fichier de configuration, puis nous
 l'éditions:
 
-    :::bash
+    :::shell-session
     $ cp /etc/dhcpd.conf.sample /etc/dhcp.conf
     $ vi /etc/dhcpd.conf
 
@@ -222,7 +222,7 @@ la passerelle. L’intérêt de supprimer tous ce matériel est de réduire la m
 
 On installe donc le serveur SSH:
 
-    :::bash
+    :::shell-session
     $ urpmi openssh-server
 
 Encore une fois, le serveur SSH sera lancé automatiquement lors du démarrage de
@@ -310,7 +310,7 @@ Au final, on a un fichier `/etc/dhcpd.conf` qui doit ressembler à ça:
 
 Nous allons installer `iptables` et le configurer:
 
-    :::bash
+    :::shell-session
     $ urpmi iptables
     $ echo 1 > /proc/sys/net/ipv4/ip_forward
     $ iptables -t nat -A POSTROUTING -o ppp+ -j MASQUERADE
@@ -329,12 +329,12 @@ repository de Mandrake.
 
 On supprime d'abord la référence au CD-ROM:
 
-    :::bash
+    :::shell-session
     $ urpmi.removemedia -a
 
 Ensuite on ajoute les sources `main`, `contrib`, `updates` et `plf`:
 
-    :::bash
+    :::shell-session
     $ urpmi.addmedia plf-free ftp://ftp.free.fr/pub/Distributions_Linux/plf/mandrake/free/10.1 with hdlist.cz
     $ urpmi.addmedia plf-nonfree ftp://ftp.free.fr/pub/Distributions_Linux/plf/mandrake/non-free/10.1 with hdlist.cz
     $ urpmi.addmedia --update updates ftp://ftp.proxad.net/pub/Distributions_Linux/Mandrakelinux/official/updates/10.1/main_updates with media_info/hdlist.cz
@@ -344,7 +344,7 @@ Ensuite on ajoute les sources `main`, `contrib`, `updates` et `plf`:
 Pour tester que l'installation depuis le net fonctionne parfaitement, on peut
 installer `vim-enhanced`:
 
-    :::bash
+    :::shell-session
     $ urpmi vim-enhanced
 
 Maintenant que nous pouvons chercher nos programmes depuis internet, le lecteur
@@ -356,7 +356,7 @@ lecteur. Il va vous afficher une fenêtre de dialogue, que l'on va ignorer.
 Nous allons programmer une mises a jour de sécurité tous les soirs vers 2 heure
 du matin. Cette action est possible grâce à la commande:
 
-    :::bash
+    :::shell-session
     $ /usr/sbin/urpmi.update -a && /usr/sbin/urpmi --update --auto --auto-select
 
 Dans Webmin, cela se passe dans `system` > `scheduled cron jobs`. Cliquer sur

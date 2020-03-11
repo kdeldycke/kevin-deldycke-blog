@@ -9,7 +9,7 @@ Here is quick guide on how I configured Exim 4 to let a Debian Squeeze server se
 
 Debian come with Exim (v4.72) pre-installed: it's the default MTA on this distribution. There is absolutely no need to install extra packages. Let's start right away by calling Exim's configuration wizard:
 
-    :::bash
+    :::shell-session
     $ dpkg-reconfigure exim4-config
 
 Here are the options I choose in each step of the wizard:
@@ -172,13 +172,13 @@ Then I updated the `/etc/exim4/exim4.conf.template` to add proper handling of GM
 
 Now all we have to do is to regenerate Exim's configuration and restart the mail server:
 
-    :::bash
+    :::shell-session
     $ update-exim4.conf
     $ /etc/init.d/exim4 restart
 
 You can then send a dummy email to test your mail system:
 
-    :::bash
+    :::shell-session
     $ mail kevin@deldycke.com
     Subject: This is an exim test
     .
@@ -187,7 +187,7 @@ You can then send a dummy email to test your mail system:
 
 And check in the log that everything's fine:
 
-    :::bash
+    :::shell-session
     $ tail -F /var/log/exim4/mainlog
     2011-05-03 10:56:32 1QHBPE-0000ne-CW <= root@server.deldycke.com U=root P=local S=362
     2011-05-03 10:56:36 1QHBPE-0000ne-CW => kevin@deldycke.com R=send_via_gmail T=gmail_smtp H=gmail-smtp-msa.l.google.com [209.85.227.109] X=TLS1.0:RSA_ARCFOUR_SHA1:16 DN="C=US,ST=California,L=Mountain View,O=Google Inc,CN=smtp.gmail.com"

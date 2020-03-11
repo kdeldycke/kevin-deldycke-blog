@@ -17,7 +17,7 @@ under linux thanks to Qemu.
 First, plug your device in one of your computer's USB port. We need to get the
 hardware UID of the widget. We can do so as root in a linux terminal:
 
-    :::bash
+    :::shell-session
     $ cat /proc/bus/usb/devices
 
 This command output a big mess in which you should find a block of lines
@@ -48,7 +48,7 @@ With this information, we can launch Qemu and bind it to the device. Assuming
 you already have a Qemu image containing a working version of windows XP, the
 command looks like this:
 
-    :::bash
+    :::shell-session
     $ qemu -m 512 -usb -usbdevice host:0403:6001 -hda ./qemu-win-xp-with-freestyler.qcow
 
 Alternatively, you can "hotplug" the USB device once inside Qemu. This can be
@@ -56,7 +56,7 @@ done by calling the
 [Qemu interactive shell](https://www.nongnu.org//qemu/qemu-doc.html#SEC11) by
 pressing `Ctrl + Alt + 2` simultaneously. Then, to hotplug the USB device, type:
 
-    :::bash
+    :::shell-session
     $ usb_add host:0403:6001
 
 If you're as unlucky as I am, you'll get this error message:
@@ -72,7 +72,7 @@ Which is doubled by the following message from your legacy console:
 The latter point to the restrictive access rights on our device, which can be
 fixed by:
 
-    :::bash
+    :::shell-session
     $ chmod -R a+rw /proc/bus/usb/002/002
 
 ![qemu-usb-console](/uploads/2009/qemu-usb-console.png)
@@ -86,7 +86,7 @@ It probably mean that your linux kernel has already identified the device when
 you plugged in and has loaded some drivers. To unload them and free the device,
 I had to do:
 
-    :::bash
+    :::shell-session
     $ lsmod
     $ rmmod dmx_usb
     $ rmmod ftdi_sio

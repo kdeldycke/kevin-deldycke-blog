@@ -11,7 +11,7 @@ tags: CLI, Git, GitHub, Linux, Perl, Python, Regular expression, Subversion, tra
 
 Everything starts out of a local copy of the Subversion repository that was hosting the WebPing project since its inception:
 
-    :::bash
+    :::shell-session
     $ rm -rf ./svn-repository-copy
     $ tar xvzf ./svn-repository-copy.tar.gz
     $ kill `ps -ef | grep svnserve | awk '{print $2}'`
@@ -19,7 +19,7 @@ Everything starts out of a local copy of the Subversion repository that was host
 
 Let's initialize a Git repository:
 
-    :::bash
+    :::shell-session
     $ rm -rf ./webping-git
     $ mkdir ./webping-git
     $ cd ./webping-git
@@ -29,7 +29,7 @@ Let's initialize a Git repository:
 
 We now migrate the code from Subversion to Git:
 
-    :::bash
+    :::shell-session
     $ git svn init --no-metadata --username deldycke svn://localhost:3690
     $ git svn fetch
     $ git rebase --onto git-svn master
@@ -42,17 +42,17 @@ We now migrate the code from Subversion to Git:
 
 As WebPing was not alone in the original Subversion repository, we need to clean up the latter and only keep code of the former. Worse, WebPing didn't started its life in a dedicated subfolder, but as a tool of another project, and jumped from folders to folders. After identifying in the history all places were WebPing lived once, I came up with this big, convoluted command line to do the cleaning:
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'find ./ -not -ipath "*webping*" -and -not -path "./other-project/trunk/tools/web-ping*" -and -not -path "./other-project/trunk/tools" -and -not -path "./other-project/trunk" -and -not -path "./other-project" -and -not -path "./.git*" -and -not -path "./" | xargs rm -rf' -- --all
 
 Strangely enough, my `init` tag went off after the command above. So I had to rebased it to get it in line:
 
-    :::bash
+    :::shell-session
     $ git rebase init master
 
 We can now remove SVN tags and branches, get rid of the imported `git-svn` branch, and clean up our Git repository:
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'find -path "./WebPing/tags*" | xargs rm -rf' -- --all
     $ git filter-branch --force --prune-empty --tree-filter 'find -path "./WebPing/branches*" | xargs rm -rf' -- --all
     $ git branch -r -D git-svn
@@ -69,7 +69,7 @@ If I now only have WebPing code in the repository, it still jumps through the hi
 
 Using a series of `git filter-branch` invocations, I managed to move everything to the root of the repository:
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'test -d ./other-project/trunk/tools && cp -axv ./other-project/trunk/tools/* ./ && rm -rf ./other-project/trunk/tools || echo "No tools folder found"' -- --all
     $ git filter-branch --force --prune-empty --tree-filter 'test -d ./other-project/trunk/tools/web-ping && cp -axv ./other-project/trunk/tools/web-ping/* ./ && rm -rf ./other-project/trunk/tools/web-ping || echo "No web-ping folder found"' -- --all
     $ git filter-branch --force --prune-empty --tree-filter 'test -d ./WebPing/trunk && cp -axv ./WebPing/trunk/* ./ && rm -rf ./WebPing/trunk || echo "No trunk folder found"' -- --all
@@ -80,29 +80,29 @@ As WebPing was created for internal needs in my previous job, its original code 
 
 For example, here is the commands which allowed me to remove all references to hostnames of our intranets:
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'find . -type f -exec perl -i -pe "s/([\w-.]*?)\.(company(-intranet|-extention)?)\.(fr|com|net|org)/intranet\.example\.com/g" "{}" \;' -- --all
 
 The Perl one-liner embedded in the command above will only apply the regular expression on a line-by-line basis. If you want to have the regexp applied on the whole content of each file, you have to use Perl's _slurp_ mode ([source of that tip](https://www.math.uiuc.edu/~hildebr/computer/perltips.html)):
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'perl -0777 -i -pe "s/MAILING_LIST\s*=\s*\[(.*?)\]/MAILING_LIST = \[\]/gs" ./web-ping.py' -- --all
 
 The specific example above helped me removed the content of the `MAILING_LIST` Python list found in `web-ping.py`, in order to protect from spam the email addresses of my former co-workers that were unfortunately hard-coded in that variable.
 
 Another place to hunt for sensible information is commit messages. These can be easily modified thanks to the `--msg-filter` option. Here is how I removed references to our internal [Trac](https://trac.edgewall.org/) tickets:
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --msg-filter 'sed "s/ (see ticket:666)//g"' -- --all
 
 I also had to remove line returns introduced by abusive usage of Windows text editors (remember, WebPing was born in a corporate environment):
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'perl -i -pe "s/\r//" ./*' -- --all
 
 The last useful command I use was the following, to fix author's name and email:
 
-    :::bash
+    :::shell-session
     $ git filter-branch --force --env-filter '
         if [ "$GIT_AUTHOR_NAME" = "deldycke" ]
           then
@@ -124,7 +124,7 @@ But I certainly have been a little too blunt with these regular expressions. Som
 
 Now that your code is clean, all you need is to recreate you tag and fix the `init` tag date before committing everything to GitHub:
 
-    :::bash
+    :::shell-session
     $ git tag -f "0.0" bad4ff7fc48b8b34f6f661d75c782c7fc0d098c5
     $ git tag -f "0.1" 590ac9953df0e3bc76fd02615471e36a9796a065
     $ git tag -f "0.2" 33f731054042b02c6d2600e7aead5bb7c4991b12

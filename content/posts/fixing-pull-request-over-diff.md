@@ -17,7 +17,7 @@ make my commit message more informative. Fair enough. This shouldn't take long.
 
 So I fetched a local copy of my fork, made the edit and pushed it back:
 
-    :::bash
+    :::shell-session
     $ git clone https://github.com/kdeldycke/babel.git
     $ cd ./babel
     $ git checkout patch-1
@@ -48,7 +48,7 @@ other metadata involved.
 As I wasn't ready to waste time on doctoring each commit to find the
 underlaying differences, I simply rebased everything to master:
 
-    :::bash
+    :::shell-session
     $ git rebase master
     $ git pull
     $ git rebase origin/master

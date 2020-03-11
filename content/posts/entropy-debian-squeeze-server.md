@@ -14,7 +14,7 @@ That's a [well known issue](https://otrs.menandmice.com/otrs/public.pl?Action=Pu
 
 My server is running Debian Squeeze. Luckily, a [package is available](https://packages.debian.org/squeeze-backports/haveged) in the backport repository. All we have to do is to add the latter in our source list before installing `haveged`:
 
-    :::bash
+    :::shell-session
     $ echo 'deb https://backports.debian.org/debian-backports squeeze-backports main' > /etc/apt/sources.list.d/squeeze-backports.list
     $ apt-get update
     $ apt-get -t squeeze-backports install haveged

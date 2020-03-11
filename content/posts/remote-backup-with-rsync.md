@@ -19,14 +19,14 @@ This little article describe how to setup an automatic backup procedure to a rem
 
 First, install rsync on the client and on the server using:
 
-    :::bash
+    :::shell-session
     $ urpmi rsync
 
 ## Synchronization
 
 Then, to synchronise from the local machine to the distant server, just do:
 
-    :::bash
+    :::shell-session
     $ rsync -avz -e ssh /home/client_user/Documents kevin@homeserver.com:/mnt/raid2/
 
   * `/home/client_user/Documents` is the local folder we want to save (located in the home folder of the client user `client_user`),
@@ -38,22 +38,22 @@ Then, to synchronise from the local machine to the distant server, just do:
 
 First, create a pair of cryptographic keys (public, private):
 
-    :::bash
+    :::shell-session
     $ ssh-keygen -t rsa
 
 Then, from the local machine as user `client_user`, register you on the distant server:
 
-    :::bash
+    :::shell-session
     $ ssh-copy-id -i ~/.ssh/id_rsa.pub kevin@homeserver.com
 
 In case your distant machine's SSH server is running on another port than 22 (which is the default port), let's said 222, here is the command that emulate `ssh-copy-id` (as the later doesn't have a port parameter):
 
-    :::bash
+    :::shell-session
     $ cat ~/.ssh/id_rsa.pub | ssh -p 222 kevin@homeserver.com "cat >> ~/.ssh/authorized_keys"
 
 Create a script named `rsync_data_backup.sh` that contain the command you've used previously to synchronize your data:
 
-    :::bash
+    :::shell-session
     $ rsync -avz -e ssh /home/client_user/Documents kevin@homeserver.com:/mnt/raid2/
 
 To run this script with a cron entry, the (unsecure) solution found is to create a key without a passphrase. The cron entry could be something like:

@@ -16,12 +16,12 @@ We're lucky, [Dovecot is available in MacPorts
 ](https://www.macports.org/ports.php?by=name&substr=dovecot), so we can install
 it easily:
 
-    :::bash
+    :::shell-session
     $ port install dovecot
 
 It's time to configure it. We start with the default configuration template:
 
-    :::bash
+    :::shell-session
     $ cp /opt/local/etc/dovecot/dovecot-example.conf /opt/local/etc/dovecot/dovecot.conf
 
 Then we can edit the `dovecot.conf` configuration file as we wish. FYI, here
@@ -60,13 +60,13 @@ are my modifications:
 
 Before starting Dovecot, we have to create a dummy SSL certificate:
 
-    :::bash
+    :::shell-session
     $ mkdir -p /opt/local/etc/ssl/{certs,private}
     $ openssl req -new -x509 -days 3650 -nodes -out /opt/local/etc/ssl/certs/dovecot.pem -keyout /opt/local/etc/ssl/private/dovecot.pem
 
 And finally, we can launch the Dovecot server itself as `root`:
 
-    :::bash
+    :::shell-session
     $ dovecot
 
 That's all!
@@ -78,6 +78,6 @@ with [Thunderbird](https://www.mozillamessaging.com/thunderbird/):
 
 And if you have problems, the first reflex is to read Dovecot's logs:
 
-    :::bash
+    :::shell-session
     $ tail -F /var/log/mail.log
 

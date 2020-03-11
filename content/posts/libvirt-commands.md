@@ -7,21 +7,21 @@ tags: CLI, Linux, libvirt, QEMU, virtual machine
 
 List system virtual machines:
 
-    :::bash
+    :::shell-session
     $ virsh -c qemu:///system list --all
 
 List session VMs:
 
-    :::bash
+    :::shell-session
     $ virsh -c qemu:///session list --all
 
 Dump a VM configuration to XML file:
 
-    :::bash
+    :::shell-session
     $ virsh -c qemu:///system dumpxml vm-name > vm-name-conf.xml
 
 Create a new VM by importing its XML configuration:
 
-    :::bash
+    :::shell-session
     $ virsh -c qemu:///system define vm-name-conf.xml
 

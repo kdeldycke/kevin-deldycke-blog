@@ -21,7 +21,7 @@ tags](https://help.disqus.com/customer/portal/articles/665057).
 
 Let's update this notation directly in WordPress database:
 
-    :::bash
+    :::shell-session
     $ mysqldump --opt kevblog wp_comments > ./comments.sql
     $ perl -pe 's/\[code lang=(.*?)\]/<pre><code class=\1>/g' ./comments.sql > comments-fixed.sql
     $ sed -i 's/\[\/code\]/<\/code><\/pre>/g' ./comments-fixed.sql
@@ -68,7 +68,7 @@ But there was no `<wp:comment_parent />` tags in my XML file.
 
 I also checked that no comment were moderated:
 
-    :::bash
+    :::shell-session
     $ grep -c "<wp:comment_approved>0</wp:comment_approved>" ./kevindeldycke.wordpress.2013-01-15-fixed.xml
     0
     $ grep -c "<wp:comment_approved>1</wp:comment_approved>" ./kevindeldycke.wordpress.2013-01-15-fixed.xml
@@ -84,7 +84,7 @@ anonymous commenter. These shared the following empty properties:
 
 I then decided to forced anonymous comments to bear a generic author's name:
 
-    :::bash
+    :::shell-session
     $ perl -0p -e 's/(<wp:comment_author><!\[CDATA\[)(\]\]><\/wp:comment_author>\s*<wp:comment_author_email><\/wp:comment_author_email>)/\1Anonymous\2/sg' ./kevindeldycke.wordpress.2013-01-15-fixed.xml > test.xml
 
 Resulting in the following changes:

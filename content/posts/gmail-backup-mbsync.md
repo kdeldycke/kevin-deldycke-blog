@@ -11,14 +11,14 @@ In the mean time I found out about [mbsync](https://isync.sourceforge.net/mbsync
 
 Let's install mbsync and its dependencies!
 
-    :::bash
+    :::shell-session
     $ sudo aptitude install isync ca-certificates
 
 Just in case, don't forget to [enable IMAP access to you Gmail account](https://support.google.com/mail/bin/answer.py?hl=en&answer=77695).
 
 Create a new destination directory and an empty configuration file:
 
-    :::bash
+    :::shell-session
     $ mkdir -p ~/gmail-backup
     $ touch ~/.mbsyncrc
 
@@ -52,13 +52,13 @@ Then add the following parameters in `~/.mbsyncrc`:
 
 Before going further we need to fetch Gmail's certificates:
 
-    :::bash
+    :::shell-session
     $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > ~/gmail-backup/gmail.crt
     $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | tac | sed -ne '1,/-BEGIN CERTIFICATE-/p' | tac > ~/gmail-backup/google.crt
 
 Then all you have to do is to launch mbsync itself:
 
-    :::bash
+    :::shell-session
     $ mbsync gmail
     Reading configuration file ~/.mbsyncrc
     Resolving imap.gmail.com... ok
