@@ -2,7 +2,7 @@
 date: 2006-10-18 00:17:10
 title: Archives commands
 category: English
-tags: 7zip, bzip2, CLI, Linux, tar, tarball, zip
+tags: 7zip, bzip2, CLI, Linux, tar, tarball, zip, wget
 ---
 
   * Extract `.tar.gz` file:
@@ -65,3 +65,7 @@ tags: 7zip, bzip2, CLI, Linux, tar, tarball, zip
         :::shell-session
         $ unshar archive.sh
 
+  * One liner to download an archive and extract its content to a target folder:
+  
+        :::shell-session
+        $ wget -O - "https://example.net/archive.zip" | tar -xz --directory /target-folder -f -
