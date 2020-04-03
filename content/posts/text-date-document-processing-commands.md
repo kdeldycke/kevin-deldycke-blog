@@ -5,8 +5,22 @@ category: English
 tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, Perl, Regular expression, GhostScript, X.org
 ---
 
+## Search
 
-## Search & Replace
+  * Count the number of lines with at least one occurence of the `y` character:
+  
+        :::shell-session
+        $ cat test.txt
+        asd  dd :; > 
+        y YYYyy  yyy 
+         .
+         
+        asdkjlyes
+            kjkjhkjhy
+        $ grep -o '.*y.*' ./test.txt | wc -l
+        3
+
+## Replace
 
   * Text replacement:
 
