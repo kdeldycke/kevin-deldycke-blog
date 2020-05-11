@@ -5,10 +5,26 @@ category: English
 tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, driftnet, images
 ---
 
+## Interfaces
+
   * Get the list of all wireless networks reachable by the `wlan0` interface:
 
         :::shell-session
         $ iwlist wlan0 scanning | grep ESSID
+
+  * Get some informations about open ports:
+
+        :::shell-session
+        $ netstat --taupen
+        $ netstat --lapute
+
+  * Watch network activity in real-time:
+
+        :::shell-session
+        $ watch -n 1 "lsof -i"
+
+
+## Domain names
 
   * Get the IP address where a domain points to:
 
@@ -21,16 +37,8 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, dri
         $ dig example.com CNAME
         $ dig example.com MX
 
-  * Get some informations about open ports:
 
-        :::shell-session
-        $ netstat --taupen
-        $ netstat --lapute
-
-  * Watch network activity in real-time:
-
-        :::shell-session
-        $ watch -n 1 "lsof -i"
+## Content inspection
 
   * Save all images passing through `eth0`:
 
