@@ -23,7 +23,7 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, dri
         :::shell-session
         $ watch -n 1 "lsof -i"
 
-  * Reboot machine if the `192.168.0.254` host doesn't reply to ping after 15 attemps or 600 seconds:
+  * Reboot machine if the `192.168.0.254` host doesn't reply to at least one ping after 15 attemps or 600 seconds:
 
         :::shell-session
         $ ping -c 15 -o -t 600 192.168.0.254 || shutdown -r now
