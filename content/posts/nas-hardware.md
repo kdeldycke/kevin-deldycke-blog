@@ -282,9 +282,9 @@ This will bring:
 
 * Newer Coffee Lake R architecture with some in-silicon Meldown mitigations
 * Twice the cores (2 → 4)
-* 6~27% more speed (2.9 GHz → 3.1~3.7 GHz)
-* 3.7~4.3 GHz turbo boost ability (27~48% faster)
-* 3~4x L3 cache
+* 6-27% more speed (2.9 GHz → 3.1-3.7 GHz)
+* 3.7-4.3 GHz turbo boost ability (27-48% faster)
+* 3-4x L3 cache
 * Keep ECC capabilities
 
 ### RAM
