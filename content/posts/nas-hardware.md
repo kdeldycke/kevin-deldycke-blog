@@ -177,7 +177,7 @@ So I got a [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20)
 
 ## CPU and Cooling
 
-I went for the lowest TDP and cheapest CPU, and got a second-hand Intel Celeron G4900T:
+I went for the lowest TDP and cheapest CPU, and got a second-hand [Intel Celeron G4900T](https://www.cpu-monkey.com/en/cpu-intel_celeron_g4900t-860):
 
 * 2.9 GHz
 * 2 cores (2 threads)
@@ -243,7 +243,7 @@ Need more space? We have a couple of options:
 
 1. Buy new 6 TB drives to expand the RAIDZ array. Plain and simple. The NAS has been designed this way. Use it. The current motherboard support up to 8 SATA drives, thanks to our pre-purchased OCuLink cable. And the case already has 4 free 3.5" bays.
 
-1. An alternative consist in upgrading the base capacity of each disk. Just purchase 4 new identical drive, all bigger than 6 TB. Swap from the active array one, and one only, old disk with a brand new, bigger disk. Resilver. Repeat 4 times. Then grow the ZFS vdev. You can now sold the old 6 TB drives. This solution might be more future-proof depending on the $/TB sweet-spot and age of the 6TB disk.
+1. An alternative consist in upgrading the base capacity of each disk. Just purchase 4 new identical drive, all bigger than 6 TB. Swap from the active array one, and one only, old disk with a brand new, bigger disk. Resilver. Repeat 4 times. Then grow the ZFS vdev. You can now sell the old 6 TB drives. This solution might be more future-proof depending on the $/TB sweet-spot and age of the 6TB disk.
 
 ### Drives
 
@@ -251,7 +251,45 @@ Need more space? We have a couple of options:
 
 * So keep watching the $/TB economics of SSDs. In a couple of years, if prices gets reasonable for a home NAS setup, it might be time to get rid of spinning rust.
 
+### CPU
+
+I don't need more CPU power yet. But let's prepare a list of candidates based on:
+
+* [CPUs supported by the motherboard](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#CPU)
+* [CPU cooler compatibility list](https://noctua.at/en/products/cpu-cooler-retail/nh-l9i/cpucomp#manuf_8346)
+
+All CPUs featured in the resulting matrix below shares some specs:
+
+* Intel x86-64, 3rd generation enhanced 14nm++ process
+* Socket LGA-1151
+* [TDP <= 65 W to keep cooler within limits](https://www.amazon.com/gp/customer-reviews/R20G4BY1K6F88C/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B009VCAJ7W
+)
+* SMM, FPU, NX, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AES (encryption boost), AVX, FMA3, and AVX2
+* VT-x, VT-d
+* Dual-channel memory
+
+![](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.png)
+
+Source: [`cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers`](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers)
+
+Most Coffee Lake R CPUs are missing from Noctua list (tagged as `unreferenced`). I have no intention of overlocking, so we can still assume they're safe for our cooler, based on TDP and filiation to their Coffee Lake R ancestors.
+
+If the 35 W models would be perfect, there's no need to worry too much about TDP. All the candidates are in range and if it gets hotter towards 65 W, we can still artificially limit the CPU in BIOS.
+
+All in all, the logical choice is to go with a Core i3-9300 (or a Core i3-9100), whatever the variant, as the T and F are quite hard to find in retail and generally sold to OEM.
+
+This will bring:
+
+* Newer Coffee Lake R architecture with some in-silicon Meldown mitigations
+* Twice the cores (2 → 4)
+* 6~27% more speed (2.9 GHz → 3.1~3.7 GHz)
+* 3.7~4.3 GHz turbo boost ability (27~48% faster)
+* 3~4x L3 cache
+* Keep ECC capabilities
+
 ### RAM
+
+If the motherboard support DDR4-2666, the table above revealed CPUs supporting that speed have no ECC support. It's pointless to pursue faster RAM and sacrifice data integrity. So we're good staying at 2400 MHz.
 
 More capacity is nice to have, but 16 GB is plenty even with 8 drives in the RAIDZ array. Maxing it out to 64 GB is a luxury.
 
