@@ -272,7 +272,7 @@ All CPUs featured in the resulting matrix below shares some specs:
 
 Source: [`cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers`](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers)
 
-Most Coffee Lake R CPUs are missing from Noctua list (tagged as `unreferenced`). I have no intention of overlocking, so we can still assume they're safe for our cooler, based on TDP and filiation to their Coffee Lake R ancestors.
+Most Coffee Lake R CPUs are missing from Noctua list (tagged as `unreferenced`). I have no intention of overlocking, so we can still assume they're safe for our cooler, based on TDP and filiation to their Coffee Lake S ancestors.
 
 If the 35 W models would be perfect, there's no need to worry too much about TDP. All the candidates are in range and if it gets hotter towards 65 W, we can still artificially limit the CPU in BIOS.
 
