@@ -160,10 +160,16 @@ May 11 13:28:49 freenas kernel: re1: link state changed to UP
 
 I already wasted too much time with hardware. I decided to just throw money at the problem and get a server-grade motherboard.
 
+Meanwhile, I resorted to one of the worst hack I ever came up with. Not sure it will even have an effect. I added a cronjob-based watchdog checking connectivity and rebooting the machine if the local router can't be found:
+
+```shell-session
+$ ping -c 15 -o -t 600 192.168.0.254 || shutdown -r now
+```
+
 
 ## Motherboard, take #2
 
-So I got a [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20):
+So I settled on an [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20):
 
 * Intel NICs, finally!
 * 8 total SATA by the way of additional OCuLink port
@@ -237,28 +243,27 @@ From an economical point of view, a NAS at home is a stupid project. I should ha
 
 ## Upgrade Path
 
+This time we'll try to plan ahead future hardware purchase.
+
 ### Storage
 
 Need more space? We have a couple of options:
 
-1. Buy new 6 TB drives to expand the RAIDZ array. Plain and simple. The NAS has been designed this way. Use it. The current motherboard support up to 8 SATA drives, thanks to our pre-purchased OCuLink cable. And the case already has 4 free 3.5" bays.
+1. **Buy new 6 TB drives** to expand the RAIDZ array. Plain and simple. The NAS has been designed this way. Use it. The current motherboard support up to 8 SATA drives, thanks to our pre-purchased OCuLink cable. And the case already has 4 free 3.5" bays.
 
-1. An alternative consist in upgrading the base capacity of each disk. Just purchase 4 new identical drive, all bigger than 6 TB. Swap from the active array one, and one only, old disk with a brand new, bigger disk. Resilver. Repeat 4 times. Then grow the ZFS vdev. You can now sell the old 6 TB drives. This solution might be more future-proof depending on the $/TB sweet-spot and age of the 6TB disk.
+1. An alternative consist in upgrading the base capacity of each disk. Just **purchase 4 new identical drive, all bigger than 6 TB**. Swap from the active array one, and one only, old disk with a brand new, bigger disk. Resilver. Repeat 4 times. Then grow the ZFS vdev. You can now sell the old 6 TB drives. This solution might be more future-proof depending on the $/TB sweet-spot and age of the 6TB disk.
 
 ### Drives
 
 * Revisit the 2.5" form-factor. Mobile non-SMR HDDs might get bigger but that's unlikely. The industry is kind of stuck with current technology and the way forward is SSDs. 
 
-* So keep watching the $/TB economics of SSDs. In a couple of years, if prices gets reasonable for a home NAS setup, it might be time to get rid of spinning rust.
+* So **keep watching the $/TB economics of SSDs**. In a couple of years, if prices gets reasonable for a home NAS setup, it might be time to get rid of spinning rust.
 
 ### CPU
 
-I don't need more CPU power yet. But let's prepare a list of candidates based on:
+I don't need more CPU power yet. Unless I'll get to run a couple of virtual machines on the NAS. In this section I'll cross-reference [CPUs supported by the motherboard](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#CPU) with [cooler compatibility](https://noctua.at/en/products/cpu-cooler-retail/nh-l9i/cpucomp#manuf_8346).
 
-* [CPUs supported by the motherboard](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#CPU)
-* [CPU cooler compatibility list](https://noctua.at/en/products/cpu-cooler-retail/nh-l9i/cpucomp#manuf_8346)
-
-All CPUs featured in the resulting matrix below shares some specs:
+All CPUs featured in the resulting matrix below shares these specs:
 
 * Intel x86-64, 3rd generation enhanced 14nm++ process
 * Socket LGA-1151
@@ -272,11 +277,20 @@ All CPUs featured in the resulting matrix below shares some specs:
 
 Source: [`cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers`](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers)
 
-Most Coffee Lake R CPUs are missing from Noctua list (tagged as `unreferenced`). I have no intention of overlocking, so we can still assume they're safe for our cooler, based on TDP and filiation to their Coffee Lake S ancestors.
+Most Coffee Lake R CPUs are missing from Noctua list (tagged as `unreferenced`). I have no intention of overlocking. We can still assume they're safe for our cooler, based on TDP and filiation to their Coffee Lake S ancestors.
 
-If the 35 W models would be perfect, there's no need to worry too much about TDP. All the candidates are in range and if it gets hotter towards 65 W, we can still artificially limit the CPU in BIOS.
+Low power 35 W models (T suffix) are safe choice.
 
-All in all, the logical choice is to go with a Core i3-9300 (or a Core i3-9100), whatever the variant, as the T and F are quite hard to find in retail and generally sold to OEM.
+The no-suffix and F variants are great, and their TDP are perfectly in range with the cooler capabilities. If we find out 65 W to be too much, we can still artificially put a hard-limit to the CPU in BIOS.
+
+As this upgrade is targetting VM usages, I'll skip the F-variant altogether. [GPU passthrough is still highly experimental in FreeBSD's Bhyve hypervisor](https://www.phoronix.com/scan.php?page=news_item&px=Bhyve-GPU-Passthrough-2019). But there's still [some hope](https://www.reddit.com/r/freebsd/comments/encul2/steam_os_in_bhyve_with_gpu_passthroughguidance/) to have the UHD 630 iGPU supported in the far future, and provide accelerated video encoding and decoding to VMs.
+
+My final shortlist is:
+
+1. **[Core i3-9300](https://www.servethehome.com/intel-core-i3-9300-benchmarks-and-review/)** to max out cache and frequency
+1. **Core i3-9300T** same as above with lower frequency but safe thermals
+1. **Core i3-9100** or **i3-9100T** as a choice of last resort, the two above getting harder and harder to find in retail as time goes (Intel prioritizing higher SKUs to increase margins)
+
 
 This will bring:
 
@@ -287,11 +301,13 @@ This will bring:
 * 3-4x L3 cache
 * Keep ECC capabilities
 
+> Note: there's an elusive candidate in the name of the [Core i3-9320, based on the i3-9300](https://www.cpu-monkey.com/en/compare_cpu-intel_core_i3_9300-922-vs-intel_core_i3_9320-921), with slightly better turbo. Unfortunately it is not referenced in the motherboard compatibility list.
+
 ### RAM
 
-If the motherboard support DDR4-2666, the table above revealed CPUs supporting that speed have no ECC support. It's pointless to pursue faster RAM and sacrifice data integrity. So we're good staying at 2400 MHz.
+If the motherboard support DDR4-2666, the table above revealed CPUs supporting that speed have no ECC support. It's pointless to pursue faster RAM and sacrifice data integrity. We'll **keep at 2400 MHz, and purchase DDR4-2666 if cheaper**.
 
-More capacity is nice to have, but 16 GB is plenty even with 8 drives in the RAIDZ array. Maxing it out to 64 GB is a luxury.
+The current 16 GB are plenty, even with 8 drives in the RAIDZ array. To support VMs, 32 GB will be nice to have. Maxing it out to 64 GB is a luxury. The upgrade will depends of price.
 
 ### Motherboard
 
@@ -299,5 +315,6 @@ The one I ended up with is good enough for the years to come. I can only see a m
 
 At which point these extra-features might be nice-to-have:
 
-* Integrated 10G NICs
+* Integrated 10G NICs (latest model being [Intel X710 controller, supported by FreeBSD](https://ark.intel.com/content/www/us/en/ark/products/189534/intel-ethernet-controller-x710-at2.html))
 * A complete fan-less design
+* Wait for Zen 3
