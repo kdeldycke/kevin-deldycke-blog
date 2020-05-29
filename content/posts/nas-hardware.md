@@ -67,7 +67,9 @@ I'm not that much interested by their performances. What I'm looking for is the 
 
 That was my first choice. While pricier than their 3.5" equivalent, I was ready to pay a little premium to reduce the physical space and the noise.
 
-Then the "[SMR scandal](https://arstechnica.com/gadgets/2020/04/caveat-emptor-smr-disks-are-being-submarined-into-unexpected-channels/)" broke out. Bad news, all **big 2.5" HDDs are SMRs**. I had to revise my plans, forget that option and switch to 3.5" drives.
+Then the "[SMR scandal](https://arstechnica.com/gadgets/2020/04/caveat-emptor-smr-disks-are-being-submarined-into-unexpected-channels/)" broke out. SMR drives have bad performances and [artificially increase resilvering time of RAIDZ array from 17 hours to 10 days](https://www.servethehome.com/wd-red-smr-vs-cmr-tested-avoid-red-smr/2/#attachment_43599)!
+
+Bad news, all **big 2.5" HDDs are SMRs**. I had to revise my plans, forget that option and switch to 3.5" drives.
 
 Worse, I already ordered a small case ([SilverStone SST-ML05B](https://amzn.com/B07PLB3JR2/?tag=kevideld-20)) and all its accessories (fans and cables). This box was now useless as I need more volume to accommodate bulkier 3.5" drives. My plans were doomed anyway. If that case had four 2.5" slots, you can only cramp there two, maybe three, 15 mm thick drives.
 
