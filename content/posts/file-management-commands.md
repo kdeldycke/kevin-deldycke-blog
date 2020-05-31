@@ -27,11 +27,6 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::shell-session
         $ find . -type f -exec basename {} \; | sed 's/\(.*\)\..*/\1/' | sort | uniq -c | grep -v "^[ \t]*1 "
 
-  * List all files starting with a dot, and ending with an extension composed of 6 alphanumeric characters. These are temporary files created by rsync:
-
-        :::shell-session
-        $ fd --type file --hidden --ignore-case "^\..+\.[0-9a-z]{6}$"
-
 
 ## Size & Space
 
@@ -92,6 +87,11 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
 
         :::shell-session
         $ grep --only-matching --no-filename --exclude=./{README.md,LICENSE,.git\*} -RIe '[A-Z_]\{4,\}' . | sort | uniq
+
+  * Search all files starting with a dot, and ending with an extension composed of 6 alphanumeric characters. These are temporary files created by rsync:
+
+        :::shell-session
+        $ fd --type file --hidden --ignore-case "^\..+\.[0-9a-z]{6}$"
 
 
 ## Creation
