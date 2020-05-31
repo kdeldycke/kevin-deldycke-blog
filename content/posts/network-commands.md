@@ -2,7 +2,7 @@
 date: 2011-04-11 16:25:54
 title: Network commands
 category: English
-tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, driftnet, images
+tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, driftnet, images, smb, samba, cifs
 ---
 
 ## Interfaces
@@ -49,3 +49,12 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, dri
 
         :::shell-session
         $ driftnet -i eth0 -a -d ./http-pics
+
+
+## Samba / CIFS
+
+  * Mount a samba share:
+
+        :::shell-session
+        $ mkdir /mnt/freebox
+        $ mount_smbfs -I 192.168.0.254 //Guest@/Disque\ 1/ /mnt/freebox
