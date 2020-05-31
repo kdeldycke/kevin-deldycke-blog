@@ -129,6 +129,11 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::shell-session
         $ find ./Dropbox -type f -name "* (kev-laptop's conflicted copy 2013-02-01)*" -execdir rename -f -v "s/(.*) \(kev-laptop's conflicted copy 2013-02-01\)(.*)/\1\2/" {} \;
 
+  * Strip filenames of their leading dot and extension composed of 6 alphanumeric characters. These are temporary files created by rsync:
+
+        :::shell-session
+        $ rename --force --dry-run 's/^\.(.+)\.[0-9a-zA-Z]{6}$/$1/' *
+
 
 ## Cleaning-up
 
