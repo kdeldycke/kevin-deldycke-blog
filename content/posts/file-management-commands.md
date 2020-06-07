@@ -160,8 +160,10 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
   * Here is how I clean-up copies of external drives from accumulated cruft over the past decades:
 
         :::shell-session
-        # Remove metadata at volume's root
+        # Remove metadata at volume's root.
         $ find . -name "System Volume Information"  -type d -depth 1 -mount -print -delete
+        $ find . -name ".DocumentRevisions-V*"      -type d -depth 1 -mount -print -delete
+        $ find . -name ".TemporaryItems"            -type d -depth 1 -mount -print -delete
         $ find . -name "\$AVG8.VAULT\$"             -type d -depth 1 -mount -print -delete
         $ find . -name ".Spotlight-V*"              -type d -depth 1 -mount -print -delete
         $ find . -name "\$RECYCLE.BIN"              -type d -depth 1 -mount -print -delete
