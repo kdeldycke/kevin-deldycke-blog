@@ -157,11 +157,34 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::shell-session
         $ find ./ -iregex ".*-[0-9]+x[0-9]+\.\(jpg\|png\)$" -print -delete
 
-  * I used those commands when I import big quantity of files from a window user:
+  * Here is how I clean-up copies of external drives from accumulated cruft over the past decades:
 
         :::shell-session
-        $ find ./ -name "desktop.ini" -print -delete
-        $ find ./ -name "Thumbs.db" -print -delete
+        # Remove metadata at volume's root
+        $ find . -name "System Volume Information"  -type d -depth 1 -mount -print -delete
+        $ find . -name "\$AVG8.VAULT\$"             -type d -depth 1 -mount -print -delete
+        $ find . -name ".Spotlight-V*"              -type d -depth 1 -mount -print -delete
+        $ find . -name "\$RECYCLE.BIN"              -type d -depth 1 -mount -print -delete
+        $ find . -name ".VolumeIcon.*"              -type f -depth 1 -mount -print -delete
+        $ find . -name "autorun.inf"                -type f -depth 1 -mount -print -delete
+        $ find . -name ".fseventsd"                 -type d -depth 1 -mount -print -delete
+        $ find . -name ".Trash-*"                   -type d -depth 1 -mount -print -delete
+        $ find . -name "RECYCLER"                   -type d -depth 1 -mount -print -delete
+        $ find . -name "Recycled"                   -type d -depth 1 -mount -print -delete
+        $ find . -name "found.*"                    -type d -depth 1 -mount -print -delete
+        $ find . -name "\$AVG"                      -type d -depth 1 -mount -print -delete
+
+        # Remove metadata file and folders artifacts.
+        $ find . -name "desktop.ini"    -type f -mount -print -delete
+        $ find . -name "__MACOSX"       -type d -mount -print -delete
+        $ find . -name "Thumbs.db"      -type f -mount -print -delete
+        $ find . -name ".DS_Store"      -type f -mount -print -delete
+        $ find . -name "._*"            -type f -mount -print -delete
+
+        # Remove empty directories (repeat until none left).
+        $ find -type d -empty -mount -print -delete
+        $ find -type d -empty -mount -print -delete
+        $ find -type d -empty -mount -print -delete
 
   * Delete all files and folders in the current directory except the `README.txt` file:
 
