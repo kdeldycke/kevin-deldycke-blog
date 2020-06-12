@@ -1,5 +1,5 @@
 ---
-date: 2020-05-16 
+date: 2020-05-16
 title: Home Server Hardware for NAS
 category: English
 tags: hardware, NAS, motherboard, filesystem, OS, FreeNAS, hdd, hard-drive, ssd, raid, cpu, storage, network, ZFS
