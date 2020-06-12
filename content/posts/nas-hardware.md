@@ -113,6 +113,12 @@ Went fishing for another case. I increased my budget three times and got a [Silv
 * SFX PSU format (already ordered one)
 * Fit in my electrical cabinet (extremely important)
 
+I tweaked that case and replaced all its 3 default 120 mm fans by three [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20). I choose the S-series over the [NF-F12](https://amzn.com/B00650P2ZC/?tag=kevideld-20) / [NF-A12](https://amzn.com/B07C5VG64V/?tag=kevideld-20) as the latter targets radiators and I needed to [optimize for maximal airflow for case cooling](https://noctua.at/en/which_fan_is_right_for_me). Also the NF-S12A variant is a little quieter than the [NF-S12B](https://amzn.com/B00L8IYCJI/?tag=kevideld-20) one. The case fan upgrade added:
+
+* Absolute silence
+* Variable and dynamic speed, as we moved from 3-pins to 4-pins PWM
+* Reduced RPM: the basic fans were stuck at constant 1100 RPM, the new ones allowed the system to lower them to 400~500 RPM for the same cooling performance
+
 
 ## Motherboard
 
@@ -218,6 +224,7 @@ And my final configuration:
 |---|---|---:|---:|---:|---|
 | 3.5" HDD | [Toshiba N300 - 6 GB](https://amzn.com/B06Y2KCXCM/?tag=kevideld-20) | 4 | €696.89 | €12.84 | Unit price: €168.30~€184.88 |
 | Bigger case | [SilverStone SST-DS380](https://amzn.com/B07PCH47Z2/?tag=kevideld-20) | 1 | €145.18 | €17.50 |
+| Case fans | [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20) | 3 | €59.70 | €3.90 |
 | Mini-ITX motherboard | [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20) | 1 | €324.84 | €21.05 |
 | CPU | [Intel Celeron G4900T](https://www.cpu-monkey.com/en/cpu-intel_celeron_g4900t-860) Coffee Lake-S, 2 cores, 2.9GHz | 1 | €58.00 | €12.90 | 
 | CPU cooler | [Noctua NH-L9i chromax.black](https://amzn.com/B07Y892M38/?tag=kevideld-20) | 1 | €49.90 | €0.99 | Shipped with thermal paste.
@@ -226,7 +233,7 @@ And my final configuration:
 | Flash drive | [SanDisk Ultra Fit 16 GB](https://amzn.com/B077Y149DL/?tag=kevideld-20), USB 3.1 | 1 | €9.59 | |
 | SATA cable | [SATA 3 - straight plug](https://amzn.com/B018Y2LCEI/?tag=kevideld-20) | 3 | €6.99 | | 
 | OCuLink cable | [Supermicro CBL-SAST-0933](https://store.supermicro.com/supermicro-50cm-oculink-to-4-sata-cable-cbl-sast-0933.html) OCuLink to 4 SATA | 1 | €29.76 | €12.01 | 
-| | | **Total** | **€1578.81** | €77.29 | |
+| | | **Total** | **€1638.51** | €81.19 | |
 
 Switching from 2.5" to 3.5" increased the budget by 35%, but I got:
 
