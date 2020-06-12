@@ -113,7 +113,7 @@ Went fishing for another case. I increased my budget three times and got a [Silv
 * SFX PSU format (already ordered one)
 * Fit in my electrical cabinet (extremely important)
 
-I tweaked that case and replaced all its 3 default 120 mm fans by three [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20). I choose the S-series over the [NF-F12](https://amzn.com/B00650P2ZC/?tag=kevideld-20) / [NF-A12](https://amzn.com/B07C5VG64V/?tag=kevideld-20) as the latter targets radiators and I needed to [optimize for maximal airflow for case cooling](https://noctua.at/en/which_fan_is_right_for_me). Also the NF-S12A variant is a little quieter than the [NF-S12B](https://amzn.com/B00L8IYCJI/?tag=kevideld-20) one. The case fan upgrade added:
+I replaced all its 3 default 120 mm fans by three [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20). I choose the S-series over the [NF-F12](https://amzn.com/B00650P2ZC/?tag=kevideld-20) / [NF-A12](https://amzn.com/B07C5VG64V/?tag=kevideld-20) as the latter [targets radiators](https://noctua.at/en/which_fan_is_right_for_me) and I needed to [optimize for maximal airflow for case cooling](https://noctua.at/en/nf-a12x25-performance-comparison-to-nf-f12-and-nf-s12a). Also the NF-S12A variant is a little quieter than the [NF-S12B](https://amzn.com/B00L8IYCJI/?tag=kevideld-20) one. These new fans added:
 
 * Absolute silence
 * Variable and dynamic speed, as we moved from 3-pins to 4-pins PWM
