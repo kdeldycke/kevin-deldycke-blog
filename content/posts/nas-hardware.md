@@ -318,12 +318,16 @@ If the motherboard support DDR4-2666, the table above revealed CPUs supporting t
 
 The current 16 GB are plenty, even with 8 drives in the RAIDZ array. To support VMs, 32 GB will be nice to have. Maxing it out to 64 GB is a luxury. The upgrade will depends of price.
 
+### Network
+
+I dedicated an [article on bringing 10G at home](./10g-network-at-home.md).
+
 ### Motherboard
 
 The one I ended up with is good enough for the years to come. I can only see a motherboard upgrade triggered by a change in drive interfaces. Once SSDs will makes sense, I'll probably have to upgrade from SATA to an array of M.2, MVNe or whatever the right standard will be for these drives in the future.
 
 At which point these extra-features might be nice-to-have:
 
-* Integrated 10G NICs (latest model being [Intel X710 controller, supported by FreeBSD](https://ark.intel.com/content/www/us/en/ark/products/189534/intel-ethernet-controller-x710-at2.html))
+* Integrated 10G NICs (latest model being [Intel X710 controller, supported by FreeBSD](https://ark.intel.com/content/www/us/en/ark/products/189534/intel-ethernet-controller-x710-at2.html)), with a preference for SFP+ port to use a DAC cable
 * A complete fan-less design
 * Wait for Zen 3
