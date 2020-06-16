@@ -40,5 +40,6 @@ Here is a collection of commands lines, code and configuration snippets I collec
   * [JavaScript](https://kevin.deldycke.com/2012/05/javascript-commands/)
   * [WordPress](https://kevin.deldycke.com/2011/12/wordpress-commands/)
   * [macOS](https://kevin.deldycke.com/2019/07/macos-commands/)
+  * [AWS](https://kevin.deldycke.com/2020/06/aws-commands/)
   
 For the context, you can read this [introduction](https://kevin.deldycke.com/2006/10/useful-commands-introduction/).
