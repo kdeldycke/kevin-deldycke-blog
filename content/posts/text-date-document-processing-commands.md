@@ -57,6 +57,11 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::shell-session
         $ find /folder -iname "*.markdown" -exec perl -p -i -e 's/(prefix1|prefix2): .*\n//sg' "{}" \;
 
+  * Remove lines matching a regex (encoding [particular markdown TOC entries](https://github.com/kdeldycke/awesome-iam/commit/295a4fa4229c5966ce4bc207704e32fb6f1491d6#diff-c81593a3651bf87f58345cd819edad71R24)), save the result in place and save a backup of the original content in a `.bak` file:
+
+        :::shell-session
+        $ gawk -i inplace -v INPLACE_SUFFIX=.bak '!/^- \[(Contribute|Contributing|Licence|License)\]\(#.+\)$/{print}' ./readme.md
+
   * Append the content of the `addendum.txt` file to all `.markdown` files:
 
         :::shell-session
