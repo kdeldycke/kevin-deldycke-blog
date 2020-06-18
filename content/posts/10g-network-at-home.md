@@ -2,7 +2,7 @@
 date: 2020-06-12
 title: 10G Network at Home
 category: English
-tags: hardware, network, 10G, freebox
+tags: hardware, network, 10G, freebox, NIC, switch
 ---
 
 Into my [journey building a NAS for the home office](./nas-hardware.md), I went down the rabbit hole and chased better file transfer performance. The next step would be a network upgrade. And so I started exploring 10G at home. It is fancy, but doable.
@@ -19,7 +19,7 @@ Link together the Freebox and the NAS. Both are close to each other, in the same
 
 | Part | Model | Quantity | Total (excl. shipping) | Notes |
 |---|---|---:|---:|---|
-| NIC | [10Gtek 82599ES PCIe x8 single SFP+ port](https://amzn.com/B01LZRSQM9/?tag=kevideld-20) | 1 | €135.99 | Intel controller supported by FreeBSD. |
+| NIC | [10Gtek X520-10G-1S-X8](https://amzn.com/B01LZRSQM9/?tag=kevideld-20), PCIe x8 single SFP+ port | 1 | €135.99 | 82599 Intel controller supported by FreeBSD. |
 | Cable | [10Gtek SFP+ Direct Attach Copper - 2m](https://amzn.com/B00U8BL09Q/?tag=kevideld-20) | 1 | €26.99 | A DAC is low-power, low-cost, low-latency and less bulky. |
 | | | **Total** | **€162.98** | |
 
@@ -32,7 +32,7 @@ RJ45 sockets are available in each room, everything converging in the router & N
 
 | Part | Model | Quantity | Total (excl. shipping) | Notes |
 |---|---|---:|---:|---|
-| Switch | [MikroTik CRS305-1G-4S+in](https://amzn.com/B07LFKGP1L/?tag=kevideld-20) | 1 | €144.01| Limited to 2 RJ45 transceiver, get too hot after that. |
+| Switch | [MikroTik CRS305-1G-4S+in](https://amzn.com/B07LFKGP1L/?tag=kevideld-20) | 1 | €144.01| Limited to 2 RJ45 transceiver, seems to get too hot with more. |
 | Transceiver | [MikroTik S+RJ10](https://amzn.com/B084383RZL/?tag=kevideld-20) | 1 | €66.04 |  |
 | Cable | [10Gtek SFP+ Direct Attach Copper - 1m](https://amzn.com/B00WHS3NCA/?tag=kevideld-20) | 1 | €24.99 | |
 | | | **Total** | **€235.04** | |
