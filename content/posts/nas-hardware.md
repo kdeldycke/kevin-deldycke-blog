@@ -204,7 +204,7 @@ We're no longer fan-less, so I searched for the most silent cooling I could ever
 
 ## Bill of Materials
 
-Initial plans:
+### Initial plans
 
 | Part | Model | Quantity | Total (excl. shipping) | Notes |
 |---|---|---:|---:|---|
@@ -218,7 +218,7 @@ Initial plans:
 | SATA cable | [SATA 3 - 90° plugs](https://amzn.com/B07QYWFKL4/?tag=kevideld-20) | 6 | €15.56 | Refunded: 90° plugs not fit for newer case. | 
 | | | **Total** | **€1163.75** |  |
 
-And my final configuration:
+### Final configuration
 
 | Part | Model | Quantity | Total (excl. shipping) | Shipping | Notes |
 |---|---|---:|---:|---:|---|
