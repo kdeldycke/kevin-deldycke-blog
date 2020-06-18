@@ -316,7 +316,7 @@ This will bring:
 
 If the motherboard support DDR4-2666, the table above revealed CPUs supporting that speed have no ECC support. It's pointless to pursue faster RAM and sacrifice data integrity. We'll **keep at 2400 MHz, and purchase DDR4-2666 if cheaper**.
 
-The current 16 GB are plenty, even with 8 drives in the RAIDZ array. To support VMs, 32 GB will be nice to have. Maxing it out to 64 GB is a luxury. The upgrade will depends of price.
+The current 16 GB are plenty, even with 8 drives in the RAIDZ array. To support VMs, 32 GB will be nice to have. Maxing it out to 64 GB is a luxury. The upgrade will depends on price.
 
 ### Network
 
