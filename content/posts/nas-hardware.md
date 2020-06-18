@@ -225,11 +225,11 @@ We're no longer fan-less, so I searched for the most silent cooling I could ever
 | 3.5" HDD | [Toshiba N300 - 6 GB](https://amzn.com/B06Y2KCXCM/?tag=kevideld-20) | 4 | €696.89 | €12.84 | Unit price: €168.30~€184.88 |
 | Bigger case | [SilverStone SST-DS380](https://amzn.com/B07PCH47Z2/?tag=kevideld-20) | 1 | €145.18 | €17.50 |
 | Case fans | [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20) | 3 | €59.70 | €3.90 |
-| Mini-ITX motherboard | [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20) | 1 | €324.84 | €21.05 |
+| Mini-ITX motherboard | [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20) | 1 | €324.84 | €21.05 | [Upgrade both BMC and BIOS](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#Download). |
 | CPU | [Intel Celeron G4900T](https://www.cpu-monkey.com/en/cpu-intel_celeron_g4900t-860) Coffee Lake-S, 2 cores, 2.9GHz | 1 | €58.00 | €12.90 | 
 | CPU cooler | [Noctua NH-L9i chromax.black](https://amzn.com/B07Y892M38/?tag=kevideld-20) | 1 | €49.90 | €0.99 | Shipped with thermal paste.
 | RAM | [Kingston KSM26ES8/8ME](https://amzn.com/B07BGB6TYS/?tag=kevideld-20) 8GB 2666MHz DDR4 ECC CL19 | 2 | €137.76 | |
-| Power supply | [Corsair SF450](https://amzn.com/B07XJ5GL8Y/?tag=kevideld-20), modular, 450 W, 80+ Platinum | 1 | €119.90 | |
+| Power supply | [Corsair SF450](https://amzn.com/B07XJ5GL8Y/?tag=kevideld-20), modular, 450 W, 80+ Platinum | 1 | €119.90 | | Check serial number: this [model has been recalled](https://www.anandtech.com/show/15829/corsair-sf-series-psu-recall). | 
 | Flash drive | [SanDisk Ultra Fit 16 GB](https://amzn.com/B077Y149DL/?tag=kevideld-20), USB 3.1 | 1 | €9.59 | |
 | SATA cable | [SATA 3 - straight plug](https://amzn.com/B018Y2LCEI/?tag=kevideld-20) | 3 | €6.99 | | 
 | OCuLink cable | [Supermicro CBL-SAST-0933](https://store.supermicro.com/supermicro-50cm-oculink-to-4-sata-cable-cbl-sast-0933.html) OCuLink to 4 SATA | 1 | €29.76 | €12.01 | 
