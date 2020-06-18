@@ -324,7 +324,7 @@ I dedicated an [article on bringing 10G at home](./10g-network-at-home.md).
 
 ### Motherboard
 
-The one I ended up with is good enough for the years to come. I can only see a motherboard upgrade triggered by a change in drive interfaces. Once SSDs will makes sense, I'll probably have to upgrade from SATA to an array of M.2, MVNe or whatever the right standard will be for these drives in the future.
+The one I ended up with is good enough for the years to come. Only a dramatic change in drive interfaces can justify the upgrade. Once SSDs will makes sense, I'll probably have to upgrade from SATA to an array of M.2, MVNe or whatever the right standard will be for these drives in the future.
 
 At which point these extra-features might be nice-to-have:
 
