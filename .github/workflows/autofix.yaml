@@ -66,6 +66,7 @@ jobs:
         run: |
           git ignore-io --replace emacs git gpg linux macos nohup python vim virtualenv visualstudiocode windows backup certificates ssh
           tee -a ./.gitignore <<-EOF
+
           # Pelican
           *.pid
           output
