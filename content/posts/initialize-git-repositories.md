@@ -28,7 +28,7 @@ I need to have the widest time latitude to play with commits.
 
 In this situation, I came to the conclusion that it's a good idea to create an
 empty commit at the start of your repository life, and date it to the start of
-epoch. In the future, I'll be able to leverage this intial commit as an ordinary
+epoch. In the future, I'll be able to leverage this initial commit as an ordinary
 history point from which I can start a branch. Then in this branch I'll be free
 to mess up the history, until merging my changes back in the mainline tree.
 

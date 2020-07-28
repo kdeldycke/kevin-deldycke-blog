@@ -73,5 +73,5 @@ To plug the laptops in the office on the 10G network, we'll rely on external don
 ## Upgrade path
 
 * Upgrade NAS's motherboard and get one with an onboard 10G controller, to eliminate the PCI-e card.
-* Get rid of all external USB NICs and replace them with all-in-one USB-C hubs with embeded 10G. No solution exists on the market yet.
+* Get rid of all external USB NICs and replace them with all-in-one USB-C hubs with embedded 10G. No solution exists on the market yet.
 * Buy a new house, install optical fiber everywhere.

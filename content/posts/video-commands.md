@@ -74,7 +74,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         :::shell-session
         $ ffmpeg -i ./source.mp4 -ss 00:24:52.4 -to 00:24:57.0 -filter_complex "[0:v] fps=12,scale=width=480:height=-1:flags=lanczos,subtitles=source.mp4:si=0:force_style='FontName=Arial Black,Bold=-1,FontSize=26',split [a][b];[a] palettegen=64 [p];[b][p] paletteuse" ./meme.gif
 
-      To pinpoint the right moment to cut your segment, here is a variation of the above to produce a set of timecoded frames with embeded subtitles for preview:
+      To pinpoint the right moment to cut your segment, here is a variation of the above to produce a set of timecoded frames with embedded subtitles for preview:
   
         :::shell-session
         $ ffmpeg -i ./source.mp4 -ss 00:24:52.700 -to 00:24:57.371 -filter_complex "drawtext=text='%{pts\:hms}': fontcolor=black: fontsize=32: box=1: boxcolor=white,subtitles=source.mp4:si=0" -f image2 "%04d.jpg"

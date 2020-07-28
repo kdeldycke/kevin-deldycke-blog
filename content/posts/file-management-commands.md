@@ -22,7 +22,7 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         :::shell-session
         $ find . -type f -printf "%f\n" | sort | uniq --repeated --all-repeated=separate
 
-  * List number of files accross all subfolders sharing the same name, whatever their extension is:
+  * List number of files across all subfolders sharing the same name, whatever their extension is:
 
         :::shell-session
         $ find . -type f -exec basename {} \; | sed 's/\(.*\)\..*/\1/' | sort | uniq -c | grep -v "^[ \t]*1 "
