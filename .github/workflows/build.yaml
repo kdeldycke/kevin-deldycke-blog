@@ -1,0 +1,30 @@
+name: Build and Deploy
+on:
+  push:
+  pull_request:
+  schedule:
+    # Run tests every week to catch regressions from external dependencies.
+    - cron: 17 9 * * 1
+
+jobs:
+
+  build:
+    name: Generate the static site
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.3.1
+    - uses: actions/setup-python@v2.1.1
+    - name: Install Pelican
+      run: |
+        pipenv install
+    - name: Build website
+      run: |
+        invoke build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare site for publishing
+        run: |
+          pelican ./content -o ./output -s ./publishconf.py --verbose
