@@ -22,7 +22,8 @@ To fetch and/or reset submodules to their commited reference:
 
 Install dependencies:
 
-    $ pipenv install
+    $ python -m pip install --upgrade pip poetry
+    $ poetry install
 
 
 Development
