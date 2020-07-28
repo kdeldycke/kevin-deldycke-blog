@@ -132,7 +132,7 @@ PLUGIN_PATHS = ["plugins-core"]
 PLUGINS = [
     "deadlinks",
     "related_posts",
-    # 'thumbnailer',
+    # "thumbnailer",
     "tipue_search",
     "neighbors",
     "sitemap",
