@@ -28,7 +28,7 @@ But if you're unlucky as I was, you will find a strange bug which break down dra
 
 To migrate comments, I have no automatic solution. I choose to do this manually, editing the database by hand. In my case it was the quickest way as I only had a dozen of comments to migrate.
 
-And last but not least, if you care about measuring the popularity of your photos, you should consider migrating the view counter associated with each of your media. Don't worry, this time I wrote a script to take care of it automagically. It will generate a bunch of SQL statements you'll have to execute on your Zenphoto MySQL database. Here is my ["e107 autogallery to Zenphoto hit counter migration script"](/uploads/2008/e107-autogallery-to-zenphoto-hit-counter-migration.py) (nice name isn't it? ;) ) that do the job:
+And last but not least, if you care about measuring the popularity of your photos, you should consider migrating the view counter associated with each of your media. Don't worry, this time I wrote a script to take care of it automagically. It will generate a bunch of SQL statements you'll have to execute on your Zenphoto MySQL database. Here is my "e107 autogallery to Zenphoto hit counter migration script" (nice name isn't it? ;) ) that do the job:
 
     :::python
     #!/usr/bin/python
