@@ -40,7 +40,7 @@ tags: bazaar, CLI, development, Launchpad, Linux, OpenERP, programming
         :::shell-session
         $ bzr break-lock
 
-  * Produce a patch from uncommited local changes with absolute path:
+  * Produce a patch from uncommitted local changes with absolute path:
 
         :::shell-session
         $ bzr diff --prefix=`pwd`/:`pwd`/ > server.patch

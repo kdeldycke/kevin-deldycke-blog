@@ -5,7 +5,7 @@ category: English
 tags: commit, DVCS, Git, GitHub, history
 ---
 
-Several months ago I commited some code in my GitHub repository, but I did it from a temporary system. If I registered my authentication keys correctly to commit stuff, I forgot to create a minimal `~/.gitconfig` file with the right stuff in it.
+Several months ago I committed some code in my GitHub repository, but I did it from a temporary system. If I registered my authentication keys correctly to commit stuff, I forgot to create a minimal `~/.gitconfig` file with the right stuff in it.
 
 The result was not good looking, as my usual name and mail address were not attached to the commit:
 

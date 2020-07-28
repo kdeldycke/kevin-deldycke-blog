@@ -81,7 +81,7 @@ As WebPing was created for internal needs in my previous job, its original code 
 For example, here is the commands which allowed me to remove all references to hostnames of our intranets:
 
     :::shell-session
-    $ git filter-branch --force --prune-empty --tree-filter 'find . -type f -exec perl -i -pe "s/([\w-.]*?)\.(company(-intranet|-extention)?)\.(fr|com|net|org)/intranet\.example\.com/g" "{}" \;' -- --all
+    $ git filter-branch --force --prune-empty --tree-filter 'find . -type f -exec perl -i -pe "s/([\w-.]*?)\.(company(-intranet|-extension)?)\.(fr|com|net|org)/intranet\.example\.com/g" "{}" \;' -- --all
 
 The Perl one-liner embedded in the command above will only apply the regular expression on a line-by-line basis. If you want to have the regexp applied on the whole content of each file, you have to use Perl's _slurp_ mode ([source of that tip](https://www.math.uiuc.edu/~hildebr/computer/perltips.html)):
 

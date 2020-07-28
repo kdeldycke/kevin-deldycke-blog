@@ -7,7 +7,7 @@ tags: ack, CLI, find, grep, Linux, sed, shell, Subversion, Regular expression
 
 ## Native commands
 
-  * Produce a patch file of changes commited in revision 1377:
+  * Produce a patch file of changes committed in revision 1377:
 
         :::shell-session
         $ svn diff -r 1376:1377 > diff.patch
