@@ -65,6 +65,16 @@ jobs:
       - name: Generate .gitignore
         run: |
           git ignore-io --replace emacs git gpg linux macos nohup python vim virtualenv visualstudiocode windows backup certificates ssh
+          tee -a ./.gitignore <<-EOF
+          # Pelican
+          *.pid
+          output
+
+          # Let's Encrypt
+          privkey*.pem
+          letsencrypt/keys/*.pem
+          letsencrypt/logs/*.log*
+          EOF
       - uses: peter-evans/create-pull-request@v3
         with:
           author: "Kevin Deldycke <kevin@deldycke.com>"
