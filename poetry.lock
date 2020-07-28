@@ -263,14 +263,6 @@ version = "2.10"
 
 [[package]]
 category = "main"
-description = "Pythonic task execution"
-name = "invoke"
-optional = false
-python-versions = "*"
-version = "1.4.1"
-
-[[package]]
-category = "main"
 description = "A very fast and expressive template engine."
 name = "jinja2"
 optional = false
@@ -742,7 +734,7 @@ docs = ["sphinx", "repoze.sphinx.autointerface"]
 test = ["zope.security", "zope.testrunner"]
 
 [metadata]
-content-hash = "e5d43d7f7882034f3b33579585cca51130fe1d96baf83c9d93a76c5b59728ed9"
+content-hash = "147d091e2bfcafe89a9d0fb120389cd4db4dfabb5f9bd50027fc6e507deb631e"
 lock-version = "1.0"
 python-versions = "^3.8"
 
@@ -863,11 +855,6 @@ feedgenerator = [
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
     {file = "idna-2.10.tar.gz", hash = "sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"},
-]
-invoke = [
-    {file = "invoke-1.4.1-py2-none-any.whl", hash = "sha256:93e12876d88130c8e0d7fd6618dd5387d6b36da55ad541481dfa5e001656f134"},
-    {file = "invoke-1.4.1-py3-none-any.whl", hash = "sha256:87b3ef9d72a1667e104f89b159eaf8a514dbf2f3576885b2bbdefe74c3fb2132"},
-    {file = "invoke-1.4.1.tar.gz", hash = "sha256:de3f23bfe669e3db1085789fd859eb8ca8e0c5d9c20811e2407fa042e8a5e15d"},
 ]
 jinja2 = [
     {file = "Jinja2-2.11.2-py2.py3-none-any.whl", hash = "sha256:f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"},
