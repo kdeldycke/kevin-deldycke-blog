@@ -35,7 +35,7 @@ And last but not least, if you care about measuring the popularity of your photo
 
     ##############################################################################
     #
-    # Copyright (C) 2008 Kevin Deldycke <kevin@deldycke.com>
+    # Copyright (C) 2008 Kevin Deldycke <kev@coolcavemen.com>
     #
     # This program is Free Software; you can redistribute it and/or
     # modify it under the terms of the GNU General Public License
@@ -57,6 +57,7 @@ And last but not least, if you care about measuring the popularity of your photo
       Last update: 2008 aug 21
     """
 
+
     ########### User config ###########
 
     AUTOGALLERY_ALBUM_PATH = "/www/e107_plugins/autogallery/Gallery"
@@ -65,8 +66,10 @@ And last but not least, if you care about measuring the popularity of your photo
 
     ######## End of user config #######
 
+
     import os, hashlib
     import xml.etree.ElementTree as ET
+
 
     # Calculate hash of a given file
     def getHash(path):
@@ -81,6 +84,7 @@ And last but not least, if you care about measuring the popularity of your photo
       if not len(data):
         return None
       return hashlib.sha224(data).hexdigest()
+
 
     # Associate each autogallery photo having a hitcounter greater than 0 with its MD5 hash
     def populateHashTable(arg, dirname, names):
@@ -110,6 +114,7 @@ And last but not least, if you care about measuring the popularity of your photo
         if file_hash is None:
           continue
         hash_table[file_hash] = hits + hash_table.get(file_hash, 0)
+
 
     # Generate hitcount SQL request for each matching file
     def generateSQL(arg, dirname, names):
