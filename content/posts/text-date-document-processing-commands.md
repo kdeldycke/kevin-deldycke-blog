@@ -7,7 +7,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 
 ## Search
 
-  * Count the number of lines with at least one occurence of the `y` character:
+  * Count the number of lines with at least one occurrence of the `y` character:
   
         :::shell-session
         $ cat test.txt

@@ -51,7 +51,7 @@ Here is the changelog:
 
 A note for developpers: the
 [reference code base](https://github.com/kdeldycke/e107-importer) is now located
-on GitHub. That's were all new code must be commited.
+on GitHub. That's were all new code must be committed.
 [WordPress' Subversion repository](https://plugins.trac.wordpress.org/browser/e107-importer/)
 is only a mirror.
 

@@ -16,7 +16,7 @@ Fetch a copy of the repository:
     $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git
     $ cd ./kevin-deldycke-blog
 
-To fetch and/or reset submodules to their commited reference:
+To fetch and/or reset submodules to their committed reference:
 
     $ git submodule update --init --recursive
 
