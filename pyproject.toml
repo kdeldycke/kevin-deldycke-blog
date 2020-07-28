@@ -23,6 +23,9 @@ invoke = "^1.4.1"
 
 [tool.poetry.dev-dependencies]
 
+[tool.black]
+target-version = ['py38']
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
