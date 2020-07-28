@@ -81,6 +81,9 @@ jobs:
           privkey*.pem
           letsencrypt/keys/*.pem
           letsencrypt/logs/*.log*
+
+          # Misspell-fixer
+          .misspell-fixer.ignore
           EOF
       - uses: peter-evans/create-pull-request@v3
         with:
