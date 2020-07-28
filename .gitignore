@@ -348,3 +348,6 @@ output
 privkey*.pem
 letsencrypt/keys/*.pem
 letsencrypt/logs/*.log*
+
+# Misspell-fixer
+.misspell-fixer.ignore
