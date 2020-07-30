@@ -36,11 +36,13 @@ Update to latest submodules:
 
 In one terminal, run:
 
-    $ invoke regenerate
+    $ pelican --verbose ./content
 
 And in another:
 
-    $ invoke serve
+    $ pelican --verbose --listen
+    (...)
+    -> Serving at port 8000, server 127.0.0.1.
 
 Then go to [http://localhost:8000](http://localhost:8000).
 
@@ -50,7 +52,7 @@ Deployment
 
 Prepare site for publishing:
 
-    $ pelican ./content -o ./output -s ./publishconf.py --verbose
+    $ pelican --verbose ./content --settings ./publishconf.py
 
 Setup AWS CLI:
 
