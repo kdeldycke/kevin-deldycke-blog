@@ -92,12 +92,12 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # https://kevin.deldycke.com/tag/openerp/feed/
-TAG_FEED_RSS = "tag/%s/feed/index.html"
-TAG_FEED_ATOM = "tag/%s/feed/atom/index.html"
+TAG_FEED_RSS = "tag/{slug}/feed/index.html"
+TAG_FEED_ATOM = "tag/{slug}/feed/atom/index.html"
 
 # https://example.com/category/categoryname/feed
-CATEGORY_FEED_RSS = "category/%s/feed/index.html"
-CATEGORY_FEED_ATOM = "category/%s/feed/atom/index.html"
+CATEGORY_FEED_RSS = "category/{slug}/feed/index.html"
+CATEGORY_FEED_ATOM = "category/{slug}/feed/atom/index.html"
 
 FEED_MAX_ITEMS = 5
 USE_FOLDER_AS_CATEGORY = False
