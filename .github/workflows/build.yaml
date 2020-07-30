@@ -21,7 +21,7 @@ jobs:
         poetry install
     - name: Build website
       run: |
-        pelican --verbose ./content
+        poetry run pelican --verbose ./content
 
   deploy:
     needs: build
@@ -29,4 +29,4 @@ jobs:
     steps:
       - name: Prepare site for publishing
         run: |
-          pelican --verbose --settings ./publishconf.py ./content
+          poetry run pelican --verbose --settings ./publishconf.py ./content
