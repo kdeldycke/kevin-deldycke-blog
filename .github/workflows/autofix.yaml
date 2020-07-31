@@ -96,3 +96,23 @@ jobs:
           labels: CI/CD
           assignees: kdeldycke
           branch: update-gitignore
+
+  submodules:
+    name: Update submodules and create a PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.1
+      - name: Fetch latest submodules
+        run: |
+          git submodule update --remote --merge
+      - uses: peter-evans/create-pull-request@v3
+        with:
+          author: "Kevin Deldycke <kevin@deldycke.com>"
+          commit-message: "[autofix] Update submodules"
+          title: "[autofix] Update submodules"
+          body: >
+            [Auto-generated on run #${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/master/.github/workflows/autofix.yaml).
+          labels: CI/CD
+          assignees: kdeldycke
+          branch: update-submodules
