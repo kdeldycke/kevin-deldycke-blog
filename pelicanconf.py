@@ -132,7 +132,9 @@ EXTRA_PATH_METADATA = {
 
 PLUGIN_PATHS = ["plugins-core"]
 PLUGINS = [
-    "deadlinks",
+    # deadlink plugin seems temporarily broken and produce this fatal error:
+    # CRITICAL: AttributeError: module 'deadlinks' has no attribute 'register'
+    # "deadlinks",
     "related_posts",
     # "thumbnailer",
     "tipue_search",
