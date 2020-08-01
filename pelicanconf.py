@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import plumage
+
 AUTHOR = "Kevin Deldycke"
 SITENAME = "Kevin Deldycke"
 
@@ -113,7 +115,7 @@ DEFAULT_PAGINATION = 5
 # TODO: set PAGINATION_PATTERNS to produce nice URLs like index/page/23/
 # instead of indexXX.html
 
-THEME = "plumage"
+THEME = plumage.get_path()
 
 STATIC_PATHS = [
     "uploads",

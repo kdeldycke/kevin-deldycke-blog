@@ -390,6 +390,17 @@ markdown = ["markdown (>=3.1.1,<3.2.0)"]
 
 [[package]]
 category = "main"
+description = "Clean and tidy theme for Pelican."
+name = "plumage"
+optional = false
+python-versions = ">=3.7,<4.0"
+version = "1.0.0"
+
+[package.dependencies]
+pelican = ">=4.2.0,<5.0.0"
+
+[[package]]
+category = "main"
 description = "ASN.1 types and codecs"
 marker = "python_version != \"3.4\""
 name = "pyasn1"
@@ -925,6 +936,10 @@ parsedatetime = [
 pelican = [
     {file = "pelican-4.2.0-py2.py3-none-any.whl", hash = "sha256:656d8ff9f778951f4e317c9e6530e92b02698c5961ebf019c583775a30f857f6"},
     {file = "pelican-4.2.0.tar.gz", hash = "sha256:be7ea9a09311374322b5579c88975ae003409e40c833e761780a0d0dbd84e756"},
+]
+plumage = [
+    {file = "plumage-1.0.0-py3-none-any.whl", hash = "sha256:92ecb6634fa9dea84f91ee8d2ce27e916c210c1e3cfab7abe5df504cedd9e1da"},
+    {file = "plumage-1.0.0.tar.gz", hash = "sha256:2490dfde69bc09f22110c0303048ee5e9073f1cb0cfc9d43ba2638dc66f36726"},
 ]
 pyasn1 = [
     {file = "pyasn1-0.4.8-py2.4.egg", hash = "sha256:fec3e9d8e36808a28efb59b489e4528c10ad0f480e57dcc32b4de5c9d8c9fdf3"},
