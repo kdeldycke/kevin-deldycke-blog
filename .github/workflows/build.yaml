@@ -41,6 +41,21 @@ jobs:
     - name: Prepare site for publishing
       run: |
         poetry run pelican --verbose --settings ./publishconf.py ./content
+    - name: Setup AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
     - name: Create destination bucket
       run: |
-        poetry run aws s3 mb s3://kevin.deldycke.com
+        aws s3 mb s3://kevin.deldycke.com
+    - name: Setup static webhosting
+      run: |
+        aws s3 website s3://kevin.deldycke.com --index-document index.html --error-document 500-error/index.html
+    - name: Upload static website
+      run: |
+        aws s3 sync ./output s3://kevin.deldycke.com --delete --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers full=emailaddress=kevin@deldycke.com
+    - name: Check upload
+      run: |
+        aws s3api head-object --bucket kevin.deldycke.com --key index.html

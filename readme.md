@@ -47,45 +47,8 @@ And in another:
 Then go to [http://localhost:8000](http://localhost:8000).
 
 
-Deployment
-----------
-
-Prepare site for publishing:
-
-    $ pelican --verbose ./content --settings ./publishconf.py
-
-Setup AWS CLI:
-
-    $ aws configure
-    AWS Access Key ID [None]: (...)
-    AWS Secret Access Key [None]: (...)
-    Default region name [None]:
-    Default output format [None]:
-
-    $ cat ~/.aws/credentials
-    [default]
-    aws_access_key_id = (...)
-    aws_secret_access_key = (...)
-
-    $ cat ~/.aws/config
-    [default]
-
-Create the destination bucket if it doesn't exist yet:
-
-    $ aws s3 mb s3://kevin.deldycke.com
-
-Setup bucket:
-
-    $ aws s3 website s3://kevin.deldycke.com --index-document index.html --error-document 500-error/index.html
-
-Upload content to S3 bucket ([full
-documentation](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html)):
-
-    $ aws s3 sync ./output s3://kevin.deldycke.com --delete --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers full=emailaddress=kevin@deldycke.com
-
-And to check metadata, for the `index.html` file at the root for example:
-
-    $ aws s3api head-object --bucket kevin.deldycke.com --key index.html
+Certificate deployment
+----------------------
 
 Register and install a new [Let's Encrypt](https://letsencrypt.org)
 certificate:

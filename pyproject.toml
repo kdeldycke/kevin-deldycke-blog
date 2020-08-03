@@ -17,7 +17,6 @@ pelican = {extras = ["Markdown"], version = "^4.2.0"}
 pymdown-extensions = "^7.1"
 typogrify = "^2.0.7"
 beautifulsoup4 = "^4.9.1"
-awscli = "^1.18.110"
 certbot-s3front = "^0.4.2"
 mdx_video = "^0.1.8"
 mdx_titlecase = "^1.2.0"
