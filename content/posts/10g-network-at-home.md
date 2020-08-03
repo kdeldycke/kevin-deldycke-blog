@@ -70,6 +70,11 @@ To plug the laptops in the office on the 10G network, we'll rely on external don
 | NIC | [Sonnet SOLO10G-TB2](https://amzn.com/B07RGWBQYG/?tag=kevideld-20) | 10G RJ45 | Thunderbolt 2 | $198.98 | |
 
 
+## Wireless
+
+Check out this [Wi-Fi 4/5/6/6E (802.11 n/ac/ax) guide](https://www.duckware.com/tech/wifi-in-the-us.html), which is one of the best resource I ever found to make educated wireless router/AP upgrade decisions, and cut through all the marketing hype.
+
+
 ## Upgrade path
 
 * Upgrade NAS's motherboard and get one with an onboard 10G controller, to eliminate the PCI-e card.
