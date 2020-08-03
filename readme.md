@@ -158,7 +158,6 @@ TODO
       * https://codepen.io/Twikito/pen/Jeaub
       * To center the zoom icon, we can use one of these trick: https://codepen.io/shshaw/full/gEiDt
   * CSS typography: https://www.newnet-soft.com/blog/csstypography
-  * Upgrade to Bootstrap 4.x
   * Image gallery inspiration: https://github.com/Jack000/Expose
 
 
