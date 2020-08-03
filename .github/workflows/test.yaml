@@ -1,4 +1,4 @@
-name: Build
+name: Test
 on:
   push:
   pull_request:
@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  build:
+  test:
     name: Generate the static site
     runs-on: ubuntu-latest
     steps:
