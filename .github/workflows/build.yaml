@@ -41,3 +41,6 @@ jobs:
     - name: Prepare site for publishing
       run: |
         poetry run pelican --verbose --settings ./publishconf.py ./content
+    - name: Create destination bucket
+      run: |
+        poetry run aws s3 mb s3://kevin.deldycke.com
