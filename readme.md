@@ -127,10 +127,6 @@ TODO
       * https://github.com/getpelican/pelican-plugins/tree/master/w3c_validate
       * https://github.com/dypsilon/frontend-dev-bookmarks
   * Use custom jinja filters instead of heavy tag soup in my theme ? Example: https://bitbucket.org/sirex/blog/src/32c192ff7a10/pelican.conf.py#cl-53
-  * Add progressive image loading. See:
-      * https://github.com/vvo/lazyload
-      * https://github.com/tuupola/jquery_lazyload
-      * https://github.com/luis-almeida/unveil
   * Concatenate and minify CSS and Javascript. See:
       * https://pypi.python.org/pypi/mincss
       * https://ralsina.com.ar/weblog/posts/mincss-is-amazing.html
@@ -141,24 +137,10 @@ TODO
   * Look at app-template for code inspiration and ideas:
       *  https://github.com/nprapps/app-template/blob/master/templates/_base.html
       *  https://github.com/nprapps/app-template/blob/master/render_utils.py
-  * Make Masonry responsive ? See:
-      * https://osvaldas.info/responsive-jquery-masonry-or-pinterest-style-layout
-      * https://deanclatworthy.com/2012/09/responsive-twitter-bootstrap-masonry/
-      * https://www.maurizioconventi.com/2012/06/19/responsive-example-integrating-twitter-bootstrap-and-jquery-masonry/
-  * Add progressive loading on masonery layouts. See: https://masonry.desandro.com/demos/infinite-scroll.html
   * Generate thumbnails in article content. See:
       * https://github.com/getpelican/pelican-plugins/pull/40
       * https://github.com/getpelican/pelican-plugins/pull/43
   * Auto-enhance created thumbnails ? See: https://news.ycombinator.com/item?id=5999201
-  * Group contiguous images in a post into a tiled galery:
-      * as in WordPress' jetpack plugin: https://github.com/crowdfavorite-mirrors/wp-jetpack/tree/master/modules/tiled-gallery
-      * or thanks to https://github.com/jakobholmelund/fitpicsjs
-  * Replace MGlass zoom icon overlay with pure CSS. Inspirations:
-      * Cover effect at https://h5bp.github.io/Effeckt.css/dist/captions.html
-      * https://codepen.io/Twikito/pen/Jeaub
-      * To center the zoom icon, we can use one of these trick: https://codepen.io/shshaw/full/gEiDt
-  * CSS typography: https://www.newnet-soft.com/blog/csstypography
-  * Image gallery inspiration: https://github.com/Jack000/Expose
 
 
 License
