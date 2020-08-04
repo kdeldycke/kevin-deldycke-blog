@@ -1,0 +1,36 @@
+name: Renew Cert
+on:
+  schedule:
+    # Renew every hour to test things out.
+    - cron: 17 * * * *
+
+jobs:
+
+  renew-cert:
+    name: Renew Let's Encrypt Certificate
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-python@v2.1.1
+    - name: Install certbot
+      run: |
+        python -m pip install --upgrade pip
+        pip install certbot-s3front
+    - name: Renew Cert
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      run: >
+        certbot --agree-tos
+        -a certbot-s3front:auth
+        --certbot-s3front:auth-s3-bucket kevin.deldycke.com
+        --certbot-s3front:auth-s3-region us-east-1
+        -i certbot-s3front:installer
+        --certbot-s3front:installer-cf-distribution-id EUI0N3OAXXXYY
+        -d kevin.deldycke.com
+        --renew-by-default
+        --text
+        --config-dir ./letsencrypt
+        --logs-dir   ./letsencrypt/logs
+        --work-dir   ./letsencrypt
+        --non-interactive
+        --email kevin@deldycke.com
