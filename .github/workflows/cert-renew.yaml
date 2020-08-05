@@ -1,8 +1,8 @@
 name: Renew Cert
 on:
   schedule:
-    # Renew every hour to test things out.
-    - cron: 17 * * * *
+    # Renew every day at 07:19 to test things out.
+    - cron: "19 7 * * *"
 
 jobs:
 
