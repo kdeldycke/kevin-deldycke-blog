@@ -57,7 +57,6 @@ TODO
       * https://wrapbootstrap.com/theme/simply-minimal-responsive-resume-WB0DCP565
   * Create an autoindex plugin: activate it to produce index of /documents, then get rid of
     htaccess-static.
-  * Fix Google Analytics bouncing rate ? See: https://drawingablank.me/blog/fix-your-bounce-rate.html
   * Get rid of /year/month/ for articles ? Or get rid of month only ?
   * Add links to yearly/monthly indexes in archives
   * Try to paginate monthly and yearly archives
