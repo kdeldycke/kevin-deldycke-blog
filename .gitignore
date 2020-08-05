@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/emacs,git,gpg,linux,macos,nohup,python,vim,virtualenv,visualstudiocode,windows,backup,certificates,ssh
-# Edit at https://www.toptal.com/developers/gitignore?templates=emacs,git,gpg,linux,macos,nohup,python,vim,virtualenv,visualstudiocode,windows,backup,certificates,ssh
+# Created by https://www.toptal.com/developers/gitignore/api/backup,certificates,emacs,git,gpg,linux,macos,nohup,python,ssh,vim,virtualenv,visualstudiocode,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=backup,certificates,emacs,git,gpg,linux,macos,nohup,python,ssh,vim,virtualenv,visualstudiocode,windows
 
 ### Backup ###
 *.bak
@@ -340,7 +340,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/emacs,git,gpg,linux,macos,nohup,python,vim,virtualenv,visualstudiocode,windows,backup,certificates,ssh
+# End of https://www.toptal.com/developers/gitignore/api/backup,certificates,emacs,git,gpg,linux,macos,nohup,python,ssh,vim,virtualenv,visualstudiocode,windows
 
 # Pelican
 *.pid
