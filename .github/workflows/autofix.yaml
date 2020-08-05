@@ -70,7 +70,7 @@ jobs:
           sudo apt install -y git-extras
       - name: Generate .gitignore
         run: |
-          git ignore-io --replace emacs git gpg linux macos nohup python vim virtualenv visualstudiocode windows backup certificates ssh
+          git ignore-io --replace backup certificates emacs git gpg linux macos nohup python ssh vim virtualenv visualstudiocode windows
           tee -a ./.gitignore <<-EOF
 
           # Pelican
