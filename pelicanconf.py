@@ -53,7 +53,6 @@ PAGE_SAVE_AS = PAGE_URL + "index.html"
 PAGE_PATHS = ["pages"]
 
 TEMPLATE_PAGES = {
-    "templates/videos.html": "video/index.html",
     "templates/themes.html": "themes/index.html",
 }
 
@@ -166,7 +165,6 @@ SITESUBTITLE = "Professional Yak Shaver"
 
 MENUITEMS = (
     ("Home", "/"),
-    ("Videos", "/video/"),
     ("Themes", "/themes/"),
     ("About", "/about/"),
 )
@@ -197,6 +195,7 @@ SOCIAL = (
     ("Github", "https://github.com/kdeldycke"),
     ("Hacker News", "https://news.ycombinator.com/user?id=kdeldycke"),
     ("Open Hub", "https://www.openhub.net/accounts/kevin"),
+    ("YouTube", "https://www.youtube.com/channel/UCW0k7La7M8q-_yp3RYfNhFw/"),
 )
 
 LINKS_WIDGET_NAME = "Professional profiles"
