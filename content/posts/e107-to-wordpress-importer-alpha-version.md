@@ -27,4 +27,4 @@ In future releases, I plan to add following features:
 
   * Auto import images embedded in news/pages.
 
-You can also [get the latest version of the script from my "Linux Scripts" page](https://kevin.deldycke.com/code/).
+You can also [get the latest version of the script from its repository](https://github.com/kdeldycke/e107-importer).

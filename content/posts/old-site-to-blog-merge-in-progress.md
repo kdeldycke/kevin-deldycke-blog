@@ -35,4 +35,4 @@ I'm currently moving all the content from my old site to this blog. Here is the 
 
   * [phorum_bodies_update.php](https://github.com/kdeldycke/scripts/blob/master/phorum_bodies_update.php)
 
-Please have a look at the [dedicated linux script page](https://kevin.deldycke.com/code/) to get a short description of each of those scripts.
+Please have a look at the [dedicated linux script page](https://github.com/kdeldycke/scripts) to get a short description of each of those scripts.

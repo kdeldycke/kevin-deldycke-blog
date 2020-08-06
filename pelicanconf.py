@@ -54,7 +54,6 @@ PAGE_PATHS = ["pages"]
 
 TEMPLATE_PAGES = {
     "templates/videos.html": "video/index.html",
-    "templates/code.html": "code/index.html",
     "templates/themes.html": "themes/index.html",
 }
 
@@ -168,7 +167,6 @@ SITESUBTITLE = "Professional Yak Shaver"
 MENUITEMS = (
     ("Home", "/"),
     ("Videos", "/video/"),
-    ("Code", "/code/"),
     ("Themes", "/themes/"),
     ("About", "/about/"),
 )
@@ -197,7 +195,8 @@ SOCIAL_WIDGET_NAME = "Online presence"
 SOCIAL = (
     ("Twitter", "https://twitter.com/kdeldycke"),
     ("Github", "https://github.com/kdeldycke"),
-    ("Keybase.io", "https://keybase.io/kdeldycke"),
+    ("Hacker News", "https://news.ycombinator.com/user?id=kdeldycke"),
+    ("Open Hub", "https://www.openhub.net/accounts/kevin"),
 )
 
 LINKS_WIDGET_NAME = "Professional profiles"

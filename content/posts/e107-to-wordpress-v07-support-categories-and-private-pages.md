@@ -25,4 +25,4 @@ Here is the change-log:
 
   * Some little UI imporvements (to match admin UI consistency).
 
-Because of its de-facto standard status, my import script is now packaged as a `.zip` file. It can be downloaded from [my Linux Scripts section](https://kevin.deldycke.com/code/).
+Because of its de-facto standard status, my import script is now packaged as a `.zip` file. It can be downloaded from [its repository](https://github.com/kdeldycke/e107-importer).
