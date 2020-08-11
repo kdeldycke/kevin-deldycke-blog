@@ -1,6 +1,9 @@
 name: Deploy
 on:
+  # Only deploy the reference default branch.
   push:
+    branches:
+      - master
 
 jobs:
 
