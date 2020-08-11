@@ -10,7 +10,7 @@ This component was sponsored by my employer [Smile](https://smile.fr) and is
 currently [used in
 production](https://www.smile.fr/References/References-par-domaine/Public-et-collectivites/Inra3)
 by two customers. The [code is available on
-Github](https://github.com/kdeldycke/smile_openerp_matrix_widget) under an
+GitHub](https://github.com/kdeldycke/smile_openerp_matrix_widget) under an
 OpenSource license.
 
 The matrix widget looks like what you can expect from a component of that name:

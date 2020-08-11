@@ -192,7 +192,7 @@ ARTICLE_EDIT_LINK = "https://github.com/kdeldycke/kevin-deldycke-blog/edit/maste
 SOCIAL_WIDGET_NAME = "Online presence"
 SOCIAL = (
     ("Twitter", "https://twitter.com/kdeldycke"),
-    ("Github", "https://github.com/kdeldycke"),
+    ("GitHub", "https://github.com/kdeldycke"),
     ("Hacker News", "https://news.ycombinator.com/user?id=kdeldycke"),
     ("Open Hub", "https://www.openhub.net/accounts/kevin"),
     ("YouTube", "https://www.youtube.com/channel/UCW0k7La7M8q-_yp3RYfNhFw/"),
