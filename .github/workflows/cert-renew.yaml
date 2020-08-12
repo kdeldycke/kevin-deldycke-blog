@@ -10,7 +10,7 @@ jobs:
     name: Renew Let's Encrypt Certificate
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-python@v2.1.1
+    - uses: actions/setup-python@v2.1.2
     - name: Install certbot
       run: |
         python -m pip install --upgrade pip
