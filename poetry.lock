@@ -125,7 +125,7 @@ description = "Clean and tidy theme for Pelican."
 name = "plumage"
 optional = false
 python-versions = ">=3.7,<4.0"
-version = "1.0.0"
+version = "1.1.0"
 
 [package.dependencies]
 pelican = ">=4.2.0,<5.0.0"
@@ -231,7 +231,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.1.1"
 
 [metadata]
-content-hash = "395cf081c178d117bc8c47b4ba9032754f0144d84d8969422d350cdc00aac535"
+content-hash = "b941915959b3dd05937387d70b1b9a532d140ca91d15faff9ac3327073006248"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -308,8 +308,8 @@ pelican = [
     {file = "pelican-4.2.0.tar.gz", hash = "sha256:be7ea9a09311374322b5579c88975ae003409e40c833e761780a0d0dbd84e756"},
 ]
 plumage = [
-    {file = "plumage-1.0.0-py3-none-any.whl", hash = "sha256:92ecb6634fa9dea84f91ee8d2ce27e916c210c1e3cfab7abe5df504cedd9e1da"},
-    {file = "plumage-1.0.0.tar.gz", hash = "sha256:2490dfde69bc09f22110c0303048ee5e9073f1cb0cfc9d43ba2638dc66f36726"},
+    {file = "plumage-1.1.0-py3-none-any.whl", hash = "sha256:5c8c882025027ed4befaf1504b4ba72d88a50c7ac11e0ac9745b9fe6fa93ecc1"},
+    {file = "plumage-1.1.0.tar.gz", hash = "sha256:f3093d2a983b526d555e4ea3818e3b2fc592dcb619dfec22d15a0867b9d649ff"},
 ]
 pygments = [
     {file = "Pygments-2.6.1-py3-none-any.whl", hash = "sha256:ff7a40b4860b727ab48fad6360eb351cc1b33cbf9b15a0f689ca5353e9463324"},
