@@ -333,3 +333,9 @@ At which point these extra-features might be nice-to-have:
 * Integrated 10G NICs (latest model being [Intel X710 controller, supported by FreeBSD](https://ark.intel.com/content/www/us/en/ark/products/189534/intel-ethernet-controller-x710-at2.html)), with a preference for SFP+ port to use a DAC cable
 * A complete fan-less design
 * The upcoming AMD's Zen 3 architecture (more cores and L3 cache, better price/performance)
+
+Potential candidates so far:
+
+* [ASRock Rack X570D4I-2T](https://www.asrockrack.com/general/productdetail.asp?Model=X570D4I-2T)
+* [ASRock Rack EPYC3251D4I-2T](https://www.asrockrack.com/general/productdetail.asp?Model=EPYC3251D4I-2T)
+* Keep looking for new models at [SuperMicro motherboard matrix](https://www.supermicro.com/en/products/motherboards/matrix)
