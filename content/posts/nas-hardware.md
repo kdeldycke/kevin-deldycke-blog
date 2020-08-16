@@ -186,20 +186,54 @@ So I settled on an [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevi
 * 3 PWM fan (CPU + front + rear) and thermal sensor header for finer (read quieter) cooling
 * Dedicated IPMI/BMC LAN ethernet socket, with non-JAVA UI
 * All USB 3.1 ports are Gen2, not Gen1, so no time wasted worrying on which is which
-* No unnecessary multimedia ports (no audio, no Display port, no HDMI)
+* No unnecessary multimedia ports (no audio, no Display Port, no HDMI)
+ 
+ 
+## Cooling
+
+We're no longer fan-less, so I searched for the most silent cooling I could ever found. I went straight to Noctua for their reliability, performance and quieteness.
+
+I got the [Noctua NH-L9i chromax.black](https://amzn.com/B07Y892M38/?tag=kevideld-20), for LGA 1151 sockets CPUs and 4-pins PWM. Which also perfectly fit the low-profile requirement of my case (< 57 mm).
+
+Surprisingly the black version was cheaper than [the regular, brown variant](https://amzn.com/B009VCAJ7W/?tag=kevideld-20).
 
 
-## CPU and Cooling
+## CPU
 
-I went for the lowest TDP and cheapest CPU, and got a second-hand [Intel Celeron G4900T](https://www.cpu-monkey.com/en/cpu-intel_celeron_g4900t-860):
+In this section I've cross-referenced [all CPUs supported by the motherboard](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#CPU) with the [cooler compatibility list](https://noctua.at/en/products/cpu-cooler-retail/nh-l9i/cpucomp#manuf_8346):
 
-* 2.9 GHz
-* 2 cores (2 threads)
-* 2 MB L3 cache
-* 35 Watts TDP
-* Up to 64 GB ECC DDR4-2400 RAM
+![](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.png)
 
-We're no longer fan-less, so I searched for the most silent cooling I could ever found. I stumble upon the [Noctua NH-L9i chromax.black](https://amzn.com/B07Y892M38/?tag=kevideld-20) for LGA 1151 sockets CPUs. Which also perfectly fit the low-profile requirement of my case (< 57 mm).
+Source: [`cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers`](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers)
+
+All CPUs featured the matrix above shares these specs:
+
+* Intel x86-64, 3rd generation enhanced 14nm++ process
+* Socket LGA-1151
+* [TDP <= 65 W to keep cooler within limits](https://www.amazon.com/gp/customer-reviews/R20G4BY1K6F88C/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B009VCAJ7W
+)
+* SMM, FPU, NX, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AES (encryption boost), AVX, FMA3, and AVX2
+* VT-x, VT-d
+* Dual-channel memory
+
+But most Coffee Lake-R CPUs are missing from Noctua list (tagged as `unreferenced`). I have no intention of overlocking, so we can assume they're still safe with our cooler, based on TDP and filiation to their Coffee Lake S ancestors.
+
+All in all, low power 35 W models (T suffix) are safe choice.
+
+The no-suffix and F variants are great, and their TDP are perfectly in range within the cooler capabilities. If we find out 65 W to be too much, we can still artificially put hard-limits to the CPU in BIOS.
+
+> Note: there's an elusive candidate in the name of the [Core i3-9320, based on the i3-9300](https://www.cpu-monkey.com/en/compare_cpu-intel_core_i3_9300-922-vs-intel_core_i3_9320-921), with slightly better turbo. Unfortunately it is not referenced in the motherboard compatibility list.
+
+My final shortlist was:
+
+1. [Core i3-9300](https://www.servethehome.com/intel-core-i3-9300-benchmarks-and-review/) to max out cache and frequency
+1. Core i3-9300T same as above with lower frequency but safe thermals
+1. Core i3-9100 or i3-9100T as a nice fallback
+
+I ended up with a **Core i3-9300T**, probably overpriced at the time of purchase, as it was harder and harder to find any of the reference above in retail (seems like Intel prioritizing higher SKUs to increase margins).
+
+> I also wasted time trying to get a second-hand [Intel Celeron G4900T](https://www.cpu-monkey.com/en/cpu-intel_celeron_g4900t-860) (Coffee Lake-S, 2 cores, 2.9GHz). It was
+> [stolen during transit](https://twitter.com/kdeldycke/status/1264193366734012418). By the time I recovered it I decided upon a Core i3-9300T.
 
 
 ## Bill of Materials
@@ -226,24 +260,28 @@ We're no longer fan-less, so I searched for the most silent cooling I could ever
 | Bigger case | [SilverStone SST-DS380](https://amzn.com/B07PCH47Z2/?tag=kevideld-20) | 1 | €145.18 | €17.50 |
 | Case fans | [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20) | 3 | €59.70 | €3.90 |
 | Mini-ITX motherboard | [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20) | 1 | €324.84 | €21.05 | [Upgrade both BMC and BIOS](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#Download). |
-| CPU | [Intel Celeron G4900T](https://www.cpu-monkey.com/en/cpu-intel_celeron_g4900t-860) Coffee Lake-S, 2 cores, 2.9GHz | 1 | €58.00 | €12.90 | 
+| CPU | [Intel Core i3-9300T](https://www.cpu-monkey.com/en/cpu-intel_core_i3_9300t-923) Coffee Lake-R, 4 cores, 3.2GHz, 8MiB L3 cache | 1 | €174.90 | €9.98 | 
 | CPU cooler | [Noctua NH-L9i chromax.black](https://amzn.com/B07Y892M38/?tag=kevideld-20) | 1 | €49.90 | €0.99 | Shipped with thermal paste.
 | RAM | [Kingston KSM26ES8/8ME](https://amzn.com/B07BGB6TYS/?tag=kevideld-20) 8GB 2666MHz DDR4 ECC CL19 | 2 | €137.76 | |
 | Power supply | [Corsair SF450](https://amzn.com/B07XJ5GL8Y/?tag=kevideld-20), modular, 450 W, 80+ Platinum | 1 | €119.90 | | Check serial number: this [model has been recalled](https://www.anandtech.com/show/15829/corsair-sf-series-psu-recall). | 
 | Flash drive | [SanDisk Ultra Fit 16 GB](https://amzn.com/B077Y149DL/?tag=kevideld-20), USB 3.1 | 1 | €9.59 | |
 | SATA cable | [SATA 3 - straight plug](https://amzn.com/B018Y2LCEI/?tag=kevideld-20) | 3 | €6.99 | | 
 | OCuLink cable | [Supermicro CBL-SAST-0933](https://store.supermicro.com/supermicro-50cm-oculink-to-4-sata-cable-cbl-sast-0933.html) OCuLink to 4 SATA | 1 | €29.76 | €12.01 | 
-| | | **Total** | **€1638.51** | €81.19 | |
+| | | **Total** | **€1755.41** | €78.27 | |
 
-Switching from 2.5" to 3.5" increased the budget by 35%, but I got:
+Switching from 2.5" to 3.5" increased the budget by 50%, but I got:
 
 * 50% more useable space (8TB → 12 TB)
-* 100% more SATA slots (4 → 8)
+* Faster disks (5400 rpm → 7200 rpm)
+* Twice SATA slots (4 → 8)
 * Practical front-loading bays for up to 8 disks
 * ECC RAM
 * Intel NICs
-* Faster disks (5400 rpm → 7200 rpm)
-* A more powerful CPU (half the cores, but faster)
+* A more powerful CPU:
+    * Newer Coffee Lake R architecture with some in-silicon Meldown mitigations
+    * 10% more base speed (2.9 GHz → 3.2 GHz)
+    * 3.8 GHz turbo boost ability (65% faster)
+    * 4x L3 cache
 
 My attempt at a 2.5" disk home NAS was expensive. The TCO of the whole project is way too high if you add the frustration, fallbacks, and time spend browsing forums, gathering reviews, returning and getting refunds. All because of bad purchase decisions and poor planning.
 
@@ -270,51 +308,15 @@ Need more space? We have a couple of options:
 
 ### CPU
 
-I don't need more CPU power yet. Unless I'll get to run a couple of virtual machines on the NAS. In this section I'll cross-reference [CPUs supported by the motherboard](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#CPU) with [cooler compatibility](https://noctua.at/en/products/cpu-cooler-retail/nh-l9i/cpucomp#manuf_8346).
+I don't need more power yet. Unless I'll get to run a couple of virtual machines on the NAS.
 
-All CPUs featured in the resulting matrix below shares these specs:
+If this upgrade is targetting VM usages, I'll skip the F-variants altogether. [GPU passthrough is still highly experimental in FreeBSD's Bhyve hypervisor](https://www.phoronix.com/scan.php?page=news_item&px=Bhyve-GPU-Passthrough-2019). But there's still [some hope](https://www.reddit.com/r/freebsd/comments/encul2/steam_os_in_bhyve_with_gpu_passthroughguidance/) to have the UHD 630 iGPU supported in the far future, and provide accelerated video encoding and decoding to VMs.
 
-* Intel x86-64, 3rd generation enhanced 14nm++ process
-* Socket LGA-1151
-* [TDP <= 65 W to keep cooler within limits](https://www.amazon.com/gp/customer-reviews/R20G4BY1K6F88C/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B009VCAJ7W
-)
-* SMM, FPU, NX, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AES (encryption boost), AVX, FMA3, and AVX2
-* VT-x, VT-d
-* Dual-channel memory
-
-![](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.png)
-
-Source: [`cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers`](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers)
-
-Most Coffee Lake R CPUs are missing from Noctua list (tagged as `unreferenced`). I have no intention of overlocking. We can still assume they're safe for our cooler, based on TDP and filiation to their Coffee Lake S ancestors.
-
-Low power 35 W models (T suffix) are safe choice.
-
-The no-suffix and F variants are great, and their TDP are perfectly in range with the cooler capabilities. If we find out 65 W to be too much, we can still artificially put a hard-limit to the CPU in BIOS.
-
-As this upgrade is targetting VM usages, I'll skip the F-variant altogether. [GPU passthrough is still highly experimental in FreeBSD's Bhyve hypervisor](https://www.phoronix.com/scan.php?page=news_item&px=Bhyve-GPU-Passthrough-2019). But there's still [some hope](https://www.reddit.com/r/freebsd/comments/encul2/steam_os_in_bhyve_with_gpu_passthroughguidance/) to have the UHD 630 iGPU supported in the far future, and provide accelerated video encoding and decoding to VMs.
-
-My final shortlist is:
-
-1. **[Core i3-9300](https://www.servethehome.com/intel-core-i3-9300-benchmarks-and-review/)** to max out cache and frequency
-1. **Core i3-9300T** same as above with lower frequency but safe thermals
-1. **Core i3-9100** or **i3-9100T** as a choice of last resort, the two above getting harder and harder to find in retail as time goes (Intel prioritizing higher SKUs to increase margins)
-
-
-This will bring:
-
-* Newer Coffee Lake R architecture with some in-silicon Meldown mitigations
-* Twice the cores (2 → 4)
-* 6-27% more speed (2.9 GHz → 3.1-3.7 GHz)
-* 3.7-4.3 GHz turbo boost ability (27-48% faster)
-* 3-4x L3 cache
-* Keep ECC capabilities
-
-> Note: there's an elusive candidate in the name of the [Core i3-9320, based on the i3-9300](https://www.cpu-monkey.com/en/compare_cpu-intel_core_i3_9300-922-vs-intel_core_i3_9320-921), with slightly better turbo. Unfortunately it is not referenced in the motherboard compatibility list.
+So we're left with the option of revisiting my CPU matrix above to add all the more powerfull Xeon references supported by the motherboard.
 
 ### RAM
 
-If the motherboard support DDR4-2666, the table above revealed CPUs supporting that speed have no ECC support. It's pointless to pursue faster RAM and sacrifice data integrity. We'll **keep at 2400 MHz, and purchase DDR4-2666 if cheaper**.
+If the motherboard support DDR4-2666, my CPU matrix revealed the processors supporting that speed have no ECC support. It's pointless to pursue faster RAM and sacrifice data integrity. We'll **keep at 2400 MHz, and purchase DDR4-2666 if cheaper**.
 
 The current 16 GB are plenty, even with 8 drives in the RAIDZ array. To support VMs, 32 GB will be nice to have. Maxing it out to 64 GB is a luxury. The upgrade will depends on price.
 
@@ -330,4 +332,4 @@ At which point these extra-features might be nice-to-have:
 
 * Integrated 10G NICs (latest model being [Intel X710 controller, supported by FreeBSD](https://ark.intel.com/content/www/us/en/ark/products/189534/intel-ethernet-controller-x710-at2.html)), with a preference for SFP+ port to use a DAC cable
 * A complete fan-less design
-* Wait for Zen 3
+* The upcoming AMD's Zen 3 architecture (more cores and L3 cache, better price/performance)
