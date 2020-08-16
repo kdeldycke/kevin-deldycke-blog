@@ -306,13 +306,41 @@ Need more space? We have a couple of options:
 
 * So **keep watching the $/TB economics of SSDs**. In a couple of years, if prices gets reasonable for a home NAS setup, it might be time to get rid of spinning rust.
 
+### Cooler
+
+In my research I discovered stronger cooler, capable of handling higher base TDP. Here a list of potential upgrades:
+
+| Part | Model | Max TDP | Noise Level | Air Flow | Air Pressure | Price | Notes |
+|---|---|---:|---:|---:|---:|---:|---|
+| Heatsink + Fan | [Noctua NH-L9i](https://amzn.com/B07Y892M38/?tag=kevideld-20) | [65 W](https://noctua.at/en/nh_l9i_tdp_guidelines) | 23.6 dBA | 57.5 m³/h| | €49.90 | Current cooler for reference. Shipped with paste. |
+| Heatsink + Fan | [Cryorig C7 Cu](https://amzn.com/B07BKYJDGM/?tag=kevideld-20) | [115 W](http://www.cryorig.com/c7cu.php#spec) | 30 dBA | 40.5 CFM | 2.8 mmH2O | | Shipped with paste. |
+| Heatsink + Fan | [Cryorig C7 G](https://amzn.com/B07M5LWLFQ/?tag=kevideld-20) | [125 W](http://www.cryorig.com/c7g.php#spec) | 30 dBA | 40.5 CFM | 2.8 mmH2O | | Shipped with paste. |
+
+All coolers above are:
+
+* 4-pins PWM
+* Height lower than 57 mm
+
+Airflow can be converted:
+
+* 1 m³/h is ~0.589 CFM
+* 1 CFM is ~1.699 m³/h
+
+Other candidates to check dimensions:
+
+* [Alpenföhn® Black Ridge](https://www.alpenfoehn.de/en/products/cpu-cooler/black-ridge-en)
+* [ThermalRight AXP-100 C65](http://thermalright.com/product/axp-100-c65/)
+* [ThermalRight AXP-100-Full Copper](http://thermalright.com/product/axp-100-full-copper/)
+
+Upgrading the cooler will open-up more options for the CPUs below.
+
 ### CPU
 
 I don't need more power yet. Unless I'll get to run a couple of virtual machines on the NAS.
 
 If this upgrade is targetting VM usages, I'll skip the F-variants altogether. [GPU passthrough is still highly experimental in FreeBSD's Bhyve hypervisor](https://www.phoronix.com/scan.php?page=news_item&px=Bhyve-GPU-Passthrough-2019). But there's still [some hope](https://www.reddit.com/r/freebsd/comments/encul2/steam_os_in_bhyve_with_gpu_passthroughguidance/) to have the UHD 630 iGPU supported in the far future, and provide accelerated video encoding and decoding to VMs.
 
-So we're left with the option of revisiting my CPU matrix above to add all the more powerfull Xeon references supported by the motherboard.
+So we're left with the option of revisiting my CPU matrix against the new coolers above, and add all the more powerfull Xeon references supported by the motherboard.
 
 ### RAM
 
