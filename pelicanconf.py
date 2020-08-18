@@ -25,8 +25,8 @@ MARKDOWN = {
         "mdx_video": {},
         "mdx_titlecase.mdx_titlecase:TitlecaseExtension": {},
         # https://facelessuser.github.io/pymdown-extensions/
+        "pymdownx.caret": {},
         "pymdownx.extra": {},
-        "pymdownx.caret": {"superscript": True},
         "pymdownx.keys": {},
         "pymdownx.magiclink": {},
         "pymdownx.smartsymbols": {},
