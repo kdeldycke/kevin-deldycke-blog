@@ -17,6 +17,8 @@ MARKDOWN = {
         # https://pythonhosted.org/Markdown/extensions/index.html#officially-supported-extensions
         "markdown.extensions.codehilite": {"css_class": "highlight"},
         "markdown.extensions.meta": {},
+        # Allow numbered lists to not start with 1. Used in following article:
+        # https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/
         "markdown.extensions.sane_lists": {},
         "markdown.extensions.smarty": {},
         "markdown.extensions.toc": {"permalink": True},
@@ -29,10 +31,6 @@ MARKDOWN = {
         "pymdownx.smartsymbols": {},
     },
     "output_format": "html5",
-    # Allow numbered lists to not start with 1. Used in following article:
-    # https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/
-    # See: https://pythonhosted.org/Markdown/reference.html#lazy_ol
-    "lazy_ol": False,
 }
 TYPOGRIFY = True
 
