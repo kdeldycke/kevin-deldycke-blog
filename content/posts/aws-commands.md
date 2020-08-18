@@ -7,13 +7,13 @@ tags: cloud, cloud computing, saas, iaas, paas, aws, amazon, development, CLI, i
 
 All commandes below relies on the latest version of [aws-cli](https://github.com/aws/aws-cli).
 
-macOS install:
+  * macOS install:
 
-    :::shell-session
-    $ brew install awscli
-    (...)
-    $ aws --version
-    aws-cli/2.0.19 Python/3.8.3 Darwin/19.5.0 botocore/2.0.0dev23
+        :::shell-session
+        $ brew install awscli
+        (...)
+        $ aws --version
+        aws-cli/2.0.19 Python/3.8.3 Darwin/19.5.0 botocore/2.0.0dev23
 
 
 ## Authentication
