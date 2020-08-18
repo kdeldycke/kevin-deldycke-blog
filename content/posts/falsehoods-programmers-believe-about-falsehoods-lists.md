@@ -31,11 +31,15 @@ here is a glorious list of meta falsehoods:
 14. Falsehood lists covers one subject.
 15. Falsehood lists are terse.
 16. Falsehood lists are illustrated with counter-examples.
-18. The same format is followed by falsehood lists.
-17. Falsehood lists are sorted.
-19. Falsehood lists don't repeat themselves.
-20. Falsehood lists don't repeat themselves.
-21. Falsehoods in lists are numbered.
+
+## List format
+
+404. Numbered lists have no gap.
+999. Numbered lists are sorted.
+406. Falsehood lists don't repeat themselves.
+407. Falsehood lists don't repeat themselves.
+408. `The same format is followed by each item.`
+409. Falsehoods in lists are numbered.
 
 ## Implementation
 
