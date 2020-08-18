@@ -14,7 +14,7 @@ DEFAULT_LANG = "en"
 LOCALE = "C"
 MARKDOWN = {
     "extension_configs": {
-        # https://pythonhosted.org/Markdown/extensions/index.html#officially-supported-extensions
+        # https://python-markdown.github.io/extensions/#officially-supported-extensions
         "markdown.extensions.codehilite": {"css_class": "highlight"},
         "markdown.extensions.meta": {},
         # Allow numbered lists to not start with 1. Used in following article:
