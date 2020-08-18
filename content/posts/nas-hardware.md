@@ -267,7 +267,8 @@ I ended up with a **Core i3-9300T**, probably overpriced at the time of purchase
 | Flash drive | [SanDisk Ultra Fit 16 GB](https://amzn.com/B077Y149DL/?tag=kevideld-20), USB 3.1 | 1 | €9.59 | |
 | SATA cable | [SATA 3 - straight plug](https://amzn.com/B018Y2LCEI/?tag=kevideld-20) | 3 | €6.99 | | 
 | OCuLink cable | [Supermicro CBL-SAST-0933](https://store.supermicro.com/supermicro-50cm-oculink-to-4-sata-cable-cbl-sast-0933.html) OCuLink to 4 SATA | 1 | €29.76 | €12.01 | 
-| | | **Total** | **€1755.41** | €78.27 | |
+| Probe | [10K thermal wire sensor](https://amzn.com/B00CMR38LC/?tag=kevideld-20)  | 1 | €0.25 | €1.16 | Attached to HDDs.
+| | | **Total** | **€1755.66** | €79.43 | |
 
 Switching from 2.5" to 3.5" increased the budget by 50%, but I got:
 
