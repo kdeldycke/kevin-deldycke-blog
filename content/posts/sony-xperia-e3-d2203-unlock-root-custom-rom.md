@@ -229,7 +229,7 @@ I choose a tweaked yet stable distribution based on the stock Android 4.4.4 and 
 1. Then go back, `backup and restore` > `restore from /storage/sdcard1` > `Version_1` (i.e. the name of the first subfolder from the ZIP file we downloaded above) > `Yes - Restore`.
 
 1. Wait while the installation is performed. At the end you can reboot the device and you should have a brand new and clean phone:
-    
+
     ![](../uploads/2019/sony-xperia-e3-d2203-android-444.jpg)
 
 
