@@ -92,7 +92,7 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
         :::shell-session
         $ psmouse.proto=imps
 
-  * Sometimes, depending of the laptop I use, the mouse pointer disappear from the screen when I plug a VGA cable to a projector. In this case, I resort to a `CTRL + ALT + F1`, then I login as a normal user and finally I start a new X session:
+  * Sometimes, depending of the laptop I use, the mouse pointer disappear from the screen when I plug a VGA cable to a projector. In this case, I resort to a ++ctrl+alt+f1++, then I login as a normal user and finally I start a new X session:
 
         :::shell-session
         $ startx -- :1

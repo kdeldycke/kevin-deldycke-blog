@@ -184,7 +184,7 @@ Before proceeding any further, please double check your device is the right one,
 
 	When the Sony Xperia logo show up, at the very start of the boot process, the front notification LED gets turned on in pink for a couple of seconds while the phone briefly vibrate.
 
-	And right at that time you press alternatively the `Up` and `Down` volume buttons a couple of times, while the LED last, you'll boot into the custom recovery ROM you just flashed:
+	And right at that time you press alternatively the ++up++ and ++down++ volume buttons a couple of times, while the LED last, you'll boot into the custom recovery ROM you just flashed:
 
     ![](../uploads/2019/sony-xperia-e3-d2203-lte-cmw-recovery.jpg)
 

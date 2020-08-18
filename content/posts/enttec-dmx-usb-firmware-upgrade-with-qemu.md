@@ -54,7 +54,7 @@ command looks like this:
 Alternatively, you can "hotplug" the USB device once inside Qemu. This can be
 done by calling the
 [Qemu interactive shell](https://www.nongnu.org//qemu/qemu-doc.html#SEC11) by
-pressing `Ctrl + Alt + 2` simultaneously. Then, to hotplug the USB device, type:
+pressing ++ctrl+alt+2++ simultaneously. Then, to hotplug the USB device, type:
 
     :::shell-session
     $ usb_add host:0403:6001

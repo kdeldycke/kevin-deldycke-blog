@@ -27,6 +27,7 @@ MARKDOWN = {
         # https://facelessuser.github.io/pymdown-extensions/
         "pymdownx.extra": {},
         "pymdownx.caret": {"superscript": True},
+        "pymdownx.keys": {},
         "pymdownx.magiclink": {},
         "pymdownx.smartsymbols": {},
     },

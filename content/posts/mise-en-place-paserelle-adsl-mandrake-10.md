@@ -147,7 +147,7 @@ Vous pourrez voir a ce moment les lignes suivantes:
 Si les trois tentatives se terminent par un échec, c'est simplement que vous
 avez connecté le modem et le réseau sur les mauvaises cartes&nbsp;! Échangez donc le
 branchement des prises RJ-45, et redémarrez le PC. Pour redémarrer on peut faire
-un `ctrl+alt+suppr`. On aurait pu faire ça plus rapidement et proprement mais je
+un ++ctrl+alt+del++. On aurait pu faire ça plus rapidement et proprement mais je
 veux vous faire voir qu'internet et le réseau se mettent en route
 automatiquement lors du démarrage, et ceci sans notre intervention.
 

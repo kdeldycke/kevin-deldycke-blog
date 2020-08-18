@@ -14,7 +14,7 @@ That being said, let's start with this simple snippet that will let you force th
     :::js
     $('#my_field_id').focus();
 
-Once, in an heavily customized form, I had to simulate a click on a custom button each time a user would press the enter key, hence simulating a form submission. This can be done with the following code:
+Once, in an heavily customized form, I had to simulate a click on a custom button each time a user would press the ++enter++ key, hence simulating a form submission. This can be done with the following code:
 
     :::js
     $("input").keydown(function(e){
