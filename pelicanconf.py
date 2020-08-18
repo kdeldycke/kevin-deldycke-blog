@@ -15,7 +15,7 @@ LOCALE = "C"
 MARKDOWN = {
     "extension_configs": {
         # https://python-markdown.github.io/extensions/#officially-supported-extensions
-        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.codehilite": {},
         "markdown.extensions.meta": {},
         # Allow numbered lists to not start with 1. Used in following article:
         # https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/
