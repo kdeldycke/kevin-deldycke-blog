@@ -202,7 +202,7 @@ Surprisingly the black version was cheaper than [the regular, brown variant](htt
 
 In this section I've cross-referenced [all CPUs supported by the motherboard](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#CPU) with the [cooler compatibility list](https://noctua.at/en/products/cpu-cooler-retail/nh-l9i/cpucomp#manuf_8346):
 
-![](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.png)
+![](/uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.png)
 
 Source: [`cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers`](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers)
 
