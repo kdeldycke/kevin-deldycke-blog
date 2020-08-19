@@ -25,7 +25,8 @@ MARKDOWN = {
             "permalink": True,
             # Style aligns to Plumage theme at:
             # https://github.com/kdeldycke/plumage/blob/v1.1.0/plumage/static/css/style.css#L184-L202
-            "permalink_class": "headerlink text-decoration-none small pl-2"},
+            "permalink_class": "headerlink text-decoration-none small pl-2",
+        },
         "mdx_video": {},
         "mdx_titlecase.mdx_titlecase:TitlecaseExtension": {},
         # https://facelessuser.github.io/pymdown-extensions/
