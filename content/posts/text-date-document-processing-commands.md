@@ -77,7 +77,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
     these matched blocks the `a` letter by `XXX`. Notice how `a` occurences
     outside the blocks are not replaced by `XXX`:
 
-        ```shell-session
+        ```{.shell-session hl_lines="19"}
         $ cat ./example.md
 
         This is a code block:
@@ -118,7 +118,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
   * In the same spirit as above but this time to spot indented blocks
     starting with `:::`, then wrap them into triple-backticks fences:
 
-        ```shell-session
+        ```{.shell-session hl_lines="19 20 21"}
         $ cat ./example.md
 
         This is a code block:
