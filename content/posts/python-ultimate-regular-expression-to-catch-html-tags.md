@@ -5,10 +5,13 @@ category: English
 tags: HTML, programming, Python, Regular expression, BeautifoulSoup, lxml
 ---
 
-_**Disclaimer**: this is a dirty hack! To parse HTML or XML, use a dedicated
-library like the good old 
-[`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4) or 
-[`lxml.html`](https://lxml.de/lxmlhtml.html).
+!!! alert alert-warning "Disclaimer"
+    This is a dirty hack!
+    
+    To parse HTML or XML, use a dedicated library like the good old:
+    
+    * [`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4) 
+    * [`lxml.html`](https://lxml.de/lxmlhtml.html)
 
 1 year and 3 months ago I've came with a
 [PHP regexp to parse HTML tag soup](https://kevin.deldycke.com/2007/03/ultimate-regular-expression-for-html-tag-parsing-with-php/).
