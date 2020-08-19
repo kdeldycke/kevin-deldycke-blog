@@ -33,8 +33,8 @@ MARKDOWN = {
             # https://github.com/kdeldycke/plumage/blob/v1.1.0/plumage/static/css/style.css#L184-L202
             "permalink_class": "headerlink text-decoration-none small pl-2",
         },
-        "mdx_video": {},
         "mdx_titlecase.mdx_titlecase:TitlecaseExtension": {},
+        "mdx_video": {},
         # https://facelessuser.github.io/pymdown-extensions/
         "pymdownx.betterem": {},
         "pymdownx.caret": {},
