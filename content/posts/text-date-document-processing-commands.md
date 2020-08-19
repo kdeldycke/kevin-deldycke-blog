@@ -96,7 +96,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 
         This is a random sentence.
 
-        $ sed "/:::/,/^$/ s/a/XXX/g" ./example.md
+        $ sed "/^:::/,/^$/ s/a/XXX/g" ./example.md
 
         This is a code block:
 
@@ -138,8 +138,8 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         This is a random sentence.
 
         $ find ./folder -iname "*.md" \
-        > -exec sed -i "/    :::/,/^$/ s/^$/    \`\`\`\n/" "{}" \; \
-        > -exec sed -i "/    :::/,/^$/ s/:::/\`\`\`/"      "{}" \;
+        > -exec sed -i "/^    :::/,/^$/ s/^$/    \`\`\`\n/" "{}" \; \
+        > -exec sed -i "/^    :::/,/^$/ s/:::/\`\`\`/"      "{}" \;
         $ cat ./example.md
 
         This is a code block:
