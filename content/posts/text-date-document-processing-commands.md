@@ -106,6 +106,51 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         This is a random sentence.
         ```
 
+  * In the same spirit as above but this time to spot indented blocks
+    starting with `:::`, then wrap then into triple-backticks fences:
+
+        ```shell-session
+        $ cat ./example.md
+
+        This is a code block:
+
+            :::shell-session
+            $ apache
+            $ java
+            $ python
+
+        This is another block:
+
+            :::shell-session
+            $ rust
+            $ haskell
+            $ javascript
+
+        This is a random sentence.
+
+        $ find ./folder -iname "*.md" \
+        > -exec sed -i "/    :::/,/^$/ s/^$/    \`\`\`\n/" "{}" \; \
+        > -exec sed -i "/    :::/,/^$/ s/:::/\`\`\`/"      "{}" \;
+        $ cat ./example.md
+
+        This is a code block:
+
+            ```shell-session
+            $ apache
+            $ java
+            $ python
+            ```
+
+        This is another block:
+
+            ```shell-session
+            $ rust
+            $ haskell
+            $ javascript
+            ```
+
+        This is a random sentence.
+
   * Append the content of the `addendum.txt` file to all `.markdown` files:
 
         :::shell-session
