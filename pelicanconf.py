@@ -15,12 +15,18 @@ LOCALE = "C"
 MARKDOWN = {
     "extension_configs": {
         # https://python-markdown.github.io/extensions/#officially-supported-extensions
+        "markdown.extensions.abbr": {},
+        "markdown.extensions.attr_list": {},
         "markdown.extensions.codehilite": {},
+        "markdown.extensions.def_list": {},
+        "markdown.extensions.footnotes": {},
+        "markdown.extensions.md_in_html": {},
         "markdown.extensions.meta": {},
         # Allow numbered lists to not start with 1. Used in following article:
         # https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/
         "markdown.extensions.sane_lists": {},
         "markdown.extensions.smarty": {},
+        "markdown.extensions.tables": {},
         "markdown.extensions.toc": {
             "permalink": True,
             # Style aligns to Plumage theme at:
@@ -30,12 +36,13 @@ MARKDOWN = {
         "mdx_video": {},
         "mdx_titlecase.mdx_titlecase:TitlecaseExtension": {},
         # https://facelessuser.github.io/pymdown-extensions/
+        "pymdownx.betterem": {},
         "pymdownx.caret": {},
         "pymdownx.emoji": {},
-        "pymdownx.extra": {},
         "pymdownx.keys": {},
         "pymdownx.magiclink": {},
         "pymdownx.smartsymbols": {},
+        "pymdownx.superfences": {},
     },
     "output_format": "html5",
 }
