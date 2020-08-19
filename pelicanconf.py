@@ -16,6 +16,9 @@ MARKDOWN = {
     "extension_configs": {
         # https://python-markdown.github.io/extensions/#officially-supported-extensions
         "markdown.extensions.abbr": {},
+        # Example of admonition use at:
+        # https://github.com/kdeldycke/kevin-deldycke-blog/blob/master/content/posts/python-ultimate-regular-expression-to-catch-html-tags.md
+        "markdown.extensions.admonition": {},
         "markdown.extensions.attr_list": {},
         "markdown.extensions.codehilite": {},
         "markdown.extensions.def_list": {},
