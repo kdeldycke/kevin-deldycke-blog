@@ -72,7 +72,7 @@ To plug the laptops in the office on the 10G network, we'll rely on external don
 
 ## Wireless
 
-Check out this [Wi-Fi 4/5/6/6E (802.11 n/ac/ax) guide](https://www.duckware.com/tech/wifi-in-the-us.html), which is one of the best resource I ever found to make educated wireless router/AP upgrade decisions, and cut through all the marketing hype.
+Check out this [Wi-Fi 4-5-6-6E (802.11 n/ac/ax) guide](https://www.duckware.com/tech/wifi-in-the-us.html), which is one of the best resource I ever found to make educated wireless router/AP upgrade decisions, and cut through all the marketing hype.
 
 
 ## Upgrade path
