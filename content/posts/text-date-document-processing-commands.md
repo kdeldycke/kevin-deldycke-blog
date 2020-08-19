@@ -62,6 +62,49 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         :::shell-session
         $ gawk -i inplace -v INPLACE_SUFFIX=.bak '!/^- \[(Contribute|Contributing|Licence|License)\]\(#.+\)$/{print}' ./readme.md
 
+  * Use `sed` address ranges to spot, in a Markdown file, all blocks led by a
+    `:::` directive, and terminated by a blank line. Then replace in each of
+    these matched blocks the `a` letter by `XXX`. Notice how `a` occurences
+    outside the blocks are not replaced by `XXX`:
+
+        ```shell-session
+        $ cat ./example.md
+
+        This is a code block:
+
+        :::shell-session
+        $ apache
+        $ java
+        $ python
+
+        This is another block:
+
+        :::shell-session
+        $ rust
+        $ haskell
+        $ javascript
+
+        This is a random sentence.
+
+        $ sed "/:::/,/^$/ s/a/XXX/g" ./example.md
+
+        This is a code block:
+
+        :::shell-session
+        $ XXXpXXXche
+        $ jXXXvXXX
+        $ python
+
+        This is another block:
+
+        :::shell-session
+        $ rust
+        $ hXXXskell
+        $ jXXXvXXXscript
+
+        This is a random sentence.
+        ```
+
   * Append the content of the `addendum.txt` file to all `.markdown` files:
 
         :::shell-session
