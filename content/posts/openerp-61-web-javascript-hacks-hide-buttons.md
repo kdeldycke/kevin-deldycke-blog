@@ -20,7 +20,7 @@ This module is not generic: it just demonstrate how to distribute dirty patches 
 
 The core of the module lies in the [`/static/src/js/custom.js`](https://github.com/Smile-SA/smile_openerp_addons_6.1/blob/master/web_smile_hide_buttons/static/src/js/custom.js) file. Here is an excerpt of that file, which sums-up my hacks:
 
-    :::javascript
+    ```javascript
     openerp.web_smile_hide_buttons = function(openerp) {
 
         // Models for which we'll hide create and duplicate buttons
@@ -67,6 +67,7 @@ The core of the module lies in the [`/static/src/js/custom.js`](https://github.c
         });
 
     };
+    ```
 
 As you can see in the [full version of the code above](https://github.com/Smile-SA/smile_openerp_addons_6.1/blob/master/web_smile_hide_buttons/static/src/js/custom.js), I tried to hide `create` entries of `many2one` context menus, but failed to.
 

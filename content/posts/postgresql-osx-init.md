@@ -13,7 +13,7 @@ of PostgreSQL.
 
 Install and setup PostgreSQL:
 
-    :::shell-session
+    ```shell-session
     $ brew update
     $ brew install postgresql94 ossp-uuid
 
@@ -32,10 +32,11 @@ Install and setup PostgreSQL:
     $ initdb /usr/local/var/postgres
 
     $ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+    ```
 
 Initialize PostgreSQL:
 
-    :::shell-session
+    ```shell-session
     $ dropdb test_db
 
     $ createdb -E UTF8 -T template0 test_db
@@ -44,8 +45,10 @@ Initialize PostgreSQL:
     $ psql --command 'CREATE EXTENSION "uuid-ossp";' --dbname=test_db
 
     $ tail -F /usr/local/var/postgres/server.log
+    ```
 
 Load up a dumped database:
 
-    :::shell-session
+    ```shell-session
     $ pg_restore --verbose --clean --no-acl --no-owner -h localhost -d test_db ~/dump/2016-10-10-test_db.dump
+    ```

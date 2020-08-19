@@ -7,21 +7,25 @@ tags: CLI, Computer networking, find, Linux, openssh, proxy, rsync, scp, shell, 
 
   * Here is the syntax that makes `scp` support spaces ([source](https://rasterweb.net/raster/2005/01/27/scp-and-spaces/)):
 
-        :::shell-session
+        ```shell-session
         $ scp foo.com:"/home/fubar/some\ folder/file.txt" ./
+        ```
 
   * Copy a bunch of files to a remote server (or how to use `find` with `scp`):
 
-        :::shell-session
+        ```shell-session
         $ find /var/log/ -iname "*.log" -type f | xargs -i scp '{}' kevin@myserver:/media/backup/logs/
+        ```
 
   * Redirect local `8081` port to `proxy.company.com:8080` via a SSH tunnel passing through the `authorized-server.company.com` machine:
 
-        :::shell-session
+        ```shell-session
         $ ssh -T -N -C -L 8081:proxy.company.com:8080 kevin@authorized-server.company.com
+        ```
 
   * Use `rsync` over different SSH port ([source](https://lists.samba.org/archive/rsync/2001-November/000495.html)):
 
-        :::shell-session
+        ```shell-session
         $ rsync --progress -vrae 'ssh -p 8022' /home/user/docs/ bill@server:/home/user/docs/
+        ```
 

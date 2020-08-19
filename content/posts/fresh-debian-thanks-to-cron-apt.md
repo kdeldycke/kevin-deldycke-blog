@@ -11,13 +11,15 @@ This post is just a quick reminder to my future self, about how I setup `cron-ap
 
 First we install the package:
 
-    :::shell-session
+    ```shell-session
     $ aptitude install cron-apt
+    ```
 
 Then we configure it:
 
-    :::shell-session
+    ```shell-session
     $ sed -i 's/# MAILON="error"/MAILON="always"/g' /etc/cron-apt/config
     $ sed -i 's/# MAILTO="root"/MAILTO="user@example.com"/g' /etc/cron-apt/config
+    ```
 
 That's it!

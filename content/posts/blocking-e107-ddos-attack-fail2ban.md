@@ -34,7 +34,7 @@ all IP addresses involved. Here is how I configured `fail2ban`...
 First, create a new empty file at `/etc/fail2ban/filter.d/apache-e107ddos.conf`
 and put the following directives there:
 
-    :::ini
+    ```ini
     # Fail2Ban configuration file
     # Notes.:  Regexp to catch all attemps to exploit an e107 vulnerability.
     # Author: Kevin Deldycke
@@ -47,11 +47,12 @@ and put the following directives there:
                 <HOST>\s-\s-\s.*Mozilla\/4\.76 \[ru\] \(X11; U; SunOS 5\.7 sun4u\)
                 <HOST>\s-\s-\s.*perl post
     ignoreregex =
+    ```
 
 Then update you fail2ban config file (`/etc/fail2ban/jail.local` in my case)
 with the appropriate section:
 
-    :::ini
+    ```ini
     [apache-e107ddos]
     enabled  = true
     filter   = apache-e107ddos
@@ -59,15 +60,17 @@ with the appropriate section:
     action   = iptables-allports
     logpath  = /var/log/apache*/*access.log
     maxretry = 1
+    ```
 
 Then restart your fail2ban service:
 
-    :::shell-session
+    ```shell-session
     $ /etc/init.d/fail2ban restart
+    ```
 
 And you'll start to get those nice logs:
 
-    :::shell-session
+    ```shell-session
     $ tail -F /var/log/fail2ban.log
     2010-06-23 16:05:37,417 fail2ban.actions: WARNING [apache-e107ddos] Ban 193.33.21.199
     2010-06-23 16:05:58,113 fail2ban.actions: WARNING [apache-e107ddos] Ban 89.108.116.226
@@ -78,3 +81,4 @@ And you'll start to get those nice logs:
     2010-06-23 16:06:44,227 fail2ban.actions: WARNING [apache-e107ddos] 69.41.162.10 already banned
     2010-06-23 16:06:54,238 fail2ban.actions: WARNING [apache-e107ddos] 69.73.147.90 already banned
     2010-06-23 16:07:50,305 fail2ban.actions: WARNING [apache-e107ddos] Ban 80.55.107.74
+    ```

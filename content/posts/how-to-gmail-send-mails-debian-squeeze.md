@@ -9,8 +9,9 @@ Here is quick guide on how I configured Exim 4 to let a Debian Squeeze server se
 
 Debian come with Exim (v4.72) pre-installed: it's the default MTA on this distribution. There is absolutely no need to install extra packages. Let's start right away by calling Exim's configuration wizard:
 
-    :::shell-session
+    ```shell-session
     $ dpkg-reconfigure exim4-config
+    ```
 
 Here are the options I choose in each step of the wizard:
 
@@ -36,7 +37,7 @@ Here are the options I choose in each step of the wizard:
 
 All these parameters you just answered are saved in the `/etc/exim4/update-exim4.conf.conf`:
 
-    :::ini
+    ```ini
     # /etc/exim4/update-exim4.conf.conf
     #
     # Edit this file and /etc/mailname by hand and execute update-exim4.conf
@@ -68,10 +69,11 @@ All these parameters you just answered are saved in the `/etc/exim4/update-exim4
     dc_hide_mailname='false'
     dc_mailname_in_oh='true'
     dc_localdelivery='mail_spool'
+    ```
 
 Then I updated the `/etc/exim4/exim4.conf.template` to add proper handling of GMail SMTP server. Here are the differences between the untouched original `exim4.conf.template` file and my version:
 
-    :::diff
+    ```diff
     --- /etc/exim4/exim4.conf.template-orig  2011-05-03 10:49:43.207938577 +0200
     +++ /etc/exim4/exim4.conf.template       2011-05-03 10:52:26.235438776 +0200
     @@ -1077,15 +1077,11 @@
@@ -169,27 +171,31 @@ Then I updated the `/etc/exim4/exim4.conf.template` to add proper handling of GM
      #####################################################
      ### end auth/30_exim4-config_examples
      #####################################################
+    ```
 
 Now all we have to do is to regenerate Exim's configuration and restart the mail server:
 
-    :::shell-session
+    ```shell-session
     $ update-exim4.conf
     $ /etc/init.d/exim4 restart
+    ```
 
 You can then send a dummy email to test your mail system:
 
-    :::shell-session
+    ```shell-session
     $ mail kevin@deldycke.com
     Subject: This is an exim test
     .
     Cc:
     Null message body; hope that's ok
+    ```
 
 And check in the log that everything's fine:
 
-    :::shell-session
+    ```shell-session
     $ tail -F /var/log/exim4/mainlog
     2011-05-03 10:56:32 1QHBPE-0000ne-CW <= root@server.deldycke.com U=root P=local S=362
     2011-05-03 10:56:36 1QHBPE-0000ne-CW => kevin@deldycke.com R=send_via_gmail T=gmail_smtp H=gmail-smtp-msa.l.google.com [209.85.227.109] X=TLS1.0:RSA_ARCFOUR_SHA1:16 DN="C=US,ST=California,L=Mountain View,O=Google Inc,CN=smtp.gmail.com"
     2011-05-03 10:56:36 1QHBPE-0000ne-CW Completed
+    ```
 

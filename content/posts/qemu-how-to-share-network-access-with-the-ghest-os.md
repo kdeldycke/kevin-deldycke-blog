@@ -9,7 +9,7 @@ tags: iptables, Linux, Network, Qemu
 
 Create a file `/etc/qemu-ifup` that contain:
 
-    :::sh
+    ```sh
     #!/bin/sh
     sudo modprobe tun
     sudo /sbin/ifconfig $1 up 10.0.2.2 netmask 255.255.255.0 broadcast 10.0.2.255
@@ -20,26 +20,30 @@ Create a file `/etc/qemu-ifup` that contain:
     sudo /sbin/iptables -t nat -F
     sudo /sbin/iptables -t nat -A POSTROUTING -s 10.0.2.15 -j MASQUERADE
     sudo /sbin/iptables -t nat -A POSTROUTING -d 10.0.2.15 -o $1
+    ```
 
 Don't forget to give it execution permissions:
 
-    :::shell-session
+    ```shell-session
     $ chmod 755 /etc/qemu-ifup
+    ```
 
 Start qemu with the following parameters:
 
-    :::shell-session
+    ```shell-session
     $ qemu /home/kevin/qemu-mdk10.1.img -n /etc/qemu-ifup
+    ```
 
 Setup the network in your ghest OS in qemu:
 
-    :::shell-session
+    ```shell-session
     $ ifconfig eth0 10.0.2.15
     $ route add default gw 10.0.2.2
+    ```
 
 Test the visibility of the guest OS from the host OS:
 
-    :::shell-session
+    ```shell-session
     $ ping 10.0.2.15
     PING 10.0.2.15 (10.0.2.15) 56(84) bytes of data.
     64 bytes from 10.0.2.15: icmp_seq=1 ttl=64 time=2.96 ms
@@ -49,10 +53,11 @@ Test the visibility of the guest OS from the host OS:
     --- 10.0.2.15 ping statistics ---
     3 packets transmitted, 3 received, 0% packet loss, time 2000ms
     rtt min/avg/max/mdev = 0.295/1.185/2.965/1.258 ms
+    ```
 
 Test the visibility of the host from the guest:
 
-    :::shell-session
+    ```shell-session
     $ ping 10.0.2.2
     PING 10.0.2.2 (10.0.2.2) 56(84) bytes of data.
     64 bytes from 10.0.2.2: icmp_seq=1 ttl=64 time=1.08 ms
@@ -62,4 +67,4 @@ Test the visibility of the host from the guest:
     --- 10.0.2.2 ping statistics ---
     3 packets transmitted, 3 received, 0% packet loss, time 2001ms
     rtt min/avg/max/mdev = 0.383/0.634/1.087/0.321 ms
-
+    ```

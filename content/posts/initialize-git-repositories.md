@@ -13,10 +13,11 @@ post why `git init` is not enough to me.
 To create a Git repository, nothing else is absolutely necessary than these few
 trivial commands:
 
-    :::shell-session
+    ```shell-session
     $ mkdir kev-code
     $ cd kev-code/
     $ git init
+    ```
 
 But after reading
 [some documentation](https://www-cs-students.stanford.edu/~blynn/gitmagic/apa.html#_initial_commit)
@@ -34,22 +35,24 @@ to mess up the history, until merging my changes back in the mainline tree.
 
 So, let's create an empty commit:
 
-    :::shell-session
+    ```shell-session
     $ git commit --allow-empty -m 'Initial commit'
+    ```
 
 Then get the commit hash:
 
-    :::shell-session
+    ```shell-session
     $ git log
     commit 395290bcdb8ffccfbff89e42cb976077fbd3c1b7
     Author: Kevin Deldycke <kevin@deldycke.com>
     Date:   Tue Dec 1 15:37:49 2009 +0100
 
         Initial commit
+    ```
 
 We now change the commit date of our first commit to epoch start:
 
-    :::shell-session
+    ```shell-session
     $ git filter-branch --env-filter '
     >     if [ $GIT_COMMIT = 395290bcdb8ffccfbff89e42cb976077fbd3c1b7 ]
     >     then
@@ -58,30 +61,33 @@ We now change the commit date of our first commit to epoch start:
     >     fi' -- --all
     Rewrite 395290bcdb8ffccfbff89e42cb976077fbd3c1b7 (1/1)
     Ref 'refs/heads/master' was rewritten
+    ```
 
 And check that the previous operation did what we expected:
 
-    :::shell-session
+    ```shell-session
     $ git log
     commit 8fe2934d1552c97246836987f0ea08e10ba749ae
     Author: Kevin Deldycke <kevin@deldycke.com>
     Date:   Thu Jan 1 00:00:00 1970 +0000
 
         Initial commit
+    ```
 
 Looks good!
 
 For convenience, we'll now attach a tag to this initial commit. Let's call it
 `init`:
 
-    :::shell-session
+    ```shell-session
     $ git tag "init"
+    ```
 
 This will came handy later when we'll need to create a branch from here.
 
 It's time to push all changes to our brand new public repository:
 
-    :::shell-session
+    ```shell-session
     $ git remote add origin git@github.com:kdeldycke/kev-code.git
     $ git status
     # On branch master
@@ -93,6 +99,7 @@ It's time to push all changes to our brand new public repository:
     Total 2 (delta 0), reused 0 (delta 0)
     To git@github.com:kdeldycke/kev-code.git
      + 86bd2c7...8fe2934 master -> master (forced update)
+    ```
 
 And here is the result on GitHub:
 

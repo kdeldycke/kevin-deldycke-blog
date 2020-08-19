@@ -11,18 +11,21 @@ that add decentralized capabilities.
 
 First, create a local repository:
 
-    :::shell-session
+    ```shell-session
     $ svk mirror //local https://username@svn.kde.org/home/kde
+    ```
 
 SVK will ask you to create a new repository. Tell it you want so:
 
-    :::text
+    ```text
     Repository /home/user/.svk/local does not exist, create? (y/n) y
+    ```
 
 Then, sync the remote repository with the local one:
 
-    :::shell-session
+    ```shell-session
     $ svk sync //local
+    ```
 
 That's all!
 
@@ -37,5 +40,6 @@ mirror, as suggest by [Thomas Mølhave](https://moelhave.dk) in his
 "[Remote Backup Of A Subversion (svn) Repository](https://moelhave.dk/2006/07/remote-mirroring-a-subversion-svn-repository/)"
 blog post, use `svnadmin`:
 
-    :::shell-session
+    ```shell-session
     $ svnadmin dump -r2:HEAD ~/.svk/local > my-repository-dump
+    ```

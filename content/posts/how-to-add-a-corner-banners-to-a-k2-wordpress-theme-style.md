@@ -18,7 +18,7 @@ brand new
 first, we have to create a `functions.php` file in our style directory (example:
 `/wp-content/themes/k2/styles/my-style`). Then add the following PHP code in it:
 
-    :::html+php
+    ```html+php
     <?php
 
     // Add HTML code required by our corner banner
@@ -36,6 +36,7 @@ first, we have to create a `functions.php` file in our style directory (example:
     add_action('template_body_top', 'add_corner_banner');
 
     ?>
+    ```
 
 This code tell K2 to replace the `template_body_top` hook define in all K2
 pages, by the result of the `add_corner_banner()` PHP function. This function is
@@ -44,7 +45,7 @@ coded to return the HTML code we need for the corner banner.
 Then we need to add the following CSS code to our style
 (`/wp-content/themes/k2/styles/my-style/my-style.css`):
 
-    :::css
+    ```css
     #cornerbanner {
       background: url(
         "/wp-content/themes/k2/styles/my-style/corner-banner.png") no-repeat;
@@ -57,6 +58,7 @@ Then we need to add the following CSS code to our style
       z-index: 999;
       text-decoration: none;
     }
+    ```
 
 This CSS code refer to the
 [`corner-banner.png`](/uploads/2008/corner-banner.png) which is a 205x205 px PNG
@@ -67,23 +69,27 @@ generate it.
 This CSS code is designed for a top right banner. If you need a top left banner,
 replace:
 
-    :::css
+    ```css
       right: 0;
+    ```
 
 by
 
-    :::css
+    ```css
       left: 0;
+    ```
 
 This also work for horizontal positioning:
 
-    :::css
+    ```css
       top: 0;
+    ```
 
 can be replaced by
 
-    :::css
+    ```css
       bottom: 0;
+    ```
 
 That's all! My solution is not supposed to work (and was not tested) with
 Internet Explorer as the latter is known to have

@@ -10,22 +10,25 @@ serve content over [WebDAV](https://wikipedia.org/wiki/WebDAV).
 
 First, install the required packages:
 
-    :::shell-session
+    ```shell-session
     $ aptitude install lighttpd-mod-webdav
+    ```
 
 As we want to provide a secure WebDAV access, we need to install
 [OpenSSL](https://www.openssl.org):
 
-    :::shell-session
+    ```shell-session
     $ aptitude install openssl
+    ```
 
 Then we create the file `/etc/lighttpd/clear-creds.lst`, that will contain
 credentials required for authentication, under the following form:
 
-    :::text
+    ```text
     user1:password1
     user2:password2
     user3:password3
+    ```
 
 Logins and passwords are stored here in clear. This is stupid, but for this
 project I was looking to setup a quick and dirty server. For temporary tests
@@ -35,28 +38,31 @@ system.
 Now I want to serve WebDAV content within a secure channel. A self-signed SSL
 certificate will be enough. Let's generate one:
 
-    :::shell-session
+    ```shell-session
     $ cd /etc/lighttpd/
     $ openssl req -x509 -nodes -subj '/' -days 3650 -newkey rsa:2048 -keyout server.pem -out server.pem
+    ```
 
 We'll configure Lighttpd by loading the default parameters of modules we use:
 
-    :::shell-session
+    ```shell-session
     $ cd /etc/lighttpd/conf-enabled/
     $ ln -s ../conf-available/05-auth.log
     $ ln -s ../conf-available/10-ssl.conf
     $ ln -s ../conf-available/10-webdav.conf
+    ```
 
 Now I create a custom configuration file:
 
-    :::shell-session
+    ```shell-session
     $ touch /etc/lighttpd/conf-available/99-custom.conf
     $ cd /etc/lighttpd/conf-enabled/
     $ ln -s ../conf-available/99-custom.conf
+    ```
 
 Here is the content of that `99-custom.conf` configuration file:
 
-    :::lighttpd
+    ```lighttpd
     # Hide server version
     server.tag = "lighttpd"
 
@@ -85,11 +91,13 @@ Here is the content of that `99-custom.conf` configuration file:
 
     # Customize directory listings a bit
     dir-listing.set-footer = "<a href='https://example.com'>Company</a>'s document repository."
+    ```
 
 And do not forget to restart the server:
 
-    :::shell-session
+    ```shell-session
     $ /etc/init.d/lighttpd restart
+    ```
 
 ![](/uploads/2011/lighttpd-webdav-server.png)
 

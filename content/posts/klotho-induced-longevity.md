@@ -20,7 +20,7 @@ Luckily, it is a SNP covered by the first generation of 23andMe chips. Having
 downloaded the raw data a while back, it is a matter of installing the Python
 [`arv`](https://github.com/cslarsen/arv) package:
 
-    :::python
+    ```python
     $ pip install arv
     Collecting arv
       Downloading arv-0.9.2-cp27-none-macosx_10_12_intel.whl (92kB)
@@ -30,10 +30,11 @@ downloaded the raw data a while back, it is a matter of installing the Python
         100% |████████████████████████████████| 4.1MB 201kB/s
     Installing collected packages: cython, arv
     Successfully installed arv-0.9.2 cython-0.25.2
+    ```
 
 Let's now find out about that SNP:
 
-    :::python
+    ```python
     $ python
     Python 2.7.13 (default, Dec 18 2016, 07:03:39)
     [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
@@ -44,6 +45,7 @@ Let's now find out about that SNP:
     >>> genome["rs9536314"]
     <SNP: chromosome=13 position=33628138 genotype=<Genotype 'GT'>>
     >>>
+    ```
 
 Bingo! With the `GT` variant, I'm supposed to have higher plasma klotho
 concentration. Which is, [according to some studies

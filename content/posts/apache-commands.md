@@ -7,23 +7,26 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
 
   * Hide Subversion and Git directories content ([source](https://news.ycombinator.com/item?id=839016)):
 
-        :::apache
+        ```apache
         RedirectMatch 404 /\.(svn|git)(/|$)
+        ```
 
   * Disable rendering of PHP files coming from imported third party Javascript submodules ([context](https://github.com/kdeldycke/cool-cavemen-k2-theme/blob/master/.htaccess)):
 
-        :::apache
+        ```apache
         RedirectMatch 404 js-(.*)\.php$
+        ```
 
   * Redirect any request to current year sub-directory (I used this for a yearly-updated static web page):
 
-        :::apache
+        ```apache
         RewriteEngine on
         RewriteRule !^/2010/ /2010/ [R=301,L]
+        ```
 
   * Here is my template for domain-based virtual host routing:
 
-        :::apache
+        ```apache
         # Setup the main website access
         <VirtualHost *:80>
           ServerName example.com
@@ -41,16 +44,18 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
           ServerAlias example.org *.example.org
           RedirectMatch permanent (.*) http://example.com$1
         </VirtualHost>
+        ```
 
   * Insert dynamic headers in HTTP responses depending on the browser:
 
-        :::apache
+        ```apache
         BrowserMatchNoCase ".*MSIE\s[1-6].*" IS_DISGUSTING_BROWSER
         Header add X-advice-of-the-day "Save a kitten: use Firefox!" env=IS_DISGUSTING_BROWSER
+        ```
 
   * Prevent WebDAV connexions (thanks Guillaume!):
 
-        :::apache
+        ```apache
         <Location />
           <Limit PROPFIND PROPPATCH MKCOL COPY MOVE LOCK UNLOCK PATCH>
             # Leaves GET (and HEAD), POST, PUT, DELETE, CONNECT, OPTIONS and TRACE alone
@@ -60,6 +65,7 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
         </Location>
         SetEnvIf Request_Method "OPTIONS" CLIENT_PROBE
         Header set Allow "GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE" env=CLIENT_PROBE
+        ```
 
   * At work, we had to engineer a convoluted software architecture for our
   intranet to fit the network security policy of our customer. This had a bad
@@ -69,21 +75,24 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
   we (thanks Matthieu!) came up with this unmaintainable hack on Apache side to
   hide our intranet's cookies to NedStat's Javascript embedded code:
 
-        :::apache
+        ```apache
         <LocationMatch "/(.*)">
           LoadModule headers_module modules/mod_headers.so
           RequestHeader edit Cookie "(app_cookie_001=[^;]*(; )*)" ""
           RequestHeader edit Cookie "(app_cookie_002=[^;]*(; )*)" ""
           RequestHeader edit Cookie "(app_cookie_003=[^;]*(; )*)" ""
         </LocationMatch>
+        ```
 
   * Kill all apache processes and restart the service:
 
-        :::shell-session
+        ```shell-session
         $ /etc/init.d/apache2 stop ; pkill -9 -u www-data ; /etc/init.d/apache2 restart
+        ```
 
   * Restart Apache service if no process found:
 
-        :::shell-session
+        ```shell-session
         $ [ `ps axu | grep -v "grep" | grep --count "www-data"` -le 0 ] && /etc/init.d/apache2 restart
+        ```
 

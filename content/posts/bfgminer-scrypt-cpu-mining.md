@@ -17,12 +17,13 @@ I first tried mining [Bitcoin](https://bitcoin.org) with
 found to be readily [available from an Ubuntu
 PPA](https://launchpad.net/~unit3/+archive/bfgminer):
 
-    :::shell-session
+    ```shell-session
     $ sudo tee -a /etc/apt/sources.list <<-EOF
         deb https://ppa.launchpad.net/unit3/bfgminer/ubuntu quantal main
         deb-src https://ppa.launchpad.net/unit3/bfgminer/ubuntu quantal main
       EOF
     $ sudo aptitude install bfgminer
+    ```
 
 Unfortunately the version was not up to date, and was not compiled for mining
 [scrypt](https://en.wikipedia.org/wiki/Scrypt)-based coins like
@@ -31,26 +32,29 @@ support.
 
 Install the dependencies:
 
-    :::shell-session
+    ```shell-session
     $ sudo aptitude install build-essential autoconf libtool libjansson-dev libcurl4-gnutls-dev libncurses5-dev libudev-dev libusb-1.0-0-dev yasm uthash-dev
+    ```
 
 Get a copy of the latest version and prepare the environment:
 
-    :::shell-session
+    ```shell-session
     $ cd ~
     $ git clone https://github.com/luke-jr/bfgminer.git
     $ cd bfgminer/
     $ ./autogen.sh
+    ```
 
 Then I built it while enabling scrypt and CPU optimizations:
 
-    :::shell-session
+    ```shell-session
     $ ./configure --enable-cpumining --enable-scrypt
     $ make
+    ```
 
 Then create a config file in `~/.bfgminer/bfgminer.conf`:
 
-    :::json
+    ```json
     {
     "pools" : [
       {
@@ -85,8 +89,10 @@ Then create a config file in `~/.bfgminer/bfgminer.conf`:
     "shares" : "0",
     "kernel-path" : "/usr/local/bin"
     }
+    ```
 
 And your ready to launch the miner:
 
-    :::shell-session
+    ```shell-session
     $ ~/bfgminer/bfgminer
+    ```

@@ -19,8 +19,9 @@ Disconnect.me.
 
 Without further ado, here is the magic URL you're looking for:
 
-    :::
+    ```
     https://search.disconnect.me/searchTerms/search?ses=Google&query=%s
+    ```
 
 That's all you need to add Disconnect.me as your default search engine:
 

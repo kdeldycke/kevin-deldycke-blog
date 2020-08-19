@@ -15,7 +15,7 @@ First, check that the e107 RSS feed plugin is activated. Then [create an account
 
 Then, create (or edit) the `https://www.my-domain.com/.htaccess` file, and add following code:
 
-    :::apache
+    ```apache
     RewriteEngine On
 
     RewriteCond %{HTTP_USER_AGENT} !FeedBurner [NC]
@@ -25,6 +25,7 @@ Then, create (or edit) the `https://www.my-domain.com/.htaccess` file, and add f
     RewriteCond %{HTTP_USER_AGENT} !FeedBurner [NC]
     RewriteCond %{QUERY_STRING} ^(1|News|.*)
     RewriteRule e107_plugins/rss_menu/rss\.php https://feeds.feedburner.com/myfeed? [R=301,L]
+    ```
 
 This code is inspired by the one written by [Mike Atlas](https://www.mikeatlas.com), who had a similar issue and wanted to [outsource his e107 forum RSS feeds to FeedBurner](https://www.mikeatlas.com/blog/2007/03/09/transparently-outsourcing-your-rss-feeds-to-feedburner/).
 

@@ -15,8 +15,9 @@ A bbPress thread is imported as an empty page with the thread's title. All its r
 
 The dependencies of that script can be installed with the following commands:
 
-    :::shell-session
+    ```shell-session
     $ sudo aptitude install python-pip python-lxml
     $ sudo pip install PyMySQL
+    ```
 
 My use case for this script is to be able to archive an hosted bbPress instance from a dedicated server to the free wordpress.org hosting.

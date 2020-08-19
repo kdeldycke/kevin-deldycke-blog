@@ -17,12 +17,13 @@ make my commit message more informative. Fair enough. This shouldn't take long.
 
 So I fetched a local copy of my fork, made the edit and pushed it back:
 
-    :::shell-session
+    ```shell-session
     $ git clone https://github.com/kdeldycke/babel.git
     $ cd ./babel
     $ git checkout patch-1
     $ git rebase -i HEAD~10
     $ git push --force
+    ```
 
 It's only after looking at the pull request in GitHub that I realized the last
 ten commits were marked as new and different, while I expected only last one to
@@ -48,10 +49,11 @@ other metadata involved.
 As I wasn't ready to waste time on doctoring each commit to find the
 underlaying differences, I simply rebased everything to master:
 
-    :::shell-session
+    ```shell-session
     $ git rebase master
     $ git pull
     $ git rebase origin/master
     $ git push --force
+    ```
 
 It did work and my PR was now clean and tidy.

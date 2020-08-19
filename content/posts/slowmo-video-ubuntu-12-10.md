@@ -9,12 +9,13 @@ tags: video, Slow Motion, Ubuntu, Ubuntu 12.10, Kubuntu, aptitude, apt-get, shel
 
 If you try to follow the [procedure from the project documentation](https://slowmovideo.granjow.net/download.php#h2_Compiling) under Kubuntu 12.10, you'll not go very far. Because you'll start by installing the default `-dev` packages of `libavutil`:
 
-    :::shell-session
+    ```shell-session
     $ sudo aptitude install libavcodec-dev libavdevice-dev libavfilter-dev libavformat-dev libavutil-dev libswscale-dev
+    ```
 
 Then you'll need the `-extra` packages, which can't be installed with `-dev` packages:
 
-    :::shell-session
+    ```shell-session
     $ sudo aptitude install libavcodec-extra-53
     The following NEW packages will be installed:
       libavcodec-extra-53{b} libavutil-extra-51{ab} libvo-aacenc0{a} libvo-amrwbenc0{a}
@@ -34,28 +35,31 @@ Then you'll need the `-extra` packages, which can't be installed with `-dev` pac
     Accept this solution? [Y/n/q/?] q
     Abandoning all efforts to resolve these dependencies.
     Abort.
+    ```
 
 This [issue was already reported](https://bugs.launchpad.net/ubuntu/+source/libav/+bug/1038781). But we're lucky: someone contributed on that ticket a [nice script](https://launchpadlibrarian.net/126008181/mk_libav-extra-dev.sh) to help you build the missing link.
 
 Let's fetch it and make it produce a collection of new `libav` packages:
 
-    :::shell-session
+    ```shell-session
     $ mkdir new_libav
     $ cd new_libav
     $ wget https://launchpadlibrarian.net/126008181/mk_libav-extra-dev.sh
     $ chmod 755 ./mk_libav-extra-dev.sh
     $ ./mk_libav-extra-dev.sh
+    ```
 
 You can then install the working `libav` packages:
 
-    :::shell-session
+    ```shell-session
     $ sudo dpkg --install ./lib*.deb
     $ cd ..
     $ rm -rf ./new_libav
+    ```
 
 Now, we can follow the standard slowmoVideo instructions:
 
-    :::shell-session
+    ```shell-session
     $ sudo aptitude install build-essential cmake git ffmpeg libavformat-dev libavcodec-dev libswscale-dev libqt4-dev freeglut3-dev libglew1.5-dev libsdl1.2-dev libjpeg-dev libopencv-video-dev libopencv-highgui-dev
     $ cd ~
     $ git clone git://github.com/slowmoVideo/slowmoVideo.git
@@ -72,9 +76,12 @@ Now, we can follow the standard slowmoVideo instructions:
     $ cmake ..
     $ make -j3
     $ make install
+    ```
 
 After that you'll be able to run slowmoVideo itself:
 
+    ```
     $ ~/slowmoVideo/install/bin/slowmoUI
+    ```
 
 ![slowmoVideo timeline screenshot](/uploads/2013/slowmo-video-timeline.png)

@@ -101,8 +101,9 @@ panneau de config de Mandrake). Il ne nous servira que pour la configuration des
 interfaces réseau. Nous configurerons la sécurité avec `webmin`. On lance la
 commande:
 
-    :::shell-session
+    ```shell-session
     $ urpmi drakconf
+    ```
 
 `urpmi` va chercher les dépendances indispensable à `drakconf` pour fonctionner.
 Il va les lister et vous demander si vous voulez les installer. Répondez par
@@ -139,10 +140,11 @@ demandera.
 
 Vous pourrez voir a ce moment les lignes suivantes:
 
-    :::text
+    ```text
     activation eth0
     activation eth1
     activation de la connexion inter
+    ```
 
 Si les trois tentatives se terminent par un échec, c'est simplement que vous
 avez connecté le modem et le réseau sur les mauvaises cartes&nbsp;! Échangez donc le
@@ -153,14 +155,16 @@ automatiquement lors du démarrage, et ceci sans notre intervention.
 
 Et si tout se passe bien, lors du reboot, on a:
 
-    :::text
+    ```text
     activation eth0 -- OK
     checking internet connexion to start at boot -- OK
+    ```
 
 On peut ensuite vérifier qu'internet fonctionne en faisant un:
 
-    :::shell-session
+    ```shell-session
     $ ping google.com
+    ```
 
 Si finalement la connexion ne fonctionne pas, vérifier dans le fichier
 `/etc/sysconfig/network` que la variable `GATEWAYDEV` est positionnée sur
@@ -177,8 +181,9 @@ notre réseau local.
 
 Commençons par faire un:
 
-    :::shell-session
+    ```shell-session
     $ urpmi dhcp-server
+    ```
 
 Le serveur sera automatiquement lancé au démarrage de la machine, mais il faut
 le configurer.
@@ -186,19 +191,21 @@ le configurer.
 Nous allons faire une copie d'un exemple de fichier de configuration, puis nous
 l'éditions:
 
-    :::shell-session
+    ```shell-session
     $ cp /etc/dhcpd.conf.sample /etc/dhcp.conf
     $ vi /etc/dhcpd.conf
+    ```
 
 Modifiez ce dernier pour qu'il contienne quelquechose comme:
 
-    :::text
+    ```text
     ddns-update-style none;
     subnet 192.168.1.0 netmask 255.255.255.0 {
         range dynamic-bootp 192.168.1.128 192.168.1.254;
         default-lease-time 21600;
         max-lease-time 43200;
     }
+    ```
 
 Pour configurer les PC du réseau c'est très facile. Essayons par exemple de
 connecter ce laptop dur notre réseau. Ce laptop est également sous Mandrake 10,
@@ -222,15 +229,17 @@ la passerelle. L’intérêt de supprimer tous ce matériel est de réduire la m
 
 On installe donc le serveur SSH:
 
-    :::shell-session
+    ```shell-session
     $ urpmi openssh-server
+    ```
 
 Encore une fois, le serveur SSH sera lancé automatiquement lors du démarrage de
 la machine. Nous allons le vérifier en redémarrant la machine et en étant
 attentif au message:
 
-    :::text
+    ```text
     lancement de sshd [OK]
+    ```
 
 Au lieu de configurer à la main le serveur SSH, nous allons utiliser Webmin, qui
 est une interface de configuration et d'administration web à distance. On fait
@@ -295,7 +304,7 @@ par défaut, sinon le deamon aura du mal à démarrer au boot une fois sur deux.
 
 Au final, on a un fichier `/etc/dhcpd.conf` qui doit ressembler à ça:
 
-    :::text
+    ```text
     option subnet-mask 255.255.255.0;
     max-lease-time 43200;
     default-lease-time 21600;
@@ -307,20 +316,23 @@ Au final, on a un fichier `/etc/dhcpd.conf` qui doit ressembler à ça:
         range 192.168.1.128 192.168.1.254;
     }
     authoritative;
+    ```
 
 Nous allons installer `iptables` et le configurer:
 
-    :::shell-session
+    ```shell-session
     $ urpmi iptables
     $ echo 1 > /proc/sys/net/ipv4/ip_forward
     $ iptables -t nat -A POSTROUTING -o ppp+ -j MASQUERADE
     $ /etc/init.d/iptables save
+    ```
 
 Puis on édite `/etc/ssyconfig/network` pour y ajouter le paramètre suivant de
 façon à ce que l'IP forwaring soit activé au démarrage de la machine:
 
-    :::text
+    ```text
     FORWARD_IPV4=yes
+    ```
 
 Nous allons configurer Urpmi pour qu'il puisse aller cherche tout seul les
 programmes à installer et les mises à jour sur internet. On peut utiliser
@@ -329,23 +341,26 @@ repository de Mandrake.
 
 On supprime d'abord la référence au CD-ROM:
 
-    :::shell-session
+    ```shell-session
     $ urpmi.removemedia -a
+    ```
 
 Ensuite on ajoute les sources `main`, `contrib`, `updates` et `plf`:
 
-    :::shell-session
+    ```shell-session
     $ urpmi.addmedia plf-free ftp://ftp.free.fr/pub/Distributions_Linux/plf/mandrake/free/10.1 with hdlist.cz
     $ urpmi.addmedia plf-nonfree ftp://ftp.free.fr/pub/Distributions_Linux/plf/mandrake/non-free/10.1 with hdlist.cz
     $ urpmi.addmedia --update updates ftp://ftp.proxad.net/pub/Distributions_Linux/Mandrakelinux/official/updates/10.1/main_updates with media_info/hdlist.cz
     $ urpmi.addmedia main ftp://ftp.proxad.net/pub/Distributions_Linux/Mandrakelinux/official/10.1/i586/media/main with media_info/hdlist.cz
     $ urpmi.addmedia contrib ftp://ftp.proxad.net/pub/Distributions_Linux/Mandrakelinux/official/10.1/i586/media/contrib with media_info/hdlist.cz
+    ```
 
 Pour tester que l'installation depuis le net fonctionne parfaitement, on peut
 installer `vim-enhanced`:
 
-    :::shell-session
+    ```shell-session
     $ urpmi vim-enhanced
+    ```
 
 Maintenant que nous pouvons chercher nos programmes depuis internet, le lecteur
 CD-ROM n'est plus utile. On arrête donc la machine avec la commande
@@ -356,8 +371,9 @@ lecteur. Il va vous afficher une fenêtre de dialogue, que l'on va ignorer.
 Nous allons programmer une mises a jour de sécurité tous les soirs vers 2 heure
 du matin. Cette action est possible grâce à la commande:
 
-    :::shell-session
+    ```shell-session
     $ /usr/sbin/urpmi.update -a && /usr/sbin/urpmi --update --auto --auto-select
+    ```
 
 Dans Webmin, cela se passe dans `system` > `scheduled cron jobs`. Cliquer sur
 `create a new cron job` pour ajouter la commande ci-dessus.

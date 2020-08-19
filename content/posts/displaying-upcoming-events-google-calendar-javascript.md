@@ -9,27 +9,31 @@ I use Google Calendar to store all the past and future [concerts of my band](htt
 
 First, you have to make the calendar public. You can then get all its content in iCal format. The URL you'll find in the calendar settings looks like this:
 
-    :::text
+    ```text
     https://www.google.com/calendar/ical/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/basic.ics
+    ```
 
 The RSS feed version of that URL looks like:
 
-    :::text
+    ```text
     https://www.google.com/calendar/feeds/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/full
+    ```
 
 But the provided events there are messed up and contain all past events. To only get sorted future events, we'll add some extra parameters:
 
-    :::text
+    ```text
     https://www.google.com/calendar/feeds/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/full?orderby=starttime&sortorder=ascending&futureevents=true
+    ```
 
 Now that we have a nicely sorted list of upcoming concerts, we'll get it's JSON version:
 
-    :::text
+    ```text
     https://www.google.com/calendar/feeds/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/full?orderby=starttime&sortorder=ascending&futureevents=true&alt=json
+    ```
 
 And around this data feed, I've built a quick and dirty Javascript piece of code to display a nice list of upcoming concerts. Here is the source:
 
-    :::html
+    ```html
     <ul id="next-gigs">
       <li>No gig planned yet... :(</li>
       <li>Feeds: <a href='https://www.google.com/calendar/feeds/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/full?orderby=starttime&#038;sortorder=ascending&#038;futureevents=true'>RSS</a>, <a href='https://www.google.com/calendar/ical/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/basic.ics'>iCal</a>.</li>
@@ -79,4 +83,5 @@ And around this data feed, I've built a quick and dirty Javascript piece of code
         });
       });
     </script>
+    ```
 

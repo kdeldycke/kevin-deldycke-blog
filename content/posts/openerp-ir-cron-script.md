@@ -11,7 +11,7 @@ command-line system.
 I created this to let my customer use his proprietary job scheduler to trigger
 OpenERP tasks. It was tested on OpenERP 6.1.
 
-    :::python
+    ```python
     #!/usr/bin/python
 
     import sys
@@ -45,3 +45,4 @@ OpenERP tasks. It was tested on OpenERP 6.1.
         sys.exit(8)
 
     sys.exit()
+    ```

@@ -56,13 +56,14 @@ afternoon to downgrade my firmware to EFI 1.6.
 
 I can now check that it really set SATA bandwidth back to 1.5 Gbps:
 
-    :::shell-session
+    ```shell-session
     $ cat /var/log/dmesg | grep Gbps
     [    0.800530] ahci 0000:00:0b.0: AHCI 0001.0200 32 slots 6 ports 1.5 Gbps 0x3 impl IDE mode
     [    1.330097] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
     [    1.330112] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
     [    2.280096] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
     [    2.290110] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+    ```
 
 But the firmware downgrade didn't solved my problems at all. It's really time
 to trash this MacBook Pro. [Anyone to suggest

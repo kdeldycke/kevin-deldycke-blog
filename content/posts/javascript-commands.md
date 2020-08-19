@@ -7,11 +7,13 @@ tags: javascript, programming, Web
 
   * Print a message in the console:
 
-        :::javascript
+        ```javascript
         console.log("Debugging message");
+        ```
 
   * Add a breakpoint:
 
-        :::javascript
+        ```javascript
         debugger;
+        ```
 

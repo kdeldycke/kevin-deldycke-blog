@@ -40,7 +40,7 @@ every time:
 
 ![](/uploads/2010/quartz-composer-export-to-movie-exception.png)
 
-    :::text
+    ```text
     0x8272938b: -[QCContext renderPatch:time:arguments:]
     0x8272906d: -[QCGraphicsContext renderPatch:time:arguments:]
     0x827281bb: -[QCOpenGLContext renderPatch:time:arguments:]
@@ -64,6 +64,7 @@ every time:
     0x0000a994
     0x86d70922: -[NSApplication run]
     0x00001d2b
+    ```
 
 So I tried the old trick of [importing compositions in iMovie
 ](https://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was

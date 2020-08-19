@@ -9,7 +9,7 @@ Last week I came across a showstopper bug on Mailman 2.1.9-7, the [current versi
 
 Here is the python traceback (from `/var/log/mailman/error` logfile) I get each time I've sent a mail to my brand new mailing-list:
 
-    :::pytb
+    ```pytb
     Dec 20 01:20:04 2008 (14275) Uncaught runner exception: len() of unsized object
     Dec 20 01:20:04 2008 (14275) Traceback (most recent call last):
       File "/usr/lib/mailman/Mailman/Queue/Runner.py", line 112, in _oneloop
@@ -39,10 +39,11 @@ Here is the python traceback (from `/var/log/mailman/error` logfile) I get each 
     TypeError: len() of unsized object
 
     Dec 20 01:20:04 2008 (14275) SHUNTING: 1229732404.1069181+dcd89a08bf7911dac2db804b76cd42d20564c71c
+    ```
 
 Here is the corresponding (anonymized) mail sent to the mailing list from a Gmail account:
 
-    :::text
+    ```text
     Received: by 10.180.244.13 with HTTP; Fri, 19 Dec 2008 16:32:22 -0800 (PST)
     Message-ID: <1f7b086f0812192632x7427c0f7u2048609ddd50673@mail.gmail.com>
     Date: Sat, 20 Dec 2008 01:32:22 +0100
@@ -57,12 +58,13 @@ Here is the corresponding (anonymized) mail sent to the mailing list from a Gmai
 
     LS0KS2V2LgogIOKAoiBiYW5kOiBodHRwOi8vY29vbGNhdmVtZW4uY29tCiAg4oCiIGJsb2c6IGh0
     dHA6Ly9rZXZpbi5kZWxkeWNrZS5jb20K
+    ```
 
 And now my hackish tale. Based on a quick look at Mailman's source code, I made an educated guess that this error is just a side effect of the wrong assumption that the `s` variable in the `Charset.encoded_header_len()` method is always a string. So I came up with the following evil patch to handle (gracefully, I hope) the case of `s` being `None`.
 
 Here is the [resulting patch](/uploads/2008/mailman-219-7-charset-handling.patch) of my python-fu:
 
-    :::diff
+    ```diff
     --- /usr/lib/mailman/pythonlib/email/Charset.py.orig   2008-12-28 19:46:23.000000000 +0100
     +++ /usr/lib/mailman/pythonlib/email/Charset.py        2008-12-20 01:42:37.000000000 +0100
     @@ -351,6 +351,7 @@
@@ -73,6 +75,7 @@ Here is the [resulting patch](/uploads/2008/mailman-219-7-charset-handling.patch
                  return len(s)
 
          def header_encode(self, s, convert=False):
+    ```
 
 And it do the trick! Of course I can't guarantee that this patch is the way to definitely fix the bug. And it may corrupt data. So **use it only if you're as crazy as me**! :D
 

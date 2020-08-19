@@ -13,13 +13,15 @@ So, to simplify, I was abroad in a hotel, the sun was down since a while, I was 
 
 Here is how I've done it. First, as `root`, create an empty file in `/etc/cron.d/`. Let us call it `wake-up`:
 
-    :::shell-session
+    ```shell-session
     $ touch /etc/cron.d/wake-up
+    ```
 
 Then edit it to put the following command:
 
-    :::text
+    ```text
     15 6 * * * root mplayer /home/kevin/music/CoolCavemen/AllCoolHits/*.flac > /dev/null 2>&1 /dev/null
+    ```
 
 This mean that mplayer will be launched at 6:15 and will play all FLAC files from the `/home/kevin/music/CoolCavemen/AllCoolHits/` directory. I let you adapt those parameters to fit your needs.
 

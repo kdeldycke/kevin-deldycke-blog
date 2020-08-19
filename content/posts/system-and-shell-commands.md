@@ -10,110 +10,127 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
   * Run a process detached to the current terminal:
 
-        :::shell-session
+        ```shell-session
         $ nohup my_command &
+        ```
 
   * Run a process with a shell for a system user which has none (i.e. its default shell is set to `/bin/false` in `/etc/passwd`):
 
-        :::shell-session
+        ```shell-session
         $ su sys_user -s /bin/bash -c "my_command"
+        ```
 
 
 ## Shell
 
   * Get the exit code of the latest runned command:
 
-        :::shell-session
+        ```shell-session
         $ echo $?
+        ```
 
   * Run the last command as `root` ([source](https://blog.hardikr.com/post/2337320222/sudo-previous-command)):
 
-        :::shell-session
+        ```shell-session
         $ sudo !!
+        ```
 
   * Show the user under which I'm currently logged in:
 
-        :::shell-session
+        ```shell-session
         $ whoami
         
   * List of most used commands:
+        ```
 
-        :::shell-session
+        ```shell-session
         $ history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+        ```
 
   * List cron jobs of the current user:
 
-        :::shell-session
+        ```shell-session
         $ crontab -l
+        ```
 
   * If you have the following error:
 
-        :::shell-session
+        ```shell-session
         $ -bash: ./myscript.sh: /bin/bash^M: bad interpreter: No such file or directory
+        ```
 
     Then the fix consist of removing the bad characters:
 
-        :::shell-session
+        ```shell-session
         $ sed -i 's/\r//' ./myscript.sh
+        ```
 
   * Extract strings from a binary file:
 
-        :::shell-session
+        ```shell-session
         $ strings ./firmware.bin | less
+        ```
 
 
 ## Memory
 
   * Free up some memory by clearing RAM caches ([source](https://www.scottklarr.com/topic/134/linux-how-to-clear-the-cache-from-memory/)):
 
-        :::shell-session
+        ```shell-session
         $ sync ; echo 3 > /proc/sys/vm/drop_caches
+        ```
 
 
 ## Distribution
 
   * Display which distro is running the system ([source](https://news.ycombinator.com/item?id=1973441)):
 
-        :::shell-session
+        ```shell-session
         $ lsb_release -a
+        ```
 
     or
 
-        :::shell-session
+        ```shell-session
         $ cat /etc/lsb-release
+        ```
 
 
 ## Services
 
   * Disable a service on Debian/Ubuntu, then re-enable it:
 
-        :::shell-session
+        ```shell-session
         $ update-rc.d my-service-name remove
         $ update-rc.d my-service-name defaults
+        ```
 
   * Same thing as above but on a RedHat-like system:
 
-        :::shell-session
+        ```shell-session
         $ chkconfig sshd --del
         $ chkconfig sshd --add
+        ```
 
 
 ## Boot
 
   * Speed-up Grub boot, but always show the boot menu:
   
-        :::shell-session
+        ```shell-session
         $ sudo sed -i 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=1/g' /etc/default/grub
         $ sudo sed -i 's/GRUB_HIDDEN_TIMEOUT/#GRUB_HIDDEN_TIMEOUT/g' /etc/default/grub
         $ sudo update-grub
+        ```
 
 
 ## Fonts 
 
   * List fonts available on the system:
   
-        :::shell-session
+        ```shell-session
         $ fc-list | cut -d ':' -f 2 | sort | uniq
+        ```
 
 
 ## Other Resources

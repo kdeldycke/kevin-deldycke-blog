@@ -15,11 +15,12 @@ The Flash package does not contain the binary plugin itself, but is just an empt
 
 To fix this, you'll have to remove all previous Flash package (as a prevention measure), then install the latest with the command line. Here are the commands to do exactly this:
 
-    :::shell-session
+    ```shell-session
     $ sudo apt-get remove --purge flashplugin-installer flashplugin64-installer
     $ sudo apt-get clean
     $ sudo apt-get update
     $ sudo apt-get install flashplugin64-installer
+    ```
 
 Commands above are for a 64 bits distribution. If you're still running a 32 bits Linux, just replace the last reference of `flashplugin64-installer` by `flashplugin-installer`.
 

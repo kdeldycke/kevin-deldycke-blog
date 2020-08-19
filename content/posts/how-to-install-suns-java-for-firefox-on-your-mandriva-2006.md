@@ -13,8 +13,9 @@ So, here is how I achieve this:
 
   2. As root, lauch:
 
-        :::shell-session
+        ```shell-session
         $ sh ./jre-1_5_0_06-linux-i586-rpm.bin
+        ```
 
     (name of the file can change depending of the version number).
 
@@ -22,18 +23,21 @@ So, here is how I achieve this:
 
   4. Back to the console, run:
 
-        :::shell-session
+        ```shell-session
         $ urpmi ./jre-1_5_0_06-linux-i586.rpm
+        ```
 
   5. Go to mozilla system-wide plugin directory:
 
-        :::shell-session
+        ```shell-session
         $ cd /usr/lib/mozilla/plugins
+        ```
 
   6. Create a symlink to the java plugin file:
 
-        :::shell-session
+        ```shell-session
         $ ln -s /usr/java/jre1.5.0_06/plugin/i386/ns7/libjavaplugin_oji.so
+        ```
 
   7. Finished!
 

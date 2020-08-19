@@ -8,13 +8,14 @@ tags: camera, firmware, gopro, Linux, Ubuntu, upgrade, Video, wget, macOS
 The [GoPro HD Hero2](https://amzn.com/B005WY3TI4/?tag=kevideld-20) I just got
 was bundled with the `HD2.08.12.70` firmware:
 
-    :::shell-session
+    ```shell-session
     $ cat /media/9016-4EF8/MISC/version.txt
     {
     "info version":"1.0",
     "firmware version":"HD2.08.12.70",
     "camera type":"HD2",
     }
+    ```
 
 Since then a [new firmware was released
 ](https://gopro.com/support/hd-hero2-firmware-update/) (called the ["ProTune
@@ -25,15 +26,17 @@ managed to upgrade the firmware under Ubuntu 12.04.
 
 First, download the binary firmware:
 
-    :::shell-session
+    ```shell-session
     $ wget https://software.gopro.com/Firmware/HD2/HD2-firmware.bin
     $ sha256sum ./HD2-firmware.bin
     3403348b39796ff1d775d759e6243d541b4d1db1c8c7992f5742bd258c7c5031  ./HD2-firmware.bin
+    ```
 
 Then copy the binary file to the root of your mounted GoPro:
 
-    :::shell-session
+    ```shell-session
     $ cp ./HD2-firmware.bin /media/9016-4EF8/
+    ```
 
 Now unmount the GoPro, unplug it from your computer and make sure it's powered
 off.
@@ -59,7 +62,7 @@ It's time to trigger the firmware upgrade:
 You can now remove the `HD2-firmware.bin` file at the root of the camera, and
 check the firmware version:
 
-    :::shell-session
+    ```shell-session
     $ rm /media/9016-4EF8/HD2-firmware.bin
     $ cat /media/9016-4EF8/MISC/version.txt
     {
@@ -67,6 +70,7 @@ check the firmware version:
     "firmware version":"HD2.08.12.198.WIFI.R47.00",
     "camera type":"HD2",
     }
+    ```
 
 Note that the configuration is lost and you have to set back the date and time
 of the camera. As for the ProTune feature, it must be activated from a new item

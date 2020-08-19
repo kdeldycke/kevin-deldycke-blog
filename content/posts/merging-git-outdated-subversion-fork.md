@@ -35,22 +35,25 @@ to Subversion (currently at revision `501`).
 
 Let's start by downloading a copy of the original module:
 
-    :::shell-session
+    ```shell-session
     $ git clone git@github.com:kdeldycke/smile_openerp_matrix_widget.git
     $ cd smile_openerp_matrix_widget
+    ```
 
 Now we'll import in a Git branch all customizations made in the copy living in
 SVN:
 
-    :::shell-session
+    ```shell-session
     $ git svn clone --no-metadata -r301:HEAD --username kevin svn://svn.company.com:3690/customer-project/trunk .
     $ git branch svn-trunk-copy git-svn
     $ git checkout svn-trunk-copy
+    ```
 
 At that point we don’t need the remote `git-svn` branch:
 
-    :::shell-session
+    ```shell-session
     $ git branch -r -D git-svn
+    ```
 
 As usual, the SVN repository is a mess and contain numerous stuff unrelated to
 our original matrix module. The only folders I want to keep, corresponding to
@@ -61,23 +64,26 @@ the original Git repository, are located in:
 
 Let's remove all other content:
 
-    :::shell-session
+    ```shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'find ./ -not -ipath "*_matrix_*" -and -not -path "./addons-web" -and -not -path "./addons-server" -and -not -path "./.git*" -and -not -path "./" | xargs rm -rf' --
+    ```
 
 I'll then move back these folders at the root of the SVN branch, to replicate
 the layout of the original Git repository:
 
-    :::shell-session
+    ```shell-session
     $ git filter-branch --force --prune-empty --tree-filter 'test -d ./addons-web && cp -axv ./addons-web/* ./ && rm -rf ./addons-web || echo "No ./addons-web folder found"' --
     $ git filter-branch --force --prune-empty --tree-filter 'test -d ./addons-server && cp -axv ./addons-server/* ./ && rm -rf ./addons-server || echo "No ./addons-server folder found"' --
+    ```
 
 Finally we remove unwanted Git metadata:
 
-    :::shell-session
+    ```shell-session
     $ rm -rf ./.git/svn/
     $ rm -rf ./.git/refs/original/
     $ git reflog expire --all
     $ git gc --aggressive --prune
+    ```
 
 If you're lost in this cleaning step, please have look at a previous article in
 which I explain [how I re-arranged a messy Subversion repository into a clean
@@ -87,7 +93,7 @@ project](https://kevin.deldycke.com/2011/08/how-open-source-an-internal-corporat
 Now that we have a good looking SVN branch similar to our Git's, we can proceed
 to the merging itself:
 
-    :::shell-session
+    ```shell-session
     $ git branch svn-fork-point 8f189e44a3
     $ git rebase svn-fork-point
     $ git checkout svn-trunk-copy
@@ -99,6 +105,7 @@ to the merging itself:
     Auto-merging smile_matrix_field/matrix_field.py
     CONFLICT (content): Merge conflict in smile_matrix_field/matrix_field.py
     Automatic merge failed; fix conflicts and then commit the result.
+    ```
 
 The merged result is sitting on the `svn-trunk-copy` branch. Git made all the
 hard work. All you have to do is resolve tiny conflicts by hand.
@@ -106,9 +113,10 @@ hard work. All you have to do is resolve tiny conflicts by hand.
 Then commit back the result to your Subversion repository, in the right
 location:
 
-    :::shell-session
+    ```shell-session
     $ cd ..
     $ svn co svn://svn.company.com:3690/customer-project/trunk
     $ cp -axv ../smile_openerp_matrix_widget/smile_matrix_widget ./trunk/addons-web/
     $ cp -axv ../smile_openerp_matrix_widget/smile_matrix_field ./trunk/addons-server/
     $ svn commit -m "Merge back all changes from commit 8f189e44a3:b2810f0024 of the original smile_openerp_matrix_widget Git repository." ./trunk
+    ```

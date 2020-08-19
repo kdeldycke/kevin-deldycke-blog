@@ -21,13 +21,15 @@ I forgot about it until recently, when I learned it no longer required a GPU to 
 
 Now it's time to prepare my keyframes. I batch-resized all original drawings to 1080p with a white background. This was done in one command line thanks to <a target="_blank" href="https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=ImageMagick&linkCode=ur2&rh=i%3Aaps%2Ck%3AImageMagick&tag=kevideld-20&url=search-alias%3Daps">ImageMagick</a><img src="https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />:
 
-    :::shell-session
+    ```shell-session
     $ convert -resize 1920x1080 -background white -gravity center -extent 1920x1080 ./keyframes/* pict%04d.png
+    ```
 
 Then I applied a paper texture to add some grain:
 
-    :::shell-session
+    ```shell-session
     $ find ./ -iname "pict*.png" -exec composite -gravity center -compose Multiply ./paper-texture.png "{}" "{}"-texturized.png \;
+    ```
 
 The series of images were imported in slowmoVideo, and I created a 4 minutes linear ultra-slowmotion with the default parameters.
 

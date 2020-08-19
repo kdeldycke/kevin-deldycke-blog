@@ -7,10 +7,10 @@ tags: HTML, programming, Python, Regular expression, BeautifoulSoup, lxml
 
 !!! alert alert-warning "Disclaimer"
     This is a dirty hack!
-    
+
     To parse HTML or XML, use a dedicated library like the good old:
-    
-    * [`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4) 
+
+    * [`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4)
     * [`lxml.html`](https://lxml.de/lxmlhtml.html)
 
 1 year and 3 months ago I've came with a
@@ -23,12 +23,13 @@ without value so it's closer to the
 stick to it in order to catch [tag soup](https://en.wikipedia.org/wiki/Tag_soup)
 and malformatted tags.
 
-    :::python
+    ```python
     ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
+    ```
 
 And here is it applied in a trivial example (in a python shell):
 
-    :::pycon
+    ```pycon
     >>> import re
     >>>
     >>> content = """This is the <strong>content</strong> in which we want to
@@ -46,3 +47,4 @@ And here is it applied in a trivial example (in a python shell):
     '<a href="https://en.wikipedia.org/wiki/Html">'
     '</a>'
     >>>
+    ```

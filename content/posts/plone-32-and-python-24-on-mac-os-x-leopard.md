@@ -50,21 +50,23 @@ Mac OS X copy.
 First we create our project directory, then we download, from its SVN
 repository, the bootstrap code of buildout:
 
-    :::shell-session
+    ```shell-session
     $ mkdir -p ~/plone-vanilla
     $ cd ~/plone-vanilla
     $ curl https://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py --output ./bootstrap.py
+    ```
 
 Then we create our buildout config file and edit it:
 
-    :::shell-session
+    ```shell-session
     $ touch ./buildout.cfg
     $ vi ./buildout.cfg
+    ```
 
 The `buildout.cfg` file should contain the following directives, which tell
 buildout to install Plone 3.2.3, Zope 2.10.8 and all their dependencies:
 
-    :::ini
+    ```ini
     [buildout]
     find-links = https://dist.plone.org
                  https://download.zope.org/ppix
@@ -92,17 +94,19 @@ buildout to install Plone 3.2.3, Zope 2.10.8 and all their dependencies:
     debug-mode = on
     verbose-security = on
     eggs = ${buildout:eggs}
+    ```
 
 Now let's build our Plone and Zope environnement:
 
-    :::shell-session
+    ```shell-session
     $ python2.4 ./bootstrap.py
     $ ./bin/buildout
+    ```
 
 At the end, if your build process didn't fail, you'll be able to start your
 Zope server:
 
-    :::shell-session
+    ```shell-session
     $ ./bin/zope-instance
     program: /Users/kevin/plone-vanilla/parts/zope-instance/bin/runzope
     daemon manager not running
@@ -117,6 +121,7 @@ Zope server:
     2009-07-20T20:42:35 INFO Marshall libxml2-python not available. Unable to register libxml2 based marshallers.
     ------
     2009-07-20T20:42:59 INFO Zope Ready to handle requests
+    ```
 
 Then you can fire up Safari, go to `http://localhost:8080/manage` (default
 Zope config), and login as the `admin` user (password: `admin`):

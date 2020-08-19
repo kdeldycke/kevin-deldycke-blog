@@ -11,20 +11,22 @@ In the mean time I found out about [mbsync](https://isync.sourceforge.net/mbsync
 
 Let's install mbsync and its dependencies!
 
-    :::shell-session
+    ```shell-session
     $ sudo aptitude install isync ca-certificates
+    ```
 
 Just in case, don't forget to [enable IMAP access to you Gmail account](https://support.google.com/mail/bin/answer.py?hl=en&answer=77695).
 
 Create a new destination directory and an empty configuration file:
 
-    :::shell-session
+    ```shell-session
     $ mkdir -p ~/gmail-backup
     $ touch ~/.mbsyncrc
+    ```
 
 Then add the following parameters in `~/.mbsyncrc`:
 
-    :::text
+    ```text
     IMAPAccount      gmail
     Host             imap.gmail.com
     User             kevin@gmail.com
@@ -49,16 +51,18 @@ Then add the following parameters in `~/.mbsyncrc`:
     Sync      Pull
     # Exclude everything under the internal [Gmail] folder, except archived mails
     Patterns  * ![Gmail]* "[Gmail]/All Mail"
+    ```
 
 Before going further we need to fetch Gmail's certificates:
 
-    :::shell-session
+    ```shell-session
     $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > ~/gmail-backup/gmail.crt
     $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | tac | sed -ne '1,/-BEGIN CERTIFICATE-/p' | tac > ~/gmail-backup/google.crt
+    ```
 
 Then all you have to do is to launch mbsync itself:
 
-    :::shell-session
+    ```shell-session
     $ mbsync gmail
     Reading configuration file ~/.mbsyncrc
     Resolving imap.gmail.com... ok
@@ -71,5 +75,6 @@ Then all you have to do is to launch mbsync itself:
     Selecting master MyLabel... 77 messages, 0 recent
     Synchronizing
     Pulling new messages........................................................
+    ```
 
 Now to keep your local backup fresh don't forget to launch mbsync regularly in the background.

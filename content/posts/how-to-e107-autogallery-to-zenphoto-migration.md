@@ -11,16 +11,18 @@ The old gallery was based on [autogallery](https://sourceforge.net/projects/e107
 
 The first step is to copy the autogallery album structure, with all its content, to Zenphoto:
 
-    :::shell-session
+    ```shell-session
     $ cd /www
     $ cp -ax ./e107_plugins/autogallery/Gallery/* ./zenphoto/albums/
+    ```
 
 Then we delete all previews, thumbnails and XML metadatas, to keep in Zenphoto original assets only:
 
-    :::shell-session
+    ```shell-session
     $ find ./zenphoto/albums/ -iname "*.xml" | xargs rm -f
     $ find ./zenphoto/albums/ -iname "pv_*" | xargs rm -f
     $ find ./zenphoto/albums/ -iname "th_*" | xargs rm -f
+    ```
 
 By now, you should be able to play with your medias using Zenphoto's admin interface.
 
@@ -30,7 +32,7 @@ To migrate comments, I have no automatic solution. I choose to do this manually,
 
 And last but not least, if you care about measuring the popularity of your photos, you should consider migrating the view counter associated with each of your media. Don't worry, this time I wrote a script to take care of it automagically. It will generate a bunch of SQL statements you'll have to execute on your Zenphoto MySQL database. Here is my "e107 autogallery to Zenphoto hit counter migration script" (nice name isn't it? ;) ) that do the job:
 
-    :::python
+    ```python
     #!/usr/bin/python
 
     ##############################################################################
@@ -134,6 +136,7 @@ And last but not least, if you care about measuring the popularity of your photo
     # print repr(hash_table)
     os.path.walk(dest_path, generateSQL, None)
     print sql
+    ```
 
 I think code and comments are self-explainatory. And do not forget to update constants at the top of the script to match your installation paths and database's tables prefix.
 

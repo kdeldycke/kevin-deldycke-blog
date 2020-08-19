@@ -7,13 +7,14 @@ tags: Pandas, Computer programming, date, development, Python, Data, Analytics, 
 
 Import Numpy and Pandas:
 
-    :::python
+    ```python
     >>> import numpy as np
     >>> import pandas as pd
+    ```
 
 Create a 5 rows and 3 columns frame with random integers between 0 and 99:
 
-    :::python
+    ```python
     >>> df = pd.DataFrame(np.random.randint(100, size=(5, 3)))
     >>> df
         0   1   2
@@ -22,10 +23,11 @@ Create a 5 rows and 3 columns frame with random integers between 0 and 99:
     2  17  69  97
     3  99  27   0
     4  30  53  64
+    ```
 
 Add labels to columns:
 
-    :::python
+    ```python
     >>> df.columns = ['a', 'b', 'c']
     >>> df
         a   b   c
@@ -34,10 +36,11 @@ Add labels to columns:
     2  17  69  97
     3  99  27   0
     4  30  53  64
+    ```
 
 Drop all but `a` and `c` columns:
 
-    :::python
+    ```python
     >>> df[['a', 'c']]
         a   c
     0  35  14
@@ -45,26 +48,29 @@ Drop all but `a` and `c` columns:
     2  17  97
     3  99   0
     4  30  64
+    ```
 
 Get a NumPy array of index values:
 
-    :::python
+    ```python
     >>> df.index.values
     array([0, 1, 2, 3, 4])
+    ```
 
 Check if column `a` is already sorted by comparing initial and value-sorted indexes:
 
-    :::python
+    ```python
     >>> df.a.index.tolist()
     [0, 1, 2, 3, 4]
     >>> df.a.sort_values().index.tolist()
     [2, 4, 1, 0, 3]
     >>> df.a.index.tolist() == df.a.sort_values().index.tolist()
     False
+    ```
 
 Make column `a` the index:
 
-    :::python
+    ```python
     >>> df.set_index('a', inplace=True)
     >>> df
         b   c
@@ -74,10 +80,11 @@ Make column `a` the index:
     17  69  97
     99  27   0
     30  53  64
+    ```
 
 Sort along the index:
 
-    :::python
+    ```python
     >>> df.sort_index(inplace=True)
     >>> df
         b   c
@@ -87,11 +94,12 @@ Sort along the index:
     30   3  13
     35  66  14
     99  27   0
+    ```
 
 Deduplicate `c` data points at the same `a` index, with the highest `c` value
 taking precedence:
 
-    :::python
+    ```python
     >>> df['c'].reset_index().groupby('a').max()
         c
     a
@@ -99,11 +107,12 @@ taking precedence:
     30  64
     35  14
     99   0
+    ```
 
 Transform a timeline of [`arrow`](https://crsmithdev.com/arrow/) objects to
 Pandas' internal Timestamp index:
 
-    :::python
+    ```python
     >>> df = pd.DataFrame({'int_ts': pd.Series(np.random.randint(9999999999, size=5))})
     >>> df
           int_ts
@@ -143,12 +152,13 @@ Pandas' internal Timestamp index:
     1994-02-12 21:36:15  761088975  1994-02-12T21:36:15+00:00
     1998-07-14 07:55:05  900402905  1998-07-14T07:55:05+00:00
     1999-04-16 11:55:05  924263705  1999-04-16T11:55:05+00:00
+    ```
 
 Now that we have a properly indexed timeline, we can use built-in Pandas
 methods. Here is how to compute the maximum value of samples [per year
 ](https://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases):
 
-    :::python
+    ```python
     >>> df['int_ts'].resample('AS')
     dt_index
     1985-01-01    501201802
@@ -167,16 +177,17 @@ methods. Here is how to compute the maximum value of samples [per year
     1998-01-01    900402905
     1999-01-01    924263705
     Freq: AS-JAN, Name: int_ts, dtype: float64
+    ```
 
 Same as above but taking the highest value by shifting decade:
 
-    :::python
+    ```python
     >>> df['int_ts'].resample('10AS', how=max)
     dt_index
     1985-01-01    761088975
     1995-01-01    924263705
     Freq: 10AS-JAN, Name: int_ts, dtype: int64
-
+    ```
 
 Other resources:
 

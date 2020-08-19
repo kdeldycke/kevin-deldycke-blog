@@ -67,7 +67,7 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
 
   2. Now we'll modify the `notes2mbox.py` script to set the password (via the `notesPasswd` variable) and location (`notesNsfPath` variable) of the `.nsf` file. Here are the modifications I applied:
 
-    :::diff
+    ```diff
     --- notes2mbox.py.orig	2010-09-02 13:49:58.000000000 +0200
     +++ notes2mbox.py	2010-09-02 13:51:24.000000000 +0200
     @@ -14,8 +14,8 @@
@@ -81,29 +81,33 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
 
      #Connection à Notes
      db = NlconverterLib.getNotesDb(notesNsfPath, notesPasswd)
+    ```
 
   3. Before running the script, we have to register a Notes DLL used by nlconverter:
 
-    :::bat
+    ```bat
     regsvr32 "C:\Program Files\Notes\nlsxbe.dll"
+    ```
 
 ![](/uploads/2010/notes-nlsxbe-dll-registered1.png)
 
 And make the Python interpreter available system-wide:
 
-    :::bat
+    ```bat
     C:\winnlc-alpha-1>SET Path=%Path%;C:\Python26
+    ```
 
   4. Now we can run the `notes2mbox.py` script:
 
-    :::bat
+    ```bat
     C:\winnlc-alpha-1>C:\Python26\python.exe notes2mbox.py
+    ```
 
 If you're lucky, you'll get a nice mbox at the end of the process.
 
 But I was not and the `notes2mbox.py` ended up with the following error:
 
-    :::pytb
+    ```pytb
     Traceback (most recent call last):
       File "notes2mbox.py", line 21, in <module>
         db = NlconverterLib.getNotesDb(notesNsfPath, notesPasswd)
@@ -116,5 +120,6 @@ But I was not and the `notes2mbox.py` ended up with the following error:
       File "C:\Python26\lib\site-packages\win32com\client\dynamic.py", line 84, in _GetGoodDispatch
         IDispatch = pythoncom.CoCreateInstance(IDispatch, None, clsctx, pythoncom.IID_IDispatch)
     pywintypes.com_error: (-2147221231, 'ClassFactory ne peut pas fournir la classe demand\xe9e', None, None)
+    ```
 
 As you can see, I tried hard to make nlconverter working, without any success. But this should not stop you to try. In fact I suspect the Lotus Notes installed on my machine to be crippled or corrupted (can't really tell). So you may be more lucky than me. In any case, feel free to report any success or failure in the comment section below!

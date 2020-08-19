@@ -17,12 +17,13 @@ En fait, il faut appliquer la même procédure que celle indiquée pour le modem
 
 Et donc, après s’être connecté depuis un terminal sous Linux en telnet:
 
-    :::shell-session
+    ```shell-session
     $ telnel 192.168.1.254
+    ```
 
 Il ne reste qu'à exécuter les commandes suivantes depuis le prompt du modem:
 
-    :::console
+    ```console
     system reset factory yes proceed yes
     wireless mssid ifconfig ssid_id 0 secmode wpa-psk WPAPSKversion WPA2
 
@@ -66,4 +67,4 @@ Il ne reste qu'à exécuter les commandes suivantes depuis le prompt du modem:
     saveall
 
     system reboot
-
+    ```

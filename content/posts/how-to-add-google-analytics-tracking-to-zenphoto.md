@@ -23,7 +23,7 @@ Here is the
 [downloadable patch file](/uploads/2008/google-analytics-tracking-for-non-admin-users.patch),
 and its content:
 
-    :::diff
+    ```diff
     diff -ru ./zenphoto-orig/zp-core/template-functions.php ./zenphoto/zp-core/template-functions.php
     --- ./zenphoto-orig/zp-core/template-functions.php  2008-08-15 07:43:05.000000000 +0200
     +++ ./zenphoto/zp-core/template-functions.php 2008-08-16 17:08:03.000000000 +0200
@@ -45,6 +45,7 @@ and its content:
      }
 
      /**
+    ```
 
 This patch was generated from a
 [Zenphoto v1.2](https://www.zenphoto.org/2008/08/zenphoto-12-release-announcement/)
@@ -55,5 +56,6 @@ Do not forget to update the dummy Google Analytics account ID above
 
 And finally, to apply the patch, invoke the classic `patch` command:
 
-    :::shell-session
+    ```shell-session
     $ patch -p0 < ./google-analytics-tracking-for-non-admin-users.patch
+    ```

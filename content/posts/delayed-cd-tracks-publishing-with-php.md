@@ -7,7 +7,7 @@ tags: Cool Cavemen, Music, PHP, Web
 
 Here is a little piece of code I want to share with you. I created this some months ago for the [Cool Cavemen band](https://coolcavemen.com). They wanted to release all tracks of their new LP on their website, one track per week. That's the main purpose of the code below:
 
-    :::php
+    ```php
     <?php
 
     function renderTracks() {
@@ -133,6 +133,7 @@ Here is a little piece of code I want to share with you. I created this some mon
     }
 
     ?>
+    ```
 
 Of course this code doesn't prevent someone to download the track if this person knows the exact URL. But having a bullet-proof system was not my priority: I had, at that time, to do something the quick and dirty way. So I give you this code as is it, without further explanations. This code is easy enough to let any rookie understand how it work.
 

@@ -49,7 +49,7 @@ corrupted. The `nlconverter` GUI gave me this error:
 
 And the command line gave me this:
 
-    :::pytb
+    ```pytb
     Traceback (most recent call last):
       File "notes2mbox.py", line 21, in <module>
         db = NlconverterLib.getNotesDb(notesNsfPath, notesPasswd)
@@ -62,6 +62,7 @@ And the command line gave me this:
       File "C:\Python26\lib\site-packages\win32com\client\dynamic.py", line 84, in _GetGoodDispatch
         IDispatch = pythoncom.CoCreateInstance(IDispatch, None, clsctx, pythoncom.IID_IDispatch)
     pywintypes.com_error: (-2147221231, 'ClassFactory ne peut pas fournir la classe demand\xe9e', None, None)
+    ```
 
 After these two failed attempts, I was quite depressed and not far from
 surrender to the evil power of proprietary software. Then I managed to setup a

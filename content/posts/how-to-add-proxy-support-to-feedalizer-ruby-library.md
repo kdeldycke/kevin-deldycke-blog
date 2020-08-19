@@ -12,7 +12,7 @@ Here is a little code snippet which
 [Feedalizer](https://termos.vemod.net/feedalizer) to let it grab web content
 through a HTTP proxy:
 
-    :::ruby
+    ```ruby
     # HTTP proxy settings
     HTTP_PROXY_HOST = "123.456.78.90"
     HTTP_PROXY_PORT = 8080
@@ -30,6 +30,7 @@ through a HTTP proxy:
         open(url, :proxy => HTTP_PROXY_URL) { |io| Hpricot(io) }
       end
     end
+    ```
 
 This fix, written for a [Ruby on Rails](https://www.rubyonrails.org)-based
 project, lay in the `environment.rb` file, but I wonder if this is the right

@@ -9,14 +9,15 @@ Was trying to install [`alembic`](https://alembic.readthedocs.org) in a
 [`virtualenv`](https://virtualenv.readthedocs.org) with [`pip`
 ](https://pip.readthedocs.org), on an OS X El Capitan machine:
 
-    :::shell-session
+    ```shell-session
     $ pip install alembic
     Collecting alembic
     (...)
+    ```
 
 Ended up with the following traceback:
 
-    :::pytb
+    ```pytb
     Traceback (most recent call last):
       File "/Users/kev/venvs/test/lib/python2.7/site-packages/pip/basecommand.py", line 211, in main
         status = self.run(options, args)
@@ -61,6 +62,7 @@ Ended up with the following traceback:
       File "/Users/kev/venvs/test/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/connectionpool.py", line 314, in _raise_timeout
         if 'timed out' in str(err) or 'did not complete (read)' in str(err):  # Python 2.6
     TypeError: __str__ returned non-string (type Error)
+    ```
 
 Looking into the `connectionpool.py` file revealed the context as being some
 sort of SSL-related validation.
@@ -69,7 +71,7 @@ By sheer luck I found the culprit in the name of the `cryptography` package.
 
 After uninstalling it I was finally able to properly install `alembic`:
 
-    :::shell-session
+    ```shell-session
     $ pip uninstall cryptography
     Uninstalling cryptography-1.1:
     (...)
@@ -80,3 +82,4 @@ After uninstalling it I was finally able to properly install `alembic`:
     Collecting alembic
     (...)
     Successfully installed alembic-0.8.3
+    ```

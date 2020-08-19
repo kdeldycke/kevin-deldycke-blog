@@ -13,7 +13,7 @@ It's a custom view I created this month [at work](https://www.smile.fr/Solutions
 
 The view above is produced by the following XML:
 
-    :::xml
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <openerp>
       <data>
@@ -50,6 +50,7 @@ The view above is produced by the following XML:
 
       </data>
     </openerp>
+    ```
 
 If you start searching a product template with the first field, you'll get a pop-up similar to this one:
 
@@ -63,12 +64,13 @@ My instinct told me that this default style could easily be overridden with some
 
 The code responsible for this behavior is located in the [`addons/openerp/static/javascript/m2o.js`](https://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js) file, in the [`ManyToOne.prototype.on_keydown`](https://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js#L267) method:
 
-    :::javascript
+    ```javascript
     ManyToOne.prototype.on_keydown = function(evt) {
         (...)
                 jQuery('div.autoTextResults[id$="' + this.name + '"]').width(w)
         (...)
     };
+    ```
 
 My goal is now to alter this default behavior, without touching the code in `m2o.js`.
 
@@ -76,7 +78,7 @@ And [thanks to Bryan Forbes' article](https://www.reigndropsfall.net/2010/06/15/
 
 Here is the code I added in the XML view, just below the `line_ids` field:
 
-    :::xml
+    ```xml
     <field name="line_ids" colspan="4" nolabel="1"/>
     <html>
       <script type="text/javascript">
@@ -92,6 +94,7 @@ Here is the code I added in the XML view, just below the `line_ids` field:
         });
       </script>
     </html>
+    ```
 
 The result of this is a nice looking pop-up which doesn't break any vanilla Javascript of the OpenERP web client:
 

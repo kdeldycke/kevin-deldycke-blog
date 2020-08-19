@@ -19,8 +19,9 @@ To do this smoothly, I've just set up a generic `301` redirection thanks to
 Apache. This is the only line I added to my root `.htaccess` file to enable
 this:
 
-    :::apache
+    ```apache
     Redirect permanent /static/repository https://kevin.deldycke.free.fr/repository
+    ```
 
 This move will normally be completely silent for you. So please, let me now if
 something bad happend while you play with my repository.
