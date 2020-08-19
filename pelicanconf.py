@@ -20,7 +20,6 @@ MARKDOWN = {
         # https://github.com/kdeldycke/kevin-deldycke-blog/blob/master/content/posts/python-ultimate-regular-expression-to-catch-html-tags.md
         "markdown.extensions.admonition": {},
         "markdown.extensions.attr_list": {},
-        "markdown.extensions.codehilite": {},
         "markdown.extensions.def_list": {},
         "markdown.extensions.footnotes": {},
         "markdown.extensions.md_in_html": {},
@@ -42,6 +41,7 @@ MARKDOWN = {
         "pymdownx.betterem": {},
         "pymdownx.caret": {},
         "pymdownx.emoji": {},
+        "pymdownx.highlight": {},
         "pymdownx.keys": {},
         "pymdownx.magiclink": {},
         "pymdownx.smartsymbols": {},
