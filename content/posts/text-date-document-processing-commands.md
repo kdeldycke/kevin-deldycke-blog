@@ -116,7 +116,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         ```
 
   * In the same spirit as above but this time to spot indented blocks
-    starting with `:::`, then wrap then into triple-backticks fences:
+    starting with `:::`, then wrap them into triple-backticks fences:
 
         ```shell-session
         $ cat ./example.md
