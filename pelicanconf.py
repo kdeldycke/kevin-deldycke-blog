@@ -21,11 +21,16 @@ MARKDOWN = {
         # https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/
         "markdown.extensions.sane_lists": {},
         "markdown.extensions.smarty": {},
-        "markdown.extensions.toc": {"permalink": True},
+        "markdown.extensions.toc": {
+            "permalink": True,
+            # Style aligns to Plumage theme at:
+            # https://github.com/kdeldycke/plumage/blob/v1.1.0/plumage/static/css/style.css#L184-L202
+            "permalink_class": "headerlink text-decoration-none small pl-2"},
         "mdx_video": {},
         "mdx_titlecase.mdx_titlecase:TitlecaseExtension": {},
         # https://facelessuser.github.io/pymdown-extensions/
         "pymdownx.caret": {},
+        "pymdownx.emoji": {},
         "pymdownx.extra": {},
         "pymdownx.keys": {},
         "pymdownx.magiclink": {},
@@ -208,7 +213,7 @@ LINKS = (
 )
 
 COPYRIGHT = """Unless contrary mentioned, the content of this site is published
-under a <a rel='license'
+under a <a class='text-dark' rel='license'
 href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International license</a>."""
 
