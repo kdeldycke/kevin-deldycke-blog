@@ -8,13 +8,13 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 ## Search
 
   * Count the number of lines with at least one occurrence of the `y` character:
-  
+
         :::shell-session
         $ cat test.txt
-        asd  dd :; > 
-        y YYYyy  yyy 
+        asd  dd :; >
+        y YYYyy  yyy
          .
-         
+
         asdkjlyes
             kjkjhkjhy
         $ grep -o '.*y.*' ./test.txt | wc -l
@@ -178,7 +178,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 
         :::shell-session
         $ gs -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -q -sOutputFile=bigfile.pdf ./*
-        
+
   * Reduce size of PDF (see [GhostScript `-dPDFSETTINGS` documentation](https://web.mit.edu/ghostscript/www/Ps2pdf.htm#Options)):
 
         :::shell-session
@@ -188,7 +188,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 ## Edition
 
   * VIM: [no autoindent on paste](https://vim.wikia.com/wiki/How_to_stop_auto_indenting).
-  
+
   * [Get rid of Non-Breaking space](https://hauweele.net/~gawen/blog/?p=32) on Linux systems by the way X.org's `~/.xmodmap` config file.
 
 
