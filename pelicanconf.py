@@ -45,7 +45,11 @@ MARKDOWN = {
         "pymdownx.keys": {},
         "pymdownx.magiclink": {},
         "pymdownx.smartsymbols": {},
-        "pymdownx.superfences": {},
+        "pymdownx.superfences": {
+            # No need for magic indention-based code blocks: all ours are
+            # delimited by fences anyway.
+            "disable_indented_code_blocks": True,
+        },
     },
     "output_format": "html5",
 }
