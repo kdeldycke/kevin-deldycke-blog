@@ -13,13 +13,13 @@ repository = 'https://github.com/kdeldycke/kevin-deldycke-blog'
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pelican = {extras = ["Markdown"], version = "^4.2.0"}
+pelican = {extras = ["Markdown"], version = "^4.5.0"}
 pymdown-extensions = "^8.0"
 typogrify = "^2.0.7"
 beautifulsoup4 = "^4.9.1"
 mdx_video = "^0.1.8"
 mdx_titlecase = "^1.2.0"
-plumage = {git = "https://github.com/kdeldycke/plumage.git", branch = "develop" }
+plumage = {git = "https://github.com/kdeldycke/plumage.git", branch = "develop"}
 pygments = "^2.6.1"
 
 [tool.poetry.dev-dependencies]
