@@ -3,6 +3,10 @@
 from __future__ import unicode_literals
 
 import plumage
+SITEURL = "http://localhost:8000"
+RELATIVE_URLS = False
+
+DELETE_OUTPUT_DIRECTORY = True
 
 AUTHOR = "Kevin Deldycke"
 SITENAME = "Kevin Deldycke"
