@@ -160,8 +160,6 @@ PLUGINS = [
     "related_posts",
     # "thumbnailer",
     "tipue_search",
-    "neighbors",
-    "sitemap",
 ]
 
 
