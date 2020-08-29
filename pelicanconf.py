@@ -158,7 +158,6 @@ PLUGINS = [
     # CRITICAL: AttributeError: module 'deadlinks' has no attribute 'register'
     # "deadlinks",
     "related_posts",
-    # "thumbnailer",
     "tipue_search",
 ]
 
