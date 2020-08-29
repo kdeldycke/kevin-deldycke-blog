@@ -164,10 +164,13 @@ PLUGINS = [
 
 ### Plugin-specific settings
 
+### deadlinks
 DEADLINK_VALIDATION = True
 
+### related_posts
 RELATED_POSTS_MAX = 3
 
+### thumbnailer
 IMAGE_PATH = "uploads"
 # THUMBNAIL_DIR = ""
 THUMBNAIL_SIZES = {
