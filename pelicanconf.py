@@ -176,7 +176,7 @@ PLUGINS = [
 ### deadlinks
 DEADLINK_VALIDATION = True
 
-### related_posts
+### related-posts
 RELATED_POSTS_MAX = 3
 
 ### similar_posts
