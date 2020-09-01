@@ -8,8 +8,7 @@ RELATIVE_URLS = False
 
 DELETE_OUTPUT_DIRECTORY = True
 
-AUTHOR = "Kevin Deldycke"
-SITENAME = "Kevin Deldycke"
+AUTHOR = SITENAME = "Kevin Deldycke"
 
 PATH = "content"
 
