@@ -151,13 +151,22 @@ EXTRA_PATH_METADATA = {
     "extra/htaccess-static": {"path": "documents/.htaccess"},
 }
 
-PLUGIN_PATHS = ["plugins-core"]
+PLUGIN_PATHS = [
+    "pelican-deadlinks",
+]
+# Once all plugins hard-linked in this repository by the way of git submodules
+# gets their own package, we can get rid of PLUGIN_PATHS and set PLUGINS to
+# None. That way all plugins installed by poetry will be auto-discovered by
+# Pelican.
 PLUGINS = [
     # deadlink plugin seems temporarily broken and produce this fatal error:
     # CRITICAL: AttributeError: module 'deadlinks' has no attribute 'register'
     # "deadlinks",
-    "related_posts",
-    "tipue_search",
+    "pelican.plugins.neighbors",
+    "pelican.plugins.related_posts",
+    "pelican.plugins.sitemap",
+    "pelican.plugins.thumbnailer",
+    "pelican.plugins.tipue_search",
 ]
 
 
