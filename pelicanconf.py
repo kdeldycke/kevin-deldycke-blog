@@ -164,7 +164,6 @@ PLUGINS = [
     # "deadlinks",
     "similar_posts",
     "pelican.plugins.neighbors",
-    "pelican.plugins.related_posts",
     "pelican.plugins.sitemap",
     "pelican.plugins.thumbnailer",
     "pelican.plugins.tipue_search",
@@ -175,9 +174,6 @@ PLUGINS = [
 
 ### deadlinks
 DEADLINK_VALIDATION = True
-
-### related-posts
-RELATED_POSTS_MAX = 3
 
 ### similar_posts
 SIMILAR_POSTS_MAX_COUNT = 3
