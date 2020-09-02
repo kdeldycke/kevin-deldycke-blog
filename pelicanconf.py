@@ -20,7 +20,7 @@ MARKDOWN = {
         # https://python-markdown.github.io/extensions/#officially-supported-extensions
         "markdown.extensions.abbr": {},
         # Example of admonition use at:
-        # https://github.com/kdeldycke/kevin-deldycke-blog/blob/master/content/posts/python-ultimate-regular-expression-to-catch-html-tags.md
+        # https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/content/posts/python-ultimate-regular-expression-to-catch-html-tags.md
         "markdown.extensions.admonition": {},
         "markdown.extensions.attr_list": {},
         "markdown.extensions.def_list": {},
@@ -219,7 +219,7 @@ LEFT_SIDEBAR = """
     <!--</div>-->
     """
 
-ARTICLE_EDIT_LINK = "https://github.com/kdeldycke/kevin-deldycke-blog/edit/master/content/posts/%(slug)s.md"
+ARTICLE_EDIT_LINK = "https://github.com/kdeldycke/kevin-deldycke-blog/edit/main/content/posts/%(slug)s.md"
 
 SOCIAL_WIDGET_NAME = "Online presence"
 SOCIAL = (

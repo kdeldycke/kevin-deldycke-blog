@@ -4,7 +4,7 @@ on:
   # prevent any other tagging or release activity interfer with the project.
   push:
     branches:
-      - master
+      - main
 
 jobs:
 

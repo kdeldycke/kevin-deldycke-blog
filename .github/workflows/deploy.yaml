@@ -3,7 +3,7 @@ on:
   # Only deploy the reference default branch.
   push:
     branches:
-      - master
+      - main
 
 jobs:
 

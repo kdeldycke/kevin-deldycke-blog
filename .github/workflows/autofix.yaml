@@ -4,7 +4,7 @@ on:
     # Only targets the default branch to avoid amplification effects of
     # auto-fixing the exact same stuff in multiple non-rebased branches.
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
 
@@ -31,7 +31,7 @@ jobs:
         title: "[autofix] Format Python code"
         body: >
           [Auto-generated on run #${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
-          as defined by [workflow action](https://github.com/${{ github.repository }}/blob/master/.github/workflows/autofix.yaml).
+          as defined by [workflow action](https://github.com/${{ github.repository }}/blob/main/.github/workflows/autofix.yaml).
         labels: CI/CD
         assignees: kdeldycke
         branch: format-python
@@ -49,7 +49,7 @@ jobs:
           title: "[autofix] Typo"
           body: >
             [Auto-generated on run #${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
-            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/master/.github/workflows/autofix.yaml).
+            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/main/.github/workflows/autofix.yaml).
           labels: CI/CD, documentation
           assignees: kdeldycke
           branch: autofix-typo
@@ -86,7 +86,7 @@ jobs:
           title: "[autofix] Regenerate .gitignore"
           body: >
             [Auto-generated on run #${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
-            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/master/.github/workflows/autofix.yaml).
+            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/main/.github/workflows/autofix.yaml).
           labels: CI/CD
           assignees: kdeldycke
           branch: update-gitignore
@@ -106,7 +106,7 @@ jobs:
           title: "[autofix] Update submodules"
           body: >
             [Auto-generated on run #${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
-            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/master/.github/workflows/autofix.yaml).
+            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/main/.github/workflows/autofix.yaml).
           labels: CI/CD
           assignees: kdeldycke
           branch: update-submodules
