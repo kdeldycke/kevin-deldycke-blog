@@ -13,10 +13,10 @@ d'annoncer la mise en ligne d'une interview de [Cool
 Cavemen](https://coolcavemen.com) à laquelle j'ai participé.
 
 L'interview à été réalisée pour le second épisode de _Paroles d'Artistes_, une
-emission proposée par [OxyRadio](https://www.oxyradio.net), une webradio libre
-[retransmise sur Freebox](https://www.oxyradio.net/news-55.html). Diffusée
+emission proposée par [OxyRadio](https://web.archive.org/web/20180325205952/http://oxyradio.net/), une webradio libre
+[retransmise sur Freebox](https://web.archive.org/web/20100715042903/https://www.oxyradio.net/news-55.html). Diffusée
 vendredi dernier, l'interview est désormais [disponible sous forme de
-podcast](https://www.oxyradio.net/podcast-121.html).
+podcast](https://web.archive.org/web/20100715003245/https://www.oxyradio.net/podcast-121.html).
 
 Pour résumer mon intervention, j'explique comment et pourquoi j'ai conseillé au
 groupe de distribuer leurs compositions sous une licence Creative Commons.
