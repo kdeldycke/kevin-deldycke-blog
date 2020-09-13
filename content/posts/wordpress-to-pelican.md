@@ -2,7 +2,7 @@
 date: 2013-02-06 12:03:26
 title: WordPress to Pelican
 Category: English
-tags: WordPress, Pelican, Python, migration, blog, Web, PHP, MySQL, sed, Markdown, reStructuredText, ZenPhoto, Cool Cavemen, Regular expression
+tags: WordPress, Pelican, Python, migration, PHP, MySQL, sed, Markdown, reStructuredText, ZenPhoto, Cool Cavemen, Regular expression
 ---
 
 You probably noticed this blog dramatically changed lately and was sometimes
