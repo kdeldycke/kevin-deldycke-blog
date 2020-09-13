@@ -52,6 +52,8 @@ RAID 10 is a bullet-proof arrangement. But too expensive for our home usage.
 
 Speed, space and safety of different RAID-Z types are explored in the [ZFS Raidz Performance, Capacity and Integrity](https://calomel.org/zfs_raid_speed_capacity.html) article.
 
+Should we activate ZFS deduplication feature? No. It consumes too much RAM and CPU for minimal gain. Unless you're a company looking to archive multiple years of backups for legal requirements, don't bother with deduplication.
+
 
 ## Drives
 
@@ -368,3 +370,11 @@ Potential candidates so far:
 * [ASRock Rack X570D4I-2T](https://www.asrockrack.com/general/productdetail.asp?Model=X570D4I-2T)
 * [ASRock Rack EPYC3251D4I-2T](https://www.asrockrack.com/general/productdetail.asp?Model=EPYC3251D4I-2T)
 * Keep looking for new models at [SuperMicro motherboard matrix](https://www.supermicro.com/en/products/motherboards/matrix)
+
+### ZFS
+
+Lots of ZFS features are on the way:
+
+* [dRAID with dual parity](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html). It's like RAIDZ2, but with better workload distribution accross drives on rebuilds.
+* ZFS native dataset encryption (should come with OpenZFS 2.0).
+* macOS support seems to being worked on for OpenZFS 3.0. Maybe this opens the way to directly mount remote volumes, bypassing Samba shares altogether.
