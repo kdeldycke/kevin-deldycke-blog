@@ -61,6 +61,12 @@ Report, 2017) - A quick recap on how I entered the world of scuba diving, follow
 Everything is [on LinkedIn](https://www.linkedin.com/in/kevindeldycke/).
 
 
+## Conferences
+
+* [*OpenERP for IT Service companies*](https://www.slideshare.net/openobject/openerp-openerp-for-it-service-companies-smile) - OpenERP Partner Days, 2012, Belgium.
+* *ERP5 business template and express wizard technology demonstration* - [EMPOSME](https://cordis.europa.eu/project/id/18071) (Enterprise Modelling and Performance Optimisation for SMEs), 2006, Ireland.
+* *ERP5 Design and Architecture* - [COFENIS 2006](https://web.archive.org/web/20130730225618/http://www.confenis.org/confenis2006/www.confenis.org/index6ea96ea9.html?q=photos&PHPSESSID=a6c772ef8dfbd7d71854f1cc9da4a1e6) - [IFIP](http://en.wikipedia.org/wiki/IFIP) international Conference on Research and Practical Issues of Enterprise Information Systems, 2006, Vienna, Austria.
+* [*Develop your own ERP with ERP5 Business Templates*](https://web.archive.org/web/20050924101245/https://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39) - [Solution Linux / Paris Open Source Summit](http://www.solutionslinux.fr), 2005, France.
 
 
 ## About this site
