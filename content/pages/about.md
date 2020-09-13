@@ -46,12 +46,12 @@ software of the world.
 
 ## Interviews
 
-- 👔 [VP of Engineering at Scaleway](https://devtomanager.com/interviews/kevin-deldycke/) (Developer to Manager, 2020) - In which I go back on my career transition from Software Developer to Enginneering Manager, and growing a team from 0 to 12 building a criticat part of a cloud provider.
+- 👔 [VP of Engineering at Scaleway](https://devtomanager.com/interviews/kevin-deldycke/) (Developer to Manager, 2020) - In which I go back on my career transition from Software Developer to Enginneering Manager, and growing a team from 0 to 12 to care about a critical part of a cloud provider.
 
 - 🧘‍♂️ [Bien-être au travail](https://putaindecode.io/podcasts/s01e09-dotjs-react-native-bien-etre-au-travail) (Putain de code, S01E09, 2018) - I was invited in this French podcast to discuss well-being at work. Sounds dull, but was a great oportunity for the hosts to share their personal anecdotes and stories on the job, and for me to comment on my first few months as a rookie manager.
 
 - 🤿 [Take a Plunge Into One of the World's Deepest Indoor Swimming Pool](https://venuereport.com/blog/take-a-plunge-into-one-of-the-world-s-deepest-indoor-swimming-pool/) (The Venue
-Report, 2017) - A quick introduction on how I entered the world of scuba diving, following by my experience at *Nemo 33*.
+Report, 2017) - A quick recap on how I entered the world of scuba diving, following by my experience at *Nemo 33*.
 
 - 🤘 [Paroles d’Artistes: Cool Cavemen](https://web.archive.org/web/20100715003245/https://www.oxyradio.net/podcast-121.html) (OxyRadio, 2009) - On this French webradio, I explain how and why I came to advise the Cool Cavemen band to release all their music under a Creative Commons license.
 
