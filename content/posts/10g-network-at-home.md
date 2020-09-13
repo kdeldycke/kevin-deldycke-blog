@@ -28,7 +28,11 @@ Link together the Freebox and the NAS. Both are close to each other, in the same
 
 Home is wired with *Grade 3 Residential Triple Play 4PR F/FTP* cables. Not sure what that cable is. In theory 10GBASE-T requires Cat6. The reality is that most equipment are OK with short-distance Cat5e (less than 30-45 meters). I guess it is worth a try.
 
-RJ45 sockets are available in each room, everything converging in the router & NAS cabinet. Unfortunately the Freebox SFP+ port is capped at level-2 (<1.5 W), and is not providing enough power for an RJ45 transceiver. We need an SFP+ switch:
+RJ45 sockets are available in each room, everything converging in the router & NAS cabinet. Unfortunately the Freebox SFP+ port is capped at level-2 (<1.5 W), and is not providing enough power for an RJ45 transceiver. So we need an SFP+ switch.
+
+There is plenty of SFP+ modules to choose from. I selected the [MikroTik S+RJ10](https://amzn.com/B084383RZL/?tag=kevideld-20) to reduce incompatibility and for its good price. Other alternatives are covered in this excellent [SFP+ to 10Gbase-T adapter buyers guide](https://www.servethehome.com/sfp-to-10gbase-t-adapter-module-buyers-guide/).
+
+At the end the cabinet was equipped with:
 
 | Part | Model | Quantity | Total (excl. shipping) | Notes |
 |---|---|---:|---:|---|
@@ -40,21 +44,22 @@ RJ45 sockets are available in each room, everything converging in the router & N
 
 ## Office switch
 
-Bring 10G from the cabinet to the home office. That where most bandwidth is consumed. We'll bring 10G by the way of classic copper cables, and have some options for another switch to distribute the bandwidth there:
+This one brings 10G from the cabinet to the home office. That where most bandwidth is consumed. We'll bring 10G by the way of classic copper cables, and have some options for another switch to distribute the bandwidth there:
 
 | Part | Model | 10G ports | 1G ports | Price | Notes |
 |---|---|---|---|---:|---|
-| Switch | [QNAP QSW-308S](https://amzn.com/B07VC9RTR9/?tag=kevideld-20) | 3 SFP | 8 RJ45 | $159.00 | Unmanaged. |
-| Switch | [Netgear GS110MX](https://amzn.com/B076642YPN/?tag=kevideld-20) | 1 RJ45 | 8 RJ45 | €160.65 | Unmanaged. |
-| Switch | [QNAP QSW-308-1C](https://amzn.com/B07VC9T3WQ/?tag=kevideld-20) | 3 SFP | 8 RJ45 | $200.99 | Unmanaged. |
-| Switch | [Asus XG-U2008](https://amzn.com/B01LZMM7ZO/?tag=kevideld-20) | 2 RJ45 | 8 RJ45 | €199.65 | Unmanaged. |
-| Switch | [Netgear XS505M](https://amzn.com/B075Q5C3Z4/?tag=kevideld-20) | 1 SFP / 4 RJ45 | 0 | €314.99 | Unmanaged. |
-| Switch | [Netgear XS508M](https://amzn.com/B075Q66RKF/?tag=kevideld-20) | 1 SFP / 8 RJ45 | 0 | €383.98 | Unmanaged. |
+| Switch | [QNAP QSW-308S](https://amzn.com/B07VC9RTR9/?tag=kevideld-20) | 3 SFP | 8 RJ45 | $159.00 | Unmanaged |
+| Switch | [Netgear GS110MX](https://amzn.com/B076642YPN/?tag=kevideld-20) | 1 RJ45 | 8 RJ45 | €160.65 | Unmanaged |
+| Switch | [QNAP QSW-308-1C](https://amzn.com/B07VC9T3WQ/?tag=kevideld-20) | 3 SFP | 8 RJ45 | $200.99 | Unmanaged |
+| Switch | [Asus XG-U2008](https://amzn.com/B01LZMM7ZO/?tag=kevideld-20) | 2 RJ45 | 8 RJ45 | €199.65 | Unmanaged |
+| Switch | [Netgear MS510TX](https://amzn.com/B075Q6NPM2/?tag=kevideld-20) | 1 SFP / 1 RJ45 | 4 RJ45 | €277.98 | Managed. [Review](https://www.servethehome.com/netgear-ms510tx-review-this-is-one-funky-switch/). |
+| Switch | [Netgear XS505M](https://amzn.com/B075Q5C3Z4/?tag=kevideld-20) | 1 SFP / 4 RJ45 | 0 | €314.99 | Unmanaged |
+| Switch | [Netgear XS508M](https://amzn.com/B075Q66RKF/?tag=kevideld-20) | 1 SFP / 8 RJ45 | 0 | €383.98 | Unmanaged |
 
 
 ## External NICs
 
-To plug the laptops in the office on the 10G network, we'll rely on external dongles:
+To plug the laptops in the office on the 10G network, we'll rely on external dongles. There a wide variety and price point to choose from:
 
 | Part | Model | Port | Interface | Price | Notes |
 |---|---|---|---|---:|---|
@@ -73,6 +78,8 @@ To plug the laptops in the office on the 10G network, we'll rely on external don
 ## Wireless
 
 Check out this [Wi-Fi 4-5-6-6E (802.11 n/ac/ax) guide](https://www.duckware.com/tech/wifi-in-the-us.html), which is one of the best resource I ever found to make educated wireless router/AP upgrade decisions, and cut through all the marketing hype.
+
+One of the best access point so far to increase coverage seems to be the [Ubiquiti UniFi nanoHD](https://amzn.com/B07DWW3P6K/?tag=kevideld-20) (€163.88).
 
 
 ## Upgrade path
