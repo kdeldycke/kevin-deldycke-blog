@@ -5,13 +5,12 @@ category: English
 tags: consulting, ERP, free software, open source, OpenERP, ERP5, OpenBravo, Neogia, Adempiere, Compiere
 ---
 
-... at least [according Smile](https://www.smile.fr), a French consulting
-company. In their latest white paper ([available for download
-here](https://www.smile.fr/Livres-blancs/ERP-et-decisionnel/ERP-open-source)),
-they've studied [Open-Source
-ERPs](https://en.wikipedia.org/wiki/Category:Free_ERP_software).
+... at least [according Smile](https://www.smile.eu), a French consulting
+company.
 
-Here is what they said about ERP5 in page 87:
+They studied [Open-Source
+ERPs](https://en.wikipedia.org/wiki/Category:Free_ERP_software) in their latest white paper. It is [available for download
+here](https://www.scribd.com/document/180544336/LB-Smile-ERP-pdf). And here is what they said about ERP5 at page 77:
 
 > ERP5 va même jusqu'à gérer les paies alors qu'aucun autre ERP libre n'est
 allé aussi loin
@@ -27,12 +26,12 @@ payroll systems for each ERP (from page 88):
 
 ERP | Evaluation
 --- | ---
-TinyERP | <i class="icon-star"></i>
-OpenBravo | --
-Neogia | --
-ERP5 | <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i>
-Adempiere | --
-Compiere GPL | --
+[TinyERP](https://en.wikipedia.org/wiki/Odoo#Company_history) | ★☆☆☆☆ (1/5)
+[OpenBravo](https://en.wikipedia.org/wiki/Openbravo) | ☆☆☆☆☆ (0/5)
+[Neogia](https://sourceforge.net/projects/neogia/) | ☆☆☆☆☆ (0/5)
+[ERP5](https://en.wikipedia.org/wiki/ERP5) | ★★★★☆ (4/5)
+[Adempiere](https://en.wikipedia.org/wiki/Adempiere) | ☆☆☆☆☆ (0/5)
+[Compiere GPL](https://en.wikipedia.org/wiki/Compiere) | ☆☆☆☆☆ (0/5)
 
 As you can see I not only got the first place: I wiped out the competition.
 
@@ -55,25 +54,24 @@ developers](https://web.archive.org/web/20050924101245/https://www.erp5.org/sect
 for a while.
 
 The [English translation is available for
-download](https://web.archive.org/web/20050924101245/https://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39),
-while the original French version (titled *Développez votre propre ERP grâce
-aux Business Templates ERP5*) has disappeared from the web.
+download](https://web.archive.org/web/20050924101245/https://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39). The [original French version](https://web.archive.org/web/20091115172519/http://cps.erp5.org/sections/documentation/articles/erp5_developer_tutor/view), titled *Développez votre propre ERP grâce
+aux Business Templates ERP5* has disappeared from the web.
 
-This document had enough influence to be cited in four academic papers from
+This document was enough of a reference to be cited in a couple of academic papers from
 2006 to 2009:
 
-  * [A comparison of Open Source ERP
-  Systems](https://www.big.tuwien.ac.at/system/theses/20/papers.pdf)
+* [A comparison of Open Source ERP
+Systems](https://www.big.tuwien.ac.at/app/uploads/2016/10/Herzog_paper.pdf#page=77)
 
-  * [A Research on Corporate ERP Systems used for Supermarket Supply Chain
-  Inventory Management in
-  Turkey](https://www.slideshare.net/Agcristi/a-research-on-corporate-enterprise-resource-planning-erp)
+* [A Research on Corporate ERP Systems used for Supermarket Supply Chain
+Inventory Management in
+Turkey](https://www.slideshare.net/slideshow/embed_code/key/mHgCdv01fE9KsL?startSlide=13)
 
-  * [Open Source Enterprise Resource Planning
-  Systems](https://behdasht.gov.ir/uploads/101_195_baresiye%20ERP%20haye%20matn%20baz.pdf)
+* [Open Source Enterprise Resource Planning
+Systems](https://behdasht.gov.ir/uploads/101_195_baresiye%20ERP%20haye%20matn%20baz.pdf)
 
-  * [Comparatif ERP5 /
-  COMPIERE](https://web.archive.org/web/20101010002846/https://wiki.itin.fr/index.php/Comparatif_ERP5_/_COMPIERE_MT09_FR)
+* [Comparatif ERP5 /
+COMPIERE](https://web.archive.org/web/20101010002846/https://wiki.itin.fr/index.php/Comparatif_ERP5_/_COMPIERE_MT09_FR)
 
 The irony is that after leaving the open-source ERP world in 2007, I was
 recruited by Smile in 2011, the very same company which produced the original
