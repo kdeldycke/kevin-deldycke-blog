@@ -375,6 +375,6 @@ Potential candidates so far:
 
 Lots of ZFS features are on the way:
 
-* [dRAID with dual parity](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html). It's like RAIDZ2, but with better workload distribution accross drives on rebuilds.
+* [dRAID with dual parity](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html). It's like RAIDZ2, but with better workload distribution across drives on rebuilds.
 * ZFS native dataset encryption (should come with OpenZFS 2.0).
 * macOS support seems to being worked on for OpenZFS 3.0. Maybe this opens the way to directly mount remote volumes, bypassing Samba shares altogether.
