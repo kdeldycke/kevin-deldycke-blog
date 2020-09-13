@@ -2,100 +2,74 @@
 title: About
 ---
 
-<img class="thumbnail" width="250px"
-style="float: left; margin-right: 20px; margin-bottom: 20px"
-src="/uploads/2015/profile-photo.jpg"/>
+My name is **Kevin Deldycke**, I'm a high-tech Engineering Manager from Paris, France.
 
-My name is **Kevin Deldycke**, I'm a Data Engineer living in Paris, France.
 
----------
+## Short Bio
 
-I'm working at [Scaleway](https://scaleway.com), a cloud platform delivering
-on-demand bare-metal compute instances, and all the associated services.
+![](/uploads/2015/profile-photo.jpg){.float-left .w-25 .mr-3 .mb-3}
 
-I'm designing and implementing data-crunching pipelines to manage the
-operationnal and business aspects of the infrastructure.
+I held various positions in various industries and sectors as VP, Product Manager, Founding Engineer and Consultant.
 
-This involves working daily with [Python]({tag}python) (my language of choice
-since 2003), [Pandas]({tag}pandas), [Cassandra]({tag}cassandra), Spark,
-[PostgreSQL]({tag}postgresql) and the likes.
+After 15+ years of relevant engineering work, and 2+ years of hands-on management experience, I now build teams from scratch with self-sustaining culture, and my intent is to keep doing so.
 
----------
+Enabling engineers, leading managers, and make them feels productive is the most impactful thing I can bring to the table. So I'm always **on the lookout for high-tech management position, in fast growing start-ups** with ambitious vision.
 
-Before joining [Scaleway](https://scaleway.com), I spent several years writing
-and shipping business software in various industries such as banking, retail,
-consulting, energy, transport and government agencies.
 
-I graduated with a Master’s in Software and Industrial Engineering from
-[*École Centrale de Lille*'s IG2I
-department](https://www.ec-lille.fr/en/degree/ig2l-en.html).
+Most relevant experience was in [growing a team from 0 to 12](https://devtomanager.com/interviews/kevin-deldycke/) at a [world-class cloud computing provider](https://scaleway.com). We built up the whole [IAM ecosystem](https://github.com/kdeldycke/awesome-iam), as well as the [Billing and Payment stack](https://github.com/kdeldycke/awesome-billing).
 
 
 ## Achievements
 
-- Designed, implemented and operated Scaleway's [billing
+- 💰 Designed, implemented and operated [Scaleway's billing
 pipeline](https://scaleway.com/faq/billing/), generating
 multi-million dollars of revenue (and growing!). The whole
 thing. All by myself.
-- [Top GitHub
-developer](https://kevin.deldycke.com/2017/04/github-top-developer/).
-- 7,000+ GitHub stars for my repository about [Falsehoods Programmers Believe
-in](https://github.com/kdeldycke/awesome-falsehood).
-- Wrote the [best open-source
+
+- 🚀 Then I built a team of 12 people to enhance and expand on the full Billing, Payment and IAM domain of the company. Doing so, I got the fancy title of Product Manager, then VP.
+
+- 🤝 Established lasting trust and loyalty. No one from my team resigned under my authority, in a company with a very high employee turnover rate.
+
+- 🥇 [World trending GitHub
+developer](https://kevin.deldycke.com/2017/04/github-top-developer/), and [top-1% open-source
+developer](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
+
+- 🌟 14,000+ GitHub stars for my repository about [Falsehoods Programmers Believe
+in](https://github.com/kdeldycke/awesome-falsehood). Regularly [featured on HN front page](https://github.com/kdeldycke/awesome-falsehood/edit/main/assets/in-the-media.md).
+
+- 💵 Wrote the [best open-source
 payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
 software of the world.
-- Created and managed the African subsidiary of my first employer.
-- [Top-1% of open-source
-developers](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
-- 1,300,000+ views for my video on [Nemo 33: First Deepest Pool in the
-World](https://www.youtube.com/watch?v=-sfFKZ2PvlE).
-- Was [interviewed on The Venue
-Report](https://venuereport.com/blog/take-a-plunge-into-one-of-the-world-s-deepest-indoor-swimming-pool/),
-a curated travel & events platform featuring outstanding locations around the world.
-- Led dozen of peoples in a [viral dance at a music
-festival](https://kevin.deldycke.com/2013/09/vieilles-charrues/).
-- Have been [mentionned by Patrick McKenzie (a.k.a.
-`patio11`)](https://twitter.com/patio11/status/813894523772207104).
-- Have been [mentionned along Bruce
-Schneier](https://twitter.com/kdeldycke/status/792066994640150528) once (shady
-claim, but still).
+
+- 🌐 Created and managed the African subsidiary of my first employer.
+
+
+## Interviews
+
+- 👔 [VP of Engineering at Scaleway](https://devtomanager.com/interviews/kevin-deldycke/) (Developer to Manager, 2020) - In which I go back on my career transition from Software Developer to Enginneering Manager, and growing a team from 0 to 12 building a criticat part of a cloud provider.
+
+- 🧘‍♂️ [Bien-être au travail](https://putaindecode.io/podcasts/s01e09-dotjs-react-native-bien-etre-au-travail) (Putain de code, S01E09, 2018) - I was invited in this French podcast to discuss well-being at work. Sounds dull, but was a great oportunity for the hosts to share their personal anecdotes and stories on the job, and for me to comment on my first few months as a rookie manager.
+
+- 🤿 [Take a Plunge Into One of the World's Deepest Indoor Swimming Pool](https://venuereport.com/blog/take-a-plunge-into-one-of-the-world-s-deepest-indoor-swimming-pool/) (The Venue
+Report, 2017) - A quick introduction on how I entered the world of scuba diving, following by my experience at *Nemo 33*.
+
+- 🤘 [Paroles d’Artistes: Cool Cavemen](https://web.archive.org/web/20100715003245/https://www.oxyradio.net/podcast-121.html) (OxyRadio, 2009) - On this French webradio, I explain how and why I came to advise the Cool Cavemen band to release all their music under a Creative Commons license.
 
 
 ## Resume
 
-If my appalling attempts to impress with the babbling above did not worked, you
-may be thrilled by the following soporific information on my professional
-background:
+Everything is [on LinkedIn](https://www.linkedin.com/in/kevindeldycke/).
 
-Format | Language
----|---
-PDF | [English](https://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg) ● [French](https://docs.google.com/a/deldycke.com/document/export?format=pdf&id=1JYITJ3JU9WYvQXWlpGqLO9LzhcfAxiqJSsV8WyVhyyY)
-LinkedIn | [English](https://linkedin.com/in/kevindeldycke/en) ● [French](https://linkedin.com/in/kevindeldycke/fr)
 
-Resumes, CVs and profiles above are heavy on irrelevant details. And that's
-absolutely intentional. I designed these to form an extensive *professional
-activities database*. Not as resume _per se_. So feel free to pick there
-data you need to fill in your talent database and please ignore the rest.
 
 
 ## About this site
 
-This place is an evolving notebook where I deposit tiny pieces of knowledge
-(*knowledgelets*?) I generate in my personal and professional activities.
-
-Everything's in English as a way to practice, and to make my knowledge
-available to the largest audience. It's not my mother tongue and you’ll surely
-find mistakes. If you do, please be kind enough to comment on the blog (or
+🇬🇧 Everything here is English as a way to practice, and share content with a larger audience. It's not my mother tongue and you’ll certainly
+find mistakes. So if you do, please be kind to comment on the blog (or
 better, [send a
 pull-request](https://github.com/kdeldycke/kevin-deldycke-blog/pulls)) so I can
-quickly fix errors. I sometimes write [in French]({category}francais) to target
-a French-speaking audience.
+quickly fix errors. 🇫🇷 I sometimes write [in French]({category}francais).
 
-This blog was previously titled *coolkevmen*. This is the nickname under which
-I appear in the credits of the [All Cool
-Hits](https://coolcavemen.com/disc/all-cool-hits/) album, by my friends the
-[Cool Cavemen](https://coolcavemen.com).
-
-Previous versions of this blog [featured
-artwork](https://kevin.deldycke.com/2011/01/new-blog-header-and-tiny-wordpress-theme-customizations/)
-by Jim from [Maomium](https://maomium.com).
+🎸 This blog was previously titled *coolkevmen*. Which is the nickname given to me by friends from the [Cool Cavemen](https://coolcavemen.com) band, in the credits of [All Cool
+Hits](https://coolcavemen.com/disc/all-cool-hits/) album.
