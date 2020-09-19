@@ -23,4 +23,10 @@ tags: CLI, macOS, Apple, OSX, PluginKit
         $ pluginkit -e use -i com.agilebits.onepassword7.1PasswordSafariAppExtension
         ```
 
+  * List non-system kernel extensions currently loaded:
+
+        ```shell-session
+        $ kextstat | grep -v com.apple
+        ```
+
   * [Install Steam in a case-insensitive disk image](https://github.com/kdeldycke/dotfiles/blob/b711023285488f94fa0968a5ceff75c4322548bd/scripts/osx-install.sh#L149-L162).
