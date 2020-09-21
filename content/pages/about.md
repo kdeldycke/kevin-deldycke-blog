@@ -35,7 +35,7 @@ developer](https://kevin.deldycke.com/2017/04/github-top-developer/), and [top-1
 developer](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
 
 - 🌟 14,000+ GitHub stars for my repository about [Falsehoods Programmers Believe
-in](https://github.com/kdeldycke/awesome-falsehood). Regularly [featured on HN front page](https://github.com/kdeldycke/awesome-falsehood/edit/main/assets/in-the-media.md).
+in](https://github.com/kdeldycke/awesome-falsehood). Regularly [featured on HN front page](https://github.com/kdeldycke/awesome-falsehood/blob/main/assets/in-the-media.md).
 
 - 💵 Wrote the [best open-source
 payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
