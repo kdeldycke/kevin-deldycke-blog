@@ -3,4 +3,4 @@
 	url = https://github.com/silentlamb/pelican-deadlinks.git
 [submodule "similar_posts"]
 	path = similar_posts
-	url = https://github.com/davidlesieur/similar_posts.git
+	url = https://github.com/pelican-plugins/similar_posts.git
