@@ -243,6 +243,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+pythonenv*
 
 # Spyder project settings
 .spyderproject
@@ -264,6 +265,9 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
+
+# profiling data
+.prof
 
 ### SSH ###
 **/.ssh/id_*
@@ -313,6 +317,7 @@ pip-selfcheck.json
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+.ionide
 
 ### Windows ###
 # Windows thumbnail cache files
