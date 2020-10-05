@@ -16,7 +16,7 @@ python = "^3.8"
 pelican = {extras = ["Markdown"], version = "^4.5.0"}
 pymdown-extensions = "^8.0"
 typogrify = "^2.0.7"
-beautifulsoup4 = "^4.9.2"
+beautifulsoup4 = "^4.9.3"
 mdx_video = "^0.1.8"
 mdx_titlecase = "^1.2.0"
 plumage = {git = "https://github.com/kdeldycke/plumage.git", branch = "develop"}
