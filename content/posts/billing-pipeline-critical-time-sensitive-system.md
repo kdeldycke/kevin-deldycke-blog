@@ -31,7 +31,7 @@ I hired Antoine. And there he was, fixing the crap I implemented 7 years ago. No
 
 Thanks a lot Antoine for taking the resolution and effort to fix my old mess! 😁 And I'm sure the definitive absence of flaky tests reduced the overall stress of the team.
 
-Now [go read that stuff](https://medium.com/@aveuiller/stories-of-flaky-test-encounters-in-the-wild-a152bf7151f5): it demonstrates how hard it is to reason with bare temporal logic, even for seasoned engineers. On my side, practicing this made me to compile that [awesome list of falsehoods programmers believe in](https://github.com/kdeldycke/awesome-falsehood), as a cautionary tale of all things that might go wrong.
+Now [go read that stuff](https://medium.com/@aveuiller/stories-of-flaky-test-encounters-in-the-wild-a152bf7151f5): it demonstrates how hard it is to reason with bare temporal logic, even for seasoned engineers. On my side, practicing this made me compile that [awesome list of falsehoods programmers believe in](https://github.com/kdeldycke/awesome-falsehood), as a cautionary tale of all things that might go wrong.
 
 Let's continue with some complementary notes to provide context on the system.
 
