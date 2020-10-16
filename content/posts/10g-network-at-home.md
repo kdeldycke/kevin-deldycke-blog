@@ -36,7 +36,7 @@ At the end the cabinet was equipped with:
 
 | Part | Model | Quantity | Total (excl. shipping) | Notes |
 |---|---|---:|---:|---|
-| Switch | [MikroTik CRS305-1G-4S+in](https://amzn.com/B07LFKGP1L/?tag=kevideld-20) | 1 | €144.01| Limited to 2 RJ45 transceiver, seems to get too hot with more. |
+| Switch | [MikroTik CRS305-1G-4S+in](https://amzn.com/B07LFKGP1L/?tag=kevideld-20) | 1 | €144.01| [Limited to 2 RJ45 transceivers, after wihch it gets too hot](https://wiki.mikrotik.com/wiki/S%2BRJ10_general_guidance#General_Guidance). |
 | Transceiver | [MikroTik S+RJ10](https://amzn.com/B084383RZL/?tag=kevideld-20) | 1 | €66.04 |  |
 | Cable | [10Gtek SFP+ Direct Attach Copper - 1m](https://amzn.com/B00WHS3NCA/?tag=kevideld-20) | 1 | €24.99 | |
 | | | **Total** | **€235.04** | |
