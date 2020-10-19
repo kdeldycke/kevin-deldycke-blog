@@ -236,11 +236,6 @@ SOCIAL = (
 LINKS_WIDGET_NAME = "Professional profiles"
 LINKS = (
     ("LinkedIn", "https://linkedin.com/in/kevindeldycke/en"),
-    (
-        "PDF resume",
-        "https://docs.google.com/document/export?format=pdf&amp;id="
-        "1XaJgwRAhxHDuBSD-JqE--8WKGx0uTasa6IOU4IFBeKg",
-    ),
 )
 
 COPYRIGHT = """Unless contrary mentioned, the content of this site is published
