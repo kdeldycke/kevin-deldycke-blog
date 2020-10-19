@@ -21,7 +21,6 @@ jobs:
       - name: Lint
         run: |
           poetry run pycodestyle
-          poetry run pylint
 
   lint-yaml:
     name: Lint YAML files
