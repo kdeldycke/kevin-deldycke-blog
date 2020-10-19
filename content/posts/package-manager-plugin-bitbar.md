@@ -13,7 +13,7 @@ under a unique menu entry:
 ![](/uploads/2016/package_manager_plugin_bitbar_v1_screenshot.png)
 
 The plugin, which [started its life
-](https://github.com/kdeldycke/dotfiles/blob/master/dotfiles-osx/.bitbar/package_manager.7h.py)
+](https://github.com/kdeldycke/dotfiles/blob/9c243d3930c926e3ba51edab206433e5530bdba6/dotfiles-osx/.bitbar/package_manager.7h.py)
 with my dotfiles, [now lives
 ](https://github.com/matryer/bitbar-plugins/tree/master/Dev/MetaPackageManager)
 in the official BitBar plugins repository.
