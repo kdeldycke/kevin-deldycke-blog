@@ -171,15 +171,15 @@ PLUGINS = [
 ]
 
 
-### Plugin-specific settings
+#--- Plugin-specific settings
 
-### deadlinks
+# deadlinks
 DEADLINK_VALIDATION = True
 
-### similar_posts
+# similar_posts
 SIMILAR_POSTS_MAX_COUNT = 3
 
-### thumbnailer
+# thumbnailer
 IMAGE_PATH = "uploads"
 # THUMBNAIL_DIR = ""
 THUMBNAIL_SIZES = {
@@ -189,7 +189,7 @@ DEFAULT_TEMPLATE = """<a href="{url}" class="zoomable" title="{filename}">
 <img src="{thumbnail}" alt="{filename}"></a>"""
 
 
-### Theme-specific settings
+#--- Theme-specific settings
 
 SITE_THUMBNAIL = "/uploads/2015/profile-photo-squared-thumbnail.jpg"
 SITE_THUMBNAIL_TEXT = "Might come with a beard"
@@ -207,7 +207,8 @@ TIPUE_SEARCH = True
 LEFT_SIDEBAR = """
     <!--<div data-spy="affix" data-offset-top="0">-->
     <!--<h4>Sponsors</h4>-->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- Responsive Ad -->
     <ins class="adsbygoogle"
          style="display:block"
@@ -220,7 +221,9 @@ LEFT_SIDEBAR = """
     <!--</div>-->
     """
 
-ARTICLE_EDIT_LINK = "https://github.com/kdeldycke/kevin-deldycke-blog/edit/main/content/posts/%(slug)s.md"
+ARTICLE_EDIT_LINK = (
+    "https://github.com/kdeldycke/kevin-deldycke-blog/edit/main/content/posts/"
+    "%(slug)s.md")
 
 SOCIAL_WIDGET_NAME = "Online presence"
 SOCIAL = (
