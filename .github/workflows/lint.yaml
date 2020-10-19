@@ -61,7 +61,7 @@ jobs:
           poetry run pelican --verbose --settings ./publishconf.py ./content
       - name: Install HTMLHint
         run: |
-          npm install htmlhint -g
+          sudo npm install htmlhint -g
       - name: Lint
         run: |
           htmlhint ./output/**/*.html
