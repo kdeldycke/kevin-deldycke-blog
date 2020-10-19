@@ -1,5 +1,5 @@
 name: Autofix
-on:
+"on":
   push:
     # Only targets the default branch to avoid amplification effects of
     # auto-fixing the exact same stuff in multiple non-rebased branches.
@@ -48,8 +48,11 @@ jobs:
           commit-message: "[autofix] Typo"
           title: "[autofix] Typo"
           body: >
-            [Auto-generated on run #${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
-            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/main/.github/workflows/autofix.yaml).
+            [Auto-generated on run
+            #${{ github.run_id }}](https://github.com/${{ github.repository
+            }}/actions/runs/${{ github.run_id }}) as defined by [workflow
+            action](https://github.com/${{ github.repository
+            }}/blob/${{ github.base_ref }}/.github/workflows/autofix.yaml).
           labels: CI/CD, documentation
           assignees: kdeldycke
           branch: autofix-typo
@@ -64,7 +67,8 @@ jobs:
           sudo apt install -y git-extras
       - name: Generate .gitignore
         run: |
-          git ignore-io --replace backup certificates emacs git gpg linux macos nohup python ssh vim virtualenv visualstudiocode windows
+          git ignore-io --replace backup certificates emacs git gpg linux \
+            macos nohup python ssh vim virtualenv visualstudiocode windows
           tee -a ./.gitignore <<-EOF
 
           # Pelican
@@ -85,8 +89,11 @@ jobs:
           commit-message: "[autofix] Regenerate .gitignore"
           title: "[autofix] Regenerate .gitignore"
           body: >
-            [Auto-generated on run #${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
-            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/main/.github/workflows/autofix.yaml).
+            [Auto-generated on run
+            #${{ github.run_id }}](https://github.com/${{ github.repository
+            }}/actions/runs/${{ github.run_id }}) as defined by [workflow
+            action](https://github.com/${{ github.repository
+            }}/blob/${{ github.base_ref }}/.github/workflows/autofix.yaml).
           labels: CI/CD
           assignees: kdeldycke
           branch: update-gitignore
@@ -105,8 +112,11 @@ jobs:
           commit-message: "[autofix] Update submodules"
           title: "[autofix] Update submodules"
           body: >
-            [Auto-generated on run #${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
-            as defined by [workflow action](https://github.com/${{ github.repository }}/blob/main/.github/workflows/autofix.yaml).
+            [Auto-generated on run
+            #${{ github.run_id }}](https://github.com/${{ github.repository
+            }}/actions/runs/${{ github.run_id }}) as defined by [workflow
+            action](https://github.com/${{ github.repository
+            }}/blob/main/.github/workflows/autofix.yaml).
           labels: CI/CD
           assignees: kdeldycke
           branch: update-submodules
