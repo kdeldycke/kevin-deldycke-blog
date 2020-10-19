@@ -171,7 +171,7 @@ PLUGINS = [
 ]
 
 
-#--- Plugin-specific settings
+# ----- Plugin-specific settings
 
 # deadlinks
 DEADLINK_VALIDATION = True
@@ -189,7 +189,7 @@ DEFAULT_TEMPLATE = """<a href="{url}" class="zoomable" title="{filename}">
 <img src="{thumbnail}" alt="{filename}"></a>"""
 
 
-#--- Theme-specific settings
+# ----- Theme-specific settings
 
 SITE_THUMBNAIL = "/uploads/2015/profile-photo-squared-thumbnail.jpg"
 SITE_THUMBNAIL_TEXT = "Might come with a beard"
