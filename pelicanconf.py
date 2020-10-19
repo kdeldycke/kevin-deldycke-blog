@@ -153,7 +153,6 @@ EXTRA_PATH_METADATA = {
 
 PLUGIN_PATHS = [
     "pelican-deadlinks",
-    "similar_posts",
 ]
 # Once all plugins hard-linked in this repository by the way of git submodules
 # gets their own package, we can get rid of PLUGIN_PATHS and set PLUGINS to
@@ -163,7 +162,7 @@ PLUGINS = [
     # deadlink plugin seems temporarily broken and produce this fatal error:
     # CRITICAL: AttributeError: module 'deadlinks' has no attribute 'register'
     # "deadlinks",
-    "similar_posts",
+    "pelican.plugins.similar_posts",
     "pelican.plugins.neighbors",
     "pelican.plugins.sitemap",
     "pelican.plugins.thumbnailer",

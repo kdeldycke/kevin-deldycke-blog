@@ -248,6 +248,27 @@ pelican = ">=4.5,<5.0"
 markdown = ["markdown (>=3.2.2,<4.0.0)"]
 
 [[package]]
+name = "pelican-similar-posts"
+version = "0.0.0"
+description = "Pelican plugin to add similar posts to articles, based on a vector space model"
+category = "main"
+optional = false
+python-versions = "^3.6"
+
+[package.dependencies]
+gensim = ">=3.5.0"
+pelican = "^4.5"
+
+[package.extras]
+markdown = ["markdown (^3.2.2)"]
+
+[package.source]
+type = "git"
+url = "https://github.com/kdeldycke/similar-posts.git"
+reference = "master"
+resolved_reference = "c17a8cf940205d7ea6fad47694ca824fb40a5f5d"
+
+[[package]]
 name = "pelican-sitemap"
 version = "1.0.2"
 description = "Pelican plugin to generate sitemap in plain-text or XML format"
@@ -321,7 +342,7 @@ pygments = "^2.7.0"
 type = "git"
 url = "https://github.com/kdeldycke/plumage.git"
 reference = "develop"
-resolved_reference = "97098076942d91f1b5f29e83590e60e6d47db3be"
+resolved_reference = "031990fa002e37da80957005e2056897ff24687d"
 
 [[package]]
 name = "pycodestyle"
@@ -538,7 +559,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "df1c521e4293689ffc2aead6fd7e9b5b8620a8519eac17eeb8453f83d3e16e88"
+content-hash = "8962276ed49a4a27fe9949403ae31017ff243227a30953301d5dd55a25ee1312"
 
 [metadata.files]
 appdirs = [
@@ -739,6 +760,7 @@ pelican-neighbors = [
     {file = "pelican-neighbors-1.1.0.tar.gz", hash = "sha256:a24a5cce71a99a4b8e7838de8d4a965b0c23748a60a1b444302f58040aceedf6"},
     {file = "pelican_neighbors-1.1.0-py3-none-any.whl", hash = "sha256:08ae8103d079d3ee8fb0b96dc6d665c9ab3afcd6340604bf4f7ee2112127c18f"},
 ]
+pelican-similar-posts = []
 pelican-sitemap = [
     {file = "pelican-sitemap-1.0.2.tar.gz", hash = "sha256:464052dbbf3daa7183c531c486e3db872f8f74b5fcc7aa25743b7c9aefbb359a"},
     {file = "pelican_sitemap-1.0.2-py3-none-any.whl", hash = "sha256:ec930ee8182d4b905a4e5732d0b87ad84ee62ee1830b42d1b1f82bcac8e12f2b"},
