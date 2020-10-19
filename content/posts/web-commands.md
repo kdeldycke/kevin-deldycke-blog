@@ -29,7 +29,7 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
         $ curl -i -H "Accept-Encoding: gzip,deflate" https://kevin.deldycke.com 2>&1 | grep gzip
         ```
 
-  * Here is a one-liner I use to ping some pages on internet to force our corporate proxy to refresh its internal cache:
+  * Ping some pages on internet to force our corporate proxy to refresh its internal cache:
 
         ```shell-session
         $ for EGG in BeautifulSoup PIL Plone; do wget --server-response -O /dev/null https://pypi.python.org/simple/$EGG/; done
@@ -81,7 +81,7 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
         ```
 
 
-## Content
+## MIME type
 
   * List all the diferrent MIME types of all the files in the `www` folder:
 
@@ -89,7 +89,10 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
         $ find ./www -type f -exec mimetype -b "{}" \; | sort | uniq
         ```
 
-  * Search in all files malformed HTML entities (in this case non-breakable spaces that doesn't end with a semicolon):
+
+## Markup
+
+  * Search non-breakable spaces that doesn't end with a semicolon:
 
         ```shell-session
         $ grep -RIi --extended-regexp '&nbsp[^;]' ./
