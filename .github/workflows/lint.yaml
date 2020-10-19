@@ -62,5 +62,7 @@ jobs:
         run: |
           sudo npm install htmlhint -g
       - name: Lint
-        run: |
-          htmlhint ./output/**/*.html
+        # Lint all HTML files but feed URLs.
+        run: >
+          find ./output -type f -not -regex ".*\/feed\/.*" -and -iname "*.html"
+            -exec htmlhint "{}" \;
