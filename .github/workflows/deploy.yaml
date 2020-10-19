@@ -37,12 +37,12 @@ jobs:
       - name: Setup static webhosting
         run: >
           aws s3 website s3://kevin.deldycke.com --index-document index.html
-            --error-document 500-error/index.html
+          --error-document 500-error/index.html
       - name: Upload static website
         run: >
           aws s3 sync ./output s3://kevin.deldycke.com --delete --grants
-            read=uri=http://acs.amazonaws.com/groups/global/AllUsers
-            full=emailaddress=kevin@deldycke.com
+          read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+          full=emailaddress=kevin@deldycke.com
       - name: Check upload
         run: |
           aws s3api head-object --bucket kevin.deldycke.com --key index.html
