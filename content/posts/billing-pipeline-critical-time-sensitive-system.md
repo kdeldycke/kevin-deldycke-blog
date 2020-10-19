@@ -5,9 +5,9 @@ category: English
 tags: Python, billing, payment, scaleway, unittest, software engineering, quality assurance, management, pipeline, data, money, business, AWS, lambda, date, time, falsehood, Chesterton's fence, arrow, TrueTime, google, pytest, meta-package-manage, mail-deduplicate
 ---
 
-This is an answer to [Antoine Veuiller](https://www.linkedin.com/in/antoine-veuiller/)'s article, an [Introduction to Flaky Tests by Example](https://medium.com/@aveuiller/stories-of-flaky-test-encounters-in-the-wild-a152bf7151f5), in which he share his experience on tackling unstable tests.
+This is an answer to [Antoine Veuiller](https://www.linkedin.com/in/antoine-veuiller/)'s article, an [Introduction to Flaky Tests by Example](https://medium.com/@aveuiller/stories-of-flaky-test-encounters-in-the-wild-a152bf7151f5), in which he shares his experience on tackling unstable tests.
 
-And I'm the author the flaky tests he's talking about! 😬
+And I'm the author of the flaky tests he's talking about! 😬
 
 ## Story time!
 
