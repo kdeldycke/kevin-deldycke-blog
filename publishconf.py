@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-from importlib.machinery import SourceFileLoader
-from pathlib import Path
+import os
+import sys
 
-
-SourceFileLoader(
-    "pelicanconf",
-    str(Path(__file__).parent.joinpath("pelicanconf.py").resolve()),
-).load_module()
+sys.path.append(os.curdir)
+from pelicanconf import *  # noqa
 
 
 SITEURL = "https://kevin.deldycke.com"
