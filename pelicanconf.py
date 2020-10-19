@@ -222,7 +222,8 @@ LEFT_SIDEBAR = """
 
 ARTICLE_EDIT_LINK = (
     "https://github.com/kdeldycke/kevin-deldycke-blog/edit/main/content/posts/"
-    "%(slug)s.md")
+    "%(slug)s.md"
+)
 
 SOCIAL_WIDGET_NAME = "Online presence"
 SOCIAL = (
@@ -234,9 +235,7 @@ SOCIAL = (
 )
 
 LINKS_WIDGET_NAME = "Professional profiles"
-LINKS = (
-    ("LinkedIn", "https://linkedin.com/in/kevindeldycke/en"),
-)
+LINKS = (("LinkedIn", "https://linkedin.com/in/kevindeldycke/en"),)
 
 COPYRIGHT = """Unless contrary mentioned, the content of this site is published
 under a <a class="text-dark" rel="license"
