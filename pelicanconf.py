@@ -162,6 +162,7 @@ PLUGINS = [
     # deadlink plugin seems temporarily broken and produce this fatal error:
     # CRITICAL: AttributeError: module 'deadlinks' has no attribute 'register'
     # "deadlinks",
+    "pelican.plugins.seo",
     "pelican.plugins.similar_posts",
     "pelican.plugins.neighbors",
     "pelican.plugins.sitemap",
@@ -174,6 +175,10 @@ PLUGINS = [
 
 # deadlinks
 DEADLINK_VALIDATION = True
+
+# seo
+SEO_REPORT = True
+SEO_ENHANCER = True
 
 # similar_posts
 SIMILAR_POSTS_MAX_COUNT = 3
