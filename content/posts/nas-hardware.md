@@ -274,7 +274,7 @@ I ended up with a **Core i3-9300T**, probably overpriced at the time of purchase
 
 | Part | Model | Quantity | Total (excl. shipping) | Shipping | Notes |
 |---|---|---:|---:|---:|---|
-| 3.5" HDD | [Toshiba N300 - 6 GB](https://amzn.com/B06Y2KCXCM/?tag=kevideld-20) | 4 | €696.89 | €12.84 | Unit price: €168.30~€184.88 |
+| 3.5" HDD | [Toshiba N300 - 6 TB](https://amzn.com/B06Y2KCXCM/?tag=kevideld-20) | 4 | €696.89 | €12.84 | Unit price: €168.30~€184.88 |
 | Bigger case | [SilverStone SST-DS380](https://amzn.com/B07PCH47Z2/?tag=kevideld-20) | 1 | €145.18 | €17.50 |
 | Case fans | [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20) | 3 | €59.70 | €3.90 |
 | Mini-ITX motherboard | [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20) | 1 | €324.84 | €21.05 | [Upgrade both BMC and BIOS](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#Download). |
