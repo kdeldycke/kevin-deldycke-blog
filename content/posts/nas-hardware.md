@@ -149,7 +149,13 @@ Some reviews here and there called upon its capricious nature. To play it safe I
 
 I tested the setup for a couple of days and everything worked great.
 
-But I overlooked one issue: [Realtek ethernet NICs are shit](https://www.reddit.com/r/freenas/comments/bul9gq/so_are_realtek_nics_just_complete_garbage_when_it/). It's written everywhere on discussions boards, even on [FreeNAS hardware requirements](https://www.freenas.org/hardware-requirements/) page ("Intel recommended" they said...). I ignored the warning thinking it was meant for enterprise users looking for performances.
+But I overlooked one issue: [Realtek ethernet NICs are shit](https://www.reddit.com/r/freenas/comments/bul9gq/so_are_realtek_nics_just_complete_garbage_when_it/). It's written everywhere on discussions boards, even in [FreeNAS hardware requirements](https://www.freenas.org/hardware-requirements/) (*Intel recommended* they said...). And [FreeNAS maintainers are fed up with support requests](https://jira.ixsystems.com/browse/NAS-106392?focusedCommentId=112302&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-112302):
+
+> we have neither time nor information to debug all zillions of permanently buggy Realtek NICs models
+
+😂
+
+But I ignored the warnings thinking it was meant for enterprise users looking for performances.
 
 Sure enough things went south fast the first time I tried to copy 700 GB over the network. I left the transfer unattended in the night and woke up with a NAS nowhere to be found on the LAN. The Realtek NIC just froze, bringing the whole motherboard with it.
 
