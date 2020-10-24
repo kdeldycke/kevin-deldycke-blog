@@ -43,6 +43,7 @@ software of the world.
 
 - 🌐 Created and managed the African subsidiary of my first employer.
 
+- 🤩 [Mentioned by Cory Doctorow](https://twitter.com/kdeldycke/status/1319587008768020480).
 
 ## Interviews
 
