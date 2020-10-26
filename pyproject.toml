@@ -20,7 +20,7 @@ beautifulsoup4 = "^4.9.3"
 mdx_video = "^0.1.8"
 mdx_titlecase = "^1.2.0"
 plumage = {git = "https://github.com/kdeldycke/plumage.git", branch = "develop"}
-pygments = "^2.7.1"
+pygments = "^2.7.2"
 pelican-seo = {git = "https://github.com/kdeldycke/seo.git", branch = "fix-utf8-file-io"}
 pelican-similar-posts = {git = "https://github.com/kdeldycke/similar-posts.git", branch = "master"}
 pelican-sitemap = "^1.0.2"
