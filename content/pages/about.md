@@ -15,7 +15,6 @@ After 15+ years of relevant engineering work, and 2+ years of hands-on managemen
 
 Enabling engineers, leading managers, and make them feels productive is the most impactful thing I can bring to the table. So I'm always **on the lookout for high-tech management position, in fast growing start-ups** with ambitious vision.
 
-
 Most relevant experience was in [growing a team from 0 to 12](https://devtomanager.com/interviews/kevin-deldycke/) at a [world-class cloud computing provider](https://scaleway.com). We built up the whole [IAM ecosystem](https://github.com/kdeldycke/awesome-iam), as well as the [Billing and Payment stack](https://github.com/kdeldycke/awesome-billing).
 
 
