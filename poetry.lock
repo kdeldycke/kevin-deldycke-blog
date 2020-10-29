@@ -264,9 +264,9 @@ markdown = ["markdown (^3.2.2)"]
 
 [package.source]
 type = "git"
-url = "https://github.com/kdeldycke/seo.git"
-reference = "fix-utf8-file-io"
-resolved_reference = "e821a4d838f67717240c7bfcd70dd96effcaae89"
+url = "https://github.com/pelican-plugins/seo.git"
+reference = "master"
+resolved_reference = "bd14d00b86f3460365b41095c15a3f94e032ae78"
 
 [[package]]
 name = "pelican-similar-posts"

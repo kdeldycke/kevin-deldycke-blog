@@ -14,7 +14,6 @@ PATH = "content"
 
 TIMEZONE = "Europe/Paris"
 DEFAULT_LANG = "en"
-LOCALE = "C"
 MARKDOWN = {
     "extension_configs": {
         # https://python-markdown.github.io/extensions/#officially-supported-extensions
