@@ -57,7 +57,6 @@ TODO
       * https://wrapbootstrap.com/theme/simply-minimal-responsive-resume-WB0DCP565
   * Get rid of /year/month/ for articles ? Or get rid of month only ?
   * Reuse edit link logic from https://github.com/pmclanahan/pelican-edit-url ?
-  * Use https://pypi.python.org/pypi/pelican-alias for last remaining `.htaccess` redirects.
 
 ### Theme
 
