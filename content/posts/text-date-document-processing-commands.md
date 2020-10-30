@@ -159,6 +159,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
             ```
 
         This is a random sentence.
+        ```
 
   * Append the content of the `addendum.txt` file to all `.markdown` files:
 
