@@ -63,31 +63,3 @@ RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
 
 # Site-wide comments feeds moved to Disqus
 RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ https://kevin-deldycke-blog.disqus.com/latest.rss
-
-
-#TODO: I only have these mime type on my site
-# application/javascript
-# application/octet-stream
-# application/pdf
-# application/vnd.oasis.opendocument.presentation-template
-# application/x-gzip
-# application/xml
-# application/x-php
-# application/x-rpm
-# image/gif
-# image/jpeg
-# image/png
-# image/svg+xml
-# image/svg+xml-compressed
-# image/vnd.adobe.photoshop
-# image/vnd.microsoft.icon
-# image/x-xcf
-# text/css
-# text/html
-# text/plain
-# text/x-microdvd
-# text/x-ms-regedit
-# text/x-patch
-# text/x-python
-# text/x-tmplayer
-# video/quicktime

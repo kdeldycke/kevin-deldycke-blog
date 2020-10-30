@@ -58,3 +58,15 @@ jobs:
           --exclude '*' --include '*feed/atom/index.html' --recursive
           --no-guess-mime-type --content-type "application/atom+xml"
           --metadata-directive "REPLACE"
+      - name: Set Apple Numbers content type
+        run: >
+          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com
+          --exclude '*' --include '*.numbers' --recursive
+          --no-guess-mime-type --content-type "application/vnd.apple.numbers"
+          --metadata-directive "REPLACE"
+      - name: Set Microsoft regedit content type
+        run: >
+          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com
+          --exclude '*' --include '*.reg' --recursive
+          --no-guess-mime-type --content-type "text/x-ms-regedit"
+          --metadata-directive "REPLACE"
