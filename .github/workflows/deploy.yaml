@@ -33,7 +33,7 @@ jobs:
           aws-region: us-east-1
       - name: Create destination bucket
         run: |
-          aws --no-cli-pager s3 mb s3://kevin.deldycke.com
+          aws s3 mb s3://kevin.deldycke.com
       - name: Setup static webhosting
         run: >
           aws --no-cli-pager s3api
