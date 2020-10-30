@@ -2,7 +2,7 @@
 date: 2020-06-16 12:00
 title: AWS commands
 category: English
-tags: cloud, cloud computing, saas, iaas, paas, aws, amazon, development, CLI, iam, transcribe, text-to-speech, brew
+tags: cloud, cloud computing, saas, iaas, paas, aws, amazon, development, CLI, iam, transcribe, text-to-speech, brew, s3, mime type, media type
 ---
 
 All commandes below relies on the latest version of [aws-cli](https://github.com/aws/aws-cli).
@@ -44,7 +44,16 @@ All commandes below relies on the latest version of [aws-cli](https://github.com
         ```
 
 
-## Amazon Transcribe
+## S3
+
+  * Set [media types (formerly known as MIME types)](https://www.iana.org/assignments/media-types/media-types.xhtml) of all atom files found in a `feed` folder:
+
+        ```shell-session
+        $ aws s3 cp s3://my-bucket s3://my-bucket --exclude '*' --include '*feed/index.atom' --recursive --no-guess-mime-type --content-type "application/atom+xml" --metadata-directive "REPLACE"
+        ```
+
+
+## Transcribe
 
   * Fetch all names of the first 100 [transcription jobs](https://docs.aws.amazon.com/cli/latest/reference/transcribe/list-transcription-jobs.html):
 
