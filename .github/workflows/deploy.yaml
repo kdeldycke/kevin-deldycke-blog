@@ -46,3 +46,15 @@ jobs:
       - name: Check upload
         run: |
           aws s3api head-object --bucket kevin.deldycke.com --key index.html
+      - name: Set RSS feed content type
+        run: >
+          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com
+          --exclude '*' --include '*feed/index.html' --recursive
+          --no-guess-mime-type --content-type "application/rss+xml"
+          --metadata-directive "REPLACE"
+      - name: Set ATOM feed content type
+        run: >
+          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com
+          --exclude '*' --include '*feed/atom/index.html' --recursive
+          --no-guess-mime-type --content-type "application/atom+xml"
+          --metadata-directive "REPLACE"

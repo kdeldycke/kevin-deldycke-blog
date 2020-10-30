@@ -30,10 +30,6 @@ RedirectMatch 301 ^/static/repository       https://github.com/kdeldycke/mandriv
 # Monthly-static assets are now sorted by year only
 RedirectMatch 301 ^/uploads/(\d+)/\d+/(.*) /uploads/$1/$2
 
-# Force mime type of feeds
-RewriteRule /feed/$ - [T=application/rss+xml]
-RewriteRule /feed/atom/$ - [T=application/atom+xml]
-
 
 ### WordPress redirects
 
