@@ -36,44 +36,37 @@ jobs:
           aws s3 mb s3://kevin.deldycke.com
       - name: Setup static webhosting
         run: >
-          aws --no-cli-pager s3api
-          put-bucket-website
+          aws s3api put-bucket-website
           --cli-input-json file://aws-s3-put-bucket-website.json
       - name: Upload static website
         run: >
-          aws --no-cli-pager s3
-          sync ./output s3://kevin.deldycke.com --delete
+          aws s3 sync ./output s3://kevin.deldycke.com --delete
           --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
           full=emailaddress=kevin@deldycke.com
       - name: Check upload
         run: |
-          aws --no-cli-pager s3api
-          head-object --bucket kevin.deldycke.com --key index.html
+          aws s3api head-object --bucket kevin.deldycke.com --key index.html
       - name: Set RSS feed content type
         run: >
-          aws --no-cli-pager s3
-          cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
+          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
           --exclude '*' --include '*feed/index.html'
           --no-guess-mime-type --content-type "application/rss+xml"
           --metadata-directive "REPLACE"
       - name: Set ATOM feed content type
         run: >
-          aws --no-cli-pager s3
-          cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
+          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
           --exclude '*' --include '*feed/atom/index.html'
           --no-guess-mime-type --content-type "application/atom+xml"
           --metadata-directive "REPLACE"
       - name: Set Apple Numbers content type
         run: >
-          aws --no-cli-pager s3
-          cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
+          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
           --exclude '*' --include '*.numbers'
           --no-guess-mime-type --content-type "application/vnd.apple.numbers"
           --metadata-directive "REPLACE"
       - name: Set Microsoft regedit content type
         run: >
-          aws --no-cli-pager s3
-          cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
+          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
           --exclude '*' --include '*.reg'
           --no-guess-mime-type --content-type "text/x-ms-regedit"
           --metadata-directive "REPLACE"
