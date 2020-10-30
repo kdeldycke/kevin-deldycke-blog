@@ -2,10 +2,6 @@
 RewriteCond %{HTTP_HOST} !^kevin\.deldycke\.com
 RewriteRule ^(.*)$ https://kevin.deldycke.com/$1
 
-# General server config
-Options -FollowSymLinks -ExecCGI -Includes -IncludesNOEXEC -Indexes -MultiViews +SymLinksIfOwnerMatch
-RewriteEngine on
-
 # Generic error files
 ErrorDocument 404 /404-not-found/
 ErrorDocument 410 /410-gone/
@@ -69,14 +65,6 @@ RedirectMatch 301 (.*)/comment-page-\d+/?.* $1
 RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ https://kevin-deldycke-blog.disqus.com/latest.rss
 
 
-### HTTP tweaks (caching, optimizations, mime-types)
-
-# Force compression of text-based assets
-<IfModule mod_headers.c>
-  RequestHeader append Accept-Encoding "gzip,deflate"
-</IfModule>
-<IfModule filter_module>
-
 #TODO: I only have these mime type on my site
 # application/javascript
 # application/octet-stream
@@ -103,45 +91,3 @@ RedirectMatch 301 ^/comments/feed(/(rss2?|rdf|atom))?/?$ https://kevin-deldycke-
 # text/x-python
 # text/x-tmplayer
 # video/quicktime
-
-  FilterDeclare   COMPRESS
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/html
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/css
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/plain
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/xml
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/javascript
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/json
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xml
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xhtml+xml
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/rss+xml
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/atom+xml
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/vnd.ms-fontobject
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $image/svg+xml
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/x-font-ttf
-  FilterProvider  COMPRESS  DEFLATE resp=Content-Type $font/opentype
-  FilterChain     COMPRESS
-  FilterProtocol  COMPRESS  DEFLATE change=yes;byteranges=no
-</IfModule>
-
-# Force caching of static content
-<IfModule mod_expires.c>
-  ExpiresActive on
-
-  ExpiresByType text/html "access plus 1 day"
-
-  ExpiresByType image/jpg "access plus 1 month"
-  ExpiresByType image/png "access plus 1 month"
-  ExpiresByType image/gif "access plus 1 month"
-  ExpiresByType image/jpeg "access plus 1 month"
-
-  ExpiresByType text/css "access plus 1 week"
-
-  ExpiresByType image/x-icon "access plus 3 month"
-  ExpiresByType image/vnd.microsoft.icon "access plus 3 month"
-
-  ExpiresByType application/pdf "access plus 1 month"
-
-  ExpiresByType text/javascript "access plus 1 week"
-  ExpiresByType application/x-javascript "access plus 1 week"
-  ExpiresByType application/javascript "access plus 1 week"
-</IfModule>
