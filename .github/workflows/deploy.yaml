@@ -33,40 +33,46 @@ jobs:
           aws-region: us-east-1
       - name: Create destination bucket
         run: |
-          aws s3 mb s3://kevin.deldycke.com
+          aws --no-cli-pager s3 mb s3://kevin.deldycke.com
       - name: Setup static webhosting
         run: >
           aws s3 website s3://kevin.deldycke.com --index-document index.html
           --error-document 500-error/index.html
       - name: Upload static website
         run: >
-          aws s3 sync ./output s3://kevin.deldycke.com --delete --grants
-          read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+          aws --no-cli-pager s3
+          sync ./output s3://kevin.deldycke.com --delete
+          --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
           full=emailaddress=kevin@deldycke.com
       - name: Check upload
         run: |
-          aws s3api head-object --bucket kevin.deldycke.com --key index.html
+          aws --no-cli-pager s3api
+          head-object --bucket kevin.deldycke.com --key index.html
       - name: Set RSS feed content type
         run: >
-          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com
-          --exclude '*' --include '*feed/index.html' --recursive
+          aws --no-cli-pager s3
+          cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
+          --exclude '*' --include '*feed/index.html'
           --no-guess-mime-type --content-type "application/rss+xml"
           --metadata-directive "REPLACE"
       - name: Set ATOM feed content type
         run: >
-          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com
-          --exclude '*' --include '*feed/atom/index.html' --recursive
+          aws --no-cli-pager s3
+          cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
+          --exclude '*' --include '*feed/atom/index.html'
           --no-guess-mime-type --content-type "application/atom+xml"
           --metadata-directive "REPLACE"
       - name: Set Apple Numbers content type
         run: >
-          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com
-          --exclude '*' --include '*.numbers' --recursive
+          aws --no-cli-pager s3
+          cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
+          --exclude '*' --include '*.numbers'
           --no-guess-mime-type --content-type "application/vnd.apple.numbers"
           --metadata-directive "REPLACE"
       - name: Set Microsoft regedit content type
         run: >
-          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com
-          --exclude '*' --include '*.reg' --recursive
+          aws --no-cli-pager s3
+          cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
+          --exclude '*' --include '*.reg'
           --no-guess-mime-type --content-type "text/x-ms-regedit"
           --metadata-directive "REPLACE"
