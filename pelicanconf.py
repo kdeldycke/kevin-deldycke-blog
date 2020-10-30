@@ -146,8 +146,6 @@ EXTRA_PATH_METADATA = {
     "extra/ads.txt": {"path": "ads.txt"},
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/robots.txt": {"path": "robots.txt"},
-    "extra/htaccess": {"path": ".htaccess"},
-    "extra/htaccess-static": {"path": "documents/.htaccess"},
 }
 
 PLUGIN_PATHS = [

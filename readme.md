@@ -55,13 +55,9 @@ TODO
 
   * Migrate Resume from Google Docs to web-based page in Pelican ? Inspiration:
       * https://wrapbootstrap.com/theme/simply-minimal-responsive-resume-WB0DCP565
-  * Create an autoindex plugin: activate it to produce index of /documents, then get rid of
-    htaccess-static.
   * Get rid of /year/month/ for articles ? Or get rid of month only ?
-  * Add links to yearly/monthly indexes in archives
-  * Try to paginate monthly and yearly archives
   * Reuse edit link logic from https://github.com/pmclanahan/pelican-edit-url ?
-  * Migrate `/content/extra/htaccess` rules to [S3 routing rules](https://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html#configure-bucket-as-website-routing-rule-syntax) and/or use https://pypi.python.org/pypi/pelican-alias for redirects ?
+  * Use https://pypi.python.org/pypi/pelican-alias for last remaining `.htaccess` redirects.
 
 ### Theme
 

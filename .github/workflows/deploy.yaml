@@ -36,8 +36,9 @@ jobs:
           aws --no-cli-pager s3 mb s3://kevin.deldycke.com
       - name: Setup static webhosting
         run: >
-          aws s3 website s3://kevin.deldycke.com --index-document index.html
-          --error-document 500-error/index.html
+          aws --no-cli-pager s3api
+          put-bucket-website
+          --cli-input-json file://aws-s3-put-bucket-website.json
       - name: Upload static website
         run: >
           aws --no-cli-pager s3
