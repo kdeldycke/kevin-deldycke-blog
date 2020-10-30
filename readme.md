@@ -53,8 +53,6 @@ TODO
 
 ### Content
 
-  * Migrate Resume from Google Docs to web-based page in Pelican ? Inspiration:
-      * https://wrapbootstrap.com/theme/simply-minimal-responsive-resume-WB0DCP565
   * Get rid of /year/month/ for articles ? Or get rid of month only ?
   * Reuse edit link logic from https://github.com/pmclanahan/pelican-edit-url ?
 
