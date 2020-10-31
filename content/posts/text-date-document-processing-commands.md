@@ -17,6 +17,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 
         asdkjlyes
             kjkjhkjhy
+        
         $ grep -o '.*y.*' ./test.txt | wc -l
         3
         ```
@@ -83,16 +84,16 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         This is a code block:
 
         :::shell-session
-        $ apache
-        $ java
-        $ python
+        → apache
+        → java
+        → python
 
         This is another block:
 
         :::shell-session
-        $ rust
-        $ haskell
-        $ javascript
+        → rust
+        → haskell
+        → javascript
 
         This is a random sentence.
 
@@ -101,16 +102,16 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         This is a code block:
 
         :::shell-session
-        $ XXXpXXXche
-        $ jXXXvXXX
-        $ python
+        → XXXpXXXche
+        → jXXXvXXX
+        → python
 
         This is another block:
 
         :::shell-session
-        $ rust
-        $ hXXXskell
-        $ jXXXvXXXscript
+        → rust
+        → hXXXskell
+        → jXXXvXXXscript
 
         This is a random sentence.
         ```
@@ -124,38 +125,39 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         This is a code block:
 
             :::shell-session
-            $ apache
-            $ java
-            $ python
+            → apache
+            → java
+            → python
 
         This is another block:
 
             :::shell-session
-            $ rust
-            $ haskell
-            $ javascript
+            → rust
+            → haskell
+            → javascript
 
         This is a random sentence.
 
         $ find ./folder -iname "*.md" \
         > -exec sed -i "/^    :::/,/^$/ s/^$/    \`\`\`\n/" "{}" \; \
         > -exec sed -i "/^    :::/,/^$/ s/:::/\`\`\`/"      "{}" \;
+        
         $ cat ./example.md
 
         This is a code block:
 
             ```shell-session
-            $ apache
-            $ java
-            $ python
+            → apache
+            → java
+            → python
             ```
 
         This is another block:
 
             ```shell-session
-            $ rust
-            $ haskell
-            $ javascript
+            → rust
+            → haskell
+            → javascript
             ```
 
         This is a random sentence.
