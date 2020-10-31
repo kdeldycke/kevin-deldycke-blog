@@ -42,7 +42,10 @@ MARKDOWN = {
         "pymdownx.betterem": {},
         "pymdownx.caret": {},
         "pymdownx.emoji": {},
-        "pymdownx.highlight": {},
+        "pymdownx.highlight": {
+            "linenums": True,
+            "linenums_style": "pymdownx-inline",
+        },
         "pymdownx.keys": {},
         "pymdownx.magiclink": {},
         "pymdownx.smartsymbols": {},
