@@ -20,7 +20,7 @@ Luckily, it is a SNP covered by the first generation of 23andMe chips. Having
 downloaded the raw data a while back, it is a matter of installing the Python
 [`arv`](https://github.com/cslarsen/arv) package:
 
-    ```python
+    ```shell-session
     $ pip install arv
     Collecting arv
       Downloading arv-0.9.2-cp27-none-macosx_10_12_intel.whl (92kB)
