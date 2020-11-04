@@ -12,9 +12,9 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
         ```python
         import unicodedata
         unicodedata.normalize('NFKD', u"éèàçÇÉÈ²³¼ÀÁÂÃÄÅËÍÑÒÖÜÝåïš™").encode('ascii', 'ignore')
+        ```
  
   * Cleanest way I found to produce slugified / tokenized strings, based on [`boltons.strutils`](https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.slugify):
-        ```
 
         ```python
         >>> from boltons import strutils
