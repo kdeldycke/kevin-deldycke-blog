@@ -2,7 +2,7 @@
 date: 2006-12-06 23:18:55
 title: Hardware commands
 category: English
-tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D, dmidecode
+tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D, dmidecode, printer, CUPS
 ---
 
 ## Computer
@@ -121,4 +121,14 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
         Label: Shutter Counter
         Type: TEXT
         Current: 49238
+        ```
+
+## Printer
+
+  * List printers:
+
+        ```shell-session
+        $ lpstat -p -d
+        printer HP_Color_LaserJet_M254dw_0 is idle.  enabled since Fri Nov  6 17:47:06 2020
+        system default destination: HP_Color_LaserJet_M254dw_0
         ```
