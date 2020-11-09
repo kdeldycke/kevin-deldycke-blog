@@ -1,13 +1,13 @@
 ---
 date: 2020-11-09 12:00:00
-title: How-to revert HP printer's ban on 3rd-party ink cartridges
 category: English
 tags: CLI, Hardware, printer, Hewlett-Packard, firmware, ink, office, DRM, macOS
+title: How-to revert HP printer's ban on 3rd-party ink cartridges
 ---
 
-Hewlett & Packard, the founders, had great lessons to teach us (managers in high-tech) about culture. 👨‍💼 I quoted them in my awesome list of engineering team management.
+Hewlett & Packard, the founders, had great lessons to teach us (managers in high-tech) about culture. I even [quoted them](https://github.com/kdeldycke/awesome-engineering-team-management/commit/de3e64647c911f78a37b3e54c7e46197acb061e1) in my [awesome list on engineering team management](https://github.com/kdeldycke/awesome-engineering-team-management#readme). 👨‍💼
 
-HP Inc., the company, suck. At least their printer division's business model. They recently pushed a **firmware update to ban third-party compatible ink cartridges**. 💔
+HP Inc., the company, sucks. At least their printer division's business model. They recently pushed a **firmware update to ban third-party compatible ink cartridges**. 💔
 
 The timeline is straightforward:
 
@@ -15,15 +15,15 @@ The timeline is straightforward:
 
 * 2020, October: HP release a new firmware (versioned `20201021`).
 
-  ![](../uploads/2020/hp-laserjet-printer-20201021-firmware.jpg)
+  ![](/uploads/2020/hp-laserjet-printer-20201021-firmware.jpg)
 
 * 2020, November: my printer auto-upgrade. I'm welcomed with this *Supply Problem [Screen of Death](https://en.wikipedia.org/wiki/Screen_of_death)*:
 
-  ![](../uploads/2020/hp-laserjet-printer-supply-problem-screen-of-death.jpg)
+  ![](/uploads/2020/hp-laserjet-printer-supply-problem-screen-of-death.jpg)
 
   I can't print anymore. 🤯
   
-Height months. My printer worked for only 8 months. 😤
+Eight months. My printer worked for only 8 months. 😤
 
 OK. It's my fault. I should have spent more money buying certified™ gear. 😑
 
@@ -33,11 +33,11 @@ The solution is to travel back in time when things were working just great, and 
 
 ## Disable auto-upgrade
 
-We will start by stopping this madness for good, and prevent the printer to download a firmware behind our back.
+We will start by stopping this madness for good, and prevent the printer from downloading a firmware behind our back.
 
 In the control panel, go to `Setup` > `Service` > `LaserJet Update` > `Manage Updates`:
 
-![](../uploads/2020/hp-laserjet-printer-manage-updates-menu.jpg)
+![](/uploads/2020/hp-laserjet-printer-manage-updates-menu.jpg)
 
 Then set these options:
 
@@ -54,7 +54,7 @@ I got lucky and found the previous `20200612` firmware referenced in [`https://f
 
 There you'll get a direct link to the `.rfu` file (Remote Firmware Update):[`http://ftp.hp.com/pub/networking/software/pfirmware/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu`](http://ftp.hp.com/pub/networking/software/pfirmware/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu).
 
-And just in case it disappear from its original location, here is a [copy of `HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu`](../uploads/2020/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu).
+And just in case it disappear from its original location, here is a [copy of `HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu`](/uploads/2020/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu).
 
 The checksum of that file is:
 
@@ -85,16 +85,16 @@ I don't know what happens here but it seems the `.rfu` file is pushed to the pri
 
 After a minute  or two, the printers reboots and upgrades itself:
 
-![](../uploads/2020/hp-laserjet-printer-firmware-updating.jpg)
+![](/uploads/2020/hp-laserjet-printer-firmware-updating.jpg)
 
 And we're back in business! 🥳
 
 A detour via `Setup` > `Service` > `Firmware Datecode` menu confirm we're running the the previous firmware:
 
-![](../uploads/2020/hp-laserjet-printer-20200612-firmware.jpg)
+![](/uploads/2020/hp-laserjet-printer-20200612-firmware.jpg)
 
 ## Printer security
 
 In my research for this article, I found out about [PRET, a printer exploitation toolkit](https://github.com/RUB-NDS/PRET). It's a brilliant tool, in a malignant way. It allows for pen-testing and hacking, using the same vectors as the firmware update. 🤫
 
-I'll probably play with it in the future. For fun, but also to try increasing the security of the printer. In the mean time, I guess a password is the bare minimum. And if my printer get kidnapped by a cyber gang, I now have a way to restore my printer's firmware! 😬
+I'll probably play with it in the future. For fun, but also to try enhance the security of the printer. In the mean time, I guess a password is the bare minimum. And if my printer get kidnapped by a cyber gang, I now have a way to restore my printer's firmware! 😬
