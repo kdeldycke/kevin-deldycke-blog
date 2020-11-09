@@ -132,3 +132,13 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
         printer HP_Color_LaserJet_M254dw_0 is idle.  enabled since Fri Nov  6 17:47:06 2020
         system default destination: HP_Color_LaserJet_M254dw_0
         ```
+        
+        ```shell-session
+        $ lpq
+        HP_Color_LaserJet_M254dw_0 is ready and printing
+        Rank    Owner   Job     File(s)                         Total Size
+        1st     kde     209     (stdin)                         0 bytes
+        active  kde     211     HP_Color_LaserJet_Pro_M254_dw_P 33557504 bytes
+        2nd     kde     212     HP_Color_LaserJet_Pro_M254_dw_P 33557504 bytes
+        3rd     kde     213     HP_Color_LaserJet_Pro_M254_dw_P 33557504 bytes
+        ```
