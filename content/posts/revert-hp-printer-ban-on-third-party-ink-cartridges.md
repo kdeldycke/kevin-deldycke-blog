@@ -7,7 +7,7 @@ title: How-to revert HP printer firmware ban on 3rd-party toner cartridges
 
 Hewlett & Packard, the founders, had great lessons to teach us (managers in high-tech) about culture. I even [quoted them](https://github.com/kdeldycke/awesome-engineering-team-management/commit/de3e64647c911f78a37b3e54c7e46197acb061e1) in my [awesome list on engineering team management](https://github.com/kdeldycke/awesome-engineering-team-management#readme). 👨‍💼
 
-HP Inc., the company, sucks. At least their printer division's business model. They recently pushed a **firmware update to ban third-party compatible toner cartridges**. 💔
+HP Inc., the company, sucks. At least their [printer division's business model](https://news.ycombinator.com/item?id=25045024). They recently pushed a **firmware update to ban third-party compatible toner cartridges**. 💔
 
 The timeline is straightforward:
 
