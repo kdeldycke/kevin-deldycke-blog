@@ -61,9 +61,14 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
   * Convert a PNG file to an optimized JPEG:
 
         ```shell-session
-        $ convert ./original.png TGA:- | cjpeg -optimize -progressive -quality 70 -outfile compressed-image.jpg -targa
+        $ convert ./original.png TGA:- | cjpeg -optimize -progressive -quality 80 -outfile compressed-image.jpeg -targa
         ```
 
+  * Same as above but as a loop for all PNG files in current folder:
+
+        ```shell-session
+        $ for f in *.png; do convert "$f" TGA:- | cjpeg -optimize -progressive -quality 80 -outfile "$f.jpeg" -targa; done
+        ```
 
 ## Metadata
 
