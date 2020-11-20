@@ -66,13 +66,7 @@ TODO
       * https://github.com/getpelican/pelican-plugins/tree/master/w3c_validate
       * https://github.com/dypsilon/frontend-dev-bookmarks
   * Use custom jinja filters instead of heavy tag soup in my theme ? Example: https://bitbucket.org/sirex/blog/src/32c192ff7a10/pelican.conf.py#cl-53
-  * Concatenate and minify CSS and Javascript. See:
-      * https://pypi.python.org/pypi/mincss
-      * https://ralsina.com.ar/weblog/posts/mincss-is-amazing.html
-      * https://pypi.python.org/pypi/pelican-minify
-      * https://github.com/getpelican/pelican-plugins/tree/master/assets
   * Inline and embed all CSS in the page ? See: https://www.peterbe.com/plog/100-percent-inline-css
-  * Use LESS version of bootstrap for cleaner customizations ?
   * Look at app-template for code inspiration and ideas:
       *  https://github.com/nprapps/app-template/blob/master/templates/_base.html
       *  https://github.com/nprapps/app-template/blob/master/render_utils.py
