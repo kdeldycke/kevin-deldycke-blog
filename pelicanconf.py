@@ -167,6 +167,7 @@ PLUGINS = [
     "pelican.plugins.sitemap",
     "pelican.plugins.thumbnailer",
     "pelican.plugins.tipue_search",
+    "pelican_webassets",
 ]
 
 
