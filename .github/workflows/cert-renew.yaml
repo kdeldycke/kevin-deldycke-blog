@@ -8,7 +8,7 @@ jobs:
 
   renew-cert:
     name: Renew Let's Encrypt Certificate
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/setup-python@v2.1.4
         with:
