@@ -210,7 +210,6 @@ TIPUE_SEARCH = True
 
 LEFT_SIDEBAR = """
     <!--<div data-spy="affix" data-offset-top="0">-->
-    <!--<h4>Sponsors</h4>-->
     <script async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- Responsive Ad -->
