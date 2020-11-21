@@ -1,5 +1,4 @@
-Kevin Deldycke's blog
-=====================
+# Kevin Deldycke's blog
 
 These are the source files of the content of my
 [blog](https://kevin.deldycke.com), which is powered by
@@ -7,49 +6,55 @@ These are the source files of the content of my
 
 The theme it uses is called [Plumage](https://github.com/kdeldycke/plumage).
 
-
-Installation
-------------
+## Installation
 
 Fetch a copy of the repository:
 
+    ```shell-session
     $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git
     $ cd ./kevin-deldycke-blog
+    ```
 
 To fetch and/or reset submodules to their committed reference:
 
+    ```shell-session
     $ git submodule update --init --recursive
+    ```
 
 Install dependencies:
 
+    ```shell-session
     $ python -m pip install --upgrade pip poetry
     $ poetry install
+    ```
 
-
-Development
------------
+## Development
 
 Update to latest submodules:
 
+    ```shell-session
     $ git submodule init
     $ git submodule update --remote --merge
+    ```
 
 In one terminal, run:
 
-    $ pelican --verbose ./content
+    ```shell-session
+    $ poetry run pelican --verbose ./content
+    ```
 
 And in another:
 
-    $ pelican --verbose --listen
+    ```shell-session
+    $ poetry run pelican --verbose --listen
     (...)
-    -> Serving at port 8000, server 127.0.0.1.
+    Serving site at: 127.0.0.1:8000 - Tap CTRL-C to stop
+    ```
 
 Then go to [http://localhost:8000](http://localhost:8000).
 
 
-
-TODO
-----
+## TODO
 
 ### Content
 
