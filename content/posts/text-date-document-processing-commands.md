@@ -17,7 +17,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 
         asdkjlyes
             kjkjhkjhy
-        
+
         $ grep -o '.*y.*' ./test.txt | wc -l
         3
         ```
@@ -141,7 +141,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         $ find ./folder -iname "*.md" \
         > -exec sed -i "/^    :::/,/^$/ s/^$/    \`\`\`\n/" "{}" \; \
         > -exec sed -i "/^    :::/,/^$/ s/:::/\`\`\`/"      "{}" \;
-        
+
         $ cat ./example.md
 
         This is a code block:
