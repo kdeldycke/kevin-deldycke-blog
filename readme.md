@@ -64,20 +64,6 @@ Then go to [http://localhost:8000](http://localhost:8000).
 ### Theme
 
   * Re-use previous artworks from Maomium ?
-  * Test different ad placements: https://news.ycombinator.com/item?id=4974511
-  * Use a big carousel for front-page articles (ex: https://twitter.github.com/bootstrap/examples/carousel.html ) + a bit of https://srobbin.com/jquery-plugins/backstretch/ to keep aspect-ratio
-  * Check some web-dev essentials:
-      * https://webdevchecklist.com/
-      * https://github.com/getpelican/pelican-plugins/tree/master/w3c_validate
-      * https://github.com/dypsilon/frontend-dev-bookmarks
-  * Use custom jinja filters instead of heavy tag soup in my theme ? Example: https://bitbucket.org/sirex/blog/src/32c192ff7a10/pelican.conf.py#cl-53
-  * Inline and embed all CSS in the page ? See: https://www.peterbe.com/plog/100-percent-inline-css
-  * Look at app-template for code inspiration and ideas:
-      *  https://github.com/nprapps/app-template/blob/master/templates/_base.html
-      *  https://github.com/nprapps/app-template/blob/master/render_utils.py
-  * Generate thumbnails in article content. See:
-      * https://github.com/getpelican/pelican-plugins/pull/40
-      * https://github.com/getpelican/pelican-plugins/pull/43
   * Auto-enhance created thumbnails ? See: https://news.ycombinator.com/item?id=5999201
 
 
