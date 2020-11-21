@@ -184,18 +184,19 @@ SEO_ENHANCER = True
 SIMILAR_POSTS_MAX_COUNT = 3
 
 IMAGE_PROCESS = {
-    'thumb': ["crop 0 0 50% 50%", "scale_out 150 150 True", "crop 0 0 150 150"],
-
-    'large-photo': {'type': 'responsive-image',
-                    'sizes': '(min-width: 1200px) 800px, (min-width: 992px) 650px, \
-                              (min-width: 768px) 718px, 100vw',
-                    'srcset': [('600w', ["scale_in 600 450 True"]),
-                               ('800w', ["scale_in 800 600 True"]),
-                               ('1600w', ["scale_in 1600 1200 True"]),
-                               ],
-                    'default': '800w',
-                   },
-    }
+    "thumb": ["crop 0 0 50% 50%", "scale_out 150 150 True", "crop 0 0 150 150"],
+    "large-photo": {
+        "type": "responsive-image",
+        "sizes": "(min-width: 1200px) 800px, (min-width: 992px) 650px, \
+                              (min-width: 768px) 718px, 100vw",
+        "srcset": [
+            ("600w", ["scale_in 600 450 True"]),
+            ("800w", ["scale_in 800 600 True"]),
+            ("1600w", ["scale_in 1600 1200 True"]),
+        ],
+        "default": "800w",
+    },
+}
 
 # ----- Theme-specific settings
 
