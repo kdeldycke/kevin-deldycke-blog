@@ -22,7 +22,7 @@ The timeline is straightforward:
   ![](/uploads/2020/hp-laserjet-printer-supply-problem-screen-of-death.jpg)
 
   I can't print anymore. 🤯
-  
+
 Eight months. My printer worked for only 8 months. 😤
 
 OK. It's my fault. I should have spent more money buying certified™ gear. 😑
