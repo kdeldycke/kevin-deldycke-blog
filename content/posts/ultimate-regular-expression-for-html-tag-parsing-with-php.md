@@ -5,8 +5,10 @@ category: English
 tags: HTML, parsing, PHP, Regular expression
 ---
 
-_**Disclaimer**: this is a dirty hack! To parse HTML or XML, use a dedicated
-library._
+!!! alert alert-warning "Disclaimer"
+    This is a dirty hack!
+
+    To parse HTML or XML, use a dedicated library.
 
 Tonight I found the ultimate
 [regex](https://en.wikipedia.org/wiki/Regular_expression) to get HTML tags out of
