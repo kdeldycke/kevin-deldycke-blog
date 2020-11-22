@@ -2,6 +2,15 @@
 
 import plumage
 
+# XXX Use local plumage copy for dev
+# from importlib.machinery import SourceFileLoader
+# from pathlib import Path
+# SourceFileLoader(
+#     "plumage",
+#     str(Path("../plumage/plumage/__init__.py").resolve())
+# ).load_module()
+
+
 SITEURL = "http://localhost:8000"
 RELATIVE_URLS = False
 
