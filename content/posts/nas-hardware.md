@@ -44,7 +44,7 @@ Adding all that and rounding up, I end up with at least 8 TB of immediate storag
 
 To provide resiliency, flexibility and allow for future grow, we will rely on a disk array. How should we structure it?
 
-RAID 5 or RAID-Z1 arrays (simple parity) are no longer safe. With drives getting bigger (> 2 TB), reconstructing an array takes too long. So long the probability of loosing an additional disk is real. Cascading failures is not an option.
+RAID 5 or RAID-Z1 arrays (simple parity) are [no longer safe](https://wintelguy.com/raidmttdl.pl). With drives getting bigger (> 2 TB), reconstructing an array takes too long. So long the probability of loosing an additional disk is real. Cascading failures is not an option.
 
 RAID 10 is a bullet-proof arrangement. But too expensive for our home usage.
 
