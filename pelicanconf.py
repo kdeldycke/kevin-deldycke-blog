@@ -48,22 +48,41 @@ MARKDOWN = {
         "pymdownx.betterem": {},
         "pymdownx.caret": {},
         "pymdownx.emoji": {},
+        "pymdownx.keys": {},
+        "pymdownx.magiclink": {},
+        "pymdownx.smartsymbols": {},
+    },
+    "output_format": "html5",
+}
+TYPOGRIFY = True
+
+# Code block renderers.
+SUPERFENCES = True
+if SUPERFENCES:
+    code_config = {
         "pymdownx.highlight": {
             "linenums": True,
             "linenums_style": "pymdownx-inline",
         },
-        "pymdownx.keys": {},
-        "pymdownx.magiclink": {},
-        "pymdownx.smartsymbols": {},
         "pymdownx.superfences": {
             # No need for magic indention-based code blocks: all ours are
             # delimited by fences anyway.
             "disable_indented_code_blocks": True,
         },
-    },
-    "output_format": "html5",
-}
-TYPOGRIFY = True
+    }
+else:
+    code_config = {
+        "markdown.extensions.codehilite": {
+            "linenums": True,
+            "linenos": "inline",
+            "linespans": "coderow",
+            "lineanchors": "L",
+            "anchorlinenos": True,
+            "wrapcode": True,
+        },
+        "markdown.extensions.fenced_code": {},
+    }
+MARKDOWN["extension_configs"].update(code_config)
 
 # Do not publish articles set in the future
 WITH_FUTURE_DATES = False
