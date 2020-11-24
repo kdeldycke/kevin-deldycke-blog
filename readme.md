@@ -1,10 +1,8 @@
 # Kevin Deldycke's blog
 
-These are the source files of the content of my
-[blog](https://kevin.deldycke.com), which is powered by
-[Pelican](https://getpelican.com), a static site generator written in Python.
-
-The theme it uses is called [Plumage](https://github.com/kdeldycke/plumage).
+Source and content to generate my static [blog](https://kevin.deldycke.com),
+which is powered by [Pelican](https://getpelican.com) (engine) and
+[Plumage](https://github.com/kdeldycke/plumage) (theme).
 
 ## Installation
 
