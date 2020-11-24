@@ -9,8 +9,8 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
 Fetch a copy of the repository:
 
     ```shell-session
-    $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git
-    $ cd ./kevin-deldycke-blog
+    $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git blog
+    $ cd ./blog
     ```
 
 To fetch and/or reset submodules to their committed reference:
@@ -19,10 +19,28 @@ To fetch and/or reset submodules to their committed reference:
     $ git submodule update --init --recursive
     ```
 
-Install dependencies:
+Install Python 3.9 and upgrade all its utilities:
 
     ```shell-session
-    $ python -m pip install --upgrade pip poetry
+    $ brew install python
+    $ python --version
+    Python 3.9.0
+    $ python -m pip install --upgrade pip
+    $ python -m pip install --upgrade poetry
+    ```
+
+Install Python 3.8 to use within project's venv:
+
+    ```shell-session
+    $ brew install python@3.8
+    $ poetry env use /usr/local/opt/python@3.8/bin/python3
+    $ poetry run python -m pip install --upgrade pip
+    $ poetry run python -m pip install --upgrade setuptools
+    ```
+
+Install this blog's dependencies:
+
+    ```shell-session
     $ poetry install
     ```
 
@@ -38,7 +56,7 @@ Update to latest submodules:
 In one terminal, run:
 
     ```shell-session
-    $ poetry run pelican --verbose ./content
+    $ poetry run pelican --verbose --debug ./content
     ```
 
 And in another:
