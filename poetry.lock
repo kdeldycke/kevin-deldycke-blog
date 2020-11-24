@@ -323,14 +323,21 @@ version = "1.0.3"
 description = "Pelican plugin to improve SEO (Search Engine Optimization) to reach top positions on search engines."
 category = "main"
 optional = false
-python-versions = ">=3.6,<4.0"
+python-versions = "^3.6"
+develop = false
 
 [package.dependencies]
-beautifulsoup4 = ">=4.9,<5.0"
-pelican = ">=4.5,<5.0"
+beautifulsoup4 = "^4.9"
+pelican = "^4.5"
 
 [package.extras]
 markdown = ["markdown (>=3.2.2,<4.0.0)"]
+
+[package.source]
+type = "git"
+url = "https://github.com/kdeldycke/seo.git"
+reference = "fix-link-lookup"
+resolved_reference = "dfbe1799ae90bf5a38ef8f60c19153d51ed084e2"
 
 [[package]]
 name = "pelican-similar-posts"
@@ -409,7 +416,7 @@ version = "2.3.0"
 description = """Clean and tidy theme for Pelican."""
 category = "main"
 optional = false
-python-versions = "^3.7"
+python-versions = "^3.6"
 develop = false
 
 [package.dependencies]
@@ -427,7 +434,7 @@ pyquery = "^1.4.3"
 type = "git"
 url = "https://github.com/kdeldycke/plumage.git"
 reference = "develop"
-resolved_reference = "5d289c5ad2c7b4b52c2bccfce0c60c24c918d697"
+resolved_reference = "4d5501a9a2a24fa03a2fb6070c23f86e89129501"
 
 [[package]]
 name = "pycodestyle"
@@ -665,8 +672,8 @@ pyyaml = "*"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.8"
-content-hash = "94a8db15a6f670ad73dc27ce8fc5eb4cadd2a984386a4ef77c774aea3220c5e1"
+python-versions = "3.8.*"
+content-hash = "b41ea4de8bf7de8370094474ff1d6600295a4a79c183060ee4ac00dc5c1aef01"
 
 [metadata.files]
 appdirs = [
@@ -940,10 +947,7 @@ pelican-neighbors = [
     {file = "pelican-neighbors-1.1.0.tar.gz", hash = "sha256:a24a5cce71a99a4b8e7838de8d4a965b0c23748a60a1b444302f58040aceedf6"},
     {file = "pelican_neighbors-1.1.0-py3-none-any.whl", hash = "sha256:08ae8103d079d3ee8fb0b96dc6d665c9ab3afcd6340604bf4f7ee2112127c18f"},
 ]
-pelican-seo = [
-    {file = "pelican-seo-1.0.3.tar.gz", hash = "sha256:e5e014eafd0aabd33098eed85de1d2ddf5cd6cd408a07c615ec4c56b8edf9266"},
-    {file = "pelican_seo-1.0.3-py3-none-any.whl", hash = "sha256:d547d9e4223d46aa5d8f85dec5f11c5088286e4f5fba782099225e9e699b4d92"},
-]
+pelican-seo = []
 pelican-similar-posts = [
     {file = "pelican-similar-posts-1.0.0.tar.gz", hash = "sha256:73d1ded1e73139fdb98a0efd866df7760d6007d3d04fb91c7ee535fca7241eee"},
     {file = "pelican_similar_posts-1.0.0-py3-none-any.whl", hash = "sha256:4b4f54cedcd42ad2df36c004a17ae6f77eeba2e888fa5c031bb73aa80056f9f0"},

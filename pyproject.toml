@@ -12,7 +12,7 @@ repository = 'https://github.com/kdeldycke/kevin-deldycke-blog'
 "Funding" = "https://github.com/sponsors/kdeldycke"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "3.8.*"
 pelican = {extras = ["Markdown"], version = "^4.5.0"}
 pymdown-extensions = "^8.0"
 typogrify = "^2.0.7"
@@ -22,7 +22,7 @@ mdx_titlecase = "^1.2.0"
 plumage = {git = "https://github.com/kdeldycke/plumage.git", branch = "develop"}
 pygments = "^2.7.2"
 pelican-image-process = {git = "https://github.com/pelican-plugins/image-process.git", branch = "master"}
-pelican-seo = "^1.0.2"
+pelican-seo = {git = "https://github.com/kdeldycke/seo.git", branch = "fix-link-lookup"}
 pelican-similar-posts = "^1.0.0"
 pelican-sitemap = "^1.0.2"
 pelican-neighbors = "^1.1.0"
