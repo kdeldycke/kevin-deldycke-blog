@@ -19,7 +19,7 @@ typogrify = "^2.0.7"
 beautifulsoup4 = "^4.9.3"
 mdx_video = "^0.1.8"
 mdx_titlecase = "^1.2.0"
-plumage = {git = "https://github.com/kdeldycke/plumage.git", branch = "develop"}
+plumage = "^2.3.0"
 pygments = "^2.7.2"
 pelican-image-process = {git = "https://github.com/pelican-plugins/image-process.git", branch = "master"}
 pelican-seo = {git = "https://github.com/kdeldycke/seo.git", branch = "fix-link-lookup"}

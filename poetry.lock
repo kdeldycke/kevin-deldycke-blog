@@ -301,7 +301,7 @@ six = "*"
 type = "git"
 url = "https://github.com/pelican-plugins/image-process.git"
 reference = "master"
-resolved_reference = "1994a86e5e294653cf1b67483687a5a0f5449e73"
+resolved_reference = "1a9feeb5773c6dca95301444dbbf73ca7db9eeb2"
 
 [[package]]
 name = "pelican-neighbors"
@@ -337,7 +337,7 @@ markdown = ["markdown (>=3.2.2,<4.0.0)"]
 type = "git"
 url = "https://github.com/kdeldycke/seo.git"
 reference = "fix-link-lookup"
-resolved_reference = "dfbe1799ae90bf5a38ef8f60c19153d51ed084e2"
+resolved_reference = "035daf4e1ad3bb5c29a935cdcab1902c8f65319c"
 
 [[package]]
 name = "pelican-similar-posts"
@@ -413,28 +413,21 @@ python-versions = ">=3.6"
 [[package]]
 name = "plumage"
 version = "2.3.0"
-description = """Clean and tidy theme for Pelican."""
+description = "Clean and tidy theme for Pelican."
 category = "main"
 optional = false
-python-versions = "^3.6"
-develop = false
+python-versions = ">=3.6,<4.0"
 
 [package.dependencies]
-closure = "^20191111"
-cssmin = "^0.2.0"
-libsass = "^0.20.1"
-Markdown = "^3.3.3"
-pelican = "^4.2.0"
-pelican-webassets = "^1.0.0"
-pygments = "^2.7.0"
-pymdown-extensions = "^8.0.1"
-pyquery = "^1.4.3"
-
-[package.source]
-type = "git"
-url = "https://github.com/kdeldycke/plumage.git"
-reference = "develop"
-resolved_reference = "cb57d3f2e8dd25f5bdf08d09b4b27c403137371e"
+closure = ">=20191111,<20191112"
+cssmin = ">=0.2.0,<0.3.0"
+libsass = ">=0.20.1,<0.21.0"
+Markdown = ">=3.3.3,<4.0.0"
+pelican = ">=4.2.0,<5.0.0"
+pelican-webassets = ">=1.0.0,<2.0.0"
+pygments = ">=2.7.0,<3.0.0"
+pymdown-extensions = ">=8.0.1,<9.0.0"
+pyquery = ">=1.4.3,<2.0.0"
 
 [[package]]
 name = "pycodestyle"
@@ -673,7 +666,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.8.*"
-content-hash = "b41ea4de8bf7de8370094474ff1d6600295a4a79c183060ee4ac00dc5c1aef01"
+content-hash = "18e75ff214997bfa1477e1633ffea380f933a297e11a332d5be9b61050341dc0"
 
 [metadata.files]
 appdirs = [
@@ -991,7 +984,10 @@ pillow = [
     {file = "Pillow-8.0.1-pp37-pypy37_pp73-win32.whl", hash = "sha256:8de332053707c80963b589b22f8e0229f1be1f3ca862a932c1bcd48dafb18dd8"},
     {file = "Pillow-8.0.1.tar.gz", hash = "sha256:11c5c6e9b02c9dac08af04f093eb5a2f84857df70a7d4a6a6ad461aca803fb9e"},
 ]
-plumage = []
+plumage = [
+    {file = "plumage-2.3.0-py3-none-any.whl", hash = "sha256:e9b565b71f75afa0f00761aabfc3b934f898eb421acfe56b1e49983d866ed480"},
+    {file = "plumage-2.3.0.tar.gz", hash = "sha256:d433cf828b0612d237cd953179c1dac1ad93956848e6b1e4c35d27681835a41b"},
+]
 pycodestyle = [
     {file = "pycodestyle-2.6.0-py2.py3-none-any.whl", hash = "sha256:2295e7b2f6b5bd100585ebcb1f616591b652db8a741695b3d8f5d28bdc934367"},
     {file = "pycodestyle-2.6.0.tar.gz", hash = "sha256:c58a7d2815e0e8d7972bf1803331fb0152f867bd89adf8a01dfd55085434192e"},
