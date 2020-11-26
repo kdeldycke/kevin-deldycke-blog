@@ -2,7 +2,7 @@
 date: 2019-12-18
 title: Unlocking, Rooting and Custom Recovery for Sony Xperia E3
 category: English
-tags: Android, Smartphone, Sony, ROM, bootloader, brew, fastboot, adb, macOS
+tags: Android, Smartphone, Sony, ROM, bootloader, brew, fastboot, adb, macOS, firmware
 ---
 
 Got hold of a second-hand [Sony Xperia E3](https://en.wikipedia.org/wiki/Sony_Xperia_E3) a couple of weeks ago and was surprised by its general build quality and IPS screen for a 2014 phone.
