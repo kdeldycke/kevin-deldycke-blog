@@ -209,20 +209,7 @@ SEO_ENHANCER = True
 SIMILAR_POSTS_MAX_COUNT = 3
 
 IMAGE_PROCESS = {
-    "thumb": ["crop 0 0 50% 50%", "scale_out 150 150 True", "crop 0 0 150 150"],
-    "article-image": [
-        "scale_in 300 300 True",
-    ],
-    "crisp": {
-        "type": "responsive-image",
-        "srcset": [
-            ("1x", ["scale_in 800 600 True"]),
-            ("2x", ["scale_in 1600 1200 True"]),
-            ("4x", ["scale_in 3200 2400 True"]),
-        ],
-        "default": "1x",
-    },
-    "large-photo": {
+    "article-photo": {
         "type": "responsive-image",
         "sizes": """
             (min-width: 1200px) 800px,
@@ -231,11 +218,14 @@ IMAGE_PROCESS = {
             100vw
         """,
         "srcset": [
+            # All keeps 4:3 aspect ratios.
             ("600w", ["scale_in 600 450 True"]),
             ("800w", ["scale_in 800 600 True"]),
             ("1600w", ["scale_in 1600 1200 True"]),
         ],
-        "default": "800w",
+        # Default Plumage's central content column is 540px wide, so default to
+        # 600w variant.
+        "default": "600w",
     },
     "example-pict": {
         "type": "picture",
