@@ -434,7 +434,7 @@ pyquery = "^1.4.3"
 type = "git"
 url = "https://github.com/kdeldycke/plumage.git"
 reference = "develop"
-resolved_reference = "4d5501a9a2a24fa03a2fb6070c23f86e89129501"
+resolved_reference = "cb57d3f2e8dd25f5bdf08d09b4b27c403137371e"
 
 [[package]]
 name = "pycodestyle"
