@@ -201,13 +201,14 @@ PLUGINS = [
 # deadlinks
 DEADLINK_VALIDATION = True
 
-# seo
+# pelican.plugins.seo",
 SEO_REPORT = True
 SEO_ENHANCER = True
 
-# similar_posts
+# pelican.plugins.similar_posts
 SIMILAR_POSTS_MAX_COUNT = 3
 
+# pelican_image_process
 IMAGE_PROCESS = {
     "article-photo": {
         "type": "responsive-image",
