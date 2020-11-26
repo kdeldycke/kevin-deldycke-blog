@@ -209,22 +209,18 @@ SEO_ENHANCER = True
 SIMILAR_POSTS_MAX_COUNT = 3
 
 IMAGE_PROCESS = {
-    "thumb": [
-        "crop 0 0 50% 50%",
-        "scale_out 150 150 True",
-        "crop 0 0 150 150"
-    ],
-    'article-image': [
+    "thumb": ["crop 0 0 50% 50%", "scale_out 150 150 True", "crop 0 0 150 150"],
+    "article-image": [
         "scale_in 300 300 True",
     ],
-    'crisp': {
-        'type': 'responsive-image',
-        'srcset': [
-            ('1x', ["scale_in 800 600 True"]),
-            ('2x', ["scale_in 1600 1200 True"]),
-            ('4x', ["scale_in 3200 2400 True"]),
+    "crisp": {
+        "type": "responsive-image",
+        "srcset": [
+            ("1x", ["scale_in 800 600 True"]),
+            ("2x", ["scale_in 1600 1200 True"]),
+            ("4x", ["scale_in 3200 2400 True"]),
         ],
-        'default': '1x',
+        "default": "1x",
     },
     "large-photo": {
         "type": "responsive-image",
@@ -241,28 +237,28 @@ IMAGE_PROCESS = {
         ],
         "default": "800w",
     },
-    'example-pict': {
-        'type': 'picture',
-        'sources': [
+    "example-pict": {
+        "type": "picture",
+        "sources": [
             {
-                'name': 'default',
-                'media': '(min-width: 640px)',
-                'srcset': [
-                    ('640w', ["scale_in 640 480 True"]),
-                    ('1024w', ["scale_in 1024 683 True"]),
-                    ('1600w', ["scale_in 1600 1200 True"]),
+                "name": "default",
+                "media": "(min-width: 640px)",
+                "srcset": [
+                    ("640w", ["scale_in 640 480 True"]),
+                    ("1024w", ["scale_in 1024 683 True"]),
+                    ("1600w", ["scale_in 1600 1200 True"]),
                 ],
-                'sizes': '100vw',
+                "sizes": "100vw",
             },
             {
-                'name': 'source-1',
-                'srcset': [
-                    ('1x', ["crop 100 100 200 200"]),
-                    ('2x', ["crop 100 100 300 300"]),
-                ]
-            }
+                "name": "source-1",
+                "srcset": [
+                    ("1x", ["crop 100 100 200 200"]),
+                    ("2x", ["crop 100 100 300 300"]),
+                ],
+            },
         ],
-        'default': ('default', '640w'),
+        "default": ("default", "640w"),
     },
 }
 
