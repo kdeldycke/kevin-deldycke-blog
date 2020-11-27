@@ -78,7 +78,7 @@ BTW, `pytest` is powerful, but feels magical at times. I spent more time working
 ## Randomize all the things!
 
 > ### A good flakiness
-> 
+>
 > (...) the test was generating numerous instances of the class with randomized inputs.
 
 That good flakiness has a name: [fuzzing](https://en.wikipedia.org/wiki/Fuzzing)! 😉
