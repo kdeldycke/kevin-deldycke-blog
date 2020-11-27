@@ -267,6 +267,7 @@ MENUITEMS = (
 )
 
 CODE_STYLE = "monokai"
+
 TIPUE_SEARCH = True
 
 LEFT_SIDEBAR = """
