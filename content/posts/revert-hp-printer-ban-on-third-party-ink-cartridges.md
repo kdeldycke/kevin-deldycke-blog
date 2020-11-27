@@ -27,7 +27,7 @@ Eight months. My printer worked for only 8 months. 😤
 
 OK. It's my fault. I should have spent more money buying certified™ gear. 😑
 
-![](https://comdoc.com/wp-content/uploads/2019/01/copier-printer-meme-03.jpg)
+![](/uploads/2020/copier-printer-meme-03.jpg)
 
 The solution is to travel back in time when things were working just great, and downgrade to the previous firmware.
 
