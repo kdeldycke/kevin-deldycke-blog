@@ -39,9 +39,9 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
         ```shell-session
         $ whoami
+        ```
         
   * List of most used commands:
-        ```
 
         ```shell-session
         $ history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
