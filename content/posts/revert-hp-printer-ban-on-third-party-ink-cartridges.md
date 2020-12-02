@@ -23,7 +23,7 @@ The timeline is straightforward:
 
   I can't print anymore. 🤯
 
-Eight months. My printer worked for only 8 months. 😤
+8 months. My printer worked for only height months. 😤
 
 OK. It's my fault. I should have spent more money buying certified™ gear. 😑
 
@@ -33,7 +33,7 @@ The solution is to travel back in time when things were working just great, and 
 
 ## Disable auto-upgrade
 
-We will start by stopping this madness for good, and prevent the printer from downloading a firmware behind our back.
+We will stop this madness for good, and prevent the printer from downloading a firmware behind our back.
 
 In the control panel, go to `Setup` > `Service` > `LaserJet Update` > `Manage Updates`:
 
@@ -46,7 +46,7 @@ Then set these options:
 * Prompt Before Install: `Always Prompt`
 * Allow Updates: `Yes`
 
-I'm quite surprised downgrades are allowed. 🤔 It seems out of character. Therefor, with my *Evil Product Manager* hat, I advise HP to monetize this feature under a monthly Enterprise Subscription of sort. 😈
+I'm quite surprised downgrades are allowed. 🤔 It seems out of character. Therefor, with my *Evil Product Manager* hat on, I advise HP to monetize this feature under a monthly Enterprise Subscription of sort. 😈
 
 ## Download old firmware
 
@@ -81,9 +81,9 @@ $ lpr -P HP_Color_LaserJet_M254dw_0 /Users/kde/Downloads/HP_Color_LaserJet_Pro_M
 
 Nothing gets printed to the console.
 
-I don't know what happens here but it seems the `.rfu` file is pushed to the printer's queue and then gets consumed as any other printable document. See, [the RFU file format is a matryoshka doll](https://www.jsof-tech.com/unpacking-hp-firmware-updates-part-1/) embedding printing commands, encoded data and raw NAND code.
+I don't know what happens here but it seems the `.rfu` file is pushed to the printer's queue, and then gets consumed as any other printable document. See, [the RFU file format is a matryoshka doll](https://www.jsof-tech.com/unpacking-hp-firmware-updates-part-1/) embedding printing commands, encoded data and raw NAND code.
 
-After a minute  or two, the printers reboots and upgrades itself:
+After a minute or two, the printers reboots and upgrades itself:
 
 ![](/uploads/2020/hp-laserjet-printer-firmware-updating.jpg)
 
