@@ -44,7 +44,7 @@ Then set these options:
 * Allow Downgrade: `Yes`
 * Check Automatically: `Off`
 * Prompt Before Install: `Always Prompt`
-* Allow Updates: `No`
+* Allow Updates: `Yes`
 
 I'm quite surprised downgrades are allowed. 🤔 It seems out of character. Therefor, with my *Evil Product Manager* hat, I advise HP to monetize this feature under a monthly Enterprise Subscription of sort. 😈
 
@@ -92,6 +92,10 @@ And we're back in business! 🥳
 A detour via `Setup` > `Service` > `Firmware Datecode` menu confirm we're running the the previous firmware:
 
 ![](/uploads/2020/hp-laserjet-printer-20200612-firmware.jpg)
+
+Finally, to lock any possibility of a firmware change, go back to `Setup` > `Service` > `LaserJet Update` > `Manage Updates` to set the option to:
+
+* Allow Updates: `No`
 
 ## Printer security
 
