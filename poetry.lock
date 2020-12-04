@@ -259,25 +259,21 @@ unidecode = "*"
 markdown = ["markdown (>=3.1.1,<3.2.0)"]
 
 [[package]]
-name = "pelican_image_process"
-version = "2.0.0-dev"
-description = ""
+name = "pelican-image-process"
+version = "2.0.0"
+description = "Pelican plugin that automates image processing."
 category = "main"
 optional = false
-python-versions = "*"
-develop = false
+python-versions = ">=3.6,<4.0"
 
 [package.dependencies]
-beautifulsoup4 = "*"
-pelican = "*"
-pillow = "*"
-six = "*"
+beautifulsoup4 = ">=4.9.3,<5.0.0"
+pelican = ">=4.5,<5.0"
+Pillow = ">=8.0.1,<9.0.0"
+six = ">=1.15.0,<2.0.0"
 
-[package.source]
-type = "git"
-url = "https://github.com/pelican-plugins/image-process.git"
-reference = "master"
-resolved_reference = "8b2c3feec13d42042cf677ebe6ca3696a748c83f"
+[package.extras]
+markdown = ["markdown (>=3.2.2,<4.0.0)"]
 
 [[package]]
 name = "pelican-neighbors"
@@ -313,7 +309,7 @@ markdown = ["markdown (>=3.2.2,<4.0.0)"]
 type = "git"
 url = "https://github.com/pelican-plugins/seo.git"
 reference = "master"
-resolved_reference = "8159514464081d9bd2d6616678907de13a7f9d8a"
+resolved_reference = "93b5b00462f31cfb52623605e40031edf2c22225"
 
 [[package]]
 name = "pelican-similar-posts"
@@ -608,7 +604,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.8.*"
-content-hash = "f0a1624e5a0eb0f476762bbe09f81a50469c449b7d38f516e47bdbd02524f0c6"
+content-hash = "56dcbf4401ec331f1b775a8b9360c169db3b684dbcbef766dce748d932e37270"
 
 [metadata.files]
 appdirs = [
@@ -865,7 +861,10 @@ pelican = [
     {file = "pelican-4.5.0-py2.py3-none-any.whl", hash = "sha256:2c5c721bc95caa406673d74a5b906f42289930dabee598b41930a18cf98742a5"},
     {file = "pelican-4.5.0.tar.gz", hash = "sha256:d08119a3ed3eb7d3f2d0a9a5b929be648ad3c84d018b19517ecc608383b824e6"},
 ]
-pelican_image_process = []
+pelican-image-process = [
+    {file = "pelican-image-process-2.0.0.tar.gz", hash = "sha256:e794e6e16aa86d8f016f4b6473c1ab6845caf47ece976e9e0084b5a92ab5d4f7"},
+    {file = "pelican_image_process-2.0.0-py3-none-any.whl", hash = "sha256:0451daf2a1bd006334c0fad415f508b77c9b84842a486b26b9b29f22c6dffcb6"},
+]
 pelican-neighbors = [
     {file = "pelican-neighbors-1.1.0.tar.gz", hash = "sha256:a24a5cce71a99a4b8e7838de8d4a965b0c23748a60a1b444302f58040aceedf6"},
     {file = "pelican_neighbors-1.1.0-py3-none-any.whl", hash = "sha256:08ae8103d079d3ee8fb0b96dc6d665c9ab3afcd6340604bf4f7ee2112127c18f"},

@@ -21,7 +21,7 @@ mdx_video = "^0.1.8"
 mdx_titlecase = "^1.2.0"
 plumage = "^2.3.0"
 pygments = "^2.7.2"
-pelican-image-process = {git = "https://github.com/pelican-plugins/image-process.git", branch = "master"}
+pelican-image-process = "^2.0.0"
 pelican-seo = {git = "https://github.com/pelican-plugins/seo.git", branch = "master"}
 pelican-similar-posts = "^1.0.0"
 pelican-sitemap = "^1.0.2"
