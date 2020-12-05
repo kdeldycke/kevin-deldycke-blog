@@ -8,64 +8,64 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
 
 Fetch a copy of the repository:
 
-    ```shell-session
-    $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git blog
-    $ cd ./blog
-    ```
+```shell-session
+$ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git blog
+$ cd ./blog
+```
 
 To fetch and/or reset submodules to their committed reference:
 
-    ```shell-session
-    $ git submodule update --init --recursive
-    ```
+```shell-session
+$ git submodule update --init --recursive
+```
 
 Install Python 3.9 and upgrade all its utilities:
 
-    ```shell-session
-    $ brew install python
-    $ python --version
-    Python 3.9.0
-    $ python -m pip install --upgrade pip
-    $ python -m pip install --upgrade poetry
-    ```
+```shell-session
+$ brew install python
+$ python --version
+Python 3.9.0
+$ python -m pip install --upgrade pip
+$ python -m pip install --upgrade poetry
+```
 
 Install Python 3.8 to use within project's venv:
 
-    ```shell-session
-    $ brew install python@3.8
-    $ poetry env use /usr/local/opt/python@3.8/bin/python3
-    $ poetry run python -m pip install --upgrade pip
-    $ poetry run python -m pip install --upgrade setuptools
-    ```
+```shell-session
+$ brew install python@3.8
+$ poetry env use /usr/local/opt/python@3.8/bin/python3
+$ poetry run python -m pip install --upgrade pip
+$ poetry run python -m pip install --upgrade setuptools
+```
 
 Install this blog's dependencies:
 
-    ```shell-session
-    $ poetry install
-    ```
+```shell-session
+$ poetry install
+```
 
 ## Development
 
 Update to latest submodules:
 
-    ```shell-session
-    $ git submodule init
-    $ git submodule update --remote --merge
-    ```
+```shell-session
+$ git submodule init
+$ git submodule update --remote --merge
+```
 
 In one terminal, run:
 
-    ```shell-session
-    $ poetry run pelican --verbose --debug ./content
-    ```
+```shell-session
+$ poetry run pelican --verbose --debug ./content
+```
 
 And in another:
 
-    ```shell-session
-    $ poetry run pelican --verbose --listen
-    (...)
-    Serving site at: 127.0.0.1:8000 - Tap CTRL-C to stop
-    ```
+```shell-session
+$ poetry run pelican --verbose --listen
+(...)
+Serving site at: 127.0.0.1:8000 - Tap CTRL-C to stop
+```
 
 Then go to [http://localhost:8000](http://localhost:8000).
 
