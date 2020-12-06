@@ -186,12 +186,12 @@ PLUGINS = [
     # deadlink plugin seems temporarily broken and produce this fatal error:
     # CRITICAL: AttributeError: module 'deadlinks' has no attribute 'register'
     # "deadlinks",
+    "pelican.plugins.image_process",
     "pelican.plugins.seo",
     "pelican.plugins.similar_posts",
     "pelican.plugins.neighbors",
     "pelican.plugins.sitemap",
     "pelican.plugins.tipue_search",
-    "pelican_image_process",
     "pelican_webassets",
 ]
 
