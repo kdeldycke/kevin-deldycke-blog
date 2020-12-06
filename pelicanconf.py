@@ -202,7 +202,7 @@ PLUGINS = [
 DEADLINK_VALIDATION = True
 
 # pelican.plugins.seo",
-SEO_REPORT = True
+SEO_REPORT = False
 SEO_ENHANCER = True
 
 # pelican.plugins.similar_posts
