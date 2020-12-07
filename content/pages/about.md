@@ -21,7 +21,7 @@ Most relevant experience was in [growing a team from 0 to 12](https://devtomanag
 ## Achievements
 
 - 💰 Designed, implemented and operated [Scaleway's billing
-pipeline](https://scaleway.com/faq/billing/), generating
+pipeline](https://web.archive.org/web/20190315172559/https://scaleway.com/faq/billing/), generating
 multi-million dollars of revenue (and growing!). The whole
 thing. All by myself.
 
