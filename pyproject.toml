@@ -26,7 +26,7 @@ pelican-seo = {git = "https://github.com/pelican-plugins/seo.git", branch = "mas
 pelican-similar-posts = "^1.0.0"
 pelican-sitemap = "^1.0.2"
 pelican-neighbors = "^1.1.0"
-pelican-tipue-search = {git = "https://github.com/pelican-plugins/tipue-search.git", branch = "migrate"}
+pelican-tipue-search = {git = "https://github.com/pelican-plugins/tipue-search.git", branch = "main"}
 gensim = "^3.8.3"
 
 [tool.poetry.dev-dependencies]
