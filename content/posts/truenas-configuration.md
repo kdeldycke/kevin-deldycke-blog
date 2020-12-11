@@ -43,8 +43,8 @@ Now you're ready to update the package index:
 ```shell-session
 root@truenas[/]# pkg update
 Updating FreeBSD repository catalogue...
-Fetching meta.conf: 100%    163 B   0.2kB/s    00:01    
-Fetching packagesite.txz: 100%    6 MiB   6.7MB/s    00:01    
+Fetching meta.conf: 100%    163 B   0.2kB/s    00:01
+Fetching packagesite.txz: 100%    6 MiB   6.7MB/s    00:01
 Processing entries: 100%
 FreeBSD repository update completed. 31953 packages processed.
 All repositories are up to date.
@@ -69,7 +69,7 @@ The operation will free 31 MiB.
 7 MiB to be downloaded.
 
 Proceed with this action? [y/N]: y
-[1/1] Fetching pkg-1.15.10.txz: 100%    7 MiB   6.9MB/s    00:01    
+[1/1] Fetching pkg-1.15.10.txz: 100%    7 MiB   6.9MB/s    00:01
 Checking integrity... done (0 conflicting)
 [1/1] Upgrading pkg from 1.14.6 to 1.15.10...
 [1/1] Extracting pkg-1.15.10: 100%
@@ -86,12 +86,12 @@ Number of packages to be installed: 1
 22 KiB to be downloaded.
 
 Proceed with this action? [y/N]: y
-[1/1] Fetching dmg2img-1.6.7.txz: 100%   22 KiB  22.5kB/s    00:01    
+[1/1] Fetching dmg2img-1.6.7.txz: 100%   22 KiB  22.5kB/s    00:01
 Checking integrity... done (0 conflicting)
 [1/1] Installing dmg2img-1.6.7...
 [1/1] Extracting dmg2img-1.6.7: 100%
 
-root@truenas[/]# dmg2img          
+root@truenas[/]# dmg2img
 
 dmg2img v1.6.7 (c) vu1tur (to@vu1tur.eu.org)
 
