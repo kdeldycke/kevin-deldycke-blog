@@ -43,7 +43,7 @@ here is a glorious list of meta falsehoods:
 
 ## Implementation
 
- * Every falsehood should be accounted for.
+ * [Every falsehood should be accounted for](https://twitter.com/hugojonker/status/1328373874589839361).
  * Every falsehood can be accounted for.
  * Making your code compatible with a falsehood doesn't come with a price.
  * Falsehoods are addressed by standards.
