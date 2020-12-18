@@ -1,3 +1,4 @@
+---
 name: Deploy
 "on":
   # Only deploy the reference default branch.
