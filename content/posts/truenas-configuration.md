@@ -117,3 +117,13 @@ The issue lies somewhere in all connected interfaces being granted DHCP active s
 https://www.youtube.com/watch?v=vDMooVj-flM
 
 The [issue is being discussed on iXsystems' JIRA](https://jira.ixsystems.com/browse/NAS-108043).
+
+### `ValidateUpdate` error on upgrade
+
+Got the following error on upgrade?
+
+```pytb
+PermissionError: [Errno 13] Permission denied: './ValidateUpdate'
+```
+
+The fix: temporary [switch the System Dataset](https://www.truenas.com/docs/hub/tasks/advanced/system-dataset/) to `freenas-boot`. Your default system dataset is probably set to your ZFS pool which might be unavailable for whatever reason. In my case, I was in the middle of a [pool migration process](https://kevin.deldycke.com/2020/12/migration-from-freenas-to-truenas/).
