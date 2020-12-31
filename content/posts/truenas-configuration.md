@@ -21,7 +21,7 @@ I dedicated a whole post on [building the machine](https://kevin.deldycke.com/20
 
 To prevent the administrator to mess up with TrueNAS install, FreeBSD's package management has been locked down. Installing a package does not work:
 
-```shell-session
+```{.shell-session hl_lines="6"}
 root@truenas[/]# pkg install dmg2img
 Updating local repository catalogue...
 pkg: file:///usr/ports/packages/meta.txz: No such file or directory
@@ -40,7 +40,7 @@ root@truenas[/]# sed -i .orig 's/enabled: no/enabled: yes/' /usr/local/etc/pkg/r
 
 Now you're ready to update the package index:
 
-```shell-session
+```{.shell-session hl_lines="6"}
 root@truenas[/]# pkg update
 Updating FreeBSD repository catalogue...
 Fetching meta.conf: 100%    163 B   0.2kB/s    00:01
