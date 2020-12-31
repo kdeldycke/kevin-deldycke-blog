@@ -104,6 +104,10 @@ Options: -s (silent) -v (verbose) -V (extremely verbose) -d (debug)
 
 ## 🐛 Issues
 
+### FreeNAS to TrueNAS migration
+
+I wrote a long article on [how to migrate an encrypted pool from FreeNAS to TrueNAS](https://kevin.deldycke.com/2020/12/migration-from-freenas-to-truenas/).
+
 ### Unreachable Network due to Multiple NICs
 
 My machine was regularly disconnected from the network and couldn't be cleanly rebooted. This started under `FreeNAS 11.3-U4.1` and is still reproducible with a fresh `TrueNAS 12.0`.
