@@ -46,10 +46,10 @@ Click `SSH`'s `Actions`, and in the `General Options` check `Allow Password Auth
 
 Double check you're allowed to authenticate with a password from your machine:
 
-```{.ssh filename="~/.ssh/config"}
+```{.ssh filename="~/.ssh/config" hl_lines="3"}}
 (…)
 Host truenas.local
-PasswordAuthentication yes
+    PasswordAuthentication yes
 ```
 
 Then login to your NAS as `root`:
@@ -160,7 +160,7 @@ root@truenas[/]# zpool import big
 
 The pool is now online:
 
-```shell-session
+```{.shell-session hl_lines="3"}
 root@truenas[/]# zpool status big
 pool: big
 state: ONLINE
@@ -241,7 +241,7 @@ First, we choose one partition (`ada1p2` in this case), and offline the disk fro
 
 Double-check the status of the pool with the CLI:
 
-```shell-session
+```{.shell-session hl_lines="15"}
 root@truenas[/]# zpool status big
 pool: big
 state: DEGRADED
@@ -282,7 +282,7 @@ root@truenas[/]# zpool replace big gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.el
 
 This is going to be a slow operation:
 
-```shell-session
+```{.shell-session hl_lines="7-9 15-17"}
 root@truenas[/]# zpool status big
 pool: big
 state: DEGRADED
@@ -317,7 +317,7 @@ While performing the process above, you're still at the mercy of any corruption 
 
 The pool looked like this:
 
-```shell-session
+```{.shell-session hl_lines="15-17 19"}
 root@truenas[/]# zpool status big
 pool: big
 state: DEGRADED
@@ -364,7 +364,7 @@ gptid/4e8b58ff-917d-11ea-a640-b42e99bf5e8f N/A    ada2p1
 
 So I quickly re-attached the one still encrypted (not the one being replaced):
 
-```shell-session
+```{.shell-session hl_lines="7"}
 root@truenas[/]# geli attach -p -k /tmp/pool_big_recovery.key /dev/gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f
 
 root@truenas[/]# geli status
@@ -376,7 +376,7 @@ gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ACTIVE gptid/4eb3e8fc-917d-11ea-a
 
 Fortunately, ZFS re-integrated it to the pool, changing its state from `REMOVED` to `ONLINE`, at the price of an automatic resilvering:
 
-```shell-session
+```{.shell-session hl_lines="7-9 19"}
 root@truenas[/]# zpool status big
 pool: big
 state: DEGRADED
@@ -418,7 +418,7 @@ cannot online gptid/4e377340-917d-11ea-a640-b42e99bf5e8f: no such device in pool
 
 That's when I realized `4e377340-917d-11ea-a640-b42e99bf5e8f` (a.k.a. `ada1p2`), was completely kicked-out by the system. I stumbled upon some worrying logs that might hint to a kind of hardware issue:
 
-```log
+```{.log hl_lines="12 38 69 76"}
 Dec 10 19:18:35 truenas ahcich3: Timeout on slot 31 port 0
 Dec 10 19:18:35 truenas ahcich3: is 00000000 cs 80000000 ss 80000000 rs 80000000 tfd c0 serr 00000000 cmd 0000df17
 Dec 10 19:18:35 truenas (ada2:ahcich3:0:0:0): READ_FPDMA_QUEUED. ACB: 60 80 30 6b 94 40 08 02 00 00 00 00
@@ -546,7 +546,7 @@ Shared connection to truenas.local closed.
 
 I got lucky, `ada1p2` showed up after the reboot:
 
-```shell-session
+```{.shell-session hl_lines="3"}
 root@truenas[/]# glabel status
 Name                                       Status Components
 gptid/4e377340-917d-11ea-a640-b42e99bf5e8f N/A    ada1p2
@@ -598,7 +598,7 @@ errors: No known data errors
 
 This time, I finally fixed the failed `replacing-0` operation by detaching the old encrypted partition, and resilvering the new, unencrypted one:
 
-```shell-session
+```{.shell-session hl_lines="17 40"}
 root@truenas[/]# zpool detach big gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli
 
 root@truenas[/]# zpool status big
@@ -650,4 +650,4 @@ And off we went, spending another 7 hours of resilvering...
 
 All in all, RAID-Z2 saved my ass. Lesson learned: **a disk failure during heavy-duty operations is no longer a statistically rare event**.
 
-So remember the wise man who once said to **BACKUP YOUR F***** POOL**!
+So remember the wise man who once said to **BACKUP YOUR F#@$% POOL**!
