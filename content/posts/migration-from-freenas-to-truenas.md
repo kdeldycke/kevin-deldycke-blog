@@ -46,7 +46,7 @@ Click `SSH`'s `Actions`, and in the `General Options` check `Allow Password Auth
 
 Double check you're allowed to authenticate with a password from your machine:
 
-```{.ssh filename="~/.ssh/config" hl_lines="3"}}
+```{.ssh filename="~/.ssh/config" hl_lines="3"}
 (…)
 Host truenas.local
     PasswordAuthentication yes
