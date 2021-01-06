@@ -191,18 +191,6 @@ optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 
 [[package]]
-name = "mdx-titlecase"
-version = "1.2.0"
-description = "Proper title-casing for Python's Markdown."
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-Markdown = ">=2.6"
-titlecase = "*"
-
-[[package]]
 name = "mdx-video"
 version = "0.1.8"
 description = "Python-Markdown extension for easy video embedding"
@@ -528,17 +516,6 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
-name = "titlecase"
-version = "1.1.1"
-description = "Python Port of John Gruber's titlecase.pl"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-regex = ">=2020.4.4"
-
-[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
@@ -603,8 +580,8 @@ pyyaml = "*"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "3.8.*"
-content-hash = "56dcbf4401ec331f1b775a8b9360c169db3b684dbcbef766dce748d932e37270"
+python-versions = "3.9.*"
+content-hash = "8322eb6719092d6555db1cfe69ce6b48aaa25cc85b088ba7a1d0475421b3c6b8"
 
 [metadata.files]
 appdirs = [
@@ -804,11 +781,6 @@ markupsafe = [
     {file = "MarkupSafe-1.1.1-cp38-cp38-win32.whl", hash = "sha256:596510de112c685489095da617b5bcbbac7dd6384aeebeda4df6025d0256a81b"},
     {file = "MarkupSafe-1.1.1-cp38-cp38-win_amd64.whl", hash = "sha256:e8313f01ba26fbbe36c7be1966a7b7424942f670f38e666995b88d012765b9be"},
     {file = "MarkupSafe-1.1.1.tar.gz", hash = "sha256:29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"},
-]
-mdx-titlecase = [
-    {file = "mdx_titlecase-1.2.0-py3-none-any.whl", hash = "sha256:71c76103c1de3420238c1dbb2925a27db9bc3d17e585182549ca8dff5255b648"},
-    {file = "mdx_titlecase-1.2.0-py3.6.egg", hash = "sha256:360edc10025d3dff9a4d2d54b66e0b61fbb41ac110f41dde79367f6e37a6ae31"},
-    {file = "mdx_titlecase-1.2.0.tar.gz", hash = "sha256:cc9eb63a810409983cde15c1cb1ce860d656080c298463bad0ab3d17f0a44d95"},
 ]
 mdx-video = [
     {file = "mdx_video-0.1.8.tar.gz", hash = "sha256:17d8d10d43e42f18456e3d8422ec73b54b2efb307d62021c414bd7cbec59d987"},
@@ -1037,10 +1009,6 @@ smartypants = [
 soupsieve = [
     {file = "soupsieve-2.0.1-py3-none-any.whl", hash = "sha256:1634eea42ab371d3d346309b93df7870a88610f0725d47528be902a0d95ecc55"},
     {file = "soupsieve-2.0.1.tar.gz", hash = "sha256:a59dc181727e95d25f781f0eb4fd1825ff45590ec8ff49eadfd7f1a537cc0232"},
-]
-titlecase = [
-    {file = "titlecase-1.1.1-py3-none-any.whl", hash = "sha256:2e590c0a67503d5f69c1f8f006f45b802506fb17397faaf17186f0b9292b486c"},
-    {file = "titlecase-1.1.1.tar.gz", hash = "sha256:16e279edf085293bc9c44a68ce959c7d6cd5c653e6b5669a3a3640015cb63eb6"},
 ]
 toml = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},

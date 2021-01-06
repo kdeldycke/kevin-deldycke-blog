@@ -17,7 +17,7 @@ jobs:
           submodules: true
       - uses: actions/setup-python@v2.2.1
         with:
-          python-version: '3.8'
+          python-version: '3.9'
       - name: Install Pelican
         run: |
           python -m pip install --upgrade pip

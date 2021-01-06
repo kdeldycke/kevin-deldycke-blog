@@ -12,13 +12,13 @@ repository = 'https://github.com/kdeldycke/kevin-deldycke-blog'
 "Funding" = "https://github.com/sponsors/kdeldycke"
 
 [tool.poetry.dependencies]
-python = "3.8.*"
+python = "3.9.*"
 pelican = {extras = ["Markdown"], version = "^4.5.0"}
 pymdown-extensions = "^8.0"
 typogrify = "^2.0.7"
 beautifulsoup4 = "^4.9.3"
 mdx_video = "^0.1.8"
-mdx_titlecase = "^1.2.0"
+# mdx_titlecase = "^1.2.0"
 plumage = "^2.3.0"
 pygments = "^2.7.2"
 pelican-image-process = "^2.0.0"

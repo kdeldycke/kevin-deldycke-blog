@@ -29,15 +29,6 @@ $ python -m pip install --upgrade pip
 $ python -m pip install --upgrade poetry
 ```
 
-Install Python 3.8 to use within project's venv:
-
-```shell-session
-$ brew install python@3.8
-$ poetry env use /usr/local/opt/python@3.8/bin/python3
-$ poetry run python -m pip install --upgrade pip
-$ poetry run python -m pip install --upgrade setuptools
-```
-
 Install this blog's dependencies:
 
 ```shell-session

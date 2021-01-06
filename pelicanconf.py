@@ -42,7 +42,8 @@ MARKDOWN = {
         "markdown.extensions.toc": {
             "permalink": True,
         },
-        "mdx_titlecase.mdx_titlecase:TitlecaseExtension": {},
+        # XXX broken on Python 3.9
+        #"mdx_titlecase.mdx_titlecase:TitlecaseExtension": {},
         "mdx_video": {},
         # https://facelessuser.github.io/pymdown-extensions/
         "pymdownx.betterem": {},
