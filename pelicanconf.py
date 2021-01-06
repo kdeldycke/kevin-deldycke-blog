@@ -254,6 +254,16 @@ IMAGE_PROCESS = {
     },
 }
 
+# pelican_webassets
+WEBASSETS_CONFIG = (
+    # No need to force a compressed rendering, a minification pass is applied
+    # at the end of the pipeline.
+    # ('LIBSASS_STYLE', 'compressed'),
+
+    ('POSTCSS_BIN', "/usr/local/bin/postcss"),
+    ('POSTCSS_EXTRA_ARGS', ["--use", "autoprefixer"]),
+)
+
 # ----- Theme-specific settings
 
 SITE_THUMBNAIL = "/uploads/2015/profile-photo-squared-thumbnail.jpg"
