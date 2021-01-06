@@ -162,23 +162,23 @@ The pool is now online:
 
 ```{.shell-session hl_lines="3"}
 root@truenas[/]# zpool status big
-pool: big
-state: ONLINE
+  pool: big
+ state: ONLINE
 status: One or more devices has experienced an unrecoverable error. An
-attempt was made to correct the error. Applications are unaffected.
+		attempt was made to correct the error. Applications are unaffected.
 action: Determine if the device needs to be replaced, and clear the errors
-using 'zpool clear' or replace the device with 'zpool replace'.
-see: https://openzfs.github.io/openzfs-docs/msg/ZFS-8000-9P
-scan: resilvered 30.6M in 00:00:04 with 0 errors on Thu Dec 10 13:24:46 2020
+		using 'zpool clear' or replace the device with 'zpool replace'.
+		see: https://openzfs.github.io/openzfs-docs/msg/ZFS-8000-9P
+  scan: resilvered 30.6M in 00:00:04 with 0 errors on Thu Dec 10 13:24:46 2020
 config:
 
-NAME                                           STATE  READ WRITE CKSUM
-big                                            ONLINE 0    0     0
-raidz2-0                                       ONLINE 0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     2
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     2
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     0
+		NAME                                           		STATE  	 READ WRITE CKSUM
+		big                                                 ONLINE 		0     0     0
+		  raidz2-0                                          ONLINE 		0     0     0
+			gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE 		0     0     2
+			gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE 		0     0     0
+			gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE 		0     0     2
+			gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE 		0     0     0
 
 errors: No known data errors
 ```
@@ -199,23 +199,23 @@ The data seems OK and safe thanks to RAID-Z2. This issue might just be a side-ef
 ```shell-session
 root@truenas[/]# zpool clear big
 root@truenas[/]# zpool status big
-pool: big
-state: ONLINE
+  pool: big
+ state: ONLINE
 status: Some supported features are not enabled on the pool. The pool can
-still be used, but some features are unavailable.
+		still be used, but some features are unavailable.
 action: Enable all features using 'zpool upgrade'. Once this is done,
-the pool may no longer be accessible by software that does not support
-the features. See zpool-features(5) for details.
-scan: resilvered 30.6M in 00:00:04 with 0 errors on Thu Dec 10 13:24:46 2020
+		the pool may no longer be accessible by software that does not support
+		the features. See zpool-features(5) for details.
+  scan: resilvered 30.6M in 00:00:04 with 0 errors on Thu Dec 10 13:24:46 2020
 config:
 
-NAME                                           STATE  READ WRITE CKSUM
-big                                            ONLINE 0    0     0
-raidz2-0                                       ONLINE 0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     0
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     0
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     0
+		NAME                                           		STATE    READ WRITE CKSUM
+		big                                            		ONLINE 		0     0     0
+		  raidz2-0                                       	ONLINE      0     0     0
+			gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE      0     0     0
+			gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE  	0     0     0
+			gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE 		0     0     0
+			gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE 		0     0     0
 
 errors: No known data errors
 ```
@@ -243,23 +243,23 @@ Double-check the status of the pool with the CLI:
 
 ```{.shell-session hl_lines="15"}
 root@truenas[/]# zpool status big
-pool: big
-state: DEGRADED
+  pool: big
+ state: DEGRADED
 status: One or more devices has been taken offline by the administrator.
-Sufficient replicas exist for the pool to continue functioning in a
-degraded state.
+		Sufficient replicas exist for the pool to continue functioning in a
+		degraded state.
 action: Online the device using 'zpool online' or replace the device with
-'zpool replace'.
-scan: resilvered 30.6M in 00:00:04 with 0 errors on Thu Dec 10 13:24:46 2020
+		'zpool replace'.
+  scan: resilvered 30.6M in 00:00:04 with 0 errors on Thu Dec 10 13:24:46 2020
 config:
 
-NAME                                           STATE    READ WRITE CKSUM
-big                                            DEGRADED 0    0     0
-raidz2-0                                       DEGRADED 0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli OFFLINE  0    0     0
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
+		NAME                                           		STATE     READ WRITE CKSUM
+		big                                            		DEGRADED 	 0     0     0
+		  raidz2-0                                          DEGRADED 	 0     0     0
+			gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli  OFFLINE  	 0     0     0
+			gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE   	 0     0     0
+			gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE   	 0     0     0
+			gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE   	 0     0     0
 
 errors: No known data errors
 ```
@@ -284,25 +284,25 @@ This is going to be a slow operation:
 
 ```{.shell-session hl_lines="7-9 15-17"}
 root@truenas[/]# zpool status big
-pool: big
-state: DEGRADED
+  pool: big
+ state: DEGRADED
 status: One or more devices is currently being resilvered. The pool will
-continue to function, possibly in a degraded state.
+		continue to function, possibly in a degraded state.
 action: Wait for the resilver to complete.
-scan: resilver in progress since Thu Dec 10 16:11:52 2020
-2.85T scanned at 889M/s, 1.29T issued at 402M/s, 12.3T total
-320G resilvered, 10.49% done, 07:57:38 to go
+  scan: resilver in progress since Thu Dec 10 16:11:52 2020
+		2.85T scanned at 889M/s, 1.29T issued at 402M/s, 12.3T total
+		320G resilvered, 10.49% done, 07:57:38 to go
 config:
 
-NAME                                           STATE    READ WRITE CKSUM
-big                                            DEGRADED 0    0     0
-raidz2-0                                       DEGRADED 0    0     0
-replacing-0                                    DEGRADED 0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli OFFLINE  0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f     ONLINE   0    0     0     (resilvering)
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
+		NAME                                                  STATE     READ WRITE CKSUM
+		big                                                   DEGRADED     0     0     0
+		  raidz2-0                                            DEGRADED     0     0     0
+			replacing-0                                       DEGRADED 	   0     0     0
+			  gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli  OFFLINE  	   0     0     0
+			  gptid/4e377340-917d-11ea-a640-b42e99bf5e8f      ONLINE       0     0     0     (resilvering)
+			gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
+			gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
+			gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
 
 errors: No known data errors
 ```
@@ -319,25 +319,25 @@ The pool looked like this:
 
 ```{.shell-session hl_lines="15-17 19"}
 root@truenas[/]# zpool status big
-pool: big
-state: DEGRADED
+  pool: big
+ state: DEGRADED
 status: One or more devices is currently being resilvered. The pool will
-continue to function, possibly in a degraded state.
+		continue to function, possibly in a degraded state.
 action: Wait for the resilver to complete.
-scan: resilver in progress since Thu Dec 10 16:11:52 2020
-6.63T scanned at 464M/s, 5.63T issued at 394M/s, 12.3T total
-954G resilvered, 45.79% done, 04:55:41 to go
+  scan: resilver in progress since Thu Dec 10 16:11:52 2020
+		6.63T scanned at 464M/s, 5.63T issued at 394M/s, 12.3T total
+		954G resilvered, 45.79% done, 04:55:41 to go
 config:
 
-NAME                                           STATE    READ WRITE CKSUM
-big                                            DEGRADED 0    0     0
-raidz2-0                                       DEGRADED 0    0     0
-replacing-0                                    UNAVAIL  0    160   0     insufficient replicas
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli OFFLINE  0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f     REMOVED  0    0     0     (resilvering)
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli REMOVED  0    0     0
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
+		NAME                                           		  STATE     READ WRITE CKSUM
+		big                                            		  DEGRADED     0     0     0
+		  raidz2-0                                       	  DEGRADED 	   0     0     0
+	 	    replacing-0                                    	  UNAVAIL      0   160     0     insufficient replicas
+			  gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli  OFFLINE      0     0     0
+			  gptid/4e377340-917d-11ea-a640-b42e99bf5e8f      REMOVED      0     0     0     (resilvering)
+		  	gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli 	  ONLINE       0     0     0
+			gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli    REMOVED      0     0     0
+			gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
 
 errors: No known data errors
 ```
@@ -378,25 +378,25 @@ Fortunately, ZFS re-integrated it to the pool, changing its state from `REMOVED`
 
 ```{.shell-session hl_lines="7-9 19"}
 root@truenas[/]# zpool status big
-pool: big
-state: DEGRADED
+  pool: big
+ state: DEGRADED
 status: One or more devices is currently being resilvered. The pool will
-continue to function, possibly in a degraded state.
+		continue to function, possibly in a degraded state.
 action: Wait for the resilver to complete.
-scan: resilver in progress since Fri Dec 11 00:18:45 2020
-1.76T scanned at 139G/s, 324K issued at 24.9K/s, 12.3T total
-0B resilvered, 0.00% done, no estimated completion time
+  scan: resilver in progress since Fri Dec 11 00:18:45 2020
+		1.76T scanned at 139G/s, 324K issued at 24.9K/s, 12.3T total
+		0B resilvered, 0.00% done, no estimated completion time
 config:
 
-NAME                                           STATE    READ WRITE CKSUM
-big                                            DEGRADED 0    0     0
-raidz2-0                                       DEGRADED 0    0     0
-replacing-0                                    UNAVAIL  0    160   0     insufficient replicas
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli OFFLINE  0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f     REMOVED  0    0     0
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
+		NAME                                                  STATE     READ WRITE CKSUM
+		big                                                   DEGRADED     0     0     0
+		  raidz2-0                                            DEGRADED 	   0     0     0
+			replacing-0                                       UNAVAIL  	   0   160     0     insufficient replicas
+			  gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli  OFFLINE      0     0     0
+			  gptid/4e377340-917d-11ea-a640-b42e99bf5e8f      REMOVED  	   0     0     0
+			gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
+			gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
+			gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
 
 errors: No known data errors
 ```
@@ -505,25 +505,25 @@ root@truenas[/]# zpool offline big gptid/4e377340-917d-11ea-a640-b42e99bf5e8f
 
 ```shell-session
 root@truenas[/]# zpool status big
-pool: big
-state: DEGRADED
+  pool: big
+ state: DEGRADED
 status: Some supported features are not enabled on the pool. The pool can
-still be used, but some features are unavailable.
+		still be used, but some features are unavailable.
 action: Enable all features using 'zpool upgrade'. Once this is done,
-the pool may no longer be accessible by software that does not support
-the features. See zpool-features(5) for details.
-scan: resilvered 15.5M in 05:42:26 with 0 errors on Fri Dec 11 06:01:11 2020
+		the pool may no longer be accessible by software that does not support
+		the features. See zpool-features(5) for details.
+  scan: resilvered 15.5M in 05:42:26 with 0 errors on Fri Dec 11 06:01:11 2020
 config:
 
-NAME                                           STATE    READ WRITE CKSUM
-big                                            DEGRADED 0    0     0
-raidz2-0                                       DEGRADED 0    0     0
-replacing-0                                    OFFLINE  0    160   0     all children offline
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli OFFLINE  0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f     OFFLINE  0    0     0
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
+		NAME                                                STATE    READ WRITE CKSUM
+		big                                                 DEGRADED    0     0     0
+		  raidz2-0                                          DEGRADED 	0     0     0
+		  replacing-0                                       OFFLINE  	0   160     0     all children offline
+			gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli  OFFLINE  	0     0     0
+			gptid/4e377340-917d-11ea-a640-b42e99bf5e8f      OFFLINE  	0     0     0
+		  gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE   	0     0     0
+		  gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE   	0     0     0
+		  gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE   	0     0     0
 
 errors: No known data errors
 ```
@@ -573,25 +573,25 @@ And get back my pool in the state I left it:
 ```shell-session
 root@truenas[/]# zpool import big
 root@truenas[/]# zpool status big
-pool: big
-state: DEGRADED
+  pool: big
+ state: DEGRADED
 status: Some supported features are not enabled on the pool. The pool can
-still be used, but some features are unavailable.
+		still be used, but some features are unavailable.
 action: Enable all features using 'zpool upgrade'. Once this is done,
-the pool may no longer be accessible by software that does not support
-the features. See zpool-features(5) for details.
-scan: resilvered 15.5M in 05:42:26 with 0 errors on Fri Dec 11 06:01:11 2020
+		the pool may no longer be accessible by software that does not support
+		the features. See zpool-features(5) for details.
+  scan: resilvered 15.5M in 05:42:26 with 0 errors on Fri Dec 11 06:01:11 2020
 config:
 
-NAME                                           STATE    READ WRITE CKSUM
-big                                            DEGRADED 0    0     0
-raidz2-0                                       DEGRADED 0    0     0
-replacing-0                                    OFFLINE  0    0     0     all children offline
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli OFFLINE  0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f     OFFLINE  0    0     0
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
+		NAME                                           		  STATE     READ WRITE CKSUM
+		big                                            		  DEGRADED     0     0     0
+		  raidz2-0                                            DEGRADED     0     0     0
+		    replacing-0                                       OFFLINE      0     0     0     all children offline
+			  gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli  OFFLINE      0     0     0
+			  gptid/4e377340-917d-11ea-a640-b42e99bf5e8f      OFFLINE      0     0     0
+	  	    gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
+		    gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
+		    gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli    ONLINE       0     0     0
 
 errors: No known data errors
 ```
@@ -602,46 +602,46 @@ This time, I finally fixed the failed `replacing-0` operation by detaching the o
 root@truenas[/]# zpool detach big gptid/4e377340-917d-11ea-a640-b42e99bf5e8f.eli
 
 root@truenas[/]# zpool status big
-pool: big
-state: DEGRADED
+  pool: big
+ state: DEGRADED
 status: One or more devices has been taken offline by the administrator.
-Sufficient replicas exist for the pool to continue functioning in a
-degraded state.
+		Sufficient replicas exist for the pool to continue functioning in a
+		degraded state.
 action: Online the device using 'zpool online' or replace the device with
-'zpool replace'.
-scan: resilvered 15.5M in 05:42:26 with 0 errors on Fri Dec 11 06:01:11 2020
+		'zpool replace'.
+  scan: resilvered 15.5M in 05:42:26 with 0 errors on Fri Dec 11 06:01:11 2020
 config:
 
-NAME                                           STATE    READ WRITE CKSUM
-big                                            DEGRADED 0    0     0
-raidz2-0                                       DEGRADED 0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f     OFFLINE  0    0     0
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE   0    0     0
+		NAME                                           		STATE     READ WRITE CKSUM
+		big                                            		DEGRADED 	 0     0     0
+		  raidz2-0                                          DEGRADED 	 0     0     0
+		    gptid/4e377340-917d-11ea-a640-b42e99bf5e8f      OFFLINE  	 0     0     0
+			gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE   	 0     0     0
+			gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE   	 0     0     0
+			gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE   	 0     0     0
 
 errors: No known data errors
 
 root@truenas[/]# zpool online big gptid/4e377340-917d-11ea-a640-b42e99bf5e8f
 
 root@truenas[/]# zpool status big
-pool: big
-state: ONLINE
+  pool: big
+ state: ONLINE
 status: One or more devices is currently being resilvered. The pool will
-continue to function, possibly in a degraded state.
+		continue to function, possibly in a degraded state.
 action: Wait for the resilver to complete.
-scan: resilver in progress since Fri Dec 11 09:53:51 2020
-4.46T scanned at 623M/s, 2.78T issued at 388M/s, 12.3T total
-690G resilvered, 22.63% done, 07:07:37 to go
+  scan: resilver in progress since Fri Dec 11 09:53:51 2020
+		4.46T scanned at 623M/s, 2.78T issued at 388M/s, 12.3T total
+		690G resilvered, 22.63% done, 07:07:37 to go
 config:
 
-NAME                                           STATE  READ WRITE CKSUM
-big                                            ONLINE 0    0     0
-raidz2-0                                       ONLINE 0    0     0
-gptid/4e377340-917d-11ea-a640-b42e99bf5e8f     ONLINE 0    0     0     (resilvering)
-gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     0
-gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     0
-gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli ONLINE 0    0     0
+		NAME                                           		STATE   READ WRITE CKSUM
+		big                                            		ONLINE     0     0     0
+		  raidz2-0                                          ONLINE 	   0     0     0
+			gptid/4e377340-917d-11ea-a640-b42e99bf5e8f      ONLINE     0     0     0     (resilvering)
+			gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE     0     0     0
+			gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE     0     0     0
+			gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f.eli  ONLINE     0     0     0
 
 errors: No known data errors
 ```
