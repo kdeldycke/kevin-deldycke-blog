@@ -101,10 +101,10 @@ Our pool is composed of the four `ada[1,2,3,4]p2` partitions.
 Now decrypt each partition with the key:
 
 ```shell-session
-root@truenas[/]# geli attach -p -k /tmp/pool_big_recovery.key /dev/gptid/4e377340-917d-11ea-a640-b42e99bf5e8f
-root@truenas[/]# geli attach -p -k /tmp/pool_big_recovery.key /dev/gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f
-root@truenas[/]# geli attach -p -k /tmp/pool_big_recovery.key /dev/gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f
-root@truenas[/]# geli attach -p -k /tmp/pool_big_recovery.key /dev/gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f
+root@truenas[/]# geli attach -p -k /tmp/pool_big_encryption.key /dev/gptid/4e377340-917d-11ea-a640-b42e99bf5e8f
+root@truenas[/]# geli attach -p -k /tmp/pool_big_encryption.key /dev/gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f
+root@truenas[/]# geli attach -p -k /tmp/pool_big_encryption.key /dev/gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f
+root@truenas[/]# geli attach -p -k /tmp/pool_big_encryption.key /dev/gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f
 ```
 
 Check our partitions are properly active and decrypted:
