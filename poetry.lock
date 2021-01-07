@@ -373,21 +373,28 @@ python-versions = ">=3.6"
 [[package]]
 name = "plumage"
 version = "2.4.0"
-description = "Clean and tidy theme for Pelican."
+description = """Clean and tidy theme for Pelican."""
 category = "main"
 optional = false
-python-versions = ">=3.6,<4.0"
+python-versions = "^3.6"
+develop = false
 
 [package.dependencies]
-closure = ">=20191111,<20191112"
-cssmin = ">=0.2.0,<0.3.0"
-libsass = ">=0.20.1,<0.21.0"
-Markdown = ">=3.3.3,<4.0.0"
-pelican = ">=4.2.0,<5.0.0"
-pelican-webassets = ">=1.0.0,<2.0.0"
-pygments = ">=2.7.0,<3.0.0"
-pymdown-extensions = ">=8.0.1,<9.0.0"
-pyquery = ">=1.4.3,<2.0.0"
+closure = "^20191111"
+cssmin = "^0.2.0"
+libsass = "^0.20.1"
+Markdown = "^3.3.3"
+pelican = "^4.2.0"
+pelican-webassets = "^1.0.0"
+pygments = "^2.7.0"
+pymdown-extensions = "^8.0.1"
+pyquery = "^1.4.3"
+
+[package.source]
+type = "git"
+url = "https://github.com/kdeldycke/plumage.git"
+reference = "main"
+resolved_reference = "b3b2dd74eb67f1c43ada693cf43aac1c604f938d"
 
 [[package]]
 name = "pycodestyle"
@@ -581,7 +588,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.*"
-content-hash = "671995d902fdd4ec5c2621a91ab8dc7a82f3cda91cb10660f16b767bba32eb48"
+content-hash = "25259ea900a5a706f07c0a4adb17dac952c5d934ebdb2396c4c4af05816b9786"
 
 [metadata.files]
 appdirs = [
@@ -885,10 +892,7 @@ pillow = [
     {file = "Pillow-8.1.0-pp37-pypy37_pp73-win32.whl", hash = "sha256:b6f00ad5ebe846cc91763b1d0c6d30a8042e02b2316e27b05de04fa6ec831ec5"},
     {file = "Pillow-8.1.0.tar.gz", hash = "sha256:887668e792b7edbfb1d3c9d8b5d8c859269a0f0eba4dda562adb95500f60dbba"},
 ]
-plumage = [
-    {file = "plumage-2.4.0-py3-none-any.whl", hash = "sha256:a8620566c23706b884b9b8d180a5d424d62c4f7a8c51aeeadc2c6f662ce704c9"},
-    {file = "plumage-2.4.0.tar.gz", hash = "sha256:40ce0207e5cee28ef1dee56f0a6823e5d8e9d7e637d40534b47b975a2ba9afeb"},
-]
+plumage = []
 pycodestyle = [
     {file = "pycodestyle-2.6.0-py2.py3-none-any.whl", hash = "sha256:2295e7b2f6b5bd100585ebcb1f616591b652db8a741695b3d8f5d28bdc934367"},
     {file = "pycodestyle-2.6.0.tar.gz", hash = "sha256:c58a7d2815e0e8d7972bf1803331fb0152f867bd89adf8a01dfd55085434192e"},
