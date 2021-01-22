@@ -30,6 +30,7 @@ tramp
 # Org-mode
 .org-id-locations
 *_archive
+ltximg/**
 
 # flymake-mode
 *_flymake.*
