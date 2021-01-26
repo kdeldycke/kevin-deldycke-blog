@@ -414,7 +414,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "pymdown-extensions"
-version = "8.1"
+version = "8.1.1"
 description = "Extension pack for Python Markdown."
 category = "main"
 optional = false
@@ -588,7 +588,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.*"
-content-hash = "e21d581825150cfb4d1f1faf28ac8538b9a6a367cec292bdecc083407c547289"
+content-hash = "d8df48c24d140a73392b80da0e70e1abb088058b7e14f6e9293259e6c5cbf96c"
 
 [metadata.files]
 appdirs = [
@@ -906,8 +906,8 @@ pygments = [
     {file = "Pygments-2.7.4.tar.gz", hash = "sha256:df49d09b498e83c1a73128295860250b0b7edd4c723a32e9bc0d295c7c2ec337"},
 ]
 pymdown-extensions = [
-    {file = "pymdown-extensions-8.1.tar.gz", hash = "sha256:565583c5964ac8253896ef4a7f14023075503ca6514d7d470b343290b96fc6da"},
-    {file = "pymdown_extensions-8.1-py2.py3-none-any.whl", hash = "sha256:c0b285fdd6e8438895b0c4422847af012f32a487ae083ffafa4c21a151b4983b"},
+    {file = "pymdown-extensions-8.1.1.tar.gz", hash = "sha256:632371fa3bf1b21a0e3f4063010da59b41db049f261f4c0b0872069a9b6d1735"},
+    {file = "pymdown_extensions-8.1.1-py3-none-any.whl", hash = "sha256:478b2c04513fbb2db61688d5f6e9030a92fb9be14f1f383535c43f7be9dff95b"},
 ]
 pyquery = [
     {file = "pyquery-1.4.3-py3-none-any.whl", hash = "sha256:1fc33b7699455ed25c75282bc8f80ace1ac078b0dda5a933dacbd8b1c1f83963"},
