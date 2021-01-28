@@ -2,7 +2,7 @@
 date: 2006-12-06 23:18:55
 title: Hardware commands
 category: English
-tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D, dmidecode, printer, CUPS
+tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D, dmidecode, printer, CUPS, smartmontools
 ---
 
 ## Computer
@@ -15,6 +15,12 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
         ```
 
 ## Disk
+
+  * Show all S.M.A.R.T. info of a disk:
+
+        ```shell-session
+        $ smartctl -a /dev/ada4
+        ```
 
   * Low-level format of the `hda` device:
 
