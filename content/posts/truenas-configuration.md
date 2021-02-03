@@ -2,7 +2,7 @@
 date: 2020-10-27
 title: TrueNAS Configuration and Maintenance
 category: English
-tags: hardware, NAS, filesystem, OS, FreeNAS, TrueNAS, hdd, hard-drive, ssd, raid, storage, network, ZFS, disk, package manager
+tags: hardware, NAS, filesystem, OS, FreeNAS, TrueNAS, hdd, hard-drive, ssd, raid, storage, network, ZFS, disk, package manager, FreeBSD, NTFS, partition
 ---
 
 A collection of personal notes on the setup, configuration and maintenance of a home-office TrueNAS appliance.
@@ -100,6 +100,36 @@ or     dmg2img [-l] [-p N] [-s] [-v] [-V] [-d] -i <input.dmg> -o <output.img>
 
 Options: -s (silent) -v (verbose) -V (extremely verbose) -d (debug)
          -l (list partitions) -p N (extract only partition N)
+```
+
+## 💾 Storage
+
+### Delete a partition
+
+```shell-session
+root@truenas[/mnt]# gpart show da0
+=>        34  7814037101  da0  GPT  (3.6T)
+          34           6       - free -  (3.0K)
+          40      409600    1  efi  (200M)
+      409640  7813365344    2  apple-hfs  (3.6T)
+  7813774984      262151       - free -  (128M)
+
+root@truenas[/mnt]# gpart delete -i 1 da0 
+da0p1 deleted
+
+root@truenas[/mnt]# gpart show da0        
+=>        34  7814037101  da0  GPT  (3.6T)
+          34      409606       - free -  (200M)
+      409640  7813365344    2  apple-hfs  (3.6T)
+  7813774984      262151       - free -  (128M)
+```
+
+### Mount an NTFS partition
+
+```shell-session
+root@truenas[/mnt]# kldload fuse.ko
+root@truenas[/mnt]# mkdir usb-hdd
+root@truenas[/mnt]# ntfs-3g /dev/da0p2 /mnt/usb-hdd
 ```
 
 ## 🐛 Issues
