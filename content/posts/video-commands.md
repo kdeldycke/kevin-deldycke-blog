@@ -18,10 +18,16 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
 
 ## FFmpeg
 
-  * Remux a flash video to an mp4 container without transcoding:
+  * Remux a Flash video to an MP4 container without transcoding:
 
         ```shell-session
         $ ffmpeg -i ./inpout.flv -vcodec copy -acodec copy ./output.mp4
+        ```
+        
+  * Transcode the audio track into AAC but keep the video and sub-titles as-is:
+
+        ```shell-session
+        $ ffmpeg -i ./inpout.mkv -vcodec copy -acodec aac -scodec copy ./output.mkv
         ```
 
   * Remove audio:
