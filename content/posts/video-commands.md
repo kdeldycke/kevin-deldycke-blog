@@ -21,7 +21,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   * Remux a flash video to an mp4 container without transcoding:
 
         ```shell-session
-        $ ffmpeg -vcodec copy -acodec copy -i inpout.flv output.mp4
+        $ ffmpeg -i ./inpout.flv -vcodec copy -acodec copy ./output.mp4
         ```
 
   * Remove audio:
@@ -35,7 +35,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   container](https://ffmpeg.org/faq.html#SEC29) (MPEG-1, MPEG-2 PS, DV):
 
         ```shell-session
-        $ cat M2U01802.MPG M2U01803.MPG M2U01804.MPG | ffmpeg -i - -acodec flac output.flac
+        $ cat ./M2U01802.MPG ./M2U01803.MPG ./M2U01804.MPG | ffmpeg -i - -acodec flac ./output.flac
         ```
 
   * Remove the first 16 seconds of video and change container to Matroska:
@@ -47,13 +47,13 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   * Extract the first frame of a video (great to generate image preview):
 
         ```shell-session
-        $ ffmpeg -i video.mov -r 1 -t 00:00:01 -f image2 images%05d.png
+        $ ffmpeg -i ./video.mov -r 1 -t 00:00:01 -f image2 ./images%05d.png
         ```
 
   * Extract a frame every 10 seconds:
 
         ```shell-session
-        $ ffmpeg -i video.mov -f image2 -r 1/10 preview-%04d.png
+        $ ffmpeg -i ./video.mov -f image2 -r 1/10 ./preview-%04d.png
         ```
 
   * Transcode the video stream to the [lossless HuffYUV codec](https://en.wikipedia.org/wiki/Huffyuv):
@@ -65,7 +65,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   * Produce a dummy 10 seconds video of a solid pink background at 1080p/60fps:
 
         ```shell-session
-        $ ffmpeg -f lavfi -i "color=color=pink:size=1920x1080" -r 60 -t 10 -c:v libx264 dummy.mp4
+        $ ffmpeg -f lavfi -i "color=color=pink:size=1920x1080" -r 60 -t 10 -c:v libx264 ./dummy.mp4
         ```
 
   * Produce a video from a static image and an audio file. That's the way I produced [Cool Cavemen's video tracks](https://www.youtube.com/channel/UCklBE-RIZESco4bp5kg80eA) for YouTube. Hence the special video filter option which [crop the image](http://ffmpeg.org/ffmpeg-filters.html#crop) to a square (thanks to [arithmetic operators](http://ffmpeg.org/ffmpeg-utils.html#Expression-Evaluation)) and [scale it](http://ffmpeg.org/ffmpeg-filters.html#scale-1) to a 1080x1080 pixels video:
