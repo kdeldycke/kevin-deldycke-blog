@@ -30,23 +30,41 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         $ ffmpeg -i ./input.mp4 -vcodec copy -an ./input-no-audio.mp4
         ```
 
-  * Transcode the audio track into AAC but keep the video and sub-titles as-is:
+  * Transcode the audio track into AAC but keep the video and subtitles as-is:
 
         ```shell-session
-        $ ffmpeg -i ./inpout.mkv -vcodec copy -acodec aac -scodec copy ./output.mkv
+        $ ffmpeg -i ./input.mkv -vcodec copy -acodec aac -scodec copy ./output.mkv
         ```
 
-  * Same as above, but introduce a negative 128.5 seconds delay on the sole subtitle track. Rely
-    on the [`srt` Python package](https://github.com/cdown/) as an intermediate step:
+  * Transcode all audio tracks to AAC (`-map 0:a` & `-acodec aac`) but keep all video streams as-is (`-map 0:v` & `-vcodec copy`).
+    Introduce a negative 128.5 seconds delay on the sole subtitle track using the [`srt` Python package](https://github.com/cdown/)
+    as an intermediate step. The `-map 1:s` option ensure only the original subtitle tracks are ignored:
 
         ```shell-session        
         $ pip install srt
-        $ for VIDEO_PATH in $(find ./ -name "*.mkv")
-        > do
-        >     ffmpeg -i "$VIDEO_PATH" "$VIDEO_PATH.srt"
-        >     srt fixed-timeshift --input "$VIDEO_PATH.srt" --inplace --seconds -128.5
-        >     ffmpeg -i "$VIDEO_PATH" -i "$VIDEO_PATH.srt" -vcodec copy -acodec aac -disposition:s:0 default "$VIDEO_PATH-fixed.mkv"
-        > done
+        $ ffmpeg -i ./input.mkv ./subtitle.srt
+        (...)
+        $ srt fixed-timeshift --input ./subtitle.srt --inplace --seconds -128.5
+        (...)
+        $ ffmpeg -i ./input.mkv -i ./subtitle.srt -map 0:v -vcodec copy -map 0:a -acodec aac -map 1:s -scodec copy ./video-fixed.mkv
+        (...)
+        Input #0, matroska,webm, from 'input.mkv':
+            Stream #0:0(eng): Video: h264 (High), yuv420p(progressive), 1280x720, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 1k tbn, 50 tbc (default)
+            Stream #0:1(fre): Audio: dts (DTS), 48000 Hz, 5.1(side), fltp, 1536 kb/s (default)
+            Stream #0:2(eng): Subtitle: subrip (default)
+            (...)
+        Input #1, srt, from 'subtitle.srt':
+            Stream #1:0: Subtitle: subrip
+            (...)
+        Stream mapping:
+          Stream #0:0 -> #0:0 (copy)
+          Stream #0:1 -> #0:1 (dts (dca) -> aac (native))
+          Stream #1:0 -> #0:2 (copy)
+          (...)
+        Output #0, matroska, to 'video-fixed.mkv':
+            Stream #0:0(eng): Video: h264 (High) (H264 / 0x34363248), yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)
+            Stream #0:1(fre): Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, 5.1(side), fltp, 394 kb/s (default)
+            Stream #0:2: Subtitle: subrip
         ```
 
   * Concatenate a series of videos and transcode the audio output to a `flac`
