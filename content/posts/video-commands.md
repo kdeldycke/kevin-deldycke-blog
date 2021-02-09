@@ -23,17 +23,30 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         ```shell-session
         $ ffmpeg -i ./inpout.flv -vcodec copy -acodec copy ./output.mp4
         ```
-        
+
+  * Remove audio:
+
+        ```shell-session
+        $ ffmpeg -i ./input.mp4 -vcodec copy -an ./input-no-audio.mp4
+        ```
+
   * Transcode the audio track into AAC but keep the video and sub-titles as-is:
 
         ```shell-session
         $ ffmpeg -i ./inpout.mkv -vcodec copy -acodec aac -scodec copy ./output.mkv
         ```
 
-  * Remove audio:
+  * Same as above, but introduce a negative 128.5 seconds delay on the sole subtitle track. Rely
+    on the [`srt` Python package](https://github.com/cdown/) as an intermediate step:
 
-        ```shell-session
-        $ ffmpeg -i ./input.mp4 -an -vcodec copy ./input-no-audio.mp4
+        ```shell-session        
+        $ pip install srt
+        $ for VIDEO_PATH in $(find ./ -name "*.mkv")
+        > do
+        >     ffmpeg -i "$VIDEO_PATH" "$VIDEO_PATH.srt"
+        >     srt fixed-timeshift --input "$VIDEO_PATH.srt" --inplace --seconds -128.5
+        >     ffmpeg -i "$VIDEO_PATH" -i "$VIDEO_PATH.srt" -vcodec copy -acodec aac -disposition:s:0 default "$VIDEO_PATH-fixed.mkv"
+        > done
         ```
 
   * Concatenate a series of videos and transcode the audio output to a `flac`
