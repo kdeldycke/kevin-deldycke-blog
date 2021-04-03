@@ -2,7 +2,7 @@
 date: 2020-10-27
 title: TrueNAS Configuration and Maintenance
 category: English
-tags: hardware, NAS, filesystem, OS, FreeNAS, TrueNAS, hdd, hard-drive, ssd, raid, storage, network, ZFS, disk, package manager, FreeBSD, NTFS, partition
+tags: hardware, NAS, filesystem, OS, FreeNAS, TrueNAS, hdd, hard-drive, ssd, raid, storage, network, ZFS, disk, package manager, FreeBSD, NTFS, partition, SuperMicro, BMC
 ---
 
 A collection of personal notes on the setup, configuration and maintenance of a home-office TrueNAS appliance.
@@ -10,6 +10,16 @@ A collection of personal notes on the setup, configuration and maintenance of a 
 ## 🖥 Hardware
 
 I dedicated a whole post on [building the machine](https://kevin.deldycke.com/2020/05/nas-hardware/), in which you'll get the detailed bill of material, cost breakdown and parts selection process.
+
+### Reset BMC password
+
+If you have one of iXsystems' TrueNAS server whose motherboard was produced by SuperMicro, there's a way to reset the BMC password with that CLI to use as `root`:
+
+```{.shell-session}
+[root@truenas] ~# ipmitool raw 0x3c 0x40
+
+[root@truenas] ~# 
+```
 
 ## 📊 Reports
 
