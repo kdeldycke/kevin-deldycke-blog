@@ -29,6 +29,18 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         ```shell-session
         $ ffmpeg -i ./input.mp4 -vcodec copy -an ./input-no-audio.mp4
         ```
+        
+  * Start audio 1.5 seconds later:
+
+        ```shell-session
+        $ ffmpeg -i ./input.mkv -itsoffset 1.5 -i ./input.mkv -map 0:v -vcodec copy -map 1:a -acodec copy ./video-fixed.mkv
+        ```
+
+  * Start audio 1.5 seconds earlier (notice the difference in `-map` index value compared to CLI above):
+
+        ```shell-session
+        $ ffmpeg -i ./input.mkv -itsoffset 1.5 -i ./input.mkv -map 1:v -vcodec copy -map 0:a -acodec copy ./video-fixed.mkv
+        ```
 
   * Transcode the audio track into AAC but keep the video and subtitles as-is:
 
