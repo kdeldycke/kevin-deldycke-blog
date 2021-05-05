@@ -2,7 +2,7 @@
 date: 2006-11-01 00:43:08
 title: Audio commands
 category: English
-tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool, sox, PCM, id3v2
+tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool, sox, PCM, id3v2, Apple Music
 ---
 
   * Convert `.wma` file to 192 kpbs `.mp3`:
@@ -48,6 +48,12 @@ tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool
 
         ```shell-session
         $ ffmpeg -i audio.wav -acodec alac audio.m4a
+        ```
+
+  * Convert FLAC audio file to Apple Losseless codec (ALAC), while preserving metadata, including embedded cover. This is perfect to import files into Apple Music:
+
+        ```shell-session
+        $ ffmpeg -i track.flac -vcodec copy -acodec alac track.m4a
         ```
 
   * Convert `.asf` audio file to PCM wave file:
