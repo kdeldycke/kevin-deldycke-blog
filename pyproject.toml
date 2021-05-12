@@ -30,7 +30,7 @@ pelican-tipue-search = {git = "https://github.com/pelican-plugins/tipue-search.g
 gensim = "^3.8.3"
 
 [tool.poetry.dev-dependencies]
-black = "^21.5b0"
+black = "^21.5b1"
 yamllint = "^1.26.1"
 pycodestyle = "^2.7.0"
 
