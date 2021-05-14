@@ -247,20 +247,20 @@ markdown = ["markdown (>=3.1)"]
 
 [[package]]
 name = "pelican-image-process"
-version = "2.1.0"
+version = "2.1.1"
 description = "Pelican plugin that automates image processing."
 category = "main"
 optional = false
-python-versions = ">=3.6,<4.0"
+python-versions = ">=3.6.2,<4.0"
 
 [package.dependencies]
 beautifulsoup4 = ">=4.9.3,<5.0.0"
-pelican = ">=4.5,<5.0"
+pelican = ">=3,<5"
 Pillow = ">=8.0.1,<9.0.0"
 six = ">=1.15.0,<2.0.0"
 
 [package.extras]
-markdown = ["markdown (>=3.2.2,<4.0.0)"]
+markdown = ["markdown (>=3.2,<4.0)"]
 
 [[package]]
 name = "pelican-neighbors"
@@ -571,7 +571,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.*"
-content-hash = "83262e482ed46b603bca9188ea5843cdd27fae1f52667cd422062b247f1e6608"
+content-hash = "dbc82ec8c96701fa34b803e355b29110a96342ae3d6d2533f5b12b68d90010f7"
 
 [metadata.files]
 appdirs = [
@@ -844,8 +844,8 @@ pelican = [
     {file = "pelican-4.6.0.tar.gz", hash = "sha256:bff507e454b62b7157001031edca259a40c72225778f6ea8221c201915e41f24"},
 ]
 pelican-image-process = [
-    {file = "pelican-image-process-2.1.0.tar.gz", hash = "sha256:e9288007730d4ad2e27e9c3a73f21224413bb27fda95038a8b8b27f5ca28ef2a"},
-    {file = "pelican_image_process-2.1.0-py3-none-any.whl", hash = "sha256:36f23efd7b187eb5d31a18cb783fbec851dae78726dd4d1b2fb06920dfe6fd2d"},
+    {file = "pelican-image-process-2.1.1.tar.gz", hash = "sha256:084075d70fd582011fadf2eca08df5ea44327a1ff84ce20ed58d8c5c084eef9f"},
+    {file = "pelican_image_process-2.1.1-py3-none-any.whl", hash = "sha256:4cfbbbf665cfeb43785d8af6ecd248f286568e0499fca27fdf1e5e4c37322889"},
 ]
 pelican-neighbors = [
     {file = "pelican-neighbors-1.1.0.tar.gz", hash = "sha256:a24a5cce71a99a4b8e7838de8d4a965b0c23748a60a1b444302f58040aceedf6"},
