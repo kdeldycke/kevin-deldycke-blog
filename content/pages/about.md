@@ -4,19 +4,17 @@ title: About
 
 My name is **Kevin Deldycke**, I'm a high-tech Engineering Manager from Paris, France.
 
-
 ## Short Bio
 
 ![](/uploads/2015/profile-photo.jpg){.float-left .w-25 .mr-3 .mb-3}
 
 I held various positions in several industries and sectors as VP, Product Manager, Founding Engineer and Consultant.
 
-After 15+ years of relevant engineering work, and 2+ years of hands-on management experience, I now build teams from scratch with self-sustaining culture, and my intent is to keep doing so.
+After 15+ years of relevant engineering work, and 3+ years of hands-on management experience, I now build teams from scratch with self-sustaining culture, and my intent is to keep doing so.
 
 Enabling engineers, leading managers, and make them feels productive is the most impactful thing I can bring to the table. So I'm always **on the lookout for high-tech management position, in fast growing start-ups** with ambitious vision.
 
-Most relevant experience was in [growing a team from 0 to 12](https://devtomanager.com/interviews/kevin-deldycke/) at a [world-class cloud computing provider](https://scaleway.com). We built up the whole [IAM ecosystem](https://github.com/kdeldycke/awesome-iam), as well as the [Billing and Payment stack](https://github.com/kdeldycke/awesome-billing).
-
+The most relevant experience was in [growing a team from 0 to 12](https://devtomanager.com/interviews/kevin-deldycke/) at a [cloud computing provider](https://scaleway.com). We built up the whole [IAM ecosystem](https://github.com/kdeldycke/awesome-iam), as well as the [Billing and Payment stack](https://github.com/kdeldycke/awesome-billing).
 
 ## Achievements
 
@@ -33,14 +31,16 @@ thing. All by myself.
 developer](https://kevin.deldycke.com/2017/04/github-top-developer/), and [top-1% open-source
 developer](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
 
-- 🌟 14,000+ GitHub stars for my repository about [Falsehoods Programmers Believe
-in](https://github.com/kdeldycke/awesome-falsehood). Regularly [featured on HN front page](https://github.com/kdeldycke/awesome-falsehood/blob/main/assets/in-the-media.md).
+- 🌟 17,000+ GitHub stars collected on my repositories. The most popular being the one about [Falsehoods Programmers Believe
+in](https://github.com/kdeldycke/awesome-falsehood). It is regularly [featured on popular medias](https://github.com/kdeldycke/awesome-falsehood/blob/main/assets/in-the-media.md).
 
 - 💵 Wrote the [best open-source
 payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
 software of the world.
 
 - 🌐 Created and managed the African subsidiary of my first employer.
+
+- 🛰 Have [code running on Mars](https://twitter.com/kdeldycke/status/1384862861210624005).
 
 - 🤩 [Mentioned by Cory Doctorow](https://twitter.com/kdeldycke/status/1319587008768020480).
 
@@ -67,7 +67,6 @@ Everything is [on LinkedIn](https://www.linkedin.com/in/kevindeldycke/).
 * *ERP5 business template and express wizard technology demonstration* - [EMPOSME](https://cordis.europa.eu/project/id/18071) (Enterprise Modelling and Performance Optimisation for SMEs), 2006, Ireland.
 * *ERP5 Design and Architecture* - [COFENIS 2006](https://web.archive.org/web/20130730225618/http://www.confenis.org/confenis2006/www.confenis.org/index6ea96ea9.html?q=photos&PHPSESSID=a6c772ef8dfbd7d71854f1cc9da4a1e6) - [IFIP](http://en.wikipedia.org/wiki/IFIP) international Conference on Research and Practical Issues of Enterprise Information Systems, 2006, Vienna, Austria.
 * [*Develop your own ERP with ERP5 Business Templates*](https://web.archive.org/web/20050924101245/https://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39) - [Solution Linux / Paris Open Source Summit](http://www.solutionslinux.fr), 2005, France.
-
 
 ## About this site
 
