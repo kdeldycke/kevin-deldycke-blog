@@ -6,7 +6,7 @@ My name is **Kevin Deldycke**, I'm a high-tech Engineering Manager from Paris, F
 
 ## Short Bio
 
-![](/uploads/2015/profile-photo.jpg){.float-left .w-25 .mr-3 .mb-3}
+![](/uploads/2018/profile-photo.jpg){.float-left .w-25 .mr-3 .mb-3}
 
 I held various positions in several industries and sectors as VP, Product Manager, Founding Engineer and Consultant.
 

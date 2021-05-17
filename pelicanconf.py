@@ -257,7 +257,7 @@ IMAGE_PROCESS = {
 
 # ----- Theme-specific settings
 
-SITE_THUMBNAIL = "/uploads/2015/profile-photo-squared-thumbnail.jpg"
+SITE_THUMBNAIL = "/uploads/2018/profile-photo-square-thumbnail.jpg"
 SITE_THUMBNAIL_TEXT = "Might come with a beard"
 
 SITESUBTITLE = " 🪒 Professional Yak Shaver"
