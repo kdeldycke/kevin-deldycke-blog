@@ -29,3 +29,6 @@ tags: CLI, Computer networking, find, Linux, openssh, proxy, rsync, scp, shell, 
         $ rsync --progress -vrae 'ssh -p 8022' /home/user/docs/ bill@server:/home/user/docs/
         ```
 
+Other resources:
+
+* [SSH quoting](https://www.chiark.greenend.org.uk/~cjwatson/blog/ssh-quoting.html)
