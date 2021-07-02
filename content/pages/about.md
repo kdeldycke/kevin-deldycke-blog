@@ -2,7 +2,7 @@
 title: About
 ---
 
-My name is **Kevin Deldycke**, I'm a high-tech Engineering Manager from Paris, France.
+My name is **Kevin Deldycke**, I'm a high-tech Engineering Manager.
 
 ## Short Bio
 
