@@ -311,5 +311,3 @@ href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International license</a>."""
 
 DISQUS_SITENAME = "kevin-deldycke-blog"
-
-GOOGLE_ANALYTICS = "UA-657524-1"
