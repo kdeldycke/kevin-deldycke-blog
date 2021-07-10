@@ -38,10 +38,12 @@ metadata on the last 10 commits ([665212
 ](https://github.com/python-babel/babel/commit/665212) being my PR's root, i.e.
 the last untouched commit):
 
+    ```shell-session
     $ git filter-branch --force --env-filter '
         export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
         export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
     ' -- 665212..patch-1
+    ```
 
 Still, commit checksums did not returned to their original value. There must be
 other metadata involved.
