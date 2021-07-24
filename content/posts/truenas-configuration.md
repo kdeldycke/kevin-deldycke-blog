@@ -156,6 +156,14 @@ Providers:
    fwheads: 255
 ```
 
+### Mount an NTFS partition
+
+```shell-session
+root@truenas[/mnt]# kldload fuse.ko
+root@truenas[/mnt]# mkdir usb-hdd
+root@truenas[/mnt]# ntfs-3g /dev/da0p2 /mnt/usb-hdd
+```
+
 ### Delete a partition
 
 ```shell-session
@@ -176,12 +184,19 @@ root@truenas[/mnt]# gpart show da0
   7813774984      262151       - free -  (128M)
 ```
 
-### Mount an NTFS partition
+### 3-pass USB HDD wipe
 
 ```shell-session
-root@truenas[/mnt]# kldload fuse.ko
-root@truenas[/mnt]# mkdir usb-hdd
-root@truenas[/mnt]# ntfs-3g /dev/da0p2 /mnt/usb-hdd
+root@truenas[/mnt]# bcwipe -v -me -t2 -b /dev/da0 
+Multithreading not supported.
+Run ./configure with --enable-pthreads option, then rebuild BCWipe to enable multithreading.
+Wiping scheme: US DoE, 3 pass(es)
+Wipe /dev/da0 (y/[n]/a)?y
+Wiping char device '/dev/da0'
+Device '/dev/da0' opened in direct access mode
+Device size 320072933376 bytes (312571224 kB), method 3
+Wiping char device '/dev/da0' pass 1/3 [random] started
+wipe pass  1/3 :    212992/312571224 kB (  0%)   Rate: 21233 kB/s   
 ```
 
 ## 🐛 Issues
