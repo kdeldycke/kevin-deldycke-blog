@@ -114,6 +114,48 @@ Options: -s (silent) -v (verbose) -V (extremely verbose) -d (debug)
 
 ## 💾 Storage
 
+### List all connected devices
+
+`nvd0` is the system's NVMe SSD, `ada0` a SATA HDD and `da0` a USB external drive.
+
+```shell-session
+root@truenas[/mnt]# geom disk list
+Geom name: nvd0
+Providers:
+1. Name: nvd0
+   Mediasize: 250059350016 (233G)
+   Sectorsize: 512
+   Mode: r1w1e2
+   descr: WDC WDS250G2B0C
+   rotationrate: 0
+   fwsectors: 0
+   fwheads: 0
+
+Geom name: ada0
+Providers:
+1. Name: ada0
+   Mediasize: 6001175126016 (5.5T)
+   Sectorsize: 512
+   Stripesize: 4096
+   Stripeoffset: 0
+   Mode: r1w1e3
+   descr: TOSHIBA HDWN160
+   rotationrate: 7200
+   fwsectors: 63
+   fwheads: 16
+
+Geom name: da0
+Providers:
+1. Name: da0
+   Mediasize: 320072933376 (298G)
+   Sectorsize: 512
+   Mode: r0w0e0
+   descr: ST332082 0ACE
+   rotationrate: unknown
+   fwsectors: 63
+   fwheads: 255
+```
+
 ### Delete a partition
 
 ```shell-session
