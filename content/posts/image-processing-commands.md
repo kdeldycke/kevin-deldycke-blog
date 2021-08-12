@@ -19,7 +19,13 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
   * Resize images of the current folder to progressive jpeg. Resized images will not be greater than 600x600, but the aspect ratio will be respected:
 
         ```shell-session
-        $ convert -resize 600x600 -sharpen 1 -interlace Line * pict%04d.jpg
+        $ convert -resize 600x600 -sharpen 1 -interlace Line ./* ./pict%04d.jpg
+        ```
+
+  * Reduce size of a PDF by limiting its images to 1000 pixels and convert its color-space to grayscale:
+
+        ```shell-session
+        $ convert -resize 1000x1000 -type Grayscale ./big.pdf ./smaller.pdf
         ```
 
 
