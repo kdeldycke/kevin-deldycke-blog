@@ -2,7 +2,7 @@
 date: 2006-10-18 00:15:16
 title: File Management commands
 category: English
-tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox, git, rmlint, fd, rsync
+tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox, git, rmlint, fd, rsync, ClamAV, antivirus
 ---
 
 ## Listing
@@ -234,4 +234,13 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         ```shell-session
         $ rmlint --progress --hidden --no-crossdev --keep-all-tagged ./backup-set1/ ./backup-set2/ // ./backup-set3/
         $ ./rmlint.sh
+        ```
+
+
+## Antivirus
+
+  * Download and refresh local ClamAV virus definition database:
+
+        ```shell-session
+        $ freshclam
         ```
