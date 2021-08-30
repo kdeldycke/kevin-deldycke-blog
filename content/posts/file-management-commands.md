@@ -244,3 +244,9 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         ```shell-session
         $ freshclam
         ```
+        
+  * Check all files, only display infected files and ring a bell when found (really slow scan):
+
+        ```shell-session
+        $ clamscan -r --bell -i /
+        ```
