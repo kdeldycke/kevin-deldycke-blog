@@ -2,7 +2,7 @@
 date: 2006-10-18 00:15:16
 title: File Management commands
 category: English
-tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox, git, rmlint, fd, rsync, ClamAV, antivirus
+tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox, git, rmlint, fd, rsync, ClamAV, antivirus, restic
 ---
 
 ## Listing
@@ -249,4 +249,20 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
 
         ```shell-session
         $ clamscan -r --bell -i /
+        ```
+
+
+## Backups
+
+  * Initialize and start a backup with [restic](https://restic.net):
+
+        ```shell-session
+        $ restic init
+        $ restic backup --one-file-system ~/
+        ```
+        
+  * Remove old backups:
+
+        ```shell-session
+        $ restic forget --keep-hourly 24 --keep-daily 15 --keep-weekly 13 --keep-monthly 12 --keep-yearly 3 --prune
         ```
