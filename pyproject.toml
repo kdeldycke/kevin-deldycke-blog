@@ -27,7 +27,7 @@ pelican-similar-posts = "^1.0.0"
 pelican-sitemap = "^1.0.2"
 pelican-neighbors = "^1.2.0"
 pelican-tipue-search = {git = "https://github.com/pelican-plugins/tipue-search.git", branch = "main"}
-gensim = "^4.0.1"
+gensim = "^4.1.1"
 
 [tool.poetry.dev-dependencies]
 black = "^21.7b0"
