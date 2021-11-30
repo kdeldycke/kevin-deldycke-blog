@@ -8,10 +8,18 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
 ## Processes
 
-  * Run a process detached to the current terminal:
+  * Run a process detached to the current terminal and monitor its output:
 
         ```shell-session
         $ nohup my_command &
+        $ tail -F ./nohup.out
+        ```
+
+  * Same as above but with multiple commands, the last cloning a disk to another:
+
+        ```shell-session
+        $ nohup zsh -c "my_command && cat /dev/da1 > /dev/da0" &
+        $ tail -F ./nohup.out
         ```
 
   * Run a process with a shell for a system user which has none (i.e. its default shell is set to `/bin/false` in `/etc/passwd`):
