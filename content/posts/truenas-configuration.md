@@ -216,7 +216,7 @@ wipe pass  1/3 :    212992/312571224 kB (  0%)   Rate: 21233 kB/s
   tank/my-data@auto-2021-09-03_00-00                           0B      -      209G  -
   tank/my-data@auto-2021-09-04_00-00                           0B      -      209G  -
   (...)
-  $ zfs list -r -t snapshot -o name -H tank/my-data | awk -F '\0' '{$2 = $1; sub(/^.*@auto\-/, "daily-", $2); print $1, $2;}' | xargs -I {} zfs rename {}
+  $ zfs list -r -t snapshot -o name -H tank/my-data | awk '{$2 = $1; sub(/^.*@auto\-/, "daily-", $2); print $1, $2;}' | xargs -I {} zfs rename {}
   zfs rename tank/my-data@auto-2021-09-02_00-00 daily-2021-09-02_00-00
   zfs rename tank/my-data@auto-2021-09-03_00-00 daily-2021-09-02_00-00
   zfs rename tank/my-data@auto-2021-09-04_00-00 daily-2021-09-02_00-00
