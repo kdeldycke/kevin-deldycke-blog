@@ -217,9 +217,9 @@ wipe pass  1/3 :    212992/312571224 kB (  0%)   Rate: 21233 kB/s
   tank/my-data@auto-2021-09-04_00-00                           0B      -      209G  -
   (...)
   $ zfs list -r -t snapshot -o name -H tank/my-data | awk '{$2 = $1; sub(/@auto\-/, "@daily-", $2); printf "%s\n%s\n", $1, $2;}' | tr '\n' '\0' | xargs -0 -n 2 -t zsh -c 'zfs rename "$0" "$1"'
-  zsh -c zfs rename "$0" "$1" tank/my-data@auto-2021-09-02_00-00 daily-2021-09-02_00-00
-  zsh -c zfs rename "$0" "$1" tank/my-data@auto-2021-09-03_00-00 daily-2021-09-02_00-00
-  zsh -c zfs rename "$0" "$1" tank/my-data@auto-2021-09-04_00-00 daily-2021-09-02_00-00
+  zsh -c zfs rename "$0" "$1" tank/my-data@auto-2021-09-02_00-00 tank/my-data@daily-2021-09-02_00-00
+  zsh -c zfs rename "$0" "$1" tank/my-data@auto-2021-09-03_00-00 tank/my-data@daily-2021-09-03_00-00
+  zsh -c zfs rename "$0" "$1" tank/my-data@auto-2021-09-04_00-00 tank/my-data@daily-2021-09-04_00-00
   (...)
   $ zfs list -r -t snapshot tank/my-data                                            
   NAME                                                       USED  AVAIL     REFER  MOUNTPOINT
