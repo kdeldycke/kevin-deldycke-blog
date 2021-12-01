@@ -199,6 +199,33 @@ Wiping char device '/dev/da0' pass 1/3 [random] started
 wipe pass  1/3 :    212992/312571224 kB (  0%)   Rate: 21233 kB/s   
 ```
 
+### ZFS
+
+* List all snaphots of the `tank/my-data` dataset:
+
+  ```shell-session
+  $ zfs list -r -t snapshot tank/my-data
+  ```
+
+* Rename all snaphot's names prefixes from `auto-` to `daily-`, for the `tank/my-data` dataset and its children:
+
+  ```shell-session
+  $ zfs list -r -t snapshot tank/my-data                                           
+  NAME                                                       USED  AVAIL     REFER  MOUNTPOINT
+  tank/my-data@auto-2021-09-02_00-00                           0B      -      209G  -
+  tank/my-data@auto-2021-09-03_00-00                           0B      -      209G  -
+  tank/my-data@auto-2021-09-04_00-00                           0B      -      209G  -
+  (...)  
+  $ zfs list -r -t snapshot -o name -H tank/my-data | awk -F'\0' '{print "zfs rename", $1} {sub(/^.*@auto\-/, "daily-"); print;}'  
+
+  $ zfs list -r -t snapshot tank/my-data                                            
+  NAME                                                       USED  AVAIL     REFER  MOUNTPOINT
+  tank/my-data@daily-2021-09-02_00-00                          0B      -      209G  -
+  tank/my-data@daily-2021-09-03_00-00                          0B      -      209G  -
+  tank/my-data@daily-2021-09-04_00-00                          0B      -      209G  -
+  (...)  
+  ```
+
 ## 🐛 Issues
 
 ### FreeNAS to TrueNAS migration
