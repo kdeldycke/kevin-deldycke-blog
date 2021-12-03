@@ -124,6 +124,13 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
         $ ln -s target link_name
         ```
 
+## Copy
+
+  * Dump a disk to an image while monitoring the copy progression:
+
+        ```shell-session
+        $ pv /dev/da0 > '/mnt/tank/my-data/HDD-01+02.img'
+        ```
 
 ## Renaming
 
