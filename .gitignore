@@ -14,6 +14,7 @@
 *.key
 *.crt
 *.cer
+*.der
 *.priv
 
 ### Emacs ###
@@ -321,6 +322,9 @@ pip-selfcheck.json
 # Ignore all local history of files
 .history
 .ionide
+
+# Support for Project snippet scope
+!.vscode/*.code-snippets
 
 ### Windows ###
 # Windows thumbnail cache files
