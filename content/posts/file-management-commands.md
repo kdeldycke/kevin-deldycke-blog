@@ -129,9 +129,15 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
   * Dump a disk to an image while monitoring the copy progression:
 
         ```shell-session
-        $ pv /dev/da0 > '/mnt/tank/my-data/HDD-01+02.img'
+        $ pv /dev/da0 > '/mnt/tank/my-data/HDD-part1+part2.img'
         ```
+        
+  * Same as above but over SSH:
 
+        ```shell-session
+        $ pv /dev/da0 | ssh me@192.168.0.10 "cat > /mnt/tank/my-data/HDD-part1+part2.img"
+        ```
+ 
 ## Renaming
 
   * Convert all files in the current folder to lower case:
