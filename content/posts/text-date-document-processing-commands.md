@@ -163,6 +163,29 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         This is a random sentence.
         ```
 
+  * Strip in-place the block of text starting with `XXX` and ending with an empty line:
+
+        ```{.shell-session hl_lines="12"}
+        $ cat ./example.md
+
+        This is a code block:
+
+        XXX{shell-session}
+        → apache
+        → java
+        → python
+
+        This is a random sentence.
+
+        $ perl -i -ne "print if not /XXX/ .. /^$/" ./example.md
+
+        $ cat ./example.md
+
+        This is a code block:
+
+        This is a random sentence.
+        ```
+
   * Append the content of the `addendum.txt` file to all `.markdown` files:
 
         ```shell-session
