@@ -13,7 +13,6 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
         $ convert img_*.bmp img_%04d.png
         ```
 
-
 ## Resize
 
   * Resize images of the current folder to progressive jpeg. Resized images will not be greater than 600x600, but the aspect ratio will be respected:
@@ -27,7 +26,18 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
         ```shell-session
         $ convert -resize 1000x1000 -type Grayscale ./big.pdf ./smaller.pdf
         ```
+  
+  * Assemble images vertically:
 
+        ```shell-session
+        $ convert img1.jpg img2.jpg img3.jpg -append big.jpg
+        ```
+        
+  * Assemble images horizontally:
+
+        ```shell-session
+        $ convert img1.jpg img2.jpg img3.jpg +append big.jpg
+        ```
 
 ## Cropping
 
@@ -42,7 +52,6 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
         ```shell-session
         $ convert ./original.png -bordercolor White -border 5%x5% ./original-with-border.pmg
         ```
-
 
 ## Optimization
 
