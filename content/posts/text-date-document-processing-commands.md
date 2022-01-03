@@ -186,7 +186,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         This is a random sentence.
         ```
 
-  * Python one-liner to delete the first occurence of a block of text delimited by triple-backticks fences. Contrary to methods above, this one is not distracted by blank lines within the text block:
+  * Python one-liner to delete the first occurrence of a block of text delimited by triple-backticks fences. Contrary to methods above, this one is not distracted by blank lines within the text block:
 
         ```shell-session
         python -c 'import re; from pathlib import Path; file = Path("./example.md"); file.write_text(re.sub(r"^\`\`\`.*?\`\`\`\n\n", "", file.read_text(), count=1, flags=re.MULTILINE | re.DOTALL))'
