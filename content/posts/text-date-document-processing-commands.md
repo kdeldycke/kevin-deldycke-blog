@@ -186,6 +186,12 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         This is a random sentence.
         ```
 
+  * Python one-liner to delete the first occurence of a block of text delimited by triple-backticks fences. Contrary to methods above, this one is not distracted by blank lines within the text block:
+
+        ```shell-session
+        python -c 'import re; from pathlib import Path; print(re.sub(r"^\`\`\`.*?\`\`\`\n", "", Path("./example.md").read_text(), count=1, flags=re.MULTILINE | re.DOTALL))' > ./example.md
+        ```
+
   * Append the content of the `addendum.txt` file to all `.markdown` files:
 
         ```shell-session
