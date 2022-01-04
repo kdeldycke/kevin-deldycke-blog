@@ -29,6 +29,12 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         ```shell-session
         $ sed 's/string to replace/replacement string/g' original-file.txt > new-file.txt
         ```
+        
+  * Dynamic, in-place replacement of `unreleased` text with today's date:
+
+        ```shell-session
+        $ sed -i "s/unreleased/`date +'%Y-%m-%d'`/" ./changelog.md
+        ```
 
   * Replace all occurrences of `str1` by `str2` in all files below the `/folder` path:
 
@@ -186,10 +192,16 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         This is a random sentence.
         ```
 
+  * Same as above, but with `sed`:
+
+        ```shell-session
+        $ sed -i "/^XXX/,/^$/ d" ./example.md
+        ```
+
   * Python one-liner to delete the first occurrence of a block of text delimited by triple-backticks fences. Contrary to methods above, this one is not distracted by blank lines within the text block:
 
         ```shell-session
-        python -c 'import re; from pathlib import Path; file = Path("./example.md"); file.write_text(re.sub(r"^\`\`\`.*?\`\`\`\n\n", "", file.read_text(), count=1, flags=re.MULTILINE | re.DOTALL))'
+        $ python -c 'import re; from pathlib import Path; file = Path("./example.md"); file.write_text(re.sub(r"^\`\`\`.*?\`\`\`\n\n", "", file.read_text(), count=1, flags=re.MULTILINE | re.DOTALL))'
         ```
 
   * Append the content of the `addendum.txt` file to all `.markdown` files:
