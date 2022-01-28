@@ -2,8 +2,16 @@
 date: 2019-07-22 23:18:55
 title: macOS commands
 category: English
-tags: CLI, macOS, Apple, OSX, PluginKit
+tags: CLI, macOS, Apple, OSX, PluginKit, TimeMachine
 ---
+
+## TimeMachine
+
+  * Compress sparse bundle disk image mounted over a network:
+
+        ```shell-session
+        $ sudo hdiutil compact /Volumes/time-machine-backups/my-machine.sparsebundle
+        ```
 
 ## PluginKit
 
