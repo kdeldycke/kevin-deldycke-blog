@@ -272,6 +272,12 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         ```shell-session
         $ convert -density 150 ./*.jpg ./document.pdf
         ```
+        
+  * Remove password of a PDF:
+
+        ```shell-session
+        $ pdftk ./password-protected.pdf input_pw PROMPT output ./no-password.pdf
+        ```
 
   * Split a PDF into pages:
 
