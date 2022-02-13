@@ -50,7 +50,13 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
   * Add a 5% white border around the image:
 
         ```shell-session
-        $ convert ./original.png -bordercolor White -border 5%x5% ./original-with-border.pmg
+        $ convert ./original.png -bordercolor White -border 5%x5% ./original-with-border.png
+        ```
+
+  * Same as above but with a deep black 5% border on the side and a total image height 3x times taller as the original:
+
+        ```shell-session
+        $ convert ./original.png -bordercolor '#1a1a1a' -border 5%x100% ./original-with-border.png
         ```
 
 ## Optimization
