@@ -2,7 +2,7 @@
 date: 2010-03-26 17:08:36
 title: Web commands
 category: English
-tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509, Regular expression, MIME type, Media Type
+tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509, Regular expression, MIME type, Media Type, proxy, SOCKS, Tor, curl
 ---
 
 
@@ -14,6 +14,12 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
         $ wget -r -p -nc -nH --level=1 https://pypi.python.org/simple/python-ldap/
         ```
 
+  * Check the local SOCKS proxy started by a Tor Browser is working:
+
+        ```shell-session
+        $ curl --preproxy 127.0.0.1:9150 "https://check.torproject.org"
+        ```
+        
   * Create a PNG image of a rendered html page:
 
         ```shell-session
