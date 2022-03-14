@@ -2,7 +2,7 @@
 date: 2010-03-26 17:08:36
 title: Web commands
 category: English
-tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509, Regular expression, MIME type, Media Type, proxy, SOCKS, Tor, curl
+tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509, Regular expression, MIME type, Media Type, proxy, SOCKS, Tor, curl, yt-dlp
 ---
 
 
@@ -20,6 +20,12 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
         $ curl --preproxy 127.0.0.1:9150 "https://check.torproject.org"
         ```
         
+  * Reuse local Tor Browser proxy to download a video:
+
+        ```shell-session
+        $ yt-dlp --proxy socks5://127.0.0.1:9150 "https://www.video-provider.com/watch/random_id"
+        ```
+
   * Create a PNG image of a rendered html page:
 
         ```shell-session
