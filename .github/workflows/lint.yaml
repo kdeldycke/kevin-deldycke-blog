@@ -10,7 +10,7 @@ jobs:
     name: Lint and check Python code
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3.0.2
       - uses: actions/setup-python@v2.3.1
         with:
           python-version: '3.9'
@@ -27,7 +27,7 @@ jobs:
     name: Lint YAML files
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3.0.2
       - uses: actions/setup-python@v2.3.1
         with:
           python-version: '3.9'
@@ -45,7 +45,7 @@ jobs:
     name: Lint HTML files
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3.0.2
         with:
           submodules: true
       - uses: actions/setup-python@v2.3.1
