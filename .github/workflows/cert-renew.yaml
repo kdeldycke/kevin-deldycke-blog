@@ -11,7 +11,7 @@ jobs:
     name: Renew Let's Encrypt Certificate
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/setup-python@v2.3.1
+      - uses: actions/setup-python@v4.2.0
         with:
           python-version: '3.9'
       - name: Install certbot
