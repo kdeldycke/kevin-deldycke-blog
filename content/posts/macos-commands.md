@@ -2,7 +2,7 @@
 date: 2019-07-22 23:18:55
 title: macOS commands
 category: English
-tags: CLI, macOS, Apple, OSX, PluginKit, TimeMachine, diskutil
+tags: CLI, macOS, Apple, OSX, PluginKit, TimeMachine, network, DNS, diskutil
 ---
 
 ## TimeMachine
@@ -47,6 +47,14 @@ tags: CLI, macOS, Apple, OSX, PluginKit, TimeMachine, diskutil
         $ sudo kextunload -b com.google.drivefs.filesystems.dfsfuse
         ```
 
+## Network
+
+  * Clear local DNS cache:
+
+        ```shell-session
+        $ sudo killall -HUP mDNSResponder
+        ```
+
 ## Filesystem
 
   * List all partitions of all disks:
@@ -54,13 +62,13 @@ tags: CLI, macOS, Apple, OSX, PluginKit, TimeMachine, diskutil
         ```shell-session
         $ diskutil list
         ```
-        
+
   * Remove the first partition of the fourth disk:
 
         ```shell-session
         $ diskutil eraseVolume free free /dev/disk4s1
         ```
-    
+
   * [Install Steam in a case-insensitive disk image](https://github.com/kdeldycke/dotfiles/blob/b711023285488f94fa0968a5ceff75c4322548bd/scripts/osx-install.sh#L149-L162).
 
 
