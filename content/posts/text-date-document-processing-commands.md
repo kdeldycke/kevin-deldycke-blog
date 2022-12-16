@@ -2,7 +2,7 @@
 date: 2006-12-13 22:10:13
 title: Text, Date & Document processing commands
 category: English
-tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, Perl, Regular expression, GhostScript, X.org
+tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, Perl, Regular expression, GhostScript, X.org, pdfgrep
 ---
 
 ## Search
@@ -29,7 +29,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         ```shell-session
         $ sed 's/string to replace/replacement string/g' original-file.txt > new-file.txt
         ```
-        
+
   * Dynamic, in-place replacement of `unreleased` text with today's date:
 
         ```shell-session
@@ -255,6 +255,12 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 
 ## PDF
 
+  * Case-insensitive search of a string in a PDF, thanks to [`pdfgrep`](https://pdfgrep.org):
+
+        ```shell-session
+        $ pdfgrep --page-number --ignore-case 'my_string' ./document.pdf
+        ```
+
   * Convert a PDF to a JPEG file at 150 dpi:
 
         ```shell-session
@@ -272,7 +278,7 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         ```shell-session
         $ convert -density 150 ./*.jpg ./document.pdf
         ```
-        
+
   * Remove password of a PDF:
 
         ```shell-session
@@ -314,3 +320,4 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
 ## Additional References
 
   * A list of [`sed` one-liners](http://sed.sourceforge.net/sed1line.txt).
+  * [PDF processing and analysis with open-source tools](https://www.bitsgalore.org/2021/09/06/pdf-processing-and-analysis-with-open-source-tools)
