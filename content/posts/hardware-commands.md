@@ -2,7 +2,7 @@
 date: 2006-12-06 23:18:55
 title: Hardware commands
 category: English
-tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D, dmidecode, printer, CUPS, smartmontools
+tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D, dmidecode, printer, CUPS, smartmontools, NTFS
 ---
 
 ## Computer
@@ -64,6 +64,11 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
         > fi
         ```
 
+  * Mount an NTFS partition:
+
+        ```shell-session
+        $ sudo ntfs-3g /dev/disk4s2 ./usb-hdd -o local -o allow_other -o auto_xattr -o auto_cache
+        ```
 
 ## Keyboard
 
@@ -138,7 +143,7 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
         printer HP_Color_LaserJet_M254dw_0 is idle.  enabled since Fri Nov  6 17:47:06 2020
         system default destination: HP_Color_LaserJet_M254dw_0
         ```
-        
+
         ```shell-session
         $ lpq
         HP_Color_LaserJet_M254dw_0 is ready and printing
