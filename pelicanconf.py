@@ -83,7 +83,7 @@ else:
         },
         "markdown.extensions.fenced_code": {},
     }
-MARKDOWN["extension_configs"].update(code_config)
+MARKDOWN["extension_configs"].update(code_config)  # type: ignore[attr-defined]
 
 # Do not publish articles set in the future
 WITH_FUTURE_DATES = False
