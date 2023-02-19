@@ -27,11 +27,11 @@ plumage = { git = "https://github.com/kdeldycke/plumage.git", branch = "main" }
 pygments = "^2.9.0"
 pelican-image-process = "^2.1.3"
 pelican-seo = "^1.2.2"
-pelican-similar-posts = "^1.0.0"
+#pelican-similar-posts = "^1.0.0"
 pelican-sitemap = "^1.0.2"
 pelican-neighbors = "^1.2.0"
 pelican-tipue-search = { git = "https://github.com/pelican-plugins/tipue-search.git", branch = "main" }
-gensim = "^4.3.0"
+#gensim = "^4.3.0"
 pelican-webassets = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
