@@ -40,6 +40,7 @@ mypy = "^1.0"
 # XXX Use old version of certbot until certbot-s3front supports new version:
 # https://github.com/dlapiduz/certbot-s3front/issues/91
 certbot = "< 2.0.0"
+acme = "< 2.0.0"
 certbot-s3front = "^0.4.2"
 
 [tool.mypy]
