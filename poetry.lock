@@ -1112,8 +1112,10 @@ pynpm = "^0.1.2"
 pyquery = "^1.4.3"
 
 [package.source]
-type = "directory"
-url = "../plumage"
+type = "git"
+url = "https://github.com/kdeldycke/plumage.git"
+reference = "main"
+resolved_reference = "ea3be0b87fd02c6f6feeb80f4626ac95f9f3c21e"
 
 [[package]]
 name = "pycparser"
@@ -1624,4 +1626,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "2b6d45bc0473f27252f88a7b5b44024f925b443a7bb96fa2404e6cd54a7a05c3"
+content-hash = "a508b0e36b6e54fc13d285a430911f19e348619cac142ff8872508bf560c0d44"
