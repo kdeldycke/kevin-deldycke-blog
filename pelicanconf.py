@@ -272,9 +272,13 @@ CODE_STYLE = "monokai"
 
 TIPUE_SEARCH = True
 
-LEFT_SIDEBAR = """
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0142056597033291"
-        crossorigin="anonymous"></script>
+LEFT_SIDEBAR = (
+    """
+    <script async
+    """
+    """src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?"""
+    """client=ca-pub-0142056597033291" crossorigin="anonymous"></script>"""
+    """
     <!-- Responsive Ad -->
     <ins class="adsbygoogle"
          style="display:block"
@@ -284,8 +288,9 @@ LEFT_SIDEBAR = """
          data-full-width-responsive="true"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>    
+    </script>
     """
+)
 
 ARTICLE_EDIT_LINK = (
     "https://github.com/kdeldycke/kevin-deldycke-blog/edit/main/content/posts/"
