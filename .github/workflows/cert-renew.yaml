@@ -2,8 +2,8 @@
 name: Renew Cert
 "on":
   schedule:
-    # Renew monthly: every first day of the month at 07:19.
-    - cron: "19 7 1 * *"
+    # Every day at 07:19.
+    - cron: "19 7 * * *"
 
 jobs:
 
@@ -31,8 +31,6 @@ jobs:
           -i certbot-s3front:installer
           --certbot-s3front:installer-cf-distribution-id EUI0N3OAXXXYY
           -d kevin.deldycke.com
-          --renew-by-default
-          --text
           --config-dir ./letsencrypt
           --logs-dir   ./letsencrypt/logs
           --work-dir   ./letsencrypt
