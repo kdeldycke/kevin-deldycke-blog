@@ -10,14 +10,14 @@ jobs:
 
   deploy:
     name: Deploy to AWS
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2.4.0
         with:
           submodules: true
       - uses: actions/setup-python@v2.3.1
         with:
-          python-version: '3.9'
+          python-version: '3.11'
       - name: Install Pelican
         run: |
           python -m pip install --upgrade pip

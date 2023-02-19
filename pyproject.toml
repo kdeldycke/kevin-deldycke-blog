@@ -1,7 +1,8 @@
 [tool.poetry]
+# Docs: https://python-poetry.org/docs/pyproject/
 name = "blog"
-version = "1.0.0"
-description = "Kevin Deldycke's personal blog."
+version = "2.0.0"
+description = "Kevin Deldycke's personal blog"
 license = 'CC-BY-NC-SA-4.0'
 authors = ["Kevin Deldycke <kevin@deldycke.com>"]
 readme = "readme.md"
@@ -12,34 +13,46 @@ repository = 'https://github.com/kdeldycke/kevin-deldycke-blog'
 "Funding" = "https://github.com/sponsors/kdeldycke"
 
 [tool.poetry.dependencies]
-python = "3.9.*"
-pelican = {extras = ["Markdown"], version = "^4.6.0"}
+# List of python versions and their support status:
+# https://en.wikipedia.org/wiki/History_of_Python#Support
+python = "^3.11"
+pelican = { extras = ["Markdown"], version = "^4.8.0" }
 pymdown-extensions = "^8.2"
 typogrify = "^2.0.7"
 beautifulsoup4 = "^4.9.3"
 mdx_video = "^0.1.8"
 # mdx_titlecase = "^1.2.0"
-plumage = {git = "https://github.com/kdeldycke/plumage.git", branch = "main"}
+plumage = { git = "https://github.com/kdeldycke/plumage.git", branch = "main" }
+#plumage = { path = "../plumage/", develop = false }
 pygments = "^2.9.0"
 pelican-image-process = "^2.1.3"
-pelican-seo = {git = "https://github.com/pelican-plugins/seo.git", branch = "master"}
+pelican-seo = "^1.2.2"
 pelican-similar-posts = "^1.0.0"
 pelican-sitemap = "^1.0.2"
 pelican-neighbors = "^1.2.0"
-pelican-tipue-search = {git = "https://github.com/pelican-plugins/tipue-search.git", branch = "main"}
-gensim = "^4.0.1"
+pelican-tipue-search = { git = "https://github.com/pelican-plugins/tipue-search.git", branch = "main" }
+gensim = "^4.3.0"
+pelican-webassets = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
-black = "^21.10b0"
-yamllint = "^1.26.1"
-pycodestyle = "^2.7.0"
+bump2version = "^1.0.1"
+mypy = "^1.0"
 # XXX Use old version of certbot until certbot-s3front supports new version:
 # https://github.com/dlapiduz/certbot-s3front/issues/91
 certbot = "< 2.0.0"
 certbot-s3front = "^0.4.2"
 
-[tool.black]
-target-version = ['py39']
+[tool.mypy]
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+warn_unreachable = true
+pretty = true
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = []
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
