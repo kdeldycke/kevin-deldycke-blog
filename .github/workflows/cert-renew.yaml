@@ -4,6 +4,12 @@ name: Renew Cert
   schedule:
     # Every day at 07:19.
     - cron: "19 7 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      # Triggers on any workflow self-update.
+      - .github/workflows/cert-renew.yaml
 
 jobs:
 
