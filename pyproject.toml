@@ -25,7 +25,7 @@ mdx_video = "^0.1.8"
 plumage = { git = "https://github.com/kdeldycke/plumage.git", branch = "main" }
 #plumage = { path = "../plumage/", develop = false }
 pygments = "^2.9.0"
-pelican-image-process = "^2.1.3"
+pelican-image-process = "^3.0.3"
 pelican-seo = "^1.2.2"
 #pelican-similar-posts = "^1.0.0"
 pelican-sitemap = "^1.0.2"
