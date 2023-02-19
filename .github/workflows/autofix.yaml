@@ -11,3 +11,9 @@ jobs:
 
   autofix:
     uses: kdeldycke/workflows/.github/workflows/autofix.yaml@v2.9.0
+    with:
+      gitignore-extra-categories: >
+        backup
+        certificates
+        gpg
+        ssh
