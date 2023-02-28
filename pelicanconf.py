@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 # XXX Use local plumage copy for dev
 # from importlib.machinery import SourceFileLoader
 # from pathlib import Path
