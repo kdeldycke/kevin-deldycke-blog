@@ -1127,7 +1127,7 @@ docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-inline
 tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
 
 [[package]]
-name = "plumage"
+name = "\"
 version = "3.0.0"
 description = "Clean and tidy theme for Pelican."
 category = "main"
@@ -1152,7 +1152,7 @@ pyquery = "^2.0.0"
 type = "git"
 url = "https://github.com/kdeldycke/plumage.git"
 reference = "main"
-resolved_reference = "d7617550857dcdbbfdb5b7f80bff5eac8b0c6183"
+resolved_reference = "a6baf11b020ff86994e2df54829d8be9fc58dde0"
 
 [[package]]
 name = "pycparser"
