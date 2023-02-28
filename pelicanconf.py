@@ -8,7 +8,6 @@
 
 import plumage
 
-
 SITEURL = "http://localhost:8000"
 RELATIVE_URLS = False
 
