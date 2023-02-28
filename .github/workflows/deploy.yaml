@@ -9,65 +9,36 @@ name: Deploy
 jobs:
 
   deploy:
-    name: Deploy to AWS
+    name: Deploy to Cloudflare Pages
     runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+      deployments: write
     steps:
       - uses: actions/checkout@v3.3.0
         with:
           submodules: true
       - uses: actions/setup-python@v4.5.0
         with:
-          python-version: '3.11'
-      - name: Install Pelican
+          python-version: "3.11"
+      - name: Update pip and Poetry
         run: |
           python -m pip install --upgrade pip
           python -m pip install --upgrade poetry
+      - name: Install Pelican
+        run: |
           poetry install
-      - name: Prepare site for publishing
+      - name: Generate static content
         run: |
           poetry run pelican --verbose --settings ./publishconf.py ./content
-      - name: Setup AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1.7.0
+      - name: Install Cloudflare CLI
+        run: |
+          npm install -g wrangler
+      - name: Publish
+        uses: cloudflare/pages-action@v1.3.0
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-      - name: Create destination bucket
-        run: |
-          aws s3 mb s3://kevin.deldycke.com
-      - name: Setup static webhosting
-        run: >
-          aws s3api put-bucket-website
-          --cli-input-json file://aws-s3-put-bucket-website.json
-      - name: Upload static website
-        run: >
-          aws s3 sync ./output s3://kevin.deldycke.com --delete
-          --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
-          full=emailaddress=kevin@deldycke.com
-      - name: Check upload
-        run: |
-          aws s3api head-object --bucket kevin.deldycke.com --key index.html
-      - name: Set RSS feed content type
-        run: >
-          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
-          --exclude '*' --include '*feed/index.html'
-          --no-guess-mime-type --content-type "application/rss+xml"
-          --metadata-directive "REPLACE"
-      - name: Set ATOM feed content type
-        run: >
-          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
-          --exclude '*' --include '*feed/atom/index.html'
-          --no-guess-mime-type --content-type "application/atom+xml"
-          --metadata-directive "REPLACE"
-      - name: Set Apple Numbers content type
-        run: >
-          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
-          --exclude '*' --include '*.numbers'
-          --no-guess-mime-type --content-type "application/vnd.apple.numbers"
-          --metadata-directive "REPLACE"
-      - name: Set Microsoft regedit content type
-        run: >
-          aws s3 cp s3://kevin.deldycke.com s3://kevin.deldycke.com --recursive
-          --exclude '*' --include '*.reg'
-          --no-guess-mime-type --content-type "text/x-ms-regedit"
-          --metadata-directive "REPLACE"
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: "kevin-deldycke-blog"
+          directory: "output"
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
