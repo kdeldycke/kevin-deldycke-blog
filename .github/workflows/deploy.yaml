@@ -34,6 +34,9 @@ jobs:
       - name: Install Cloudflare CLI
         run: |
           npm install -g wrangler
+      - name: "XXX Temporarily remove files >25 MiB"
+        run: |
+          rm -f ./output/uploads/2020/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu
       - name: Publish
         uses: cloudflare/pages-action@v1.3.0
         with:
