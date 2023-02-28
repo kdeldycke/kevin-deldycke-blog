@@ -41,8 +41,7 @@ MARKDOWN = {
         },
         # XXX broken on Python 3.9
         # "mdx_titlecase.mdx_titlecase:TitlecaseExtension": {},
-        # XXX mdx_video is unmaintained and broken.
-        # "mdx_video": {},
+        "mdx_video": {},
         # https://facelessuser.github.io/pymdown-extensions/
         "pymdownx.betterem": {},
         "pymdownx.caret": {},

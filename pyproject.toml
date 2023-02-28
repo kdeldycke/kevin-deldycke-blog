@@ -19,8 +19,13 @@ python = "^3.11"
 pelican = { extras = ["Markdown"], version = "^4.8.0" }
 typogrify = "^2.0.7"
 beautifulsoup4 = "^4.9.3"
-# mdx_video = "^0.1.8"  # XXX Broken!
 # mdx_titlecase = "^1.2.0"  # XXX Broken!
+# XXX Use forked version of mdx-video plugin as the project is clearly unmaintained:
+# https://github.com/italomaia/mdx-video/issues/14
+# mdx-video is good enough for now. An alternative worth exploring in the furture is pymdown-extensions,
+# which has an experimental generic directive feature (https://github.com/facelessuser/pymdown-extensions/pull/1777)
+# in the work that could be used to implement video embeds (https://github.com/facelessuser/pymdown-extensions/issues/896#issuecomment-1207153095).
+mdx_video = { git = "https://github.com/dtantsur/mdx-video.git", rev = "a358317fafbeb78622afe1c05e08986809005b3d" }
 plumage = { git = "https://github.com/kdeldycke/plumage.git", branch = "main" }
 # plumage = { path = "../plumage/", develop = false }  # XXX Dev!
 pelican-image-process = "^3.0.3"
