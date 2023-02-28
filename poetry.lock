@@ -1127,7 +1127,7 @@ docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-inline
 tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
 
 [[package]]
-name = "\"
+name = "plumage"
 version = "3.0.0"
 description = "Clean and tidy theme for Pelican."
 category = "main"
