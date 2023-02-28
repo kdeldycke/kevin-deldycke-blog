@@ -784,6 +784,25 @@ files = [
 ]
 
 [[package]]
+name = "mdx-video"
+version = "0.2.0"
+description = "Python-Markdown extension for easy video embedding"
+category = "main"
+optional = false
+python-versions = "*"
+files = []
+develop = false
+
+[package.dependencies]
+markdown = ">=3.0"
+
+[package.source]
+type = "git"
+url = "https://github.com/dtantsur/mdx-video.git"
+reference = "a358317fafbeb78622afe1c05e08986809005b3d"
+resolved_reference = "a358317fafbeb78622afe1c05e08986809005b3d"
+
+[[package]]
 name = "mock"
 version = "5.0.1"
 description = "Rolling backport of unittest.mock for all Pythons"
@@ -1647,4 +1666,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "529f401219c577d2899208b1178f2c23ce6a624bb0ee8e6efaf216d0a444a55e"
+content-hash = "c6acea39582f5396210450599b689818bd8bb64f7251e2a4968c7a9e520d957e"
