@@ -1,0 +1,8 @@
+/tags.html                  /tags/                      301
+/categories.html            /categories/                301
+/category/lang/en/*         /category/english/:splat    301
+/category/lang/fr/*         /category/francais/:splat   301
+/archives.html              /archives/                  301
+/static/uploads/*           /uploads/:splat             301
+/wp-content/uploads/*       /uploads/:splat             301
+/static/documents/*         /documents/:splats          301
