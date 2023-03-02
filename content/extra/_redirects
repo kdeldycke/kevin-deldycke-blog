@@ -13,6 +13,10 @@
 /documents                  /documents/             301
 /uploads                    /uploads/               301
 
+/feed                       /feed/                  301
+/feed/index/                /feed/                  301
+/feed/atom                  /feed/atom/             301
+/feed/atom/index/           /feed/atom/             301
 /*/feed                     /:splat/feed/           301
 /*/feed/index/              /:splat/feed/           301
 /*/feed/atom                /:splat/feed/atom/      301

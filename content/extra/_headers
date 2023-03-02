@@ -4,9 +4,13 @@
 # Set RSS feed content type.
 /*/feed/
     content-type: application/rss+xml
+/feed/
+    content-type: application/rss+xml
 
 # Set ATOM feed content type.
 /*/feed/atom/
+    content-type: application/atom+xml
+/feed/atom/
     content-type: application/atom+xml
 
 # Set Apple Numbers content type.
