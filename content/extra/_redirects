@@ -77,10 +77,6 @@
 /*/feed/rdf     /:splat/feed/   301
 /*/feed/rdf/    /:splat/feed/   301
 
-# Links to a particular comment are no longer supported following Disqus migration.
-# (.*)/comment-page-\d+/?.* $1
-/*/comment-page-    /:splat/    301
-
 # Site-wide comments feeds moved to Disqus
 /comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss
 /comments/feed/*    https://kevin-deldycke-blog.disqus.com/latest.rss
