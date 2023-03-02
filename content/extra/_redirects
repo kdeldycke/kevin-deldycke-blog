@@ -10,8 +10,8 @@
 /tag                        /tags/                  301
 /tag/                       /tags/                  301
 
-/documents                  /documents/             301
-/uploads                    /uploads/               301
+/documents                  /                       301
+/uploads                    /                       301
 
 /feed                       /feed/                  301
 /feed/index/                /feed/                  301
