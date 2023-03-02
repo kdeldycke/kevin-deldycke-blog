@@ -1,9 +1,12 @@
+# _headers directives seems to be applied after all others from _redirects, so
+# the matching URL here should be the canonical one.
+
 # Set RSS feed content type.
-/*/feed/index.html
+/*/feed/
     content-type: application/rss+xml
 
 # Set ATOM feed content type.
-/*/feed/atom/index.html
+/*/feed/atom/
     content-type: application/atom+xml
 
 # Set Apple Numbers content type.

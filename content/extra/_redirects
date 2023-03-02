@@ -1,11 +1,22 @@
 ################################################################################
 # Canonical redirects of current Pelican URLs
 ################################################################################
-/*.html                     /:splat/                    301
+/*.html                     /:splat/                301
 
-/author/                    /authors/                   301
-/category/                  /categories/                301
-/tag/                       /tags/                      301
+/author                     /authors/               301
+/author/                    /authors/               301
+/category                   /categories/            301
+/category/                  /categories/            301
+/tag                        /tags/                  301
+/tag/                       /tags/                  301
+
+/documents                  /documents/             301
+/uploads                    /uploads/               301
+
+/*/feed                     /:splat/feed/           301
+/*/feed/index/              /:splat/feed/           301
+/*/feed/atom                /:splat/feed/atom/      301
+/*/feed/atom/index/         /:splat/feed/atom/      301
 
 
 ################################################################################
@@ -14,27 +25,36 @@
 /404-not-found/*            /404/                       301
 /500-not-found/*            /500/                       301
 
-/pages/*                    /:splat/                    301
+/pages                      /                       301
+/pages/*                    /:splat/                301
 
-/static/documents/*         /documents/:splat           301
+/static/documents           /documents/             301
+/static/documents/*         /documents/:splat       301
 
-/static/uploads/*           /uploads/:splat             301
-/uploads/:year/:month/:slug /uploads/:year/:slug        301
+/static/uploads             /uploads/               301
+/static/uploads/*           /uploads/:splat         301
+/uploads/:year/:month/:slug /uploads/:year/:slug    301
 
 /mandriva-rpm-repository    https://github.com/kdeldycke/mandriva-specs
+/mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
 /static/repository          https://github.com/kdeldycke/mandriva-specs
+/static/repository/*        https://github.com/kdeldycke/mandriva-specs
 
 
 ################################################################################
 # Old WordPress URLs
 ################################################################################
-/wp-content/uploads/*       /uploads/:splat             301
+/wp-content/uploads     /uploads/           301
+/wp-content/uploads/*   /uploads/:splat     301
 
 # Map old WordPress categories to new Pelican ones.
-/category/lang/en/*         /category/english/:splat    301
-/category/lang/fr/*         /category/francais/:splat   301
+/category/lang/en       /category/english/      301
+/category/lang/en/*     /category/english/      301
+/category/lang/fr       /category/francais/     301
+/category/lang/fr/*     /category/francais/     301
 # Hierarchical categories are not supported by Pelican.
-/category/lang/*            /categories/                301
+/category/lang          /categories/            301
+/category/lang/*        /categories/            301
 
 # Paginated tags and categories are no more.
 # XXX Low chance for this rewrite rule to be recognized by CloudFlare.
@@ -43,12 +63,17 @@
 /tag/:tag_id/page/:page_number/             /tag/:tag_id/index:page_number.html             301
 
 # Yearly and monthly archive are no longer paginated.
-/:year/page/:page_number/          /:year/          301
-/:year/:month/page/:page_number/   /:year/:month/   301
+/:year/page            /:year/          301
+/:year/page/*          /:year/          301
+/:year/:month/page     /:year/:month/   301
+/:year/:month/page/*   /:year/:month/   301
 
 # WordPress made a distinction between RSS 1.0, RSS 2.0 and RDF feeds while Pelican doesn't.
+/*/feed/rss     /:splat/feed/   301
 /*/feed/rss/    /:splat/feed/   301
+/*/feed/rss2    /:splat/feed/   301
 /*/feed/rss2/   /:splat/feed/   301
+/*/feed/rdf     /:splat/feed/   301
 /*/feed/rdf/    /:splat/feed/   301
 
 # Links to a particular comment are no longer supported following Disqus migration.
@@ -56,4 +81,5 @@
 /*/comment-page-    /:splat/    301
 
 # Site-wide comments feeds moved to Disqus
+/comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss
 /comments/feed/*    https://kevin-deldycke-blog.disqus.com/latest.rss
