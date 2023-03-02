@@ -6,3 +6,5 @@
 /static/uploads/*           /uploads/:splat             301
 /wp-content/uploads/*       /uploads/:splat             301
 /static/documents/*         /documents/:splats          301
+/404-not-found/*            /404/                       301
+/500-not-found/*            /500/                       301
