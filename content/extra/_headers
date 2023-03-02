@@ -2,11 +2,15 @@
 # the matching URL here should be the canonical one.
 
 # Set RSS feed content type.
-*/feed/
+/*/feed/
+    content-type: application/rss+xml
+/feed/
     content-type: application/rss+xml
 
 # Set ATOM feed content type.
-*/feed/atom/
+/*/feed/atom/
+    content-type: application/atom+xml
+/feed/atom/
     content-type: application/atom+xml
 
 # Set Apple Numbers content type.
