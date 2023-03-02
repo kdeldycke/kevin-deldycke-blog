@@ -19,12 +19,12 @@ To fetch and/or reset submodules to their committed reference:
 $ git submodule update --init --recursive
 ```
 
-Install Python 3.9 and upgrade all its utilities:
+Install Python 3.11 and upgrade all its utilities:
 
 ```shell-session
 $ brew install python
 $ python --version
-Python 3.9.0
+Python 3.11.0
 $ python -m pip install --upgrade pip
 $ python -m pip install --upgrade poetry
 ```
