@@ -95,7 +95,7 @@ ARTICLE_SAVE_AS = ARTICLE_URL + "index.html"
 ARTICLE_PATHS = ["posts"]
 
 PAGE_URL = "{slug}/"
-PAGE_SAVE_AS = PAGE_URL + "index.html"
+PAGE_SAVE_AS = "{slug}.html"
 PAGE_PATHS = ["pages"]
 
 TEMPLATE_PAGES = {
