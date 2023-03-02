@@ -168,6 +168,7 @@ STATIC_PATHS = [
 ]
 
 EXTRA_PATH_METADATA = {
+    "extra/_headers": {"path": "_headers"},
     "extra/_redirects": {"path": "_redirects"},
     "extra/ads.txt": {"path": "ads.txt"},
     "extra/favicon.ico": {"path": "favicon.ico"},

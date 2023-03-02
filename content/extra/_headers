@@ -1,0 +1,15 @@
+# Set RSS feed content type.
+/*/feed/index.html
+    content-type: application/rss+xml
+
+# Set ATOM feed content type.
+/*/feed/atom/index.html
+    content-type: application/atom+xml
+
+# Set Apple Numbers content type.
+/*.numbers
+    content-type: application/vnd.apple.numbers
+
+# Set Microsoft regedit content type.
+/*.reg
+    content-type: text/x-ms-regedit
