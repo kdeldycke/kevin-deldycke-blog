@@ -13,15 +13,6 @@
 /documents                  /                       301
 /uploads                    /                       301
 
-/feed                       /feed/                  301
-/feed/index/                /feed/                  301
-/feed/atom                  /feed/atom/             301
-/feed/atom/index/           /feed/atom/             301
-/*/feed                     /:splat/feed/           301
-/*/feed/index/              /:splat/feed/           301
-/*/feed/atom                /:splat/feed/atom/      301
-/*/feed/atom/index/         /:splat/feed/atom/      301
-
 
 ################################################################################
 # Old Pelican structure
@@ -40,6 +31,17 @@
 /mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
 /static/repository          https://github.com/kdeldycke/mandriva-specs
 /static/repository/*        https://github.com/kdeldycke/mandriva-specs
+
+/feed/atom                  /feed.atom             301
+/feed/atom/*                /feed.atom             301
+/feed                       /feed.rss              301
+/feed/*                     /feed.rss              301
+/*/feed/atom                /:splat/feed.atom      301
+/*/feed/atom/               /:splat/feed.atom      301
+/*/feed/atom/index/         /:splat/feed.atom      301
+/*/feed                     /:splat/feed.rss       301
+/*/feed/                    /:splat/feed.rss       301
+/*/feed/index/              /:splat/feed.rss       301
 
 
 ################################################################################
@@ -70,12 +72,12 @@
 /:year/:month/page/*   /:year/:month/   301
 
 # WordPress made a distinction between RSS 1.0, RSS 2.0 and RDF feeds while Pelican doesn't.
-/*/feed/rss     /:splat/feed/   301
-/*/feed/rss/    /:splat/feed/   301
-/*/feed/rss2    /:splat/feed/   301
-/*/feed/rss2/   /:splat/feed/   301
-/*/feed/rdf     /:splat/feed/   301
-/*/feed/rdf/    /:splat/feed/   301
+/*/feed/rss     /:splat/feed.rss   301
+/*/feed/rss/    /:splat/feed.rss   301
+/*/feed/rss2    /:splat/feed.rss   301
+/*/feed/rss2/   /:splat/feed.rss   301
+/*/feed/rdf     /:splat/feed.rss   301
+/*/feed/rdf/    /:splat/feed.rss   301
 
 # Site-wide comments feeds moved to Disqus
 /comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss

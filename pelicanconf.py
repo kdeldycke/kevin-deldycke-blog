@@ -128,8 +128,8 @@ ARTICLE_LANG_SAVE_AS = None
 DRAFT_LANG_SAVE_AS = None
 PAGE_LANG_SAVE_AS = None
 
-FEED_RSS = "feed/index.html"
-FEED_ATOM = "feed/atom/index.html"
+FEED_RSS = "feed.rss"
+FEED_ATOM = "feed.atom"
 FEED_ALL_RSS = None
 FEED_ALL_ATOM = None
 TRANSLATION_FEED_RSS = None
@@ -137,13 +137,11 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# https://kevin.deldycke.com/tag/openerp/feed/
-TAG_FEED_RSS = "tag/{slug}/feed/index.html"
-TAG_FEED_ATOM = "tag/{slug}/feed/atom/index.html"
+TAG_FEED_RSS = "tag/{slug}/feed.rss"
+TAG_FEED_ATOM = "tag/{slug}/feed.atom"
 
-# https://example.com/category/categoryname/feed
-CATEGORY_FEED_RSS = "category/{slug}/feed/index.html"
-CATEGORY_FEED_ATOM = "category/{slug}/feed/atom/index.html"
+CATEGORY_FEED_RSS = "category/{slug}/feed.rss"
+CATEGORY_FEED_ATOM = "category/{slug}/feed.atom"
 
 FEED_MAX_ITEMS = 5
 USE_FOLDER_AS_CATEGORY = False
