@@ -32,16 +32,16 @@
 /static/repository          https://github.com/kdeldycke/mandriva-specs
 /static/repository/*        https://github.com/kdeldycke/mandriva-specs
 
-/feed/atom                  /feed.atom             301
-/feed/atom/*                /feed.atom             301
-/feed                       /feed.rss              301
-/feed/*                     /feed.rss              301
-/*/feed/atom                /:splat/feed.atom      301
-/*/feed/atom/               /:splat/feed.atom      301
-/*/feed/atom/index/         /:splat/feed.atom      301
-/*/feed                     /:splat/feed.rss       301
-/*/feed/                    /:splat/feed.rss       301
-/*/feed/index/              /:splat/feed.rss       301
+/feed/atom                  /feed.atom
+/feed/atom/*                /feed.atom
+/feed                       /feed.rss
+/feed/*                     /feed.rss
+/*/feed/atom                /:splat/feed.atom
+/*/feed/atom/               /:splat/feed.atom
+/*/feed/atom/index/         /:splat/feed.atom
+/*/feed                     /:splat/feed.rss
+/*/feed/                    /:splat/feed.rss
+/*/feed/index/              /:splat/feed.rss
 
 
 ################################################################################
