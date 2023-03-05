@@ -10,10 +10,9 @@ name: Autofix
 jobs:
 
   autofix:
-    uses: kdeldycke/workflows/.github/workflows/autofix.yaml@v2.9.0
+    uses: kdeldycke/workflows/.github/workflows/autofix.yaml@v2.12.0
     with:
-      gitignore-extra-categories: >
-        backup
-        certificates
-        gpg
-        ssh
+      gitignore-extra-content: |
+        # Pelican
+        *.pid
+        output
