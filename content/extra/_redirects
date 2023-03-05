@@ -17,6 +17,15 @@
 ################################################################################
 # Old Pelican structure
 ################################################################################
+/archives                   /archives/              301
+/archives/*                 /archives/              301
+/authors                    /authors/               301
+/authors/*                  /authors/               301
+/categories                 /categories/            301
+/categories/*               /categories/            301
+/tags                       /tags/                  301
+/tags/*                     /tags/                  301
+
 /pages                      /                       301
 /pages/*                    /:splat/                301
 

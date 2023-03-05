@@ -115,9 +115,11 @@ MONTH_ARCHIVE_SAVE_AS = "{date:%Y}/{date:%m}/index.html"
 
 # Tags, categories and archives are Direct Templates, so they don't have a
 # <NAME>_URL option.
-TAGS_SAVE_AS = "tags/index.html"
-CATEGORIES_SAVE_AS = "categories/index.html"
-ARCHIVES_SAVE_AS = "archives/index.html"
+# Note: ``DIRECT_TEMPLATES`` work a bit differently and only the ``_SAVE_AS`` settings
+# are available. See: https://docs.getpelican.com/en/latest/settings.html#url-settings
+ARCHIVES_SAVE_AS = "archives.html"
+CATEGORIES_SAVE_AS = "categories.html"
+TAGS_SAVE_AS = "tags.html"
 
 # Deactivate author URLs
 AUTHOR_SAVE_AS = False
