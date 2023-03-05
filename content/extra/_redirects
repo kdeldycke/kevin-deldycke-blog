@@ -1,40 +1,52 @@
 ################################################################################
 # Canonical redirects of current Pelican URLs
 ################################################################################
-/category/                  /categories/            301
-/category                   /categories/            301
-/tag/                       /tags/                  301
-/tag                        /tags/                  301
+# Some sub-folders contain nothing.
+/documents      /   301
+/documents/     /   301
+/extra          /   301
+/extra/         /   301
+/page           /   301
+/page/          /   301
+/theme          /   301
+/theme/         /   301
+/uploads        /   301
+/uploads/       /   301
 
-/documents                  /                       301
-/uploads                    /                       301
+# Some other sub-folders have dedicated canonical URL under another name.
+/category       /categories/    301
+/category/      /categories/    301
+/tag            /tags/          301
+/tag/           /tags/          301
 
-/page                           /                       301
-/page/                          /                       301
-/page/1                         /                       301
-/page/1/                        /                       301
-/category/:category_id/page/*   /category/:category_id/ 301
-/tag/:tag_id/page/*             /tag/:tag_id/           301
+# The first pagination page doesn't exists.
+/page/1         /   301
+/page/1/        /   301
 
 
 ################################################################################
 # Old Pelican structure
 ################################################################################
+# Move of the pages subfolder to the site's root.
 /pages                      /                       301
 /pages/*                    /:splat/                301
 
+# Reduction of static content path.
 /static/documents           /documents/             301
 /static/documents/*         /documents/:splat       301
-
 /static/uploads             /uploads/               301
 /static/uploads/*           /uploads/:splat         301
+
+# Removal of month in uploads URLs.
 /uploads/:year/:month/:slug /uploads/:year/:slug    301
 
+# Old content moved on other platforms.
 /mandriva-rpm-repository    https://github.com/kdeldycke/mandriva-specs
 /mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
 /static/repository          https://github.com/kdeldycke/mandriva-specs
 /static/repository/*        https://github.com/kdeldycke/mandriva-specs
 
+# Simplification of feeds URL: use .atom and .rss suffixes.
 /feed/atom                  /feed.atom             301
 /feed/atom/*                /feed.atom             301
 /feed                       /feed.rss              301
@@ -46,6 +58,10 @@
 /*/feed/                    /:splat/feed.rss       301
 /*/feed/index/              /:splat/feed.rss       301
 
+# Pagination for categories and tags was disabled.
+/category/:category_id/page/*   /category/:category_id/ 301
+/tag/:tag_id/page/*             /tag/:tag_id/           301
+
 
 ################################################################################
 # Old WordPress URLs
@@ -53,6 +69,7 @@
 /wp-content/uploads     /uploads/           301
 /wp-content/uploads/*   /uploads/:splat     301
 
+# Worpress had default pages for each author.
 /author                 /                       301
 /author/*               /                       301
 
@@ -63,6 +80,7 @@
 /category/lang/fr/*     /category/francais/     301
 # Hierarchical categories are not supported by Pelican.
 /category/lang          /categories/            301
+/category/lang/         /categories/            301
 
 # Yearly and monthly archives are no longer paginated.
 /:year/page            /:year/          301
@@ -79,10 +97,14 @@
 /*/feed/rdf/    /:splat/feed.rss   301
 
 # Old pages.
-/about-me/          /about/                                 301
-/code/              https://github.com/kdeldycke/
-/linux-scripts/     https://github.com/kdeldycke/scripts
-/wordpress-stuff/   /themes/                                301
+/about-me           /about/                                 301
+/about-me/*         /about/                                 301
+/code               https://github.com/kdeldycke/
+/code/*             https://github.com/kdeldycke/
+/linux-scripts      https://github.com/kdeldycke/scripts
+/linux-scripts/*    https://github.com/kdeldycke/scripts
+/wordpress-stuff    /themes/                                301
+/wordpress-stuff/*  /themes/                                301
 
 # Site-wide comments feeds moved to Disqus.
 /comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss
