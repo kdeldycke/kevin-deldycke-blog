@@ -31,6 +31,8 @@
 /uploads/:year/:month/:slug /uploads/:year/:slug    301
 
 /mandriva-rpm-repository    https://github.com/kdeldycke/mandriva-specs
+/mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
+/static/repository          https://github.com/kdeldycke/mandriva-specs
 /static/repository/*        https://github.com/kdeldycke/mandriva-specs
 
 /feed/atom                  /feed.atom             301
@@ -61,7 +63,6 @@
 /category/lang/fr/*     /category/francais/     301
 # Hierarchical categories are not supported by Pelican.
 /category/lang          /categories/            301
-/category/lang/*        /categories/            301
 
 # Yearly and monthly archives are no longer paginated.
 /:year/page            /:year/          301
