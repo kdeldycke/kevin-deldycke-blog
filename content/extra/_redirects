@@ -1,25 +1,20 @@
 ################################################################################
 # Canonical redirects of current Pelican URLs
 ################################################################################
-/*.html                     /:splat/                301
-
-/archives/*                 /archives/              301
-/categories/*               /categories/            301
 /category/                  /categories/            301
 /category                   /categories/            301
-/tags/*                     /tags/                  301
 /tag/                       /tags/                  301
 /tag                        /tags/                  301
 
 /documents                  /                       301
 /uploads                    /                       301
 
-/page                       /                       301
-/page/                      /                       301
-/page/1                     /                       301
-/page/1/                    /                       301
-/category/:category_id/*    /category/:category_id/ 301
-/tag/:tag_id/*              /tag/:tag_id/           301
+/page                           /                       301
+/page/                          /                       301
+/page/1                         /                       301
+/page/1/                        /                       301
+/category/:category_id/page/*   /category/:category_id/ 301
+/tag/:tag_id/page/*             /tag/:tag_id/           301
 
 
 ################################################################################
@@ -36,8 +31,6 @@
 /uploads/:year/:month/:slug /uploads/:year/:slug    301
 
 /mandriva-rpm-repository    https://github.com/kdeldycke/mandriva-specs
-/mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
-/static/repository          https://github.com/kdeldycke/mandriva-specs
 /static/repository/*        https://github.com/kdeldycke/mandriva-specs
 
 /feed/atom                  /feed.atom             301
@@ -58,6 +51,9 @@
 /wp-content/uploads     /uploads/           301
 /wp-content/uploads/*   /uploads/:splat     301
 
+/author                 /                       301
+/author/*               /                       301
+
 # Map old WordPress categories to new Pelican ones.
 /category/lang/en       /category/english/      301
 /category/lang/en/*     /category/english/      301
@@ -67,7 +63,7 @@
 /category/lang          /categories/            301
 /category/lang/*        /categories/            301
 
-# Yearly and monthly archive are no longer paginated.
+# Yearly and monthly archives are no longer paginated.
 /:year/page            /:year/          301
 /:year/page/*          /:year/          301
 /:year/:month/page     /:year/:month/   301
@@ -81,6 +77,12 @@
 /*/feed/rdf     /:splat/feed.rss   301
 /*/feed/rdf/    /:splat/feed.rss   301
 
-# Site-wide comments feeds moved to Disqus
+# Old pages.
+/about-me/          /about/                                 301
+/code/              https://github.com/kdeldycke/
+/linux-scripts/     https://github.com/kdeldycke/scripts
+/wordpress-stuff/   /themes/                                301
+
+# Site-wide comments feeds moved to Disqus.
 /comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss
 /comments/feed/*    https://kevin-deldycke-blog.disqus.com/latest.rss
