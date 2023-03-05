@@ -13,6 +13,23 @@
 /documents                  /                       301
 /uploads                    /                       301
 
+/page                           /                           301
+/page/                          /                           301
+/page/1                         /                           301
+/page/1/                        /                           301
+/author/:author_id/page         /author/:author_id/         301
+/author/:author_id/page/        /author/:author_id/         301
+/author/:author_id/page/1       /author/:author_id/         301
+/author/:author_id/page/1/      /author/:author_id/         301
+/category/:category_id/page     /category/:category_id/     301
+/category/:category_id/page/    /category/:category_id/     301
+/category/:category_id/page/1   /category/:category_id/     301
+/category/:category_id/page/1/  /category/:category_id/     301
+/tag/:tag_id/page               /tag/:tag_id/               301
+/tag/:tag_id/page/              /tag/:tag_id/               301
+/tag/:tag_id/page/1             /tag/:tag_id/               301
+/tag/:tag_id/page/1/            /tag/:tag_id/               301
+
 
 ################################################################################
 # Old Pelican structure
@@ -25,6 +42,12 @@
 /categories/*               /categories/            301
 /tags                       /tags/                  301
 /tags/*                     /tags/                  301
+
+# XXX Low chance for this rewrite rule to be recognized by CloudFlare.
+/index:page_number.html                         /page/:page_number/                         301
+/author/:author_id/index:page_number.html       /author/:author_id/page/:page_number/       301
+/category/:category_id/index:page_number.html   /category/:category_id/page/:page_number/   301
+/tag/:tag_id/index:page_number.html             /tag/:tag_id/page/:page_number/             301
 
 /pages                      /                       301
 /pages/*                    /:splat/                301
@@ -67,12 +90,6 @@
 # Hierarchical categories are not supported by Pelican.
 /category/lang          /categories/            301
 /category/lang/*        /categories/            301
-
-# Paginated tags and categories are no more.
-# XXX Low chance for this rewrite rule to be recognized by CloudFlare.
-/author/:author_id/page/:page_number/       /author/:author_id/index:page_number.html       301
-/category/:category_id/page/:page_number/   /category/:category_id/index:page_number.html   301
-/tag/:tag_id/page/:page_number/             /tag/:tag_id/index:page_number.html             301
 
 # Yearly and monthly archive are no longer paginated.
 /:year/page            /:year/          301

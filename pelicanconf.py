@@ -120,7 +120,6 @@ MONTH_ARCHIVE_SAVE_AS = "{date:%Y}/{date:%m}/index.html"
 ARCHIVES_SAVE_AS = "archives.html"
 CATEGORIES_SAVE_AS = "categories.html"
 TAGS_SAVE_AS = "tags.html"
-
 # Deactivate author URLs
 AUTHOR_SAVE_AS = False
 AUTHORS_SAVE_AS = False
@@ -156,8 +155,10 @@ DISPLAY_CATEGORIES_ON_MENU = False
 # Pagination
 DEFAULT_ORPHANS = 2
 DEFAULT_PAGINATION = 5
-# TODO: set PAGINATION_PATTERNS to produce nice URLs like index/page/23/
-# instead of indexXX.html
+PAGINATION_PATTERNS = (
+    (1, "{url}", "{save_as}"),
+    (2, "{base_name}/page/{number}/", "{base_name}/page/{number}/index.html"),
+)
 
 THEME = plumage.get_path()
 
