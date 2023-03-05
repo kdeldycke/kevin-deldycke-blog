@@ -121,8 +121,8 @@ ARCHIVES_SAVE_AS = "archives.html"
 CATEGORIES_SAVE_AS = "categories.html"
 TAGS_SAVE_AS = "tags.html"
 # Deactivate author URLs
-AUTHOR_SAVE_AS = False
 AUTHORS_SAVE_AS = False
+AUTHOR_SAVE_AS = False
 
 # Deactivate localization
 ARTICLE_LANG_SAVE_AS = None
@@ -152,9 +152,13 @@ REVERSE_ARCHIVE_ORDER = True
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
-# Pagination
+# Pagination.
 DEFAULT_ORPHANS = 2
 DEFAULT_PAGINATION = 5
+# Deactivate pagination everywhere but the index page.
+PAGINATED_TEMPLATES = {
+    "index": DEFAULT_PAGINATION,
+}
 PAGINATION_PATTERNS = (
     (1, "{url}", "{save_as}"),
     (2, "{base_name}/page/{number}/", "{base_name}/page/{number}/index.html"),
