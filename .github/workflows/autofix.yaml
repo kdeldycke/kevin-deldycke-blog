@@ -16,3 +16,4 @@ jobs:
         # Pelican
         *.pid
         output
+        seo_report.html
