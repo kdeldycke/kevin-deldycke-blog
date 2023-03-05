@@ -99,7 +99,7 @@ PAGE_SAVE_AS = "{slug}.html"
 PAGE_PATHS = ["pages"]
 
 TEMPLATE_PAGES = {
-    "templates/themes.html": "themes/index.html",
+    "templates/themes.html": "themes.html",
 }
 
 DIRECT_TEMPLATES = ["index", "tags", "categories", "authors", "archives", "search"]
