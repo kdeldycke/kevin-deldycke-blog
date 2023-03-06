@@ -264,7 +264,7 @@ IMAGE_PROCESS = {
 SITE_THUMBNAIL = "/uploads/2018/profile-photo-square-thumbnail.jpg"
 SITE_THUMBNAIL_TEXT = "Might come with a beard"
 
-SITESUBTITLE = " 🦬🪒🐇🕳 - Yak shaving the rabbit holes"
+SITESUBTITLE = " — 🦬🪒🐇🕳 yak-shaving the rabbit holes"
 
 MENUITEMS = (
     ("Home", "/"),
