@@ -5,6 +5,11 @@ name: Deploy
   push:
     branches:
       - main
+    paths:
+      - "content/**"
+      - "*.py"
+      - "pyproject.toml"
+      - ".github/workflows/deploy.yaml"
 
 jobs:
 
