@@ -314,7 +314,7 @@ LINKS_WIDGET_NAME = "Professional profiles"
 LINKS = (("LinkedIn", "https://linkedin.com/in/kevindeldycke/en"),)
 
 COPYRIGHT = """Unless contrary mentioned, the content of this site is published
-under a <a class="text-dark" rel="license"
+under a <a class="text-body-secondary" rel="license"
 href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International license</a>."""
 
