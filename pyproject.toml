@@ -38,7 +38,7 @@ pelican-tipue-search = { git = "https://github.com/pelican-plugins/tipue-search.
 
 [tool.poetry.dev-dependencies]
 bump2version = "^1.0.1"
-mypy = "^1.0"
+mypy = "^1.1"
 
 [tool.mypy]
 warn_unused_configs = true
