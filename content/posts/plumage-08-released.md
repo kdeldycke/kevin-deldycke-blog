@@ -14,4 +14,4 @@ google analytics tracking code. Both changes may require some minor adjustments
 in your config.
 
 For more details, see the [changelog
-](https://github.com/kdeldycke/plumage/tree/0.8#changelog).
+](https://github.com/kdeldycke/plumage/blob/main/changelog.md#080-2016-06-22).
