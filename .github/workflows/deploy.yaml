@@ -46,7 +46,7 @@ jobs:
         run: |
           rm -f ./output/uploads/2020/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu
       - name: Publish
-        uses: cloudflare/pages-action@v1.3.0
+        uses: cloudflare/pages-action@v1.4.1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
