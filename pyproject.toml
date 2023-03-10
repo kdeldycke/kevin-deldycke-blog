@@ -30,10 +30,10 @@ plumage = { git = "https://github.com/kdeldycke/plumage.git", branch = "main" }
 # plumage = { path = "../plumage/", develop = false }  # XXX Dev!
 pelican-image-process = "^3.0.3"
 pelican-seo = "^1.2.2"
+pelican-search = "^1.0.2"
 # pelican-similar-posts = "^1.0.0"  # XXX Broken!
 pelican-sitemap = "^1.0.2"
 pelican-neighbors = "^1.2.0"
-pelican-tipue-search = { git = "https://github.com/pelican-plugins/tipue-search.git", branch = "main" }
 #gensim = "^4.3.0"  # XXX Broken!
 
 [tool.poetry.dev-dependencies]

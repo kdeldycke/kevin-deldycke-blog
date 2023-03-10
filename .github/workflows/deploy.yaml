@@ -33,6 +33,9 @@ jobs:
       - name: Install Pelican
         run: |
           poetry install
+      - name: Install Stork
+        run: |
+          cargo install stork-search --locked
       - name: Generate static content
         run: |
           poetry run pelican --verbose --settings ./publishconf.py ./content

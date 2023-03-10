@@ -13,6 +13,10 @@
 /feed.atom
     content-type: application/atom+xml
 
+# Set Stork search index content type.
+/search-index.st
+    content-type: application/wasm
+
 # Set Apple Numbers content type.
 /*.numbers
     content-type: application/vnd.apple.numbers

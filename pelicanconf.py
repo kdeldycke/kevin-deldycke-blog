@@ -102,7 +102,7 @@ TEMPLATE_PAGES = {
     "templates/themes.html": "themes.html",
 }
 
-DIRECT_TEMPLATES = ["index", "tags", "categories", "authors", "archives", "search"]
+DIRECT_TEMPLATES = ["index", "tags", "categories", "authors", "archives"]
 
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = TAG_URL + "index.html"
@@ -193,10 +193,10 @@ PLUGINS = [
     # "deadlinks",
     "pelican.plugins.image_process",
     "pelican.plugins.seo",
+    "pelican.plugins.search",
     "pelican.plugins.similar_posts",
     "pelican.plugins.neighbors",
     "pelican.plugins.sitemap",
-    "pelican.plugins.tipue_search",
     "pelican.plugins.webassets",
 ]
 
@@ -274,7 +274,7 @@ MENUITEMS = (
 
 CODE_STYLE = "monokai"
 
-TIPUE_SEARCH = True
+STORK_SEARCH = True
 
 LEFT_SIDEBAR = (
     """
