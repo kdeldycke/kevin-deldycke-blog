@@ -133,6 +133,12 @@ I maintain a set of default configuration files in my [`dotfiles` repository](ht
         $ python ./setup.py register sdist bdist_egg bdist_dumb upload
         ```
 
+  * Download Pygments' source distribution from PyPi, without dependencies ([source](https://stackoverflow.com/a/56773693)):
+
+        ```shell-session
+        $ pip download --no-binary=:all: --no-deps pygments==2.14.0
+        ```
+
 
 ## Jinja
 
