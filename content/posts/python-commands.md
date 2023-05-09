@@ -138,6 +138,42 @@ I maintain a set of default configuration files in my [`dotfiles` repository](ht
         ```shell-session
         $ pip download --no-binary=:all: --no-deps pygments==2.14.0
         ```
+        
+  * Hackish way to execute the CLI above with Pip's internal (tested with `pip==22.1`), [inspired by `pip._internal.cli.base_command.Command._main()`](https://github.com/pypa/pip/blob/ba38c33/src/pip/_internal/cli/base_command.py#L105-L114):
+
+        ```python
+        from pathlib import Path
+
+        from pip._internal.cli.status_codes import SUCCESS
+        from pip._internal.commands.download import DownloadCommand
+        from pip._internal.utils.temp_dir import global_tempdir_manager, tempdir_registry
+
+
+        tmp_path = Path("/tmp")
+
+        # Emulate the folowwing CLI call:
+        #   $ pip download --no-binary=:all: --no-deps pygments==2.14.0
+        cmd = DownloadCommand(name="dummy_name", summary="dummy_summary")
+
+        with cmd.main_context():
+            cmd.tempdir_registry = cmd.enter_context(tempdir_registry())
+            cmd.enter_context(global_tempdir_manager())
+            options, args = cmd.parse_args(
+                [
+                    "--no-binary=:all:",
+                    "--no-deps",
+                    "--dest",
+                    f"{tmp_path}",
+                    f"pygments==2.14.0",
+                ]
+            )
+            cmd.verbosity = options.verbose
+            outcome = cmd.run(options, args)
+            assert outcome == SUCCESS
+
+        package_path = tmp_path.joinpath("Pygments-2.14.0.tar.gz")
+        assert package_path.is_file()
+        ```
 
 
 ## Jinja
