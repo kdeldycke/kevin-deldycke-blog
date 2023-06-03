@@ -283,11 +283,11 @@ LEFT_SIDEBAR = (
     """src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?"""
     """client=ca-pub-2767080117475424" crossorigin="anonymous"></script>"""
     """
-    <!-- Responsive Ad -->
+    <!-- Responsive ad -->
     <ins class="adsbygoogle"
          style="display:block"
-         data-ad-client="ca-pub-0142056597033291"
-         data-ad-slot="9726265119"
+         data-ad-client="ca-pub-2767080117475424"
+         data-ad-slot="1778316959"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>
