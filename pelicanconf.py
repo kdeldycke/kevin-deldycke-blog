@@ -281,7 +281,7 @@ LEFT_SIDEBAR = (
     <script async
     """
     """src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?"""
-    """client=ca-pub-0142056597033291" crossorigin="anonymous"></script>"""
+    """client=ca-pub-2767080117475424" crossorigin="anonymous"></script>"""
     """
     <!-- Responsive Ad -->
     <ins class="adsbygoogle"
