@@ -26,13 +26,13 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
         ```shell-session
         $ convert -resize 1000x1000 -type Grayscale ./big.pdf ./smaller.pdf
         ```
-  
+
   * Assemble images vertically:
 
         ```shell-session
         $ convert img1.jpg img2.jpg img3.jpg -append big.jpg
         ```
-        
+
   * Assemble images horizontally:
 
         ```shell-session
@@ -93,6 +93,86 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
 
 ## Metadata
 
+  * Print all metadata of a video file:
+
+        ```shell-session
+        $ exiftool ./MVI_4441.MOV
+        Audio Channels                  : 2
+        Compressor Version              : CanonAVC0002
+        Camera Model Name               : Canon EOS 7D
+        Firmware Version                : Firmware Version 2.0.3
+        Image Size                      : 1920x1080
+        Megapixels                      : 2.1
+        Avg Bitrate                     : 47.5 Mbps
+        (...)
+        ```
+
+  * Same as above but print the canonical ID of each field:
+
+        ```shell-session
+        $ exiftool -short ./MVI_4441.MOV
+        AudioChannels                   : 2
+        CompressorVersion               : CanonAVC0002
+        Model                           : Canon EOS 7D
+        FirmwareVersion                 : Firmware Version 2.0.3
+        ImageSize                       : 1920x1080
+        Megapixels                      : 2.1
+        AvgBitrate                      : 47.5 Mbps
+        (...)
+        ```
+
+  * Print all metadata, with fields grouped by their family:
+
+        ```shell-session
+        $ exiftool -groupHeadings MVI_4586.MOV
+        ---- ExifTool ----
+        ExifTool Version Number         : 12.60
+        ---- File ----
+        File Name                       : MVI_4586.MOV
+        File Type                       : MOV
+        File Type Extension             : mov
+        MIME Type                       : video/quicktime
+        ---- QuickTime ----
+        Major Brand                     : Apple QuickTime (.MOV/QT)
+        Minor Version                   : 2007.9.0
+        Media Data Offset               : 32
+        Movie Header Version            : 0
+        (...)
+        ```
+
+  * Show all date fields with their canonical IDs, grouped by family:
+
+        ```shell-session
+        $ exiftool -groupNames -short -'*Date' MVI_4586.MOV
+        [File]          FileModifyDate                  : 2023:06:03 17:14:28+04:00
+        [File]          FileAccessDate                  : 2023:06:03 21:36:26+04:00
+        [File]          FileInodeChangeDate             : 2023:06:03 18:55:28+04:00
+        [QuickTime]     CreateDate                      : 2015:09:26 14:44:10
+        [QuickTime]     ModifyDate                      : 2015:09:26 14:44:10
+        [QuickTime]     TrackCreateDate                 : 2015:09:26 14:44:10
+        [QuickTime]     TrackModifyDate                 : 2015:09:26 14:44:10
+        [QuickTime]     MediaCreateDate                 : 2015:09:26 14:44:10
+        [QuickTime]     MediaModifyDate                 : 2015:09:26 14:44:10
+        ```
+
+  * Copy the `CreateDate` field of the `QuickTime` family from a `MVI_4586.MOV` file to `MVI_4586.mp4`:
+
+        ```shell-session
+        $ exiftool -tagsfromfile MVI_4586.MOV "-QuickTime:CreateDate" MVI_4586.mp4
+        ```
+
+  * Same as above but for all date fields:
+
+        ```shell-session
+        $ exiftool -tagsfromfile MVI_4586.MOV "-QuickTime:*Date" MVI_4586.mp4
+        ```
+
+  * Transfer all `*Date` fields from all `.MOV` files of the current `./` directory to their corresponding `.mp4` files:
+
+        ```shell-session
+        $ exiftool -tagsfromfile %f.MOV "-QuickTime:*Date" -ext mp4 ./
+        ```
+
   * Remove all metadata of a JPEG file:
 
         ```shell-session
@@ -109,4 +189,18 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
 
         ```shell-session
         $ mogrify -verbose -monitor -strip ./*.png
+        ```
+
+## macOS's Photos.app & `osxphotos`
+
+  * Export all videos from the `2012-12-32 - NYE` album to the current folder, and download from iCloud the missing ones:
+
+        ```shell-session
+        $ osxphotos export ./ --album "2012-12-32 - NYE" --download-missing --only-movies
+        ```
+
+  * Same as above but only for videos shot with a Canon camera and encoded with the `CanonAVC0002` codec:
+
+        ```shell-session
+        $ osxphotos export ./ --album "2012-12-32 - NYE" --download-missing --only-movies --exif CompressorVersion 'CanonAVC0002'
         ```

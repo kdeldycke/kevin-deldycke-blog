@@ -29,7 +29,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         ```shell-session
         $ ffmpeg -i ./input.mp4 -vcodec copy -an ./input-no-audio.mp4
         ```
-        
+
   * Start audio 1.5 seconds later:
 
         ```shell-session
@@ -48,11 +48,17 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
         $ ffmpeg -i ./input.mkv -vcodec copy -acodec aac -scodec copy ./output.mkv
         ```
 
+  * Transcode a video to H.265/HEVC video with a [CRF of 20 and a `slow` profile](https://codecalamity.com/encoding-settings-for-hdr-4k-videos-using-10-bit-x265/#which-preset-should-i-use), and AAC audio mono channel at 64 kBit/s. The extra [`-tag:v hvc1` option is for compatibility with Apple](https://trac.ffmpeg.org/wiki/Encode/H.265#FinalCutandApplestuffcompatibility), while the `-movflags use_metadata_tags` option transfer all metadata from the input file to the output file:
+
+        ```shell-session
+        $ ffmpeg -i ./MVI_5547.MOV -movflags use_metadata_tags -c:v libx265 -crf 20 -preset slow -tag:v hvc1 -c:a aac -ac 1 -b:a 64k ./MVI_5547-2.mp4
+        ```
+
   * Transcode all audio tracks to AAC (`-map 0:a` & `-acodec aac`) but keep all video streams as-is (`-map 0:v` & `-vcodec copy`).
     Introduce a negative 128.5 seconds delay on the sole subtitle track using the [`srt` Python package](https://github.com/cdown/)
     as an intermediate step. The `-map 1:s` option ensure only the original subtitle tracks are ignored:
 
-        ```shell-session        
+        ```shell-session
         $ pip install srt
         $ ffmpeg -i ./input.mkv ./subtitle.srt
         (...)
