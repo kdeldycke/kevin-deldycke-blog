@@ -24,6 +24,9 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install --upgrade poetry
           poetry install
+      - name: Install Stork
+        run: |
+          cargo install stork-search --locked
       - name: Build website
         run: |
           poetry run pelican --verbose ./content
