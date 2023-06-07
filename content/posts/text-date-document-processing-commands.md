@@ -309,6 +309,13 @@ tags: calendar, CLI, date, epoch, find, Linux, pdf, recode, sed, VIM, Markdown, 
         $ gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -q -o small-output.pdf large-input.pdf
         ```
 
+  * Reduce a `big.pdf` file to a `smaller.pdf` file by limiting its images to 1000 pixels and convert them to grayscale:
+
+        ```shell-session
+        $ pdfimages -j ./big.pdf prefix
+        $ convert -resize 1000x1000 -type Grayscale -density 150 ./prefix-*.jpg ./smaller.pdf
+        $ rm prefix-*.jpg
+        ```
 
 ## Edition
 

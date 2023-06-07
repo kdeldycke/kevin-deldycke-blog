@@ -204,3 +204,9 @@ tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, m
         ```shell-session
         $ osxphotos export ./ --album "2012-12-32 - NYE" --download-missing --only-movies --exif CompressorVersion 'CanonAVC0002'
         ```
+
+  * Export all videos from the `Yearly archives/2014` subfolder while keeping the same folder structure:
+
+        ```shell-session
+        $ osxphotos export ./ --regex "Yearly archives/2014" "{folder_album}" --download-missing --only-movies --directory "{folder_album}"
+        ```
