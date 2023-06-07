@@ -7,14 +7,14 @@ tags: Pandas, Computer programming, date, development, Python, Data, Analytics, 
 
 Import Numpy and Pandas:
 
-    ```python
+    ```pycon
     >>> import numpy as np
     >>> import pandas as pd
     ```
 
 Create a 5 rows and 3 columns frame with random integers between 0 and 99:
 
-    ```python
+    ```pycon
     >>> df = pd.DataFrame(np.random.randint(100, size=(5, 3)))
     >>> df
         0   1   2
@@ -27,7 +27,7 @@ Create a 5 rows and 3 columns frame with random integers between 0 and 99:
 
 Add labels to columns:
 
-    ```python
+    ```pycon
     >>> df.columns = ['a', 'b', 'c']
     >>> df
         a   b   c
@@ -40,7 +40,7 @@ Add labels to columns:
 
 Drop all but `a` and `c` columns:
 
-    ```python
+    ```pycon
     >>> df[['a', 'c']]
         a   c
     0  35  14
@@ -52,14 +52,14 @@ Drop all but `a` and `c` columns:
 
 Get a NumPy array of index values:
 
-    ```python
+    ```pycon
     >>> df.index.values
     array([0, 1, 2, 3, 4])
     ```
 
 Check if column `a` is already sorted by comparing initial and value-sorted indexes:
 
-    ```python
+    ```pycon
     >>> df.a.index.tolist()
     [0, 1, 2, 3, 4]
     >>> df.a.sort_values().index.tolist()
@@ -70,7 +70,7 @@ Check if column `a` is already sorted by comparing initial and value-sorted inde
 
 Make column `a` the index:
 
-    ```python
+    ```pycon
     >>> df.set_index('a', inplace=True)
     >>> df
         b   c
@@ -84,7 +84,7 @@ Make column `a` the index:
 
 Sort along the index:
 
-    ```python
+    ```pycon
     >>> df.sort_index(inplace=True)
     >>> df
         b   c
@@ -99,7 +99,7 @@ Sort along the index:
 Deduplicate `c` data points at the same `a` index, with the highest `c` value
 taking precedence:
 
-    ```python
+    ```pycon
     >>> df['c'].reset_index().groupby('a').max()
         c
     a
@@ -112,7 +112,7 @@ taking precedence:
 Transform a timeline of [`arrow`](https://crsmithdev.com/arrow/) objects to
 Pandas' internal Timestamp index:
 
-    ```python
+    ```pycon
     >>> df = pd.DataFrame({'int_ts': pd.Series(np.random.randint(9999999999, size=5))})
     >>> df
           int_ts
@@ -158,7 +158,7 @@ Now that we have a properly indexed timeline, we can use built-in Pandas
 methods. Here is how to compute the maximum value of samples [per year
 ](https://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases):
 
-    ```python
+    ```pycon
     >>> df['int_ts'].resample('AS')
     dt_index
     1985-01-01    501201802
@@ -181,7 +181,7 @@ methods. Here is how to compute the maximum value of samples [per year
 
 Same as above but taking the highest value by shifting decade:
 
-    ```python
+    ```pycon
     >>> df['int_ts'].resample('10AS', how=max)
     dt_index
     1985-01-01    761088975

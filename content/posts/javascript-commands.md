@@ -5,15 +5,14 @@ category: English
 tags: javascript, programming, Web
 ---
 
-  * Print a message in the console:
+- Print a message in the console:
 
-        ```javascript
-        console.log("Debugging message");
-        ```
+  ```javascript
+  console.log("Debugging message");
+  ```
 
-  * Add a breakpoint:
+- Add a breakpoint:
 
-        ```javascript
-        debugger;
-        ```
-
+  ```javascript
+  debugger;
+  ```

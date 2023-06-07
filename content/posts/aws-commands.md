@@ -2,81 +2,79 @@
 date: 2020-06-16 12:00
 title: AWS commands
 category: English
-tags: cloud, cloud computing, saas, iaas, paas, aws, amazon, development, CLI, iam, transcribe, text-to-speech, brew, s3, mime type, media type
+tags: cloud, cloud computing, saas, iaas, paas, aws, amazon, development, CLI, iam,
+  transcribe, text-to-speech, brew, s3, mime type, media type
 ---
 
 All commandes below relies on the latest version of [aws-cli](https://github.com/aws/aws-cli).
 
-  * macOS install:
+- macOS install:
 
-        ```shell-session
-        $ brew install awscli
-        (...)
-        $ aws --version
-        aws-cli/2.0.19 Python/3.8.3 Darwin/19.5.0 botocore/2.0.0dev23
-        ```
-
+  ```shell-session
+  $ brew install awscli
+  (...)
+  $ aws --version
+  aws-cli/2.0.19 Python/3.8.3 Darwin/19.5.0 botocore/2.0.0dev23
+  ```
 
 ## Authentication
 
-  * Register default profile:
+- Register default profile:
 
-        ```shell-session
-        $ aws configure
-        ```
+  ```shell-session
+  $ aws configure
+  ```
 
-  * Register additional profile:
+- Register additional profile:
 
-        ```shell-session
-        $ aws configure --profile bob
-        ```
+  ```shell-session
+  $ aws configure --profile bob
+  ```
 
-  * List access keys:
+- List access keys:
 
-        ```shell-session
-        $ aws iam list-access-keys
-        ```
+  ```shell-session
+  $ aws iam list-access-keys
+  ```
 
-  * List access keys of another profile:
+- List access keys of another profile:
 
-        ```shell-session
-        $ aws iam --profile bob list-access-keys
-        ```
-
+  ```shell-session
+  $ aws iam --profile bob list-access-keys
+  ```
 
 ## S3
 
-  * Set [media types (formerly known as MIME types)](https://www.iana.org/assignments/media-types/media-types.xhtml) of all atom files found in a `feed` folder:
+- Set [media types (formerly known as MIME types)](https://www.iana.org/assignments/media-types/media-types.xhtml) of all atom files found in a `feed` folder:
 
-        ```shell-session
-        $ aws s3 cp s3://my-bucket s3://my-bucket --exclude '*' --include '*feed/index.atom' --recursive --no-guess-mime-type --content-type "application/atom+xml" --metadata-directive "REPLACE"
-        ```
-
+  ```shell-session
+  $ aws s3 cp s3://my-bucket s3://my-bucket --exclude '*' --include '*feed/index.atom' --recursive --no-guess-mime-type --content-type "application/atom+xml" --metadata-directive "REPLACE"
+  ```
 
 ## Transcribe
 
-  * Fetch all names of the first 100 [transcription jobs](https://docs.aws.amazon.com/cli/latest/reference/transcribe/list-transcription-jobs.html):
+- Fetch all names of the first 100 [transcription jobs](https://docs.aws.amazon.com/cli/latest/reference/transcribe/list-transcription-jobs.html):
 
-        ```shell-session
-        $ aws transcribe list-transcription-jobs --query '[TranscriptionJobSummaries[*].TranscriptionJobName]' --max-results 100 --output text
-        ```
+  ```shell-session
+  $ aws transcribe list-transcription-jobs --query '[TranscriptionJobSummaries[*].TranscriptionJobName]' --max-results 100 --output text
+  ```
 
-  * [Get URL of the transcript](https://docs.aws.amazon.com/cli/latest/reference/transcribe/get-transcription-job.html) produced by `my_job_name` job:
+- [Get URL of the transcript](https://docs.aws.amazon.com/cli/latest/reference/transcribe/get-transcription-job.html) produced by `my_job_name` job:
 
-        ```shell-session
-        $ aws transcribe get-transcription-job --transcription-job-name my_job_name --query '[TranscriptionJob.Transcript.TranscriptFileUri]' --output text
-        ```
+  ```shell-session
+  $ aws transcribe get-transcription-job --transcription-job-name my_job_name --query '[TranscriptionJob.Transcript.TranscriptFileUri]' --output text
+  ```
 
-  * Same as above but save the transcript content directly to a local `transcript.txt` file:
+- Same as above but save the transcript content directly to a local `transcript.txt` file:
 
-        ```shell-session
-        $ AWS_PAGER="" aws transcribe get-transcription-job --transcription-job-name my_job_name --query '[TranscriptionJob.Transcript.TranscriptFileUri]' --output text | wget -i - -O - | jq --raw-output '.results.transcripts[0].transcript' > transcript.txt
-        ```
+  ```shell-session
+  $ AWS_PAGER="" aws transcribe get-transcription-job --transcription-job-name my_job_name --query '[TranscriptionJob.Transcript.TranscriptFileUri]' --output text | wget -i - -O - | jq --raw-output '.results.transcripts[0].transcript' > transcript.txt
+  ```
 
-  * Putting it all together, here is how do download all transcripts from all your jobs:
+- Putting it all together, here is how do download all transcripts from all your jobs:
 
-        ```shell
-        for JOB_ID in $(aws transcribe list-transcription-jobs --query '[TranscriptionJobSummaries[*].TranscriptionJobName]' --max-results 100 --output text);
-            do AWS_PAGER="" aws transcribe get-transcription-job --transcription-job-name "$JOB_ID" --query '[TranscriptionJob.Transcript.TranscriptFileUri]' --output text | wget -i - -O - | jq --raw-output '.results.transcripts[0].transcript' > "$JOB_ID".txt;
-        done
-        ```
+  ```shell
+  for JOB_ID in $(aws transcribe list-transcription-jobs --query '[TranscriptionJobSummaries[*].TranscriptionJobName]' --max-results 100 --output text);
+      do AWS_PAGER="" aws transcribe get-transcription-job --transcription-job-name "$JOB_ID" --query '[TranscriptionJob.Transcript.TranscriptFileUri]' --output text | wget -i - -O - | jq --raw-output '.results.transcripts[0].transcript' > "$JOB_ID".txt;
+  done
+  ```

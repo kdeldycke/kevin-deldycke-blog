@@ -5,141 +5,135 @@ category: English
 tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
 ---
 
-
 ## Search
 
-  * List all installed packages:
+- List all installed packages:
 
-        ```shell-session
-        $ dpkg -l
-        ```
+  ```shell-session
+  $ dpkg -l
+  ```
 
-  * List all recently installed packages:
+- List all recently installed packages:
 
-        ```shell-session
-        $ zcat -f /var/log/dpkg.log* | grep "\ install\ " | sort
-        ```
+  ```shell-session
+  $ zcat -f /var/log/dpkg.log* | grep "\ install\ " | sort
+  ```
 
-  * Show the changelog of a package (here, the linux kernel of Ubuntu):
+- Show the changelog of a package (here, the linux kernel of Ubuntu):
 
-        ```shell-session
-        $ aptitude changelog linux-generic
-        ```
+  ```shell-session
+  $ aptitude changelog linux-generic
+  ```
 
-  * Which package contain a given file:
+- Which package contain a given file:
 
-        ```shell-session
-        $ apt-file search file_to_search
-        ```
+  ```shell-session
+  $ apt-file search file_to_search
+  ```
 
-  * Get the list of files of a package:
+- Get the list of files of a package:
 
-        ```shell-session
-        $ apt-file list package_name
-        ```
+  ```shell-session
+  $ apt-file list package_name
+  ```
 
-  * Extract content of a package:
+- Extract content of a package:
 
-        ```shell-session
-        $ ar vx mypackage.deb
-        ```
-
+  ```shell-session
+  $ ar vx mypackage.deb
+  ```
 
 ## Install
 
-  * Install a package from a lower-priority repository, like the backport repository:
+- Install a package from a lower-priority repository, like the backport repository:
 
-        ```shell-session
-        $ apt-get -t squeeze-backports install my-package
-        ```
+  ```shell-session
+  $ apt-get -t squeeze-backports install my-package
+  ```
 
-  * Force reinstallation of a package:
+- Force reinstallation of a package:
 
-        ```shell-session
-        $ apt-get -d --reinstall install my-package
-        $ dpkg --install --force-confmiss /var/cache/apt/archives/my-package.deb
-        ```
-
+  ```shell-session
+  $ apt-get -d --reinstall install my-package
+  $ dpkg --install --force-confmiss /var/cache/apt/archives/my-package.deb
+  ```
 
 ## Upgrade
 
-  * Upgrade package listing and metadata:
+- Upgrade package listing and metadata:
 
-        ```shell-session
-        $ sudo apt update
-        ```
+  ```shell-session
+  $ sudo apt update
+  ```
 
-  * Force `yes` so that package maintainer's version of config files always prevails:
+- Force `yes` so that package maintainer's version of config files always prevails:
 
-        ```shell-session
-        $ sudo apt upgrade -y --force-yes
-        ```
-
+  ```shell-session
+  $ sudo apt upgrade -y --force-yes
+  ```
 
 ## Holding
 
-  * Hold a package with either `dpkg` or `aptitude`:
+- Hold a package with either `dpkg` or `aptitude`:
 
-        ```shell-session
-        $ echo "kdenlive hold" | dpkg --set-selections
-        ```
+  ```shell-session
+  $ echo "kdenlive hold" | dpkg --set-selections
+  ```
 
-    or:
+  or:
 
-        ```shell-session
-        $ aptitude hold kdenlive
-        ```
+  ```shell-session
+  $ aptitude hold kdenlive
+  ```
 
-  * Unhold a package:
+- Unhold a package:
 
-        ```shell-session
-        $ echo "kdenlive install" | dpkg --set-selections
-        ```
+  ```shell-session
+  $ echo "kdenlive install" | dpkg --set-selections
+  ```
 
-    or:
+  or:
 
-        ```shell-session
-        $ aptitude unhold kdenlive
-        ```
+  ```shell-session
+  $ aptitude unhold kdenlive
+  ```
 
-  * List holded packages:
+- List holded packages:
 
-        ```shell-session
-        $ dpkg --get-selections | grep hold
-        ```
-
+  ```shell-session
+  $ dpkg --get-selections | grep hold
+  ```
 
 ## Uninstall
 
-  * Uninstall a package throughly (both program files and configuration):
+- Uninstall a package throughly (both program files and configuration):
 
-        ```shell-session
-        $ apt-get remove --purge my_package
-        ```
+  ```shell-session
+  $ apt-get remove --purge my_package
+  ```
 
-  * Force removal of a package while ignoring all dependencies:
+- Force removal of a package while ignoring all dependencies:
 
-        ```shell-session
-        $ dpkg --remove --force-depends libsomething
-        ```
+  ```shell-session
+  $ dpkg --remove --force-depends libsomething
+  ```
 
-  * Remove orphaned pakages:
+- Remove orphaned pakages:
 
-        ```shell-session
-        $ deborphan | xargs apt-get -y remove --purge
-        ```
-
+  ```shell-session
+  $ deborphan | xargs apt-get -y remove --purge
+  ```
 
 ## Clean-up
 
-  * Clean aptitude local cache:
+- Clean aptitude local cache:
 
-        ```shell-session
-        $ apt-get clean
-        ```
+  ```shell-session
+  $ apt-get clean
+  ```
 
-  * Remove `dpkg` lock file:
+- Remove `dpkg` lock file:
 
-        ```shell-session
-        $ rm /var/lib/dpkg/lock
-        ```
+  ```shell-session
+  $ rm /var/lib/dpkg/lock
+  ```
