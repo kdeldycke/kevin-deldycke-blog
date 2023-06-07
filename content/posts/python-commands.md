@@ -21,7 +21,7 @@ tags: ascii, Computer programming, date, dateutil, development, distutils, encod
 
   ```pycon
   >>> from boltons import strutils
-  >>> strutils.slugify(' aBc De F   1 23 4! -- ! 56--78 - -9- %$& +eée-', '-', ascii=True)
+  >>> strutils.slugify(" aBc De F   1 23 4! -- ! 56--78 - -9- %$& +eée-", "-", ascii=True)
   b'abc-de-f-1-23-4-56-78-9-eee'
   ```
 
