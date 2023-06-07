@@ -34,12 +34,7 @@ downloaded the raw data a while back, it is a matter of installing the Python
 
 Let's now find out about that SNP:
 
-    ```python
-    $ python
-    Python 2.7.13 (default, Dec 18 2016, 07:03:39)
-    [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
-    Type "help", "copyright", "credits" or "license" for more information.
-    Persistent session history, tab completion and pretty printing are enabled.
+    ```pycon
     >>> from arv import load
     >>> genome = load("kev_full_genome.txt")
     >>> genome["rs9536314"]
