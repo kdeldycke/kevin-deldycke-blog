@@ -1,6 +1,6 @@
 ---
 date: "2010-03-26"
-title: Web commands
+title: "Web commands"
 category: English
 tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x509,
   Regular expression, MIME type, Media Type, proxy, SOCKS, Tor, curl, yt-dlp

@@ -1,6 +1,6 @@
 ---
 date: "2009-09-07"
-title: Fuse and sshfs on Mac OS X Leopard
+title: "Fuse and sshfs on Mac OS X Leopard"
 category: English
 tags: Apple, automount, fuse, KDE, Mac OS X 10.5 Leopard, Linux, MacBook, macOS, mount, Network, sftp, SSH, sshfs, system, RSA
 ---

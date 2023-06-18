@@ -1,6 +1,6 @@
 ---
 date: "2008-12-28"
-title: dpkg, APT & Aptitude commands
+title: "dpkg, APT & Aptitude commands"
 category: English
 tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
 ---

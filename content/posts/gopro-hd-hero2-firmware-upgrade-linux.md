@@ -1,6 +1,6 @@
 ---
 date: "2012-11-27"
-title: Linux GoPro HD Hero2 Firmware Upgrade
+title: "Linux GoPro HD Hero2 Firmware Upgrade"
 category: English
 tags: camera, firmware, gopro, Linux, Ubuntu, upgrade, Video, wget, macOS
 ---

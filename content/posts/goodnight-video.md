@@ -1,6 +1,6 @@
 ---
 date: "2013-03-04"
-title: Goodnight video
+title: "Goodnight video"
 category: English
 tags: Music, Video, Kdenlive, slowmoVideo, Omashay, AWS, Amazon, cloud computing, EC2, ImageMagick, Twixtor, Ubuntu, Kubuntu
 ---

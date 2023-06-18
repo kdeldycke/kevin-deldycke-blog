@@ -1,6 +1,6 @@
 ---
 date: "2013-02-12"
-title: Mandriva repositories retired
+title: "Mandriva repositories retired"
 category: English
 tags: Mandriva, Linux, GitHub, RPM, urpmi
 ---

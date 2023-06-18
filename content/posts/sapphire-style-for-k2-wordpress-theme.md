@@ -1,6 +1,6 @@
 ---
 date: "2007-03-21"
-title: Sapphire style for K2 Wordpress theme
+title: "Sapphire style for K2 Wordpress theme"
 tags: Blog, CSS, K2, Template, Theme, Web, WordPress
 ---
 

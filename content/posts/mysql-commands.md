@@ -1,6 +1,6 @@
 ---
 date: "2010-02-26"
-title: MySQL commands
+title: "MySQL commands"
 category: English
 tags: CLI, Databases, MySQL, SQL, SQL, cron
 ---

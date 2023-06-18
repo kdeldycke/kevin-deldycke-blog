@@ -1,6 +1,6 @@
 ---
 date: "2008-05-26"
-title: Website Backup Script: bug fix release
+title: "Website Backup Script: bug fix release"
 category: English
 tags: Backup, CLI, FTP, lftp, Linux, MySQL, SQL, mysqldump, Network, Python, rdiff-backup, rsync, Script, Server, SSH, Web
 ---

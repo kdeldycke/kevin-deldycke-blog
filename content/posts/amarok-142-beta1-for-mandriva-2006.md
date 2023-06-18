@@ -1,6 +1,6 @@
 ---
 date: "2006-08-19"
-title: Amarok 1.4.2-beta1 for Mandriva 2006
+title: "Amarok 1.4.2-beta1 for Mandriva 2006"
 tags: Amarok, KDE, Linux, Mandriva, Music, RPM
 ---
 

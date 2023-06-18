@@ -1,6 +1,6 @@
 ---
 date: "2013-11-05"
-title: How-to simplify Amazon affiliate links
+title: "How-to simplify Amazon affiliate links"
 category: English
 tags: Amazon, ads, campaign, affiliates, Markdown, find, sed, Linux, Regular expression
 ---

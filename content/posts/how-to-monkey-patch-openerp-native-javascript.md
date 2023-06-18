@@ -1,6 +1,6 @@
 ---
 date: "2012-02-21"
-title: How-to monkey-patch OpenERP's native Javascript
+title: "How-to monkey-patch OpenERP's native Javascript"
 category: English
 tags: javascript, monkeypatch, OpenERP, Web, xml, ERP
 ---

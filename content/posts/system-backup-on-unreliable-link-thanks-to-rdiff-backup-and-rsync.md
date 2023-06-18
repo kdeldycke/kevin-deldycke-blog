@@ -1,6 +1,6 @@
 ---
 date: "2007-04-09"
-title: System Backup on Unreliable Link thanks to rdiff-backup and rsync
+title: "System Backup on Unreliable Link thanks to rdiff-backup and rsync"
 category: English
 tags: Backup, CLI, Linux, Python, rdiff-backup, rsync, Script, SSH, cron
 ---

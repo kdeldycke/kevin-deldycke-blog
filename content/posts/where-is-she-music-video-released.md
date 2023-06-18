@@ -1,6 +1,6 @@
 ---
 date: "2012-08-21"
-title: New music video: Where is she?
+title: "New music video: Where is she?"
 Category: Front Page
 tags: Cool Cavemen, Music, music video, omashay, saxophonist, song, Video, youtube
 ---

@@ -1,6 +1,6 @@
 ---
 date: 2020-10-27
-title: TrueNAS Configuration and Maintenance
+title: "TrueNAS Configuration and Maintenance"
 category: English
 tags: hardware, NAS, filesystem, OS, FreeNAS, TrueNAS, hdd, hard-drive, ssd, raid, storage, network, ZFS, disk, package manager, FreeBSD, NTFS, partition, SuperMicro, BMC
 ---

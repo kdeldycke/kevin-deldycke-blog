@@ -1,6 +1,6 @@
 ---
 date: "2011-08-23"
-title: CherryPy + Mako + Formish + OOOP boilerplate
+title: "CherryPy + Mako + Formish + OOOP boilerplate"
 category: English
 tags: CherryPy, formish, GitHub, GPL, mako, ooop, open source, OpenERP, Python
 ---

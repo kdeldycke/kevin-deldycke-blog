@@ -1,6 +1,6 @@
 ---
 date: "2007-04-19"
-title: Sapphire v0.2 for K2
+title: "Sapphire v0.2 for K2"
 tags: Blog, CSS, K2, Template, Theme, Web, WordPress
 ---
 

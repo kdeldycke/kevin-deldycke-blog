@@ -1,6 +1,6 @@
 ---
 date: "2009-03-18"
-title: A fix to xkcd's emoticons + parentheses problem
+title: "A fix to xkcd's emoticons + parentheses problem"
 category: English
 tags: emoticons, geek, typography, unicode, UTF-8, xkcd
 ---

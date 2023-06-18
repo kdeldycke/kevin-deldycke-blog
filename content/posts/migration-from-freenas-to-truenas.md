@@ -1,6 +1,6 @@
 ---
 date: 2020-12-27
-title: Migration from FreeNAS to TrueNAS
+title: "Migration from FreeNAS to TrueNAS"
 category: English
 tags: NAS, filesystem, OS, FreeNAS, TrueNAS, hdd, hard-drive, ssd, raid, storage, network, ZFS
 ---

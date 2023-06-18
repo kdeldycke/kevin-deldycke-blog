@@ -1,6 +1,6 @@
 ---
 date: "2015-12-08"
-title: Using Git's orphan branch for partial project fusion
+title: "Using Git's orphan branch for partial project fusion"
 category: English
 tags: CLI, Git, GitHub
 ---

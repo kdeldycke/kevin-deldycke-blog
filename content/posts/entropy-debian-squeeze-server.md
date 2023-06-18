@@ -1,6 +1,6 @@
 ---
 date: "2011-08-09"
-title: Better Entropy on a Debian Squeeze server
+title: "Better Entropy on a Debian Squeeze server"
 category: English
 tags: Debian, entropy, haveged, Linux, random, security, Debian Squeeze
 ---

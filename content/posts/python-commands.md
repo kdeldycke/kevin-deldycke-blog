@@ -1,6 +1,6 @@
 ---
 date: "2011-01-04"
-title: Python commands
+title: "Python commands"
 category: English
 tags: ascii, Computer programming, date, dateutil, development, distutils, encoding,
   PEP8, PyPi, PDB, Python, socket, unicode, URL, urllib2, HTTP, PyLint, Fabric, pip,

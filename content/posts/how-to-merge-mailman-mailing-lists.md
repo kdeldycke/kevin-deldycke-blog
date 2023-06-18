@@ -1,6 +1,6 @@
 ---
 date: "2011-10-11"
-title: How-to merge Mailman mailing-lists
+title: "How-to merge Mailman mailing-lists"
 category: English
 tags: archive, Linux, email, mailing list, mailman, merge, Python
 ---

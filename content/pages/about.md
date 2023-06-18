@@ -1,5 +1,5 @@
 ---
-title: About
+title: "About"
 ---
 
 My name is **Kevin Deldycke**, I'm a high-tech Engineering Manager.

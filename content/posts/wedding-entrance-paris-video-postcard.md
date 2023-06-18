@@ -1,6 +1,6 @@
 ---
 date: "2012-11-13"
-title: Wedding Entrance: Video Postcard of Paris
+title: "Wedding Entrance: Video Postcard of Paris"
 category: English
 tags: camera, Canon EOS 7D, glidecam, paris, sigma, steadycam, Tamron, tokina
 ---

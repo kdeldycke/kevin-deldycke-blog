@@ -1,6 +1,6 @@
 ---
 date: 2020-10-12
-title: Billing pipeline: a critical time sensitive system
+title: "Billing pipeline: a critical time sensitive system"
 category: English
 tags: Python, billing, payment, scaleway, unittest, software engineering, quality assurance, management, pipeline, data, money, business, AWS, lambda, date, time, falsehood, Chesterton's fence, arrow, TrueTime, google, pytest, meta-package-manage, mail-deduplicate
 ---

@@ -1,6 +1,6 @@
 ---
 date: "2012-10-30"
-title: How-To transfer bbPress content to plain WordPress objects
+title: "How-To transfer bbPress content to plain WordPress objects"
 category: English
 tags: export, import, migration, MySQL, SQL, PHP, Python, WordPress, xml
 ---

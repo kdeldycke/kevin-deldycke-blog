@@ -1,6 +1,6 @@
 ---
 date: "2012-10-16"
-title: Kdenlive Fundraising Campaign Tee-Shirt
+title: "Kdenlive Fundraising Campaign Tee-Shirt"
 category: English
 tags: campaign, Fundraising, Kdenlive, T-shirt
 ---

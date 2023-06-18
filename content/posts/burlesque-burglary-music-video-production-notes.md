@@ -1,6 +1,6 @@
 ---
 date: "2012-06-05"
-title: Burlesque Burglary music video: Production Notes
+title: "Burlesque Burglary music video: Production Notes"
 Category: Front Page
 tags: blinder, Canon EOS 7D, concert, Cool Cavemen, Gimp, Kdenlive, Stage lighting, Linux, live, music video, SoundUp studio, Video, YouTube
 ---

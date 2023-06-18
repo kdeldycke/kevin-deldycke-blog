@@ -1,6 +1,6 @@
 ---
 date: "2010-11-09"
-title: Flame & Snow, using Quartz Composer particle system
+title: "Flame & Snow, using Quartz Composer particle system"
 category: English
 tags: Animation, Apple, MacBook, QC Experiment, Quartz Composer, Video, Visual
 ---

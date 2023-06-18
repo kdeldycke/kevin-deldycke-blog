@@ -1,6 +1,6 @@
 ---
 date: "2006-05-06"
-title: A bunch of Python scripts
+title: "A bunch of Python scripts"
 category: English
 tags: Linux, Python
 ---

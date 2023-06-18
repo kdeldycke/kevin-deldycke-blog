@@ -1,6 +1,6 @@
 ---
 date: "2011-02-01"
-title: Moving a Git sub-tree to its own repository
+title: "Moving a Git sub-tree to its own repository"
 category: English
 tags: code, Git, GitHub, Regular expression
 ---

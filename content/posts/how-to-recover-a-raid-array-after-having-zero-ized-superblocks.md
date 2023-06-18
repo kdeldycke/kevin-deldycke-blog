@@ -1,6 +1,6 @@
 ---
 date: "2007-03-07"
-title: How-to Recover a RAID array after having Zero-ized Superblocks
+title: "How-to Recover a RAID array after having Zero-ized Superblocks"
 category: English
 tags: Backup, Hardware, Linux, mdadm, RAID, Server
 ---

@@ -1,6 +1,6 @@
 ---
 date: "2012-03-20"
-title: I contributed $200 to Kdenlive and you should too!
+title: "I contributed $200 to Kdenlive and you should too!"
 category: English
 tags: campaign, contribution, donation, fundaraising, KDE, Kdenlive, Linux, open source, Video
 ---

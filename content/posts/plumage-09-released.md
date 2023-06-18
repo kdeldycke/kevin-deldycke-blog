@@ -1,6 +1,6 @@
 ---
 date: "2017-03-22"
-title: Plumage 0.9 released
+title: "Plumage 0.9 released"
 category: English
 tags: Plumage, Pelican, Python, Jinja, theme, HTML, CSS, Javascript, favicon
 ---

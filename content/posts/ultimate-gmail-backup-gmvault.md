@@ -1,6 +1,6 @@
 ---
 date: "2012-10-23"
-title: Ultimate Gmail backup with Gmvault
+title: "Ultimate Gmail backup with Gmvault"
 category: English
 tags: Backup, Gmail, gmvault, Linux, email, Pip, Python, Ubuntu, cron
 ---

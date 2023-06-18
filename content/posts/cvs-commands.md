@@ -1,6 +1,6 @@
 ---
 date: "2006-11-15"
-title: CVS commands
+title: "CVS commands"
 category: English
 tags: CLI, CVS, KDE, Linux
 ---

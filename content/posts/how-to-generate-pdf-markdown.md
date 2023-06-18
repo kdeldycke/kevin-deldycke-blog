@@ -1,6 +1,6 @@
 ---
 date: "2012-01-31"
-title: How-to generate PDF from Markdown
+title: "How-to generate PDF from Markdown"
 category: English
 tags: convertion, Gimli, GitHub, LaTeX, Linux, markdown, natty, pandoc, pdf, ruby, TeX, Ubuntu Natty Narwhal (11.04)
 ---

@@ -1,6 +1,6 @@
 ---
 date: "2009-03-03"
-title: On tour with Cool Cavemen!
+title: "On tour with Cool Cavemen!"
 category: English
 tags: band, Cool Cavemen, Stage lighting, live, tour
 ---

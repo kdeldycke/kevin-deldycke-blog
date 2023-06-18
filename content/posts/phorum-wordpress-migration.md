@@ -1,6 +1,6 @@
 ---
 date: "2013-08-08"
-title: Phorum 3.x to WordPress migration script
+title: "Phorum 3.x to WordPress migration script"
 tags: Python, Linux, Phorum, WordPress, migration, script, GitHub, Cool Cavemen, Funky Storm, Debian, aptitude, pip, lxml, bbcode, PyMySQL, MySQL, PHP
 ---
 

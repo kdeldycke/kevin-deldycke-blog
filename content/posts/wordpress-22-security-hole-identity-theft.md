@@ -1,6 +1,6 @@
 ---
 date: "2007-06-07"
-title: Wordpress 2.2 Security Hole: Identity Theft
+title: "Wordpress 2.2 Security Hole: Identity Theft"
 category: English
 tags: Apache, Blog, hack, log, security, Server, Web, WordPress
 ---

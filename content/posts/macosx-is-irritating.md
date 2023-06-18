@@ -1,6 +1,6 @@
 ---
 date: "2009-12-23"
-title: Mac OS X really starts to get irritating...
+title: "Mac OS X really starts to get irritating..."
 category: English
 tags: desktop, KDE, Mac OS X 10.5 Leopard, Apple, macOS, rant
 ---

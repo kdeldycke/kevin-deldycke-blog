@@ -1,6 +1,6 @@
 ---
 date: "2007-01-11"
-title: Comment Ouvrir un Boîtier / Disque Dur Externe SilverTouch&nbsp;?
+title: "Comment Ouvrir un Boîtier / Disque Dur Externe SilverTouch&nbsp;?"
 category: Français
 tags: boitier externe, disque dur, informatique, ordinateur
 ---

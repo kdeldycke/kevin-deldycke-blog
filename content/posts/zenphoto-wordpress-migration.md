@@ -1,6 +1,6 @@
 ---
 date: "2012-09-18"
-title: ZenPhoto to WordPress Migration
+title: "ZenPhoto to WordPress Migration"
 category: English
 tags: Debian, migration, MySQL, SQL, Pip, Python, WordPress, xml, Zenphoto
 ---

@@ -1,6 +1,6 @@
 ---
 date: "2011-05-31"
-title: MGE Ellipse 750 UPS on Debian Squeeze
+title: "MGE Ellipse 750 UPS on Debian Squeeze"
 category: English
 tags: Debian, Linux, nut, Server, Debian Squeeze, udev, UPS, USB, Regular expression
 ---

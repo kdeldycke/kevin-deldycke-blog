@@ -1,6 +1,6 @@
 ---
 date: "2010-10-07"
-title: Mercurial commands
+title: "Mercurial commands"
 category: English
 tags: CLI, Mercurial
 ---

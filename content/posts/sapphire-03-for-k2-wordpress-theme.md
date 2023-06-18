@@ -1,6 +1,6 @@
 ---
 date: "2007-06-16"
-title: Sapphire 0.3 for K2 Wordpress Theme
+title: "Sapphire 0.3 for K2 Wordpress Theme"
 category: English
 tags: K2, CSS, Template, Theme, WordPress
 ---

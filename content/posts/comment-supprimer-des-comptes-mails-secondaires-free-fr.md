@@ -1,6 +1,6 @@
 ---
 date: "2010-12-08"
-title: Comment supprimer des comptes mails secondaires @free.fr
+title: "Comment supprimer des comptes mails secondaires @free.fr"
 category: Français
 tags: free.fr, Gmail, ISP, email, Proxad
 ---

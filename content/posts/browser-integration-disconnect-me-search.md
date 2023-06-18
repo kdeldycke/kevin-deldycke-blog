@@ -1,6 +1,6 @@
 ---
 date: "2015-12-01"
-title: Browser Integration of Disconnect.me search
+title: "Browser Integration of Disconnect.me search"
 category: English
 tags: security, Tor, privacy, StartPage, disconnect.me, search, browser, Google, Chrome
 ---

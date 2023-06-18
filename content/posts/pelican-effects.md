@@ -1,6 +1,6 @@
 ---
 date: "2013-04-05"
-title: Pelican effects
+title: "Pelican effects"
 Category: English
 tags: WordPress, Pelican, Python
 ---

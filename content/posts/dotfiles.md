@@ -1,6 +1,6 @@
 ---
 date: "2013-10-28"
-title: dotfiles for macOS and Kubuntu
+title: "dotfiles for macOS and Kubuntu"
 tags: GitHub, Python, vim, Apple, macOS, Kubuntu, Solarized
 ---
 

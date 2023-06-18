@@ -1,6 +1,6 @@
 ---
 date: "2015-12-22"
-title: maildir-deduplicate 1.0.2 released
+title: "maildir-deduplicate 1.0.2 released"
 category: English
 tags: Git, GitHub, maildir, python, code
 ---

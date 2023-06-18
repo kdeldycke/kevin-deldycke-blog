@@ -1,6 +1,6 @@
 ---
 date: "2006-08-20"
-title: Blog Theme Update
+title: "Blog Theme Update"
 tags: K2, Theme, CSS, WordPress
 ---
 

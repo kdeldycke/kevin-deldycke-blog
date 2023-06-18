@@ -1,6 +1,6 @@
 ---
 date: "2016-11-03"
-title: How-to initialize Cassandra in macOS?
+title: "How-to initialize Cassandra in macOS?"
 category: English
 tags: CLI, database, macOS, noSQL, Cassandra, Apple, macOS 10.12 Sierra, Homebrew, Java
 ---

@@ -1,6 +1,6 @@
 ---
 date: "2014-02-15"
-title: Plumage 0.4 released
+title: "Plumage 0.4 released"
 category: English
 tags: Plumage, Pelican, Python, Jinja, theme, HTML, CSS, Javascript
 ---

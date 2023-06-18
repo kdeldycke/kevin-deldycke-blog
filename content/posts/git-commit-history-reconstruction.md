@@ -1,6 +1,6 @@
 ---
 date: "2010-06-09"
-title: Commit history reconstruction with Git
+title: "Commit history reconstruction with Git"
 category: English
 tags: commit, Git, GitHub, history, Init, Software engineering
 ---

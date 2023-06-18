@@ -1,6 +1,6 @@
 ---
 date: "2007-05-14"
-title: Location of RPM Macros files in Mandriva
+title: "Location of RPM Macros files in Mandriva"
 tags: Linux, macro, Mandriva, RPM, urpmi
 ---
 

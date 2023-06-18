@@ -1,6 +1,6 @@
 ---
 date: 2020-06-12
-title: 10G Network at Home
+title: "10G Network at Home"
 category: English
 tags: hardware, network, 10G, freebox, NIC, switch
 ---

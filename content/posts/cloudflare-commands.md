@@ -1,6 +1,6 @@
 ---
 date: "2022-06-10"
-title: CloudFlare commands
+title: "CloudFlare commands"
 category: English
 tags: cloud, cloud computing, saas, iaas, paas, development, CLI, dns, cloudflare,
   API

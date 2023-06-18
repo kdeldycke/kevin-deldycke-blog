@@ -1,6 +1,6 @@
 ---
 date: "2007-06-02"
-title: How-to launch a KDE Application in Another Language
+title: "How-to launch a KDE Application in Another Language"
 category: English
 tags: KDE, Linux
 ---

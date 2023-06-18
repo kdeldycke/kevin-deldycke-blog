@@ -1,6 +1,6 @@
 ---
 date: "2010-05-18"
-title: Feeds updated!
+title: "Feeds updated!"
 category: English
 tags: Aggregator, Apache, Atom, feed, FeedBurner, Google, RSS, WordPress
 ---

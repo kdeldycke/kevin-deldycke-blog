@@ -1,6 +1,6 @@
 ---
 date: "2009-05-10"
-title: smush.it saves you image's bits!
+title: "smush.it saves you image's bits!"
 category: English
 tags: API, image, online service, optimization, Web, WordPress
 ---

@@ -1,6 +1,6 @@
 ---
 date: "2007-02-28"
-title: Repository Moved thanks to Apache and 301 Redirections
+title: "Repository Moved thanks to Apache and 301 Redirections"
 category: English
 tags: Apache, Hosting, htaccess, ISP, Linux, Mandriva, RPM, urpmi
 ---

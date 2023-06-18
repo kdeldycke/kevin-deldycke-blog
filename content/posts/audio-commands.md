@@ -1,6 +1,6 @@
 ---
 date: "2006-11-01"
-title: Audio commands
+title: "Audio commands"
 category: English
 tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool,
   sox, PCM, id3v2, Apple Music

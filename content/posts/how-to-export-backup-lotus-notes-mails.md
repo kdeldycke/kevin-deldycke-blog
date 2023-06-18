@@ -1,6 +1,6 @@
 ---
 date: "2010-06-25"
-title: How-to export/backup Lotus Notes mails
+title: "How-to export/backup Lotus Notes mails"
 category: English
 tags: Backup, Databases, email, export, Lotus Notes, Windows
 ---

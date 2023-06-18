@@ -1,6 +1,6 @@
 ---
 date: "2012-11-06"
-title: Cool Cavemen at Gayant Expo: production notes
+title: "Cool Cavemen at Gayant Expo: production notes"
 Category: Front Page
 tags: band, concert, Cool Cavemen, Douai, France, gayant expo, Kdenlive, Stage Lighting, live, SoundUp studio, Video, YouTube
 ---

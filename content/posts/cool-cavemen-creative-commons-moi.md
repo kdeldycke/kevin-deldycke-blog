@@ -1,6 +1,6 @@
 ---
 date: "2009-11-26"
-title: Cool Cavemen, les Creative Commons et moi
+title: "Cool Cavemen, les Creative Commons et moi"
 category: Français
 tags: band, Cool Cavemen, Creative Commons, interview, musique, oxyradio, podcast, radio
 ---

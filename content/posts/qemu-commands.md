@@ -1,6 +1,6 @@
 ---
 date: "2005-06-04"
-title: Qemu commands
+title: "Qemu commands"
 category: English
 tags: CLI, Linux, Qemu
 ---

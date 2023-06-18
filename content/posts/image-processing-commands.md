@@ -1,6 +1,6 @@
 ---
 date: "2006-12-20"
-title: Image Processing commands
+title: "Image Processing commands"
 category: English
 tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, mozjpeg
 ---

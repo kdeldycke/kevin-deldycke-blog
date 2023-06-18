@@ -1,6 +1,6 @@
 ---
 date: "2010-02-23"
-title: How-to fork a CVS project with Git
+title: "How-to fork a CVS project with Git"
 category: English
 tags: CVS, Drupal, Fork, Git, GitHub, Theme
 ---

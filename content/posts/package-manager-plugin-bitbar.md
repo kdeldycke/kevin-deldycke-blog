@@ -1,6 +1,6 @@
 ---
 date: "2016-07-06"
-title: Package Manager plugin v1.0 for BitBar
+title: "Package Manager plugin v1.0 for BitBar"
 tags: GitHub, Python, Apple, macOS, BitBar, Homebrew, Cask
 ---
 

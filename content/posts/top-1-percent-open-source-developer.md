@@ -1,6 +1,6 @@
 ---
 date: "2011-03-07"
-title: I'm Top 1% Open-Source Developer! (and that's a lie)
+title: "I'm Top 1% Open-Source Developer! (and that's a lie)"
 category: English
 tags: development, Open Hub, open source, Software engineering
 ---

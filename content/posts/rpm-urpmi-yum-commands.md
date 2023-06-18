@@ -1,6 +1,6 @@
 ---
 date: "2006-11-29"
-title: RPM, Urpmi & Yum commands
+title: "RPM, Urpmi & Yum commands"
 category: English
 tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpmi,
   yum, cron

@@ -1,6 +1,6 @@
 ---
 date: "2010-08-12"
-title: Midnight in Paris: on-set photos of next Woody Allen movie
+title: "Midnight in Paris: on-set photos of next Woody Allen movie"
 category: English
 tags: Alexander III bridge, Canon EOS 7D, cinema, midnight in paris, Owen Wilson, paris, Paris,France, photography, Woody Allen
 ---

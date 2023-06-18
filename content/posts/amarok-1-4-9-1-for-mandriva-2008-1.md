@@ -1,6 +1,6 @@
 ---
 date: "2008-05-26"
-title: Amarok 1.4.9.1 for Mandriva 2008.1
+title: "Amarok 1.4.9.1 for Mandriva 2008.1"
 category: English
 tags: Amarok, backport, Mandriva, RPM, SQLite, MySQL, PostgreSQL
 ---

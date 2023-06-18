@@ -1,6 +1,6 @@
 ---
 date: "2006-12-03"
-title: Grisbi 0.5.9 for Mandriva 2007
+title: "Grisbi 0.5.9 for Mandriva 2007"
 category: English
 tags: accounting, grisbi, Linux, Mandriva, RPM
 ---

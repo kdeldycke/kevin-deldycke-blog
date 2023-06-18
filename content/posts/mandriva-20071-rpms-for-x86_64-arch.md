@@ -1,6 +1,6 @@
 ---
 date: "2007-07-05"
-title: Mandriva 2007.1 RPMs for x86_64 arch.
+title: "Mandriva 2007.1 RPMs for x86_64 arch."
 tags: Linux, Mandriva, RPM, urpmi, x86_64
 ---
 

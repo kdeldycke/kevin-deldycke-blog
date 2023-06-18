@@ -1,6 +1,6 @@
 ---
 date: "2006-11-15"
-title: New CD Jewel Case Template ready to Print!
+title: "New CD Jewel Case Template ready to Print!"
 category: English
 tags: Compact disc, Creative Commons, Inkscape, Music, SVG, Template
 ---

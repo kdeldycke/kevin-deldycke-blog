@@ -1,6 +1,6 @@
 ---
 date: "2011-08-02"
-title: $50 coupon for 23andMe
+title: "$50 coupon for 23andMe"
 category: English
 tags: 23andMe, coupon, discount, DNA, genetics, reduction, voucher
 ---

@@ -1,6 +1,6 @@
 ---
 date: "2013-05-20"
-title: Behind the Scenes of Omashay's "Where is she?"
+title: "Behind the Scenes of Omashay's *Where is she?*"
 category: English
 tags: video, YouTube, Kdenlive, music video, Omashay, behind the scenes, making of
 ---

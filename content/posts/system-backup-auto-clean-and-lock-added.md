@@ -1,6 +1,6 @@
 ---
 date: "2007-04-27"
-title: System Backup: Auto-Clean and Lock added
+title: "System Backup: Auto-Clean and Lock added"
 category: English
 tags: Backup, Linux, Python, rdiff-backup, rsync, system, cron
 ---

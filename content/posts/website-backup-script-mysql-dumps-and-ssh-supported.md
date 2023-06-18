@@ -1,6 +1,6 @@
 ---
 date: "2007-03-25"
-title: Website Backup Script: MySQL dumps and SSH supported.
+title: "Website Backup Script: MySQL dumps and SSH supported."
 category: English
 tags: Backup, CLI, FTP, lftp, Linux, MySQL, SQL, mysqldump, Network, Python, rdiff-backup, rsync, Script, Server, SSH, Web
 ---

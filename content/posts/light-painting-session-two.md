@@ -1,6 +1,6 @@
 ---
 date: "2010-02-09"
-title: Light Painting session II
+title: "Light Painting session II"
 category: English
 tags: Apple, Canon EOS 7D, iPhone, light painting, long exposure, photo, photography
 ---

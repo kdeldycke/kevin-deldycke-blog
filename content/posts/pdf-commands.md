@@ -1,6 +1,6 @@
 ---
 date: "2006-12-13"
-title: PDF commands
+title: "PDF commands"
 category: English
 tags: CLI, Linux, pdf, GhostScript, pdfgrep
 ---

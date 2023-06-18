@@ -1,6 +1,6 @@
 ---
 date: "2005-04-21"
-title: Remote Backup with rsync
+title: "Remote Backup with rsync"
 category: English
 tags: Backup, CLI, Linux, Mandriva, rsync, SSH, RSA, cron
 ---

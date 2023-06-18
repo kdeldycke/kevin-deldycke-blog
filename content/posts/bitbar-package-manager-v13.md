@@ -1,6 +1,6 @@
 ---
 date: "2016-07-12"
-title: Package Manager v1.3 BitBar plugin
+title: "Package Manager v1.3 BitBar plugin"
 tags: GitHub, Python, Apple, macOS, BitBar, Homebrew, Cask, node.js, atom, apm, npm, ruby, gem, pip
 ---
 

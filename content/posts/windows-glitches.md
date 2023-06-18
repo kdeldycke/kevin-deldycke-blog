@@ -1,6 +1,6 @@
 ---
 date: "2012-01-03"
-title: Windows glitches
+title: "Windows glitches"
 category: English
 tags: glitches, UI, Windows
 ---

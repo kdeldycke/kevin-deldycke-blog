@@ -1,6 +1,6 @@
 ---
 date: "2011-02-08"
-title: Trapped in Freedom: live at Garage Café
+title: "Trapped in Freedom: live at Garage Café"
 category: English
 tags: 1080p, Canon EOS 7D, Tamron, Trapped in Freedom, Video, youtube
 ---

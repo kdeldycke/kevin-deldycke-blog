@@ -1,6 +1,6 @@
 ---
 date: "2013-08-22"
-title: funky-storm.com source code released after 11 years
+title: "funky-storm.com source code released after 11 years"
 tags: Funky Storm, PHP, MySQL, GitHub
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: "2006-04-17"
-title: Rugg 0.2.1 RPM package for Mandriva 2006.0
+title: "Rugg 0.2.1 RPM package for Mandriva 2006.0"
 tags: Linux, Mandriva, RPM, rugg
 ---
 

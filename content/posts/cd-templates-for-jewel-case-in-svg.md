@@ -1,6 +1,6 @@
 ---
 date: "2006-09-26"
-title: CD Templates for Jewel Case in SVG
+title: "CD Templates for Jewel Case in SVG"
 category: English
 tags: Cool Cavemen, Creative Commons, inkscape, Music, SVG, Template, Compact disc
 ---

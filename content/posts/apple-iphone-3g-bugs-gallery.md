@@ -1,6 +1,6 @@
 ---
 date: "2010-12-28"
-title: Apple iPhone 3G bugs gallery
+title: "Apple iPhone 3G bugs gallery"
 category: English
 tags: Apple, bugs, iPhone, orange
 ---

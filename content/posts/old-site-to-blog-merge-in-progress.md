@@ -1,6 +1,6 @@
 ---
 date: "2006-10-12"
-title: Old Site to Blog: Merge in Progress
+title: "Old Site to Blog: Merge in Progress"
 category: English
 tags: CMS, WordPress, Nuxeo CPS
 ---

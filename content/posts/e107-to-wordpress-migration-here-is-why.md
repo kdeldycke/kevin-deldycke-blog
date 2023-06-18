@@ -1,6 +1,6 @@
 ---
 date: "2006-08-24"
-title: e107 to Wordpress Migration: Here is Why.
+title: "e107 to Wordpress Migration: Here is Why."
 tags: akismet, Blog, CMS, e107, spam, Web, WordPress
 ---
 

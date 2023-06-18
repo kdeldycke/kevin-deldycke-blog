@@ -1,6 +1,6 @@
 ---
 date: "2011-10-25"
-title: PostgreSQL commands
+title: "PostgreSQL commands"
 category: English
 tags: CLI, database, Linux, PostgreSQL, SQL, Regular expression
 ---

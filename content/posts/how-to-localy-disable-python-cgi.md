@@ -1,6 +1,6 @@
 ---
 date: "2006-05-01"
-title: How-to locally Disable Python CGI scripts.
+title: "How-to locally Disable Python CGI scripts."
 category: English
 tags: Apache, Linux, Python, Server, Web
 ---

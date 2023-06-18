@@ -1,6 +1,6 @@
 ---
 date: "2012-04-10"
-title: Check Point's SNX client on Ubuntu 11.04
+title: "Check Point's SNX client on Ubuntu 11.04"
 category: English
 tags: check point, Linux, Network, snx, SSL, Ubuntu, VPN
 ---

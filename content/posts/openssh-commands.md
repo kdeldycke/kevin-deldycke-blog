@@ -1,6 +1,6 @@
 ---
 date: "2010-03-26"
-title: OpenSSH commands
+title: "OpenSSH commands"
 category: English
 tags: CLI, Computer networking, find, Linux, openssh, proxy, rsync, scp, shell, SSH,
   tunnel, xargs

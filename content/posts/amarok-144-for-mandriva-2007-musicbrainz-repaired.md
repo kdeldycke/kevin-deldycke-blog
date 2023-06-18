@@ -1,6 +1,6 @@
 ---
 date: "2006-11-28"
-title: Amarok 1.4.4 for Mandriva 2007: MusicBrainz Repaired!
+title: "Amarok 1.4.4 for Mandriva 2007: MusicBrainz Repaired!"
 category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, Music, SQLite, MySQL, PostgreSQL, SQL, RPM, urpmi
 ---

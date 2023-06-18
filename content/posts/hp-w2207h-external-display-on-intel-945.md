@@ -1,6 +1,6 @@
 ---
 date: "2008-03-07"
-title: HP w2207h external display on Intel 945
+title: "HP w2207h external display on Intel 945"
 category: English
 tags: chipset, display, graphic, Hewlett Packard, Intel, laptop, Linux, Samsung, screen, X.org
 ---

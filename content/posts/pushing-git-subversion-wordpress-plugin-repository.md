@@ -1,6 +1,6 @@
 ---
 date: "2011-02-14"
-title: Pushing Git to Subversion: the case of WordPress plugin repository
+title: "Pushing Git to Subversion: the case of WordPress plugin repository"
 category: English
 tags: Git, Hosting, Linux, Subversion, WordPress, Regular expression
 ---

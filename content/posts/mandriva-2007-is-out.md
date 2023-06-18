@@ -1,6 +1,6 @@
 ---
 date: "2006-10-22"
-title: Mandriva 2007 is out!
+title: "Mandriva 2007 is out!"
 category: English
 tags: Linux, Mandriva, RPM
 ---

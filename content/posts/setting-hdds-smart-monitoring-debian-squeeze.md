@@ -1,6 +1,6 @@
 ---
 date: "2011-05-17"
-title: Setting up HDD's SMART monitoring on Debian Squeeze
+title: "Setting up HDD's SMART monitoring on Debian Squeeze"
 category: English
 tags: Debian, HDD, Linux, Server, smartmontools, Debian Squeeze, Regular expression
 ---

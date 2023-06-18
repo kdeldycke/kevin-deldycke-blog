@@ -1,6 +1,6 @@
 ---
 date: "2006-12-06"
-title: Hardware commands
+title: "Hardware commands"
 category: English
 tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR,
   Canon EOS 7D, dmidecode, printer, CUPS, smartmontools, NTFS

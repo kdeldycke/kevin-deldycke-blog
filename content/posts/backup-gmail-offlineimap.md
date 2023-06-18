@@ -1,6 +1,6 @@
 ---
 date: "2012-05-15"
-title: How-To Backup Gmail with OfflineImap
+title: "How-To Backup Gmail with OfflineImap"
 category: English
 tags: Backup, email, Gmail, IMAP, Linux, maildir, Python, SSL, cron
 ---

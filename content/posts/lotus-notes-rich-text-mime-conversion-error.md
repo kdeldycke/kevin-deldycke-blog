@@ -1,6 +1,6 @@
 ---
 date: "2010-05-12"
-title: Lotus Notes' Rich Text to MIME conversion error
+title: "Lotus Notes' Rich Text to MIME conversion error"
 category: English
 tags: email, Gimp, Lotus Notes, MIME
 ---

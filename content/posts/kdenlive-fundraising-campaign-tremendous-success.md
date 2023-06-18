@@ -1,6 +1,6 @@
 ---
 date: "2012-05-22"
-title: Kdenlive fundraising campaign: a tremendous success!
+title: "Kdenlive fundraising campaign: a tremendous success!"
 category: English
 tags: campaign, Fundraising, KDE, Kdenlive, NLE, Video
 ---

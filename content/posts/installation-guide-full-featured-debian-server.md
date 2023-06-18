@@ -1,6 +1,6 @@
 ---
 date: "2011-10-18"
-title: Installation Guide for a full-featured Debian server
+title: "Installation Guide for a full-featured Debian server"
 category: English
 tags: apt, cron, Debian, Exim, fail2ban, Linux, maintenance, munin, MySQL, SQL, nginx, nut, PHP, Server, SMART, Debian Squeeze, system, Web
 ---

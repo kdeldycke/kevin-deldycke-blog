@@ -2,7 +2,7 @@
 date: "2020-11-09"
 category: English
 tags: CLI, Hardware, printer, Hewlett-Packard, firmware, ink, office, DRM, macOS, toner
-title: How-to revert HP printer firmware ban on 3rd-party toner cartridges
+title: "How-to revert HP printer firmware ban on 3rd-party toner cartridges"
 ---
 
 Hewlett & Packard, the founders, had great lessons to teach us (managers in high-tech) about culture. To the extend of [quoting them](https://github.com/kdeldycke/awesome-engineering-team-management/commit/de3e64647c911f78a37b3e54c7e46197acb061e1) in my [awesome list on engineering team management](https://github.com/kdeldycke/awesome-engineering-team-management#readme). 👨‍💼

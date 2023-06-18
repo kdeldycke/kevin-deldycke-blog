@@ -1,6 +1,6 @@
 ---
 date: "2015-11-05"
-title: Pandas snippets
+title: "Pandas snippets"
 category: English
 tags: Pandas, Computer programming, date, development, Python, Data, Analytics, NumPy
 ---

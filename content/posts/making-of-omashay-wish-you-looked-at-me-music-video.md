@@ -1,6 +1,6 @@
 ---
 date: "2011-07-12"
-title: Making of Omashay's "Wish You Looked at Me" music video
+title: "Making of Omashay's *Wish You Looked at Me* music video"
 category: English
 tags: 1080p, 720p, Cool Cavemen, Kdenlive, Linux, Music, music video, omashay, Video, youtube
 ---
