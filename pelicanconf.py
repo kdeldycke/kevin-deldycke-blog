@@ -180,20 +180,6 @@ EXTRA_PATH_METADATA = {
     "extra/robots.txt": {"path": "robots.txt"},
 }
 
-# Once all plugins hard-linked in this repository by the way of git submodules
-# gets their own package, we can get rid of PLUGIN_PATHS and set PLUGINS to
-# None. That way all plugins installed by poetry will be auto-discovered by
-# Pelican.
-PLUGINS = [
-    "pelican.plugins.image_process",
-    "pelican.plugins.seo",
-    "pelican.plugins.search",
-    "pelican.plugins.similar_posts",
-    "pelican.plugins.neighbors",
-    "pelican.plugins.sitemap",
-    "pelican.plugins.webassets",
-]
-
 
 # ----- Plugin-specific settings
 
