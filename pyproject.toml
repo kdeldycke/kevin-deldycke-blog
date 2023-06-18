@@ -37,7 +37,6 @@ pelican-neighbors = "^1.2.0"
 #gensim = "^4.3.0"  # XXX Broken!
 
 [tool.poetry.group.dev.dependencies]
-bump2version = "^1.0.1"
 mypy = "^1.2"
 
 [tool.mypy]
