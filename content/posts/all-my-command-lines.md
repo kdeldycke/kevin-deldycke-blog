@@ -44,3 +44,7 @@ Here is a collection of commands lines, code and configuration snippets I collec
 - [Cloudflare](https://kevin.deldycke.com/2022/06/cloudflare-commands/)
 
 For the context, you can read this [introduction](https://kevin.deldycke.com/2006/10/useful-commands-introduction/).
+
+Deprecated or unmaintained commands:
+
+- [transcode](https://kevin.deldycke.com/2006/11/transcode-commands/)
