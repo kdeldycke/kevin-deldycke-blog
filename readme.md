@@ -13,12 +13,6 @@ $ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git blo
 $ cd ./blog
 ```
 
-To fetch and/or reset submodules to their committed reference:
-
-```shell-session
-$ git submodule update --init --recursive
-```
-
 Install Python 3.11 and upgrade all its utilities:
 
 ```shell-session
@@ -36,13 +30,6 @@ $ poetry install
 ```
 
 ## Development
-
-Update to latest submodules:
-
-```shell-session
-$ git submodule init
-$ git submodule update --remote --merge
-```
 
 In one terminal, run:
 
