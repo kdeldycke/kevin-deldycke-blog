@@ -73,6 +73,12 @@ tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl,
   $ find /folder -iname "*.markdown" -exec perl -p -i -e 's/(prefix1|prefix2): .*\n//sg' "{}" \;
   ```
 
+- Strip time from `date:` prefixed lines and quote the value. I.e. replace all occurrences of `date: 2012-01-01 00:00:00 +0000` by `date: "2012-01-01"`:
+
+  ```shell-session
+  $ find /folder -iname "*.markdown" -exec perl -p -i -e 's/date: (\d+-\d+-\d+) .*\n/date: "$1"\n/sg' "{}" \;
+  ```
+
 - Remove lines matching a regex (encoding [particular markdown TOC entries](https://github.com/kdeldycke/awesome-iam/commit/295a4fa4229c5966ce4bc207704e32fb6f1491d6#diff-c81593a3651bf87f58345cd819edad71R24)), save the result in place and save a backup of the original content in a `.bak` file:
 
   ```shell-session
