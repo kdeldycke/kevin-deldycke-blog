@@ -1,5 +1,5 @@
 ---
-date: 2008-01-11 22:44:58
+date: "2008-01-11"
 title: e107 to Wordpress migration : v0.9 plug-in released
 category: English
 tags: e107, migration, plugin, WordPress

@@ -1,5 +1,5 @@
 ---
-date: 2010-10-07 13:26:53
+date: "2010-10-07"
 title: Mercurial commands
 category: English
 tags: CLI, Mercurial

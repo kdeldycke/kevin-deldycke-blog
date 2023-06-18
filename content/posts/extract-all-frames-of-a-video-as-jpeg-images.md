@@ -1,5 +1,5 @@
 ---
-date: 2006-08-22 01:18:25
+date: "2006-08-22"
 title: Extract All Frames of a Video as Jpeg Images
 category: English
 tags: Linux, transcode, Video

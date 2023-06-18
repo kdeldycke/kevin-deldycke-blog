@@ -1,5 +1,5 @@
 ---
-date: 2013-02-19 12:02:07
+date: "2013-02-19"
 title: How-To Compile slowmoVideo on Ubuntu 12.10
 category: English
 tags: video, Slow Motion, Ubuntu, Ubuntu 12.10, Kubuntu, aptitude, apt-get, shell, Twixtor

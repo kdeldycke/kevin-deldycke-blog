@@ -1,5 +1,5 @@
 ---
-date: 2011-01-04 12:04:12
+date: "2011-01-04"
 title: Python commands
 category: English
 tags: ascii, Computer programming, date, dateutil, development, distutils, encoding,

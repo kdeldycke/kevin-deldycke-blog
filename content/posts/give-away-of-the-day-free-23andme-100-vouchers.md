@@ -1,5 +1,5 @@
 ---
-date: 2008-12-20 20:39:38
+date: "2008-12-20"
 title: Give away of the day: free 23andMe $100 vouchers!
 category: English
 tags: 23andMe, coupon, discount, DNA, genetics, voucher

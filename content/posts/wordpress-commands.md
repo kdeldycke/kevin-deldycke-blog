@@ -1,5 +1,5 @@
 ---
-date: 2011-12-13 12:41:07
+date: "2011-12-13"
 title: WordPress commands
 category: English
 tags: Blog, MySQL, SQL, PHP, WordPress

@@ -1,5 +1,5 @@
 ---
-date: 2012-11-20 12:14:07
+date: "2012-11-20"
 title: 20m Scuba Diving Pool
 Category: Front Page
 tags: GoPro, Kdenlive, Pool, Scuba Diving, Video, YouTube

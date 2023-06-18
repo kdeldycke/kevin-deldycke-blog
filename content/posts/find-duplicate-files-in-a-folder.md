@@ -1,5 +1,5 @@
 ---
-date: 2006-10-29 22:25:40
+date: "2006-10-29"
 title: Find Duplicate Files in a Folder
 category: English
 tags: CLI, Linux, Python

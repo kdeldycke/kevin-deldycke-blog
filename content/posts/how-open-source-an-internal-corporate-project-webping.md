@@ -1,5 +1,5 @@
 ---
-date: 2011-08-30 12:18:01
+date: "2011-08-30"
 title: How I Open-Sourced an Internal Corporate Project (WebPing)
 category: English
 tags: CLI, Git, GitHub, Linux, Perl, Python, Regular expression, Subversion, trac, webping

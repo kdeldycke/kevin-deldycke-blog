@@ -1,5 +1,5 @@
 ---
-date: 2011-12-06 12:27:03
+date: "2011-12-06"
 title: Live Browser : a Python web app using Microsoft Live Connect API
 category: English
 tags: API, Boilerplate, bootstrap, CherryPy, cloud-computing, Git, GitHub, Javascript, jquery, mako, Microsoft, Live connect, mongodb, OAuth, Python, Web

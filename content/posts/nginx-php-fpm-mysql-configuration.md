@@ -1,5 +1,5 @@
 ---
-date: 2011-09-20 12:22:13
+date: "2011-09-20"
 title: My Nginx + PHP-FPM + MySQL configuration
 category: English
 tags: Debian, Debian Squeeze, Linux, MySQL, SQL, nginx, ovh, PHP, php-fpm, Server, virtualization, Web, WordPress

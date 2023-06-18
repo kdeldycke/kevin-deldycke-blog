@@ -1,5 +1,5 @@
 ---
-date: 2004-06-29 18:54:50
+date: "2004-06-29"
 title: Mise en place d'une paserelle ADSL sous Mandrake 10
 category: Français
 tags: ADSL, gateway, Linux, Mandriva, Network, router, MBR, PPPoE, Modem, cron

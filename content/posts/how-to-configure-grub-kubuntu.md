@@ -1,5 +1,5 @@
 ---
-date: 2010-02-12 22:46:25
+date: "2010-02-12"
 title: How-to configure GRUB in (k)Ubuntu
 category: English
 tags: grub, Kubuntu, Ubuntu, Linux, Ubuntu, MBR

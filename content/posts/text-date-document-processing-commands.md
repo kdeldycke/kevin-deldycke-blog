@@ -1,5 +1,5 @@
 ---
-date: 2006-12-13 22:10:13
+date: "2006-12-13"
 title: Text, Date & Document processing commands
 category: English
 tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl,

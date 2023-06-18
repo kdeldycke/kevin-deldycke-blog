@@ -1,5 +1,5 @@
 ---
-date: 2007-02-08 21:37:03
+date: "2007-02-08"
 title: Amarok 1.4.5 RPMs for Mandriva 2007
 category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, RPM

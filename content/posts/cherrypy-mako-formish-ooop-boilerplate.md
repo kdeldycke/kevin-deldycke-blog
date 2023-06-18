@@ -1,5 +1,5 @@
 ---
-date: 2011-08-23 12:58:37
+date: "2011-08-23"
 title: CherryPy + Mako + Formish + OOOP boilerplate
 category: English
 tags: CherryPy, formish, GitHub, GPL, mako, ooop, open source, OpenERP, Python

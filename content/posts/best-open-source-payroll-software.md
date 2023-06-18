@@ -1,5 +1,5 @@
 ---
-date: 2008-06-05 20:35:58
+date: "2008-06-05"
 title: I wrote the best Open-Source Payroll Software of the world!
 category: English
 tags: consulting, ERP, free software, open source, OpenERP, ERP5, OpenBravo, Neogia, Adempiere, Compiere

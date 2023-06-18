@@ -1,5 +1,5 @@
 ---
-date: 2008-08-22 00:42:05
+date: "2008-08-22"
 title: How-to: e107 autogallery to Zenphoto migration
 category: English
 tags: autogallery, e107, Linux, migration, MySQL, SQL, Python, Script, Web, Zenphoto, Cool Cavemen

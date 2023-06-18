@@ -1,5 +1,5 @@
 ---
-date: 2010-10-15 11:56:56
+date: "2010-10-15"
 title: Export Quartz Composer to video
 category: English
 tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, Mac OS X 10.6 Snow Leopard

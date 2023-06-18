@@ -1,5 +1,5 @@
 ---
-date: 2006-10-18 00:21:13
+date: "2006-10-18"
 title: 'Useful Commands: Introduction'
 category: English
 tags: Blog, CLI, CMS, Hosting, Linux, Web, WordPress

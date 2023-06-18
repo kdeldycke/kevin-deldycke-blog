@@ -1,5 +1,5 @@
 ---
-date: 2009-03-18 21:24:17
+date: "2009-03-18"
 title: A fix to xkcd's emoticons + parentheses problem
 category: English
 tags: emoticons, geek, typography, unicode, UTF-8, xkcd

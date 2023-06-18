@@ -1,5 +1,5 @@
 ---
-date: 2012-07-03 12:45:22
+date: "2012-07-03"
 title: OVH: configuration du modem Thomson TG-585 en IPoE
 category: Français
 tags: ADSL, dslam, ipoe, Modem, nra, ovh, PPPoE, telnet, thomson

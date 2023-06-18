@@ -1,5 +1,5 @@
 ---
-date: 2005-11-08 23:04:06
+date: "2005-11-08"
 title: Quelques Mots en Wolof...
 category: Français
 tags: french, life, Sénégal, travel, wolof

@@ -1,5 +1,5 @@
 ---
-date: 2012-04-03 12:24:54
+date: "2012-04-03"
 title: Beautify Contextual Related Posts WordPress plugin
 category: English
 tags: CSS, plugin, Theme, TwentyEleven, Web design, WordPress

@@ -1,5 +1,5 @@
 ---
-date: 2011-03-01 11:37:09
+date: "2011-03-01"
 title: e107 Importer 1.1 available!
 category: English
 tags: CMS, e107, import, migration, PHP, plugin, Web, WordPress, bbpress

@@ -1,5 +1,5 @@
 ---
-date: 2010-02-06 18:07:57
+date: "2010-02-06"
 title: Google AdWords: bon de réduction de 75€ offert&nbsp;!
 category: Français
 tags: AdWords, Google, bon de reduction, France, Google, voucher, Web

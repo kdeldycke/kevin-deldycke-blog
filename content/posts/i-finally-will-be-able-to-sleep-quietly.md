@@ -1,5 +1,5 @@
 ---
-date: 2006-05-01 02:55:28
+date: "2006-05-01"
 title: I finally will be able to sleep quietly...
 tags: FTP, Hosting, Linux, security, Server, SSL
 ---

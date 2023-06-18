@@ -1,5 +1,5 @@
 ---
-date: 2006-11-02 23:19:03
+date: "2006-11-02"
 title: Website Backup script: Incremental Backup feature added.
 category: English
 tags: Backup, bzip2, CLI, FTP, lftp, Linux, Network, Python, Web

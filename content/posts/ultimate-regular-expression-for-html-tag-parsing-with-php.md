@@ -1,5 +1,5 @@
 ---
-date: 2007-03-23 23:27:09
+date: "2007-03-23"
 title: Ultimate Regular Expression for HTML tag parsing with PHP
 category: English
 tags: HTML, parsing, PHP, Regular expression

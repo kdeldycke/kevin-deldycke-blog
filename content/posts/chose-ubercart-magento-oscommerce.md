@@ -1,5 +1,5 @@
 ---
-date: 2011-03-21 11:33:37
+date: "2011-03-21"
 title: Why I chose Ubercart instead of Magento or osCommerce.
 category: English
 tags: CMS, Drupal, Magento, osCommerce, Online Store, Ubercart

@@ -1,5 +1,5 @@
 ---
-date: 2011-10-04 12:00:44
+date: "2011-10-04"
 title: Mailman migration
 category: English
 tags: Debian, Debian Squeeze, dns, Exim, mailman, spf, Debian Lenny

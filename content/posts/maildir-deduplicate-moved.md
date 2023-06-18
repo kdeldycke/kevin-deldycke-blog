@@ -1,5 +1,5 @@
 ---
-date: 2013-06-04 12:48
+date: "2013-06-04"
 title: maildir-deduplicate.py moved to its own repository
 category: English
 tags: Git, GitHub, maildir, python, code

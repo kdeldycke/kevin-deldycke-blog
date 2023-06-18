@@ -1,5 +1,5 @@
 ---
-date: 2010-08-10 21:42:14
+date: "2010-08-10"
 title: QLC effects generator for LED panels
 category: English
 tags: Canon EOS 7D, Cool Cavemen, DMX, Stage lighting, Linux, Python, QLC, Qt, Script, XML

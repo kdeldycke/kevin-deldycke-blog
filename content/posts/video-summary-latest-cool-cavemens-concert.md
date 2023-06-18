@@ -1,5 +1,5 @@
 ---
-date: 2012-03-27 12:24:42
+date: "2012-03-27"
 title: Video summary of latest Cool Cavemen's concert
 category: English
 tags: 1080p, Canon EOS 7D, concert, Cool Cavemen, gig, Kdenlive, live, Music, point and shoot, sony, Tamron, Video, YouTube

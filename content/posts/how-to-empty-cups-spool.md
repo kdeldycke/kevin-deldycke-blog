@@ -1,5 +1,5 @@
 ---
-date: 2005-04-04 22:16:55
+date: "2005-04-04"
 title: How-to empty CUPS spool
 category: English
 tags: CUPS, Linux, printing, Script, Server, shell, cron

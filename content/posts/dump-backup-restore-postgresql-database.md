@@ -1,5 +1,5 @@
 ---
-date: 2012-03-06 12:17:58
+date: "2012-03-06"
 title: Dump, backup and restore a PostgreSQL database
 category: English
 tags: Backup, Dump, Linux, PostgreSQL, SQL, RDBMS

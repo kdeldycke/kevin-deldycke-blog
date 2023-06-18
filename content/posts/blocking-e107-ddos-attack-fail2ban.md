@@ -1,5 +1,5 @@
 ---
-date: 2010-08-03 21:09:54
+date: "2010-08-03"
 title: Blocking e107 dDOS attack with fail2ban
 category: English
 tags: Apache, Cool Cavemen, e107, fail2ban, Linux, PHP, security, Server, Web, Regular expression

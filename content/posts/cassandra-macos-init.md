@@ -1,5 +1,5 @@
 ---
-date: 2016-11-03 17:46:00
+date: "2016-11-03"
 title: How-to initialize Cassandra in macOS?
 category: English
 tags: CLI, database, macOS, noSQL, Cassandra, Apple, macOS 10.12 Sierra, Homebrew, Java

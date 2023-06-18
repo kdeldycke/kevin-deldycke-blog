@@ -1,5 +1,5 @@
 ---
-date: 2008-12-28 19:25:36
+date: "2008-12-28"
 title: dpkg, APT & Aptitude commands
 category: English
 tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu

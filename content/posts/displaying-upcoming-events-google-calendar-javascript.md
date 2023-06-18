@@ -1,5 +1,5 @@
 ---
-date: 2012-07-17 12:34:17
+date: "2012-07-17"
 title: Displaying Upcoming Events from a Google Calendar in Javascript
 category: English
 tags: events, Google Calendar, HTML, iCal, Javascript, JSON, RSS, Cool Cavemen

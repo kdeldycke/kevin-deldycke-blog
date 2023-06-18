@@ -1,5 +1,5 @@
 ---
-date: 2009-08-02 16:29:59
+date: "2009-08-02"
 title: dmg2img for Mandriva 2009.1
 category: English
 tags: Apple, CLI, dm2img, dmg, HFS, Linux, Mandriva, RPM

@@ -1,5 +1,5 @@
 ---
-date: 2009-12-02 21:37:09
+date: "2009-12-02"
 title: Auto-saving a file at regular intervals
 category: English
 tags: Backup, cron, Linux, save

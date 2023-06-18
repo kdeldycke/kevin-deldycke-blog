@@ -1,5 +1,5 @@
 ---
-date: 2010-09-29 15:28:15
+date: "2010-09-29"
 title: Making of "Info TGV" Android app video
 category: English
 tags: Android, Canon EOS 7D, ffmpeg, HTC, Kdenlive, Kubuntu, Ubuntu, Linux, Twitter, Uperto, Video, x264, YouTube, SoundUp studio

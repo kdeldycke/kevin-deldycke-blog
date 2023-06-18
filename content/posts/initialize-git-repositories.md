@@ -1,5 +1,5 @@
 ---
-date: 2010-05-25 21:18:48
+date: "2010-05-25"
 title: How I initialize my Git repositories
 category: English
 tags: code, Git, GitHub

@@ -1,5 +1,5 @@
 ---
-date: 2006-04-29 19:02:30
+date: "2006-04-29"
 title: Bad FTP mirrors with fmirror or wget? Use lftp!
 category: English
 tags: Backup, CLI, fmirror, FTP, lftp, Linux, Web, wget

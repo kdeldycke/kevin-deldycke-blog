@@ -1,5 +1,5 @@
 ---
-date: 2016-10-07 11:40:00
+date: "2016-10-07"
 title: How-to initialize PostgreSQL in OS X?
 category: English
 tags: CLI, database, macOS, PostgreSQL, SQL, Apple, OS X 10.11 El Capitan, Regular expression

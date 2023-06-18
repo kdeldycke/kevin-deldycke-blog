@@ -1,5 +1,5 @@
 ---
-date: 2006-12-25 12:54:43
+date: "2006-12-25"
 title: Website Backup Script Updated: Take Care of Hidden Files now.
 tags: Backup, FTP, lftp, Linux, Python, rdiff-backup, Server, Web
 ---

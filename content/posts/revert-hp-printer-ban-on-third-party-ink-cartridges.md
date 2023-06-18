@@ -1,5 +1,5 @@
 ---
-date: 2020-11-09 12:00:00
+date: "2020-11-09"
 category: English
 tags: CLI, Hardware, printer, Hewlett-Packard, firmware, ink, office, DRM, macOS, toner
 title: How-to revert HP printer firmware ban on 3rd-party toner cartridges

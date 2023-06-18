@@ -1,5 +1,5 @@
 ---
-date: 2006-08-19 16:33:31
+date: "2006-08-19"
 title: Tor 0.1.1.21 for Mandriva 2006.0
 category: English
 tags: Linux, Mandriva, security, Server, Tor

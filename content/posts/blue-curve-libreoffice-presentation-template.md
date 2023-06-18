@@ -1,5 +1,5 @@
 ---
-date: 2012-12-31 12:15:00
+date: "2012-12-31"
 title: LibreOffice templates: Blue Curve & Fancy Window Frame
 category: English
 tags: Creative Commons, libreoffice, openoffice, presentation, slide, Template

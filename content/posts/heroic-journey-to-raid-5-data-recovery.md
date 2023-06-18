@@ -1,5 +1,5 @@
 ---
-date: 2008-07-24 23:20:27
+date: "2008-07-24"
 title: Heroic journey to RAID-5 data recovery
 category: English
 tags: array, Backup, disk, drive, Hardware, HDD, Linux, mdadm, monitoring, RAID, Server, system, UPS

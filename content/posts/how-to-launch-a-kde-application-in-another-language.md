@@ -1,5 +1,5 @@
 ---
-date: 2007-06-02 23:42:15
+date: "2007-06-02"
 title: How-to launch a KDE Application in Another Language
 category: English
 tags: KDE, Linux

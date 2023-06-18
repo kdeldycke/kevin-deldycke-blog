@@ -1,5 +1,5 @@
 ---
-date: 2011-11-08 12:20:19
+date: "2011-11-08"
 title: GPG & OpenSSL commands
 category: English
 tags: CLI, cryptography, GPG, Linux, security, OpenSSL, SSL, RSA

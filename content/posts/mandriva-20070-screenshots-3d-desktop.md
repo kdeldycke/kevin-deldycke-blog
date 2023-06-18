@@ -1,5 +1,5 @@
 ---
-date: 2007-01-02 13:27:47
+date: "2007-01-02"
 title: Mandriva 2007.0 Screenshots: 3D Desktop
 category: English
 tags: 3D, Celestia, Compiz, desktop, GPU, Intel, laptop, lspci, Mandriva, Samsung, X.org

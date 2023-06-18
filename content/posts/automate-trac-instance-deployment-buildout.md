@@ -1,5 +1,5 @@
 ---
-date: 2010-12-01 19:01:15
+date: "2010-12-01"
 title: Automate Trac instance deployment with Buildout
 category: English
 tags: buildout, htdigest, md5, Python, Red Hat, sasl, Subversion, trac, yum, Mercurial, Regular expression

@@ -1,5 +1,5 @@
 ---
-date: 2013-02-06 12:03:26
+date: "2013-02-06"
 title: WordPress to Pelican
 Category: English
 tags: WordPress, Pelican, Python, migration, PHP, MySQL, sed, Markdown, reStructuredText, ZenPhoto, Cool Cavemen, Regular expression

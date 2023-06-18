@@ -1,5 +1,5 @@
 ---
-date: 2006-12-27 19:37:40
+date: "2006-12-27"
 title: Rugg 0.2.3 for Mandriva 2007
 tags: Linux, Mandriva, RPM, rugg
 ---

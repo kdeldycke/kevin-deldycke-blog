@@ -1,5 +1,5 @@
 ---
-date: 2012-01-24 14:28:23
+date: "2012-01-24"
 title: Burlesque Burglary music video released
 category: English
 tags: Canon EOS 7D, Cool Cavemen, KDE, subtitle, Subtitling, translation, Video, youtube

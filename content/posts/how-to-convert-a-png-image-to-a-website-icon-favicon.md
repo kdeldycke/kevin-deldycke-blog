@@ -1,5 +1,5 @@
 ---
-date: 2006-09-15 23:19:36
+date: "2006-09-15"
 title: How to Convert a Png image to a Website Icon (favicon)
 category: English
 tags: CLI, Linux, Theme, Web

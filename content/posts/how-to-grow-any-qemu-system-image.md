@@ -1,5 +1,5 @@
 ---
-date: 2007-04-08 16:10:56
+date: "2007-04-08"
 title: How-to grow any Qemu system image
 category: English
 tags: gparted, Linux, qcow, Qemu, system, Windows

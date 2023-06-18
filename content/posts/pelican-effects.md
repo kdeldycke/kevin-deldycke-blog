@@ -1,5 +1,5 @@
 ---
-date: 2013-04-05 12:03:26
+date: "2013-04-05"
 title: Pelican effects
 Category: English
 tags: WordPress, Pelican, Python

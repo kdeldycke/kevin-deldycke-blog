@@ -1,5 +1,5 @@
 ---
-date: 2006-04-23 23:39:08
+date: "2006-04-23"
 title: Mandriva 2006.0 rpms: amarok, qemu, kqemu and baghira updated.
 tags: Amarok, baghira, KDE, Linux, Mandriva, Qemu, RPM
 ---

@@ -1,5 +1,5 @@
 ---
-date: 2007-11-27 00:21:18
+date: "2007-11-27"
 title: How-to import a Maildir++ folder to Kmail
 category: English
 tags: Backup, KDE, kmail, Linux, email, mailbox, maildir, Python, Script

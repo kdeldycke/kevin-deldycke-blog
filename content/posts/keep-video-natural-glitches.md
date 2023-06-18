@@ -1,5 +1,5 @@
 ---
-date: 2013-07-01 12:48
+date: "2013-07-01"
 title: How-to keep natural glitches from videos
 category: English
 tags: Kdenlive, mplayer, avconv, libav, ffmpeg, video, YouTube, audio

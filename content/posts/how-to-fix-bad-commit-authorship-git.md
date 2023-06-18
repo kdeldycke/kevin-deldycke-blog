@@ -1,5 +1,5 @@
 ---
-date: 2010-05-05 21:15:37
+date: "2010-05-05"
 title: How-to fix bad commit authorship in Git
 category: English
 tags: commit, DVCS, Git, GitHub, history

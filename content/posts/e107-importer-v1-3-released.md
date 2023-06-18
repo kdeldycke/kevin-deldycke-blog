@@ -1,5 +1,5 @@
 ---
-date: 2011-05-09 11:35:32
+date: "2011-05-09"
 title: e107 Importer v1.3 released
 category: English
 tags: Cool Cavemen, e107, importer, migration, PHP, Web, WordPress

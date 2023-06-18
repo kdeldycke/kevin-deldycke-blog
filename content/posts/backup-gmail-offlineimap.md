@@ -1,5 +1,5 @@
 ---
-date: 2012-05-15 12:24:12
+date: "2012-05-15"
 title: How-To Backup Gmail with OfflineImap
 category: English
 tags: Backup, email, Gmail, IMAP, Linux, maildir, Python, SSL, cron

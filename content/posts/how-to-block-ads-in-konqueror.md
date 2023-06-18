@@ -1,5 +1,5 @@
 ---
-date: 2007-04-17 19:07:57
+date: "2007-04-17"
 title: How-to Block Ads in Konqueror
 category: English
 tags: ad, KDE, konqueror, Linux

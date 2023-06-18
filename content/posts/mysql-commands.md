@@ -1,5 +1,5 @@
 ---
-date: 2010-02-26 14:18:17
+date: "2010-02-26"
 title: MySQL commands
 category: English
 tags: CLI, Databases, MySQL, SQL, SQL, cron

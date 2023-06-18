@@ -1,5 +1,5 @@
 ---
-date: 2013-07-07 12:32
+date: "2013-07-07"
 title: Compile BFGMiner for scrypt-based CPU mining
 category: English
 tags: scrypt, CPU, Linux, BFGMiner, crypto-currency, Bitcoin, Litecoin, Kubuntu 13.04

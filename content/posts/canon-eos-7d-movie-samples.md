@@ -1,5 +1,5 @@
 ---
-date: 2010-05-21 23:31:44
+date: "2010-05-21"
 title: Canon EOS 7D Movie Samples
 category: English
 tags: 1080p, 480p, 720p, Canon EOS 7D, photography, sample, Video

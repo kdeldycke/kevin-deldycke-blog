@@ -1,5 +1,5 @@
 ---
-date: 2007-11-24 01:45:29
+date: "2007-11-24"
 title: Sapphire v0.4 style for wordpress K2 theme
 category: English
 tags: K2, Theme, Web, WordPress

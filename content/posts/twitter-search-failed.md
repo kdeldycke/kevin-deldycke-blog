@@ -1,5 +1,5 @@
 ---
-date: 2010-02-25 22:18:24
+date: "2010-02-25"
 title: Twitter search failed... :(
 category: English
 tags: search, Social, Twitter

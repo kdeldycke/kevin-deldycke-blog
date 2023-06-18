@@ -1,5 +1,5 @@
 ---
-date: 2010-02-21 20:58:09
+date: "2010-02-21"
 title: Git commands
 category: English
 tags: CLI, Git, GitHub, Software engineering

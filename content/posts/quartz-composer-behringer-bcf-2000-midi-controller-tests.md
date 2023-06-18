@@ -1,5 +1,5 @@
 ---
-date: 2010-12-14 00:58:38
+date: "2010-12-14"
 title: Quartz Composer & Behringer BCF-2000 MIDI controller tests
 category: English
 tags: Animation, Apple, Berhinger, Canon EOS 7D, Creative Commons, Jamendo, Kdenlive, MacBook, MacBook, midi, MIDI-controlled graphics, Quartz Composer, tokina, USB, Video, Visual

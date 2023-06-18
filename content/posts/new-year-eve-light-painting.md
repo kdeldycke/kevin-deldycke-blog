@@ -1,5 +1,5 @@
 ---
-date: 2010-01-07 18:52:18
+date: "2010-01-07"
 title: New Year's Eve Light Painting
 category: English
 tags: Canon EOS 7D, DSLR, light painting, photo

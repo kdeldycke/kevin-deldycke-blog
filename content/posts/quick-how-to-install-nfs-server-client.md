@@ -1,5 +1,5 @@
 ---
-date: 2007-01-27 16:58:00
+date: "2007-01-27"
 title: Quick How-To: Install NFS Server & Client
 category: English
 tags: CLI, Linux, Mandriva, Network, NFS, Server

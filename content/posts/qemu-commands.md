@@ -1,5 +1,5 @@
 ---
-date: 2005-06-04 15:34:01
+date: "2005-06-04"
 title: Qemu commands
 category: English
 tags: CLI, Linux, Qemu

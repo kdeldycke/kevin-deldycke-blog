@@ -1,5 +1,5 @@
 ---
-date: 2013-07-24 12:46
+date: "2013-07-24"
 title: Plumage 0.2 released
 category: English
 tags: Plumage, Pelican, Python, Jinja, theme, HTML, CSS, Javascript

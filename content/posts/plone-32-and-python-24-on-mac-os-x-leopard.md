@@ -1,5 +1,5 @@
 ---
-date: 2009-07-20 21:39:58
+date: "2009-07-20"
 title: Plone 3.2 (and Python 2.4) on Mac OS X Leopard
 category: English
 tags: Apple, buildout, Mac OS X 10.5 Leopard, Mac OS X 10.3 Panther, MacBook, macOS, Plone, Python, zope

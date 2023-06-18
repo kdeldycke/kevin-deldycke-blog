@@ -1,5 +1,5 @@
 ---
-date: 2011-11-01 12:46:26
+date: "2011-11-01"
 title: Bazaar commands
 category: English
 tags: bazaar, CLI, development, Launchpad, Linux, OpenERP, programming

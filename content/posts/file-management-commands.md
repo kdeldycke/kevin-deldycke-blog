@@ -1,5 +1,5 @@
 ---
-date: 2006-10-18 00:15:16
+date: "2006-10-18"
 title: File Management commands
 category: English
 tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox,

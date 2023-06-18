@@ -1,5 +1,5 @@
 ---
-date: 2008-06-03 21:56:03
+date: "2008-06-03"
 title: How-to inherit CSS width attributes for Internet Explorer
 category: English
 tags: CSS, Firefox, HTML, Internet Explorer

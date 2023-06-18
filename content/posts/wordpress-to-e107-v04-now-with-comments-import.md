@@ -1,5 +1,5 @@
 ---
-date: 2006-11-13 01:59:18
+date: "2006-11-13"
 title: Wordpress to e107 v0.4: now with Comments Import
 tags: Blog, CMS, e107, PHP, Web, WordPress
 ---

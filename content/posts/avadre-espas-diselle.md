@@ -1,5 +1,5 @@
 ---
-date: 2009-01-07 11:28:09
+date: "2009-01-07"
 title: Avadre: espas diselle
 category: Français
 tags: humour, petite annonce, photo

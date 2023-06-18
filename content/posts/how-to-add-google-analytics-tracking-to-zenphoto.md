@@ -1,5 +1,5 @@
 ---
-date: 2008-08-16 22:49:55
+date: "2008-08-16"
 title: How-to add Google Analytics tracking to Zenphoto
 category: English
 tags: analytics, Google, hack, patch, PHP, Zenphoto, SSL

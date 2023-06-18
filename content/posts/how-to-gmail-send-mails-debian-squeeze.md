@@ -1,5 +1,5 @@
 ---
-date: 2011-05-03 12:10:18
+date: "2011-05-03"
 title: How-to use GMail to send mails from Debian Squeeze
 category: English
 tags: Debian, Exim, Gmail, Google Apps, Linux, email, Server, Debian Squeeze, RSA

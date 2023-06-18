@@ -1,5 +1,5 @@
 ---
-date: 2006-07-28 23:39:19
+date: "2006-07-28"
 title: Why kqemu doesn't do its job?
 tags: Linux, Qemu
 ---

@@ -1,5 +1,5 @@
 ---
-date: 2012-09-25 20:07:44
+date: "2012-09-25"
 title: PADI Open Water Diver
 category: Français
 tags: Scuba Diving, Pool

@@ -1,5 +1,5 @@
 ---
-date: 2006-05-06 18:18:11
+date: "2006-05-06"
 title: A bunch of Python scripts
 category: English
 tags: Linux, Python

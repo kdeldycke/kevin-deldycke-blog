@@ -1,5 +1,5 @@
 ---
-date: 2019-07-22 23:18:55
+date: "2019-07-22"
 title: macOS commands
 category: English
 tags: CLI, macOS, Apple, OSX, PluginKit, TimeMachine, network, DNS, diskutil

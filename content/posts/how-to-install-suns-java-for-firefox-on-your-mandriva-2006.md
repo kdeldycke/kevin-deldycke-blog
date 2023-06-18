@@ -1,5 +1,5 @@
 ---
-date: 2006-05-19 23:26:55
+date: "2006-05-19"
 title: How-to Install Sun's Java for Firefox on your Mandriva 2006
 category: English
 tags: firefox, Java, Linux, Mandriva, mozilla, RPM, Web

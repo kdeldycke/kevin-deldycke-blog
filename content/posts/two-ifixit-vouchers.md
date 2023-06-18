@@ -1,5 +1,5 @@
 ---
-date: 2010-10-19 21:26:44
+date: "2010-10-19"
 title: 2 x iFixit $5 voucher
 category: English
 tags: Apple, coupon, discount, Hardware, ifixit, iPad, iPhone, iPod, MacBook, Online Store, voucher

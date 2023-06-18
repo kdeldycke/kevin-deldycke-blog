@@ -1,5 +1,5 @@
 ---
-date: 2013-06-09 12:41
+date: "2013-06-09"
 title: Support La Quadrature du Net!
 tags: La Quadrature du Net, fundraising, donation, campaign, contribution, rights, freedom, Internet, advocacy, Free Software Foundation, Electronic Frontier Foundation
 ---

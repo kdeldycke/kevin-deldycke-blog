@@ -1,5 +1,5 @@
 ---
-date: 2020-06-16 12:00
+date: "2020-06-16"
 title: AWS commands
 category: English
 tags: cloud, cloud computing, saas, iaas, paas, aws, amazon, development, CLI, iam,

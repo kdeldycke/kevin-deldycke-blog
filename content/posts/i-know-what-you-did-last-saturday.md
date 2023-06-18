@@ -1,5 +1,5 @@
 ---
-date: 2010-02-15 22:22:29
+date: "2010-02-15"
 title: I know what you did last saturday...
 category: English
 tags: circle, loop, photo

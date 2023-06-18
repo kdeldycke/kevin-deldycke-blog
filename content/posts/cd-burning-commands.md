@@ -1,5 +1,5 @@
 ---
-date: 2006-10-25 00:49:46
+date: "2006-10-25"
 title: CD Burning commands
 category: English
 tags: burning, Compact disc, cdrdao, cdrecord, CLI, DVD, Hardware, Linux, mkisofs

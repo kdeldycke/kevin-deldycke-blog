@@ -1,5 +1,5 @@
 ---
-date: 2011-01-18 23:48:58
+date: "2011-01-18"
 title: New blog header and tiny WordPress theme customizations
 category: English
 tags: artwork, CSS, maomium, WordPress, Ubercart

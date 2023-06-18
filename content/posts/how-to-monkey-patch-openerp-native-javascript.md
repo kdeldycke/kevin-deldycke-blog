@@ -1,5 +1,5 @@
 ---
-date: 2012-02-21 12:51:21
+date: "2012-02-21"
 title: How-to monkey-patch OpenERP's native Javascript
 category: English
 tags: javascript, monkeypatch, OpenERP, Web, xml, ERP

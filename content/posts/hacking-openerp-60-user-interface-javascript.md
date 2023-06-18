@@ -1,5 +1,5 @@
 ---
-date: 2012-05-29 12:11:55
+date: "2012-05-29"
 title: Hacking OpenERP 6.0 User Interface with Javascript
 category: English
 tags: HTML, javascript, jquery, OpenERP, smile, ERP

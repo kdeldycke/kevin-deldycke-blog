@@ -1,5 +1,5 @@
 ---
-date: 2006-08-25 23:26:35
+date: "2006-08-25"
 title: How to Publish .php files as Plain Text
 category: English
 tags: Apache, Hosting, PHP, Server, Web

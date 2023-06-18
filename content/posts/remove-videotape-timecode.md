@@ -1,5 +1,5 @@
 ---
-date: 2010-01-14 11:30:15
+date: "2010-01-14"
 title: Remove videotape timecode
 category: English
 tags: analog, avidemux, timecode, Video, VITC

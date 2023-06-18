@@ -1,5 +1,5 @@
 ---
-date: 2007-08-12 17:00:45
+date: "2007-08-12"
 title: System backup script: no more endless lock
 tags: Backup, CLI, Linux, Python, rdiff-backup, rsync, Script, SSH, system
 ---

@@ -1,5 +1,5 @@
 ---
-date: 2007-05-27 20:45:12
+date: "2007-05-27"
 title: FeedBurner and e107 integration
 category: English
 tags: Apache, Atom, Blog, CMS, e107, feed, FeedBurner, htaccess, RDF, RSS, Server, Web, WordPress

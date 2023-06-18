@@ -1,5 +1,5 @@
 ---
-date: 2006-10-18 00:17:10
+date: "2006-10-18"
 title: Archives commands
 category: English
 tags: 7-Zip, bzip2, CLI, Linux, tarball, ZIP, wget, gzip, shar

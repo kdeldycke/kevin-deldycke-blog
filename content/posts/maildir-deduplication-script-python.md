@@ -1,5 +1,5 @@
 ---
-date: 2010-08-19 20:56:03
+date: "2010-08-19"
 title: Maildir deduplication script in Python
 category: English
 tags: email, GitHub, Lotus Notes, Apple, macOS, maildir, Python, Script, Mac OS X 10.6 Snow Leopard

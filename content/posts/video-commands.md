@@ -1,5 +1,5 @@
 ---
-date: 2006-11-08 00:31:27
+date: "2006-11-08"
 title: Video commands
 category: English
 tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, mplayer,

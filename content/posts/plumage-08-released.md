@@ -1,5 +1,5 @@
 ---
-date: 2016-06-22 12:00
+date: "2016-06-22"
 title: Plumage 0.8 released
 category: English
 tags: Plumage, Pelican, Python, Jinja, theme, HTML, CSS, Javascript, favicon

@@ -1,5 +1,5 @@
 ---
-date: 2010-06-16 21:53:46
+date: "2010-06-16"
 title: Subversion commits and mail activity stream in iCalendar
 category: English
 tags: code, commit, Git, GitHub, iCal, email, maildir, Open Hub, Python, Script, Subversion

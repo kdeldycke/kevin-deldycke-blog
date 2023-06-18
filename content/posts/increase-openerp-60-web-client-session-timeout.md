@@ -1,5 +1,5 @@
 ---
-date: 2012-04-24 12:33:22
+date: "2012-04-24"
 title: Increase OpenERP 6.0 web-client session timeout
 category: English
 tags: CherryPy, OpenERP, Python, Single sign-on, Smile, SSO, timeout, Web, ERP

@@ -1,5 +1,5 @@
 ---
-date: 2006-12-20 20:42:35
+date: "2006-12-20"
 title: Image Processing commands
 category: English
 tags: CLI, EXIF, image, imagemagick, JPEG, Linux, Metadata, mogrify, pngcrush, mozjpeg

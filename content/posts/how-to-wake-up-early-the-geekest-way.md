@@ -1,5 +1,5 @@
 ---
-date: 2006-08-02 16:14:52
+date: "2006-08-02"
 title: How to wake up early, the geekest way
 category: English
 tags: life, Linux, mobile phone, mplayer, Music, Travel, Cool Cavemen, cron, datetime

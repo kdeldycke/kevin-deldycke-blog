@@ -1,5 +1,5 @@
 ---
-date: 2007-02-10 20:12:08
+date: "2007-02-10"
 title: Delayed CD Tracks Publishing with PHP
 category: English
 tags: Cool Cavemen, Music, PHP, Web

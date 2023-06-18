@@ -1,5 +1,5 @@
 ---
-date: 2011-09-13 12:35:33
+date: "2011-09-13"
 title: Cloud-based Server Backups with Duplicity and Amazon S3
 category: English
 tags: Amazon S3, AWS, Backup, cloud-computing, cron, Debian, duplicity, Linux, MySQL, SQL, shell, Debian Squeeze, storage

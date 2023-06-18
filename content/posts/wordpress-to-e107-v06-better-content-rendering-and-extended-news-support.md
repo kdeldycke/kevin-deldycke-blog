@@ -1,5 +1,5 @@
 ---
-date: 2006-11-27 21:48:02
+date: "2006-11-27"
 title: Wordpress to e107 v0.6: Better Content Rendering and Extended News support
 category: English
 tags: Blog, CMS, e107, PHP, WordPress

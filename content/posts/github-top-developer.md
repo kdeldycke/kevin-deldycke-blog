@@ -1,5 +1,5 @@
 ---
-date: 2017-04-24 12:00
+date: "2017-04-24"
 title: I'm a Hot Developer
 category: English
 tags: GitHub, Hacker News,
