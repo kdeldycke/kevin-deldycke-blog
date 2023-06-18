@@ -77,7 +77,7 @@ root@truenas[/]#
 
 ## Decrypt geli disks
 
-Get a copy of your pool encryption key. You kept it around from back then, when you created your pool right? 🧐
+Get a copy of your pool encryption key. You kept it around from back then, when you created your pool. Right? 🧐
 
 So let's push a copy of it from your machine to the NAS:
 
@@ -229,7 +229,7 @@ WARNING
 New ZFS version or feature flags are available for pool big. Upgrading pools is a one-time process that can prevent rolling the system back to an earlier TrueNAS version. It is recommended to read the TrueNAS release notes and confirm you need the new ZFS feature flags before upgrading a pool.
 ```
 
-Doing so will prevent us to revert back to FreeNAS if anything bad happens. We'll do that later.
+Doing so will prevent us to revert back to FreeNAS if anything bad happens. [We'll do that later](#zfs-upgrade).
 
 ## Removing encryption
 
@@ -309,13 +309,150 @@ errors: No known data errors
 
 Wait until it completes. It took around 7 hours for one disk in my situation.
 
-Once the resilvering finishes, redo with each disk the whole process from that section.
+Once the resilvering finishes, redo with each disk the whole process from that section. You'll end up with a unencrypted pool with the same data as before:
+
+```shell-session
+root@truenas[/]# zpool status big
+  pool: big
+ state: ONLINE
+status: Some supported features are not enabled on the pool. The pool can
+        still be used, but some features are unavailable.
+action: Enable all features using 'zpool upgrade'. Once this is done,
+        the pool may no longer be accessible by software that does not support
+        the features. See zpool-features(5) for details.
+  scan: resilvered 2.99T in 10:58:55 with 0 errors on Tue Jan  5 11:47:29 2021
+config:
+
+        NAME                                            STATE     READ WRITE CKSUM
+        big                                             ONLINE       0     0     0
+          raidz2-0                                      ONLINE       0     0     0
+            gptid/4e377340-917d-11ea-a640-b42e99bf5e8f  ONLINE       0     0     0
+            gptid/4ea9ae2e-917d-11ea-a640-b42e99bf5e8f  ONLINE       0     0     0
+            gptid/4eb3e8fc-917d-11ea-a640-b42e99bf5e8f  ONLINE       0     0     0
+            gptid/4ece25f4-917d-11ea-a640-b42e99bf5e8f  ONLINE       0     0     0
+
+errors: No known data errors
+```
+
+### ZFS upgrade
+
+We can now upgrade the ZFS version of the pool.
+
+You can first check the pools which do not have all supported features enabled and those still in the legacy version:
+
+```shell-session
+root@truenas[/]# zpool upgrade
+This system supports ZFS pool feature flags.
+
+All pools are formatted using feature flags.
+
+
+Some supported features are not enabled on the following pools. Once a
+feature is enabled the pool may become incompatible with software
+that does not support the feature. See zpool-features(5) for details.
+
+POOL  FEATURE
+---------------
+big
+      large_dnode
+      userobj_accounting
+      encryption
+      project_quota
+      allocation_classes
+      resilver_defer
+      bookmark_v2
+      redaction_bookmarks
+      redacted_datasets
+      bookmark_written
+      log_spacemap
+      livelist
+      device_rebuild
+      zstd_compress
+freenas-boot
+      large_dnode
+      userobj_accounting
+      encryption
+      project_quota
+      allocation_classes
+      resilver_defer
+      bookmark_v2
+      redaction_bookmarks
+      redacted_datasets
+      bookmark_written
+      log_spacemap
+      livelist
+      device_rebuild
+      zstd_compress
+```
+
+Then you can proceed with the upgrade itself for each pool:
+
+```shell-session
+root@truenas[/]# zpool upgrade big
+This system supports ZFS pool feature flags.
+
+Enabled the following features on 'big':
+  large_dnode
+  userobj_accounting
+  encryption
+  project_quota
+  allocation_classes
+  resilver_defer
+  bookmark_v2
+  redaction_bookmarks
+  redacted_datasets
+  bookmark_written
+  log_spacemap
+  livelist
+  device_rebuild
+  zstd_compress
+```
+
+```shell-session
+root@truenas[/]# zpool upgrade freenas-boot
+This system supports ZFS pool feature flags.
+
+Enabled the following features on 'freenas-boot':
+  large_dnode
+  userobj_accounting
+  encryption
+  project_quota
+  allocation_classes
+  resilver_defer
+  bookmark_v2
+  redaction_bookmarks
+  redacted_datasets
+  bookmark_written
+  log_spacemap
+  livelist
+  device_rebuild
+  zstd_compress
+```
+
+And run a final check on the current feature status:
+
+```shell-session
+root@truenas[/]# zpool upgrade
+This system supports ZFS pool feature flags.
+
+All pools are formatted using feature flags.
+
+Every feature flags pool has all supported features enabled.
+```
+
+Now you have a clean and upgraded pool.
+
+## Re-encryption
+
+Re-encrypting your newly migrated pool is left as an exercise to the user! 😁
 
 ## Failed replace
 
-While performing the process above, you're still at the mercy of any corruption issue. It happened to me, and I woke up with an failed replace operation. 😵
+While performing the process above, you're still at the mercy of any corruption issue. It happened to me, and I woke up at one time with an failed replace operation. 😵
 
-The pool looked like this:
+This section should help you recover from a failed operation.
+
+In my case, the pool looked like this:
 
 ```{.shell-session hl_lines="15-17 19"}
 root@truenas[/]# zpool status big
@@ -646,8 +783,46 @@ config:
 errors: No known data errors
 ```
 
-And off we went, spending another 7 hours of resilvering...
+And off we went, spending another 7 hours of resilvering, but back on track in the migration process.
 
-All in all, RAID-Z2 saved my ass. Lesson learned: **a disk failure during heavy-duty operations is no longer a statistically rare event**.
+All in all, RAID-Z2 saved my ass here. Lesson learned: **a disk failure during heavy-duty operations is [no longer a statistically rare event](/2020/05/nas-hardware/#raid-array)**.
 
 So remember the wise man who once said to **BACKUP YOUR F#@$% POOL**!
+
+## Bad hardware
+
+As I considered the issue above solved, it resurected on other devices, with variations of the same logs as above. All these errors randomly kicked HDDs out of the array. It was a nightmare.
+
+At that point everything broke loose and couldn't find any solid explanation. I could only qualify the situation as general hardware issues.
+
+Of all possible root causes, I listed these:
+
+* **Power-supply overcapacity**: impossible.
+
+  PSU was 450W and each HDD is operating at 7.72W of typical consumption.
+
+* **Bad motherboard firmware**: unlikely.
+
+  Motherboard has been upgraded from the latest version from day 1.
+
+* Bad HDD firmwares
+
+* Bad cables
+
+* Cooling issue
+
+* Bad HDD series
+
+* **Shitty controller**: most likely possibility.
+
+  I only encountered this behaviour while rebuilding the array. So under load the disk controllers on the motherboard might have just given up. All disks are managed by the [Intel C246 chipset](https://ark.intel.com/content/www/us/en/ark/products/147326/intel-c246-chipset.html).
+
+  A solution to explore would be to [reduce SATA speed in FreeBSD kernel](https://forums.freebsd.org/threads/ata-4-timeouts-continue-after-disk-replacement-on-new-12-0-installation-issues-with-nvidia-mcp51.69770/).
+
+## Epilog
+
+After these serial failures, I realized I had no time to debug this whole affair, so I ended purchasing an official [TrueNAS Mini X+ (8x cores 2.2GHz CPU, 32GB ECC DDR4 RAM, 2x 10G Base-T ports)](https://www.amazon.com/stores/iXsystems/node/18543914011?_encoding=UTF8&linkCode=ll2&tag=kevideld-20&linkId=118cf1845073ad2c70ada5a3d0c0680b&language=en_US&ref_=as_li_ss_tl) from iXsystems.
+
+It cost me the same price as [my custom setup](/2020/05/nas-hardware/#final-configuration), minus the tarrif and import taxes. But comes with a 1 year waranty and support, and the peace of mind that the hardware is fully compatible with TrueNAS and thouroughly qualified for a NAS load.
+
+And 2 years later, my TrueNAS Mini X+ is working fine without an issue. I should have bought it from the start.

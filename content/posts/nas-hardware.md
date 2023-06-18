@@ -205,8 +205,8 @@ So I settled on an [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevi
 * Dedicated IPMI/BMC LAN ethernet socket, with non-JAVA UI
 * All USB 3.1 ports are Gen2, not Gen1, so no time wasted worrying on which is which
 * No unnecessary multimedia ports (no audio, no Display Port, no HDMI)
- 
- 
+
+
 ## Cooling
 
 We're no longer fan-less, so I searched for the most silent cooling I could ever found. I went straight to Noctua for their reliability, performance and quieteness.
@@ -267,7 +267,7 @@ I ended up with a **Core i3-9300T**, probably overpriced at the time of purchase
 | RAM | [Corsair CMSO16GX3M2C1600C11](https://amzn.com/B00EH1H86C/?tag=kevideld-20) 16GB (2x8GB) DDR3 SODIMM 1600 MHz | 1 | €75.76 | Refunded: only fit for motherboard above. |
 | Power supply | [Corsair SF450](https://amzn.com/B07XJ5GL8Y/?tag=kevideld-20), modular, 450 W, 80+ Platinum | 1 | €119.90 | Reused. |
 | Flash drive | [SanDisk Ultra Fit 16 GB](https://amzn.com/B077Y149DL/?tag=kevideld-20), USB 3.1 | 1 | €9.59 | Reused. |
-| SATA cable | [SATA 3 - 90° plugs](https://amzn.com/B07QYWFKL4/?tag=kevideld-20) | 6 | €15.56 | Refunded: 90° plugs not fit for newer case. | 
+| SATA cable | [SATA 3 - 90° plugs](https://amzn.com/B07QYWFKL4/?tag=kevideld-20) | 6 | €15.56 | Refunded: 90° plugs not fit for newer case. |
 | | | **Total** | **€1163.75** |  |
 
 ### Final configuration
@@ -278,13 +278,13 @@ I ended up with a **Core i3-9300T**, probably overpriced at the time of purchase
 | Bigger case | [SilverStone SST-DS380](https://amzn.com/B07PCH47Z2/?tag=kevideld-20) | 1 | €145.18 | €17.50 |
 | Case fans | [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20) | 3 | €59.70 | €3.90 |
 | Mini-ITX motherboard | [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20) | 1 | €324.84 | €21.05 | [Upgrade both BMC and BIOS](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#Download). |
-| CPU | [Intel Core i3-9300T](https://www.cpu-monkey.com/en/cpu-intel_core_i3_9300t-923) Coffee Lake-R, 4 cores, 3.2GHz, 8MiB L3 cache | 1 | €174.90 | €9.98 | 
+| CPU | [Intel Core i3-9300T](https://www.cpu-monkey.com/en/cpu-intel_core_i3_9300t-923) Coffee Lake-R, 4 cores, 3.2GHz, 8MiB L3 cache | 1 | €174.90 | €9.98 |
 | CPU cooler | [Noctua NH-L9i chromax.black](https://amzn.com/B07Y892M38/?tag=kevideld-20) | 1 | €49.90 | €0.99 | Shipped with thermal paste.
 | RAM | [Kingston KSM26ES8/8ME](https://amzn.com/B07BGB6TYS/?tag=kevideld-20) 8GB 2666MHz DDR4 ECC CL19 | 2 | €137.76 | |
-| Power supply | [Corsair SF450](https://amzn.com/B07XJ5GL8Y/?tag=kevideld-20), modular, 450 W, 80+ Platinum | 1 | €119.90 | | Check serial number: this [model has been recalled](https://www.anandtech.com/show/15829/corsair-sf-series-psu-recall). | 
+| Power supply | [Corsair SF450](https://amzn.com/B07XJ5GL8Y/?tag=kevideld-20), modular, 450 W, 80+ Platinum | 1 | €119.90 | | Check serial number: this [model has been recalled](https://www.anandtech.com/show/15829/corsair-sf-series-psu-recall). |
 | Flash drive | [SanDisk Ultra Fit 16 GB](https://amzn.com/B077Y149DL/?tag=kevideld-20), USB 3.1 | 1 | €9.59 | |
-| SATA cable | [SATA 3 - straight plug](https://amzn.com/B018Y2LCEI/?tag=kevideld-20) | 3 | €6.99 | | 
-| OCuLink cable | [Supermicro CBL-SAST-0933](https://store.supermicro.com/supermicro-50cm-oculink-to-4-sata-cable-cbl-sast-0933.html) OCuLink to 4 SATA | 1 | €29.76 | €12.01 | 
+| SATA cable | [SATA 3 - straight plug](https://amzn.com/B018Y2LCEI/?tag=kevideld-20) | 3 | €6.99 | |
+| OCuLink cable | [Supermicro CBL-SAST-0933](https://store.supermicro.com/supermicro-50cm-oculink-to-4-sata-cable-cbl-sast-0933.html) OCuLink to 4 SATA | 1 | €29.76 | €12.01 |
 | Probe | [10K thermal wire sensor](https://amzn.com/B00CMR38LC/?tag=kevideld-20)  | 1 | €0.25 | €1.16 | Attached to HDDs.
 | | | **Total** | **€1755.66** | €79.43 | |
 
@@ -321,7 +321,7 @@ Need more space? We have a couple of options:
 
 ### Drives
 
-* Revisit the 2.5" form-factor. Mobile non-SMR HDDs might get bigger but that's unlikely. The industry is kind of stuck with current technology and the way forward is SSDs. 
+* Revisit the 2.5" form-factor. Mobile non-SMR HDDs might get bigger but that's unlikely. The industry is kind of stuck with current technology and the way forward is SSDs.
 
 * So **keep watching the $/TB economics of SSDs**. In a couple of years, if prices gets reasonable for a home NAS setup, it might be time to get rid of spinning rust.
 
@@ -394,3 +394,7 @@ Lots of ZFS features are on the way:
 * [dRAID with dual parity](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html). It's like RAIDZ2, but with better workload distribution across drives on rebuilds.
 * ZFS native dataset encryption (should come with OpenZFS 2.0).
 * macOS support seems to being worked on for OpenZFS 3.0. Maybe this opens the way to directly mount remote volumes, bypassing Samba shares altogether.
+
+## Epilog
+
+After a number of failures and instability, I finally [scrapped all that hardware](/2020/12/migration-from-freenas-to-truenas/#Epilog), and replaced my custom configuration with an official [TrueNAS Mini X+ (8x cores 2.2GHz CPU, 32GB ECC DDR4 RAM, 2x 10G Base-T ports)](https://www.amazon.com/stores/iXsystems/node/18543914011?_encoding=UTF8&linkCode=ll2&tag=kevideld-20&linkId=118cf1845073ad2c70ada5a3d0c0680b&language=en_US&ref_=as_li_ss_tl) from iXsystems.
