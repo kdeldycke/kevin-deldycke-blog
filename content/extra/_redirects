@@ -34,9 +34,9 @@
 /pages/*                    /:splat                301
 
 # Reduction of static content path.
-/static/documents           /documents/             301
+/static/documents           /                       301
 /static/documents/*         /documents/:splat       301
-/static/uploads             /uploads/               301
+/static/uploads             /                       301
 /static/uploads/*           /uploads/:splat         301
 
 # Removal of month in uploads URLs. This works because all filenames are unique.
@@ -68,7 +68,7 @@
 ################################################################################
 # Old WordPress URLs
 ################################################################################
-/wp-content/uploads     /uploads/           301
+/wp-content/uploads     /                   301
 /wp-content/uploads/*   /uploads/:splat     301
 
 # Worpress had default pages for each author.
