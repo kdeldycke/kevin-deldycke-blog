@@ -1,7 +1,9 @@
+# See redirect tutorial at: https://kevin.deldycke.com/2022/06/cloudflare-commands#pages-redirects
+
 ################################################################################
 # Canonical redirects of current Pelican URLs
 ################################################################################
-# Some sub-folders contain nothing.
+# Empty subfolders containing nothing.
 /documents      /   301
 /documents/     /   301
 /extra          /   301
@@ -13,11 +15,11 @@
 /uploads        /   301
 /uploads/       /   301
 
-# Some other sub-folders have dedicated canonical URL under another name.
-/category       /categories/    301
-/category/      /categories/    301
-/tag            /tags/          301
-/tag/           /tags/          301
+# Empty subfolders that have a dedicated canonical page.
+/category       /categories    301
+/category/      /categories    301
+/tag            /tags          301
+/tag/           /tags          301
 
 # The first pagination page doesn't exists.
 /page/1         /   301
@@ -27,9 +29,9 @@
 ################################################################################
 # Old Pelican structure
 ################################################################################
-# Move of the pages subfolder to the site's root.
-/pages                      /                       301
-/pages/*                    /:splat/                301
+# There used to be a /pages subfolder that contained all static pages.
+/pages                      /                      301
+/pages/*                    /:splat                301
 
 # Reduction of static content path.
 /static/documents           /documents/             301
@@ -37,7 +39,7 @@
 /static/uploads             /uploads/               301
 /static/uploads/*           /uploads/:splat         301
 
-# Removal of month in uploads URLs.
+# Removal of month in uploads URLs. This works because all filenames are unique.
 /uploads/:year/:month/:slug /uploads/:year/:slug    301
 
 # Old content moved on other platforms.
@@ -79,8 +81,8 @@
 /category/lang/fr       /category/francais/     301
 /category/lang/fr/*     /category/francais/     301
 # Hierarchical categories are not supported by Pelican.
-/category/lang          /categories/            301
-/category/lang/         /categories/            301
+/category/lang          /categories            301
+/category/lang/         /categories            301
 
 # Yearly and monthly archives are no longer paginated.
 /:year/page            /:year/          301
@@ -97,14 +99,14 @@
 /*/feed/rdf/    /:splat/feed.rss   301
 
 # Old pages.
-/about-me           /about/                                 301
-/about-me/*         /about/                                 301
+/about-me           /about                                  301
+/about-me/*         /about                                  301
 /code               https://github.com/kdeldycke/
 /code/*             https://github.com/kdeldycke/
 /linux-scripts      https://github.com/kdeldycke/scripts
 /linux-scripts/*    https://github.com/kdeldycke/scripts
-/wordpress-stuff    /themes/                                301
-/wordpress-stuff/*  /themes/                                301
+/wordpress-stuff    /themes                                 301
+/wordpress-stuff/*  /themes                                 301
 
 # Site-wide comments feeds moved to Disqus.
 /comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss
