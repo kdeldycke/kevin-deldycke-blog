@@ -19,68 +19,26 @@ PATH = "content"
 
 TIMEZONE = "Europe/Paris"
 DEFAULT_LANG = "en"
-MARKDOWN = {
-    "extension_configs": {
-        # https://python-markdown.github.io/extensions/#officially-supported-extensions
-        "markdown.extensions.abbr": {},
-        # Example of admonition use at:
-        # https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/content/posts/python-ultimate-regular-expression-to-catch-html-tags.md
-        "markdown.extensions.admonition": {},
-        "markdown.extensions.attr_list": {},
-        "markdown.extensions.def_list": {},
-        "markdown.extensions.footnotes": {},
-        "markdown.extensions.md_in_html": {},
-        "markdown.extensions.meta": {},
-        # Allow numbered lists to not start with 1. Used in following article:
-        # https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/
-        "markdown.extensions.sane_lists": {},
-        "markdown.extensions.smarty": {},
-        "markdown.extensions.tables": {},
-        "markdown.extensions.toc": {
-            "permalink": True,
-        },
-        # XXX broken on Python 3.9
-        # "mdx_titlecase.mdx_titlecase:TitlecaseExtension": {},
-        "mdx_video": {},
-        # https://facelessuser.github.io/pymdown-extensions/
-        "pymdownx.betterem": {},
-        "pymdownx.caret": {},
-        "pymdownx.emoji": {},
-        "pymdownx.keys": {},
-        "pymdownx.magiclink": {},
-        "pymdownx.smartsymbols": {},
-    },
-    "output_format": "html5",
-}
+
 TYPOGRIFY = True
 
-# Code block renderers.
-SUPERFENCES = True
-if SUPERFENCES:
-    code_config = {
-        "pymdownx.highlight": {
-            "linenums": True,
-            "linenums_style": "pymdownx-inline",
-        },
-        "pymdownx.superfences": {
-            # No need for magic indention-based code blocks: all ours are
-            # delimited by fences anyway.
-            "disable_indented_code_blocks": True,
-        },
-    }
-else:
-    code_config = {
-        "markdown.extensions.codehilite": {
-            "linenums": True,
-            "linenos": "inline",
-            "linespans": "coderow",
-            "lineanchors": "L",
-            "anchorlinenos": True,
-            "wrapcode": True,
-        },
-        "markdown.extensions.fenced_code": {},
-    }
-MARKDOWN["extension_configs"].update(code_config)  # type: ignore[attr-defined]
+# https://github.com/ashwinvis/myst-reader#specifying-myst-options
+# https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
+MYST_EXTENSIONS = [
+    "attrs_inline",
+    "deflist",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+]
+
+# Allow MyST syntax in content metadata:
+# https://github.com/ashwinvis/myst-reader/tree/main#specifying-file-metadata
+FORMATTED_FIELDS = [
+    "title",
+]
 
 # Do not publish articles set in the future
 WITH_FUTURE_DATES = False
