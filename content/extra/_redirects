@@ -48,6 +48,10 @@
 /static/repository          https://github.com/kdeldycke/mandriva-specs
 /static/repository/*        https://github.com/kdeldycke/mandriva-specs
 
+# Site-wide comments feeds moved to Disqus.
+/comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss
+/comments/feed/*    https://kevin-deldycke-blog.disqus.com/latest.rss
+
 # Simplification of feeds URL: use .atom and .rss suffixes.
 /feed/atom                  /feed.atom             301
 /feed/atom/*                /feed.atom             301
@@ -108,6 +112,12 @@
 /wordpress-stuff    /themes                                 301
 /wordpress-stuff/*  /themes                                 301
 
-# Site-wide comments feeds moved to Disqus.
-/comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss
-/comments/feed/*    https://kevin-deldycke-blog.disqus.com/latest.rss
+
+################################################################################
+# Catch-all redirects that are too wide and must be applied last.
+################################################################################
+# Articles URLs have been simplified to remove the month subfolder.
+/:year/:month/:slug/    /:year/:slug    301
+
+# Monthly archives have been removed.
+/:year/:month/          /:year/         301

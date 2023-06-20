@@ -39,9 +39,8 @@ WITH_FUTURE_DATES = False
 # the title.
 SLUGIFY_SOURCE = "basename"
 
-# Force the same URL structure as WordPress
-ARTICLE_URL = "{date:%Y}/{date:%m}/{slug}/"
-ARTICLE_SAVE_AS = ARTICLE_URL + "index.html"
+ARTICLE_URL = "{date:%Y}/{slug}"
+ARTICLE_SAVE_AS = ARTICLE_URL + ".html"
 ARTICLE_PATHS = ["posts"]
 
 PAGE_URL = "{slug}"
@@ -60,8 +59,8 @@ TAG_SAVE_AS = TAG_URL + "index.html"
 CATEGORY_URL = "category/{slug}/"
 CATEGORY_SAVE_AS = CATEGORY_URL + "index.html"
 
+# Only activates yearly archives. Keep monthly and daily archives deactivated.
 YEAR_ARCHIVE_SAVE_AS = "{date:%Y}/index.html"
-MONTH_ARCHIVE_SAVE_AS = "{date:%Y}/{date:%m}/index.html"
 
 # Tags, categories and archives are Direct Templates, so they don't have a
 # <NAME>_URL option.
