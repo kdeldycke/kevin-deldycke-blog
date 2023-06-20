@@ -44,7 +44,7 @@ ARTICLE_URL = "{date:%Y}/{date:%m}/{slug}/"
 ARTICLE_SAVE_AS = ARTICLE_URL + "index.html"
 ARTICLE_PATHS = ["posts"]
 
-PAGE_URL = "{slug}/"
+PAGE_URL = "{slug}"
 PAGE_SAVE_AS = "{slug}.html"
 PAGE_PATHS = ["pages"]
 
