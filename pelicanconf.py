@@ -203,8 +203,8 @@ SITESUBTITLE = " — 🦬🪒🐇🕳 yak-shaving the rabbit holes"
 
 MENUITEMS = (
     ("Home", "/"),
-    ("Themes", "/themes/"),
-    ("About", "/about/"),
+    ("Themes", "/themes"),
+    ("About", "/about"),
 )
 
 CODE_STYLE = "monokai"
