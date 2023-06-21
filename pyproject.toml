@@ -38,7 +38,7 @@ pelican-neighbors = "^1.2.0"
 #gensim = "^4.3.0"  # XXX Broken!
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^1.2"
+mypy = "^1.4"
 
 [tool.mypy]
 warn_unused_configs = true
