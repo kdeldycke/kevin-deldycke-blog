@@ -136,6 +136,14 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
   $ pv /dev/da0 | ssh me@192.168.0.10 "cat > /mnt/tank/my-data/HDD-part1+part2.img"
   ```
 
+## Move
+
+- Move files containing the `date: "2005-` string from the `./posts/` subfolder to the other `./2005/` subfolder:
+
+  ```shell-session
+  $ grep -R -l 'date: "2005-' ./posts/ | xargs -I '{}' mv '{}' ./2005/
+  ```
+
 ## Renaming
 
 - Convert all files in the current folder to lower case:
