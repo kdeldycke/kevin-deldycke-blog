@@ -336,7 +336,7 @@ façon à ce que l'IP forwaring soit activé au démarrage de la machine:
 
 Nous allons configurer Urpmi pour qu'il puisse aller cherche tout seul les
 programmes à installer et les mises à jour sur internet. On peut utiliser
-[Easy Urpmi](https://easyurpmi.zarb.org) pour connaître les emplacement des
+[Easy Urpmi](https://web.archive.org/web/20130331034929/http://easyurpmi.zarb.org:80/) pour connaître les emplacement des
 repository de Mandrake.
 
 On supprime d'abord la référence au CD-ROM:
