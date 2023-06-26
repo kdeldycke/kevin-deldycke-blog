@@ -5,7 +5,7 @@ category: English
 tags: hardware, network, 10G, freebox, NIC, switch
 ---
 
-Into my [journey building a NAS for the home office](./nas-hardware.md), I went down the rabbit hole and chased better file transfer performance. The next step would be a network upgrade. And so I started exploring 10G at home. It is fancy, but doable.
+Into my [journey building a NAS for the home office]({filename}/2020/nas-hardware.md), I went down the rabbit hole and chased better file transfer performance. The next step would be a network upgrade. And so I started exploring 10G at home. It is fancy, but doable.
 
 
 ## Internet access
