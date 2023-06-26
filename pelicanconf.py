@@ -132,6 +132,7 @@ EXTRA_PATH_METADATA = {
     "extra/ads.txt": {"path": "ads.txt"},
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/robots.txt": {"path": "robots.txt"},
+    "extra/profile-photo-square-thumbnail.jpg": {"path": "profile-photo-square-thumbnail.jpg"},
 }
 
 
@@ -192,7 +193,7 @@ IMAGE_PROCESS = {
 
 # ----- Theme-specific settings
 
-SITE_THUMBNAIL = "/2018/profile-photo-square-thumbnail.jpg"
+SITE_THUMBNAIL = "/profile-photo-square-thumbnail.jpg"
 SITE_THUMBNAIL_TEXT = "Might come with a beard"
 
 SITESUBTITLE = " — 🦬🪒🐇🕳 yak-shaving the rabbit holes"
