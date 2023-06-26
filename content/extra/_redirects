@@ -36,7 +36,7 @@
 /2012/redux-generation.png                      /2013/redux-generation.png                      301
 /2012/tale-of-two-timelapse.png                 /2013/tale-of-two-timelapse.png                 301
 
-# Documents were moved alongside their articles.
+# All documents were moved alongside their articles.
 /documents/cd-template-cd-face.svg                              /2006/cd-template-cd-face.svg                               301
 /documents/cd-template-jewel-case-back-print-margin.svg         /2006/cd-template-jewel-case-back-print-margin.svg          301
 /documents/cd-template-jewel-case-back.svg                      /2006/cd-template-jewel-case-back.svg                       301
@@ -58,20 +58,22 @@
 /documents/text-zoom-in-out.qtz                                 /2010/text-zoom-in-out.qtz                                  301
 /documents/blue-curve.otp                                       /2012/blue-curve.otp                                        301
 /documents/fancy-window-frame.otp                               /2012/fancy-window-frame.otp                                301
+# Removal of documents folder itself.
+/documents      /   301
+/documents/     /   301
 
 # There used to be a /pages subfolder that contained all static pages.
 /pages                      /                       301
 /pages/*                    /:splat                 301
 
-# Reduction of static content path.
-/documents                  /                       301
-/documents/                 /                       301
+# Removal of static subfolders: https://github.com/kdeldycke/kevin-deldycke-blog/commit/f91fdc7
 /static/documents           /                       301
 /static/documents/*         /documents/:splat       301
 /static/uploads             /                       301
 /static/uploads/*           /uploads/:splat         301
 
 # Removal of month in uploads URLs. This works because all filenames are unique.
+# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/a4a6454
 /uploads/:year/:month/:slug /:year/:slug            301
 
 # Old yearly grouped upload folders were moved alongside articles.
@@ -108,6 +110,8 @@
 ################################################################################
 # Old WordPress URLs
 ################################################################################
+# WordPress had a dedicated subfolder for content uploads.
+# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/418bf30
 /wp-content/uploads     /                   301
 /wp-content/uploads/*   /uploads/:splat     301
 
