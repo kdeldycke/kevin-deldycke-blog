@@ -9,7 +9,7 @@ Only a couple of days since the [release of v1.0
 is [Package Manager v1.3
 ](https://getbitbar.com/plugins/Dev/MetaPackageManager/meta_package_manager.7h.py)!
 
-![](/uploads/2016/package_manager_v13_screenshot.png)
+![]({attach}package_manager_v13_screenshot.png)
 
 This version now supports:
 

@@ -5,6 +5,6 @@ category: English
 tags: accounting, grisbi, Linux, Mandriva, RPM
 ---
 
-![grisbi-0591](/uploads/2006/grisbi-0591.png)
+![grisbi-0591]({attach}grisbi-0591.png)
 
 The latest version of [Grisbi, a french personnal accounting software](https://grisbi.org/), is [now available in my personnal RPM repository](https://github.com/kdeldycke/mandriva-specs) for Mandriva 2007.0.

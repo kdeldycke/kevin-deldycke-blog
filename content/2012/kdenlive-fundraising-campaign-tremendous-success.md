@@ -11,7 +11,7 @@ fundraising campaign and I just found out that I'm the biggest contributor. And
 like other $100+ contributors, I was offered a place to write a [testimonial
 ](https://kdenlive.org/fundraising-campaign-2012):
 
-![](/uploads/2012/kdenlive-testimonial.png)
+![]({attach}kdenlive-testimonial.png)
 
 If I won some bragging rights, this is minor news compared to how much the
 community participated: the initial goal was set to $4000 but collected funds

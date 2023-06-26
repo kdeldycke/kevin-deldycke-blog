@@ -5,4 +5,4 @@ category: Français
 tags: chat, SMS
 ---
 
-![](/uploads/2013/luigi.png)
+![]({attach}luigi.png)

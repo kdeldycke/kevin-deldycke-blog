@@ -49,9 +49,9 @@ And then I found Ubercart, which allowed me to do exactly what I wanted. Here is
 for example prices and stocks for a
 [black Cool Cavemen tee-shirt](https://coolcavemen.bandcamp.com/merch/white-tee-shirt-black-logo):
 
-![](/uploads/2011/ubercart-product-options.png)
+![]({attach}ubercart-product-options.png)
 
-![](/uploads/2011/ubercart-product-stocks.png)
+![]({attach}ubercart-product-stocks.png)
 
 I use Ubercart since 2008 and I'm really happy with it. The future is
 interesting, as [Ubercart was forked](https://www.drupalcommerce.org/about/history)

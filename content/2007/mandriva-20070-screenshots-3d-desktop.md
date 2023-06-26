@@ -17,24 +17,24 @@ As describe in its technical specification this machine include an [Intel GMA 95
 
 This chipset is recognized out of the box by `drakconf` and thanks to this GUI, I was able to setup X.org with [AIGLX](https://en.wikipedia.org/wiki/AIGLX) in no more than 2 clicks!
 
-![Mandriva 2007.0 : Drakconf, a GUI to setup 3D Desktop](/uploads/2007/mandriva-20070-drakconf-3d-desktop-control-panel.png)
+![Mandriva 2007.0 : Drakconf, a GUI to setup 3D Desktop]({attach}mandriva-20070-drakconf-3d-desktop-control-panel.png)
 
 Here are some screenshots of the resulting 3D desktop:
 
-![glxgear-pseudo-benchmark.jpg](/uploads/2007/glxgear-pseudo-benchmark.jpg)
+![glxgear-pseudo-benchmark.jpg]({attach}glxgear-pseudo-benchmark.jpg)
 
-![mandriva-20070-3d-desktop-video-and-transparency.jpg](/uploads/2007/mandriva-20070-3d-desktop-video-and-transparency.jpg)
+![mandriva-20070-3d-desktop-video-and-transparency.jpg]({attach}mandriva-20070-3d-desktop-video-and-transparency.jpg)
 
-![mandriva-20070-3d-desktop-video-and-window-flicker.jpg](/uploads/2007/mandriva-20070-3d-desktop-video-and-window-flicker.jpg)
+![mandriva-20070-3d-desktop-video-and-window-flicker.jpg]({attach}mandriva-20070-3d-desktop-video-and-window-flicker.jpg)
 
-![mandriva-20070-3d-desktop-video-expose-like-panel.jpg](/uploads/2007/mandriva-20070-3d-desktop-video-expose-like-panel.jpg)
+![mandriva-20070-3d-desktop-video-expose-like-panel.jpg]({attach}mandriva-20070-3d-desktop-video-expose-like-panel.jpg)
 
-![mandriva-20070-3d-desktop-video-and-desktop-chooser.jpg](/uploads/2007/mandriva-20070-3d-desktop-video-and-desktop-chooser.jpg)
+![mandriva-20070-3d-desktop-video-and-desktop-chooser.jpg]({attach}mandriva-20070-3d-desktop-video-and-desktop-chooser.jpg)
 
-![mandriva-20070-3d-desktop-video-and-desktop-cube.jpg](/uploads/2007/mandriva-20070-3d-desktop-video-and-desktop-cube.jpg)
+![mandriva-20070-3d-desktop-video-and-desktop-cube.jpg]({attach}mandriva-20070-3d-desktop-video-and-desktop-cube.jpg)
 
-![opengl-software-and-3d-desktop.jpg](/uploads/2007/opengl-software-and-3d-desktop.jpg)
+![opengl-software-and-3d-desktop.jpg]({attach}opengl-software-and-3d-desktop.jpg)
 
-![opengl-software-and-3d-desktop-flicker-bug.jpg](/uploads/2007/opengl-software-and-3d-desktop-flicker-bug.jpg)
+![opengl-software-and-3d-desktop-flicker-bug.jpg]({attach}opengl-software-and-3d-desktop-flicker-bug.jpg)
 
 As you can see there is still some bugs but I had to test many softwares to find one which had problems with the 3D desktop. Except [Celestia](https://www.shatters.net/celestia), everything was working as usual. Beside this, I just had to redefine some shotcuts in [Compiz](https://compiz.org) (to match the default KDE shortcuts) and I was feeling at home! :)

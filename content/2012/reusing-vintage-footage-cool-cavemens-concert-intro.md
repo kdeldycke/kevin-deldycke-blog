@@ -19,12 +19,12 @@ The challenge of this project was to have video of people speaking in sync with 
 
 As for the tools used to produce this video, I edited it in November with a development version of Kdenlive, under an Ubuntu 11.10. As usual, here is a screenshot of my timeline for reference:
 
-![](/uploads/2012/cool-cavemen-radio-concert-intro-kdenlive-edit.png)
+![]({attach}cool-cavemen-radio-concert-intro-kdenlive-edit.png)
 
 The project is using Kdenlive's "NTSC 29.97 fps" profile, which produce a 720x486 pixels stream with a pixel aspect ratio of 8/9 and a display aspect ratio of 4/3. I choose this profile as it was the closest to the original videos I downloaded from archive.org.
 
 I composed the credits and title card in Gimp, and tried to mimic the style of that period. This mean approximative composition and abuse of typography:
 
-![](/uploads/2012/title-card-gimp-edit.png)
+![]({attach}title-card-gimp-edit.png)
 
 To enhance the effect, I blurred everything and separated the text blocks in several layers. I then applied to each of them some random movements to add a parallax effect, thus getting closer to the look and feel produced by the imprecise optical process used in the early days of movie making.

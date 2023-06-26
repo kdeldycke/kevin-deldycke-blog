@@ -27,12 +27,12 @@ You can download those templates as SVG files under the [Creative Commons Attrib
 
 Below are PNG versions for preview:
 
-![CD Jewel Case Template - Leaflet](/uploads/2006/cd-template-jewel-case-leaflet.png)
+![CD Jewel Case Template - Leaflet]({attach}cd-template-jewel-case-leaflet.png)
 
-![CD Jewel Case Template - Back Cover](/uploads/2006/cd-template-jewel-case-back.png)
+![CD Jewel Case Template - Back Cover]({attach}cd-template-jewel-case-back.png)
 
-![CD Template - CD Face](/uploads/2006/cd-template-cd-face.png)
+![CD Template - CD Face]({attach}cd-template-cd-face.png)
 
-![CD Jewel Case Template - Inside Back Cover](/uploads/2006/cd-template-jewel-case-inside-back-cover.png)
+![CD Jewel Case Template - Inside Back Cover]({attach}cd-template-jewel-case-inside-back-cover.png)
 
-![CD Jewel Case Template - Front + Back Composition](/uploads/2006/cd-template-jewel-case-front-back-composition.png)
+![CD Jewel Case Template - Front + Back Composition]({attach}cd-template-jewel-case-front-back-composition.png)

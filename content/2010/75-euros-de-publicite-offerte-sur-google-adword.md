@@ -10,7 +10,7 @@ chose](https://kevin.deldycke.com/2010/02/google-adwords-bon-reduction-75-euros-
 qu'il y a 9 mois, j'ai reçu un bon d'achat de 75€ de pub pour
 [AdWords](https://adwords.google.com).
 
-![](/uploads/2010/coupon.png)
+![]({attach}coupon.png)
 
 Ayant déjà bénéficié d'une offre similaire, je ne peux pas l'utiliser. Je
 transmet donc le code donnant droit à cette réduction à la première personne

@@ -5,7 +5,7 @@ category: English
 tags: DMX, Linux, LLA, Mandriva, Open DMX, QLC, RPM, Stage Lighting, USB
 ---
 
-![QLC 2.6.1 on Mandriva 2008.1](/uploads/2008/qlc-261-on-mandriva-20081.png)
+![QLC 2.6.1 on Mandriva 2008.1]({attach}qlc-261-on-mandriva-20081.png)
 
 I've just backported QLC 2.6.1 from Fedora Core to Mandriva 2008.1.
 [Q Light Controller](https://qlc.sourceforge.net) is a software designed to pilot

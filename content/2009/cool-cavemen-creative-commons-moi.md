@@ -5,7 +5,7 @@ category: Français
 tags: band, Cool Cavemen, Creative Commons, interview, musique, oxyradio, podcast, radio
 ---
 
-![oxyradio-logo](/uploads/2009/oxyradio-logo.png)
+![oxyradio-logo]({attach}oxyradio-logo.png)
 
 Après plusieurs semaines d'absence sur ce blog, je suis de retour avec un
 billet pour une fois [en français]({category}francais). Il s'agit juste

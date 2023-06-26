@@ -17,33 +17,33 @@ Here is how I installed `nlconverter` on a [Windows 2000](https://amzn.com/B0006
 
   1. First I downloaded and installed the [official Python builds for Windows](https://www.python.org/download/releases/) ([2.6.6 precisely](https://www.python.org/ftp/python/2.6.6/python-2.6.6.msi)):
 
-![](/uploads/2010/001-python-266-install-on-windows-2000.png)
+![]({attach}001-python-266-install-on-windows-2000.png)
 
-![](/uploads/2010/002-python-266-install-on-windows-2000.png)
+![]({attach}002-python-266-install-on-windows-2000.png)
 
-![](/uploads/2010/003-python-266-install-on-windows-2000.png)
+![]({attach}003-python-266-install-on-windows-2000.png)
 
-![](/uploads/2010/004-python-266-install-on-windows-2000.png)
+![]({attach}004-python-266-install-on-windows-2000.png)
 
-![](/uploads/2010/005-python-266-install-on-windows-2000.png)
+![]({attach}005-python-266-install-on-windows-2000.png)
 
   2. Then [Python for Windows extensions](https://sourceforge.net/projects/pywin32/) ([build 214 for Python 2.6 in my case](https://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.6.exe/download)):
 
-![](/uploads/2010/001-pywin32-214-install-on-windows-2000.png)
+![]({attach}001-pywin32-214-install-on-windows-2000.png)
 
-![](/uploads/2010/002-pywin32-214-install-on-windows-2000.png)
+![]({attach}002-pywin32-214-install-on-windows-2000.png)
 
-![](/uploads/2010/003-pywin32-214-install-on-windows-2000.png)
+![]({attach}003-pywin32-214-install-on-windows-2000.png)
 
-![](/uploads/2010/004-pywin32-214-install-on-windows-2000.png)
+![]({attach}004-pywin32-214-install-on-windows-2000.png)
 
   3. Finally I had to [download the latest `icalendar` archive](https://pypi.python.org/pypi/icalendar), then extract the `\iCalendar-1.2\src\icalendar` folder to `C:\Python26\Lib\site-packages\`:
 
-![](/uploads/2010/extract-icalendar-python-package-on-windows.png)
+![]({attach}extract-icalendar-python-package-on-windows.png)
 
   4. Next step is to [download nlconverter](https://code.google.com/p/nlconverter/downloads) itself and extract it:
 
-![](/uploads/2010/nlconverter-install-on-windows.png)
+![]({attach}nlconverter-install-on-windows.png)
 
 ## nlconverter GUI
 
@@ -53,7 +53,7 @@ Now let's convert this `nsf` to a `mbox`. [nlconverter's FAQ](https://code.googl
 
 Unfortunately it didn't work for me:
 
-![](/uploads/2010/nlconverter-gui-fail.png)
+![]({attach}nlconverter-gui-fail.png)
 
 So I tried the alternative approach by using the command line.
 
@@ -63,7 +63,7 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
 
   1. First, we have to [download the `notes2mbox.py` script](https://nlconverter.googlecode.com/hg/notes2mbox.py) from [nlconverter's mercurial repository](https://code.google.com/p/nlconverter/source/browse/), as this file is not distributed in the `winnlc-alpha-1.zip` archive I unzipped previously. Let's put `notes2mbox.py` in `C:\winnlc-alpha-1\`:
 
-![](/uploads/2010/download-notes2mbox-python-script.png)
+![]({attach}download-notes2mbox-python-script.png)
 
   2. Now we'll modify the `notes2mbox.py` script to set the password (via the `notesPasswd` variable) and location (`notesNsfPath` variable) of the `.nsf` file. Here are the modifications I applied:
 
@@ -89,7 +89,7 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
     regsvr32 "C:\Program Files\Notes\nlsxbe.dll"
     ```
 
-![](/uploads/2010/notes-nlsxbe-dll-registered1.png)
+![]({attach}notes-nlsxbe-dll-registered1.png)
 
 And make the Python interpreter available system-wide:
 

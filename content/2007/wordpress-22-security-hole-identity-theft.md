@@ -17,6 +17,6 @@ Before the hack happened, my apache log show me that a person was looking for bl
 
 This person was my hacker. As you can see he's a belgian guy and his broadband provider is [Belgacom, to which I sent an abuse request](https://selfcare.belgacom.net/index.html?l=private:internet:security:notify&a=hacking_skynet). He register himself as [Waryas](https://waryas.skynetblogs.be) with his `myv4you@hotmail.com` email. I know that, thanks to the email Wordpress send me each time someone register. Then [google told me](https://www.google.fr/search?q=myv4you%40hotmail.com) that [this hack was not his first](https://www.coolforum.net/forum/detail.php?forumid=1&id=17468&p=1#29054).
 
-If you want to disect his behaviour, you can [download my apache log](/uploads/2007/wordpress-22-register-new-user-hack.txt).
+If you want to disect his behaviour, you can [download my apache log]({attach}wordpress-22-register-new-user-hack.txt).
 
 This event show us that the Wordpress vulnerablility regarding guest account registration is still there. So the [advice given by CountZero](https://www.4null4.de/174/wp-users-disable-guest-account-registration-immediately/) **must** be applied!

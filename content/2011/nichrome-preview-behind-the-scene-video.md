@@ -47,7 +47,7 @@ increasing the noise too much. I avoided this issue by mounting an
 [HDV-Z96 LED light](https://amzn.com/B003UCGDSS/?tag=kevideld-20) with its CTO
 diffuser filter, and carefully set its light level (around 60%):
 
-![](/uploads/2011/canon-7D-with-HDV-Z96-LED-light.jpg)
+![]({attach}canon-7D-with-HDV-Z96-LED-light.jpg)
 
 According EXIF data, ISO did not get over 2500 with this method, and was
 measured at 5000 in the darkest place. Average seems to be around 600. But take
@@ -61,7 +61,7 @@ EXIF, color profile was set to standard.
 Finally, I created the title cards in Gimp and edited the video in Kdenlive
 (on Kubuntu 11.04):
 
-![](/uploads/2011/nichrome-preview-kdenlive-timeline.png)
+![]({attach}nichrome-preview-kdenlive-timeline.png)
 
 And two weeks after releasing Nichrome's preview video, I edited another one
 with all left-overs. Here are the outtakes (which may not be as funny to you as

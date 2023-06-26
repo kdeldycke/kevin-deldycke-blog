@@ -9,6 +9,6 @@ Here is an optical illusion I generated with [Inkscape](https://www.inkscape.org
 
 Using a contrast trick it appears that [circles are in motions](https://en.wikipedia.org/wiki/Motion_illusion). Click on the image below to get a full-size preview:
 
-![](/uploads/2010/optical-illusion-circles-in-motion-preview.png)
+![]({attach}optical-illusion-circles-in-motion-preview.png)
 
 And as the title say, you can [download my original SVG source file](https://kevin.deldycke.com/documents/optical-illusion-circles-in-motion.svgz) (released under a [Creative Commons BY-SA license](https://creativecommons.org/licenses/by-sa/3.0/)).

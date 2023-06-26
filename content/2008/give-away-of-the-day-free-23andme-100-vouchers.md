@@ -5,7 +5,7 @@ category: English
 tags: 23andMe, coupon, discount, DNA, genetics, voucher
 ---
 
-![](/uploads/2008/23andme-v2-upgrade-kit.jpg)
+![]({attach}23andme-v2-upgrade-kit.jpg)
 
 I ordered a [23andMe](https://www.23andme.com) v1 kit (_[Time's invention of
 the year 2008](https://www.time.com/time/specials/packages/article/0,28804,1852747_1854493,00.html)_)

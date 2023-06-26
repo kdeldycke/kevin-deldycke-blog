@@ -21,13 +21,13 @@ I created this video using leftovers from the recording session. Which means the
 
 If you're a long-time reader of that blog, it's not a surprise for you that I edited it with [Kdenlive](https://kdenlive.org). Here is my final timeline, for reference and inspiration:
 
-![](/uploads/2012/burlesque-burglary-making-of-kdenlive-timeline.png)
+![]({attach}burlesque-burglary-making-of-kdenlive-timeline.png)
 
 The thing I'm particularly proud of in this BTS, is the puppets at the end, on the credit screen. The effect is simple but extremely effective. Each puppet is just composed of two steps (open & close mouth):
 
-![](/uploads/2012/puppets-states.png)
+![]({attach}puppets-states.png)
 
 Each state is activated according the audio track, and they come in and out of the frame thanks to a simple slide transition. Here is a zoom on that part of the Kdenlive timeline:
 
-![](/uploads/2012/making-of-credit-screen-kdenlive-composition.png)
+![]({attach}making-of-credit-screen-kdenlive-composition.png)
 

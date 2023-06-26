@@ -7,7 +7,7 @@ tags: artwork, CSS, maomium, WordPress, Ubercart
 
 I maintain a bunch of websites for friends on my server. In this context, [Maomium](https://maomium.com)'s owner owed me some bucks for his `.com` domain name. Here is the envelope I received yesterday with a check:
 
-![](/uploads/2011/maomium-thank-you-artwork.jpg)
+![]({attach}maomium-thank-you-artwork.jpg)
 
 Now that's what I call a personalized letter! This original artwork is so great that I had to share it.
 
@@ -19,7 +19,7 @@ And with Jim's approval, I now use his letter's artwork as my blog image header.
 
 Talking about this , here is a quick tip to make minimal design changes to a WordPress theme. The idea is to put custom CSS directives in a widget, as below:
 
-![](/uploads/2011/wordpress-widget-with-inline-css-customizations.png)
+![]({attach}wordpress-widget-with-inline-css-customizations.png)
 
 As widgets are site-wide, all these CSS customizations will be applied everywhere. Here is for example the code I applied on this site to hide blog's name and description from [TwentyTen](https://wordpress.org/extend/themes/twentyten)'s header:
 
@@ -42,5 +42,5 @@ As I moved from TwentyTen to the new TwentyEleven default WordPress theme, I jus
 
 For archive, here is the customized header I used with TwentyTen:
 
-![](/uploads/2011/maomium-artwork-banner.jpeg)
+![]({attach}maomium-artwork-banner.jpeg)
 

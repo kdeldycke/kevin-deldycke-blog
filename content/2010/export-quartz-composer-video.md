@@ -23,11 +23,11 @@ a [Creative Commons 3.0 BY-SA license
 ](https://creativecommons.org/licenses/by-sa/3.0/). And here is the screenshot
 of the main patch:
 
-![](/uploads/2010/kaleidoscope-000-main-patch.png)
+![]({attach}kaleidoscope-000-main-patch.png)
 
 And this is how I designed the color wheel sub-patch:
 
-![](/uploads/2010/kaleidoscope-000-color-wheel-macro-patch.png)
+![]({attach}kaleidoscope-000-color-wheel-macro-patch.png)
 
 If creating a composition is really simple and straightforward, exporting the
 result to a video file is another story...
@@ -38,7 +38,7 @@ didn't worked on my [Mac OS X Snow Leopard
 ](https://amzn.com/B001AMHWP8/?tag=kevideld-20), throwing me this exception
 every time:
 
-![](/uploads/2010/quartz-composer-export-to-movie-exception.png)
+![]({attach}quartz-composer-export-to-movie-exception.png)
 
     ```text
     0x8272938b: -[QCContext renderPatch:time:arguments:]
@@ -77,14 +77,14 @@ My last chance was another plugin: [Movie Exporter
 other one, you have to drop your original composition in a _Render in Image_
 macro block and export the resulting stream to the _Movie Exporter_ block:
 
-![](/uploads/2010/movie-exporter-patch.png)
+![]({attach}movie-exporter-patch.png)
 
 It did the trick but it looked like I messed things up: my goal was to export a
 720p clip. But compression artifacts are so present in the final video that I
 think the exported images are blow-ups of a rendering executed at a much lower
 resolution. The rendering in the preview panel support this hypothesis:
 
-![](/uploads/2010/kaleidoscope-viewer.png)
+![]({attach}kaleidoscope-viewer.png)
 
 Another big problem with this video export lies in the framerate: it cannot be
 set. For this composition the plugin exported a clip at 11fps. Which is far

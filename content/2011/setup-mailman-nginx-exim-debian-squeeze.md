@@ -5,7 +5,7 @@ category: English
 tags: Debian, Debian Squeeze, email, Exim, fcgiwrap, Linux, mailing list, mailman, munin, nginx
 ---
 
-![](/uploads/2011/mailman-logo.png)
+![]({attach}mailman-logo.png)
 
 Before going further, please take note that I start this tutorial assuming that
 you already have a [minimal Exim
@@ -68,7 +68,7 @@ Oh, and the first time you'll run Mailman, do a `start` as above, not a
 
 If everything is alright, you'll receive a mail similar to this one:
 
-![](/uploads/2011/mailman-new-mailing-list-message.png)
+![]({attach}mailman-new-mailing-list-message.png)
 
 ## Nginx
 
@@ -143,7 +143,7 @@ CGI and HTTP server:
 
 If everything's OK, going to `http://lists.example.com` will show you this:
 
-![](/uploads/2011/mailman-default-welcome-screen.png)
+![]({attach}mailman-default-welcome-screen.png)
 
 ## Exim
 

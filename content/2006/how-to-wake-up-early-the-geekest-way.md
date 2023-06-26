@@ -5,7 +5,7 @@ category: English
 tags: life, Linux, mobile phone, mplayer, Music, Travel, Cool Cavemen, cron, datetime
 ---
 
-![Mobile Phone, Broken Screen](/uploads/2006/pict4644.jpg)
+![Mobile Phone, Broken Screen]({attach}pict4644.jpg)
 
 I was in a country far far away last month. So far that there was no broadband access (yes, this is possible). Anyway... Generally I use my mobile phone as a clock and as an alarm clock. Unfortunalty I brake it down just before my night flight.
 

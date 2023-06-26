@@ -5,7 +5,7 @@ category: Français
 tags: AdWords, Google, bon de reduction, pub, voucher, Web
 ---
 
-![google-adwords-50-euros-voucher](/uploads/2009/google-adwords-50-euros-voucher.jpg)
+![google-adwords-50-euros-voucher]({attach}google-adwords-50-euros-voucher.jpg)
 
 J'ai deux bons d'achats de 50€ pour le service [Google
 AdWords](https://fr.wikipedia.org/wiki/AdWords). Ca traînent sur mon bureau

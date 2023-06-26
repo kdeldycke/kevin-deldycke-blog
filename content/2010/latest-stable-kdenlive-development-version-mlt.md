@@ -55,7 +55,7 @@ We can now follow the [procedure detailed in the Kdenlive manual](https://www.kd
 
 That's it! Now you can launch Kdenlive, and if you run the wizard, you'll see that the MLT version on your system is the latest:
 
-![](/uploads/2010/kdenlive-with-mlt-dev.png)
+![]({attach}kdenlive-with-mlt-dev.png)
 
 Oh, and by the way, it [fixed my problem with the crop filter](https://mltframework.org/gitweb/mlt.git?p=mltframework.org/mlt.git;a=commitdiff;h=21a3f68d56ce1237eb6510cdf03ebfc40b5641c2)! :)
 

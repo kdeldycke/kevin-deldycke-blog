@@ -22,9 +22,9 @@ Then I applied the PDF transformation on the [README.md](https://github.com/kdel
     $ pandoc README.md -o readme-pandoc.pdf
     ```
 
-[The result](/uploads/2012/readme-pandoc.pdf) is good, but not perfect. For example code blocks with long lines don't break at the end of the page:
+[The result]({attach}readme-pandoc.pdf) is good, but not perfect. For example code blocks with long lines don't break at the end of the page:
 
-![](/uploads/2012/pandoc-non-wraping-code-blocks.png)
+![]({attach}pandoc-non-wraping-code-blocks.png)
 
 While trying to solve this issue, I stumble upon another tool...
 
@@ -45,7 +45,7 @@ Then we can convert our Markdown file to a PDF. The following will generate a RE
     $ /var/lib/gems/1.8/bin/gimli -f ./README.md
     ```
 
-The [resulting PDF](/uploads/2012/readme-gimli.pdf) is really close to how GitHub renders Markdown content on its website. And it solve the bad code block style of Pandoc:
+The [resulting PDF]({attach}readme-gimli.pdf) is really close to how GitHub renders Markdown content on its website. And it solve the bad code block style of Pandoc:
 
-![](/uploads/2012/gimli-wraping-code-blocks.png)
+![]({attach}gimli-wraping-code-blocks.png)
 

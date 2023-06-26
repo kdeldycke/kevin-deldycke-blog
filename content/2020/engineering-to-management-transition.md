@@ -13,7 +13,7 @@ This interview was [originally published](https://devtomanager.com/interviews/ke
 
 My name is Kevin Deldycke and I was the VP of Billing, Payment and [IAM](https://en.wikipedia.org/wiki/Identity_management) at Scaleway, a cloud infrastructure provider. During my time at Scaleway, I led an engineering team of 11, and was one of the people in charge of the architecture, implementation and operation of the whole stack. If Compute, Storage and Network are the three pillars of the product ecosystem, then we, the Billing, Payment and IAM team are the core components of the platform. Our motto? Make complexity trivial from the outside, while streamlining the business.
 
-![](/uploads/2020/001-billing-payment-iam-team.jpeg)
+![]({attach}001-billing-payment-iam-team.jpeg)
 
 The team I formed. I am the overly happy guy with the blue shirt at the center.
 
@@ -30,7 +30,7 @@ The majority will not breed the next unicorn; we statistically have a better lik
 
 In 2013 I joined a [brand new R&D team](https://medium.com/scaleway-cloud/thank-you-scaleway-9dc5ba30b9a5) as a founding engineer. We worked in total secrecy on what would become a cloud computing ecosystem, akin to AWS, GCP or Azure.
 
-![](/uploads/2020/002-scaleway-founding-team.jpeg)
+![]({attach}002-scaleway-founding-team.jpeg)
 
 Scaleway’s founding team (I was behind the camera). All engineers & tech leads, no managers.
 
@@ -42,7 +42,7 @@ The system I designed and produced alone had to scale as well. And it had to abs
 
 I had no one to manage yet. But I felt empowered by a mission of bringing meaning and purpose in a place where everything had to be invented. We had the money, we were in the right industry, we already had customers, and competent engineering talents. **The missing pieces were management and leadership. And I was just empowered to positively influence all that up at my humble level.**
 
-![](/uploads/2020/003-last-photo-before-transitioning.jpeg)
+![]({attach}003-last-photo-before-transitioning.jpeg)
 
 The last photo of the initial R&D team, right before it was disbanded and I (on the far left) became manager.
 
@@ -78,7 +78,7 @@ It was not a place for routine, and the day-to-day was a varying mix of all of t
 
 Then I was promoted to Vice-President, a fancy title, meaning I was now reporting directly to the C-level executives. The job came with the assignment of adding a layer of management between me and the engineers. It was the only way to get ready for the next stage of growth. I was an OK manager, I now had to find a better one to replace me. I was lucky to find [Alexandre](https://www.linkedin.com/in/alexandre-jomin-007309a7/). He did, and still does, a stellar job taking care of the team I assembled.
 
-![](/uploads/2020/004-inheriting-the-team.jpeg)
+![]({attach}004-inheriting-the-team.jpeg)
 
 Alex, the manager I managed, inherited a sufficiently hydrated team.
 
@@ -91,7 +91,7 @@ Where did I get the drive to keep going? **Good people to work with.** I know it
 
 One of the biggest challenges, and the first you'll encounter right after your transition, is about managing your own psyche. Before you can improve on that, you’ll have to accept that indeed, **we're all just big bags of complicated, messy emotions**. To make progress you will need to tune your response to others. And essentially to yourself. Be prepared, because it's going to be an energy drain.
 
-![](/uploads/2020/005-tired-manager.jpeg)
+![]({attach}005-tired-manager.jpeg)
 
 A manager with no one to manage yet, trying hard to recruit in a competitive market.
 
@@ -110,7 +110,7 @@ The first people I hired were key to our long-term success. I was lucky to have 
 
 The biggest surprise is that **once you get the right core of a team, the culture takes care of itself**.
 
-![](/uploads/2020/006-seeding-the-culture.jpeg)
+![]({attach}006-seeding-the-culture.jpeg)
 
 The first members of the team, actively redecorating the brand new regional office. They all supplied the seed of our culture.
 
@@ -146,7 +146,7 @@ The greatest effect you can prompt is providing them with the time and mental sp
 
 The final lesson I'll share is the hardest. The higher you are in the hierarchy, the more likely you are going to step down for situations unrelated to your activity, or for things completely out of your direct control. i.e. things tend to get more political towards the top.
 
-![](/uploads/2020/007-quarterly-priority-planning.jpeg)
+![]({attach}007-quarterly-priority-planning.jpeg)
 
 Final touch on our plans for the next quarter. Arbitrating priorities when every product depends on you is excruciating.
 

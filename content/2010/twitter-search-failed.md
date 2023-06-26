@@ -13,7 +13,7 @@ Knew I explained the solution on Twitter.
 
 Tried to [search for it](https://search.twitter.com/search?q=ubercart+from%3Akdeldycke):
 
-![](/uploads/2010/failed-twitter-search.png)
+![]({attach}failed-twitter-search.png)
 
 and failed!
 

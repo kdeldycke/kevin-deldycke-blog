@@ -5,7 +5,7 @@ category: English
 tags: Apache, CLI, find, grep, Hosting, Linux, MySQL, SQL, sed, Server, WordPress, Regular expression
 ---
 
-![qpx-site-domain-migration](/uploads/2009/qpx-site-domain-migration.png)
+![qpx-site-domain-migration]({attach}qpx-site-domain-migration.png)
 
 I provide hosting for free to some of my friends. One of them,
 [QPX](https://wqpx.wordpress.com/), had a side project called *Lich'ti*. But

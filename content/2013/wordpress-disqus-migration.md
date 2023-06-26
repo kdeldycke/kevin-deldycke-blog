@@ -58,7 +58,7 @@ If most of my comments were successfully imported, some were left-out. The
 importer was not able to find their parents:
 
 ![Disqus comment import: unable to find parent
-post](/uploads/2013/disqus-import-error.png)
+post]({attach}disqus-import-error.png)
 
 But the reported error was not true: parent's IDs were good and referenced an
 existing comment. Besides, comments Disqus was not able to import were
@@ -122,4 +122,4 @@ I then sent the fixed WordPress XML export to Disqus as-is, which imported my
 24 missing comments:
 
 ![Disqus comment import: missing comments
-imported](/uploads/2013/disqus-import-complete.png)
+imported]({attach}disqus-import-complete.png)

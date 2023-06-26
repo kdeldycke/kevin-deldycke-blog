@@ -17,17 +17,17 @@ https://www.youtube.com/watch?v=YjE_uIRVnv8
 
 Tomasito planned this video and most of its shots in advance. Here is the basic outline of the scenes we arranged during a brainstorming session at my apartment in the end of 2010:
 
-![](/uploads/2013/where-is-she-scenes-timeline.jpg)
+![]({attach}where-is-she-scenes-timeline.jpg)
 
 We postponed the shooting so many times that these sticky papers were hanging on my wall for 2 years.
 
 Eventually this analog timeline led to some sketches and spreadsheets to prepare our shooting:
 
-![](/uploads/2013/where-id-she-preproduction-sketches.jpg)
+![]({attach}where-id-she-preproduction-sketches.jpg)
 
-![](/uploads/2013/where-is-she-roadbook.png)
+![]({attach}where-is-she-roadbook.png)
 
-![](/uploads/2013/where-is-she-sequence.png)
+![]({attach}where-is-she-sequence.png)
 
 
 ## Shooting
@@ -55,21 +55,21 @@ https://www.youtube.com/watch?v=xtLz6jfSp-I
 
 And some extra photos of the shooting:
 
-![](/uploads/2013/where-is-she-behind-the-scenes-001.jpg)
+![]({attach}where-is-she-behind-the-scenes-001.jpg)
 
-![](/uploads/2013/where-is-she-behind-the-scenes-003.jpg)
+![]({attach}where-is-she-behind-the-scenes-003.jpg)
 
-![](/uploads/2013/where-is-she-behind-the-scenes-006.jpg)
+![]({attach}where-is-she-behind-the-scenes-006.jpg)
 
-![](/uploads/2013/where-is-she-behind-the-scenes-008.jpg)
+![]({attach}where-is-she-behind-the-scenes-008.jpg)
 
-![](/uploads/2013/where-is-she-behind-the-scenes-009.jpg)
+![]({attach}where-is-she-behind-the-scenes-009.jpg)
 
-![](/uploads/2013/where-is-she-behind-the-scenes-010.jpg)
+![]({attach}where-is-she-behind-the-scenes-010.jpg)
 
-![](/uploads/2013/where-is-she-behind-the-scenes-013.jpg)
+![]({attach}where-is-she-behind-the-scenes-013.jpg)
 
-![](/uploads/2013/where-is-she-behind-the-scenes-021.jpg)
+![]({attach}where-is-she-behind-the-scenes-021.jpg)
 
 
 The [wedding entrance](https://kevin.deldycke.com/2012/11/wedding-entrance-paris-video-postcard/) video was the first time I used my [Glidecam HD-2000](https://amzn.com/B0020LB0MO/?tag=kevideld-20). But *Where is she?* was the [first publicly released video](https://kevin.deldycke.com/2012/08/where-is-she-music-video-released/) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
@@ -83,14 +83,14 @@ No need to say the music video was produced in guerilla style, without any warni
 
 Tomasito edited alone the source footage (1080p, 23.976 fps, 1/50s shutter) in Kdenlive:
 
-![](/uploads/2013/where-is-she-ungraded-kdenlive-timeline.jpg)
+![]({attach}where-is-she-ungraded-kdenlive-timeline.jpg)
 
 
 At that stage, I just helped him by creating the seamless split screens:
 
-![](/uploads/2013/where-is-she-split-screen-001.jpg)
+![]({attach}where-is-she-split-screen-001.jpg)
 
-![](/uploads/2013/where-is-she-split-screen-002.jpg)
+![]({attach}where-is-she-split-screen-002.jpg)
 
 
 ## Color correction
@@ -103,7 +103,7 @@ Robin did all the color correction in Kdenlive and for him, it was a first too. 
 
 I'd love to show you screenshots of the timeline with all its color parameters. Unfortunately we used an old development version, and when I try to re-open the project with the current version I have on my machine, I end up with this errors before completely crashing Kdenlive:
 
-![](/uploads/2013/kdenlive-missing-color-filters.png)
+![]({attach}kdenlive-missing-color-filters.png)
 
 But by looking at the XML source of the project, I can assert that the whole color correction was entirely made with a combination of these 3 filters only:
 

@@ -9,8 +9,8 @@ During the first (cold) hours of 2010, I've [done some light painting](https://m
 
 
 
-![](/uploads/2010/Lightpainting9.jpg)
+![]({attach}Lightpainting9.jpg)
 
-![](/uploads/2010/Lightpainting3.jpg)
+![]({attach}Lightpainting3.jpg)
 
 If you liked it, do not forget to [visit the whole gallery](https://maomium.com/zenphoto/light-painting/) on [Maomium](https://maomium.com) website and leave a comment!

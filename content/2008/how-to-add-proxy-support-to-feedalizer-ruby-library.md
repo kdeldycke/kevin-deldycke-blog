@@ -5,7 +5,7 @@ category: English
 tags: feed, feedalizer, hpricot, HTTP, parsing, proxy, RSS, Ruby, Ruby on Rails
 ---
 
-![](/uploads/2008/feedalizer.png)
+![]({attach}feedalizer.png)
 
 Here is a little code snippet which
 [monkey-patch](https://en.wikipedia.org/wiki/Monkey_patch)

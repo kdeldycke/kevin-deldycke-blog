@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=4HtfugU_mGg
 
 This video is a timelapse of a painting Tomasito made in 2007. It's based on a series of photos he took every 10 minutes:
 
-![](/uploads/2012/tale-of-two-timelapse.png)
+![]({attach}tale-of-two-timelapse.png)
 
 
 ## slowmoVideo
@@ -25,7 +25,7 @@ But the experiment failed and I abandoned this endeavor. Instead of slow-motion,
 
 The original photos were not consistent. To make them work as a slideshow, they required some stabilization. I tried the new [tracking features of Blender](https://wiki.blender.org/index.php/Doc:2.6/Manual/Motion_Tracking):
 
-![](/uploads/2013/blender-timlapse-stabilization.jpg)
+![]({attach}blender-timlapse-stabilization.jpg)
 
 While I could feel the power of the tracking tools, my limited knowledge of Blender stopped me. I abandoned this approach. But one day for sure, I'll give Blender the time it deserves.
 
@@ -38,11 +38,11 @@ But it can't read images: it only takes videos for input. So we'll produce a vid
 
 First, in a separate project, I created a stupid slideshow of 1 photo per frame, without any transition:
 
-![](/uploads/2012/redux-generation.png)
+![]({attach}redux-generation.png)
 
 To keep details, I exported the project to a high-quality h264 stream composed of I-frames only:
 
-![](/uploads/2012/export.png)
+![]({attach}export.png)
 
 I wanted to use a true lossless codec here, but after several trials and errors, this profile was the only one <code>vid.stab</code> was able to digest.
 
@@ -83,7 +83,7 @@ After this herculean task, I cropped & resized the images to fit the 1080p resol
 
 [As for Goodnight](https://kevin.deldycke.com/2013/03/goodnight-video/), we tried to get rid of the wide black bars on the sides. [QPX](https://wqpx.wordpress.com) created for us a mask made of paint strokes:
 
-![](/uploads/2013/video-mask.png)
+![]({attach}video-mask.png)
 
 Then I used that mask to blend the photos with a background fiber texture from [Subtle Patterns](https://subtlepatterns.com):
 

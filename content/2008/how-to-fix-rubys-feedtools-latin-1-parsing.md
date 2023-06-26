@@ -5,7 +5,7 @@ category: English
 tags: feed, FeedTools, parsing, patch, RSS, Ruby, Ruby on Rails
 ---
 
-![](/uploads/2008/feedtools-logo.png)
+![]({attach}feedtools-logo.png)
 
 While playing with [FeedTools](https://sporkmonger.com/projects/feedtools/), a ruby library to parse RSS (or other) feeds, I've spotted a strange behavior, that at first looks like typical unicode parsing issue. So I've started to check that the original feed was encoded in the right format, and that its charset was clearly set to the right value. But I found nothing wrong... So I dug in the [FeedTools source code](https://feedtools.rubyforge.org/svn/trunk/), and what I found is particularly disappointing...
 

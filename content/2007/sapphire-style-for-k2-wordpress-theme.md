@@ -4,7 +4,7 @@ title: "Sapphire style for K2 Wordpress theme"
 tags: Blog, CSS, K2, Template, Theme, Web, WordPress
 ---
 
-![Sapphire custom style for K2 Wordpress Theme](/uploads/2007/k2-sapphire.png)
+![Sapphire custom style for K2 Wordpress Theme]({attach}k2-sapphire.png)
 
 Yesterday I've build a new
 [K2](https://web.archive.org/web/20150107112837/https://getk2.com/about/) style

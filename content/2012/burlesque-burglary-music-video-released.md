@@ -15,27 +15,27 @@ I'll try to produce [detailed production notes](https://kevin.deldycke.com/2012/
 
 And finally, here are some stills from the video:
 
-![burlesque-burglary-0011](/uploads/2012/burlesque-burglary-0011.jpg)
+![burlesque-burglary-0011]({attach}burlesque-burglary-0011.jpg)
 
-![burlesque-burglary-0010](/uploads/2012/burlesque-burglary-0010.jpg)
+![burlesque-burglary-0010]({attach}burlesque-burglary-0010.jpg)
 
-![burlesque-burglary-0009](/uploads/2012/burlesque-burglary-0009.jpg)
+![burlesque-burglary-0009]({attach}burlesque-burglary-0009.jpg)
 
-![burlesque-burglary-0008](/uploads/2012/burlesque-burglary-0008.jpg)
+![burlesque-burglary-0008]({attach}burlesque-burglary-0008.jpg)
 
-![burlesque-burglary-0007](/uploads/2012/burlesque-burglary-0007.jpg)
+![burlesque-burglary-0007]({attach}burlesque-burglary-0007.jpg)
 
-![burlesque-burglary-0006](/uploads/2012/burlesque-burglary-0006.jpg)
+![burlesque-burglary-0006]({attach}burlesque-burglary-0006.jpg)
 
-![burlesque-burglary-0005](/uploads/2012/burlesque-burglary-0005.jpg)
+![burlesque-burglary-0005]({attach}burlesque-burglary-0005.jpg)
 
-![burlesque-burglary-0004](/uploads/2012/burlesque-burglary-0004.jpg)
+![burlesque-burglary-0004]({attach}burlesque-burglary-0004.jpg)
 
-![burlesque-burglary-0003](/uploads/2012/burlesque-burglary-0003.jpg)
+![burlesque-burglary-0003]({attach}burlesque-burglary-0003.jpg)
 
-![burlesque-burglary-0002](/uploads/2012/burlesque-burglary-0002.jpg)
+![burlesque-burglary-0002]({attach}burlesque-burglary-0002.jpg)
 
-![burlesque-burglary-0001](/uploads/2012/burlesque-burglary-0001.jpg)
+![burlesque-burglary-0001]({attach}burlesque-burglary-0001.jpg)
 
-![burlesque-burglary-0000](/uploads/2012/burlesque-burglary-0000.jpg)
+![burlesque-burglary-0000]({attach}burlesque-burglary-0000.jpg)
 

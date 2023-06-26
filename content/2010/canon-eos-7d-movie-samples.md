@@ -5,7 +5,7 @@ category: English
 tags: 1080p, 480p, 720p, Canon EOS 7D, photography, sample, Video
 ---
 
-![](/uploads/2010/eiffel-tower-video-sample-preview.jpg)
+![]({attach}eiffel-tower-video-sample-preview.jpg)
 
 Here is a collection of Eiffel Tower's videos I took today with my [Canon EOS 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20). These quick and dirty clips were shots this late afternoon.
 

@@ -5,11 +5,11 @@ category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, Music, SQLite, MySQL, PostgreSQL, SQL, RPM, urpmi
 ---
 
-![amarok-144-with-musicbrainz1](/uploads/2006/amarok-144-with-musicbrainz1.png)
+![amarok-144-with-musicbrainz1]({attach}amarok-144-with-musicbrainz1.png)
 
 I'm happy to announce you that the latest version of Amarok for Mandriva 2007
 now feature a fully functionnal MusicBrainz! Look at the
-[screenshot](/uploads/2006/amarok-144-with-musicbrainz.png) for evidences.
+[screenshot]({attach}amarok-144-with-musicbrainz.png) for evidences.
 
 This build, named amarok-1.4.4-3, is exactly the same as
 [previous one](https://kevin.deldycke.com/2006/10/amarok-144-for-mandriva-2007/)

@@ -5,7 +5,7 @@ category: English
 tags: CMS, e107, importer, migration, PHP, WordPress, Kubrick
 ---
 
-![](/uploads/2011/e107-importer-configuration-screen.png)
+![]({attach}e107-importer-configuration-screen.png)
 
 After
 [3 years in limbo](https://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/),

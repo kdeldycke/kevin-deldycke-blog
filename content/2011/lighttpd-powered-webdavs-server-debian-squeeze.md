@@ -99,7 +99,7 @@ And do not forget to restart the server:
     $ /etc/init.d/lighttpd restart
     ```
 
-![](/uploads/2011/lighttpd-webdav-server.png)
+![]({attach}lighttpd-webdav-server.png)
 
 As you can see in the screenshot above, you can now:
 

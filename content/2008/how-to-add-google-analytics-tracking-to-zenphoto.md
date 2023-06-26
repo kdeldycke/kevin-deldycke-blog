@@ -5,7 +5,7 @@ category: English
 tags: analytics, Google, hack, patch, PHP, Zenphoto, SSL
 ---
 
-![](/uploads/2008/zenphoto-12.png)
+![]({attach}zenphoto-12.png)
 
 This is the patch I apply on each [Zenphoto](https://www.zenphoto.org) I install
 and upgrade. This little hack add
@@ -20,7 +20,7 @@ statistics: on low-audience websites, administrators can generate more traffic
 than legitimate users (if not all...).
 
 Here is the
-[downloadable patch file](/uploads/2008/google-analytics-tracking-for-non-admin-users.patch),
+[downloadable patch file]({attach}google-analytics-tracking-for-non-admin-users.patch),
 and its content:
 
     ```diff

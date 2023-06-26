@@ -5,7 +5,7 @@ category: English
 tags: emoticon, KDE, kopete, Linux, Theme
 ---
 
-![kopete-emoticons](/uploads/2006/kopete-emoticons.png)
+![kopete-emoticons]({attach}kopete-emoticons.png)
 
 Just in case your are looking for [Kopete](https://kopete.kde.org) emoticons, they are stored in `/usr/share/emoticons`...
 

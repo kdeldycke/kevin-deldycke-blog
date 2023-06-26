@@ -110,6 +110,6 @@ Finally you can activate the site configuration and restart the whole stack:
 
 If everything's OK on your DNS, pointing your browser to `https://example.com` will show you the famous page produced by `phpinfo()`:
 
-![](/uploads/2011/phpinfo-536.png)
+![]({attach}phpinfo-536.png)
 
 Note that MySQL doesn't need any special attention to make it work out of the box. But again, if you plan to use it in production, its configuration needs special care, as for Nginx and PHP.

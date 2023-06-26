@@ -9,17 +9,17 @@ Just for the record, here are screenshots of network errors and user interface g
 
 
 
-![](/uploads/2010/IMG_2170.png)
+![]({attach}IMG_2170.png)
 
-![](/uploads/2010/IMG_3208.png)
+![]({attach}IMG_3208.png)
 
-![](/uploads/2010/IMG_2158.png)
+![]({attach}IMG_2158.png)
 
-![](/uploads/2010/IMG_2171.png)
+![]({attach}IMG_2171.png)
 
-![](/uploads/2010/IMG_3214.png)
+![]({attach}IMG_3214.png)
 
-![](/uploads/2010/IMG_2177.png)
+![]({attach}IMG_2177.png)
 
-![](/uploads/2010/IMG_0010.png)
+![]({attach}IMG_0010.png)
 

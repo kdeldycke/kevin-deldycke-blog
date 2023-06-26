@@ -7,7 +7,7 @@ tags: Lotus Notes, Mac OS X 10.5 Leopard, Mac OS X 10.6 Snow Leopard, Lotus Note
 
 Today I encountered this error message:
 
-![](/uploads/2010/lotus-notes-tcp-ip-error.png)
+![]({attach}lotus-notes-tcp-ip-error.png)
 
 > Error logging into server localhost: You must enable the Notes TCPIP port.
 
@@ -28,7 +28,7 @@ Then relaunch Lotus Notes and switch from `Island (Disconnected)` location to
 another that will allow your client to listen to the network. In my case,
 `Home (Network Dialup)` did the trick:
 
-![](/uploads/2010/lotus-notes-location-switch.png)
+![]({attach}lotus-notes-location-switch.png)
 
 Problem solved! :)
 
@@ -38,10 +38,10 @@ Snow Leopard. In this context, the solution is exactly the same.
 Here is a screenshot of the location drop-down menu with the new Notes
 interface:
 
-![](/uploads/2010/lotus-notes-8-5-location-switch.png)
+![]({attach}lotus-notes-8-5-location-switch.png)
 
 And if you're looking for the `notes.ini` file on Windows, it's located at
 `C:\Documents and Settings\[username]\Local Settings\Application Data\Lotus\Notes\Data\`.
 At least in my case with Lotus Notes 8.5.2 under Windows XP SP2:
 
-![](/uploads/2010/notes-ini-location-windows-xp.png)
+![]({attach}notes-ini-location-windows-xp.png)

@@ -5,7 +5,7 @@ category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, Music, RPM, PostgreSQL, MySQL
 ---
 
-![Amarok 1.4.7 for Mandriva 2007.1](/uploads/2007/amarok-147-logo.png)
+![Amarok 1.4.7 for Mandriva 2007.1]({attach}amarok-147-logo.png)
 
 I’ve just backported [Amarok 1.4.7](https://amarok.kde.org/en/node/243) from
 cooker to Mandriva 2007.1 (aka "Spring" edition).

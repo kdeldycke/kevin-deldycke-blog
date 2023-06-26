@@ -29,7 +29,7 @@ My plan consist in:
 
 After the migration to TrueNAS `12.0-U1`, the main pool (which I called `big`), gets locked:
 
-![](/uploads/2020/legacy-encrypted-truenas-zfs-offline-pool.jpeg)
+![]({attach}legacy-encrypted-truenas-zfs-offline-pool.jpeg)
 
 All system metadata resides there. We can no longer SSH into the box with our regular users. We'll hack our way in and create a new temporary one.
 
@@ -124,7 +124,7 @@ Notice the `.eli` suffix indicating the partition is encrypted.
 
 At this point a couple of notifications will pop-up:
 
-![](/uploads/2020/truenas-critical-error-volume-status.jpeg)
+![]({attach}truenas-critical-error-volume-status.jpeg)
 
 ```pytb
 Failed to check for alert VolumeStatus:
@@ -150,7 +150,7 @@ I chose to simply ignore that one.
 
 And now the pool is materialized in the GUI:
 
-![](/uploads/2020/legacy-encrypted-offline-zfs-pool.jpeg)
+![]({attach}legacy-encrypted-offline-zfs-pool.jpeg)
 
 It is offline, but can be activated from the shell:
 
@@ -183,11 +183,11 @@ config:
 errors: No known data errors
 ```
 
-![](/uploads/2020/legacy-encrypted-online-zfs-pool.jpeg)
+![]({attach}legacy-encrypted-online-zfs-pool.jpeg)
 
 We got a couple of notifications, one that is warning us about the [`ZFS-8000-9P` error](https://openzfs.github.io/openzfs-docs/msg/ZFS-8000-9P/).
 
-![](/uploads/2020/zfs-online-pool-unrecoverable-error.jpeg)
+![]({attach}zfs-online-pool-unrecoverable-error.jpeg)
 
 ```text
 CRITICAL
@@ -222,7 +222,7 @@ errors: No known data errors
 
 ZFS is also proposing to upgrade the pool, but we will not:
 
-![](/uploads/2020/zfs-feature-flag-pool-upgrade.jpeg)
+![]({attach}zfs-feature-flag-pool-upgrade.jpeg)
 
 ```text
 WARNING
@@ -237,7 +237,7 @@ The strategy here consist in replacing each encrypted partition by itself, un-en
 
 First, we choose one partition (`ada1p2` in this case), and offline the disk from the web interface:
 
-![](/uploads/2020/offline-zfs-disk.jpeg)
+![]({attach}offline-zfs-disk.jpeg)
 
 Double-check the status of the pool with the CLI:
 
@@ -679,7 +679,7 @@ System shutdown time has arrived
 Shared connection to truenas.local closed.
 ```
 
-![Hello IT, have you tried turning it off and on again?](/uploads/2020/have-you-tried-turning-it-off-and-on-again.jpg)
+![Hello IT, have you tried turning it off and on again?]({attach}have-you-tried-turning-it-off-and-on-again.jpg)
 
 I got lucky, `ada1p2` showed up after the reboot:
 

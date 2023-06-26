@@ -13,7 +13,7 @@ a [fundraising
 campaign](https://www.indiegogo.com/projects/kdenlive-refactoring) to refactor
 its core and make it future-proof:
 
-[![](../uploads/2012/kdenlive-fundraising-campaign.png)](https://www.indiegogo.com/projects/kdenlive-refactoring)
+[![]({attach}kdenlive-fundraising-campaign.png)](https://www.indiegogo.com/projects/kdenlive-refactoring)
 
 The amount of collected funds is currently at $3,041 from the $4,000 required
 to pay a developer to work full-time for 2 months. With only $959 remaining and

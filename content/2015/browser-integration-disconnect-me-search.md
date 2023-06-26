@@ -26,4 +26,4 @@ Without further ado, here is the magic URL you're looking for:
 That's all you need to add Disconnect.me as your default search engine:
 
 ![Disconnect.me as default search engine in Google
-Chrome](/uploads/2015/google-chrome-disconnect-me-default-search-engine.png)
+Chrome]({attach}google-chrome-disconnect-me-default-search-engine.png)

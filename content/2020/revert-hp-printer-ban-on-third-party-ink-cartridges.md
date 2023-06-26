@@ -15,11 +15,11 @@ The timeline is straightforward:
 
 * 2020, October: HP release a new firmware (versioned `20201021`).
 
-  ![](/uploads/2020/hp-laserjet-printer-20201021-firmware.jpg)
+  ![]({attach}hp-laserjet-printer-20201021-firmware.jpg)
 
 * 2020, November: my printer auto-upgrade. I'm welcomed with this *Supply Problem [Screen of Death](https://en.wikipedia.org/wiki/Screen_of_death)*:
 
-  ![](/uploads/2020/hp-laserjet-printer-supply-problem-screen-of-death.jpg)
+  ![]({attach}hp-laserjet-printer-supply-problem-screen-of-death.jpg)
 
   I can't print anymore. 🤯
 
@@ -27,7 +27,7 @@ The timeline is straightforward:
 
 OK. It's my fault. I should have spent more money buying certified™ gear. 😑
 
-![](/uploads/2020/copier-printer-meme-03.jpg)
+![]({attach}copier-printer-meme-03.jpg)
 
 The solution is to travel back in time when things were working just great, and downgrade to the previous firmware.
 
@@ -37,7 +37,7 @@ We will stop this madness for good, and prevent the printer from downloading a f
 
 In the control panel, go to `Setup` > `Service` > `LaserJet Update` > `Manage Updates`:
 
-![](/uploads/2020/hp-laserjet-printer-manage-updates-menu.jpg)
+![]({attach}hp-laserjet-printer-manage-updates-menu.jpg)
 
 Then set these options:
 
@@ -54,7 +54,7 @@ I got lucky and found the previous `20200612` firmware referenced in [`https://f
 
 There you'll get a direct link to the `.rfu` file (Remote Firmware Update):[`http://ftp.hp.com/pub/networking/software/pfirmware/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu`](http://ftp.hp.com/pub/networking/software/pfirmware/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu).
 
-And just in case it disappear from its original location, here is a [copy of `HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu`](/uploads/2020/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu).
+And just in case it disappear from its original location, here is a [copy of `HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu`]({attach}HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu).
 
 The checksum of that file is:
 
@@ -85,13 +85,13 @@ I don't know what happens here but it seems the `.rfu` file is pushed to the pri
 
 After a minute or two, the printers reboots and upgrades itself:
 
-![](/uploads/2020/hp-laserjet-printer-firmware-updating.jpg)
+![]({attach}hp-laserjet-printer-firmware-updating.jpg)
 
 And we're back in business! 🥳
 
 A detour via `Setup` > `Service` > `Firmware Datecode` menu confirm we're running the the previous firmware:
 
-![](/uploads/2020/hp-laserjet-printer-20200612-firmware.jpg)
+![]({attach}hp-laserjet-printer-20200612-firmware.jpg)
 
 Finally, to lock any possibility of a firmware change, go back to `Setup` > `Service` > `LaserJet Update` > `Manage Updates` to set the option to:
 

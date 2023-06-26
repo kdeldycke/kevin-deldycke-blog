@@ -5,7 +5,7 @@ category: English
 tags: Amarok, backport, Mandriva, RPM, SQLite, MySQL, PostgreSQL
 ---
 
-![Amarok 1.4.9.1 logo](/uploads/2008/amarok-1491.png)
+![Amarok 1.4.9.1 logo]({attach}amarok-1491.png)
 
 [Amarok 1.4.9.1 was released 6 weeks ago](https://amarok.kde.org/en/fastforward_149)
 and was

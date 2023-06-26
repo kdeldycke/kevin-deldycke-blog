@@ -5,7 +5,7 @@ category: English
 tags: CSS, Gimp, HTML, Internet Explorer, K2, Photoshop, PHP, PNG, Theme, WordPress
 ---
 
-![](/uploads/2008/beta-version-illustration.png)
+![]({attach}beta-version-illustration.png)
 
 In this post I will give you all the technical details to create a corner banner
 for the wordpress K2 theme. This solution is uninstrusive as it can be bundled
@@ -61,9 +61,9 @@ Then we need to add the following CSS code to our style
     ```
 
 This CSS code refer to the
-[`corner-banner.png`](/uploads/2008/corner-banner.png) which is a 205x205 px PNG
+[`corner-banner.png`]({attach}corner-banner.png) which is a 205x205 px PNG
 image with an alpha channel to simulate shadows and fine transparency. Here is
-the [Gimp `.xcf` source file](/uploads/2008/corner-banner.xcf) I used to
+the [Gimp `.xcf` source file]({attach}corner-banner.xcf) I used to
 generate it.
 
 This CSS code is designed for a top right banner. If you need a top left banner,
@@ -106,5 +106,5 @@ do not forget to update the CSS code with your image width and height.
 
 **Update**: [my friend QPX](https://wqpx.wordpress.com) sent me an alternative
 banner made with photoshop: here is the
-[ready-to-use PNG file](/uploads/2008/corner-banner-qpx.png) and the
-[Photoshop source file](/uploads/2008/corner-banner-qpx.psd).
+[ready-to-use PNG file]({attach}corner-banner-qpx.png) and the
+[Photoshop source file]({attach}corner-banner-qpx.psd).

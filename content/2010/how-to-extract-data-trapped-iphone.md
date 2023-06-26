@@ -22,44 +22,44 @@ getting data directly from the iPhone, it reads its backups made by iTunes.
 
 So first thing you have to do is to backup your phone using iTunes:
 
-![](/uploads/2010/iphone-itunes-sync.png)
+![]({attach}iphone-itunes-sync.png)
 
 Then you can download and run the iPhone Backup Extractor app:
 
-![](/uploads/2010/iphone-backup-extrator.png)
+![]({attach}iphone-backup-extrator.png)
 
 Here you just have to click the _Read Backups_ button to get a list of all
 backups available on your machine. Then choose your latest backup:
 
-![](/uploads/2010/list-of-iphone-backups.png)
+![]({attach}list-of-iphone-backups.png)
 
 You'll get a list of all installed applications on your iPhone. As we are
 interested in "core" iPhone apps (SMSs, photos and so on), we'll choose the
 "iOS Files" item, then choose a place where to extract:
 
-![](/uploads/2010/iphone-backup-content.png)
+![]({attach}iphone-backup-content.png)
 
-![](/uploads/2010/iphone-backup-extraction-destination.png)
+![]({attach}iphone-backup-extraction-destination.png)
 
 Then the extraction itself will take place:
 
-![](/uploads/2010/iphone-backup-extraction.png)
+![]({attach}iphone-backup-extraction.png)
 
 You've just finished the essential part of the process. You now have a nice
 folder structure containing all the important informations that was trapped in
 your phone:
 
-![](/uploads/2010/iphone-backup-extraction-content.png)
+![]({attach}iphone-backup-extraction-content.png)
 
 Let's browse the file structure that was just created. You can see photos are
 available as is, in the `/iOS Files/Media/DCIM/XXXAPPLE/`:
 
-![](/uploads/2010/iphone-photo-location.png)
+![]({attach}iphone-photo-location.png)
 
 Most of other datas are located in the `/iOS Files/Library/` folder. For
 example here are voice messages:
 
-![](/uploads/2010/iphone-voicemessages-location.png)
+![]({attach}iphone-voicemessages-location.png)
 
 Again, `.amr` files here are playable as-is, like [VLC
 ](https://www.videolan.org/vlc/) or [mplayer](https://www.mplayerhq.hu).
@@ -70,13 +70,13 @@ under Mac OS X is [SQLite Database Browser
 ](https://sourceforge.net/projects/sqlitebrowser/). See how I can easily extract
 to a CSV file all metadatas associated with my voice messages:
 
-![](/uploads/2010/sqlite-database-browser-opening.png)
+![]({attach}sqlite-database-browser-opening.png)
 
-![](/uploads/2010/iphone-voicemail-database-tables.png)
+![]({attach}iphone-voicemail-database-tables.png)
 
-![](/uploads/2010/iphone-voicemail-table-content.png)
+![]({attach}iphone-voicemail-table-content.png)
 
-![](/uploads/2010/sqlite-csv-table-export.png)
+![]({attach}sqlite-csv-table-export.png)
 
 Finally, just in case you want to extract iPhones data from another backup than
 the default backup, like from a backup of the backup (isn't that clear?),
@@ -100,4 +100,4 @@ That's how I was able to extract my iPhone data from an old backup, and get
 back most of the [data I lost after my last iOS update
 ](https://twitter.com/kdeldycke/status/22516008513):
 
-![](/uploads/2010/iphone-backup-extractor-from-old-backup.png)
+![]({attach}iphone-backup-extractor-from-old-backup.png)

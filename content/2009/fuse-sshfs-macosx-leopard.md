@@ -17,7 +17,7 @@ To get similar features in Leopard, we have to rely on [MacFuse
 these components on [Mac OS X Leopard
 ](https://amzn.com/B000FK88JK/?tag=kevideld-20).
 
-![MacFUSE_Banner](/uploads/2009/MacFUSE_Banner.png)
+![MacFUSE_Banner]({attach}MacFUSE_Banner.png)
 
 First, [download the latest MacFuse `dmg`
 ](https://code.google.com/p/macfuse/downloads/list) and install it. FYI, the

@@ -5,7 +5,7 @@ category: English
 tags: Apple, CLI, dm2img, dmg, HFS, Linux, Mandriva, RPM
 ---
 
-![package](/uploads/2009/package.png)
+![package]({attach}package.png)
 
 I've just created a RPM of [dmg2img](https://vu1tur.eu.org/tools/) for the x86_64 version of Mandriva 2009.1. The package is [available in my RPM repository](https://github.com/kdeldycke/mandriva-specs).
 

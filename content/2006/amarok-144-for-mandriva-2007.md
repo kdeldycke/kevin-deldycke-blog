@@ -5,7 +5,7 @@ category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, Music, MySQL, SQL, RPM, urpmi
 ---
 
-![amarok-1-4-41](/uploads/2006/amarok-1-4-41.png)
+![amarok-1-4-41]({attach}amarok-1-4-41.png)
 
 Here is the ultimate version of Amarok! The [version 1.4.4 of Amarok was
 released today](https://web.archive.org/web/20070212221847/https://amarok.kde.org/content/view/84/66/),

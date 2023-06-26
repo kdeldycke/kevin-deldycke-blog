@@ -37,11 +37,11 @@ of the concert:
 
 ![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
 
-![working-on-grand-ma-001](/uploads/2012/working-on-grand-ma-001.jpg)
+![working-on-grand-ma-001]({attach}working-on-grand-ma-001.jpg)
 
-![working-on-grand-ma-002](/uploads/2012/working-on-grand-ma-002.jpg)
+![working-on-grand-ma-002]({attach}working-on-grand-ma-002.jpg)
 
-![working-on-grand-ma-003](/uploads/2012/working-on-grand-ma-003.jpg)
+![working-on-grand-ma-003]({attach}working-on-grand-ma-003.jpg)
 
 It was the first time I had so much gear to work with (mostly
 [Martin Mac-2000](https://www.martin.com/product/product.asp?product=mac2000profile)
@@ -52,7 +52,7 @@ A week before the show, I played with
 [GrandMA's emulator](https://www.malighting.com/en/products/control/grandma-onpc.html)
 to get a glimpse of that desk's philosophy.
 
-![](/uploads/2012/grand-ma-onpc-simulation.png)
+![]({attach}grand-ma-onpc-simulation.png)
 
 But this little training is not enough to get used to the GrandMA, let alone
 master it. So when it was time to play live, I choose simple lighting patterns
@@ -73,11 +73,11 @@ and saved on a
 
 ![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
 
-![IMG_0492](/uploads/2012/IMG_0492.jpg)
+![IMG_0492]({attach}IMG_0492.jpg)
 
-![IMG_0502](/uploads/2012/IMG_0502.jpg)
+![IMG_0502]({attach}IMG_0502.jpg)
 
-![p1010733](/uploads/2012/p1010733.jpg)
+![p1010733]({attach}p1010733.jpg)
 
 The raw recording was later remixed by Thomas of the
 [SoundUp Studio](https://soundupstudio.com/).
@@ -119,14 +119,14 @@ based on a reference track extracted from the camera recording:
      the file I import in Kdenlive and align with my video using the reference
      track.
 
-![](/uploads/2012/kdenlive-fusion-timeline.png)
+![]({attach}kdenlive-fusion-timeline.png)
 
 Before using that workflow on all our tracks, we checked it was not introducing
 delays. Unfortunately, I detected some:
 
-![export-PTFU-audio-ref](/uploads/2012/export-PTFU-audio-ref.png)
+![export-PTFU-audio-ref]({attach}export-PTFU-audio-ref.png)
 
-![export-PTFU-master](/uploads/2012/export-PTFU-master.png)
+![export-PTFU-master]({attach}export-PTFU-master.png)
 
 I introduced them when I tried to
 [get rid of video timecode artifacts](https://kevin.deldycke.com/2010/01/remove-videotape-timecode/).

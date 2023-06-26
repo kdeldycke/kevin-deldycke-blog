@@ -7,7 +7,7 @@ tags: humour, petite annonce, photo
 
 Vu le mois dernier dans un bar, une petite annonce pour un [Renault Espace](https://wikipedia.org/wiki/Renault_Espace):
 
-![Espas Diselle Avadre](/uploads/2009/espas-diselle-avadre.jpg)
+![Espas Diselle Avadre]({attach}espas-diselle-avadre.jpg)
 
 > AVADRE
 ESPAS 2L2 DCI

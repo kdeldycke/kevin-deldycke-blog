@@ -82,7 +82,7 @@ fixed by:
     $ chmod -R a+rw /proc/bus/usb/002/002
     ```
 
-![qemu-usb-console](/uploads/2009/qemu-usb-console.png)
+![qemu-usb-console]({attach}qemu-usb-console.png)
 
 Instead, if you get the following error message:
 
@@ -103,12 +103,12 @@ I had to do:
 At last, you can check under the emulated Windows that your Enttec widget is
 recognized by windows:
 
-![enttec-usb-dmx-widget-on-windows-xp-through-qemu](/uploads/2009/enttec-usb-dmx-widget-on-windows-xp-through-qemu.png)
+![enttec-usb-dmx-widget-on-windows-xp-through-qemu]({attach}enttec-usb-dmx-widget-on-windows-xp-through-qemu.png)
 
 And finally you're free to upgrade (at your own risks) your widget's firmware
 with the tools available on Enttec's official website:
 
-![enttec-dmx-usb-widget-firmware-upgrade-on-windows-xp-through-qemu](/uploads/2009/enttec-dmx-usb-widget-firmware-upgrade-on-windows-xp-through-qemu.png)
+![enttec-dmx-usb-widget-firmware-upgrade-on-windows-xp-through-qemu]({attach}enttec-dmx-usb-widget-firmware-upgrade-on-windows-xp-through-qemu.png)
 
 FYI, all these operations where performed on a Mandriva 2008.1, Qemu 0.9.0 and
 linux kernel 2.6.24.

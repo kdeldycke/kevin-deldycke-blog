@@ -32,7 +32,7 @@ The most boring part of the edit was the first step, in which we synced all
 clips together with the reference audio track. Here is how the timeline looked,
 with one track for each instrument:
 
-![](/uploads/2011/wish-you-looked-at-me-kdenlive-timeline-01.png)
+![]({attach}wish-you-looked-at-me-kdenlive-timeline-01.png)
 
 We had to work around some annoying Kdenlive bugs, as it had some problems
 handling so much tracks in parallel. Fortunately these bugs were fixed in a
@@ -42,29 +42,29 @@ Next step was to mark out the structure of the song. Tomasito placed blue
 markers along the timeline, and we cut all tracks following that structure. It
 resulted in a matrix of clips:
 
-![](/uploads/2011/wish-you-looked-at-me-kdenlive-timeline-02.png)
+![]({attach}wish-you-looked-at-me-kdenlive-timeline-02.png)
 
 Then for each segment, we choose the 4 clips that we wanted to show and deleted
 the others:
 
-![](/uploads/2011/wish-you-looked-at-me-kdenlive-timeline-04.png)
+![]({attach}wish-you-looked-at-me-kdenlive-timeline-04.png)
 
 Then I created 4 special tracks to which I applied a global positioning and
 scaling effect, to have each track fill one corner of the screen. We moved
 there all the clips we selected in the previous step, and cleaned up the
 timeline a bit:
 
-![](/uploads/2011/wish-you-looked-at-me-kdenlive-timeline-05.png)
+![]({attach}wish-you-looked-at-me-kdenlive-timeline-05.png)
 
 At this stage the project was mostly done. It was just a matter of adding
 intro, outro and fade in/out to obtain our final video:
 
-![](/uploads/2011/wish-you-looked-at-me-kdenlive-timeline-06.png)
+![]({attach}wish-you-looked-at-me-kdenlive-timeline-06.png)
 
 Tomasito basically did the whole editing of the project. And I have some
 evidences:
 
-![](/uploads/2011/tomasito-editing-session.jpg)
+![]({attach}tomasito-editing-session.jpg)
 
 I just showed him how to manipulate Kdenlive timelines, and cut/move/paste
 clips, and he was absolutely autonomous in a matter of minutes. I just did the

@@ -5,7 +5,7 @@ category: English
 tags: iptables, Linux, Network, Qemu
 ---
 
-![Qemu Network Sharing](/uploads/2005/photo_f3.png)
+![Qemu Network Sharing]({attach}photo_f3.png)
 
 Create a file `/etc/qemu-ifup` that contain:
 

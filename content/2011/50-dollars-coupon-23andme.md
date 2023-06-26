@@ -13,6 +13,6 @@ on how many people can use it.
 
 Here is a screenshot of the mail with the coupon code (`8WR9U9`):
 
-![](/uploads/2011/23-and-me-50-dollars-coupon.png)
+![]({attach}23-and-me-50-dollars-coupon.png)
 
 Feel free to use the coupon as many times as you need!

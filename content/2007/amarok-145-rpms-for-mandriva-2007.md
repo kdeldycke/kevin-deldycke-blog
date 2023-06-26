@@ -5,7 +5,7 @@ category: English
 tags: Amarok, Audio, KDE, Linux, Mandriva, RPM
 ---
 
-![amarok1](/uploads/2007/amarok145.png)
+![amarok1]({attach}amarok145.png)
 
 I've just backported [Amarok
 1.4.5](https://community.kde.org/Amarok/Archives/Release:1.4.5) from cooker to

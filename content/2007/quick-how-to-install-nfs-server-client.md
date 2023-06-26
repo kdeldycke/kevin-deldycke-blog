@@ -5,7 +5,7 @@ category: English
 tags: CLI, Linux, Mandriva, Network, NFS, Server
 ---
 
-![nfs.png](/uploads/2007/nfs.png)
+![nfs.png]({attach}nfs.png)
 
 In this tiny how-to I'll explain you how to setup a machine as a NFS server and an other one as a client. This example was written based on my experiences on Mandriva, but all commands should almost be the same for other distributions.
 

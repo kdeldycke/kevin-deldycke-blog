@@ -45,7 +45,7 @@ capable of [producing the
 paysheets](https://web.archive.org/web/20110128111823/https://www.erp5.org/workspaces/project/erp5_payroll/erp5_pay_sheet_for_n/view)
 of all Nexedi's employees. Here is an example:
 
-![](/uploads/2008/erp5-final-paysheet.png)
+![]({attach}erp5-final-paysheet.png)
 
 These modules were so extensive that I wrote a detailed tutorial based on them.
 As it was the only comprehensive documentation available on ERP5, my work

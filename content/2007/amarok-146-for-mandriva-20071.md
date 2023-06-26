@@ -5,7 +5,7 @@ category: English
 tags: Amarok, KDE, Linux, Mandriva, RPM, MySQL, PostgreSQL
 ---
 
-![Amarok 1.4.6 Logo](/uploads/2007/amarok146.png)
+![Amarok 1.4.6 Logo]({attach}amarok146.png)
 
 Amarok 1.4.6 was [released two weeks ago](https://amarok.kde.org/en/node/234).
 Even if this version is available in

@@ -84,4 +84,4 @@ After that you'll be able to run slowmoVideo itself:
     $ ~/slowmoVideo/install/bin/slowmoUI
     ```
 
-![slowmoVideo timeline screenshot](/uploads/2013/slowmo-video-timeline.png)
+![slowmoVideo timeline screenshot]({attach}slowmo-video-timeline.png)

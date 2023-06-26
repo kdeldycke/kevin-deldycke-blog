@@ -5,7 +5,7 @@ category: English
 tags: band, Cool Cavemen, Stage lighting, live, tour
 ---
 
-![fly-concert-recto-04-150-dpi](/uploads/2009/fly-concert-recto-04-150-dpi.png)
+![fly-concert-recto-04-150-dpi]({attach}fly-concert-recto-04-150-dpi.png)
 
 This week I'm
 [on tour with Cool Cavemen](https://coolcavemen.com/2009/tournee-nationale/).

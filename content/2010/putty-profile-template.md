@@ -5,7 +5,7 @@ category: English
 tags: PuTTY, shell, SSH, Template, terminal, Windows
 ---
 
-![](/uploads/2010/putty-template-preview.png)
+![]({attach}putty-template-preview.png)
 
 Inspired by a recent friend's post about an [annoying PuTTY behavior (fix included)](https://www.think-underground.com/post/2010/04/13/Supprimer-le-comportement-%C3%A9trange-du-pav%C3%A9-num%C3%A9rique-dans-Putty), here is [my template for PuTTY profiles](https://kevin.deldycke.com/documents/putty-template.reg).
 

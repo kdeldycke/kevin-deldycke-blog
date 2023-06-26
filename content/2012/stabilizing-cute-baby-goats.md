@@ -5,7 +5,7 @@ category: English
 tags: Canon EOS 7D, Linux, stabilization, transcode, Video
 ---
 
-![](/uploads/2012/newborn-kids-baby-goats-preview.jpg)
+![]({attach}newborn-kids-baby-goats-preview.jpg)
 
 ## Stabilizing WHAT?!?
 
@@ -25,7 +25,7 @@ I tried to stabilize the shots but was really disappointed by the results. The f
 
 ## vid.stab
 
-![](/uploads/2012/transcode-stabilizer-log.jpg)
+![]({attach}transcode-stabilizer-log.jpg)
 
 The first tool I tried was [vid.stab](https://public.hronopik.de/vid.stab/), a Transcode plugin that is now part of Transcode itself. But the 1.1.5 version that is bundled with the current Ubuntu 11.10 is quite old.
 
@@ -58,7 +58,7 @@ If your not satisfied with the result, you can increase the area of tracking poi
 
 In the command line above we added the `show=1,preview` parameters, which have the nice effect of displaying a preview of the work done behind the scene:
 
-![](/uploads/2012/goat-tracking.jpg)
+![]({attach}goat-tracking.jpg)
 
 And if you want to see the transformations applied in the final video, just deactivate the cropping and zooming mechanism:
 

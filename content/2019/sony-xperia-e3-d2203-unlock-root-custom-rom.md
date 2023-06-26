@@ -129,7 +129,7 @@ The custom ROM I'll provide here only targets Sony Xperia E3 D2203 LTE model wit
 
 Before proceeding any further, please double check your device is the right one, with the expected versions. If not you're at risk of bricking your device for good.
 
-1. It was hard to find an appropriate ROM so [here is a copy of the `boot_D2203_4.4.2.img` file](../uploads/2019/boot_D2203_4.4.2.img). I originally found it on an article on [*How to Install Custom Recovery on Sony Xperia E3*](https://consumingtech.com/how-to-install-a-custom-recovery-on-the-sony-xperia-e3/), and the [image itself is hosted on MediaFire](http://www.mediafire.com/file/627epe7817tolaf/boot_D2203_4.4.2.img/file).
+1. It was hard to find an appropriate ROM so [here is a copy of the `boot_D2203_4.4.2.img` file]({attach}boot_D2203_4.4.2.img). I originally found it on an article on [*How to Install Custom Recovery on Sony Xperia E3*](https://consumingtech.com/how-to-install-a-custom-recovery-on-the-sony-xperia-e3/), and the [image itself is hosted on MediaFire](http://www.mediafire.com/file/627epe7817tolaf/boot_D2203_4.4.2.img/file).
 
  	It is a CMW-based Recovery v6.0.4.7 uniquely built for the D2203 LTE model.
 
@@ -186,7 +186,7 @@ Before proceeding any further, please double check your device is the right one,
 
 	And right at that time you press alternatively the ++up++ and ++down++ volume buttons a couple of times, while the LED last, you'll boot into the custom recovery ROM you just flashed:
 
-    ![](/uploads/2019/sony-xperia-e3-d2203-lte-cmw-recovery.jpg)
+    ![]({attach}sony-xperia-e3-d2203-lte-cmw-recovery.jpg)
 
 
 ## Custom OS
@@ -230,7 +230,7 @@ I choose a tweaked yet stable distribution based on the stock Android 4.4.4 and 
 
 1. Wait while the installation is performed. At the end you can reboot the device and you should have a brand new and clean phone:
 
-    ![](/uploads/2019/sony-xperia-e3-d2203-android-444.jpg)
+    ![]({attach}sony-xperia-e3-d2203-android-444.jpg)
 
 
 ## Epilogue
@@ -241,4 +241,4 @@ At the end, I realized there's no need to go through the extra hoops of rooting 
 
 Another huge detour I took was the hunt for a custom CMW recovery image. I could have instead unzip the `Version_1_RegisUpload.zip` file and flash the `clockworkmod/backup/Version_1/boot.img` image right away, instead of `boot_D2203_4.4.2.img`. The benefit being a slightly newer version (6.0.5.1), the LED being turned on in white instead of pink, and an appropriate screen size:
 
-![](/uploads/2019/sony-xperia-e3-cmw-recovery-6051.jpg)
+![]({attach}sony-xperia-e3-cmw-recovery-6051.jpg)

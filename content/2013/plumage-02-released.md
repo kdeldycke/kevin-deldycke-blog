@@ -7,7 +7,7 @@ tags: Plumage, Pelican, Python, Jinja, theme, HTML, CSS, Javascript
 
 I've just made the specific design of the blog you're currently reading into a generic theme for [Pelican](https://getpelican.com). This theme now has a name: [Plumage](https://github.com/kdeldycke/plumage).
 
-![](/uploads/2013/plumage-article-screenshot.png)
+![]({attach}plumage-article-screenshot.png)
 
 It also has its own [dedicated repository](https://github.com/kdeldycke/plumage) on GitHub. You're actively encouraged to fork it and contribute back code through pull requests.
 

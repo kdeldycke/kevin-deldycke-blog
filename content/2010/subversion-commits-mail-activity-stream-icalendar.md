@@ -11,7 +11,7 @@ in [my GitHub repository](https://github.com/kdeldycke/scripts). I stumble upon
 an old script I haven't publicized yet:
   [`svn2ical.py`](https://github.com/kdeldycke/scripts/blob/master/svn2ical.py).
 
-![](/uploads/2010/icalendar-subversion-commits.png)
+![]({attach}icalendar-subversion-commits.png)
 
 This is a simple hack which get commit metadata out of a Subversion repository
 and generate an iCalendar file containing all commits of a given author. I used

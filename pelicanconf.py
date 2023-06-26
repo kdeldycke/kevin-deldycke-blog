@@ -1,4 +1,8 @@
+from pathlib import Path
+import re
+
 import plumage
+
 
 SITEURL = "http://localhost:8000"
 RELATIVE_URLS = False
@@ -41,7 +45,12 @@ SLUGIFY_SOURCE = "basename"
 
 ARTICLE_URL = "{date:%Y}/{slug}"
 ARTICLE_SAVE_AS = ARTICLE_URL + ".html"
-ARTICLE_PATHS = ["posts"]
+# Select all yearly folders as containing articles and their attachments.
+ARTICLE_PATHS = [
+    d.name
+    for d in (Path(__file__).parent / PATH).iterdir()
+    if d.is_dir() and re.fullmatch("[0-9]{4}", d.name)
+]
 
 PAGE_URL = "{slug}"
 PAGE_SAVE_AS = "{slug}.html"
@@ -116,7 +125,6 @@ PAGINATION_PATTERNS = (
 THEME = plumage.get_path()
 
 STATIC_PATHS = [
-    "uploads",
     "documents",
     "extra",
 ]
@@ -187,7 +195,7 @@ IMAGE_PROCESS = {
 
 # ----- Theme-specific settings
 
-SITE_THUMBNAIL = "/uploads/2018/profile-photo-square-thumbnail.jpg"
+SITE_THUMBNAIL = "/2018/profile-photo-square-thumbnail.jpg"
 SITE_THUMBNAIL_TEXT = "Might come with a beard"
 
 SITESUBTITLE = " — 🦬🪒🐇🕳 yak-shaving the rabbit holes"

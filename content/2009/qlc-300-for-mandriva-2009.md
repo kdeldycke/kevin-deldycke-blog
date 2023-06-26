@@ -5,7 +5,7 @@ category: English
 tags: DMX, LLA, Mandriva, QLC, RPM, Stage Lighting
 ---
 
-![qlc-3-on-mandriva-2009](/uploads/2009/qlc-3-on-mandriva-2009.png)
+![qlc-3-on-mandriva-2009]({attach}qlc-3-on-mandriva-2009.png)
 
 I've upgraded
 [my old QLC RPM](https://kevin.deldycke.com/2008/05/qlc-2-6-1-for-mandriva-2008-1/)

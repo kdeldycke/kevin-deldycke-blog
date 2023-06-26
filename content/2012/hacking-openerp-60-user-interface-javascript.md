@@ -40,7 +40,7 @@ In another case of a highly customized view, I had to change the behavior of a `
 
 Here is the view type selector widget, which is appearing everywhere in OpenERP in the top-right corner:
 
-![](/uploads/2012/openerp-view-type-selector-widget.png)
+![]({attach}openerp-view-type-selector-widget.png)
 
 To hide it, running the following jQuery is enough:
 
@@ -50,7 +50,7 @@ To hide it, running the following jQuery is enough:
 
 Here are the action buttons and the object navigation pager:
 
-![](/uploads/2012/openerp-action-buttons-and-object-navigation.png)
+![]({attach}openerp-action-buttons-and-object-navigation.png)
 
 If you want to hide the whole thing, then the following code will do:
 

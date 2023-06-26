@@ -5,7 +5,7 @@ category: English
 tags: CMS, WordPress, Nuxeo CPS
 ---
 
-![cps-to-wordpress](/uploads/2006/cps-to-wordpress.png)
+![cps-to-wordpress]({attach}cps-to-wordpress.png)
 
 I'm currently moving all the content from my old site to this blog. Here is the list of "new old" things I've manually imported:
 

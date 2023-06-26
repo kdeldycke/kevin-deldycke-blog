@@ -11,6 +11,6 @@ I would like to thanks you for building one of the online service I secretly wis
 
 Today, discovering the existence of [smush.it](https://smush.it) (and its [seamless integration with WordPress](https://wordpress.org/extend/plugins/wp-smushit/)), I can finally remove one of the sticky notes that are plaguing my walls for 2 years:
 
-![online-image-optimizer-idea-on-sticky-note](/uploads/2009/online-image-optimizer-idea-on-sticky-note.jpg)
+![online-image-optimizer-idea-on-sticky-note]({attach}online-image-optimizer-idea-on-sticky-note.jpg)
 
 Dear Lazy Web, I owe you one...

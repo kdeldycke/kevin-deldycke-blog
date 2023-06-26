@@ -10,7 +10,7 @@ I've updated
 for the
 [new K2 v0.9.6 release](https://web.archive.org/web/20140626230528/https://getk2.com/2007/06/k2-v096-released/).
 
-![](/uploads/2007/sapphire-style-for-k2-03-wordpress-theme.png)
+![]({attach}sapphire-style-for-k2-03-wordpress-theme.png)
 
 Sapphire 0.3 is now compatible with K2 sidebars, which mean that the header and
 footer of the theme will be expanded or reduced according to the number of

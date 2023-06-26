@@ -79,11 +79,11 @@ Worse, I already ordered a small case ([SilverStone SST-ML05B](https://amzn.com/
 
 Here are some photos of my first attempt at building a NAS with that case:
 
-![](/uploads/2020/silverstone-sst-ml05b-case.jpg)
+![]({attach}silverstone-sst-ml05b-case.jpg)
 
-![](/uploads/2020/silverstone-sst-ml05b-case-nas-fully-assembled.jpg)
+![]({attach}silverstone-sst-ml05b-case-nas-fully-assembled.jpg)
 
-![](/uploads/2020/freebox-delta-s-and-nas-in-cabinet.jpg)
+![]({attach}freebox-delta-s-and-nas-in-cabinet.jpg)
 
 ### 3.5" HDDs
 
@@ -123,7 +123,7 @@ Went fishing for another case. I increased my budget three times and got a [Silv
 * SFX PSU format (already ordered one)
 * Fit in my electrical cabinet (extremely important)
 
-![](/uploads/2020/silverstone-sst-ml05b-and-sst-ds380-side-by-side.jpg)
+![]({attach}silverstone-sst-ml05b-and-sst-ds380-side-by-side.jpg)
 
 I replaced all its 3 default 120 mm fans by three [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20). I choose the S-series over the [NF-F12](https://amzn.com/B00650P2ZC/?tag=kevideld-20) / [NF-A12](https://amzn.com/B07C5VG64V/?tag=kevideld-20) as the latter [targets radiators](https://noctua.at/en/which_fan_is_right_for_me) and I needed to [optimize for maximal airflow for case cooling](https://noctua.at/en/nf-a12x25-performance-comparison-to-nf-f12-and-nf-s12a). Also the NF-S12A variant is a little quieter than the [NF-S12B](https://amzn.com/B00L8IYCJI/?tag=kevideld-20) one. These new fans added:
 
@@ -220,9 +220,9 @@ Surprisingly the black version was cheaper than [the regular, brown variant](htt
 
 In this section I've cross-referenced [all CPUs supported by the motherboard](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#CPU) with the [cooler compatibility list](https://noctua.at/en/products/cpu-cooler-retail/nh-l9i/cpucomp#manuf_8346):
 
-![](/uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.png)
+![]({attach}cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.png)
 
-Source: [`cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers`](../uploads/2020/cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers)
+Source: [`cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers`]({attach}cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers)
 
 All CPUs featured the matrix above shares these specs:
 

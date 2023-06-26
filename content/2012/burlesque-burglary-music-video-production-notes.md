@@ -81,13 +81,13 @@ To keep color temperature consistent, I made a custom white-balance using a
 [white card](https://amzn.com/B002P5DNY8/?tag=kevideld-20). Here is Vince
 holding it for me:
 
-![](/uploads/2012/vince-holding-white-card.jpg)
+![]({attach}vince-holding-white-card.jpg)
 
 To light the room, I placed behind the camera 4 x [250 W tungsten lamps
 ](https://amzn.com/B005G97EOU/?tag=kevideld-20), each pair lodged in a StarWay
 Clap-500 fixture:
 
-![](/uploads/2012/starway-clap-500-blinder.jpg)
+![]({attach}starway-clap-500-blinder.jpg)
 
 These are in fact generic blinders (mounted on a [standard microphone stand
 ](https://www.amazon.com/mn/search/?_encoding=UTF8&tag=kevideld-20&linkCode=ur2&camp=1789&creative=390957&field-keywords=microphone%20stand&url=search-alias%3Daps))
@@ -95,7 +95,7 @@ I use in Cool Cavemen's concerts:
 
 ![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
 
-![](/uploads/2012/cool-cavemen-on-stage-with-full-blinders.jpg)
+![]({attach}cool-cavemen-on-stage-with-full-blinders.jpg)
 
 I augmented this setup by reusing two [household halogen lamps
 ](https://www.amazon.com/mn/search/?_encoding=UTF8&tag=kevideld-20&linkCode=ur2&camp=1789&creative=390957&field-keywords=halogen%20floor%20lamp&url=search-alias%3Dtools)
@@ -113,7 +113,7 @@ producing a color-temperature of 3200k.
 Here you can see on the left one 500W blinder on a stand and one of the
 household halogen-lamp on the right, all with diffusion filters:
 
-![](/uploads/2012/light-stands.jpg)
+![]({attach}light-stands.jpg)
 
 I choose to shot in 1080p with a 1/50 shutter speed. I used a frame-rate of
 25fps because at that time I lacked the confidence of using a more cinematic
@@ -137,19 +137,19 @@ and migrating Cool Cavemen's legacy website from [e107 to WordPress
 It's only at the end of 2011, that I managed to find time to finally complete
 the project. Here is my final timeline in Kdenlive:
 
-![](/uploads/2012/burlesque-burglary-kdenlive-timeline.png)
+![]({attach}burlesque-burglary-kdenlive-timeline.png)
 
 The chaotic "Burlesque Burglary" title at the start of the video is composed of
 several steps:
 
-![](/uploads/2012/burlesque-burglary-animated-logo-source.jpg)
+![]({attach}burlesque-burglary-animated-logo-source.jpg)
 
 All of these were hand-drawn by Cécile, then recomposed later in Gimp:
 
-![](/uploads/2012/burlesque-burglary-logo-drawing.jpg)
+![]({attach}burlesque-burglary-logo-drawing.jpg)
 
 Finally, I exported the video with different combination of lossless video and
 audio codecs, but some were [not digested by YouTube
 ](https://productforums.google.com/forum/#!category-topic/youtube/uploading-videos/HbSKO8xd8xY):
 
-![](/uploads/2012/youtube-upload-failed.png)
+![]({attach}youtube-upload-failed.png)

@@ -139,5 +139,5 @@ Of course this code doesn't prevent someone to download the track if this person
 
 Here is the final result, from the user point of view (and with additional aesthetic enhancements):
 
-![cd-track-delayed-publishing](/uploads/2007/cd-track-delayed-publishing.png)
+![cd-track-delayed-publishing]({attach}cd-track-delayed-publishing.png)
 

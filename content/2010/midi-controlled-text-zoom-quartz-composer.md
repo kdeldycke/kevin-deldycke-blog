@@ -10,7 +10,7 @@ Composer]({tag}quartz-composer) that I [started 2 months
 ago](https://kevin.deldycke.com/2010/10/export-quartz-composer-video/), here is
 my last patch:
 
-![](/uploads/2010/patch-of-midi-controlled-text-zoom-in-quartz-composer.png)
+![]({attach}patch-of-midi-controlled-text-zoom-in-quartz-composer.png)
 
 It's [based on the previous
 one](https://kevin.deldycke.com/2010/12/quartz-composer-behringer-bcf-2000-midi-controller-tests/)

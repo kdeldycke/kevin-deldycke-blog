@@ -36,7 +36,7 @@ I've just installed it on my brand new Mac OS X 10.5.7 and it seems to works
 perfectly:
 
 ![python-2.4-shell-in-mac-os-x-leopard
-](/uploads/2009/python-2.4-shell-in-mac-os-x-leopard.png)
+]({attach}python-2.4-shell-in-mac-os-x-leopard.png)
 
 Now that the most annoying part (to me) is done, we can install Plone via
 [`zc.buildout`](https://pypi.python.org/pypi/zc.buildout).
@@ -126,12 +126,12 @@ Zope server:
 Then you can fire up Safari, go to `http://localhost:8080/manage` (default
 Zope config), and login as the `admin` user (password: `admin`):
 
-![safari-zope-login](/uploads/2009/safari-zope-login.png)
+![safari-zope-login]({attach}safari-zope-login.png)
 
 Create a Plone site:
 
-![plone-site-creation](/uploads/2009/plone-site-creation.png)
+![plone-site-creation]({attach}plone-site-creation.png)
 
 Check that your using the right version of Plone in the control panel:
 
-![plone-323-control-panel](/uploads/2009/plone-323-control-panel.png)
+![plone-323-control-panel]({attach}plone-323-control-panel.png)

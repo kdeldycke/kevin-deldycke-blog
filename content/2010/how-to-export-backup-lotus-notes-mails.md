@@ -11,19 +11,19 @@ If screenshots were taken with a french version, instructions given here are for
 
 So first, let's start Notes and open your mailbox. You should be on a screen similar to this one:
 
-![](/uploads/2010/lotus-notes-mail-main-screen.png)
+![]({attach}lotus-notes-mail-main-screen.png)
 
 Then, go to the `File` › `Database` › `New Copy` menu:
 
-![](/uploads/2010/lotus-notes-database-export-menu.png)
+![]({attach}lotus-notes-database-export-menu.png)
 
 And you'll get an export screen that'll let you choose where to create a local copy of your database:
 
-![](/uploads/2010/export-screen.png)
+![]({attach}export-screen.png)
 
 This will generate a `.nsf` file containing all your current mail.
 
 Now that you have a backup, you are free to delete all your mails in Lotus Notes. By following this procedure regulary, you can create yearly or monthly archives of you mails without reaching the mailbox quota! For example, this is how my local archive folder looks like:
 
-![](/uploads/2010/lotus-notes-exported-mail-archives.png)
+![]({attach}lotus-notes-exported-mail-archives.png)
 

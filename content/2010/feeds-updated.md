@@ -5,7 +5,7 @@ category: English
 tags: Aggregator, Apache, Atom, feed, FeedBurner, Google, RSS, WordPress
 ---
 
-![](/uploads/2010/Newspaper-Feed.png)
+![]({attach}Newspaper-Feed.png)
 
 Last night I've changed the way my feeds are handled on this blog. I've taken care of all redirections with a mix of [WordPress plugins](https://www.google.com/support/feedburner/bin/answer.py?answer=78483), [Apache's 301 redirects](https://kevin.deldycke.com/2007/05/feedburner-and-e107-integration/) and [Feedburner's "My Brand" service](https://www.google.com/support/feedburner/bin/answer.py?answer=79590). So everything should be transparent from your (and your feed reader) point of you.
 

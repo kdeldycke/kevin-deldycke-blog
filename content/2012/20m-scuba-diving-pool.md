@@ -42,16 +42,16 @@ the regulators in case of emergency).
 
 The video was edited with Kdenlive:
 
-![](/uploads/2012/kdenlive.jpg)
+![]({attach}kdenlive.jpg)
 
 All footage above water are straight out of the camera. But underwater, below 3
 meters, I tried to fix colors by increasing magenta tones. Here is a comparison
 between the raw footage and its color corrected version:
 
-![](/uploads/2012/underwater-color-correction-before-after.jpg)
+![]({attach}underwater-color-correction-before-after.jpg)
 
 And here is the stack of filters I used to achieve the result above.
 
-![](/uploads/2012/underwater-color-correction-filters.jpg)
+![]({attach}underwater-color-correction-filters.jpg)
 
 Next step: the ocean! :)

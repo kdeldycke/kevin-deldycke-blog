@@ -34,7 +34,7 @@ But this doesn't work in my case as my e107 Importer plugin didn't started its l
 
 At this point I'm left with this following history:
 
-![](/uploads/2011/git-subtree-cleanup-results.png)
+![]({attach}git-subtree-cleanup-results.png)
 
 This looks pretty good, as all the history of my plugin is kept in order. But tags unrelated to my plugin are still there. Let's remove them:
 
@@ -50,7 +50,7 @@ Now there is some commits polluting my history. These are left-overs of `git-mod
 
 There, using my text editor, I deleted the entries corresponding to these unrelated commits (namely `c21a840`, `0dc1d76`, `37473a8` and `c6f9f64`), and hoped Git will be smart enough to reconstruct a clean history:
 
-![](/uploads/2011/git-interactive-rebase.png)
+![]({attach}git-interactive-rebase.png)
 
 Luckily, it worked for me. If Git complain about such abuse, you may ignore warnings and force it to continue:
 
@@ -81,7 +81,7 @@ And import the master branch we carefully crafted (including tags):
 
 Now we can create on GitHub the new repository that will receive our exported project:
 
-![](/uploads/2011/github-new-repository-form.png)
+![]({attach}github-new-repository-form.png)
 
 It's time to push our changes. Let's replace our temporary origin to the new GitHub repository we just created:
 

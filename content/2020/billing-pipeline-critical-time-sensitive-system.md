@@ -13,7 +13,7 @@ And I'm the author of the flaky tests he's talking about! 😬
 
 I started designing and implementing Scaleway's billing pipeline in 2013. This was to be a critical system, given its purpose, collecting money. It was very seriouz bizzness.
 
-![Now remember, kids, the internet is serious business -- Isaac Asimov](/uploads/2020/internet-is-serious-business.jpeg)
+![Now remember, kids, the internet is serious business -- Isaac Asimov]({attach}internet-is-serious-business.jpeg)
 
 I was worried a lot about both accuracy and precision of the numbers it produced. Strange how things gets real when you add a dollar sign. 🤑
 
@@ -21,7 +21,7 @@ My system had to **track nano-euros at the milli-seconds time granularity**. Why
 
 So I wrote extensive unit tests to prove that I knew how to add, subtract and multiply.
 
-![Math is Math!](/uploads/2020/math-is-math.jpeg)
+![Math is Math!]({attach}math-is-math.jpeg)
 
 Well, to be picky, it was more an acceptance suite than proper unit-tests. Whatever.
 
@@ -45,7 +45,7 @@ The main reason was the massive reports being produced in that critical time-win
 
 Hence the compromise. In the grand scheme of things, we had to reach operational excellence before taking care of our flaky tests. And I'm proud to highlight that under my watch, the team always delivered on schedule. Because the *money must flow*.
 
-![The Spice must flow](/uploads/2020/the-spice-must-flow-cat-version.jpg)
+![The Spice must flow]({attach}the-spice-must-flow-cat-version.jpg)
 
 As a manager, **I'm the only one responsible** for allowing the team to disregard these technical issues.
 

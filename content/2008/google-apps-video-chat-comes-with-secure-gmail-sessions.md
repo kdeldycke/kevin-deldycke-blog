@@ -15,6 +15,6 @@ I just wanted to point out an update that was not reported by the news: as soon 
 
 Not only that, Google also backported to Apps' Gmail the [much awaited HTTPs option](https://blog.wired.com/27bstroke6/2008/08/gmail-https-doe.html#comment-127126868) that allow you to force secure encryption of your sessions:
 
-![](/uploads/2008/gmail-force-https.png)
+![]({attach}gmail-force-https.png)
 
 These two updates are quite interesting to note. I long as I remember (and I might be wrong), Google Apps components were always out-of-sync with their legacy equivalent. So this maybe a sign of change in a really good direction for Google Apps users! :)

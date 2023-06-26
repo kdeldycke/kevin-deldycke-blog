@@ -5,5 +5,5 @@ category: English
 tags: Android, chat
 ---
 
-![](/uploads/2012/conversation.png)
+![]({attach}conversation.png)
 

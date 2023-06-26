@@ -13,9 +13,9 @@ https://www.youtube.com/watch?v=0FH_-_chcfY
 
 As for the last times, both [Flame](https://kevin.deldycke.com/documents/flame.qtz) and [Snow](https://kevin.deldycke.com/documents/snow.qtz) source compositions are available. Flame's patch looks like this:
 
-![](/uploads/2010/flame-patch.png)
+![]({attach}flame-patch.png)
 
 And here is Snow's patch preview:
 
-![](/uploads/2010/snow-patch.png)
+![]({attach}snow-patch.png)
 
