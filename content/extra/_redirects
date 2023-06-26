@@ -12,8 +12,6 @@
 /page/          /   301
 /theme          /   301
 /theme/         /   301
-/uploads        /   301
-/uploads/       /   301
 
 # Empty subfolders that have a dedicated canonical page.
 /category       /categories    301
@@ -30,8 +28,8 @@
 # Old Pelican structure
 ################################################################################
 # There used to be a /pages subfolder that contained all static pages.
-/pages                      /                      301
-/pages/*                    /:splat                301
+/pages                      /                       301
+/pages/*                    /:splat                 301
 
 # Reduction of static content path.
 /static/documents           /                       301
@@ -40,7 +38,11 @@
 /static/uploads/*           /uploads/:splat         301
 
 # Removal of month in uploads URLs. This works because all filenames are unique.
-/uploads/:year/:month/:slug /uploads/:year/:slug    301
+/uploads/:year/:month/:slug /:year/:slug            301
+
+# Old yearly grouped upload folders were moved alongside articles.
+/uploads                    /                       301
+/uploads/*                  /:splat                 301
 
 # Old content moved on other platforms.
 /mandriva-rpm-repository    https://github.com/kdeldycke/mandriva-specs
