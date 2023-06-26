@@ -64,12 +64,14 @@ Here are some of the most useful rules:
 
 - By default, [pages are redirected for normalization](https://developers.cloudflare.com/pages/platform/serving-pages/#route-matching):
 
-  - `/contact` -> `/contact`
-  - `/contact/` -> `/contact`
-  - `/contact.html` -> `/contact`
-  - `/about` -> `/about/`
-  - `/about/` -> `/about/`
-  - `/about/index.html` -> `/about/`
+  | From | To |
+  | ---- | --- |
+  |  `/contact` |  `/contact`|
+  |  `/contact/` |  `/contact`|
+  |  `/contact.html` |  `/contact`|
+  |  `/about` |  `/about/`|
+  |  `/about/` |  `/about/`|
+  | `/about/index.html` |  `/about/`|
 
   Note how folder roots with an `index.html` are always redirected to an URL with a trailing slash, while HTML files are stripped of their extension.
 
@@ -92,4 +94,4 @@ Here are some of the most useful rules:
 
 ## Page rules
 
-<TODO>
+`TODO`
