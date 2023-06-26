@@ -6,7 +6,7 @@ tags: band, concert, Cool Cavemen, Douai, France, gayant expo, Kdenlive, Stage L
 ---
 
 I've just realized I've never really finished the
-[series of posts](https://kevin.deldycke.com/tag/gayant-expo/) I
+[series of posts]({tag}gayant-expo) I
 [started in 2010]({filename}/2010/cool-cavemen-live-gayant-expo-first-video-released.md),
 a series about my longest video project: the
 [biggest concert](https://coolcavemen.com/2009/concert-a-gayant-expo-les-photos/)
@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=qE-bis-wYxs&list;=SP4BAA557B7144031F
 By gathering all kinds of footage from the event, I was able to generate this
 1-hour coverage of the concert. It took me the whole year of 2010 to edit and
 publish it, one song at a time. This delay was mostly due to lacks of time, an
-[unstable MacBook](https://kevin.deldycke.com/2009/12/macosx-is-irritating/comment-page-1/#comment-8006)
+[unstable MacBook]({filename}/2009/macosx-is-irritating.md#update-may-2010)
 and numerous Kdenlive crashes, all of these forcing me to re-create and redo my
 projects from scratch several times (_sigh_).
 

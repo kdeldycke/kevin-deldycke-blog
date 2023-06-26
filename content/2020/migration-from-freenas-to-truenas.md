@@ -17,7 +17,7 @@ So first things first: **BACKUP YOUR POOL**!
 
 But I'm stupid. So I will attempt the migration without any safe guard.
 
-I currently run a [4 * 6 TB RAID-Z2 array](https://kevin.deldycke.com/2020/05/nas-hardware/#raid-array), which is half-empty. I feel the risk is worth taking as long as I only manipulate one disk at a time.
+I currently run a [4 * 6 TB RAID-Z2 array]({filename}/2020/nas-hardware.md#raid-array), which is half-empty. I feel the risk is worth taking as long as I only manipulate one disk at a time.
 
 My plan consist in:
 

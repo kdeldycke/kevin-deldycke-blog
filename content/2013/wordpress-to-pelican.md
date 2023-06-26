@@ -11,7 +11,7 @@ broken. That's because I was in the middle of migrating it from
 
 In the last few years, tweaking and maintaining my server proved to be a
 challenging but rewarding experience. Most of the [knowledge I
-acquired](https://kevin.deldycke.com/tag/debian/) in the process has landed in
+acquired]({tag}debian) in the process has landed in
 my bag of tricks and makes me more productive than I was before.
 
 But now that I've learned what I had to learn, the adventure turned into a

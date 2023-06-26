@@ -31,7 +31,7 @@ That being said, here is the changelog of the brand new e107 Importer 1.3:
 
   * Phased imports should work without major problems.
 
-Finally, while cleaning up my home folder, I stumble upon this old screenshot of [dash](https://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/comment-page-1/#comment-3300)'s old e107 site. This is what its maintenance page looked like the day she initiated the transition to WordPress using my script:
+Finally, while cleaning up my home folder, I stumble upon this old screenshot of [dash](https://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released#comment-769310955)'s old e107 site. This is what its maintenance page looked like the day she initiated the transition to WordPress using my script:
 
 ![]({attach}film-fanatix-com-maintenance-page.png)
 

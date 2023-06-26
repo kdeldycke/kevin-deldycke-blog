@@ -4,7 +4,7 @@ title: "You installed Amarok from my RPMs and can't play some files? Here is the
 tags: Amarok, KDE, Linux, Mandriva, Music, RPM
 ---
 
-My two previous RPMs packages of Amarok ([1.4.1]({filename}/2006/amarok-141-for-mandriva-2006.md) and [1.4.2beta1]({filename}/2006/amarok-142-beta1-for-mandriva-2006.md)) for Mandriva 2006 were not able to play some files because of their file format. In a previous comment, [Promeneur tell us](https://kevin.deldycke.com/2006/07/amarok-141-for-mandriva-2006/#comment-45) that my 1.4.1 package was not able to play Mpeg2 files.
+My two previous RPMs packages of Amarok ([1.4.1]({filename}/2006/amarok-141-for-mandriva-2006.md) and [1.4.2beta1]({filename}/2006/amarok-142-beta1-for-mandriva-2006.md)) for Mandriva 2006 were not able to play some files because of their file format. In a previous comment, [Promeneur tell us](https://kevin.deldycke.com/2006/amarok-141-for-mandriva-2006#comment-769308831) that my 1.4.1 package was not able to play Mpeg2 files.
 
 I myself experienced a similar problem: both 1.4.1 and 1.4.2beta1 were not able to play any of my Flac files. Apart the "`There is no audio channel!`" error message, I had no other information to help me track the bug.
 

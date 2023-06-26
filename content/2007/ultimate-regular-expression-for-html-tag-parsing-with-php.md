@@ -34,4 +34,4 @@ And finally, my version based on the one above:
 The latter include the following enhancement:
 
   * accept hyphens as attribute's middle characters (
-    [thanks Ged](https://kevin.deldycke.com/2007/03/ultimate-regular-expression-for-html-tag-parsing-with-php/#comment-3167))
+    [thanks Ged](https://kevin.deldycke.com/2007/ultimate-regular-expression-for-html-tag-parsing-with-php#comment-769310266))

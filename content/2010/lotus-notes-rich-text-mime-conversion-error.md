@@ -39,7 +39,7 @@ This is really dirty, and isn't bearable past a few mails. But that's the only s
 
 ## Update (Dec. 2010)
 
-I [recently tried again to migrate mails](https://kevin.deldycke.com/2010/09/ultimate-guide-lotus-notes-mail-migration/comment-page-1/#comment-7507) with embedded images, but this time with Lotus Notes 8.5.2 on Windows XP (inside a Qemu instance).
+I [recently tried again to migrate mails]({filename}/2010/ultimate-guide-lotus-notes-mail-migration.md#method-5-lotus-notes-client-on-windows-xp) with embedded images, but this time with Lotus Notes 8.5.2 on Windows XP (inside a Qemu instance).
 
 Interestingly, embedded images didn't triggered the _Rich Text to MIME conversion_ error. Instead, inline images were automatically replaced by a generic text in the body of the mail, and the binary payload was moved as an attachment.
 

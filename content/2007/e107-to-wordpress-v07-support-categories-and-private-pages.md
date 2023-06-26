@@ -13,7 +13,7 @@ Here is the change-log:
 
   * Import e107 news categories.
 
-  * Mails can be sent to each user to warn them about their new password. This is the only solution I found to fix [the issue about reseted passwords](https://kevin.deldycke.com/2006/11/wordpress-to-e107-v06-better-content-rendering-and-extended-news-support/#comment-2422).
+  * Mails can be sent to each user to warn them about their new password. This is the only solution I found to fix [the issue about reseted passwords](https://kevin.deldycke.com/2006/wordpress-to-e107-v06-better-content-rendering-and-extended-news-support#comment-769309748).
 
   * Thanks to the 2.1 branch of Wordpress, static pages can be set as private. This version of my script use this feature.
 

@@ -16,7 +16,7 @@ Here is the changelog:
 
   * An existing user on the blog can be detected and updated automatically,
 
-  * Fix the [profanity filter bug](https://kevin.deldycke.com/2006/11/wordpress-to-e107-v06-better-content-rendering-and-extended-news-support/#comment-2499),
+  * Fix the [profanity filter bug](https://kevin.deldycke.com/2006/wordpress-to-e107-v06-better-content-rendering-and-extended-news-support#comment-769309762),
 
   * Tested with latest [Wordpress 2.1.3](https://wordpress.org/development/2007/04/wordpress-213-and-2010/).
 
