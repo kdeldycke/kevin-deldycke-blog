@@ -18,7 +18,7 @@ If you have one of iXsystems' TrueNAS server whose motherboard was produced by S
 ```{.shell-session}
 [root@truenas] ~# ipmitool raw 0x3c 0x40
 
-[root@truenas] ~# 
+[root@truenas] ~#
 ```
 
 ## 📊 Reports
@@ -192,10 +192,10 @@ root@truenas[/mnt]# gpart show da0
       409640  7813365344    2  apple-hfs  (3.6T)
   7813774984      262151       - free -  (128M)
 
-root@truenas[/mnt]# gpart delete -i 1 da0 
+root@truenas[/mnt]# gpart delete -i 1 da0
 da0p1 deleted
 
-root@truenas[/mnt]# gpart show da0        
+root@truenas[/mnt]# gpart show da0
 =>        34  7814037101  da0  GPT  (3.6T)
           34      409606       - free -  (200M)
       409640  7813365344    2  apple-hfs  (3.6T)
@@ -205,7 +205,7 @@ root@truenas[/mnt]# gpart show da0
 ### 3-pass USB HDD wipe
 
 ```shell-session
-root@truenas[/mnt]# bcwipe -v -me -t2 -b /dev/da0 
+root@truenas[/mnt]# bcwipe -v -me -t2 -b /dev/da0
 Multithreading not supported.
 Run ./configure with --enable-pthreads option, then rebuild BCWipe to enable multithreading.
 Wiping scheme: US DoE, 3 pass(es)
@@ -214,7 +214,7 @@ Wiping char device '/dev/da0'
 Device '/dev/da0' opened in direct access mode
 Device size 320072933376 bytes (312571224 kB), method 3
 Wiping char device '/dev/da0' pass 1/3 [random] started
-wipe pass  1/3 :    212992/312571224 kB (  0%)   Rate: 21233 kB/s   
+wipe pass  1/3 :    212992/312571224 kB (  0%)   Rate: 21233 kB/s
 ```
 
 ### ZFS
@@ -228,7 +228,7 @@ wipe pass  1/3 :    212992/312571224 kB (  0%)   Rate: 21233 kB/s
 * Rename all snaphot's names prefixes from `auto-` to `daily-`, for the `tank/my-data` dataset and its children:
 
   ```shell-session
-  $ zfs list -r -t snapshot tank/my-data                                           
+  $ zfs list -r -t snapshot tank/my-data
   NAME                                                       USED  AVAIL     REFER  MOUNTPOINT
   tank/my-data@auto-2021-09-02_00-00                           0B      -      209G  -
   tank/my-data@auto-2021-09-03_00-00                           0B      -      209G  -
