@@ -1,5 +1,5 @@
 ---
-date: 2006-11-08
+date: "2006-11-08"
 title: "Transcode commands"
 category: English
 tags: Audio, CLI, Linux, subtitle, transcode, Video, avimerge, tcprobe, tccat, mp4, vid.stab, mkv, x264

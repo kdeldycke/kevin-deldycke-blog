@@ -1,5 +1,5 @@
 ---
-date: 2019-12-18
+date: "2019-12-18"
 title: "Unlocking, Rooting and Custom Recovery for Sony Xperia E3"
 category: English
 tags: Android, Smartphone, Sony, ROM, bootloader, brew, fastboot, adb, macOS, firmware

@@ -1,5 +1,5 @@
 ---
-date: 2020-02-10
+date: "2020-02-10"
 title: "Transitionning from Software Engineering to Management"
 category: English
 tags: backend, identity-management, infrastructure, payments, startup, billing, career, interview, management, scaleway, iam
