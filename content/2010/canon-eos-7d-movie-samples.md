@@ -19,13 +19,13 @@ Here are seven 10 seconds video clips, corresponding to the 7 video modes offere
 
 Resolution | Framerate | Shutter Speed
 --- | --- | ---
-[1920x1080](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/1080p-23.976fps.mov) (1080p) | [23.976 fps](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/1080p-23.976fps.mov) (24 fps) | 1/50
-[1920x1080](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/1080p-25fps.mov) (1080p) | [25 fps](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/1080p-25fps.mov) | 1/50
-[1920x1080](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/1080p-29.97fps.mov) (1080p) | [29.97 fps](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/1080p-29.97fps.mov) (30 fps) | 1/60
-[1280x720](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/720p-50fps.mov) (720p) | [50 fps](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/720p-50fps.mov) | 1/100
-[1280x720](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/720p-59.94fps.mov) (720p) | [59.94 fps](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/720p-59.94fps.mov) (60 fps) | 1/125
-[640x480](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/480p-50fps.mov) (480p) | [50 fps](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/480p-50fps.mov) | 1/100
-[640x480](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/480p-59.94fps.mov) (480p) | [59.94 fps](https://kevin.deldycke.com/documents/canon-eos-7d-movie-samples/480p-59.94fps.mov) (60 fps) | 1/125
+[1920x1080]({attach}canon-eos-7d-movie-samples/1080p-23.976fps.mov) (1080p) | [23.976 fps]({attach}canon-eos-7d-movie-samples/1080p-23.976fps.mov) (24 fps) | 1/50
+[1920x1080]({attach}canon-eos-7d-movie-samples/1080p-25fps.mov) (1080p) | [25 fps]({attach}canon-eos-7d-movie-samples/1080p-25fps.mov) | 1/50
+[1920x1080]({attach}canon-eos-7d-movie-samples/1080p-29.97fps.mov) (1080p) | [29.97 fps]({attach}canon-eos-7d-movie-samples/1080p-29.97fps.mov) (30 fps) | 1/60
+[1280x720]({attach}canon-eos-7d-movie-samples/720p-50fps.mov) (720p) | [50 fps]({attach}canon-eos-7d-movie-samples/720p-50fps.mov) | 1/100
+[1280x720]({attach}canon-eos-7d-movie-samples/720p-59.94fps.mov) (720p) | [59.94 fps]({attach}canon-eos-7d-movie-samples/720p-59.94fps.mov) (60 fps) | 1/125
+[640x480]({attach}canon-eos-7d-movie-samples/480p-50fps.mov) (480p) | [50 fps]({attach}canon-eos-7d-movie-samples/480p-50fps.mov) | 1/100
+[640x480]({attach}canon-eos-7d-movie-samples/480p-59.94fps.mov) (480p) | [59.94 fps]({attach}canon-eos-7d-movie-samples/480p-59.94fps.mov) (60 fps) | 1/125
 
 Again, these files were extracted right out of the camera, without any modification.
 

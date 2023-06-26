@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=wsYLevXRytA
 
 https://www.youtube.com/watch?v=0FH_-_chcfY
 
-As for the last times, both [Flame](https://kevin.deldycke.com/documents/flame.qtz) and [Snow](https://kevin.deldycke.com/documents/snow.qtz) source compositions are available. Flame's patch looks like this:
+As for the last times, both [Flame]({attach}flame.qtz) and [Snow]({attach}snow.qtz) source compositions are available. Flame's patch looks like this:
 
 ![]({attach}flame-patch.png)
 

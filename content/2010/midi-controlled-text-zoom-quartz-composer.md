@@ -19,7 +19,7 @@ controller](https://amzn.com/B000CZ0RJ2/?tag=kevideld-20). The purpose of this
 composition is to zoom a piece of text, give it some kind of velocity and
 change its color. Again, nothing fancy here: it's just a simple patch, which
 [source is available for
-download](https://kevin.deldycke.com/documents/text-zoom-in-out.qtz).
+download]({attach}text-zoom-in-out.qtz).
 
 As for the last time, I recorded a little demo to pratice my new videomaking
 skills (and to find a justification for buying more video gear ;) ):

@@ -18,7 +18,7 @@ shifting colors:
 https://www.youtube.com/watch?v=a7YNLp7xy8k
 
 The [source composition
-](https://kevin.deldycke.com/documents/kaleidoscope-000.qtz) is available under
+]({attach}kaleidoscope-000.qtz) is available under
 a [Creative Commons 3.0 BY-SA license
 ](https://creativecommons.org/licenses/by-sa/3.0/). And here is the screenshot
 of the main patch:

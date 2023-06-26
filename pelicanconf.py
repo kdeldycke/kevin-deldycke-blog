@@ -124,10 +124,7 @@ PAGINATION_PATTERNS = (
 
 THEME = plumage.get_path()
 
-STATIC_PATHS = [
-    "documents",
-    "extra",
-]
+STATIC_PATHS = ["extra"]
 
 EXTRA_PATH_METADATA = {
     "extra/_headers": {"path": "_headers"},
