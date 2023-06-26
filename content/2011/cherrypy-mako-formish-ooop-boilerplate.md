@@ -5,7 +5,7 @@ category: English
 tags: CherryPy, formish, GitHub, GPL, mako, ooop, open source, OpenERP, Python
 ---
 
-After [WebPing last week](https://kevin.deldycke.com/2011/08/webping-open-sourced/), here is another release of Open-Source code. This time it's my boilerplate codebase I created to integrate some Python components with the goal of publishing [OpenERP](https://www.openerp.com/) content on the web.
+After [WebPing last week]({filename}/2011/webping-open-sourced.md), here is another release of Open-Source code. This time it's my boilerplate codebase I created to integrate some Python components with the goal of publishing [OpenERP](https://www.openerp.com/) content on the web.
 
 This stack is composed of:
 

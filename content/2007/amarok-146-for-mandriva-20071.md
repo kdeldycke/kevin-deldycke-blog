@@ -13,4 +13,4 @@ Even if this version is available in
 it doesn't support MySQL and PostgreSQL databases. My RPMs of Amarok 1.4.6 does.
 They can be found in my
 [Mandriva 2007.1 repository](https://github.com/kdeldycke/mandriva-specs), which
-[now include a sub repository for the 64 bit flavous of Mandriva](https://kevin.deldycke.com/2007/07/mandriva-20071-rpms-for-x86_64-arch/).
+[now include a sub repository for the 64 bit flavous of Mandriva]({filename}/2007/mandriva-20071-rpms-for-x86_64-arch.md).

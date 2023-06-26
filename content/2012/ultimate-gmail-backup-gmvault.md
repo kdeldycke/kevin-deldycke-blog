@@ -7,7 +7,7 @@ tags: Backup, Gmail, gmvault, Linux, email, Pip, Python, Ubuntu, cron
 
 For several weeks, I started a quest to find the best solution to locally backup a Gmail account.
 
-I [tried `offline-imap`](https://kevin.deldycke.com/2012/05/backup-gmail-offlineimap/), but it is bidirectional and can push back to your Gmail account local mistakes. Then I [played with `mbsync`](https://kevin.deldycke.com/2012/08/gmail-backup-mbsync/), but it [doesn't support sub-folders/tags](https://www.mail-archive.com/isync-devel@lists.sourceforge.net/msg00220.html).
+I [tried `offline-imap`]({filename}/2012/backup-gmail-offlineimap.md), but it is bidirectional and can push back to your Gmail account local mistakes. Then I [played with `mbsync`]({filename}/2012/gmail-backup-mbsync.md), but it [doesn't support sub-folders/tags](https://www.mail-archive.com/isync-devel@lists.sourceforge.net/msg00220.html).
 
 I finally found the Holy Grail in [Gmvault](https://gmvault.org/), a recent open-source project especially designed for the task and all its subtleties.
 

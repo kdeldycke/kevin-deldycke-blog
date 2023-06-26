@@ -13,7 +13,7 @@ I [released this video two weeks ago](https://coolcavemen.com/2010/video-funky-c
 
 But starting from now, I plan to publish a blog post for each video. I'll use these articles to write about one aspect of the work involved behind the scene.
 
-In the [first post of the series](https://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/), I gave you the context in which the concert was performed. Today the post is dedicated to video formats. First, let's talk about the video sources...
+In the [first post of the series]({filename}/2010/cool-cavemen-live-gayant-expo-first-video-released.md), I gave you the context in which the concert was performed. Today the post is dedicated to video formats. First, let's talk about the video sources...
 
 The concert was shot with 4 cameras. Among them, only two were of the same kinds. Those were part of the live broadcasting system of the event. This explain the "[mise en abyme](https://en.wikipedia.org/wiki/Mise_en_abyme)" effect in the background screen:
 
@@ -29,7 +29,7 @@ As a result, I ended with 3 video sources:
 
   3. The already-edited video stream ([Half-D1](https://www.videohelp.com/glossary?H#Half%20D1)) from unidentified Sony cameras: 352x576 pixels interlaced frames at 25 fps, with a pixel ratio of 24:11 (giving 768x576 pixels frames at 1:1) and a final display ratio of 4:3. The file was a 6 Mbps MPEG-2 stream in a MPEG-PS container.
 
-All those informations were extracted thanks to `ffmeg`, `mplayer` and `tcprobe` (see [all the command lines involved](https://kevin.deldycke.com/2006/11/video-commands/)).
+All those informations were extracted thanks to `ffmeg`, `mplayer` and `tcprobe` (see [all the command lines involved]({filename}/2006/video-commands.md)).
 
 As you can see, this is an absolute mess! There is no consistency! And now, before starting the video editing itself, I have this important decision to make: choose the final video format, in which my project will be rendered.
 

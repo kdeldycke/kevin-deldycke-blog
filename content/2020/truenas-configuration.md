@@ -9,7 +9,7 @@ A collection of personal notes on the setup, configuration and maintenance of a 
 
 ## 🖥 Hardware
 
-I dedicated a whole post on [building the machine](https://kevin.deldycke.com/2020/05/nas-hardware/), in which you'll get the detailed bill of material, cost breakdown and parts selection process.
+I dedicated a whole post on [building the machine]({filename}/2020/nas-hardware.md), in which you'll get the detailed bill of material, cost breakdown and parts selection process.
 
 ### Reset BMC password
 
@@ -239,19 +239,19 @@ wipe pass  1/3 :    212992/312571224 kB (  0%)   Rate: 21233 kB/s
   zsh -c zfs rename "$0" "$1" tank/my-data@auto-2021-09-03_00-00 tank/my-data@daily-2021-09-03_00-00
   zsh -c zfs rename "$0" "$1" tank/my-data@auto-2021-09-04_00-00 tank/my-data@daily-2021-09-04_00-00
   (...)
-  $ zfs list -r -t snapshot tank/my-data                                            
+  $ zfs list -r -t snapshot tank/my-data
   NAME                                                       USED  AVAIL     REFER  MOUNTPOINT
   tank/my-data@daily-2021-09-02_00-00                          0B      -      209G  -
   tank/my-data@daily-2021-09-03_00-00                          0B      -      209G  -
   tank/my-data@daily-2021-09-04_00-00                          0B      -      209G  -
-  (...)  
+  (...)
   ```
 
 ## 🐛 Issues
 
 ### FreeNAS to TrueNAS migration
 
-I wrote a long article on [how to migrate an encrypted pool from FreeNAS to TrueNAS](https://kevin.deldycke.com/2020/12/migration-from-freenas-to-truenas/).
+I wrote a long article on [how to migrate an encrypted pool from FreeNAS to TrueNAS]({filename}/2020/migration-from-freenas-to-truenas.md).
 
 ### Unreachable Network due to Multiple NICs
 
@@ -271,4 +271,4 @@ Got the following error on upgrade?
 PermissionError: [Errno 13] Permission denied: './ValidateUpdate'
 ```
 
-The fix: temporary [switch the System Dataset](https://www.truenas.com/docs/hub/tasks/advanced/system-dataset/) to `freenas-boot`. Your default system dataset is probably set to your ZFS pool which might be unavailable for whatever reason. In my case, I was in the middle of a [pool migration process](https://kevin.deldycke.com/2020/12/migration-from-freenas-to-truenas/).
+The fix: temporary [switch the System Dataset](https://www.truenas.com/docs/hub/tasks/advanced/system-dataset/) to `freenas-boot`. Your default system dataset is probably set to your ZFS pool which might be unavailable for whatever reason. In my case, I was in the middle of a [pool migration process]({filename}/2020/migration-from-freenas-to-truenas.md).

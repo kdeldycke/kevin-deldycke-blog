@@ -91,7 +91,7 @@ It's also good to have a clue about your connectivity to the rest of the world:
     $ ln -s /usr/share/munin/plugins/ping_  /etc/munin/plugins/ping_example.com
     ```
 
-I also like to have insight about my [automated backups](https://kevin.deldycke.com/2011/09/cloud-based-server-backups-duplicity-amazon-s3/):
+I also like to have insight about my [automated backups]({filename}/2011/cloud-based-server-backups-duplicity-amazon-s3.md):
 
     ```shell-session
     $ ln -s /usr/share/munin/plugins/ps_ /etc/munin/plugins/ps_duplicity
@@ -119,7 +119,7 @@ I sometimes have a Fail2Ban deamon running on a server, so that's a good thing t
     " > /etc/munin/plugin-conf.d/fail2ban
     ```
 
-[Having an UPS](https://kevin.deldycke.com/2011/05/mge-ellipse-750-ups-debian-squeeze/), it's good to monitor it too. Here is for the UPS on the local system having the `MGE-Ellipse750` ID (as defined in your `/etc/nut/ups.conf` file):
+[Having an UPS]({filename}/2011/mge-ellipse-750-ups-debian-squeeze.md), it's good to monitor it too. Here is for the UPS on the local system having the `MGE-Ellipse750` ID (as defined in your `/etc/nut/ups.conf` file):
 
     ```shell-session
     $ ln -s /usr/share/munin/plugins/nutups_   /etc/munin/plugins/nutups_MGE-Ellipse750_voltages

@@ -6,7 +6,7 @@ tags: code, commit, Git, GitHub, iCal, email, maildir, Open Hub, Python, Script,
 ---
 
 Last week I
-[consolidated all my code](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)
+[consolidated all my code]({filename}/2010/git-commit-history-reconstruction.md)
 in [my GitHub repository](https://github.com/kdeldycke/scripts). I stumble upon
 an old script I haven't publicized yet:
   [`svn2ical.py`](https://github.com/kdeldycke/scripts/blob/master/svn2ical.py).

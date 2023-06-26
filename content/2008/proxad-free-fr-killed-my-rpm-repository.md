@@ -9,7 +9,7 @@ My ISP, [Free](https://free.fr), hardened its policy and do not allow any
 longer the use of the 10 GiB hosting (that they gracefully provide for free to
 their customer) for things other than "pure" website. I think my RPM repository,
 which
-[I moved there last year](https://kevin.deldycke.com/2007/02/repository-moved-thanks-to-apache-and-301-redirections/),
+[I moved there last year]({filename}/2007/repository-moved-thanks-to-apache-and-301-redirections.md),
 fall in the "static storage" category, leading them to erase it some days ago.
 
 Fortunately I have backups and I recently get a

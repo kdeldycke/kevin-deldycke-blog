@@ -5,7 +5,7 @@ category: English
 tags: Animation, Apple, MacBook, QC Experiment, Quartz Composer, Video, Visual
 ---
 
-After creating a [series of compositions](https://kevin.deldycke.com/2010/11/sharp-scan-lines-squared-lava-lamp/) based on my [kaleidoscopic patch](https://kevin.deldycke.com/2010/10/kaleidoscope-001-002/), I played with Quartz Composer's particle system, to create a flame and falling snow flakes:
+After creating a [series of compositions]({filename}/2010/sharp-scan-lines-squared-lava-lamp.md) based on my [kaleidoscopic patch]({filename}/2010/kaleidoscope-001-002.md), I played with Quartz Composer's particle system, to create a flame and falling snow flakes:
 
 https://www.youtube.com/watch?v=wsYLevXRytA
 

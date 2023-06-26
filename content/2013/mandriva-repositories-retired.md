@@ -5,7 +5,7 @@ category: English
 tags: Mandriva, Linux, GitHub, RPM, urpmi
 ---
 
-After [migrating from WordPress to Pelican](https://kevin.deldycke.com/2013/02/wordpress-to-pelican/), I realized that my old Mandriva repositories weighted 1.3 Go. Which make my whole blog much bigger than I expected. So I decided to trim the fat and moved my repositories in retirement.
+After [migrating from WordPress to Pelican]({filename}/2013/wordpress-to-pelican.md), I realized that my old Mandriva repositories weighted 1.3 Go. Which make my whole blog much bigger than I expected. So I decided to trim the fat and moved my repositories in retirement.
 
 This post is a formal announcement that my repositories, formerly available at `https://kevin.deldycke.com/static/repository/mandriva/`, are now gone forever.
 

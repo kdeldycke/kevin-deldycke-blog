@@ -5,7 +5,7 @@ category: English
 tags: CLI, Git, GitHub, Linux, Perl, Python, Regular expression, Subversion, trac, webping
 ---
 
-[2 weeks ago I released WebPing](https://kevin.deldycke.com/2011/08/webping-open-sourced/). This article is more or less the same I wrote 4 months ago when I [released the FTT project](https://kevin.deldycke.com/2011/03/feed-tracking-tool-released-open-source-license/) and needed to [move it from SVN to Git](https://kevin.deldycke.com/2011/04/ftt-migration-subversion-git/). But this time I added more details on how I removed all sensible informations that were hard-coded in the project files.
+[2 weeks ago I released WebPing]({filename}/2011/webping-open-sourced.md). This article is more or less the same I wrote 4 months ago when I [released the FTT project]({filename}/2011/feed-tracking-tool-released-open-source-license.md) and needed to [move it from SVN to Git]({filename}/2011/ftt-migration-subversion-git.md). But this time I added more details on how I removed all sensible informations that were hard-coded in the project files.
 
 ## Subversion to Git migration
 

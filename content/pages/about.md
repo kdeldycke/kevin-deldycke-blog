@@ -28,14 +28,14 @@ thing. All by myself.
 - 🤝 Established lasting trust and loyalty. No one from my team resigned under my authority, in a company with a very high employee turnover rate.
 
 - 🥇 [World trending GitHub
-developer](https://kevin.deldycke.com/2017/04/github-top-developer/), and [top-1% open-source
-developer](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
+developer]({filename}/2017/github-top-developer.md), and [top-1% open-source
+developer]({filename}/2011/top-1-percent-open-source-developer.md).
 
 - 🌟 21,000+ GitHub stars collected on my repositories. The most popular being the one about [Falsehoods Programmers Believe
 in](https://github.com/kdeldycke/awesome-falsehood). It is regularly [featured in popular media](https://github.com/kdeldycke/awesome-falsehood/blob/main/assets/in-the-media.md).
 
 - 💵 Wrote the [best open-source
-payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
+payroll]({filename}/2008/best-open-source-payroll-software.md)
 software of the world.
 
 - 🌐 Created and managed the African subsidiary of my first employer.

@@ -17,7 +17,7 @@ He wanted to explore the possibilities of reusing them for a music video. I had 
 
 In fact I tried to use that software 14 months ago, but never went as far as producing something. First I realized I had no <a target="_blank" href="https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=nVidia%20GPU&linkCode=ur2&tag=kevideld-20&url=search-alias%3Daps">nVidia GPU</a><img src="https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> at hand. So I rented a *GPU Quadruple Extra Large* EC2 instance (`cg1.4xlarge`) from Amazon's cloud. It cost me $4.70 (without VAT) for 3 hours. But I failed to compiles slowmoVideo.
 
-I forgot about it until recently, when I learned it no longer required a GPU to compute the optical flow. And last month I found a way to [compile slowmoVideo on Ubuntu 12.10](https://kevin.deldycke.com/2013/02/slowmo-video-ubuntu-12-10/).
+I forgot about it until recently, when I learned it no longer required a GPU to compute the optical flow. And last month I found a way to [compile slowmoVideo on Ubuntu 12.10]({filename}/2013/slowmo-video-ubuntu-12-10.md).
 
 Now it's time to prepare my keyframes. I batch-resized all original drawings to 1080p with a white background. This was done in one command line thanks to <a target="_blank" href="https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=ImageMagick&linkCode=ur2&rh=i%3Aaps%2Ck%3AImageMagick&tag=kevideld-20&url=search-alias%3Daps">ImageMagick</a><img src="https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />:
 

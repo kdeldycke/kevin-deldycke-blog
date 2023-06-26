@@ -10,7 +10,7 @@ tags: Audio, CLI, Linux, subtitle, transcode, Video, avimerge, tcprobe, tccat, m
 
 The [`transcode` CLI and its associated tools](https://web.archive.org/web/20200806075355/https://bitbucket.org/achurch_/transcode/wiki/Home) are no longer maintained.
 
-I recommend to use [FFmpeg](/2006/11/video-commands/) instead.
+I recommend to use [FFmpeg]({filename}/2006/video-commands.md) instead.
 ```
 
 - Get informations about a video:

@@ -68,7 +68,7 @@ And here is the CSS producing the result above:
     }
     ```
 
-I've integrated this CSS code via a widget, using the same [technique I've detailed here](https://kevin.deldycke.com/2011/01/new-blog-header-and-tiny-wordpress-theme-customizations/).
+I've integrated this CSS code via a widget, using the same [technique I've detailed here]({filename}/2011/new-blog-header-and-tiny-wordpress-theme-customizations.md).
 
 This CSS was tested against the version 1.7.2 of _Contextual Related Posts_, and for reference, here is my plugin configuration:
 

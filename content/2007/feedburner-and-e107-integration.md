@@ -7,7 +7,7 @@ tags: Apache, Atom, Blog, CMS, e107, feed, FeedBurner, htaccess, RDF, RSS, Serve
 
 ![]({attach}e107-and-feedburner.png)
 
-In the context of my [plan to move an e107-based website to Wordpress](https://kevin.deldycke.com/2006/08/e107-to-wordpress-migration-here-is-why/), I need to take care of my RSS subscribers. To let people (and search engines) get my content via old URLs, I will use [Apache redirections](https://en.wikipedia.org/wiki/URL_redirection) to do this transparently and permanently. My final goal is to have a Wordpress website with all RSS feeds (blog posts and comments) managed by [FeedBurner](https://www.feedburner.com), to gather statistics about my audience.
+In the context of my [plan to move an e107-based website to Wordpress]({filename}/2006/e107-to-wordpress-migration-here-is-why.md), I need to take care of my RSS subscribers. To let people (and search engines) get my content via old URLs, I will use [Apache redirections](https://en.wikipedia.org/wiki/URL_redirection) to do this transparently and permanently. My final goal is to have a Wordpress website with all RSS feeds (blog posts and comments) managed by [FeedBurner](https://www.feedburner.com), to gather statistics about my audience.
 
 Actually there is plenty of feeds format available in e107 (RSS 1.0, RSS 2.0, Atom and RDF) and one feed can be accessed through multiple URLs. We will reduce this incredible mess by using RSS 2.0 feeds only and redirect all others to it.
 

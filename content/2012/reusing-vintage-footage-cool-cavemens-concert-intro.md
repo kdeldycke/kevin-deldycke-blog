@@ -11,7 +11,7 @@ It's an original mockup of a radio broadcast, and a tribute to [Classic 21](http
 
 Footage used to produce this video is public domain material [found at archive.org](https://www.archive.org/details/movies). If you're curious, the detailed list of all sources is available in the credits, at the end of the video.
 
-[As for my previous project](https://kevin.deldycke.com/2011/12/nichrome-preview-behind-the-scene-video/), I have to warn you that it may not look as funny as for French-speaking audience. That being said, here is the final result:
+[As for my previous project]({filename}/2011/nichrome-preview-behind-the-scene-video.md), I have to warn you that it may not look as funny as for French-speaking audience. That being said, here is the final result:
 
 https://www.youtube.com/watch?v=wJeyu-xEL_0
 

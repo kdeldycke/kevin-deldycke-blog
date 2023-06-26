@@ -47,7 +47,7 @@ Here is how I installed `nlconverter` on a [Windows 2000](https://amzn.com/B0006
 
 ## nlconverter GUI
 
-First thing you have to do is to create an [export of your mails as a `.nsf` database](https://kevin.deldycke.com/2010/06/how-to-export-backup-lotus-notes-mails/). Follow the previous link to get the instructions.
+First thing you have to do is to create an [export of your mails as a `.nsf` database]({filename}/2010/how-to-export-backup-lotus-notes-mails.md). Follow the previous link to get the instructions.
 
 Now let's convert this `nsf` to a `mbox`. [nlconverter's FAQ](https://code.google.com/p/nlconverter/wiki/Faq) tells you to run the `gui.exe` program to perform the conversion.
 

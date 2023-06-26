@@ -12,7 +12,7 @@ the final version:
 https://www.youtube.com/watch?v=JYQ0YehsLyU
 
 If this video was [released 4 months ago
-](https://kevin.deldycke.com/2012/01/burlesque-burglary-music-video-released/),
+]({filename}/2012/burlesque-burglary-music-video-released.md),
 it was shot 2 years earlier: the 3rd of January 2010. We choose that day as it
 was the only occasion before a long time for which all Cool Cavemen musicians
 were available for something other than a gig or a rehearsal.
@@ -26,10 +26,10 @@ meet at the [SoundUp Studio](https://soundupstudio.com) to shoot a video for
 
 During this period, I was working on a 1-hour [video of Cool Cavemen's 2009
 biggest concert
-](https://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/).
+]({filename}/2010/cool-cavemen-live-gayant-expo-first-video-released.md).
 The editing process of the latter was quite frustrating as I [only had 3½
 cameras
-](https://kevin.deldycke.com/2010/02/cool-cavemen-live-gayant-expo-part-ii/).
+]({filename}/2010/cool-cavemen-live-gayant-expo-part-ii.md).
 Not enough to decently cover a live performance.
 
 To not make that same mistake twice, my goal was to plan the shooting in a way
@@ -124,15 +124,15 @@ minutes of footage. Having so much material was a first for me, which partially
 explain why the final video was released 2 years after being shot.
 
 This huge delay is also due to extensive issues I experienced with [my former
-MacBook Pro](https://kevin.deldycke.com/2009/12/macosx-is-irritating/) in 2010
+MacBook Pro]({filename}/2009/macosx-is-irritating.md) in 2010
 (including data-loss). That year I also spent most of my free time editing a
 [1-hour video of Cool Cavemen's biggest 2009 concert
 ](https://www.youtube.com/playlist?list=PL4BAA557B7144031F).
 
 2011 was no better as I spend time [upgrading my server to the latest Debian
-](https://kevin.deldycke.com/2011/10/installation-guide-full-featured-debian-server/),
+]({filename}/2011/installation-guide-full-featured-debian-server.md),
 and migrating Cool Cavemen's legacy website from [e107 to WordPress
-](https://kevin.deldycke.com/2011/07/e107-importer-plugin-wordpress-v1-4-released/).
+]({filename}/2011/e107-importer-plugin-wordpress-v1-4-released.md).
 
 It's only at the end of 2011, that I managed to find time to finally complete
 the project. Here is my final timeline in Kdenlive:

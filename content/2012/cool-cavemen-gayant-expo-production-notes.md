@@ -7,7 +7,7 @@ tags: band, concert, Cool Cavemen, Douai, France, gayant expo, Kdenlive, Stage L
 
 I've just realized I've never really finished the
 [series of posts](https://kevin.deldycke.com/tag/gayant-expo/) I
-[started in 2010](https://kevin.deldycke.com/2010/01/cool-cavemen-live-gayant-expo-first-video-released/),
+[started in 2010]({filename}/2010/cool-cavemen-live-gayant-expo-first-video-released.md),
 a series about my longest video project: the
 [biggest concert](https://coolcavemen.com/2009/concert-a-gayant-expo-les-photos/)
 we performed with [Cool Cavemen](https://coolcavemen.com) in 2009.
@@ -129,7 +129,7 @@ delays. Unfortunately, I detected some:
 ![export-PTFU-master]({attach}export-PTFU-master.png)
 
 I introduced them when I tried to
-[get rid of video timecode artifacts](https://kevin.deldycke.com/2010/01/remove-videotape-timecode/).
+[get rid of video timecode artifacts]({filename}/2010/remove-videotape-timecode.md).
 I messed with encoding parameters in Avidemux, and introduced delays. When I
 realized I could just use the crop filter in Kdenlive, instead of removing the
 timecode in an external software, I produced perfect timing. That's another big

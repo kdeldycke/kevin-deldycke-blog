@@ -8,7 +8,7 @@ tags: video, YouTube, Kdenlive, music video, Omashay, behind the scenes, making 
 
 Back from holidays, and it's time for me to clear my backlog of draft articles. Here is the last and missing piece of my 2012 production notes series.
 
-Let's rewind to year ago, when [*Where is she?* was released](https://kevin.deldycke.com/2012/08/where-is-she-music-video-released/):
+Let's rewind to year ago, when [*Where is she?* was released]({filename}/2012/where-is-she-music-video-released.md):
 
 https://www.youtube.com/watch?v=YjE_uIRVnv8
 
@@ -72,7 +72,7 @@ And some extra photos of the shooting:
 ![]({attach}where-is-she-behind-the-scenes-021.jpg)
 
 
-The [wedding entrance](https://kevin.deldycke.com/2012/11/wedding-entrance-paris-video-postcard/) video was the first time I used my [Glidecam HD-2000](https://amzn.com/B0020LB0MO/?tag=kevideld-20). But *Where is she?* was the [first publicly released video](https://kevin.deldycke.com/2012/08/where-is-she-music-video-released/) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
+The [wedding entrance]({filename}/2012/wedding-entrance-paris-video-postcard.md) video was the first time I used my [Glidecam HD-2000](https://amzn.com/B0020LB0MO/?tag=kevideld-20). But *Where is she?* was the [first publicly released video]({filename}/2012/where-is-she-music-video-released.md) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
 
 https://www.youtube.com/watch?v=EGh-DZjIjHg
 

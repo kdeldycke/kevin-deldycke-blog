@@ -6,7 +6,7 @@ tags: Apache, Hosting, htaccess, ISP, Linux, Mandriva, RPM, urpmi
 ---
 
 Since the creation of my personal Mandriva repository (
-[10 months ago](https://kevin.deldycke.com/2006/04/new-repository-for-mandriva-2006/))
+[10 months ago]({filename}/2006/new-repository-for-mandriva-2006.md))
 the number of my RPMs did not cease to increase. Currently all RPMs and SRPMs
 from 2006.0 and 2007.0 take 383MiB of space.
 

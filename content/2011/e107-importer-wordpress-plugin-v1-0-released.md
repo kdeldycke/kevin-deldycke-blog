@@ -8,7 +8,7 @@ tags: CMS, e107, importer, migration, PHP, WordPress, Kubrick
 ![]({attach}e107-importer-configuration-screen.png)
 
 After
-[3 years in limbo](https://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/),
+[3 years in limbo]({filename}/2008/e107-to-wordpress-migration-v09-plug-in-released.md),
 here is a new stable version of my e107 Importer plugin for WordPress, proudly
 numbered 1.0! :)
 
@@ -31,7 +31,7 @@ Here is the changelog:
   * Add an e107 to WordPress 301 redirector plugin (support news, pages, users
     and feeds).
   * Disable the URL rewriting feature
-    [introduced in v0.9](https://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/).
+    [introduced in v0.9]({filename}/2008/e107-to-wordpress-migration-v09-plug-in-released.md).
   * Make image import optional.
   * Add an option to upload images from allowed domains only.
   * Align naming conventions with other WordPress importer.

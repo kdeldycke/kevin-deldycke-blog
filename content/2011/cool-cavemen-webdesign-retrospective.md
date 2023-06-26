@@ -21,7 +21,7 @@ The theme above was created two weeks later.
 When I created the Cool Cavemen's site, I choose e107. Back then I perceived it
 to be the only Open Source PHP-based CMS having the best balance between a clean
 and a powerful theme engine. That was my opinion before decided to
-[switch to WordPress](https://kevin.deldycke.com/2006/08/e107-to-wordpress-migration-here-is-why/).
+[switch to WordPress]({filename}/2006/e107-to-wordpress-migration-here-is-why.md).
 
 At the end of November '04, our theme was updated to this:
 
@@ -62,7 +62,7 @@ Until September 2005 when I updated it to this:
 
 Notice the box in the top of the right column, which was designed to publish a
 new track every week. The
-[code behind this box](https://kevin.deldycke.com/2007/02/delayed-cd-tracks-publishing-with-php/)
+[code behind this box]({filename}/2007/delayed-cd-tracks-publishing-with-php.md)
 is available in another article.
 
 So that was the last major version of the theme. Basically our e107 site looked
@@ -101,5 +101,5 @@ Then I switched to WordPress:
 The new theme was based on
 [K2](https://web.archive.org/web/20150107112837/https://getk2.com/about/), on
 which I added a
-[corner banner](https://kevin.deldycke.com/2008/06/how-to-add-a-corner-banners-to-a-k2-wordpress-theme-style/)
+[corner banner]({filename}/2008/how-to-add-a-corner-banners-to-a-k2-wordpress-theme-style.md)
 while it was on beta.

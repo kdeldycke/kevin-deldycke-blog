@@ -7,7 +7,7 @@ tags: Debian, Debian Squeeze, Linux, MySQL, SQL, nginx, ovh, PHP, php-fpm, Serve
 
 This article is a follow-up to the one I wrote 3 months ago, in which I
 explained how to [install a web stack based on Nginx, PHP-FPM and
-MySQL](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/)
+MySQL]({filename}/2011/nginx-php-fpm-mysql-debian-squeeze-server.md)
 on a Debian Squeeze server. Now it's time to tune this basic install to get
 some performance out of it.
 
@@ -169,7 +169,7 @@ Here is the content of that file:
 
 Again, this file make a reference to `php.conf`, which is the same as [the one
 featured in my previous
-article](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/).
+article]({filename}/2011/nginx-php-fpm-mysql-debian-squeeze-server.md).
 I only removed the `index` directive to place it elsewhere, and added a limit
 on the number of PHP requests a client can make:
 

@@ -11,15 +11,15 @@ I'm currently moving all the content from my old site to this blog. Here is the 
 
 **Articles:**
 
-  * [Easy Mirroring Without RAID: the Poor Man’s Disk Array](https://kevin.deldycke.com/2005/07/easy-mirroring-without-raid-the-poor-mans-disk-array/)
+  * [Easy Mirroring Without RAID: the Poor Man’s Disk Array]({filename}/2005/easy-mirroring-without-raid-the-poor-mans-disk-array.md)
 
-  * [HowTo Compile and Use xvidcap](https://kevin.deldycke.com/2005/06/howto-compile-and-use-xvidcap/)
+  * [HowTo Compile and Use xvidcap]({filename}/2005/howto-compile-and-use-xvidcap.md)
 
-  * [How-To Mount a File System Binary Image](https://kevin.deldycke.com/2005/05/how-to-mount-a-file-system-binary-image/)
+  * [How-To Mount a File System Binary Image]({filename}/2005/how-to-mount-a-file-system-binary-image.md)
 
-  * [Remote backup with rsync](https://kevin.deldycke.com/2005/04/remote-backup-with-rsync/)
+  * [Remote backup with rsync]({filename}/2005/remote-backup-with-rsync.md)
 
-  * [Créer un Espace de Stockage Fiable avec RAID 5 et LVM sous Linux](https://kevin.deldycke.com/2005/04/creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux/) [FR]
+  * [Créer un Espace de Stockage Fiable avec RAID 5 et LVM sous Linux]({filename}/2005/creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux.md) [FR]
 
 **Linux Scripts:**
 

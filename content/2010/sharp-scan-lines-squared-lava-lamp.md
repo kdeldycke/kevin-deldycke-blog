@@ -5,7 +5,7 @@ category: English
 tags: Animation, Apple, MacBook, QC Experiment, Quartz Composer, Video, Visual
 ---
 
-Here are 2 new Quartz Composer compositions. Both of them are based on the same [kaleidoscope patch](https://kevin.deldycke.com/2010/10/kaleidoscope-001-002/) from my last post, but are processed before the final rendering. This gives some interesting visual effects that are quite distant to the original kaleidoscopes.
+Here are 2 new Quartz Composer compositions. Both of them are based on the same [kaleidoscope patch]({filename}/2010/kaleidoscope-001-002.md) from my last post, but are processed before the final rendering. This gives some interesting visual effects that are quite distant to the original kaleidoscopes.
 
 https://www.youtube.com/watch?v=axz4A2KRmzc
 

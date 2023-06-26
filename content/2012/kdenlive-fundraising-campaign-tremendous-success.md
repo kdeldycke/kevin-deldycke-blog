@@ -6,7 +6,7 @@ tags: campaign, Fundraising, KDE, Kdenlive, NLE, Video
 ---
 
 Two months ago [I made a donation to Kdenlive
-](https://kevin.deldycke.com/2012/03/200-dollars-kdenlive-contribution/)
+]({filename}/2012/200-dollars-kdenlive-contribution.md)
 fundraising campaign and I just found out that I'm the biggest contributor. And
 like other $100+ contributors, I was offered a place to write a [testimonial
 ](https://kdenlive.org/fundraising-campaign-2012):

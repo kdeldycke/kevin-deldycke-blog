@@ -25,7 +25,7 @@ So I wrote extensive unit tests to prove that I knew how to add, subtract and mu
 
 Well, to be picky, it was more an acceptance suite than proper unit-tests. Whatever.
 
-Fast forward 4 years, Scaleway is bigger, and millions of euros are collected by the dual billing & payment stacks. 📈 I'm [no longer an engineer, but the manager](https://kevin.deldycke.com/2020/02/engineering-to-management-transition/) of the team taking care of the system. 👔
+Fast forward 4 years, Scaleway is bigger, and millions of euros are collected by the dual billing & payment stacks. 📈 I'm [no longer an engineer, but the manager]({filename}/2020/engineering-to-management-transition.md) of the team taking care of the system. 👔
 
 I hired Antoine. And there he was, fixing the crap I implemented 7 years ago. Not only did he fix the tests nobody had time to work on, but he uncovered more edge-cases and wrote an entire article about it. 😍
 
@@ -39,7 +39,7 @@ Let's continue with some complementary notes to provide context on the system.
 
 When I was alone behind the billing pipeline, I quickly refrained from pushing code in production during the first few days of each month. That was based on the traumatic (but enlighting) early days of operating a live cloud computing platform. With real customers on the other side of the API.
 
-This dogma was carried on when I [grew the team from 0 to 12 engineers](https://kevin.deldycke.com/2020/02/engineering-to-management-transition/). Even though I repeated ad-nauseum the context of that decision, I feared it might have been lost in a typical case of [Chesterton's fence](https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence). So here it is, in written form.
+This dogma was carried on when I [grew the team from 0 to 12 engineers]({filename}/2020/engineering-to-management-transition.md). Even though I repeated ad-nauseum the context of that decision, I feared it might have been lost in a typical case of [Chesterton's fence](https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence). So here it is, in written form.
 
 The main reason was the massive reports being produced in that critical time-window. The consolidation of accounting and financial numbers of our holding company was, among other things, dependent on these reports. The blast radius of our team was suddently inflated, at the billion-dollar level. 😅
 

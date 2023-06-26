@@ -5,7 +5,7 @@ category: English
 tags: Feed Tracking Tool, Git, GitHub, migration, Subversion, Uperto, Regular expression
 ---
 
-[Last month I released the Feed Tracking Tool project](https://kevin.deldycke.com/2011/03/feed-tracking-tool-released-open-source-license/) (aka FTT) [on GitHub](https://github.com/kdeldycke/feed-tracking-tool). I reconstructed the code history from old tarballs. In the mean time, my friend at Uperto managed to recover the original Subversion repository from very old backups. Here is how I migrated the old SVN repository to GitHub.
+[Last month I released the Feed Tracking Tool project]({filename}/2011/feed-tracking-tool-released-open-source-license.md) (aka FTT) [on GitHub](https://github.com/kdeldycke/feed-tracking-tool). I reconstructed the code history from old tarballs. In the mean time, my friend at Uperto managed to recover the original Subversion repository from very old backups. Here is how I migrated the old SVN repository to GitHub.
 
 First, I started a local Subversion server with the repository my co-worker gave me:
 
@@ -17,7 +17,7 @@ First, I started a local Subversion server with the repository my co-worker gave
     $ svnserve --daemon --listen-port 3690 --root ./ftt-svn
     ```
 
-Then I created a local Git repository, using [my initialization routine](https://kevin.deldycke.com/2010/05/initialize-git-repositories/):
+Then I created a local Git repository, using [my initialization routine]({filename}/2010/initialize-git-repositories.md):
 
     ```shell-session
     $ rm -rf ./ftt-git
@@ -99,7 +99,7 @@ While exploring my own backups of the FTT project, I stumble upon a preliminary 
     $ git branch -D mockup-injection
     ```
 
-The procedure above come from my "[Commit history reconstruction](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)" article.
+The procedure above come from my "[Commit history reconstruction]({filename}/2010/git-commit-history-reconstruction.md)" article.
 
 Now I can tag by hand all FTT releases.
 

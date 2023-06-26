@@ -14,7 +14,7 @@ tags: HTML, programming, Python, Regular expression, BeautifoulSoup, lxml
     * [`lxml.html`](https://lxml.de/lxmlhtml.html)
 
 1 year and 3 months ago I've came with a
-[PHP regexp to parse HTML tag soup](https://kevin.deldycke.com/2007/03/ultimate-regular-expression-for-html-tag-parsing-with-php/).
+[PHP regexp to parse HTML tag soup]({filename}/2007/ultimate-regular-expression-for-html-tag-parsing-with-php.md).
 
 Here is an improved version, in Python (my favorite language so far), that is
 normally much prone to detect strange HTML tags. It also support attributes

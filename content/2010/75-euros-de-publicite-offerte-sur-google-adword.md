@@ -6,7 +6,7 @@ tags: AdWords, Google, bon de reduction, coupon, promo, voucher, Web
 ---
 
 [Meme
-chose](https://kevin.deldycke.com/2010/02/google-adwords-bon-reduction-75-euros-offert/)
+chose]({filename}/2010/google-adwords-bon-reduction-75-euros-offert.md)
 qu'il y a 9 mois, j'ai reçu un bon d'achat de 75€ de pub pour
 [AdWords](https://adwords.google.com).
 

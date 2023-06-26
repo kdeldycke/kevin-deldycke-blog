@@ -26,7 +26,7 @@ In gitg, my untouched repository looks like this:
 
 Notice all the pre-existing code.
 
-Let's create a `history-injection` branch from the `init` tag. The later is the root of my repository, as explained in my previous post on [how I initialize my Git repositories](https://kevin.deldycke.com/2010/05/initialize-git-repositories/).
+Let's create a `history-injection` branch from the `init` tag. The later is the root of my repository, as explained in my previous post on [how I initialize my Git repositories]({filename}/2010/initialize-git-repositories.md).
 
     ```shell-session
     $ git branch history-injection init
@@ -104,7 +104,7 @@ Finally, when we have something that looks good, we can push our changes to our 
     $ git push origin
     ```
 
-But Git will complain: changing already-pushed commits is bad. As I [explained several weeks ago](https://kevin.deldycke.com/2010/05/how-to-fix-bad-commit-authorship-git/), it's dangerous but I don't care. I'm the only user of this repository. So let's bypass Git's wise warnings:
+But Git will complain: changing already-pushed commits is bad. As I [explained several weeks ago]({filename}/2010/how-to-fix-bad-commit-authorship-git.md), it's dangerous but I don't care. I'm the only user of this repository. So let's bypass Git's wise warnings:
 
     ```shell-session
     $ git push origin +master:master

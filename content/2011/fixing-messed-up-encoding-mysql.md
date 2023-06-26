@@ -5,7 +5,7 @@ category: English
 tags: Character encoding, Databases, e107, Latin-1, MySQL, SQL, PHP, sed, SQL, unicode, UTF-8, Web, Regular expression
 ---
 
-[Currently working](https://kevin.deldycke.com/2011/03/e107-importer-1-1/) on my [e107 Importer plugin](https://wordpress.org/extend/plugins/e107-importer/), I was confronted today with badly-encoded data coming from my databases.
+[Currently working]({filename}/2011/e107-importer-1-1.md) on my [e107 Importer plugin](https://wordpress.org/extend/plugins/e107-importer/), I was confronted today with badly-encoded data coming from my databases.
 
 e107 migrated to full UTF-8 [years ago](https://e107.org/comment.php?comment.news.735), but I must have messed the upgrade process at the time. That was my conclusion when I took a close look to my tables: all of them seems to be set to Latin-1 but contain UTF-8 data. Here are screenshots from [SQLBuddy](https://www.sqlbuddy.com) (a great light-weight MySQL manager) showing just that:
 

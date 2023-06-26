@@ -26,6 +26,6 @@ The problem with this mode to me was the lack of an auto-advance feature that wi
     </script>
     ```
 
-All you have to do is to embed this snippet of code within your home page. It could either be in the static page you use as a showcase template or in a showcase widget. The latter is the exact same method I used earlier that year to [customize CSS in WordPress without messing with the original code](https://kevin.deldycke.com/2011/01/new-blog-header-and-tiny-wordpress-theme-customizations/).
+All you have to do is to embed this snippet of code within your home page. It could either be in the static page you use as a showcase template or in a showcase widget. The latter is the exact same method I used earlier that year to [customize CSS in WordPress without messing with the original code]({filename}/2011/new-blog-header-and-tiny-wordpress-theme-customizations.md).
 
 And of course this code is currently live at the front page of that very blog.

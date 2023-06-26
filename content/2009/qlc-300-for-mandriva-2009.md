@@ -8,7 +8,7 @@ tags: DMX, LLA, Mandriva, QLC, RPM, Stage Lighting
 ![qlc-3-on-mandriva-2009]({attach}qlc-3-on-mandriva-2009.png)
 
 I've upgraded
-[my old QLC RPM](https://kevin.deldycke.com/2008/05/qlc-2-6-1-for-mandriva-2008-1/)
+[my old QLC RPM]({filename}/2008/qlc-2-6-1-for-mandriva-2008-1.md)
 to [the 3.0.0 version](https://sourceforge.net/forum/forum.php?forum_id=930755).
 This release is built for Mandriva 2009.1 and x86_64 architecture only, and do
 not depends on LLA. I also had to remove the FTDI output plugin as it doesn't

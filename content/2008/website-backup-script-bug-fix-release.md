@@ -5,7 +5,7 @@ category: English
 tags: Backup, CLI, FTP, lftp, Linux, MySQL, SQL, mysqldump, Network, Python, rdiff-backup, rsync, Script, Server, SSH, Web
 ---
 
-[14 months after the last release](https://kevin.deldycke.com/2007/03/website-backup-script-mysql-dumps-and-ssh-supported/), here is a [new version of my website backup script](https://github.com/kdeldycke/scripts/blob/master/website-backup.py). As you can see in the changelog, this version is essentially released to fix some bugs.
+[14 months after the last release]({filename}/2007/website-backup-script-mysql-dumps-and-ssh-supported.md), here is a [new version of my website backup script](https://github.com/kdeldycke/scripts/blob/master/website-backup.py). As you can see in the changelog, this version is essentially released to fix some bugs.
 
 Changelog:
 

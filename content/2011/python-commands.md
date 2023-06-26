@@ -195,4 +195,4 @@ u' {machin} '
 
 ## Data
 
-- [Pandas snippets](https://kevin.deldycke.com/2015/11/pandas-snippets/)
+- [Pandas snippets]({filename}/2015/pandas-snippets.md)

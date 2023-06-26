@@ -7,7 +7,7 @@ tags: Cool Cavemen, e107, importer, migration, PHP, Web, WordPress
 
 ![]({attach}e107-importer-v1-3-option-panel.png)
 
-A month after [the last one](https://kevin.deldycke.com/2011/04/e107-importer-1-2-enhanced-bbcode-parser/), here is a brand [new version of my e107 Importer](https://wordpress.org/extend/plugins/e107-importer/), numbered 1.3.
+A month after [the last one]({filename}/2011/e107-importer-1-2-enhanced-bbcode-parser.md), here is a brand [new version of my e107 Importer](https://wordpress.org/extend/plugins/e107-importer/), numbered 1.3.
 
 This version add loads of polishing and is not far from being feature-complete. I think I'm reaching the end of the active development of this plugin. I don't see the need to add new features.
 

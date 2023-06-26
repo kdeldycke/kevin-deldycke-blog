@@ -5,7 +5,7 @@ category: English
 tags: concert, Cool Cavemen, douai, gayant expo, live, Music, Video
 ---
 
-After several months of work, [nit-picking](https://kevin.deldycke.com/2010/01/remove-videotape-timecode/) and [drama](https://twitter.com/kdeldycke/status/6158072244), I've finally released [Cool Cavemen's "Pump the Funk Up" video](https://www.youtube.com/watch?v=qE-bis-wYxs):
+After several months of work, [nit-picking]({filename}/2010/remove-videotape-timecode.md) and [drama](https://twitter.com/kdeldycke/status/6158072244), I've finally released [Cool Cavemen's "Pump the Funk Up" video](https://www.youtube.com/watch?v=qE-bis-wYxs):
 
 https://www.youtube.com/watch?v=qE-bis-wYxs
 

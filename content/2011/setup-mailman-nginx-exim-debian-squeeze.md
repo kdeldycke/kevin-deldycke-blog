@@ -9,7 +9,7 @@ tags: Debian, Debian Squeeze, email, Exim, fcgiwrap, Linux, mailing list, mailma
 
 Before going further, please take note that I start this tutorial assuming that
 you already have a [minimal Exim
-setup](https://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/)
+setup]({filename}/2011/how-to-gmail-send-mails-debian-squeeze.md)
 running on your Debian machine.
 
 ## Mailman
@@ -296,7 +296,7 @@ have to add to `/etc/exim4/exim4.conf.template`:
 
 Don't apply this diff as-is, as the original file contain the modifications I
 previously made to [let Exim use Gmail to send
-mails](https://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/).
+mails]({filename}/2011/how-to-gmail-send-mails-debian-squeeze.md).
 
 Then we have to update the Exim meta-configuration that is stored in
 `/etc/exim4/update-exim4.conf.conf`. There we specify our host

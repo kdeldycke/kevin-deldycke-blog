@@ -124,7 +124,7 @@ I updated my [mdadm](https://neil.brown.name/blog/mdadm) configuration before re
     $ reboot
     ```
 
-But history repeat itself, and again, the system hang up during boot. Except this time I knew what was happening: the boot process detected the remaining `sdb1` device as part of the old array (the one before the regeneration I did above) and tried to run it. [Remembering my last year post](https://kevin.deldycke.com/2007/03/how-to-recover-a-raid-array-after-having-zero-ized-superblocks/), I zero-ized the superblock of `sdb1`:
+But history repeat itself, and again, the system hang up during boot. Except this time I knew what was happening: the boot process detected the remaining `sdb1` device as part of the old array (the one before the regeneration I did above) and tried to run it. [Remembering my last year post]({filename}/2007/how-to-recover-a-raid-array-after-having-zero-ized-superblocks.md), I zero-ized the superblock of `sdb1`:
 
     ```shell-session
     $ mdadm -S /dev/md0

@@ -14,4 +14,4 @@ v0.4, [libgpod](https://www.gtkpod.org/libgpod.html) v0.3.2 which are required
 by this latest release of Amarok to work properly.
 
 To [install packages from my repository, take a look at my previous
-posts](https://kevin.deldycke.com/2006/04/new-repository-for-mandriva-2006/).
+posts]({filename}/2006/new-repository-for-mandriva-2006.md).

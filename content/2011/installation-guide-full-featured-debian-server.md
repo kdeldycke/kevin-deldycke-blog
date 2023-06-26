@@ -9,31 +9,31 @@ Here is a collection of articles I wrote during the past year. Together they for
 
 These articles are independent with each other, meaning you can pick the one your interested in to customize your server and ignore the others.
 
-  1. Setup [SMART](https://kevin.deldycke.com/2011/05/setting-hdds-smart-monitoring-debian-squeeze/) monitoring tool for HDDs.
+  1. Setup [SMART]({filename}/2011/setting-hdds-smart-monitoring-debian-squeeze.md) monitoring tool for HDDs.
 
-  2. Setup [Nut](https://kevin.deldycke.com/2011/05/mge-ellipse-750-ups-debian-squeeze/) to manage the UPS.
+  2. Setup [Nut]({filename}/2011/mge-ellipse-750-ups-debian-squeeze.md) to manage the UPS.
 
-  3. Setup [Duplicity and Amazon S3](https://kevin.deldycke.com/2011/09/cloud-based-server-backups-duplicity-amazon-s3/) for cloud-based backups.
+  3. Setup [Duplicity and Amazon S3]({filename}/2011/cloud-based-server-backups-duplicity-amazon-s3.md) for cloud-based backups.
 
-  4. Setup [Exim](https://kevin.deldycke.com/2011/05/how-to-gmail-send-mails-debian-squeeze/) to relay mails via Gmail.
+  4. Setup [Exim]({filename}/2011/how-to-gmail-send-mails-debian-squeeze.md) to relay mails via Gmail.
 
-  5. Setup [cron-apt](https://kevin.deldycke.com/2011/05/fresh-debian-thanks-to-cron-apt/) to keep our distribution up to date.
+  5. Setup [cron-apt]({filename}/2011/fresh-debian-thanks-to-cron-apt.md) to keep our distribution up to date.
 
-  6. Add a [fail2ban](https://kevin.deldycke.com/2011/06/configuring-fail2ban-debian-squeeze/) deamon.
+  6. Add a [fail2ban]({filename}/2011/configuring-fail2ban-debian-squeeze.md) deamon.
 
-  7. Setup [Munin](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/) to monitor our machine.
+  7. Setup [Munin]({filename}/2011/munin-monitor-debian-squeeze-server.md) to monitor our machine.
 
-  8. [Basic setup of Nginx + PHP-FPM + MySQL](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/) web stack.
+  8. [Basic setup of Nginx + PHP-FPM + MySQL]({filename}/2011/nginx-php-fpm-mysql-debian-squeeze-server.md) web stack.
 
-  9. [Optimizing Nginx + PHP-FPM + MySQL](https://kevin.deldycke.com/2011/09/nginx-php-fpm-mysql-configuration/) for performances.
+  9. [Optimizing Nginx + PHP-FPM + MySQL]({filename}/2011/nginx-php-fpm-mysql-configuration.md) for performances.
 
-  10. Setup [PHP APC](https://kevin.deldycke.com/2011/07/php-apc-debian-squeeze-munin-monitoring/) op-code cache.
+  10. Setup [PHP APC]({filename}/2011/php-apc-debian-squeeze-munin-monitoring.md) op-code cache.
 
-  11. Install [haveged](https://kevin.deldycke.com/2011/08/entropy-debian-squeeze-server/) to get lots of entropy.
+  11. Install [haveged]({filename}/2011/entropy-debian-squeeze-server.md) to get lots of entropy.
 
-  12. Setup a [WebDAVs](https://kevin.deldycke.com/2011/07/lighttpd-powered-webdavs-server-debian-squeeze/) server with Lighttpd.
+  12. Setup a [WebDAVs]({filename}/2011/lighttpd-powered-webdavs-server-debian-squeeze.md) server with Lighttpd.
 
-  13. Setup [Mailman + Nginx + Exim](https://kevin.deldycke.com/2011/09/setup-mailman-nginx-exim-debian-squeeze/) for mailing-lists.
+  13. Setup [Mailman + Nginx + Exim]({filename}/2011/setup-mailman-nginx-exim-debian-squeeze.md) for mailing-lists.
 
-  14. Mailman [mailing-list migration](https://kevin.deldycke.com/2011/10/mailman-migration/) and [merging](https://kevin.deldycke.com/2011/10/how-to-merge-mailman-mailing-lists/).
+  14. Mailman [mailing-list migration]({filename}/2011/mailman-migration.md) and [merging]({filename}/2011/how-to-merge-mailman-mailing-lists.md).
 

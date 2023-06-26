@@ -5,7 +5,7 @@ category: English
 tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual
 ---
 
-To continue the series I initiated 2 weeks ago about my [Quartz Composer experimentations](https://kevin.deldycke.com/2010/10/export-quartz-composer-video/), here are two other kaleidoscopic compositions:
+To continue the series I initiated 2 weeks ago about my [Quartz Composer experimentations]({filename}/2010/export-quartz-composer-video.md), here are two other kaleidoscopic compositions:
 
 https://www.youtube.com/watch?v=xOdZrYSCDqI
 

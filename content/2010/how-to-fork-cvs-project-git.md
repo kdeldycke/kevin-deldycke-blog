@@ -6,7 +6,7 @@ tags: CVS, Drupal, Fork, Git, GitHub, Theme
 ---
 
 This week I've decided to put
-[my work on Cool Cavemen's concert videos](https://kevin.deldycke.com/2010/02/cool-cavemen-live-gayant-expo-part-ii/)
+[my work on Cool Cavemen's concert videos]({filename}/2010/cool-cavemen-live-gayant-expo-part-ii.md)
 aside, and work instead on refreshing
 [our online store](https://coolcavemen.bandcamp.com). After all,
 [fans are requesting this](https://www.youtube.com/watch?v=qE-bis-wYxs#show_link_8i9W6PA9rEcKAmnYaXfANlo9U1TASUD9jXw7PtUS3n0),

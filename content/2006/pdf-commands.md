@@ -69,5 +69,5 @@ tags: CLI, Linux, pdf, GhostScript, pdfgrep
 
 ## Additional References
 
-- [Text, Date & Document processing commands](https://kevin.deldycke.com/2006/12/text-date-document-processing-commands/)
+- [Text, Date & Document processing commands]({filename}/2006/text-date-document-processing-commands.md)
 - [PDF processing and analysis with open-source tools](https://www.bitsgalore.org/2021/09/06/pdf-processing-and-analysis-with-open-source-tools)

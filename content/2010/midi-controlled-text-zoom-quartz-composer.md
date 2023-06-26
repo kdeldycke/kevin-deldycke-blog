@@ -7,13 +7,13 @@ tags: Animation, Apple, berhinger, MacBook, MIDI, Quartz Composer, USB, Visual
 
 To end my [series of experimentations with Quartz
 Composer]({tag}quartz-composer) that I [started 2 months
-ago](https://kevin.deldycke.com/2010/10/export-quartz-composer-video/), here is
+ago]({filename}/2010/export-quartz-composer-video.md), here is
 my last patch:
 
 ![]({attach}patch-of-midi-controlled-text-zoom-in-quartz-composer.png)
 
 It's [based on the previous
-one](https://kevin.deldycke.com/2010/12/quartz-composer-behringer-bcf-2000-midi-controller-tests/)
+one]({filename}/2010/quartz-composer-behringer-bcf-2000-midi-controller-tests.md)
 and is also driven by a [Berhinger BCF-2000 MIDI
 controller](https://amzn.com/B000CZ0RJ2/?tag=kevideld-20). The purpose of this
 composition is to zoom a piece of text, give it some kind of velocity and

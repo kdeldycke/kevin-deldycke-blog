@@ -88,7 +88,7 @@ Finally we remove unwanted Git metadata:
 If you're lost in this cleaning step, please have look at a previous article in
 which I explain [how I re-arranged a messy Subversion repository into a clean
 Git
-project](https://kevin.deldycke.com/2011/08/how-open-source-an-internal-corporate-project-webping/).
+project]({filename}/2011/how-open-source-an-internal-corporate-project-webping.md).
 
 Now that we have a good looking SVN branch similar to our Git's, we can proceed
 to the merging itself:

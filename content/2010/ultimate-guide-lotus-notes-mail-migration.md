@@ -40,7 +40,7 @@ So I had to found another approach.
 ## Method #2: using `nlconverter`
 
 This method is [explored in details in my previous article
-](https://kevin.deldycke.com/2010/09/convert-lotus-notes-nsf-files-mbox-nlconverter/).
+]({filename}/2010/convert-lotus-notes-nsf-files-mbox-nlconverter.md).
 
 But again, it seems that the Lotus Notes on my machine was crippled and/or
 corrupted. The `nlconverter` GUI gave me this error:
@@ -126,12 +126,12 @@ You can now launch Lotus Notes:
   9. The next step is to go back to the machine (Windows for me) from which
   you're running the Notes client containing all the mails you plan to migrate.
   From there, [export your mail database
-  ](https://kevin.deldycke.com/2010/06/how-to-export-backup-lotus-notes-mails/):
+  ]({filename}/2010/how-to-export-backup-lotus-notes-mails.md):
 
 ![]({attach}export-screen.png)
 
 All details of this operation can be found in [this dedicated article
-](https://kevin.deldycke.com/2010/06/how-to-export-backup-lotus-notes-mails/).
+]({filename}/2010/how-to-export-backup-lotus-notes-mails.md).
 
   10. Then go back to your Mac OS X machine and import your freshly exported
   `.nsf` database. This is as simple as opening the file via the `File` >
@@ -165,7 +165,7 @@ the "_Start trusting the signer to execute this action_" option before clicking
 ![]({attach}dovecot-on-macosx.png)
 
 As you can see I [used Dovecot, and all is explained here
-](https://kevin.deldycke.com/2010/04/setup-lightweight-imap-server-macos-leopard-dovecot/).
+]({filename}/2010/setup-lightweight-imap-server-macos-leopard-dovecot.md).
 
   14. Now it's time to create a new account in Lotus Notes to access this local
   IMAP server. Click on the `Address Book` in your toolbar and add a new
@@ -203,7 +203,7 @@ Just close it to get your local IMAP mail view:
 
 In this case, please have a look at my other [article explaining how to open
 TCPIP port in Lotus Notes
-](https://kevin.deldycke.com/2010/08/how-to-fix-lotus-notes-disabled-tcp-ip-port-error/).
+]({filename}/2010/how-to-fix-lotus-notes-disabled-tcp-ip-port-error.md).
 
   19. For this step, just copy or cut, then paste, mails from your local `.nsf`
   database to your local IMAP account:
@@ -223,12 +223,12 @@ TCPIP port in Lotus Notes
 ![]({attach}notes-rich-text-to-mime-conversion-error.png)
 
 A [workaround can be found in this article
-](https://kevin.deldycke.com/2010/05/lotus-notes-rich-text-mime-conversion-error/).
+]({filename}/2010/lotus-notes-rich-text-mime-conversion-error.md).
 
   21. Finally, if like me you've played a lot with mails during the transfer
   step above, you may ends up with loads of duplicate mails. In this case have
   a look at the [deduplication script
-  ](https://kevin.deldycke.com/2010/08/maildir-deduplication-script-python/) I
+  ]({filename}/2010/maildir-deduplication-script-python.md) I
   wrote. It will help you clean-up your Maildir folder.
 
   22. That's it! You now have a standard Maildir of your Lotus Notes mails,
@@ -237,7 +237,7 @@ A [workaround can be found in this article
 ![]({attach}maildir-containing-lotus-notes-mails.png)
 
 My ultimate action was to [convert the Dovecot maildir to Kmail maildir
-](https://kevin.deldycke.com/2007/11/how-to-import-a-maildir-folder-to-kmail/),
+]({filename}/2007/how-to-import-a-maildir-folder-to-kmail.md),
 as I wanted to use Kmail to finally upload everything in Gmail. But you can use
 anything that suit your needs, like [thunderbird
 ](https://www.mozillamessaging.com/thunderbird/) or any mail conversion tools.

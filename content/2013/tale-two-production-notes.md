@@ -16,7 +16,7 @@ This video is a timelapse of a painting Tomasito made in 2007. It's based on a s
 
 ## slowmoVideo
 
-I tried to produce a timelapse out of these images a year ago. In fact, that was the original project I was referring to in my [previous article](https://kevin.deldycke.com/2013/03/goodnight-video/), the project which triggered my initial interest into [slowmoVideo](https://slowmovideo.granjow.net/).
+I tried to produce a timelapse out of these images a year ago. In fact, that was the original project I was referring to in my [previous article]({filename}/2013/goodnight-video.md), the project which triggered my initial interest into [slowmoVideo](https://slowmovideo.granjow.net/).
 
 But the experiment failed and I abandoned this endeavor. Instead of slow-motion, and because of the low timing resolution of the photos, I assumed a simple slideshow would do it.
 
@@ -32,7 +32,7 @@ While I could feel the power of the tracking tools, my limited knowledge of Blen
 
 ## vid.stab & Kdenlive
 
-My plan B for stabilization was [Transcode's vid.stab plugin](https://kevin.deldycke.com/2012/02/stabilizing-cute-baby-goats/).
+My plan B for stabilization was [Transcode's vid.stab plugin]({filename}/2012/stabilizing-cute-baby-goats.md).
 
 But it can't read images: it only takes videos for input. So we'll produce a video file of a simple slideshow in Kdenlive, then feed the result to vid.stab.
 
@@ -71,7 +71,7 @@ He planned to published the video, but the final editing step was postponed by s
 
 ## slowmoVideo, again
 
-Until last January when, after [some efforts](https://kevin.deldycke.com/2013/02/slowmo-video-ubuntu-12-10/), I managed to [produce something with slowmoVideo](https://kevin.deldycke.com/2013/03/goodnight-video/). We resurected the project.
+Until last January when, after [some efforts]({filename}/2013/slowmo-video-ubuntu-12-10.md), I managed to [produce something with slowmoVideo]({filename}/2013/goodnight-video.md). We resurected the project.
 
 I applied the raw slowmoVideo transformation on the initial set of photos. And the result was good enough. But Tomasito wanted more, and stabilized all the 70 images of the original set by hand!
 
@@ -81,7 +81,7 @@ After this herculean task, I cropped & resized the images to fit the 1080p resol
     $ convert -resize 1920x1080 -background black -gravity center -extent 1920x1080 ./manually-stab-keyframes/* pict%04d.png
     ```
 
-[As for Goodnight](https://kevin.deldycke.com/2013/03/goodnight-video/), we tried to get rid of the wide black bars on the sides. [QPX](https://wqpx.wordpress.com) created for us a mask made of paint strokes:
+[As for Goodnight]({filename}/2013/goodnight-video.md), we tried to get rid of the wide black bars on the sides. [QPX](https://wqpx.wordpress.com) created for us a mask made of paint strokes:
 
 ![]({attach}video-mask.png)
 

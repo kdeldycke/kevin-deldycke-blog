@@ -5,7 +5,7 @@ category: English
 tags: Backup, Gmail, Google, IMAP, isync, Linux, email, mbsync, OpenSSL, SSL, Regular expression
 ---
 
-I used to keep a [local backup of my Gmail mails with OfflineImap](https://kevin.deldycke.com/2012/05/backup-gmail-offlineimap/). But I never felt comfortable with this solution because of OfflineImap being fully bidirectional. Which means my mails in the cloud are not protected from me messing with their local versions.
+I used to keep a [local backup of my Gmail mails with OfflineImap]({filename}/2012/backup-gmail-offlineimap.md). But I never felt comfortable with this solution because of OfflineImap being fully bidirectional. Which means my mails in the cloud are not protected from me messing with their local versions.
 
 In the mean time I found out about [mbsync](https://isync.sourceforge.net/mbsync.html) (from the [isync project](https://sourceforge.net/projects/isync/)). It particularly features fine-grained options to let you defined which source is authoritative, thus restricting the synchronization to one direction.
 

@@ -6,7 +6,7 @@ tags: Funky Storm, PHP, MySQL, GitHub
 
 [funky-storm.com](https://funky-storm.com) was the [first website I ever published](https://web.archive.org/web/20020515000000*/https://www.funkystorm.free.fr/) online, 11 years ago. Blogs were something new and there was virtually no mature open-source publishing platform, apart forums. Without any other options, I created my band's website from scratch.
 
-I still have the source and I've just consolidated it in a [GitHub repository](https://github.com/kdeldycke/funky-storm) (thanks to my [history reconstruction process](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)). Here is the detailed procedure:
+I still have the source and I've just consolidated it in a [GitHub repository](https://github.com/kdeldycke/funky-storm) (thanks to my [history reconstruction process]({filename}/2010/git-commit-history-reconstruction.md)). Here is the detailed procedure:
 
     ```shell-session
     $ rm -rf ./funky-storm

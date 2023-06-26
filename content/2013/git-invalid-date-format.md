@@ -5,10 +5,10 @@ category: English
 tags: Git, GitHub, maildir, python, code, datetime
 ---
 
-[Moving `maildir-deduplicate.py` to its own repository](https://kevin.deldycke.com/2013/06/maildir-deduplicate-moved/)
+[Moving `maildir-deduplicate.py` to its own repository]({filename}/2013/maildir-deduplicate-moved.md)
 was tricky, as I wanted to keep the commit history.
 
-[I followed my old notes from a previous article](https://kevin.deldycke.com/2011/02/moving-git-subtree-repository/)
+[I followed my old notes from a previous article]({filename}/2011/moving-git-subtree-repository.md)
 and started the migration process:
 
     ```shell-session
@@ -27,7 +27,7 @@ script from the revision tree, I stumble upon a puzzling error:
 
 The bad commit the message refers to is the first one. It's a special commit I
 create everytime I
-[initialize a Git repository](https://kevin.deldycke.com/2010/05/initialize-git-repositories/).
+[initialize a Git repository]({filename}/2010/initialize-git-repositories.md).
 
 From the error message, I suspected a wrong date format. So I reseted it:
 

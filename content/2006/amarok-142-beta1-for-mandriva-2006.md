@@ -12,10 +12,10 @@ which is perfect for people with big and constantly evolving music collection.
 
 [Here are the RPMs](https://github.com/kdeldycke/mandriva-specs), and here [the
 explanation to use
-them](https://kevin.deldycke.com/2006/04/new-repository-for-mandriva-2006/).
+them]({filename}/2006/new-repository-for-mandriva-2006.md).
 
 If you have some issue with this release, take a look at [comments of previous
-versions](https://kevin.deldycke.com/2006/07/amarok-141-for-mandriva-2006/) and
+versions]({filename}/2006/amarok-141-for-mandriva-2006.md) and
 my "[You installed Amarok from my RPMs and can’t play some files? Here is the
-fix...](https://kevin.deldycke.com/2006/08/you-installed-amarok-from-my-rpms-and-you-cant-play-some-files-here-is-the-fix/)"
+fix...]({filename}/2006/you-installed-amarok-from-my-rpms-and-you-cant-play-some-files-here-is-the-fix.md)"
 post.

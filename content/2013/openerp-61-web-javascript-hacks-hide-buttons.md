@@ -5,7 +5,7 @@ category: English
 tags: OpenERP, Javascript, Backbone.js, jQuery, Web
 ---
 
-Last year I published two articles on hacking OpenERP 6.0 user interface, one to demonstrate [how to monkey-patch native Javascript behavior](https://kevin.deldycke.com/2012/02/how-to-monkey-patch-openerp-native-javascript/), the other to show how to [tweak widgets](https://kevin.deldycke.com/2012/05/hacking-openerp-60-user-interface-javascript/)
+Last year I published two articles on hacking OpenERP 6.0 user interface, one to demonstrate [how to monkey-patch native Javascript behavior]({filename}/2012/how-to-monkey-patch-openerp-native-javascript.md), the other to show how to [tweak widgets]({filename}/2012/hacking-openerp-60-user-interface-javascript.md)
 
 Both methods are based on an injection of inline Javascript code via XML view definition. In OpenERP 6.1, as [highlighted by Timothy](https://kevin.deldycke.com/2012/02/how-to-monkey-patch-openerp-native-javascript/#comment-769313088) you can no longer leverage this dirty trick: Javascript is stripped out of the XML stream.
 

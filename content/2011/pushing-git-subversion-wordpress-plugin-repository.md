@@ -5,7 +5,7 @@ category: English
 tags: Git, Hosting, Linux, Subversion, WordPress, Regular expression
 ---
 
-[Some weeks ago](https://kevin.deldycke.com/2011/02/moving-git-subtree-repository/) I moved my e107 Importer project from a [big fat Git repository](https://github.com/kdeldycke/scripts) to [its own](https://github.com/kdeldycke/e107-importer).
+[Some weeks ago]({filename}/2011/moving-git-subtree-repository.md) I moved my e107 Importer project from a [big fat Git repository](https://github.com/kdeldycke/scripts) to [its own](https://github.com/kdeldycke/e107-importer).
 
 Then I wanted to have my plugin to be available on WordPress.org. In fact, [this list](https://wordpress.org/extend/plugins/) is the tip of WordPress plugin hosting solution. It means that if you want to have your plugin there, you have to push your code in [WordPress' big Subversion repository](https://plugins.trac.wordpress.org/browser). And that's when I realized I had to sync my Git repository to Subversion...
 
@@ -85,7 +85,7 @@ According gitg, the result of this is 2 parallel trees:
   * the first is the untouched original tree;
   * the other start on the `trunk` branch and continue with a copy of the original tree, and is the result of the rebase.
 
-But the latter has a problem: [my initial commit](https://kevin.deldycke.com/2010/05/initialize-git-repositories/) and all my tags are squashed. I tried several methods to rebase my whole Git tree onto the local `trunk` branch while keeping these. But I failed.
+But the latter has a problem: [my initial commit]({filename}/2010/initialize-git-repositories.md) and all my tags are squashed. I tried several methods to rebase my whole Git tree onto the local `trunk` branch while keeping these. But I failed.
 
 I resigned myself and passed over this. After all, the initial commit played its role, by taking care of this corner-case.
 

@@ -23,7 +23,7 @@ project](https://code.google.com/p/munin-php-apc/) instead.
 
 The latter can't get APC statistics by itself: it need an extra PHP file to be
 served locally. As you can read in my previous article, [my Munin is powered by
-Nginx](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/).
+Nginx]({filename}/2011/munin-monitor-debian-squeeze-server.md).
 So now we'll setup Nginx to serve this extra PHP file:
 
     ```shell-session
@@ -35,7 +35,7 @@ So now we'll setup Nginx to serve this extra PHP file:
 
 Then I need to update my `/etc/nginx/sites-available/munin` file (see [details
 about this file on my previous
-article](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/))
+article]({filename}/2011/munin-monitor-debian-squeeze-server.md))
 to have the second `server` section look like this:
 
     ```nginx
@@ -59,7 +59,7 @@ Here the included `/etc/nginx/php.conf` file is the one in which I've
 concentrate all the Nginx directives required to activate PHP file parsing. The
 content and the mechanism behind this file is describe in my [article on
 setting up Nginx with
-PHP-FPM](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/).
+PHP-FPM]({filename}/2011/nginx-php-fpm-mysql-debian-squeeze-server.md).
 
 Let's get back to our Munin monitoring setup. I can restart now Nginx and check
 that I can access locally to my raw statistics:

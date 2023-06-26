@@ -29,4 +29,4 @@ At the end it costs me 31.77€ to get 8Go of additional Dropbox capacity trough
 
 ![]({attach}dropbox-adwords-campaign-france-report.png)
 
-That's not cheap, but was a fun hack and a great excuse to learn how to use Google AdWords. And next time I know what I'll do with [those](https://kevin.deldycke.com/2009/12/deux-bons-50-euros-offerts-google-adwords/) [AdWords coupons](https://kevin.deldycke.com/2010/02/google-adwords-bon-reduction-75-euros-offert/) I [regularly give away](https://kevin.deldycke.com/2010/10/75-euros-de-publicite-offerte-sur-google-adword/)... ;)
+That's not cheap, but was a fun hack and a great excuse to learn how to use Google AdWords. And next time I know what I'll do with [those]({filename}/2009/deux-bons-50-euros-offerts-google-adwords.md) [AdWords coupons]({filename}/2010/google-adwords-bon-reduction-75-euros-offert.md) I [regularly give away]({filename}/2010/75-euros-de-publicite-offerte-sur-google-adword.md)... ;)

@@ -13,7 +13,7 @@ or [osCommerce](https://www.oscommerce.com). I never really took the time to
 answer him. Let's fix this.
 
 First, I selected a couple of web eCommerce solution based on the same
-[requirements upon which I choose WordPress](https://kevin.deldycke.com/2006/08/e107-to-wordpress-migration-here-is-why/)
+[requirements upon which I choose WordPress]({filename}/2006/e107-to-wordpress-migration-here-is-why.md)
 some years ago. Namely:
 
   * Open-source free software

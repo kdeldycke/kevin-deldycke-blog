@@ -22,7 +22,7 @@ video editor out there.
 
 I started to play with Kdenlive several years ago with version 0.3. I even
 [created some RPM
-packages](https://kevin.deldycke.com/2007/04/kdenlive-04-for-mandriva-20070/)
+packages]({filename}/2007/kdenlive-04-for-mandriva-20070.md)
 back then. Kdenlive suffered from heavy instabilities in its early days.
 
 But this was a long time ago and today it’s the most stable and practical video

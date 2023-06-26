@@ -24,7 +24,7 @@ But after reading
 and user experiences on the web, it looks like Git has some limitations when
 dealing with the root of a repository history. As I plan to heavily manipulate
 the commit history (to do some kind of
-[code archaeology and history reconstruction](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)),
+[code archaeology and history reconstruction]({filename}/2010/git-commit-history-reconstruction.md)),
 I need to have the widest time latitude to play with commits.
 
 In this situation, I came to the conclusion that it's a good idea to create an

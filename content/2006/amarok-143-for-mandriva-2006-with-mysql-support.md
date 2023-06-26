@@ -15,7 +15,7 @@ is the default version that came with the free download edition of Mandriva
 [`libmtp`](https://libmtp.sourceforge.net) and `libofa0`.
 
 As requested by some peoples in my [previous
-release](https://kevin.deldycke.com/2006/08/amarok-142-final-for-mandriva-2006/),
+release]({filename}/2006/amarok-142-final-for-mandriva-2006.md),
 the MySQL support was missing. I've just added it for this 1.4.3 version.
 Please leave a comment to let me know if it work (or not), because I don't use
 this feature myself.

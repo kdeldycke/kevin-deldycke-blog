@@ -11,7 +11,7 @@ On dirait que Google cherche à promouvoir agressivement en France
 [AdWords](https://adwords.google.com), son service de régie publicitaire en
 ligne. Après avoir eu entre les mains plusieurs bons de réductions ([100
 euros](https://twitter.com/kdeldycke/status/3169290268) et [50
-euros](https://kevin.deldycke.com/2009/12/deux-bons-50-euros-offerts-google-adwords/))
+euros]({filename}/2009/deux-bons-50-euros-offerts-google-adwords.md))
 ces derniers mois, j'ai reçu aujourd'hui par courrier un bon de 75 euros.
 
 Malheureusement, je ne peux pas l'utiliser car j'ai déjà un compte AdWords. En

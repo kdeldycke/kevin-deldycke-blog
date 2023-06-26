@@ -19,7 +19,7 @@ The final video also include footage from various people in the audience:
 
   * Jim from [Maomium](https://maomium.com) tested during the concert its brand new [Sony Alpha SLT-A33](https://amzn.com/B0043AT7AM/?tag=kevideld-20), equipped with a [Sony 18-55mm f/3.5-5.6 SAM DT zoom lens](https://amzn.com/B0029U0X0Q/?tag=kevideld-20), which produces nice 1080i streams at 50 fps;
 
-  * Loïc filmed in 720p/30fps with [Tomasito](https://coolcavemen.com/biography/tomasito/)'s [Canon PowerShot SX200IS](https://amzn.com/B001SER45Q/?tag=kevideld-20) (which was used to produce [Omashay](https://omashay.com/)'s [_Wish You Looked at Me_ music video](https://kevin.deldycke.com/2011/07/making-of-omashay-wish-you-looked-at-me-music-video/));
+  * Loïc filmed in 720p/30fps with [Tomasito](https://coolcavemen.com/biography/tomasito/)'s [Canon PowerShot SX200IS](https://amzn.com/B001SER45Q/?tag=kevideld-20) (which was used to produce [Omashay](https://omashay.com/)'s [_Wish You Looked at Me_ music video]({filename}/2011/making-of-omashay-wish-you-looked-at-me-music-video.md));
 
   * and finally Sylvie shot at 480p/30fps with [Dam](https://coolcavemen.com/biography/dam/)'s point-and-shoot camera, the one he uses for his [guitar cover videos](https://www.youtube.com/user/damdahu/featured).
 

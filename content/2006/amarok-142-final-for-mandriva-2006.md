@@ -11,7 +11,7 @@ them, I advise you to add my repository to your local urpmi database.
 
 If you experience some problems with this package, take a look at [comments on
 the 1.4.1
-release](https://kevin.deldycke.com/2006/07/amarok-141-for-mandriva-2006/) and
+release]({filename}/2006/amarok-141-for-mandriva-2006.md) and
 my ["You installed Amarok from my RPMs and can’t play some files? Here is the
-fix…"](https://kevin.deldycke.com/2006/08/you-installed-amarok-from-my-rpms-and-you-cant-play-some-files-here-is-the-fix/)
+fix…"]({filename}/2006/you-installed-amarok-from-my-rpms-and-you-cant-play-some-files-here-is-the-fix.md)
 post.

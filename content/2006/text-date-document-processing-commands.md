@@ -36,13 +36,13 @@ tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl,
   ```shell-session
   $ sed -i "s/unreleased/`date +'%Y-%m-%d'`/" ./changelog.md
   ```
-  
+
 - Update the release date in `citation.cff` file:
 
   ```shell-session
   $ perl -pi -e "s/date-released: \d+-\d+-\d+/date-released: $(date +'%Y-%m-%d')/" ./citation.cff
   ```
-  
+
 - Replace all occurrences of `str1` by `str2` in all files below the `/folder` path:
 
   ```shell-session
@@ -272,4 +272,4 @@ tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl,
 
 - [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/awk-introduction.html)
 - A list of [`sed` one-liners](http://sed.sourceforge.net/sed1line.txt).
-- [PDF commands](https://kevin.deldycke.com/2006/12/pdf-commands/)
+- [PDF commands]({filename}/2006/pdf-commands.md)

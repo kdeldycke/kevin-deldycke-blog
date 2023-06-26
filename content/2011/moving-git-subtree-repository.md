@@ -5,7 +5,7 @@ category: English
 tags: code, Git, GitHub, Regular expression
 ---
 
-Coming from Subversion (and with [Plone collective repository](https://dev.plone.org/collective/browser) structure in mind), I've [recently moved all my tiny software projects](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/) in a big standalone Git repository (named `kev-code`). Now that I figured out that GitHub allows you to create unlimited amount of repositories, as long as they are open-source public projects, it make sense to emancipate some of my projects to their own repository. How do I move a sub-tree to its own repository? That's what I talk about in this article.
+Coming from Subversion (and with [Plone collective repository](https://dev.plone.org/collective/browser) structure in mind), I've [recently moved all my tiny software projects]({filename}/2010/git-commit-history-reconstruction.md) in a big standalone Git repository (named `kev-code`). Now that I figured out that GitHub allows you to create unlimited amount of repositories, as long as they are open-source public projects, it make sense to emancipate some of my projects to their own repository. How do I move a sub-tree to its own repository? That's what I talk about in this article.
 
 First, there is an automated way of performing this task with [git-subtree](https://github.com/apenwarr/git-subtree). You should try it first. For some reasons I didn't investigate, git-subtree didn't worked for me. So I'll explain now how I did it by hand.
 
@@ -42,7 +42,7 @@ This looks pretty good, as all the history of my plugin is kept in order. But ta
     $ git tag -d coolkevmen-0.3 cool-blue-0.1 sapphire-0.1 sapphire-0.2 sapphire-0.3 sapphire-0.4
     ```
 
-Now there is some commits polluting my history. These are left-overs of `git-modules` additions. I [tried to removed them](https://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule/1260982#1260982), but it didn't worked. Also left in the history are unwanted merges and empty commits [from an old CVS import](https://kevin.deldycke.com/2010/02/how-to-fork-cvs-project-git/). To clean this up, I started an interactive rebase:
+Now there is some commits polluting my history. These are left-overs of `git-modules` additions. I [tried to removed them](https://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule/1260982#1260982), but it didn't worked. Also left in the history are unwanted merges and empty commits [from an old CVS import]({filename}/2010/how-to-fork-cvs-project-git.md). To clean this up, I started an interactive rebase:
 
     ```shell-session
     $ git rebase --interactive init
@@ -105,7 +105,7 @@ Then, I've altered some commit messages to fix inconsistencies due to sub-folder
     $ git filter-branch --msg-filter 'sed "s/Move the script to a dedicated folder/Rename script/g"' -- --all
     ```
 
-Finally, at the bottom of the history, I still have my initial commit (a personal habit of mine when I [initialize my Git repositories](https://kevin.deldycke.com/2010/05/initialize-git-repositories/)). But its date was updated by the first `filter-branch` call. Let's set its date back to epoch:
+Finally, at the bottom of the history, I still have my initial commit (a personal habit of mine when I [initialize my Git repositories]({filename}/2010/initialize-git-repositories.md)). But its date was updated by the first `filter-branch` call. Let's set its date back to epoch:
 
     ```shell-session
     $ git filter-branch --force --env-filter \

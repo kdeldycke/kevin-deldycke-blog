@@ -5,7 +5,7 @@ tags: GitHub, Python, Apple, macOS, Linux, Windows, BitBar, Homebrew, Cask, node
 ---
 
 Last time I [mentioned
-](https://kevin.deldycke.com/2016/07/bitbar-package-manager-v13/) my *Package
+]({filename}/2016/bitbar-package-manager-v13.md) my *Package
 Manager Plugin*, it was a simple [standalone Python script for BitBar
 ](https://getbitbar.com/plugins/Dev/MetaPackageManager/meta_package_manager.7h.py).
 

@@ -25,17 +25,17 @@ web presence to support our activities. There's no longer any need of all of
 these.
 
 So I closed the [Drupal
-shop](https://kevin.deldycke.com/2011/03/chose-ubercart-magento-oscommerce/)
+shop]({filename}/2011/chose-ubercart-magento-oscommerce.md)
 and [moved it to
 Bandcamp](https://coolcavemen.com/2012/05/27/cool-cavemen-bandcamp-baisse-prix/).
 I merged [ZenPhoto galleries into
-WordPress](https://kevin.deldycke.com/2012/09/zenphoto-wordpress-migration/).
+WordPress]({filename}/2012/zenphoto-wordpress-migration.md).
 All WordPress sites I hosted [moved to
 wordpress.com](https://en.support.wordpress.com/moving-a-blog/#moving-from-wordpress-org).
 bbPress forums were closed: I [archived private forums to
-emails](https://kevin.deldycke.com/2012/10/converting-bbpress-forum-mailbox-archive/),
+emails]({filename}/2012/converting-bbpress-forum-mailbox-archive.md),
 and [public ones to plain WordPress
-content](https://kevin.deldycke.com/2012/10/transfer-bbpress-to-plain-wordpress/).
+content]({filename}/2012/transfer-bbpress-to-plain-wordpress.md).
 As for Mailman mailing-lists, they were archived and the ones remaining active
 moved to Google Groups.
 
@@ -46,9 +46,9 @@ remained: this blog.
 The next evolution of this site couldn't be anything but a bunch of statically
 generated pages. First, static websites are cool. They're also fast and cheap.
 And they don't requires a [full nginx/PHP/MySQL
-stack](https://kevin.deldycke.com/2011/06/nginx-php-fpm-mysql-debian-squeeze-server/)
+stack]({filename}/2011/nginx-php-fpm-mysql-debian-squeeze-server.md)
 to be managed, upgraded and
-[monitored](https://kevin.deldycke.com/2011/06/munin-monitor-debian-squeeze-server/).
+[monitored]({filename}/2011/munin-monitor-debian-squeeze-server.md).
 
 I started my quest for a tool:
 
@@ -108,7 +108,7 @@ The next important step is to migrate our content. We can't import the XML file
 WordPress produces as is. We need to massage some data first.
 
 During my [Disqus
-migration](https://kevin.deldycke.com/2013/01/wordpress-disqus-migration/), I
+migration]({filename}/2013/wordpress-disqus-migration.md), I
 had to update the markup of the code blocks. Same thing apply here. I need to
 replace occurrences of:
 
