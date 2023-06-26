@@ -25,7 +25,7 @@ Here is a collection of commands lines, code and configuration snippets I collec
 - [GPG & OpenSSL]({filename}/2011/gpg-openssl-commands.md)
 - [i18n / l10n]({filename}/2006/i18n-l10n-commands.md)
 - [MySQL]({filename}/2010/mysql-commands.md)
-- [PostgreSQL](https://kevin.deldycke.com/2011/10/postgresql-commands)
+- [PostgreSQL]({filename}/2011/postgresql-commands.md)
 - [Git]({filename}/2010/git-commands.md)
 - [Mercurial]({filename}/2010/mercurial-commands.md)
 - [Subversion]({filename}/2010/subversion-commands.md)
