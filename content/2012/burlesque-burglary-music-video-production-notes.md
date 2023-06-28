@@ -48,6 +48,8 @@ separately for the duration of the entire song. I didn't let one guy alone on
 his dedicated take, and placed another one in the background to keep the "band
 mentality".
 
+![]({attach}burlesque-burglary-multicam-preview.jpg)
+
 I finally shot several times the whole band.
 
 You can see all the synchronized takes I described above at once in the

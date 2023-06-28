@@ -14,3 +14,7 @@ The 1.4 will be the last version. Unless you send me code contribution, you'll n
 The reason behind this decision is simple and straightforward: I've recently migrated my last e107 website to WordPress. Now that e107 is no longer part of my life, I have no interest in spending time and energy working on this plugin.
 
 So if you plan to get rid of your e107 sites in favor of WordPress, do the migration now, as the plugin will self-deteriorate as WordPress API gets updated.
+
+Finally, while cleaning up my home folder, I stumble upon this old screenshot of [dash](https://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/comment-page-1/#comment-3300)'s old e107 site. This is what its maintenance page looked like the day she initiated the transition to WordPress using my script:
+
+![]({attach}film-fanatix-com-maintenance-page.png)

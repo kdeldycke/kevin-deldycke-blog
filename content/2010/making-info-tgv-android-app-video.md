@@ -7,7 +7,7 @@ tags: Android, Canon EOS 7D, ffmpeg, HTC, Kdenlive, Kubuntu, Ubuntu, Linux, Twit
 
 Last week I was called by one of my co-worker from [Uperto](https://www.uperto.com) (the open-source division of [Devoteam](https://devoteam.com)). He knew I worked on some [video projects for my band](https://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great oportunity to play with my [Canon EOS 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20), so I accepted! :)
 
-
+![]({attach}info-tgv-android-app-preview.jpg)
 
 The goal of the video was to show off an [Android application we made](https://pro.01net.com/editorial/519142/concours-d-application-smartphone-sncf-les-candidats-sur-les-starting-blocks/), for a [contest organized by SNCF](https://www.01net.com/statiquesv6/sncf/pres.html) (the [french national railroad](https://en.wikipedia.org/wiki/Sncf)). The application, that we simply named _Info TGV_, is designed to centralize informations for on-board staff. This application will give train personnel better insights when delays or other kind of traffic perturbations arise.
 

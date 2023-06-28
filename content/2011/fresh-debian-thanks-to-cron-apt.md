@@ -5,7 +5,7 @@ category: English
 tags: apt, aptitude, cron, cron-apt, Debian, Linux, sed, Regular expression
 ---
 
-As I [mentioned in an old comment](https://kevin.deldycke.com/2008/dpkg-apt-aptitude-commands#comment-769311499), I use `cron-apt` to keep my Debian servers fresh.
+As I [mentioned in an old comment](https://kevin.deldycke.com/2008/12/dpkg-apt-aptitude-commands/comment-page-1/#comment-4726), I use `cron-apt` to keep my Debian servers fresh.
 
 This post is just a quick reminder to my future self, about how I setup `cron-apt` on my machines.
 

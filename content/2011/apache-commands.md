@@ -5,13 +5,19 @@ category: English
 tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
 ---
 
+- Redirects local `/static/repository` folder to external URL:
+
+    ```apache
+    Redirect permanent /static/repository https://kevin.deldycke.free.fr/repository
+    ```
+
 - Hide Subversion and Git directories content ([source](https://news.ycombinator.com/item?id=839016)):
 
   ```apache
   RedirectMatch 404 /\.(svn|git)(/|$)
   ```
 
-- Disable rendering of PHP files coming from imported third party Javascript submodules ([context](https://github.com/kdeldycke/cool-cavemen-k2-theme/blob/master/.htaccess)):
+- Disable serving of PHP files coming from imported third party Javascript submodules ([context](https://github.com/kdeldycke/cool-cavemen-k2-theme/blob/master/.htaccess)):
 
   ```apache
   RedirectMatch 404 js-(.*)\.php$
@@ -23,6 +29,18 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
   RewriteEngine on
   RewriteRule !^/2010/ /2010/ [R=301,L]
   ```
+
+- Force Apache to serve Python files as-is instead of being interpreted as CGI scripts:
+
+    ```apache
+    RemoveHandler .py
+    ```
+
+- Same as above, but for PHP files:
+
+    ```apache
+    AddType text/plain .php
+    ```
 
 - Here is my template for domain-based virtual host routing:
 

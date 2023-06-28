@@ -26,7 +26,6 @@
 # Old Pelican content
 ################################################################################
 # Fix year of some attached content.
-/2006/e107-to-wordpress-v05.png                 /2007/e107-to-wordpress-v05.png                 301
 /2008/film-fanatix-com-maintenance-page.png     /2011/film-fanatix-com-maintenance-page.png     301
 /2008/pict4818.jpg                              /2006/pict4818.jpg                              301
 /2008/pict4822.jpg                              /2006/pict4822.jpg                              301
@@ -50,7 +49,6 @@
 /documents/kaleidoscope-001.qtz                                 /2010/kaleidoscope-001.qtz                                  301
 /documents/kaleidoscope-002.qtz                                 /2010/kaleidoscope-002.qtz                                  301
 /documents/midi-controlled-playground.qtz                       /2010/midi-controlled-playground.qtz                        301
-/documents/optical-illusion-circles-in-motion.svgz              /2010/optical-illusion-circles-in-motion.svgz               301
 /documents/putty-template.reg                                   /2010/putty-template.reg                                    301
 /documents/sharp-scan-lines.qtz                                 /2010/sharp-scan-lines.qtz                                  301
 /documents/snow.qtz                                             /2010/snow.qtz                                              301

@@ -5,6 +5,8 @@ category: English
 tags: Animation, Apple, berhinger, MacBook, MIDI, Quartz Composer, USB, Visual
 ---
 
+![]({attach}midi-controller-preview.jpg)
+
 To end my [series of experimentations with Quartz
 Composer]({tag}quartz-composer) that I [started 2 months
 ago]({filename}/2010/export-quartz-composer-video.md), here is

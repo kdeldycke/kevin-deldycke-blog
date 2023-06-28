@@ -35,6 +35,8 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
   $ shred --verbose --force --iterations=3 --zero /dev/hda
   ```
 
+## Partitions
+
 - Remove the MBR:
 
   ```shell-session
@@ -70,6 +72,13 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
   ```shell-session
   $ sudo ntfs-3g /dev/disk4s2 ./usb-hdd -o local -o allow_other -o auto_xattr -o auto_cache
   ```
+
+- Extract the content of an [Apple Disk Image](https://en.wikipedia.org/wiki/Apple_Disk_Image) `.dmg` file and access its content:
+
+    ```shell-session
+    $ dmg2img ./my-package.dmg
+    $ mount -t hfsplus -o loop ./my-package.img /media/my-mount-point
+    ```
 
 ## Keyboard
 

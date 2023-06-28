@@ -5,6 +5,8 @@ category: English
 tags: Music, Video, Kdenlive, slowmoVideo, Omashay, AWS, Amazon, cloud computing, EC2, ImageMagick, Twixtor, Ubuntu, Kubuntu
 ---
 
+![]({attach}goodnight-preview.jpg)
+
 A new video has been released by [Omashay](https://omashay.com). Here is Goodnight, on which I did the slow-motion:
 
 https://www.youtube.com/watch?v=bAKmRTV7Lek

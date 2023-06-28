@@ -9,6 +9,8 @@ After my post announcing the [release of the official music video]({filename}/20
 
 Today I'm happy to write the last post about the Burlesque Burglary video project, which is all about fun: let me present you the much awaited "Behind The Scenes" video.
 
+![]({attach}burlesque-burglary-making-of-preview.jpg)
+
 As usual with Cool Cavemen, and to our delight, it boils down to a mountain of crazy ideas and a jumble of absurd conversations. Judge for yourself:
 
 https://www.youtube.com/watch?v=yNCtfnQp1uw

@@ -19,6 +19,8 @@ stabilization device. I may have use my
 [LCD ViewFinder](https://amzn.com/B003A2BU5E/?tag=kevideld-20) but I have no
 clear memory of this. Shutter speed was 1/50 and ISO set to auto.
 
+![]({attach}happy-farm-leduc.jpg)
+
 I'm shooting video with my 7D for 7 months now and I think that's the first time
 one of my shot is made public. That's quite depressing as I still have tons of
 raw video to edit for several projects, but can't go ahead because of a

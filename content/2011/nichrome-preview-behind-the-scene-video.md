@@ -5,6 +5,8 @@ category: English
 tags: Canon EOS 7D, Cool Cavemen, Gimp, Kdenlive, Kubuntu, Ubuntu, Linux, nichrome, outtakes, tokina, EXIF
 ---
 
+![]({attach}nichrome-preview.jpg)
+
 Two months ago (October 8th) I shot a video for
 [Cool Cavemen](https://coolcavemen.com). I haven't talked about it on this blog
 yet, let's fix this right now:
@@ -62,6 +64,8 @@ Finally, I created the title cards in Gimp and edited the video in Kdenlive
 (on Kubuntu 11.04):
 
 ![]({attach}nichrome-preview-kdenlive-timeline.png)
+
+![]({attach}nichrome-outtakes.jpg)
 
 And two weeks after releasing Nichrome's preview video, I edited another one
 with all left-overs. Here are the outtakes (which may not be as funny to you as

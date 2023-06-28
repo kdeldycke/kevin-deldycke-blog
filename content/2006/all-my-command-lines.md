@@ -5,6 +5,8 @@ Category: Front Page
 tags: CLI, Linux, macOS
 ---
 
+![]({attach}command-lines.jpg)
+
 Here is a collection of commands lines, code and configuration snippets I collected for several years while working as an Open-Source Software Engineer:
 
 - [Files Management]({filename}/2006/file-management-commands.md)
@@ -12,7 +14,6 @@ Here is a collection of commands lines, code and configuration snippets I collec
 - [System & Shell]({filename}/2010/system-and-shell-commands.md)
 - [Network]({filename}/2011/network-commands.md)
 - [Hardware]({filename}/2006/hardware-commands.md)
-- [CD Burning]({filename}/2006/cd-burning-commands.md)
 - [Apache]({filename}/2011/apache-commands.md)
 - [Web]({filename}/2010/web-commands.md)
 - [Video]({filename}/2006/video-commands.md)
@@ -27,10 +28,6 @@ Here is a collection of commands lines, code and configuration snippets I collec
 - [MySQL]({filename}/2010/mysql-commands.md)
 - [PostgreSQL]({filename}/2011/postgresql-commands.md)
 - [Git]({filename}/2010/git-commands.md)
-- [Mercurial]({filename}/2010/mercurial-commands.md)
-- [Subversion]({filename}/2010/subversion-commands.md)
-- [Bazaar]({filename}/2011/bazaar-commands.md)
-- [CVS]({filename}/2006/cvs-commands.md)
 - [VirtualBox]({filename}/2012/virtualbox-commands.md)
 - [Qemu]({filename}/2005/qemu-commands.md)
 - [libvirt]({filename}/2013/libvirt-commands.md)
@@ -38,13 +35,16 @@ Here is a collection of commands lines, code and configuration snippets I collec
 - [Python]({filename}/2011/python-commands.md)
 - [Pandas]({filename}/2015/pandas-snippets.md)
 - [JavaScript]({filename}/2012/javascript-commands.md)
-- [WordPress]({filename}/2011/wordpress-commands.md)
 - [macOS]({filename}/2019/macos-commands.md)
 - [AWS]({filename}/2020/aws-commands.md)
 - [Cloudflare]({filename}/2022/cloudflare-commands.md)
 
-For the context, you can read this [introduction]({filename}/2006/useful-commands-introduction.md).
-
-Deprecated or unmaintained commands:
+Deprecated and unmaintained commands:
 
 - [transcode]({filename}/2006/transcode-commands.md)
+- [CD Burning]({filename}/2006/cd-burning-commands.md)
+- [Mercurial]({filename}/2010/mercurial-commands.md)
+- [Subversion]({filename}/2010/subversion-commands.md)
+- [Bazaar]({filename}/2011/bazaar-commands.md)
+- [CVS]({filename}/2006/cvs-commands.md)
+- [WordPress]({filename}/2011/wordpress-commands.md)

@@ -38,6 +38,12 @@ I recommend to use [FFmpeg]({filename}/2006/video-commands.md) instead.
   $ transcode -i . -y ffmpeg -F list
   ```
 
+- Extract all frames of a video and save them as `.jpg`:
+
+  ```shell-session
+  $ transcode -i video.avi -y im
+  ```
+
 - Batch stabilization script:
 
   ```bash

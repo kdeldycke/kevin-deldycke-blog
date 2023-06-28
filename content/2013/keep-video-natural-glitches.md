@@ -7,6 +7,8 @@ tags: Kdenlive, mplayer, avconv, libav, ffmpeg, video, YouTube, audio
 
 In my ultimate attempt to recover the archives I lost some years ago in a RAID-5 crash, I managed to save some images and videos. But most files, if not all, were heavily corrupted.
 
+![]({attach}glitch-drummer-preview.jpg)
+
 Some of the natural glitches introduced were interesting. I decided to test some approach to save these natural glitches.
 
 Here is one video resulting of these experimentations:

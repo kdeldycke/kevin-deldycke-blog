@@ -5,6 +5,8 @@ category: English
 tags: Kdenlive, Linux, Omashay, timelapse, slow-motion, slowmoVideo, imagemagick, transcode, vid.stab, Blender
 ---
 
+![]({attach}tale-of-two-preview.jpg)
+
 This is the fourth video I've work on for [Omashay](https://omashay.com):
 
 https://www.youtube.com/watch?v=4HtfugU_mGg

@@ -5,6 +5,8 @@ category: English
 tags: 1080p, 720p, Cool Cavemen, Kdenlive, Linux, Music, music video, omashay, Video, youtube
 ---
 
+![]({attach}omashay-wish-you-looked-at-me-preview.png)
+
 Last month I edited the [Wish You Looked at Me video clip
 ](https://omashay.com/wish-you-looked-at-me-video-clip/) for the [Omashay
 project](https://omashay.com). This is a side-project of [Cool Cavemen's

@@ -5,6 +5,9 @@ category: English
 tags: 1080p, Canon EOS 7D, concert, Cool Cavemen, gig, Kdenlive, live, Music, point and shoot, sony, Tamron, Video, YouTube
 ---
 
+![]({attach}cool-cavemen-mjc-2011-preview.jpg)
+
+
 I've just finished editing the video summary of the [latest Cool Cavemen's concert](https://coolcavemen.com/2011/menu-de-samedi-a-douai/). It's now [available on YouTube](https://www.youtube.com/watch?v=RpFqhcihQbw):
 
 https://www.youtube.com/watch?v=RpFqhcihQbw
@@ -34,6 +37,8 @@ The video was edited with the latest version of Kdenlive and exported to a 1080p
 ![]({attach}kdenlive-project-screenshot.png)
 
 If you enjoyed the music and atmosphere of the video, I urge you to go to the [next Cool Cavemen's concert](https://coolcavemen.com/2012/concert-aux-gres-a-douai-le-samedi-7-avril/). And because I know the majority of my readership can't be in the north of France next month, let me remind you there's still a [one hour video of our biggest 2009 concert](https://www.youtube.com/watch?v=qE-bis-wYxs&list=PL4BAA557B7144031F&feature=plcp) available online (on which I did all the lighting).
+
+![]({attach}belgique-mon-namurrr-preview.jpg)
 
 And if you liked the first song, its called [Belgique mon Namurrr](https://coolcavemen.com/discography/songs-and-lyrics/belgique-mon-namurrr/) and you can watch the whole of it here (lyrics are in subtitles):
 

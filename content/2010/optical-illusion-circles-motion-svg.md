@@ -1,6 +1,6 @@
 ---
 date: "2010-04-14"
-title: "Optical illusion: circles in motion (SVG source included)"
+title: "Optical illusion: circles in motion"
 category: English
 tags: Creative Commons, inkscape, optical illusion, svg, visuals
 ---
@@ -11,4 +11,4 @@ Using a contrast trick it appears that [circles are in motions](https://en.wikip
 
 ![]({attach}optical-illusion-circles-in-motion-preview.png)
 
-And as the title say, you can [download my original SVG source file]({attach}optical-illusion-circles-in-motion.svgz) (released under a [Creative Commons BY-SA license](https://creativecommons.org/licenses/by-sa/3.0/)).
+Unfortunately I lost the original SVG source file (`optical-illusion-circles-in-motion.svgz`). But I was able to recover the original PNG file.

@@ -5,15 +5,17 @@ category: English
 tags: 1080p, Canon EOS 7D, Tamron, Trapped in Freedom, Video, youtube
 ---
 
-Some weeks ago I was at a local bar to see [Trapped in Freedom](https://www.myspace.com/trappedinfreedom). This band is composed of friends, and is also a side project involving [Jimy Wong](https://coolcavemen.com/biography/jimy-wong/) from [Cool Cavemen](https://coolcavemen.com), again as a drummer. This was a perfect excuse to test my brand new [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](https://amzn.com/B002LVUIXA/?tag=kevideld-20). 
+![]({attach}trapped-in-freedom-preview.jpg)
 
-
+Some weeks ago I was at a local bar to see [Trapped in Freedom](https://www.myspace.com/trappedinfreedom). This band is composed of friends, and is also a side project involving [Jimy Wong](https://coolcavemen.com/biography/jimy-wong/) from [Cool Cavemen](https://coolcavemen.com), again as a drummer. This was a perfect excuse to test my brand new [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](https://amzn.com/B002LVUIXA/?tag=kevideld-20).
 
 Some days after shooting I sent my raw footages to the band, which decided to publish a preview of their song "Chicken Fighter" on YouTube. Here is the video:
 
 https://www.youtube.com/watch?v=AZshlehRbPI
 
 They also released "Incoming" some days ago:
+
+![]({attach}incoming-preview.png)
 
 https://www.youtube.com/watch?v=HlSmuJVQT8A
 

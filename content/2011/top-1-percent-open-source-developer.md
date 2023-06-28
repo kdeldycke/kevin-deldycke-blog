@@ -5,7 +5,7 @@ category: English
 tags: development, Open Hub, open source, Software engineering
 ---
 
-With all the [recent]({filename}/2011/e107-importer-wordpress-plugin-v1-0-released.md) [active development]({filename}/2011/e107-importer-1-1.md) on my [e107 Importer WordPress plugin](https://wordpress.org/extend/plugins/e107-importer/), I increased my public code contributions. This had the nice side effect of bumping my [ranking on Ohloh](https://www.openhub.net/accounts/kevin) from #8 (bronze level) to #9 (silver level):
+With all the recent active development on my [e107 Importer WordPress plugin](https://wordpress.org/extend/plugins/e107-importer/), I increased my public code contributions. This had the nice side effect of bumping my [ranking on Ohloh](https://www.openhub.net/accounts/kevin) from #8 (bronze level) to #9 (silver level):
 
 ![]({attach}ohloh-rank-from-bronze-to-silver.png)
 

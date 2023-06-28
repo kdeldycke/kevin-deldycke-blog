@@ -55,6 +55,8 @@ https://www.youtube.com/watch?v=xtLz6jfSp-I
 
 And some extra photos of the shooting:
 
+![]({attach}where-is-she-making-of.jpg)
+
 ![]({attach}where-is-she-behind-the-scenes-001.jpg)
 
 ![]({attach}where-is-she-behind-the-scenes-003.jpg)
@@ -70,7 +72,6 @@ And some extra photos of the shooting:
 ![]({attach}where-is-she-behind-the-scenes-013.jpg)
 
 ![]({attach}where-is-she-behind-the-scenes-021.jpg)
-
 
 The [wedding entrance]({filename}/2012/wedding-entrance-paris-video-postcard.md) video was the first time I used my [Glidecam HD-2000](https://amzn.com/B0020LB0MO/?tag=kevideld-20). But *Where is she?* was the [first publicly released video]({filename}/2012/where-is-she-music-video-released.md) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
 
@@ -94,6 +95,8 @@ At that stage, I just helped him by creating the seamless split screens:
 
 
 ## Color correction
+
+![]({attach}where-is-she-color-grading-preview.jpg)
 
 As I said in [Kdenlive's forum](https://forum.kde.org/viewtopic.php?f=266&t=112313#p270103), the color correction was a first. I never worked on a project for which any serious color correction was done. Until *Where is she?*.
 

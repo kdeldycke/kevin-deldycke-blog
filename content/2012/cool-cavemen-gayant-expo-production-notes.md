@@ -12,6 +12,8 @@ a series about my longest video project: the
 [biggest concert](https://coolcavemen.com/2009/concert-a-gayant-expo-les-photos/)
 we performed with [Cool Cavemen](https://coolcavemen.com) in 2009.
 
+![]({attach}gayant-expo-live-preview.jpg)
+
 Cool Cavemen is
 [working right now on a new album](https://coolcavemen.com/2011/le-grand-retour/),
 which means we're approaching the end of the
