@@ -2,7 +2,7 @@
 date: "2005-04-04"
 title: "How-to empty CUPS spool"
 category: English
-tags: CUPS, Linux, printing, Script, Server, shell, cron
+tags: CUPS, Linux, printing, Server, shell, cron
 ---
 
 Here is a tiny helper script I call regularly by a `cron` job to flush the spool

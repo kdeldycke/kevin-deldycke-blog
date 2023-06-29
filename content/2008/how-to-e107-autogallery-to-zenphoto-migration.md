@@ -2,7 +2,7 @@
 date: "2008-08-22"
 title: "How-to: e107 autogallery to Zenphoto migration"
 category: English
-tags: autogallery, e107, Linux, migration, MySQL, SQL, Python, Script, Web, Zenphoto, Cool Cavemen
+tags: autogallery, e107, Linux, migration, MySQL, SQL, Python, Web, Zenphoto, Cool Cavemen
 ---
 
 These past few days I was working on the [Cool Cavemen's photo gallery](https://coolcavemen.com/photos) to move it to a shiny new one, powered by [Zenphoto](https://zenphoto.org). In this post I will roughly describe how I've done it, code and commands included.

@@ -40,7 +40,7 @@ distinction after so many pain trying to transform laws into code that I
 couldn't resist... :)
 
 The payroll modules were one of my biggest [contribution as a core developer on
-ERP5](https://www.openhub.net/p/erp5/contributors/18391049963153). It was
+ERP5](https://openhub.net/p/erp5/contributors/18393197445279). It was
 capable of [producing the
 paysheets](https://web.archive.org/web/20110128111823/https://www.erp5.org/workspaces/project/erp5_payroll/erp5_pay_sheet_for_n/view)
 of all Nexedi's employees. Here is an example:

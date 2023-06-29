@@ -238,8 +238,6 @@ SOCIAL = (
     ("Twitter", "https://twitter.com/kdeldycke"),
     ("GitHub", "https://github.com/kdeldycke"),
     ("Hacker News", "https://news.ycombinator.com/user?id=kdeldycke"),
-    ("Open Hub", "https://www.openhub.net/accounts/kevin"),
-    ("YouTube", "https://www.youtube.com/channel/UCW0k7La7M8q-_yp3RYfNhFw/"),
 )
 
 LINKS_WIDGET_NAME = "Professional profiles"

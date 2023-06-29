@@ -2,7 +2,7 @@
 date: "2010-09-02"
 title: "Convert Lotus Notes' nsf files to mbox with nlconverter"
 category: English
-tags: CLI, email, GUI, Lotus Notes, iCal, mbox, nlconverter, Python, Script, Windows, Windows 2000, Mercurial
+tags: CLI, email, GUI, Lotus Notes, iCal, mbox, nlconverter, Python, Windows, Windows 2000, Mercurial
 ---
 
 There is a great piece of software called [nlconverter](https://code.google.com/p/nlconverter/). It's a tool designed to convert Lotus Notes' `.nsf` files to `mbox`. It rely on win32's COM/DDE API so it can only be used on Windows.

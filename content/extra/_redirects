@@ -83,6 +83,7 @@
 /mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
 /static/repository          https://github.com/kdeldycke/mandriva-specs
 /static/repository/*        https://github.com/kdeldycke/mandriva-specs
+/video/                     https://www.youtube.com/channel/UCW0k7La7M8q-_yp3RYfNhFw/
 
 # Site-wide comments feeds moved to Disqus.
 /comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss

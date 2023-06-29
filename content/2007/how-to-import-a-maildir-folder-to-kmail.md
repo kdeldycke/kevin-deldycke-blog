@@ -2,7 +2,7 @@
 date: "2007-11-27"
 title: "How-to import a Maildir++ folder to Kmail"
 category: English
-tags: Backup, KDE, kmail, Linux, email, mailbox, maildir, Python, Script
+tags: Backup, KDE, kmail, Linux, email, mailbox, maildir, Python
 ---
 
 Let's say you have a local copy of a mail folder you want to browse with [Kmail](https://kontact.kde.org/kmail). This folder is normally found on a dedicated mail server and you access it through the IMAP protocol. I was in this situation some days ago and I will tell you how I've done it.
