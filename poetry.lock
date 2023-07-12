@@ -746,20 +746,20 @@ markdown = ["markdown (>=3.2)"]
 
 [[package]]
 name = "pelican-sitemap"
-version = "1.0.2"
+version = "1.0.3"
 description = "Pelican plugin to generate sitemap in plain-text or XML format"
 optional = false
-python-versions = ">=3.6,<4.0"
+python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "pelican-sitemap-1.0.2.tar.gz", hash = "sha256:464052dbbf3daa7183c531c486e3db872f8f74b5fcc7aa25743b7c9aefbb359a"},
-    {file = "pelican_sitemap-1.0.2-py3-none-any.whl", hash = "sha256:ec930ee8182d4b905a4e5732d0b87ad84ee62ee1830b42d1b1f82bcac8e12f2b"},
+    {file = "pelican_sitemap-1.0.3-py3-none-any.whl", hash = "sha256:665a19a17e0c8a72a77c6e48749852e2abbf95c63951688ecc1daf9ce8ac0826"},
+    {file = "pelican_sitemap-1.0.3.tar.gz", hash = "sha256:80b8f112228ff321407909f5a2a2ff3073865f58048e6287c7010f2b342f8599"},
 ]
 
 [package.dependencies]
-pelican = ">=4.5,<5.0"
+pelican = ">=4.5"
 
 [package.extras]
-markdown = ["markdown (>=3.2.2,<4.0.0)"]
+markdown = ["markdown (>=3.2)"]
 
 [[package]]
 name = "pelican-webassets"
@@ -1387,4 +1387,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "a08d3ff728b0d65e1ba9201db6a9e2ea06a3ce9cee0d8f7f2a0b02dfe36cce47"
+content-hash = "0644ab1bb4f7e7bde22fccd38e26f89be85ee84ff72c559f72c7e6576796d1a6"
