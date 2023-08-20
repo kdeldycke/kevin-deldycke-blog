@@ -36,7 +36,13 @@ tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl,
   ```shell-session
   $ sed -i "s/unreleased/`date +'%Y-%m-%d'`/" ./changelog.md
   ```
+  
+- Update the release date in `citation.cff` file:
 
+  ```shell-session
+  $ perl -pi -e "s/date-released: \d+-\d+-\d+/date-released: $(date +'%Y-%m-%d')/" ./citation.cff
+  ```
+  
 - Replace all occurrences of `str1` by `str2` in all files below the `/folder` path:
 
   ```shell-session
