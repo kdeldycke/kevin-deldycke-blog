@@ -270,5 +270,6 @@ tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl,
 
 ## Additional References
 
+- [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/awk-introduction.html)
 - A list of [`sed` one-liners](http://sed.sourceforge.net/sed1line.txt).
 - [PDF commands](https://kevin.deldycke.com/2006/12/pdf-commands/)
