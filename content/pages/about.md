@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: About
 ---
 
 My name is **Kevin Deldycke**, I'm a high-tech Engineering Manager.
@@ -19,24 +19,24 @@ The most relevant experience was in [growing a team from 0 to 12](https://devtom
 ## Achievements
 
 - 💰 Designed, implemented and operated [Scaleway's billing
-pipeline](https://web.archive.org/web/20190315172559/https://scaleway.com/faq/billing/), generating
-multi-million dollars of revenue (and growing!). The whole
-thing. All by myself.
+  pipeline](https://web.archive.org/web/20190315172559/https://scaleway.com/faq/billing/), generating
+  multi-million dollars of revenue (and growing!). The whole
+  thing. All by myself.
 
 - 🚀 Then I built a team of 12 people to enhance and expand on the full Billing, Payment and IAM domain of the company. In doing so, I was given the fancy title of Product Manager, then VP.
 
 - 🤝 Established lasting trust and loyalty. No one from my team resigned under my authority, in a company with a very high employee turnover rate.
 
 - 🥇 [World trending GitHub
-developer](https://kevin.deldycke.com/2017/04/github-top-developer/), and [top-1% open-source
-developer](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
+  developer](https://kevin.deldycke.com/2017/04/github-top-developer/), and [top-1% open-source
+  developer](https://kevin.deldycke.com/2011/03/top-1-percent-open-source-developer/).
 
 - 🌟 21,000+ GitHub stars collected on my repositories. The most popular being the one about [Falsehoods Programmers Believe
-in](https://github.com/kdeldycke/awesome-falsehood). It is regularly [featured in popular media](https://github.com/kdeldycke/awesome-falsehood/blob/main/assets/in-the-media.md).
+  in](https://github.com/kdeldycke/awesome-falsehood). It is regularly [featured in popular media](https://github.com/kdeldycke/awesome-falsehood/blob/main/assets/in-the-media.md).
 
 - 💵 Wrote the [best open-source
-payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
-software of the world.
+  payroll](https://kevin.deldycke.com/2008/06/best-open-source-payroll-software/)
+  software of the world.
 
 - 🌐 Created and managed the African subsidiary of my first employer.
 
@@ -51,22 +51,20 @@ software of the world.
 - 🧘‍♂️ [Bien-être au travail](https://putaindecode.io/podcasts/s01e09-dotjs-react-native-bien-etre-au-travail) (Putain de code, S01E09, 2018) - I was invited in this French podcast to discuss well-being at work. Sounds dull, but it was a great oportunity for the hosts to share their personal anecdotes and stories on the job, and for me to comment on my first few months as a rookie manager.
 
 - 🤿 [Take a Plunge Into One of the World's Deepest Indoor Swimming Pool](https://venuereport.com/blog/take-a-plunge-into-one-of-the-world-s-deepest-indoor-swimming-pool/) (The Venue
-Report, 2017) - A quick recap on how I entered the world of scuba diving, following by my experience at *Nemo 33*.
+  Report, 2017) - A quick recap on how I entered the world of scuba diving, following by my experience at *Nemo 33*.
 
 - 🤘 [Paroles d’Artistes: Cool Cavemen](https://web.archive.org/web/20100715003245/https://www.oxyradio.net/podcast-121.html) (OxyRadio, 2009) - On this French webradio, I explained how and why I came to advise the Cool Cavemen band to release all their music under a Creative Commons license.
-
 
 ## Resume
 
 Everything is [on LinkedIn](https://www.linkedin.com/in/kevindeldycke/).
 
-
 ## Conferences
 
-* [*OpenERP for IT Service companies*](https://www.slideshare.net/openobject/openerp-openerp-for-it-service-companies-smile) - OpenERP Partner Days, 2012, Belgium.
-* *ERP5 business template and express wizard technology demonstration* - [EMPOSME](https://cordis.europa.eu/project/id/18071) (Enterprise Modelling and Performance Optimisation for SMEs), 2006, Ireland.
-* *ERP5 Design and Architecture* - [COFENIS 2006](https://web.archive.org/web/20130730225618/http://www.confenis.org/confenis2006/www.confenis.org/index6ea96ea9.html?q=photos&PHPSESSID=a6c772ef8dfbd7d71854f1cc9da4a1e6) - [IFIP](http://en.wikipedia.org/wiki/IFIP) international Conference on Research and Practical Issues of Enterprise Information Systems, 2006, Vienna, Austria.
-* [*Develop your own ERP with ERP5 Business Templates*](https://web.archive.org/web/20050924101245/https://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39) - [Solution Linux / Paris Open Source Summit](http://www.solutionslinux.fr), 2005, France.
+- [*OpenERP for IT Service companies*](https://www.slideshare.net/openobject/openerp-openerp-for-it-service-companies-smile) - OpenERP Partner Days, 2012, Belgium.
+- *ERP5 business template and express wizard technology demonstration* - [EMPOSME](https://cordis.europa.eu/project/id/18071) (Enterprise Modelling and Performance Optimisation for SMEs), 2006, Ireland.
+- *ERP5 Design and Architecture* - [COFENIS 2006](https://web.archive.org/web/20130730225618/http://www.confenis.org/confenis2006/www.confenis.org/index6ea96ea9.html?q=photos&PHPSESSID=a6c772ef8dfbd7d71854f1cc9da4a1e6) - [IFIP](http://en.wikipedia.org/wiki/IFIP) international Conference on Research and Practical Issues of Enterprise Information Systems, 2006, Vienna, Austria.
+- [*Develop your own ERP with ERP5 Business Templates*](https://web.archive.org/web/20050924101245/https://www.erp5.org/sections/documentation/articles/erp5_developer_tutor3829/downloadFile/file/Tutorial-Kevin-en.pdf?nocache=1114902907.39) - [Solution Linux / Paris Open Source Summit](http://www.solutionslinux.fr), 2005, France.
 
 ## About this site
 
@@ -74,7 +72,7 @@ Everything is [on LinkedIn](https://www.linkedin.com/in/kevindeldycke/).
 find mistakes. So if you do, please be kind to comment on the blog (or
 better, [send a
 pull-request](https://github.com/kdeldycke/kevin-deldycke-blog/pulls)) so I can
-quickly fix errors. 🇫🇷 I sometimes write [in French]({category}francais).
+quickly fix errors. 🇫🇷 I sometimes write [in French](%7Bcategory%7Dfrancais).
 
 🎸 This blog was previously titled *coolkevmen*. Which is the nickname given to me by friends from the [Cool Cavemen](https://coolcavemen.com) band, in the credits of [All Cool
 Hits](https://coolcavemen.com/disc/all-cool-hits/) album.

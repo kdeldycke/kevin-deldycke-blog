@@ -1,6 +1,6 @@
 ---
-date: "2012-09-04"
-title: "mail_ingestor.py : Ingest Raw Text Files and Produce a Mailbox"
+date: '2012-09-04'
+title: 'mail_ingestor.py : Ingest Raw Text Files and Produce a Mailbox'
 category: English
 tags: archive, Backup, email, import email, mailbox, Python, Web
 ---
@@ -13,43 +13,43 @@ Nothing is left of my first steps on the web, but an archive of mails I sent and
 
 The archive contained all my mails in plain-text and was organized like this:
 
-  * friend-1
+- friend-1
 
-      * in
+  - in
 
-          * mail-1.txt
+    - mail-1.txt
 
-          * mail-2.txt
+    - mail-2.txt
 
-          * attachement-1.jpg
+    - attachement-1.jpg
 
-          * attachement-2.pdf
+    - attachement-2.pdf
 
-          * ...
+    - ...
 
-      * out
+  - out
 
-          * mail-10.txt
+    - mail-10.txt
 
-          * mail-11.txt
+    - mail-11.txt
 
-          * attachement-10.jpg
+    - attachement-10.jpg
 
-          * attachement-11.pdf
+    - attachement-11.pdf
 
-          * ...
+    - ...
 
-  * friend-2
+- friend-2
 
-      * in
+  - in
 
-          * ...
+    - ...
 
-      * out
+  - out
 
-          * ...
+    - ...
 
-  * ...
+- ...
 
 Now I want to consolidate all these mails to my Gmail account. But the plain-text files were in an inconsistent state, some with headers, some without, and others had headers translated in French...
 

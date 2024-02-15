@@ -1,6 +1,6 @@
 ---
-date: "2011-05-09"
-title: "e107 Importer v1.3 released"
+date: '2011-05-09'
+title: e107 Importer v1.3 released
 category: English
 tags: Cool Cavemen, e107, importer, migration, PHP, Web, WordPress
 ---
@@ -17,21 +17,20 @@ Before that happen, I will of course release one or two revisions of this plugin
 
 That being said, here is the changelog of the brand new e107 Importer 1.3:
 
-  * Upgrade embedded e107 code with latest [0.7.25](https://e107.org/news.php?item.880).
+- Upgrade embedded e107 code with latest [0.7.25](https://e107.org/news.php?item.880).
 
-  * Redirect imported images to attachments.
+- Redirect imported images to attachments.
 
-  * Purge invalid mapping entries on import.
+- Purge invalid mapping entries on import.
 
-  * Replace old e107 URLs in content by new WordPress permalinks.
+- Replace old e107 URLs in content by new WordPress permalinks.
 
-  * Allow both imported and already-existing content to by updated with new permalinks.
+- Allow both imported and already-existing content to by updated with new permalinks.
 
-  * Let user specify the list of e107 forums to import.
+- Let user specify the list of e107 forums to import.
 
-  * Phased imports should work without major problems.
+- Phased imports should work without major problems.
 
 Finally, while cleaning up my home folder, I stumble upon this old screenshot of [dash](https://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/comment-page-1/#comment-3300)'s old e107 site. This is what its maintenance page looked like the day she initiated the transition to WordPress using my script:
 
 ![](/uploads/2008/film-fanatix-com-maintenance-page.png)
-

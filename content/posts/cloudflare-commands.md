@@ -1,6 +1,6 @@
 ---
-date: "2022-06-10"
-title: "CloudFlare commands"
+date: '2022-06-10'
+title: CloudFlare commands
 category: English
 tags: cloud, cloud computing, saas, iaas, paas, development, CLI, dns, cloudflare,
   API
@@ -51,6 +51,7 @@ tags: cloud, cloud computing, saas, iaas, paas, development, CLI, dns, cloudflar
 ## Redirects
 
 CloudFlare have several redirection options:
+
 - [Pages redirects](https://developers.cloudflare.com/pages/platform/redirects/): for static sites hosted on CloudFlare, via a `_redirects` file.
 - [Page Rules](https://support.cloudflare.com/hc/en-us/articles/200172286-Configuring-URL-forwarding-or-redirects-with-Cloudflare-Page-Rules)
 

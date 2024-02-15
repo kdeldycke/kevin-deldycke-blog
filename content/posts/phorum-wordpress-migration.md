@@ -1,7 +1,8 @@
 ---
-date: "2013-08-08"
-title: "Phorum 3.x to WordPress migration script"
-tags: Python, Linux, Phorum, WordPress, migration, script, GitHub, Cool Cavemen, Funky Storm, Debian, aptitude, pip, lxml, bbcode, PyMySQL, MySQL, PHP
+date: '2013-08-08'
+title: Phorum 3.x to WordPress migration script
+tags: Python, Linux, Phorum, WordPress, migration, script, GitHub, Cool Cavemen, Funky
+  Storm, Debian, aptitude, pip, lxml, bbcode, PyMySQL, MySQL, PHP
 ---
 
 Before <a href="https://coolcavemen.com">Cool Cavemen</a>, there was <a href="https://funky-storm.com/">Funky Storm</a>. The band is long gone but I still keep an online presence as a sort of web memorial. Recently I added there an old copy of <a href="https://funky-storm.com/forum/">the forum</a>.
@@ -14,15 +15,17 @@ A Phorum thread produces an empty page with the thread's title only. All thread'
 
 The script requires the following python modules:
 
-  * `lxml`
-  * `PyMySQL`
-  * `bbcode`
+- `lxml`
+- `PyMySQL`
+- `bbcode`
 
 They can easely be installed on Debian with the following commands:
 
-    ```shell-session
-    $ aptitude install python-pip python-lxml
-    $ pip install PyMySQL bbcode
-    ```
+````
+```shell-session
+$ aptitude install python-pip python-lxml
+$ pip install PyMySQL bbcode
+```
+````
 
 The script is <a href="https://github.com/kdeldycke/scripts/blob/master/phorum-to-wordpress.py">available on GitHub</a> so feel free to send pull request! :)

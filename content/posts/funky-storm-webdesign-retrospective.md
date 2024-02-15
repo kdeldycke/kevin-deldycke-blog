@@ -1,6 +1,6 @@
 ---
-date: "2013-08-28"
-title: "Funky Storm WebDesign Retrospective"
+date: '2013-08-28'
+title: Funky Storm WebDesign Retrospective
 tags: Funky Storm, Web, wedesign, HTML, CSS
 ---
 

@@ -1,6 +1,6 @@
 ---
-date: "2013-03-20"
-title: "libvirt commands"
+date: '2013-03-20'
+title: libvirt commands
 category: English
 tags: CLI, Linux, libvirt, QEMU, virtual machine
 ---

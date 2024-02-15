@@ -1,8 +1,9 @@
 ---
-date: "2011-07-12"
-title: "Making of Omashay's *Wish You Looked at Me* music video"
+date: '2011-07-12'
+title: Making of Omashay's *Wish You Looked at Me* music video
 category: English
-tags: 1080p, 720p, Cool Cavemen, Kdenlive, Linux, Music, music video, omashay, Video, youtube
+tags: 1080p, 720p, Cool Cavemen, Kdenlive, Linux, Music, music video, omashay, Video,
+  youtube
 ---
 
 Last month I edited the [Wish You Looked at Me video clip
@@ -76,7 +77,7 @@ Of course split-screen is [far from new
 ](https://monsterkidclassichorrorforum.yuku.com/reply/304973/Oldest-Split-Screen-effect#reply-304973)
 and [was done](https://www.youtube.com/watch?v=vsMIuuV05uc) [a million times
 before
-](https://en.wikipedia.org/wiki/Split_screen_(video_production)#Notable_uses_of_split-screen).
+](<https://en.wikipedia.org/wiki/Split_screen_(video_production)#Notable_uses_of_split-screen>).
 But it's a simple yet effective concept that require absolutely no investment
 (apart time). This also gave me the opportunity to play again with Kdenlive and
 assess its user-friendliness and edit capabilities on a real project. But at

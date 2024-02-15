@@ -1,6 +1,6 @@
 ---
-date: "2007-02-28"
-title: "Repository Moved thanks to Apache and 301 Redirections"
+date: '2007-02-28'
+title: Repository Moved thanks to Apache and 301 Redirections
 category: English
 tags: Apache, Hosting, htaccess, ISP, Linux, Mandriva, RPM, urpmi
 ---
@@ -19,9 +19,11 @@ To do this smoothly, I've just set up a generic `301` redirection thanks to
 Apache. This is the only line I added to my root `.htaccess` file to enable
 this:
 
-    ```apache
-    Redirect permanent /static/repository https://kevin.deldycke.free.fr/repository
-    ```
+````
+```apache
+Redirect permanent /static/repository https://kevin.deldycke.free.fr/repository
+```
+````
 
 This move will normally be completely silent for you. So please, let me now if
 something bad happend while you play with my repository.

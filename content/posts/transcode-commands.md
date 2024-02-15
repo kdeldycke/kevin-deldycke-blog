@@ -1,13 +1,15 @@
 ---
 date: 2006-11-08
-title: "Transcode commands"
+title: Transcode commands
 category: English
-tags: Audio, CLI, Linux, subtitle, transcode, Video, avimerge, tcprobe, tccat, mp4, vid.stab, mkv, x264
+tags: Audio, CLI, Linux, subtitle, transcode, Video, avimerge, tcprobe, tccat, mp4,
+  vid.stab, mkv, x264
 ---
 
 ```{admonition} Unmaintained project
-:class: warning
-
+---
+class: warning
+---
 The [`transcode` CLI and its associated tools](https://web.archive.org/web/20200806075355/https://bitbucket.org/achurch_/transcode/wiki/Home) are no longer maintained.
 
 I recommend to use [FFmpeg](/2006/11/video-commands/) instead.

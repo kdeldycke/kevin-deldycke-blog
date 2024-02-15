@@ -1,6 +1,6 @@
 ---
-date: "2006-08-24"
-title: "e107 to Wordpress Migration: Here is Why."
+date: '2006-08-24'
+title: 'e107 to Wordpress Migration: Here is Why.'
 tags: akismet, Blog, CMS, e107, spam, Web, WordPress
 ---
 
@@ -10,24 +10,24 @@ Beside this, I run this blog, powered by [Wordpress](https://www.wordpress.org),
 
 Akismet was the main reason, but here are the 3 others:
 
-  * Wordpress has [friendly URLs](https://tallecreative.com/designmudd/2005/07/06/wordpress-search-engine-friendly-urls/), which is great from a search engine optimisation point of view;
+- Wordpress has [friendly URLs](https://tallecreative.com/designmudd/2005/07/06/wordpress-search-engine-friendly-urls/), which is great from a search engine optimisation point of view;
 
-  * Wordpress has [XML-RPC ping](https://codex.wordpress.org/Update_Services), to publish posts to popular sites like [Feed Burner](https://www.feedburner.com), [Feedster](https://www.feedster.com), [Technorati](https://www.technorati.com) and [much more](https://pingomatic.com/) (= faster and easier content spreading through the net);
+- Wordpress has [XML-RPC ping](https://codex.wordpress.org/Update_Services), to publish posts to popular sites like [Feed Burner](https://www.feedburner.com), [Feedster](https://www.feedster.com), [Technorati](https://www.technorati.com) and [much more](https://pingomatic.com/) (= faster and easier content spreading through the net);
 
-  * Wordpress community is bigger, than the e107 one, which mean more plugins, more themes, bigger dynamics regarding code and security updates.
+- Wordpress community is bigger, than the e107 one, which mean more plugins, more themes, bigger dynamics regarding code and security updates.
 
 By doing this migration, I expect to have :
 
-  * a spam free site,
-  * well-indexed content,
-  * a better spreading of Cool Cavemen's news and activities.
+- a spam free site,
+- well-indexed content,
+- a better spreading of Cool Cavemen's news and activities.
 
 On the other hand, this migration make me loose some features :
 
-  * Forums
-  * Image Gallery
-  * Newsletters
-  * Event Calendar
+- Forums
+- Image Gallery
+- Newsletters
+- Event Calendar
 
 Even if those features are not built-in in Wordpress, I expect to find some plug-ins to fill the gap (I'll probably post the result of my investigations on that blog).
 

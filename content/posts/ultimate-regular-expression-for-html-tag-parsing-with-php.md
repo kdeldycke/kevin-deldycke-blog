@@ -1,6 +1,6 @@
 ---
-date: "2007-03-23"
-title: "Ultimate Regular Expression for HTML tag parsing with PHP"
+date: '2007-03-23'
+title: Ultimate Regular Expression for HTML tag parsing with PHP
 category: English
 tags: HTML, parsing, PHP, Regular expression
 ---
@@ -21,17 +21,21 @@ with single or double quotes).
 Unfortunately his regular expression was designed for Microsoft .NET, so I've
 spend some time to convert it to PHP. Here is the result:
 
-    ```php
-    $regex = "/<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>/i";
-    ```
+````
+```php
+$regex = "/<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>/i";
+```
+````
 
 And finally, my version based on the one above:
 
-    ```php
-    $regex = "/<\/?\w+((\s+(\w|\w[\w-]*\w)(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>/i";
-    ```
+````
+```php
+$regex = "/<\/?\w+((\s+(\w|\w[\w-]*\w)(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>/i";
+```
+````
 
 The latter include the following enhancement:
 
-  * accept hyphens as attribute's middle characters (
-    [thanks Ged](https://kevin.deldycke.com/2007/03/ultimate-regular-expression-for-html-tag-parsing-with-php/#comment-3167))
+- accept hyphens as attribute's middle characters (
+  [thanks Ged](https://kevin.deldycke.com/2007/03/ultimate-regular-expression-for-html-tag-parsing-with-php/#comment-3167))

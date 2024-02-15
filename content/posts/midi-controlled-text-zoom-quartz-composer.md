@@ -1,12 +1,12 @@
 ---
-date: "2010-12-20"
-title: "MIDI-controlled Text Zoom in Quartz Composer"
+date: '2010-12-20'
+title: MIDI-controlled Text Zoom in Quartz Composer
 category: English
 tags: Animation, Apple, berhinger, MacBook, MIDI, Quartz Composer, USB, Visual
 ---
 
 To end my [series of experimentations with Quartz
-Composer]({tag}quartz-composer) that I [started 2 months
+Composer](%7Btag%7Dquartz-composer) that I [started 2 months
 ago](https://kevin.deldycke.com/2010/10/export-quartz-composer-video/), here is
 my last patch:
 

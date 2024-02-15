@@ -1,6 +1,6 @@
 ---
-date: "2006-11-22"
-title: "i18n / l10n commands"
+date: '2006-11-22'
+title: i18n / l10n commands
 category: English
 tags: CLI, i18n, l10n, Linux, translation
 ---

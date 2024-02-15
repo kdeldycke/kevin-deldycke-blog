@@ -1,6 +1,6 @@
 ---
-date: "2012-10-30"
-title: "How-To transfer bbPress content to plain WordPress objects"
+date: '2012-10-30'
+title: How-To transfer bbPress content to plain WordPress objects
 category: English
 tags: export, import, migration, MySQL, SQL, PHP, Python, WordPress, xml
 ---
@@ -15,9 +15,11 @@ A bbPress thread is imported as an empty page with the thread's title. All its r
 
 The dependencies of that script can be installed with the following commands:
 
-    ```shell-session
-    $ sudo aptitude install python-pip python-lxml
-    $ sudo pip install PyMySQL
-    ```
+````
+```shell-session
+$ sudo aptitude install python-pip python-lxml
+$ sudo pip install PyMySQL
+```
+````
 
 My use case for this script is to be able to archive an hosted bbPress instance from a dedicated server to the free wordpress.org hosting.
