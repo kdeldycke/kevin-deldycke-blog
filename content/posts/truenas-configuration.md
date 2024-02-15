@@ -177,7 +177,7 @@ root@truenas[/mnt]# gpart show ada4
 
 root@truenas[/mnt]# mkdir hdd-4tb                                              
 
-root@truenas[/mnt/hdd-4tb]# kldload fusefs
+root@truenas[/mnt]# kldload fusefs
 
 root@truenas[/mnt]# mount.exfat-fuse /dev/ada4p2 ./hdd-4tb                     
 ```
