@@ -1,6 +1,6 @@
 ---
-date: "2006-04-10"
-title: "A/V sync problems: VLC better than Mencoder"
+date: '2006-04-10'
+title: 'A/V sync problems: VLC better than Mencoder'
 category: English
 tags: Linux, mencoder, Video, VLC
 ---
@@ -40,9 +40,11 @@ This is sad but acceptable, since my goal is to archive my tiny videos.
 
 To summarize, here is the command line I use to do transcoding via VLC:
 
-    ```shell-session
-    $ vlc --sout-all "input_video.avi" :sout='#transcode{vcodec=h264, acodec=mp3, ab=32,channels=1, audio-sync}:std{access=file, mux=mp4, url="output_video.mp4"}' vlc:quit -I dummy
-    ```
+````
+```shell-session
+$ vlc --sout-all "input_video.avi" :sout='#transcode{vcodec=h264, acodec=mp3, ab=32,channels=1, audio-sync}:std{access=file, mux=mp4, url="output_video.mp4"}' vlc:quit -I dummy
+```
+````
 
 This command is far from perfect and I plan to dig into VLC help to tune h264
 codec.

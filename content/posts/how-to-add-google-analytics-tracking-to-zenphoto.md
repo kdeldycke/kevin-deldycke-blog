@@ -1,6 +1,6 @@
 ---
-date: "2008-08-16"
-title: "How-to add Google Analytics tracking to Zenphoto"
+date: '2008-08-16'
+title: How-to add Google Analytics tracking to Zenphoto
 category: English
 tags: analytics, Google, hack, patch, PHP, Zenphoto, SSL
 ---
@@ -23,29 +23,31 @@ Here is the
 [downloadable patch file](/uploads/2008/google-analytics-tracking-for-non-admin-users.patch),
 and its content:
 
-    ```diff
-    diff -ru ./zenphoto-orig/zp-core/template-functions.php ./zenphoto/zp-core/template-functions.php
-    --- ./zenphoto-orig/zp-core/template-functions.php  2008-08-15 07:43:05.000000000 +0200
-    +++ ./zenphoto/zp-core/template-functions.php 2008-08-16 17:08:03.000000000 +0200
-    @@ -147,7 +147,16 @@
+````
+```diff
+diff -ru ./zenphoto-orig/zp-core/template-functions.php ./zenphoto/zp-core/template-functions.php
+--- ./zenphoto-orig/zp-core/template-functions.php  2008-08-15 07:43:05.000000000 +0200
++++ ./zenphoto/zp-core/template-functions.php 2008-08-16 17:08:03.000000000 +0200
+@@ -147,7 +147,16 @@
 
-        echo "<li><a href=\"".$zf."/admin.php?logout$redirect\">".gettext("Logout")."</a></li>\n";
-        echo "</ul></div>\n";
-    - }
-    + } else {
-    +    echo "<script type=\"text/javascript\">
-    +var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");
-    +document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));
-    +</script>
-    +<script type=\"text/javascript\">
-    +var pageTracker = _gat._getTracker(\"UA-XXXXXX-Y\");
-    +pageTracker._trackPageview();
-    +</script>";
-    +  }
-     }
+    echo "<li><a href=\"".$zf."/admin.php?logout$redirect\">".gettext("Logout")."</a></li>\n";
+    echo "</ul></div>\n";
+- }
++ } else {
++    echo "<script type=\"text/javascript\">
++var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");
++document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));
++</script>
++<script type=\"text/javascript\">
++var pageTracker = _gat._getTracker(\"UA-XXXXXX-Y\");
++pageTracker._trackPageview();
++</script>";
++  }
+ }
 
-     /**
-    ```
+ /**
+```
+````
 
 This patch was generated from a
 [Zenphoto v1.2](https://www.zenphoto.org/2008/08/zenphoto-12-release-announcement/)
@@ -56,6 +58,8 @@ Do not forget to update the dummy Google Analytics account ID above
 
 And finally, to apply the patch, invoke the classic `patch` command:
 
-    ```shell-session
-    $ patch -p0 < ./google-analytics-tracking-for-non-admin-users.patch
-    ```
+````
+```shell-session
+$ patch -p0 < ./google-analytics-tracking-for-non-admin-users.patch
+```
+````

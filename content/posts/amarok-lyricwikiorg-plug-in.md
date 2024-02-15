@@ -1,6 +1,6 @@
 ---
-date: "2006-05-26"
-title: "Amarok LyricWiki.org plug-in"
+date: '2006-05-26'
+title: Amarok LyricWiki.org plug-in
 tags: Amarok, KDE, Linux, Music, wiki
 ---
 

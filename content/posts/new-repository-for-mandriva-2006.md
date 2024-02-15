@@ -1,6 +1,6 @@
 ---
-date: "2006-04-13"
-title: "New Repository for Mandriva 2006"
+date: '2006-04-13'
+title: New Repository for Mandriva 2006
 category: English
 tags: baghira, Linux, Mandriva, RPM, Wormux
 ---
@@ -11,7 +11,8 @@ I've created a RPM repository on this site to deposit third-party software I fou
 
 To add the repository to your urpmi database, in a terminal, do as root:
 
-    ```shell-session
-    $ urpmi.addmedia kev-repository https://kevin.deldycke.com/static/repository/mandriva/2006.0/i586 with hdlist.cz
-    ```
-
+````
+```shell-session
+$ urpmi.addmedia kev-repository https://kevin.deldycke.com/static/repository/mandriva/2006.0/i586 with hdlist.cz
+```
+````

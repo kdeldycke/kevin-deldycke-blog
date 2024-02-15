@@ -1,6 +1,6 @@
 ---
-date: "2011-10-25"
-title: "PostgreSQL commands"
+date: '2011-10-25'
+title: PostgreSQL commands
 category: English
 tags: CLI, database, Linux, PostgreSQL, SQL, Regular expression
 ---

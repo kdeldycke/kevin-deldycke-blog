@@ -1,6 +1,6 @@
 ---
-date: "2013-09-24"
-title: "Vieilles Charrues"
+date: '2013-09-24'
+title: Vieilles Charrues
 category: English
 tags: Kdenlive, video, YouTube, Music festival
 ---

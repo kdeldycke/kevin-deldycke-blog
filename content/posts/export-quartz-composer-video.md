@@ -1,8 +1,9 @@
 ---
-date: "2010-10-15"
-title: "Export Quartz Composer to video"
+date: '2010-10-15'
+title: Export Quartz Composer to video
 category: English
-tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, Mac OS X 10.6 Snow Leopard
+tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, Mac
+  OS X 10.6 Snow Leopard
 ---
 
 [Quartz Composer](https://en.wikipedia.org/wiki/Quartz_Composer) is a really
@@ -40,31 +41,33 @@ every time:
 
 ![](/uploads/2010/quartz-composer-export-to-movie-exception.png)
 
-    ```text
-    0x8272938b: -[QCContext renderPatch:time:arguments:]
-    0x8272906d: -[QCGraphicsContext renderPatch:time:arguments:]
-    0x827281bb: -[QCOpenGLContext renderPatch:time:arguments:]
-    0x0000d873
-    0x8276495b: -[QCView render:arguments:]
-    0x82763f68: -[QCView startRendering:]
-    0x0000cd80
-    0x8548584e: _nsnote_callback
-    0x81ccda90: __CFXNotificationPost
-    0x81cba008: _CFXNotificationPostNotification
-    0x8547c7b8: -[NSNotificationCenter postNotificationName:object:userInfo:]
-    0x86da2f5f: -[NSWindow _reallyDoOrderWindow:relativeTo:findKey:forCounter:force:isModal:]
-    0x86da2bbe: -[NSWindow orderWindow:relativeTo:]
-    0x86da0544: -[NSWindow makeKeyAndOrderFront:]
-    0x86fa55c1: -[NSWindowController showWindow:]
-    0x0000ca7f
-    0x873461d3: -[NSToolbarButton sendAction:to:]
-    0x86fb73c1: -[NSToolbarItemViewer mouseDown:]
-    0x86ea4763: -[NSWindow sendEvent:]
-    0x86dd9ee2: -[NSApplication sendEvent:]
-    0x0000a994
-    0x86d70922: -[NSApplication run]
-    0x00001d2b
-    ```
+````
+```text
+0x8272938b: -[QCContext renderPatch:time:arguments:]
+0x8272906d: -[QCGraphicsContext renderPatch:time:arguments:]
+0x827281bb: -[QCOpenGLContext renderPatch:time:arguments:]
+0x0000d873
+0x8276495b: -[QCView render:arguments:]
+0x82763f68: -[QCView startRendering:]
+0x0000cd80
+0x8548584e: _nsnote_callback
+0x81ccda90: __CFXNotificationPost
+0x81cba008: _CFXNotificationPostNotification
+0x8547c7b8: -[NSNotificationCenter postNotificationName:object:userInfo:]
+0x86da2f5f: -[NSWindow _reallyDoOrderWindow:relativeTo:findKey:forCounter:force:isModal:]
+0x86da2bbe: -[NSWindow orderWindow:relativeTo:]
+0x86da0544: -[NSWindow makeKeyAndOrderFront:]
+0x86fa55c1: -[NSWindowController showWindow:]
+0x0000ca7f
+0x873461d3: -[NSToolbarButton sendAction:to:]
+0x86fb73c1: -[NSToolbarItemViewer mouseDown:]
+0x86ea4763: -[NSWindow sendEvent:]
+0x86dd9ee2: -[NSApplication sendEvent:]
+0x0000a994
+0x86d70922: -[NSApplication run]
+0x00001d2b
+```
+````
 
 So I tried the old trick of [importing compositions in iMovie
 ](https://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was

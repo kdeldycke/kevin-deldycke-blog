@@ -1,6 +1,6 @@
 ---
-date: "2009-12-23"
-title: "Mac OS X really starts to get irritating..."
+date: '2009-12-23'
+title: Mac OS X really starts to get irritating...
 category: English
 tags: desktop, KDE, Mac OS X 10.5 Leopard, Apple, macOS, rant
 ---
@@ -28,14 +28,13 @@ Just found new species of bugs:
 My 6 months test period of Leopard is over. Time to switch back to a Linux/KDE
 desktop.
 
-
 ## Update (May 2010)
 
 6 months later, I've:
 
-  * updated Mac OS X from Leopard to Snow Leopard,
-  * upgraded Kubuntu from Karmic Koala (9.10) to Lucid Lynx (10.04),
-  * changed my HDD to a SSD (a [160 Go Intel X25-M Postville
+- updated Mac OS X from Leopard to Snow Leopard,
+- upgraded Kubuntu from Karmic Koala (9.10) to Lucid Lynx (10.04),
+- changed my HDD to a SSD (a [160 Go Intel X25-M Postville
   ](https://amzn.com/B002IGT7IU/?tag=kevideld-20)).
 
 Still, my machine crash hard. Here is the kind of kernel crashes I have on
@@ -56,20 +55,21 @@ afternoon to downgrade my firmware to EFI 1.6.
 
 I can now check that it really set SATA bandwidth back to 1.5 Gbps:
 
-    ```shell-session
-    $ cat /var/log/dmesg | grep Gbps
-    [    0.800530] ahci 0000:00:0b.0: AHCI 0001.0200 32 slots 6 ports 1.5 Gbps 0x3 impl IDE mode
-    [    1.330097] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
-    [    1.330112] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
-    [    2.280096] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
-    [    2.290110] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
-    ```
+````
+```shell-session
+$ cat /var/log/dmesg | grep Gbps
+[    0.800530] ahci 0000:00:0b.0: AHCI 0001.0200 32 slots 6 ports 1.5 Gbps 0x3 impl IDE mode
+[    1.330097] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    1.330112] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    2.280096] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    2.290110] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+```
+````
 
 But the firmware downgrade didn't solved my problems at all. It's really time
 to trash this MacBook Pro. [Anyone to suggest
 ](https://twitter.com/kdeldycke/status/14657317476) a good laptop that works
 fine on Kubuntu?
-
 
 ## Update (June 2010)
 

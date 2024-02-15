@@ -1,6 +1,6 @@
 ---
-date: "2012-09-25"
-title: "PADI Open Water Diver"
+date: '2012-09-25'
+title: PADI Open Water Diver
 category: Français
 tags: Scuba Diving, Pool
 ---
@@ -11,4 +11,4 @@ plongée en milieu protégé, c'est fait:
 
 ![](/uploads/2012/padi-open-water-diver-photo.jpg)
 
-Reste à valider la suite en milieu naturel&nbsp;! :)
+Reste à valider la suite en milieu naturel ! :)

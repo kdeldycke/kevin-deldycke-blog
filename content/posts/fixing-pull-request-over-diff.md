@@ -1,6 +1,6 @@
 ---
-date: "2015-09-28"
-title: "How-to reconcile metadata differences of a messed up pull-request "
+date: '2015-09-28'
+title: 'How-to reconcile metadata differences of a messed up pull-request '
 category: English
 tags: CLI, Git, GitHub, Linux, Babel, l10n, i18n, Python
 ---
@@ -17,13 +17,15 @@ make my commit message more informative. Fair enough. This shouldn't take long.
 
 So I fetched a local copy of my fork, made the edit and pushed it back:
 
-    ```shell-session
-    $ git clone https://github.com/kdeldycke/babel.git
-    $ cd ./babel
-    $ git checkout patch-1
-    $ git rebase -i HEAD~10
-    $ git push --force
-    ```
+````
+```shell-session
+$ git clone https://github.com/kdeldycke/babel.git
+$ cd ./babel
+$ git checkout patch-1
+$ git rebase -i HEAD~10
+$ git push --force
+```
+````
 
 It's only after looking at the pull request in GitHub that I realized the last
 ten commits were marked as new and different, while I expected only last one to
@@ -38,12 +40,14 @@ metadata on the last 10 commits ([665212
 ](https://github.com/python-babel/babel/commit/665212) being my PR's root, i.e.
 the last untouched commit):
 
-    ```shell-session
-    $ git filter-branch --force --env-filter '
-        export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-        export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-    ' -- 665212..patch-1
-    ```
+````
+```shell-session
+$ git filter-branch --force --env-filter '
+    export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+    export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+' -- 665212..patch-1
+```
+````
 
 Still, commit checksums did not returned to their original value. There must be
 other metadata involved.
@@ -51,11 +55,13 @@ other metadata involved.
 As I wasn't ready to waste time on doctoring each commit to find the
 underlaying differences, I simply rebased everything to master:
 
-    ```shell-session
-    $ git rebase master
-    $ git pull
-    $ git rebase origin/master
-    $ git push --force
-    ```
+````
+```shell-session
+$ git rebase master
+$ git pull
+$ git rebase origin/master
+$ git push --force
+```
+````
 
 It did work and my PR was now clean and tidy.

@@ -1,7 +1,8 @@
 ---
-date: "2017-01-28"
-title: "Meta Package Manager v2.4.0"
-tags: GitHub, Python, Apple, macOS, Linux, Windows, BitBar, Homebrew, Cask, node.js, atom, apm, npm, ruby, gem, pipi, Meta Package Manager
+date: '2017-01-28'
+title: Meta Package Manager v2.4.0
+tags: GitHub, Python, Apple, macOS, Linux, Windows, BitBar, Homebrew, Cask, node.js,
+  atom, apm, npm, ruby, gem, pipi, Meta Package Manager
 ---
 
 [Meta Package Manager

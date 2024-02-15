@@ -1,6 +1,6 @@
 ---
-date: "2006-12-27"
-title: "All my command lines"
+date: '2006-12-27'
+title: All my command lines
 Category: Front Page
 tags: CLI, Linux, macOS
 ---

@@ -1,6 +1,6 @@
 ---
-date: "2010-04-15"
-title: "Subversion commands"
+date: '2010-04-15'
+title: Subversion commands
 category: English
 tags: ack, CLI, find, grep, Linux, sed, shell, Subversion, Regular expression
 ---

@@ -1,7 +1,8 @@
 ---
-date: "2016-07-12"
-title: "Package Manager v1.3 BitBar plugin"
-tags: GitHub, Python, Apple, macOS, BitBar, Homebrew, Cask, node.js, atom, apm, npm, ruby, gem, pip
+date: '2016-07-12'
+title: Package Manager v1.3 BitBar plugin
+tags: GitHub, Python, Apple, macOS, BitBar, Homebrew, Cask, node.js, atom, apm, npm,
+  ruby, gem, pip
 ---
 
 Only a couple of days since the [release of v1.0
@@ -13,10 +14,10 @@ is [Package Manager v1.3
 
 This version now supports:
 
-  * Python's pip,
-  * Ruby's gem,
-  * Node.js's npm and
-  * Atom's apm.
+- Python's pip,
+- Ruby's gem,
+- Node.js's npm and
+- Atom's apm.
 
 Kudos to [@tresni](https://github.com/tresni) and [@keithamus
 ](https://github.com/keithamus) for their contributions! :)

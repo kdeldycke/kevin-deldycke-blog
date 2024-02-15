@@ -1,6 +1,6 @@
 ---
-date: "2006-09-16"
-title: "Location of Kopete Emoticons"
+date: '2006-09-16'
+title: Location of Kopete Emoticons
 category: English
 tags: emoticon, KDE, kopete, Linux, Theme
 ---

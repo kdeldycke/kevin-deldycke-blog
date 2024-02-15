@@ -1,6 +1,6 @@
 ---
-date: "2010-06-16"
-title: "Subversion commits and mail activity stream in iCalendar"
+date: '2010-06-16'
+title: Subversion commits and mail activity stream in iCalendar
 category: English
 tags: code, commit, Git, GitHub, iCal, email, maildir, Open Hub, Python, Script, Subversion
 ---
@@ -9,7 +9,7 @@ Last week I
 [consolidated all my code](https://kevin.deldycke.com/2010/06/git-commit-history-reconstruction/)
 in [my GitHub repository](https://github.com/kdeldycke/scripts). I stumble upon
 an old script I haven't publicized yet:
-  [`svn2ical.py`](https://github.com/kdeldycke/scripts/blob/master/svn2ical.py).
+[`svn2ical.py`](https://github.com/kdeldycke/scripts/blob/master/svn2ical.py).
 
 ![](/uploads/2010/icalendar-subversion-commits.png)
 

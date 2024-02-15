@@ -1,6 +1,6 @@
 ---
-date: "2006-12-25"
-title: "Website Backup Script Updated: Take Care of Hidden Files now."
+date: '2006-12-25'
+title: 'Website Backup Script Updated: Take Care of Hidden Files now.'
 tags: Backup, FTP, lftp, Linux, Python, rdiff-backup, Server, Web
 ---
 
@@ -8,10 +8,10 @@ I've [updated my website-backup python script](https://github.com/kdeldycke/scri
 
 Change log:
 
-  * Use `set ftp:list-options -a` command to force lftp to download hidden files (like `.htaccess` and so on).
+- Use `set ftp:list-options -a` command to force lftp to download hidden files (like `.htaccess` and so on).
 
-  * Use `--force` parameter to allow auto-deletion of multiple outdated rdiff-backup increments.
+- Use `--force` parameter to allow auto-deletion of multiple outdated rdiff-backup increments.
 
-  * Defensive incremental backup policy: keep 32 last backups instead of 32 days of backup.
+- Defensive incremental backup policy: keep 32 last backups instead of 32 days of backup.
 
 I also added a debug mode as [suggested by Sacha](https://kevin.deldycke.com/2006/11/website-backup-script-incremental-backup-feature-added/#comment-957).

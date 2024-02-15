@@ -1,6 +1,6 @@
 ---
-date: "2008-01-11"
-title: "e107 to Wordpress migration : v0.9 plug-in released"
+date: '2008-01-11'
+title: 'e107 to Wordpress migration : v0.9 plug-in released'
 category: English
 tags: e107, migration, plugin, WordPress
 ---
@@ -11,15 +11,14 @@ tags: e107, migration, plugin, WordPress
 
 Change log:
 
-  * "One-click migration" instead of multiple step process (more user-friendly),
+- "One-click migration" instead of multiple step process (more user-friendly),
 
-  * Better error management (a must-have for precise bug reports),
+- Better error management (a must-have for precise bug reports),
 
-  * Replace all links to old content with permalinks (increased SEO),
+- Replace all links to old content with permalinks (increased SEO),
 
-  * Better database management,
+- Better database management,
 
-  * Work with latest [Wordpress v2.3.2](https://wordpress.org/development/2007/12/wordpress-232/) and [e107 v0.7.11](https://e107.org/news.php?item.824),
+- Work with latest [Wordpress v2.3.2](https://wordpress.org/development/2007/12/wordpress-232/) and [e107 v0.7.11](https://e107.org/news.php?item.824),
 
-  * Code cleaned up! ;)
-
+- Code cleaned up! ;)
