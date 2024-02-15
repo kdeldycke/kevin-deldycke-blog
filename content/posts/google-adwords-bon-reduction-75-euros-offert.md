@@ -1,6 +1,6 @@
 ---
-date: "2010-02-06"
-title: "Google AdWords: bon de réduction de 75€ offert&nbsp;!"
+date: '2010-02-06'
+title: 'Google AdWords: bon de réduction de 75€ offert&nbsp;!'
 category: Français
 tags: AdWords, Google, bon de reduction, France, Google, voucher, Web
 ---
@@ -21,5 +21,5 @@ J'offre donc ce bon d'achat au premier qui m'en fait la demande sous la forme
 d'un commentaire (n'oubliez pas de renseigner votre adresse mail).
 
 A noter que ce crédit promotionnel garde sa valeur de 75€ jusqu'au 28 février
-2010. Passé cette date, le bon reprends une valeur nominale de 50€, et expire
+2010\. Passé cette date, le bon reprends une valeur nominale de 50€, et expire
 définitivement le 31 mars 2010.

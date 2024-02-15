@@ -1,6 +1,6 @@
 ---
-date: "2006-04-30"
-title: "Script to Automate FTP site Backup."
+date: '2006-04-30'
+title: Script to Automate FTP site Backup.
 category: English
 tags: Backup, bzip2, FTP, lftp, Linux, Python
 ---

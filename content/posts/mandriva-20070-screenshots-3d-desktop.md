@@ -1,19 +1,22 @@
 ---
-date: "2007-01-02"
-title: "Mandriva 2007.0 Screenshots: 3D Desktop"
+date: '2007-01-02'
+title: 'Mandriva 2007.0 Screenshots: 3D Desktop'
 category: English
-tags: 3D, Celestia, Compiz, desktop, GPU, Intel, laptop, lspci, Mandriva, Samsung, X.org
+tags: 3D, Celestia, Compiz, desktop, GPU, Intel, laptop, lspci, Mandriva, Samsung,
+  X.org
 ---
 
 For some months, [I own a Samsung Q35 laptop](https://kevin.deldycke.com/2006/10/samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop/) which is powered by a Mandriva 2007.0.
 
 As describe in its technical specification this machine include an [Intel GMA 950 GPU](https://en.wikipedia.org/wiki/Intel_GMA#GMA_950). `lspci` give us more details:
 
-    ```text
-    00:00.0 Host bridge: Intel Corporation Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub (rev 03)
-    00:02.0 VGA compatible controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
-    00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
-    ```
+````
+```text
+00:00.0 Host bridge: Intel Corporation Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub (rev 03)
+00:02.0 VGA compatible controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
+00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
+```
+````
 
 This chipset is recognized out of the box by `drakconf` and thanks to this GUI, I was able to setup X.org with [AIGLX](https://en.wikipedia.org/wiki/AIGLX) in no more than 2 clicks!
 

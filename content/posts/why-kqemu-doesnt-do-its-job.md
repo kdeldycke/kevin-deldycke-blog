@@ -1,6 +1,6 @@
 ---
-date: "2006-07-28"
-title: "Why kqemu doesn't do its job?"
+date: '2006-07-28'
+title: Why kqemu doesn't do its job?
 tags: Linux, Qemu
 ---
 
@@ -10,8 +10,10 @@ I finally found the reason on the qemu website FAQ: [Why has kqemu not improved 
 
 So, if you are using my kqemu RPM for Mandriva 2006, don't forget to add the following line in your `/etc/fstab` file:
 
-    ```text
-    tmpfs    /dev/shm    tmpfs    defaults    0  0
-    ```
+````
+```text
+tmpfs    /dev/shm    tmpfs    defaults    0  0
+```
+````
 
 Then reboot your OS to enjoy the speed up!

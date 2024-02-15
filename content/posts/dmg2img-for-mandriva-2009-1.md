@@ -1,6 +1,6 @@
 ---
-date: "2009-08-02"
-title: "dmg2img for Mandriva 2009.1"
+date: '2009-08-02'
+title: dmg2img for Mandriva 2009.1
 category: English
 tags: Apple, CLI, dm2img, dmg, HFS, Linux, Mandriva, RPM
 ---
@@ -11,8 +11,9 @@ I've just created a RPM of [dmg2img](https://vu1tur.eu.org/tools/) for the x86_6
 
 `dmg2img` is a command line utility to extract the content of an [Apple Disk Image](https://en.wikipedia.org/wiki/Apple_Disk_Image) `.dmg` file. Here is how I use it to access content:
 
-    ```shell-session
-    $ dmg2img ./my-package.dmg
-    $ mount -t hfsplus -o loop ./my-package.img /media/my-mount-point
-    ```
-
+````
+```shell-session
+$ dmg2img ./my-package.dmg
+$ mount -t hfsplus -o loop ./my-package.img /media/my-mount-point
+```
+````

@@ -1,6 +1,6 @@
 ---
-date: "2012-02-28"
-title: "Stabilizing Cute Baby Goats"
+date: '2012-02-28'
+title: Stabilizing Cute Baby Goats
 category: English
 tags: Canon EOS 7D, Linux, stabilization, transcode, Video
 ---
@@ -17,10 +17,6 @@ Yeah, I know, this is a naive video that belongs to [/r/aww](https://www.reddit.
 
 These kids (as baby goats are called) decided to come to this world the night I was around. In a hurry I grabbed my [Canon 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20) and filmed these newborns with a [Sigma 30mm f/1.4 EX DC HSM](https://amzn.com/B0007U0GZM/?tag=kevideld-20) to leverage its large aperture. And as expected, in the night, with no artificial light and no extra stabilization device, the resulting footage are extremely shaky.
 
-
-
-
-
 I tried to stabilize the shots but was really disappointed by the results. The final version of the video you watched above only feature the original footage, without any stabilization. But for posterity, here are some notes about the tools I played with.
 
 ## vid.stab
@@ -31,30 +27,38 @@ The first tool I tried was [vid.stab](https://public.hronopik.de/vid.stab/), a T
 
 I wanted to compile it from its [sources](https://github.com/georgmartius/vid.stab). But the [binary distribution](https://public.hronopik.de/vid.stab/download.php) available on the project website works out of the box. To save some effort, let's install the latter:
 
-    ```shell-session
-    $ wget https://public.hronopik.de/vid.stab/files/vid.stab-0.93-transcode-1.1-binary-x86_64.tgz
-    $ tar xvzf ./vid.stab-0.93-transcode-1.1-binary-x86_64.tgz
-    $ sudo mv ./vid.stab-0.93-transcode-1.1-binary-x84_64/filter_*.so /usr/lib/transcode/
-    $ rm -rf ./vid.stab-0.93-transcode-1.1-binary-x8*
-    ```
+````
+```shell-session
+$ wget https://public.hronopik.de/vid.stab/files/vid.stab-0.93-transcode-1.1-binary-x86_64.tgz
+$ tar xvzf ./vid.stab-0.93-transcode-1.1-binary-x86_64.tgz
+$ sudo mv ./vid.stab-0.93-transcode-1.1-binary-x84_64/filter_*.so /usr/lib/transcode/
+$ rm -rf ./vid.stab-0.93-transcode-1.1-binary-x8*
+```
+````
 
 Now, as explained in the [documentation](https://public.hronopik.de/vid.stab/features.php), you have to let transcode analyze the video:
 
-    ```shell-session
-    $ transcode -J stabilize -i ./MVI_1714.MOV -y null,null -o dummy
-    ```
+````
+```shell-session
+$ transcode -J stabilize -i ./MVI_1714.MOV -y null,null -o dummy
+```
+````
 
 Only after this first pass you can apply the stabilizing transformations:
 
-    ```shell-session
-    $ transcode -J transform -i ./MVI_1714.MOV -y ffmpeg -F huffyuv -o ./MVI_1714-stabilized.MOV
-    ```
+````
+```shell-session
+$ transcode -J transform -i ./MVI_1714.MOV -y ffmpeg -F huffyuv -o ./MVI_1714-stabilized.MOV
+```
+````
 
 If your not satisfied with the result, you can increase the area of tracking points with the `shakiness` parameter:
 
-    ```shell-session
-    $ transcode -J stabilize=shakiness=8:show=1,preview -i ./MVI_1714.MOV -y null,null -o dummy
-    ```
+````
+```shell-session
+$ transcode -J stabilize=shakiness=8:show=1,preview -i ./MVI_1714.MOV -y null,null -o dummy
+```
+````
 
 In the command line above we added the `show=1,preview` parameters, which have the nice effect of displaying a preview of the work done behind the scene:
 
@@ -62,16 +66,20 @@ In the command line above we added the `show=1,preview` parameters, which have t
 
 And if you want to see the transformations applied in the final video, just deactivate the cropping and zooming mechanism:
 
-    ```shell-session
-    $ transcode -J transform=crop=1:optzoom=0 -i ./MVI_1714.MOV -y ffmpeg -F huffyuv -o ./MVI_1714-stabilized.MOV
-    ```
+````
+```shell-session
+$ transcode -J transform=crop=1:optzoom=0 -i ./MVI_1714.MOV -y ffmpeg -F huffyuv -o ./MVI_1714-stabilized.MOV
+```
+````
 
 Finally, here are some command helpers to automate the stabilization process for a massive amount of video:
 
-    ```shell-session
-    $ find ./ -name "*.MOV" -exec transcode -J stabilize -i "{}" -y null,null -o dummy \;
-    $ find ./ -name "*.MOV" -exec transcode -J transform -i "{}" -y ffmpeg -F huffyuv -o "{}.stabilized.avi" \;
-    ```
+````
+```shell-session
+$ find ./ -name "*.MOV" -exec transcode -J stabilize -i "{}" -y null,null -o dummy \;
+$ find ./ -name "*.MOV" -exec transcode -J transform -i "{}" -y ffmpeg -F huffyuv -o "{}.stabilized.avi" \;
+```
+````
 
 ## Alternative tools
 

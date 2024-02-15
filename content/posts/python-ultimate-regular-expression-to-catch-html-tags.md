@@ -1,6 +1,6 @@
 ---
-date: "2008-07-08"
-title: "Python ultimate regular expression to catch HTML tags"
+date: '2008-07-08'
+title: Python ultimate regular expression to catch HTML tags
 category: English
 tags: HTML, programming, Python, Regular expression, BeautifoulSoup, lxml
 ---
@@ -10,8 +10,8 @@ tags: HTML, programming, Python, Regular expression, BeautifoulSoup, lxml
 
     To parse HTML or XML, use a dedicated library like the good old:
 
-    * [`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4)
-    * [`lxml.html`](https://lxml.de/lxmlhtml.html)
+    - [`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4)
+    - [`lxml.html`](https://lxml.de/lxmlhtml.html)
 
 1 year and 3 months ago I've came with a
 [PHP regexp to parse HTML tag soup](https://kevin.deldycke.com/2007/03/ultimate-regular-expression-for-html-tag-parsing-with-php/).
@@ -23,28 +23,32 @@ without value so it's closer to the
 stick to it in order to catch [tag soup](https://en.wikipedia.org/wiki/Tag_soup)
 and malformatted tags.
 
-    ```python
-    ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
-    ```
+````
+```python
+ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
+```
+````
 
 And here is it applied in a trivial example (in a python shell):
 
-    ```pycon
-    >>> import re
-    >>>
-    >>> content = """This is the <strong>content</strong> in which we want to
-    <em>find</em> <a href="https://en.wikipedia.org/wiki/Html">HTML</a> tags."""
-    >>>
-    >>> ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
-    >>>
-    >>> for match in re.finditer(ultimate_regexp, content):
-    ...   print repr(match.group())
-    ...
-    '<strong>'
-    '</strong>'
-    '<em>'
-    '</em>'
-    '<a href="https://en.wikipedia.org/wiki/Html">'
-    '</a>'
-    >>>
-    ```
+````
+```pycon
+>>> import re
+>>>
+>>> content = """This is the <strong>content</strong> in which we want to
+<em>find</em> <a href="https://en.wikipedia.org/wiki/Html">HTML</a> tags."""
+>>>
+>>> ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
+>>>
+>>> for match in re.finditer(ultimate_regexp, content):
+...   print repr(match.group())
+...
+'<strong>'
+'</strong>'
+'<em>'
+'</em>'
+'<a href="https://en.wikipedia.org/wiki/Html">'
+'</a>'
+>>>
+```
+````

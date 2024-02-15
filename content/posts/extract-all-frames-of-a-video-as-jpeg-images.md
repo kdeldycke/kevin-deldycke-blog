@@ -1,15 +1,17 @@
 ---
-date: "2006-08-22"
-title: "Extract All Frames of a Video as Jpeg Images"
+date: '2006-08-22'
+title: Extract All Frames of a Video as Jpeg Images
 category: English
 tags: Linux, transcode, Video
 ---
 
 You need to extract all frames of a video and save them as `.jpg` images files? Transcode can do the job for you thanks to this command line:
 
-    ```shell-session
-    $ transcode -i video.avi -y im
-    ```
+````
+```shell-session
+$ transcode -i video.avi -y im
+```
+````
 
 Of course with some parameters tweaking you will be able to save images in any format.
 

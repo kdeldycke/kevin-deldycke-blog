@@ -1,6 +1,6 @@
 ---
-date: "2011-01-18"
-title: "New blog header and tiny WordPress theme customizations"
+date: '2011-01-18'
+title: New blog header and tiny WordPress theme customizations
 category: English
 tags: artwork, CSS, maomium, WordPress, Ubercart
 ---
@@ -23,16 +23,18 @@ Talking about this , here is a quick tip to make minimal design changes to a Wor
 
 As widgets are site-wide, all these CSS customizations will be applied everywhere. Here is for example the code I applied on this site to hide blog's name and description from [TwentyTen](https://wordpress.org/extend/themes/twentyten)'s header:
 
-    ```html
-    <style type="text/css"><!--
-    #header {
-      padding-top: 0;
-    }
-    #site-title a, #site-description {
-      display: none;
-    }
-    --></style>
-    ```
+````
+```html
+<style type="text/css"><!--
+#header {
+  padding-top: 0;
+}
+#site-title a, #site-description {
+  display: none;
+}
+--></style>
+```
+````
 
 This quick and dirty hack is perfect for tiny customizations. It will make your CSS easier to maintain as you don't have to modify the core style files or create a child theme.
 
@@ -43,4 +45,3 @@ As I moved from TwentyTen to the new TwentyEleven default WordPress theme, I jus
 For archive, here is the customized header I used with TwentyTen:
 
 ![](/uploads/2011/maomium-artwork-banner.jpeg)
-

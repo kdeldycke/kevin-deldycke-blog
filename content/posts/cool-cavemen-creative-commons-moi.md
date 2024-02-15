@@ -1,14 +1,15 @@
 ---
-date: "2009-11-26"
-title: "Cool Cavemen, les Creative Commons et moi"
+date: '2009-11-26'
+title: Cool Cavemen, les Creative Commons et moi
 category: Français
-tags: band, Cool Cavemen, Creative Commons, interview, musique, oxyradio, podcast, radio
+tags: band, Cool Cavemen, Creative Commons, interview, musique, oxyradio, podcast,
+  radio
 ---
 
 ![oxyradio-logo](/uploads/2009/oxyradio-logo.png)
 
 Après plusieurs semaines d'absence sur ce blog, je suis de retour avec un
-billet pour une fois [en français]({category}francais). Il s'agit juste
+billet pour une fois [en français](%7Bcategory%7Dfrancais). Il s'agit juste
 d'annoncer la mise en ligne d'une interview de [Cool
 Cavemen](https://coolcavemen.com) à laquelle j'ai participé.
 
@@ -21,5 +22,5 @@ podcast](https://web.archive.org/web/20100715003245/https://www.oxyradio.net/pod
 Pour résumer mon intervention, j'explique comment et pourquoi j'ai conseillé au
 groupe de distribuer leurs compositions sous une licence Creative Commons.
 Bref, une interview sympa, même si au final je me rend compte que je suis un
-peu rouillé. J'ai vraiment besoin de pratiquer plus régulièrement l'exercice&nbsp;!
+peu rouillé. J'ai vraiment besoin de pratiquer plus régulièrement l'exercice !
 ;)

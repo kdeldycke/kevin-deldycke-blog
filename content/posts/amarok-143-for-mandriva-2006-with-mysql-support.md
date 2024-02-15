@@ -1,6 +1,6 @@
 ---
-date: "2006-09-06"
-title: "Amarok 1.4.3 for Mandriva 2006 with MySQL support"
+date: '2006-09-06'
+title: Amarok 1.4.3 for Mandriva 2006 with MySQL support
 tags: Amarok, KDE, Linux, Mandriva, Music, MySQL, SQL, RPM
 ---
 
@@ -21,5 +21,5 @@ Please leave a comment to let me know if it work (or not), because I don't use
 this feature myself.
 
 As usual, take a look at [previous release post and comments about
-Amarok]({tag}amarok) if you experienced problems. There you will be able to get
+Amarok](%7Btag%7Damarok) if you experienced problems. There you will be able to get
 some tips.

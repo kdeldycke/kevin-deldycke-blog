@@ -1,6 +1,6 @@
 ---
-date: "2015-12-01"
-title: "Browser Integration of Disconnect.me search"
+date: '2015-12-01'
+title: Browser Integration of Disconnect.me search
 category: English
 tags: security, Tor, privacy, StartPage, disconnect.me, search, browser, Google, Chrome
 ---
@@ -19,9 +19,11 @@ Disconnect.me.
 
 Without further ado, here is the magic URL you're looking for:
 
-    ```
-    https://search.disconnect.me/searchTerms/search?ses=Google&query=%s
-    ```
+````
+```
+https://search.disconnect.me/searchTerms/search?ses=Google&query=%s
+```
+````
 
 That's all you need to add Disconnect.me as your default search engine:
 

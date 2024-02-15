@@ -1,6 +1,6 @@
 ---
-date: "2008-02-02"
-title: "How to fix Samsung Q35 random freeze"
+date: '2008-02-02'
+title: How to fix Samsung Q35 random freeze
 category: English
 tags: firmware, Hardware, optical drive
 ---
@@ -11,7 +11,8 @@ I've upgraded my `TSSTcorp CD/DVDW TS-L632D` drive from the `SC02` to `SC04` fir
 
 By the way, to get the model name and revision of your optical drive under linux, use:
 
-    ```shell-session
-    $ cdrdao scanbus
-    ```
-
+````
+```shell-session
+$ cdrdao scanbus
+```
+````

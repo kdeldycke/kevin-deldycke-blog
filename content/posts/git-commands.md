@@ -1,6 +1,6 @@
 ---
-date: "2010-02-21"
-title: "Git commands"
+date: '2010-02-21'
+title: Git commands
 category: English
 tags: CLI, Git, GitHub, Software engineering
 ---

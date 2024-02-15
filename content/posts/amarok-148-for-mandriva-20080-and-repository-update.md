@@ -1,8 +1,9 @@
 ---
-date: "2008-01-26"
-title: "Amarok 1.4.8 for Mandriva 2008.0 and repository update"
+date: '2008-01-26'
+title: Amarok 1.4.8 for Mandriva 2008.0 and repository update
 category: English
-tags: Amarok, Audio, iCal, Mandriva, Music, MySQL, SQL, PostgreSQL, SQL, Python, RPM, rugg, televidilo
+tags: Amarok, Audio, iCal, Mandriva, Music, MySQL, SQL, PostgreSQL, SQL, Python, RPM,
+  rugg, televidilo
 ---
 
 ![amarok-148.png](/uploads/2008/amarok-148.png)

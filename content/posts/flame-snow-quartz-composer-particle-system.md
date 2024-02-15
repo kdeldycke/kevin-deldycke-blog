@@ -1,6 +1,6 @@
 ---
-date: "2010-11-09"
-title: "Flame & Snow, using Quartz Composer particle system"
+date: '2010-11-09'
+title: Flame & Snow, using Quartz Composer particle system
 category: English
 tags: Animation, Apple, MacBook, QC Experiment, Quartz Composer, Video, Visual
 ---
@@ -18,4 +18,3 @@ As for the last times, both [Flame](https://kevin.deldycke.com/documents/flame.q
 And here is Snow's patch preview:
 
 ![](/uploads/2010/snow-patch.png)
-

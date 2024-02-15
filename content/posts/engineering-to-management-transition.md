@@ -1,13 +1,14 @@
 ---
 date: 2020-02-10
-title: "Transitionning from Software Engineering to Management"
+title: Transitionning from Software Engineering to Management
 category: English
-tags: backend, identity-management, infrastructure, payments, startup, billing, career, interview, management, scaleway, iam
+tags: backend, identity-management, infrastructure, payments, startup, billing, career,
+  interview, management, scaleway, iam
 ---
 
 This interview was [originally published](https://devtomanager.com/interviews/kevin-deldycke/) for the [Developer to Manager](https://devtomanager.com) project, which is collecting experience and advice from engineering managers about their transition from software development.
 
----
+______________________________________________________________________
 
 ## Hello! What's your background and what do you do?
 
@@ -24,7 +25,6 @@ That's the first lesson here as a manager in the making: developers are not just
 So that's how I started my 15-year journey as a backend engineer, in what was an [esoteric language at the time: Python](https://www.tiobe.com/tiobe-index/python/). I got the chance to work with smart professionals in various industries: brick-and-mortar retail, transportation, food processing, financial, energy, ... This wide spectrum of projects made me realize that organizations and management styles are diverse, and mostly situational. But there was a pattern. The **happiest people I encountered were the ones given autonomy, mastery and purpose**, echoing [Daniel Pink's thesis on what motivates us](https://www.youtube.com/watch?v=u6XAPnuFjJc).
 
 The majority will not breed the next unicorn; we statistically have a better likelihood of dealing with enterprise frameworks. That's fine and can really be valuable in a career. But once in a while ambitious startups and business software intersect. Enter [Scaleway](https://www.scaleway.com).
-
 
 ## How was your transition from software development to management like?
 
@@ -46,7 +46,6 @@ I had no one to manage yet. But I felt empowered by a mission of bringing meanin
 
 The last photo of the initial R&D team, right before it was disbanded and I (on the far left) became manager.
 
-
 ## What does your day-to-day work look like, and what motivates you to do it every day?
 
 The first phase of my activities as a front-line manager, was mainly inward-facing to the team. Because there was none yet.
@@ -58,21 +57,21 @@ So here I went for a year:
 - Mentoring some into Tech Leads and Product Owners;
 - Trying to make myself optional and reduce the bus-factor;
 - Of course loads of project management was involved too:
-    - Organizing and planning upcoming sprints;
-    - Tracking delivered features;
-    - Writing newsletters to share achievements and milestones;
-    - Keeping in sync and aligns with executive's priorities and fellow managers;
+  - Organizing and planning upcoming sprints;
+  - Tracking delivered features;
+  - Writing newsletters to share achievements and milestones;
+  - Keeping in sync and aligns with executive's priorities and fellow managers;
 - Writing the 3-year roadmap and business plan;
 - Designing a full revaluation process to assess and document engineer's level and pay grade;
 - Helping other managers interview candidates and review profiles in hiring committees;
 - And all the other management tasks:
-    - Leave of absences planning,
-    - Frequent 1:1 with everyone,
-    - Trial period assessments,
-    - Experimenting with remote work,
-    - Yearly objectives and target reviews,
-    - Bonus and awards distribution,
-    - Weekly travel to the regional office (the team was split in two).
+  - Leave of absences planning,
+  - Frequent 1:1 with everyone,
+  - Trial period assessments,
+  - Experimenting with remote work,
+  - Yearly objectives and target reviews,
+  - Bonus and awards distribution,
+  - Weekly travel to the regional office (the team was split in two).
 
 It was not a place for routine, and the day-to-day was a varying mix of all of the things above, depending on the yearly/quarterly/monthly/sprint cycle we were in.
 
@@ -85,7 +84,6 @@ Alex, the manager I managed, inherited a sufficiently hydrated team.
 Then I started a second phase that was more outward-facing, in which I spent my time on coaching and managing managers, and doubling the team headcount.
 
 Where did I get the drive to keep going? **Good people to work with.** I know it sounds dull, but you can't fake it.
-
 
 ## What are the biggest challenges you've faced so far? What did you do to overcome them?
 
@@ -103,7 +101,6 @@ The only bearable way to live through that:
 
 In other words: **find balance out of work, or you're not going to last long**.
 
-
 ## What has been the biggest surprise so far? Something you didn't expect?
 
 The first people I hired were key to our long-term success. I was lucky to have met proficient, dedicated and honest engineers. They cemented the backbone of our culture. I couldn't have made it without them. **It was not *my* team. It was *our* team.**
@@ -116,13 +113,11 @@ The first members of the team, actively redecorating the brand new regional offi
 
 The payoff came a year later. A bunch of developers outside my authority were met with a case of bad management. It is sad, but in a company large enough, shit happens. They all requested to be moved elsewhere in the org-chart. And asked explicitly to join us, seeking peace, stability and a drama-free environment. You can't dream of a better validation: we were a healthy team.
 
-
 ## What's the best advice you've received about being a manager?
 
 I was told that starting from now on, I shouldn't code anymore. That was an important clue. But it goes further. **You're no longer the decision-maker on your technical stack. Your team is responsible for it.** You're barely ratifying these decisions.
 
 You probably used to make these decisions as a developer. And now that you switched positions, you have to take a step back, and have to accept the consensus reached by others. All the while being liable for the result and its impact. Now trying to reconcile the managerial accountability (which might have bad consequences for you), from the team responsibility (allowing them to move on), is borderline schizophrenia for ex-engineers. But you have no choice and have to learn to navigate in that constant duality.
-
 
 ## What do you tell developers who are considering making the switch or new to the role?
 
@@ -157,7 +152,6 @@ The ultimate achievement during the last 24 months as a manager: nobody ever res
 My stint at Scaleway is foundational. I never stayed that long in any company before. It was the right opportunity at the right time. I'll be forever grateful for the possibility in these past six years to not only build a crucial system from scratch, but also hire a team to take over it and bring the whole to the next level.
 
 My transition is complete. Coding is no longer the most impactful thing I can bring to the table. Enabling engineers and making them feel productive is.
-
 
 ## Final call to action! Where can we go to learn more about you?
 

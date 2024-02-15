@@ -1,8 +1,9 @@
 ---
-date: "2010-09-16"
-title: "How-to extract data trapped into an iPhone"
+date: '2010-09-16'
+title: How-to extract data trapped into an iPhone
 category: English
-tags: Android, Apple, Backup, CSV, iPhone, iTunes, Apple, macOS, Smartphones, SQLite, SQL, VLC, Mac OS X 10.6 Snow Leopard
+tags: Android, Apple, Backup, CSV, iPhone, iTunes, Apple, macOS, Smartphones, SQLite,
+  SQL, VLC, Mac OS X 10.6 Snow Leopard
 ---
 
 After 2 years using an [iPhone 3G
@@ -82,19 +83,21 @@ Finally, just in case you want to extract iPhones data from another backup than
 the default backup, like from a backup of the backup (isn't that clear?),
 making a symlink is enough to trick iPhone Backup Extractor:
 
-    ```sh
-    sh-3.2# pwd
-    /Users/kevin/Library/Application Support/MobileSync
-    sh-3.2# mv ./Backup ./Backup-copy
-    sh-3.2# ln -s "/Volumes/Untitled 1/laptop-kev-osx/mirror/Users/kevin/Library/Application Support/MobileSync/Backup" .
-    sh-3.2# ls -lah
-    total 8
-    drwxr-xr-x   4 kevin  staff   136B Sep 16 21:56 .
-    drwx------+ 11 kevin  staff   374B Sep 15 19:29 ..
-    lrwxr-xr-x   1 root   staff    99B Sep 16 21:56 Backup -> /Volumes/Untitled 1/laptop-kev-osx/mirror/Users/kevin/Library/Application Support/MobileSync/Backup
-    drwxr-xr-x   4 kevin  staff   136B Aug 30 13:20 Backup-copy
-    sh-3.2#
-    ```
+````
+```sh
+sh-3.2# pwd
+/Users/kevin/Library/Application Support/MobileSync
+sh-3.2# mv ./Backup ./Backup-copy
+sh-3.2# ln -s "/Volumes/Untitled 1/laptop-kev-osx/mirror/Users/kevin/Library/Application Support/MobileSync/Backup" .
+sh-3.2# ls -lah
+total 8
+drwxr-xr-x   4 kevin  staff   136B Sep 16 21:56 .
+drwx------+ 11 kevin  staff   374B Sep 15 19:29 ..
+lrwxr-xr-x   1 root   staff    99B Sep 16 21:56 Backup -> /Volumes/Untitled 1/laptop-kev-osx/mirror/Users/kevin/Library/Application Support/MobileSync/Backup
+drwxr-xr-x   4 kevin  staff   136B Aug 30 13:20 Backup-copy
+sh-3.2#
+```
+````
 
 That's how I was able to extract my iPhone data from an old backup, and get
 back most of the [data I lost after my last iOS update
