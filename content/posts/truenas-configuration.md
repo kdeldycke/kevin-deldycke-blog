@@ -164,6 +164,24 @@ root@truenas[/mnt]# mkdir usb-hdd
 root@truenas[/mnt]# ntfs-3g /dev/da0p2 /mnt/usb-hdd
 ```
 
+### Mount exFAT partition
+
+```shell-session
+root@truenas[/mnt]# gpart show ada4
+=>        34  7814037101  ada4  GPT  (3.6T)
+          34           6        - free -  (3.0K)
+          40      409600     1  efi  (200M)
+      409640        2008        - free -  (1.0M)
+      411648  7813623808     2  ms-basic-data  (3.6T)
+  7814035456        1679        - free -  (840K)
+
+root@truenas[/mnt]# mkdir hdd-4tb                                              
+
+root@truenas[/mnt/hdd-4tb]# kldload fusefs
+
+root@truenas[/mnt]# mount.exfat-fuse /dev/ada4p2 ./hdd-4tb                     
+```
+
 ### Delete a partition
 
 ```shell-session
