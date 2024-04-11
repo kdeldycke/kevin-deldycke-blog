@@ -57,7 +57,7 @@ CloudFlare have several redirection options:
 
 This blog uses [CloudFlare Pages](https://pages.cloudflare.com/) to host all its static content. To redirect old URLs to new ones, I use a [`_redirects` file at the root of the repository](https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/content/extra/_redirects). You should inspect that file to see how it works.
 
-Note taht this kind of redirects are not working at the domain-level. If you want to redirect `https://example.com/` to `https://www.example.com/`, you need to use [Page Rules](#page-rules).
+Note that this kind of redirects are not working at the domain-level. If you want to redirect `https://example.com/` to `https://www.example.com/`, you need to use [Page Rules](#page-rules).
 
 Here are some of the most useful rules:
 
