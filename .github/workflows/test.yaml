@@ -17,10 +17,15 @@ jobs:
       - uses: actions/setup-python@v5.1.0
         with:
           python-version: "3.12"
-      - name: Install Pelican
+      - name: Update Pip & Poetry
         run: |
           python -m pip install --upgrade pip
           python -m pip install --upgrade poetry
+      - name: Update node and npm
+        run: |
+          sudo apt --quiet --yes install npm
+      - name: Install Pelican
+        run: |
           poetry install
       - name: Install Stork
         run: |
