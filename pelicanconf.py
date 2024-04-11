@@ -132,7 +132,9 @@ EXTRA_PATH_METADATA = {
     "extra/ads.txt": {"path": "ads.txt"},
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/robots.txt": {"path": "robots.txt"},
-    "extra/profile-photo-square-thumbnail.jpg": {"path": "profile-photo-square-thumbnail.jpg"},
+    "extra/profile-photo-square-thumbnail.jpg": {
+        "path": "profile-photo-square-thumbnail.jpg"
+    },
 }
 
 
