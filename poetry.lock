@@ -1032,7 +1032,7 @@ pyquery = "^2.0.0"
 type = "git"
 url = "https://github.com/kdeldycke/plumage.git"
 reference = "main"
-resolved_reference = "58a4a386d7c3313c473e0221cc59ca53ad7af93b"
+resolved_reference = "c6105b0ead539bb9a1373276000119d6703d6184"
 
 [[package]]
 name = "pybtex"
