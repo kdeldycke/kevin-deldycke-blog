@@ -13,7 +13,7 @@ jobs:
     name: Generate the static site
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v4.1.2
       - uses: actions/setup-python@v5.1.0
         with:
           python-version: "3.12"
