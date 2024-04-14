@@ -20,9 +20,9 @@ The script requires the following python modules:
 
 They can easely be installed on Debian with the following commands:
 
-    ```shell-session
-    $ aptitude install python-pip python-lxml
-    $ pip install PyMySQL bbcode
-    ```
+```shell-session
+$ aptitude install python-pip python-lxml
+$ pip install PyMySQL bbcode
+```
 
 The script is <a href="https://github.com/kdeldycke/scripts/blob/master/phorum-to-wordpress.py">available on GitHub</a> so feel free to send pull request! :)

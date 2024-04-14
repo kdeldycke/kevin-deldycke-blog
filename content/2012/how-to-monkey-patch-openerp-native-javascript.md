@@ -13,44 +13,44 @@ It's a custom view I created this month [at work](https://www.smile.fr/Solutions
 
 The view above is produced by the following XML:
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <openerp>
-      <data>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
 
-        <!-- Multi product printing wizard -->
-        <record model="ir.ui.view" id="label_wizard_product_form">
-          <field name="name">label.wizard.product.form</field>
-          <field name="model">label.wizard.product</field>
-          <field name="type">form</field>
-          <field name="arch" type="xml">
-            <form string="Label Wizard">
-              <field name="line_ids" colspan="4" nolabel="1"/>
-              <group col="2" colspan="2">
-                <button icon="gtk-ok" name="action_print" string="Print" type="object"/>
-              </group>
-            </form>
-          </field>
-        </record>
+    <!-- Multi product printing wizard -->
+    <record model="ir.ui.view" id="label_wizard_product_form">
+      <field name="name">label.wizard.product.form</field>
+      <field name="model">label.wizard.product</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="Label Wizard">
+          <field name="line_ids" colspan="4" nolabel="1"/>
+          <group col="2" colspan="2">
+            <button icon="gtk-ok" name="action_print" string="Print" type="object"/>
+          </group>
+        </form>
+      </field>
+    </record>
 
-        <record model="ir.ui.view" id="label_wizard_product_line_tree">
-          <field name="name">label.wizard.product.line.tree</field>
-          <field name="model">label.wizard.product.line</field>
-          <field name="type">tree</field>
-          <field name="arch" type="xml">
-            <tree string="Items" editable="bottom">
-              <field name="product_template_id"/>
-              <field name="size_id"/>
-              <field name="main_color_id"/>
-              <field name="product_id"/>
-              <field name="quantity"/>
-            </tree>
-          </field>
-        </record>
+    <record model="ir.ui.view" id="label_wizard_product_line_tree">
+      <field name="name">label.wizard.product.line.tree</field>
+      <field name="model">label.wizard.product.line</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree string="Items" editable="bottom">
+          <field name="product_template_id"/>
+          <field name="size_id"/>
+          <field name="main_color_id"/>
+          <field name="product_id"/>
+          <field name="quantity"/>
+        </tree>
+      </field>
+    </record>
 
-      </data>
-    </openerp>
-    ```
+  </data>
+</openerp>
+```
 
 If you start searching a product template with the first field, you'll get a pop-up similar to this one:
 
@@ -64,13 +64,13 @@ My instinct told me that this default style could easily be overridden with some
 
 The code responsible for this behavior is located in the [`addons/openerp/static/javascript/m2o.js`](https://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js) file, in the [`ManyToOne.prototype.on_keydown`](https://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/static/javascript/m2o.js#L267) method:
 
-    ```javascript
-    ManyToOne.prototype.on_keydown = function(evt) {
-        (...)
-                jQuery('div.autoTextResults[id$="' + this.name + '"]').width(w)
-        (...)
-    };
-    ```
+```javascript
+ManyToOne.prototype.on_keydown = function(evt) {
+    (...)
+            jQuery('div.autoTextResults[id$="' + this.name + '"]').width(w)
+    (...)
+};
+```
 
 My goal is now to alter this default behavior, without touching the code in `m2o.js`.
 
@@ -78,23 +78,23 @@ And [thanks to Bryan Forbes' article](https://www.reigndropsfall.net/2010/06/15/
 
 Here is the code I added in the XML view, just below the `line_ids` field:
 
-    ```xml
-    <field name="line_ids" colspan="4" nolabel="1"/>
-    <html>
-      <script type="text/javascript">
-        $(document).ready(function(){
-          (function(){
-            var on_keydown_orig = ManyToOne.prototype.on_keydown;
-            ManyToOne.prototype.on_keydown = function(evt) {
-              var result = on_keydown_orig.call(this, evt);
-              $(".autoTextResults").css('width', 'auto');
-              return result;
-            };
-          })();
-        });
-      </script>
-    </html>
-    ```
+```xml
+<field name="line_ids" colspan="4" nolabel="1"/>
+<html>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      (function(){
+        var on_keydown_orig = ManyToOne.prototype.on_keydown;
+        ManyToOne.prototype.on_keydown = function(evt) {
+          var result = on_keydown_orig.call(this, evt);
+          $(".autoTextResults").css('width', 'auto');
+          return result;
+        };
+      })();
+    });
+  </script>
+</html>
+```
 
 The result of this is a nice looking pop-up which doesn't break any vanilla Javascript of the OpenERP web client:
 

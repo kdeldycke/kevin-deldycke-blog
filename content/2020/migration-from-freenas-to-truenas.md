@@ -9,7 +9,7 @@ The upgrade itself is quite straightforward by the way of the GUI. But things ge
 
 ## Encrypted pool migration
 
-Upgrading from FreeNAS to TrueNAS will render your encrypted pool unavailable. FreeNAS relies on [`geli`](https://en.wikipedia.org/wiki/Geli_(software))'s block-layer disk encryption and is considered legacy. TrueNAS moved to native ZFS encryption at the dataset level.
+Upgrading from FreeNAS to TrueNAS will render your encrypted pool unavailable. FreeNAS relies on [`geli`](https://en.wikipedia.org/wiki/Geli_%28software%29)'s block-layer disk encryption and is considered legacy. TrueNAS moved to native ZFS encryption at the dataset level.
 
 We have no choice but to convert it. And [there is no easy path](https://www.truenas.com/docs/hub/initial-setup/storage/encryption/#conversion-from-geli) but destroying the pool and recreating it. 😱
 

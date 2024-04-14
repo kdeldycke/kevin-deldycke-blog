@@ -12,25 +12,25 @@ Here is a little code snippet which
 [Feedalizer](https://termos.vemod.net/feedalizer) to let it grab web content
 through a HTTP proxy:
 
-    ```ruby
-    # HTTP proxy settings
-    HTTP_PROXY_HOST = "123.456.78.90"
-    HTTP_PROXY_PORT = 8080
+```ruby
+# HTTP proxy settings
+HTTP_PROXY_HOST = "123.456.78.90"
+HTTP_PROXY_PORT = 8080
 
-    # Calculate proxy URL
-    HTTP_PROXY_URL = "http://#{HTTP_PROXY_HOST}:#{HTTP_PROXY_PORT}"
+# Calculate proxy URL
+HTTP_PROXY_URL = "http://#{HTTP_PROXY_HOST}:#{HTTP_PROXY_PORT}"
 
-    # Monkey patch feedalizer to support page grabbing through a proxy
-    require 'feedalizer'
-    class Feedalizer
-      # Backup original grab_page method
-      alias_method :grab_page_orig, :grab_page
-      # Define new grab_page() method with proxy support
-      def grab_page(url)
-        open(url, :proxy => HTTP_PROXY_URL) { |io| Hpricot(io) }
-      end
-    end
-    ```
+# Monkey patch feedalizer to support page grabbing through a proxy
+require 'feedalizer'
+class Feedalizer
+  # Backup original grab_page method
+  alias_method :grab_page_orig, :grab_page
+  # Define new grab_page() method with proxy support
+  def grab_page(url)
+    open(url, :proxy => HTTP_PROXY_URL) { |io| Hpricot(io) }
+  end
+end
+```
 
 This fix, written for a [Ruby on Rails](https://www.rubyonrails.org)-based
 project, lay in the `environment.rb` file, but I wonder if this is the right

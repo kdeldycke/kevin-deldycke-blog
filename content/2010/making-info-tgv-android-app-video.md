@@ -45,7 +45,7 @@ Here is how this first test setup looked like:
 
 All these parameters were calibrated for an afternoon shooting session, but we really started to record in the evening (look at the phone's clock in the video!). Because of this delay, I lost the white stripe of natural light coming from the top of the background. At the last minute, I started to play with the white balance. Then I changed my mind and removed the ND-filter. And closed the lens to f/3.5 to get a more manageable depth of field. In a word, I messed up all my initial settings resulting in a final video looking worse (in my opinion) compared to my first test. _The better is the enemy of the good_...
 
-But there is something I'm quite happy with from my last minute changes: dimming the phone's screen brightness. Phone screens are so powerful nowadays that they create [clipped highlights](https://en.wikipedia.org/wiki/Clipping_(photography)), thus reducing the readability of black characters on white background.
+But there is something I'm quite happy with from my last minute changes: dimming the phone's screen brightness. Phone screens are so powerful nowadays that they create [clipped highlights](https://en.wikipedia.org/wiki/Clipping_%28photography%29), thus reducing the readability of black characters on white background.
 
 Here is a photo of the final setup, in which I marked the focus plan with black electric tape:
 
@@ -85,45 +85,45 @@ Let's talk audio now. I personally want to thanks [Tomasito, Cool Cavemen's saxo
 
 I wanted to record the speach on my linux machine but I didn't managed to compile the [Line 6 open-source drivers](https://line6.com/community/thread/4031). In fact the module compiled but refused to load:
 
-    ```text
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905187] line6usb: Unknown symbol snd_rawmidi_receive
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905321] line6usb: disagrees about version of symbol snd_ctl_add
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905323] line6usb: Unknown symbol snd_ctl_add
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905379] line6usb: disagrees about version of symbol snd_pcm_new
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905380] line6usb: Unknown symbol snd_pcm_new
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905439] line6usb: disagrees about version of symbol snd_card_register
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905440] line6usb: Unknown symbol snd_card_register
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905498] line6usb: disagrees about version of symbol snd_card_free
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905499] line6usb: Unknown symbol snd_card_free
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905557] line6usb: disagrees about version of symbol snd_pcm_lib_preallocate_pages_for_all
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905559] line6usb: Unknown symbol snd_pcm_lib_preallocate_pages_for_all
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905667] line6usb: disagrees about version of symbol snd_pcm_stop
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905668] line6usb: Unknown symbol snd_pcm_stop
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905917] line6usb: disagrees about version of symbol snd_ctl_new1
-    Sep 20 22:02:47 kev-laptop kernel: [  717.905918] line6usb: Unknown symbol snd_ctl_new1
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906043] line6usb: Unknown symbol snd_rawmidi_transmit_ack
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906261] line6usb: disagrees about version of symbol snd_pcm_hw_constraint_ratdens
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906262] line6usb: Unknown symbol snd_pcm_hw_constraint_ratdens
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906379] line6usb: disagrees about version of symbol snd_pcm_lib_malloc_pages
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906381] line6usb: Unknown symbol snd_pcm_lib_malloc_pages
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906437] line6usb: disagrees about version of symbol snd_pcm_lib_ioctl
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906439] line6usb: Unknown symbol snd_pcm_lib_ioctl
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906546] line6usb: disagrees about version of symbol snd_pcm_lib_free_pages
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906547] line6usb: Unknown symbol snd_pcm_lib_free_pages
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906617] line6usb: Unknown symbol snd_rawmidi_transmit_peek
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906771] line6usb: disagrees about version of symbol snd_pcm_set_ops
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906773] line6usb: Unknown symbol snd_pcm_set_ops
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906963] line6usb: disagrees about version of symbol snd_pcm_suspend_all
-    Sep 20 22:02:47 kev-laptop kernel: [  717.906965] line6usb: Unknown symbol snd_pcm_suspend_all
-    Sep 20 22:02:47 kev-laptop kernel: [  717.907035] line6usb: Unknown symbol snd_rawmidi_new
-    Sep 20 22:02:47 kev-laptop kernel: [  717.907095] line6usb: disagrees about version of symbol snd_card_disconnect
-    Sep 20 22:02:47 kev-laptop kernel: [  717.907097] line6usb: Unknown symbol snd_card_disconnect
-    Sep 20 22:02:47 kev-laptop kernel: [  717.907230] line6usb: Unknown symbol snd_rawmidi_set_ops
-    Sep 20 22:02:47 kev-laptop kernel: [  717.907413] line6usb: disagrees about version of symbol snd_card_create
-    Sep 20 22:02:47 kev-laptop kernel: [  717.907414] line6usb: Unknown symbol snd_card_create
-    Sep 20 22:02:47 kev-laptop kernel: [  717.907474] line6usb: disagrees about version of symbol snd_pcm_period_elapsed
-    Sep 20 22:02:47 kev-laptop kernel: [  717.907475] line6usb: Unknown symbol snd_pcm_period_elapsed
-    ```
+```text
+Sep 20 22:02:47 kev-laptop kernel: [  717.905187] line6usb: Unknown symbol snd_rawmidi_receive
+Sep 20 22:02:47 kev-laptop kernel: [  717.905321] line6usb: disagrees about version of symbol snd_ctl_add
+Sep 20 22:02:47 kev-laptop kernel: [  717.905323] line6usb: Unknown symbol snd_ctl_add
+Sep 20 22:02:47 kev-laptop kernel: [  717.905379] line6usb: disagrees about version of symbol snd_pcm_new
+Sep 20 22:02:47 kev-laptop kernel: [  717.905380] line6usb: Unknown symbol snd_pcm_new
+Sep 20 22:02:47 kev-laptop kernel: [  717.905439] line6usb: disagrees about version of symbol snd_card_register
+Sep 20 22:02:47 kev-laptop kernel: [  717.905440] line6usb: Unknown symbol snd_card_register
+Sep 20 22:02:47 kev-laptop kernel: [  717.905498] line6usb: disagrees about version of symbol snd_card_free
+Sep 20 22:02:47 kev-laptop kernel: [  717.905499] line6usb: Unknown symbol snd_card_free
+Sep 20 22:02:47 kev-laptop kernel: [  717.905557] line6usb: disagrees about version of symbol snd_pcm_lib_preallocate_pages_for_all
+Sep 20 22:02:47 kev-laptop kernel: [  717.905559] line6usb: Unknown symbol snd_pcm_lib_preallocate_pages_for_all
+Sep 20 22:02:47 kev-laptop kernel: [  717.905667] line6usb: disagrees about version of symbol snd_pcm_stop
+Sep 20 22:02:47 kev-laptop kernel: [  717.905668] line6usb: Unknown symbol snd_pcm_stop
+Sep 20 22:02:47 kev-laptop kernel: [  717.905917] line6usb: disagrees about version of symbol snd_ctl_new1
+Sep 20 22:02:47 kev-laptop kernel: [  717.905918] line6usb: Unknown symbol snd_ctl_new1
+Sep 20 22:02:47 kev-laptop kernel: [  717.906043] line6usb: Unknown symbol snd_rawmidi_transmit_ack
+Sep 20 22:02:47 kev-laptop kernel: [  717.906261] line6usb: disagrees about version of symbol snd_pcm_hw_constraint_ratdens
+Sep 20 22:02:47 kev-laptop kernel: [  717.906262] line6usb: Unknown symbol snd_pcm_hw_constraint_ratdens
+Sep 20 22:02:47 kev-laptop kernel: [  717.906379] line6usb: disagrees about version of symbol snd_pcm_lib_malloc_pages
+Sep 20 22:02:47 kev-laptop kernel: [  717.906381] line6usb: Unknown symbol snd_pcm_lib_malloc_pages
+Sep 20 22:02:47 kev-laptop kernel: [  717.906437] line6usb: disagrees about version of symbol snd_pcm_lib_ioctl
+Sep 20 22:02:47 kev-laptop kernel: [  717.906439] line6usb: Unknown symbol snd_pcm_lib_ioctl
+Sep 20 22:02:47 kev-laptop kernel: [  717.906546] line6usb: disagrees about version of symbol snd_pcm_lib_free_pages
+Sep 20 22:02:47 kev-laptop kernel: [  717.906547] line6usb: Unknown symbol snd_pcm_lib_free_pages
+Sep 20 22:02:47 kev-laptop kernel: [  717.906617] line6usb: Unknown symbol snd_rawmidi_transmit_peek
+Sep 20 22:02:47 kev-laptop kernel: [  717.906771] line6usb: disagrees about version of symbol snd_pcm_set_ops
+Sep 20 22:02:47 kev-laptop kernel: [  717.906773] line6usb: Unknown symbol snd_pcm_set_ops
+Sep 20 22:02:47 kev-laptop kernel: [  717.906963] line6usb: disagrees about version of symbol snd_pcm_suspend_all
+Sep 20 22:02:47 kev-laptop kernel: [  717.906965] line6usb: Unknown symbol snd_pcm_suspend_all
+Sep 20 22:02:47 kev-laptop kernel: [  717.907035] line6usb: Unknown symbol snd_rawmidi_new
+Sep 20 22:02:47 kev-laptop kernel: [  717.907095] line6usb: disagrees about version of symbol snd_card_disconnect
+Sep 20 22:02:47 kev-laptop kernel: [  717.907097] line6usb: Unknown symbol snd_card_disconnect
+Sep 20 22:02:47 kev-laptop kernel: [  717.907230] line6usb: Unknown symbol snd_rawmidi_set_ops
+Sep 20 22:02:47 kev-laptop kernel: [  717.907413] line6usb: disagrees about version of symbol snd_card_create
+Sep 20 22:02:47 kev-laptop kernel: [  717.907414] line6usb: Unknown symbol snd_card_create
+Sep 20 22:02:47 kev-laptop kernel: [  717.907474] line6usb: disagrees about version of symbol snd_pcm_period_elapsed
+Sep 20 22:02:47 kev-laptop kernel: [  717.907475] line6usb: Unknown symbol snd_pcm_period_elapsed
+```
 
 Against my will, and to not waste time, I resigned myself to use a Windows machine lying around the office. I installed [Audacity](https://audacity.sourceforge.net) and the Windows drivers, then plugged the pod. And voilà, I had a portable recording studio.
 

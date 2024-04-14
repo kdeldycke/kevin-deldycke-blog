@@ -50,19 +50,19 @@ I wanted to use a true lossless codec here, but after several trials and errors,
 
 I can now apply the stabilization, with a high shakiness parameter to make the algorithm ignore the lack of fluidity:
 
-    ```shell-session
-    $ transcode -J stabilize -i ./slideshow-redux.mp4 -y null,null -o dummy
-    $ transcode -J stabilize=shakiness=8 -i ./slideshow-redux.mp4 -y ffmpeg -F huffyuv -o ./slideshow-redux-stabilized.avi
-    ```
+```shell-session
+$ transcode -J stabilize -i ./slideshow-redux.mp4 -y null,null -o dummy
+$ transcode -J stabilize=shakiness=8 -i ./slideshow-redux.mp4 -y ffmpeg -F huffyuv -o ./slideshow-redux-stabilized.avi
+```
 
 Then we extract all frames of the stabilized video to get a new set of photos:
 
-    ```shell-session
-    $ mkdir ./timelapse-stabilized
-    $ cd ./timelapse-stabilized
-    $ cp ../slideshow-redux-stabilized.avi
-    $ ffmpeg -i ./slideshow-redux-stabilized.avi -f image2 stab%05d.png
-    ```
+```shell-session
+$ mkdir ./timelapse-stabilized
+$ cd ./timelapse-stabilized
+$ cp ../slideshow-redux-stabilized.avi
+$ ffmpeg -i ./slideshow-redux-stabilized.avi -f image2 stab%05d.png
+```
 
 From the produced images, I created a new slideshow with proper transitions.
 
@@ -79,9 +79,9 @@ I applied the raw slowmoVideo transformation on the initial set of photos. And t
 
 After this herculean task, I cropped & resized the images to fit the 1080p resolution:
 
-    ```shell-session
-    $ convert -resize 1920x1080 -background black -gravity center -extent 1920x1080 ./manually-stab-keyframes/* pict%04d.png
-    ```
+```shell-session
+$ convert -resize 1920x1080 -background black -gravity center -extent 1920x1080 ./manually-stab-keyframes/* pict%04d.png
+```
 
 [As for Goodnight]({filename}/2013/goodnight-video.md), we tried to get rid of the wide black bars on the sides. [QPX](https://wqpx.wordpress.com) created for us a mask made of paint strokes:
 
@@ -89,9 +89,9 @@ After this herculean task, I cropped & resized the images to fit the 1080p resol
 
 Then I used that mask to blend the photos with a background fiber texture from [Subtle Patterns](https://subtlepatterns.com):
 
-    ```shell-session
-    $ find ./ -iname "pict*.png" -exec composite "{}" ./stressed_linen-1080p.png ./Masque-02.png "{}"-composed.png \;
-    ```
+```shell-session
+$ find ./ -iname "pict*.png" -exec composite "{}" ./stressed_linen-1080p.png ./Masque-02.png "{}"-composed.png \;
+```
 
 Finally I send these pre-rendered keyframes to slowmoVideo to produce a 4 minutes ultra-slow-motion. Then Tomasito added a title and credits.
 

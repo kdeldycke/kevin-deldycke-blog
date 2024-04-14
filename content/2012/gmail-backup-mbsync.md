@@ -11,70 +11,70 @@ In the mean time I found out about [mbsync](https://isync.sourceforge.net/mbsync
 
 Let's install mbsync and its dependencies!
 
-    ```shell-session
-    $ sudo aptitude install isync ca-certificates
-    ```
+```shell-session
+$ sudo aptitude install isync ca-certificates
+```
 
 Just in case, don't forget to [enable IMAP access to you Gmail account](https://support.google.com/mail/bin/answer.py?hl=en&answer=77695).
 
 Create a new destination directory and an empty configuration file:
 
-    ```shell-session
-    $ mkdir -p ~/gmail-backup
-    $ touch ~/.mbsyncrc
-    ```
+```shell-session
+$ mkdir -p ~/gmail-backup
+$ touch ~/.mbsyncrc
+```
 
 Then add the following parameters in `~/.mbsyncrc`:
 
-    ```text
-    IMAPAccount      gmail
-    Host             imap.gmail.com
-    User             kevin@gmail.com
-    Pass             xxxxxxxxxxxxxx
-    UseIMAPS         yes
-    CertificateFile  ~/gmail-backup/gmail.crt
-    CertificateFile  ~/gmail-backup/google.crt
-    CertificateFile  /usr/share/ca-certificates/mozilla/Equifax_Secure_CA.crt
+```text
+IMAPAccount      gmail
+Host             imap.gmail.com
+User             kevin@gmail.com
+Pass             xxxxxxxxxxxxxx
+UseIMAPS         yes
+CertificateFile  ~/gmail-backup/gmail.crt
+CertificateFile  ~/gmail-backup/google.crt
+CertificateFile  /usr/share/ca-certificates/mozilla/Equifax_Secure_CA.crt
 
-    IMAPStore  gmail-cloud
-    Account    gmail
+IMAPStore  gmail-cloud
+Account    gmail
 
-    MaildirStore  gmail-backup
-    Path          ~/gmail-backup/
-    Inbox         ~/gmail-backup/Inbox
+MaildirStore  gmail-backup
+Path          ~/gmail-backup/
+Inbox         ~/gmail-backup/Inbox
 
-    Channel   gmail
-    Master    :gmail-cloud:
-    Slave     :gmail-backup:
-    Create    Slave
-    Expunge   Slave
-    Sync      Pull
-    # Exclude everything under the internal [Gmail] folder, except archived mails
-    Patterns  * ![Gmail]* "[Gmail]/All Mail"
-    ```
+Channel   gmail
+Master    :gmail-cloud:
+Slave     :gmail-backup:
+Create    Slave
+Expunge   Slave
+Sync      Pull
+# Exclude everything under the internal [Gmail] folder, except archived mails
+Patterns  * ![Gmail]* "[Gmail]/All Mail"
+```
 
 Before going further we need to fetch Gmail's certificates:
 
-    ```shell-session
-    $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > ~/gmail-backup/gmail.crt
-    $ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | tac | sed -ne '1,/-BEGIN CERTIFICATE-/p' | tac > ~/gmail-backup/google.crt
-    ```
+```shell-session
+$ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sed -ne '1,/-END CERTIFICATE-/p' > ~/gmail-backup/gmail.crt
+$ openssl s_client -connect imap.gmail.com:993 -showcerts 2>&1 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | tac | sed -ne '1,/-BEGIN CERTIFICATE-/p' | tac > ~/gmail-backup/google.crt
+```
 
 Then all you have to do is to launch mbsync itself:
 
-    ```shell-session
-    $ mbsync gmail
-    Reading configuration file ~/.mbsyncrc
-    Resolving imap.gmail.com... ok
-    Connecting to 173.194.78.108:993... ok
-    Connection is now encrypted
-    Logging in...
-    Channel gmail
-    Selecting slave MyLabel... Maildir notice: cannot read UIDVALIDITY, creating new.
-    0 messages, 0 recent
-    Selecting master MyLabel... 77 messages, 0 recent
-    Synchronizing
-    Pulling new messages........................................................
-    ```
+```shell-session
+$ mbsync gmail
+Reading configuration file ~/.mbsyncrc
+Resolving imap.gmail.com... ok
+Connecting to 173.194.78.108:993... ok
+Connection is now encrypted
+Logging in...
+Channel gmail
+Selecting slave MyLabel... Maildir notice: cannot read UIDVALIDITY, creating new.
+0 messages, 0 recent
+Selecting master MyLabel... 77 messages, 0 recent
+Synchronizing
+Pulling new messages........................................................
+```
 
 Now to keep your local backup fresh don't forget to launch mbsync regularly in the background.

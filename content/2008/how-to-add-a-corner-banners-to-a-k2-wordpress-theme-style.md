@@ -18,25 +18,25 @@ brand new
 first, we have to create a `functions.php` file in our style directory (example:
 `/wp-content/themes/k2/styles/my-style`). Then add the following PHP code in it:
 
-    ```html+php
-    <?php
+```html+php
+<?php
 
-    // Add HTML code required by our corner banner
-    function add_corner_banner() {
-      ?>
-      <a
-        id="cornerbanner"
-        href="https://coolcavemen.com/news/new-website-beta-released/"
-        title="New website released as beta version!">
-      </a>
-      <?php
-    }
+// Add HTML code required by our corner banner
+function add_corner_banner() {
+  ?>
+  <a
+    id="cornerbanner"
+    href="https://coolcavemen.com/news/new-website-beta-released/"
+    title="New website released as beta version!">
+  </a>
+  <?php
+}
 
-    // Call add_corner_banner() method on each template_body_top hook
-    add_action('template_body_top', 'add_corner_banner');
+// Call add_corner_banner() method on each template_body_top hook
+add_action('template_body_top', 'add_corner_banner');
 
-    ?>
-    ```
+?>
+```
 
 This code tell K2 to replace the `template_body_top` hook define in all K2
 pages, by the result of the `add_corner_banner()` PHP function. This function is
@@ -45,20 +45,20 @@ coded to return the HTML code we need for the corner banner.
 Then we need to add the following CSS code to our style
 (`/wp-content/themes/k2/styles/my-style/my-style.css`):
 
-    ```css
-    #cornerbanner {
-      background: url(
-        "/wp-content/themes/k2/styles/my-style/corner-banner.png") no-repeat;
-      display: block;
-      height: 205px;
-      width: 205px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 999;
-      text-decoration: none;
-    }
-    ```
+```css
+#cornerbanner {
+  background: url(
+    "/wp-content/themes/k2/styles/my-style/corner-banner.png") no-repeat;
+  display: block;
+  height: 205px;
+  width: 205px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  text-decoration: none;
+}
+```
 
 This CSS code refer to the
 [`corner-banner.png`]({attach}corner-banner.png) which is a 205x205 px PNG
@@ -69,27 +69,27 @@ generate it.
 This CSS code is designed for a top right banner. If you need a top left banner,
 replace:
 
-    ```css
-      right: 0;
-    ```
+```css
+  right: 0;
+```
 
 by
 
-    ```css
-      left: 0;
-    ```
+```css
+  left: 0;
+```
 
 This also work for horizontal positioning:
 
-    ```css
-      top: 0;
-    ```
+```css
+  top: 0;
+```
 
 can be replaced by
 
-    ```css
-      bottom: 0;
-    ```
+```css
+  bottom: 0;
+```
 
 That's all! My solution is not supposed to work (and was not tested) with
 Internet Explorer as the latter is known to have

@@ -23,28 +23,28 @@ without value so it's closer to the
 stick to it in order to catch [tag soup](https://en.wikipedia.org/wiki/Tag_soup)
 and malformatted tags.
 
-    ```python
-    ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
-    ```
+```python
+ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
+```
 
 And here is it applied in a trivial example (in a python shell):
 
-    ```pycon
-    >>> import re
-    >>>
-    >>> content = """This is the <strong>content</strong> in which we want to
-    <em>find</em> <a href="https://en.wikipedia.org/wiki/Html">HTML</a> tags."""
-    >>>
-    >>> ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
-    >>>
-    >>> for match in re.finditer(ultimate_regexp, content):
-    ...   print repr(match.group())
-    ...
-    '<strong>'
-    '</strong>'
-    '<em>'
-    '</em>'
-    '<a href="https://en.wikipedia.org/wiki/Html">'
-    '</a>'
-    >>>
-    ```
+```pycon
+>>> import re
+>>>
+>>> content = """This is the <strong>content</strong> in which we want to
+<em>find</em> <a href="https://en.wikipedia.org/wiki/Html">HTML</a> tags."""
+>>>
+>>> ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
+>>>
+>>> for match in re.finditer(ultimate_regexp, content):
+...   print repr(match.group())
+...
+'<strong>'
+'</strong>'
+'<em>'
+'</em>'
+'<a href="https://en.wikipedia.org/wiki/Html">'
+'</a>'
+>>>
+```

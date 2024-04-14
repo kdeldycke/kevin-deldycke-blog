@@ -49,20 +49,20 @@ corrupted. The `nlconverter` GUI gave me this error:
 
 And the command line gave me this:
 
-    ```pytb
-    Traceback (most recent call last):
-      File "notes2mbox.py", line 21, in <module>
-        db = NlconverterLib.getNotesDb(notesNsfPath, notesPasswd)
-      File "C:\winnlc-alpha-1\NlconverterLib.py", line 43, in getNotesDb
-        session = win32com.client.Dispatch(r'Lotus.NotesSession')
-      File "C:\Python26\lib\site-packages\win32com\client\__init__.py", line 95, in Dispatch
-        dispatch, userName = dynamic._GetGoodDispatchAndUserName(dispatch,userName,clsctx)
-      File "C:\Python26\lib\site-packages\win32com\client\dynamic.py", line 104, in _GetGoodDispatchAndUserName
-        return (_GetGoodDispatch(IDispatch, clsctx), userName)
-      File "C:\Python26\lib\site-packages\win32com\client\dynamic.py", line 84, in _GetGoodDispatch
-        IDispatch = pythoncom.CoCreateInstance(IDispatch, None, clsctx, pythoncom.IID_IDispatch)
-    pywintypes.com_error: (-2147221231, 'ClassFactory ne peut pas fournir la classe demand\xe9e', None, None)
-    ```
+```pytb
+Traceback (most recent call last):
+  File "notes2mbox.py", line 21, in <module>
+    db = NlconverterLib.getNotesDb(notesNsfPath, notesPasswd)
+  File "C:\winnlc-alpha-1\NlconverterLib.py", line 43, in getNotesDb
+    session = win32com.client.Dispatch(r'Lotus.NotesSession')
+  File "C:\Python26\lib\site-packages\win32com\client\__init__.py", line 95, in Dispatch
+    dispatch, userName = dynamic._GetGoodDispatchAndUserName(dispatch,userName,clsctx)
+  File "C:\Python26\lib\site-packages\win32com\client\dynamic.py", line 104, in _GetGoodDispatchAndUserName
+    return (_GetGoodDispatch(IDispatch, clsctx), userName)
+  File "C:\Python26\lib\site-packages\win32com\client\dynamic.py", line 84, in _GetGoodDispatch
+    IDispatch = pythoncom.CoCreateInstance(IDispatch, None, clsctx, pythoncom.IID_IDispatch)
+pywintypes.com_error: (-2147221231, 'ClassFactory ne peut pas fournir la classe demand\xe9e', None, None)
+```
 
 After these two failed attempts, I was quite depressed and not far from
 surrender to the evil power of proprietary software. Then I managed to setup a
@@ -81,149 +81,149 @@ procedure was tested several times on [Mac OS X Leopard
   client for Mac OS X (unfortunately you have to register) and install it. I
   used Lotus Notes 7.0.3 for Mac OS X Leopard:
 
-![]({attach}lotus-notes-mac-osx-leopard-install.png)
+    ![]({attach}lotus-notes-mac-osx-leopard-install.png)
 
   2. You'll be welcomed by a [wizard
   ](https://en.wikipedia.org/wiki/Wizard_(software)):
 
-![]({attach}lotus-notes-wizard-screen-1.png)
+    ![]({attach}lotus-notes-wizard-screen-1.png)
 
   3. On the next screen, enter a dummy name and uncheck the
   "_I want to connect to a Domino server_" box:
 
-![]({attach}lotus-notes-wizard-screen-2.png)
+    ![]({attach}lotus-notes-wizard-screen-2.png)
 
   4. Then proceed to the next step in which you'll uncheck
   "_Setup instant messaging_":
 
-![]({attach}lotus-notes-wizard-screen-3.png)
+    ![]({attach}lotus-notes-wizard-screen-3.png)
 
   5. In the last screen, uncheck all boxes. We don't want to setup any other
   service yet:
 
-![]({attach}lotus-notes-wizard-screen-4.png)
+    ![]({attach}lotus-notes-wizard-screen-4.png)
 
   6. Initial setup is now complete:
 
-![]({attach}lotus-notes-wizard-screen-5.png)
+    ![]({attach}lotus-notes-wizard-screen-5.png)
 
-You can now launch Lotus Notes:
+    You can now launch Lotus Notes:
 
-![]({attach}launch-lotus-notes-for-mac-osx.png)
+    ![]({attach}launch-lotus-notes-for-mac-osx.png)
 
-![]({attach}lotus-notes-7-on-mac-osx-leopard.png)
+    ![]({attach}lotus-notes-7-on-mac-osx-leopard.png)
 
   7. On first run, there will be the following screen, where you should click
   on the "_No thanks, just give me the defaults_":
 
-![]({attach}lotus-notes-wizard-screen-6.png)
+    ![]({attach}lotus-notes-wizard-screen-6.png)
 
   8. You'll end up on what will be your default Lotus Notes main page from now
   on:
 
-![]({attach}lotus-notes-wizard-screen-7.png)
+    ![]({attach}lotus-notes-wizard-screen-7.png)
 
   9. The next step is to go back to the machine (Windows for me) from which
   you're running the Notes client containing all the mails you plan to migrate.
   From there, [export your mail database
   ]({filename}/2010/how-to-export-backup-lotus-notes-mails.md):
 
-![]({attach}export-screen.png)
+    ![]({attach}export-screen.png)
 
-All details of this operation can be found in [this dedicated article
-]({filename}/2010/how-to-export-backup-lotus-notes-mails.md).
+    All details of this operation can be found in [this dedicated article
+    ]({filename}/2010/how-to-export-backup-lotus-notes-mails.md).
 
   10. Then go back to your Mac OS X machine and import your freshly exported
   `.nsf` database. This is as simple as opening the file via the `File` >
   `Database` > `Open...` menu and dialog:
 
-![]({attach}lotus-notes-database-opening.png)
+    ![]({attach}lotus-notes-database-opening.png)
 
-![]({attach}lotus-notes-open-database-dialog.png)
+    ![]({attach}lotus-notes-open-database-dialog.png)
 
   11. When Notes attempts to open the file, you'll be prompted by several
   dialogs regarding the security attached to the database. If you get the
   "_Create Cross Certificate_" screen, then just answer "_Yes_" as below:
 
-![]({attach}lotus-notes-cross-certificate-creation-dialog.png)
+    ![]({attach}lotus-notes-cross-certificate-creation-dialog.png)
 
-And every time you get an "_Execution Security Alert_" message, always check
-the "_Start trusting the signer to execute this action_" option before clicking
-"_OK_":
+    And every time you get an "_Execution Security Alert_" message, always check
+    the "_Start trusting the signer to execute this action_" option before clicking
+    "_OK_":
 
-![]({attach}lotus-notes-execution-security-alert-dialog.png)
+    ![]({attach}lotus-notes-execution-security-alert-dialog.png)
 
   12. The client will then rebuild the index before giving you a plain view of
   your inbox:
 
-![]({attach}lotus-notes-database-import.png)
+    ![]({attach}lotus-notes-database-import.png)
 
-![]({attach}lotus-notes-database-successful-import.png)
+    ![]({attach}lotus-notes-database-successful-import.png)
 
   13. Next step is to setup a local IMAP server:
 
-![]({attach}dovecot-on-macosx.png)
+    ![]({attach}dovecot-on-macosx.png)
 
-As you can see I [used Dovecot, and all is explained here
-]({filename}/2010/setup-lightweight-imap-server-macos-leopard-dovecot.md).
+    As you can see I [used Dovecot, and all is explained here
+    ]({filename}/2010/setup-lightweight-imap-server-macos-leopard-dovecot.md).
 
   14. Now it's time to create a new account in Lotus Notes to access this local
   IMAP server. Click on the `Address Book` in your toolbar and add a new
   `Account`:
 
-![]({attach}lotus-notes-address-book-icon.png)
+    ![]({attach}lotus-notes-address-book-icon.png)
 
-![]({attach}lotus-notes-create-new-mail-account.png)
+    ![]({attach}lotus-notes-create-new-mail-account.png)
 
   15. Here is where you configure Notes to let it be aware of our local server
   existence. Only the first tab must be changed to your local parameters. You
   can left the last two tabs untouched:
 
-![]({attach}lotus-notes-local-imap-config.png)
+    ![]({attach}lotus-notes-local-imap-config.png)
 
   16. Open within Notes your local IMAP mailbox. It is found in the workspace,
   which you can access via the `Databases` icon on your toolbar:
 
-![]({attach}lotus-notes-open-workspace.png)
+    ![]({attach}lotus-notes-open-workspace.png)
 
-![]({attach}lotus-notes-workspace.png)
+    ![]({attach}lotus-notes-workspace.png)
 
   17. You'll be welcomed by a useless help screen:
 
-![]({attach}lotus-notes-imap-welcome-screen.png)
+    ![]({attach}lotus-notes-imap-welcome-screen.png)
 
-Just close it to get your local IMAP mail view:
+    Just close it to get your local IMAP mail view:
 
-![]({attach}lotus-notes-local-imap-mailbox-view.png)
+    ![]({attach}lotus-notes-local-imap-mailbox-view.png)
 
   18. While trying to opening the local IMAP mailbox, you may encounter this
   `TCPIP port` error:
 
-![]({attach}lotus-notes-tcp-ip-error.png)
+    ![]({attach}lotus-notes-tcp-ip-error.png)
 
-In this case, please have a look at my other [article explaining how to open
-TCPIP port in Lotus Notes
-]({filename}/2010/how-to-fix-lotus-notes-disabled-tcp-ip-port-error.md).
+    In this case, please have a look at my other [article explaining how to open
+    TCPIP port in Lotus Notes
+    ]({filename}/2010/how-to-fix-lotus-notes-disabled-tcp-ip-port-error.md).
 
   19. For this step, just copy or cut, then paste, mails from your local `.nsf`
   database to your local IMAP account:
 
-![]({attach}lotus-notes-copy-nsf-mails.png)
+    ![]({attach}lotus-notes-copy-nsf-mails.png)
 
-![]({attach}lotus-notes-copying-nsf-mails.png)
+    ![]({attach}lotus-notes-copying-nsf-mails.png)
 
-![]({attach}lotus-notes-paste-mails-to-local-imap.png)
+    ![]({attach}lotus-notes-paste-mails-to-local-imap.png)
 
-![]({attach}lotus-notes-pasting-mails-to-local-imap.png)
+    ![]({attach}lotus-notes-pasting-mails-to-local-imap.png)
 
-![]({attach}lotus-notes-mails-migrated-to-local-imap.png)
+    ![]({attach}lotus-notes-mails-migrated-to-local-imap.png)
 
   20. While playing with copy'n'paste, you may encounter this error:
 
-![]({attach}notes-rich-text-to-mime-conversion-error.png)
+    ![]({attach}notes-rich-text-to-mime-conversion-error.png)
 
-A [workaround can be found in this article
-]({filename}/2010/lotus-notes-rich-text-mime-conversion-error.md).
+    A [workaround can be found in this article
+    ]({filename}/2010/lotus-notes-rich-text-mime-conversion-error.md).
 
   21. Finally, if like me you've played a lot with mails during the transfer
   step above, you may ends up with loads of duplicate mails. In this case have
@@ -234,7 +234,7 @@ A [workaround can be found in this article
   22. That's it! You now have a standard Maildir of your Lotus Notes mails,
   located in your user home directory (`~/Maildir`):
 
-![]({attach}maildir-containing-lotus-notes-mails.png)
+    ![]({attach}maildir-containing-lotus-notes-mails.png)
 
 My ultimate action was to [convert the Dovecot maildir to Kmail maildir
 ]({filename}/2007/how-to-import-a-maildir-folder-to-kmail.md),

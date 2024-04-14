@@ -17,54 +17,54 @@ En fait, il faut appliquer la même procédure que celle indiquée pour le modem
 
 Et donc, après s’être connecté depuis un terminal sous Linux en telnet:
 
-    ```shell-session
-    $ telnel 192.168.1.254
-    ```
+```shell-session
+$ telnel 192.168.1.254
+```
 
 Il ne reste qu'à exécuter les commandes suivantes depuis le prompt du modem:
 
-    ```console
-    system reset factory yes proceed yes
-    wireless mssid ifconfig ssid_id 0 secmode wpa-psk WPAPSKversion WPA2
+```console
+system reset factory yes proceed yes
+wireless mssid ifconfig ssid_id 0 secmode wpa-psk WPAPSKversion WPA2
 
-    ppp ifdelete intf Internet
-    ppp relay flush
+ppp ifdelete intf Internet
+ppp relay flush
 
-    ip ifadd intf IPoE dest ethoa_8_35
-    ip ifattach intf IPoE
+ip ifadd intf IPoE dest ethoa_8_35
+ip ifattach intf IPoE
 
-    dhcp client ifadd intf IPoE
-    dhcp client rqoptions add intf IPoE option default-routers
-    dhcp client rqoptions add intf IPoE option domain-name-servers
-    dhcp client ifattach intf IPoE
+dhcp client ifadd intf IPoE
+dhcp client rqoptions add intf IPoE option default-routers
+dhcp client rqoptions add intf IPoE option domain-name-servers
+dhcp client ifattach intf IPoE
 
-    ip ifadd intf Wan dest eth-wan
-    ip ifattach intf Wan
-    dhcp client ifadd intf Wan
-    dhcp client rqoptions add intf Wan option default-routers
-    dhcp client rqoptions add intf Wan option domain-name-servers
-    dhcp client ifattach intf Wan
+ip ifadd intf Wan dest eth-wan
+ip ifattach intf Wan
+dhcp client ifadd intf Wan
+dhcp client rqoptions add intf Wan option default-routers
+dhcp client rqoptions add intf Wan option domain-name-servers
+dhcp client ifattach intf Wan
 
-    nat ifconfig intf Wan translation enabled
-    nat ifconfig intf IPoE translation enabled
+nat ifconfig intf Wan translation enabled
+nat ifconfig intf IPoE translation enabled
 
-    dhcp server config state enabled
+dhcp server config state enabled
 
-    service system ifadd name PING_RESPONDER group wan
+service system ifadd name PING_RESPONDER group wan
 
-    dsd config state disabled
+dsd config state disabled
 
-    ip ipdelete addr 10.0.0.138
+ip ipdelete addr 10.0.0.138
 
-    system config defaultconnection IPoE led green
+system config defaultconnection IPoE led green
 
-    env set var CONF_SERVICE value IPoE
+env set var CONF_SERVICE value IPoE
 
-    cwmp config state=enabled mode=full periodicInform=enabled periodicInfInt=86400 maxEnvelopes=1
+cwmp config state=enabled mode=full periodicInform=enabled periodicInfInt=86400 maxEnvelopes=1
 
-    cwmp server config url=https://94.23.114.8:7777/
+cwmp server config url=https://94.23.114.8:7777/
 
-    saveall
+saveall
 
-    system reboot
-    ```
+system reboot
+```

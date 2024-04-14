@@ -21,15 +21,15 @@ with single or double quotes).
 Unfortunately his regular expression was designed for Microsoft .NET, so I've
 spend some time to convert it to PHP. Here is the result:
 
-    ```php
-    $regex = "/<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>/i";
-    ```
+```php
+$regex = "/<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>/i";
+```
 
 And finally, my version based on the one above:
 
-    ```php
-    $regex = "/<\/?\w+((\s+(\w|\w[\w-]*\w)(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>/i";
-    ```
+```php
+$regex = "/<\/?\w+((\s+(\w|\w[\w-]*\w)(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>/i";
+```
 
 The latter include the following enhancement:
 

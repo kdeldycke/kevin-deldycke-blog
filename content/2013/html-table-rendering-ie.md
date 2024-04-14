@@ -25,12 +25,12 @@ This issue seems to have been [known since April 2011](https://social.msdn.micro
 
 And you know how I fixed this? I fearlessly added the following piece of JavaScript in my initialization code:
 
-    ```javascript
-    // Fix IE9 cells misalignment
-    $("table tr").contents().filter(function() {
-        return this.nodeType == 3;
-    }).remove();
-    ```
+```javascript
+// Fix IE9 cells misalignment
+$("table tr").contents().filter(function() {
+    return this.nodeType == 3;
+}).remove();
+```
 
 The code above just strips all extra spaces from tables it find. You can [see this hack in action](https://github.com/kdeldycke/smile_openerp_matrix_widget/commit/c9646dd344e6bc05d5b9f8d33bd3cd6116e1c0f3) in my [matrix widget for OpenERP 6.0]({filename}/2012/announcing-openerp-matrix-widget.md).
 

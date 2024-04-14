@@ -19,10 +19,10 @@ your current user. Mine was found in my home directory at
 `/Users/kevin/Library/Preferences/Notes Preferences`. At the end of this file,
 add [these two directives](https://macosx.com/forums/1277870-post4.html):
 
-    ```ini
-    TCPIP=TCP,0,15,0
-    Ports=TCPIP
-    ```
+```ini
+TCPIP=TCP,0,15,0
+Ports=TCPIP
+```
 
 Then relaunch Lotus Notes and switch from `Island (Disconnected)` location to
 another that will allow your client to listen to the network. In my case,

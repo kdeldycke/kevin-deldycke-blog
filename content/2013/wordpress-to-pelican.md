@@ -65,41 +65,41 @@ naturally match my previous WordPress URLs (good for SEO).
 
 So, let's install Pelican and its dependencies:
 
-    ```shell-session
-    $ aptitude install python-markdown python-pygments python-beautifulsoup pandoc
-    $ pip install pelican mdx_video
-    ```
+```shell-session
+$ aptitude install python-markdown python-pygments python-beautifulsoup pandoc
+$ pip install pelican mdx_video
+```
 
 And create a new site:
 
-    ```shell-session
-    $ mkdir blog
-    $ cd ./blog/
-    $ pelican-quickstart
-    Welcome to pelican-quickstart v3.1.1.
+```shell-session
+$ mkdir blog
+$ cd ./blog/
+$ pelican-quickstart
+Welcome to pelican-quickstart v3.1.1.
 
-    This script will help you create a new Pelican-based website.
+This script will help you create a new Pelican-based website.
 
-    Please answer the following questions so this script can generate the files needed by Pelican.
+Please answer the following questions so this script can generate the files needed by Pelican.
 
-    > Where do you want to create your new web site? [.]
-    > What will be the title of this web site? Kevin Deldycke
-    > Who will be the author of this web site? Kevin Deldycke
-    > What will be the default language of this web site? [en]
-    > Do you want to specify a URL prefix? e.g., http://example.com   (Y/n) Y
-    > What is your URL prefix? (see above example; no trailing slash) https://kevin.deldycke.com
-    > Do you want to enable article pagination? (Y/n) n
-    > Do you want to generate a Makefile to easily manage your website? (Y/n) Y
-    > Do you want an auto-reload & simpleHTTP script to assist with theme and site development? (Y/n) Y
-    > Do you want to upload your website using FTP? (y/N)
-    > Do you want to upload your website using SSH? (y/N) Y
-    > What is the hostname of your SSH server? [localhost]
-    > What is the port of your SSH server? [22]
-    > What is your username on that server? [root]
-    > Where do you want to put your web site on that server? [/var/www]
-    > Do you want to upload your website using Dropbox? (y/N) N
-    Done. Your new project is available at /home/kevin/blog
-    ```
+> Where do you want to create your new web site? [.]
+> What will be the title of this web site? Kevin Deldycke
+> Who will be the author of this web site? Kevin Deldycke
+> What will be the default language of this web site? [en]
+> Do you want to specify a URL prefix? e.g., http://example.com   (Y/n) Y
+> What is your URL prefix? (see above example; no trailing slash) https://kevin.deldycke.com
+> Do you want to enable article pagination? (Y/n) n
+> Do you want to generate a Makefile to easily manage your website? (Y/n) Y
+> Do you want an auto-reload & simpleHTTP script to assist with theme and site development? (Y/n) Y
+> Do you want to upload your website using FTP? (y/N)
+> Do you want to upload your website using SSH? (y/N) Y
+> What is the hostname of your SSH server? [localhost]
+> What is the port of your SSH server? [22]
+> What is your username on that server? [root]
+> Where do you want to put your web site on that server? [/var/www]
+> Do you want to upload your website using Dropbox? (y/N) N
+Done. Your new project is available at /home/kevin/blog
+```
 
 Basically, that's it. You're now free to tweak the configuration and structure
 of your site.
@@ -112,34 +112,34 @@ migration]({filename}/2013/wordpress-disqus-migration.md), I
 had to update the markup of the code blocks. Same thing apply here. I need to
 replace occurrences of:
 
-    ```bbcode
-    [code lang="shell"]
-    (...)
-    [/code]
-    ```
+```bbcode
+[code lang="shell"]
+(...)
+[/code]
+```
 
 by this kind of pure HTML:
 
-    ```html
-    <pre><code class="shell">
-    (...)
-    </code></pre>
-    ```
+```html
+<pre><code class="shell">
+(...)
+</code></pre>
+```
 
 The magic command to perform that job is:
 
-    ```shell-session
-    $ sed -e 's/\[\/code\]/<\/code><\/pre>/g' -e 's/\[code lang=\(.*\)\]/<pre><code class=\1>/g' < ./wordpress.xml > ./wordpress-fixed.xml
-    ```
+```shell-session
+$ sed -e 's/\[\/code\]/<\/code><\/pre>/g' -e 's/\[code lang=\(.*\)\]/<pre><code class=\1>/g' < ./wordpress.xml > ./wordpress-fixed.xml
+```
 
 Pelican consumes by default
 [reStructuredText](https://en.wikipedia.org/wiki/ReStructuredText) content, but
 it supports [Markdown](https://en.wikipedia.org/wiki/Markdown) too. To convert
 WordPress content to Markdown, the command is:
 
-    ```shell-session
-    $ pelican-import --wpfile -m markdown -o ./content/ ./wordpress-fixed.xml
-    ```
+```shell-session
+$ pelican-import --wpfile -m markdown -o ./content/ ./wordpress-fixed.xml
+```
 
 The thing is, Pelican's built-in importer produces files requiring, in my
 opinion, too much cleaning afterwards.
@@ -151,108 +151,108 @@ a WordPress to Jekyll importer written in Python.
 
 Let's fetch it:
 
-    ```shell-session
-    $ git clone https://github.com/thomasf/exitwp
-    ```
+```shell-session
+$ git clone https://github.com/thomasf/exitwp
+```
 
 Before using it, I had to apply a tiny patch to transform Jekyll metadata to
 Pelican's:
 
-    ```shell-session
-    $ cd exitwp
-    $ git rev-parse HEAD
-    f62d758e853bb718cd013aa808e9b8aaae5df1df
-    $ git diff
-    diff --git a/exitwp.py b/exitwp.py
-    index fad5a4e..61e626e 100755
-    --- a/exitwp.py
-    +++ b/exitwp.py
-    @@ -265,7 +265,7 @@ def write_jekyll(data, target_format):
-                yaml_header['published'] = False
+```shell-session
+$ cd exitwp
+$ git rev-parse HEAD
+f62d758e853bb718cd013aa808e9b8aaae5df1df
+$ git diff
+diff --git a/exitwp.py b/exitwp.py
+index fad5a4e..61e626e 100755
+--- a/exitwp.py
++++ b/exitwp.py
+@@ -265,7 +265,7 @@ def write_jekyll(data, target_format):
+            yaml_header['published'] = False
 
-            if i['type'] == 'post':
-    -            i['uid'] = get_item_uid(i, date_prefix=True)
-    +            i['uid'] = get_item_uid(i, date_prefix=False)
-                fn = get_item_path(i, dir='_posts')
-                out = open_file(fn)
-                yaml_header['layout'] = 'post'
-    @@ -311,13 +311,15 @@ def write_jekyll(data, target_format):
-                            continue
-                        tax_out[t_name].append(tvalue)
+        if i['type'] == 'post':
+-            i['uid'] = get_item_uid(i, date_prefix=True)
++            i['uid'] = get_item_uid(i, date_prefix=False)
+            fn = get_item_path(i, dir='_posts')
+            out = open_file(fn)
+            yaml_header['layout'] = 'post'
+@@ -311,13 +311,15 @@ def write_jekyll(data, target_format):
+                        continue
+                    tax_out[t_name].append(tvalue)
 
-    -            out.write('---\n')
-                if len(yaml_header) > 0:
-                    out.write(toyaml(yaml_header))
-                if len(tax_out) > 0:
-    -                out.write(toyaml(tax_out))
-    +                for tax_type, tax_values in tax_out.items():
-    +                    if tax_type == 'categories':
-    +                        tax_type = 'category'
-    +                    out.write("%s: %s\n" % (tax_type, ', '.join(tax_values)))
-    +            out.write('\n')
+-            out.write('---\n')
+            if len(yaml_header) > 0:
+                out.write(toyaml(yaml_header))
+            if len(tax_out) > 0:
+-                out.write(toyaml(tax_out))
++                for tax_type, tax_values in tax_out.items():
++                    if tax_type == 'categories':
++                        tax_type = 'category'
++                    out.write("%s: %s\n" % (tax_type, ', '.join(tax_values)))
++            out.write('\n')
 
-    -            out.write('---\n\n')
-                try:
-                    out.write(html2fmt(i['body'], target_format))
-                except:
-    ```
+-            out.write('---\n\n')
+            try:
+                out.write(html2fmt(i['body'], target_format))
+            except:
+```
 
 Now call exitwp and move all Markdown files to Pelican:
 
-    ```shell-session
-    $ rm -f ./wordpress-xml/*
-    $ rm -rf ./build
-    $ cp ../wordpress-fixed.xml ./wordpress-xml/
-    $ python exitwp.py
-    $ cd ..
-    $ mv ./exitwp/build/jekyll/kevin.deldycke.com/_posts/* ./content/
-    $ rename "s/\.markdown/\.md/g" ./content/*.markdown
-    ```
+```shell-session
+$ rm -f ./wordpress-xml/*
+$ rm -rf ./build
+$ cp ../wordpress-fixed.xml ./wordpress-xml/
+$ python exitwp.py
+$ cd ..
+$ mv ./exitwp/build/jekyll/kevin.deldycke.com/_posts/* ./content/
+$ rename "s/\.markdown/\.md/g" ./content/*.markdown
+```
 
 We still have to clean-up articles. Like convert HTML code blocks to use
 Pelican's tag:
 
-    ```shell-session
-    $ find ./content/ -iname "*.md" -exec perl -0777 -i -pe "s/<code class=\"(.*?)\">(.*?)<\/code>/:::\1\2/gs" "{}" \;
-    ```
+```shell-session
+$ find ./content/ -iname "*.md" -exec perl -0777 -i -pe "s/<code class=\"(.*?)\">(.*?)<\/code>/:::\1\2/gs" "{}" \;
+```
 
 We can also fix some metadata like authors, and mis-quoted titles produced by
 exitwp:
 
-    ```shell-session
-    $ find ./content/ -iname "*.md" -exec sed -i 's/Author: Admin/Author: Kevin Deldycke/' "{}" \;
-    $ find ./content/ -iname "*.md" -exec sed -i "s/^title: '\(.*\)'/title: \1/" "{}" \;
-    ```
+```shell-session
+$ find ./content/ -iname "*.md" -exec sed -i 's/Author: Admin/Author: Kevin Deldycke/' "{}" \;
+$ find ./content/ -iname "*.md" -exec sed -i "s/^title: '\(.*\)'/title: \1/" "{}" \;
+```
 
 I'll take the opportunity to consolidate some tags:
 
-    ```shell-session
-    $ find ./content/ -iname "*.md" -exec sed -i "s/tags:\(.*\)leopard\(.*\)/tags:\1Mac OS X Leopard\2/" "{}" \;
-    $ find ./content/ -iname "*.md" -exec sed -i "s/tags:\(.*\), Mac,\(.*\)/tags:\1, MacBook,\2/" "{}" \;
-    ```
+```shell-session
+$ find ./content/ -iname "*.md" -exec sed -i "s/tags:\(.*\)leopard\(.*\)/tags:\1Mac OS X Leopard\2/" "{}" \;
+$ find ./content/ -iname "*.md" -exec sed -i "s/tags:\(.*\), Mac,\(.*\)/tags:\1, MacBook,\2/" "{}" \;
+```
 
 I also had to fix my YouTube's tags:
 
-    ```shell-session
-    $ find ./content/ -iname "*.md" -exec sed -i "s/^\[youtube \(.*\)/\1/g" "{}" \;
-    $ find ./content/ -iname "*.md" -exec sed -i "s/\?rel=0\]$//g" "{}" \;
-    $ find ./content/ -iname "*.md" -exec sed -i "s/\&rel;=0\]$//g" "{}" \;
-    ```
+```shell-session
+$ find ./content/ -iname "*.md" -exec sed -i "s/^\[youtube \(.*\)/\1/g" "{}" \;
+$ find ./content/ -iname "*.md" -exec sed -i "s/\?rel=0\]$//g" "{}" \;
+$ find ./content/ -iname "*.md" -exec sed -i "s/\&rel;=0\]$//g" "{}" \;
+```
 
 I decided to get rid of all image thumbnails generated by WordPress. With the
 command below, I reduced all my thumbnails linking to their full-size version,
 to their full-size version only:
 
-    ```shell-session
-    $ find ./content/ -iname "*.md" -exec sed 's/\[!\[\(.*\)\](.*)\](\(.*\).\(jpe\?g\|png\|gif\))/!\[\1\](\2.\3)/g' "{}" \;
-    ```
+```shell-session
+$ find ./content/ -iname "*.md" -exec sed 's/\[!\[\(.*\)\](.*)\](\(.*\).\(jpe\?g\|png\|gif\))/!\[\1\](\2.\3)/g' "{}" \;
+```
 
 You're now ready to publish your site to the world:
 
-    ```shell-session
-    $ make clean
-    $ make ssh_upload
-    ```
+```shell-session
+$ make clean
+$ make ssh_upload
+```
 
 If you need an example or inspiration, my [current Pelican blog, its theme,
 configuration and content are all available on

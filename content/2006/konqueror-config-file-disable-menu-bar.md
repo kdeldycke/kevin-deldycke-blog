@@ -7,10 +7,10 @@ tags: KDE, kmail, konqueror, Linux
 
 To disable the menu bar in [konqueror](https://www.konqueror.org), you have a specific action in menus. If you want to do this by hand, just add the following directive in your `~/.kde/share/config/konquerorrc` file:
 
-    ```ini
-    [KonqMainWindow]
-    MenuBar=Disabled
-    ```
+```ini
+[KonqMainWindow]
+MenuBar=Disabled
+```
 
 This tip is interresting because you can also apply it for any KDE application that doesn't support this feature.
 

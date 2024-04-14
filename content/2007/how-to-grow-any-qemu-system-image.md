@@ -9,27 +9,27 @@ Qemu images can't be growed. In this example I will show you a little hack to gr
 
 First, convert your `qcow` image to a plain raw file:
 
-    ```shell-session
-    $ qemu-img convert system.qcow -O raw system.raw
-    ```
+```shell-session
+$ qemu-img convert system.qcow -O raw system.raw
+```
 
 Then, create a dummy file (filled with zeros) of the size of extra space you want to add to your image. In this case, 4GiB (=10GiB - 6GiB):
 
-    ```shell-session
-    $ dd if=/dev/zero of=zeros.raw bs=1024k count=4096
-    ```
+```shell-session
+$ dd if=/dev/zero of=zeros.raw bs=1024k count=4096
+```
 
 Fearlessly, add your extra space to your raw system image:
 
-    ```shell-session
-    $ cat system.raw zeros.raw > big10G.raw
-    ```
+```shell-session
+$ cat system.raw zeros.raw > big10G.raw
+```
 
 After that you can boot qemu to verify that added free space is available:
 
-    ```shell-session
-    $ qemu -hda big10G.raw
-    ```
+```shell-session
+$ qemu -hda big10G.raw
+```
 
 Here is an real case example of what you can see in a qemu image on which Windows XP was installed:
 
@@ -37,17 +37,17 @@ Here is an real case example of what you can see in a qemu image on which Window
 
 Now, to grow your primary partition, I suggest you to download a Live CD like [gparted Live CD](https://gparted.sourceforge.net/livecd.php) or [System Rescue CD](https://www.sysresccd.org), and boot on the `.iso` file with qemu:
 
-    ```shell-session
-    $ qemu -hda big10G.raw -cdrom gparted-livecd-0.3.4-5.iso -boot d
-    ```
+```shell-session
+$ qemu -hda big10G.raw -cdrom gparted-livecd-0.3.4-5.iso -boot d
+```
 
 This will allow you to grow and manipulate all your partitions safely thanks to [parted](https://www.gnu.org/software/parted/index.shtml) and other open source system tools.
 
 Finally you can convert back your `raw` image to a `qcow` one to not waste space:
 
-    ```shell-session
-    $ qemu-img convert big10G.raw -O qcow growed-system.qcow
-    ```
+```shell-session
+$ qemu-img convert big10G.raw -O qcow growed-system.qcow
+```
 
 That's all!
 

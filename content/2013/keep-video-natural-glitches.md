@@ -17,22 +17,22 @@ https://www.youtube.com/watch?v=zVaXnD7PxHI
 
 To generate this video, I first extracted all frames to PNG and moved them to a dedicated folder:
 
-    ```shell-session
-    $ mplayer -vo png ./corrupted_video.mpg
-    $ mkdir frames
-    $ mv ./*.png ./frames/
-    ```
+```shell-session
+$ mplayer -vo png ./corrupted_video.mpg
+$ mkdir frames
+$ mv ./*.png ./frames/
+```
 
 Then I simply recombined the individual frames to a video:
 
-    ```shell-session
-    $ avconv -f image2 -framerate 25 -i ./frames/%08d.png -s 720x576 -vcodec huffyuv -same_quant export_lossless.avi
-    ```
+```shell-session
+$ avconv -f image2 -framerate 25 -i ./frames/%08d.png -s 720x576 -vcodec huffyuv -same_quant export_lossless.avi
+```
 
 I extracted the audio too:
 
-    ```shell-session
-    $ mplayer -vo null -hardframedrop -ao pcm:file=audio.wav ./corrupted_video.mpg
-    ```
+```shell-session
+$ mplayer -vo null -hardframedrop -ao pcm:file=audio.wav ./corrupted_video.mpg
+```
 
 Finally I edited and recombined the video and audio in Kdenlive, to cut out long and uninteresting parts.

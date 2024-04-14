@@ -13,48 +13,48 @@ FeedTools do a really nice job to detect the charset and handle feed's data. So 
 
 To fix that, I've recoded the [FeedTools::HtmlHelper.unescape_entities()](https://rubyfurnace.com/docs/feedtools-0.2.26/classes/FeedTools/HtmlHelper.html#M007308) method to convert each HTML entity it encounter to pure unicode. Here is the monkey patch I call by default from the `environment.rb` file of all my [Ruby on Rails](https://www.rubyonrails.org) projects:
 
-    ```ruby
-    require 'feed_tools'
+```ruby
+require 'feed_tools'
 
-    # Monkey patch feed tool.
-    # Use case mixed UTF-8 chars and html entities: <description>Téléchargements et Multim&#233;dia</description>
-    module FeedTools::HtmlHelper
-      class << self
+# Monkey patch feed tool.
+# Use case mixed UTF-8 chars and html entities: <description>Téléchargements et Multim&#233;dia</description>
+module FeedTools::HtmlHelper
+  class << self
 
-        # Force UTF-8 conversion of HTML entities with number lower than 256.
-        # Based on CGI::unescapeHTML method.
-        def convert_html_entities_to_unicode(string)
-          string.gsub(/&(.*?);/n) do
-            $KCODE = "UTF8"
-            match = $1.dup
-            case match
-            when /\A#0*(\d+)\z/n       then
-              if Integer($1) < 256
-                [Integer($1)].pack("U")
-              else
-                "&##{$1};"
-              end
-            when /\A#x([0-9a-f]+)\z/ni then
-              if $1.hex < 256
-                [$1.hex].pack("U")
-              else
-                "&#x#{$1};"
-              end
-            else
-              "&#{match};"
-            end
+    # Force UTF-8 conversion of HTML entities with number lower than 256.
+    # Based on CGI::unescapeHTML method.
+    def convert_html_entities_to_unicode(string)
+      string.gsub(/&(.*?);/n) do
+        $KCODE = "UTF8"
+        match = $1.dup
+        case match
+        when /\A#0*(\d+)\z/n       then
+          if Integer($1) < 256
+            [Integer($1)].pack("U")
+          else
+            "&##{$1};"
           end
+        when /\A#x([0-9a-f]+)\z/ni then
+          if $1.hex < 256
+            [$1.hex].pack("U")
+          else
+            "&#x#{$1};"
+          end
+        else
+          "&#{match};"
         end
-
-        # Patch unescape_entities() method
-        alias_method :unescape_entities_orig, :unescape_entities
-        def unescape_entities(html)
-          return unescape_entities_orig(convert_html_entities_to_unicode(html))
-        end
-
       end
     end
-    ```
+
+    # Patch unescape_entities() method
+    alias_method :unescape_entities_orig, :unescape_entities
+    def unescape_entities(html)
+      return unescape_entities_orig(convert_html_entities_to_unicode(html))
+    end
+
+  end
+end
+```
 
 Ok, so this fix the issue.
 

@@ -35,17 +35,17 @@ _Note_: A partir de la 10.1, la version de `webmin` fournie avec la Mandrake sup
 
 Installation de mdadm:
 
-    ```shell-session
-    $ urpmi mdadm
-    ```
+```shell-session
+$ urpmi mdadm
+```
 
 Création des matrices:
 
-    ```shell-session
-    $ mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/hda2 /dev/sda2 /dev/sdb2
-    $ mdadm --create --verbose /dev/md1 --level=5 --raid-devices=3 /dev/hda3 /dev/sda1 /dev/sdb1
-    $ mdadm --create --verbose /dev/md2 --level=5 --raid-devices=3 /dev/hda4 /dev/sda3 /dev/sdb3
-    ```
+```shell-session
+$ mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/hda2 /dev/sda2 /dev/sdb2
+$ mdadm --create --verbose /dev/md1 --level=5 --raid-devices=3 /dev/hda3 /dev/sda1 /dev/sdb1
+$ mdadm --create --verbose /dev/md2 --level=5 --raid-devices=3 /dev/hda4 /dev/sda3 /dev/sdb3
+```
 
 Lors de la création, les paramètres par défaut sont suffisants. Pour information, les paramètres optimaux sont:
 
@@ -55,32 +55,32 @@ Lors de la création, les paramètres par défaut sont suffisants. Pour informat
 
 Éditons le fichier de configuration `/etc/mdadm.conf`:
 
-    ```text
-    DEVICE          /dev/sda*
-    DEVICE          /dev/sdb*
-    DEVICE          /dev/hda2
-    DEVICE          /dev/hda3
-    DEVICE          /dev/hda4
-    ARRAY           /dev/md0 devices=/dev/hda2,/dev/sda2,/dev/sdb2
-    ARRAY           /dev/md1 devices=/dev/hda3,/dev/sda1,/dev/sdb1
-    ARRAY           /dev/md2 devices=/dev/hda4,/dev/sda3,/dev/sdb3
-    ```
+```text
+DEVICE          /dev/sda*
+DEVICE          /dev/sdb*
+DEVICE          /dev/hda2
+DEVICE          /dev/hda3
+DEVICE          /dev/hda4
+ARRAY           /dev/md0 devices=/dev/hda2,/dev/sda2,/dev/sdb2
+ARRAY           /dev/md1 devices=/dev/hda3,/dev/sda1,/dev/sdb1
+ARRAY           /dev/md2 devices=/dev/hda4,/dev/sda3,/dev/sdb3
+```
 
 Avant d'aller plus loin, il faut attendre que les matrices soient construites:
 
-    ```shell-session
-    $ watch -n1 'cat /proc/mdstat'
-    ```
+```shell-session
+$ watch -n1 'cat /proc/mdstat'
+```
 
 Dans mon cas, cela à nécessité entre deux et trois heures pour chaque unité RAID.
 
 _Note_: avec la Mandrake 10.1, lors de la création des matrices RAID, on aurait eu des problèmes du type `raidstart failed : /dev/md1: No such file or directory`, qui peuvent être résolus en créant les device manuellement:
 
-    ```shell-session
-    $ mknod /dev/md0 b 9 0
-    $ mknod /dev/md1 b 9 1
-    $ mknod /dev/md2 b 9 2
-    ```
+```shell-session
+$ mknod /dev/md0 b 9 0
+$ mknod /dev/md1 b 9 1
+$ mknod /dev/md2 b 9 2
+```
 
 Ces commandes créent les unités RAID dont nous avons besoin. Malheureusement elles ne sont pas autodetectées au démarrage donc, dans le cas d'une mdk 10.1, il aurait fallu faire cette manip à chaque démarrage de la machine. Voila une bonne raison pour ne pas utiliser la version 10.1.
 
@@ -90,25 +90,25 @@ J'ai choisi LVM pour agréger les unités RAID, pour bénéficier d'un redimensi
 
 Installation de LVM:
 
-    ```shell-session
-    $ urpmi lvm2
-    ```
+```shell-session
+$ urpmi lvm2
+```
 
 On peut consulter la liste des disques parents sur le système avec `lvmdiskscan`.
 
 Ensuite il faut créer un volume physique (PV = Physical Volume) pour chaque unité RAID:
 
-    ```shell-session
-    $ pvcreate /dev/md0
-    $ pvcreate /dev/md1
-    $ pvcreate /dev/md2
-    ```
+```shell-session
+$ pvcreate /dev/md0
+$ pvcreate /dev/md1
+$ pvcreate /dev/md2
+```
 
 Créons maintenant un groupe de volumes contenant nos trois partitions :
 
-    ```shell-session
-    $ vgcreate vg01 /dev/md0 /dev/md1 /dev/md2
-    ```
+```shell-session
+$ vgcreate vg01 /dev/md0 /dev/md1 /dev/md2
+```
 
 (marche pas&nbsp;???)
 
@@ -116,49 +116,49 @@ Créons maintenant un groupe de volumes contenant nos trois partitions :
 
 Si vous voulez utiliser du RAID linéaire plutôt que LVM, il faut créer une nouvelle unité RAID sur la base des trois premières:
 
-    ```shell-session
-    $ mdadm --create --verbose /dev/md3 --level=linear --raid-devices=3 /dev/md0 /dev/md1 /dev/md2
-    ```
+```shell-session
+$ mdadm --create --verbose /dev/md3 --level=linear --raid-devices=3 /dev/md0 /dev/md1 /dev/md2
+```
 
 Puis penser à mettre à jour `/etc/mdadm.conf`:
 
-    ```text
-    DEVICE          /dev/sda*
-    DEVICE          /dev/sdb*
-    DEVICE          /dev/hda2
-    DEVICE          /dev/hda3
-    DEVICE          /dev/hda4
-    DEVICE          /dev/md0
-    DEVICE          /dev/md1
-    DEVICE          /dev/md2
-    ARRAY           /dev/md0 devices=/dev/hda2,/dev/sda2,/dev/sdb2
-    ARRAY           /dev/md1 devices=/dev/hda3,/dev/sda1,/dev/sdb1
-    ARRAY           /dev/md2 devices=/dev/hda4,/dev/sda3,/dev/sdb3
-    ARRAY           /dev/md3 devices=/dev/md0,/dev/md1,/dev/md2
-    ```
+```text
+DEVICE          /dev/sda*
+DEVICE          /dev/sdb*
+DEVICE          /dev/hda2
+DEVICE          /dev/hda3
+DEVICE          /dev/hda4
+DEVICE          /dev/md0
+DEVICE          /dev/md1
+DEVICE          /dev/md2
+ARRAY           /dev/md0 devices=/dev/hda2,/dev/sda2,/dev/sdb2
+ARRAY           /dev/md1 devices=/dev/hda3,/dev/sda1,/dev/sdb1
+ARRAY           /dev/md2 devices=/dev/hda4,/dev/sda3,/dev/sdb3
+ARRAY           /dev/md3 devices=/dev/md0,/dev/md1,/dev/md2
+```
 
 ## Étape 4: Créer le système de fichier
 
 Formater en xfs:
 
-    ```shell-session
-    $ mkfs.xfs -f /dev/md3
-    ```
+```shell-session
+$ mkfs.xfs -f /dev/md3
+```
 
 J'ai choisi xfs comme filesystem car il peut être agrandit à chaud, lorsque la partition est montée.
 
 Pour monter le tout:
 
-    ```shell-session
-    $ mkdir -p /mnt/data
-    $ mount /dev/md3 /mnt/data
-    ```
+```shell-session
+$ mkdir -p /mnt/data
+$ mount /dev/md3 /mnt/data
+```
 
 Et enfin, pour le montage automatique au démarrage de notre serveur, il faut ajouter la ligne suivante à notre fichier `/etc/fstab`:
 
-    ```text
-    /dev/md3 /mnt/data xfs defaults 0 0
-    ```
+```text
+/dev/md3 /mnt/data xfs defaults 0 0
+```
 
 ## Maintenance du système
 
@@ -166,12 +166,12 @@ Et enfin, pour le montage automatique au démarrage de notre serveur, il faut aj
 
     Si une partition est éjectée d'une unité raid (par exemple `sda1` sur `md1`), il faut faire:
 
-        ```shell-session
-        $ cat /proc/mdstat
-        $ mdadm --examine /dev/sda1
-        $ mdadm /dev/md1 -a /dev/sda1
-        $ cat /proc/mdstat
-        ```
+    ```shell-session
+    $ cat /proc/mdstat
+    $ mdadm --examine /dev/sda1
+    $ mdadm /dev/md1 -a /dev/sda1
+    $ cat /proc/mdstat
+    ```
 
     La première commande montre que le RAID est dégradé. La seconde commande examine le status du disque qui à été éjecté de la matrice. La troisième ligne permet de réintégrer à chaud la partition dans la matrice. Et enfin la dernière commande nous montre l'avancement de la reconstruction de la matrice (ce qui peut prendre pas mal de temps).
 
@@ -179,10 +179,10 @@ Et enfin, pour le montage automatique au démarrage de notre serveur, il faut aj
 
     La commande est du type:
 
-        ```shell-session
-        $ mdadm --stop /dev/md0
-        $ mdadm --assemble /dev/md0
-        ```
+    ```shell-session
+    $ mdadm --stop /dev/md0
+    $ mdadm --assemble /dev/md0
+    ```
 
     Attention `--assemble` se base sur le fichier `/etc/mdadm.conf`.
 
@@ -190,9 +190,9 @@ Et enfin, pour le montage automatique au démarrage de notre serveur, il faut aj
 
     La commande suivante créée une unité RAID 5 sur 3 disques durs, en indiquant que le premier est absent via le mot clé `missing`:
 
-        ```shell-session
-        $ mdadm --create /dev/md0 --level=5 --raid-devices=3 missing /dev/hda1 /dev/sda1
-        ```
+    ```shell-session
+    $ mdadm --create /dev/md0 --level=5 --raid-devices=3 missing /dev/hda1 /dev/sda1
+    ```
 
 ## De la lecture complémentaire sur RAID 5 et LVM
 

@@ -11,103 +11,103 @@ I recently had the oportunity to plug the [HP w2207h screen](https://amzn.com/B0
 
 The laptop is powered by an [Intel 945 graphic chip](https://en.wikipedia.org/wiki/Intel_GMA#GMA_950):
 
-    ```shell-session
-    $ lspci
-    00:00.0 Host bridge: Intel Corporation Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub (rev 03)
-    00:02.0 VGA compatible controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
-    00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS/GME, 943/940GML Express Integrated Graphics Controller (rev 03)
-    (...)
-    ```
+```shell-session
+$ lspci
+00:00.0 Host bridge: Intel Corporation Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub (rev 03)
+00:02.0 VGA compatible controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
+00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS/GME, 943/940GML Express Integrated Graphics Controller (rev 03)
+(...)
+```
 
 [After some googling](https://slforums.typo3-factory.net/lofiversion/index.php/t63508.html) and tests, I've designed the perfect `xorg.conf` for this configuration:
 
-    ```text
-    # **********************************************************************
-    # Refer to the xorg.conf man page for details about the format of
-    # this file.
-    # **********************************************************************
+```text
+# **********************************************************************
+# Refer to the xorg.conf man page for details about the format of
+# this file.
+# **********************************************************************
 
-    Section "Extensions"
-      Option "Composite"
-    EndSection
+Section "Extensions"
+  Option "Composite"
+EndSection
 
-    Section "ServerFlags"
-      AllowMouseOpenFail # allows the server to start up even if the mouse does not work
-    EndSection
+Section "ServerFlags"
+  AllowMouseOpenFail # allows the server to start up even if the mouse does not work
+EndSection
 
-    Section "Module"
-      Load "dbe" # Double-Buffering Extension
-      Load "v4l" # Video for Linux
-      Load "extmod"
-      Load "type1"
-      Load "freetype"
-      Load "glx" # 3D layer
-      Load "dri" # direct rendering
-    EndSection
+Section "Module"
+  Load "dbe" # Double-Buffering Extension
+  Load "v4l" # Video for Linux
+  Load "extmod"
+  Load "type1"
+  Load "freetype"
+  Load "glx" # 3D layer
+  Load "dri" # direct rendering
+EndSection
 
-    Section "InputDevice"
-      Identifier "Keyboard1"
-      Driver "kbd"
-      Option "XkbModel" "pc105"
-      Option "XkbLayout" "fr"
-      Option "XkbOptions" "compose:rwin"
-    EndSection
+Section "InputDevice"
+  Identifier "Keyboard1"
+  Driver "kbd"
+  Option "XkbModel" "pc105"
+  Option "XkbLayout" "fr"
+  Option "XkbOptions" "compose:rwin"
+EndSection
 
-    Section "InputDevice"
-      Identifier "Mouse1"
-      Driver "mouse"
-      Option "Protocol" "ExplorerPS/2"
-      Option "Device" "/dev/mouse"
-    EndSection
+Section "InputDevice"
+  Identifier "Mouse1"
+  Driver "mouse"
+  Option "Protocol" "ExplorerPS/2"
+  Option "Device" "/dev/mouse"
+EndSection
 
-    Section "InputDevice"
-      Identifier "SynapticsMouse1"
-      Driver "synaptics"
-      Option "SHMConfig" "on"
-    EndSection
+Section "InputDevice"
+  Identifier "SynapticsMouse1"
+  Driver "synaptics"
+  Option "SHMConfig" "on"
+EndSection
 
-    Section "Monitor"
-      Identifier "laptop"
-      Option "PreferredMode" "1280x800"
-      Option "Below" "external"
-    EndSection
+Section "Monitor"
+  Identifier "laptop"
+  Option "PreferredMode" "1280x800"
+  Option "Below" "external"
+EndSection
 
-    Section "Monitor"
-      Identifier "external"
-      Option "PreferredMode" "1680x1050@60"
-      HorizSync 24.0 - 82.0
-      VertRefresh 48.0 - 76.0
-      Modeline "1680x1050@60" 147.14 1680 1784 1968 2256 1050 1051 1054 1087 -HSync +Vsync
-    EndSection
+Section "Monitor"
+  Identifier "external"
+  Option "PreferredMode" "1680x1050@60"
+  HorizSync 24.0 - 82.0
+  VertRefresh 48.0 - 76.0
+  Modeline "1680x1050@60" 147.14 1680 1784 1968 2256 1050 1051 1054 1087 -HSync +Vsync
+EndSection
 
-    Section "Device"
-      Identifier "device1"
-      VendorName "Intel Corporation"
-      BoardName "Intel 810 and later"
-      Driver "intel"
-      Option "DPMS"
-      # Option "XaaNoOffscreenPixmaps" "1"
-      Option "monitor-LVDS" "laptop"
-      Option "monitor-VGA" "external"
-    EndSection
+Section "Device"
+  Identifier "device1"
+  VendorName "Intel Corporation"
+  BoardName "Intel 810 and later"
+  Driver "intel"
+  Option "DPMS"
+  # Option "XaaNoOffscreenPixmaps" "1"
+  Option "monitor-LVDS" "laptop"
+  Option "monitor-VGA" "external"
+EndSection
 
-    Section "Screen"
-      Identifier "screen1"
-      Device "device1"
-      Monitor "external"
-      Subsection "Display"
-        Virtual 1680 1850
-      EndSubsection
-    EndSection
+Section "Screen"
+  Identifier "screen1"
+  Device "device1"
+  Monitor "external"
+  Subsection "Display"
+    Virtual 1680 1850
+  EndSubsection
+EndSection
 
-    Section "ServerLayout"
-      Identifier "layout1"
-      InputDevice "Keyboard1" "CoreKeyboard"
-      InputDevice "Mouse1" "CorePointer"
-      InputDevice "SynapticsMouse1" "AlwaysCore"
-      Screen "screen1"
-    EndSection
-    ```
+Section "ServerLayout"
+  Identifier "layout1"
+  InputDevice "Keyboard1" "CoreKeyboard"
+  InputDevice "Mouse1" "CorePointer"
+  InputDevice "SynapticsMouse1" "AlwaysCore"
+  Screen "screen1"
+EndSection
+```
 
 What I've learned so far during these experiments:
 

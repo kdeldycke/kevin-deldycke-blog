@@ -9,10 +9,10 @@ I'm currently migrating most of my self-hosted WordPress blogs from my server to
 
 But setting the DNS records from your registrar may trigger some errors. I myself wasn't able to properly update my domain configuration and [OVH](https://ovh.com) always sent me back this notification email each time I tried to update the DNS record of `mydomain.fr`:
 
-    ```text
-    DNS update failed. Fix the zone-check error, and relaunch the operation.
-    The zone-check error is: [TEST SOA record exists]: answer refused by the server: (SOA mydomain.fr)
-    ```
+```text
+DNS update failed. Fix the zone-check error, and relaunch the operation.
+The zone-check error is: [TEST SOA record exists]: answer refused by the server: (SOA mydomain.fr)
+```
 
 This errors is mostly due to the use of a non-US domain.
 

@@ -18,7 +18,7 @@ The song is
 is a brand new song that will be available on Cool Cavemen's upcoming album (to
 be released in 2012). This is the first time Nichrome is made public. The video
 is only a preview of the song: it only contains the first 2 minutes and the
-audio track is a [demo](https://en.wikipedia.org/wiki/Demo_(music)), not the
+audio track is a [demo](https://en.wikipedia.org/wiki/Demo_%28music%29), not the
 final studio version.
 
 Demos are used not only for reference, but also for rehearsals when a band
