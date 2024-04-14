@@ -1,6 +1,6 @@
 ---
-date: "2011-02-14"
-title: "Pushing Git to Subversion: the case of WordPress plugin repository"
+date: '2011-02-14'
+title: 'Pushing Git to Subversion: the case of WordPress plugin repository'
 category: English
 tags: Git, Hosting, Linux, Subversion, WordPress, Regular expression
 ---
@@ -82,8 +82,8 @@ $ git rebase trunk
 
 According gitg, the result of this is 2 parallel trees:
 
-  * the first is the untouched original tree;
-  * the other start on the `trunk` branch and continue with a copy of the original tree, and is the result of the rebase.
+- the first is the untouched original tree;
+- the other start on the `trunk` branch and continue with a copy of the original tree, and is the result of the rebase.
 
 But the latter has a problem: [my initial commit]({filename}/2010/initialize-git-repositories.md) and all my tags are squashed. I tried several methods to rebase my whole Git tree onto the local `trunk` branch while keeping these. But I failed.
 

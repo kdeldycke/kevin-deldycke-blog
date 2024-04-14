@@ -1,6 +1,6 @@
 ---
-date: "2011-07-26"
-title: "Lighttpd-powered WebDAVs server on Debian Squeeze"
+date: '2011-07-26'
+title: Lighttpd-powered WebDAVs server on Debian Squeeze
 category: English
 tags: Debian, Debian Squeeze, lighttpd, Linux, OpenSSL, Server, SSL, WebDAV, RSA
 ---
@@ -103,7 +103,7 @@ $ /etc/init.d/lighttpd restart
 
 As you can see in the screenshot above, you can now:
 
-  * Browse the file system in read/write mode with a WebDAV client via a
+- Browse the file system in read/write mode with a WebDAV client via a
   `webdavs://12.34.56.78/` URL;
-  * Access content in read-only mode with a browser by a classic
+- Access content in read-only mode with a browser by a classic
   `https://12.34.56.78/` URL.

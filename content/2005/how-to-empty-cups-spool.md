@@ -1,6 +1,6 @@
 ---
-date: "2005-04-04"
-title: "How-to empty CUPS spool"
+date: '2005-04-04'
+title: How-to empty CUPS spool
 category: English
 tags: CUPS, Linux, printing, Server, shell, cron
 ---

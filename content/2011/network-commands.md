@@ -1,9 +1,8 @@
 ---
-date: "2011-04-11"
-title: "Network commands"
+date: '2011-04-11'
+title: Network commands
 category: English
-tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, driftnet,
-  images, smb, samba, cifs
+tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, driftnet, images, smb, samba, cifs
 ---
 
 ## Interfaces

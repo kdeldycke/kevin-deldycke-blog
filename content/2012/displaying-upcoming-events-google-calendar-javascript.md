@@ -1,6 +1,6 @@
 ---
-date: "2012-07-17"
-title: "Displaying Upcoming Events from a Google Calendar in Javascript"
+date: '2012-07-17'
+title: Displaying Upcoming Events from a Google Calendar in Javascript
 category: English
 tags: events, Google Calendar, HTML, iCal, Javascript, JSON, RSS, Cool Cavemen
 ---
@@ -9,9 +9,9 @@ I use Google Calendar to store all the past and future [concerts of my band](htt
 
 First, you have to make the calendar public. You can then get all its content in iCal format. The URL you'll find in the calendar settings looks like this:
 
-  ```text
-  https://www.google.com/calendar/ical/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/basic.ics
-  ```
+```text
+https://www.google.com/calendar/ical/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/basic.ics
+```
 
 The RSS feed version of that URL looks like:
 
@@ -35,12 +35,23 @@ And around this data feed, I've built a quick and dirty Javascript piece of code
 
 ```html
 <ul id="next-gigs">
-  <li>No gig planned yet... :(</li>
-  <li>Feeds: <a href='https://www.google.com/calendar/feeds/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/full?orderby=starttime&#038;sortorder=ascending&#038;futureevents=true'>RSS</a>, <a href='https://www.google.com/calendar/ical/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/basic.ics'>iCal</a>.</li>
+ <li>
+  No gig planned yet... :(
+ </li>
+ <li>
+  Feeds:
+  <a href="https://www.google.com/calendar/feeds/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/full?orderby=starttime&amp;sortorder=ascending&amp;futureevents=true">
+   RSS
+  </a>
+  ,
+  <a href="https://www.google.com/calendar/ical/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/basic.ics">
+   iCal
+  </a>
+  .
+ </li>
 </ul>
-
-<script type="text/javascript" charset="utf-8">
-  jQuery(function(){
+<script charset="utf-8" type="text/javascript">
+ jQuery(function(){
     // Get list of upcoming iCal events formatted in JSON
     jQuery.getJSON("https://www.google.com/calendar/feeds/coolcavemen.com_h3432m0aeeq5c6dakki50giqeo%40group.calendar.google.com/public/full?orderby=starttime&sortorder=ascending&futureevents=true&alt=json", function(data){
       // Utility method to pad a string on the left
@@ -83,5 +94,5 @@ And around this data feed, I've built a quick and dirty Javascript piece of code
     });
   });
 </script>
-```
 
+```

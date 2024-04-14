@@ -1,6 +1,6 @@
 ---
-date: "2007-02-10"
-title: "Delayed CD Tracks Publishing with PHP"
+date: '2007-02-10'
+title: Delayed CD Tracks Publishing with PHP
 category: English
 tags: Cool Cavemen, Music, PHP, Web
 ---
@@ -140,4 +140,3 @@ Of course this code doesn't prevent someone to download the track if this person
 Here is the final result, from the user point of view (and with additional aesthetic enhancements):
 
 ![cd-track-delayed-publishing]({attach}cd-track-delayed-publishing.png)
-

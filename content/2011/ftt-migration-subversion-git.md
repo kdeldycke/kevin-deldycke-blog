@@ -1,6 +1,6 @@
 ---
-date: "2011-04-18"
-title: "FTT Migration from Subversion to Git"
+date: '2011-04-18'
+title: FTT Migration from Subversion to Git
 category: English
 tags: Feed Tracking Tool, Git, GitHub, migration, Subversion, Uperto, Regular expression
 ---
@@ -153,4 +153,3 @@ $ git gc --aggressive --prune
 $ git remote add origin git@github.com:kdeldycke/feed-tracking-tool.git
 $ git push origin master --force --tags
 ```
-

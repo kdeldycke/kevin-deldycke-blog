@@ -1,6 +1,6 @@
 ---
-date: "2013-09-08"
-title: "Plumage 0.3 released"
+date: '2013-09-08'
+title: Plumage 0.3 released
 category: English
 tags: Plumage, Pelican, Python, Jinja, theme, HTML, CSS, Javascript
 ---
@@ -11,10 +11,10 @@ It's the first version to include contributions from other developers. Thanks to
 
 Here is the changelog:
 
-  * Add auto-zoom of images based on Magnific Popup.
-  * Let the content take the available width if there is no right or left sidebars.
-  * Add an dynamic feed link in footer.
-  * Do not wrap code in code blocks.
-  * Fix code highlight for older Pelican versions.
-  * Escape and strip tags in all title attributes.
-  * Style ampersands for those using typogrify.
+- Add auto-zoom of images based on Magnific Popup.
+- Let the content take the available width if there is no right or left sidebars.
+- Add an dynamic feed link in footer.
+- Do not wrap code in code blocks.
+- Fix code highlight for older Pelican versions.
+- Escape and strip tags in all title attributes.
+- Style ampersands for those using typogrify.

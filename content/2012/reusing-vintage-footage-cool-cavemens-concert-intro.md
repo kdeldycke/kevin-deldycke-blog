@@ -1,6 +1,6 @@
 ---
-date: "2012-01-17"
-title: "Reusing vintage footage for Cool Cavemen's concert intro"
+date: '2012-01-17'
+title: Reusing vintage footage for Cool Cavemen's concert intro
 category: English
 tags: Belgium, classic 21, concert, Cool Cavemen, Gimp, intro, Kdenlive, radio, RTBF, tribute, Ubuntu, Video, YouTube
 ---

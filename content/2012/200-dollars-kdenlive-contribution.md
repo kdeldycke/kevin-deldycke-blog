@@ -1,12 +1,12 @@
 ---
-date: "2012-03-20"
-title: "I contributed $200 to Kdenlive and you should too!"
+date: '2012-03-20'
+title: I contributed $200 to Kdenlive and you should too!
 category: English
 tags: campaign, contribution, donation, fundaraising, KDE, Kdenlive, Linux, open source, Video
 ---
 
 I [just donated
-$200](https://twitter.com/#!/kdeldycke/status/182018605259567104) to the
+\$200](https://twitter.com/#!/kdeldycke/status/182018605259567104) to the
 [Kdenlive](https://kdenlive.org) project, as they have [just
 started](https://web.archive.org/web/20160318001247/https://kdenlive.org/users/ttill/kdenlive-fundraising-campaign)
 a [fundraising
@@ -16,7 +16,7 @@ its core and make it future-proof:
 [![]({attach}kdenlive-fundraising-campaign.png)](https://www.indiegogo.com/projects/kdenlive-refactoring)
 
 The amount of collected funds is currently at $3,041 from the $4,000 required
-to pay a developer to work full-time for 2 months. With only $959 remaining and
+to pay a developer to work full-time for 2 months. With only \$959 remaining and
 41 days left, you have no reason to not contribute to the best open-source
 video editor out there.
 

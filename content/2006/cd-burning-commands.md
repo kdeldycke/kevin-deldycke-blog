@@ -1,6 +1,6 @@
 ---
-date: "2006-10-25"
-title: "CD Burning commands"
+date: '2006-10-25'
+title: CD Burning commands
 category: English
 tags: burning, Compact disc, cdrdao, cdrecord, CLI, DVD, Hardware, Linux, mkisofs
 ---
@@ -34,7 +34,9 @@ tags: burning, Compact disc, cdrdao, cdrecord, CLI, DVD, Hardware, Linux, mkisof
   ```shell-session
   $ mkisofs -R -r -l -J -V volid -o /tmp/cdrom-image.iso src
   ```
+
   Where:
+
   - `volid` is the volume ID to be written into the master block;
   - `/tmp/cdrom-image.iso` is the destination filename of the newly created ISO image;
   - `src` is the temporary ISO directory containing the files and file structure you wish to have included in the ISO image.

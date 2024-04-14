@@ -1,6 +1,6 @@
 ---
-date: "2013-06-17"
-title: "Fix big HTML table rendering in IE"
+date: '2013-06-17'
+title: Fix big HTML table rendering in IE
 category: English
 tags: Internet Explorer, Microsoft, OpenERP, HTML, webdesign
 ---

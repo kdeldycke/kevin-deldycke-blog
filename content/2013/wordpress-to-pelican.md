@@ -1,6 +1,6 @@
 ---
-date: "2013-02-06"
-title: "WordPress to Pelican"
+date: '2013-02-06'
+title: WordPress to Pelican
 category: English
 tags: WordPress, Pelican, Python, migration, PHP, MySQL, sed, Markdown, reStructuredText, ZenPhoto, Cool Cavemen, Regular expression
 ---
@@ -52,9 +52,9 @@ to be managed, upgraded and
 
 I started my quest for a tool:
 
-  * written in Python,
-  * supporting Markdown and
-  * supported by an active community.
+- written in Python,
+- supporting Markdown and
+- supported by an active community.
 
 After a little survey, the remaining contenders were
 [Pelican](https://getpelican.com) and [Nikola](https://nikola.ralsina.com.ar).
@@ -124,6 +124,7 @@ by this kind of pure HTML:
 <pre><code class="shell">
 (...)
 </code></pre>
+
 ```
 
 The magic command to perform that job is:

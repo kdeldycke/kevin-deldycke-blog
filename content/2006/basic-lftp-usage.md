@@ -1,6 +1,6 @@
 ---
-date: "2006-08-18"
-title: "Basic lftp Usage"
+date: '2006-08-18'
+title: Basic lftp Usage
 category: English
 tags: CLI, FTP, Hosting, lftp, Web
 ---

@@ -1,9 +1,8 @@
 ---
-date: "2006-11-08"
-title: "Video commands"
+date: '2006-11-08'
+title: Video commands
 category: English
-tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, mplayer,
-  subtitle, svcd, Video, xvid, TV, VLC
+tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, mplayer, subtitle, svcd, Video, xvid, TV, VLC
 ---
 
 - Here are some commands to get informations about the nature of a video:

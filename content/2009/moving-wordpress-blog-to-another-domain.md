@@ -1,6 +1,6 @@
 ---
-date: "2009-09-21"
-title: "Moving a WordPress blog to another domain"
+date: '2009-09-21'
+title: Moving a WordPress blog to another domain
 category: English
 tags: Apache, CLI, find, grep, Hosting, Linux, MySQL, SQL, sed, Server, WordPress, Regular expression
 ---

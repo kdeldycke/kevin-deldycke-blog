@@ -1,6 +1,6 @@
 ---
-date: "2008-07-24"
-title: "Heroic journey to RAID-5 data recovery"
+date: '2008-07-24'
+title: Heroic journey to RAID-5 data recovery
 category: English
 tags: array, Backup, disk, drive, Hardware, HDD, Linux, mdadm, monitoring, RAID, Server, system, UPS
 ---
@@ -60,11 +60,11 @@ Number   Major   Minor   RaidDevice State
 
 What this table told us?
 
-  * The array is up, but not running. One of its device (`sdc1`) was clean and active, but it's not enough to get a working RAID-5.
+- The array is up, but not running. One of its device (`sdc1`) was clean and active, but it's not enough to get a working RAID-5.
 
-  * My first attempt to rebuild the array lead to an unexpected result: it added `sda1` as a spare device (in slot #3).
+- My first attempt to rebuild the array lead to an unexpected result: it added `sda1` as a spare device (in slot #3).
 
-  * It confirm that `sdb1` unexpectedly failed and is now in a bad state ("`faulty removed`").
+- It confirm that `sdb1` unexpectedly failed and is now in a bad state ("`faulty removed`").
 
 Then I stopped the array and tried to fearlessly (re)assemble it using 3 differents methods:
 

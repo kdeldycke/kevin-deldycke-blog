@@ -1,6 +1,6 @@
 ---
-date: "2007-03-23"
-title: "Ultimate Regular Expression for HTML tag parsing with PHP"
+date: '2007-03-23'
+title: Ultimate Regular Expression for HTML tag parsing with PHP
 category: English
 tags: HTML, parsing, PHP, Regular expression
 ---
@@ -33,5 +33,5 @@ $regex = "/<\/?\w+((\s+(\w|\w[\w-]*\w)(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s
 
 The latter include the following enhancement:
 
-  * accept hyphens as attribute's middle characters (
-    [thanks Ged](https://kevin.deldycke.com/2007/ultimate-regular-expression-for-html-tag-parsing-with-php#comment-769310266))
+- accept hyphens as attribute's middle characters (
+  [thanks Ged](https://kevin.deldycke.com/2007/ultimate-regular-expression-for-html-tag-parsing-with-php#comment-769310266))

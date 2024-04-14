@@ -1,6 +1,6 @@
 ---
-date: "2010-07-28"
-title: "Exim commands"
+date: '2010-07-28'
+title: Exim commands
 category: English
 tags: CLI, email, Exim, Linux, Mail transfer agents
 ---

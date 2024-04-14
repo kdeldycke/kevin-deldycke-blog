@@ -1,6 +1,6 @@
 ---
-date: "2008-08-22"
-title: "How-to: e107 autogallery to Zenphoto migration"
+date: '2008-08-22'
+title: 'How-to: e107 autogallery to Zenphoto migration'
 category: English
 tags: autogallery, e107, Linux, migration, MySQL, SQL, Python, Web, Zenphoto, Cool Cavemen
 ---
@@ -142,8 +142,8 @@ I think code and comments are self-explainatory. And do not forget to update con
 
 And finally, for your information, I tested all of this on following versions:
 
-  * e107 0.7.11
-  * autogallery 2.61
-  * Zenphoto 1.2
-  * Python 2.5.2
-  * Linux server
+- e107 0.7.11
+- autogallery 2.61
+- Zenphoto 1.2
+- Python 2.5.2
+- Linux server

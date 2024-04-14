@@ -1,6 +1,6 @@
 ---
-date: "2010-12-14"
-title: "Quartz Composer & Behringer BCF-2000 MIDI controller tests"
+date: '2010-12-14'
+title: Quartz Composer & Behringer BCF-2000 MIDI controller tests
 category: English
 tags: Animation, Apple, Berhinger, Canon EOS 7D, Creative Commons, Jamendo, Kdenlive, MacBook, MacBook, midi, MIDI-controlled graphics, Quartz Composer, tokina, USB, Video, Visual
 ---
@@ -12,8 +12,6 @@ So here is my MIDI playground:
 ![]({attach}quartz-composer-midi-playground.png)
 
 Nothing exceptionnal to see here. It's just a bunch of dumb patches to control the color of the background screen and its intensity. The latter can be modulated by pulses with different profiles, and also by the sound captured by the [MacBook](https://amzn.com/B002QQ8H8I/?tag=kevideld-20)'s microphone. The [source composition is downloadable]({attach}midi-controlled-playground.qtz).
-
-
 
 Just for the sake of it, I've recorded a quick and dirty demo with my [Canon 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20)  (set to 1080p, 25 fps and 1/50 shutter speed) and the fantastic [Tokina 11-16mm f/2.8](https://amzn.com/B0014Z3XMC/?tag=kevideld-20) :
 

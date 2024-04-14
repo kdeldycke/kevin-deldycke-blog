@@ -1,6 +1,6 @@
 ---
-date: "2009-08-25"
-title: "eAccelerator for PHP5 on Debian Lenny"
+date: '2009-08-25'
+title: eAccelerator for PHP5 on Debian Lenny
 category: English
 tags: Apache, aptitude, Debian, eAccelerator, Debian Lenny, PHP, Server
 ---

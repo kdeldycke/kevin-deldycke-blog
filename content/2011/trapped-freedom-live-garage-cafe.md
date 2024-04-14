@@ -1,6 +1,6 @@
 ---
-date: "2011-02-08"
-title: "Trapped in Freedom: live at Garage Café"
+date: '2011-02-08'
+title: 'Trapped in Freedom: live at Garage Café'
 category: English
 tags: 1080p, Canon EOS 7D, Tamron, Trapped in Freedom, Video, youtube
 ---
@@ -24,5 +24,3 @@ All of these were shots in 1080p at 23.976 fps with a shutter speed of 1/50. Len
 I think the white balance was set to tungsten. I don't remember what was the ISO setting. Maybe set to automatic. I really don't remember. Should have drink less. Either that or changing my video workflow. After all, keeping these `.THM` files is a good idea, as these contain the video metadatas that can't be put in the `.MOV` files produced by Canon.
 
 Finally, if the music is good, the sound is awful as it was captured without any special care, with the embedded camera microphone. Now I really have to invest money and time to upgrade my sound recording gear and skills. [Canon EOS 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20)'s Automatic Gain Control (AGC) really starts to be limiting (pun intended)...
-
-

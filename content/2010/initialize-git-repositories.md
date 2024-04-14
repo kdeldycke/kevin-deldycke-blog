@@ -1,6 +1,6 @@
 ---
-date: "2010-05-25"
-title: "How I initialize my Git repositories"
+date: '2010-05-25'
+title: How I initialize my Git repositories
 category: English
 tags: code, Git, GitHub
 ---

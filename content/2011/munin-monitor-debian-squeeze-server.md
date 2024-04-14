@@ -1,6 +1,6 @@
 ---
-date: "2011-06-06"
-title: "Using Munin to monitor a Debian Squeeze server"
+date: '2011-06-06'
+title: Using Munin to monitor a Debian Squeeze server
 category: English
 tags: acpi, Debian, fail2ban, Hardware, Linux, lm-sensors, munin, nginx, nut, RAID, Server, Debian Squeeze, Perl, Regular expression
 ---
@@ -222,4 +222,3 @@ $ chmod -R 755 /usr/share/munin/plugins/
 $ /etc/init.d/nginx restart
 $ /etc/init.d/munin-node restart
 ```
-

@@ -1,6 +1,6 @@
 ---
-date: "2012-04-17"
-title: "How-to add a warning banner to OpenERP's web client"
+date: '2012-04-17'
+title: How-to add a warning banner to OpenERP's web client
 category: English
 tags: CSS, HTML, mako, OpenERP, ERP
 ---
@@ -36,4 +36,3 @@ The result above was produced on OpenERP 6.0 thanks to the following patch on th
 +    <p>Warning: this is a pre-production OpenERP instance.</p>
 +</td>
 ```
-

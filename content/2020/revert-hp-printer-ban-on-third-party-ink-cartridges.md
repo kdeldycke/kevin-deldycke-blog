@@ -1,8 +1,8 @@
 ---
-date: "2020-11-09"
+date: '2020-11-09'
 category: English
 tags: CLI, Hardware, printer, Hewlett-Packard, firmware, ink, office, DRM, macOS, toner
-title: "How-to revert HP printer firmware ban on 3rd-party toner cartridges"
+title: How-to revert HP printer firmware ban on 3rd-party toner cartridges
 ---
 
 Hewlett & Packard, the founders, had great lessons to teach us (managers in high-tech) about culture. To the extend of [quoting them](https://github.com/kdeldycke/awesome-engineering-team-management/commit/de3e64647c911f78a37b3e54c7e46197acb061e1) in my [awesome list on engineering team management](https://github.com/kdeldycke/awesome-engineering-team-management#readme). 👨‍💼
@@ -11,13 +11,13 @@ HP Inc., the company, sucks. At least their [printer division's business model](
 
 The timeline is straightforward:
 
-* 2020, March: general lockdown. 🦠 I need a home office. SO is a scientist and spend her time printing papers for review. Got her an [HP Color LaserJet M254dw](https://amzn.com/B073R2WVKB/?tag=kevideld-20) to keep her productive workflow ([publish or perish!](https://en.wikipedia.org/wiki/Publish_or_perish)).
+- 2020, March: general lockdown. 🦠 I need a home office. SO is a scientist and spend her time printing papers for review. Got her an [HP Color LaserJet M254dw](https://amzn.com/B073R2WVKB/?tag=kevideld-20) to keep her productive workflow ([publish or perish!](https://en.wikipedia.org/wiki/Publish_or_perish)).
 
-* 2020, October: HP release a new firmware (versioned `20201021`).
+- 2020, October: HP release a new firmware (versioned `20201021`).
 
   ![]({attach}hp-laserjet-printer-20201021-firmware.jpg)
 
-* 2020, November: my printer auto-upgrade. I'm welcomed with this *Supply Problem [Screen of Death](https://en.wikipedia.org/wiki/Screen_of_death)*:
+- 2020, November: my printer auto-upgrade. I'm welcomed with this *Supply Problem [Screen of Death](https://en.wikipedia.org/wiki/Screen_of_death)*:
 
   ![]({attach}hp-laserjet-printer-supply-problem-screen-of-death.jpg)
 
@@ -41,10 +41,10 @@ In the control panel, go to `Setup` > `Service` > `LaserJet Update` > `Manage Up
 
 Then set these options:
 
-* Allow Downgrade: `Yes`
-* Check Automatically: `Off`
-* Prompt Before Install: `Always Prompt`
-* Allow Updates: `Yes`
+- Allow Downgrade: `Yes`
+- Check Automatically: `Off`
+- Prompt Before Install: `Always Prompt`
+- Allow Updates: `Yes`
 
 I'm quite surprised downgrades are allowed. 🤔 It seems out of character. Therefor, with my *Evil Product Manager* hat on, I advise HP to monetize this feature under a monthly Enterprise Subscription of sort. 😈
 
@@ -95,7 +95,7 @@ A detour via `Setup` > `Service` > `Firmware Datecode` menu confirm we're runnin
 
 Finally, to lock any possibility of a firmware change, go back to `Setup` > `Service` > `LaserJet Update` > `Manage Updates` to set the option to:
 
-* Allow Updates: `No`
+- Allow Updates: `No`
 
 ## Printer security
 

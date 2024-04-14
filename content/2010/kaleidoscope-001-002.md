@@ -1,6 +1,6 @@
 ---
-date: "2010-10-25"
-title: "Kaleidoscope #001 and #002"
+date: '2010-10-25'
+title: 'Kaleidoscope #001 and #002'
 category: English
 tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual
 ---
@@ -20,4 +20,3 @@ https://www.youtube.com/watch?v=8LNgo2Esmps
 Again, here is [Kaleidoscope #002 source]({attach}kaleidoscope-002.qtz), and a screenshot of its patch:
 
 ![]({attach}kaleidoscope-002-patch.png)
-

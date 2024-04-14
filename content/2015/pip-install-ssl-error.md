@@ -1,6 +1,6 @@
 ---
-date: "2015-11-19"
-title: "How to solve SSL errors on pip install"
+date: '2015-11-19'
+title: How to solve SSL errors on pip install
 category: English
 tags: development, Python, socket, urllib3, HTTP, pip, requests, Apple, macOS, OS X 10.11 El Capitan
 ---

@@ -1,6 +1,6 @@
 ---
-date: "2011-10-04"
-title: "Mailman migration"
+date: '2011-10-04'
+title: Mailman migration
 category: English
 tags: Debian, Debian Squeeze, dns, Exim, mailman, spf, Debian Lenny
 ---
@@ -89,4 +89,3 @@ to:
 ```text
 v=spf1 a mx ptr ~all
 ```
-

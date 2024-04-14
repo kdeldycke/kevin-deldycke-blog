@@ -1,6 +1,6 @@
 ---
-date: "2008-06-05"
-title: "I wrote the best Open-Source Payroll Software of the world!"
+date: '2008-06-05'
+title: I wrote the best Open-Source Payroll Software of the world!
 category: English
 tags: consulting, ERP, free software, open source, OpenERP, ERP5, OpenBravo, Neogia, Adempiere, Compiere
 ---
@@ -13,7 +13,7 @@ ERPs](https://en.wikipedia.org/wiki/Category:Free_ERP_software) in their latest 
 here](https://www.scribd.com/document/180544336/LB-Smile-ERP-pdf). And here is what they said about ERP5 at page 77:
 
 > ERP5 va même jusqu'à gérer les paies alors qu'aucun autre ERP libre n'est
-allé aussi loin
+> allé aussi loin
 
 Which roughly translates to:
 
@@ -24,14 +24,14 @@ Hey wait. I wrote this module!
 And here is their final evaluation (0 is the lowest, 5 the highest note) of all
 payroll systems for each ERP (from page 88):
 
-ERP | Evaluation
---- | ---
-[TinyERP](https://en.wikipedia.org/wiki/Odoo#Company_history) | ★☆☆☆☆ (1/5)
-[OpenBravo](https://en.wikipedia.org/wiki/Openbravo) | ☆☆☆☆☆ (0/5)
-[Neogia](https://sourceforge.net/projects/neogia/) | ☆☆☆☆☆ (0/5)
-[ERP5](https://en.wikipedia.org/wiki/ERP5) | ★★★★☆ (4/5)
-[Adempiere](https://en.wikipedia.org/wiki/Adempiere) | ☆☆☆☆☆ (0/5)
-[Compiere GPL](https://en.wikipedia.org/wiki/Compiere) | ☆☆☆☆☆ (0/5)
+| ERP                                                           | Evaluation  |
+| ------------------------------------------------------------- | ----------- |
+| [TinyERP](https://en.wikipedia.org/wiki/Odoo#Company_history) | ★☆☆☆☆ (1/5) |
+| [OpenBravo](https://en.wikipedia.org/wiki/Openbravo)          | ☆☆☆☆☆ (0/5) |
+| [Neogia](https://sourceforge.net/projects/neogia/)            | ☆☆☆☆☆ (0/5) |
+| [ERP5](https://en.wikipedia.org/wiki/ERP5)                    | ★★★★☆ (4/5) |
+| [Adempiere](https://en.wikipedia.org/wiki/Adempiere)          | ☆☆☆☆☆ (0/5) |
+| [Compiere GPL](https://en.wikipedia.org/wiki/Compiere)        | ☆☆☆☆☆ (0/5) |
 
 As you can see I not only got the first place: I wiped out the competition.
 
@@ -60,18 +60,18 @@ aux Business Templates ERP5* has disappeared from the web.
 This document was enough of a reference to be cited in a couple of academic papers from
 2006 to 2009:
 
-* [A comparison of Open Source ERP
-Systems](https://www.big.tuwien.ac.at/app/uploads/2016/10/Herzog_paper.pdf#page=77)
+- [A comparison of Open Source ERP
+  Systems](https://www.big.tuwien.ac.at/app/uploads/2016/10/Herzog_paper.pdf#page=77)
 
-* [A Research on Corporate ERP Systems used for Supermarket Supply Chain
-Inventory Management in
-Turkey](https://www.slideshare.net/slideshow/embed_code/key/mHgCdv01fE9KsL?startSlide=13)
+- [A Research on Corporate ERP Systems used for Supermarket Supply Chain
+  Inventory Management in
+  Turkey](https://www.slideshare.net/slideshow/embed_code/key/mHgCdv01fE9KsL?startSlide=13)
 
-* [Open Source Enterprise Resource Planning
-Systems](https://behdasht.gov.ir/uploads/101_195_baresiye%20ERP%20haye%20matn%20baz.pdf)
+- [Open Source Enterprise Resource Planning
+  Systems](https://behdasht.gov.ir/uploads/101_195_baresiye%20ERP%20haye%20matn%20baz.pdf)
 
-* [Comparatif ERP5 /
-COMPIERE](https://web.archive.org/web/20101010002846/https://wiki.itin.fr/index.php/Comparatif_ERP5_/_COMPIERE_MT09_FR)
+- [Comparatif ERP5 /
+  COMPIERE](https://web.archive.org/web/20101010002846/https://wiki.itin.fr/index.php/Comparatif_ERP5_/_COMPIERE_MT09_FR)
 
 The irony is that after leaving the open-source ERP world in 2007, I was
 recruited by Smile in 2011, the very same company which produced the original

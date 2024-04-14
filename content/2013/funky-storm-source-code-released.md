@@ -1,6 +1,6 @@
 ---
-date: "2013-08-22"
-title: "funky-storm.com source code released after 11 years"
+date: '2013-08-22'
+title: funky-storm.com source code released after 11 years
 tags: Funky Storm, PHP, MySQL, GitHub
 ---
 
@@ -25,15 +25,15 @@ $ git push -u origin master
 
 And if you're brave enough to [browse the code](https://github.com/kdeldycke/funky-storm), you'll see a huge mess of:
 
-  * mixed PHP and HTML 4.0,
-  * French variables and comments,
-  * hard-coded parameters,
-  * SQL injections,
-  * flat files for databases,
-  * inconsistent coding style,
-  * Latin-1 strings,
-  * table-based design,
-  * and so on...
+- mixed PHP and HTML 4.0,
+- French variables and comments,
+- hard-coded parameters,
+- SQL injections,
+- flat files for databases,
+- inconsistent coding style,
+- Latin-1 strings,
+- table-based design,
+- and so on...
 
 Digging deeper, I even found an old photo of me from my prime years:
 

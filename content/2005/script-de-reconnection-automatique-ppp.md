@@ -1,6 +1,6 @@
 ---
-date: "2005-04-04"
-title: "Script de reconnection automatique PPP"
+date: '2005-04-04'
+title: Script de reconnection automatique PPP
 category: Français
 tags: Linux, Network, shell, cron
 ---

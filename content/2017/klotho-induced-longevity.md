@@ -1,6 +1,6 @@
 ---
-date: "2017-06-08"
-title: "Klotho induced longevity"
+date: '2017-06-08'
+title: Klotho induced longevity
 category: English
 tags: 23andMe, DNA, genetics, Python, SNP
 ---
@@ -46,10 +46,10 @@ Bingo! With the `GT` variant, I'm supposed to have higher plasma klotho
 concentration. Which is, [according to some studies
 ](https://www.snpedia.com/index.php/Rs9536314), reported to:
 
-* affect longevity in mice,
-* associated with greater brain cortical volume,
-* show lower less decline with age on standardized cognitive tests,
-* score better on some Alzheimer's disease tests.
+- affect longevity in mice,
+- associated with greater brain cortical volume,
+- show lower less decline with age on standardized cognitive tests,
+- score better on some Alzheimer's disease tests.
 
 As usual all these studies are preliminary and should be taken with a huge
 grain of salt.

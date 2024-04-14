@@ -1,6 +1,6 @@
 ---
-date: "2013-03-26"
-title: "Tale of Two: production notes"
+date: '2013-03-26'
+title: 'Tale of Two: production notes'
 category: English
 tags: Kdenlive, Linux, Omashay, timelapse, slow-motion, slowmoVideo, imagemagick, transcode, vid.stab, Blender
 ---
@@ -15,13 +15,11 @@ This video is a timelapse of a painting Tomasito made in 2007. It's based on a s
 
 ![]({attach}tale-of-two-timelapse.png)
 
-
 ## slowmoVideo
 
 I tried to produce a timelapse out of these images a year ago. In fact, that was the original project I was referring to in my [previous article]({filename}/2013/goodnight-video.md), the project which triggered my initial interest into [slowmoVideo](https://slowmovideo.granjow.net/).
 
 But the experiment failed and I abandoned this endeavor. Instead of slow-motion, and because of the low timing resolution of the photos, I assumed a simple slideshow would do it.
-
 
 ## Blender
 
@@ -30,7 +28,6 @@ The original photos were not consistent. To make them work as a slideshow, they 
 ![]({attach}blender-timlapse-stabilization.jpg)
 
 While I could feel the power of the tracking tools, my limited knowledge of Blender stopped me. I abandoned this approach. But one day for sure, I'll give Blender the time it deserves.
-
 
 ## vid.stab & Kdenlive
 
@@ -69,7 +66,6 @@ From the produced images, I created a new slideshow with proper transitions.
 I presented the final rendering to Tomasito, and we agreed that the result, while not incredible, was a good excuse to distribute one of his song on YouTube.
 
 He planned to published the video, but the final editing step was postponed by several months. And then we both forgot the project.
-
 
 ## slowmoVideo, again
 

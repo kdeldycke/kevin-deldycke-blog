@@ -1,6 +1,6 @@
 ---
-date: "2010-02-25"
-title: "Twitter search failed... :("
+date: '2010-02-25'
+title: Twitter search failed... :(
 category: English
 tags: search, Social, Twitter
 ---

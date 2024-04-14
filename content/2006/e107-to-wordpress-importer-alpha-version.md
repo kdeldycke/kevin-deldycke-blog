@@ -1,6 +1,6 @@
 ---
-date: "2006-08-24"
-title: "e107 to Wordpress Importer: Alpha version"
+date: '2006-08-24'
+title: 'e107 to Wordpress Importer: Alpha version'
 category: English
 tags: Blog, CMS, e107, PHP, Web, WordPress
 ---
@@ -15,16 +15,16 @@ Be carefull, actually the script is a very alpha version that only get e107 news
 
 In future releases, I plan to add following features:
 
-  * Import News categories as tags,
+- Import News categories as tags,
 
-  * Import static pages,
+- Import static pages,
 
-  * Import comments,
+- Import comments,
 
-  * Import users (both post and comment authors),
+- Import users (both post and comment authors),
 
-  * Auto convert bb tags to html,
+- Auto convert bb tags to html,
 
-  * Auto import images embedded in news/pages.
+- Auto import images embedded in news/pages.
 
 You can also [get the latest version of the script from its repository](https://github.com/kdeldycke/e107-importer).

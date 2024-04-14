@@ -1,6 +1,6 @@
 ---
-date: "2011-08-23"
-title: "CherryPy + Mako + Formish + OOOP boilerplate"
+date: '2011-08-23'
+title: CherryPy + Mako + Formish + OOOP boilerplate
 category: English
 tags: CherryPy, formish, GitHub, GPL, mako, ooop, open source, OpenERP, Python
 ---
@@ -9,13 +9,13 @@ After [WebPing last week]({filename}/2011/webping-open-sourced.md), here is anot
 
 This stack is composed of:
 
-  * [CherryPy](https://www.cherrypy.org/) to serve web content,
+- [CherryPy](https://www.cherrypy.org/) to serve web content,
 
-  * [Mako](https://www.makotemplates.org/) for HTML templating,
+- [Mako](https://www.makotemplates.org/) for HTML templating,
 
-  * [Formish](https://github.com/ish) for HTML form generation and validation,
+- [Formish](https://github.com/ish) for HTML form generation and validation,
 
-  * [OOOP](https://github.com/lasarux/ooop) to talk to OpenERP server via web services.
+- [OOOP](https://github.com/lasarux/ooop) to talk to OpenERP server via web services.
 
 This project contains the experiments I did while working at [Smile](https://www.smile.fr/), when I explored the possibility of integrating these components. This code was a proof-of-concept that we leveraged later for a highly specific OpenERP project.
 

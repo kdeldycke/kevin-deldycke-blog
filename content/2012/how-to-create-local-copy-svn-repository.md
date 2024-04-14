@@ -1,6 +1,6 @@
 ---
-date: "2012-10-09"
-title: "How-to create a local copy of a remote SVN repository"
+date: '2012-10-09'
+title: How-to create a local copy of a remote SVN repository
 category: English
 tags: Backup, Code, SCM, Subversion, SVK, Regular expression
 ---

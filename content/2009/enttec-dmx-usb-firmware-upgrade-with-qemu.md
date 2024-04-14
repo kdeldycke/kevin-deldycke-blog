@@ -1,6 +1,6 @@
 ---
-date: "2009-05-14"
-title: "Enttec DMX-USB firmware upgrade with Qemu"
+date: '2009-05-14'
+title: Enttec DMX-USB firmware upgrade with Qemu
 category: English
 tags: DMX, enttec, firmware, Hardware, Linux, Qemu, Stage lighting, USB
 ---
@@ -43,8 +43,8 @@ What we are looking for is the vendor's ID and the product's ID, that's all Qemu
 needs to talk to the device. This is found on the line starting with `P:`.
 For me:
 
-  * Vendor ID: `0403`
-  * Products ID: `6001`
+- Vendor ID: `0403`
+- Products ID: `6001`
 
 With this information, we can launch Qemu and bind it to the device. Assuming
 you already have a Qemu image containing a working version of windows XP, the

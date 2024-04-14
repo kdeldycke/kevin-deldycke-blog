@@ -1,6 +1,6 @@
 ---
-date: "2013-04-18"
-title: "Run OpenERP's ir.cron from command-line"
+date: '2013-04-18'
+title: Run OpenERP's ir.cron from command-line
 category: English
 tags: OpenERP, Python, CLI, cron, scheduler
 ---

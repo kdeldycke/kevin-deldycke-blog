@@ -1,6 +1,6 @@
 ---
-date: "2011-06-28"
-title: "Nginx + PHP-FPM + MySQL on a Debian Squeeze server"
+date: '2011-06-28'
+title: Nginx + PHP-FPM + MySQL on a Debian Squeeze server
 category: English
 tags: Debian, Debian Squeeze, Linux, MySQL, SQL, nginx, PHP, php-fpm, Server, Web
 ---
@@ -25,9 +25,10 @@ $ aptitude install mysql-server
 ```
 
 FYI, here is the list of versions I installed:
-  * Nginx 1.0.2
-  * PHP 5.3.6
-  * MySQL 5.1.57
+
+- Nginx 1.0.2
+- PHP 5.3.6
+- MySQL 5.1.57
 
 As a way to test that our setup is working, we'll serve a simple PHP file:
 

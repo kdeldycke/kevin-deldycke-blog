@@ -1,6 +1,6 @@
 ---
-date: "2008-06-03"
-title: "How-to inherit CSS width attributes for Internet Explorer"
+date: '2008-06-03'
+title: How-to inherit CSS width attributes for Internet Explorer
 category: English
 tags: CSS, Firefox, HTML, Internet Explorer
 ---
@@ -10,7 +10,7 @@ your content. The following CSS rule is part of the framework:
 
 ```css
 img {
-  width: 100%;
+    width: 100%;
 }
 ```
 
@@ -21,7 +21,7 @@ Now, for any reason (aesthetic, layout, etc.), you want to reset this behaviour.
 One solution (the laziest) is to remove those three lines from the original CSS
 file. But if you're like me, this sound too dirty for you as you don't want to
 modify the original CSS file (I like to avoid patches on third party tools and
-                              libraries I don't maintain).
+libraries I don't maintain).
 
 Another solution consist in overriding this `width` attribute in another CSS
 file that you will call after the original one. This case is covered by the
@@ -30,7 +30,7 @@ file that you will call after the original one. This case is covered by the
 
 ```css
 img {
-  width: inherit;
+    width: inherit;
 }
 ```
 
@@ -43,7 +43,7 @@ workaround is to use the `auto` value instead of `inherit`:
 
 ```css
 img {
-  width: auto;
+    width: auto;
 }
 ```
 

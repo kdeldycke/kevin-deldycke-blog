@@ -1,6 +1,6 @@
 ---
-date: "2010-04-19"
-title: "My PuTTY profile template"
+date: '2010-04-19'
+title: My PuTTY profile template
 category: English
 tags: PuTTY, shell, SSH, Template, terminal, Windows
 ---

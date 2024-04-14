@@ -1,6 +1,6 @@
 ---
-date: "2010-11-23"
-title: "Using latest stable Kdenlive with a development version of MLT"
+date: '2010-11-23'
+title: Using latest stable Kdenlive with a development version of MLT
 category: English
 tags: apt-get, aptitude, dpkg, Git, Kdenlive, Kubuntu, Ubuntu, mlt, Video
 ---
@@ -80,4 +80,3 @@ Then, we can let `apt` handle Kdenlive and MLT properly and get back to the pre-
 ```shell-session
 $ sudo apt-get remove kdenlive && sudo apt-get update && sudo apt-get install kdenlive
 ```
-

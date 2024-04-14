@@ -1,6 +1,6 @@
 ---
-date: "2012-12-18"
-title: "How-to clean and tidy up OpenERP's XML"
+date: '2012-12-18'
+title: How-to clean and tidy up OpenERP's XML
 category: English
 tags: CLI, lint, Linux, OpenERP, xml, XSLT, ERP
 ---

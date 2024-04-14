@@ -1,6 +1,6 @@
 ---
-date: "2011-03-21"
-title: "Why I chose Ubercart instead of Magento or osCommerce."
+date: '2011-03-21'
+title: Why I chose Ubercart instead of Magento or osCommerce.
 category: English
 tags: CMS, Drupal, Magento, osCommerce, Online Store, Ubercart
 ---
@@ -16,9 +16,9 @@ First, I selected a couple of web eCommerce solution based on the same
 [requirements upon which I choose WordPress]({filename}/2006/e107-to-wordpress-migration-here-is-why.md)
 some years ago. Namely:
 
-  * Open-source free software
-  * Active project
-  * Healthy community
+- Open-source free software
+- Active project
+- Healthy community
 
 I excluded osCommerce right away. I quickly played with it in 2005 and in 2007
 for projects that never came to fruition. And I keep a really bad memory of
@@ -34,10 +34,10 @@ missing.
 My shop was supposed to sell tee-shirts for the band. And a tee-shirt is a
 product that can have lots of variations:
 
-  * different colors (white, black, yellow, ...),
-  * of different sizes (S, M, L, X, XL, ...),
-  * in different shapes (teeshirt, hoodie, sweatshirt, ...),
-  * for different peoples (guy, girl, baby, ...).
+- different colors (white, black, yellow, ...),
+- of different sizes (S, M, L, X, XL, ...),
+- in different shapes (teeshirt, hoodie, sweatshirt, ...),
+- for different peoples (guy, girl, baby, ...).
 
 I wanted to track stocks and prices for each combination. And this degree of
 complexity is not supported by Magento. To be fair, I remember to have heard of

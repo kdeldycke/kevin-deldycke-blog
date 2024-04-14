@@ -1,6 +1,6 @@
 ---
-date: "2009-11-26"
-title: "Cool Cavemen, les Creative Commons et moi"
+date: '2009-11-26'
+title: Cool Cavemen, les Creative Commons et moi
 category: Français
 tags: band, Cool Cavemen, Creative Commons, interview, musique, oxyradio, podcast, radio
 ---
@@ -21,5 +21,5 @@ podcast](https://web.archive.org/web/20100715003245/https://www.oxyradio.net/pod
 Pour résumer mon intervention, j'explique comment et pourquoi j'ai conseillé au
 groupe de distribuer leurs compositions sous une licence Creative Commons.
 Bref, une interview sympa, même si au final je me rend compte que je suis un
-peu rouillé. J'ai vraiment besoin de pratiquer plus régulièrement l'exercice&nbsp;!
+peu rouillé. J'ai vraiment besoin de pratiquer plus régulièrement l'exercice !
 ;)

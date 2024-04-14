@@ -1,6 +1,6 @@
 ---
-date: "2010-06-25"
-title: "How-to export/backup Lotus Notes mails"
+date: '2010-06-25'
+title: How-to export/backup Lotus Notes mails
 category: English
 tags: Backup, Databases, email, export, Lotus Notes, Windows
 ---
@@ -26,4 +26,3 @@ This will generate a `.nsf` file containing all your current mail.
 Now that you have a backup, you are free to delete all your mails in Lotus Notes. By following this procedure regulary, you can create yearly or monthly archives of you mails without reaching the mailbox quota! For example, this is how my local archive folder looks like:
 
 ![]({attach}lotus-notes-exported-mail-archives.png)
-

@@ -1,6 +1,6 @@
 ---
-date: "2004-06-29"
-title: "Mise en place d'une paserelle ADSL sous Mandrake 10"
+date: '2004-06-29'
+title: Mise en place d'une paserelle ADSL sous Mandrake 10
 category: Français
 tags: ADSL, gateway, Linux, Mandriva, Network, router, MBR, PPPoE, Modem, cron
 ---
@@ -10,16 +10,16 @@ place d'une passerelle internet tournant sous Linux.
 
 Tout commence avec une épave de PC récupéré, composé de:
 
-  * un écran
-  * une carte graphique Matrox PCI G200
-  * un bloc d'alimentation
-  * un disque dur IDE de 6 Go
-  * 128 Mo + 32 Mo de SD-RAM PC66
-  * un processeur AMD K6 à 200Mhz
-  * un lecteur CD-ROM IDE 52x
-  * deux cartes réseaux ISA 3Com 3c509-b 10Mb avec RJ45
-  * une clavier
-  * une souris
+- un écran
+- une carte graphique Matrox PCI G200
+- un bloc d'alimentation
+- un disque dur IDE de 6 Go
+- 128 Mo + 32 Mo de SD-RAM PC66
+- un processeur AMD K6 à 200Mhz
+- un lecteur CD-ROM IDE 52x
+- deux cartes réseaux ISA 3Com 3c509-b 10Mb avec RJ45
+- une clavier
+- une souris
 
 Le tout repose sur une carte-mère sans nom et monté dans une carcasse de châssis
 de type "tour".
@@ -91,8 +91,8 @@ moment isolé.
 Il est temps de redémarrer l’ordinateur, sans oublier de retirer le CD du
 lecteur. Ce premier démarrage va nous permettre de vérifier que le système est
 capable de se lancer automatiquement dans une configuration minimale. Si vous
-obtenez une invite de login, vous avez gagné&nbsp;! Vous avez un système qui démarre
-avec le minimum à bord&nbsp;!
+obtenez une invite de login, vous avez gagné ! Vous avez un système qui démarre
+avec le minimum à bord !
 
 Connectez vous avec le login `root` et le mot de passe définit précédemment.
 
@@ -112,18 +112,18 @@ installer sous vos yeux tout les packages nécessaires.
 
 On lance ensuite `drakconf` en ligne de commande puis:
 
-  * On entre dans le menu "network & internet".
-  * Choisissez "connexion via LAN".
-  * Il vous demandera éventuellement de choisir le driver de la carte
-    manuellement si il ne peut le déterminer automatiquement. De même pour les
-    paramètres du module/driver utilisé.
-  * Choisissez ensuite de configurer `eth0`.
-  * Puis demander une configuration de l'adresse IP manuelle, et non via le
-    service `dhcp`. L'adresse IP sera `192.168.1.1/255.255.255.0` et la carte
-    sera branchée à chaud sur le réseau et sera lancée au démarrage.
-  * Ne changez pas la config dans l’écran suivant. Ni dans celui d’après
-    (zeroconf).
-  * Redémarrez enfin le réseau quand cela vous sera demandé.
+- On entre dans le menu "network & internet".
+- Choisissez "connexion via LAN".
+- Il vous demandera éventuellement de choisir le driver de la carte
+  manuellement si il ne peut le déterminer automatiquement. De même pour les
+  paramètres du module/driver utilisé.
+- Choisissez ensuite de configurer `eth0`.
+- Puis demander une configuration de l'adresse IP manuelle, et non via le
+  service `dhcp`. L'adresse IP sera `192.168.1.1/255.255.255.0` et la carte
+  sera branchée à chaud sur le réseau et sera lancée au démarrage.
+- Ne changez pas la config dans l’écran suivant. Ni dans celui d’après
+  (zeroconf).
+- Redémarrez enfin le réseau quand cela vous sera demandé.
 
 Nous allons maintenant vérifier que le réseau est parfaitement configuré. Faite
 un `ifconfig`. Normalement vous devez avoir trois interfaces: `eth1`, `lo` et
@@ -147,7 +147,7 @@ activation de la connexion inter
 ```
 
 Si les trois tentatives se terminent par un échec, c'est simplement que vous
-avez connecté le modem et le réseau sur les mauvaises cartes&nbsp;! Échangez donc le
+avez connecté le modem et le réseau sur les mauvaises cartes ! Échangez donc le
 branchement des prises RJ-45, et redémarrez le PC. Pour redémarrer on peut faire
 un ++ctrl+alt+del++. On aurait pu faire ça plus rapidement et proprement mais je
 veux vous faire voir qu'internet et le réseau se mettent en route
@@ -218,7 +218,7 @@ lancement au démarrage. On donne ensuite un nom à la machine (par exemple
 `kevlaptop`). Maintenant on peut redémarrer le réseau avec
 `/etc/init.d/network restart` et constater avec un `ifconfig` que `eth0` se voit
 bien attribuer une IP de la forme `192.168.1.x` avec `x` comprit entre 128 et
-254. On peut même pinguer la passerelle avec la commande `ping 192.168.1.1`.
+254\. On peut même pinguer la passerelle avec la commande `ping 192.168.1.1`.
 
 Maintenant que n'importe lequel de nos pc est capable de se connecter au réseau
 et de communiquer avec n'importe lequel des autres pc, nous allons installer un
@@ -248,7 +248,7 @@ lancer au démarrage. On redémarrera la machine pour être sur qu'il démarre c
 nous le souhaitons.
 
 Encore une fois, le message `lancement de webmin [OK]` nous en apporte la
-preuve&nbsp;!
+preuve !
 
 Maintenant, pour utiliser Webmin, munissez vous de n'importe quel navigateur web
 depuis un PC sur votre réseau local et fait le pointer sur
@@ -295,9 +295,9 @@ Dans Webmin, on va dans `server` > `DHCP` > `edit client options`, pour mettre �
 jour la configuration du serveur DHCP et communiquer les coordonnées de notre
 passerelle. Voici les nouveaux paramètres:
 
-  * Subnet mask: `255.255.255.0`
-  * Default router: `192.168.1.1` (= l'IP de notre routeur)
-  * DNS serveur: choisir un des deux DNS fournis par votre FAI
+- Subnet mask: `255.255.255.0`
+- Default router: `192.168.1.1` (= l'IP de notre routeur)
+- DNS serveur: choisir un des deux DNS fournis par votre FAI
 
 Ne pas oublier de forcer l'interface `eth0` comme interface de recherche DHCP
 par défaut, sinon le deamon aura du mal à démarrer au boot une fois sur deux.

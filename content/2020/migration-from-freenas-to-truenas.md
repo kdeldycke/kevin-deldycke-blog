@@ -1,6 +1,6 @@
 ---
-date: "2020-12-27"
-title: "Migration from FreeNAS to TrueNAS"
+date: '2020-12-27'
+title: Migration from FreeNAS to TrueNAS
 category: English
 tags: NAS, filesystem, OS, FreeNAS, TrueNAS, hdd, hard-drive, ssd, raid, storage, network, ZFS
 ---
@@ -35,10 +35,10 @@ All system metadata resides there. We can no longer SSH into the box with our re
 
 Go to `Accounts` > `Users`, click `Add` button. Then setup our new user:
 
-* Username: `kev-tmp`
-* Password: Get a good random one
-* Home Directory: `/nonexistent`
-* Keep all other defaults as-is
+- Username: `kev-tmp`
+- Password: Get a good random one
+- Home Directory: `/nonexistent`
+- Keep all other defaults as-is
 
 Go to `Services`. Stop all daemons, but make sure `SSH` is `Running`.
 
@@ -46,11 +46,11 @@ Click `SSH`'s `Actions`, and in the `General Options` check `Allow Password Auth
 
 Double check you're allowed to authenticate with a password from your machine:
 
-```{.ssh filename="~/.ssh/config" hl_lines="3"}
+~~~{.ssh filename="~/.ssh/config" hl_lines="3"}
 (…)
 Host truenas.local
     PasswordAuthentication yes
-```
+~~~
 
 Then login to your NAS as `root`:
 
@@ -787,7 +787,7 @@ And off we went, spending another 7 hours of resilvering, but back on track in t
 
 All in all, RAID-Z2 saved my ass here. Lesson learned: **a disk failure during heavy-duty operations is [no longer a statistically rare event](/2020/05/nas-hardware/#raid-array)**.
 
-So remember the wise man who once said to **BACKUP YOUR F#@$% POOL**!
+So remember the wise man who once said to **BACKUP YOUR F#@\$% POOL**!
 
 ## Bad hardware
 
@@ -797,23 +797,23 @@ At that point everything broke loose and couldn't find any solid explanation. I 
 
 Of all possible root causes, I listed these:
 
-* **Power-supply overcapacity**: impossible.
+- **Power-supply overcapacity**: impossible.
 
   PSU was 450W and each HDD is operating at 7.72W of typical consumption.
 
-* **Bad motherboard firmware**: unlikely.
+- **Bad motherboard firmware**: unlikely.
 
   Motherboard has been upgraded from the latest version from day 1.
 
-* Bad HDD firmwares
+- Bad HDD firmwares
 
-* Bad cables
+- Bad cables
 
-* Cooling issue
+- Cooling issue
 
-* Bad HDD series
+- Bad HDD series
 
-* **Shitty controller**: most likely possibility.
+- **Shitty controller**: most likely possibility.
 
   I only encountered this behaviour while rebuilding the array. So under load the disk controllers on the motherboard might have just given up. All disks are managed by the [Intel C246 chipset](https://ark.intel.com/content/www/us/en/ark/products/147326/intel-c246-chipset.html).
 

@@ -1,6 +1,6 @@
 ---
-date: "2012-02-21"
-title: "How-to monkey-patch OpenERP's native Javascript"
+date: '2012-02-21'
+title: How-to monkey-patch OpenERP's native Javascript
 category: English
 tags: javascript, monkeypatch, OpenERP, Web, xml, ERP
 ---
@@ -16,40 +16,50 @@ The view above is produced by the following XML:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-  <data>
-
-    <!-- Multi product printing wizard -->
-    <record model="ir.ui.view" id="label_wizard_product_form">
-      <field name="name">label.wizard.product.form</field>
-      <field name="model">label.wizard.product</field>
-      <field name="type">form</field>
-      <field name="arch" type="xml">
-        <form string="Label Wizard">
-          <field name="line_ids" colspan="4" nolabel="1"/>
-          <group col="2" colspan="2">
-            <button icon="gtk-ok" name="action_print" string="Print" type="object"/>
-          </group>
-        </form>
-      </field>
-    </record>
-
-    <record model="ir.ui.view" id="label_wizard_product_line_tree">
-      <field name="name">label.wizard.product.line.tree</field>
-      <field name="model">label.wizard.product.line</field>
-      <field name="type">tree</field>
-      <field name="arch" type="xml">
-        <tree string="Items" editable="bottom">
-          <field name="product_template_id"/>
-          <field name="size_id"/>
-          <field name="main_color_id"/>
-          <field name="product_id"/>
-          <field name="quantity"/>
-        </tree>
-      </field>
-    </record>
-
-  </data>
+ <data>
+  <!-- Multi product printing wizard -->
+  <record id="label_wizard_product_form" model="ir.ui.view">
+   <field name="name">
+    label.wizard.product.form
+   </field>
+   <field name="model">
+    label.wizard.product
+   </field>
+   <field name="type">
+    form
+   </field>
+   <field name="arch" type="xml">
+    <form string="Label Wizard">
+     <field colspan="4" name="line_ids" nolabel="1"/>
+     <group col="2" colspan="2">
+      <button icon="gtk-ok" name="action_print" string="Print" type="object"/>
+     </group>
+    </form>
+   </field>
+  </record>
+  <record id="label_wizard_product_line_tree" model="ir.ui.view">
+   <field name="name">
+    label.wizard.product.line.tree
+   </field>
+   <field name="model">
+    label.wizard.product.line
+   </field>
+   <field name="type">
+    tree
+   </field>
+   <field name="arch" type="xml">
+    <tree editable="bottom" string="Items">
+     <field name="product_template_id"/>
+     <field name="size_id"/>
+     <field name="main_color_id"/>
+     <field name="product_id"/>
+     <field name="quantity"/>
+    </tree>
+   </field>
+  </record>
+ </data>
 </openerp>
+
 ```
 
 If you start searching a product template with the first field, you'll get a pop-up similar to this one:
@@ -67,8 +77,8 @@ The code responsible for this behavior is located in the [`addons/openerp/static
 ```javascript
 ManyToOne.prototype.on_keydown = function(evt) {
     (...)
-            jQuery('div.autoTextResults[id$="' + this.name + '"]').width(w)
-    (...)
+    jQuery('div.autoTextResults[id$="' + this.name + '"]').width(w)
+        (...)
 };
 ```
 
@@ -99,4 +109,3 @@ Here is the code I added in the XML view, just below the `line_ids` field:
 The result of this is a nice looking pop-up which doesn't break any vanilla Javascript of the OpenERP web client:
 
 ![]({attach}variable-width-popup-list.png)
-

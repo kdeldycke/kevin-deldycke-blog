@@ -1,6 +1,6 @@
 ---
-date: "2006-04-29"
-title: "Bad FTP mirrors with fmirror or wget? Use lftp!"
+date: '2006-04-29'
+title: Bad FTP mirrors with fmirror or wget? Use lftp!
 category: English
 tags: Backup, CLI, fmirror, FTP, lftp, Linux, Web, wget
 ---
@@ -32,4 +32,3 @@ So I went back to basics by using the good old `lftp`, which is efficient and re
 ```shell-session
 $ lftp -c 'open -e "mirror -e . ./ " ftp://kevin:pass@ftp.website.com:21/html'
 ```
-

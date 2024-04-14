@@ -1,6 +1,6 @@
 ---
-date: "2011-09-13"
-title: "Cloud-based Server Backups with Duplicity and Amazon S3"
+date: '2011-09-13'
+title: Cloud-based Server Backups with Duplicity and Amazon S3
 category: English
 tags: Amazon S3, AWS, Backup, cloud-computing, cron, Debian, duplicity, Linux, MySQL, SQL, shell, Debian Squeeze, storage
 ---
@@ -31,7 +31,7 @@ Now update the script below with the GPG key passphrase and your AWS credentials
 
 ```sh
 # Do not let this script run more than once
-[ `ps axu | grep -v "grep" | grep --count "duplicity"` -gt 0 ] && exit 1
+[ $(ps axu | grep -v "grep" | grep --count "duplicity") -gt 0 ] && exit 1
 
 # Set some environment variables required by duplicity
 export PASSPHRASE=XXXXXXXXXX
@@ -43,7 +43,7 @@ PARAMS='--exclude-device-files --exclude-other-filesystems --exclude **/.cache/*
 DEST='s3+https://com.example.server.backup'
 
 # Export MySQL databases
-mysqldump --user=root --opt --all-databases > /home/kevin/mysql-backup.sql
+mysqldump --user=root --opt --all-databases >/home/kevin/mysql-backup.sql
 
 # Do the backup
 duplicity $PARAMS --full-if-older-than 1M / $DEST
