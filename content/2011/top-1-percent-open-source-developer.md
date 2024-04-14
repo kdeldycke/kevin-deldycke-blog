@@ -1,6 +1,6 @@
 ---
-date: "2011-03-07"
-title: "I'm Top 1% Open-Source Developer! (and that's a lie)"
+date: '2011-03-07'
+title: I'm Top 1% Open-Source Developer! (and that's a lie)
 category: English
 tags: development, open source, Software engineering
 ---
@@ -13,14 +13,14 @@ Other interesting statistic is that I'm now ranked as open-source developer numb
 
 That's exciting, but irrelevant. Open Hub stats must be taken with a huge grain of salt.
 
-  1. Some code are duplicated: my WordPress plugin is both present in my [personal GitHub repository](https://github.com/kdeldycke/e107-importer) and in [WordPress official plugin repository](https://plugins.trac.wordpress.org/browser/e107-importer/), inflating contributions on this project by 2.
+1. Some code are duplicated: my WordPress plugin is both present in my [personal GitHub repository](https://github.com/kdeldycke/e107-importer) and in [WordPress official plugin repository](https://plugins.trac.wordpress.org/browser/e107-importer/), inflating contributions on this project by 2.
 
-  2. Not all open-source projects are tracked in Open Hub. Which make developer registered on Open Hub seems to be part of a smaller community.
+1. Not all open-source projects are tracked in Open Hub. Which make developer registered on Open Hub seems to be part of a smaller community.
 
-  3. Not all developers on Open Hub have aggregated their repository accounts under one identity, making those who've done this looks like bigger contributors compared to others. This also artificially inflate the global population.
+1. Not all developers on Open Hub have aggregated their repository accounts under one identity, making those who've done this looks like bigger contributors compared to others. This also artificially inflate the global population.
 
-  4. Open-source contributions are not necessary in code repositories. Think about project promotion, maintenance of forges and websites, documentation, bug reports, testing, benchmarking, support (in mailing-lists, IRC and forums), ...
+1. Open-source contributions are not necessary in code repositories. Think about project promotion, maintenance of forges and websites, documentation, bug reports, testing, benchmarking, support (in mailing-lists, IRC and forums), ...
 
-  5. And most importantly, the best contributions are not always tied to high commit activity or number of added code lines. Thinks about removing old/dead/legacy code and refactoring. These may be the best code contributions a project will see.
+1. And most importantly, the best contributions are not always tied to high commit activity or number of added code lines. Thinks about removing old/dead/legacy code and refactoring. These may be the best code contributions a project will see.
 
 That's why Open Hub stats must not be taken for granted. But this doesn't remove the fun you can get from them. Especially when they put me in a favorable light! ;)

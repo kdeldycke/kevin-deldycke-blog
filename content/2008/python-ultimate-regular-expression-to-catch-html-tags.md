@@ -1,6 +1,6 @@
 ---
-date: "2008-07-08"
-title: "Python ultimate regular expression to catch HTML tags"
+date: '2008-07-08'
+title: Python ultimate regular expression to catch HTML tags
 category: English
 tags: HTML, programming, Python, Regular expression, BeautifoulSoup, lxml
 ---
@@ -10,8 +10,8 @@ tags: HTML, programming, Python, Regular expression, BeautifoulSoup, lxml
 
     To parse HTML or XML, use a dedicated library like the good old:
 
-    * [`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4)
-    * [`lxml.html`](https://lxml.de/lxmlhtml.html)
+    - [`BeautifoulSoup`](https://pypi.python.org/pypi/beautifulsoup4)
+    - [`lxml.html`](https://lxml.de/lxmlhtml.html)
 
 1 year and 3 months ago I've came with a
 [PHP regexp to parse HTML tag soup]({filename}/2007/ultimate-regular-expression-for-html-tag-parsing-with-php.md).
@@ -24,7 +24,9 @@ stick to it in order to catch [tag soup](https://en.wikipedia.org/wiki/Tag_soup)
 and malformatted tags.
 
 ```python
-ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
+ultimate_regexp = (
+    "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
+)
 ```
 
 And here is it applied in a trivial example (in a python shell):

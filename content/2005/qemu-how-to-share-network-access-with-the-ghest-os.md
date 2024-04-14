@@ -1,6 +1,6 @@
 ---
-date: "2005-06-04"
-title: "Qemu: How-To Share Network Access with the Ghest OS"
+date: '2005-06-04'
+title: 'Qemu: How-To Share Network Access with the Ghest OS'
 category: English
 tags: iptables, Linux, Network, Qemu
 ---
@@ -15,7 +15,7 @@ sudo modprobe tun
 sudo /sbin/ifconfig $1 up 10.0.2.2 netmask 255.255.255.0 broadcast 10.0.2.255
 
 # IP masquerade
-sudo echo "1" > /proc/sys/net/ipv4/ip_forward
+sudo echo "1" >/proc/sys/net/ipv4/ip_forward
 sudo /sbin/iptables -N nat
 sudo /sbin/iptables -t nat -F
 sudo /sbin/iptables -t nat -A POSTROUTING -s 10.0.2.15 -j MASQUERADE

@@ -1,6 +1,6 @@
 ---
-date: "2012-09-11"
-title: "Merging back Git changes to an outdated Subversion fork"
+date: '2012-09-11'
+title: Merging back Git changes to an outdated Subversion fork
 category: English
 tags: Git, GitHub, merge, OpenERP, Subversion, ERP
 ---
@@ -59,8 +59,8 @@ As usual, the SVN repository is a mess and contain numerous stuff unrelated to
 our original matrix module. The only folders I want to keep, corresponding to
 the original Git repository, are located in:
 
-  * `./addons-web/smile_matrix_widget/`
-  * `./addons-server/smile_matrix_field/`
+- `./addons-web/smile_matrix_widget/`
+- `./addons-server/smile_matrix_field/`
 
 Let's remove all other content:
 

@@ -1,6 +1,6 @@
 ---
-date: "2012-02-28"
-title: "Stabilizing Cute Baby Goats"
+date: '2012-02-28'
+title: Stabilizing Cute Baby Goats
 category: English
 tags: Canon EOS 7D, Linux, stabilization, transcode, Video
 ---
@@ -16,10 +16,6 @@ https://www.youtube.com/watch?v=el6VMY8KZHo
 Yeah, I know, this is a naive video that belongs to [/r/aww](https://www.reddit.com/r/aww/). But any excuse is good to me when its all about playing with video.
 
 These kids (as baby goats are called) decided to come to this world the night I was around. In a hurry I grabbed my [Canon 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20) and filmed these newborns with a [Sigma 30mm f/1.4 EX DC HSM](https://amzn.com/B0007U0GZM/?tag=kevideld-20) to leverage its large aperture. And as expected, in the night, with no artificial light and no extra stabilization device, the resulting footage are extremely shaky.
-
-
-
-
 
 I tried to stabilize the shots but was really disappointed by the results. The final version of the video you watched above only feature the original footage, without any stabilization. But for posterity, here are some notes about the tools I played with.
 

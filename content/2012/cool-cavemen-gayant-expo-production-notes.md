@@ -1,6 +1,6 @@
 ---
-date: "2012-11-06"
-title: "Cool Cavemen at Gayant Expo: production notes"
+date: '2012-11-06'
+title: 'Cool Cavemen at Gayant Expo: production notes'
 Category: Front Page
 tags: band, concert, Cool Cavemen, Douai, France, gayant expo, Kdenlive, Stage Lighting, live, SoundUp studio, Video, YouTube
 ---
@@ -101,25 +101,25 @@ research, it looks like humans tolerate an error below 100ms:
 Now that we have our error margin, we need a workflow. We managed to design one
 based on a reference track extracted from the camera recording:
 
-  1. First, Thomas start to work on a song. When he has something to show us, he
-     down-mix its
-     [Cubase](https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Steinberg%20Cubase&linkCode=ur2&rh=i%3Aaps%2Ck%3ASteinberg%20Cubase&tag=kevideld-20&url=search-alias%3Daps)
-     project and export intermediate results under the name
-     `2010-01-29--igor--audio-desync.wav`. This allow all band members to give
-     feedback.
+1. First, Thomas start to work on a song. When he has something to show us, he
+   down-mix its
+   [Cubase](https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Steinberg%20Cubase&linkCode=ur2&rh=i%3Aaps%2Ck%3ASteinberg%20Cubase&tag=kevideld-20&url=search-alias%3Daps)
+   project and export intermediate results under the name
+   `2010-01-29--igor--audio-desync.wav`. This allow all band members to give
+   feedback.
 
 ![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
 
-  2. Once the final mix of the song is validated, I export the audio reference
-     from my video edit (i.e. the plain recording from the cameras) under the
-     name `2010-02-15--igor--audio-ref.wav`. We use this file as the reference
-     audio track.
+2. Once the final mix of the song is validated, I export the audio reference
+   from my video edit (i.e. the plain recording from the cameras) under the
+   name `2010-02-15--igor--audio-ref.wav`. We use this file as the reference
+   audio track.
 
-  3. Then, Thomas shift in time the `2010-01-29--igor--audio-desync.wav` file to
-     precisely match the `2010-02-15--igor--audio-ref.wav` reference file, and
-     save the result under the name `2010-02-16--igor--audio-sync.wav`. This is
-     the file I import in Kdenlive and align with my video using the reference
-     track.
+1. Then, Thomas shift in time the `2010-01-29--igor--audio-desync.wav` file to
+   precisely match the `2010-02-15--igor--audio-ref.wav` reference file, and
+   save the result under the name `2010-02-16--igor--audio-sync.wav`. This is
+   the file I import in Kdenlive and align with my video using the reference
+   track.
 
 ![]({attach}kdenlive-fusion-timeline.png)
 

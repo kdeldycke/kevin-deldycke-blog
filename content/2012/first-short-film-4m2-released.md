@@ -1,6 +1,6 @@
 ---
-date: "2012-03-13"
-title: "4m² : the first short I worked on"
+date: '2012-03-13'
+title: '4m² : the first short I worked on'
 Category: Front Page
 tags: Canon EOS 7D, cinematography, film, narrative, short, short film, Video, youtube
 ---
@@ -42,4 +42,3 @@ And here are the official stills of the short:
 ![002]({attach}002.png)
 
 ![001]({attach}001.png)
-

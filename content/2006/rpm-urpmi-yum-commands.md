@@ -1,9 +1,8 @@
 ---
-date: "2006-11-29"
-title: "RPM, Urpmi & Yum commands"
+date: '2006-11-29'
+title: RPM, Urpmi & Yum commands
 category: English
-tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpmi,
-  yum, cron
+tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpmi, yum, cron
 ---
 
 ## RPM

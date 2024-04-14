@@ -1,6 +1,6 @@
 ---
-date: "2010-02-12"
-title: "How-to configure GRUB in (k)Ubuntu"
+date: '2010-02-12'
+title: How-to configure GRUB in (k)Ubuntu
 category: English
 tags: grub, Kubuntu, Ubuntu, Linux, Ubuntu, MBR
 ---
@@ -24,4 +24,3 @@ And finally, after all these changes, don't forget to regenerate all the GRUB's 
 ```shell-session
 $ sudo update-grub
 ```
-

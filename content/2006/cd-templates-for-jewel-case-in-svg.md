@@ -1,6 +1,6 @@
 ---
-date: "2006-09-26"
-title: "CD Templates for Jewel Case in SVG"
+date: '2006-09-26'
+title: CD Templates for Jewel Case in SVG
 category: English
 tags: Cool Cavemen, Creative Commons, inkscape, Music, SVG, Template, Compact disc
 ---
@@ -17,13 +17,13 @@ Sometimes this black [strip is made of transparent polystyrene](https://amzn.com
 
 You can download those templates as SVG files under the [Creative Commons Attribution licence](https://creativecommons.org/licenses/by/2.5/). Here are the direct link to the SVG versions of the templates:
 
-  * [Jewel case, leaflet (SVG)]({attach}cd-template-jewel-case-leaflet.svg)
-  * [Jewel case, leaflet, print margins only (SVG)]({attach}cd-template-jewel-case-leaflet-print-margin.svg)
-  * [Jewel case, back-cover (SVG)]({attach}cd-template-jewel-case-back.svg)
-  * [Jewel case, back-cover, print margins only (SVG)]({attach}cd-template-jewel-case-back-print-margin.svg)
-  * [CD Face (SVG)]({attach}cd-template-cd-face.svg)
-  * [Jewel case, inside back-cover (SVG)]({attach}cd-template-jewel-case-inside-back-cover.svg)
-  * [Jewel case, front + back composition (SVG)]({attach}cd-template-jewel-case-front-back-composition.svg)
+- [Jewel case, leaflet (SVG)]({attach}cd-template-jewel-case-leaflet.svg)
+- [Jewel case, leaflet, print margins only (SVG)]({attach}cd-template-jewel-case-leaflet-print-margin.svg)
+- [Jewel case, back-cover (SVG)]({attach}cd-template-jewel-case-back.svg)
+- [Jewel case, back-cover, print margins only (SVG)]({attach}cd-template-jewel-case-back-print-margin.svg)
+- [CD Face (SVG)]({attach}cd-template-cd-face.svg)
+- [Jewel case, inside back-cover (SVG)]({attach}cd-template-jewel-case-inside-back-cover.svg)
+- [Jewel case, front + back composition (SVG)]({attach}cd-template-jewel-case-front-back-composition.svg)
 
 Below are PNG versions for preview:
 

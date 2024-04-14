@@ -1,6 +1,6 @@
 ---
-date: "2012-08-07"
-title: "Keep a Local Backup of Gmail thanks to mbsync"
+date: '2012-08-07'
+title: Keep a Local Backup of Gmail thanks to mbsync
 category: English
 tags: Backup, Gmail, Google, IMAP, isync, Linux, email, mbsync, OpenSSL, SSL, Regular expression
 ---

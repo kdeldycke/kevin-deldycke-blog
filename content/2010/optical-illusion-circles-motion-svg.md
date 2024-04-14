@@ -1,6 +1,6 @@
 ---
-date: "2010-04-14"
-title: "Optical illusion: circles in motion"
+date: '2010-04-14'
+title: 'Optical illusion: circles in motion'
 category: English
 tags: Creative Commons, inkscape, optical illusion, svg, visuals
 ---

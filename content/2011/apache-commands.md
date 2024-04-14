@@ -1,15 +1,15 @@
 ---
-date: "2011-01-11"
-title: "Apache commands"
+date: '2011-01-11'
+title: Apache commands
 category: English
 tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
 ---
 
 - Redirects local `/static/repository` folder to external URL:
 
-    ```apache
-    Redirect permanent /static/repository https://kevin.deldycke.free.fr/repository
-    ```
+  ```apache
+  Redirect permanent /static/repository https://kevin.deldycke.free.fr/repository
+  ```
 
 - Hide Subversion and Git directories content ([source](https://news.ycombinator.com/item?id=839016)):
 
@@ -32,15 +32,15 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
 
 - Force Apache to serve Python files as-is instead of being interpreted as CGI scripts:
 
-    ```apache
-    RemoveHandler .py
-    ```
+  ```apache
+  RemoveHandler .py
+  ```
 
 - Same as above, but for PHP files:
 
-    ```apache
-    AddType text/plain .php
-    ```
+  ```apache
+  AddType text/plain .php
+  ```
 
 - Here is my template for domain-based virtual host routing:
 

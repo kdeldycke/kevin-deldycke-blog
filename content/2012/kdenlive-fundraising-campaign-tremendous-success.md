@@ -1,6 +1,6 @@
 ---
-date: "2012-05-22"
-title: "Kdenlive fundraising campaign: a tremendous success!"
+date: '2012-05-22'
+title: 'Kdenlive fundraising campaign: a tremendous success!'
 category: English
 tags: campaign, Fundraising, KDE, Kdenlive, NLE, Video
 ---
@@ -8,7 +8,7 @@ tags: campaign, Fundraising, KDE, Kdenlive, NLE, Video
 Two months ago [I made a donation to Kdenlive
 ]({filename}/2012/200-dollars-kdenlive-contribution.md)
 fundraising campaign and I just found out that I'm the biggest contributor. And
-like other $100+ contributors, I was offered a place to write a [testimonial
+like other \$100+ contributors, I was offered a place to write a [testimonial
 ](https://kdenlive.org/fundraising-campaign-2012):
 
 ![]({attach}kdenlive-testimonial.png)

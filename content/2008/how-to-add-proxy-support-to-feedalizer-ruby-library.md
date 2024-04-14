@@ -1,6 +1,6 @@
 ---
-date: "2008-07-16"
-title: "How-to add proxy support to Feedalizer ruby library"
+date: '2008-07-16'
+title: How-to add proxy support to Feedalizer ruby library
 category: English
 tags: feed, feedalizer, hpricot, HTTP, parsing, proxy, RSS, Ruby, Ruby on Rails
 ---
@@ -42,8 +42,8 @@ above has just shown up in my feed aggregator. What's he telling us? That I'm a
 naughty programmer :
 
 > Previous to 2.0, naughty developers pasted code at the bottom of
-`environment.rb`, and the `config/initializer` folder was a welcome convention
-to help organize this madness.
+> `environment.rb`, and the `config/initializer` folder was a welcome convention
+> to help organize this madness.
 
 For your instance, the code in this post is extracted from an "old" (prior to
 RoR 2.0) project, thus explaining my naughtyness... ;)

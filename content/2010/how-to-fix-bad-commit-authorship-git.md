@@ -1,6 +1,6 @@
 ---
-date: "2010-05-05"
-title: "How-to fix bad commit authorship in Git"
+date: '2010-05-05'
+title: How-to fix bad commit authorship in Git
 category: English
 tags: commit, DVCS, Git, GitHub, history
 ---
@@ -92,4 +92,3 @@ As I told you before this is bad, but nobody really cares: I'm the only person w
 Finally, you can contemplate the result on GitHub, a clean and tidy commit history:
 
 ![]({attach}fixed-git-commit-history-authorship.png)
-

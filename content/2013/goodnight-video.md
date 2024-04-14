@@ -1,6 +1,6 @@
 ---
-date: "2013-03-04"
-title: "Goodnight video"
+date: '2013-03-04'
+title: Goodnight video
 category: English
 tags: Music, Video, Kdenlive, slowmoVideo, Omashay, AWS, Amazon, cloud computing, EC2, ImageMagick, Twixtor, Ubuntu, Kubuntu
 ---
@@ -17,7 +17,7 @@ The video is [based on a series of 70 sketches](https://omashay.com/2013/02/22/g
 
 He wanted to explore the possibilities of reusing them for a music video. I had the perfect secret weapon for this kind of job: [slowmoVideo](https://slowmovideo.granjow.net/), an open-source clone of [Twixtor](https://www.revisionfx.com/products/twixtor/).
 
-In fact I tried to use that software 14 months ago, but never went as far as producing something. First I realized I had no <a target="_blank" href="https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=nVidia%20GPU&linkCode=ur2&tag=kevideld-20&url=search-alias%3Daps">nVidia GPU</a><img src="https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> at hand. So I rented a *GPU Quadruple Extra Large* EC2 instance (`cg1.4xlarge`) from Amazon's cloud. It cost me $4.70 (without VAT) for 3 hours. But I failed to compiles slowmoVideo.
+In fact I tried to use that software 14 months ago, but never went as far as producing something. First I realized I had no <a target="_blank" href="https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=nVidia%20GPU&linkCode=ur2&tag=kevideld-20&url=search-alias%3Daps">nVidia GPU</a><img src="https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> at hand. So I rented a *GPU Quadruple Extra Large* EC2 instance (`cg1.4xlarge`) from Amazon's cloud. It cost me \$4.70 (without VAT) for 3 hours. But I failed to compiles slowmoVideo.
 
 I forgot about it until recently, when I learned it no longer required a GPU to compute the optical flow. And last month I found a way to [compile slowmoVideo on Ubuntu 12.10]({filename}/2013/slowmo-video-ubuntu-12-10.md).
 

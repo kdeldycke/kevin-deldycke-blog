@@ -1,6 +1,6 @@
 ---
-date: "2022-06-10"
-title: "CloudFlare commands"
+date: '2022-06-10'
+title: CloudFlare commands
 category: English
 tags: cloud, cloud computing, saas, iaas, paas, development, CLI, dns, cloudflare, API
 ---
@@ -50,6 +50,7 @@ tags: cloud, cloud computing, saas, iaas, paas, development, CLI, dns, cloudflar
 ## Redirects
 
 CloudFlare have several redirection options:
+
 - [Pages redirects](https://developers.cloudflare.com/pages/platform/redirects/): for static sites hosted on CloudFlare, via a `_redirects` file.
 - [Page Rules](https://support.cloudflare.com/hc/en-us/articles/200172286-Configuring-URL-forwarding-or-redirects-with-Cloudflare-Page-Rules)
 
@@ -63,14 +64,14 @@ Here are some of the most useful rules:
 
 - By default, [pages are redirected for normalization](https://developers.cloudflare.com/pages/platform/serving-pages/#route-matching):
 
-  | From | To |
-  | ---- | --- |
-  |  `/contact` |  `/contact`|
-  |  `/contact/` |  `/contact`|
-  |  `/contact.html` |  `/contact`|
-  |  `/about` |  `/about/`|
-  |  `/about/` |  `/about/`|
-  | `/about/index.html` |  `/about/`|
+  | From                | To         |
+  | ------------------- | ---------- |
+  | `/contact`          | `/contact` |
+  | `/contact/`         | `/contact` |
+  | `/contact.html`     | `/contact` |
+  | `/about`            | `/about/`  |
+  | `/about/`           | `/about/`  |
+  | `/about/index.html` | `/about/`  |
 
   Note how folder roots with an `index.html` are always redirected to an URL with a trailing slash, while HTML files are stripped of their extension.
 

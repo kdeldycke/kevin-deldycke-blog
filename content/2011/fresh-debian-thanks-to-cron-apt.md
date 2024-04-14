@@ -1,6 +1,6 @@
 ---
-date: "2011-05-24"
-title: "Keep a Debian fresh thanks to cron-apt"
+date: '2011-05-24'
+title: Keep a Debian fresh thanks to cron-apt
 category: English
 tags: apt, aptitude, cron, cron-apt, Debian, Linux, sed, Regular expression
 ---

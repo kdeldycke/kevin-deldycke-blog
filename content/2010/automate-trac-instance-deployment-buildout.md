@@ -1,6 +1,6 @@
 ---
-date: "2010-12-01"
-title: "Automate Trac instance deployment with Buildout"
+date: '2010-12-01'
+title: Automate Trac instance deployment with Buildout
 category: English
 tags: buildout, htdigest, md5, Python, Red Hat, sasl, Subversion, trac, yum, Mercurial, Regular expression
 ---
@@ -187,9 +187,9 @@ $ svn co svn://trac.example.net:3690/my-repo-1
 
 From now on, and that's where the fun begins, each time a new Trac version is released on PyPi, I just have to:
 
-  1. stop both Trac and Subversion standalone servers,
-  2. run `./bin/buildout`, and
-  3. restart both Subversion and Trac servers.
+1. stop both Trac and Subversion standalone servers,
+1. run `./bin/buildout`, and
+1. restart both Subversion and Trac servers.
 
 That's enough to upgrade my instance.
 

@@ -1,6 +1,6 @@
 ---
-date: "2011-08-30"
-title: "How I Open-Sourced an Internal Corporate Project (WebPing)"
+date: '2011-08-30'
+title: How I Open-Sourced an Internal Corporate Project (WebPing)
 category: English
 tags: CLI, Git, GitHub, Linux, Perl, Python, Regular expression, Subversion, trac, webping
 ---
@@ -69,9 +69,9 @@ $ git gc --aggressive --prune
 
 If I now only have WebPing code in the repository, it still jumps through the history between these following locations:
 
-  * `other-project/trunk/tools/web-ping.py`
-  * `other-project/trunk/tools/web-ping/`
-  * `WebPing/trunk/`
+- `other-project/trunk/tools/web-ping.py`
+- `other-project/trunk/tools/web-ping/`
+- `WebPing/trunk/`
 
 Using a series of `git filter-branch` invocations, I managed to move everything to the root of the repository:
 
@@ -150,4 +150,3 @@ $ git remote add origin git@github.com:kdeldycke/webping.git
 $ git push -u origin master
 $ git push --tags
 ```
-

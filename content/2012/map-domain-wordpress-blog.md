@@ -1,6 +1,6 @@
 ---
-date: "2012-07-31"
-title: "How-To map a non-US domain name to a WordPress.com blog"
+date: '2012-07-31'
+title: How-To map a non-US domain name to a WordPress.com blog
 category: English
 tags: DNS, SOA, WordPress
 ---

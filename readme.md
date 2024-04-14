@@ -47,18 +47,17 @@ Serving site at: 127.0.0.1:8000 - Tap CTRL-C to stop
 
 Then go to [http://localhost:8000](http://localhost:8000).
 
-
 ## TODO
 
 ### Content
 
-  * Get rid of /year/month/ for articles ? Or get rid of month only ?
-  * Reuse edit link logic from https://github.com/pmclanahan/pelican-edit-url ?
+- Get rid of /year/month/ for articles ? Or get rid of month only ?
+- Reuse edit link logic from https://github.com/pmclanahan/pelican-edit-url ?
 
 ### Theme
 
-  * Re-use previous artworks from Maomium ?
-  * Auto-enhance created thumbnails ? See: https://news.ycombinator.com/item?id=5999201
+- Re-use previous artworks from Maomium ?
+- Auto-enhance created thumbnails ? See: https://news.ycombinator.com/item?id=5999201
 
 ## License
 

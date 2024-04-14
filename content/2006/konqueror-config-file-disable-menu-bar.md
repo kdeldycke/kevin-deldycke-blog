@@ -1,6 +1,6 @@
 ---
-date: "2006-08-31"
-title: "Konqueror config file: disable menu bar"
+date: '2006-08-31'
+title: 'Konqueror config file: disable menu bar'
 category: English
 tags: KDE, kmail, konqueror, Linux
 ---

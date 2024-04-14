@@ -1,6 +1,6 @@
 ---
-date: "2005-05-29"
-title: "How-To Mount a File System Binary Image"
+date: '2005-05-29'
+title: How-To Mount a File System Binary Image
 category: English
 tags: CLI, Hardware, Linux
 ---
@@ -49,4 +49,3 @@ Now you can mount your USB key:
 ```shell-session
 $ mount /dev/loop0 /mnt/usb_key/
 ```
-

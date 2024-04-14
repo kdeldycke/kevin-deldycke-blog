@@ -1,9 +1,8 @@
 ---
-date: "2006-12-13"
-title: "Text, Date & Document processing commands"
+date: '2006-12-13'
+title: Text, Date & Document processing commands
 category: English
-tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl,
-  Regular expression
+tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl, Regular expression
 ---
 
 ## Search

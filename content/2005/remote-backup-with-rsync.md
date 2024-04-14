@@ -1,6 +1,6 @@
 ---
-date: "2005-04-21"
-title: "Remote Backup with rsync"
+date: '2005-04-21'
+title: Remote Backup with rsync
 category: English
 tags: Backup, CLI, Linux, Mandriva, rsync, SSH, RSA, cron
 ---
@@ -9,11 +9,11 @@ This little article describe how to setup an automatic backup procedure to a rem
 
 ## Prerequisites
 
-  * A distant server, where backup will be stored (`homeserver.com` in this case),
+- A distant server, where backup will be stored (`homeserver.com` in this case),
 
-  * A user account on this server (mine was `kevin`),
+- A user account on this server (mine was `kevin`),
 
-  * A ssh deamon running on the server that allow the user to log in.
+- A ssh deamon running on the server that allow the user to log in.
 
 ## Setup rsync
 
@@ -31,10 +31,10 @@ Then, to synchronise from the local machine to the distant server, just do:
 $ rsync -avz -e ssh /home/client_user/Documents kevin@homeserver.com:/mnt/raid2/
 ```
 
-  * `/home/client_user/Documents` is the local folder we want to save (located in the home folder of the client user `client_user`),
-  * `homeserver.com` is the distant server name (could be en IP address),
-  * `kevin` is the distant user,
-  * `/mnt/raid2/` is the distant folder where we want to save the local one.
+- `/home/client_user/Documents` is the local folder we want to save (located in the home folder of the client user `client_user`),
+- `homeserver.com` is the distant server name (could be en IP address),
+- `kevin` is the distant user,
+- `/mnt/raid2/` is the distant folder where we want to save the local one.
 
 ## Croned synchronization
 

@@ -1,6 +1,6 @@
 ---
-date: "2017-01-13"
-title: "maildir-deduplicate 2.1.0 released"
+date: '2017-01-13'
+title: maildir-deduplicate 2.1.0 released
 category: English
 tags: Git, GitHub, maildir, python, code
 ---

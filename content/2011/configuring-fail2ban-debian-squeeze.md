@@ -1,6 +1,6 @@
 ---
-date: "2011-06-21"
-title: "Configuring Fail2Ban on Debian Squeeze"
+date: '2011-06-21'
+title: Configuring Fail2Ban on Debian Squeeze
 category: English
 tags: Apache, Exim, fail2ban, security, Server, SSH, Web
 ---
@@ -142,4 +142,3 @@ action   = iptables-allports
 logpath  = /var/log/apache*/*error.log
 maxretry = 1
 ```
-

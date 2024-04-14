@@ -1,6 +1,6 @@
 ---
-date: "2006-11-15"
-title: "New CD Jewel Case Template ready to Print!"
+date: '2006-11-15'
+title: New CD Jewel Case Template ready to Print!
 category: English
 tags: Compact disc, Creative Commons, Inkscape, Music, SVG, Template
 ---
@@ -11,5 +11,5 @@ I've added two new documents to my [CD Templates for Jewel Case in SVG]({filenam
 
 Published under a [Creative Commons Attribution licence](https://creativecommons.org/licenses/by/2.5/), SVG files are available in my document repository:
 
-  * [cd-template-jewel-case-leaflet-print-margin.svg]({attach}cd-template-jewel-case-leaflet-print-margin.svg)
-  * [cd-template-jewel-case-back-print-margin.svg]({attach}cd-template-jewel-case-back-print-margin.svg)
+- [cd-template-jewel-case-leaflet-print-margin.svg]({attach}cd-template-jewel-case-leaflet-print-margin.svg)
+- [cd-template-jewel-case-back-print-margin.svg]({attach}cd-template-jewel-case-back-print-margin.svg)

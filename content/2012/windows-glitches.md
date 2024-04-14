@@ -1,6 +1,6 @@
 ---
-date: "2012-01-03"
-title: "Windows glitches"
+date: '2012-01-03'
+title: Windows glitches
 category: English
 tags: glitches, UI, Windows
 ---
@@ -20,4 +20,3 @@ The last ones are not glitches _per se_ but major UI issues. Here automated syst
 ![]({attach}update.png)
 
 ![]({attach}ie1.png)
-

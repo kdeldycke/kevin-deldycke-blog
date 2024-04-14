@@ -1,6 +1,6 @@
 ---
-date: "2011-10-11"
-title: "How-to merge Mailman mailing-lists"
+date: '2011-10-11'
+title: How-to merge Mailman mailing-lists
 category: English
 tags: archive, Linux, email, mailing list, mailman, merge, Python
 ---
@@ -35,4 +35,3 @@ At last, when everything is clean to you, you can safely remove your old mailing
 $ rmlist -a old-ml
 $ /var/lib/mailman/bin/genaliases
 ```
-

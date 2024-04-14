@@ -1,6 +1,6 @@
 ---
-date: "2013-03-14"
-title: "OpenERP 6.1 web client hacks: hide buttons with Javascript"
+date: '2013-03-14'
+title: 'OpenERP 6.1 web client hacks: hide buttons with Javascript'
 category: English
 tags: OpenERP, Javascript, Backbone.js, jQuery, Web
 ---
@@ -13,10 +13,10 @@ But I found new ways of hacking OpenERP's web client in 6.1. Following these dis
 
 This module is not generic: it just demonstrate how to distribute dirty patches to the web client. It currently:
 
-  * Hide `create` buttons on all list views (affect `tree` views and `many2one` search view pop-ups),
-  * Hide the `save` button on `form` views,
-  * Hide `create` and `duplicate` button on all read-only `form` views,
-  * Only apply these transformations to a configurable subset of models.
+- Hide `create` buttons on all list views (affect `tree` views and `many2one` search view pop-ups),
+- Hide the `save` button on `form` views,
+- Hide `create` and `duplicate` button on all read-only `form` views,
+- Only apply these transformations to a configurable subset of models.
 
 The core of the module lies in the [`/static/src/js/custom.js`](https://github.com/Smile-SA/smile_openerp_addons_6.1/blob/master/web_smile_hide_buttons/static/src/js/custom.js) file. Here is an excerpt of that file, which sums-up my hacks:
 

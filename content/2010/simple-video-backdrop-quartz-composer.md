@@ -1,6 +1,6 @@
 ---
-date: "2010-11-16"
-title: "Simple video backdrop with Quartz Composer"
+date: '2010-11-16'
+title: Simple video backdrop with Quartz Composer
 category: English
 tags: Animation, Apple, Cool Cavemen, live, MacBook, QC Experiment, Quartz Composer, stage, Video, Visual
 ---
@@ -14,4 +14,3 @@ As you can see, it's just [my band](https://coolcavemen.com)'s logo, subtly glow
 As usual, here is the [source composition]({attach}glowing-cool-cavemen.qtz), and a preview of the patch:
 
 ![]({attach}glowing-cool-cavemen-patch.png)
-

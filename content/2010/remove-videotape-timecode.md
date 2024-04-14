@@ -1,6 +1,6 @@
 ---
-date: "2010-01-14"
-title: "Remove videotape timecode"
+date: '2010-01-14'
+title: Remove videotape timecode
 category: English
 tags: analog, avidemux, timecode, Video, VITC
 ---
@@ -36,15 +36,15 @@ majors platforms (Windows, Mac OS X and Linux).
 The removal process is really straightforward: I've just added a black
 rectangle over these dots to hide them. Here is how to do it:
 
-  1. Open your original file in Avidemux;
+1. Open your original file in Avidemux;
 
-  2. Click on the `Filters` button;
+1. Click on the `Filters` button;
 
-  3. Go to `Transform`, then `Blacken Borders` and click on the `+` button;
+1. Go to `Transform`, then `Blacken Borders` and click on the `+` button;
 
-  4. Use the dialog to set a 2 pixels top border;
+1. Use the dialog to set a 2 pixels top border;
 
-  5. Now you have to export the result using a reasonable video codec, and
-  that's it!
+1. Now you have to export the result using a reasonable video codec, and
+   that's it!
 
 ![]({attach}avidemux-add-black-border.png)

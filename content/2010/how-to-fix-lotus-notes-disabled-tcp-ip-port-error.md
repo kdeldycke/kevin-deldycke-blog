@@ -1,6 +1,6 @@
 ---
-date: "2010-08-25"
-title: "How-to fix Lotus Notes' disabled TCPIP port error"
+date: '2010-08-25'
+title: How-to fix Lotus Notes' disabled TCPIP port error
 category: English
 tags: Lotus Notes, Mac OS X 10.5 Leopard, Mac OS X 10.6 Snow Leopard, Lotus Notes, Apple, macOS, Network
 ---

@@ -1,6 +1,6 @@
 ---
-date: "2013-04-23"
-title: "Addon to restore search range in OpenERP 6.1"
+date: '2013-04-23'
+title: Addon to restore search range in OpenERP 6.1
 category: English
 tags: OpenERP, Javascript, Backbone.js, jQuery, Web, addon
 ---
@@ -19,8 +19,8 @@ To fix these issues, I've created [`web_smile_search_range`](https://github.com/
 
 This module is based on an [open-source addon from Credativ](https://bazaar.launchpad.net/~credativ/credativ-openerp/addons-6.1/files/head:/web_searchdaterange/). I extended the later to:
 
-  * Replace single `date`, `datetime` and `float` search fields to a range.
-  * Allow selection of time in `datetime` search fields.
+- Replace single `date`, `datetime` and `float` search fields to a range.
+- Allow selection of time in `datetime` search fields.
 
 Thus restoring the default behavior from OpenERP 6.0 that was ditched in 6.1.
 

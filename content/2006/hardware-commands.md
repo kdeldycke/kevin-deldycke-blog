@@ -1,9 +1,8 @@
 ---
-date: "2006-12-06"
-title: "Hardware commands"
+date: '2006-12-06'
+title: Hardware commands
 category: English
-tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR,
-  Canon EOS 7D, dmidecode, printer, CUPS, smartmontools, NTFS
+tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, DSLR, Canon EOS 7D, dmidecode, printer, CUPS, smartmontools, NTFS
 ---
 
 ## Computer
@@ -75,10 +74,10 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
 
 - Extract the content of an [Apple Disk Image](https://en.wikipedia.org/wiki/Apple_Disk_Image) `.dmg` file and access its content:
 
-    ```shell-session
-    $ dmg2img ./my-package.dmg
-    $ mount -t hfsplus -o loop ./my-package.img /media/my-mount-point
-    ```
+  ```shell-session
+  $ dmg2img ./my-package.dmg
+  $ mount -t hfsplus -o loop ./my-package.img /media/my-mount-point
+  ```
 
 ## Keyboard
 

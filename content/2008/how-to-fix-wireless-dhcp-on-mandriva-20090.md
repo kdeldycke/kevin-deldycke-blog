@@ -1,6 +1,6 @@
 ---
-date: "2008-11-28"
-title: "How-to fix wireless DHCP on Mandriva 2009.0"
+date: '2008-11-28'
+title: How-to fix wireless DHCP on Mandriva 2009.0
 category: English
 tags: dhcp, Linux, Mandriva, Network, urpmi, wifi, wireless
 ---
@@ -28,4 +28,3 @@ And to not be annoyed by `dhcp_client` in the future, it's wise to definitely re
 ```shell-session
 $ urpmi dhcp_client
 ```
-

@@ -1,6 +1,6 @@
 ---
-date: "2013-11-05"
-title: "How-to simplify Amazon affiliate links"
+date: '2013-11-05'
+title: How-to simplify Amazon affiliate links
 category: English
 tags: Amazon, ads, campaign, affiliates, Markdown, find, sed, Linux, Regular expression
 ---
@@ -8,7 +8,13 @@ tags: Amazon, ads, campaign, affiliates, Markdown, find, sed, Linux, Regular exp
 From the beginning on this blog, I'm using the long-form of URLs for Amazon referrals. Here's one for the [GoPro Hero3](https://amzn.com/B00F3F0GLU/?tag=kevideld-20) in HTML:
 
 ```html
-My brand new <a href="https://www.amazon.com/gp/product/B00F3F0GLU/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00F3F0GLU&linkCode=as2&tag=kevideld-20">GoPro Hero3</a><img src="https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=as2&o=1&a=B00F3F0GLU" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> is awesome.
+My brand new
+<a href="https://www.amazon.com/gp/product/B00F3F0GLU/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00F3F0GLU&amp;linkCode=as2&amp;tag=kevideld-20">
+ GoPro Hero3
+</a>
+<img alt="" border="0" height="1" src="https://www.assoc-amazon.com/e/ir?t=kevideld-20&amp;l=as2&amp;o=1&amp;a=B00F3F0GLU" style="border:none !important; margin:0px !important;" width="1"/>
+is awesome.
+
 ```
 
 Which renders to:

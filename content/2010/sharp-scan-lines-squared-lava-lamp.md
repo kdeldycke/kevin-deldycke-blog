@@ -1,6 +1,6 @@
 ---
-date: "2010-11-02"
-title: "Sharp scan-lines & Squared lava-lamp"
+date: '2010-11-02'
+title: Sharp scan-lines & Squared lava-lamp
 category: English
 tags: Animation, Apple, MacBook, QC Experiment, Quartz Composer, Video, Visual
 ---
@@ -20,4 +20,3 @@ https://www.youtube.com/watch?v=b8BuwhgaG-8
 Again, you can [download the _Squared lava-lamp_ source]({attach}squared-lava-lamp.qtz), and here is preview of its patch:
 
 ![]({attach}squared-lava-lamp-patch.png)
-

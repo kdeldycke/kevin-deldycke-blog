@@ -1,6 +1,6 @@
 ---
-date: "2013-07-07"
-title: "Compile BFGMiner for scrypt-based CPU mining"
+date: '2013-07-07'
+title: Compile BFGMiner for scrypt-based CPU mining
 category: English
 tags: scrypt, CPU, Linux, BFGMiner, crypto-currency, Bitcoin, Litecoin, Kubuntu 13.04
 ---
@@ -56,38 +56,37 @@ Then create a config file in `~/.bfgminer/bfgminer.conf`:
 
 ```json
 {
-"pools" : [
-  {
-    "url" : "stratum+tcp://coinotron.com:3334",
-    "user" : "foo.ltc",
-    "pass" : "xxxxxxxxxx",
-    "pool-priority" : "0"
-  },
-  {
-    "url" : "https://p2pool.org:9327",
-    "user" : "LTxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    "pass" : "password",
-    "pool-priority" : "1"
-  }
-]
-,
-"algo" : "scrypt",
-"api-port" : "4028",
-"expiry" : "120",
-"expiry-lp" : "3600",
-"gpu-dyninterval" : "7",
-"log" : "5",
-"no-pool-disable" : true,
-"no-show-processors" : true,
-"no-show-procs" : true,
-"queue" : "1",
-"scan-time" : "60",
-"scrypt" : true,
-"skip-security-checks" : "0",
-"submit-stale" : true,
-"temp-hysteresis" : "3",
-"shares" : "0",
-"kernel-path" : "/usr/local/bin"
+  "pools": [
+    {
+      "url": "stratum+tcp://coinotron.com:3334",
+      "user": "foo.ltc",
+      "pass": "xxxxxxxxxx",
+      "pool-priority": "0"
+    },
+    {
+      "url": "https://p2pool.org:9327",
+      "user": "LTxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "pass": "password",
+      "pool-priority": "1"
+    }
+  ],
+  "algo": "scrypt",
+  "api-port": "4028",
+  "expiry": "120",
+  "expiry-lp": "3600",
+  "gpu-dyninterval": "7",
+  "log": "5",
+  "no-pool-disable": true,
+  "no-show-processors": true,
+  "no-show-procs": true,
+  "queue": "1",
+  "scan-time": "60",
+  "scrypt": true,
+  "skip-security-checks": "0",
+  "submit-stale": true,
+  "temp-hysteresis": "3",
+  "shares": "0",
+  "kernel-path": "/usr/local/bin"
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
-date: "2015-12-08"
-title: "Using Git's orphan branch for partial project fusion"
+date: '2015-12-08'
+title: Using Git's orphan branch for partial project fusion
 category: English
 tags: CLI, Git, GitHub
 ---
@@ -51,10 +51,10 @@ $ git tag -d `git tag | grep -E '.'`
 In my case, and after studying the whole commit history, the code lived under
 the following past and current locations:
 
-* `./folder1/lib/*`
-* `./folder2/subfolder/data-lib/*`
-* `./folder3/scripts/*`
-* `./script_tools.py`
+- `./folder1/lib/*`
+- `./folder2/subfolder/data-lib/*`
+- `./folder3/scripts/*`
+- `./script_tools.py`
 
 I then managed to produce a one-liner `find` command satisfying all these path
 constraints. Combined with the `filter-branch` action, I was allowed me to

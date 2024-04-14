@@ -1,6 +1,6 @@
 ---
-date: "2011-05-03"
-title: "How-to use GMail to send mails from Debian Squeeze"
+date: '2011-05-03'
+title: How-to use GMail to send mails from Debian Squeeze
 category: English
 tags: Debian, Exim, Gmail, Google Apps, Linux, email, Server, Debian Squeeze, RSA
 ---
@@ -15,25 +15,25 @@ $ dpkg-reconfigure exim4-config
 
 Here are the options I choose in each step of the wizard:
 
-  1. Choose `Mail sent by smarthost; received via SMTP or fetchmail`.
+1. Choose `Mail sent by smarthost; received via SMTP or fetchmail`.
 
-  2. System mail name: `server.deldycke.com`.
+1. System mail name: `server.deldycke.com`.
 
-  3. IP adresses to listen on for incoming SMTP connections: `127.0.0.1 ; ::1` (which is the default proposed value).
+1. IP adresses to listen on for incoming SMTP connections: `127.0.0.1 ; ::1` (which is the default proposed value).
 
-  4. Other destinations for which mail is accepted: leave blank.
+1. Other destinations for which mail is accepted: leave blank.
 
-  5. Machines to relay mail for: leave blank.
+1. Machines to relay mail for: leave blank.
 
-  6. Machine handling outgoing mail for this host (smarthost): `smtp.gmail.com::587`.
+1. Machine handling outgoing mail for this host (smarthost): `smtp.gmail.com::587`.
 
-  7. Hide local mail name in outgoing mail: `No`.
+1. Hide local mail name in outgoing mail: `No`.
 
-  8. Keep number of DNS-queries minimal (Dial-on-Demand): `No`.
+1. Keep number of DNS-queries minimal (Dial-on-Demand): `No`.
 
-  9. Mailboxes format: `mbox`.
+1. Mailboxes format: `mbox`.
 
-  10. Split configuration into small files: `No`.
+1. Split configuration into small files: `No`.
 
 All these parameters you just answered are saved in the `/etc/exim4/update-exim4.conf.conf`:
 
@@ -198,4 +198,3 @@ $ tail -F /var/log/exim4/mainlog
 2011-05-03 10:56:36 1QHBPE-0000ne-CW => kevin@deldycke.com R=send_via_gmail T=gmail_smtp H=gmail-smtp-msa.l.google.com [209.85.227.109] X=TLS1.0:RSA_ARCFOUR_SHA1:16 DN="C=US,ST=California,L=Mountain View,O=Google Inc,CN=smtp.gmail.com"
 2011-05-03 10:56:36 1QHBPE-0000ne-CW Completed
 ```
-

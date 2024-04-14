@@ -1,6 +1,6 @@
 ---
-date: "2008-06-07"
-title: "How-to add a corner banner to a K2 Wordpress theme's style"
+date: '2008-06-07'
+title: How-to add a corner banner to a K2 Wordpress theme's style
 category: English
 tags: CSS, Gimp, HTML, Internet Explorer, K2, Photoshop, PHP, PNG, Theme, WordPress
 ---
@@ -47,16 +47,15 @@ Then we need to add the following CSS code to our style
 
 ```css
 #cornerbanner {
-  background: url(
-    "/wp-content/themes/k2/styles/my-style/corner-banner.png") no-repeat;
-  display: block;
-  height: 205px;
-  width: 205px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 999;
-  text-decoration: none;
+    background: url("/wp-content/themes/k2/styles/my-style/corner-banner.png") no-repeat;
+    display: block;
+    height: 205px;
+    width: 205px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    text-decoration: none;
 }
 ```
 

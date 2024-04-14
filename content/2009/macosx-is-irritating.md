@@ -1,6 +1,6 @@
 ---
-date: "2009-12-23"
-title: "Mac OS X really starts to get irritating..."
+date: '2009-12-23'
+title: Mac OS X really starts to get irritating...
 category: English
 tags: desktop, KDE, Mac OS X 10.5 Leopard, Apple, macOS, rant
 ---
@@ -28,14 +28,13 @@ Just found new species of bugs:
 My 6 months test period of Leopard is over. Time to switch back to a Linux/KDE
 desktop.
 
-
 ## Update (May 2010)
 
 6 months later, I've:
 
-  * updated Mac OS X from Leopard to Snow Leopard,
-  * upgraded Kubuntu from Karmic Koala (9.10) to Lucid Lynx (10.04),
-  * changed my HDD to a SSD (a [160 Go Intel X25-M Postville
+- updated Mac OS X from Leopard to Snow Leopard,
+- upgraded Kubuntu from Karmic Koala (9.10) to Lucid Lynx (10.04),
+- changed my HDD to a SSD (a [160 Go Intel X25-M Postville
   ](https://amzn.com/B002IGT7IU/?tag=kevideld-20)).
 
 Still, my machine crash hard. Here is the kind of kernel crashes I have on
@@ -69,7 +68,6 @@ But the firmware downgrade didn't solved my problems at all. It's really time
 to trash this MacBook Pro. [Anyone to suggest
 ](https://twitter.com/kdeldycke/status/14657317476) a good laptop that works
 fine on Kubuntu?
-
 
 ## Update (June 2010)
 

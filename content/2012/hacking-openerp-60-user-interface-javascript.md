@@ -1,6 +1,6 @@
 ---
-date: "2012-05-29"
-title: "Hacking OpenERP 6.0 User Interface with Javascript"
+date: '2012-05-29'
+title: Hacking OpenERP 6.0 User Interface with Javascript
 category: English
 tags: HTML, javascript, jquery, OpenERP, smile, ERP
 ---
@@ -18,9 +18,9 @@ $('#my_field_id').focus();
 Once, in an heavily customized form, I had to simulate a click on a custom button each time a user would press the ++enter++ key, hence simulating a form submission. This can be done with the following code:
 
 ```js
-$("input").keydown(function(e){
-    if (e.keyCode === 13){
-    $("#my_custom_button_id").trigger('click');
+$("input").keydown(function(e) {
+    if (e.keyCode === 13) {
+        $("#my_custom_button_id").trigger('click');
     };
 });
 ```

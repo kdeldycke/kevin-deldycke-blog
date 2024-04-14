@@ -1,6 +1,6 @@
 ---
-date: "2005-04-19"
-title: "Créer un Espace de Stockage Fiable avec RAID 5 et LVM sous Linux"
+date: '2005-04-19'
+title: Créer un Espace de Stockage Fiable avec RAID 5 et LVM sous Linux
 category: Français
 tags: Backup, boitier externe, CLI, disque dur, firewire, Hardware, informatique, Linux, LVM, Mandriva, mdadm, openbrick, ordinateur, RAID, USB, XFS
 ---
@@ -19,9 +19,9 @@ Supposons à partir de maintenant que l'OS est installé, pour nous concentrer u
 
 J'ai donc les devices suivants:
 
-  * `/dev/hda` -> DD de 160 Go (40 Go pour l'OS et 120 Go de libre)
-  * `/dev/sda` -> DD externe de 120 Go n°1
-  * `/dev/sdb` -> DD externe de 120 Go n°2
+- `/dev/hda` -> DD de 160 Go (40 Go pour l'OS et 120 Go de libre)
+- `/dev/sda` -> DD externe de 120 Go n°1
+- `/dev/sdb` -> DD externe de 120 Go n°2
 
 Nous voulons créer une matrice RAID 5 à partir de 3 x 120 Go. Plutôt que de faire une seule grosse partition de 120 Go par disque, nous allons créer dans chacun des disques trois partitions de 40 Go (3 x 3 x 40 Go = 3 x 120 Go). Nous construirons ensuite 3 unités RAID 5 de 3 x 40 Go puis nous les assemblerons via LVM. L'intérêt de diviser nos grosses partitions en plus petites est de réduire considérablement (par un facteur 3 dans notre cas) le temps de régénération de nos unités RAID en cas de corruption d'une partition.
 
@@ -49,9 +49,9 @@ $ mdadm --create --verbose /dev/md2 --level=5 --raid-devices=3 /dev/hda4 /dev/sd
 
 Lors de la création, les paramètres par défaut sont suffisants. Pour information, les paramètres optimaux sont:
 
-  * Parity: left symetric
-  * Persistent super block
-  * Chunk size: 32kb ou 64kb (pour nos partitions de 40 Go)
+- Parity: left symetric
+- Persistent super block
+- Chunk size: 32kb ou 64kb (pour nos partitions de 40 Go)
 
 Éditons le fichier de configuration `/etc/mdadm.conf`:
 
@@ -110,7 +110,7 @@ Créons maintenant un groupe de volumes contenant nos trois partitions :
 $ vgcreate vg01 /dev/md0 /dev/md1 /dev/md2
 ```
 
-(marche pas&nbsp;???)
+(marche pas ???)
 
 ## Étape 3-bis: Agréger les matrices avec du RAID linéaire au lieu d'utiliser LVM
 
@@ -162,43 +162,42 @@ Et enfin, pour le montage automatique au démarrage de notre serveur, il faut aj
 
 ## Maintenance du système
 
-  * Réintégrer une partition dans la matrice.
+- Réintégrer une partition dans la matrice.
 
-    Si une partition est éjectée d'une unité raid (par exemple `sda1` sur `md1`), il faut faire:
+  Si une partition est éjectée d'une unité raid (par exemple `sda1` sur `md1`), il faut faire:
 
-    ```shell-session
-    $ cat /proc/mdstat
-    $ mdadm --examine /dev/sda1
-    $ mdadm /dev/md1 -a /dev/sda1
-    $ cat /proc/mdstat
-    ```
+  ```shell-session
+  $ cat /proc/mdstat
+  $ mdadm --examine /dev/sda1
+  $ mdadm /dev/md1 -a /dev/sda1
+  $ cat /proc/mdstat
+  ```
 
-    La première commande montre que le RAID est dégradé. La seconde commande examine le status du disque qui à été éjecté de la matrice. La troisième ligne permet de réintégrer à chaud la partition dans la matrice. Et enfin la dernière commande nous montre l'avancement de la reconstruction de la matrice (ce qui peut prendre pas mal de temps).
+  La première commande montre que le RAID est dégradé. La seconde commande examine le status du disque qui à été éjecté de la matrice. La troisième ligne permet de réintégrer à chaud la partition dans la matrice. Et enfin la dernière commande nous montre l'avancement de la reconstruction de la matrice (ce qui peut prendre pas mal de temps).
 
-  * Ré-assembler une matrice.
+- Ré-assembler une matrice.
 
-    La commande est du type:
+  La commande est du type:
 
-    ```shell-session
-    $ mdadm --stop /dev/md0
-    $ mdadm --assemble /dev/md0
-    ```
+  ```shell-session
+  $ mdadm --stop /dev/md0
+  $ mdadm --assemble /dev/md0
+  ```
 
-    Attention `--assemble` se base sur le fichier `/etc/mdadm.conf`.
+  Attention `--assemble` se base sur le fichier `/etc/mdadm.conf`.
 
-  * Créer une unité RAID dégradée.
+- Créer une unité RAID dégradée.
 
-    La commande suivante créée une unité RAID 5 sur 3 disques durs, en indiquant que le premier est absent via le mot clé `missing`:
+  La commande suivante créée une unité RAID 5 sur 3 disques durs, en indiquant que le premier est absent via le mot clé `missing`:
 
-    ```shell-session
-    $ mdadm --create /dev/md0 --level=5 --raid-devices=3 missing /dev/hda1 /dev/sda1
-    ```
+  ```shell-session
+  $ mdadm --create /dev/md0 --level=5 --raid-devices=3 missing /dev/hda1 /dev/sda1
+  ```
 
 ## De la lecture complémentaire sur RAID 5 et LVM
 
-  * [Notes on Building a Linux Storage Server, by Martin Smith](https://www.ethics-gradient.net/myth/storage.html)
-  * [Gentoo Install on Software RAID mirror and LVM2 on top of RAID](https://gentoo-wiki.com/HOWTO_Gentoo_Install_on_Software_RAID_mirror_and_LVM2_on_top_of_RAID)
-  * [Disks are fun](https://scottstuff.net/blog/articles/2005/01/10/disks-are-fun)
-  * [Anatomy of a Drive Failure](https://scottstuff.net/blog/articles/2005/01/08/anatomy-of-a-drive-failure)
-  * [Changing RAID Drives Without Losing Data](https://www.digitalmapping.sk.ca/Networks/ExpandingRAID.htm)
-
+- [Notes on Building a Linux Storage Server, by Martin Smith](https://www.ethics-gradient.net/myth/storage.html)
+- [Gentoo Install on Software RAID mirror and LVM2 on top of RAID](https://gentoo-wiki.com/HOWTO_Gentoo_Install_on_Software_RAID_mirror_and_LVM2_on_top_of_RAID)
+- [Disks are fun](https://scottstuff.net/blog/articles/2005/01/10/disks-are-fun)
+- [Anatomy of a Drive Failure](https://scottstuff.net/blog/articles/2005/01/08/anatomy-of-a-drive-failure)
+- [Changing RAID Drives Without Losing Data](https://www.digitalmapping.sk.ca/Networks/ExpandingRAID.htm)

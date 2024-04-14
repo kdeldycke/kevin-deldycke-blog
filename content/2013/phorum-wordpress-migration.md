@@ -1,6 +1,6 @@
 ---
-date: "2013-08-08"
-title: "Phorum 3.x to WordPress migration script"
+date: '2013-08-08'
+title: Phorum 3.x to WordPress migration script
 tags: Python, Linux, Phorum, WordPress, migration, GitHub, Cool Cavemen, Funky Storm, Debian, aptitude, pip, lxml, bbcode, PyMySQL, MySQL, PHP
 ---
 
@@ -14,9 +14,9 @@ A Phorum thread produces an empty page with the thread's title only. All thread'
 
 The script requires the following python modules:
 
-  * `lxml`
-  * `PyMySQL`
-  * `bbcode`
+- `lxml`
+- `PyMySQL`
+- `bbcode`
 
 They can easely be installed on Debian with the following commands:
 

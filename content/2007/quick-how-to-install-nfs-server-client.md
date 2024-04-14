@@ -1,6 +1,6 @@
 ---
-date: "2007-01-27"
-title: "Quick How-To: Install NFS Server & Client"
+date: '2007-01-27'
+title: 'Quick How-To: Install NFS Server & Client'
 category: English
 tags: CLI, Linux, Mandriva, Network, NFS, Server
 ---
@@ -34,9 +34,9 @@ In this example I simply wanted to share the `/mnt/big-disk` directory and all i
 
 By the way, on the server, the only required services to activate at startup are the following:
 
-  * `nfs`
-  * `nfslock`
-  * `portmap`
+- `nfs`
+- `nfslock`
+- `portmap`
 
 On client side, you also need to install `nfs-utils`, in order to benefit `nfslock`:
 
@@ -54,20 +54,20 @@ Then to auto-mount the distant shared folder, add the following line to your `/e
 
 Important parameters of the line above are:
 
-  * `192.168.1.22` = IP adress of the NFS server,
-  * `/mnt/hdd` = path of the shared folder on the server,
-  * `/mnt/distant-hdd` = local folder where the shared folder will be mounted.
+- `192.168.1.22` = IP adress of the NFS server,
+- `/mnt/hdd` = path of the shared folder on the server,
+- `/mnt/distant-hdd` = local folder where the shared folder will be mounted.
 
 Then, you have to modify services on the client to change their default activation state.
 
 Following services must be started at boot:
 
-  * `nfslock`
-  * `netfs`
-  * `rpcidmapd`
+- `nfslock`
+- `netfs`
+- `rpcidmapd`
 
 Services that must should be inactivated at boot:
 
-  * `portmap`
-  * `nfs`
-  * `rpcsvcgssd`
+- `portmap`
+- `nfs`
+- `rpcsvcgssd`

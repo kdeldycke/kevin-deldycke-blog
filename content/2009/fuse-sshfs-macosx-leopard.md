@@ -1,6 +1,6 @@
 ---
-date: "2009-09-07"
-title: "Fuse and sshfs on Mac OS X Leopard"
+date: '2009-09-07'
+title: Fuse and sshfs on Mac OS X Leopard
 category: English
 tags: Apple, automount, fuse, KDE, Mac OS X 10.5 Leopard, Linux, MacBook, macOS, mount, Network, sftp, SSH, sshfs, system, RSA
 ---
@@ -61,12 +61,12 @@ $ sudo chmod +x /usr/local/bin/sshnodelay.so
 
 If this fail you can also check:
 
-  * that the current user you're logged with has access to the distant server
-    with the `ssh user@myserver.net` command;
-  * or that the local mount point exists (you can create it with
-    `mkdir -p /Network/distant-folder`);
-  * and finally, you can add the `-o debug` option to the `sshfs` command above
-    to get additional clues.
+- that the current user you're logged with has access to the distant server
+  with the `ssh user@myserver.net` command;
+- or that the local mount point exists (you can create it with
+  `mkdir -p /Network/distant-folder`);
+- and finally, you can add the `-o debug` option to the `sshfs` command above
+  to get additional clues.
 
 Now we will automate the mounting of `sshfs` at every start.
 

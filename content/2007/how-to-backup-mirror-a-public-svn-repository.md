@@ -1,6 +1,6 @@
 ---
-date: "2007-04-20"
-title: "How-to Backup / Mirror a public SVN repository"
+date: '2007-04-20'
+title: How-to Backup / Mirror a public SVN repository
 category: English
 tags: Backup, Linux, SCM, Subversion, SVK
 ---

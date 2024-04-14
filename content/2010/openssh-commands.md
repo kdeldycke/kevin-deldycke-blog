@@ -1,9 +1,8 @@
 ---
-date: "2010-03-26"
-title: "OpenSSH commands"
+date: '2010-03-26'
+title: OpenSSH commands
 category: English
-tags: CLI, Computer networking, find, Linux, openssh, proxy, rsync, scp, shell, SSH,
-  tunnel, xargs
+tags: CLI, Computer networking, find, Linux, openssh, proxy, rsync, scp, shell, SSH, tunnel, xargs
 ---
 
 - Here is the syntax that makes `scp` support spaces ([source](https://rasterweb.net/raster/2005/01/27/scp-and-spaces/)):

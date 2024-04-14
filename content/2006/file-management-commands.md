@@ -1,9 +1,8 @@
 ---
-date: "2006-10-18"
-title: "File Management commands"
+date: '2006-10-18'
+title: File Management commands
 category: English
-tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox,
-  git, rmlint, fd, rsync, ClamAV, antivirus, restic
+tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dropbox, git, rmlint, fd, rsync, ClamAV, antivirus, restic
 ---
 
 ## Listing
