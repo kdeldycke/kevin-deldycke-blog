@@ -84,7 +84,7 @@ procedure was tested several times on [Mac OS X Leopard
     ![]({attach}lotus-notes-mac-osx-leopard-install.png)
 
   2. You'll be welcomed by a [wizard
-  ](https://en.wikipedia.org/wiki/Wizard_(software)):
+  ](https://en.wikipedia.org/wiki/Wizard_%28software%29):
 
     ![]({attach}lotus-notes-wizard-screen-1.png)
 

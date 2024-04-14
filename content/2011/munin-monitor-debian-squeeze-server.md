@@ -5,7 +5,7 @@ category: English
 tags: acpi, Debian, fail2ban, Hardware, Linux, lm-sensors, munin, nginx, nut, RAID, Server, Debian Squeeze, Perl, Regular expression
 ---
 
-Again, here is a tutorial article exposing the recipe I use to cook a [Munin](https://en.wikipedia.org/wiki/Munin_(network_monitoring_application)) on a Debian Squeeze.
+Again, here is a tutorial article exposing the recipe I use to cook a [Munin](https://en.wikipedia.org/wiki/Munin_%28network_monitoring_application%29) on a Debian Squeeze.
 
 As usual, let's start by installing the main Munin package:
 

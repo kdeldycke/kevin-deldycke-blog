@@ -374,7 +374,8 @@ $ /var/lib/mailman/bin/genaliases
 
 ## Munin monitoring
 
-Finally, if like me you [use Munin to monitor your machine](), then it's a good
+Finally, if like me you [use Munin to monitor your machine
+]({filename}/2011/munin-monitor-debian-squeeze-server.md), then it's a good
 idea to let it graph some Mailman usage:
 
 ```shell-session

@@ -32,7 +32,7 @@ $ mysql kevblog < ./comments-fixed.sql
 lists](https://help.disqus.com/customer/portal/articles/466253-what-html-tags-are-allowed-within-comments).
 So I manually updated WordPress comments to remove occurrences of `<ul>` and
 `<ol>`, and replace `<li>` by an UTF-8 `•`
-[bullet](https://en.wikipedia.org/wiki/Bullet_(typography)).
+[bullet](https://en.wikipedia.org/wiki/Bullet_%28typography%29).
 
 Another issue: if [Disqus support images in
 comment](https://blog.disqus.com/post/3764930816/fun-with-images), in imported
@@ -49,7 +49,7 @@ UPDATE `wp_comments` SET `comment_parent` = 234   WHERE `comment_ID` = 342;
 UPDATE `wp_comments` SET `comment_parent` = 4987  WHERE `comment_ID` = 5667;
 UPDATE `wp_comments` SET `comment_parent` = 10915 WHERE `comment_ID` = 10916;
 (...)
-    ```
+```
 
 After all these updates, my comments where ready to be [exported to
 Disqus](https://help.disqus.com/customer/portal/articles/466255-exporting-comments-from-wordpress-to-disqus).
@@ -81,7 +81,7 @@ I decided to check the comments carefully. Following the chain of comment's
 parents, I found the root cause. All unimported comments were descendants of an
 anonymous commenter. These shared the following empty properties:
 
-```xml
+```text
 <wp:comment_author><![CDATA[]]></wp:comment_author>
 <wp:comment_author_email></wp:comment_author_email>
 ```

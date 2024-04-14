@@ -78,7 +78,7 @@ And [thanks to Bryan Forbes' article](https://www.reigndropsfall.net/2010/06/15/
 
 Here is the code I added in the XML view, just below the `line_ids` field:
 
-```xml
+```xml+js
 <field name="line_ids" colspan="4" nolabel="1"/>
 <html>
   <script type="text/javascript">
