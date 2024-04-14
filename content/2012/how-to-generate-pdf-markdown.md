@@ -24,7 +24,7 @@ $ pandoc README.md -o readme-pandoc.pdf
 
 [The result]({attach}readme-pandoc.pdf) is good, but not perfect. For example code blocks with long lines don't break at the end of the page:
 
-![]({attach}pandoc-non-wraping-code-blocks.png)
+![]({attach}pandoc-non-wrapping-code-blocks.png)
 
 While trying to solve this issue, I stumble upon another tool...
 
@@ -47,4 +47,4 @@ $ /var/lib/gems/1.8/bin/gimli -f ./README.md
 
 The [resulting PDF]({attach}readme-gimli.pdf) is really close to how GitHub renders Markdown content on its website. And it solve the bad code block style of Pandoc:
 
-![]({attach}gimli-wraping-code-blocks.png)
+![]({attach}gimli-wrapping-code-blocks.png)

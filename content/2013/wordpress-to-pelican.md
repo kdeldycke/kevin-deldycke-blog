@@ -164,6 +164,9 @@ $ cd exitwp
 $ git rev-parse HEAD
 f62d758e853bb718cd013aa808e9b8aaae5df1df
 $ git diff
+```
+
+```diff
 diff --git a/exitwp.py b/exitwp.py
 index fad5a4e..61e626e 100755
 --- a/exitwp.py
@@ -217,7 +220,7 @@ Pelican's tag:
 $ find ./content/ -iname "*.md" -exec perl -0777 -i -pe "s/<code class=\"(.*?)\">(.*?)<\/code>/:::\1\2/gs" "{}" \;
 ```
 
-We can also fix some metadata like authors, and mis-quoted titles produced by
+We can also fix some metadata like authors, and misquoted titles produced by
 exitwp:
 
 ```shell-session

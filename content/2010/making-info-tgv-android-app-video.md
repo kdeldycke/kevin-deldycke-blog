@@ -19,7 +19,7 @@ Now let's talk about what happened behind the scenes! :)
 
 ## Shooting
 
-In all of my projects, I want to use free and open-source software, and push their usage for every step of the creation workflow. For video recording, there is no open-source firmware for the 7D. Sadly, the [Magic Lantern](https://magiclantern.wikia.com) community seems to have [reached a dead-end regarding 7D support](https://groups.google.com/group/ml-devel/browse_thread/thread/648f25d8d543e58). I'm quite sad as I choosed the 7D a year ago for 2 things: its video capabilities and the potential hackability of this camera (extrapolating Magic Lantern's success on the [5D Mark II](https://amzn.com/B001G5ZTLS/?tag=kevideld-20)). But this doesn't stop me to get usable footages. Far from it.
+In all of my projects, I want to use free and open-source software, and push their usage for every step of the creation workflow. For video recording, there is no open-source firmware for the 7D. Sadly, the [Magic Lantern](https://magiclantern.wikia.com) community seems to have [reached a dead-end regarding 7D support](https://groups.google.com/group/ml-devel/browse_thread/thread/648f25d8d543e58). I'm quite sad as I chose the 7D a year ago for 2 things: its video capabilities and the potential hackability of this camera (extrapolating Magic Lantern's success on the [5D Mark II](https://amzn.com/B001G5ZTLS/?tag=kevideld-20)). But this doesn't stop me to get usable footages. Far from it.
 
 For this video, I choose to use my [Sigma 30mm f/1.4 lens](https://amzn.com/B0007U0GZM/?tag=kevideld-20) as it's the fastest lens I have today.
 

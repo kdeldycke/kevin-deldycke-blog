@@ -72,7 +72,7 @@ Now I'll use the `rebase` directive to insert the `history-injection` branch bac
 $ git rebase --preserve-merges --onto history-injection init master
 ```
 
-The `--preserve-merges` option is really important here to not let Git takes too much initiatives. Without this option, all our banches between the `init` tag and the head of the `master` branch will be rebased. Believe me, that's not what we want.
+The `--preserve-merges` option is really important here to not let Git takes too much initiatives. Without this option, all our branches between the `init` tag and the head of the `master` branch will be rebased. Believe me, that's not what we want.
 
 I no longer need my temporary `history-injection` branch. Let's remove it:
 

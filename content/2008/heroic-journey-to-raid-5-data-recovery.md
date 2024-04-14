@@ -42,7 +42,7 @@ $ fdisk -l /dev/sdc
 
 "Linux raid partitions" (type code "`fd`") are still there. Good. I assumed here that disks where not physically damaged. Maybe I should have looked at [S.M.A.R.T.](https://en.wikipedia.org/wiki/Self-Monitoring,_Analysis,_and_Reporting_Technology) datas and statistics (via [smartmontools](https://smartmontools.sourceforge.net)). But remember, I'm lazy (and a bit crazy).
 
-The next step was to get informations about the RAID array itself using:
+The next step was to get information about the RAID array itself using:
 
 ```shell-session
 $ mdadm --detail /dev/md0
@@ -66,7 +66,7 @@ What this table told us?
 
 - It confirm that `sdb1` unexpectedly failed and is now in a bad state ("`faulty removed`").
 
-Then I stopped the array and tried to fearlessly (re)assemble it using 3 differents methods:
+Then I stopped the array and tried to fearlessly (re)assemble it using 3 different methods:
 
 ```shell-session
 $ mdadm -S /dev/md0
@@ -91,7 +91,7 @@ $ mdadm -E /dev/sdc1
 $ mdadm -E /dev/sd[abc]1 | grep Event
 ```
 
-The lastest command compare the "`Event`" attribute of all devices. It output something like:
+The latest command compare the "`Event`" attribute of all devices. It output something like:
 
 ```text
 Events : 0.53120

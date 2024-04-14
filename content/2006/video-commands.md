@@ -231,7 +231,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   $ mencoder -oac lavc -ovc lavc vcd://1 -o ./svcd.avi
   ```
 
-- Transcode video to raw format (be carefull: usually the output video got
+- Transcode video to raw format (be careful: usually the output video got
   annoying audio delay):
 
   ```shell-session
@@ -254,13 +254,13 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
 - Cut a video to keep the first 5.4 seconds:
 
   ```shell-session
-  $ mencoder big-file.avi -ss 0 -endpos 5.4 -ovc copy -oac copy -o cutted.avi
+  $ mencoder big-file.avi -ss 0 -endpos 5.4 -ovc copy -oac copy -o cut.avi
   ```
 
-- Cut a video to keep everything exept the first 5.4 seconds:
+- Cut a video to keep everything except the first 5.4 seconds:
 
   ```shell-session
-  $ mencoder big-file.avi -ss 5.4 -ovc copy -oac copy -o cutted.avi
+  $ mencoder big-file.avi -ss 5.4 -ovc copy -oac copy -o cut.avi
   ```
 
 - Show all `mplayer` filter list:

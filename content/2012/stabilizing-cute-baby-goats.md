@@ -71,7 +71,7 @@ $ find ./ -name "*.MOV" -exec transcode -J transform -i "{}" -y ffmpeg -F huffyu
 
 ## Alternative tools
 
-I told you I was disappointed by the results. For example, in the first shot of the video above, `vid.stab` will stabilize based on the movements of the head of the goat, not based on the background. All of this because tracking points are generated on hight-contrast area. Unfortunately in this first scene, the only high contrast area is the kid's head.
+I told you I was disappointed by the results. For example, in the first shot of the video above, `vid.stab` will stabilize based on the movements of the head of the goat, not based on the background. All of this because tracking points are generated on high-contrast area. Unfortunately in this first scene, the only high contrast area is the kid's head.
 
 Even in shots where the contrast is in our favor, software stabilization don't always produce nice output. If by chance the tracking points are set on the right objects (those that should be considered motionless), the results may not be pleasing, as it may expose inappropriate skewed perspective, shifting motion-blur and spacial deformation.
 

@@ -54,4 +54,4 @@ And finally, you can install eAccelerator for PHP5 without any pain:
 $ apt-get install php5-eaccelerator
 ```
 
-Happy [fine-tunning](https://eaccelerator.net/wiki/Settings)!
+Happy [fine-tuning](https://eaccelerator.net/wiki/Settings)!

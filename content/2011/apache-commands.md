@@ -91,7 +91,7 @@ tags: Apache, CLI, Git, HTTP, nedstat, Server, Subversion, Web, WebDAV
   collector](https://web.archive.org/web/20111008000404/https://www.nedstat.com)
   delete all cookies but its own, thus breaking intranet's authentication. So
   we (thanks Matthieu!) came up with this unmaintainable hack on Apache side to
-  hide our intranet's cookies to NedStat's Javascript embedded code:
+  hide our intranet's cookies to Nedstat's Javascript embedded code:
 
   ```apache
   <LocationMatch "/(.*)">

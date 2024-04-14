@@ -27,7 +27,7 @@ Here is my procedure to make these mails pass through the conversion error:
 
 1. In Notes' edit mode, cut all inline pictures, one picture at a time;
 
-1. For each cutted picture, paste it as a new image in the image editor of your choice ([Gimp](https://www.gimp.org) did the trick for me);
+1. For each cut picture, paste it as a new image in the image editor of your choice ([Gimp](https://www.gimp.org) did the trick for me);
 
 1. Save each image on your local disk;
 

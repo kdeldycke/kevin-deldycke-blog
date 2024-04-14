@@ -29,7 +29,7 @@ tags: CLI, echo, kernel, Linux, nohup, shell, system, cron, Regular expression, 
 
 ## Shell
 
-- Get the exit code of the latest runned command:
+- Get the exit code of the latest ran command:
 
   ```shell-session
   $ echo $?
