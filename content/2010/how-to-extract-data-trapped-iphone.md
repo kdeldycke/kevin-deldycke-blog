@@ -82,7 +82,7 @@ Finally, just in case you want to extract iPhones data from another backup than
 the default backup, like from a backup of the backup (isn't that clear?),
 making a symlink is enough to trick iPhone Backup Extractor:
 
-```sh
+```shell-session
 sh-3.2# pwd
 /Users/kevin/Library/Application Support/MobileSync
 sh-3.2# mv ./Backup ./Backup-copy
