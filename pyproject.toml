@@ -51,6 +51,41 @@ pretty = true
 ignore_missing_imports = true
 module = []
 
+[tool.typos]
+default.extend-ignore-identifiers-re = [
+    # error: `ba` should be `by`, `be`
+    #   --> ./content/2011/postgresql-commands.md:47:95
+    #    |
+    # 47 |   $ psql --tuples-only --no-align -d database_id -c "SELECT id FROM res_users;" | sed ':a;N;$!ba;s/\n/ /g'
+    #    |                                                                                               ^^
+    #    |
+    "ba",
+    # error: `BA` should be `BY`, `BE`
+    #   --> ./content/2020/nas-hardware.md:320:146
+    #     |
+    # 320 | | Heatsink + Fan | [Noctua NH-L9i](https://amzn.com/B07Y892M38/?tag=kevideld-20) | [65 W](https://noctua.at/en/nh_l9i_tdp_guidelines) |    23.6 dBA | 57.5 m³/h |              | €49.90 | Current cooler for reference. Shipped with paste. |
+    #     |                                                                                                                                                  ^^
+    #     |
+    "BA",
+    # error: `classe` should be `class`, `classes`
+    #   --> ./content/2010/convert-lotus-notes-nsf-files-mbox-nlconverter.md:120:77
+    #     |
+    # 120 |    pywintypes.com_error: (-2147221231, 'ClassFactory ne peut pas fournir la classe demand\xe9e', None, None)
+    #     |                                                                             ^^^^^^
+    #     |
+    "classe",
+]
+# Exclude French articles.
+files.extend-exclude = [
+    "content/2004/mise-en-place-paserelle-adsl-mandrake-10.md",
+    "content/2005/creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux.md",
+    "content/2005/script-de-reconnection-automatique-ppp.md",
+    "content/2006/ajouter-une-entree-jack-universelle-sur-un-telephone-sagem-my700xi.md",
+    "content/2009/cool-cavemen-creative-commons-moi.md",
+    "content/2010/comment-supprimer-des-comptes-mails-secondaires-free-fr.md",
+    "content/2012/ovh-configuration-modem-thomson-tg585-ipoe.md",
+]
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
