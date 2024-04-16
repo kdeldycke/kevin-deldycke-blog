@@ -247,7 +247,7 @@ I ended up with a **Core i3-9300T**, probably overpriced at the time of purchase
 
 | Part                 | Model                                                                                                         |  Quantity | Total (excl. shipping) | Notes                                       |
 | -------------------- | ------------------------------------------------------------------------------------------------------------- | --------: | ---------------------: | ------------------------------------------- |
-| 2.5" HDD             | [Seagate BarraCuda Mobile - 4 TB](https://amzn.com/B01LZMUNGR/?tag=kevideld-20)                               |         4 |                €759.76 | Abandoned because of SMR.                  |
+| 2.5" HDD             | [Seagate BarraCuda Mobile - 4 TB](https://amzn.com/B01LZMUNGR/?tag=kevideld-20)                               |         4 |                €759.76 | Abandoned because of SMR.                   |
 | Small case           | [SilverStone SST-ML05B](https://amzn.com/B07PLB3JR2/?tag=kevideld-20)                                         |         1 |                 €52.84 | Refunded: not enough 3.5" slots.            |
 | Fans for case        | [Noctua NF-A8 PWM](https://amzn.com/B00NEMG62M/?tag=kevideld-20), 4 pins, 80 mm                               |         2 |                 €31.80 | Refunded: only fit the case above.          |
 | Mini-ITX motherboard | [Gigabyte GA-J3455-D3H](https://amzn.com/B071R4P6QG/?tag=kevideld-20)                                         |         1 |                 €98.54 | Refunded because of Realtek NICs.           |
