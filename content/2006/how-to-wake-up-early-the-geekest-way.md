@@ -7,7 +7,7 @@ tags: life, Linux, mobile phone, mplayer, Music, Travel, Cool Cavemen, cron, dat
 
 ![Mobile Phone, Broken Screen]({attach}pict4644.jpg)
 
-I was in a country far far away last month. So far that there was no broadband access (yes, this is possible). Anyway... Generally I use my mobile phone as a clock and as an alarm clock. Unfortunalty I brake it down just before my night flight.
+I was in a country far far away last month. So far that there was no broadband access (yes, this is possible). Anyway... Generally I use my mobile phone as a clock and as an alarm clock. Unfortunately I brake it down just before my night flight.
 
 So, to simplify, I was abroad in a hotel, the sun was down since a while, I was tired, and I had to wake up early. No electronic devices to help me, except my laptop... And then came the idea to combine `cron` and `mplayer` to automaticcaly play some MP3s at a given time.
 
@@ -33,4 +33,4 @@ _Random Tips:_
 
 - Run the `mplayer /home/kevin/music/CoolCavemen/AllCoolHits/*.flac > /dev/null 2>&1 /dev/null` command alone in another terminal before you go to sleep to be sure it work (i.e. to check that all sound-related sub-systems are loaded).
 
-- Be sure that cron deamon is up an running (do a `/etc/init.d/crond restart` if you are not sure).
+- Be sure that cron daemon is up an running (do a `/etc/init.d/crond restart` if you are not sure).

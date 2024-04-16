@@ -5,7 +5,7 @@ category: English
 tags: CLI, Git, GitHub, Linux, Perl, Python, Regular expression, Subversion, trac, webping
 ---
 
-[2 weeks ago I released WebPing]({filename}/2011/webping-open-sourced.md). This article is more or less the same I wrote 4 months ago when I [released the FTT project]({filename}/2011/feed-tracking-tool-released-open-source-license.md) and needed to [move it from SVN to Git]({filename}/2011/ftt-migration-subversion-git.md). But this time I added more details on how I removed all sensible informations that were hard-coded in the project files.
+[2 weeks ago I released WebPing]({filename}/2011/webping-open-sourced.md). This article is more or less the same I wrote 4 months ago when I [released the FTT project]({filename}/2011/feed-tracking-tool-released-open-source-license.md) and needed to [move it from SVN to Git]({filename}/2011/ftt-migration-subversion-git.md). But this time I added more details on how I removed all sensible information that were hard-coded in the project files.
 
 ## Subversion to Git migration
 
@@ -83,7 +83,7 @@ $ git filter-branch --force --prune-empty --tree-filter 'test -d ./WebPing/trunk
 
 ## Hide and obfuscate hard-coded content
 
-As WebPing was created for internal needs in my previous job, its original code base contains lots of references to the former infrastructure it lives in. My professional standards requires me to remove all these sensible informations before making WebPing available to the public.
+As WebPing was created for internal needs in my previous job, its original code base contains lots of references to the former infrastructure it lives in. My professional standards requires me to remove all these sensible information before making WebPing available to the public.
 
 For example, here is the commands which allowed me to remove all references to hostnames of our intranets:
 

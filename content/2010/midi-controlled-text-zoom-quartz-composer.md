@@ -23,7 +23,7 @@ change its color. Again, nothing fancy here: it's just a simple patch, which
 [source is available for
 download]({attach}text-zoom-in-out.qtz).
 
-As for the last time, I recorded a little demo to pratice my new videomaking
+As for the last time, I recorded a little demo to practice my new videomaking
 skills (and to find a justification for buying more video gear ;) ):
 
 https://www.youtube.com/watch?v=vOyePk1L4vA

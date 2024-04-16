@@ -21,9 +21,9 @@ The archive contained all my mails in plain-text and was organized like this:
 
     - mail-2.txt
 
-    - attachement-1.jpg
+    - attachment-1.jpg
 
-    - attachement-2.pdf
+    - attachment-2.pdf
 
     - ...
 
@@ -33,9 +33,9 @@ The archive contained all my mails in plain-text and was organized like this:
 
     - mail-11.txt
 
-    - attachement-10.jpg
+    - attachment-10.jpg
 
-    - attachement-11.pdf
+    - attachment-11.pdf
 
     - ...
 

@@ -12,6 +12,6 @@ To disable the menu bar in [konqueror](https://www.konqueror.org), you have a sp
 MenuBar=Disabled
 ```
 
-This tip is interresting because you can also apply it for any KDE application that doesn't support this feature.
+This tip is interesting because you can also apply it for any KDE application that doesn't support this feature.
 
-For exemple, in [kmail](https://kmail.kde.org), you can add the "`MenuBar=Disabled`" statement in "`[Main Window]`" section: this will have the same effect as in konqueror.
+For example, in [kmail](https://kmail.kde.org), you can add the "`MenuBar=Disabled`" statement in "`[Main Window]`" section: this will have the same effect as in konqueror.

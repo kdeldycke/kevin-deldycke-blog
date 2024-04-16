@@ -30,7 +30,7 @@ Then, to apply change, restart the NFS server:
 $ /etc/init.d/nfs restart
 ```
 
-In this example I simply wanted to share the `/mnt/big-disk` directory and all its sub-folders with anybody, with read and write access. I did this because the server was in a closed LAN, with only one client, that's why no security, authentification or credentials to manage.
+In this example I simply wanted to share the `/mnt/big-disk` directory and all its sub-folders with anybody, with read and write access. I did this because the server was in a closed LAN, with only one client, that's why no security, authentication or credentials to manage.
 
 By the way, on the server, the only required services to activate at startup are the following:
 
@@ -54,7 +54,7 @@ Then to auto-mount the distant shared folder, add the following line to your `/e
 
 Important parameters of the line above are:
 
-- `192.168.1.22` = IP adress of the NFS server,
+- `192.168.1.22` = IP address of the NFS server,
 - `/mnt/hdd` = path of the shared folder on the server,
 - `/mnt/distant-hdd` = local folder where the shared folder will be mounted.
 

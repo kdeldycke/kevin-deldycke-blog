@@ -28,7 +28,7 @@ tags: CLI, gpart, Hardware, HDD, kernel, Linux, MBR, partitions, X.org, gphoto, 
   $ dd if=/dev/zero of=/dev/hda
   ```
 
-- Same as above but for paranoïd, as random bits will be written 3 times before performing the "low-level format" (i.e. writting zeros):
+- Same as above but for paranoïd, as random bits will be written 3 times before performing the "low-level format" (i.e. writing zeros):
 
   ```shell-session
   $ shred --verbose --force --iterations=3 --zero /dev/hda

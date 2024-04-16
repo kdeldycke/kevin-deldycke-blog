@@ -29,7 +29,7 @@ The bad commit the message refers to is the first one. It's a special commit I
 create everytime I
 [initialize a Git repository]({filename}/2010/initialize-git-repositories.md).
 
-From the error message, I suspected a wrong date format. So I reseted it:
+From the error message, I suspected a wrong date format. So I reset it:
 
 ```shell-session
 $ export GIT_TMP_INIT_HASH=`git show-ref init | cut -d ' ' -f 1`

@@ -18,7 +18,7 @@ The script requires the following python modules:
 - `PyMySQL`
 - `bbcode`
 
-They can easely be installed on Debian with the following commands:
+They can easily be installed on Debian with the following commands:
 
 ```shell-session
 $ aptitude install python-pip python-lxml

@@ -91,7 +91,7 @@ dummy:user@myserver.net:/folder/ /Network/distant-folder sshfs allow_other,auto_
 ```
 
 As you can see I've added lots of options to accommodate my uses. You can get
-more informations about `sshfs` options through traditional help pages:
+more information about `sshfs` options through traditional help pages:
 
 ```shell-session
 $ sshfs --help

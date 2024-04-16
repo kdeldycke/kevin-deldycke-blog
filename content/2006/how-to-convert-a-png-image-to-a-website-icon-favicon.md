@@ -29,4 +29,4 @@ $ pngtopnm -background=rgb:00/00/ff favicon.png | ppmtowinicon -output favicon.i
 
 In here, the `00/00/ff` parameter is the hexadecimal conversion of RGB encoding of the blue color.
 
-By the way, if you need more informations about website icons, I advise you to take a look at the [favicon wikipedia article](https://en.wikipedia.org/wiki/Favicon). Here you will find useful tips about the conventions to apply in order to have a favicon supported by most (if not all) major browsers.
+By the way, if you need more information about website icons, I advise you to take a look at the [favicon wikipedia article](https://en.wikipedia.org/wiki/Favicon). Here you will find useful tips about the conventions to apply in order to have a favicon supported by most (if not all) major browsers.

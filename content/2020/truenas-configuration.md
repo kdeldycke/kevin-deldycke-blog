@@ -225,7 +225,7 @@ wipe pass  1/3 :    212992/312571224 kB (  0%)   Rate: 21233 kB/s
   $ zfs list -r -t snapshot tank/my-data
   ```
 
-- Rename all snaphot's names prefixes from `auto-` to `daily-`, for the `tank/my-data` dataset and its children:
+- Rename all snapshot's names prefixes from `auto-` to `daily-`, for the `tank/my-data` dataset and its children:
 
   ```shell-session
   $ zfs list -r -t snapshot tank/my-data

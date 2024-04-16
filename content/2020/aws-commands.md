@@ -5,7 +5,7 @@ category: English
 tags: cloud, cloud computing, saas, iaas, paas, aws, amazon, development, CLI, iam, transcribe, text-to-speech, brew, s3, mime type, media type
 ---
 
-All commandes below relies on the latest version of [aws-cli](https://github.com/aws/aws-cli).
+All commands below relies on the latest version of [aws-cli](https://github.com/aws/aws-cli).
 
 - macOS install:
 

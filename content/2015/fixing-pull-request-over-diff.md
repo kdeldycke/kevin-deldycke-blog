@@ -49,7 +49,7 @@ Still, commit checksums did not returned to their original value. There must be
 other metadata involved.
 
 As I wasn't ready to waste time on doctoring each commit to find the
-underlaying differences, I simply rebased everything to master:
+underlying differences, I simply rebased everything to master:
 
 ```shell-session
 $ git rebase master

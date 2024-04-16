@@ -13,7 +13,7 @@ This little article describe how to setup an automatic backup procedure to a rem
 
 - A user account on this server (mine was `kevin`),
 
-- A ssh deamon running on the server that allow the user to log in.
+- A ssh daemon running on the server that allow the user to log in.
 
 ## Setup rsync
 

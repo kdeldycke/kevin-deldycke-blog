@@ -147,7 +147,7 @@ If everything's OK, going to `http://lists.example.com` will show you this:
 
 ## Exim
 
-Now we have to setup the MTA. All informations here are coming from the
+Now we have to setup the MTA. All information here are coming from the
 documentation you can find on your Debian system in
 `/usr/share/doc/mailman/README.Exim4.Debian.gz`.
 

@@ -41,7 +41,7 @@ When I was alone behind the billing pipeline, I quickly refrained from pushing c
 
 This dogma was carried on when I [grew the team from 0 to 12 engineers]({filename}/2020/engineering-to-management-transition.md). Even though I repeated ad-nauseum the context of that decision, I feared it might have been lost in a typical case of [Chesterton's fence](https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence). So here it is, in written form.
 
-The main reason was the massive reports being produced in that critical time-window. The consolidation of accounting and financial numbers of our holding company was, among other things, dependent on these reports. The blast radius of our team was suddently inflated, at the billion-dollar level. 😅
+The main reason was the massive reports being produced in that critical time-window. The consolidation of accounting and financial numbers of our holding company was, among other things, dependent on these reports. The blast radius of our team was suddenly inflated, at the billion-dollar level. 😅
 
 Hence the compromise. In the grand scheme of things, we had to reach operational excellence before taking care of our flaky tests. And I'm proud to highlight that under my watch, the team always delivered on schedule. Because the *money must flow*.
 

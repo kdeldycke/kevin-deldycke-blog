@@ -64,7 +64,7 @@ tags: Archive formats, CLI, cpio, genhdlist, Linux, Mandriva, Red Hat, RPM, urpm
   $ urpmf dummy
   ```
 
-- Get informations about the `dummy` RPM:
+- Get information about the `dummy` RPM:
 
   ```shell-session
   $ urpmq -i dummy

@@ -14,7 +14,7 @@ The [`transcode` CLI and its associated tools](https://web.archive.org/web/20200
 I recommend to use [FFmpeg]({filename}/2006/video-commands.md) instead.
 ```
 
-- Get informations about a video:
+- Get information about a video:
 
   ```shell-session
   $ tcprobe -i ./video.avi

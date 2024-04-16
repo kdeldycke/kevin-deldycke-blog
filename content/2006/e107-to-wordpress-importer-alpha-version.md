@@ -9,7 +9,7 @@ As I said yesterday, I will migrate my e107 content to Wordpress. My first step 
 
 So here is my [first draft of the e107 to Wordpress importer (direct link to php file)](https://wordpress.org/extend/plugins/e107-importer/).
 
-To use it, copy the e107.php file to your `wp-admin/import` folder. To launch the import, go to the `Import` page of your Wordpress administation panel, select e107, and fill required fields (user, password, database host, database name and table's prefix) to let the script reach your e107 datas. Then, follow steps and instructions until the end.
+To use it, copy the e107.php file to your `wp-admin/import` folder. To launch the import, go to the `Import` page of your Wordpress administration panel, select e107, and fill required fields (user, password, database host, database name and table's prefix) to let the script reach your e107 data. Then, follow steps and instructions until the end.
 
 Be careful, actually the script is a very alpha version that only get e107 news items and transform them to Wordpress posts. It's more a proof-of-concept script than a really useable and stable importer.
 

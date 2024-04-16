@@ -138,7 +138,7 @@ os.path.walk(dest_path, generateSQL, None)
 print sql
 ```
 
-I think code and comments are self-explainatory. And do not forget to update constants at the top of the script to match your installation paths and database's tables prefix.
+I think code and comments are self-explanatory. And do not forget to update constants at the top of the script to match your installation paths and database's tables prefix.
 
 And finally, for your information, I tested all of this on following versions:
 

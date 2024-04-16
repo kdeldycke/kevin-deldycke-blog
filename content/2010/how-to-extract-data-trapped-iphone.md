@@ -26,7 +26,7 @@ So first thing you have to do is to backup your phone using iTunes:
 
 Then you can download and run the iPhone Backup Extractor app:
 
-![]({attach}iphone-backup-extrator.png)
+![]({attach}iphone-backup-extractor.png)
 
 Here you just have to click the _Read Backups_ button to get a list of all
 backups available on your machine. Then choose your latest backup:
@@ -46,7 +46,7 @@ Then the extraction itself will take place:
 ![]({attach}iphone-backup-extraction.png)
 
 You've just finished the essential part of the process. You now have a nice
-folder structure containing all the important informations that was trapped in
+folder structure containing all the important information that was trapped in
 your phone:
 
 ![]({attach}iphone-backup-extraction-content.png)
@@ -56,7 +56,7 @@ available as is, in the `/iOS Files/Media/DCIM/XXXAPPLE/`:
 
 ![]({attach}iphone-photo-location.png)
 
-Most of other datas are located in the `/iOS Files/Library/` folder. For
+Most of other data are located in the `/iOS Files/Library/` folder. For
 example here are voice messages:
 
 ![]({attach}iphone-voicemessages-location.png)

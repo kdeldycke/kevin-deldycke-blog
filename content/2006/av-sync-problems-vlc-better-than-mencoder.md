@@ -20,7 +20,7 @@ right options.
 
 To bypass this problems, I used the `-mp3lame` as output audio codec. This
 introduced horrible A/V sync. :( For 3 hours, I tried to play with mencoder
-options without success. I was completetly desesperated... until I tried VLC.
+options without success. I was completely desesperated... until I tried VLC.
 In less than 10 minutes I was able to get the expected result: perfect A/V sync
 movie file!
 

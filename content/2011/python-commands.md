@@ -151,7 +151,7 @@ I maintain a set of default configuration files in my [`dotfiles` repository](ht
 
   tmp_path = Path("/tmp")
 
-  # Emulate the folowwing CLI call:
+  # Emulate the following CLI call:
   #   $ pip download --no-binary=:all: --no-deps pygments==2.14.0
   cmd = DownloadCommand(name="dummy_name", summary="dummy_summary")
 

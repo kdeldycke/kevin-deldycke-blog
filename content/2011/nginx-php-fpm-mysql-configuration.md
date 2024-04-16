@@ -288,4 +288,4 @@ $ /etc/init.d/nginx restart
 
 ## Conclusion
 
-I'm running my websties under this configuration for about 3 months and I'm really happy with the results. I'm sure I can push optimizations further, but it may require lots of time and effort compared to the marginal gain I'll get. My websites are responsive enough to me. And if they collapse in the future under the load of the Reddit crowd, I'll still have the option to move to a bigger virtual server (vertical scaling FTW!).
+I'm running my websites under this configuration for about 3 months and I'm really happy with the results. I'm sure I can push optimizations further, but it may require lots of time and effort compared to the marginal gain I'll get. My websites are responsive enough to me. And if they collapse in the future under the load of the Reddit crowd, I'll still have the option to move to a bigger virtual server (vertical scaling FTW!).

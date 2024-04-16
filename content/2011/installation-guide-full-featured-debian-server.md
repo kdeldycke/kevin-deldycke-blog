@@ -19,7 +19,7 @@ These articles are independent with each other, meaning you can pick the one you
 
 1. Setup [cron-apt]({filename}/2011/fresh-debian-thanks-to-cron-apt.md) to keep our distribution up to date.
 
-1. Add a [fail2ban]({filename}/2011/configuring-fail2ban-debian-squeeze.md) deamon.
+1. Add a [fail2ban]({filename}/2011/configuring-fail2ban-debian-squeeze.md) daemon.
 
 1. Setup [Munin]({filename}/2011/munin-monitor-debian-squeeze-server.md) to monitor our machine.
 

@@ -107,7 +107,7 @@ tags: ALAC, ASF, Audio, CLI, cue-list, FLAC, Linux, lossless, midi, Ogg, shntool
   $ find . -iname '*.mp3' -print -exec id3v2 --album "Album name" "{}" \;
   ```
 
-Other related ressources:
+Other related resources:
 
 - [Sox examples](https://linuxcommand.org/man_pages/soxexam1.html)
 - [Audio Processing

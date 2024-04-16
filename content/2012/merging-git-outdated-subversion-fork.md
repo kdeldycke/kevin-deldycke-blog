@@ -11,7 +11,7 @@ quite dirty when doing so but I have to admit it's a pragmatic approach.
 Especially when you have to quickly add loads of customizations on a tight
 schedule.
 
-Months later, the tainted copy residing in SVN starts rotting, stucked with its
+Months later, the tainted copy residing in SVN starts rotting, stuck with its
 customizations in an old version of the module. Meanwhile, the original module
 was updated at a fast pace and kept all its freshness and purity. It's time to
 reconcile the two versions and backport commits from Git to Subversion. The

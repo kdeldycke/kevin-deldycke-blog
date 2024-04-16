@@ -106,7 +106,7 @@ tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
 
 ## Uninstall
 
-- Uninstall a package throughly (both program files and configuration):
+- Uninstall a package thoroughly (both program files and configuration):
 
   ```shell-session
   $ apt-get remove --purge my_package
@@ -118,7 +118,7 @@ tags: apt, aptitude, backport, CLI, Debian, dpkg, Linux, Ubuntu
   $ dpkg --remove --force-depends libsomething
   ```
 
-- Remove orphaned pakages:
+- Remove orphaned packages:
 
   ```shell-session
   $ deborphan | xargs apt-get -y remove --purge
