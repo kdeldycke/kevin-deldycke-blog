@@ -66,7 +66,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   (...)
   Input #0, matroska,webm, from 'input.mkv':
       Stream #0:0(eng): Video: h264 (High), yuv420p(progressive), 1280x720, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 1k tbn, 50 tbc (default)
-      Stream #0:1(fre): Audio: dts (DTS), 48000 Hz, 5.1(side), fltp, 1536 kb/s (default)
+      Stream #0:1(ger): Audio: dts (DTS), 48000 Hz, 5.1(side), fltp, 1536 kb/s (default)
       Stream #0:2(eng): Subtitle: subrip (default)
       (...)
   Input #1, srt, from 'subtitle.srt':
@@ -79,7 +79,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
     (...)
   Output #0, matroska, to 'video-fixed.mkv':
       Stream #0:0(eng): Video: h264 (High) (H264 / 0x34363248), yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)
-      Stream #0:1(fre): Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, 5.1(side), fltp, 394 kb/s (default)
+      Stream #0:1(ger): Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, 5.1(side), fltp, 394 kb/s (default)
       Stream #0:2: Subtitle: subrip
   ```
 
