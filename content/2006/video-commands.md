@@ -5,7 +5,7 @@ category: English
 tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, mplayer, subtitle, svcd, Video, xvid, TV, VLC
 ---
 
-- Here are some commands to get informations about the nature of a video:
+- Here are some commands to get information about the nature of a video:
 
   ```shell-session
   $ ffmpeg -i ./video.avi
@@ -19,7 +19,7 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
 - Remux a Flash video to an MP4 container without transcoding:
 
   ```shell-session
-  $ ffmpeg -i ./inpout.flv -vcodec copy -acodec copy ./output.mp4
+  $ ffmpeg -i ./input.flv -vcodec copy -acodec copy ./output.mp4
   ```
 
 - Remove audio:

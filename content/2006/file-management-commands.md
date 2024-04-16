@@ -39,7 +39,7 @@ tags: CLI, find, grep, Linux, Python, rename, sort, tail, regular expression, Dr
   $ du -cm * | sort -nr
   ```
 
-- Show the 10 biggest files in MiB found amoung the current directory and its subfolders:
+- Show the 10 biggest files in MiB found among the current directory and its subfolders:
 
   ```shell-session
   $ find . -type f -exec du -m "{}" \; | sort -nr | head -n 10

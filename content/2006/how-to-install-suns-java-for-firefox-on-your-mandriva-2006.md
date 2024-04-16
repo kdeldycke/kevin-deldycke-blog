@@ -5,13 +5,13 @@ category: English
 tags: firefox, Java, Linux, Mandriva, mozilla, RPM, Web
 ---
 
-One week ago I succeed to install the Sun's Java Runtime Environment (JRE) on my Mandriva 2006. I avoid to use proprietary softwares as long as I can. Unfortunately I needed it to fill my annual tax form online...
+One week ago I succeed to install the Sun's Java Runtime Environment (JRE) on my Mandriva 2006. I avoid to use proprietary software as long as I can. Unfortunately I needed it to fill my annual tax form online...
 
 So, here is how I achieve this:
 
 1. [Download the last JRE](https://jdl.sun.com/webapps/download/AutoDL?BundleId=10335) (v1.5.0-06 at that time) from [Sun official website](https://java.com/download).
 
-1. As root, lauch:
+1. As root, launch:
 
    ```shell-session
    $ sh ./jre-1_5_0_06-linux-i586-rpm.bin

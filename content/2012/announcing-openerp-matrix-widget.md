@@ -35,7 +35,7 @@ them as a hierarchical tree on the left:
 
 ![]({attach}2-level-readonly-additional-lines-matrix.png)
 
-As you can see, I've also added additional informations in columns and lines,
+As you can see, I've also added additional information in columns and lines,
 after the total column and total line.
 
 Again, intermediate sums are updated dynamically, and lines can be added at any

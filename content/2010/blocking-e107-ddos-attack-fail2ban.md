@@ -36,7 +36,7 @@ and put the following directives there:
 
 ```ini
 # Fail2Ban configuration file
-# Notes.:  Regexp to catch all attemps to exploit an e107 vulnerability.
+# Notes.:  Regexp to catch all attempts to exploit an e107 vulnerability.
 # Author: Kevin Deldycke
 
 [Definition]

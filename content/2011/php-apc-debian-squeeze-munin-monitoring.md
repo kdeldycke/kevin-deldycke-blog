@@ -17,7 +17,7 @@ repository](https://www.dotdeb.org).
 
 If installing APC is easy, monitoring it with Munin requires some extra
 manipulations. There is currently no good [APC plugin available on Munin
-Exhange](https://exchange.munin-monitoring.org/plugins/search?keyword=apc). So
+Exchange](https://exchange.munin-monitoring.org/plugins/search?keyword=apc). So
 we'll use the external [munin-php-apc
 project](https://code.google.com/p/munin-php-apc/) instead.
 

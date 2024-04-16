@@ -33,7 +33,7 @@ To update your locale repository with the latest set of changes from the remote
 one, just run the previous command from time to time.
 
 Now you can play with your local repository (`/home/user/.svk/local` in this
-exemple) as if it was a normal SVN repository!
+example) as if it was a normal SVN repository!
 
 **_Update_**: If you want to generate a vanilla SVN dump out of your SVK local
 mirror, as suggest by [Thomas Mølhave](https://moelhave.dk) in his

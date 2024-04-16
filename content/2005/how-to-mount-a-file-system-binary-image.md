@@ -15,7 +15,7 @@ $ dd if=/dev/sda1 of=/home/kevin/usb_key.img
 
 ## Mount the image file
 
-Get informations about the file system of the image file using:
+Get information about the file system of the image file using:
 
 ```shell-session
 $ fdisk -l -u /home/kevin/usb_key.img

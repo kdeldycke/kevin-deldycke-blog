@@ -5,7 +5,7 @@ category: English
 tags: chipset, display, graphic, Hewlett Packard, Intel, laptop, Linux, Samsung, screen, X.org
 ---
 
-I recently had the oportunity to plug the [HP w2207h screen](https://amzn.com/B00139S3U6/?tag=kevideld-20) (see [review #1](https://www.anandtech.com/displays/showdoc.aspx?i=3054) and [review #2](https://www.prad.de/en/monitore/review/2007/review-hp-w2207.html)) as an external display to my [Samsung Q35 laptop]({filename}/2006/samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop.md). The external display has a native resolution of 1680x1050 and the laptop's is 1280x800.
+I recently had the opportunity to plug the [HP w2207h screen](https://amzn.com/B00139S3U6/?tag=kevideld-20) (see [review #1](https://www.anandtech.com/displays/showdoc.aspx?i=3054) and [review #2](https://www.prad.de/en/monitore/review/2007/review-hp-w2207.html)) as an external display to my [Samsung Q35 laptop]({filename}/2006/samsung-q35-xic-5500-tiny-review-of-a-strong-compact-laptop.md). The external display has a native resolution of 1680x1050 and the laptop's is 1280x800.
 
 The laptop is powered by an [Intel 945 graphic chip](https://en.wikipedia.org/wiki/Intel_GMA#GMA_950):
 
@@ -111,7 +111,7 @@ What I've learned so far during these experiments:
 
 - With DRI, [virtual screen can't be greater than 2048x2048](https://www.thinkwiki.org/wiki/Xorg_RandR_1.2#the_Virtual_screen) for Intel 945 (or less) chips. This explain why my screens are one above the other instead of side-by-side.
 
-- [XRandR](https://www.x.org/wiki/Projects/XRandR) and its friend [KRandRTray](https://www.novell.com/coolsolutions/trench/16034.html) make screen positionning user-friendly...
+- [XRandR](https://www.x.org/wiki/Projects/XRandR) and its friend [KRandRTray](https://www.novell.com/coolsolutions/trench/16034.html) make screen positioning user-friendly...
 
 - ...until you play with the `xrandr`'s "`--off`" option! After I manually called it, this parameter disabled all my screens, forever, and at each boot. I've randomly deleted xorg-related files, but I still didn't know how I solved this mess. If you have a better understanding of how `xrandr` store its configuration, please let me know!
 

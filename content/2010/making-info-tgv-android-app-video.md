@@ -5,11 +5,11 @@ category: English
 tags: Android, Canon EOS 7D, ffmpeg, HTC, Kdenlive, Kubuntu, Ubuntu, Linux, Twitter, Uperto, Video, x264, YouTube, SoundUp studio
 ---
 
-Last week I was called by one of my co-worker from [Uperto](https://www.uperto.com) (the open-source division of [Devoteam](https://devoteam.com)). He knew I worked on some [video projects for my band](https://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great oportunity to play with my [Canon EOS 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20), so I accepted! :)
+Last week I was called by one of my co-worker from [Uperto](https://www.uperto.com) (the open-source division of [Devoteam](https://devoteam.com)). He knew I worked on some [video projects for my band](https://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great opportunity to play with my [Canon EOS 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20), so I accepted! :)
 
 ![]({attach}info-tgv-android-app-preview.jpg)
 
-The goal of the video was to show off an [Android application we made](https://pro.01net.com/editorial/519142/concours-d-application-smartphone-sncf-les-candidats-sur-les-starting-blocks/), for a [contest organized by SNCF](https://www.01net.com/statiquesv6/sncf/pres.html) (the [french national railroad](https://en.wikipedia.org/wiki/Sncf)). The application, that we simply named _Info TGV_, is designed to centralize informations for on-board staff. This application will give train personnel better insights when delays or other kind of traffic perturbations arise.
+The goal of the video was to show off an [Android application we made](https://pro.01net.com/editorial/519142/concours-d-application-smartphone-sncf-les-candidats-sur-les-starting-blocks/), for a [contest organized by SNCF](https://www.01net.com/statiquesv6/sncf/pres.html) (the [french national railroad](https://en.wikipedia.org/wiki/Sncf)). The application, that we simply named _Info TGV_, is designed to centralize information for on-board staff. This application will give train personnel better insights when delays or other kind of traffic perturbations arise.
 
 Here is the final video we managed to create:
 
@@ -47,7 +47,7 @@ As you can see in the final video, I have some aliasing issues due to the [pixel
 
 Yes, I could have tried to put the phone on a stand but I really wanted to show the app on a real phone, into real hands, as to make it clear there was no special effects or compositing in action. The application is real, it's running on bare metal, it's not a mockup, showing that Uperto has tough engineers getting things done! ;)
 
-By the way, about hands: there a trick involved here. The left hand is mine, but the right one is my co-worker's. There was a big advantage using this technic: with an eye on the 7D's rear LCD monitor, I can fully concentrate on the image and micro-adjust the distance of the phone to the lens. In the same time, my co-worker can focus (pardon the pun) on the action and follow the script. The only time when you can see my right hand is when I take the [Acer Liquid E](https://mobile.acer.com/en/phones/liquide/) to demonstrate the propagation of messages via Twitter:
+By the way, about hands: there a trick involved here. The left hand is mine, but the right one is my co-worker's. There was a big advantage using this technique: with an eye on the 7D's rear LCD monitor, I can fully concentrate on the image and micro-adjust the distance of the phone to the lens. In the same time, my co-worker can focus (pardon the pun) on the action and follow the script. The only time when you can see my right hand is when I take the [Acer Liquid E](https://mobile.acer.com/en/phones/liquide/) to demonstrate the propagation of messages via Twitter:
 
 ![]({attach}htc-desire-and-acer-liquid-e.png)
 
@@ -69,7 +69,7 @@ Let's talk audio now. I personally want to thanks [Tomasito, Cool Cavemen's saxo
 
 ![]({attach}shure-beta-57a-microphone-on-gorillapod.jpg)
 
-I wanted to record the speach on my linux machine but I didn't managed to compile the [Line 6 open-source drivers](https://line6.com/community/thread/4031). In fact the module compiled but refused to load:
+I wanted to record the speech on my linux machine but I didn't managed to compile the [Line 6 open-source drivers](https://line6.com/community/thread/4031). In fact the module compiled but refused to load:
 
 ```text
 Sep 20 22:02:47 kev-laptop kernel: [  717.905187] line6usb: Unknown symbol snd_rawmidi_receive
@@ -123,10 +123,10 @@ By the way, if you're looking to record/mix/master any audio material (from a si
 
 ## Epilogue
 
-As I concentrated all my efforts towards the creation of the video, I don't have many details about the application development itself. But coding the android app was, without a doubt, the biggest chunk of work of this project. It involves two of our best Andoid developpers (Jeremy and Paul) and [our in-house Photoshop geek](https://tilap.net) for the design. The project was lead by [Arnaud](https://www.infinityperl.org).
+As I concentrated all my efforts towards the creation of the video, I don't have many details about the application development itself. But coding the android app was, without a doubt, the biggest chunk of work of this project. It involves two of our best Android developers (Jeremy and Paul) and [our in-house Photoshop geek](https://tilap.net) for the design. The project was lead by [Arnaud](https://www.infinityperl.org).
 
-The whole project was completed in no time and virtually no budget thanks to the dedication and effort of Uperto's staff. Everybody in Uperto, from management to developpers, was fantastic. It really makes this team unique.
+The whole project was completed in no time and virtually no budget thanks to the dedication and effort of Uperto's staff. Everybody in Uperto, from management to developers, was fantastic. It really makes this team unique.
 
-This project was a great oportunity for me to test my video skills. In a sense, it was my first professionnal assignment: I had a limited time, an inflexible deadline and a clear goal. But still, this type of activity falls into my hobby category. I have so much things to learn...
+This project was a great opportunity for me to test my video skills. In a sense, it was my first professional assignment: I had a limited time, an inflexible deadline and a clear goal. But still, this type of activity falls into my hobby category. I have so much things to learn...
 
 This project is also the first time I edit 1080p footage from my 7D in Kdenlive. This doesn't mean it's the first time I shoot with my 7D. In fact I shoot videos in various formats and setup for about a year. But my shooting skills only starts to be acceptable. My other projects involving 7D footages are currently on hold for various reasons (mostly more important stuff to do). That's why I hadn't published anything on the web since then. But I expect this situation to change soon! :D

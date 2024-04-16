@@ -19,7 +19,7 @@ Here are the options I choose in each step of the wizard:
 
 1. System mail name: `server.deldycke.com`.
 
-1. IP adresses to listen on for incoming SMTP connections: `127.0.0.1 ; ::1` (which is the default proposed value).
+1. IP addresses to listen on for incoming SMTP connections: `127.0.0.1 ; ::1` (which is the default proposed value).
 
 1. Other destinations for which mail is accepted: leave blank.
 

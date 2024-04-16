@@ -2,7 +2,7 @@
 date: '2012-10-02'
 title: Converting a bbPress Forum to a Mailbox Archive
 category: English
-tags: Backup, bbpress, convertion, Cool Cavemen, CSV, email, mailbox, mbox, migration, MySQL, SQL, PHP, Python, SQL, WordPress
+tags: Backup, bbpress, conversion, Cool Cavemen, CSV, email, mailbox, mbox, migration, MySQL, SQL, PHP, Python, SQL, WordPress
 ---
 
 In my band [Cool Cavemen](https://coolcavemen.com), before using a private mailing-list to discuss internal stuff, we were using a private bbPress forum. This forum is no longer used but it still contains tons of old, but useful content.

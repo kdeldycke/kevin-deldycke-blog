@@ -5,7 +5,7 @@ category: English
 tags: Backup, Hardware, Linux, mdadm, RAID, Server
 ---
 
-Today `mdadm` send me a mail to warn that one of my hard drive (`/dev/hdd1`) was ejected from my RAID-5 array. After some manipulations (no writes, just reads on the file system to get informations) and reboots, I ended up with a file system in a strange state: the folder structure was totally messed up and lots of files disappeared.
+Today `mdadm` send me a mail to warn that one of my hard drive (`/dev/hdd1`) was ejected from my RAID-5 array. After some manipulations (no writes, just reads on the file system to get information) and reboots, I ended up with a file system in a strange state: the folder structure was totally messed up and lots of files disappeared.
 
 Assuming that this situation was about an inconsistent file index, I decided to reset the superblocks of the remaining physical disks:
 

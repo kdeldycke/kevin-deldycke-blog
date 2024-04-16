@@ -7,7 +7,7 @@ tags: Apple, buildout, Mac OS X 10.5 Leopard, Mac OS X 10.3 Panther, MacBook, ma
 
 In this post I'll show you how I installed Python 2.4 on [Mac OS X Leopard
 ](https://amzn.com/B000FK88JK/?tag=kevideld-20) and how, starting from a bare
-Python environnement, we can build a stand-alone Zope 2.10 instance with Plone
+Python environment, we can build a stand-alone Zope 2.10 instance with Plone
 3.2 thanks to `zc.buildout`.
 
 If your goal is to play with or evaluate Plone (or if you don't know what
@@ -44,7 +44,7 @@ Now that the most annoying part (to me) is done, we can install Plone via
 Before going further, you need to have a machine that is able to compile code,
 which mean [Apple's developer tools
 ](https://developer.apple.com/technology/tools.html) must be installed locally.
-These softwares are available for free on the second DVD that ships with every
+These software are available for free on the second DVD that ships with every
 Mac OS X copy.
 
 First we create our project directory, then we download, from its SVN
@@ -96,7 +96,7 @@ verbose-security = on
 eggs = ${buildout:eggs}
 ```
 
-Now let's build our Plone and Zope environnement:
+Now let's build our Plone and Zope environment:
 
 ```shell-session
 $ python2.4 ./bootstrap.py

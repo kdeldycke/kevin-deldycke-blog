@@ -110,7 +110,7 @@ $ ln -s /usr/share/munin/plugins/sensors_ /etc/munin/plugins/sensors_temp
 $ ln -s /usr/share/munin/plugins/sensors_ /etc/munin/plugins/sensors_volt
 ```
 
-I sometimes have a Fail2Ban deamon running on a server, so that's a good thing to monitor it:
+I sometimes have a Fail2Ban daemon running on a server, so that's a good thing to monitor it:
 
 ```shell-session
 $ ln -s /usr/share/munin/plugins/fail2ban /etc/munin/plugins/

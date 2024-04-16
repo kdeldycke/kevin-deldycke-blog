@@ -42,7 +42,7 @@ deploy-server = trac.example.net
 [my-trac]
 recipe = pbp.recipe.trac
 project-name = My Trac instance
-project-description = This is my stand-alone Trac instance hosting my devlopment activities.
+project-description = This is my stand-alone Trac instance hosting my development activities.
 project-url = http://${buildout:deploy-server}:8000/my-trac
 repos = my-repo-1 | svn | ${buildout:directory}/repos/my-repo-1 | svn://${buildout:deploy-server}:3690/my-repo-1
         my-repo-2 | svn | ${buildout:directory}/repos/my-repo-2 | svn://${buildout:deploy-server}:3690/my-repo-2

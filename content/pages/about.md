@@ -48,7 +48,7 @@ The most relevant experience was in [growing a team from 0 to 12](https://devtom
 
 - 👔 [VP of Engineering at Scaleway](https://devtomanager.com/interviews/kevin-deldycke/) (Developer to Manager, 2020) - In which I go back on my career transition from Software Developer to Enginneering Manager, and growing a team from 0 to 12 to care about a critical part of a cloud provider.
 
-- 🧘‍♂️ [Bien-être au travail](https://putaindecode.io/podcasts/s01e09-dotjs-react-native-bien-etre-au-travail) (Putain de code, S01E09, 2018) - I was invited in this French podcast to discuss well-being at work. Sounds dull, but it was a great oportunity for the hosts to share their personal anecdotes and stories on the job, and for me to comment on my first few months as a rookie manager.
+- 🧘‍♂️ [Bien-être au travail](https://putaindecode.io/podcasts/s01e09-dotjs-react-native-bien-etre-au-travail) (Putain de code, S01E09, 2018) - I was invited in this French podcast to discuss well-being at work. Sounds dull, but it was a great opportunity for the hosts to share their personal anecdotes and stories on the job, and for me to comment on my first few months as a rookie manager.
 
 - 🤿 [Take a Plunge Into One of the World's Deepest Indoor Swimming Pool](https://venuereport.com/blog/take-a-plunge-into-one-of-the-world-s-deepest-indoor-swimming-pool/) (The Venue
   Report, 2017) - A quick recap on how I entered the world of scuba diving, following by my experience at *Nemo 33*.

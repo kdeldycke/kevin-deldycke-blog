@@ -8,7 +8,7 @@ tags: CLI, lint, Linux, OpenERP, xml, XSLT, ERP
 Based on internal metrics, half of the OpenERP custom code I produce for my
 customers is Python. The other half is XML (_sigh_).
 
-If Python is well-equiped to enforce coding styles (thanks to
+If Python is well-equipped to enforce coding styles (thanks to
 [pep8](https://pypi.python.org/pypi/pep8),
 [pyflakes](https://pypi.python.org/pypi/pyflakes),
 [pylint](https://pypi.python.org/pypi/pylint) and

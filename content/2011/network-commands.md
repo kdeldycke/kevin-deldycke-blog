@@ -13,7 +13,7 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, dri
   $ iwlist wlan0 scanning | grep ESSID
   ```
 
-- Get some informations about open ports:
+- Get some information about open ports:
 
   ```shell-session
   $ netstat --taupen
@@ -26,7 +26,7 @@ tags: bind, dig, dns, iwlist, Linux, lsof, netstat, Network, wifi, wireless, dri
   $ watch -n 1 "lsof -i"
   ```
 
-- Reboot machine if the `192.168.0.254` host doesn't reply to at least one ping after 15 attemps or 600 seconds:
+- Reboot machine if the `192.168.0.254` host doesn't reply to at least one ping after 15 attempts or 600 seconds:
 
   ```shell-session
   $ ping -c 15 -o -t 600 192.168.0.254 || shutdown -r now

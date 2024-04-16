@@ -117,7 +117,7 @@ $ git tag -f "0.9.1"  e483fd1a287fa86a8b12d088b78a319b0990e6ef
 $ git tag -f "0.10.0" ed77af77506836892be78044ae4ef15d07f18583
 ```
 
-FTT was always developed as an internal app. As such the code and its history still contain lots of sensible informations. I deeply audited the code to identify the kind of data that we should absolutely not disclose to the outside world.
+FTT was always developed as an internal app. As such the code and its history still contain lots of sensible information. I deeply audited the code to identify the kind of data that we should absolutely not disclose to the outside world.
 
 At the end of this code review, I just found references to our internal architecture (server's names and IP addresses), and some usernames and passwords. There was also some logs and temporary files. I cleaned them all with the following set of Git commands:
 

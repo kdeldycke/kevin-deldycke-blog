@@ -40,7 +40,7 @@ $ fdisk -l /dev/sdb
 $ fdisk -l /dev/sdc
 ```
 
-"Linux raid partitions" (type code "`fd`") are still there. Good. I assumed here that disks where not physically damaged. Maybe I should have looked at [S.M.A.R.T.](https://en.wikipedia.org/wiki/Self-Monitoring,_Analysis,_and_Reporting_Technology) datas and statistics (via [smartmontools](https://smartmontools.sourceforge.net)). But remember, I'm lazy (and a bit crazy).
+"Linux raid partitions" (type code "`fd`") are still there. Good. I assumed here that disks where not physically damaged. Maybe I should have looked at [S.M.A.R.T.](https://en.wikipedia.org/wiki/Self-Monitoring,_Analysis,_and_Reporting_Technology) data and statistics (via [smartmontools](https://smartmontools.sourceforge.net)). But remember, I'm lazy (and a bit crazy).
 
 The next step was to get information about the RAID array itself using:
 

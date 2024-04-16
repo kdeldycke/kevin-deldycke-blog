@@ -16,7 +16,7 @@ As you can see in the changelog, it includes some additional features on the pro
 lots of third-party libraries updates:
 
 - Allow grouping of projects.
-- Add option to overide disclaimer notice.
+- Add option to override disclaimer notice.
 - Generate tags, categories and archives URLs depending on site configuration.
 - Sort out inactive projects to the bottom of the project list.
 - Drop support of old browsers.

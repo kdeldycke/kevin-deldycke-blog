@@ -9,7 +9,7 @@ In two words: `dhcp_client` sucks!
 
 And now the long story...
 
-Since the upgrade to Mandriva 2008.1, wifi stopped working on my laptop. I tried to install the 2008.1 on several machines. I tried to connect on different access points. I lowered security on the access point. I tried eveything. On desperation, I even tried to boot Windows to check that hardware was ok! And the only log I had was this:
+Since the upgrade to Mandriva 2008.1, wifi stopped working on my laptop. I tried to install the 2008.1 on several machines. I tried to connect on different access points. I lowered security on the access point. I tried everything. On desperation, I even tried to boot Windows to check that hardware was ok! And the only log I had was this:
 
 ```text
 SIOCETHTOOL: Operation not supported

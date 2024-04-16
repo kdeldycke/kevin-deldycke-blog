@@ -91,7 +91,7 @@ tags: certificate, CLI, HTML, KDE, konqueror, Linux, OpenSSL, RSA, SSL, wget, x5
 
 ## MIME type
 
-- List all the diferrent [media types (formerly known as MIME types)](https://www.iana.org/assignments/media-types/media-types.xhtml) of all the files in the `www` folder:
+- List all the different [media types (formerly known as MIME types)](https://www.iana.org/assignments/media-types/media-types.xhtml) of all the files in the `www` folder:
 
   ```shell-session
   $ find ./www -type f -exec file --mime-type -b "{}" \; | sort | uniq
