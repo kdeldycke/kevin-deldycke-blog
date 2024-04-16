@@ -140,6 +140,13 @@ default.extend-ignore-re = [
     #    |         ^^^
     #    |
     ' "dbe" ',
+    # error: `abitrate` should be `arbitrate`
+    #   --> ./content/2006/video-commands.md:297:140
+    #     |
+    # 297 |   $ mencoder source.avi -ovc lavc -oac lavc -ffourcc DX50 -lavcopts vcodec=mpeg4:vbitrate=400:v4mv:mbd=2:trell:autoaspect:dia=2:acodec=mp3:abitrate=32:vpass=1 -vf hqdn3d -o output.avi
+    #     |                                                                                                                                            ^^^^^^^^
+    #     |
+    ":abitrate=",
 ] # Sections of text to ignore.
 # Exclude French articles.
 files.extend-exclude = [
