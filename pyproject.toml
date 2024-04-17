@@ -61,14 +61,6 @@ default.extend-ignore-re = [
     #    |
     # Issue reported at: https://github.com/crate-ci/typos/issues/642#issuecomment-2058343059
     "!ba;",
-    # error: `BA` should be `BY`, `BE`
-    #   --> ./content/2020/nas-hardware.md:320:146
-    #     |
-    # 320 | | Heatsink + Fan | [Noctua NH-L9i](https://amzn.com/B07Y892M38/?tag=kevideld-20) | [65 W](https://noctua.at/en/nh_l9i_tdp_guidelines) |    23.6 dBA | 57.5 m³/h |              | €49.90 | Current cooler for reference. Shipped with paste. |
-    #     |                                                                                                                                                  ^^
-    #     |
-    # Issue reported at: https://github.com/crate-ci/typos/issues/997
-    " dBA ",
     # error: `classe` should be `class`, `classes`
     #   --> ./content/2010/convert-lotus-notes-nsf-files-mbox-nlconverter.md:120:77
     #     |
