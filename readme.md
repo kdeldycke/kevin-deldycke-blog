@@ -59,6 +59,11 @@ Then go to [http://localhost:8000](http://localhost:8000).
 - Re-use previous artworks from Maomium ?
 - Auto-enhance created thumbnails ? See: https://news.ycombinator.com/item?id=5999201
 
+## Dependencies
+
+```mermaid assets/dependencies.mmd
+```
+
 ## License
 
 The content of this repository is copyrighted (c) 2004-2020 Kevin Deldycke.
