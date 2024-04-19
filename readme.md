@@ -61,7 +61,7 @@ Then go to [http://localhost:8000](http://localhost:8000).
 
 ## Dependencies
 
-```mermaid assets/dependencies.mmd
+```mermaid docs/assets/dependencies.mmd
 ```
 
 ## License
