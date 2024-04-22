@@ -38,7 +38,7 @@ jobs:
           poetry run pelican --verbose ./content
 
   test-redirects:
-    name: Test redirect rules in production
+    name: Redirect rules test in production
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4.1.2
