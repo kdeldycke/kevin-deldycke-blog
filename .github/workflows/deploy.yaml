@@ -9,6 +9,7 @@ name: Deploy
       - "content/**"
       - "*.py"
       - "pyproject.toml"
+      - "wrangler.toml"
       - ".github/workflows/deploy.yaml"
 
 jobs:
