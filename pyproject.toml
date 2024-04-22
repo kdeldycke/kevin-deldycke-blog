@@ -37,7 +37,12 @@ pelican-neighbors = "^1.2.0"
 #gensim = "^4.3.0"  # XXX Broken!
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^1.2"
+mypy = "^1.9.0"
+pytest = "^8.1.1"
+# More pytest plugins at: https://docs.pytest.org/en/latest/reference/plugin_list.html
+pytest-github-actions-annotate-failures = "^0.2.0"
+pytest-randomly = "^3.12.0"
+requests = "^2.31.0"
 
 [tool.mypy]
 warn_unused_configs = true
@@ -50,6 +55,11 @@ pretty = true
 [[tool.mypy.overrides]]
 ignore_missing_imports = true
 module = []
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/latest/customize.html#pyproject-toml
+addopts = "--durations=10"
+xfail_strict = true
 
 [tool.typos]
 default.extend-ignore-re = [
