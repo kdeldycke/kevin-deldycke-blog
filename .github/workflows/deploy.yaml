@@ -38,6 +38,7 @@ jobs:
         run: |
           poetry run pelican --verbose --settings ./publishconf.py ./content
       - name: "XXX Temporarily remove files >25 MiB"
+        # See: https://developers.cloudflare.com/pages/get-started/direct-upload/#limits
         run: |
           rm -f ./output/2020/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu
       - name: Publish
