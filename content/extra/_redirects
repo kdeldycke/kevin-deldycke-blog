@@ -79,6 +79,7 @@
 /uploads/*                  /:splat                 301
 
 # Old content moved on other platforms.
+# See: https://web.archive.org/web/20110316233704/https://kevin.deldycke.com/2007/02/repository-moved-thanks-to-apache-and-301-redirections/
 /mandriva-rpm-repository    https://github.com/kdeldycke/mandriva-specs
 /mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
 /static/repository          https://github.com/kdeldycke/mandriva-specs
