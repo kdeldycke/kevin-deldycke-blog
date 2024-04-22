@@ -37,9 +37,6 @@ jobs:
       - name: Generate static content
         run: |
           poetry run pelican --verbose --settings ./publishconf.py ./content
-      - name: Install Cloudflare CLI
-        run: |
-          npm install -g wrangler
       - name: "XXX Temporarily remove files >25 MiB"
         run: |
           rm -f ./output/2020/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu
@@ -51,3 +48,4 @@ jobs:
           projectName: "kevin-deldycke-blog"
           directory: "output"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: latest
