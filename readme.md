@@ -51,13 +51,28 @@ Then go to [http://localhost:8000](http://localhost:8000).
 
 ### Content
 
-- Get rid of /year/month/ for articles ? Or get rid of month only ?
-- Reuse edit link logic from https://github.com/pmclanahan/pelican-edit-url ?
+- Use ML to produce article's summaries.
+- Renders disqus comments as static content for SEO? => https://github.com/getpelican/pelican-plugins/tree/maste-disqus_static
+- https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags
+- https://github.com/getpelican/pelican-plugins/tree/master/post_stats
+- https://github.com/getpelican/pelican-plugins/tree/master/filetime_from_git
+- https://elegant.oncrashreboot.com/amazon-bestazon
+- https://elegant.oncrashreboot.com/amazon-onelink
+- dark theme? https://github.com/alexandrevicenzi/Flex/blob/bbf47fe35473774d8a41478523cf4d3b21268e35/templates/base.html#L31-L44
+
+### Plugins
+
+- clean_summary
+- https://github.com/getpelican/pelican-plugins/tree/master/representative_image
+- https://github.com/jhshi/pelican.plugins.post_revision
 
 ### Theme
 
 - Re-use previous artworks from Maomium ?
 - Auto-enhance created thumbnails ? See: https://news.ycombinator.com/item?id=5999201
+- Use https://github.com/getpelican/pelican-plugins/tree/master/footer_insert
+  to add generation time / git SHA / github action workflow debug info to
+  each HTML file?
 
 ## Dependencies
 
