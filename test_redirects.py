@@ -21,6 +21,9 @@ See: https://developers.cloudflare.com/pages/configuration/redirects/
 
 from __future__ import annotations
 
+import random
+import re
+import string
 from collections import Counter
 from enum import Enum
 from typing import Iterator
@@ -28,8 +31,14 @@ from typing import Iterator
 import pytest
 import requests
 
-ROOT_URL = "https://kevin.deldycke.com"
+DOMAIN = "deldycke.com"
+SUB_DOMAIN = f"kevin.{DOMAIN}"
+ROOT_URL = f"https://{SUB_DOMAIN}"
 REDIRECT_FILE = "content/extra/_redirects"
+
+
+validate_placeholder = re.compile(r":[A-Za-z]\w*").match
+""" Regular expression to validate placeholder IDs in paths."""
 
 
 def get_redirect_rules() -> Iterator[tuple[str, str, int]]:
@@ -43,9 +52,8 @@ def get_redirect_rules() -> Iterator[tuple[str, str, int]]:
 
         # Validate rule.
         params = line.split()
-        assert len(params) in (
-            2,
-            3,
+        assert (
+            2 <= len(params) <= 3
         ), f"Redirect rule must have 2 or 3 parameters: {line}"
 
         # Validate source.
@@ -55,14 +63,12 @@ def get_redirect_rules() -> Iterator[tuple[str, str, int]]:
         # Validate destination.
         destination = params[1]
         assert destination.startswith("/") or destination.startswith(
-            "https://"
-        ), f"Destination must be a file path or an absolute URL: {destination}"
+            "https://"  # XXX Only support HTTPs URLs.
+        ), f"Destination must be a file path or an absolute HTTPs URL: {destination}"
 
         # Validate code. Defaults to 302 if not provided.
         if len(params) == 3:
-            assert params[
-                2
-            ].isdigit(), f"HTTP status code must be an integer: {params[2]}"
+            assert params[2].isdigit(), f"HTTP code must be an integer: {params[2]}"
             code = int(params[2])
         else:
             code = 302
@@ -77,25 +83,42 @@ class CAT(Enum):
     WILDCARD = "wildcard"
     SPLAT = "splat"
     PLACEHOLDER = "placeholder"
-    FRAGMENT = "fragment"
     QUERY = "query"
+    FRAGMENT = "fragment"
     EXTERNAL = "external"
 
 
-def split_path(path: str) -> list[tuple[str, CAT]]:
-    """Split a path into its components and classify them."""
+def split_path(url: str) -> list[tuple[str, CAT]]:
+    """Split an URL into its components and classify them.
+
+    Accept both absolute and relative URLs.
+    """
     items = []
 
-    if path.startswith("https://"):
-        return [(path, CAT.EXTERNAL)]
+    # Extract the path from the URL.
+    path: str
+    # URL is absolute, separate the host from the path.
+    if url.startswith("https://"):
+        elements = url.split("/", 3)
+        url_root = "/".join(elements[:3])
+        items.append((url_root, CAT.EXTERNAL))
+        if len(elements) > 3:
+            path = elements[3]
 
+    # URL is relative, so it is only a path.
+    else:
+        # Remove the leading slash, like we do for absolute URLs above.
+        assert url.startswith("/"), "Relative path are supposed to start with a slash."
+        path = url[1:]
+
+    # Split the path into its components.
     for item in path.split("/"):
         if item == "*":
             cat = CAT.WILDCARD
         elif item == ":splat":
             cat = CAT.SPLAT
         elif item.startswith(":"):
-            assert item[1:].isidentifier()
+            assert validate_placeholder(item)
             cat = CAT.PLACEHOLDER
         elif item.startswith("#"):
             cat = CAT.FRAGMENT
@@ -108,7 +131,7 @@ def split_path(path: str) -> list[tuple[str, CAT]]:
                     key, value = param.split("=", 1)
                     assert key.isalnum()
                     if value.startswith(":"):
-                        assert item[1:].isidentifier()
+                        assert validate_placeholder(item)
                         cat = CAT.PLACEHOLDER
                         break
         else:
@@ -120,16 +143,47 @@ def split_path(path: str) -> list[tuple[str, CAT]]:
     return items
 
 
-def generate_test_cases():
+def create_case(src: str, dest: str, rule_src: str, rule_dest: str, rule_code: int):
+    return pytest.param(
+        src,
+        dest,
+        rule_code,
+        id=f"{src} -> {dest} | rule: {rule_src} {rule_dest} {rule_code}",
+    )
+
+
+def fixture_url(path: str, path_items: list[tuple[str, CAT]], path_categories) -> str:
+    """Generate a real, fully qualified URL that can be used as a fixture.
+
+    Replace placeholders with random strings.
+    """
+    items = []
+    for item, cat in path_items:
+        if cat == CAT.PLACEHOLDER:
+            items.append("".join(random.choices(string.ascii_letters, k=10)))
+        else:
+            items.append(item)
+
+    # Prepend the root URL if the path is not an absolute URL.
+    if not path_items or path_items[0][1] != CAT.EXTERNAL:
+        items.insert(0, ROOT_URL)
+
+    return "/".join(items)
+
+
+def cases_from_rules():
     """Parse redirect rules and generate test cases."""
     total_static = 0
     total_dynamic = 0
 
     for source, destination, code in get_redirect_rules():
-        # Validate the categories of the source path.
+        # Categorize each item in the source and destination paths.
         src_items = split_path(source)
+        dest_items = split_path(destination)
         src_categories = Counter(category for _, category in src_items)
+        dest_categories = Counter(category for _, category in dest_items)
 
+        # Validate the categories of the source path.
         assert {
             CAT.STATIC,
             CAT.WILDCARD,
@@ -137,56 +191,46 @@ def generate_test_cases():
         }.issuperset(
             src_categories
         ), f"Source path only allows wildcards, placeholders and static items: {src_items}"
-
         assert (
             src_categories[CAT.WILDCARD] <= 1
         ), f"Source path is not allowed to have multiple wildcards: {src_items}"
 
         # Validate the categories of the destination path.
-        dest_items = split_path(destination)
-        dest_categories = Counter(category for _, category in dest_items)
-
         assert CAT.WILDCARD not in set(
             dest_categories
         ), f"Destination path is not allowed to have wildcards: {dest_items}"
 
-        static_categories = {CAT.STATIC, CAT.EXTERNAL}
-        if static_categories.issuperset(
-            src_categories
-        ) and static_categories.issuperset(dest_categories):
+        # The rule is considered static only if both the source and destination paths
+        # are composed of static items.
+        if {CAT.STATIC, CAT.EXTERNAL}.issuperset((*src_categories, *dest_categories)):
             total_static += 1
+
+            src = fixture_url(source, src_items, src_categories)
+            dest = fixture_url(destination, dest_items, dest_categories)
+
+            # Generate a unique test case.
+            yield create_case(src, dest, source, destination, code)
+
+        # The rule is dynamic, so we need to generate multiple test cases.
         else:
             total_dynamic += 1
-            # TODO: generate dynamic cases for dynamic redirects.
-            continue
-
-        src = f"{ROOT_URL}{source}"
-
-        if CAT.EXTERNAL in dest_categories:
-            dest = destination
-        else:
-            dest = f"{ROOT_URL}{destination}"
-
-        yield pytest.param(
-            src,
-            dest,
-            code,
-            id=f"{src} -> {dest} | rule: {source} {destination} {code}",
-        )
 
     assert total_static <= 2000, "Too many static redirects."
     assert total_dynamic <= 100, "Too many dynamic redirects."
 
 
-@pytest.mark.parametrize(("source", "destination", "code"), generate_test_cases())
-def test_permanent_redirects(source, destination, code):
-    # Check destination is normalized to have no trailing slash.
-    # assert not source.endswith("/")
-    # assert destination == "/" or not destination.endswith("/")
-
+@pytest.mark.parametrize(
+    ("source", "destination", "code"),
+    cases_from_rules(),
+)
+def test_redirects(source, destination, code):
     with requests.get(source) as response:
-        # The final destination is an existing page that we expect.
+        # The final destination exists.
         assert response.ok
+
+        # Python's requests library always normalize URLs to have no trailing slash.
+        if destination == ROOT_URL:
+            destination = f"{ROOT_URL}/"
         assert response.url == destination
 
         # Check there's only one redirect, meaning that our redirect rules are optimized.

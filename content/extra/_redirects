@@ -17,8 +17,8 @@
 /category/lang          /categories            301
 /category/lang/         /categories            301
 # Empty subfolders that have a dedicated canonical page.
-# /category       /categories    301
-# /category/      /categories    301
+/category       /categories    301
+/category/      /categories    301
 
 # Empty subfolders that have a dedicated canonical page.
 /tag            /tags          301
@@ -91,7 +91,8 @@
 /mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
 /static/repository          https://github.com/kdeldycke/mandriva-specs
 /static/repository/*        https://github.com/kdeldycke/mandriva-specs
-/video/                     https://www.youtube.com/channel/UCW0k7La7M8q-_yp3RYfNhFw/
+/video                      https://www.youtube.com/@kdeldycke/videos
+/video/                     https://www.youtube.com/@kdeldycke/videos
 
 # Site-wide comments feeds moved to Disqus.
 /comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss
