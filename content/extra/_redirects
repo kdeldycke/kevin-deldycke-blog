@@ -9,16 +9,16 @@
 /theme/         /   301
 
 # Map old WordPress categories to new Pelican ones.
-/category/lang/en       /category/english/      301
-/category/lang/en/*     /category/english/      301
-/category/lang/fr       /category/francais/     301
-/category/lang/fr/*     /category/francais/     301
-# Hierarchical categories are not supported by Pelican.
-/category/lang          /categories            301
-/category/lang/         /categories            301
-# Empty subfolders that have a dedicated canonical page.
-/category       /categories    301
-/category/      /categories    301
+# /category/lang/en       /category/english/      301
+# /category/lang/en/*     /category/english/      301
+# /category/lang/fr       /category/francais/     301
+# /category/lang/fr/*     /category/francais/     301
+# # Hierarchical categories are not supported by Pelican.
+# /category/lang          /categories            301
+# /category/lang/         /categories            301
+# # Empty subfolders that have a dedicated canonical page.
+# /category       /categories    301
+# /category/      /categories    301
 
 # Empty subfolders that have a dedicated canonical page.
 /tag            /tags          301
@@ -111,7 +111,7 @@
 /*/feed/index/              /:splat/feed.rss       301
 
 # Pagination for categories and tags was disabled.
-/category/:category_id/page/*   /category/:category_id/ 301
+# /category/:category_id/page/*   /category/:category_id/ 301
 /tag/:tag_id/page/*             /tag/:tag_id/           301
 
 
