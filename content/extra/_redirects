@@ -8,6 +8,9 @@
 /theme          /   301
 /theme/         /   301
 
+# Map old WordPress categories to new Pelican ones.
+/category/lang/en       /category/english/      301
+/category/lang/fr       /category/francais/     301
 
 # Empty subfolders that have a dedicated canonical page.
 /tag            /tags          301
