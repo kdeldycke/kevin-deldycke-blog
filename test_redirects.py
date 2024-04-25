@@ -23,9 +23,9 @@ from __future__ import annotations
 
 import random
 import re
-import string
 from collections import Counter
 from enum import Enum
+from string import ascii_letters, digits
 from typing import Iterator
 
 import pytest
@@ -140,6 +140,12 @@ def split_path(url: str) -> list[tuple[str, CAT]]:
 
         items.append((item, cat))
 
+    # A placeholder can only appear once in a path.
+    placeholders = Counter(ph for ph, cat in items if cat == CAT.PLACEHOLDER)
+    assert all(
+        count == 1 for count in placeholders.values()
+    ), f"Duplicate placeholders in path: {set(ph for ph, count in placeholders.items() if count > 1)}"
+
     return items
 
 
@@ -152,6 +158,10 @@ def create_case(src: str, dest: str, rule_src: str, rule_dest: str, rule_code: i
     )
 
 
+def random_str() -> str:
+    return "".join(random.choices(ascii_letters + digits, k=10))
+
+
 def fixture_url(path: str, path_items: list[tuple[str, CAT]], path_categories) -> str:
     """Generate a real, fully qualified URL that can be used as a fixture.
 
@@ -160,7 +170,7 @@ def fixture_url(path: str, path_items: list[tuple[str, CAT]], path_categories) -
     items = []
     for item, cat in path_items:
         if cat == CAT.PLACEHOLDER:
-            items.append("".join(random.choices(string.ascii_letters, k=10)))
+            items.append(random_str())
         else:
             items.append(item)
 
@@ -196,9 +206,14 @@ def cases_from_rules():
         ), f"Source path is not allowed to have multiple wildcards: {src_items}"
 
         # Validate the categories of the destination path.
-        assert CAT.WILDCARD not in set(
-            dest_categories
+        assert (
+            CAT.WILDCARD not in dest_categories
         ), f"Destination path is not allowed to have wildcards: {dest_items}"
+
+        # Splat without a wildcard is not allowed.
+        assert not (
+            CAT.SPLAT in dest_categories and CAT.WILDCARD not in src_categories
+        ), f"Source path is missing wildcard for splat placeholder to work: {src_items} -> {dest_items}"
 
         # The rule is considered static only if both the source and destination paths
         # are composed of static items.
