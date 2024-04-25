@@ -11,6 +11,9 @@
 # Map old WordPress categories to new Pelican ones.
 /category/lang/en       /category/english/      301
 /category/lang/fr       /category/francais/     301
+# Hierarchical categories are not supported by Pelican.
+/category/lang          /categories            301
+/category/lang/         /categories            301
 # Empty subfolders that have a dedicated canonical page.
 /category       /categories    301
 /category/      /categories    301
