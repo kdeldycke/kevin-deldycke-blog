@@ -233,7 +233,8 @@ def test_redirects(source, destination, code):
             destination = f"{ROOT_URL}/"
         assert response.url == destination
 
-        # Check there's only one redirect, meaning that our redirect rules are optimized.
+        # Check there's only one redirect, meaning that our redirect rules are
+        # optimized.
         assert len(response.history) == 1
         assert response.history[0].status_code == code
         if code == 301:
