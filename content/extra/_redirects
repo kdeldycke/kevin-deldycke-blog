@@ -10,7 +10,9 @@
 
 # Map old WordPress categories to new Pelican ones.
 /category/lang/en       /category/english/      301
+/category/lang/en/*     /category/english/      301
 /category/lang/fr       /category/francais/     301
+/category/lang/fr/*     /category/francais/     301
 # Hierarchical categories are not supported by Pelican.
 /category/lang          /categories            301
 /category/lang/         /categories            301
@@ -155,7 +157,7 @@
 # Catch-all redirects that are too wide and must be applied last.
 ################################################################################
 # Articles URLs have been simplified to remove the month subfolder.
-/:year/:month/:slug/    /:year/:slug    301
+# /:year/:month/:slug/    /:year/:slug    301
 
 # Monthly archives have been removed.
-/:year/:month/          /:year/         301
+# /:year/:month/          /:year/         301
