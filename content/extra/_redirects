@@ -108,6 +108,10 @@
 /*/feed/                    /:splat/feed.rss       301
 /*/feed/index/              /:splat/feed.rss       301
 
+# Pagination for categories and tags was disabled.
+/category/:category_id/page/*   /category/:category_id/ 301
+/tag/:tag_id/page/*             /tag/:tag_id/           301
+
 
 ################################################################################
 # Old WordPress URLs
