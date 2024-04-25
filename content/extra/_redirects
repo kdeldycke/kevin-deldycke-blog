@@ -154,10 +154,41 @@
 
 
 ################################################################################
-# Catch-all redirects that are too wide and must be applied last.
+# Blog posts reorganization.
+# We have to specify all active years to prevent these rules to be too generic and catch other URLs.
 ################################################################################
 # Articles URLs have been simplified to remove the month subfolder.
-# /:year/:month/:slug/    /:year/:slug    301
+/2004/:month/:slug/     /2004/:slug     301
+/2005/:month/:slug/     /2005/:slug     301
+/2006/:month/:slug/     /2006/:slug     301
+/2007/:month/:slug/     /2007/:slug     301
+/2008/:month/:slug/     /2008/:slug     301
+/2009/:month/:slug/     /2009/:slug     301
+/2010/:month/:slug/     /2010/:slug     301
+/2011/:month/:slug/     /2011/:slug     301
+/2012/:month/:slug/     /2012/:slug     301
+/2013/:month/:slug/     /2013/:slug     301
+/2014/:month/:slug/     /2014/:slug     301
+/2015/:month/:slug/     /2015/:slug     301
+/2016/:month/:slug/     /2016/:slug     301
+/2017/:month/:slug/     /2017/:slug     301
+/2019/:month/:slug/     /2019/:slug     301
+/2020/:month/:slug/     /2020/:slug     301
 
 # Monthly archives have been removed.
-# /:year/:month/          /:year/         301
+/2004/:month/           /2004/          301
+/2005/:month/           /2005/          301
+/2006/:month/           /2006/          301
+/2007/:month/           /2007/          301
+/2008/:month/           /2008/          301
+/2009/:month/           /2009/          301
+/2010/:month/           /2010/          301
+/2011/:month/           /2011/          301
+/2012/:month/           /2012/          301
+/2013/:month/           /2013/          301
+/2014/:month/           /2014/          301
+/2015/:month/           /2015/          301
+/2016/:month/           /2016/          301
+/2017/:month/           /2017/          301
+/2019/:month/           /2019/          301
+/2020/:month/           /2020/          301
