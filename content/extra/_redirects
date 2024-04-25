@@ -129,10 +129,10 @@
 
 
 # Yearly and monthly archives are no longer paginated.
-/:year/page            /:year/          301
-/:year/page/*          /:year/          301
-/:year/:month/page     /:year/:month/   301
-/:year/:month/page/*   /:year/:month/   301
+/:year/page            /:year/   301
+/:year/page/*          /:year/   301
+/:year/:month/page     /:year/   301
+/:year/:month/page/*   /:year/   301
 
 # WordPress made a distinction between RSS 1.0, RSS 2.0 and RDF feeds while Pelican doesn't.
 /*/feed/rss     /:splat/feed.rss   301
