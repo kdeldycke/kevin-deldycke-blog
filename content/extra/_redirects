@@ -125,6 +125,13 @@
 /author                 /                       301
 /author/*               /                       301
 
+
+# Yearly and monthly archives are no longer paginated.
+/:year/page            /:year/          301
+/:year/page/*          /:year/          301
+/:year/:month/page     /:year/:month/   301
+/:year/:month/page/*   /:year/:month/   301
+
 # WordPress made a distinction between RSS 1.0, RSS 2.0 and RDF feeds while Pelican doesn't.
 /*/feed/rss     /:splat/feed.rss   301
 /*/feed/rss/    /:splat/feed.rss   301
@@ -143,3 +150,12 @@
 /wordpress-stuff    /themes                                 301
 /wordpress-stuff/*  /themes                                 301
 
+
+################################################################################
+# Catch-all redirects that are too wide and must be applied last.
+################################################################################
+# Articles URLs have been simplified to remove the month subfolder.
+/:year/:month/:slug/    /:year/:slug    301
+
+# Monthly archives have been removed.
+/:year/:month/          /:year/         301
