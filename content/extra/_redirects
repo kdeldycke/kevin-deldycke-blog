@@ -158,29 +158,29 @@
 # We have to specify all active years to prevent these rules to be too generic and catch other URLs.
 ################################################################################
 # Monthly archives have been removed.
-/:year/01/          /:year/         301
-/:year/02/          /:year/         301
-/:year/03/          /:year/         301
-/:year/04/          /:year/         301
-/:year/05/          /:year/         301
-/:year/06/          /:year/         301
-/:year/07/          /:year/         301
-/:year/08/          /:year/         301
-/:year/09/          /:year/         301
-/:year/10/          /:year/         301
-/:year/11/          /:year/         301
-/:year/12/          /:year/         301
+/:year/01       /:year/         301
+/:year/02       /:year/         301
+/:year/03       /:year/         301
+/:year/04       /:year/         301
+/:year/05       /:year/         301
+/:year/06       /:year/         301
+/:year/07       /:year/         301
+/:year/08       /:year/         301
+/:year/09       /:year/         301
+/:year/10       /:year/         301
+/:year/11       /:year/         301
+/:year/12       /:year/         301
 
 # Articles URLs have been simplified to remove the month subfolder.
-/:year/01/:slug/    /:year/:slug    301
-/:year/02/:slug/    /:year/:slug    301
-/:year/03/:slug/    /:year/:slug    301
-/:year/04/:slug/    /:year/:slug    301
-/:year/05/:slug/    /:year/:slug    301
-/:year/06/:slug/    /:year/:slug    301
-/:year/07/:slug/    /:year/:slug    301
-/:year/08/:slug/    /:year/:slug    301
-/:year/09/:slug/    /:year/:slug    301
-/:year/10/:slug/    /:year/:slug    301
-/:year/11/:slug/    /:year/:slug    301
-/:year/12/:slug/    /:year/:slug    301
+/:year/01/*     /:year/:splat   301
+/:year/02/*     /:year/:splat   301
+/:year/03/*     /:year/:splat   301
+/:year/04/*     /:year/:splat   301
+/:year/05/*     /:year/:splat   301
+/:year/06/*     /:year/:splat   301
+/:year/07/*     /:year/:splat   301
+/:year/08/*     /:year/:splat   301
+/:year/09/*     /:year/:splat   301
+/:year/10/*     /:year/:splat   301
+/:year/11/*     /:year/:splat   301
+/:year/12/*     /:year/:splat   301
