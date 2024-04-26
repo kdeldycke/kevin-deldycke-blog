@@ -75,7 +75,7 @@
 /static/documents           /                       301
 /static/documents/*         /documents/:splat       301
 /static/uploads             /                       301
-/static/uploads/*           /uploads/:splat         301
+/static/uploads/*           /:splat                 301
 
 # Removal of month in uploads URLs. This works because all filenames are unique.
 # See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/a4a6454
