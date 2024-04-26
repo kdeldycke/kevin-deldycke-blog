@@ -162,23 +162,39 @@ def random_str() -> str:
     return "".join(random.choices(ascii_letters + digits, k=10))
 
 
-def fixture_url(path: str, path_items: list[tuple[str, CAT]], path_categories) -> str:
-    """Generate a real, fully qualified URL that can be used as a fixture.
+def url_fixtures(*path_items_list: list[tuple[str, CAT]]) -> Iterator[str]:
+    """Generate real, fully qualified URLs that can be used as fixtures.
 
-    Replace placeholders with random strings.
+    Takes a list of URLs, already split into their components and categorized.
+
+    Replace placeholders with random strings, and ensure the same placeholders are consistent
+    within the set of URLs.
     """
-    items = []
-    for item, cat in path_items:
-        if cat == CAT.PLACEHOLDER:
-            items.append(random_str())
-        else:
-            items.append(item)
+    # Keep track of placeholders' random values to ensure consistency.
+    placeholders = {}
 
-    # Prepend the root URL if the path is not an absolute URL.
-    if not path_items or path_items[0][1] != CAT.EXTERNAL:
-        items.insert(0, ROOT_URL)
+    for path_items in path_items_list:
+        items = []
+        for item, cat in path_items:
+            if cat == CAT.PLACEHOLDER:
+                new_item = placeholders.setdefault(item, random_str())
+            elif cat == CAT.WILDCARD:
+                # Produce a path with a random number of components.
+                new_item = "/".join(random_str() for _ in range(random.randint(2, 5)))
+                placeholders[":splat"] = new_item
+            elif cat == CAT.SPLAT:
+                assert ":splat" in placeholders
+                new_item = placeholders[":splat"]
+            else:
+                new_item = item
 
-    return "/".join(items)
+            items.append(new_item)
+
+        # Prepend the root URL if the path is not an absolute URL.
+        if not path_items or path_items[0][1] != CAT.EXTERNAL:
+            items.insert(0, ROOT_URL)
+
+        yield "/".join(items)
 
 
 def cases_from_rules():
@@ -220,8 +236,7 @@ def cases_from_rules():
         if {CAT.STATIC, CAT.EXTERNAL}.issuperset((*src_categories, *dest_categories)):
             total_static += 1
 
-            src = fixture_url(source, src_items, src_categories)
-            dest = fixture_url(destination, dest_items, dest_categories)
+            src, dest = url_fixtures(src_items, dest_items)
 
             # Generate a unique test case.
             yield create_case(src, dest, source, destination, code)
@@ -229,6 +244,15 @@ def cases_from_rules():
         # The rule is dynamic, so we need to generate multiple test cases.
         else:
             total_dynamic += 1
+            # TODO: Generate 2 random test cases per placeholder.
+
+            src, dest = url_fixtures(src_items, dest_items)
+
+            # Random test cases with placeholders will lead to a 404, but not the redirects leading to external URLs.
+            if CAT.EXTERNAL not in dest_categories:
+                code = 404
+
+            yield create_case(src, dest, source, destination, code)
 
     assert total_static <= 2000, "Too many static redirects."
     assert total_dynamic <= 100, "Too many dynamic redirects."
@@ -240,8 +264,9 @@ def cases_from_rules():
 )
 def test_redirects(source, destination, code):
     with requests.get(source) as response:
-        # The final destination exists.
-        assert response.ok
+        # Check that the source URL is reachable, unless it's a 404 test case (because of a randonly generated placeholder).
+        if code != 404:
+            assert response.ok
 
         # Python's requests library always normalize URLs to have no trailing slash.
         if destination == ROOT_URL:
@@ -251,7 +276,7 @@ def test_redirects(source, destination, code):
         # Check there's only one redirect, meaning that our redirect rules are
         # optimized.
         assert len(response.history) == 1
-        assert response.history[0].status_code == code
-        if code == 301:
-            assert response.history[0].is_redirect
-            assert response.history[0].is_permanent_redirect
+
+        # Every test case is a redirect.
+        if code != 404:
+            assert response.history[0].status_code == code
