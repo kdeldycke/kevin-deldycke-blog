@@ -1,5 +1,33 @@
 # See redirect tutorial at: https://kevin.deldycke.com/2022/cloudflare-commands#pages-redirects
 
+# Empty subfolders roduced by Pelican and containing nothing.
+/extra          /   301
+/extra/         /   301
+/page           /   301
+/page/          /   301
+/theme          /   301
+/theme/         /   301
+
+# Map old WordPress categories to new Pelican ones.
+/category/lang/en       /category/english/      301
+/category/lang/en/*     /category/english/      301
+/category/lang/fr       /category/francais/     301
+/category/lang/fr/*     /category/francais/     301
+# Hierarchical categories are not supported by Pelican.
+/category/lang          /categories            301
+/category/lang/         /categories            301
+# Empty subfolders that have a dedicated canonical page.
+/category       /categories    301
+/category/      /categories    301
+
+# Empty subfolders that have a dedicated canonical page.
+/tag            /tags          301
+/tag/           /tags          301
+
+# The first pagination page doesn't exists.
+/page/1         /   301
+/page/1/        /   301
+
 
 # There used to be a /pages subfolder that contained all static pages.
 /pages                      /                       301
