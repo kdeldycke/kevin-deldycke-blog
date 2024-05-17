@@ -1,4 +1,11 @@
 
+# Yearly and monthly archives are no longer paginated.
+/:year/page            /:year/   301
+/:year/page/*          /:year/   301
+/:year/:month/page     /:year/   301
+/:year/:month/page/*   /:year/   301
+
+
 ################################################################################
 # Blog posts reorganization.
 # We have to specify all active years to prevent these rules to be too generic and catch other URLs.
