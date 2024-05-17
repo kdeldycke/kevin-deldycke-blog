@@ -67,6 +67,24 @@
 /documents      /   301
 /documents/     /   301
 
+# There used to be a /pages subfolder that contained all static pages.
+/pages                      /                       301
+/pages/*                    /:splat                 301
+
+# Removal of static subfolders: https://github.com/kdeldycke/kevin-deldycke-blog/commit/f91fdc7
+/static/documents           /                       301
+/static/documents/*         /documents/:splat       301
+/static/uploads             /                       301
+/static/uploads/*           /:splat                 301
+
+# Removal of month in uploads URLs. This works because all filenames are unique.
+# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/a4a6454
+/uploads/:year/:month/:slug /:year/:slug            301
+
+# Old yearly grouped upload folders were moved alongside articles.
+/uploads                    /                       301
+/uploads/*                  /:splat                 301
+
 # Old content moved on other platforms.
 # See: https://web.archive.org/web/20110316233704/https://kevin.deldycke.com/2007/02/repository-moved-thanks-to-apache-and-301-redirections/
 /mandriva-rpm-repository    https://github.com/kdeldycke/mandriva-specs
@@ -92,7 +110,22 @@
 /*/feed/                    /:splat/feed.rss       301
 /*/feed/index/              /:splat/feed.rss       301
 
+# Pagination for categories and tags was disabled.
+/category/:category_id/page/*   /category/:category_id/ 301
+/tag/:tag_id/page/*             /tag/:tag_id/           301
 
+
+################################################################################
+# Old WordPress URLs
+################################################################################
+# WordPress had a dedicated subfolder for content uploads.
+# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/418bf30
+/wp-content/uploads     /                   301
+/wp-content/uploads/*   /:splat             301
+
+# Worpress had default pages for each author.
+/author                 /                       301
+/author/*               /                       301
 
 # Yearly and monthly archives are no longer paginated.
 /:year/page            /:year/   301
@@ -117,7 +150,6 @@
 /linux-scripts/*    https://github.com/kdeldycke/scripts
 /wordpress-stuff    /themes                                 301
 /wordpress-stuff/*  /themes                                 301
-
 
 
 ################################################################################
