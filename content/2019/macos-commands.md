@@ -68,5 +68,11 @@ tags: CLI, macOS, Apple, OSX, PluginKit, TimeMachine, network, DNS, diskutil
   ```shell-session
   $ diskutil eraseVolume free free /dev/disk4s1
   ```
+  
+- List shared folders in iCloud:
+
+  ```shell-session
+  $ mdfind -onlyin "$HOME/Library/Mobile Documents/" 'kMDItemIsShared == 1'
+  ```
 
 - [Install Steam in a case-insensitive disk image](https://github.com/kdeldycke/dotfiles/blob/b711023285488f94fa0968a5ceff75c4322548bd/scripts/osx-install.sh#L149-L162).
