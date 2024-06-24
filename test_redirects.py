@@ -248,7 +248,8 @@ def cases_from_rules():
 
             src, dest = url_fixtures(src_items, dest_items)
 
-            # Random test cases with placeholders will lead to a 404, but not the redirects leading to external URLs.
+            # Random test cases with placeholders will lead to a 404, but not the
+            # redirects leading to external URLs.
             if CAT.EXTERNAL not in dest_categories:
                 code = 404
 
@@ -264,7 +265,8 @@ def cases_from_rules():
 )
 def test_redirects(source, destination, code):
     with requests.get(source) as response:
-        # Check that the source URL is reachable, unless it's a 404 test case (because of a randonly generated placeholder).
+        # Check that the source URL is reachable, unless it's a 404 test case
+        # (because of a randonly generated placeholder).
         if code != 404:
             assert response.ok
 
