@@ -63,7 +63,7 @@ Thanks for the kind words! That was one of the tiny design decision I made in th
 
 I was building a system in a domain for which transactions were basically invented. Try for instance explaining to customers that their credit cards got charged twice because of eventual consistency...
 
-Scaleway's ambition was to have datacenters all over the world (that's the reason I signed in). So how the codebase would behave in a massively distributed architecture? Time at that scale is hard. And it was at the root of everything, so I created that utility.
+Scaleway's ambition was to have datacenters all over the world (that's the reason I signed in). So how the codebase would behave in a massively distributed architecture? Time at that scale is hard. And it was at the root of everything, so I created that unique entry point to fetch a reliable timestamp.
 
 It was supposed to be a gateway to the local datacenter's GPS source, or a fancy atomic clock. I even fantasized having access to [TrueTime](https://cloud.google.com/spanner/docs/true-time-external-consistency)-like protocols (not even sure we even needed it). BTW, did you know [Google's TrueTime is staffed by 16 senior SREs](https://twitter.com/kdeldycke/status/1102172902995173376), which "*had take measures up to and including calling the USAF and telling them their satellites are fucked up*"?
 
