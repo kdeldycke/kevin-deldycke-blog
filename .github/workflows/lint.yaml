@@ -9,7 +9,7 @@ name: Lint
 jobs:
 
   lint:
-    uses: kdeldycke/workflows/.github/workflows/lint.yaml@v3.4.6
+    uses: kdeldycke/workflows/.github/workflows/lint.yaml@v4.1.4
 
   lint-html:
     # Provides hints to fix theme's templates.
@@ -20,21 +20,22 @@ jobs:
       - uses: actions/setup-python@v5.1.0
         with:
           python-version: "3.12"
-      - name: Install Pelican
+      - name: Install uv
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install --upgrade poetry
-          poetry install
+          python -m pip install -r https://raw.githubusercontent.com/kdeldycke/workflows/v4.1.4/requirements/uv.txt
+      - name: Install project
+        run: |
+          uv venv --system
+          uv pip install .
       - name: Install Stork
         run: |
           cargo install stork-search --locked
       - name: Build HTML pages
         run: |
-          poetry run pelican --verbose --settings ./publishconf.py ./content
+          uv run pelican --verbose --settings ./publishconf.py ./content
       - name: Install HTMLHint
         run: |
           sudo npm install htmlhint -g
-      - name: Lint
-        # Lint all HTML files but feed URLs.
+      - name: Lint all HTML files, ignore feeds
         run: |
           find ./output -type f -not -regex ".*\/feed\/.*" -and -iname "*.html" -exec htmlhint "{}" \;

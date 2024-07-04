@@ -1,49 +1,66 @@
-[tool.poetry]
-# Docs: https://python-poetry.org/docs/pyproject/
-package-mode = false
+[project]
+# Docs: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+name = "blog"
+version = "1.0.0"
+requires-python = ">= 3.12"
 description = "Kevin Deldycke's personal blog"
-license = 'CC-BY-NC-SA-4.0'
-authors = ["Kevin Deldycke <kevin@deldycke.com>"]
+license = { text = 'CC-BY-NC-SA-4.0' }
 readme = "readme.md"
-homepage = 'https://kevin.deldycke.com'
-repository = 'https://github.com/kdeldycke/kevin-deldycke-blog'
+keywords = ['blog', 'personal']
+classifiers = [
+    # See: https://pypi.org/pypi?%3Aaction=list_classifiers
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Web Environment',
+    'Framework :: Pelican',
+    'License :: Other/Proprietary License',
+    'Natural Language :: English',
+    'Natural Language :: French',
+    'Operating System :: OS Independent',
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Programming Language :: Other',
+    'Topic :: Internet :: WWW/HTTP :: Dynamic Content :: News/Diary',
+    'Topic :: Text Processing :: Markup :: HTML',
+    'Topic :: Text Processing :: Markup :: Markdown',
+    'Typing :: Typed',
+]
+dependencies = [
+    "pelican [Markdown] ~= 4.8.0",
+    "typogrify ~= 2.0.7",
+    "beautifulsoup4 ~= 4.9.3",
+    # "mdx_titlecase ~= 1.2.0",  # XXX Broken!
+    # XXX Use forked version of mdx-video plugin as the project is clearly unmaintained:
+    # https://github.com/italomaia/mdx-video/issues/14
+    # mdx-video is good enough for now. An alternative worth exploring in the furture is pymdown-extensions,
+    # which has an experimental generic directive feature (https://github.com/facelessuser/pymdown-extensions/pull/1777)
+    # in the work that could be used to implement video embeds (https://github.com/facelessuser/pymdown-extensions/issues/896#issuecomment-1207153095).
+    "mdx_video @ git+https://github.com/dtantsur/mdx-video.git@a358317fafbeb78622afe1c05e08986809005b3d",
+    # "plumage ~= 4.0.0",
+    "plumage @ git+https://github.com/kdeldycke/plumage.git@main",
+    # "plumage @ ../plumage", # XXX Dev!
+    "pelican-image-process ~= 3.0.3",
+    "pelican-seo ~= 1.2.2",
+    "pelican-search ~= 1.1.0",
+    # "pelican-similar-posts ~= 1.0.0",  # XXX Broken!
+    "pelican-sitemap ~= 1.0.2",
+    "pelican-neighbors ~= 1.2.0",
+    # "gensim ~= 4.3.0",  # XXX Broken!
+]
 
-[tool.poetry.urls]
+[project.optional-dependencies]
+test = [
+    "pytest ~= 8.2.2",
+    # More pytest plugins at: https://docs.pytest.org/en/latest/reference/plugin_list.html
+    "pytest-github-actions-annotate-failures ~= 0.2.0",
+    "pytest-randomly ~= 3.15.0",
+]
+typing = ["types-requests ~= 2.28.11.17"]
+
+[project.urls]
+"Homepage" = 'https://kevin.deldycke.com'
+"Repository" = 'https://github.com/kdeldycke/kevin-deldycke-blog'
 "Funding" = "https://github.com/sponsors/kdeldycke"
-
-[tool.poetry.dependencies]
-# List of python versions and their support status:
-# https://en.wikipedia.org/wiki/History_of_Python#Support
-python = "^3.12"
-pelican = { extras = ["Markdown"], version = "^4.8.0" }
-typogrify = "^2.0.7"
-beautifulsoup4 = "^4.9.3"
-# mdx_titlecase = "^1.2.0"  # XXX Broken!
-# XXX Use forked version of mdx-video plugin as the project is clearly unmaintained:
-# https://github.com/italomaia/mdx-video/issues/14
-# mdx-video is good enough for now. An alternative worth exploring in the furture is pymdown-extensions,
-# which has an experimental generic directive feature (https://github.com/facelessuser/pymdown-extensions/pull/1777)
-# in the work that could be used to implement video embeds (https://github.com/facelessuser/pymdown-extensions/issues/896#issuecomment-1207153095).
-mdx_video = { git = "https://github.com/dtantsur/mdx-video.git", rev = "a358317fafbeb78622afe1c05e08986809005b3d" }
-# plumage = "^4.0.0"
-plumage = { git = "https://github.com/kdeldycke/plumage.git", branch = "main" }
-# plumage = { path = "../plumage/", develop = false } # XXX Dev!
-pelican-image-process = "^3.0.3"
-pelican-seo = "^1.2.2"
-pelican-search = "^1.1.0"
-# pelican-similar-posts = "^1.0.0"  # XXX Broken!
-pelican-sitemap = "^1.0.2"
-pelican-neighbors = "^1.2.0"
-#gensim = "^4.3.0"  # XXX Broken!
-
-[tool.poetry.group.dev.dependencies]
-mypy = "^1.9.0"
-pytest = "^8.1.1"
-# More pytest plugins at: https://docs.pytest.org/en/latest/reference/plugin_list.html
-pytest-github-actions-annotate-failures = "^0.2.0"
-pytest-randomly = "^3.12.0"
-requests = "^2.31.0"
-types-requests = "^2.28.11.17"
 
 [tool.mypy]
 warn_unused_configs = true
@@ -55,11 +72,11 @@ pretty = true
 
 [[tool.mypy.overrides]]
 ignore_missing_imports = true
-module = []
 
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/latest/customize.html#pyproject-toml
-addopts = "--durations=10"
+addopts = ["--durations=10"]
+# Make sure tests that are expected to fail do not resurect and start working all of a sudden.
 xfail_strict = true
 
 [tool.typos]
@@ -161,7 +178,3 @@ files.extend-exclude = [
     "content/2010/comment-supprimer-des-comptes-mails-secondaires-free-fr.md",
     "content/2012/ovh-configuration-modem-thomson-tg585-ipoe.md",
 ]
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"

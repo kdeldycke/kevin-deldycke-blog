@@ -17,25 +17,25 @@ jobs:
       - uses: actions/setup-python@v5.1.0
         with:
           python-version: "3.12"
-      - name: Update Pip & Poetry
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install --upgrade poetry
       - name: Update apt
         run: |
           sudo apt --quiet --yes update
       - name: Update node and npm
         run: |
           sudo apt --quiet --yes install npm
-      - name: Install Pelican
+      - name: Install uv
         run: |
-          poetry install
+          python -m pip install -r https://raw.githubusercontent.com/kdeldycke/workflows/v4.1.4/requirements/uv.txt
+      - name: Install project
+        run: |
+          uv venv --system
+          uv pip install ".[test]"
       - name: Install Stork
         run: |
           cargo install stork-search --locked
       - name: Build website
         run: |
-          poetry run pelican --verbose ./content
+          uv run pelican --verbose ./content
 
   test-redirects:
     name: Redirect rules test in production
@@ -45,11 +45,13 @@ jobs:
       - uses: actions/setup-python@v5.1.0
         with:
           python-version: "3.12"
-      - name: Install dependencies
+      - name: Install uv
         run: |
-          python -m pip install --upgrade setuptools pip
-          python -m pip install --upgrade poetry
-          poetry install --no-interaction
-      - name: Tests
+          python -m pip install -r https://raw.githubusercontent.com/kdeldycke/workflows/v4.1.4/requirements/uv.txt
+      - name: Install project
         run: |
-          poetry run pytest ./test_redirects.py
+          uv venv --system
+          uv pip install ".[test]"
+      - name: Unittests
+        run: |
+          uv run pytest ./test_redirects.py

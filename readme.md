@@ -6,46 +6,52 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
 
 ## Installation
 
-Fetch a copy of the repository:
+- Fetch a copy of the repository:
 
-```shell-session
-$ git clone --recursive https://github.com/kdeldycke/kevin-deldycke-blog.git blog
-$ cd ./blog
-```
+  ```shell-session
+  $ git clone https://github.com/kdeldycke/kevin-deldycke-blog.git blog
+  $ cd ./blog
+  ```
 
-Install Python 3.11 and upgrade all its utilities:
+- Install Python:
 
-```shell-session
-$ brew install python
-$ python --version
-Python 3.11.0
-$ python -m pip install --upgrade pip
-$ python -m pip install --upgrade poetry
-```
+  ```shell-session
+  $ brew install python
+  $ python --version
+  Python 3.12.4
+  ```
 
-Install this blog's dependencies:
+- Install `uv`:
 
-```shell-session
-$ poetry install
-```
+  ```shell-session
+  $ python -m pip install uv
+  ```
+
+- Install this blog's dependencies:
+
+  ```shell-session
+  $ uv venv
+  $ source .venv/bin/activate
+  $ uv pip install --all-extras --requirement pyproject.toml
+  ```
 
 ## Development
 
-In one terminal, run:
+- In one terminal, run:
 
-```shell-session
-$ poetry run pelican --verbose --debug ./content
-```
+  ```shell-session
+  $ uv run pelican --verbose ./content
+  ```
 
-And in another:
+- And in another:
 
-```shell-session
-$ poetry run pelican --verbose --listen
-(...)
-Serving site at: 127.0.0.1:8000 - Tap CTRL-C to stop
-```
+  ```shell-session
+  $ uv run pelican --verbose --listen
+  (...)
+  Serving site at: 127.0.0.1:8000 - Tap CTRL-C to stop
+  ```
 
-Then go to [http://localhost:8000](http://localhost:8000).
+- Then go to [http://localhost:8000](http://localhost:8000).
 
 ## TODO
 
@@ -85,4 +91,4 @@ The content of this repository is copyrighted (c) 2004-2020 Kevin Deldycke.
 
 Unless contrary mention, the content of this repository is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC
-BY-NC-SA 4.0) license](LICENSE).
+BY-NC-SA 4.0) license](license).
