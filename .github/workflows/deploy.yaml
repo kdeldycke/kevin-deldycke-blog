@@ -43,11 +43,8 @@ jobs:
         run: |
           rm -f ./output/2020/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu
       - name: Publish
-        uses: cloudflare/pages-action@v1.5.0
+        uses: cloudflare/wrangler-action@v3.7.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "kevin-deldycke-blog"
-          directory: "output"
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          wranglerVersion: latest
+          command: pages deploy ./output --project-name=kevin-deldycke-blog --commit-dirty=true
