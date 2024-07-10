@@ -140,6 +140,9 @@ EXTRA_PATH_METADATA = {
 
 # ----- Plugin-specific settings
 
+# pelican.plugins.deadlinks
+DEADLINK_VALIDATION = True
+
 # pelican.plugins.seo
 SEO_REPORT = False
 SEO_ENHANCER = True
