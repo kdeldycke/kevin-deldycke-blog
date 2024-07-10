@@ -26,7 +26,7 @@ classifiers = [
     'Typing :: Typed',
 ]
 dependencies = [
-    "pelican [Markdown] ~= 4.8.0",
+    "pelican [Markdown] ~= 4.9.1",
     "typogrify ~= 2.0.7",
     # "mdx_titlecase ~= 1.2.0",  # XXX Broken!
     # XXX Use forked version of mdx-video plugin as the project is clearly unmaintained:
