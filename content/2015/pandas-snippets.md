@@ -28,7 +28,7 @@ Create a 5 rows and 3 columns frame with random integers between 0 and 99:
 Add labels to columns:
 
 ```pycon
->>> df.columns = ['a', 'b', 'c']
+>>> df.columns = ["a", "b", "c"]
 >>> df
     a   b   c
 0  35  66  14
@@ -41,7 +41,7 @@ Add labels to columns:
 Drop all but `a` and `c` columns:
 
 ```pycon
->>> df[['a', 'c']]
+>>> df[["a", "c"]]
     a   c
 0  35  14
 1  30  13
@@ -71,7 +71,7 @@ False
 Make column `a` the index:
 
 ```pycon
->>> df.set_index('a', inplace=True)
+>>> df.set_index("a", inplace=True)
 >>> df
     b   c
 a
@@ -100,7 +100,7 @@ Deduplicate `c` data points at the same `a` index, with the highest `c` value
 taking precedence:
 
 ```pycon
->>> df['c'].reset_index().groupby('a').max()
+>>> df["c"].reset_index().groupby("a").max()
     c
 a
 17  97
@@ -113,7 +113,7 @@ Transform a timeline of [`arrow`](https://crsmithdev.com/arrow/) objects to
 Pandas' internal Timestamp index:
 
 ```pycon
->>> df = pd.DataFrame({'int_ts': pd.Series(np.random.randint(9999999999, size=5))})
+>>> df = pd.DataFrame({"int_ts": pd.Series(np.random.randint(9999999999, size=5))})
 >>> df
       int_ts
 0  761088975
@@ -123,7 +123,7 @@ Pandas' internal Timestamp index:
 4  501201802
 
 >>> import arrow
->>> df['dt_arrow'] = df.int_ts.map(arrow.get)
+>>> df["dt_arrow"] = df.int_ts.map(arrow.get)
 >>> df
       int_ts                   dt_arrow
 0  761088975  1994-02-12T21:36:15+00:00
@@ -133,7 +133,7 @@ Pandas' internal Timestamp index:
 4  501201802  1985-11-18T22:43:22+00:00
 
 >>> from operator import attrgetter
->>> df['dt_index'] = pd.to_datetime(df['dt_arrow'].apply(attrgetter('datetime')), utc=True)
+>>> df["dt_index"] = pd.to_datetime(df["dt_arrow"].apply(attrgetter("datetime")), utc=True)
 >>> df
       int_ts                   dt_arrow            dt_index
 0  761088975  1994-02-12T21:36:15+00:00 1994-02-12 21:36:15
@@ -142,7 +142,7 @@ Pandas' internal Timestamp index:
 3  636666598  1990-03-05T19:49:58+00:00 1990-03-05 19:49:58
 4  501201802  1985-11-18T22:43:22+00:00 1985-11-18 22:43:22
 
->>> df.set_index('dt_index', inplace=True)
+>>> df.set_index("dt_index", inplace=True)
 >>> df.sort_index(inplace=True)
 >>> df
                         int_ts                   dt_arrow
@@ -159,7 +159,7 @@ methods. Here is how to compute the maximum value of samples [per year
 ](https://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases):
 
 ```pycon
->>> df['int_ts'].resample('AS')
+>>> df["int_ts"].resample("AS")
 dt_index
 1985-01-01    501201802
 1986-01-01          NaN
@@ -182,7 +182,7 @@ Freq: AS-JAN, Name: int_ts, dtype: float64
 Same as above but taking the highest value by shifting decade:
 
 ```pycon
->>> df['int_ts'].resample('10AS', how=max)
+>>> df["int_ts"].resample("10AS", how=max)
 dt_index
 1985-01-01    761088975
 1995-01-01    924263705
