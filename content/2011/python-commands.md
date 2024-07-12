@@ -181,13 +181,13 @@ To generate curly braces:
 
 ```pycon
 >>> from jinja2 import Template
->>> Template(u""" Yo! """).render()
+>>> Template(""" Yo! """).render()
 u' Yo! '
->>> Template(u""" {{'{{'}} """).render()
+>>> Template(""" {{'{{'}} """).render()
 u' {{ '
->>> Template(u""" {{'{'}} """).render()
+>>> Template(""" {{'{'}} """).render()
 u' { '
->>> Template(u""" {{'{'}}machin{{'}'}} """).render()
+>>> Template(""" {{'{'}}machin{{'}'}} """).render()
 u' {machin} '
 ```
 
