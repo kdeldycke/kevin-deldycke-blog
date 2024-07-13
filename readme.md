@@ -87,7 +87,7 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
 
 ## License
 
-The content of this repository is copyrighted (c) 2004-2020 Kevin Deldycke.
+The content of this repository is copyrighted (c) 2004-2024 Kevin Deldycke.
 
 Unless contrary mention, the content of this repository is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC
