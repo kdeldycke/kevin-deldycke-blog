@@ -48,6 +48,11 @@ dependencies = [
     # "gensim ~= 4.3.0",  # XXX Broken!
 ]
 
+[tool.setuptools.packages.find]
+# XXX Dummy Python package to allow for uv-based dependency management.
+# See: https://github.com/astral-sh/uv/issues/4028
+include = ["blog"]
+
 [project.optional-dependencies]
 test = [
     "pytest ~= 8.2.2",
