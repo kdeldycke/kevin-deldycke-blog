@@ -39,11 +39,11 @@ dependencies = [
     "plumage @ git+https://github.com/kdeldycke/plumage.git@main",
     # "plumage @ ../plumage", # XXX Dev!
     "pelican-deadlinks @ git+https://github.com/pelican-plugins/deadlinks.git@main",
-    "pelican-image-process ~= 3.0.3",
+    "pelican-image-process ~= 3.0.4",
     "pelican-seo ~= 1.2.2",
     "pelican-search ~= 1.1.0",
     # "pelican-similar-posts ~= 1.0.0",  # XXX Broken!
-    "pelican-sitemap ~= 1.0.2",
+    "pelican-sitemap ~= 1.1.0",
     "pelican-neighbors ~= 1.2.0",
     # "gensim ~= 4.3.0",  # XXX Broken!
 ]

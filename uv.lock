@@ -478,14 +478,14 @@ wheels = [
 
 [[distribution]]
 name = "pelican-sitemap"
-version = "1.0.3"
+version = "1.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pelican" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/51/16/c35c694d2844b1575b64dd502650e1bfdb83a6e1855a7e09f07fc145e953/pelican_sitemap-1.0.3.tar.gz", hash = "sha256:80b8f112228ff321407909f5a2a2ff3073865f58048e6287c7010f2b342f8599", size = 6318 }
+sdist = { url = "https://files.pythonhosted.org/packages/cd/11/5ccc1e52e3122186c8bee07bbbcdf2d6a1b42feaeadf9cec4262b87828fc/pelican_sitemap-1.1.0.tar.gz", hash = "sha256:d4bd8dfbdc8d778c23a293fbcfd4c19ccd44353ae3d263b8be74a6a2368cd9ab", size = 6451 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/02/96/534b309a12a1c0c03fcc6a9a690316815a78f33ad859332bc3f77e671719/pelican_sitemap-1.0.3-py3-none-any.whl", hash = "sha256:665a19a17e0c8a72a77c6e48749852e2abbf95c63951688ecc1daf9ce8ac0826", size = 6653 },
+    { url = "https://files.pythonhosted.org/packages/a9/14/5786d12807c7b77a2729fcc10a2b70e7825fa90ad963b09011279aa12e6c/pelican_sitemap-1.1.0-py3-none-any.whl", hash = "sha256:bc069d8f89a9d544f6c6941731dc91bd53c89f549a31974eca25f3294b343d9e", size = 6764 },
 ]
 
 [[distribution]]
