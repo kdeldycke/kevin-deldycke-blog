@@ -32,7 +32,7 @@ jobs:
           cargo install stork-search --locked
       - name: Build HTML pages
         run: |
-          uv run pelican --extra-settings SITEURL='"https://kevin.deldycke.com"' --verbose ./content
+          uv run pelican --verbose --extra-settings SITEURL='"https://kevin.deldycke.com"'
       - name: Install HTMLHint
         run: |
           sudo npm install htmlhint -g

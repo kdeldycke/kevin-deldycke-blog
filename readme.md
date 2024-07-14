@@ -40,7 +40,7 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
 - In one terminal, run:
 
   ```shell-session
-  $ uv run pelican --verbose ./content
+  $ uv run pelican --verbose
   ```
 
 - And in another:
