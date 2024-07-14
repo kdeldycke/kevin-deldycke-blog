@@ -35,7 +35,7 @@ jobs:
           cargo install stork-search --locked
       - name: Build website
         run: |
-          uv run pelican --verbose
+          uv run pelican
 
   test-redirects:
     name: Redirect rules test in production

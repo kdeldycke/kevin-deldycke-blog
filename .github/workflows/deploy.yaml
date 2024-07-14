@@ -37,7 +37,7 @@ jobs:
           cargo install stork-search --locked
       - name: Generate static content
         run: |
-          uv run pelican --verbose --extra-settings SITEURL='"https://kevin.deldycke.com"'
+          uv run pelican --extra-settings SITEURL='"https://kevin.deldycke.com"'
       - name: "XXX Temporarily remove files >25 MiB"
         # See: https://developers.cloudflare.com/pages/get-started/direct-upload/#limits
         run: |

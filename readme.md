@@ -40,13 +40,13 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
 - In one terminal, run:
 
   ```shell-session
-  $ uv run pelican --verbose
+  $ uv run pelican
   ```
 
 - And in another:
 
   ```shell-session
-  $ uv run pelican --verbose --listen
+  $ uv run pelican --listen
   (...)
   Serving site at: 127.0.0.1:8000 - Tap CTRL-C to stop
   ```
