@@ -171,7 +171,7 @@ def url_fixtures(*path_items_list: list[tuple[str, CAT]]) -> Iterator[str]:
     within the set of URLs.
     """
     # Keep track of placeholders' random values to ensure consistency.
-    placeholders = {}
+    placeholders: dict[str, str] = {}
 
     for path_items in path_items_list:
         items = []

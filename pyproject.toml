@@ -76,9 +76,6 @@ warn_return_any = true
 warn_unreachable = true
 pretty = true
 
-[[tool.mypy.overrides]]
-ignore_missing_imports = true
-
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/latest/customize.html#pyproject-toml
 addopts = ["--durations=10"]
