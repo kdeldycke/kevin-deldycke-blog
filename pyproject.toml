@@ -34,7 +34,7 @@ dependencies = [
     # mdx-video is good enough for now. An alternative worth exploring in the furture is pymdown-extensions,
     # which has an experimental generic directive feature (https://github.com/facelessuser/pymdown-extensions/pull/1777)
     # in the work that could be used to implement video embeds (https://github.com/facelessuser/pymdown-extensions/issues/896#issuecomment-1207153095).
-    "mdx_video @ git+https://github.com/dtantsur/mdx-video.git@a358317fafbeb78622afe1c05e08986809005b3d",
+    "mdx_video @ git+https://github.com/dtantsur/mdx-video.git@9e4b7d66c372c618e68767c7e8c71091c72651e5",
     # "plumage ~= 4.0.0",
     "plumage @ git+https://github.com/kdeldycke/plumage.git@main",
     # "plumage @ ../plumage", # XXX Dev!
