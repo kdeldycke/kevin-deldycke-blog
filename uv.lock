@@ -116,12 +116,6 @@ wheels = [
 ]
 
 [[distribution]]
-name = "closure"
-version = "20191111"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/56/17/03cf2f770316f55601135d19c1532417b0dac1dbcc6f1678cce79e2daced/closure-20191111.tar.gz", hash = "sha256:a133ac625c55697645b1c41745e167572633982128ee7f06e401fd76cb4e292f", size = 7488210 }
-
-[[distribution]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -328,7 +322,7 @@ wheels = [
 [[distribution]]
 name = "mdx-video"
 version = "0.2.0"
-source = { git = "https://github.com/dtantsur/mdx-video.git?rev=a358317fafbeb78622afe1c05e08986809005b3d#a358317fafbeb78622afe1c05e08986809005b3d" }
+source = { git = "https://github.com/dtantsur/mdx-video.git?rev=9e4b7d66c372c618e68767c7e8c71091c72651e5#9e4b7d66c372c618e68767c7e8c71091c72651e5" }
 dependencies = [
     { name = "markdown" },
 ]
@@ -542,10 +536,9 @@ wheels = [
 
 [[distribution]]
 name = "plumage"
-version = "4.0.1"
-source = { git = "https://github.com/kdeldycke/plumage.git?rev=main#342fd17bcd9cbd1ac26f417fb71c33f00beb5c20" }
+version = "4.1.0"
+source = { git = "https://github.com/kdeldycke/plumage.git?rev=main#0069ac6d6a66f4e112bf0377cfa1817f43c1af21" }
 dependencies = [
-    { name = "closure" },
     { name = "cssmin" },
     { name = "libsass" },
     { name = "pelican" },
@@ -780,7 +773,7 @@ wheels = [
 
 [[distribution]]
 name = "sphinx"
-version = "7.3.7"
+version = "7.4.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alabaster" },
@@ -800,9 +793,9 @@ dependencies = [
     { name = "sphinxcontrib-qthelp" },
     { name = "sphinxcontrib-serializinghtml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b7/0a/b88033900b1582f5ed8f880263363daef968d1cd064175e32abfd9714410/sphinx-7.3.7.tar.gz", hash = "sha256:a4a7db75ed37531c05002d56ed6948d4c42f473a36f46e1382b0bd76ca9627bc", size = 7094808 }
+sdist = { url = "https://files.pythonhosted.org/packages/35/89/99d9fab99f04a94dc0344494c0f574b6e730994c4f3ce023b03575363472/sphinx-7.4.5.tar.gz", hash = "sha256:a4abe5385bf856df094c1e6cadf24a2351b12057be3670b99a12c05a01d209f5", size = 8115101 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b4/fa/130c32ed94cf270e3d0b9ded16fb7b2c8fea86fa7263c29a696a30c1dde7/sphinx-7.3.7-py3-none-any.whl", hash = "sha256:413f75440be4cacf328f580b4274ada4565fb2187d696a84970c23f77b64d8c3", size = 3335650 },
+    { url = "https://files.pythonhosted.org/packages/03/68/6024fd028a1f7cd9e29464710ba49e33e747a40501ad51942d6718cd6353/sphinx-7.4.5-py3-none-any.whl", hash = "sha256:9f135d8c1d277db67be514be579c4c4a26c8c0e962219aaca5a721b04bd6d0d8", size = 3455036 },
 ]
 
 [[distribution]]
