@@ -38,7 +38,7 @@ dependencies = [
     # "plumage ~= 4.0.0",
     "plumage @ git+https://github.com/kdeldycke/plumage.git@main",
     # "plumage @ ../plumage", # XXX Dev!
-    "pelican-deadlinks @ git+https://github.com/pelican-plugins/deadlinks.git@main",
+    "pelican-deadlinks @ git+https://github.com/pelican-plugins/deadlinks.git#09c8cf976f12196e35186d284c09f35d1b1a25c0",
     "pelican-image-process ~= 3.0.4",
     "pelican-seo ~= 1.2.2",
     "pelican-search ~= 1.1.0",
