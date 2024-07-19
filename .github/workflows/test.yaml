@@ -28,8 +28,8 @@ jobs:
           python -m pip install -r https://raw.githubusercontent.com/kdeldycke/workflows/v4.3.1/requirements/uv.txt
       - name: Install project
         run: |
-          uv venv --system
-          uv pip install ".[test]"
+          uv --no-progress venv --system
+          uv --no-progress pip install ".[test]"
       - name: Install Stork
         run: |
           cargo install stork-search --locked
@@ -50,8 +50,8 @@ jobs:
           python -m pip install -r https://raw.githubusercontent.com/kdeldycke/workflows/v4.3.1/requirements/uv.txt
       - name: Install project
         run: |
-          uv venv --system
-          uv pip install ".[test]"
+          uv --no-progress venv --system
+          uv --no-progress pip install ".[test]"
       - name: Unittests
         run: |
           uv --no-progress run -- pytest ./test_redirects.py

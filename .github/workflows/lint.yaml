@@ -25,8 +25,8 @@ jobs:
           python -m pip install -r https://raw.githubusercontent.com/kdeldycke/workflows/v4.3.1/requirements/uv.txt
       - name: Install project
         run: |
-          uv venv --system
-          uv pip install .
+          uv --no-progress venv --system
+          uv --no-progress pip install .
       - name: Install Stork
         run: |
           cargo install stork-search --locked
