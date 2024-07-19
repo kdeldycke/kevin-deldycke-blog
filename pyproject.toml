@@ -37,7 +37,7 @@ dependencies = [
     "mdx_video @ git+https://github.com/dtantsur/mdx-video.git#9e4b7d66c372c618e68767c7e8c71091c72651e5",
     # "plumage ~= 4.0.0",
     "plumage @ git+https://github.com/kdeldycke/plumage.git@main",
-    # "plumage @ ../plumage", # XXX Dev!
+    # "plumage",  # XXX Uncomment for local dev.
     "pelican-deadlinks @ git+https://github.com/pelican-plugins/deadlinks.git#09c8cf976f12196e35186d284c09f35d1b1a25c0",
     "pelican-image-process ~= 3.0.4",
     "pelican-seo ~= 1.2.2",
@@ -47,6 +47,10 @@ dependencies = [
     "pelican-neighbors ~= 1.2.0",
     # "gensim ~= 4.3.0",  # XXX Broken!
 ]
+
+# XXX Uncomment for local dev.
+# [tool.uv.sources]
+# plumage = { path = "../plumage" }
 
 [tool.setuptools.packages.find]
 # XXX Dummy Python package to allow for uv-based dependency management.
