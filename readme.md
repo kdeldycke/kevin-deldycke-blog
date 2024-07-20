@@ -35,23 +35,80 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
   $ uv pip install --all-extras --requirement ./pyproject.toml
   ```
 
-## Development
+## Build and browse website
 
-- In one terminal, run:
+- To build the content, in one terminal, run:
 
   ```shell-session
-  $ uv run pelican
+  $ uv run -- pelican
   ```
 
-- And in another:
+- And to serve the website, in another terminal:
 
   ```shell-session
-  $ uv run pelican --listen
+  $ uv run -- pelican --listen
   (...)
   Serving site at: 127.0.0.1:8000 - Tap CTRL-C to stop
   ```
 
 - Then go to [http://localhost:8000](http://localhost:8000).
+
+## Theme development
+
+The section above is enough to add and modify the website content.
+
+Now if you need to work both on the conent and the theme you need to:
+
+- Get a local copy of the theme outside your `./blog` virtualenv:
+
+  ```shell-session
+  $ cd ..
+  $ git clone https://github.com/kdeldycke/plumage.git
+  $ cd ./blog
+  ```
+
+- Change `plumage` dependency in the Blog's `pyproject.toml` from:
+
+  ```toml
+  dependencies = [
+      ...
+      "plumage <anything>",
+      ...
+  ]
+  ```
+
+  To:
+
+  ```toml
+  dependencies = [
+      ...
+      "plumage",
+      ...
+  ]
+  ```
+
+- Also add this new section in the same `pyproject.toml`:
+
+  ```toml
+  [tool.uv.sources]
+  plumage = { path = "../plumage" }
+  ```
+
+- Always build the content by [forcing `uv` to pick the latest version](https://github.com/astral-sh/uv/issues/2844#issuecomment-2241073879) of your local changes from `../plumage`:
+
+  ```shell-session
+  $ uv run --reinstall-package plumage -- pelican
+  warning: `uv run` is experimental and may change without warning.
+  ⠙ Resolving dependencies...
+  Resolved 77 packages in 39ms
+    Built plumage @ file:///Users/kde/plumage
+  Prepared 1 package in 651ms
+  Uninstalled 1 package in 6ms
+  Installed 1 package in 2ms
+  - plumage==4.1.0 (from file:///Users/kde/plumage)
+  + plumage==4.1.0 (from file:///Users/kde/plumage)
+  ⠦ Generating...
+  ```
 
 ## TODO
 
