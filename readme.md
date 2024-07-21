@@ -144,7 +144,7 @@ Now if you need to work both on the conent and the theme you need to:
 
 ## License
 
-The content of this repository is copyrighted (c) 2004-2024 Kevin Deldycke.
+The content of this repository is copyrighted © 2004-2024 Kevin Deldycke.
 
 Unless contrary mention, the content of this repository is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC
