@@ -150,51 +150,6 @@ SEO_ENHANCER = True
 # pelican.plugins.similar_posts
 SIMILAR_POSTS_MAX_COUNT = 3
 
-# pelican.plugins.image_process
-IMAGE_PROCESS = {
-    "article-photo": {
-        "type": "responsive-image",
-        "sizes": """
-            (min-width: 1200px) 800px,
-            (min-width: 992px) 650px,
-            (min-width: 768px) 718px,
-            100vw
-        """,
-        "srcset": [
-            # All keeps 4:3 aspect ratios.
-            ("600w", ["scale_in 600 450 True"]),
-            ("800w", ["scale_in 800 600 True"]),
-            ("1600w", ["scale_in 1600 1200 True"]),
-        ],
-        # Default Plumage's central content column is 540px wide, so default to
-        # 600w variant.
-        "default": "600w",
-    },
-    "example-pict": {
-        "type": "picture",
-        "sources": [
-            {
-                "name": "default",
-                "media": "(min-width: 640px)",
-                "srcset": [
-                    ("640w", ["scale_in 640 480 True"]),
-                    ("1024w", ["scale_in 1024 683 True"]),
-                    ("1600w", ["scale_in 1600 1200 True"]),
-                ],
-                "sizes": "100vw",
-            },
-            {
-                "name": "source-1",
-                "srcset": [
-                    ("1x", ["crop 100 100 200 200"]),
-                    ("2x", ["crop 100 100 300 300"]),
-                ],
-            },
-        ],
-        "default": ("default", "640w"),
-    },
-}
-
 
 # ----- Theme-specific settings
 
