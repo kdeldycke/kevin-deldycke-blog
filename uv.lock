@@ -59,7 +59,6 @@ version = "1.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "mdx-video" },
-    { name = "pelican" },
     { name = "pelican", extra = ["markdown"] },
     { name = "pelican-deadlinks" },
     { name = "pelican-neighbors" },
