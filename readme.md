@@ -57,7 +57,7 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
 
 The section above is enough to add and modify the website content.
 
-Now if you need to work both on the conent and the theme you need to:
+Now if you need to work both on the content and the theme you need to:
 
 - Get a local copy of the theme outside your `./blog` virtualenv:
 
