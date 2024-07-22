@@ -58,7 +58,7 @@ include = ["blog"]
 
 [project.optional-dependencies]
 test = [
-    "pytest ~= 8.2.2",
+    "pytest ~= 8.3.1",
     # More pytest plugins at: https://docs.pytest.org/en/latest/reference/plugin_list.html
     "pytest-github-actions-annotate-failures ~= 0.2.0",
     "pytest-randomly ~= 3.15.0",
