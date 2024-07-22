@@ -60,7 +60,7 @@ source = { editable = "." }
 dependencies = [
     { name = "mdx-video" },
     { name = "pelican" },
-    { name = "pelican", extra = "markdown" },
+    { name = "pelican", extra = ["markdown"] },
     { name = "pelican-deadlinks" },
     { name = "pelican-neighbors" },
     { name = "pelican-search" },
