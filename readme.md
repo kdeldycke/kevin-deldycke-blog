@@ -132,7 +132,6 @@ Now if you need to work both on the conent and the theme you need to:
 ### Theme
 
 - Re-use previous artworks from Maomium ?
-- Auto-enhance created thumbnails ? See: https://news.ycombinator.com/item?id=5999201
 - Use https://github.com/getpelican/pelican-plugins/tree/master/footer_insert
   to add generation time / git SHA / github action workflow debug info to
   each HTML file?
