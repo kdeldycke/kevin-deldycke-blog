@@ -17,17 +17,25 @@ DEFAULT_LANG = "en"
 
 TYPOGRIFY = True
 
-# https://github.com/ashwinvis/myst-reader#specifying-myst-options
-# https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
-MYST_EXTENSIONS = [
-    "attrs_inline",
-    "deflist",
-    "replacements",
-    "smartquotes",
-    "strikethrough",
-    "substitution",
-    "tasklist",
-]
+# https://github.com/ashwinvis/myst-reader#docutils-renderer
+MYST_DOCUTILS_SETTINGS = {
+    # Allow to use the ```mermaid (...)``` directive:
+    # "myst_fence_as_directive": {"python", "shell-session", "mermaid"},
+    "myst_number_code_blocks": ["python", "shell-session"],
+    # 7 is the max value:
+    # https://github.com/executablebooks/MyST-Parser/blob/5f03f5c/myst_parser/config/main.py#L291
+    "myst_heading_anchors": 7,
+    # https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
+    "myst_enable_extensions": {
+        "attrs_block",
+        "attrs_inline",
+        "deflist",
+        "replacements",
+        "smartquotes",
+        "strikethrough",
+        "tasklist",
+    },
+}
 
 # Allow MyST syntax in content metadata:
 # https://github.com/ashwinvis/myst-reader/tree/main#specifying-file-metadata
