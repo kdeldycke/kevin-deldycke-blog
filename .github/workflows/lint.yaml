@@ -9,7 +9,7 @@ name: Lint
 jobs:
 
   lint:
-    uses: kdeldycke/workflows/.github/workflows/lint.yaml@v4.3.2
+    uses: kdeldycke/workflows/.github/workflows/lint.yaml@v4.3.3
 
   lint-html:
     # Provides hints to fix theme's templates.
