@@ -487,7 +487,7 @@ wheels = [
 [[distribution]]
 name = "plumage"
 version = "5.0.0"
-source = { git = "https://github.com/kdeldycke/plumage.git?rev=main#cc433bcad1c6c8a16c4e95893ae4cadc235d4fb8" }
+source = { git = "https://github.com/kdeldycke/plumage.git?rev=main#3ff48aa85001ce5a8bccb666ab12ec0db7723eaa" }
 dependencies = [
     { name = "cssmin" },
     { name = "libsass" },
