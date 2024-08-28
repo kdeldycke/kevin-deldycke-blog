@@ -32,7 +32,7 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
   ```shell-session
   $ uv venv
   $ source .venv/bin/activate
-  $ uv pip install --all-extras --requirement ./pyproject.toml
+  $ uv sync --all-extras --dev
   ```
 
 ## Build and browse website
