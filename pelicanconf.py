@@ -202,7 +202,7 @@ ARTICLE_EDIT_LINK = (
 
 SOCIAL_WIDGET_NAME = "Online presence"
 SOCIAL = (
-    ("Twitter", "https://twitter.com/kdeldycke"),
+    ("X", "https://x.com/kdeldycke"),
     ("GitHub", "https://github.com/kdeldycke"),
     ("Hacker News", "https://news.ycombinator.com/user?id=kdeldycke"),
 )
