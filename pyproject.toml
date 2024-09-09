@@ -49,12 +49,7 @@ dependencies = [
 
 # XXX Uncomment for local dev.
 # [tool.uv.sources]
-# plumage = { path = "../plumage" }
-
-[tool.setuptools.packages.find]
-# XXX Dummy Python package to allow for uv-based dependency management.
-# See: https://github.com/astral-sh/uv/issues/4028
-include = ["blog"]
+# plumage = { path = "../plumage", editable = true }
 
 [project.optional-dependencies]
 test = [

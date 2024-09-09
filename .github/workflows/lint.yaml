@@ -9,7 +9,7 @@ name: Lint
 jobs:
 
   lint:
-    uses: kdeldycke/workflows/.github/workflows/lint.yaml@v4.4.0
+    uses: kdeldycke/workflows/.github/workflows/lint.yaml@v4.5.4
 
   lint-html:
     # Provides hints to fix theme's templates.
@@ -22,17 +22,17 @@ jobs:
           python-version: "3.12"
       - name: Install uv
         run: |
-          python -m pip install -r https://raw.githubusercontent.com/kdeldycke/workflows/v4.4.0/requirements/uv.txt
+          python -m pip install -r https://raw.githubusercontent.com/kdeldycke/workflows/v4.5.4/requirements/uv.txt
       - name: Install project
         run: |
-          uv --no-progress venv --system
-          uv --no-progress pip install .
+          uv --no-progress venv
+          uv --no-progress sync --all-extras --dev
       - name: Install Stork
         run: |
           cargo install stork-search --locked
       - name: Build HTML pages
         run: |
-          uv --no-progress run -- pelican --extra-settings SITEURL='"https://kevin.deldycke.com"'
+          uv --no-progress run --frozen -- pelican --extra-settings SITEURL='"https://kevin.deldycke.com"'
       - name: Install HTMLHint
         run: |
           sudo npm install htmlhint -g
