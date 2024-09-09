@@ -66,6 +66,9 @@ typing = ["types-requests ~= 2.32.0.20240622"]
 "Repository" = 'https://github.com/kdeldycke/kevin-deldycke-blog'
 "Funding" = "https://github.com/sponsors/kdeldycke"
 
+[tool.uv]
+package = false
+
 [tool.mypy]
 warn_unused_configs = true
 warn_redundant_casts = true
