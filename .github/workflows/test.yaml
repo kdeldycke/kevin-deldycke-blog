@@ -11,7 +11,7 @@ jobs:
 
   test-generation:
     name: Generate the static site
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4.1.7
       - uses: actions/setup-python@v5.1.1
@@ -39,7 +39,7 @@ jobs:
 
   test-redirects:
     name: Redirect rules test in production
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4.1.7
       - uses: actions/setup-python@v5.1.1
