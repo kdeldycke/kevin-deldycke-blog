@@ -90,7 +90,7 @@ requires-dist = [
     { name = "pelican-seo", specifier = "~=1.2.2" },
     { name = "pelican-sitemap", specifier = "~=1.1.0" },
     { name = "plumage", git = "https://github.com/kdeldycke/plumage.git?rev=main" },
-    { name = "pytest", marker = "extra == 'test'", specifier = "~=8.2.2" },
+    { name = "pytest", marker = "extra == 'test'", specifier = "~=8.3.2" },
     { name = "pytest-github-actions-annotate-failures", marker = "extra == 'test'", specifier = "~=0.2.0" },
     { name = "pytest-randomly", marker = "extra == 'test'", specifier = "~=3.15.0" },
     { name = "requests", marker = "extra == 'test'", specifier = "~=2.32.3" },
@@ -585,7 +585,7 @@ wheels = [
 
 [[package]]
 name = "pytest"
-version = "8.2.2"
+version = "8.3.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
@@ -593,9 +593,9 @@ dependencies = [
     { name = "packaging" },
     { name = "pluggy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a6/58/e993ca5357553c966b9e73cb3475d9c935fe9488746e13ebdf9b80fae508/pytest-8.2.2.tar.gz", hash = "sha256:de4bb8104e201939ccdc688b27a89a7be2079b22e2bd2b07f806b6ba71117977", size = 1427980 }
+sdist = { url = "https://files.pythonhosted.org/packages/b4/8c/9862305bdcd6020bc7b45b1b5e7397a6caf1a33d3025b9a003b39075ffb2/pytest-8.3.2.tar.gz", hash = "sha256:c132345d12ce551242c87269de812483f5bcc87cdbb4722e48487ba194f9fdce", size = 1439314 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4e/e7/81ebdd666d3bff6670d27349b5053605d83d55548e6bd5711f3b0ae7dd23/pytest-8.2.2-py3-none-any.whl", hash = "sha256:c434598117762e2bd304e526244f67bf66bbd7b5d6cf22138be51ff661980343", size = 339873 },
+    { url = "https://files.pythonhosted.org/packages/0f/f9/cf155cf32ca7d6fa3601bc4c5dd19086af4b320b706919d48a4c79081cf9/pytest-8.3.2-py3-none-any.whl", hash = "sha256:4ba08f9ae7dcf84ded419494d229b48d0903ea6407b030eaec46df5e6a73bba5", size = 341802 },
 ]
 
 [[package]]
