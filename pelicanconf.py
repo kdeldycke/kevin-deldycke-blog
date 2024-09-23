@@ -110,6 +110,7 @@ CATEGORY_FEED_RSS = "category/{slug}/feed.rss"
 CATEGORY_FEED_ATOM = "category/{slug}/feed.atom"
 
 FEED_MAX_ITEMS = 5
+FEED_APPEND_REF = True
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = "English"
 DEFAULT_DATE_FORMAT = "%b. %d, %Y"
