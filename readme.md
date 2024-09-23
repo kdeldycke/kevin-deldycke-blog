@@ -32,7 +32,7 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
   ```shell-session
   $ uv venv
   $ source .venv/bin/activate
-  $ uv sync --all-extras --dev
+  $ uv sync --all-extras
   ```
 
 ## Build and browse website
@@ -92,6 +92,7 @@ Now if you need to work both on the content and the theme you need to:
   ```toml
   [tool.uv.sources]
   plumage = { path = "../plumage", editable = true }
+  ...
   ```
 
 ## TODO

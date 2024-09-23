@@ -29,7 +29,7 @@ jobs:
       - name: Install project
         run: |
           uv --no-progress venv
-          uv --no-progress sync --all-extras --dev
+          uv --no-progress sync --all-extras
       - name: Install Stork
         run: |
           cargo install stork-search --locked
@@ -51,7 +51,7 @@ jobs:
       - name: Install project
         run: |
           uv --no-progress venv
-          uv --no-progress sync --all-extras --dev
+          uv --no-progress sync --all-extras
       - name: Unittests
         run: |
           uv --no-progress run --frozen -- pytest ./test_redirects.py
