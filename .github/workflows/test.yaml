@@ -13,7 +13,7 @@ jobs:
     name: Generate the static site
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.2
       - uses: actions/setup-python@v5.2.0
         with:
           python-version: "3.12"
@@ -41,7 +41,7 @@ jobs:
     name: Redirect rules test in production
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.2
       - uses: actions/setup-python@v5.2.0
         with:
           python-version: "3.12"
