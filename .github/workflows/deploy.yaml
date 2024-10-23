@@ -22,7 +22,7 @@ jobs:
       contents: read
       deployments: write
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.2
       - uses: actions/setup-python@v5.2.0
         with:
           python-version: "3.12"
