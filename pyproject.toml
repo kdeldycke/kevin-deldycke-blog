@@ -42,7 +42,7 @@ dependencies = [
     "pelican-seo ~= 1.2.2",
     "pelican-search ~= 1.1.0",
     # "pelican-similar-posts ~= 1.0.0",  # XXX Broken!
-    "pelican-sitemap ~= 1.1.0",
+    "pelican-sitemap ~= 1.2.0",
     "pelican-neighbors ~= 1.2.0",
     # "gensim ~= 4.3.0",  # XXX Broken!
 ]
