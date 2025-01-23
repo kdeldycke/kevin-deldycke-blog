@@ -145,6 +145,9 @@ tags: Audio, CLI, divx, dvd, ffmpeg, Kdenlive, Linux, melt, mencoder, mlt, MP4, 
   $ ffmpeg -i ./source.mp4 -ss 00:24:52.700 -to 00:24:57.371 -filter_complex "drawtext=text='%{pts\:hms}': fontcolor=black: fontsize=32: box=1: boxcolor=white,subtitles=source.mp4:si=0" -f image2 "%04d.jpg"
   ```
 
+Other resources:
+- [FFmpeg By Example](https://ffmpegbyexample.com)
+
 ## VLC
 
 - Transcode the first video stream found in a `m3u` playlist to a 384 kbps
