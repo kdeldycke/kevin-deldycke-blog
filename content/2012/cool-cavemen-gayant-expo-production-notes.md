@@ -33,11 +33,7 @@ projects from scratch several times (_sigh_).
 
 ## Lighting Design
 
-I not only edited this video. I also was in charge of the
-[stage lighting design](https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Stage%20Lighting%20Design&linkCode=ur2&rh=i%3Aaps%2Ck%3AStage%20Lighting%20Design&tag=kevideld-20&url=search-alias%3Daps)
-of the concert:
-
-![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+I not only edited this video. I also was in charge of the stage lighting design of the concert:
 
 ![working-on-grand-ma-001]({attach}working-on-grand-ma-001.jpg)
 
@@ -68,12 +64,7 @@ that didn't fell right, and fix all the timing issue after the facts.
 
 ## Synchronization
 
-The audio is a multitrack recording taken directly from the
-[front of house](https://en.wikipedia.org/wiki/Front_of_House) mixing console,
-and saved on a
-[MacBook](https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=apple%20macbook&linkCode=ur2&rh=i%3Aaps%2Ck%3Aapple%20macbook&tag=kevideld-20&url=search-alias%3Daps):
-
-![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+The audio is a multitrack recording taken directly from the [front of house](https://en.wikipedia.org/wiki/Front_of_House) mixing console, and saved on a MacBook:
 
 ![IMG_0492]({attach}IMG_0492.jpg)
 
@@ -101,14 +92,7 @@ research, it looks like humans tolerate an error below 100ms:
 Now that we have our error margin, we need a workflow. We managed to design one
 based on a reference track extracted from the camera recording:
 
-1. First, Thomas start to work on a song. When he has something to show us, he
-   down-mix its
-   [Cubase](https://www.amazon.com/s/?_encoding=UTF8&camp=1789&creative=390957&field-keywords=Steinberg%20Cubase&linkCode=ur2&rh=i%3Aaps%2Ck%3ASteinberg%20Cubase&tag=kevideld-20&url=search-alias%3Daps)
-   project and export intermediate results under the name
-   `2010-01-29--igor--audio-desync.wav`. This allow all band members to give
-   feedback.
-
-![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+1. First, Thomas start to work on a song. When he has something to show us, he down-mix its Cubase project and export intermediate results under the name `2010-01-29--igor--audio-desync.wav`. This allow all band members to give feedback.
 
 2. Once the final mix of the song is validated, I export the audio reference
    from my video edit (i.e. the plain recording from the cameras) under the

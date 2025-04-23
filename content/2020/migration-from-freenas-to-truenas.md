@@ -821,7 +821,7 @@ Of all possible root causes, I listed these:
 
 ## Epilog
 
-After these serial failures, I realized I had no time to debug this whole affair, so I ended purchasing an official [TrueNAS Mini X+ (8x cores 2.2GHz CPU, 32GB ECC DDR4 RAM, 2x 10G Base-T ports)](https://www.amazon.com/stores/iXsystems/node/18543914011?_encoding=UTF8&linkCode=ll2&tag=kevideld-20&linkId=118cf1845073ad2c70ada5a3d0c0680b&language=en_US&ref_=as_li_ss_tl) from iXsystems.
+After these serial failures, I realized I had no time to debug this whole affair, so I ended purchasing an official TrueNAS Mini X+ (8x cores 2.2GHz CPU, 32GB ECC DDR4 RAM, 2x 10G Base-T ports) from iXsystems.
 
 It cost me the same price as [my custom setup](/2020/05/nas-hardware/#final-configuration), minus the tarrif and import taxes. But comes with a 1 year warranty and support, and the peace of mind that the hardware is fully compatible with TrueNAS and thoroughly qualified for a NAS load.
 

@@ -70,8 +70,7 @@ new (but complicated) strategy.
 
 This is the only method that worked for me, and basically, is the same as the
 first one, but on Mac OS X. Additionally, it involves a local mail server. This
-procedure was tested several times on [Mac OS X Leopard
-](https://amzn.com/B000FK88JK/?tag=kevideld-20).
+procedure was tested several times on Mac OS X Leopard.
 
 1. First things first, [download the trial version of Lotus Notes
    ](https://www.ibm.com/developerworks/downloads/ls/lsndad/?S_TACT=105AGX28&S_CMP=TRIALS)
@@ -284,8 +283,7 @@ anything that suit your needs, like [thunderbird
 ## Method #4: Lotus Notes client v8.5 on Mac OS X Leopard
 
 The same procedure as in method #3 can be performed with the trial version of
-the Lotus Notes client v8.5, running on [Mac OS X Snow Leopard
-](https://amzn.com/B001AMHWP8/?tag=kevideld-20).
+the Lotus Notes client v8.5, running on Mac OS X Snow Leopard.
 
 Here are the equivalent screenshots:
 
@@ -340,8 +338,7 @@ Here are the equivalent screenshots:
 ## Method #5: Lotus Notes client on Windows XP
 
 I just tried the first method again (IMAP connection with Note's fat client).
-But this time I installed Lotus Notes 8.5.2 trial version on a fresh [Windows
-XP](https://amzn.com/B0002423YK/?tag=kevideld-20) running within a QEMU
+But this time I installed Lotus Notes 8.5.2 trial version on a fresh Windows XP running within a QEMU
 instance.
 
 As you can see, it works:

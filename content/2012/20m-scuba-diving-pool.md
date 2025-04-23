@@ -5,17 +5,11 @@ Category: Front Page
 tags: GoPro, Kdenlive, Pool, Scuba Diving, Video, YouTube
 ---
 
-Here is my last dive at the pool, the last indoor dive required to validate my
-[PADI Open Water Diver](https://amzn.com/B003JX0AUK/?tag=kevideld-20)
-certification:
+Here is my last dive at the pool, the last indoor dive required to validate my PADI Open Water Diver certification:
 
 https://www.youtube.com/watch?v=LPpoNwjrg-4
 
-It was the first time I used my brand new
-[GoPro HD Hero2](https://amzn.com/B005WY3TI4/?tag=kevideld-20) and its
-[dedicated dive housing](https://amzn.com/B0090A5P0Q/?tag=kevideld-20).
-Everything was recorded in 1080p at 25fps with the widest FOV setting
-available (170°).
+It was the first time I used my brand new GoPro HD Hero2 and its dedicated dive housing. Everything was recorded in 1080p at 25fps with the widest FOV setting available (170°).
 
 Before bringing my camera, I asked the permission to both my instructor and the
 director of the dive center. I only took the GoPro for my last pool dive, so my
@@ -29,10 +23,7 @@ framing nearly impossible, doesn't distract you from your environment and its
 dangers. But this real-life test demonstrated again how stabilization is
 essential to produce good footage.
 
-The camera was
-[attached to my left wrist](https://amzn.com/B0047I1S02/?tag=kevideld-20). The
-rationale was that having something on my head was a bad idea: it could prevent
-me from accessing and purging my mask. I can't risk (yet) to be blind.
+The camera was attached to my left wrist. The rationale was that having something on my head was a bad idea: it could prevent me from accessing and purging my mask. I can't risk (yet) to be blind.
 
 I choose the arm for its accessibility: if something goes wrong or the GoPro
 get into my way, I can easily get rid of it. It's just a toy, less valuable than

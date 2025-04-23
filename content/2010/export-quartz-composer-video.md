@@ -9,8 +9,7 @@ tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, M
 nice piece of software for [visualists](https://createdigitalmotion.com). It
 allows you to create animated and/or interactive compositions mixing sounds,
 images, effects, user inputs and any other kind of data. In fact, Quartz
-Composer was the main reason I bought a
-[MacBook Pro](https://amzn.com/B002QQ8H8I/?tag=kevideld-20) 18 months ago.
+Composer was the main reason I bought a MacBook Pro 18 months ago.
 
 The first composition I created was this simple kaleidoscopic effect with
 shifting colors:
@@ -32,11 +31,7 @@ And this is how I designed the color wheel sub-patch:
 If creating a composition is really simple and straightforward, exporting the
 result to a video file is another story...
 
-I first tried the [Export to Movie
-](https://quartzcomposer.com/plugins/1-export-to-movie) v1.3b plugin. But it
-didn't worked on my [Mac OS X Snow Leopard
-](https://amzn.com/B001AMHWP8/?tag=kevideld-20), throwing me this exception
-every time:
+I first tried the [Export to Movie](https://quartzcomposer.com/plugins/1-export-to-movie) v1.3b plugin. But it didn't worked on my Mac OS X Snow Leopard, throwing me this exception every time:
 
 ![]({attach}quartz-composer-export-to-movie-exception.png)
 
@@ -66,11 +61,7 @@ every time:
 0x00001d2b
 ```
 
-So I tried the old trick of [importing compositions in iMovie
-](https://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was
-possible in the past with [iMovie](https://amzn.com/B003XKRZES/?tag=kevideld-20)
-'06, [Apple removed this feature in iMovie '09
-](https://www.quartzcompositions.com/phpBB2/viewtopic.php?t=594).
+So I tried the old trick of [importing compositions in iMovie](https://blogs.ipona.com/james/archive/2005/05/05/1040.aspx). If this was possible in the past with iMovie '06, [Apple removed this feature in iMovie '09](https://www.quartzcompositions.com/phpBB2/viewtopic.php?t=594).
 
 My last chance was another plugin: [Movie Exporter
 ](https://quartzcomposer.com/plugins/6-movie-exporter) (`v0.0.20091011`). As the

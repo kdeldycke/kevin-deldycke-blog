@@ -11,13 +11,13 @@ I've just finished editing the video summary of the [latest Cool Cavemen's conce
 
 https://www.youtube.com/watch?v=RpFqhcihQbw
 
-That video was mostly shot with my [Canon EOS 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20) in 1080p at 24fps, with a [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](https://amzn.com/B002LVUIXA/?tag=kevideld-20).
+That video was mostly shot with my Canon EOS 7D in 1080p at 24fps, with a Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens.
 
 The final video also include footage from various people in the audience:
 
-- Jim from [Maomium](https://maomium.com) tested during the concert its brand new [Sony Alpha SLT-A33](https://amzn.com/B0043AT7AM/?tag=kevideld-20), equipped with a [Sony 18-55mm f/3.5-5.6 SAM DT zoom lens](https://amzn.com/B0029U0X0Q/?tag=kevideld-20), which produces nice 1080i streams at 50 fps;
+- Jim from [Maomium](https://maomium.com) tested during the concert its brand new Sony Alpha SLT-A33, equipped with a Sony 18-55mm f/3.5-5.6 SAM DT zoom lens, which produces nice 1080i streams at 50 fps;
 
-- Loïc filmed in 720p/30fps with [Tomasito](https://coolcavemen.com/biography/tomasito/)'s [Canon PowerShot SX200IS](https://amzn.com/B001SER45Q/?tag=kevideld-20) (which was used to produce [Omashay](https://omashay.com/)'s [_Wish You Looked at Me_ music video]({filename}/2011/making-of-omashay-wish-you-looked-at-me-music-video.md));
+- Loïc filmed in 720p/30fps with [Tomasito](https://coolcavemen.com/biography/tomasito/)'s Canon PowerShot SX200IS (which was used to produce [Omashay](https://omashay.com/)'s [_Wish You Looked at Me_ music video]({filename}/2011/making-of-omashay-wish-you-looked-at-me-music-video.md));
 
 - and finally Sylvie shot at 480p/30fps with [Dam](https://coolcavemen.com/biography/dam/)'s point-and-shoot camera, the one he uses for his [guitar cover videos](https://www.youtube.com/user/damdahu/featured).
 

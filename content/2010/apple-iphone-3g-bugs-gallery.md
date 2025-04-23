@@ -5,7 +5,7 @@ category: English
 tags: Apple, bugs, iPhone, orange
 ---
 
-Just for the record, here are screenshots of network errors and user interface glitches I collected during 2 years of an [iPhone 3G](https://amzn.com/B001AXA056/?tag=kevideld-20) use:
+Just for the record, here are screenshots of network errors and user interface glitches I collected during 2 years of an iPhone 3G use:
 
 ![]({attach}IMG_2170.png)
 

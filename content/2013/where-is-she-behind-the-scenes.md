@@ -31,18 +31,18 @@ Eventually this analog timeline led to some sketches and spreadsheets to prepare
 
 The following gear was involved in the making of this video:
 
-- [Canon EOS 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20)
-- [Canon EOS 600D (Rebel T3i / Kiss X5)](https://amzn.com/B004M170YC/?tag=kevideld-20)
-- [Canon EF 70-200mm f/2.8L IS II USM](https://amzn.com/B0033PRWSW/?tag=kevideld-20)
-- [Sigma 30mm f/1.4 EX DC HSM](https://amzn.com/B0007U0GZM/?tag=kevideld-20)
-- [Tokina 11-16mm f/2.8](https://amzn.com/B0014Z3XMC/?tag=kevideld-20)
-- [Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens](https://amzn.com/B002LVUIXA/?tag=kevideld-20)
-- [Canon EF-S 18-55mm f/3.5-5.6 IS II](https://amzn.com/B000V5K3FG/?tag=kevideld-20)
-- [Manfrotto 055XPROB Pro Tripod Legs](https://amzn.com/B000UMX7FI/?tag=kevideld-20)
-- [Manfrotto 701HDV Pro Fluid Video Mini Head](https://amzn.com/B001AT314M/?tag=kevideld-20)
-- [Glidecam HD-2000](https://amzn.com/B0020LB0MO/?tag=kevideld-20)
+- Canon EOS 7D
+- Canon EOS 600D (Rebel T3i / Kiss X5)
+- Canon EF 70-200mm f/2.8L IS II USM
+- Sigma 30mm f/1.4 EX DC HSM
+- Tokina 11-16mm f/2.8
+- Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens
+- Canon EF-S 18-55mm f/3.5-5.6 IS II
+- Manfrotto 055XPROB Pro Tripod Legs
+- Manfrotto 701HDV Pro Fluid Video Mini Head
+- Glidecam HD-2000
 - a basic Canon Monopod 100
-- [LCD ViewFinder](https://amzn.com/B003A2BU5E/?tag=kevideld-20)
+- LCD ViewFinder
 
 I shot the video in 2012 in two days (1 & 18 May) with some help from Robin (who makes a cameo appearance as the upset tourist). Here is the **behind the scenes video**:
 
@@ -68,7 +68,7 @@ And some extra photos of the shooting:
 
 ![]({attach}where-is-she-behind-the-scenes-021.jpg)
 
-The [wedding entrance]({filename}/2012/wedding-entrance-paris-video-postcard.md) video was the first time I used my [Glidecam HD-2000](https://amzn.com/B0020LB0MO/?tag=kevideld-20). But *Where is she?* was the [first publicly released video]({filename}/2012/where-is-she-music-video-released.md) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
+The [wedding entrance]({filename}/2012/wedding-entrance-paris-video-postcard.md) video was the first time I used my Glidecam HD-2000. But *Where is she?* was the [first publicly released video]({filename}/2012/where-is-she-music-video-released.md) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
 
 https://www.youtube.com/watch?v=EGh-DZjIjHg
 
@@ -92,7 +92,7 @@ At that stage, I just helped him by creating the seamless split screens:
 
 As I said in [Kdenlive's forum](https://forum.kde.org/viewtopic.php?f=266&t=112313#p270103), the color correction was a first. I never worked on a project for which any serious color correction was done. Until *Where is she?*.
 
-I was worried by the final look of it because, [as Marko pointed out](https://forum.kde.org/viewtopic.php?f=266&t=112313#p270102) in the thread, the footage was captured in all sorts of lighting conditions. It's hard to keep a consistent exposure between all these locations, especially with the tight latitude of a [Canon 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20) (even with a [fine-tuned neutral color profile](https://prolost.com/flat)).
+I was worried by the final look of it because, [as Marko pointed out](https://forum.kde.org/viewtopic.php?f=266&t=112313#p270102) in the thread, the footage was captured in all sorts of lighting conditions. It's hard to keep a consistent exposure between all these locations, especially with the tight latitude of a Canon 7D (even with a [fine-tuned neutral color profile](https://prolost.com/flat)).
 
 Robin did all the color correction in Kdenlive and for him, it was a first too. The goal wasn't to create a strong style. Color grading was more or less a technical mean, to keep the exposure jumping from shot to shot. Robin invested lots of time in this project and the result exceeded our expectations. The final video is fairly consistent and the cut between scenes is smooth compared to the raw footage.
 

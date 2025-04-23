@@ -70,7 +70,7 @@ Bad news, all **big 2.5" HDDs are SMRs**. I had to revise my plans, forget that 
 
 > Note: SMR is not bad technology in itself. As long as the software architecture exploiting it is designed to leverage its asymmetry.
 
-Worse, I already ordered a small case ([SilverStone SST-ML05B](https://amzn.com/B07PLB3JR2/?tag=kevideld-20)) and all its accessories (fans and cables). This box was now useless as I need more volume to accommodate bulkier 3.5" drives. My plans were doomed anyway. If that case had four 2.5" slots, you can only cramp there two, maybe three, 15 mm thick drives.
+Worse, I already ordered a small case (SilverStone SST-ML05B) and all its accessories (fans and cables). This box was now useless as I need more volume to accommodate bulkier 3.5" drives. My plans were doomed anyway. If that case had four 2.5" slots, you can only cramp there two, maybe three, 15 mm thick drives.
 
 Here are some photos of my first attempt at building a NAS with that case:
 
@@ -89,9 +89,9 @@ The most economical option. Here are some resources to hunt down the right disk 
 
 TL;DR safe bets:
 
-- [HGST Ultrastar HE](https://amzn.com/B082J7M5ZG/?tag=kevideld-20), including shucked ones
-- [Seagate IronWolf](https://amzn.com/B07H1W6214/?tag=kevideld-20) / [IronWolf Pro](https://amzn.com/B07H28PKM3/?tag=kevideld-20)
-- **[Toshiba N300](https://amzn.com/B06Y2KCXCM/?tag=kevideld-20)** / [X300](https://amzn.com/B013JPLKJC/?tag=kevideld-20)
+- HGST Ultrastar HE, including shucked ones
+- Seagate IronWolf / IronWolf Pro
+- **Toshiba N300** / X300
 
 I chose the later. The [N300 series](https://www.toshiba-storage.com/products/toshiba-internal-hard-drives-n300/) has:
 
@@ -110,7 +110,7 @@ I ordered four of them on three different marketplaces, with a couple of days in
 
 ## Case
 
-Went fishing for another case. I increased my budget three times and got a [SilverStone SST-DS380](https://amzn.com/B07PCH47Z2/?tag=kevideld-20):
+Went fishing for another case. I increased my budget three times and got a SilverStone SST-DS380:
 
 - Plenty of room to grow with its 8 hot-swappable 3.5" front bays
 - Mini-ITX motherboard format
@@ -119,7 +119,7 @@ Went fishing for another case. I increased my budget three times and got a [Silv
 
 ![]({attach}silverstone-sst-ml05b-and-sst-ds380-side-by-side.jpg)
 
-I replaced all its 3 default 120 mm fans by three [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20). I choose the S-series over the [NF-F12](https://amzn.com/B00650P2ZC/?tag=kevideld-20) / [NF-A12](https://amzn.com/B07C5VG64V/?tag=kevideld-20) as the latter [targets radiators](https://noctua.at/en/which_fan_is_right_for_me) and I needed to [optimize for maximal airflow for case cooling](https://noctua.at/en/nf-a12x25-performance-comparison-to-nf-f12-and-nf-s12a). Also the NF-S12A variant is a little quieter than the [NF-S12B](https://amzn.com/B00L8IYCJI/?tag=kevideld-20) one. These new fans added:
+I replaced all its 3 default 120 mm fans by three Noctua NF-S12A PWM. I choose the S-series over the NF-F12 / NF-A12 as the latter [targets radiators](https://noctua.at/en/which_fan_is_right_for_me) and I needed to [optimize for maximal airflow for case cooling](https://noctua.at/en/nf-a12x25-performance-comparison-to-nf-f12-and-nf-s12a). Also the NF-S12A variant is a little quieter than the NF-S12B one. These new fans added:
 
 - Absolute silence
 - Variable and dynamic speed, as we moved from 3-pins to 4-pins PWM
@@ -133,7 +133,7 @@ Requirements:
 - Mini-ITX, to reduce as much the form factor
 - At least 4 SATA III ports
 
-I stumbled upon the [Gigabyte GA-J3455-D3H](https://amzn.com/B071R4P6QG/?tag=kevideld-20) which fits the bill and comes with a pretty fan-less design, thanks to its built-in [Intel Celeron J3455](https://www.cpu-monkey.com/en/cpu-intel_celeron_j3455-662) quad-core (up to 2.3 GHz).
+I stumbled upon the Gigabyte GA-J3455-D3H which fits the bill and comes with a pretty fan-less design, thanks to its built-in [Intel Celeron J3455](https://www.cpu-monkey.com/en/cpu-intel_celeron_j3455-662) quad-core (up to 2.3 GHz).
 
 Some reviews here and there called upon its capricious nature. To play it safe I carefully choose [RAM that was certified by the manufacturer](https://download.gigabyte.com/FileList/Memory/mb_memory_ga-j3455n-d3h.pdf), and maxed it out at 16 GB.
 
@@ -186,7 +186,7 @@ $ ping -c 15 -o -t 600 192.168.0.254 || shutdown -r now
 
 ## Motherboard, take #2
 
-So I settled on an [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20):
+So I settled on an ASRock Rack E3C246D2I:
 
 - Intel NICs, finally!
 - 8 total SATA by the way of additional OCuLink port
@@ -201,9 +201,9 @@ So I settled on an [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevi
 
 We're no longer fan-less, so I searched for the most silent cooling I could ever found. I went straight to Noctua for their reliability, performance and quieteness.
 
-I got the [Noctua NH-L9i chromax.black](https://amzn.com/B07Y892M38/?tag=kevideld-20), for LGA 1151 sockets CPUs and 4-pins PWM. Which also perfectly fit the low-profile requirement of my case (\< 57 mm).
+I got the Noctua NH-L9i chromax.black, for LGA 1151 sockets CPUs and 4-pins PWM. Which also perfectly fit the low-profile requirement of my case (\< 57 mm).
 
-Surprisingly the black version was cheaper than [the regular, brown variant](https://amzn.com/B009VCAJ7W/?tag=kevideld-20).
+Surprisingly the black version was cheaper than the regular, brown variant.
 
 ## CPU
 
@@ -217,7 +217,7 @@ All CPUs featured the matrix above shares these specs:
 
 - Intel x86-64, 3rd generation enhanced 14nm++ process
 - Socket LGA-1151
-- [TDP \<= 65 W to keep cooler within limits](https://www.amazon.com/gp/customer-reviews/R20G4BY1K6F88C/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B009VCAJ7W)
+- TDP \<= 65 W to keep cooler within limits
 - SMM, FPU, NX, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AES (encryption boost), AVX, FMA3, and AVX2
 - VT-x, VT-d
 - Dual-channel memory
@@ -247,32 +247,32 @@ I ended up with a **Core i3-9300T**, probably overpriced at the time of purchase
 
 | Part                 | Model                                                                                                         |  Quantity | Total (excl. shipping) | Notes                                       |
 | -------------------- | ------------------------------------------------------------------------------------------------------------- | --------: | ---------------------: | ------------------------------------------- |
-| 2.5" HDD             | [Seagate BarraCuda Mobile - 4 TB](https://amzn.com/B01LZMUNGR/?tag=kevideld-20)                               |         4 |                €759.76 | Abandoned because of SMR.                   |
-| Small case           | [SilverStone SST-ML05B](https://amzn.com/B07PLB3JR2/?tag=kevideld-20)                                         |         1 |                 €52.84 | Refunded: not enough 3.5" slots.            |
-| Fans for case        | [Noctua NF-A8 PWM](https://amzn.com/B00NEMG62M/?tag=kevideld-20), 4 pins, 80 mm                               |         2 |                 €31.80 | Refunded: only fit the case above.          |
-| Mini-ITX motherboard | [Gigabyte GA-J3455-D3H](https://amzn.com/B071R4P6QG/?tag=kevideld-20)                                         |         1 |                 €98.54 | Refunded because of Realtek NICs.           |
-| RAM                  | [Corsair CMSO16GX3M2C1600C11](https://amzn.com/B00EH1H86C/?tag=kevideld-20) 16GB (2x8GB) DDR3 SODIMM 1600 MHz |         1 |                 €75.76 | Refunded: only fit for motherboard above.   |
-| Power supply         | [Corsair SF450](https://amzn.com/B07XJ5GL8Y/?tag=kevideld-20), modular, 450 W, 80+ Platinum                   |         1 |                €119.90 | Reused.                                     |
-| Flash drive          | [SanDisk Ultra Fit 16 GB](https://amzn.com/B077Y149DL/?tag=kevideld-20), USB 3.1                              |         1 |                  €9.59 | Reused.                                     |
-| SATA cable           | [SATA 3 - 90° plugs](https://amzn.com/B07QYWFKL4/?tag=kevideld-20)                                            |         6 |                 €15.56 | Refunded: 90° plugs not fit for newer case. |
+| 2.5" HDD             | Seagate BarraCuda Mobile - 4 TB                             |         4 |                €759.76 | Abandoned because of SMR.                   |
+| Small case           | SilverStone SST-ML05B                                       |         1 |                 €52.84 | Refunded: not enough 3.5" slots.            |
+| Fans for case        | Noctua NF-A8 PWM, 4 pins, 80 mm                               |         2 |                 €31.80 | Refunded: only fit the case above.          |
+| Mini-ITX motherboard | Gigabyte GA-J3455-D3H                                 |         1 |                 €98.54 | Refunded because of Realtek NICs.           |
+| RAM                  | Corsair CMSO16GX3M2C1600C11 16GB (2x8GB) DDR3 SODIMM 1600 MHz |         1 |                 €75.76 | Refunded: only fit for motherboard above.   |
+| Power supply         | Corsair SF450, modular, 450 W, 80+ Platinum                   |         1 |                €119.90 | Reused.                                     |
+| Flash drive          | SanDisk Ultra Fit 16 GB, USB 3.1                              |         1 |                  €9.59 | Reused.                                     |
+| SATA cable           | SATA 3 - 90° plugs                                     |         6 |                 €15.56 | Refunded: 90° plugs not fit for newer case. |
 |                      |                                                                                                               | **Total** |           **€1163.75** |                                             |
 
 ### Final configuration
 
 | Part                 | Model                                                                                                                                 |  Quantity | Total (excl. shipping) | Shipping | Notes                                                                                                                   |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --------: | ---------------------: | -------: | ----------------------------------------------------------------------------------------------------------------------- |
-| 3.5" HDD             | [Toshiba N300 - 6 TB](https://amzn.com/B06Y2KCXCM/?tag=kevideld-20)                                                                   |         4 |                €696.89 |   €12.84 | Unit price: €168.30~€184.88                                                                                             |
-| Bigger case          | [SilverStone SST-DS380](https://amzn.com/B07PCH47Z2/?tag=kevideld-20)                                                                 |         1 |                €145.18 |   €17.50 |                                                                                                                         |
-| Case fans            | [Noctua NF-S12A PWM](https://amzn.com/B00BEZZBFO/?tag=kevideld-20)                                                                    |         3 |                 €59.70 |    €3.90 |                                                                                                                         |
-| Mini-ITX motherboard | [ASRock Rack E3C246D2I](https://amzn.com/B07SNPXBN1/?tag=kevideld-20)                                                                 |         1 |                €324.84 |   €21.05 | [Upgrade both BMC and BIOS](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#Download).             |
+| 3.5" HDD             | Toshiba N300 - 6 TB                                        |         4 |                €696.89 |   €12.84 | Unit price: €168.30~€184.88                                                                                             |
+| Bigger case          | SilverStone SST-DS380        |         1 |                €145.18 |   €17.50 |                                                                                                                         |
+| Case fans            | Noctua NF-S12A PWM                                         |         3 |                 €59.70 |    €3.90 |                                                                                                                         |
+| Mini-ITX motherboard | ASRock Rack E3C246D2I                                   |         1 |                €324.84 |   €21.05 | [Upgrade both BMC and BIOS](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#Download).             |
 | CPU                  | [Intel Core i3-9300T](https://www.cpu-monkey.com/en/cpu-intel_core_i3_9300t-923) Coffee Lake-R, 4 cores, 3.2GHz, 8MiB L3 cache        |         1 |                €174.90 |    €9.98 |                                                                                                                         |
-| CPU cooler           | [Noctua NH-L9i chromax.black](https://amzn.com/B07Y892M38/?tag=kevideld-20)                                                           |         1 |                 €49.90 |    €0.99 | Shipped with thermal paste.                                                                                             |
-| RAM                  | [Kingston KSM26ES8/8ME](https://amzn.com/B07BGB6TYS/?tag=kevideld-20) 8GB 2666MHz DDR4 ECC CL19                                       |         2 |                €137.76 |          |                                                                                                                         |
-| Power supply         | [Corsair SF450](https://amzn.com/B07XJ5GL8Y/?tag=kevideld-20), modular, 450 W, 80+ Platinum                                           |         1 |                €119.90 |          | Check serial number: this [model has been recalled](https://www.anandtech.com/show/15829/corsair-sf-series-psu-recall). |
-| Flash drive          | [SanDisk Ultra Fit 16 GB](https://amzn.com/B077Y149DL/?tag=kevideld-20), USB 3.1                                                      |         1 |                  €9.59 |          |                                                                                                                         |
-| SATA cable           | [SATA 3 - straight plug](https://amzn.com/B018Y2LCEI/?tag=kevideld-20)                                                                |         3 |                  €6.99 |          |                                                                                                                         |
+| CPU cooler           | Noctua NH-L9i chromax.black                       |         1 |                 €49.90 |    €0.99 | Shipped with thermal paste.                                                                                             |
+| RAM                  | Kingston KSM26ES8/8ME 8GB 2666MHz DDR4 ECC CL19                                       |         2 |                €137.76 |          |                                                                                                                         |
+| Power supply         | Corsair SF450, modular, 450 W, 80+ Platinum                                           |         1 |                €119.90 |          | Check serial number: this [model has been recalled](https://www.anandtech.com/show/15829/corsair-sf-series-psu-recall). |
+| Flash drive          | SanDisk Ultra Fit 16 GB, USB 3.1                                                      |         1 |                  €9.59 |          |                                                                                                                         |
+| SATA cable           | SATA 3 - straight plug                                 |         3 |                  €6.99 |          |                                                                                                                         |
 | OCuLink cable        | [Supermicro CBL-SAST-0933](https://store.supermicro.com/supermicro-50cm-oculink-to-4-sata-cable-cbl-sast-0933.html) OCuLink to 4 SATA |         1 |                 €29.76 |   €12.01 |                                                                                                                         |
-| Probe                | [10K thermal wire sensor](https://amzn.com/B00CMR38LC/?tag=kevideld-20)                                                               |         1 |                  €0.25 |    €1.16 | Attached to HDDs.                                                                                                       |
+| Probe                | 10K thermal wire sensor                               |         1 |                  €0.25 |    €1.16 | Attached to HDDs.                                                                                                       |
 |                      |                                                                                                                                       | **Total** |           **€1755.66** |   €79.43 |                                                                                                                         |
 
 Switching from 2.5" to 3.5" increased the budget by 50%, but I got:
@@ -317,9 +317,9 @@ In my research I discovered stronger cooler, capable of handling higher base TDP
 
 | Part           | Model                                                         |                                            Max TDP | Noise Level |  Air Flow | Air Pressure |  Price | Notes                                             |
 | -------------- | ------------------------------------------------------------- | -------------------------------------------------: | ----------: | --------: | -----------: | -----: | ------------------------------------------------- |
-| Heatsink + Fan | [Noctua NH-L9i](https://amzn.com/B07Y892M38/?tag=kevideld-20) | [65 W](https://noctua.at/en/nh_l9i_tdp_guidelines) |    23.6 dBA | 57.5 m³/h |              | €49.90 | Current cooler for reference. Shipped with paste. |
-| Heatsink + Fan | [Cryorig C7 Cu](https://amzn.com/B07BKYJDGM/?tag=kevideld-20) |      [115 W](http://www.cryorig.com/c7cu.php#spec) |      30 dBA |  40.5 CFM |    2.8 mmH2O |        | Shipped with paste.                               |
-| Heatsink + Fan | [Cryorig C7 G](https://amzn.com/B07M5LWLFQ/?tag=kevideld-20)  |       [125 W](http://www.cryorig.com/c7g.php#spec) |      30 dBA |  40.5 CFM |    2.8 mmH2O |        | Shipped with paste.                               |
+| Heatsink + Fan | Noctua NH-L9i | [65 W](https://noctua.at/en/nh_l9i_tdp_guidelines) |    23.6 dBA | 57.5 m³/h |              | €49.90 | Current cooler for reference. Shipped with paste. |
+| Heatsink + Fan | Cryorig C7 Cu |      [115 W](http://www.cryorig.com/c7cu.php#spec) |      30 dBA |  40.5 CFM |    2.8 mmH2O |        | Shipped with paste.                               |
+| Heatsink + Fan | Cryorig C7 G  |       [125 W](http://www.cryorig.com/c7g.php#spec) |      30 dBA |  40.5 CFM |    2.8 mmH2O |        | Shipped with paste.                               |
 
 All coolers above are:
 
@@ -383,4 +383,4 @@ Lots of ZFS features are on the way:
 
 ## Epilog
 
-After a number of failures and instability, I finally [scrapped all that hardware](/2020/12/migration-from-freenas-to-truenas/#Epilog), and replaced my custom configuration with an official [TrueNAS Mini X+ (8x cores 2.2GHz CPU, 32GB ECC DDR4 RAM, 2x 10G Base-T ports)](https://www.amazon.com/stores/iXsystems/node/18543914011?_encoding=UTF8&linkCode=ll2&tag=kevideld-20&linkId=118cf1845073ad2c70ada5a3d0c0680b&language=en_US&ref_=as_li_ss_tl) from iXsystems.
+After a number of failures and instability, I finally [scrapped all that hardware](/2020/12/migration-from-freenas-to-truenas/#Epilog), and replaced my custom configuration with an official TrueNAS Mini X+ (8x cores 2.2GHz CPU, 32GB ECC DDR4 RAM, 2x 10G Base-T ports) from iXsystems.

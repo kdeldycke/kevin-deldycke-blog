@@ -7,13 +7,9 @@ tags: Cool Cavemen, Creative Commons, inkscape, Music, SVG, Template, Compact di
 
 My friends, the [Cool Cavemen band](https://coolcavemen.com), are on the way to complete the sound recording phase of their next LP. Now come the time to think about the CD artwork, and to package the music they've choose the standard [Jewel Case format](https://en.wikipedia.org/wiki/Jewel_case).
 
-[![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B000FECBSA&MarketPlace=US&ID=AsinImage&WS=1&tag=kevideld-20&ServiceVersion=20070822)](https://amzn.com/B000FECBSA/?tag=kevideld-20)
+Jewel Cases are made of a part which hold the CD itself. This part is usually black and opaque and it remain visible on the left of the front side when the CD case is closed.
 
-Jewel Cases are made of a part which hold the CD itself. This part is [usually black and opaque](https://amzn.com/B000FECBSA/?tag=kevideld-20) and it remain visible on the left of the front side when the CD case is closed.
-
-[![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B002ROGCG8&MarketPlace=US&ID=AsinImage&WS=1&tag=kevideld-20&ServiceVersion=20070822)](https://amzn.com/B002ROGCG8/?tag=kevideld-20)
-
-Sometimes this black [strip is made of transparent polystyrene](https://amzn.com/B002ROGCG8/?tag=kevideld-20), which let you see the reverse of the back cover. You can use this to make some easthetic design. So I've created some templates in Inkscape, because all templates I found on the web didn't taken care of that transparent strip.
+Sometimes this black strip is made of transparent polystyrene, which let you see the reverse of the back cover. You can use this to make some easthetic design. So I've created some templates in Inkscape, because all templates I found on the web didn't taken care of that transparent strip.
 
 You can download those templates as SVG files under the [Creative Commons Attribution licence](https://creativecommons.org/licenses/by/2.5/). Here are the direct link to the SVG versions of the templates:
 

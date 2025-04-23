@@ -104,8 +104,6 @@ Now if you need to work both on the content and the theme you need to:
 - https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags
 - https://github.com/getpelican/pelican-plugins/tree/master/post_stats
 - https://github.com/getpelican/pelican-plugins/tree/master/filetime_from_git
-- https://elegant.oncrashreboot.com/amazon-bestazon
-- https://elegant.oncrashreboot.com/amazon-onelink
 - dark theme? https://github.com/alexandrevicenzi/Flex/blob/bbf47fe35473774d8a41478523cf4d3b21268e35/templates/base.html#L31-L44
 
 ### Plugins

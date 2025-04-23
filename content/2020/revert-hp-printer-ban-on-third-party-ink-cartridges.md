@@ -11,7 +11,7 @@ HP Inc., the company, sucks. At least their [printer division's business model](
 
 The timeline is straightforward:
 
-- 2020, March: general lockdown. 🦠 I need a home office. SO is a scientist and spend her time printing papers for review. Got her an [HP Color LaserJet M254dw](https://amzn.com/B073R2WVKB/?tag=kevideld-20) to keep her productive workflow ([publish or perish!](https://en.wikipedia.org/wiki/Publish_or_perish)).
+- 2020, March: general lockdown. 🦠 I need a home office. SO is a scientist and spend her time printing papers for review. Got her an HP Color LaserJet M254dw to keep her productive workflow ([publish or perish!](https://en.wikipedia.org/wiki/Publish_or_perish)).
 
 - 2020, October: HP release a new firmware (versioned `20201021`).
 

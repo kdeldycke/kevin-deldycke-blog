@@ -2,7 +2,7 @@
 date: '2020-06-16'
 title: AWS commands
 category: English
-tags: cloud, cloud computing, saas, iaas, paas, aws, amazon, development, CLI, iam, transcribe, text-to-speech, brew, s3, mime type, media type
+tags: cloud, cloud computing, saas, iaas, paas, aws, development, CLI, iam, transcribe, text-to-speech, brew, s3, mime type, media type
 ---
 
 All commands below relies on the latest version of [aws-cli](https://github.com/aws/aws-cli).

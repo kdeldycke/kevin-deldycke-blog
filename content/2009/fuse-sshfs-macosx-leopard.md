@@ -14,8 +14,7 @@ don't have any built-in mechanism of that kind.
 To get similar features in Leopard, we have to rely on [MacFuse
 ](https://code.google.com/p/macfuse/) and [sshfs
 ](https://fuse.sourceforge.net/sshfs.html). I'll explain here how I've installed
-these components on [Mac OS X Leopard
-](https://amzn.com/B000FK88JK/?tag=kevideld-20).
+these components on Mac OS X Leopard.
 
 ![MacFUSE_Banner]({attach}MacFUSE_Banner.png)
 

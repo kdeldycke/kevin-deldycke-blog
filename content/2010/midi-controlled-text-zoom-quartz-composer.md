@@ -14,14 +14,7 @@ my last patch:
 
 ![]({attach}patch-of-midi-controlled-text-zoom-in-quartz-composer.png)
 
-It's [based on the previous
-one]({filename}/2010/quartz-composer-behringer-bcf-2000-midi-controller-tests.md)
-and is also driven by a [Berhinger BCF-2000 MIDI
-controller](https://amzn.com/B000CZ0RJ2/?tag=kevideld-20). The purpose of this
-composition is to zoom a piece of text, give it some kind of velocity and
-change its color. Again, nothing fancy here: it's just a simple patch, which
-[source is available for
-download]({attach}text-zoom-in-out.qtz).
+It's [based on the previous one]({filename}/2010/quartz-composer-behringer-bcf-2000-midi-controller-tests.md) and is also driven by a Berhinger BCF-2000 MIDI controller. The purpose of this composition is to zoom a piece of text, give it some kind of velocity and change its color. Again, nothing fancy here: it's just a simple patch, which [source is available for download]({attach}text-zoom-in-out.qtz).
 
 As for the last time, I recorded a little demo to practice my new videomaking
 skills (and to find a justification for buying more video gear ;) ):

@@ -19,8 +19,7 @@ were available for something other than a gig or a rehearsal.
 
 Being a newly self-proclaimed (but inexperienced) videographer, I was actively
 looking for shooting something, anything. A quick and dirty music video will
-provide a great excuse to test my newly purchased
-[Canon EOS 7D](https://amzn.com/B002NEGTTW/?tag=kevideld-20). So we arranged to
+provide a great excuse to test my newly purchased Canon EOS 7D. So we arranged to
 meet at the [SoundUp Studio](https://soundupstudio.com) to shoot a video for
 [Burlesque Burglary](https://coolcavemen.com/disc/song/burlesque-burglary/).
 
@@ -61,49 +60,34 @@ After all theses shots, the band was warmed up and comfortable enough to start
 suggesting ideas. So we started to shot some specific sequences to illustrate
 some very specific parts of the song.
 
-I shot everything with a [Canon EF-S 15-85 mm f/3,5-5,6 IS USM
-](https://amzn.com/B002NEGTTM/?tag=kevideld-20) lens. This lens is quite sharp
+I shot everything with a Canon EF-S 15-85 mm f/3,5-5,6 IS USM lens. This lens is quite sharp
 for a non-L series, but the final video doesn't do justice to it: several shots
 could have been better, but I had limited knowledge of photography at that
 time, and had no good focus technique.
 
 But that lens has a really good optical stabilizer, which was a huge relief as
 I hadn't bought a tripod yet. In fact all shots of the video were hand-held.
-For some in which I needed better steadiness, I used a [Gorillapod
-](https://amzn.com/B002FGTWOC/?tag=kevideld-20) to give me extra contact-point.
+For some in which I needed better steadiness, I used a Gorillapod to give me extra contact-point.
 This is far from being a comfortable but it did the job, at the price of
 back-pain at the end of the day.
 
-I also used my only other lens, the [Canon EF 50mm f/1.8 II
-](https://amzn.com/B00007E7JU/?tag=kevideld-20), to film some instrument's
+I also used my only other lens, the Canon EF 50mm f/1.8 II, to film some instrument's
 close-ups. But only one or two of these takes made it to the final version of
 the video.
 
-To keep color temperature consistent, I made a custom white-balance using a
-[white card](https://amzn.com/B002P5DNY8/?tag=kevideld-20). Here is Vince
-holding it for me:
+To keep color temperature consistent, I made a custom white-balance using a white card. Here is Vince holding it for me:
 
 ![]({attach}vince-holding-white-card.jpg)
 
-To light the room, I placed behind the camera 4 x [250 W tungsten lamps
-](https://amzn.com/B005G97EOU/?tag=kevideld-20), each pair lodged in a StarWay
-Clap-500 fixture:
+To light the room, I placed behind the camera 4 x 250 W tungsten lamps, each pair lodged in a StarWay Clap-500 fixture:
 
 ![]({attach}starway-clap-500-blinder.jpg)
 
-These are in fact generic blinders (mounted on a [standard microphone stand
-](https://www.amazon.com/mn/search/?_encoding=UTF8&tag=kevideld-20&linkCode=ur2&camp=1789&creative=390957&field-keywords=microphone%20stand&url=search-alias%3Daps))
-I use in Cool Cavemen's concerts:
-
-![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+These are in fact generic blinders (mounted on a standard microphone stand) I use in Cool Cavemen's concerts:
 
 ![]({attach}cool-cavemen-on-stage-with-full-blinders.jpg)
 
-I augmented this setup by reusing two [household halogen lamps
-](https://www.amazon.com/mn/search/?_encoding=UTF8&tag=kevideld-20&linkCode=ur2&camp=1789&creative=390957&field-keywords=halogen%20floor%20lamp&url=search-alias%3Dtools)
-from the studio, and placed them on the right and left sides.
-
-![](https://www.assoc-amazon.com/e/ir?t=kevideld-20&l=ur2&o=1)
+I augmented this setup by reusing two household halogen lamps from the studio, and placed them on the right and left sides.
 
 I gelled all the lights with a [Lee 216 White Diffusion filter
 ](https://www.leefilters.com/lighting/colour-details.html#216). The blinders had

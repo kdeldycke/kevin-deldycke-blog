@@ -34,8 +34,7 @@ desktop.
 
 - updated Mac OS X from Leopard to Snow Leopard,
 - upgraded Kubuntu from Karmic Koala (9.10) to Lucid Lynx (10.04),
-- changed my HDD to a SSD (a [160 Go Intel X25-M Postville
-  ](https://amzn.com/B002IGT7IU/?tag=kevideld-20)).
+- changed my HDD to a SSD (a 160 Go Intel X25-M Postville).
 
 Still, my machine crash hard. Here is the kind of kernel crashes I have on
 Kubuntu with this machine:

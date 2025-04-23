@@ -5,8 +5,7 @@ category: English
 tags: camera, firmware, gopro, Linux, Ubuntu, upgrade, Video, wget, macOS
 ---
 
-The [GoPro HD Hero2](https://amzn.com/B005WY3TI4/?tag=kevideld-20) I just got
-was bundled with the `HD2.08.12.70` firmware:
+The GoPro HD Hero2 I just got was bundled with the `HD2.08.12.70` firmware:
 
 ```shell-session
 $ cat /media/9016-4EF8/MISC/version.txt

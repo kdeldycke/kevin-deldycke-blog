@@ -15,11 +15,7 @@ available on YouTube:
 
 https://www.youtube.com/watch?v=iHi0lwhTqqc
 
-[![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B001SER45Q&MarketPlace=US&ID=AsinImage&WS=1&tag=kevideld-20&ServiceVersion=20070822)
-](https://amzn.com/B001SER45Q/?tag=kevideld-20) All the video material was shot
-by Tomasito itself, with his [Canon PowerShot SX200IS
-](https://amzn.com/B001SER45Q/?tag=kevideld-20) point-and-shoot camera. This
-camera produce 30fps 720p clips.
+All the video material was shot by Tomasito itself, with his Canon PowerShot SX200IS point-and-shoot camera. This camera produce 30fps 720p clips.
 
 He came to me with all these `.mov` files, and the idea of combining them into
 a classical split-screen layout. He had no idea how to do this, so I accepted

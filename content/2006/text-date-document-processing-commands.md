@@ -2,7 +2,7 @@
 date: '2006-12-13'
 title: Text, Date & Document processing commands
 category: English
-tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl, Regular expression
+tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl, Regular expression, Amazon
 ---
 
 ## Search
@@ -82,6 +82,18 @@ tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl,
 
   ```shell-session
   $ find /folder -iname "*.markdown" -exec perl -p -i -e 's/date: (\d+-\d+-\d+) .*\n/date: "$1"\n/sg' "{}" \;
+  ```
+
+- Remove in all `.markdown` files all occurrences of Amazon's pixel tracking links in the form of `![](https://www.assoc-amazon.com…)`:
+
+  ```shell-session
+  $ find ./* -iname "*.md" -exec perl -0777 -i -pe "s/\!\[\]\(https:\/\/www\.assoc-amazon\.com.*?\)//gs" "{}" \;
+  ```
+
+- Shorten in all `.markdown` files Amazon' product URLs from `(https://www.amazon.com/dp/B00F3F0GLU/?tag=accounid-20)` to `(https://amzn.com/B00F3F0GLU/?tag=accounid-20)`:
+
+  ```shell-session
+  $ find ./* -iname "*.md" -exec perl -0777 -i -pe "s/\(https:\/\/www\.amazon\.com\/dp\/(.*?)\)/\(https:\/\/amzn\.com\/\1\)/gs" "{}" \;
   ```
 
 - Remove lines matching a regex (encoding [particular markdown TOC entries](https://github.com/kdeldycke/awesome-iam/commit/295a4fa4229c5966ce4bc207704e32fb6f1491d6#diff-c81593a3651bf87f58345cd819edad71R24)), save the result in place and save a backup of the original content in a `.bak` file:

@@ -5,8 +5,7 @@ category: English
 tags: Android, Apple, Backup, CSV, iPhone, iTunes, Apple, macOS, Smartphones, SQLite, SQL, VLC, Mac OS X 10.6 Snow Leopard
 ---
 
-After 2 years using an [iPhone 3G
-](https://amzn.com/B001AXA056/?tag=kevideld-20), it's time for me to [switch to
+After 2 years using an iPhone 3G, it's time for me to [switch to
 the Android world](https://twitter.com/kdeldycke/status/24219289221). [My Apple
 era is over](https://twitter.com/kdeldycke/status/22007247873), I need a
 plateform that is more Linux and open-source friendly.
