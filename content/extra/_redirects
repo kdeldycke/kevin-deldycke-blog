@@ -42,6 +42,12 @@
 /2012/redux-generation.png                      /2013/redux-generation.png                      301
 /2012/tale-of-two-timelapse.png                 /2013/tale-of-two-timelapse.png                 301
 
+# Deleted articles are redirected to the post that inherited their content.
+# The Amazon affiliate article was removed and its commands moved to the 2006 one:
+# https://github.com/kdeldycke/kevin-deldycke-blog/commit/0cded43
+/2013/simplify-amazon-affiliate-links       /2006/text-date-document-processing-commands    301
+/2013/simplify-amazon-affiliate-links/*     /2006/text-date-document-processing-commands    301
+
 # All documents were moved alongside their articles.
 /documents/cd-template-cd-face.svg                              /2006/cd-template-cd-face.svg                               301
 /documents/cd-template-jewel-case-back-print-margin.svg         /2006/cd-template-jewel-case-back-print-margin.svg          301
