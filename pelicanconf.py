@@ -176,26 +176,6 @@ CODE_STYLE = "monokai"
 
 STORK_SEARCH = True
 
-LEFT_SIDEBAR = (
-    """
-    <script async
-    """
-    """src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?"""
-    """client=ca-pub-2767080117475424" crossorigin="anonymous"></script>"""
-    """
-    <!-- Responsive ad -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2767080117475424"
-         data-ad-slot="1778316959"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    """
-)
-
 ARTICLE_EDIT_LINK = (
     "https://github.com/kdeldycke/kevin-deldycke-blog/edit/main/content/posts/"
     "%(slug)s.md"
