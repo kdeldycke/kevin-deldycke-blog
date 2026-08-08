@@ -67,7 +67,6 @@ version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
     { name = "pelican", extra = ["markdown"] },
-    { name = "pelican-deadlinks" },
     { name = "pelican-neighbors" },
     { name = "pelican-search" },
     { name = "pelican-seo" },
@@ -90,7 +89,6 @@ typing = [
 [package.metadata]
 requires-dist = [
     { name = "pelican", extras = ["markdown"], specifier = ">=4.10.0" },
-    { name = "pelican-deadlinks", git = "https://github.com/pelican-plugins/deadlinks.git" },
     { name = "pelican-neighbors", specifier = ">=1.2.0" },
     { name = "pelican-search", specifier = ">=1.1.0" },
     { name = "pelican-seo", specifier = ">=1.2.2" },
@@ -415,16 +413,6 @@ wheels = [
 [package.optional-dependencies]
 markdown = [
     { name = "markdown" },
-]
-
-[[package]]
-name = "pelican-deadlinks"
-version = "0.0.0"
-source = { git = "https://github.com/pelican-plugins/deadlinks.git#09c8cf976f12196e35186d284c09f35d1b1a25c0" }
-dependencies = [
-    { name = "beautifulsoup4" },
-    { name = "pelican" },
-    { name = "requests" },
 ]
 
 [[package]]

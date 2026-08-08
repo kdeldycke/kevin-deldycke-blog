@@ -1,11 +1,11 @@
 ---
-name: Autolock
+name: 🔒 Autolock
 "on":
+  workflow_dispatch:
   schedule:
-    # Run weekly, every Monday at 8:43.
-    - cron: "43 8 * * 1"
+    - cron: "43 0 * * 1"
 
 jobs:
 
   autolock:
-    uses: kdeldycke/workflows/.github/workflows/autolock.yaml@v4.6.0
+    uses: kdeldycke/repomatic/.github/workflows/autolock.yaml@07e3ef8ae5685c7dfc4af43001b6fc67501396b1 # v7.6.0

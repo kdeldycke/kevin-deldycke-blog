@@ -1,19 +1,18 @@
 ---
-name: Autofix
+name: 🪄 Autofix
 "on":
+  workflow_dispatch:
+  schedule:
+    - cron: "27 4 * * 1"
   push:
-    # Only targets main branch to avoid amplification effects of auto-fixing
-    # the exact same stuff in multiple non-rebased branches.
     branches:
       - main
 
 jobs:
 
   autofix:
-    uses: kdeldycke/workflows/.github/workflows/autofix.yaml@v4.6.0
-    with:
-      gitignore-extra-content: |
-        # Pelican
-        *.pid
-        output
-        seo_report.html
+    uses: kdeldycke/repomatic/.github/workflows/autofix.yaml@07e3ef8ae5685c7dfc4af43001b6fc67501396b1 # v7.6.0
+    secrets:
+      REPOMATIC_NOTIFICATIONS_PAT: ${{ secrets.REPOMATIC_NOTIFICATIONS_PAT }}
+      REPOMATIC_PAT: ${{ secrets.REPOMATIC_PAT }}
+      VIRUSTOTAL_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
