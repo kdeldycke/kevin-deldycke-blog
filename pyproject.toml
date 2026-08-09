@@ -73,7 +73,6 @@ exclude = [
 # built, no version is bumped, no release is tagged, no changelog records any of it.
 exclude = [
     "changelog",
-    "codecov",
     "publish-pypi-action",
     "workflows/changelog.yaml",
     "workflows/debug.yaml",
