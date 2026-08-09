@@ -67,16 +67,14 @@ exclude = [
 ]
 
 [tool.repomatic]
-# This repo carries a pyproject.toml to pin the Pelican toolchain, not to ship a
-# distribution, so everything repomatic keys off `is_python_project` and gates behind
-# RepoScope.PYTHON_ONLY lands here uninvited. None of it has a subject: no package is
-# built, no version is bumped, no release is tagged, no changelog records any of it.
+# The release lane used to be listed here too: changelog, changelog.yaml, release.yaml
+# and publish-pypi-action. RepoScope.PACKAGE_ONLY now keeps all four away from a
+# `[tool.uv] package = false` project on its own, so naming them only restated what
+# repomatic already works out, exactly as the codecov entry did before it went.
+# debug.yaml is the one that stays: it is PYTHON_ONLY, and this repo really is a Python
+# project. It just has nothing to debug, being a Pelican toolchain rather than a package.
 exclude = [
-    "changelog",
-    "publish-pypi-action",
-    "workflows/changelog.yaml",
     "workflows/debug.yaml",
-    "workflows/release.yaml",
 ]
 
 # The default filter is written for a repo whose prose lives in docs/ and readme.md. Here
@@ -99,12 +97,11 @@ exclude = [
 # [project] name, so the stock filter watches blog/**, a directory this repo does not
 # have. Both jobs below key off content/: one builds the site from it, the other reads
 # the redirect map out of content/extra/.
-# The two .py files are named rather than globbed to dodge a bug in repomatic 7.6.0: it
-# copies the quote style of the bundled workflow's own paths block instead of deciding it
-# per entry, and tests.yaml ships an entirely unquoted block. A `**/*.py` override came
-# out bare, and a YAML scalar opening with `*` is an alias, so the file stopped parsing
-# and GitHub dropped the workflow. Fixed upstream for 7.6.1; naming both files is exact
-# for a two-file repo either way, so this can stay as it is once that ships.
+# The two .py files are named rather than globbed. That started as a workaround for a
+# repomatic bug that emitted a `**/*.py` override unquoted, which YAML reads as an alias
+# and GitHub answers by dropping the workflow; v7.7.0 fixed it and a glob would be safe
+# again. Keeping the names anyway, because for a repo holding exactly two Python files a
+# list is more honest than a pattern: adding a third should be a deliberate edit here.
 "tests.yaml" = [
     ".github/workflows/tests.yaml",
     "content/**",
