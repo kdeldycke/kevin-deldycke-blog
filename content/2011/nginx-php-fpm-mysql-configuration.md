@@ -154,7 +154,7 @@ Here is the content of that file:
 
 ```nginx
 # This order might seem weird - this is attempted to match last if rules below fail.
-# See: https://wiki.nginx.org/HttpCoreModule
+# See: https://nginx.org/en/docs/http/ngx_http_core_module.html
 location / {
   try_files $uri $uri/ /index.php?q=$uri&$args;
 }

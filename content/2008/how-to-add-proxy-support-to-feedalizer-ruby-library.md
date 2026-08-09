@@ -32,7 +32,7 @@ class Feedalizer
 end
 ```
 
-This fix, written for a [Ruby on Rails](https://www.rubyonrails.org)-based
+This fix, written for a [Ruby on Rails](https://rubyonrails.org)-based
 project, lay in the `environment.rb` file, but I wonder if this is the right
 place and the right way of doing it... Anyway, it works for me! :)
 

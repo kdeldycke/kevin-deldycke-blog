@@ -6,7 +6,7 @@ tags: Animation, Apple, Kaleidoscope, MacBook, Quartz Composer, Video, Visual, M
 ---
 
 [Quartz Composer](https://en.wikipedia.org/wiki/Quartz_Composer) is a really
-nice piece of software for [visualists](https://createdigitalmotion.com). It
+nice piece of software for visualists. It
 allows you to create animated and/or interactive compositions mixing sounds,
 images, effects, user inputs and any other kind of data. In fact, Quartz
 Composer was the main reason I bought a MacBook Pro 18 months ago.

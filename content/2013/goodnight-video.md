@@ -15,7 +15,7 @@ The video is [based on a series of 70 sketches](https://omashay.com/2013/02/22/g
 
 ![]({attach}goodnight-drawings-keyframes.jpg)
 
-He wanted to explore the possibilities of reusing them for a music video. I had the perfect secret weapon for this kind of job: [slowmoVideo](https://slowmovideo.granjow.net/), an open-source clone of [Twixtor](https://www.revisionfx.com/products/twixtor/).
+He wanted to explore the possibilities of reusing them for a music video. I had the perfect secret weapon for this kind of job: [slowmoVideo](https://github.com/slowmoVideo/slowmoVideo), an open-source clone of [Twixtor](https://www.revisionfx.com/products/twixtor/).
 
 In fact I tried to use that software 14 months ago, but never went as far as producing something. First I realized I had no nVidia GPU at hand. So I rented a *GPU Quadruple Extra Large* EC2 instance (`cg1.4xlarge`) from Amazon's cloud. It cost me \$4.70 (without VAT) for 3 hours. But I failed to compiles slowmoVideo.
 

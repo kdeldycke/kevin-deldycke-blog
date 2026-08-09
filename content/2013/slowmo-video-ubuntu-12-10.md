@@ -5,9 +5,9 @@ category: English
 tags: video, Slow Motion, Ubuntu, Ubuntu 12.10, Kubuntu, aptitude, apt-get, shell, Twixtor
 ---
 
-[slowmoVideo](https://slowmovideo.granjow.net) is an open-source equivalent of the well-known proprietary [Twixtor plugin](https://www.revisionfx.com/products/twixtor/).
+[slowmoVideo](https://github.com/slowmoVideo/slowmoVideo) is an open-source equivalent of the well-known proprietary [Twixtor plugin](https://www.revisionfx.com/products/twixtor/).
 
-If you try to follow the [procedure from the project documentation](https://slowmovideo.granjow.net/download.php#h2_Compiling) under Kubuntu 12.10, you'll not go very far. Because you'll start by installing the default `-dev` packages of `libavutil`:
+If you try to follow the [procedure from the project documentation](https://github.com/slowmoVideo/slowmoVideo#building) under Kubuntu 12.10, you'll not go very far. Because you'll start by installing the default `-dev` packages of `libavutil`:
 
 ```shell-session
 $ sudo aptitude install libavcodec-dev libavdevice-dev libavfilter-dev libavformat-dev libavutil-dev libswscale-dev

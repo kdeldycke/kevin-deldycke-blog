@@ -17,7 +17,7 @@ This video is a timelapse of a painting Tomasito made in 2007. It's based on a s
 
 ## slowmoVideo
 
-I tried to produce a timelapse out of these images a year ago. In fact, that was the original project I was referring to in my [previous article]({filename}/2013/goodnight-video.md), the project which triggered my initial interest into [slowmoVideo](https://slowmovideo.granjow.net/).
+I tried to produce a timelapse out of these images a year ago. In fact, that was the original project I was referring to in my [previous article]({filename}/2013/goodnight-video.md), the project which triggered my initial interest into [slowmoVideo](https://github.com/slowmoVideo/slowmoVideo).
 
 But the experiment failed and I abandoned this endeavor. Instead of slow-motion, and because of the low timing resolution of the photos, I assumed a simple slideshow would do it.
 
