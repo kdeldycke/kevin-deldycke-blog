@@ -28,10 +28,7 @@ classifiers = [
 dependencies = [
     "pelican[Markdown]>=4.10.0",
     "typogrify>=2.0.7",
-    # The theme's 5.0.0 is not on PyPI yet, so the floor names the awaited release and the
-    # [tool.uv.sources] entry below points the resolver at the branch carrying it. Both go
-    # away together once 5.0.0 ships: the floor tightens to the release, the override drops.
-    "plumage>=5.0.0.dev0",
+    "plumage>=5.0.0",
     "pelican-seo>=1.2.2",
     "pelican-search>=1.1.0",
     # "pelican-similar-posts ~= 1.0.0",  # XXX Broken!
@@ -113,9 +110,13 @@ exclude = [
 
 [tool.uv]
 package = false
-
-[tool.uv.sources]
-plumage = { git = "https://github.com/kdeldycke/plumage.git", branch = "main" }
+# The theme is my own, published by me: the 7-day cooldown in ~/.config/uv/uv.toml guards
+# against a compromised upstream, which does not apply here, and it otherwise holds each
+# release back for a week. Scoped to this repo rather than that global map because plumage
+# is a dependency of this project alone, so a fresh clone resolves the same way without
+# inheriting my machine config. A zero duration rather than a fixed date, so the next
+# release is picked up without editing this file.
+exclude-newer-package = { plumage = "0 days" }
 
 [tool.mypy]
 warn_unused_configs = true

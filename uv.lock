@@ -8,6 +8,7 @@ exclude-newer-span = "P7D"
 
 [options.exclude-newer-package]
 repomatic = { timestamp = "0001-01-01T00:00:00Z", span = "PT0S" }
+plumage = { timestamp = "0001-01-01T00:00:00Z", span = "PT0S" }
 
 [[package]]
 name = "alabaster"
@@ -93,7 +94,7 @@ requires-dist = [
     { name = "pelican-search", specifier = ">=1.1.0" },
     { name = "pelican-seo", specifier = ">=1.2.2" },
     { name = "pelican-sitemap", specifier = ">=1.1.0" },
-    { name = "plumage", git = "https://github.com/kdeldycke/plumage.git?branch=main" },
+    { name = "plumage", specifier = ">=5.0.0" },
     { name = "pytest", marker = "extra == 'test'", specifier = ">=8.3.2" },
     { name = "pytest-github-actions-annotate-failures", marker = "extra == 'test'", specifier = ">=0.2.0" },
     { name = "pytest-randomly", marker = "extra == 'test'", specifier = ">=3.15.0" },
@@ -507,8 +508,8 @@ wheels = [
 
 [[package]]
 name = "plumage"
-version = "5.0.0.dev0"
-source = { git = "https://github.com/kdeldycke/plumage.git?branch=main#b1ab2414a584f6c5a6ac59d2ee755b8079a1106a" }
+version = "5.0.0"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cssmin" },
     { name = "libsass" },
@@ -518,6 +519,10 @@ dependencies = [
     { name = "pygments" },
     { name = "pynpm" },
     { name = "pyquery" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/da/10/89efb43b3f0c668558dd37c7112c64cae4170b22c91dbe1a6add87f600d9/plumage-5.0.0.tar.gz", hash = "sha256:eb78421c0edd4769b0711bfcb2213e8b3c1c5befb93d0658e767108bcc714566", size = 255834, upload-time = "2026-08-09T20:31:48.609Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1e/cf/e7631438b33d201e8b094757717198bc43604884c3997ebdc9bff30b88e1/plumage-5.0.0-py3-none-any.whl", hash = "sha256:f674a9da874fc2b0720a61c6da9f08197272a3963c5365655f5c7690a6642347", size = 293494, upload-time = "2026-08-09T20:31:47.078Z" },
 ]
 
 [[package]]
