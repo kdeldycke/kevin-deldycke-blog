@@ -9,14 +9,14 @@ Using the holidays to tidy up my archives, I stumble upon old screenshots of Win
 
 Anyway. Without further ado, let's start this moment of pure nostalgia with a 1.74 Gb floppy disk:
 
-![]({attach}SizePB.png)
+![Windows file window on the A: floppy drive, its folder names all garbled into rows of identical symbols and the status bar claiming 16 objects totalling 1.74 GB]({attach}SizePB.png)
 
 This one was produced by repeatedly screenshoting the current screen in a Word document. I found it interesting because of the decaying pink color. I think this degradation was the result of cumulative color dithering or any other image compression artifact:
 
-![]({attach}df.png)
+![A Word document holding a screenshot of itself over and over, the nested windows spiralling into the centre and washing pinker with every generation]({attach}df.png)
 
 The last ones are not glitches _per se_ but major UI issues. Here automated system upgrades triggered a modal window you weren't able to close or dismiss, leaving you with no choice but reboot the machine and lose any unsaved work:
 
-![]({attach}update.png)
+![Windows 2000 desktop with a Perl script open in an editor, blocked by an automatic-updates dialog demanding a reboot with a greyed-out No button]({attach}update.png)
 
-![]({attach}ie1.png)
+![The same desktop a few minutes later, now with an Internet Explorer crash report stacked on top of the undismissable reboot prompt]({attach}ie1.png)

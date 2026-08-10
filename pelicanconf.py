@@ -85,9 +85,11 @@ YEAR_ARCHIVE_SAVE_AS = "{date:%Y}/index.html"
 ARCHIVES_SAVE_AS = "archives.html"
 CATEGORIES_SAVE_AS = "categories.html"
 TAGS_SAVE_AS = "tags.html"
-# Deactivate author URLs
-AUTHORS_SAVE_AS = False
-AUTHOR_SAVE_AS = False
+# Deactivate author URLs. Empty strings rather than False: both are falsy, so the
+# generators skip the pages and the theme's `{% if AUTHOR_SAVE_AS %}` guard still hides
+# the byline links, but Pelican logs a warning for every non-string *_SAVE_AS it reads.
+AUTHORS_SAVE_AS = ""
+AUTHOR_SAVE_AS = ""
 
 # Deactivate localization
 ARTICLE_LANG_SAVE_AS = None

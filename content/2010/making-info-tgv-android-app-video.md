@@ -7,7 +7,7 @@ tags: Android, Canon EOS 7D, ffmpeg, HTC, Kdenlive, Kubuntu, Ubuntu, Linux, Twit
 
 Last week I was called by one of my co-worker from [Uperto](https://www.uperto.com) (the open-source division of [Devoteam](https://devoteam.com)). He knew I worked on some [video projects for my band](https://www.youtube.com/user/coolcavemen), so he asked me if I wanted to help him create one. The video was meant to be released 5 days later, so we clearly were in a hurry. However this was a great opportunity to play with my Canon EOS 7D, so I accepted! :)
 
-![]({attach}info-tgv-android-app-preview.jpg)
+![Hand holding an HTC Desire, its pink Uperto home screen showing a flip clock at 19:03 and the Info TGV shortcut, with a thumb reaching for the icon]({attach}info-tgv-android-app-preview.jpg)
 
 The goal of the video was to show off an [Android application we made](https://pro.01net.com/editorial/519142/concours-d-application-smartphone-sncf-les-candidats-sur-les-starting-blocks/), for a [contest organized by SNCF](https://www.01net.com/statiquesv6/sncf/pres.html) (the [french national railroad](https://en.wikipedia.org/wiki/Sncf)). The application, that we simply named _Info TGV_, is designed to centralize information for on-board staff. This application will give train personnel better insights when delays or other kind of traffic perturbations arise.
 
@@ -29,11 +29,11 @@ So I set my 7D to record in 1080p at 25 fps, open the lens at f/1.4 and set the 
 
 Here is a snapshot of this first test on my Samsung Galaxy S (notice the strong [vignetting](https://en.wikipedia.org/wiki/Vignetting) created by the ND-filter):
 
-![]({attach}original-video-settings.png)
+![First test frame on a Samsung Galaxy S, the app's problem-report form in pink, with heavy vignetting in the corners from the ND filter]({attach}original-video-settings.png)
 
 Here is how this first test setup looked like:
 
-![]({attach}2010-09-20-17.30.40.jpg)
+![Test setup on a round meeting-room table: the 7D on a tripod facing a laptop, a red LCD viewfinder loupe and an external drive beside it]({attach}2010-09-20-17.30.40.jpg)
 
 All these parameters were calibrated for an afternoon shooting session, but we really started to record in the evening (look at the phone's clock in the video!). Because of this delay, I lost the white stripe of natural light coming from the top of the background. At the last minute, I started to play with the white balance. Then I changed my mind and removed the ND-filter. And closed the lens to f/3.5 to get a more manageable depth of field. In a word, I messed up all my initial settings resulting in a final video looking worse (in my opinion) compared to my first test. _The better is the enemy of the good_...
 
@@ -41,7 +41,7 @@ But there is something I'm quite happy with from my last minute changes: dimming
 
 Here is a photo of the final setup, in which I marked the focus plan with black electric tape:
 
-![]({attach}2010-09-21-15.25.45.jpg)
+![Final setup shot from behind the 7D, a strip of black electrical tape stuck to the table to mark the focus plane]({attach}2010-09-21-15.25.45.jpg)
 
 As you can see in the final video, I have some aliasing issues due to the [pixelated nature of the phone's screen](https://en.wikipedia.org/wiki/Active-matrix_OLED) and the [line skipping happening on 7D's CMOS sensor](https://vimeo.com/11000025). I tried to reduce the aliasing by moving the phone to a distance were the natural softness of the Sigma lens will occur. I didn't really succeed as it's really hard to maintain a constant distance to the lens while holding the phone by hand.
 
@@ -49,7 +49,7 @@ Yes, I could have tried to put the phone on a stand but I really wanted to show 
 
 By the way, about hands: there a trick involved here. The left hand is mine, but the right one is my co-worker's. There was a big advantage using this technique: with an eye on the 7D's rear LCD monitor, I can fully concentrate on the image and micro-adjust the distance of the phone to the lens. In the same time, my co-worker can focus (pardon the pun) on the action and follow the script. The only time when you can see my right hand is when I take the [Acer Liquid E](https://mobile.acer.com/en/phones/liquide/) to demonstrate the propagation of messages via Twitter:
 
-![]({attach}htc-desire-and-acer-liquid-e.png)
+![Both phones held up side by side, the HTC Desire posting a tgvlab tweet from the app while the red Acer Liquid E shows the same tweet arriving on mobile Twitter]({attach}htc-desire-and-acer-liquid-e.png)
 
 ## Video editing
 
@@ -57,17 +57,17 @@ For video editing, I knew I'll not be able to manipulate my 7D's files natively.
 
 So I did the entire video editing with Kdenlive. Here is what the final project looks like in the timeline:
 
-![]({attach}kdenlive-info-tgv-project-timeline.png)
+![Kdenlive project in French with tracks stacked for the logo overlay, title cards, footage, white background and voice-over, the monitor showing the phone in hand]({attach}kdenlive-info-tgv-project-timeline.png)
 
 Inter-title cards were created from scratch with [Gimp](https://www.gimp.org):
 
-![]({attach}gimp-title-card-editing.png)
+![GIMP editing the main title card over a blurred desk photo, its seven layers listed on the right and the SNCF, Uperto and SNCF Voyages logos along the bottom]({attach}gimp-title-card-editing.png)
 
 ## Audio
 
 Let's talk audio now. I personally want to thanks [Tomasito, Cool Cavemen's saxophonist](https://coolcavemen.com/biography/tomasito/), who lends me his Shure Beta57A microphone and his Line 6 POD Studio UX1 interface for this project. With [electrical tape](https://en.wikipedia.org/wiki/Electrical_tape), I attached the microphone on my Gorillapod, which serves as a mic stand. I used this setup to record Arnaud's voice:
 
-![]({attach}shure-beta-57a-microphone-on-gorillapod.jpg)
+![Shure Beta 57A taped to a Gorillapod standing on a desk, cabled to a laptop, the flexible ball-jointed legs curled into a loop]({attach}shure-beta-57a-microphone-on-gorillapod.jpg)
 
 I wanted to record the speech on my linux machine but I didn't managed to compile the [Line 6 open-source drivers](https://line6.com/community/thread/4031). In fact the module compiled but refused to load:
 
@@ -117,7 +117,7 @@ Again, as we were in a hurry, we didn't paid close attention to the way Arnaud w
 
 When I gave the raw recording to [Thomas](https://coolcavemen.com/biography/jimy-wong/) for mixing, he didn't take long for him to realize how bad we were at recording! Even without knowing how we proceed to record and what the setup looked like, he pointed out all the stuff we did wrong. I know him for a long time now, but he still amaze me with his technical and practical knowledge about audio stuff. I really want to thanks him for his help on this project!
 
-![]({attach}tom-at-work-in-sound-up-studio.png)
+![Thomas at the mixing desk in his studio, lit amber, working across two monitors of audio tracks between a pair of nearfield speakers]({attach}tom-at-work-in-sound-up-studio.png)
 
 By the way, if you're looking to record/mix/master any audio material (from a simple voice-over to a full band), I really recommend you to [contact his studio](https://soundupstudio.com). And tell him you heard of him by reading my blog, he may give you a discount! ;)
 

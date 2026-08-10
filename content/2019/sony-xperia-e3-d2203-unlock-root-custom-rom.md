@@ -182,7 +182,7 @@ Before proceeding any further, please double check your device is the right one,
 
    And right at that time you press alternatively the ++up++ and ++down++ volume buttons a couple of times, while the LED last, you'll boot into the custom recovery ROM you just flashed:
 
-   ![]({attach}sony-xperia-e3-d2203-lte-cmw-recovery.jpg)
+   ![Yellow-cased Sony Xperia booted into CWM-based Recovery 6.0.4.7, its menu offering reboot, install zip, wipe, backup and mount options]({attach}sony-xperia-e3-d2203-lte-cmw-recovery.jpg)
 
 ## Custom OS
 
@@ -225,7 +225,7 @@ I choose a tweaked yet stable distribution based on the stock Android 4.4.4 and 
 
 1. Wait while the installation is performed. At the end you can reboot the device and you should have a brand new and clean phone:
 
-   ![]({attach}sony-xperia-e3-d2203-android-444.jpg)
+   ![The phone's About screen confirming model D2203 on Android 4.4.4, running a custom kernel built in March 2015]({attach}sony-xperia-e3-d2203-android-444.jpg)
 
 ## Epilogue
 
@@ -235,4 +235,4 @@ At the end, I realized there's no need to go through the extra hoops of rooting 
 
 Another huge detour I took was the hunt for a custom CMW recovery image. I could have instead unzip the `Version_1_RegisUpload.zip` file and flash the `clockworkmod/backup/Version_1/boot.img` image right away, instead of `boot_D2203_4.4.2.img`. The benefit being a slightly newer version (6.0.5.1), the LED being turned on in white instead of pink, and an appropriate screen size:
 
-![]({attach}sony-xperia-e3-cmw-recovery-6051.jpg)
+![The same phone on the newer CWM-based Recovery 6.0.5.1, the reboot entry gone from the top of the menu]({attach}sony-xperia-e3-cmw-recovery-6051.jpg)

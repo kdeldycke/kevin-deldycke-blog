@@ -15,17 +15,17 @@ https://www.youtube.com/watch?v=YjE_uIRVnv8
 
 Tomasito planned this video and most of its shots in advance. Here is the basic outline of the scenes we arranged during a brainstorming session at my apartment in the end of 2010:
 
-![]({attach}where-is-she-scenes-timeline.jpg)
+![Two long rows of torn paper notes stuck to a wall with yellow putty, each scribbled with one section of the song, running from the intro and first couplet through the where is she refrains to the closing chord]({attach}where-is-she-scenes-timeline.jpg)
 
 We postponed the shooting so many times that these sticky papers were hanging on my wall for 2 years.
 
 Eventually this analog timeline led to some sketches and spreadsheets to prepare our shooting:
 
-![]({attach}where-id-she-preproduction-sketches.jpg)
+![Pen storyboard panels of the singer asking where is she in front of Sacré-Coeur, the Eiffel Tower, the Arc de Triomphe and Notre-Dame, ringed with French notes on rhythm, playback and a rush-hour metro crowd]({attach}where-id-she-preproduction-sketches.jpg)
 
-![]({attach}where-is-she-roadbook.png)
+![Colour-coded planning spreadsheet splitting the shoot into morning, midday and afternoon blocks, with columns for transport, locations, timecode, song structure and shot ideas]({attach}where-is-she-roadbook.png)
 
-![]({attach}where-is-she-sequence.png)
+![Shot-by-shot spreadsheet lining each timecode up against the song structure, technical remarks, shot ideas, locations and gear]({attach}where-is-she-sequence.png)
 
 ## Shooting
 
@@ -50,23 +50,23 @@ https://www.youtube.com/watch?v=xtLz6jfSp-I
 
 And some extra photos of the shooting:
 
-![]({attach}where-is-she-making-of.jpg)
+![Close-up of a Canon EOS 7D and its petal lens hood on a tripod, with a grinning crew member leaning into frame beside it]({attach}where-is-she-making-of.jpg)
 
-![]({attach}where-is-she-behind-the-scenes-001.jpg)
+![In a park, the camera operator crouches behind a tripod filming the guitarist as he plays on a green bench under a big tree]({attach}where-is-she-behind-the-scenes-001.jpg)
 
-![]({attach}where-is-she-behind-the-scenes-003.jpg)
+![Kneeling on a Paris street with the camera rigged to the Glidecam, while the singer waits behind the railing fixing his hair]({attach}where-is-she-behind-the-scenes-003.jpg)
 
-![]({attach}where-is-she-behind-the-scenes-006.jpg)
+![Filming bent double in front of the glass pyramid of the Louvre, the structure mirrored in the wet paving]({attach}where-is-she-behind-the-scenes-006.jpg)
 
-![]({attach}where-is-she-behind-the-scenes-008.jpg)
+![Messing about in the Tuileries, one of the crew leaning out from behind a tree by a metal litter basket while the singer kicks a leg out]({attach}where-is-she-behind-the-scenes-008.jpg)
 
-![]({attach}where-is-she-behind-the-scenes-009.jpg)
+![Waving at the Montmartre funicular as it slides past the tripod, its passengers waving back through the glass]({attach}where-is-she-behind-the-scenes-009.jpg)
 
-![]({attach}where-is-she-behind-the-scenes-010.jpg)
+![Tracking the singer along a Montmartre street with the Glidecam, past a small supermarket storefront]({attach}where-is-she-behind-the-scenes-010.jpg)
 
-![]({attach}where-is-she-behind-the-scenes-013.jpg)
+![Camera set on a tripod tight against a plane tree while the two of them wait in profile, a Fender guitar strap over one shoulder]({attach}where-is-she-behind-the-scenes-013.jpg)
 
-![]({attach}where-is-she-behind-the-scenes-021.jpg)
+![Swinging around a lamppost on the Place de la Concorde with the obelisk behind, shot from a kneeling crouch]({attach}where-is-she-behind-the-scenes-021.jpg)
 
 The [wedding entrance]({filename}/2012/wedding-entrance-paris-video-postcard.md) video was the first time I used my Glidecam HD-2000. But *Where is she?* was the [first publicly released video]({filename}/2012/where-is-she-music-video-released.md) featuring my new toy. And while filming with it in Montmartre, a police patrol car paid us a visit:
 
@@ -78,17 +78,17 @@ No need to say the music video was produced in guerilla style, without any warni
 
 Tomasito edited alone the source footage (1080p, 23.976 fps, 1/50s shutter) in Kdenlive:
 
-![]({attach}where-is-she-ungraded-kdenlive-timeline.jpg)
+![Kdenlive project with the ungraded cut spread across six video tracks over a single audio track, the monitor showing the Tuileries litter basket shot]({attach}where-is-she-ungraded-kdenlive-timeline.jpg)
 
 At that stage, I just helped him by creating the seamless split screens:
 
-![]({attach}where-is-she-split-screen-001.jpg)
+![Seamless split screen pairing a wide shot of the hooded jogger in a tree-lined alley with a huge close-up of the same face mid-shout]({attach}where-is-she-split-screen-001.jpg)
 
-![]({attach}where-is-she-split-screen-002.jpg)
+![Composited Tuileries frame, the singer leaning out from behind a tree beside the metal litter basket]({attach}where-is-she-split-screen-002.jpg)
 
 ## Color correction
 
-![]({attach}where-is-she-color-grading-preview.jpg)
+![Side-by-side comparison captioned raw footage on the left and color corrected on the right, the graded half noticeably warmer and brighter]({attach}where-is-she-color-grading-preview.jpg)
 
 As I said in [Kdenlive's forum](https://forum.kde.org/viewtopic.php?f=266&t=112313#p270103), the color correction was a first. I never worked on a project for which any serious color correction was done. Until *Where is she?*.
 
@@ -98,7 +98,7 @@ Robin did all the color correction in Kdenlive and for him, it was a first too. 
 
 I'd love to show you screenshots of the timeline with all its color parameters. Unfortunately we used an old development version, and when I try to re-open the project with the current version I have on my machine, I end up with this errors before completely crashing Kdenlive:
 
-![]({attach}kdenlive-missing-color-filters.png)
+![Kdenlive error dialog repeating that the frei0r.coloradj_RGB effect was not found in MLT and has been removed from the project]({attach}kdenlive-missing-color-filters.png)
 
 But by looking at the XML source of the project, I can assert that the whole color correction was entirely made with a combination of these 3 filters only:
 

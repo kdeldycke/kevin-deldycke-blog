@@ -7,4 +7,4 @@ tags: WordPress, Pelican, Python
 
 Here is a screenshot from [Google's webmaster tool](https://www.google.com/webmasters/tools/home) monitoring the average page download time of this site. Can you spot when I switched from [WordPress to Pelican]({filename}/2013/wordpress-to-pelican.md)? :)
 
-![]({attach}pelican-boost.png)
+![Chart of time spent downloading a page, hovering around 1,000 milliseconds through December and January before dropping to roughly 450 at the changeover]({attach}pelican-boost.png)

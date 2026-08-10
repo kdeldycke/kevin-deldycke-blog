@@ -7,7 +7,7 @@ tags: email, Gimp, Lotus Notes, MIME
 
 Today I encountered a strange error while using Lotus Notes. I had a "_Cannot convert Notes Rich Text message to MIME message_" error:
 
-![]({attach}notes-rich-text-to-mime-conversion-error.png)
+![Alert reading: cannot convert Notes Rich Text message to MIME message]({attach}notes-rich-text-to-mime-conversion-error.png)
 
 This was triggered when I tried to move certain mails from one account to another. And to add insult to injury, this nasty and dangerous error will make you loose data.
 
@@ -15,11 +15,11 @@ Let's say you want to cut and paste a batch of 10 mails. Then that error occurs 
 
 Anyway. After several tests and experiments, I finally found the common property shared by all those reluctant messages. They all have inline images embedded in the body of the mail, like the one below:
 
-![]({attach}inline-images-in-lotus-notes-mail.png)
+![Notes message with its text blurred, two inline images ringed in hand-drawn red and arrowed, each collapsed to a thin ruler strip]({attach}inline-images-in-lotus-notes-mail.png)
 
 In mail edit mode, you can get properties of these objects and get confirmation that they are inline images:
 
-![]({attach}lotus-notes-inline-picture-properties.png)
+![Right-click menu open on Picture Properties beside the picture inspector, its source given as in-line image with scaling at 100 percent]({attach}lotus-notes-inline-picture-properties.png)
 
 As you can see above, the edit mode lets you manipulate (cut, copy, paste, ...) these embedded pictures. Let's take advantage of this to fix our initial issue.
 
@@ -45,6 +45,6 @@ Interestingly, embedded images didn't triggered the _Rich Text to MIME conversio
 
 You can see this behavior in one of the mail I imported directly from Notes to Gmail:
 
-![]({attach}lotus-notes-imported-mail-in-gmail.png)
+![The same message once imported into Gmail, the inline pictures replaced by embedded image moved to file notices and two small GIF attachments]({attach}lotus-notes-imported-mail-in-gmail.png)
 
 This is much more acceptable...

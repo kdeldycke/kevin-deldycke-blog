@@ -5,7 +5,7 @@ category: English
 tags: Canon EOS 7D, Cool Cavemen, Gimp, Kdenlive, Kubuntu, Ubuntu, Linux, nichrome, outtakes, tokina, EXIF
 ---
 
-![]({attach}nichrome-preview.jpg)
+![Title frame of the preview: a close-up of the singer in headphones lit magenta, with the word Nichrome and the subtitle preview to his left]({attach}nichrome-preview.jpg)
 
 Two months ago (October 8th) I shot a video for
 [Cool Cavemen](https://coolcavemen.com). I haven't talked about it on this blog
@@ -43,7 +43,7 @@ in the darkest area of the room showed me that ISOs were pushed too high,
 increasing the noise too much. I avoided this issue by mounting an
 HDV-Z96 LED light with its CTO diffuser filter, and carefully set its light level (around 60%):
 
-![]({attach}canon-7D-with-HDV-Z96-LED-light.jpg)
+![Shooting handheld against a blue backdrop with a wide lens and a small HDV-Z96 LED panel mounted on the 7D's hot shoe]({attach}canon-7D-with-HDV-Z96-LED-light.jpg)
 
 According EXIF data, ISO did not get over 2500 with this method, and was
 measured at 5000 in the darkest place. Average seems to be around 600. But take
@@ -57,9 +57,9 @@ EXIF, color profile was set to standard.
 Finally, I created the title cards in Gimp and edited the video in Kdenlive
 (on Kubuntu 11.04):
 
-![]({attach}nichrome-preview-kdenlive-timeline.png)
+![Kdenlive project with four camera .MOV clips and the reference audio in the bin, five video tracks cut against a single audio track, the monitor showing the drummer mid-take]({attach}nichrome-preview-kdenlive-timeline.png)
 
-![]({attach}nichrome-outtakes.jpg)
+![Outtake frame looking down into a bin bag of empties, a hand lowering a Ch'ti beer pack in on top of the Carlsberg cartons]({attach}nichrome-outtakes.jpg)
 
 And two weeks after releasing Nichrome's preview video, I edited another one
 with all left-overs. Here are the outtakes (which may not be as funny to you as

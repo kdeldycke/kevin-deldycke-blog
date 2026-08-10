@@ -22,18 +22,18 @@ a [Creative Commons 3.0 BY-SA license
 ](https://creativecommons.org/licenses/by-sa/3.0/). And here is the screenshot
 of the main patch:
 
-![]({attach}kaleidoscope-000-main-patch.png)
+![Quartz Composer root patch wiring a Star Shine through an Image Crop into a Psychedelic patch, with a Color Wheel macro and an LFO feeding its colour and speed inputs]({attach}kaleidoscope-000-main-patch.png)
 
 And this is how I designed the color wheel sub-patch:
 
-![]({attach}kaleidoscope-000-color-wheel-macro-patch.png)
+![Inside the Color Wheel macro: the cycle period fanned through three multipliers into three LFOs, one per channel of an RGB Color patch]({attach}kaleidoscope-000-color-wheel-macro-patch.png)
 
 If creating a composition is really simple and straightforward, exporting the
 result to a video file is another story...
 
 I first tried the [Export to Movie](https://quartzcomposer.com/plugins/1-export-to-movie) v1.3b plugin. But it didn't worked on my Mac OS X Snow Leopard, throwing me this exception every time:
 
-![]({attach}quartz-composer-export-to-movie-exception.png)
+![Quartz Composer internal error dialog reporting that NSDate timeIntervalSinceReferenceDate was sent to an uninitialized date object, over a long stack trace]({attach}quartz-composer-export-to-movie-exception.png)
 
 ```text
 0x8272938b: -[QCContext renderPatch:time:arguments:]
@@ -68,14 +68,14 @@ My last chance was another plugin: [Movie Exporter
 other one, you have to drop your original composition in a _Render in Image_
 macro block and export the resulting stream to the _Movie Exporter_ block:
 
-![]({attach}movie-exporter-patch.png)
+![Patch rewired so Render in Image feeds a virtual splitter that drives both a Movie Exporter and a Billboard, the inspector set to render 1280 by 720]({attach}movie-exporter-patch.png)
 
 It did the trick but it looked like I messed things up: my goal was to export a
 720p clip. But compression artifacts are so present in the final video that I
 think the exported images are blow-ups of a rendering executed at a much lower
 resolution. The rendering in the preview panel support this hypothesis:
 
-![]({attach}kaleidoscope-viewer.png)
+![Quartz Composer viewer running the composition at 60 fps, showing two green light beams meeting in a bow-tie against black]({attach}kaleidoscope-viewer.png)
 
 Another big problem with this video export lies in the framerate: it cannot be
 set. For this composition the plugin exported a clip at 11fps. Which is far

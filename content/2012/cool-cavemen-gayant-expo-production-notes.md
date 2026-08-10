@@ -12,7 +12,7 @@ a series about my longest video project: the
 [biggest concert](https://coolcavemen.com/2009/concert-a-gayant-expo-les-photos/)
 we performed with [Cool Cavemen](https://coolcavemen.com) in 2009.
 
-![]({attach}gayant-expo-live-preview.jpg)
+![Singer in silhouette against thick yellow-green haze, one arm thrown up while he sings into the microphone]({attach}gayant-expo-live-preview.jpg)
 
 Cool Cavemen is
 [working right now on a new album](https://coolcavemen.com/2011/le-grand-retour/),
@@ -50,7 +50,7 @@ A week before the show, I played with
 [GrandMA's emulator](https://www.malighting.com/en/products/control/grandma-onpc.html)
 to get a glimpse of that desk's philosophy.
 
-![]({attach}grand-ma-onpc-simulation.png)
+![grandMA onPC visualiser rendering the rig on a black and white chequered stage, blue beams crossed with magenta and red washes]({attach}grand-ma-onpc-simulation.png)
 
 But this little training is not enough to get used to the GrandMA, let alone
 master it. So when it was time to play live, I choose simple lighting patterns
@@ -105,7 +105,7 @@ based on a reference track extracted from the camera recording:
    the file I import in Kdenlive and align with my video using the reference
    track.
 
-![]({attach}kdenlive-fusion-timeline.png)
+![French Kdenlive project for the Fusion track, titling PNGs and two master audio takes in the bin, with markers labelling where each edit pass starts]({attach}kdenlive-fusion-timeline.png)
 
 Before using that workflow on all our tracks, we checked it was not introducing
 delays. Unfortunately, I detected some:

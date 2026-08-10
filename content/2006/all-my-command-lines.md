@@ -5,7 +5,7 @@ Category: Front Page
 tags: CLI, Linux, macOS
 ---
 
-![]({attach}command-lines.jpg)
+![Raked close-up of a monitor showing a terminal cloning the scripts repository from GitHub, followed by a find command listing dated Python and PHP scripts]({attach}command-lines.jpg)
 
 Here is a collection of commands lines, code and configuration snippets I collected for several years while working as an Open-Source Software Engineer:
 

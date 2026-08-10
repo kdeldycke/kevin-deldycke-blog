@@ -7,7 +7,7 @@ tags: development, open source, Software engineering
 
 With all the recent active development on my [e107 Importer WordPress plugin](https://wordpress.org/extend/plugins/e107-importer/), I increased my public code contributions. This had the nice side effect of bumping my ranking on Open Hub from #8 (bronze level) to #9 (silver level):
 
-![]({attach}ohloh-rank-from-bronze-to-silver.png)
+![Ohloh rank badges with an arrow curving from the gold laurel wreath numbered 8 up to the silver wreath numbered 9]({attach}ohloh-rank-from-bronze-to-silver.png)
 
 Other interesting statistic is that I'm now ranked as open-source developer number 5673 on a population of 438276. Which place me in the top 1.3% of the population! :D
 

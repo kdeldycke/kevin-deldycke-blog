@@ -5,14 +5,14 @@ category: English
 tags: Animation, Apple, berhinger, MacBook, MIDI, Quartz Composer, USB, Visual
 ---
 
-![]({attach}midi-controller-preview.jpg)
+![Behringer BCF-2000 control surface next to a MacBook Pro displaying the words Hello World, a plasma ball glowing between them]({attach}midi-controller-preview.jpg)
 
 To end my [series of experimentations with Quartz
 Composer]({tag}quartz-composer) that I [started 2 months
 ago]({filename}/2010/export-quartz-composer-video.md), here is
 my last patch:
 
-![]({attach}patch-of-midi-controlled-text-zoom-in-quartz-composer.png)
+![Quartz Composer patch with a MIDI controllers receiver on the left, its outputs multiplied and smoothed before driving the colour and the position, rotation and size of a text sprite]({attach}patch-of-midi-controlled-text-zoom-in-quartz-composer.png)
 
 It's [based on the previous one]({filename}/2010/quartz-composer-behringer-bcf-2000-midi-controller-tests.md) and is also driven by a Berhinger BCF-2000 MIDI controller. The purpose of this composition is to zoom a piece of text, give it some kind of velocity and change its color. Again, nothing fancy here: it's just a simple patch, which [source is available for download]({attach}text-zoom-in-out.qtz).
 

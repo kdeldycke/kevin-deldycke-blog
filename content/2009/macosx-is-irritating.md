@@ -11,19 +11,19 @@ Then, regular crashes of the Finder and Safari.
 
 Now, weird font bugs:
 
-![]({attach}mac-osx-broken-menu-font.png)
+![Finder menus open on the French desktop, every entry rendered as scrambled half-missing letters instead of readable words]({attach}mac-osx-broken-menu-font.png)
 
-![]({attach}mac-osx-broken-shutdown-dialog.png)
+![Shutdown dialog reduced to a power icon and four completely blank buttons, all their labels gone]({attach}mac-osx-broken-shutdown-dialog.png)
 
 This madness will never stop... :(
 
-![]({attach}mac-osx-leopard-display-bug.png)
+![Leopard desktop with a window replaced by a flat blue rectangle, and an alert beside it showing only a warning triangle and three empty buttons]({attach}mac-osx-leopard-display-bug.png)
 
 Just found new species of bugs:
 
-![]({attach}mac-osx-black-top-menu-bug.png)
+![Finder menu bar with a solid black rectangle hanging below it where the open menu should be drawn]({attach}mac-osx-black-top-menu-bug.png)
 
-![]({attach}mac-osx-black-drop-down-menu-bug.png)
+![Trash window listing .THM files, its action menu rendered as a solid black block]({attach}mac-osx-black-drop-down-menu-bug.png)
 
 My 6 months test period of Leopard is over. Time to switch back to a Linux/KDE
 desktop.
@@ -39,7 +39,7 @@ desktop.
 Still, my machine crash hard. Here is the kind of kernel crashes I have on
 Kubuntu with this machine:
 
-![]({attach}mac-book-pro-linux-kernel-crash.jpg)
+![MacBook Pro screen filled with a Linux kernel oops trace in ext4 writeback, a system monitor to the left showing cores at 76 and 82 degrees]({attach}mac-book-pro-linux-kernel-crash.jpg)
 
 I now suspect problems with the MacBook Pro's SATA controller. After all, my
 machine always freeze on high I/O load (disk backups, video transcoding, etc.).
@@ -73,7 +73,7 @@ fine on Kubuntu?
 For the record, here is what my MacBook looked like at boot in the end of June
 2010, two days after the end of the 1-year warranty:
 
-![]({attach}mac-book-pro-broken-boot.jpg)
+![MacBook Pro stuck at boot on a grey screen showing only the flashing folder with a question mark]({attach}mac-book-pro-broken-boot.jpg)
 
 At Paris' Genius Bar, I was told that my motherboard was dead, which cost 400€
 to replace. And that's how I finally decided to [sell my MacBook Pro

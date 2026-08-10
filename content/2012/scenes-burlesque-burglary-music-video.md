@@ -9,7 +9,7 @@ After my post announcing the [release of the official music video]({filename}/20
 
 Today I'm happy to write the last post about the Burlesque Burglary video project, which is all about fun: let me present you the much awaited "Behind The Scenes" video.
 
-![]({attach}burlesque-burglary-making-of-preview.jpg)
+![Title frame of the making-of: a bearded man in glasses looking off camera in front of the red studio curtain, with the hand-drawn burlesque burglary making of lettering to his left]({attach}burlesque-burglary-making-of-preview.jpg)
 
 As usual with Cool Cavemen, and to our delight, it boils down to a mountain of crazy ideas and a jumble of absurd conversations. Judge for yourself:
 
@@ -19,12 +19,12 @@ I created this video using leftovers from the recording session. Which means the
 
 If you're a long-time reader of that blog, it's not a surprise for you that I edited it with [Kdenlive](https://kdenlive.org). Here is my final timeline, for reference and inspiration:
 
-![]({attach}burlesque-burglary-making-of-kdenlive-timeline.png)
+![Kdenlive project for the making-of, the bin holding the puppet on and off PNGs alongside a long list of camera clips, with four video tracks over the audio]({attach}burlesque-burglary-making-of-kdenlive-timeline.png)
 
 The thing I'm particularly proud of in this BTS, is the puppets at the end, on the credit screen. The effect is simple but extremely effective. Each puppet is just composed of two steps (open & close mouth):
 
-![]({attach}puppets-states.png)
+![Four cut-out puppet frames on white, two of the guitarist and two of the bassist, each in a mouth-closed and a mouth-open state for the talking animation]({attach}puppets-states.png)
 
 Each state is activated according the audio track, and they come in and out of the frame thanks to a simple slide transition. Here is a zoom on that part of the Kdenlive timeline:
 
-![]({attach}making-of-credit-screen-kdenlive-composition.png)
+![Kdenlive composing the end credits, the monitor showing the cut-out guitarist beside the title and the recording and copyright notices, with the slide transition panel open on the left]({attach}making-of-credit-screen-kdenlive-composition.png)

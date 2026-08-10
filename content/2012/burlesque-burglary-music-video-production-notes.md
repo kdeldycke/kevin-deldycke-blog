@@ -47,7 +47,7 @@ separately for the duration of the entire song. I didn't let one guy alone on
 his dedicated take, and placed another one in the background to keep the "band
 mentality".
 
-![]({attach}burlesque-burglary-multicam-preview.jpg)
+![Nine synchronised takes tiled in a grid against the same red curtain, each captioned with the musician it follows, from the individual instrument cams to three whole-band passes]({attach}burlesque-burglary-multicam-preview.jpg)
 
 I finally shot several times the whole band.
 
@@ -77,15 +77,15 @@ the video.
 
 To keep color temperature consistent, I made a custom white-balance using a white card. Here is Vince holding it for me:
 
-![]({attach}vince-holding-white-card.jpg)
+![Vince in braces and a felt hat holding a white card up to camera for the custom white balance, in front of the red curtain and a stack of Hartke bass cabinets]({attach}vince-holding-white-card.jpg)
 
 To light the room, I placed behind the camera 4 x 250 W tungsten lamps, each pair lodged in a StarWay Clap-500 fixture:
 
-![]({attach}starway-clap-500-blinder.jpg)
+![Product shot of a StarWay Clap-500 fixture, two tungsten lamps side by side inside a frame of four black barn doors]({attach}starway-clap-500-blinder.jpg)
 
 These are in fact generic blinders (mounted on a standard microphone stand) I use in Cool Cavemen's concerts:
 
-![]({attach}cool-cavemen-on-stage-with-full-blinders.jpg)
+![The same blinders at full blast during a gig, washing the stage and the silhouetted crowd in white and orange light]({attach}cool-cavemen-on-stage-with-full-blinders.jpg)
 
 I augmented this setup by reusing two household halogen lamps from the studio, and placed them on the right and left sides.
 
@@ -99,7 +99,7 @@ producing a color-temperature of 3200k.
 Here you can see on the left one 500W blinder on a stand and one of the
 household halogen-lamp on the right, all with diffusion filters:
 
-![]({attach}light-stands.jpg)
+![The studio between takes, a diffused blinder on a stand to the right and a household halogen lamp bounced off the wall to the left, with the drum kit in the foreground]({attach}light-stands.jpg)
 
 I choose to shot in 1080p with a 1/50 shutter speed. I used a frame-rate of
 25fps because at that time I lacked the confidence of using a more cinematic
@@ -123,19 +123,19 @@ and migrating Cool Cavemen's legacy website from [e107 to WordPress
 It's only at the end of 2011, that I managed to find time to finally complete
 the project. Here is my final timeline in Kdenlive:
 
-![]({attach}burlesque-burglary-kdenlive-timeline.png)
+![Final Kdenlive montage with a dozen named tracks stacked over the audio, the monitor showing four faces crowded together under the hand-drawn burlesque burglary title]({attach}burlesque-burglary-kdenlive-timeline.png)
 
 The chaotic "Burlesque Burglary" title at the start of the video is composed of
 several steps:
 
-![]({attach}burlesque-burglary-animated-logo-source.jpg)
+![Sheet of paper with five hand-inked versions of the title lettering stacked one above the other, each drawn in a rough, wobbly felt-tip style]({attach}burlesque-burglary-animated-logo-source.jpg)
 
 All of these were hand-drawn by Cécile, then recomposed later in Gimp:
 
-![]({attach}burlesque-burglary-logo-drawing.jpg)
+![Cécile leaning over a light table in a darkened room, inking the title lettering by hand with a box of coloured pencils beside her]({attach}burlesque-burglary-logo-drawing.jpg)
 
 Finally, I exported the video with different combination of lossless video and
 audio codecs, but some were [not digested by YouTube
 ](https://productforums.google.com/forum/#!category-topic/youtube/uploading-videos/HbSKO8xd8xY):
 
-![]({attach}youtube-upload-failed.png)
+![YouTube upload row for the uncompressed cut, marked with a red error icon reading failed, unable to convert video file]({attach}youtube-upload-failed.png)

@@ -21,7 +21,7 @@ holidays](https://twitter.com/kdeldycke/status/17728248113). Without any time to
 address this issue properly, I decided to shutdown my web server. This explain
 why this blog and all Cool Cavemen's websites were dead during half of july.
 
-![]({attach}munin-fail2ban-jails-weekly-stats.png)
+![Munin weekly graph of active fail2ban bans, the apache-e107ddos jail climbing to nearly 500 before resetting and immediately climbing again]({attach}munin-fail2ban-jails-weekly-stats.png)
 
 Now [everything is back to
 normal](https://twitter.com/kdeldycke/status/19250530728) (I hope), thanks to

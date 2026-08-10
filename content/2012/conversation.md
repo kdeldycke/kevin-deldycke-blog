@@ -5,4 +5,4 @@ category: English
 tags: Android, chat
 ---
 
-![]({attach}conversation.png)
+![Android SMS thread, the correspondent's number blurred, carrying a short exchange of invented gibberish words back and forth]({attach}conversation.png)

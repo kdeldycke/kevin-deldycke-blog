@@ -9,14 +9,14 @@ Last night, I was going back home from a photo trip with friends, when I spotted
 
 Here are some noisy photos I've taken with my Canon 7D and a 15-85mm f/3.5-5.6. If only I had a fast telephoto lens... :(
 
-![]({attach}midnight-in-paris-owen-wilson.jpg)
+![Owen Wilson talking with crew on the darkened bridge, the group lit only by streetlights and the glow of someone's phone]({attach}midnight-in-paris-owen-wilson.jpg)
 
-![]({attach}midnight-in-paris-woody-allen.jpg)
+![Woody Allen in his glasses standing among the crew behind the camera, another crew member blurred by movement across the foreground]({attach}midnight-in-paris-woody-allen.jpg)
 
-![]({attach}midnight-in-paris-set-001.jpg)
+![Crew packed around a boom-mounted lamp and a large bounce board on Pont Alexandre III, with a white marquee and coiled cables at the roadside]({attach}midnight-in-paris-set-001.jpg)
 
-![]({attach}midnight-in-paris-set-002.jpg)
+![Production notice taped around a lamppost, headed Pontchartrain Productions, warning residents of a night shoot on Pont Alexandre III on 11 August 2010]({attach}midnight-in-paris-set-002.jpg)
 
-![]({attach}midnight-in-paris-set-003.jpg)
+![Floodlit colonnade and steps of the palace beside the bridge, with film lamps and traffic cones laid out along the closed-off street]({attach}midnight-in-paris-set-003.jpg)
 
-![]({attach}midnight-in-paris-set-004.jpg)
+![Loxam telescopic crane holding a lighting rig high above the treeline against the night sky, the lit palace behind it]({attach}midnight-in-paris-set-004.jpg)

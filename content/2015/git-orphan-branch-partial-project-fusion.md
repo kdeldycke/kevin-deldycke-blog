@@ -138,7 +138,7 @@ At this point I encourage you to [check in your
 GUI](https://sixohthree.com/1955/git-subtree-merges-orphaned-branches-and-github)
 that the said orphan branch is really detached from your usual branches:
 
-![]({attach}gitlab-network-view-orphan-branch.png)
+![GitLab network view with the orphan branch label sitting on a temporary initial commit, detached above the develop branch and its chain of history]({attach}gitlab-network-view-orphan-branch.png)
 
 Time to import the branch we cleaned from the source repository:
 

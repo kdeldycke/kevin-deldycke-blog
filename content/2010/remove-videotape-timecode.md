@@ -12,11 +12,11 @@ recorded on a videotape, then transcoded to a MPEG-2 stream.
 Because of the analog nature of the filming process' first steps (on which I
 had no control), I ended up with some artefacts:
 
-![]({attach}analog-videotape-timecode.png)
+![Frame captured from the tape: a guitarist silhouetted against pink and blue stage light with the Cool Cavemen logo projected on the wall behind]({attach}analog-videotape-timecode.png)
 
 See? No? Here is an upscaled version:
 
-![]({attach}analog-videotape-timecode-upscaled-detail.png)
+![The top edge of that frame blown up, showing the black band of flickering timecode dashes running above the picture]({attach}analog-videotape-timecode-upscaled-detail.png)
 
 Yes, that's it: there is white dots on top of each frame.
 
@@ -47,4 +47,4 @@ rectangle over these dots to hide them. Here is how to do it:
 1. Now you have to export the result using a reasonable video codec, and
    that's it!
 
-![]({attach}avidemux-add-black-border.png)
+![Avidemux video filter manager with the Blacken borders filter added, its dialog setting the top border to 2 pixels and the rest to zero]({attach}avidemux-add-black-border.png)

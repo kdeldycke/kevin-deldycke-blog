@@ -13,20 +13,20 @@ What's left to enlarge your capacity is [referrals](https://dropbox.com/account#
 
 I only targeted the French audience because I feared the HN post would have temporarily inflated the cost of English keywords. Here are the daily stats of my campaign:
 
-![]({attach}dropbox-adwords-campaign-daily-stats.png)
+![AdWords campaign dashboard for the Dropbox campaign over two weeks, the click curve flat until it spikes to 59 clicks on 30 November then collapses back to zero]({attach}dropbox-adwords-campaign-daily-stats.png)
 
 And here are the ads I created:
 
-![]({attach}dropbox-adwords-campaign-text-ads-details.png)
+![The ten French text ads in the campaign with their individual click, impression and cost figures, three of them paused, totalling 186 clicks on 9,998 impressions for €31.77]({attach}dropbox-adwords-campaign-text-ads-details.png)
 
 The paused ads above are those which didn't invited the user to install the Dropbox desktop client. And the latter action is absolutely required to unlock the bonus capacity.
 
-![]({attach}dropbox-referrals.png)
+![Dropbox referral page listing twenty invitations with their email addresses blurred, each marked either Joined or Completed]({attach}dropbox-referrals.png)
 
 And if your interested in all the details involved, here is a [keyword report]({attach}dropbox-adwords-campaign-keyword-report.pdf).
 
 At the end it costs me 31.77€ to get 8Go of additional Dropbox capacity trough referrals:
 
-![]({attach}dropbox-adwords-campaign-france-report.png)
+![Country breakdown reduced to a single row for France: 186 clicks, 9,996 impressions, 1.86% click-through, €31.77 spent]({attach}dropbox-adwords-campaign-france-report.png)
 
 That's not cheap, but was a fun hack and a great excuse to learn how to use Google AdWords. And next time I know what I'll do with those AdWords coupons I regularly give away... ;)

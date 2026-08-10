@@ -10,4 +10,4 @@ They didn't reached their fundraising goal last year, but it doesn't matter: [do
 
 As a gift, you'll received decimals of Pi:
 
-![]({attach}quadradure-du-net-pi-decimals.jpg)
+![Close-up of the printed certificate from La Quadrature du Net, thanking the donor by name and awarding him a numbered range of the decimals of pi, over a large watermarked pi symbol]({attach}quadradure-du-net-pi-decimals.jpg)

@@ -17,7 +17,7 @@ In the [first post of the series]({filename}/2010/cool-cavemen-live-gayant-expo-
 
 The concert was shot with 4 cameras. Among them, only two were of the same kinds. Those were part of the live broadcasting system of the event. This explain the "[mise en abyme](https://en.wikipedia.org/wiki/Mise_en_abyme)" effect in the background screen:
 
-![]({attach}funky-cops-mise-en-abyme.png)
+![Concert frame captioned Funky Cops, the singer up on a monitor wedge with guitarist and bassist behind him, and the same footage projected on the wall above the stage]({attach}funky-cops-mise-en-abyme.png)
 
 At the end of the gig, I wasn't be able to retrieve two continuous feeds. Instead I got an already-edited video corresponding to what was projected live (*sigh*).
 

@@ -5,7 +5,7 @@ category: English
 tags: Kdenlive, Linux, Omashay, timelapse, slow-motion, slowmoVideo, imagemagick, transcode, vid.stab, Blender
 ---
 
-![]({attach}tale-of-two-preview.jpg)
+![Finished timelapse frame: a large oil portrait of a face with a hand pressed to the cheek, propped on an easel in a bedroom, the sides feathered away by the paint-stroke mask]({attach}tale-of-two-preview.jpg)
 
 This is the fourth video I've work on for [Omashay](https://omashay.com):
 
@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=4HtfugU_mGg
 
 This video is a timelapse of a painting Tomasito made in 2007. It's based on a series of photos he took every 10 minutes:
 
-![]({attach}tale-of-two-timelapse.png)
+![Contact sheet of about seventy numbered photos of the easel, the canvas going from blank white through ochre outlines to the finished portrait]({attach}tale-of-two-timelapse.png)
 
 ## slowmoVideo
 
@@ -25,7 +25,7 @@ But the experiment failed and I abandoned this endeavor. Instead of slow-motion,
 
 The original photos were not consistent. To make them work as a slideshow, they required some stabilization. I tried the new [tracking features of Blender](https://wiki.blender.org/index.php/Doc:2.6/Manual/Motion_Tracking):
 
-![]({attach}blender-timlapse-stabilization.jpg)
+![Blender motion tracking on the slideshow, tracker crosses scattered over the canvas and the room, with the 2D stabilization panel and its track list open on the right]({attach}blender-timlapse-stabilization.jpg)
 
 While I could feel the power of the tracking tools, my limited knowledge of Blender stopped me. I abandoned this approach. But one day for sure, I'll give Blender the time it deserves.
 
@@ -37,11 +37,11 @@ But it can't read images: it only takes videos for input. So we'll produce a vid
 
 First, in a separate project, I created a stupid slideshow of 1 photo per frame, without any transition:
 
-![]({attach}redux-generation.png)
+![Kdenlive slideshow clip properties set to one frame per image with no dissolve or animation, reporting 70 images found]({attach}redux-generation.png)
 
 To keep details, I exported the project to a high-quality h264 stream composed of I-frames only:
 
-![]({attach}export.png)
+![Kdenlive render dialog on the Lossless/HQ destination with the H.264 I-frame only profile selected]({attach}export.png)
 
 I wanted to use a true lossless codec here, but after several trials and errors, this profile was the only one <code>vid.stab</code> was able to digest.
 
@@ -81,7 +81,7 @@ $ convert -resize 1920x1080 -background black -gravity center -extent 1920x1080 
 
 [As for Goodnight]({filename}/2013/goodnight-video.md), we tried to get rid of the wide black bars on the sides. [QPX](https://wqpx.wordpress.com) created for us a mask made of paint strokes:
 
-![]({attach}video-mask.png)
+![Black and white mask, a white centre with ragged paint-stroke edges eating into the black bars down either side]({attach}video-mask.png)
 
 Then I used that mask to blend the photos with a background fiber texture from [Subtle Patterns](https://subtlepatterns.com):
 

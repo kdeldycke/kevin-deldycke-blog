@@ -13,11 +13,11 @@ Il est temps de mettre fin à cette folie furieuse et de faire le ménage.
 
 La procédure de suppression de ces comptes mails chez Free n'est pas compliqué. La première chose à faire, si ce n'est pas déjà fait, consiste à rattacher ses comptes mails à son compte principal. Facile, ça se fait dans l'interface d'administration du compte:
 
-![]({attach}rattacher-compte-mail.png)
+![Freebox management console on its internet page, with a hand-drawn red arrow pointing at the link for attaching other email accounts]({attach}rattacher-compte-mail.png)
 
 Ensuite, il faut se rendre sur la [page d'assistance par mail](https://www.free.fr/assistance/mail.html). Là, il suffit d'écrire un message poli et précis, en choisissant bien _Gestion des comptes de messagerie_ comme destinataire:
 
-![]({attach}free-assistance-mail.png)
+![Free support contact form filled with a French message asking for the listed obsolete secondary mail accounts and all their attached data to be deleted]({attach}free-assistance-mail.png)
 
 Et pour les paresseux, voici le modèle à copier/coller:
 

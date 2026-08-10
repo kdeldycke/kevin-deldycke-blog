@@ -7,7 +7,7 @@ tags: commit, Git, GitHub, history, Init, Software engineering
 
 Here is something I wanted to do for 3 years. I wanted to migrate my code repository from this:
 
-![]({attach}dumb-code-revision-control-system.png)
+![Old download page acting as the revision control system, each script followed by a bullet list of dated versions going back to 2006]({attach}dumb-code-revision-control-system.png)
 
 to a proper [revision control system](https://en.wikipedia.org/wiki/Revision_control), like Subversion. And I wanted to reconstruct the commit history with all the proper dates. That's something I can't do with SVN.
 
@@ -22,7 +22,7 @@ $ git clone git@github.com:kdeldycke/kev-code.git
 
 In gitg, my untouched repository looks like this:
 
-![]({attach}git-repository-at-start.png)
+![Commit list at the outset, a short run of my own commits on master sitting on top of an imported Drupify branch by another author]({attach}git-repository-at-start.png)
 
 Notice all the pre-existing code.
 
@@ -64,7 +64,7 @@ $ (...)
 
 At last, the `history-injection` branch contain all version of `website-backup.py`:
 
-![]({attach}history-injection-branch.png)
+![The history-injection branch holding the reconstructed backup-script commits from 2006 to 2009, running parallel to master]({attach}history-injection-branch.png)
 
 Now I'll use the `rebase` directive to insert the `history-injection` branch back in the main line (aka `master`). This insertion will take place just after the `init` tag. This translates to the following Git command:
 
@@ -82,13 +82,13 @@ $ git branch -D history-injection
 
 Now you should have a unique and straight history line from `init` tag to `master` head. Like this:
 
-![]({attach}rebased-history-injection-branch.png)
+![The same commits after rebasing, now threaded into a single trunk in date order instead of sitting on a side branch]({attach}rebased-history-injection-branch.png)
 
 Commits appears to be ordered as they should but you may not be as lucky as me. In fact the recently merge commits are stuck at the "bottom" (just after the `init` tag, as we asked Git to do on rebase). And you may find you in a situation where commits of the whole master branch are not chronologically ordered.
 
 Here is such an example. It happened when I tried to rebase the full history of my `system-backup.py` script:
 
-![]({attach}system-backup-script-rebase.png)
+![gitg showing the rebased kev-code repository, a selected commit and its one-line diff against system-backup.py in the pane below]({attach}system-backup-script-rebase.png)
 
 I haven't found a way to tell Git how to rebase by following commit dates. I know that something can be done with a command like:
 

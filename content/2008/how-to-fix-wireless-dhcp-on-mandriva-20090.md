@@ -21,7 +21,7 @@ Then came the 2009.0 release. I though that an upgrade will cure my malediction.
 
 So I replaced it by `dhcpcd`, and against all expectations, it worked!
 
-![]({attach}mandriva-net-applet-wireless-dhcp.png)
+![Mandriva wireless configuration in French, the network settings dialog open on the DHCP client dropdown with dhcpcd picked over dhclient, pump and dhcpxd]({attach}mandriva-net-applet-wireless-dhcp.png)
 
 And to not be annoyed by `dhcp_client` in the future, it's wise to definitely remove it:
 

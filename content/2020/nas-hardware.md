@@ -74,11 +74,11 @@ Worse, I already ordered a small case (SilverStone SST-ML05B) and all its access
 
 Here are some photos of my first attempt at building a NAS with that case:
 
-![]({attach}silverstone-sst-ml05b-case.jpg)
+![The closed SilverStone SST-ML05B on a wooden table, a slim black box with a punched vent and a square fan grille on its lid]({attach}silverstone-sst-ml05b-case.jpg)
 
-![]({attach}silverstone-sst-ml05b-case-nas-fully-assembled.jpg)
+![The same case opened from above and fully built, the SFX power supply and its cable bundle on the left, the drive tray in the middle and the beige Noctua fans down the right edge]({attach}silverstone-sst-ml05b-case-nas-fully-assembled.jpg)
 
-![]({attach}freebox-delta-s-and-nas-in-cabinet.jpg)
+![The finished NAS standing on its side in the electrical cabinet next to the white Freebox, patch cables running up the wall]({attach}freebox-delta-s-and-nas-in-cabinet.jpg)
 
 ### 3.5" HDDs
 
@@ -117,7 +117,7 @@ Went fishing for another case. I increased my budget three times and got a Silve
 - SFX PSU format (already ordered one)
 - Fit in my electrical cabinet (extremely important)
 
-![]({attach}silverstone-sst-ml05b-and-sst-ds380-side-by-side.jpg)
+![The two cases open side by side on a table, the small ML05B dwarfed by the much deeper DS380 with its three 120 mm fans already fitted]({attach}silverstone-sst-ml05b-and-sst-ds380-side-by-side.jpg)
 
 I replaced all its 3 default 120 mm fans by three Noctua NF-S12A PWM. I choose the S-series over the NF-F12 / NF-A12 as the latter [targets radiators](https://noctua.at/en/which_fan_is_right_for_me) and I needed to [optimize for maximal airflow for case cooling](https://noctua.at/en/nf-a12x25-performance-comparison-to-nf-f12-and-nf-s12a). Also the NF-S12A variant is a little quieter than the NF-S12B one. These new fans added:
 
@@ -209,7 +209,7 @@ Surprisingly the black version was cheaper than the regular, brown variant.
 
 In this section I've cross-referenced [all CPUs supported by the motherboard](https://www.asrockrack.com/general/productdetail.asp?Model=E3C246D2I#CPU) with the [cooler compatibility list](https://noctua.at/en/products/cpu-cooler-retail/nh-l9i/cpucomp#manuf_8346):
 
-![]({attach}cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.png)
+![Colour-coded spreadsheet cross-referencing every CPU the ASRock Rack E3C246D2I supports against the Noctua NH-L9i compatibility list, grouped by Xeon, Core i9 down to Celeron, with columns for cores, frequency, cache, ECC, power draw, cooler rating and price]({attach}cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.png)
 
 Source: [`cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers`]({attach}cpu-compatibility-asrock-e3c246d2i-noctua-nh-l9i.numbers)
 

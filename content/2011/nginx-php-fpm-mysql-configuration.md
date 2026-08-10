@@ -11,7 +11,7 @@ MySQL]({filename}/2011/nginx-php-fpm-mysql-debian-squeeze-server.md)
 on a Debian Squeeze server. Now it's time to tune this basic install to get
 some performance out of it.
 
-![]({attach}ovh-vps-3-virtual-server.png)
+![OVH virtual private server order page with tier 3 picked on the slider: four vCores at 1.5 GHz, 1 GB of memory, 50 GB of storage and a 99.99% SLA]({attach}ovh-vps-3-virtual-server.png)
 
 The setup I'll detail below runs on an [OVH VPS](https://www.ovh.co.uk/vps/)
 instance. This virtual server has 4 CPU cores at 1.5GHz, 1 Go RAM and 50 Gb

@@ -37,7 +37,7 @@ And if you're brave enough to [browse the code](https://github.com/kdeldycke/fun
 
 Digging deeper, I even found an old photo of me from my prime years:
 
-![](https://raw.github.com/kdeldycke/funky-storm/master/data/webmaster.jpg)
+![Small tilted snapshot of a much younger me grinning up at the camera in oval glasses and a striped shirt, against a bedroom wall papered with little animals](https://raw.github.com/kdeldycke/funky-storm/master/data/webmaster.jpg)
 
 This project was horrible from a software engineering point of view. And that's normal: it was part of my learning process. Hence the nostalgia.
 

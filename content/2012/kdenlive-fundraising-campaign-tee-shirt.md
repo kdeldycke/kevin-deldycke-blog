@@ -7,6 +7,6 @@ tags: campaign, Fundraising, Kdenlive, T-shirt
 
 Forgot to mention that I received my [Kdenlive](https://kdenlive.org) tee-shirt following the [success of the fundraising campaign]({filename}/2012/kdenlive-fundraising-campaign-tremendous-success.md)
 
-![]({attach}kdenlive-fundraising-campaign-tee-shirt-back.jpg)
+![Back view of the black campaign tee-shirt, its large print showing a curved strip of film with the kdenlive.org address running alongside]({attach}kdenlive-fundraising-campaign-tee-shirt-back.jpg)
 
-![]({attach}kdenlive-fundraising-campaign-tee-shirt-front.jpg)
+![Front of the same tee-shirt with a small Kdenlive Supporter logo on the chest, held up beside a postcard of a highland cow]({attach}kdenlive-fundraising-campaign-tee-shirt-front.jpg)

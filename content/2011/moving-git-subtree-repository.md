@@ -34,7 +34,7 @@ But this doesn't work in my case as my e107 Importer plugin didn't started its l
 
 At this point I'm left with this following history:
 
-![]({attach}git-subtree-cleanup-results.png)
+![Commit history of the extracted importer, tagged from e107-importer-0.1 in 2006 through 0.9, with one foreign commit for the Drupal 5.0 release]({attach}git-subtree-cleanup-results.png)
 
 This looks pretty good, as all the history of my plugin is kept in order. But tags unrelated to my plugin are still there. Let's remove them:
 
@@ -50,7 +50,7 @@ $ git rebase --interactive init
 
 There, using my text editor, I deleted the entries corresponding to these unrelated commits (namely `c21a840`, `0dc1d76`, `37473a8` and `c6f9f64`), and hoped Git will be smart enough to reconstruct a clean history:
 
-![]({attach}git-interactive-rebase.png)
+![Interactive rebase in the editor, every commit prefixed with pick above the usual list of rebase commands]({attach}git-interactive-rebase.png)
 
 Luckily, it worked for me. If Git complain about such abuse, you may ignore warnings and force it to continue:
 
@@ -81,7 +81,7 @@ $ git pull --tags origin master
 
 Now we can create on GitHub the new repository that will receive our exported project:
 
-![]({attach}github-new-repository-form.png)
+![GitHub's create-a-new-repository form filled in for e107-importer, described as a WordPress plugin to import from a legacy e107 CMS, set to public]({attach}github-new-repository-form.png)
 
 It's time to push our changes. Let's replace our temporary origin to the new GitHub repository we just created:
 

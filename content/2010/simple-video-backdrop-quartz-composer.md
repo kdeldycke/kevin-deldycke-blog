@@ -13,4 +13,4 @@ As you can see, it's just [my band](https://coolcavemen.com)'s logo, subtly glow
 
 As usual, here is the [source composition]({attach}glowing-cool-cavemen.qtz), and a preview of the patch:
 
-![]({attach}glowing-cool-cavemen-patch.png)
+![Short Quartz Composer patch running an image through a colour invert and a bloom whose radius is driven by an LFO, then out to a billboard]({attach}glowing-cool-cavemen-patch.png)

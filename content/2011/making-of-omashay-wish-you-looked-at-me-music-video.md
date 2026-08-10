@@ -5,7 +5,7 @@ category: English
 tags: 1080p, 720p, Cool Cavemen, Kdenlive, Linux, Music, music video, omashay, Video, youtube
 ---
 
-![]({attach}omashay-wish-you-looked-at-me-preview.png)
+![Four-way split screen of the finished video: hands on a piano keyboard, a red bass being played, a drummer behind his kit, and the singer at a pop shield in headphones]({attach}omashay-wish-you-looked-at-me-preview.png)
 
 Last month I edited the [Wish You Looked at Me video clip
 ](https://omashay.com/wish-you-looked-at-me-video-clip/) for the [Omashay
@@ -30,7 +30,7 @@ The most boring part of the edit was the first step, in which we synced all
 clips together with the reference audio track. Here is how the timeline looked,
 with one track for each instrument:
 
-![]({attach}wish-you-looked-at-me-kdenlive-timeline-01.png)
+![Kdenlive with every instrument on its own track, thirteen long clips stacked above the reference audio, all waveform-aligned]({attach}wish-you-looked-at-me-kdenlive-timeline-01.png)
 
 We had to work around some annoying Kdenlive bugs, as it had some problems
 handling so much tracks in parallel. Fortunately these bugs were fixed in a
@@ -40,29 +40,29 @@ Next step was to mark out the structure of the song. Tomasito placed blue
 markers along the timeline, and we cut all tracks following that structure. It
 resulted in a matrix of clips:
 
-![]({attach}wish-you-looked-at-me-kdenlive-timeline-02.png)
+![The same timeline after cutting to the song structure, blue markers labelling intro, verses, choruses and bridge, leaving a dense matrix of short clips]({attach}wish-you-looked-at-me-kdenlive-timeline-02.png)
 
 Then for each segment, we choose the 4 clips that we wanted to show and deleted
 the others:
 
-![]({attach}wish-you-looked-at-me-kdenlive-timeline-04.png)
+![The matrix thinned out to four clips per segment, leaving gaps where the unused takes were deleted]({attach}wish-you-looked-at-me-kdenlive-timeline-04.png)
 
 Then I created 4 special tracks to which I applied a global positioning and
 scaling effect, to have each track fill one corner of the screen. We moved
 there all the clips we selected in the previous step, and cleaned up the
 timeline a bit:
 
-![]({attach}wish-you-looked-at-me-kdenlive-timeline-05.png)
+![Timeline reduced to four corner tracks, the effects panel showing the pan and zoom set to 50 percent to park one clip in a quadrant]({attach}wish-you-looked-at-me-kdenlive-timeline-05.png)
 
 At this stage the project was mostly done. It was just a matter of adding
 intro, outro and fade in/out to obtain our final video:
 
-![]({attach}wish-you-looked-at-me-kdenlive-timeline-06.png)
+![Finished project with a titling track added, the monitor showing the guitarist beside the Wish You Looked at Me title card]({attach}wish-you-looked-at-me-kdenlive-timeline-06.png)
 
 Tomasito basically did the whole editing of the project. And I have some
 evidences:
 
-![]({attach}tomasito-editing-session.jpg)
+![Tomasito editing in a darkened room, laptop under his hands and the Kdenlive timeline up on the big monitor, between studio speakers]({attach}tomasito-editing-session.jpg)
 
 I just showed him how to manipulate Kdenlive timelines, and cut/move/paste
 clips, and he was absolutely autonomous in a matter of minutes. I just did the

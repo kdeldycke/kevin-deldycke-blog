@@ -7,7 +7,7 @@ tags: Apple, Canon EOS 7D, iPhone, light painting, long exposure, photo, photogr
 
 Here is another light painting session I've done 2 weeks ago with Jim:
 
-![]({attach}maomium-light-painting-session-two-preview.jpg)
+![Long-exposure light painting against a brick garden wall, white and green loops of light swirling under an orange night sky]({attach}maomium-light-painting-session-two-preview.jpg)
 
 This time we used a more powerful light source: a simple Apple's iPhone at full brightness.
 

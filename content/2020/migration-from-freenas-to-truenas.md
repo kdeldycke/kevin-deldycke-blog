@@ -29,7 +29,7 @@ My plan consist in:
 
 After the migration to TrueNAS `12.0-U1`, the main pool (which I called `big`), gets locked:
 
-![]({attach}legacy-encrypted-truenas-zfs-offline-pool.jpeg)
+![TrueNAS pools page listing the big pool as the system dataset pool under legacy encryption, marked LOCKED with the note that this geli-encrypted pool failed to decrypt]({attach}legacy-encrypted-truenas-zfs-offline-pool.jpeg)
 
 All system metadata resides there. We can no longer SSH into the box with our regular users. We'll hack our way in and create a new temporary one.
 
@@ -124,7 +124,7 @@ Notice the `.eli` suffix indicating the partition is encrypted.
 
 At this point a couple of notifications will pop-up:
 
-![]({attach}truenas-critical-error-volume-status.jpeg)
+![Alerts panel filled by a critical VolumeStatus traceback ending in AttributeError, NoneType object has no attribute values, raised from flatten_topology]({attach}truenas-critical-error-volume-status.jpeg)
 
 ```pytb
 Failed to check for alert VolumeStatus:
@@ -150,7 +150,7 @@ I chose to simply ignore that one.
 
 And now the pool is materialized in the GUI:
 
-![]({attach}legacy-encrypted-offline-zfs-pool.jpeg)
+![Pools page with the big pool now listed but flagged OFFLINE with a red cross]({attach}legacy-encrypted-offline-zfs-pool.jpeg)
 
 It is offline, but can be activated from the shell:
 
@@ -183,11 +183,11 @@ config:
 errors: No known data errors
 ```
 
-![]({attach}legacy-encrypted-online-zfs-pool.jpeg)
+![Pool status page after a finished resilver with zero errors, the RAIDZ2 vdev and all four partitions ONLINE, though ada1p2 and ada2p2 each carry two checksum errors]({attach}legacy-encrypted-online-zfs-pool.jpeg)
 
 We got a couple of notifications, one that is warning us about the [`ZFS-8000-9P` error](https://openzfs.github.io/openzfs-docs/msg/ZFS-8000-9P/).
 
-![]({attach}zfs-online-pool-unrecoverable-error.jpeg)
+![Critical alert saying pool big is ONLINE but one or more devices hit an unrecoverable error that an attempt was made to correct, with applications unaffected]({attach}zfs-online-pool-unrecoverable-error.jpeg)
 
 ```text
 CRITICAL
@@ -222,7 +222,7 @@ errors: No known data errors
 
 ZFS is also proposing to upgrade the pool, but we will not:
 
-![]({attach}zfs-feature-flag-pool-upgrade.jpeg)
+![Warning offering new ZFS feature flags for pool big, cautioning that upgrading is one-time and blocks rolling back to an earlier TrueNAS version]({attach}zfs-feature-flag-pool-upgrade.jpeg)
 
 ```text
 WARNING
@@ -237,7 +237,7 @@ The strategy here consist in replacing each encrypted partition by itself, un-en
 
 First, we choose one partition (`ada1p2` in this case), and offline the disk from the web interface:
 
-![]({attach}offline-zfs-disk.jpeg)
+![Offline Disk confirmation for ada1 over the partition list, warning that disks cannot be brought back online in encrypted pools]({attach}offline-zfs-disk.jpeg)
 
 Double-check the status of the pool with the CLI:
 

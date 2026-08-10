@@ -5,7 +5,7 @@ category: English
 tags: 1080p, Canon EOS 7D, Tamron, Trapped in Freedom, Video, youtube
 ---
 
-![]({attach}trapped-in-freedom-preview.jpg)
+![Bass player on stage in a white shirt, braces and a chicken mask, the Le Garage Café backdrop lit red behind the drum kit]({attach}trapped-in-freedom-preview.jpg)
 
 Some weeks ago I was at a local bar to see [Trapped in Freedom](https://www.myspace.com/trappedinfreedom). This band is composed of friends, and is also a side project involving [Jimy Wong](https://coolcavemen.com/biography/jimy-wong/) from [Cool Cavemen](https://coolcavemen.com), again as a drummer. This was a perfect excuse to test my brand new Tamron SP AF 17-50mm f/2.8 XR Di-II VC LD IF lens.
 
@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=AZshlehRbPI
 
 They also released "Incoming" some days ago:
 
-![]({attach}incoming-preview.png)
+![Torso-height shot of a guitarist in a white shirt and waistcoat against a red-lit wall, amp heads glowing at the edges of frame]({attach}incoming-preview.png)
 
 https://www.youtube.com/watch?v=HlSmuJVQT8A
 
