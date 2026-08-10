@@ -9,7 +9,7 @@ When working with multiple OpenERP instances in different stages, you can be sur
 
 A quick and dirty hack to prevent such events is to add a hard-coded warning message to all content produced by OpenERP:
 
-![OpenERP login page with a red banner across the top warning that this is a pre-production instance]({attach}openerp-login-screen-with-alert-banner.png)
+![OpenERP login page with a red banner across the top warning that this is a pre-production instance](openerp-login-screen-with-alert-banner.png)
 
 The result above was produced on OpenERP 6.0 thanks to the following patch on the [`header.mako`](https://bazaar.launchpad.net/~openerp/openobject-client-web/6.0/view/head:/addons/openerp/controllers/templates/header.mako) template file:
 

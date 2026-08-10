@@ -33,7 +33,7 @@ $ qemu -hda big10G.raw
 
 Here is an real case example of what you can see in a qemu image on which Windows XP was installed:
 
-![Windows disk management inside QEMU showing the grown 10 GB disk, with the 5.99 GB FAT32 system partition and 4.01 GB still unallocated beside it]({attach}growed-image1.png)
+![Windows disk management inside QEMU showing the grown 10 GB disk, with the 5.99 GB FAT32 system partition and 4.01 GB still unallocated beside it](growed-image1.png)
 
 Now, to grow your primary partition, I suggest you to download a Live CD like [gparted Live CD](https://gparted.sourceforge.net/livecd.php) or [System Rescue CD](https://www.sysresccd.org), and boot on the `.iso` file with qemu:
 

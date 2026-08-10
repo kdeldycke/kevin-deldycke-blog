@@ -5,7 +5,7 @@ category: English
 tags: Debian, Debian Squeeze, email, Exim, fcgiwrap, Linux, mailing list, mailman, munin, nginx
 ---
 
-![GNU Mailman logo, the wordmark beside a stylised blue envelope]({attach}mailman-logo.png)
+![GNU Mailman logo, the wordmark beside a stylised blue envelope](mailman-logo.png)
 
 Before going further, please take note that I start this tutorial assuming that
 you already have a [minimal Exim
@@ -68,7 +68,7 @@ Is qrunner even running?
 
 If everything is alright, you'll receive a mail similar to this one:
 
-![Automated welcome mail announcing the new mailman list, with the list password and the admin and listinfo URLs blurred out]({attach}mailman-new-mailing-list-message.png)
+![Automated welcome mail announcing the new mailman list, with the list password and the admin and listinfo URLs blurred out](mailman-new-mailing-list-message.png)
 
 ## Nginx
 
@@ -143,7 +143,7 @@ $ /etc/init.d/nginx restart
 
 If everything's OK, going to `http://lists.example.com` will show you this:
 
-![Default Mailman index page reporting no publicly advertised lists, the hostname redacted, with the Mailman, Python, GNU and Debian badges along the bottom]({attach}mailman-default-welcome-screen.png)
+![Default Mailman index page reporting no publicly advertised lists, the hostname redacted, with the Mailman, Python, GNU and Debian badges along the bottom](mailman-default-welcome-screen.png)
 
 ## Exim
 

@@ -33,16 +33,16 @@ the regulators in case of emergency).
 
 The video was edited with Kdenlive:
 
-![Kdenlive project for the dive video, GoPro clips spread over four video tracks and two audio tracks, the monitor showing divers on the pool floor under a Dramatization watermark]({attach}kdenlive.jpg)
+![Kdenlive project for the dive video, GoPro clips spread over four video tracks and two audio tracks, the monitor showing divers on the pool floor under a Dramatization watermark](kdenlive.jpg)
 
 All footage above water are straight out of the camera. But underwater, below 3
 meters, I tried to fix colors by increasing magenta tones. Here is a comparison
 between the raw footage and its color corrected version:
 
-![Diagonal split comparison of one underwater frame, the raw footage on the upper left heavily green, the corrected half on the lower right restored to clean blue]({attach}underwater-color-correction-before-after.jpg)
+![Diagonal split comparison of one underwater frame, the raw footage on the upper left heavily green, the corrected half on the lower right restored to clean blue](underwater-color-correction-before-after.jpg)
 
 And here is the stack of filters I used to achieve the result above.
 
-![Kdenlive effect stack for the correction track, a curves effect bending the green channel down alongside contrast and gamma sliders]({attach}underwater-color-correction-filters.jpg)
+![Kdenlive effect stack for the correction track, a curves effect bending the green channel down alongside contrast and gamma sliders](underwater-color-correction-filters.jpg)
 
 Next step: the ocean! :)

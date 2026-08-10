@@ -9,13 +9,13 @@ A year ago I explored visual control by plugging a generic Behringer BCF2000 MID
 
 So here is my MIDI playground:
 
-![Quartz Composer patch combining a MIDI controllers receiver and an audio input, routed through pulse patches and a pulse chooser into the colour and geometry of a sprite]({attach}quartz-composer-midi-playground.png)
+![Quartz Composer patch combining a MIDI controllers receiver and an audio input, routed through pulse patches and a pulse chooser into the colour and geometry of a sprite](quartz-composer-midi-playground.png)
 
 Nothing exceptional to see here. It's just a bunch of dumb patches to control the color of the background screen and its intensity. The latter can be modulated by pulses with different profiles, and also by the sound captured by the MacBook's microphone. The [source composition is downloadable]({attach}midi-controlled-playground.qtz).
 
 Just for the sake of it, I've recorded a quick and dirty demo with my Canon 7D (set to 1080p, 25 fps and 1/50 shutter speed) and the fantastic Tokina 11-16mm f/2.8:
 
-![Filming setup at home: the EOS 7D on a tripod aimed down at a glass table holding an open MacBook Pro and the Behringer control surface, red sofa behind]({attach}behind-the-scene-of-bcf2000-and-quartz-composer-video.jpg)
+![Filming setup at home: the EOS 7D on a tripod aimed down at a glass table holding an open MacBook Pro and the Behringer control surface, red sofa behind](behind-the-scene-of-bcf2000-and-quartz-composer-video.jpg)
 
 Here is the video, which I edited with [Kdenlive](https://www.kdenlive.org):
 

@@ -12,7 +12,7 @@ a series about my longest video project: the
 [biggest concert](https://coolcavemen.com/2009/concert-a-gayant-expo-les-photos/)
 we performed with [Cool Cavemen](https://coolcavemen.com) in 2009.
 
-![Singer in silhouette against thick yellow-green haze, one arm thrown up while he sings into the microphone]({attach}gayant-expo-live-preview.jpg)
+![Singer in silhouette against thick yellow-green haze, one arm thrown up while he sings into the microphone](gayant-expo-live-preview.jpg)
 
 Cool Cavemen is
 [working right now on a new album](https://coolcavemen.com/2011/le-grand-retour/),
@@ -35,11 +35,11 @@ projects from scratch several times (_sigh_).
 
 I not only edited this video. I also was in charge of the stage lighting design of the concert:
 
-![working-on-grand-ma-001]({attach}working-on-grand-ma-001.jpg)
+![working-on-grand-ma-001](working-on-grand-ma-001.jpg)
 
-![working-on-grand-ma-002]({attach}working-on-grand-ma-002.jpg)
+![working-on-grand-ma-002](working-on-grand-ma-002.jpg)
 
-![working-on-grand-ma-003]({attach}working-on-grand-ma-003.jpg)
+![working-on-grand-ma-003](working-on-grand-ma-003.jpg)
 
 It was the first time I had so much gear to work with (mostly
 [Martin Mac-2000](https://www.martin.com/product/product.asp?product=mac2000profile)
@@ -50,7 +50,7 @@ A week before the show, I played with
 [GrandMA's emulator](https://www.malighting.com/en/products/control/grandma-onpc.html)
 to get a glimpse of that desk's philosophy.
 
-![grandMA onPC visualiser rendering the rig on a black and white chequered stage, blue beams crossed with magenta and red washes]({attach}grand-ma-onpc-simulation.png)
+![grandMA onPC visualiser rendering the rig on a black and white chequered stage, blue beams crossed with magenta and red washes](grand-ma-onpc-simulation.png)
 
 But this little training is not enough to get used to the GrandMA, let alone
 master it. So when it was time to play live, I choose simple lighting patterns
@@ -66,11 +66,11 @@ that didn't fell right, and fix all the timing issue after the facts.
 
 The audio is a multitrack recording taken directly from the [front of house](https://en.wikipedia.org/wiki/Front_of_House) mixing console, and saved on a MacBook:
 
-![IMG_0492]({attach}IMG_0492.jpg)
+![IMG_0492](IMG_0492.jpg)
 
-![IMG_0502]({attach}IMG_0502.jpg)
+![IMG_0502](IMG_0502.jpg)
 
-![p1010733]({attach}p1010733.jpg)
+![p1010733](p1010733.jpg)
 
 The raw recording was later remixed by Thomas of the
 [SoundUp Studio](https://soundupstudio.com/).
@@ -105,14 +105,14 @@ based on a reference track extracted from the camera recording:
    the file I import in Kdenlive and align with my video using the reference
    track.
 
-![French Kdenlive project for the Fusion track, titling PNGs and two master audio takes in the bin, with markers labelling where each edit pass starts]({attach}kdenlive-fusion-timeline.png)
+![French Kdenlive project for the Fusion track, titling PNGs and two master audio takes in the bin, with markers labelling where each edit pass starts](kdenlive-fusion-timeline.png)
 
 Before using that workflow on all our tracks, we checked it was not introducing
 delays. Unfortunately, I detected some:
 
-![export-PTFU-audio-ref]({attach}export-PTFU-audio-ref.png)
+![export-PTFU-audio-ref](export-PTFU-audio-ref.png)
 
-![export-PTFU-master]({attach}export-PTFU-master.png)
+![export-PTFU-master](export-PTFU-master.png)
 
 I introduced them when I tried to
 [get rid of video timecode artifacts]({filename}/2010/remove-videotape-timecode.md).

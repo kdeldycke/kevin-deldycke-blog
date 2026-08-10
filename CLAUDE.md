@@ -1,0 +1,42 @@
+# Blog guidelines
+
+## Upstream fixes land here first
+
+Pelican and Plumage behaviours that need changing are patched, hacked, or worked around **in this repository**, never by editing the theme or vendoring a fork.
+
+**Why:** this repo is the only place where a fix meets the whole content corpus, so it is where the fix can be proven before anyone else has to live with it. Accumulating them in one place also keeps a reviewable list: each one can then be evaluated on its own merits and pushed to the project it belongs to, [kdeldycke/plumage](https://github.com/kdeldycke/plumage) for anything about presentation, [getpelican/pelican](https://github.com/getpelican/pelican) for anything about the engine. A fix applied directly upstream skips that evaluation and cannot easily be reverted here.
+
+**How to apply:** put the workaround in `pelican_patches.py` and connect it to a Pelican signal from `register()`. `pelicanconf.py` imports that module, which is what installs the hooks.
+
+Do not reach for the `PLUGINS` setting to load them. Pelican's `load_plugins()` only auto-discovers the `pelican.plugins` namespace while `PLUGINS` is unset:
+
+```python
+if settings.get("PLUGINS") is not None:
+    ...  # load only what is named
+else:
+    plugins = list(namespace_plugins.values())
+```
+
+So naming a single plugin there silently drops the six this blog depends on: `myst_reader`, `neighbors`, `search`, `seo`, `sitemap` and `webassets`. The import side effect avoids that entirely, and is the same mechanism Plumage itself uses (`register_signals()` in its `__init__.py`).
+
+When a patch graduates upstream, delete it here and tighten the dependency to the release that carries it.
+
+## How a post is written must not decide how it is parsed
+
+`pelican-myst-reader` chooses its renderer by scanning the file for markers:
+
+```python
+or any(syntax in content for syntax in ("{filename}", "{static}", "{attach}"))
+```
+
+Anything else falls back to the lighter docutils renderer, which rejects `{tag}` and `{category}` markers, refuses some of the Pygments lexers this corpus uses, and drops `attrs_inline` classes on the floor. So editing an image reference used to change how an entire article was parsed: removing the last `{attach}` from a post demoted it, and only the loudest three of 73 affected articles actually failed the build.
+
+`MYST_FORCE_SPHINX = True` pins the renderer and severs that link. It costs roughly twice the build time.
+
+Because the reader keeps **one settings key per renderer**, `MYST_SPHINX_SETTINGS` has to mirror `MYST_DOCUTILS_SETTINGS`. Configure only one and the other silently reverts to stock defaults: code blocks lose their line numbers, the heading anchor depth resets, and the extension list shrinks to `colon_fence` and `deflist`. Both keys are asserted equal in `test_pelican_patches.py`.
+
+## Verify against a real build
+
+A full `uv run -- pelican` is the only check that means anything: the corpus is 262 articles with plenty of hand-written HTML, and warnings surface only at build time. Compare before and after by hashing the whole `output/` tree, not by spot-checking a page.
+
+Watch feeds specifically. Article markup is reused verbatim in `feed.rss`, `feed.atom` and every per-tag and per-category feed, where relative URLs resolve against the feed's own address instead of the article's. Something can look correct on the page and still be broken in nine feeds.

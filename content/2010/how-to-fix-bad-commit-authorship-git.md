@@ -9,7 +9,7 @@ Several months ago I committed some code in my GitHub repository, but I did it f
 
 The result was not good looking, as my usual name and mail address were not attached to the commit:
 
-![Web commit history for kev-code where the top commit is credited to a bare kevin with a blank avatar, while the older ones below carry the proper kdeldycke identity]({attach}bad-git-commit-history-authorship.png)
+![Web commit history for kev-code where the top commit is credited to a bare kevin with a blank avatar, while the older ones below carry the proper kdeldycke identity](bad-git-commit-history-authorship.png)
 
 Let's fix this!
 
@@ -41,7 +41,7 @@ $ git commit --amend --author 'Kevin Deldycke <kevin@deldycke.com>'
 
 After this, here is how the local branches looks like in [gitg](https://trac.novowork.com/gitg/):
 
-![gitg after the amend, master pointing at a commit authored by Kevin Deldycke while origin/HEAD and origin/master still sit on the identical commit credited to kevin]({attach}amended-git-commit-in-gitg.png)
+![gitg after the amend, master pointing at a commit authored by Kevin Deldycke while origin/HEAD and origin/master still sit on the identical commit credited to kevin](amended-git-commit-in-gitg.png)
 
 Using the `git log -n1` command, we can compare the old commit:
 
@@ -91,4 +91,4 @@ As I told you before this is bad, but nobody really cares: I'm the only person w
 
 Finally, you can contemplate the result on GitHub, a clean and tidy commit history:
 
-![The same web history once fixed, every commit including the top one now attributed to kdeldycke]({attach}fixed-git-commit-history-authorship.png)
+![The same web history once fixed, every commit including the top one now attributed to kdeldycke](fixed-git-commit-history-authorship.png)

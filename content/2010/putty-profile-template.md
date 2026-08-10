@@ -5,7 +5,7 @@ category: English
 tags: PuTTY, shell, SSH, Template, terminal, Windows
 ---
 
-![PuTTY session with a long directory listing, folder names picked out in colour against the black terminal background]({attach}putty-template-preview.png)
+![PuTTY session with a long directory listing, folder names picked out in colour against the black terminal background](putty-template-preview.png)
 
 Inspired by a recent friend's post about an [annoying PuTTY behavior (fix included)](https://www.think-underground.com/post/2010/04/13/Supprimer-le-comportement-%C3%A9trange-du-pav%C3%A9-num%C3%A9rique-dans-Putty), here is [my template for PuTTY profiles]({attach}putty-template.reg).
 

@@ -9,7 +9,7 @@ It is well-known since the burst of the dot-com bubble that [tables are bad for 
 
 The thing is, Internet Explorer can't cope with big HTML tables. So when it encounters a huge number of cells, IE9 starts to shift them randomly:
 
-![Table rendered by Internet Explorer as a jumble of overlapping misaligned cells, captioned go home Internet Explorer, you are drunk]({attach}go-home-internet-explorer-you-are-drunk.png)
+![Table rendered by Internet Explorer as a jumble of overlapping misaligned cells, captioned go home Internet Explorer, you are drunk](go-home-internet-explorer-you-are-drunk.png)
 
 You can [go here to reproduce this issue](https://jsfiddle.net/kiranmn/kYRnV/).
 

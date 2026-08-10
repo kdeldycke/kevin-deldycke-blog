@@ -5,7 +5,7 @@ category: English
 tags: feed, feedalizer, hpricot, HTTP, parsing, proxy, RSS, Ruby, Ruby on Rails
 ---
 
-![Feedalizer wordmark in a serif face with the red RSS icon standing in for the final letter]({attach}feedalizer.png)
+![Feedalizer wordmark in a serif face with the red RSS icon standing in for the final letter](feedalizer.png)
 
 Here is a little code snippet which
 [monkey-patch](https://en.wikipedia.org/wiki/Monkey_patch)

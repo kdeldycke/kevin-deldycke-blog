@@ -94,16 +94,20 @@ exclude = [
 # [project] name, so the stock filter watches blog/**, a directory this repo does not
 # have. Both jobs below key off content/: one builds the site from it, the other reads
 # the redirect map out of content/extra/.
-# The two .py files are named rather than globbed. That started as a workaround for a
+# The .py files are named rather than globbed. That started as a workaround for a
 # repomatic bug that emitted a `**/*.py` override unquoted, which YAML reads as an alias
 # and GitHub answers by dropping the workflow; v7.7.0 fixed it and a glob would be safe
-# again. Keeping the names anyway, because for a repo holding exactly two Python files a
-# list is more honest than a pattern: adding a third should be a deliberate edit here.
+# again. Keeping the names anyway, because for a repo holding a handful of Python files a
+# list is more honest than a pattern: adding one more should be a deliberate edit here.
+# pelican_patches.py joined the list when the local Pelican workarounds moved out of
+# pelicanconf.py: it runs on every build, so a change to it has to re-run the tests.
 "tests.yaml" = [
     ".github/workflows/tests.yaml",
     "content/**",
+    "pelican_patches.py",
     "pelicanconf.py",
     "pyproject.toml",
+    "test_pelican_patches.py",
     "test_redirects.py",
     "uv.lock",
 ]
@@ -125,6 +129,14 @@ warn_unused_ignores = true
 warn_return_any = true
 warn_unreachable = true
 pretty = true
+
+# Pelican ships no py.typed marker, so importing it is an error under the settings above.
+# Silenced here rather than with an inline ignore on each import, because every local
+# workaround in pelican_patches.py has to reach into the engine to hook onto it. Drop
+# this once Pelican starts advertising its own types.
+[[tool.mypy.overrides]]
+module = ["pelican.*"]
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/latest/customize.html#pyproject-toml

@@ -17,28 +17,28 @@ I used it to create some effects for my 4 el-cheapo
 This script helped me generate column and row presets of my 4x8 pixels LED
 matrix for some basic colors:
 
-![Q Light Controller workspace with four Wider Panels patched in the fixture manager, a long list of generated per-column colour functions on the right, and a console of 22 DMX faders below]({attach}qlc-wider-panel-presets.png)
+![Q Light Controller workspace with four Wider Panels patched in the fixture manager, a long list of generated per-column colour functions on the right, and a console of 22 DMX faders below](qlc-wider-panel-presets.png)
 
 Here are some photos of my preliminary tests at home:
 
-![Four LED panels on microphone stands in a tiled hallway at home, all washing the room magenta]({attach}4-mac-mah-wider-led-panel-fushia.jpg)
+![Four LED panels on microphone stands in a tiled hallway at home, all washing the room magenta](4-mac-mah-wider-led-panel-fushia.jpg)
 
-![The same four panels running deep blue, the individual LEDs visible as a fine grid]({attach}4-mac-mah-wider-led-panel-blue.jpg)
+![The same four panels running deep blue, the individual LEDs visible as a fine grid](4-mac-mah-wider-led-panel-blue.jpg)
 
-![The same four panels in saturated red, spilling across the floor tiles]({attach}4-mac-mah-wider-led-panel-red.jpg)
+![The same four panels in saturated red, spilling across the floor tiles](4-mac-mah-wider-led-panel-red.jpg)
 
-![The same four panels at full white, showing the cold cast of the raw LEDs]({attach}4-mac-mah-wider-led-panel-white.jpg)
+![The same four panels at full white, showing the cold cast of the raw LEDs](4-mac-mah-wider-led-panel-white.jpg)
 
 And finally photos of the panels on stage (
 [taken by Toma Heroow](https://web.archive.org/web/20100605092334/https://www.heroow.fr/2009/11/18/cool-cavemen/)
 during
 [Cool Cavemen's concert in last november](https://coolcavemen.com/2009/mametzik-mad-fest-chez-march/)):
 
-![The band playing under a marquee, two of the LED panels standing on end behind the drum kit as vertical red bars against blue wash]({attach}img_0516-scaled.jpg)
+![The band playing under a marquee, two of the LED panels standing on end behind the drum kit as vertical red bars against blue wash](img_0516-scaled.jpg)
 
-![Bass player and saxophonist lit from below in blue and cyan, shot from the front of the stage]({attach}img_0583-scaled.jpg)
+![Bass player and saxophonist lit from below in blue and cyan, shot from the front of the stage](img_0583-scaled.jpg)
 
-![Guitarist and singer in near silhouette against a deep red stage, one LED panel glowing as a bright column between them]({attach}img_0519-scaled.jpg)
+![Guitarist and singer in near silhouette against a deep red stage, one LED panel glowing as a bright column between them](img_0519-scaled.jpg)
 
 As usual, use and hack this script at you own risks, and feel free to send me
 bug reports and contributions! :)

@@ -91,4 +91,4 @@ $ /etc/init.d/munin-node restart
 
 And finally, after a while, you'll get those beautiful graphs:
 
-![Six Munin graphs for php-apc, pairing daily and weekly views of cache hits against misses, cache memory usage, and the number of files cached]({attach}php-apc-munin-graphs.png)
+![Six Munin graphs for php-apc, pairing daily and weekly views of cache hits against misses, cache memory usage, and the number of files cached](php-apc-munin-graphs.png)

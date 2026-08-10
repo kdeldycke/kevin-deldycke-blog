@@ -103,7 +103,7 @@ To git@github.com:kdeldycke/kev-code.git
 
 And here is the result on GitHub:
 
-![Web view of a fresh repository holding a single empty initial commit dated 1 January 1970, with no files listed underneath]({attach}git-first-commit.png)
+![Web view of a fresh repository holding a single empty initial commit dated 1 January 1970, with no files listed underneath](git-first-commit.png)
 
 Maybe this "first commit" trick is unnecessary. So, if you have a better
 understanding of the issue, or can explain me why this is stupid, please tell

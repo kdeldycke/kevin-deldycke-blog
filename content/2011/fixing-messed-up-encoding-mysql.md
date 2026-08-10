@@ -9,9 +9,9 @@ Currently working on my [e107 Importer plugin](https://wordpress.org/extend/plug
 
 e107 migrated to full UTF-8 [years ago](https://e107.org/comment.php?comment.news.735), but I must have messed the upgrade process at the time. That was my conclusion when I took a close look to my tables: all of them seems to be set to Latin-1 but contain UTF-8 data. Here are screenshots from [SQLBuddy](https://www.sqlbuddy.com) (a great light-weight MySQL manager) showing just that:
 
-![phpMyAdmin table overview of the e107 database, every table listed with a latin1 charset]({attach}e107-latin1-encoded-mysql-tables.png)
+![phpMyAdmin table overview of the e107 database, every table listed with a latin1 charset](e107-latin1-encoded-mysql-tables.png)
 
-![Browsing the forum thread table, the French accents mangled into mojibake such as A-circumflex and Atilde sequences where the accented letters should be]({attach}utf8-encoded-data-in-latin1-tables.png)
+![Browsing the forum thread table, the French accents mangled into mojibake such as A-circumflex and Atilde sequences where the accented letters should be](utf8-encoded-data-in-latin1-tables.png)
 
 To fix this, I first tried to use the following command I [found on the web](https://www.commandlinefu.com/commands/view/1575/convert-all-mysql-tables-and-fields-to-utf8):
 
@@ -49,8 +49,8 @@ $ mysql --database=e107db_new < ./e107-data.sql
 
 And now, accentuated characters appears as they should in our database, meaning we've fixed all the mess! :)
 
-![The same table overview after conversion, every table now showing utf8 as its charset]({attach}e107-utf8-encoded-mysql-tables.png)
+![The same table overview after conversion, every table now showing utf8 as its charset](e107-utf8-encoded-mysql-tables.png)
 
-![The same forum rows after the fix, the French accents rendering properly again in words like activés and problème]({attach}fixed-utf8-data-in-tables.png)
+![The same forum rows after the fix, the French accents rendering properly again in words like activés and problème](fixed-utf8-data-in-tables.png)
 
 PS: I [found another alternative method](https://en.gentoo-wiki.com/wiki/Convert_latin1_to_UTF-8_in_MySQL#Alternative_Method) (look at the end of the linked page) which consists of temporarily handling `TEXT` fields as `BLOB`, to have MySQL treat them as binary content (thus skipping character transcoding). Haven't tested this but sounds tricky.

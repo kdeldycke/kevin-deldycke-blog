@@ -17,7 +17,7 @@ repeatedly tons of mails from a Lotus Notes database. As you can see below, the
 same mail imported twice contain a variable header based on the date and time
 the import was performed:
 
-![Side-by-side diff of two copies of the same Lotus Notes message, identical apart from the highlighted X-MIMETrack serialization timestamp, which differs by 21 seconds]({attach}lotus-notes-x-mimetrack-mail-header.png)
+![Side-by-side diff of two copies of the same Lotus Notes message, identical apart from the highlighted X-MIMETrack serialization timestamp, which differs by 21 seconds](lotus-notes-x-mimetrack-mail-header.png)
 
 This variable header make mails looks different from the point of view of the
 script. That's explain why I implemented the `HEADERS_TO_IGNORE` parameter with

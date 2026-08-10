@@ -5,7 +5,7 @@ category: English
 tags: Canon EOS 7D, Linux, stabilization, transcode, Video
 ---
 
-![Newborn kid still wet from birth, peering out from a bed of straw beside a wooden post]({attach}newborn-kids-baby-goats-preview.jpg)
+![Newborn kid still wet from birth, peering out from a bed of straw beside a wooden post](newborn-kids-baby-goats-preview.jpg)
 
 ## Stabilizing WHAT?!?
 
@@ -21,7 +21,7 @@ I tried to stabilize the shots but was really disappointed by the results. The f
 
 ## vid.stab
 
-![Raked photo of a screen scrolling the transcode stabilize log, listing the shakiness, accuracy, stepsize and mincontrast settings]({attach}transcode-stabilizer-log.jpg)
+![Raked photo of a screen scrolling the transcode stabilize log, listing the shakiness, accuracy, stepsize and mincontrast settings](transcode-stabilizer-log.jpg)
 
 The first tool I tried was [vid.stab](https://public.hronopik.de/vid.stab/), a Transcode plugin that is now part of Transcode itself. But the 1.1.5 version that is bundled with the current Ubuntu 11.10 is quite old.
 
@@ -54,7 +54,7 @@ $ transcode -J stabilize=shakiness=8:show=1,preview -i ./MVI_1714.MOV -y null,nu
 
 In the command line above we added the `show=1,preview` parameters, which have the nice effect of displaying a preview of the work done behind the scene:
 
-![Debug view of the stabiliser at work, six dark measurement fields overlaid on the kid, each with its tracked point marked at the centre]({attach}goat-tracking.jpg)
+![Debug view of the stabiliser at work, six dark measurement fields overlaid on the kid, each with its tracked point marked at the centre](goat-tracking.jpg)
 
 And if you want to see the transformations applied in the final video, just deactivate the cropping and zooming mechanism:
 

@@ -11,7 +11,7 @@ It's an original mockup of a radio broadcast, and a tribute to [Classic 21](http
 
 Footage used to produce this video is public domain material [found at archive.org](https://www.archive.org/details/movies). If you're curious, the detailed list of all sources is available in the credits, at the end of the video.
 
-![Black and white archive frame of a man in a tweed suit and glasses reading from a script at a ribbon microphone]({attach}cool-cavemen-radio-concert-intro-preview.jpg)
+![Black and white archive frame of a man in a tweed suit and glasses reading from a script at a ribbon microphone](cool-cavemen-radio-concert-intro-preview.jpg)
 
 [As for my previous project]({filename}/2011/nichrome-preview-behind-the-scene-video.md), I have to warn you that it may not look as funny as for French-speaking audience. That being said, here is the final result:
 
@@ -21,12 +21,12 @@ The challenge of this project was to have video of people speaking in sync with 
 
 As for the tools used to produce this video, I edited it in November with a development version of Kdenlive, under an Ubuntu 11.10. As usual, here is a screenshot of my timeline for reference:
 
-![Kdenlive project cutting the archive reels across five video tracks, with a vectorscope open on the left and the monitor showing passengers in an airliner cabin]({attach}cool-cavemen-radio-concert-intro-kdenlive-edit.png)
+![Kdenlive project cutting the archive reels across five video tracks, with a vectorscope open on the left and the monitor showing passengers in an airliner cabin](cool-cavemen-radio-concert-intro-kdenlive-edit.png)
 
 The project is using Kdenlive's "NTSC 29.97 fps" profile, which produce a 720x486 pixels stream with a pixel aspect ratio of 8/9 and a display aspect ratio of 4/3. I choose this profile as it was the closest to the original videos I downloaded from archive.org.
 
 I composed the credits and title card in Gimp, and tried to mimic the style of that period. This mean approximative composition and abuse of typography:
 
-![GIMP building the title card over a vintage CBS microphone still, the lettering reading Cool Cavemen presents our concert intro across nine layers]({attach}title-card-gimp-edit.png)
+![GIMP building the title card over a vintage CBS microphone still, the lettering reading Cool Cavemen presents our concert intro across nine layers](title-card-gimp-edit.png)
 
 To enhance the effect, I blurred everything and separated the text blocks in several layers. I then applied to each of them some random movements to add a parallax effect, thus getting closer to the look and feel produced by the imprecise optical process used in the early days of movie making.

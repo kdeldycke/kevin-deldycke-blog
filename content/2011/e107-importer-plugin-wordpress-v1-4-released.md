@@ -17,4 +17,4 @@ So if you plan to get rid of your e107 sites in favor of WordPress, do the migra
 
 Finally, while cleaning up my home folder, I stumble upon this old screenshot of [dash](https://kevin.deldycke.com/2008/01/e107-to-wordpress-migration-v09-plug-in-released/comment-page-1/#comment-3300)'s old e107 site. This is what its maintenance page looked like the day she initiated the transition to WordPress using my script:
 
-![A site's temporary closure page, an enthusiastic all-caps message thanking the author of the migration tool for doing in seconds what would have taken months]({attach}film-fanatix-com-maintenance-page.png)
+![A site's temporary closure page, an enthusiastic all-caps message thanking the author of the migration tool for doing in seconds what would have taken months](film-fanatix-com-maintenance-page.png)

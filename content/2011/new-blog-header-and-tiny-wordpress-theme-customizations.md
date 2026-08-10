@@ -7,7 +7,7 @@ tags: artwork, CSS, maomium, WordPress, Ubercart
 
 I maintain a bunch of websites for friends on my server. In this context, [Maomium](https://maomium.com)'s owner owed me some bucks for his `.com` domain name. Here is the envelope I received yesterday with a check:
 
-![Hand-addressed kraft envelope with French stamps lying on dark wood, next to the card it held: a pen-and-ink bird of prey trailing swirling tendrils, under a round monogram]({attach}maomium-thank-you-artwork.jpg)
+![Hand-addressed kraft envelope with French stamps lying on dark wood, next to the card it held: a pen-and-ink bird of prey trailing swirling tendrils, under a round monogram](maomium-thank-you-artwork.jpg)
 
 Now that's what I call a personalized letter! This original artwork is so great that I had to share it.
 
@@ -19,7 +19,7 @@ And with Jim's approval, I now use his letter's artwork as my blog image header.
 
 Talking about this , here is a quick tip to make minimal design changes to a WordPress theme. The idea is to put custom CSS directives in a widget, as below:
 
-![WordPress text widget holding a small inline stylesheet that zeroes the header padding and hides the site title and description]({attach}wordpress-widget-with-inline-css-customizations.png)
+![WordPress text widget holding a small inline stylesheet that zeroes the header padding and hides the site title and description](wordpress-widget-with-inline-css-customizations.png)
 
 As widgets are site-wide, all these CSS customizations will be applied everywhere. Here is for example the code I applied on this site to hide blog's name and description from [TwentyTen](https://wordpress.org/extend/themes/twentyten)'s header:
 
@@ -45,4 +45,4 @@ As I moved from TwentyTen to the new TwentyEleven default WordPress theme, I jus
 
 For archive, here is the customized header I used with TwentyTen:
 
-![The artwork cropped into a wide blog banner, the inked bird and tendrils fading into a grey gradient with the name lettered in the middle]({attach}maomium-artwork-banner.jpeg)
+![The artwork cropped into a wide blog banner, the inked bird and tendrils fading into a grey gradient with the name lettered in the middle](maomium-artwork-banner.jpeg)

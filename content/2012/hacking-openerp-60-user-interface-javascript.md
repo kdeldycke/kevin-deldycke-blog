@@ -40,7 +40,7 @@ form_setVisible = function(container, field, visible) {
 
 Here is the view type selector widget, which is appearing everywhere in OpenERP in the top-right corner:
 
-![OpenERP view-type selector, a small strip of icons for list, form, chart and calendar views with the second one active in red]({attach}openerp-view-type-selector-widget.png)
+![OpenERP view-type selector, a small strip of icons for list, form, chart and calendar views with the second one active in red](openerp-view-type-selector-widget.png)
 
 To hide it, running the following jQuery is enough:
 
@@ -50,7 +50,7 @@ $('#view-selector').hide();
 
 Here are the action buttons and the object navigation pager:
 
-![OpenERP action bar with New, Edit, Duplicate and Delete buttons on the left and record navigation reading 2 of 4 on the right]({attach}openerp-action-buttons-and-object-navigation.png)
+![OpenERP action bar with New, Edit, Duplicate and Delete buttons on the left and record navigation reading 2 of 4 on the right](openerp-action-buttons-and-object-navigation.png)
 
 If you want to hide the whole thing, then the following code will do:
 

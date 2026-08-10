@@ -13,7 +13,7 @@ a [fundraising
 campaign](https://www.indiegogo.com/projects/kdenlive-refactoring) to refactor
 its core and make it future-proof:
 
-[![Crowdfunding page for the Kdenlive Refactoring campaign, showing 3,041 dollars raised of a 4,000 dollar goal with 41 days left, above a screenshot of the editor's curves and colour wheel]({attach}kdenlive-fundraising-campaign.png)](https://www.indiegogo.com/projects/kdenlive-refactoring)
+[![Crowdfunding page for the Kdenlive Refactoring campaign, showing 3,041 dollars raised of a 4,000 dollar goal with 41 days left, above a screenshot of the editor's curves and colour wheel](kdenlive-fundraising-campaign.png)](https://www.indiegogo.com/projects/kdenlive-refactoring)
 
 The amount of collected funds is currently at $3,041 from the $4,000 required
 to pay a developer to work full-time for 2 months. With only \$959 remaining and

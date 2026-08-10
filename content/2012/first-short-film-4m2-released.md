@@ -11,34 +11,34 @@ https://www.youtube.com/watch?v=91y6L3QKiRk
 
 And here are the official stills of the short:
 
-![020]({attach}020.png)
+![020](020.png)
 
-![019]({attach}019.png)
+![019](019.png)
 
-![018]({attach}018.png)
+![018](018.png)
 
-![017]({attach}017.png)
+![017](017.png)
 
-![016]({attach}016.png)
+![016](016.png)
 
-![013]({attach}013.png)
+![013](013.png)
 
-![012]({attach}012.png)
+![012](012.png)
 
-![010]({attach}010.png)
+![010](010.png)
 
-![011]({attach}011.png)
+![011](011.png)
 
-![008]({attach}008.png)
+![008](008.png)
 
-![008-N&B]({attach}008-NB.png)
+![008-N&B](008-NB.png)
 
-![006]({attach}006.png)
+![006](006.png)
 
-![007]({attach}007.png)
+![007](007.png)
 
-![004]({attach}004.png)
+![004](004.png)
 
-![002]({attach}002.png)
+![002](002.png)
 
-![001]({attach}001.png)
+![001](001.png)

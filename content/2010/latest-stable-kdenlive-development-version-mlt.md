@@ -55,7 +55,7 @@ $ sudo make install
 
 That's it! Now you can launch Kdenlive, and if you run the wizard, you'll see that the MLT version on your system is the latest:
 
-![Kdenlive's French MLT engine check listing version 0.5.11 as correct, with green ticks against the melt, avformat, DV, QImage and title modules]({attach}kdenlive-with-mlt-dev.png)
+![Kdenlive's French MLT engine check listing version 0.5.11 as correct, with green ticks against the melt, avformat, DV, QImage and title modules](kdenlive-with-mlt-dev.png)
 
 Oh, and by the way, it [fixed my problem with the crop filter](https://mltframework.org/gitweb/mlt.git?p=mltframework.org/mlt.git;a=commitdiff;h=21a3f68d56ce1237eb6510cdf03ebfc40b5641c2)! :)
 

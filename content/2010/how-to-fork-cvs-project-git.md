@@ -68,7 +68,7 @@ cvs rlog: Logging contributions/themes/drupify/images
 The new Git repository automatically created is named `drupify-copy`. Here is
 how it looks like in [GitX](https://gitx.frim.nl) (notice tags and branches):
 
-![GitX showing the 17 commits imported from CVS, all by the upstream author, with the DRUPAL-6--1 and DRUPAL-5 tags marking the branch points]({attach}git-cvs-import-in-gitx.png)
+![GitX showing the 17 commits imported from CVS, all by the upstream author, with the DRUPAL-6--1 and DRUPAL-5 tags marking the branch points](git-cvs-import-in-gitx.png)
 
 To keep things clean and tidy, I want to relocate all the content of this
 repository to a `drupify-fork` folder.
@@ -116,7 +116,7 @@ ee44c42250a2552c1dbef2f7165d65179e1d19c6 refs/tags/DRUPAL-6--1-0
 We're not the only ones to not see through this mess. GitX seems to be confused
 too:
 
-![The same repository after the branch filter, GitX now listing 34 commits because every one appears twice, once under its original refs/original ref]({attach}gitx-confused-by-git-branch-filter-backups.png)
+![The same repository after the branch filter, GitX now listing 34 commits because every one appears twice, once under its original refs/original ref](gitx-confused-by-git-branch-filter-backups.png)
 
 But
 [according Jakub Narębski on the Git mailing-list](https://n2.nabble.com/Removing-some-files-from-history-tp1344670p1344919.html),
@@ -146,7 +146,7 @@ ee44c42250a2552c1dbef2f7165d65179e1d19c6 refs/tags/DRUPAL-6--1-0
 We can then fire up GitX to get the ultimate proof that the relocation
 operation didn't change anything, but the base folder (and SHA hashes):
 
-![Commit detail after the folder move, with a red hand-drawn arrow and circle pointing at the rewritten path drupify-fork/page.tpl.php]({attach}history-tree-in-gitx-after-folder-change.png)
+![Commit detail after the folder move, with a red hand-drawn arrow and circle pointing at the rewritten path drupify-fork/page.tpl.php](history-tree-in-gitx-after-folder-change.png)
 
 It's time to import all this code in our main repository. First, get a local
 copy of our public [GitHub](https://github.com/) code base:
@@ -302,7 +302,7 @@ $ rm -rf ./drupify-copy
 
 At this stage, here is what our repository looks like:
 
-![The kev-code repository after the merge, the imported CVS history threaded underneath my own initial commit and README]({attach}cvs-fork-merged-to-git-with-full-history.png)
+![The kev-code repository after the merge, the imported CVS history threaded underneath my own initial commit and README](cvs-fork-merged-to-git-with-full-history.png)
 
 To keep all the details that were created by `git cvsimport`, we can add by hand
 all the missing refs. The only difference with the original ones is that I
@@ -319,7 +319,7 @@ Deleted tag 'DRUPAL-6--1-0'
 
 And finally, we can contemplate our work:
 
-![Final imported history with the upstream refs preserved as drupify/master, drupify/origin and the two DRUPAL tags alongside my own master]({attach}final-cvs-import-and-merge-with-refs.png)
+![Final imported history with the upstream refs preserved as drupify/master, drupify/origin and the two DRUPAL tags alongside my own master](final-cvs-import-and-merge-with-refs.png)
 
 This let me work cleanly on the CVS branch I wanted to in the first place. But
 there is one missing thing: all other tracked remote branches were not merged

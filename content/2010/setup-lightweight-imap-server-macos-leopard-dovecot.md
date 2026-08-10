@@ -5,7 +5,7 @@ category: English
 tags: Dovecot, email, IMAP, Mac OS X 10.5 Leopard, Apple, macOS, maildir, OpenSSL, SSL
 ---
 
-![Terminal tailing the mail log after starting Dovecot, showing successful IMAP logins from the loopback address over TLS]({attach}dovecot-on-macosx.png)
+![Terminal tailing the mail log after starting Dovecot, showing successful IMAP logins from the loopback address over TLS](dovecot-on-macosx.png)
 
 Last week I needed a local IMAP server on Mac OS X Leopard for temporary
 testing. After struggling with [courier-imap](https://www.courier-mta.org/imap/)
@@ -79,7 +79,7 @@ That's all!
 You can now access your local IMAP server with any client. Here is an example
 with [Thunderbird](https://www.mozillamessaging.com/thunderbird/):
 
-![Thunderbird server settings for the local account, pointed at localhost on port 143 over STARTTLS with automatic checking switched off]({attach}thunderbird-macosx-local-imap-server-config.png)
+![Thunderbird server settings for the local account, pointed at localhost on port 143 over STARTTLS with automatic checking switched off](thunderbird-macosx-local-imap-server-config.png)
 
 And if you have problems, the first reflex is to read Dovecot's logs:
 

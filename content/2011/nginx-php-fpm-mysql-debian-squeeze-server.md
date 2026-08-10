@@ -111,6 +111,6 @@ $ /etc/init.d/nginx restart
 
 If everything's OK on your DNS, pointing your browser to `https://example.com` will show you the famous page produced by `phpinfo()`:
 
-![phpinfo header for PHP 5.3.6 from dotdeb, reporting the FPM/FastCGI server API and the list of additional ini files loaded from the conf.d directory]({attach}phpinfo-536.png)
+![phpinfo header for PHP 5.3.6 from dotdeb, reporting the FPM/FastCGI server API and the list of additional ini files loaded from the conf.d directory](phpinfo-536.png)
 
 Note that MySQL doesn't need any special attention to make it work out of the box. But again, if you plan to use it in production, its configuration needs special care, as for Nginx and PHP.

@@ -16,7 +16,7 @@ To get similar features in Leopard, we have to rely on [MacFuse
 ](https://fuse.sourceforge.net/sshfs.html). I'll explain here how I've installed
 these components on Mac OS X Leopard.
 
-![MacFUSE_Banner]({attach}MacFUSE_Banner.png)
+![MacFUSE_Banner](MacFUSE_Banner.png)
 
 First, [download the latest MacFuse `dmg`
 ](https://code.google.com/p/macfuse/downloads/list) and install it. FYI, the

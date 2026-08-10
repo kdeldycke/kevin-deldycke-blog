@@ -9,7 +9,7 @@ Just earned my bragging rights last month, with my [Awesome List of Falsehoods
 Programmers Believe in](https://github.com/kdeldycke/awesome-falsehood). Here's
 my repository, at the top of the charts:
 
-![GitHub trending repositories for the day, awesome-falsehood in first place with 1,257 stars that day, ahead of cpython and freeCodeCamp]({attach}github-top-hot-repositories.png)
+![GitHub trending repositories for the day, awesome-falsehood in first place with 1,257 stars that day, ahead of cpython and freeCodeCamp](github-top-hot-repositories.png)
 
 It was the direct effect of getting to the [front page of Hacker
 News](https://news.ycombinator.com/item?id=13637102).
@@ -18,7 +18,7 @@ All that attention made me the [top developer on
 GitHub](https://twitter.com/kdeldycke/status/831451728625168384) for a couple
 of days:
 
-![GitHub trending developers for the day, kdeldycke ranked first above the Python, freeCodeCamp, Meshbird and Airbnb organisations]({attach}github-top-trending-developer.png)
+![GitHub trending developers for the day, kdeldycke ranked first above the Python, freeCodeCamp, Meshbird and Airbnb organisations](github-top-trending-developer.png)
 
 Yes, my face, right above the heavy-weights of the industry.
 

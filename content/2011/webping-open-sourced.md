@@ -13,10 +13,10 @@ WebPing is just a stupid Python script that is designed to be ticked regularly b
 
 The produced HTML report use the [Flot jQuery plugin](https://www.flotcharts.org/) to render graphs. Here is how the dashboard looks like:
 
-![WebPing dashboard monitoring 18 URLs, most rows green for string found, with two red failures for a 401 and a refused connection and one orange warning, each row carrying a response-time sparkline]({attach}webping-dashboard.png)
+![WebPing dashboard monitoring 18 URLs, most rows green for string found, with two red failures for a 401 and a refused connection and one orange warning, each row carrying a response-time sparkline](webping-dashboard.png)
 
 Finally, WebPing is able to send reports and alerts by emails. Here is how a mail alert looks like:
 
-![Alert email listing the two failures and one warning, each with its URL, status, error message and check time]({attach}webping-email-alert.png)
+![Alert email listing the two failures and one warning, each with its URL, status, error message and check time](webping-email-alert.png)
 
 Since I created WebPing, I found several other projects more or less developed around the same idea. See [Kong](https://github.com/ericholscher/django-kong), which is based on Django and [Twill](https://twill.idyll.org/), a web-oriented [DSL](https://en.wikipedia.org/wiki/Domain-specific_language). Another project I spotted after the facts was [multi-mechanize](https://testutils.org/multi-mechanize/). Like Kong, it's written in Python. But I never played with one or the other.

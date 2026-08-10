@@ -31,7 +31,7 @@ reach the Internet.
 And some other times, Lotus Notes clients are crippled and don't let you create
 an IMAP connexion. Unfortunately this happened to me:
 
-![French Lotus Notes new-account window filled in for imap.test.com over IMAP with SSL, its status bar ending on the error: Mail (IMAP) template does not exist]({attach}missing-lotus-notes-imap-template.png)
+![French Lotus Notes new-account window filled in for imap.test.com over IMAP with SSL, its status bar ending on the error: Mail (IMAP) template does not exist](missing-lotus-notes-imap-template.png)
 
 So I had to found another approach.
 
@@ -43,7 +43,7 @@ This method is [explored in details in my previous article
 But again, it seems that the Lotus Notes on my machine was crippled and/or
 corrupted. The `nlconverter` GUI gave me this error:
 
-![Lotus Notes Converter on Windows, its log repeating Could not connect to Notes and Could not find and register the dll]({attach}nlconverter-gui-fail.png)
+![Lotus Notes Converter on Windows, its log repeating Could not connect to Notes and Could not find and register the dll](nlconverter-gui-fail.png)
 
 And the command line gave me this:
 
@@ -287,53 +287,53 @@ the Lotus Notes client v8.5, running on Mac OS X Snow Leopard.
 
 Here are the equivalent screenshots:
 
-![Notes 8.5 for Mac installer open on its Read Me step, in front of a Finder window showing the trial disk image]({attach}010-lotus-notes-mac-install.png)
+![Notes 8.5 for Mac installer open on its Read Me step, in front of a Finder window showing the trial disk image](010-lotus-notes-mac-install.png)
 
-![Installer component list with Composite Application Editor and Sametime both left unchecked, so the space required stays at 0 KB]({attach}015-lotus-notes-mac-install-components.png)
+![Installer component list with Composite Application Editor and Sametime both left unchecked, so the space required stays at 0 KB](015-lotus-notes-mac-install-components.png)
 
-![Installer summary with a green tick and the message: the installation was successful]({attach}020-lotus-notes-mac-install-finished.png)
+![Installer summary with a green tick and the message: the installation was successful](020-lotus-notes-mac-install-finished.png)
 
-![Welcome step of the Lotus Notes 8.5 client configuration wizard, listing the Domino, mail, newsgroup and directory servers it can set up]({attach}030-lotus-notes-wizard-welcome.png)
+![Welcome step of the Lotus Notes 8.5 client configuration wizard, listing the Domino, mail, newsgroup and directory servers it can set up](030-lotus-notes-wizard-welcome.png)
 
-![Wizard user information step with the name set to kevin, the Domino server box empty and the option to connect to a Domino server unchecked]({attach}040-lotus-notes-wizard-config-1.png)
+![Wizard user information step with the name set to kevin, the Domino server box empty and the option to connect to a Domino server unchecked](040-lotus-notes-wizard-config-1.png)
 
-![Wizard additional services step with all five boxes unchecked, including internet mail servers and replication]({attach}050-lotus-notes-wizard-config-2.png)
+![Wizard additional services step with all five boxes unchecked, including internet mail servers and replication](050-lotus-notes-wizard-config-2.png)
 
-![Small dialog announcing that Notes setup is complete]({attach}060-lotus-notes-wizard-finished.png)
+![Small dialog announcing that Notes setup is complete](060-lotus-notes-wizard-finished.png)
 
-![Lotus Notes 8.5 splash screen, an IBM yellow swoosh above the licensing small print]({attach}065-lotus-notes-mac-splash-screen.png)
+![Lotus Notes 8.5 splash screen, an IBM yellow swoosh above the licensing small print](065-lotus-notes-mac-splash-screen.png)
 
-![Startup dialog with a barber-pole progress bar reading: Lotus Notes is starting, please wait]({attach}070-lotus-notes-start-init.png)
+![Startup dialog with a barber-pole progress bar reading: Lotus Notes is starting, please wait](070-lotus-notes-start-init.png)
 
-![Prompt asking whether to make Lotus Notes the default email program, with the option to skip the check in future ticked]({attach}080-lotus-notes-default-email-program.png)
+![Prompt asking whether to make Lotus Notes the default email program, with the option to skip the check in future ticked](080-lotus-notes-default-email-program.png)
 
-![Notes 8.5 Getting Started page explaining the Open button, the toolbar search and the sidebar]({attach}090-lotus-notes-8-5-mac-default-screen.png)
+![Notes 8.5 Getting Started page explaining the Open button, the toolbar search and the sidebar](090-lotus-notes-8-5-mac-default-screen.png)
 
-![File menu open on Open, with the Lotus Notes Application entry highlighted]({attach}100-lotus-notes-open-nsf-database.png)
+![File menu open on Open, with the Lotus Notes Application entry highlighted](100-lotus-notes-open-nsf-database.png)
 
-![File chooser on the Desktop with kevin-notes-big-backup.nsf selected, the preview reporting a 167 MB Notes database file]({attach}110-lotus-notes-open-database-dialog.png)
+![File chooser on the Desktop with kevin-notes-big-backup.nsf selected, the preview reporting a 167 MB Notes database file](110-lotus-notes-open-database-dialog.png)
 
-![Create Cross Certificate dialog, organisation and public key redacted, warning that documents from this organisation cannot be verified]({attach}120-lotus-notes-certificate-dialog.png)
+![Create Cross Certificate dialog, organisation and public key redacted, warning that documents from this organisation cannot be verified](120-lotus-notes-certificate-dialog.png)
 
-![Execution Security Alert about a GetProfileField action, with the option to start trusting the signer selected]({attach}130-lotus-notes-security-alert-dialog.png)
+![Execution Security Alert about a GetProfileField action, with the option to start trusting the signer selected](130-lotus-notes-security-alert-dialog.png)
 
-![Imported .nsf database open on a French inbox of 8715 messages, senders and subjects blurred, the quota bar at 28% of 550 MB]({attach}140-lotus-notes-opened-nsf-database.png)
+![Imported .nsf database open on a French inbox of 8715 messages, senders and subjects blurred, the quota bar at 28% of 550 MB](140-lotus-notes-opened-nsf-database.png)
 
-![Lotus Notes application menu with Preferences highlighted]({attach}150-lotus-notes-open-preferences.png)
+![Lotus Notes application menu with Preferences highlighted](150-lotus-notes-open-preferences.png)
 
-![Accounts pane of the preferences with the New Account menu unrolled and IMAP Online highlighted among the protocol choices]({attach}160-lotus-notes-create-new-account.png)
+![Accounts pane of the preferences with the New Account menu unrolled and IMAP Online highlighted among the protocol choices](160-lotus-notes-create-new-account.png)
 
-![New Account dialog naming the account Local IMAP, of type IMAP Online, pointing at localhost and logging in as kevin]({attach}170-lotus-notes-new-account-parameters.png)
+![New Account dialog naming the account Local IMAP, of type IMAP Online, pointing at localhost and logging in as kevin](170-lotus-notes-new-account-parameters.png)
 
-![Open button menu drilling through Applications and the workspace tab to the Local IMAP entry]({attach}180-lotus-notes-open-local-imap.png)
+![Open button menu drilling through Applications and the workspace tab to the Local IMAP entry](180-lotus-notes-open-local-imap.png)
 
-![Local IMAP account open in Notes on a completely empty inbox]({attach}190-lotus-notes-local-imap-inbox-view.png)
+![Local IMAP account open in Notes on a completely empty inbox](190-lotus-notes-local-imap-inbox-view.png)
 
-![Edit menu open on Copy in the .nsf inbox, the status bar reporting 22 documents selected]({attach}200-lotus-notes-copy-nsf-mails.png)
+![Edit menu open on Copy in the .nsf inbox, the status bar reporting 22 documents selected](200-lotus-notes-copy-nsf-mails.png)
 
-![Edit menu open on Paste in the still-empty Local IMAP inbox]({attach}210-lotus-notes-paste-mails-to-local-imap.png)
+![Edit menu open on Paste in the still-empty Local IMAP inbox](210-lotus-notes-paste-mails-to-local-imap.png)
 
-![Local IMAP inbox filled with the migrated messages, senders and subjects blurred]({attach}220-lotus-notes-mails-migrated-to-local-imap.png)
+![Local IMAP inbox filled with the migrated messages, senders and subjects blurred](220-lotus-notes-mails-migrated-to-local-imap.png)
 
 ## Method #5: Lotus Notes client on Windows XP
 
@@ -343,7 +343,7 @@ instance.
 
 As you can see, it works:
 
-![Windows XP running inside QEMU, French Notes client pasting into a notes-import IMAP folder with 184 documents left to go at 74%]({attach}lotus-notes-imap-mail-migration-via-qemu.png)
+![Windows XP running inside QEMU, French Notes client pasting into a notes-import IMAP folder with 184 documents left to go at 74%](lotus-notes-imap-mail-migration-via-qemu.png)
 
 With simple copy'n'paste, I was able to migrate several batch of mails. Until
 the target `notes-import` folder on my Gmail account reached 2000+ mails, at

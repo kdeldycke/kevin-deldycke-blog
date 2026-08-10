@@ -49,9 +49,9 @@ And then I found Ubercart, which allowed me to do exactly what I wanted. Here is
 for example prices and stocks for a
 [black Cool Cavemen tee-shirt](https://coolcavemen.bandcamp.com/merch/white-tee-shirt-black-logo):
 
-![Ubercart options tab for a black tee-shirt, listing men's sizes L to 2XL and women's sizes with cost, price and weight fields for each]({attach}ubercart-product-options.png)
+![Ubercart options tab for a black tee-shirt, listing men's sizes L to 2XL and women's sizes with cost, price and weight fields for each](ubercart-product-options.png)
 
-![Ubercart stock tab for the same tee-shirt, one row per SKU with its stock level and low-stock threshold]({attach}ubercart-product-stocks.png)
+![Ubercart stock tab for the same tee-shirt, one row per SKU with its stock level and low-stock threshold](ubercart-product-stocks.png)
 
 I use Ubercart since 2008 and I'm really happy with it. The future is
 interesting, as [Ubercart was forked](https://www.drupalcommerce.org/about/history)

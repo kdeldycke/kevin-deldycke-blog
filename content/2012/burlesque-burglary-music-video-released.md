@@ -15,26 +15,26 @@ I'll try to produce [detailed production notes]({filename}/2012/burlesque-burgla
 
 And finally, here are some stills from the video:
 
-![burlesque-burglary-0011]({attach}burlesque-burglary-0011.jpg)
+![burlesque-burglary-0011](burlesque-burglary-0011.jpg)
 
-![burlesque-burglary-0010]({attach}burlesque-burglary-0010.jpg)
+![burlesque-burglary-0010](burlesque-burglary-0010.jpg)
 
-![burlesque-burglary-0009]({attach}burlesque-burglary-0009.jpg)
+![burlesque-burglary-0009](burlesque-burglary-0009.jpg)
 
-![burlesque-burglary-0008]({attach}burlesque-burglary-0008.jpg)
+![burlesque-burglary-0008](burlesque-burglary-0008.jpg)
 
-![burlesque-burglary-0007]({attach}burlesque-burglary-0007.jpg)
+![burlesque-burglary-0007](burlesque-burglary-0007.jpg)
 
-![burlesque-burglary-0006]({attach}burlesque-burglary-0006.jpg)
+![burlesque-burglary-0006](burlesque-burglary-0006.jpg)
 
-![burlesque-burglary-0005]({attach}burlesque-burglary-0005.jpg)
+![burlesque-burglary-0005](burlesque-burglary-0005.jpg)
 
-![burlesque-burglary-0004]({attach}burlesque-burglary-0004.jpg)
+![burlesque-burglary-0004](burlesque-burglary-0004.jpg)
 
-![burlesque-burglary-0003]({attach}burlesque-burglary-0003.jpg)
+![burlesque-burglary-0003](burlesque-burglary-0003.jpg)
 
-![burlesque-burglary-0002]({attach}burlesque-burglary-0002.jpg)
+![burlesque-burglary-0002](burlesque-burglary-0002.jpg)
 
-![burlesque-burglary-0001]({attach}burlesque-burglary-0001.jpg)
+![burlesque-burglary-0001](burlesque-burglary-0001.jpg)
 
-![burlesque-burglary-0000]({attach}burlesque-burglary-0000.jpg)
+![burlesque-burglary-0000](burlesque-burglary-0000.jpg)

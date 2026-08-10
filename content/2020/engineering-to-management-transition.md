@@ -13,7 +13,7 @@ This interview was [originally published](https://devtomanager.com/interviews/ke
 
 My name is Kevin Deldycke and I was the VP of Billing, Payment and [IAM](https://en.wikipedia.org/wiki/Identity_management) at Scaleway, a cloud infrastructure provider. During my time at Scaleway, I led an engineering team of 11, and was one of the people in charge of the architecture, implementation and operation of the whole stack. If Compute, Storage and Network are the three pillars of the product ecosystem, then we, the Billing, Payment and IAM team are the core components of the platform. Our motto? Make complexity trivial from the outside, while streamlining the business.
 
-![Eleven members of the billing, payment and IAM team lined up for a group photo in a room with bare brick walls and tall windows onto trees]({attach}001-billing-payment-iam-team.jpeg)
+![Eleven members of the billing, payment and IAM team lined up for a group photo in a room with bare brick walls and tall windows onto trees](001-billing-payment-iam-team.jpeg)
 
 The team I formed. I am the overly happy guy with the blue shirt at the center.
 
@@ -29,7 +29,7 @@ The majority will not breed the next unicorn; we statistically have a better lik
 
 In 2013 I joined a [brand new R&D team](https://medium.com/scaleway-cloud/thank-you-scaleway-9dc5ba30b9a5) as a founding engineer. We worked in total secrecy on what would become a cloud computing ecosystem, akin to AWS, GCP or Azure.
 
-![The founding engineers crowded around two monitors trimmed with plush flowers and toys, architecture diagrams filling the whiteboard behind them]({attach}002-scaleway-founding-team.jpeg)
+![The founding engineers crowded around two monitors trimmed with plush flowers and toys, architecture diagrams filling the whiteboard behind them](002-scaleway-founding-team.jpeg)
 
 Scaleway’s founding team (I was behind the camera). All engineers & tech leads, no managers.
 
@@ -41,7 +41,7 @@ The system I designed and produced alone had to scale as well. And it had to abs
 
 I had no one to manage yet. But I felt empowered by a mission of bringing meaning and purpose in a place where everything had to be invented. We had the money, we were in the right industry, we already had customers, and competent engineering talents. **The missing pieces were management and leadership. And I was just empowered to positively influence all that up at my humble level.**
 
-![Fourteen of the R&D team posed between the stone columns of a grand building for one last group photo]({attach}003-last-photo-before-transitioning.jpeg)
+![Fourteen of the R&D team posed between the stone columns of a grand building for one last group photo](003-last-photo-before-transitioning.jpeg)
 
 The last photo of the initial R&D team, right before it was disbanded and I (on the far left) became manager.
 
@@ -76,7 +76,7 @@ It was not a place for routine, and the day-to-day was a varying mix of all of t
 
 Then I was promoted to Vice-President, a fancy title, meaning I was now reporting directly to the C-level executives. The job came with the assignment of adding a layer of management between me and the engineers. It was the only way to get ready for the next stage of growth. I was an OK manager, I now had to find a better one to replace me. I was lucky to find [Alexandre](https://www.linkedin.com/in/alexandre-jomin-007309a7/). He did, and still does, a stellar job taking care of the team I assembled.
 
-![Retrospective in an ornate room with pink drapes and chandeliers, someone at a flip chart working through a liked, learned, lacked and longed-for grid with names listed under it]({attach}004-inheriting-the-team.jpeg)
+![Retrospective in an ornate room with pink drapes and chandeliers, someone at a flip chart working through a liked, learned, lacked and longed-for grid with names listed under it](004-inheriting-the-team.jpeg)
 
 Alex, the manager I managed, inherited a sufficiently hydrated team.
 
@@ -88,7 +88,7 @@ Where did I get the drive to keep going? **Good people to work with.** I know it
 
 One of the biggest challenges, and the first you'll encounter right after your transition, is about managing your own psyche. Before you can improve on that, you’ll have to accept that indeed, **we're all just big bags of complicated, messy emotions**. To make progress you will need to tune your response to others. And essentially to yourself. Be prepared, because it's going to be an energy drain.
 
-![A manager slumped at a table against a red painted wall, phone clamped to one ear and the other hand buried in his hair]({attach}005-tired-manager.jpeg)
+![A manager slumped at a table against a red painted wall, phone clamped to one ear and the other hand buried in his hair](005-tired-manager.jpeg)
 
 A manager with no one to manage yet, trying hard to recruit in a competitive market.
 
@@ -106,7 +106,7 @@ The first people I hired were key to our long-term success. I was lucky to have 
 
 The biggest surprise is that **once you get the right core of a team, the culture takes care of itself**.
 
-![Four of the first hires under the white beams of the new attic office, flicking paint across the walls and ceiling over plastic sheeting]({attach}006-seeding-the-culture.jpeg)
+![Four of the first hires under the white beams of the new attic office, flicking paint across the walls and ceiling over plastic sheeting](006-seeding-the-culture.jpeg)
 
 The first members of the team, actively redecorating the brand new regional office. They all supplied the seed of our culture.
 
@@ -140,7 +140,7 @@ The greatest effect you can prompt is providing them with the time and mental sp
 
 The final lesson I'll share is the hardest. The higher you are in the hierarchy, the more likely you are going to step down for situations unrelated to your activity, or for things completely out of your direct control. i.e. things tend to get more political towards the top.
 
-![Planning session around a round white table strewn with laptops, two people adding sticky notes to a mirror at the back, a couple of faces blurred out]({attach}007-quarterly-priority-planning.jpeg)
+![Planning session around a round white table strewn with laptops, two people adding sticky notes to a mirror at the back, a couple of faces blurred out](007-quarterly-priority-planning.jpeg)
 
 Final touch on our plans for the next quarter. Arbitrating priorities when every product depends on you is excruciating.
 

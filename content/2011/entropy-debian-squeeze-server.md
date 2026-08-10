@@ -23,6 +23,6 @@ $ apt-get -t squeeze-backports install haveged
 
 Now you can get a proof that `haveged` is running by monitoring your entropy. Here is for example the Munin graph of my server, on which you can clearly see the big jump in available entropy:
 
-![Munin graph of available entropy, flat near zero until haveged starts, then jumping to a noisy band between 4,000 and 16,000 bytes]({attach}increased-entropy-with-haveged.png)
+![Munin graph of available entropy, flat near zero until haveged starts, then jumping to a noisy band between 4,000 and 16,000 bytes](increased-entropy-with-haveged.png)
 
 If I'm not sure about the quality of the [randomness it generate on virtual machines](https://jakob.engbloms.se/archives/1374), `haveged` is still a really practical solution for lack of entropy on a server.

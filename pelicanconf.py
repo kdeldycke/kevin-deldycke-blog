@@ -1,7 +1,20 @@
 import re
+import sys
 from pathlib import Path
+from typing import Any
+
+# Pelican loads this file by path, which does not put its folder on the import path. The
+# `pelican` console script leaves sys.path[0] pointing at the venv's bin, so a plain
+# `import pelican_patches` below would only resolve when the interpreter happened to be
+# started from this directory. Anchoring on __file__ keeps it working whatever the
+# working directory or entry point.
+sys.path.insert(0, str(Path(__file__).parent))
 
 import plumage
+
+# Imported for its side effect: the module connects this repo's local workarounds to
+# Pelican's signals on import. See CLAUDE.md for why they are not loaded via PLUGINS.
+import pelican_patches  # noqa: F401
 
 SITEURL = "http://localhost:8000"
 RELATIVE_URLS = False
@@ -18,7 +31,9 @@ DEFAULT_LANG = "en"
 TYPOGRIFY = True
 
 # https://github.com/ashwinvis/myst-reader#docutils-renderer
-MYST_DOCUTILS_SETTINGS = {
+# Annotated because the values are of mixed types, which otherwise leaves the dict as
+# dict[str, object] and makes the set() copy below unresolvable.
+MYST_DOCUTILS_SETTINGS: dict[str, Any] = {
     # Allow to use the ```mermaid (...)``` directive:
     # "myst_fence_as_directive": {"python", "shell-session", "mermaid"},
     "myst_number_code_blocks": ["python", "shell-session"],
@@ -29,6 +44,10 @@ MYST_DOCUTILS_SETTINGS = {
     "myst_enable_extensions": {
         "attrs_block",
         "attrs_inline",
+        # A Sphinx-side default, named here because the two dicts below are merged over
+        # the reader's defaults key by key: a set given here replaces the stock one
+        # outright rather than adding to it, so anything left out is switched off.
+        "colon_fence",
         "deflist",
         "replacements",
         "smartquotes",
@@ -36,6 +55,33 @@ MYST_DOCUTILS_SETTINGS = {
         "tasklist",
     },
 }
+
+# The same configuration, handed to the other renderer. The reader keeps one settings key
+# per renderer and falls back to its own defaults for whichever is missing, so with
+# MYST_FORCE_SPHINX below and no entry here every option above would be silently dropped:
+# code blocks lose their line numbers, heading anchors go back to the default depth, and
+# the extension list shrinks to colon_fence and deflist.
+MYST_SPHINX_SETTINGS = {
+    **MYST_DOCUTILS_SETTINGS,
+    # Copied rather than shared, so that the reader mutating one renderer's extension set
+    # cannot reach the other's.
+    "myst_enable_extensions": set(MYST_DOCUTILS_SETTINGS["myst_enable_extensions"]),
+    # Sphinx hangs a ¶ permalink off every heading. The theme already links its own
+    # headings, and the character leaks into feed summaries and the search index.
+    "html_permalinks": False,
+}
+
+# Render every document with the Sphinx renderer, instead of letting the reader pick.
+#
+# Left to itself, pelican-myst-reader falls back to the lighter docutils renderer unless
+# the file contains one of "{filename}", "{static}" or "{attach}". That makes an image
+# marker decide how the whole page is parsed: dropping one from a post whose only other
+# links were "{tag}" or "{category}" markers silently demotes it, and docutils then fails
+# to resolve those and rejects the Pygments lexers Sphinx accepts.
+#
+# Pinning the renderer decouples the two, so how a page is written no longer changes how
+# it is parsed.
+MYST_FORCE_SPHINX = True
 
 # Allow MyST syntax in content metadata:
 # https://github.com/ashwinvis/myst-reader/tree/main#specifying-file-metadata
@@ -134,7 +180,17 @@ PAGINATION_PATTERNS = (
 
 THEME = plumage.get_path()
 
-STATIC_PATHS = ["extra"]
+# The yearly folders are listed here as well as in ARTICLE_PATHS, so that an image
+# referenced by a plain relative path gets copied to the output. Pelican otherwise only
+# copies what an {attach} marker points at, and that marker renders as a broken image
+# anywhere outside Pelican: on GitHub, and in any editor preview. Article attachments
+# land in the same place either way, because a post in content/2005/ is written to
+# output/2005/, so the two forms coexist and content can migrate one file at a time.
+#
+# Only the article folders. Pages are written to the site root while their attachments
+# would be copied to output/pages/, so listing "pages" here would duplicate every one of
+# them under a path nothing links to.
+STATIC_PATHS = ["extra", *ARTICLE_PATHS]
 
 EXTRA_PATH_METADATA = {
     "extra/_headers": {"path": "_headers"},

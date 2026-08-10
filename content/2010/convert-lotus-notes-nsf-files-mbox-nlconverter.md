@@ -15,33 +15,33 @@ Here is how I installed `nlconverter` on a Windows 2000 (SP4) machine:
 
 1. First I downloaded and installed the [official Python builds for Windows](https://www.python.org/download/releases/) ([2.6.6 precisely](https://www.python.org/ftp/python/2.6.6/python-2.6.6.msi)):
 
-   ![Python 2.6.6 Windows installer asking whether to install for all users or just the current one, with all users selected]({attach}001-python-266-install-on-windows-2000.png)
+   ![Python 2.6.6 Windows installer asking whether to install for all users or just the current one, with all users selected](001-python-266-install-on-windows-2000.png)
 
-   ![Installer destination step keeping the default C:\Python26 directory]({attach}002-python-266-install-on-windows-2000.png)
+   ![Installer destination step keeping the default C:\Python26 directory](002-python-266-install-on-windows-2000.png)
 
-   ![Feature tree of the Python installer with all five subfeatures selected, including Tcl/Tk, documentation and the test suite]({attach}003-python-266-install-on-windows-2000.png)
+   ![Feature tree of the Python installer with all five subfeatures selected, including Tcl/Tk, documentation and the test suite](003-python-266-install-on-windows-2000.png)
 
-   ![Python installer part way through copying new files]({attach}004-python-266-install-on-windows-2000.png)
+   ![Python installer part way through copying new files](004-python-266-install-on-windows-2000.png)
 
-   ![Final installer screen thanking Mark Hammond for the Windows expertise behind Python for Windows]({attach}005-python-266-install-on-windows-2000.png)
+   ![Final installer screen thanking Mark Hammond for the Windows expertise behind Python for Windows](005-python-266-install-on-windows-2000.png)
 
 1. Then [Python for Windows extensions](https://sourceforge.net/projects/pywin32/) ([build 214 for Python 2.6 in my case](https://sourceforge.net/projects/pywin32/files/pywin32/Build%20214/pywin32-214.win32-py2.6.exe/download)):
 
-   ![pywin32 setup wizard opening on the package description for build 214 by Mark Hammond, its buttons in French]({attach}001-pywin32-214-install-on-windows-2000.png)
+   ![pywin32 setup wizard opening on the package description for build 214 by Mark Hammond, its buttons in French](001-pywin32-214-install-on-windows-2000.png)
 
-   ![pywin32 setup having found Python 2.6 in the registry, targeting C:\Python26 and its site-packages directory]({attach}002-pywin32-214-install-on-windows-2000.png)
+   ![pywin32 setup having found Python 2.6 in the registry, targeting C:\Python26 and its site-packages directory](002-pywin32-214-install-on-windows-2000.png)
 
-   ![pywin32 setup copying files, currently on a win32com test script]({attach}003-pywin32-214-install-on-windows-2000.png)
+   ![pywin32 setup copying files, currently on a win32com test script](003-pywin32-214-install-on-windows-2000.png)
 
-   ![pywin32 post-install log reporting registered DLLs and confirming the extensions were successfully installed]({attach}004-pywin32-214-install-on-windows-2000.png)
+   ![pywin32 post-install log reporting registered DLLs and confirming the extensions were successfully installed](004-pywin32-214-install-on-windows-2000.png)
 
 1. Finally I had to [download the latest `icalendar` archive](https://pypi.python.org/pypi/icalendar), then extract the `\iCalendar-1.2\src\icalendar` folder to `C:\Python26\Lib\site-packages\`:
 
-   ![7-Zip window open on the iCalendar source archive next to an Explorer window on Python's site-packages, where the extracted icalendar folder now sits]({attach}extract-icalendar-python-package-on-windows.png)
+   ![7-Zip window open on the iCalendar source archive next to an Explorer window on Python's site-packages, where the extracted icalendar folder now sits](extract-icalendar-python-package-on-windows.png)
 
 1. Next step is to [download nlconverter](https://code.google.com/p/nlconverter/downloads) itself and extract it:
 
-   ![7-Zip showing the 13 MB winnlc-alpha-1 archive next to an Explorer window on C:, where the extracted winnlc-alpha-1 folder is highlighted]({attach}nlconverter-install-on-windows.png)
+   ![7-Zip showing the 13 MB winnlc-alpha-1 archive next to an Explorer window on C:, where the extracted winnlc-alpha-1 folder is highlighted](nlconverter-install-on-windows.png)
 
 ## `nlconverter` GUI
 
@@ -51,7 +51,7 @@ Now let's convert this `nsf` to a `mbox`. [nlconverter's FAQ](https://code.googl
 
 Unfortunately it didn't work for me:
 
-![Lotus Notes Converter on Windows, its log repeating Could not connect to Notes and Could not find and register the dll]({attach}nlconverter-gui-fail.png)
+![Lotus Notes Converter on Windows, its log repeating Could not connect to Notes and Could not find and register the dll](nlconverter-gui-fail.png)
 
 So I tried the alternative approach by using the command line.
 
@@ -61,7 +61,7 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
 
 1. First, we have to [download the `notes2mbox.py` script](https://nlconverter.googlecode.com/hg/notes2mbox.py) from [nlconverter's mercurial repository](https://code.google.com/p/nlconverter/source/browse/), as this file is not distributed in the `winnlc-alpha-1.zip` archive I unzipped previously. Let's put `notes2mbox.py` in `C:\winnlc-alpha-1\`:
 
-   ![Firefox on the Google Code page for notes2mbox.py, with a save dialog pointed at the winnlc-alpha-1 folder]({attach}download-notes2mbox-python-script.png)
+   ![Firefox on the Google Code page for notes2mbox.py, with a save dialog pointed at the winnlc-alpha-1 folder](download-notes2mbox-python-script.png)
 
 1. Now we'll modify the `notes2mbox.py` script to set the password (via the `notesPasswd` variable) and location (`notesNsfPath` variable) of the `.nsf` file. Here are the modifications I applied:
 
@@ -87,7 +87,7 @@ Again, most of the things I'm writing here are based on [nlconverter's FAQ](http
    regsvr32 "C:\Program Files\Notes\nlsxbe.dll"
    ```
 
-   ![Command prompt after running regsvr32 on nlsxbe.dll, with a dialog confirming DllRegisterServer succeeded]({attach}notes-nlsxbe-dll-registered1.png)
+   ![Command prompt after running regsvr32 on nlsxbe.dll, with a dialog confirming DllRegisterServer succeeded](notes-nlsxbe-dll-registered1.png)
 
    And make the Python interpreter available system-wide:
 

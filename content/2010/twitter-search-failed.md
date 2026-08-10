@@ -13,7 +13,7 @@ Knew I explained the solution on Twitter.
 
 Tried to [search for it](https://search.twitter.com/search?q=ubercart+from%3Akdeldycke):
 
-![Twitter search returning no results for ubercart from kdeldycke, beside a sidebar of 2010 trending topics]({attach}failed-twitter-search.png)
+![Twitter search returning no results for ubercart from kdeldycke, beside a sidebar of 2010 trending topics](failed-twitter-search.png)
 
 and failed!
 

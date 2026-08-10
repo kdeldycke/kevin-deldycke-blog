@@ -99,7 +99,7 @@ And do not forget to restart the server:
 $ /etc/init.d/lighttpd restart
 ```
 
-![The finished WebDAV server reached two ways: Dolphin browsing it over webdavs, and Firefox showing the same directory index over HTTPS]({attach}lighttpd-webdav-server.png)
+![The finished WebDAV server reached two ways: Dolphin browsing it over webdavs, and Firefox showing the same directory index over HTTPS](lighttpd-webdav-server.png)
 
 As you can see in the screenshot above, you can now:
 

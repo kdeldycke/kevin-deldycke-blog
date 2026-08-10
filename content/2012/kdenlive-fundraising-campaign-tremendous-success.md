@@ -11,7 +11,7 @@ fundraising campaign and I just found out that I'm the biggest contributor. And
 like other \$100+ contributors, I was offered a place to write a [testimonial
 ](https://kdenlive.org/fundraising-campaign-2012):
 
-![Donor list under a green 100 dollars and more heading, the top entry a 200 dollar pledge praising Kdenlive as the most stable video editor on Linux]({attach}kdenlive-testimonial.png)
+![Donor list under a green 100 dollars and more heading, the top entry a 200 dollar pledge praising Kdenlive as the most stable video editor on Linux](kdenlive-testimonial.png)
 
 If I won some bragging rights, this is minor news compared to how much the
 community participated: the initial goal was set to $4000 but collected funds

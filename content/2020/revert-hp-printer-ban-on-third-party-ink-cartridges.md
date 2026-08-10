@@ -15,11 +15,11 @@ The timeline is straightforward:
 
 - 2020, October: HP release a new firmware (versioned `20201021`).
 
-  ![Printer control panel showing the Firmware Datecode screen reading 20201021]({attach}hp-laserjet-printer-20201021-firmware.jpg)
+  ![Printer control panel showing the Firmware Datecode screen reading 20201021](hp-laserjet-printer-20201021-firmware.jpg)
 
 - 2020, November: my printer auto-upgrade. I'm welcomed with this *Supply Problem [Screen of Death](https://en.wikipedia.org/wiki/Screen_of_death)*:
 
-  ![The white HP LaserJet with its panel stuck on a cartridge icon and the message Supply problem, four toner levels greyed out underneath]({attach}hp-laserjet-printer-supply-problem-screen-of-death.jpg)
+  ![The white HP LaserJet with its panel stuck on a cartridge icon and the message Supply problem, four toner levels greyed out underneath](hp-laserjet-printer-supply-problem-screen-of-death.jpg)
 
   I can't print anymore. 🤯
 
@@ -27,7 +27,7 @@ The timeline is straightforward:
 
 OK. It's my fault. I should have spent more money buying certified™ gear. 😑
 
-![Meme photo of an office copier that has vomited toner across the entire carpet, captioned: have you tried turning it off and on again?]({attach}copier-printer-meme-03.jpg)
+![Meme photo of an office copier that has vomited toner across the entire carpet, captioned: have you tried turning it off and on again?](copier-printer-meme-03.jpg)
 
 The solution is to travel back in time when things were working just great, and downgrade to the previous firmware.
 
@@ -37,7 +37,7 @@ We will stop this madness for good, and prevent the printer from downloading a f
 
 In the control panel, go to `Setup` > `Service` > `LaserJet Update` > `Manage Updates`:
 
-![Manage Updates menu on the printer panel, listing Allow Downgrade, Check Automatically, Prompt Before Install and Allow Updates]({attach}hp-laserjet-printer-manage-updates-menu.jpg)
+![Manage Updates menu on the printer panel, listing Allow Downgrade, Check Automatically, Prompt Before Install and Allow Updates](hp-laserjet-printer-manage-updates-menu.jpg)
 
 Then set these options:
 
@@ -85,13 +85,13 @@ I don't know what happens here but it seems the `.rfu` file is pushed to the pri
 
 After a minute or two, the printers reboots and upgrades itself:
 
-![Printer panel showing the HP and Energy Star logos above the word Programming while the firmware is written]({attach}hp-laserjet-printer-firmware-updating.jpg)
+![Printer panel showing the HP and Energy Star logos above the word Programming while the firmware is written](hp-laserjet-printer-firmware-updating.jpg)
 
 And we're back in business! 🥳
 
 A detour via `Setup` > `Service` > `Firmware Datecode` menu confirm we're running the the previous firmware:
 
-![Firmware Datecode screen back on 20200612, confirming the downgrade took]({attach}hp-laserjet-printer-20200612-firmware.jpg)
+![Firmware Datecode screen back on 20200612, confirming the downgrade took](hp-laserjet-printer-20200612-firmware.jpg)
 
 Finally, to lock any possibility of a firmware change, go back to `Setup` > `Service` > `LaserJet Update` > `Manage Updates` to set the option to:
 

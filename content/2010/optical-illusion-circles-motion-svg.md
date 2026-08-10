@@ -9,6 +9,6 @@ Here is an optical illusion I generated with [Inkscape](https://www.inkscape.org
 
 Using a contrast trick it appears that [circles are in motions](https://en.wikipedia.org/wiki/Motion_illusion). Click on the image below to get a full-size preview:
 
-![Rotating snakes illusion: a grid of overlapping discs ringed in blue, yellow and black segments that appear to spin when scanned]({attach}optical-illusion-circles-in-motion-preview.png)
+![Rotating snakes illusion: a grid of overlapping discs ringed in blue, yellow and black segments that appear to spin when scanned](optical-illusion-circles-in-motion-preview.png)
 
 Unfortunately I lost the original SVG source file (`optical-illusion-circles-in-motion.svgz`). But I was able to recover the original PNG file.

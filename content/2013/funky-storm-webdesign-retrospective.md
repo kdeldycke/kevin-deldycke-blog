@@ -8,18 +8,18 @@ After my [collection of Cool Cavemen themes]({filename}/2011/cool-cavemen-webdes
 
 The first iteration of the site looked like this:
 
-![The 2002 Funky Storm site, an orange banner over a grey news column of French posts, with a left sidebar listing the next gig and the site menu]({attach}funky-storm-com.png)
+![The 2002 Funky Storm site, an orange banner over a grey news column of French posts, with a left sidebar listing the next gig and the site menu](funky-storm-com.png)
 
 At the end of 2002 I tried to get rid of my [custom backend code]({filename}/2013/funky-storm-source-code-released.md), and migrate the content to [SPIP](https://www.spip.net). In 2003 I was approaching the end of that daunting task, when a huge disk crash annihilated all my efforts.
 
 The only thing left of that work is a [static mockup](https://github.com/kdeldycke/funky-storm/blob/master/index_dev.htm):
 
-![Redesign mockup with the band silhouetted as walking figures inside the orange header wave, the content panel filled with keyboard-mash placeholder text]({attach}2003-funky-storm-redesign-mockup.png)
+![Redesign mockup with the band silhouetted as walking figures inside the orange header wave, the content panel filled with keyboard-mash placeholder text](2003-funky-storm-redesign-mockup.png)
 
 After that, the site theme never changed and stayed the same up to the last days of the band. And this despite an attempt in 2004 to update the banner of the mockup above:
 
-![Updated banner alone, the Funky Storm script logo over a blue and orange marbled swirl with a cartoon face outlined at the right]({attach}funky-storm-top-banner-update.png)
+![Updated banner alone, the Funky Storm script logo over a blue and orange marbled swirl with a cartoon face outlined at the right](funky-storm-top-banner-update.png)
 
 This iteration was based on an unreleased Funky Storm wallpaper:
 
-![Desktop wallpaper putting the logo against a hazy orange sunset over water, the band's web address in the lower right]({attach}funky-storm-wallpaper.png)
+![Desktop wallpaper putting the logo against a hazy orange sunset over water, the band's web address in the lower right](funky-storm-wallpaper.png)

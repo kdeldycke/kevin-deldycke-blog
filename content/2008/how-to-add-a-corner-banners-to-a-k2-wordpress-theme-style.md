@@ -5,7 +5,7 @@ category: English
 tags: CSS, Gimp, HTML, Internet Explorer, K2, Photoshop, PHP, PNG, Theme, WordPress
 ---
 
-![Corner of a page with the stencilled Cool Cavemen logo and a brown diagonal ribbon across the top right reading version bêta]({attach}beta-version-illustration.png)
+![Corner of a page with the stencilled Cool Cavemen logo and a brown diagonal ribbon across the top right reading version bêta](beta-version-illustration.png)
 
 In this post I will give you all the technical details to create a corner banner
 for the wordpress K2 theme. This solution is uninstrusive as it can be bundled

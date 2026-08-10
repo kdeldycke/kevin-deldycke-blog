@@ -5,7 +5,7 @@ category: English
 tags: Music, Video, Kdenlive, slowmoVideo, Omashay, AWS, cloud computing, EC2, ImageMagick, Twixtor, Ubuntu, Kubuntu
 ---
 
-![Pencil drawing on off-white paper of a young man with his eyes shut, resting his face against his own forearm]({attach}goodnight-preview.jpg)
+![Pencil drawing on off-white paper of a young man with his eyes shut, resting his face against his own forearm](goodnight-preview.jpg)
 
 A new video has been released by [Omashay](https://omashay.com). Here is Goodnight, on which I did the slow-motion:
 
@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=bAKmRTV7Lek
 
 The video is [based on a series of 70 sketches](https://omashay.com/2013/02/22/goodnight-the-video/) Tomasito's made for a college project:
 
-![Contact sheet of about seventy scanned pencil drawings, the same face working through hands rising to cover the eyes and falling away again, fading to blank at both ends]({attach}goodnight-drawings-keyframes.jpg)
+![Contact sheet of about seventy scanned pencil drawings, the same face working through hands rising to cover the eyes and falling away again, fading to blank at both ends](goodnight-drawings-keyframes.jpg)
 
 He wanted to explore the possibilities of reusing them for a music video. I had the perfect secret weapon for this kind of job: [slowmoVideo](https://github.com/slowmoVideo/slowmoVideo), an open-source clone of [Twixtor](https://www.revisionfx.com/products/twixtor/).
 
