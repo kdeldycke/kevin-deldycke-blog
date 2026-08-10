@@ -14,7 +14,17 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
-"""Test and validate Cloudflare Pages redirect rules.
+"""Validate ``content/extra/_redirects`` the way production will actually read it.
+
+Two layers, and both are needed:
+
+- **Offline**, against the engine replica in ``pages_redirects_engine``: the file
+  must survive parsing whole. Cloudflare's parser silently discards rules past its
+  budgets and the deploy pipeline surfaces none of it, so this suite is the only
+  place a regression can fail loudly before it ships. This is where the file's
+  statics-first contract is enforced.
+- **Online**, against the live site: one request per rule, expectations computed by
+  the same replica. Production is the referee; the replica only predicts it.
 
 See: https://developers.cloudflare.com/pages/configuration/redirects/
 """
@@ -22,15 +32,20 @@ See: https://developers.cloudflare.com/pages/configuration/redirects/
 from __future__ import annotations
 
 import random
-import re
-from collections import Counter
 from collections.abc import Iterator
-from enum import Enum
 from pathlib import Path
 from string import ascii_letters, digits
+from urllib.parse import urljoin
 
 import pytest
 import requests
+from pages_redirects_engine import (
+    MAX_DYNAMIC_RULES,
+    PLACEHOLDER_REGEX,
+    apply_rule,
+    evaluate,
+    parse_redirects,
+)
 
 DOMAIN = "deldycke.com"
 SUB_DOMAIN = f"kevin.{DOMAIN}"
@@ -39,231 +54,434 @@ ROOT_URL = f"https://{SUB_DOMAIN}"
 # anywhere now that it no longer sits at the repository root.
 REDIRECT_FILE = Path(__file__).parent.parent / "content/extra/_redirects"
 
-
-validate_placeholder = re.compile(r":[A-Za-z]\w*").match
-""" Regular expression to validate placeholder IDs in paths."""
+PARSED = parse_redirects(REDIRECT_FILE.read_text(encoding="utf-8"))
 
 
-def get_redirect_rules() -> Iterator[tuple[str, str, int]]:
-    """Parse and validate redirect rules."""
-    for line in REDIRECT_FILE.read_text(encoding="utf-8").splitlines():
-        assert len(line) <= 1000, f"Redirect rule longer than 1000: {line}"
-
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-
-        # Validate rule.
-        params = line.split()
-        assert 2 <= len(params) <= 3, (
-            f"Redirect rule must have 2 or 3 parameters: {line}"
-        )
-
-        # Validate source.
-        source = params[0]
-        assert source.startswith("/"), f"Source must be a file path: {source}"
-
-        # Validate destination.
-        destination = params[1]
-        # XXX Only support HTTPs URLs.
-        assert destination.startswith(("/", "https://")), (
-            f"Destination must be a file path or an absolute HTTPs URL: {destination}"
-        )
-
-        # Validate code. Defaults to 302 if not provided.
-        if len(params) == 3:
-            assert params[2].isdigit(), f"HTTP code must be an integer: {params[2]}"
-            code = int(params[2])
-        else:
-            code = 302
-
-        yield source, destination, code
+# ----- Offline: the file versus the engine
 
 
-class CAT(Enum):
-    """Category of a path item."""
+def test_file_survives_the_engine():
+    """Every rule in the file must come out the other side of the parser.
 
-    STATIC = "static"
-    WILDCARD = "wildcard"
-    SPLAT = "splat"
-    PLACEHOLDER = "placeholder"
-    QUERY = "query"
-    FRAGMENT = "fragment"
-    EXTERNAL = "external"
-
-
-def split_path(url: str) -> list[tuple[str, CAT]]:
-    """Split an URL into its components and classify them.
-
-    Accept both absolute and relative URLs.
+    The engine does not fail on a bad file: it drops what it dislikes and, past the
+    dynamic budget, discards everything that follows. This site ran for years with
+    its last 18 rules silently dead that way. Nothing downstream will ever report
+    it, so this assertion is the tripwire.
     """
-    items = []
+    assert PARSED.aborted_at_line is None, (
+        f"The engine stopped reading the file at line {PARSED.aborted_at_line}: "
+        f"{PARSED.invalid[-1].message}"
+    )
+    assert not PARSED.invalid, [invalid.message for invalid in PARSED.invalid]
 
-    # Extract the path from the URL.
-    path: str
-    # URL is absolute, separate the host from the path.
-    if url.startswith("https://"):
-        elements = url.split("/", 3)
-        url_root = "/".join(elements[:3])
-        items.append((url_root, CAT.EXTERNAL))
-        if len(elements) > 3:
-            path = elements[3]
 
-    # URL is relative, so it is only a path.
-    else:
-        # Remove the leading slash, like we do for absolute URLs above.
-        assert url.startswith("/"), "Relative path are supposed to start with a slash."
-        path = url[1:]
+def test_statics_first_contract():
+    """All exact rules precede all pattern rules, with dynamic budget to spare.
 
-    # Split the path into its components.
-    for item in path.split("/"):
-        if item == "*":
-            cat = CAT.WILDCARD
-        elif item == ":splat":
-            cat = CAT.SPLAT
-        elif item.startswith(":"):
-            assert validate_placeholder(item)
-            cat = CAT.PLACEHOLDER
-        elif item.startswith("#"):
-            cat = CAT.FRAGMENT
-        elif "?" in item:
-            cat = CAT.QUERY
-            # Check that query parameters do not contain placeholders.
-            _, query = item.split("?", 1)
-            for param in query.split("&"):
-                if "=" in param:
-                    key, value = param.split("=", 1)
-                    assert key.isalnum()
-                    if value.startswith(":"):
-                        assert validate_placeholder(item)
-                        cat = CAT.PLACEHOLDER
-                        break
-        else:
-            assert "*" not in item, f"Invalid wildcard in path element: {item}"
-            cat = CAT.STATIC
-
-        items.append((item, cat))
-
-    # A placeholder can only appear once in a path.
-    placeholders = Counter(ph for ph, cat in items if cat == CAT.PLACEHOLDER)
-    assert all(count == 1 for count in placeholders.values()), (
-        "Duplicate placeholders in path: "
-        f"{ {ph for ph, count in placeholders.items() if count > 1} }"
+    A static rule is only free while it appears before the first dynamic one; after
+    that every line burns the 100-rule dynamic budget. Keeping the halves separated
+    is what keeps 64 rules free and leaves headroom for decades more URL debt.
+    """
+    kinds = [rule.is_dynamic for rule in PARSED.rules]
+    first_dynamic = kinds.index(True)
+    assert all(kinds[first_dynamic:]), (
+        "Static rule found after the first dynamic rule: it would silently consume "
+        "the dynamic budget."
+    )
+    dynamic_count = sum(kinds)
+    assert dynamic_count <= MAX_DYNAMIC_RULES, (
+        f"{dynamic_count} dynamic rules exceed the engine cap of {MAX_DYNAMIC_RULES}."
     )
 
-    return items
+
+def test_sources_are_sane():
+    """Constraints the engine enforces by silently dropping, promoted to failures."""
+    seen: set[str] = set()
+    for rule in PARSED.rules:
+        assert rule.source not in seen, f"Duplicate source: {rule.source}"
+        seen.add(rule.source)
+        assert rule.source.count("*") <= 1, (
+            f"Only one splat is allowed per source: {rule.source}"
+        )
+        if "*" in rule.source:
+            assert ":splat" not in rule.source, (
+                f"A source cannot mix * with :splat: {rule.source}"
+            )
 
 
-def create_case(src: str, dest: str, rule_src: str, rule_dest: str, rule_code: int):
-    return pytest.param(
-        src,
-        dest,
-        rule_code,
-        id=f"{src} -> {dest} | rule: {rule_src} {rule_dest} {rule_code}",
-    )
+def test_destinations_are_sane():
+    """Typos in destinations are not engine errors, they are broken redirects.
+
+    The replacer substitutes only the placeholders the source captured; anything
+    else stays in the URL as a literal ``:typo``. The engine will never complain,
+    the visitor will.
+    """
+    for rule in PARSED.rules:
+        assert "*" not in rule.destination, (
+            f"Splats are written :splat in destinations: {rule.destination}"
+        )
+        available = {name[1:] for name in PLACEHOLDER_REGEX.findall(rule.source)}
+        if "*" in rule.source:
+            available.add("splat")
+        used = {name[1:] for name in PLACEHOLDER_REGEX.findall(rule.destination)}
+        assert used <= available, (
+            f"{rule.source} -> {rule.destination}: destination uses placeholders "
+            f"the source never captures: {sorted(used - available)}"
+        )
+
+
+# ----- Online: every rule exercised against production
 
 
 def random_str() -> str:
     return "".join(random.choices(ascii_letters + digits, k=10))
 
 
-def url_fixtures(*path_items_list: list[tuple[str, CAT]]) -> Iterator[str]:
-    """Generate real, fully qualified URLs that can be used as fixtures.
+def fill(source: str, splat: str | None) -> str:
+    """Materialize a rule source into a concrete request path."""
+    path = source
+    for name in dict.fromkeys(PLACEHOLDER_REGEX.findall(source)):
+        path = path.replace(name, random_str())
+    if splat is not None:
+        path = path.replace("*", splat)
+    return path
 
-    Takes a list of URLs, already split into their components and categorized.
 
-    Replace placeholders with random strings, and ensure the same placeholders are consistent
-    within the set of URLs.
+def cases() -> Iterator[pytest.param]:
+    """One live case per rule, plus the empty-splat twin where history demands it.
+
+    Expected destinations come from the replica, not from re-reading the rule: the
+    test then breaks either when production diverges from the file or when the
+    replica diverges from production, and both are findings.
+
+    The empty-splat twin exists because every WordPress URL ended in a slash. A rule
+    ending in ``/*`` is what answers those bare slashed URLs today, via a splat that
+    matches nothing, and that behaviour is load-bearing enough to pin per rule.
     """
-    # Keep track of placeholders' random values to ensure consistency.
-    placeholders: dict[str, str] = {}
-
-    for path_items in path_items_list:
-        items = []
-        for item, cat in path_items:
-            if cat == CAT.PLACEHOLDER:
-                new_item = placeholders.setdefault(item, random_str())
-            elif cat == CAT.WILDCARD:
-                # Produce a path with a random number of components.
-                new_item = "/".join(random_str() for _ in range(random.randint(2, 5)))
-                placeholders[":splat"] = new_item
-            elif cat == CAT.SPLAT:
-                assert ":splat" in placeholders
-                new_item = placeholders[":splat"]
-            else:
-                new_item = item
-
-            items.append(new_item)
-
-        # Prepend the root URL if the path is not an absolute URL.
-        if not path_items or path_items[0][1] != CAT.EXTERNAL:
-            items.insert(0, ROOT_URL)
-
-        yield "/".join(items)
+    for rule in PARSED.rules:
+        variants = [fill(rule.source, random_str() if "*" in rule.source else None)]
+        if rule.source.endswith("/*"):
+            empty = fill(rule.source, "")
+            if apply_rule(rule, empty):  # Skip twins whose destination collapses to "".
+                variants.append(empty)
+        for path in variants:
+            expected = apply_rule(rule, path) if rule.is_dynamic else rule.destination
+            assert expected, f"Replica failed to resolve {path} for {rule.source}"
+            yield pytest.param(
+                path,
+                expected,
+                rule.status,
+                id=f"{path} -> {expected} | rule L{rule.line_number}: {rule.source}",
+            )
 
 
-def cases_from_rules():
-    """Parse redirect rules and generate test cases."""
-    total_static = 0
-    total_dynamic = 0
+@pytest.mark.parametrize(("path", "expected", "status"), cases())
+def test_rule_is_live(path, expected, status):
+    """The rule must fire on production, with the exact destination the file states.
 
-    for source, destination, code in get_redirect_rules():
-        # Categorize each item in the source and destination paths.
-        src_items = split_path(source)
-        dest_items = split_path(destination)
-        src_categories = Counter(category for _, category in src_items)
-        dest_categories = Counter(category for _, category in dest_items)
-
-        # Validate the categories of the source path.
-        assert {
-            CAT.STATIC,
-            CAT.WILDCARD,
-            CAT.PLACEHOLDER,
-        }.issuperset(src_categories), (
-            f"Source path only allows wildcards, placeholders and static items: {src_items}"
+    Redirects are checked without following: the first response carries the whole
+    verdict, and not following keeps randomly-generated placeholder values from
+    turning into misleading 404s three hops later.
+    """
+    with requests.get(f"{ROOT_URL}{path}", allow_redirects=False) as response:
+        assert response.status_code == status, (
+            f"{path} answered {response.status_code} instead of {status}: "
+            "the rule did not fire."
         )
-        assert src_categories[CAT.WILDCARD] <= 1, (
-            f"Source path is not allowed to have multiple wildcards: {src_items}"
+        location = urljoin(f"{ROOT_URL}{path}", response.headers["location"])
+        assert location == urljoin(ROOT_URL, expected)
+
+
+def test_historical_wordpress_url_chain():
+    """The URL that motivated the comment-page rules, end to end.
+
+    A real 2010 WordPress permalink with a comment-pagination suffix. It needs two
+    rules to come home: one strips ``/comment-page-1/``, the next strips the month.
+    Chains are allowed here, unlike in the per-rule tests: history is layered and
+    each layer redirects independently.
+    """
+    url = (
+        f"{ROOT_URL}/2010/09/ultimate-guide-lotus-notes-mail-migration/comment-page-1/"
+    )
+    with requests.get(url) as response:
+        assert response.ok
+        assert (
+            response.url == f"{ROOT_URL}/2010/ultimate-guide-lotus-notes-mail-migration"
         )
+        for hop in response.history:
+            assert hop.status_code == 301
 
-        # Validate the categories of the destination path.
-        assert CAT.WILDCARD not in dest_categories, (
-            f"Destination path is not allowed to have wildcards: {dest_items}"
+
+# ----- The corpus: twenty years of real URLs, one human-readable table
+#
+# Where the generated tests above verify the machine, this table is for people: every
+# entry is a URL that really existed at some point in this site's history, paired with
+# where it must land today. Read it top to bottom to see what the redirect inventory
+# actually promises. Chains are followed to the end, because history is layered: a 2005
+# WordPress upload URL crosses three eras of rules before it comes home.
+#
+# ``test_corpus_covers_every_rule`` guarantees the table exercises every rule in
+# ``_redirects`` as its *first* match, so a rule can neither go uncovered nor be
+# silently shadowed by an earlier one.
+
+CORPUS: tuple[tuple[str, str], ...] = (
+    # -- WordPress permalinks (2004-2012): /YYYY/MM/slug/, always slashed. One real
+    #    article per publication month, taken from today's content frontmatter.
+    (
+        "/2007/01/mandriva-20070-screenshots-3d-desktop/",
+        "/2007/mandriva-20070-screenshots-3d-desktop",
+    ),
+    (
+        "/2007/02/delayed-cd-tracks-publishing-with-php/",
+        "/2007/delayed-cd-tracks-publishing-with-php",
+    ),
+    (
+        "/2007/03/how-to-recover-a-raid-array-after-having-zero-ized-superblocks/",
+        "/2007/how-to-recover-a-raid-array-after-having-zero-ized-superblocks",
+    ),
+    (
+        "/2005/04/creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux/",
+        "/2005/creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux",
+    ),
+    (
+        "/2005/05/how-to-mount-a-file-system-binary-image/",
+        "/2005/how-to-mount-a-file-system-binary-image",
+    ),
+    (
+        "/2004/06/mise-en-place-paserelle-adsl-mandrake-10/",
+        "/2004/mise-en-place-paserelle-adsl-mandrake-10",
+    ),
+    (
+        "/2005/07/easy-mirroring-without-raid-the-poor-mans-disk-array/",
+        "/2005/easy-mirroring-without-raid-the-poor-mans-disk-array",
+    ),
+    (
+        "/2006/08/ajouter-une-entree-jack-universelle-sur-un-telephone-sagem-my700xi/",
+        "/2006/ajouter-une-entree-jack-universelle-sur-un-telephone-sagem-my700xi",
+    ),
+    (
+        "/2006/09/cd-templates-for-jewel-case-in-svg/",
+        "/2006/cd-templates-for-jewel-case-in-svg",
+    ),
+    ("/2006/10/archives-commands/", "/2006/archives-commands"),
+    ("/2006/11/audio-commands/", "/2006/audio-commands"),
+    ("/2006/12/all-my-command-lines/", "/2006/all-my-command-lines"),
+    # -- WordPress monthly archives, bare form. The slashed form rides the /* rules
+    #    above through an empty splat.
+    ("/2007/01", "/2007/"),
+    ("/2007/02", "/2007/"),
+    ("/2007/03", "/2007/"),
+    ("/2005/04", "/2005/"),
+    ("/2005/05", "/2005/"),
+    ("/2004/06", "/2004/"),
+    ("/2005/07", "/2005/"),
+    ("/2006/08", "/2006/"),
+    ("/2006/09", "/2006/"),
+    ("/2006/10", "/2006/"),
+    ("/2006/11", "/2006/"),
+    ("/2006/12", "/2006/"),
+    # -- Archive pagination. /2010/09/page is the exact URL from the 2024 experiment
+    #    notes that exposed the trailing-slash asymmetry: its rule was budget-dead then.
+    ("/2010/page", "/2010/"),
+    ("/2010/page/2", "/2010/"),
+    ("/2010/09/page", "/2010/"),
+    ("/2010/09/page/safsfsdf", "/2010/"),
+    # -- WordPress comment pagination, slashed with month, and its Pelican-era bare
+    #    form. The first entry is the real URL from a 2010 comment permalink.
+    (
+        "/2010/09/ultimate-guide-lotus-notes-mail-migration/comment-page-1/",
+        "/2010/ultimate-guide-lotus-notes-mail-migration",
+    ),
+    ("/2006/12/all-my-command-lines/comment-page-2/", "/2006/all-my-command-lines"),
+    (
+        "/2010/ultimate-guide-lotus-notes-mail-migration/comment-page-1",
+        "/2010/ultimate-guide-lotus-notes-mail-migration",
+    ),
+    ("/2006/all-my-command-lines/comment-page-2", "/2006/all-my-command-lines"),
+    # -- One real 2005 upload through every era of its URL. The .htaccess history shows
+    #    the actual lineage: /wp-content/uploads -> /static/uploads (2013) -> /uploads
+    #    (month flattened) -> alongside its article (today).
+    ("/uploads/2005/06/photo_f3.png", "/2005/photo_f3.png"),
+    ("/uploads/2005/photo_f3.png", "/2005/photo_f3.png"),
+    ("/static/uploads/2005/06/photo_f3.png", "/2005/photo_f3.png"),
+    ("/wp-content/uploads/2005/06/photo_f3.png", "/2005/photo_f3.png"),
+    ("/static/documents/cd-template-cd-face.svg", "/2006/cd-template-cd-face.svg"),
+    # -- Categories and tags: the hierarchical lang/ scheme, and dead pagination.
+    ("/category/lang/en/page/2", "/category/english/"),
+    ("/category/lang/fr/page/2", "/category/francais/"),
+    ("/category/english/page/2", "/category/english/"),
+    ("/tag/python/page/2", "/tag/python/"),
+    # -- Feeds. WordPress served rss, rss2, rdf and atom dialects per page; Pelican
+    #    serves one RSS and one Atom, so every dialect folds into those.
+    ("/feed/", "/feed.rss"),
+    ("/feed/atom/", "/feed.atom"),
+    ("/category/english/feed", "/category/english/feed.rss"),
+    ("/category/english/feed/", "/category/english/feed.rss"),
+    ("/category/english/feed/index/", "/category/english/feed.rss"),
+    ("/category/francais/feed/atom", "/category/francais/feed.atom"),
+    ("/category/francais/feed/atom/", "/category/francais/feed.atom"),
+    ("/category/francais/feed/atom/index/", "/category/francais/feed.atom"),
+    ("/tag/python/feed/rss", "/tag/python/feed.rss"),
+    ("/tag/python/feed/rss/", "/tag/python/feed.rss"),
+    ("/tag/python/feed/rss2", "/tag/python/feed.rss"),
+    ("/tag/python/feed/rss2/", "/tag/python/feed.rss"),
+    ("/tag/python/feed/rdf", "/tag/python/feed.rss"),
+    ("/tag/python/feed/rdf/", "/tag/python/feed.rss"),
+    ("/comments/feed/atom/", "https://kevin-deldycke-blog.disqus.com/latest.rss"),
+    # -- Pre-WordPress corners of the site and old top-level pages.
+    ("/pages/about", "/about"),
+    ("/about-me/", "/about"),
+    ("/code/", "https://github.com/kdeldycke/"),
+    ("/linux-scripts/", "https://github.com/kdeldycke/scripts"),
+    ("/wordpress-stuff/", "/themes"),
+    ("/mandriva-rpm-repository/", "https://github.com/kdeldycke/mandriva-specs"),
+    ("/static/repository/", "https://github.com/kdeldycke/mandriva-specs"),
+    ("/author/kevin/", "/"),
+    (
+        "/2013/simplify-amazon-affiliate-links/",
+        "/2006/text-date-document-processing-commands",
+    ),
+    # -- The exact-rename inventory, one entry per static rule, verbatim.
+    ("/extra", "/"),
+    ("/extra/", "/"),
+    ("/page", "/"),
+    ("/page/", "/"),
+    ("/theme", "/"),
+    ("/theme/", "/"),
+    ("/category/lang/en", "/category/english/"),
+    ("/category/lang/fr", "/category/francais/"),
+    ("/category/lang", "/categories"),
+    ("/category/lang/", "/categories"),
+    ("/category", "/categories"),
+    ("/category/", "/categories"),
+    ("/tag", "/tags"),
+    ("/tag/", "/tags"),
+    ("/page/1", "/"),
+    ("/page/1/", "/"),
+    (
+        "/2008/film-fanatix-com-maintenance-page.png",
+        "/2011/film-fanatix-com-maintenance-page.png",
+    ),
+    ("/2008/pict4818.jpg", "/2006/pict4818.jpg"),
+    ("/2008/pict4822.jpg", "/2006/pict4822.jpg"),
+    ("/2008/pict4826.jpg", "/2006/pict4826.jpg"),
+    ("/2008/pict4837.jpg", "/2006/pict4837.jpg"),
+    ("/2012/export.png", "/2013/export.png"),
+    ("/2012/redux-generation.png", "/2013/redux-generation.png"),
+    ("/2012/tale-of-two-timelapse.png", "/2013/tale-of-two-timelapse.png"),
+    (
+        "/2013/simplify-amazon-affiliate-links",
+        "/2006/text-date-document-processing-commands",
+    ),
+    ("/documents/cd-template-cd-face.svg", "/2006/cd-template-cd-face.svg"),
+    (
+        "/documents/cd-template-jewel-case-back-print-margin.svg",
+        "/2006/cd-template-jewel-case-back-print-margin.svg",
+    ),
+    (
+        "/documents/cd-template-jewel-case-back.svg",
+        "/2006/cd-template-jewel-case-back.svg",
+    ),
+    (
+        "/documents/cd-template-jewel-case-front-back-composition.svg",
+        "/2006/cd-template-jewel-case-front-back-composition.svg",
+    ),
+    (
+        "/documents/cd-template-jewel-case-inside-back-cover.svg",
+        "/2006/cd-template-jewel-case-inside-back-cover.svg",
+    ),
+    (
+        "/documents/cd-template-jewel-case-leaflet-print-margin.svg",
+        "/2006/cd-template-jewel-case-leaflet-print-margin.svg",
+    ),
+    (
+        "/documents/cd-template-jewel-case-leaflet.svg",
+        "/2006/cd-template-jewel-case-leaflet.svg",
+    ),
+    ("/documents/flame.qtz", "/2010/flame.qtz"),
+    ("/documents/glowing-cool-cavemen.qtz", "/2010/glowing-cool-cavemen.qtz"),
+    ("/documents/kaleidoscope-000.qtz", "/2010/kaleidoscope-000.qtz"),
+    ("/documents/kaleidoscope-001.qtz", "/2010/kaleidoscope-001.qtz"),
+    ("/documents/kaleidoscope-002.qtz", "/2010/kaleidoscope-002.qtz"),
+    (
+        "/documents/midi-controlled-playground.qtz",
+        "/2010/midi-controlled-playground.qtz",
+    ),
+    ("/documents/putty-template.reg", "/2010/putty-template.reg"),
+    ("/documents/sharp-scan-lines.qtz", "/2010/sharp-scan-lines.qtz"),
+    ("/documents/snow.qtz", "/2010/snow.qtz"),
+    ("/documents/squared-lava-lamp.qtz", "/2010/squared-lava-lamp.qtz"),
+    ("/documents/text-zoom-in-out.qtz", "/2010/text-zoom-in-out.qtz"),
+    ("/documents/blue-curve.otp", "/2012/blue-curve.otp"),
+    ("/documents/fancy-window-frame.otp", "/2012/fancy-window-frame.otp"),
+    ("/documents", "/"),
+    ("/documents/", "/"),
+    ("/pages", "/"),
+    ("/static/documents", "/"),
+    ("/static/uploads", "/"),
+    ("/uploads", "/"),
+    ("/mandriva-rpm-repository", "https://github.com/kdeldycke/mandriva-specs"),
+    ("/static/repository", "https://github.com/kdeldycke/mandriva-specs"),
+    ("/video", "https://www.youtube.com/@kdeldycke/videos"),
+    ("/video/", "https://www.youtube.com/@kdeldycke/videos"),
+    ("/comments/feed", "https://kevin-deldycke-blog.disqus.com/latest.rss"),
+    ("/feed/atom", "/feed.atom"),
+    ("/feed", "/feed.rss"),
+    ("/wp-content/uploads", "/"),
+    ("/author", "/"),
+    ("/about-me", "/about"),
+    ("/code", "https://github.com/kdeldycke/"),
+    ("/linux-scripts", "https://github.com/kdeldycke/scripts"),
+    ("/wordpress-stuff", "/themes"),
+)
+
+
+def test_corpus_covers_every_rule():
+    """Every rule in ``_redirects`` must be the first match of a corpus entry.
+
+    First match, not any match: an entry that only reaches a rule through an earlier
+    one proves nothing about that rule, and a rule nothing reaches first is either
+    shadowed or untested. Both are findings.
+    """
+    credited: set[int] = set()
+    for url, _ in CORPUS:
+        hit = evaluate(PARSED.rules, url)
+        if hit:
+            credited.add(hit[0].line_number)
+    uncovered = [
+        f"L{rule.line_number}: {rule.source}"
+        for rule in PARSED.rules
+        if rule.line_number not in credited
+    ]
+    assert not uncovered, f"Rules no corpus entry reaches first: {uncovered}"
+
+
+@pytest.mark.parametrize(
+    ("old_url", "landing"),
+    (pytest.param(url, landing, id=f"{url} => {landing}") for url, landing in CORPUS),
+)
+def test_corpus(old_url, landing):
+    """The old URL must land exactly where the table says, however many hops it takes."""
+    if landing.startswith("https://"):
+        # External landings are asserted on the first hop rather than followed:
+        # third-party availability is not this site's promise.
+        with requests.get(f"{ROOT_URL}{old_url}", allow_redirects=False) as response:
+            assert response.status_code in (301, 302)
+            assert response.headers["location"] == landing
+        return
+
+    with requests.get(f"{ROOT_URL}{old_url}") as response:
+        assert response.ok, f"{old_url} ended {response.status_code} at {response.url}"
+        assert response.url == f"{ROOT_URL}{landing}", (
+            f"{old_url} landed on {response.url.removeprefix(ROOT_URL)} "
+            f"instead of {landing}"
         )
+        for hop in response.history:
+            # 301/302 come from the rules, 308 from Pages' own URL normalization.
+            assert hop.status_code in (301, 302, 308)
 
-        # Splat without a wildcard is not allowed.
-        assert not (
-            CAT.SPLAT in dest_categories and CAT.WILDCARD not in src_categories
-        ), (
-            f"Source path is missing wildcard for splat placeholder to work: {src_items} -> {dest_items}"
-        )
 
-        # The rule is considered static only if both the source and destination paths
-        # are composed of static items.
-        if {CAT.STATIC, CAT.EXTERNAL}.issuperset((*src_categories, *dest_categories)):
-            total_static += 1
-
-            src, dest = url_fixtures(src_items, dest_items)
-
-            # Generate a unique test case.
-            yield create_case(src, dest, source, destination, code)
-
-        # The rule is dynamic, so we need to generate multiple test cases.
-        else:
-            total_dynamic += 1
-            # TODO: Generate 2 random test cases per placeholder.
-
-            src, dest = url_fixtures(src_items, dest_items)
-
-            # Random test cases with placeholders will lead to a 404, but not the
-            # redirects leading to external URLs.
-            if CAT.EXTERNAL not in dest_categories:
-                code = 404
-
-            yield create_case(src, dest, source, destination, code)
-
-    assert total_static <= 2000, "Too many static redirects."
-    assert total_dynamic <= 100, "Too many dynamic redirects."
+# ----- The entry points DNS and the edge own, which no file here can express
 
 
 def domain_cases() -> Iterator[tuple[str, int]]:
@@ -293,8 +511,8 @@ def domain_cases() -> Iterator[tuple[str, int]]:
 def test_domain_canonicalization(url, hops):
     """Any spelling of the root must land on the canonical URL, over HTTPS.
 
-    Guards the entry point the redirect rules below never see: these are resolved by DNS
-    and the host's own configuration, not by the ``_redirects`` file.
+    Guards the entry point the redirect rules above never see: these are resolved by DNS
+    and the zone's edge rule, not by the ``_redirects`` file.
     """
     with requests.get(url) as response:
         assert response.ok
@@ -332,28 +550,3 @@ def test_non_canonical_host_preserves_path(host):
         assert response.url == f"{ROOT_URL}{path}"
         assert len(response.history) == 1
         assert response.history[0].status_code == 301
-
-
-@pytest.mark.parametrize(
-    ("source", "destination", "code"),
-    cases_from_rules(),
-)
-def test_redirects(source, destination, code):
-    with requests.get(source) as response:
-        # Check that the source URL is reachable, unless it's a 404 test case
-        # (because of a randonly generated placeholder).
-        if code != 404:
-            assert response.ok
-
-        # Python's requests library always normalize URLs to have no trailing slash.
-        if destination == ROOT_URL:
-            destination = f"{ROOT_URL}/"
-        assert response.url == destination
-
-        # Check there's only one redirect, meaning that our redirect rules are
-        # optimized.
-        assert len(response.history) == 1
-
-        # Every test case is a redirect.
-        if code != 404:
-            assert response.history[0].status_code == code

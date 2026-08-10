@@ -58,7 +58,7 @@ CloudFlare have several redirection options:
 
 This blog uses [CloudFlare Pages](https://pages.cloudflare.com/) to host all its static content. To redirect old URLs to new ones, I use a [`_redirects` file at the root of the repository](https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/content/extra/_redirects). You should inspect that file to see how it works.
 
-Note that this kind of redirects are not working at the domain-level. If you want to redirect `https://example.com/` to `https://www.example.com/`, you need to use [Page Rules](#page-rules).
+Note that this kind of redirects are not working at the domain-level: Pages rules match on path only, never on host. If you want to redirect `https://example.com/` to `https://www.example.com/`, you need a zone-level [Single Redirect](https://developers.cloudflare.com/rules/url-forwarding/single-redirects/) matching on `http.host` (I used [Page Rules](#page-rules) for this before Cloudflare deprecated them).
 
 Here are some of the most useful rules:
 
@@ -91,6 +91,23 @@ Here are some of the most useful rules:
   ```
 
   I use this double rule to catch both the folder named `empty-folder`, and an hypothetical file named `empty-folder.html`. That way I am sure a parasitic `empty-folder.html` won't be served.
+
+### The rule budget is positional
+
+Update from 2026: I lost the last 18 rules of my `_redirects` file for years to an accounting subtlety the documentation does not state. I only found it by reading the parser in [cloudflare/workers-sdk](https://github.com/cloudflare/workers-sdk) (`parseRedirects.ts`, also bundled in wrangler and Miniflare):
+
+- A rule only counts against the *static* budget (2,000) while it appears **before the first rule containing a `*` or a `:placeholder`**.
+- From that first dynamic rule on, **every** line burns the *dynamic* budget (100), even plain `/old /new 301` ones.
+- At rule 101 of that mixed stream the parser does not skip a line: it **stops reading the file**, and everything after is silently discarded. Nothing in the deploy output tells you.
+
+So the shape of a large `_redirects` file is not a style choice: put every exact rule first, every wildcard and placeholder rule second, or the tail of your file does not exist.
+
+Two matching facts from the same source (`rules-engine.ts`) worth knowing:
+
+- Sources are matched as anchored regexes: `:name` compiles to `[^/]+` (never empty, never crosses a slash) and `*` to `.*` (may be empty). `/a` and `/a/` are therefore different sources, and neither matches the other.
+- Because a splat may match empty, a rule ending in `/*` also answers the bare trailing-slash URL. WordPress URLs all ended with a slash, so for old blogs this empty-splat behavior is what keeps two decades of inbound links alive.
+
+I keep a [faithful Python replica of the engine](https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/tests/pages_redirects_engine.py) in this blog's repository, and [a test suite](https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/tests/test_redirects.py) that parses my `_redirects` with it and probes every rule against production. The full write-up lives in [`docs/redirects.md`](https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/docs/redirects.md).
 
 ## Page rules
 

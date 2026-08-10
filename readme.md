@@ -73,7 +73,7 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
 
 ## Hosting
 
-The site is rendered by GitHub Actions and uploaded to Cloudflare Pages as a finished tree: Cloudflare never builds it. [`docs/infrastructure.md`](docs/infrastructure.md) covers how a deploy reaches readers, every setting that deviates from a stock Cloudflare project and why, how to rotate the deploy token, and how to rebuild the whole thing from nothing.
+The site is rendered by GitHub Actions and uploaded to Cloudflare Pages as a finished tree: Cloudflare never builds it. [`docs/infrastructure.md`](docs/infrastructure.md) covers how a deploy reaches readers, every setting that deviates from a stock Cloudflare project and why, how to rotate the deploy token, and how to rebuild the whole thing from nothing. [`docs/redirects.md`](docs/redirects.md) covers the twenty-year URL inventory in `content/extra/_redirects` and the engine subtleties that decide which of its rules exist.
 
 Cloudflare keeps settings that no file here can express. To check the live project still matches what the repository declares:
 

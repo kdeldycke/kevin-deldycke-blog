@@ -1,37 +1,50 @@
-# See redirect tutorial at: https://kevin.deldycke.com/2022/cloudflare-commands#pages-redirects
+################################################################################
+# Cool URIs do not change: https://www.w3.org/Provider/Style/URI
+#
+# This file is the inventory of every URL scheme this site has answered to over
+# twenty years of backends and generators, mapped back to today's canonical URLs.
+# Tutorial and findings: https://kevin.deldycke.com/2022/cloudflare-commands#pages-redirects
+#
+# ORDER IS LOAD-BEARING. The Pages engine only counts a rule as static while it
+# appears BEFORE the first rule containing a * or :placeholder. From that rule on,
+# every line burns the 100-dynamic budget, and at 101 the parser discards the REST
+# OF THE FILE. This file lost its last 18 rules to that cliff for years. Hence the
+# contract, enforced by tests/test_redirects.py against the engine replica in
+# tests/pages_redirects_engine.py:
+#
+#   1. All exact rules first, all */:placeholder rules second.
+#   2. The dynamic half stays under 100 rules.
+#
+# Matching is anchored: :name never crosses a slash and never matches empty, * may
+# match empty. So /a and /a/ are different sources, and a rule ending in /* also
+# answers the bare trailing-slash URL via an empty splat. WordPress URLs all ended
+# in a slash, which is why the /* twins matter historically.
+################################################################################
 
-# Empty subfolders roduced by Pelican and containing nothing.
+# Site-wide cleanups.
+# Empty subfolders produced by Pelican and containing nothing.
 /extra          /   301
 /extra/         /   301
 /page           /   301
 /page/          /   301
 /theme          /   301
 /theme/         /   301
-
 # Map old WordPress categories to new Pelican ones.
 /category/lang/en       /category/english/      301
-/category/lang/en/*     /category/english/      301
 /category/lang/fr       /category/francais/     301
-/category/lang/fr/*     /category/francais/     301
 # Hierarchical categories are not supported by Pelican.
 /category/lang          /categories            301
 /category/lang/         /categories            301
 # Empty subfolders that have a dedicated canonical page.
 /category       /categories    301
 /category/      /categories    301
-
 # Empty subfolders that have a dedicated canonical page.
 /tag            /tags          301
 /tag/           /tags          301
-
 # The first pagination page doesn't exists.
 /page/1         /   301
 /page/1/        /   301
 
-
-################################################################################
-# Old Pelican content
-################################################################################
 # Fix year of some attached content.
 /2008/film-fanatix-com-maintenance-page.png     /2011/film-fanatix-com-maintenance-page.png     301
 /2008/pict4818.jpg                              /2006/pict4818.jpg                              301
@@ -41,13 +54,10 @@
 /2012/export.png                                /2013/export.png                                301
 /2012/redux-generation.png                      /2013/redux-generation.png                      301
 /2012/tale-of-two-timelapse.png                 /2013/tale-of-two-timelapse.png                 301
-
 # Deleted articles are redirected to the post that inherited their content.
 # The Amazon affiliate article was removed and its commands moved to the 2006 one:
 # https://github.com/kdeldycke/kevin-deldycke-blog/commit/0cded43
 /2013/simplify-amazon-affiliate-links       /2006/text-date-document-processing-commands    301
-/2013/simplify-amazon-affiliate-links/*     /2006/text-date-document-processing-commands    301
-
 # All documents were moved alongside their articles.
 /documents/cd-template-cd-face.svg                              /2006/cd-template-cd-face.svg                               301
 /documents/cd-template-jewel-case-back-print-margin.svg         /2006/cd-template-jewel-case-back-print-margin.svg          301
@@ -72,42 +82,55 @@
 # Removal of documents folder itself.
 /documents      /   301
 /documents/     /   301
-
 # There used to be a /pages subfolder that contained all static pages.
 /pages                      /                       301
-/pages/*                    /:splat                 301
-
 # Removal of static subfolders: https://github.com/kdeldycke/kevin-deldycke-blog/commit/f91fdc7
 /static/documents           /                       301
-/static/documents/*         /documents/:splat       301
 /static/uploads             /                       301
-/static/uploads/*           /:splat                 301
-
-# Removal of month in uploads URLs. This works because all filenames are unique.
-# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/a4a6454
-/uploads/:year/:month/:slug /:year/:slug            301
-
 # Old yearly grouped upload folders were moved alongside articles.
 /uploads                    /                       301
-/uploads/*                  /:splat                 301
-
 # Old content moved on other platforms.
 # See: https://web.archive.org/web/20110316233704/https://kevin.deldycke.com/2007/02/repository-moved-thanks-to-apache-and-301-redirections/
 /mandriva-rpm-repository    https://github.com/kdeldycke/mandriva-specs
-/mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
 /static/repository          https://github.com/kdeldycke/mandriva-specs
-/static/repository/*        https://github.com/kdeldycke/mandriva-specs
 /video                      https://www.youtube.com/@kdeldycke/videos
 /video/                     https://www.youtube.com/@kdeldycke/videos
-
 # Site-wide comments feeds moved to Disqus.
 /comments/feed      https://kevin-deldycke-blog.disqus.com/latest.rss
-/comments/feed/*    https://kevin-deldycke-blog.disqus.com/latest.rss
-
 # Simplification of feeds URL: use .atom and .rss suffixes.
 /feed/atom                  /feed.atom             301
-/feed/atom/*                /feed.atom             301
 /feed                       /feed.rss              301
+
+# WordPress had a dedicated subfolder for content uploads.
+# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/418bf30
+/wp-content/uploads     /                   301
+# Worpress had default pages for each author.
+/author                 /                       301
+# Old pages.
+/about-me           /about                                  301
+/code               https://github.com/kdeldycke/
+/linux-scripts      https://github.com/kdeldycke/scripts
+/wordpress-stuff    /themes                                 301
+
+
+
+# Site-wide cleanups.
+/category/lang/en/*     /category/english/      301
+/category/lang/fr/*     /category/francais/     301
+
+# Fix year of some attached content.
+/2013/simplify-amazon-affiliate-links/*     /2006/text-date-document-processing-commands    301
+/pages/*                    /:splat                 301
+/static/documents/*         /documents/:splat       301
+/static/uploads/*           /:splat                 301
+# Removal of month in uploads URLs. This works because all filenames are unique.
+# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/a4a6454
+/uploads/:year/:month/:slug /:year/:slug            301
+/uploads/*                  /:splat                 301
+/mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs
+/static/repository/*        https://github.com/kdeldycke/mandriva-specs
+/comments/feed/*    https://kevin-deldycke-blog.disqus.com/latest.rss
+/feed/atom/*                /feed.atom             301
 /feed/*                     /feed.rss              301
 /*/feed/atom                /:splat/feed.atom      301
 /*/feed/atom/               /:splat/feed.atom      301
@@ -115,30 +138,18 @@
 /*/feed                     /:splat/feed.rss       301
 /*/feed/                    /:splat/feed.rss       301
 /*/feed/index/              /:splat/feed.rss       301
-
 # Pagination for categories and tags was disabled.
 /category/:category_id/page/*   /category/:category_id/ 301
 /tag/:tag_id/page/*             /tag/:tag_id/           301
 
-
-################################################################################
-# Old WordPress URLs
-################################################################################
 # WordPress had a dedicated subfolder for content uploads.
-# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/418bf30
-/wp-content/uploads     /                   301
 /wp-content/uploads/*   /:splat             301
-
-# Worpress had default pages for each author.
-/author                 /                       301
 /author/*               /                       301
-
 # Yearly and monthly archives are no longer paginated.
 /:year/page            /:year/   301
 /:year/page/*          /:year/   301
 /:year/:month/page     /:year/   301
 /:year/:month/page/*   /:year/   301
-
 # WordPress made a distinction between RSS 1.0, RSS 2.0 and RDF feeds while Pelican doesn't.
 /*/feed/rss     /:splat/feed.rss   301
 /*/feed/rss/    /:splat/feed.rss   301
@@ -146,22 +157,15 @@
 /*/feed/rss2/   /:splat/feed.rss   301
 /*/feed/rdf     /:splat/feed.rss   301
 /*/feed/rdf/    /:splat/feed.rss   301
-
-# Old pages.
-/about-me           /about                                  301
 /about-me/*         /about                                  301
-/code               https://github.com/kdeldycke/
 /code/*             https://github.com/kdeldycke/
-/linux-scripts      https://github.com/kdeldycke/scripts
 /linux-scripts/*    https://github.com/kdeldycke/scripts
-/wordpress-stuff    /themes                                 301
 /wordpress-stuff/*  /themes                                 301
+/*/comment-page-1   /:splat                                 301
+/*/comment-page-2   /:splat                                 301
+/*/comment-page-1/  /:splat                                 301
+/*/comment-page-2/  /:splat                                 301
 
-
-################################################################################
-# Blog posts reorganization.
-# We have to specify all active years to prevent these rules to be too generic and catch other URLs.
-################################################################################
 # Monthly archives have been removed.
 /:year/01       /:year/         301
 /:year/02       /:year/         301
@@ -175,7 +179,6 @@
 /:year/10       /:year/         301
 /:year/11       /:year/         301
 /:year/12       /:year/         301
-
 # Articles URLs have been simplified to remove the month subfolder.
 /:year/01/*     /:year/:splat   301
 /:year/02/*     /:year/:splat   301

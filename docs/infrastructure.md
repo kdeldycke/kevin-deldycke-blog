@@ -210,7 +210,7 @@ Three of this site's behaviours exist only at the edge. They are configured in f
 
 - **`tests/test_headers.py`** parses `content/extra/_headers` and fetches one real URL per rule, asserting the declared header actually arrives. A `test_every_rule_has_a_sample` guard fails when a rule is added without a sample URL, so coverage cannot quietly decay as the file grows. Wildcard rules need a hand-written sample because a pattern like `/*.numbers` matches infinitely many paths and the site serves exactly one.
 - **`tests/test_redirects.py::test_domain_canonicalization`** asserts the hop count for all twelve spellings of the site's root, and `test_non_canonical_host_preserves_path` asserts deep links keep their path. These guard the edge rule described above, which no file here can express.
-- **`tests/test_redirects.py::test_redirects`** derives a case per rule from `content/extra/_redirects` and follows it for real.
+- **`tests/test_redirects.py`** audits `content/extra/_redirects` offline against a faithful replica of Cloudflare's parser (`tests/pages_redirects_engine.py`), then probes every rule against production with replica-computed expectations. The engine's undocumented budget accounting once silently killed the last 18 rules of the file; [`redirects.md`](redirects.md) is the full story and the twenty-year URL inventory behind the file.
 
 These tests hit the network, which is unusual for a suite and deliberate here: a redirect that works in principle and 404s in production is exactly the failure this is for. The cost is that the suite is only as available as the site, and that a run takes about two minutes.
 
@@ -220,8 +220,7 @@ Things known to be wrong or unfinished, as opposed to the gaps below which are l
 
 - **The apex still carries eight dead CloudFront records.** Replacing them is described under [what the snapshot turned up](#what-the-snapshot-turned-up). Add the discard record before deleting the rest, or the apex goes dark in between.
 - **`www.deldycke.com` returns 403**, along with every other subdomain the wildcard covers. Needs either a second Pages custom domain or an edge redirect.
-- **`content/extra/_redirects-backup` should be deleted.** It is untracked and therefore harmless today, but it sits inside a `STATIC_PATHS` directory: the moment it is committed, the site publishes it at `/extra/_redirects-backup`. Git history is the backup; a copy beside the original is a publication waiting to happen.
-- **The `.patch` and `.xcf` header rules are declared but not yet live.** Their tests fail against production until the next deploy ships the updated `_headers`, then flip green. A push touching `content/**` triggers both `tests.yaml` and `deploy.yaml` in parallel, so the test run racing the deploy may fail once and pass on rerun; this is inherent to testing edge files against production.
+- **The reordered `content/extra/_redirects` and the `.patch`/`.xcf` header rules await deployment.** Until the next deploy ships them, `tests/test_redirects.py` fails on the 35 cases covering the previously-dead rules and `tests/test_headers.py` on the two new content types; all flip green once live. A push touching `content/**` triggers `tests.yaml` and `deploy.yaml` in parallel, so a test run racing the deploy may fail once and pass on rerun; this is inherent to testing edge files against production.
 
 ## Known gaps
 
