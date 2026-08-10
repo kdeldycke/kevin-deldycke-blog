@@ -1,6 +1,7 @@
 ---
-name: Deploy
+name: 🚀 Deploy
 "on":
+  workflow_dispatch:
   # Only deploy the reference default branch.
   push:
     branches:
@@ -13,6 +14,25 @@ name: Deploy
       - "wrangler.toml"
       - ".github/workflows/deploy.yaml"
 
+permissions: {}
+
+# A deploy is a race between pushes, not a queue: two commits landing minutes apart
+# would otherwise upload two builds and let whichever wrangler finishes last decide
+# what is live. Cancelling is safe because Cloudflare Pages only activates a
+# deployment once the upload completes, so an interrupted run leaves the previous
+# one serving.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# Same supply-chain cooldown as tests.yaml, and for a stronger reason: this is the
+# workflow whose output reaches readers. Nothing published inside the window can be
+# resolved by uv, npm or npx below. Held equal to `[tool.uv] exclude-newer` and
+# `[tool.repomatic] minimum-release-age`; see claude.md.
+env:
+  NPM_CONFIG_MIN_RELEASE_AGE: 7
+  UV_EXCLUDE_NEWER: "1 week"
+
 jobs:
 
   deploy:
@@ -22,32 +42,38 @@ jobs:
       contents: read
       deployments: write
     steps:
-      - uses: actions/checkout@v4.1.7
-      - uses: actions/setup-python@v5.2.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
         with:
-          python-version: "3.12"
-      - name: Install uv
+          version: "0.12.1"
+      # Plumage's webassets pipeline shells out to npm to install its PostCSS
+      # toolchain, so the theme cannot build without it. Same step as tests.yaml.
+      - name: Install npm
         run: |
-          python -m pip install -r https://raw.githubusercontent.com/kdeldycke/workflows/v4.5.4/requirements/uv.txt
-      - name: Install project
-        run: |
-          uv --no-progress venv
-          uv --no-progress sync --all-extras
+          sudo apt --quiet --yes update
+          sudo apt --quiet --yes install npm
       - name: Install Stork
-        run: |
+        run: >
           cargo install stork-search --locked
+      # No separate `uv venv` and `uv sync`: `uv run` creates and syncs the
+      # environment itself, and doing it in one command is what keeps `--frozen` on
+      # the step that actually resolves. A bare `uv sync` ahead of it could re-lock.
       - name: Generate static content
-        run: |
-          uv --no-progress run --frozen -- pelican --extra-settings SITEURL='"https://kevin.deldycke.com"'
+        run: >
+          uv --no-progress run --frozen --all-extras --
+          pelican --extra-settings SITEURL='"https://kevin.deldycke.com"'
       - name: "XXX Temporarily remove files >25 MiB"
         # See: https://developers.cloudflare.com/pages/get-started/direct-upload/#limits
         run: |
           rm -f ./output/2020/HP_Color_LaserJet_Pro_M254_dw_Printer_series_20200612.rfu
+      # Version-pinned like the html-validate call in tests.yaml. An unpinned `npx`
+      # resolves whatever is newest at deploy time, which is the one moment a
+      # surprise is least welcome.
       - name: Optimize
-        run: |
-          npx @divriots/jampack ./output
+        run: >
+          npx --yes @divriots/jampack@0.34.1 ./output
       - name: Publish
-        uses: cloudflare/wrangler-action@v3.7.0
+        uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

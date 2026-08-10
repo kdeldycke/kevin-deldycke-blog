@@ -8,9 +8,10 @@ name: 🔬 Tests
     paths:
       - .github/workflows/tests.yaml
       - content/**
+      - pelican_patches.py
       - pelicanconf.py
       - pyproject.toml
-      - test_redirects.py
+      - tests/**
       - uv.lock
   pull_request:
     branches-ignore:
@@ -28,9 +29,10 @@ name: 🔬 Tests
     paths:
       - .github/workflows/tests.yaml
       - content/**
+      - pelican_patches.py
       - pelicanconf.py
       - pyproject.toml
-      - test_redirects.py
+      - tests/**
       - uv.lock
   schedule:
     # Run tests monthly to catch regressions from dependency or environment changes.

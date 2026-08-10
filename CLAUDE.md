@@ -35,6 +35,16 @@ Anything else falls back to the lighter docutils renderer, which rejects `{tag}`
 
 Because the reader keeps **one settings key per renderer**, `MYST_SPHINX_SETTINGS` has to mirror `MYST_DOCUTILS_SETTINGS`. Configure only one and the other silently reverts to stock defaults: code blocks lose their line numbers, the heading anchor depth resets, and the extension list shrinks to `colon_fence` and `deflist`. Both keys are asserted equal in `test_pelican_patches.py`.
 
+## Cooldown on every install
+
+Nothing published in the last week gets installed, anywhere. `tests.yaml` and `deploy.yaml` both set `UV_EXCLUDE_NEWER: "1 week"` and `NPM_CONFIG_MIN_RELEASE_AGE: 7` at workflow level, and `[tool.uv] exclude-newer` carries the same window for anyone resolving locally. The three are kept equal to `[tool.repomatic] minimum-release-age`, which gates the `uvx` installs the reusable workflows run: a wider window here would lock a version those installs then refuse to resolve.
+
+**Why:** a compromised release is caught and yanked in hours to days, and a week is long enough to sit out most of that without holding anything back meaningfully. It buys nothing against a package that was malicious from the start, so it is a delay, not a check: it is not a signature, a hash, or a review.
+
+The window is set at workflow level rather than per command deliberately. A step added later inherits it without anyone remembering to flag it, which is the failure mode a per-command flag has.
+
+**How to apply:** exemptions are per-package and explicit, never a widening of the window. `[tool.uv] exclude-newer-package` is the only one in use, holding `plumage` at zero days because I publish it myself, so the compromised-upstream case it guards against does not apply. Reach for `--exclude-newer-package` (uv) or `--min-release-age-exclude` (npm) if a second one is ever needed, and write down why next to it.
+
 ## Verify against a real build
 
 A full `uv run -- pelican` is the only check that means anything: the corpus is 262 articles with plenty of hand-written HTML, and warnings surface only at build time. Compare before and after by hashing the whole `output/` tree, not by spot-checking a page.
