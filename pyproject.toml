@@ -6,7 +6,28 @@ requires-python = ">= 3.12"
 description = "Kevin Deldycke's personal blog"
 license = { text = 'CC-BY-NC-SA-4.0' }
 readme = "readme.md"
-keywords = ['blog', 'personal']
+keywords = [
+    'atom-feed',
+    'blog-posts',
+    'blog-source',
+    'creative-commons',
+    'dev-blog',
+    'markdown-blog',
+    'myst',
+    'myst-markdown',
+    'myst-parser',
+    'pelican',
+    'pelican-blog',
+    'pelican-site',
+    'personal-blog',
+    'personal-site',
+    'python-blog',
+    'static-blog',
+    'static-website',
+    'technical-blog',
+    'wrangler',
+    'yak-shaving',
+]
 classifiers = [
     # See: https://pypi.org/pypi?%3Aaction=list_classifiers
     'Development Status :: 5 - Production/Stable',
