@@ -47,33 +47,68 @@ def render(path: Path) -> str:
     return MarkdownIt("commonmark").render(body)
 
 
+def visible_numbering(html: str) -> list[list[int]]:
+    """The numbers a reader actually sees down the left margin, list by list.
+
+    Counts the way a browser does: an ``<ol start>`` sets the counter, each ``<li>``
+    increments it, and an explicit ``<li value>`` resets it mid-list.
+    """
+    lists: list[list[int]] = []
+    counter = 1
+    # Closing tags are tracked so the bullet lists further down the article, which carry
+    # <li> of their own, are not counted as part of the last numbered one.
+    inside = False
+    for tag in re.findall(r"<ol[^>]*>|</ol>|<li[^>]*>", html):
+        if tag.startswith("<ol"):
+            start = re.search(r'start="(\d+)"', tag)
+            counter = int(start.group(1)) if start else 1
+            lists.append([])
+            inside = True
+        elif tag == "</ol>":
+            inside = False
+        elif inside:
+            value = re.search(r'value="(\d+)"', tag)
+            if value:
+                counter = int(value.group(1))
+            lists[-1].append(counter)
+            counter += 1
+    return lists
+
+
 @pytest.mark.parametrize(
-    ("index", "start", "first_item"),
+    ("index", "numbering", "first_item"),
     (
         # "Falsehoods": an ordinary list, opening at 1.
-        (0, None, "Falsehoods are true."),
+        (0, [1, 2, 3, 4, 5, 6, 7, 8], "Falsehoods are true."),
         # "Falsehood lists": opens at 9, so "All falsehoods can be listed" is numbered
         # past the end of the list above it.
-        (1, "9", "All falsehoods can be listed."),
-        # "List format": opens at 404, and the item claiming numbered lists have no gap
-        # is itself preceded by a gap of 403.
-        (2, "404", "Numbered lists have no gap."),
+        (1, [9, 10, 11, 12, 13, 14, 15, 16], "All falsehoods can be listed."),
+        # "List format": the section that argues with its own numbering. It opens at 404
+        # so the item denying gaps is preceded by one, and item 999 lands between 404 and
+        # 406 so the item denying that lists are sorted sits in an unsorted list.
+        (2, [404, 999, 406, 407, 408, 409], "Numbered lists have no gap."),
     ),
 )
-def test_falsehood_list_numbering(index, start, first_item):
-    """Each list has to keep the number it opens on: that number is the argument.
+def test_falsehood_list_numbering(index, numbering, first_item):
+    """The numbers are the argument, so they have to reach the page intact.
 
-    Only the first number in a Markdown ordered list reaches the output, as CommonMark
-    renumbers the rest. So these three values are the entire joke, and flattening any of
-    them to 1 silently removes a counter-example while leaving the prose intact.
+    Markdown only honours the first number of an ordered list and renumbers the rest,
+    which is why the out-of-order item is written as HTML with an explicit ``value``.
+    Flattening any of this leaves the prose reading the same while quietly removing a
+    counter-example.
     """
-    html = render(FALSEHOODS)
-    starts = OL_START.findall(html)
-    assert len(starts) == 3, f"expected 3 ordered lists, found {len(starts)}"
-    assert starts[index] == (start or "")
+    lists = visible_numbering(render(FALSEHOODS))
+    assert len(lists) == 3, f"expected 3 ordered lists, found {len(lists)}"
+    assert lists[index] == numbering
 
-    items = re.findall(r"<li>(.*?)</li>", html.split("<ol")[index + 1], re.DOTALL)
-    assert items[0].strip().startswith(first_item)
+    items = re.findall(r"<li[^>]*>(.*?)</li>", render(FALSEHOODS), re.DOTALL)
+    assert items[sum(len(x) for x in lists[:index])].strip().startswith(first_item)
+
+
+def test_falsehood_list_is_not_sorted():
+    """The heart of the gag: the item claiming lists are sorted must break the order."""
+    numbers = visible_numbering(render(FALSEHOODS))[2]
+    assert numbers != sorted(numbers), "the 'List format' list came out sorted"
 
 
 def test_falsehood_list_repeats_itself():

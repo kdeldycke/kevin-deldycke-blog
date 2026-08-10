@@ -34,12 +34,19 @@ here is a glorious list of meta falsehoods:
 
 ## List format
 
-404. Numbered lists have no gap.
-001. Numbered lists are sorted.
-001. Falsehood lists don't repeat themselves.
-001. Falsehood lists don't repeat themselves.
-001. `The same format is followed by each item.`
-001. Falsehoods in lists are numbered.
+<!-- Written as HTML so the numbering survives. Markdown only honours the number of the
+first item and renumbers the rest, so 404, 999, 406 came out as a tidy 404, 405, 406 and
+the item denying that lists are sorted sat in a perfectly sorted list. Explicit `value`
+attributes are the only way to keep it out of order, and a formatter leaves them alone. -->
+
+<ol start="404">
+<li>Numbered lists have no gap.</li>
+<li value="999">Numbered lists are sorted.</li>
+<li value="406">Falsehood lists don't repeat themselves.</li>
+<li value="407">Falsehood lists don't repeat themselves.</li>
+<li value="408"><code>The same format is followed by each item.</code></li>
+<li value="409">Falsehoods in lists are numbered.</li>
+</ol>
 
 ## Implementation
 
