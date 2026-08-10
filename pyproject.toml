@@ -94,21 +94,21 @@ exclude = [
 # [project] name, so the stock filter watches blog/**, a directory this repo does not
 # have. Both jobs below key off content/: one builds the site from it, the other reads
 # the redirect map out of content/extra/.
-# The .py files are named rather than globbed. That started as a workaround for a
+# The root .py files are named rather than globbed. That started as a workaround for a
 # repomatic bug that emitted a `**/*.py` override unquoted, which YAML reads as an alias
 # and GitHub answers by dropping the workflow; v7.7.0 fixed it and a glob would be safe
-# again. Keeping the names anyway, because for a repo holding a handful of Python files a
-# list is more honest than a pattern: adding one more should be a deliberate edit here.
+# again. Keeping the names anyway, because for a repo holding two Python files at its root
+# a list is more honest than a pattern: adding a third should be a deliberate edit here.
 # pelican_patches.py joined the list when the local Pelican workarounds moved out of
 # pelicanconf.py: it runs on every build, so a change to it has to re-run the tests.
+# The suite itself is globbed, since pytest discovers it the same way.
 "tests.yaml" = [
     ".github/workflows/tests.yaml",
     "content/**",
     "pelican_patches.py",
     "pelicanconf.py",
     "pyproject.toml",
-    "test_pelican_patches.py",
-    "test_redirects.py",
+    "tests/**",
     "uv.lock",
 ]
 
@@ -141,6 +141,12 @@ ignore_missing_imports = true
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/latest/customize.html#pyproject-toml
 addopts = ["--durations=10"]
+# The tests import pelicanconf and pelican_patches, which sit at the repository root.
+# This project is not a package (see [tool.uv] below), so there is nothing installed for
+# them to be imported from: pytest only puts the test file's own folder on sys.path, and
+# from tests/ that no longer covers the root. Needed for the `pytest` console script CI
+# runs, which unlike `python -m pytest` does not prepend the working directory.
+pythonpath = ["."]
 # Make sure tests that are expected to fail do not resurect and start working all of a sudden.
 xfail_strict = true
 

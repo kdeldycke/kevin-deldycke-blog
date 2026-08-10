@@ -24,9 +24,10 @@ from __future__ import annotations
 import random
 import re
 from collections import Counter
+from collections.abc import Iterator
 from enum import Enum
+from pathlib import Path
 from string import ascii_letters, digits
-from typing import Iterator
 
 import pytest
 import requests
@@ -34,7 +35,9 @@ import requests
 DOMAIN = "deldycke.com"
 SUB_DOMAIN = f"kevin.{DOMAIN}"
 ROOT_URL = f"https://{SUB_DOMAIN}"
-REDIRECT_FILE = "content/extra/_redirects"
+# Anchored on this file rather than the working directory, so the suite can be run from
+# anywhere now that it no longer sits at the repository root.
+REDIRECT_FILE = Path(__file__).parent.parent / "content/extra/_redirects"
 
 
 validate_placeholder = re.compile(r":[A-Za-z]\w*").match
@@ -43,7 +46,7 @@ validate_placeholder = re.compile(r":[A-Za-z]\w*").match
 
 def get_redirect_rules() -> Iterator[tuple[str, str, int]]:
     """Parse and validate redirect rules."""
-    for line in open(REDIRECT_FILE).read().splitlines():
+    for line in REDIRECT_FILE.read_text(encoding="utf-8").splitlines():
         assert len(line) <= 1000, f"Redirect rule longer than 1000: {line}"
 
         line = line.strip()
@@ -52,9 +55,9 @@ def get_redirect_rules() -> Iterator[tuple[str, str, int]]:
 
         # Validate rule.
         params = line.split()
-        assert (
-            2 <= len(params) <= 3
-        ), f"Redirect rule must have 2 or 3 parameters: {line}"
+        assert 2 <= len(params) <= 3, (
+            f"Redirect rule must have 2 or 3 parameters: {line}"
+        )
 
         # Validate source.
         source = params[0]
@@ -62,9 +65,10 @@ def get_redirect_rules() -> Iterator[tuple[str, str, int]]:
 
         # Validate destination.
         destination = params[1]
-        assert destination.startswith("/") or destination.startswith(
-            "https://"  # XXX Only support HTTPs URLs.
-        ), f"Destination must be a file path or an absolute HTTPs URL: {destination}"
+        # XXX Only support HTTPs URLs.
+        assert destination.startswith(("/", "https://")), (
+            f"Destination must be a file path or an absolute HTTPs URL: {destination}"
+        )
 
         # Validate code. Defaults to 302 if not provided.
         if len(params) == 3:
@@ -142,9 +146,10 @@ def split_path(url: str) -> list[tuple[str, CAT]]:
 
     # A placeholder can only appear once in a path.
     placeholders = Counter(ph for ph, cat in items if cat == CAT.PLACEHOLDER)
-    assert all(
-        count == 1 for count in placeholders.values()
-    ), f"Duplicate placeholders in path: {set(ph for ph, count in placeholders.items() if count > 1)}"
+    assert all(count == 1 for count in placeholders.values()), (
+        "Duplicate placeholders in path: "
+        f"{ {ph for ph, count in placeholders.items() if count > 1} }"
+    )
 
     return items
 
@@ -214,22 +219,24 @@ def cases_from_rules():
             CAT.STATIC,
             CAT.WILDCARD,
             CAT.PLACEHOLDER,
-        }.issuperset(
-            src_categories
-        ), f"Source path only allows wildcards, placeholders and static items: {src_items}"
-        assert (
-            src_categories[CAT.WILDCARD] <= 1
-        ), f"Source path is not allowed to have multiple wildcards: {src_items}"
+        }.issuperset(src_categories), (
+            f"Source path only allows wildcards, placeholders and static items: {src_items}"
+        )
+        assert src_categories[CAT.WILDCARD] <= 1, (
+            f"Source path is not allowed to have multiple wildcards: {src_items}"
+        )
 
         # Validate the categories of the destination path.
-        assert (
-            CAT.WILDCARD not in dest_categories
-        ), f"Destination path is not allowed to have wildcards: {dest_items}"
+        assert CAT.WILDCARD not in dest_categories, (
+            f"Destination path is not allowed to have wildcards: {dest_items}"
+        )
 
         # Splat without a wildcard is not allowed.
         assert not (
             CAT.SPLAT in dest_categories and CAT.WILDCARD not in src_categories
-        ), f"Source path is missing wildcard for splat placeholder to work: {src_items} -> {dest_items}"
+        ), (
+            f"Source path is missing wildcard for splat placeholder to work: {src_items} -> {dest_items}"
+        )
 
         # The rule is considered static only if both the source and destination paths
         # are composed of static items.
@@ -257,6 +264,47 @@ def cases_from_rules():
 
     assert total_static <= 2000, "Too many static redirects."
     assert total_dynamic <= 100, "Too many dynamic redirects."
+
+
+def domain_cases() -> Iterator[tuple[str, int]]:
+    """Every way of spelling the site's root, with the hops it should take to canonize.
+
+    Kept out of the rule-derived cases below because those all assert exactly one hop,
+    which only holds for half of these: reaching the canonical root costs one redirect to
+    upgrade the scheme plus one to move off the apex domain, so the count runs 0 to 2.
+    """
+    for scheme in ("http", "https"):
+        for host in (DOMAIN, SUB_DOMAIN):
+            for path in ("", "/"):
+                hops = (scheme == "http") + (host == DOMAIN)
+                yield f"{scheme}://{host}{path}", hops
+
+
+@pytest.mark.parametrize(("url", "hops"), domain_cases())
+def test_domain_canonicalization(url, hops):
+    """Any spelling of the root must land on the canonical URL, over HTTPS.
+
+    Guards the entry point the redirect rules below never see: these are resolved by DNS
+    and the host's own configuration, not by the ``_redirects`` file.
+    """
+    with requests.get(url) as response:
+        assert response.ok
+        # requests always normalizes a bare domain to a trailing slash.
+        assert response.url == f"{ROOT_URL}/"
+
+        assert len(response.history) == hops, (
+            f"{url} took {len(response.history)} redirects instead of {hops}: "
+            f"{[h.url for h in response.history]}"
+        )
+        # Permanent, so browsers and search engines stop asking.
+        for hop in response.history:
+            assert hop.status_code == 301
+
+        # No hop may leave the site, and none may downgrade a secured request.
+        for hop in response.history:
+            assert hop.headers["Location"].startswith(
+                ("/", f"https://{DOMAIN}", ROOT_URL)
+            )
 
 
 @pytest.mark.parametrize(

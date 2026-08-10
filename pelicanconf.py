@@ -26,7 +26,6 @@ AUTHOR = SITENAME = "Kevin Deldycke"
 PATH = "content"
 
 TIMEZONE = "Europe/Paris"
-DEFAULT_LANG = "en"
 
 TYPOGRIFY = True
 
@@ -83,6 +82,10 @@ MYST_SPHINX_SETTINGS = {
 # it is parsed.
 MYST_FORCE_SPHINX = True
 
+# Plugins are deliberately not listed. Pelican auto-discovers everything in the
+# pelican.plugins namespace for as long as PLUGINS is left unset, and naming even one
+# there switches that off, silently dropping the rest. See CLAUDE.md.
+
 # Allow MyST syntax in content metadata:
 # https://github.com/ashwinvis/myst-reader/tree/main#specifying-file-metadata
 FORMATTED_FIELDS = [
@@ -107,13 +110,10 @@ ARTICLE_PATHS = [
 
 PAGE_URL = "{slug}"
 PAGE_SAVE_AS = "{slug}.html"
-PAGE_PATHS = ["pages"]
 
 TEMPLATE_PAGES = {
     "templates/themes.html": "themes.html",
 }
-
-DIRECT_TEMPLATES = ["index", "tags", "categories", "authors", "archives"]
 
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = TAG_URL + "index.html"
@@ -144,9 +144,9 @@ PAGE_LANG_SAVE_AS = None
 
 FEED_RSS = "feed.rss"
 FEED_ATOM = "feed.atom"
-FEED_ALL_RSS = None
+# Only the feeds Pelican would otherwise produce are switched off here. FEED_ALL_RSS and
+# TRANSLATION_FEED_RSS are absent from Pelican's defaults, so they are already None.
 FEED_ALL_ATOM = None
-TRANSLATION_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
@@ -162,7 +162,6 @@ FEED_APPEND_REF = True
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = "English"
 DEFAULT_DATE_FORMAT = "%b. %d, %Y"
-REVERSE_ARCHIVE_ORDER = True
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
@@ -209,9 +208,7 @@ EXTRA_PATH_METADATA = {
 # pelican.plugins.seo
 SEO_REPORT = False
 SEO_ENHANCER = True
-
-# pelican.plugins.similar_posts
-SIMILAR_POSTS_MAX_COUNT = 3
+SEO_ENHANCER_OPEN_GRAPH = True
 
 
 # ----- Theme-specific settings
