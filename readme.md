@@ -71,6 +71,18 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
   $ uv run -- pelican --autoreload --listen
   ```
 
+## Hosting
+
+The site is rendered by GitHub Actions and uploaded to Cloudflare Pages as a finished tree: Cloudflare never builds it. [`docs/infrastructure.md`](docs/infrastructure.md) covers how a deploy reaches readers, every setting that deviates from a stock Cloudflare project and why, how to rotate the deploy token, and how to rebuild the whole thing from nothing.
+
+Cloudflare keeps settings that no file here can express. To check the live project still matches what the repository declares:
+
+```shell-session
+$ python scripts/cloudflare_config.py --check
+```
+
+The same check runs on every deploy and monthly on a schedule.
+
 ## Theme development
 
 The section above is enough to add and modify the website content.

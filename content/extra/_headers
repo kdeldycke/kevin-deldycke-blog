@@ -1,6 +1,16 @@
 # _headers directives seems to be applied after all others from _redirects, so
 # the matching URL here should be the canonical one.
 
+# Every content type below is declared precisely, so browsers never need to guess.
+# nosniff makes them commit to that: a response is interpreted as what it says it is
+# or not at all. Pages already sends this header on every response as a platform
+# default (measured 2026-08-10), so today this rule changes nothing; it exists to pin
+# that behaviour to the site rather than the platform, so a future host or a changed
+# default cannot silently drop it. Safe because the whole corpus was audited the same
+# day: every stylesheet, script and wasm file already arrives with the right type.
+/*
+    x-content-type-options: nosniff
+
 # Set RSS feed content type.
 /*/feed.rss
     content-type: application/rss+xml
@@ -24,3 +34,13 @@
 # Set Microsoft regedit content type.
 /*.reg
     content-type: text/x-ms-regedit
+
+# Patches are text and deserve to be read in place. Without this they fall back to
+# application/octet-stream and every click becomes a download.
+/*.patch
+    content-type: text/x-patch
+
+# Set GIMP image content type. GIMP's own desktop database uses this value; browsers
+# cannot display it either way, but a labelled download beats an anonymous one.
+/*.xcf
+    content-type: image/x-xcf

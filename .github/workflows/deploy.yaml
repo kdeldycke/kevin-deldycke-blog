@@ -2,6 +2,14 @@
 name: 🚀 Deploy
 "on":
   workflow_dispatch:
+  # The deploy token carries a one-year TTL, and every other trigger here is a push.
+  # A quiet month therefore never exercises the token, so its expiry would surface
+  # only whenever the next article happens to land. A monthly run turns that silence
+  # into a failed workflow and an email, and re-proves the build against whatever uv
+  # and npm resolve that month. Offset from the 1st so it does not collide with the
+  # monthly tests.yaml run.
+  schedule:
+    - cron: "43 6 15 * *"
   # Only deploy the reference default branch.
   push:
     branches:
@@ -34,6 +42,29 @@ env:
   UV_EXCLUDE_NEWER: "1 week"
 
 jobs:
+
+  # Cloudflare holds settings that no file in this repository can express: the
+  # compatibility date, Smart Placement, the build image floor. They are invisible
+  # until they misbehave, and the project spent years with a `wrangler.toml`
+  # compatibility date three years out of step with the live one without anyone
+  # noticing. This job fails the run when the live project stops matching what
+  # docs/infrastructure.md declares. It is deliberately a separate job: drifted
+  # settings should be loud, but they should never hold up publishing an article.
+  config-drift:
+    name: Check Cloudflare config drift
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # Standard library only, so no uv sync and no dependency cooldown to honour.
+      # Needs Python 3.11 or later for tomllib; ubuntu-24.04 ships 3.12.
+      - name: Compare live project against declared state
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: >
+          python3 scripts/cloudflare_config.py --check
 
   deploy:
     name: Deploy to Cloudflare Pages

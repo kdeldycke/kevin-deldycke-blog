@@ -269,15 +269,24 @@ def cases_from_rules():
 def domain_cases() -> Iterator[tuple[str, int]]:
     """Every way of spelling the site's root, with the hops it should take to canonize.
 
-    Kept out of the rule-derived cases below because those all assert exactly one hop,
-    which only holds for half of these: reaching the canonical root costs one redirect to
-    upgrade the scheme plus one to move off the apex domain, so the count runs 0 to 2.
+    Exactly one hop unless the request is already canonical, because the edge rule that
+    moves traffic off ``deldycke.com`` and ``www.deldycke.com`` matches on host alone and
+    always targets HTTPS. A plain ``http://`` request to a non-canonical host is therefore
+    corrected in a single response rather than being upgraded and then moved.
+
+    The one remaining hop belongs to the canonical host itself: ``http://kevin`` is
+    upgraded by Always Use HTTPS, which no redirect rule is involved in.
+
+    ``www`` earns its place here rather than being assumed equivalent to the apex. It is
+    served by a different DNS record and, until the rule was widened to name it, answered
+    a 5xx while the apex redirected correctly: the two hosts had nothing in common but a
+    suffix.
     """
     for scheme in ("http", "https"):
-        for host in (DOMAIN, SUB_DOMAIN):
+        for host in (DOMAIN, f"www.{DOMAIN}", SUB_DOMAIN):
             for path in ("", "/"):
-                hops = (scheme == "http") + (host == DOMAIN)
-                yield f"{scheme}://{host}{path}", hops
+                canonical = scheme == "https" and host == SUB_DOMAIN
+                yield f"{scheme}://{host}{path}", int(not canonical)
 
 
 @pytest.mark.parametrize(("url", "hops"), domain_cases())
@@ -303,8 +312,26 @@ def test_domain_canonicalization(url, hops):
         # No hop may leave the site, and none may downgrade a secured request.
         for hop in response.history:
             assert hop.headers["Location"].startswith(
-                ("/", f"https://{DOMAIN}", ROOT_URL)
+                ("/", f"https://{DOMAIN}", f"https://www.{DOMAIN}", ROOT_URL)
             )
+
+
+@pytest.mark.parametrize("host", (DOMAIN, f"www.{DOMAIN}"))
+def test_non_canonical_host_preserves_path(host):
+    """A deep link to a non-canonical host keeps its path instead of dumping on the root.
+
+    The apex and ``www`` accumulated inbound links over two decades and several site
+    migrations. A redirect that discarded the path would turn every one of them into a
+    visit to the homepage, which reads as working right up until someone checks where the
+    links actually went.
+    """
+    path = "/2016/falsehoods-programmers-believe-about-falsehoods-lists"
+
+    with requests.get(f"https://{host}{path}") as response:
+        assert response.ok
+        assert response.url == f"{ROOT_URL}{path}"
+        assert len(response.history) == 1
+        assert response.history[0].status_code == 301
 
 
 @pytest.mark.parametrize(

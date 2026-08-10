@@ -194,7 +194,6 @@ STATIC_PATHS = ["extra", *ARTICLE_PATHS]
 EXTRA_PATH_METADATA = {
     "extra/_headers": {"path": "_headers"},
     "extra/_redirects": {"path": "_redirects"},
-    "extra/ads.txt": {"path": "ads.txt"},
     "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/robots.txt": {"path": "robots.txt"},
     "extra/profile-photo-square-thumbnail.jpg": {
@@ -204,6 +203,31 @@ EXTRA_PATH_METADATA = {
 
 
 # ----- Plugin-specific settings
+
+# pelican.plugins.webassets
+#
+# By default webassets drops its build cache inside the directory it writes to, which
+# here is the published theme folder: six opaque hash-named files ended up live at
+# /theme/.webassets-cache/* because the deploy ships output/ verbatim. The cache is a
+# build accelerator, not content, so park it at the repository root, where .gitignore
+# already covers it. Every deploy uploads the complete tree, so the stray copy already
+# in production disappears on the first deploy carrying this setting.
+#
+# The directory must exist before webassets touches it: `get_cache()` only creates the
+# default location, and a path handed to `FilesystemCache` is used as-is, with every
+# cache miss swallowed as ENOENT. Without the mkdir the setting silently degrades to
+# "no cache at all".
+#
+# This must be WEBASSETS_CONFIG, not the older ASSET_CONFIG. Plumage's
+# `setup_webassets()` always writes a WEBASSETS_CONFIG into settings to inject its
+# PostCSS filter, and the webassets plugin reads ASSET_CONFIG only as a fallback when
+# WEBASSETS_CONFIG is absent, which under Plumage it never is. An ASSET_CONFIG here
+# still triggers the plugin's deprecation warning, because that fires on the key's
+# presence, while the value itself is never consulted: a config that looks wired and
+# does nothing.
+_WEBASSETS_CACHE = Path(__file__).parent / ".webassets-cache"
+_WEBASSETS_CACHE.mkdir(exist_ok=True)
+WEBASSETS_CONFIG = {"cache": str(_WEBASSETS_CACHE)}
 
 # pelican.plugins.seo
 SEO_REPORT = False
