@@ -13,35 +13,47 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
   $ cd ./blog
   ```
 
-- Install Python:
+- Install `uv`. There is no separate Python step: `uv` fetches and manages the interpreter itself.
 
   ```shell-session
-  $ brew install python
-  $ python --version
-  Python 3.12.4
+  $ brew install uv
   ```
 
-- Install `uv`:
+- Install Node.js, which brings `npm` along. Plumage's asset pipeline shells out to `npm` to install its PostCSS toolchain, and the build aborts on `npm CLI not found` without it:
 
   ```shell-session
-  $ python -m pip install uv
+  $ brew install node
   ```
 
-- Install this blog's dependencies:
+- Install Stork, which builds the site's search index. There is no Homebrew formula for it, so it goes through `cargo`:
 
   ```shell-session
-  $ uv venv
-  $ source .venv/bin/activate
+  $ brew install rust
+  $ cargo install stork-search --locked
+  ```
+
+  The `pelican-search` plugin looks for `stork` on `$PATH` and raises `Stork must be installed and available on $PATH.` if it is missing. To build without it, set `STORK_SEARCH = False` in `pelicanconf.py`.
+
+- Install this blog's dependencies, pinning Python to 3.13:
+
+  ```shell-session
+  $ uv venv --python 3.13
   $ uv sync --all-extras
   ```
 
+  Pick 3.12 or 3.13, not 3.14: `watchfiles` ships no wheel for 3.14, so `uv` falls back to compiling it from source and the Rust build fails.
+
 ## Build and browse website
+
+`uv run` resolves the virtualenv on its own, so none of the commands below need `source .venv/bin/activate`.
 
 - To build the content, in one terminal, run:
 
   ```shell-session
   $ uv run -- pelican
   ```
+
+  The very first build is the slow one: Plumage installs its Node.js dependencies before it can compile any CSS. Expect a `postcss CLI not found` warning on that run only. A full build of the site takes a couple of minutes.
 
 - And to serve the website, in another terminal:
 
@@ -52,6 +64,12 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
   ```
 
 - Then go to [http://localhost:8000](http://localhost:8000).
+
+- While writing, a single terminal rebuilding on every change is more convenient than the two above:
+
+  ```shell-session
+  $ uv run -- pelican --autoreload --listen
+  ```
 
 ## Theme development
 
@@ -67,12 +85,12 @@ Now if you need to work both on the content and the theme you need to:
   $ cd ./blog
   ```
 
-- Change `plumage` dependency in the Blog's `pyproject.toml` from:
+- Drop the version constraint on the `plumage` dependency in the blog's `pyproject.toml`, from:
 
   ```toml
   dependencies = [
       ...
-      "plumage <anything>",
+      "plumage>=5.0.0",
       ...
   ]
   ```
@@ -92,8 +110,15 @@ Now if you need to work both on the content and the theme you need to:
   ```toml
   [tool.uv.sources]
   plumage = { path = "../plumage", editable = true }
-  ...
   ```
+
+- Then re-sync so the editable checkout replaces the released theme:
+
+  ```shell-session
+  $ uv sync --all-extras
+  ```
+
+  Both edits are local scaffolding, so revert them and re-sync before committing: leaving them in place pins the blog to a path that only exists on your machine. `uv.lock` records the switch too, so check it has gone back to the registry version.
 
 ## TODO
 
