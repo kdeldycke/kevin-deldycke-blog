@@ -11,7 +11,7 @@ No account, zone or project identifier is recorded here. This repository is publ
 | Hosting | Cloudflare Pages project `kevin-deldycke-blog` | Created 2023-03-01, Free plan |
 | Domains | `kevin.deldycke.com` and `kevin-deldycke-blog.pages.dev` | The apex `deldycke.com` zone is separate and hosts other things |
 | Build | GitHub Actions, `.github/workflows/deploy.yaml` | Pelican, then jampack, then `wrangler pages deploy` |
-| Search index | Stork, built during the deploy job | `cargo install stork-search`, output served as `/search-index.st` |
+| Search index | Stork, built during the deploy job | `cargo install stork-search --version 1.6.0`, output served as `/search-index.st` |
 | Analytics | Cloudflare Web Analytics | Token lives in the project's `build_config`, injected by Cloudflare |
 | Redirects | `content/extra/_redirects` | Copied verbatim into `output/`, read by Pages at the edge |
 | Headers | `content/extra/_headers` | Sets feed and search-index content types |
@@ -30,6 +30,8 @@ The site is **never built by Cloudflare**. GitHub Actions renders it and uploads
 4. `wrangler pages deploy ./output` uploads the tree. Cloudflare promotes it once the upload completes, so an interrupted run leaves the previous deployment serving.
 
 This is a Direct Upload flow. In the API, those deployments carry `deployment_trigger.type = "ad_hoc"`, and the live one is the project's `canonical_deployment`.
+
+Two version pins in that job are hand-held, and both were floating until 2026-08-11. `cargo install stork-search --version 1.6.0` has to keep matching the runtime Plumage loads from `files.stork-search.net/releases/v1.6.0/stork.js`: the index format is versioned, so an indexer running ahead of that runtime breaks site search without failing the build. `wranglerVersion: "4.118.0"` pins the CLI that `cloudflare/wrangler-action` otherwise resolves on every deploy, its own default being the floating major `4`. repomatic's `sync-workflow-pins` walks npm literals, PyPI literals and the `setup-uv` version input only, so neither of these gets bumped for me: check them when Stork or wrangler moves.
 
 ### Content types at the edge
 

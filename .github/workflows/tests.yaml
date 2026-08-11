@@ -104,9 +104,13 @@ jobs:
         run: >
           npm install npm@12.0.2 --global --ignore-scripts --no-progress
           --no-update-notifier --no-fund --no-audit
+      # Pinned as in deploy.yaml, where the reasoning sits: `--locked` freezes the
+      # crate's dependencies rather than the crate, cargo honours neither cooldown
+      # variable, and the indexer has to keep producing the format the runtime
+      # Plumage loads can read.
       - name: Install Stork
         run: >
-          cargo install stork-search --locked
+          cargo install stork-search --version 1.6.0 --locked
       - name: Build website
         run: >
           uv --no-progress run --frozen --all-extras -- pelican

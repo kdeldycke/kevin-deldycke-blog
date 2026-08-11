@@ -107,9 +107,24 @@ jobs:
         run: >
           npm install npm@12.0.2 --global --ignore-scripts --no-progress
           --no-update-notifier --no-fund --no-audit
+      # Version-pinned because `--locked` does not do it: that flag freezes the
+      # crate's own dependency tree and leaves the crate itself resolved fresh on
+      # every run. Two reasons to hold it. Plumage hardcodes the runtime the page
+      # loads, `files.stork-search.net/releases/v1.6.0/stork.js` in its
+      # `base.html`, and the index format is versioned, so an indexer that moved
+      # ahead of that runtime would leave site search returning nothing with no
+      # build error to show for it. And cargo reads neither UV_EXCLUDE_NEWER nor
+      # NPM_CONFIG_MIN_RELEASE_AGE, which makes this the one install in either
+      # workflow that no cooldown covers.
+      #
+      # 1.6.0 is what an unpinned cargo resolves today anyway: it is the newest
+      # stable, from 2023-01-30, and 2.0.0-beta.2 is a prerelease cargo skips. So
+      # the pin changes nothing now and holds the line if a 2.0.0 ever ships.
+      # Nothing walks it forward either, sync-workflow-pins matching npm, PyPI
+      # and setup-uv literals but not cargo, so it is hand-held like `runs-on:`.
       - name: Install Stork
         run: >
-          cargo install stork-search --locked
+          cargo install stork-search --version 1.6.0 --locked
       # No separate `uv venv` and `uv sync`: `uv run` creates and syncs the
       # environment itself, and doing it in one command is what keeps `--frozen` on
       # the step that actually resolves. A bare `uv sync` ahead of it could re-lock.
@@ -127,9 +142,19 @@ jobs:
       - name: Optimize
         run: >
           npx --yes @divriots/jampack@0.34.1 ./output
+      # The SHA pins the action, not the CLI it installs. Left to itself the
+      # action falls back to its own default of `4` and runs `npm i wrangler@4`,
+      # so the tool that uploads the site would be whatever 4.x happens to be
+      # current that morning. The install does inherit the cooldown, npm having
+      # been upgraded above and NPM_CONFIG_MIN_RELEASE_AGE being set at workflow
+      # level, but a week-old release nobody picked is still nobody's choice.
+      # 4.118.0 is what that floating range resolves to today, so the pin starts
+      # as a no-op. Hand-held like the Stork pin: sync-workflow-pins reads npm and
+      # PyPI literals and setup-uv's version input, not a `with:` input here.
       - name: Publish
         uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy ./output --project-name=kevin-deldycke-blog --commit-dirty=true
+          wranglerVersion: "4.118.0"
