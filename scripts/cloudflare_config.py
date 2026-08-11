@@ -31,11 +31,12 @@ import json
 import os
 import pathlib
 import sys
-import tomllib
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
 from typing import Any
+
+import tomllib
 
 API_ROOT = "https://api.cloudflare.com/client/v4"
 PROJECT = "kevin-deldycke-blog"

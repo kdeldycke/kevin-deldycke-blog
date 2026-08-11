@@ -552,9 +552,12 @@ def test_domain_canonicalization(url, hops):
 
         # No hop may leave the site, and none may downgrade a secured request.
         for hop in response.history:
-            assert hop.headers["Location"].startswith(
-                ("/", f"https://{DOMAIN}", f"https://www.{DOMAIN}", ROOT_URL)
-            )
+            assert hop.headers["Location"].startswith((
+                "/",
+                f"https://{DOMAIN}",
+                f"https://www.{DOMAIN}",
+                ROOT_URL,
+            ))
 
 
 @pytest.mark.parametrize("host", (DOMAIN, f"www.{DOMAIN}"))
