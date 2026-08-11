@@ -142,6 +142,14 @@ exclude = [
 ]
 
 [tool.repomatic]
+# `sync-bumpversion` gates on `is_python_project`, true for any repo with a [project]
+# table, so it still fired here even though this is a `[tool.uv] package = false`
+# project with no package to version: no __init__.py, no changelog.md, no
+# citation.cff. Unlike the release lane below, this job predates RepoScope.
+# PACKAGE_ONLY and was never migrated to the narrower `is_python_package` metadata
+# key (fixed upstream, pending release). Drop this once that ships.
+bumpversion.sync = false
+
 # The release lane used to be listed here too: changelog, changelog.yaml, release.yaml
 # and publish-pypi-action. RepoScope.PACKAGE_ONLY now keeps all four away from a
 # `[tool.uv] package = false` project on its own, so naming them only restated what
