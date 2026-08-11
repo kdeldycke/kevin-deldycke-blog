@@ -68,7 +68,19 @@ jobs:
 
   deploy:
     name: Deploy to Cloudflare Pages
-    runs-on: ubuntu-24.04
+    # Same architecture as tests.yaml builds on, and for the same reason: two thirds
+    # of this job is Pelican rendering 262 articles, both runners are 4 vCPU / 16 GB,
+    # and both are free on public repositories. Nothing in the lockfile is x64-only.
+    #
+    # This job carries one risk tests.yaml cannot cover for it: jampack's libvips
+    # bindings in the Optimize step, which tests.yaml never runs. If arm64 turns out
+    # not to suit it, the fallback is `ubuntu-24.04` on this job alone rather than a
+    # wholesale revert, since the build itself is proven by the test workflow first.
+    #
+    # No updater walks a `runs-on:` value forward the way sync-workflow-pins walks
+    # the version pins below, so this is a hand-held choice: revisit it, it will not
+    # revisit itself.
+    runs-on: ubuntu-24.04-arm
     permissions:
       contents: read
       deployments: write

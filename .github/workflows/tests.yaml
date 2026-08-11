@@ -73,9 +73,10 @@ jobs:
     # to prove instead is the two native toolchains: `cargo install stork-search`
     # and, over in deploy.yaml, jampack's libvips bindings.
     #
-    # deploy.yaml deliberately stays on x64 until this job reports back. A slow
-    # deploy is an annoyance; a deploy that cannot build is the site not updating.
-    # Note that no updater walks a `runs-on:` value forward the way
+    # This job is also what covers the build for deploy.yaml, which runs on the same
+    # architecture: a break here shows up before a push reaches readers. The one
+    # thing it cannot vouch for is jampack's libvips bindings, which only deploy.yaml
+    # runs. Note that no updater walks a `runs-on:` value forward the way
     # sync-workflow-pins walks the version pins above, so this is a hand-held
     # choice: revisit it, it will not revisit itself.
     runs-on: ubuntu-24.04-arm
