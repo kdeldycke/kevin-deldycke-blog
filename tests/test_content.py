@@ -44,7 +44,10 @@ def render(path: Path) -> str:
     keeps this hermetic and fast, and a full build confirms the same three values.
     """
     body = FRONTMATTER.sub("", path.read_text(encoding="utf-8"))
-    return MarkdownIt("commonmark").render(body)
+    # markdown-it-py ships no type information, so `render()` is typed as returning Any
+    # and mypy rejects handing that straight back from a function promising `str`.
+    rendered: str = MarkdownIt("commonmark").render(body)
+    return rendered
 
 
 def visible_numbering(html: str) -> list[list[int]]:

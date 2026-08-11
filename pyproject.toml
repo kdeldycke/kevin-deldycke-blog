@@ -23,7 +23,10 @@ version = "1.0.0"
 # predecessor capped rtoml below the release that first shipped cp314 wheels. Expect
 # to go hunting for the equivalent when 3.15 lands.
 requires-python = ">= 3.14"
-description = "Kevin Deldycke's personal blog"
+# Kept byte-identical to the GitHub repository description: `lint-repo` compares the
+# two with a plain `!=`, with no normalization, so a stray emoji shortcode or a
+# trailing full stop on one side is a failed check. Change both or neither.
+description = "My personal blog, and the yak-shaving that keeps two decades of URLs alive."
 license = { text = 'CC-BY-NC-SA-4.0' }
 readme = "readme.md"
 keywords = [

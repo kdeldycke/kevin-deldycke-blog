@@ -35,7 +35,15 @@ import random
 from collections.abc import Iterator
 from pathlib import Path
 from string import ascii_letters, digits
+from typing import TYPE_CHECKING
 from urllib.parse import urljoin
+
+if TYPE_CHECKING:
+    # What `pytest.param()` returns. pytest exposes the factory but not the type it
+    # produces, so the annotation has to reach into the private module. Behind
+    # TYPE_CHECKING it costs nothing at runtime and cannot break collection if the
+    # module ever moves.
+    from _pytest.mark.structures import ParameterSet
 
 import pytest
 import requests
@@ -160,7 +168,7 @@ def fill(source: str, splat: str | None, seed: str) -> str:
     return path
 
 
-def cases() -> Iterator[pytest.param]:
+def cases() -> Iterator[ParameterSet]:
     """One live case per rule, plus the empty-splat twin where history demands it.
 
     Expected destinations come from the replica, not from re-reading the rule: the
