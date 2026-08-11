@@ -133,15 +133,28 @@ def test_destinations_are_sane():
 # ----- Online: every rule exercised against production
 
 
-def random_str() -> str:
-    return "".join(random.choices(ascii_letters + digits, k=10))
+def token(seed: str) -> str:
+    """An arbitrary but stable stand-in for a placeholder or splat value.
+
+    Arbitrary is the point: a rule matching ``/2007`` proves nothing a rule matching
+    ``/O9TECB5ZM7`` does not, and the noise is what shows the placeholder accepts any
+    segment rather than something the corpus happens to contain.
+
+    Drawn from a generator seeded on the rule instead of the global random state, so
+    every process that collects this module produces the same parameter list. xdist
+    compares collected test IDs across workers and aborts the run outright when they
+    disagree, which is exactly what a value redrawn per process causes. Stability
+    also makes a failure reproducible: the URL in the report is the URL that failed,
+    not one shape of it that will never occur again.
+    """
+    return "".join(random.Random(seed).choices(ascii_letters + digits, k=10))
 
 
-def fill(source: str, splat: str | None) -> str:
+def fill(source: str, splat: str | None, seed: str) -> str:
     """Materialize a rule source into a concrete request path."""
     path = source
-    for name in dict.fromkeys(PLACEHOLDER_REGEX.findall(source)):
-        path = path.replace(name, random_str())
+    for index, name in enumerate(dict.fromkeys(PLACEHOLDER_REGEX.findall(source))):
+        path = path.replace(name, token(f"{seed}/{index}/{name}"))
     if splat is not None:
         path = path.replace("*", splat)
     return path
@@ -159,9 +172,11 @@ def cases() -> Iterator[pytest.param]:
     matches nothing, and that behaviour is load-bearing enough to pin per rule.
     """
     for rule in PARSED.rules:
-        variants = [fill(rule.source, random_str() if "*" in rule.source else None)]
+        seed = f"{rule.line_number}:{rule.source}"
+        splat = token(f"{seed}/splat") if "*" in rule.source else None
+        variants = [fill(rule.source, splat, seed)]
         if rule.source.endswith("/*"):
-            empty = fill(rule.source, "")
+            empty = fill(rule.source, "", seed)
             if apply_rule(rule, empty):  # Skip twins whose destination collapses to "".
                 variants.append(empty)
         for path in variants:
