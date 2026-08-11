@@ -60,18 +60,47 @@ jobs:
 
   test-generation:
     name: Generate the static site
-    runs-on: ubuntu-24.04
+    # arm64 rather than x64, and this job first, because it is the one that can
+    # answer whether the swap is worth making: it runs the same build deploy.yaml
+    # does, where roughly two thirds of the wall clock is Pelican rendering 262
+    # articles through Sphinx. Both runners are 4 vCPU / 16 GB and both are free
+    # on public repositories, so the only question is wall clock, and the only way
+    # to get that number is to spend a run on it.
+    #
+    # Safe to try: nothing in the lockfile is x64-only. Of 71 packages, 63 are pure
+    # Python, 5 ship aarch64 wheels, and the 3 with no wheel at all (cssmin, rtoml,
+    # typogrify) compile from source on either architecture already. What arm64 has
+    # to prove instead is the two native toolchains: `cargo install stork-search`
+    # and, over in deploy.yaml, jampack's libvips bindings.
+    #
+    # deploy.yaml deliberately stays on x64 until this job reports back. A slow
+    # deploy is an annoyance; a deploy that cannot build is the site not updating.
+    # Note that no updater walks a `runs-on:` value forward the way
+    # sync-workflow-pins walks the version pins above, so this is a hand-held
+    # choice: revisit it, it will not revisit itself.
+    runs-on: ubuntu-24.04-arm
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
         with:
           version: "0.12.1"
       # Plumage's webassets pipeline shells out to npm to install its PostCSS
-      # toolchain, so the theme cannot build without it.
+      # toolchain, so the theme cannot build without it. The runner already ships
+      # Node and npm, so this upgrades in place rather than installing from apt,
+      # which pulled npm 9.2.0 on Node 18 out of Ubuntu noble. That mattered for
+      # more than age: npm only understands `min-release-age` from 11.10.0 on, so
+      # the NPM_CONFIG_MIN_RELEASE_AGE above was silently doing nothing and every
+      # npm install this workflow made ran with no cooldown at all.
+      #
+      # Pinned the way setup-uv pins uv, and in the shape repomatic's
+      # sync-workflow-pins recognises: `npm@X.Y.Z` has to sit immediately after
+      # `install` with every flag trailing, or its regex misses the literal and
+      # the version silently stops being bumped. The cooldown itself comes from
+      # the workflow-level env, which npm reads as its `min-release-age` config.
       - name: Install npm
-        run: |
-          sudo apt --quiet --yes update
-          sudo apt --quiet --yes install npm
+        run: >
+          npm install npm@12.0.2 --global --ignore-scripts --no-progress
+          --no-update-notifier --no-fund --no-audit
       - name: Install Stork
         run: >
           cargo install stork-search --locked

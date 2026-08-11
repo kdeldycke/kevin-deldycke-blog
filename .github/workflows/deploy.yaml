@@ -78,11 +78,16 @@ jobs:
         with:
           version: "0.12.1"
       # Plumage's webassets pipeline shells out to npm to install its PostCSS
-      # toolchain, so the theme cannot build without it. Same step as tests.yaml.
+      # toolchain, so the theme cannot build without it. Same step as tests.yaml,
+      # including the pin: the apt package this replaced was npm 9.2.0, four major
+      # versions below the 11.10.0 that first understood `min-release-age`, so the
+      # cooldown this workflow declares was not being applied to a single npm
+      # install. On the workflow whose output reaches readers, that is the one
+      # that mattered most.
       - name: Install npm
-        run: |
-          sudo apt --quiet --yes update
-          sudo apt --quiet --yes install npm
+        run: >
+          npm install npm@12.0.2 --global --ignore-scripts --no-progress
+          --no-update-notifier --no-fund --no-audit
       - name: Install Stork
         run: >
           cargo install stork-search --locked
