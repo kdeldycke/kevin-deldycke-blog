@@ -87,6 +87,14 @@ test = [
     # More pytest plugins at: https://docs.pytest.org/en/latest/reference/plugin_list.html
     "pytest-github-actions-annotate-failures>=0.2.0",
     "pytest-randomly>=3.15.0",
+    # Most of this suite waits on the network rather than on a CPU: every rule in
+    # `_redirects` and every rule in `_headers` is one live request to production. That
+    # is the workload xdist is best at, and it takes the local run from about four
+    # minutes to under three.
+    #
+    # The psutil extra is what makes `--numprocesses=logical` available, should the
+    # split ever want tuning beyond physical cores.
+    "pytest-xdist[psutil]>=3.7",
     "requests>=2.32.3",
 ]
 typing = ["types-requests>=2.32.0.20240622"]
@@ -251,7 +259,17 @@ ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/latest/customize.html#pyproject-toml
-addopts = ["--durations=10"]
+# `--numprocesses=auto` splits the run across cores. It pays off because the suite is
+# mostly live HTTP against production, so workers spend their time waiting rather than
+# competing, and it costs a fraction of a second on the offline files.
+#
+# It only works because every test ID is deterministic. xdist compares what each worker
+# collected and aborts the whole run when they disagree, which is what the generated
+# redirect cases used to cause: they drew their placeholder values from the global
+# random state at collection time, so every worker invented different URLs. `token()`
+# in `test_redirects.py` seeds off the rule instead. Keep it that way, or this flag
+# turns every run into "Different tests were collected between gw0 and gw1".
+addopts = ["--durations=10", "--numprocesses=auto"]
 # The tests import pelicanconf and pelican_patches, which sit at the repository root.
 # This project is not a package (see [tool.uv] below), so there is nothing installed for
 # them to be imported from: pytest only puts the test file's own folder on sys.path, and
