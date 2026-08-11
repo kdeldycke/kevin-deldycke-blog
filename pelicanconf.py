@@ -253,7 +253,7 @@ CODE_STYLE = "monokai"
 STORK_SEARCH = True
 
 ARTICLE_EDIT_LINK = (
-    "https://github.com/kdeldycke/kevin-deldycke-blog/edit/main/content/posts/"
+    "https://github.com/kdeldycke/blog/edit/main/content/posts/"
     "%(slug)s.md"
 )
 

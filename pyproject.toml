@@ -90,7 +90,7 @@ typing = ["types-requests>=2.32.0.20240622"]
 
 [project.urls]
 "Homepage" = 'https://kevin.deldycke.com'
-"Repository" = 'https://github.com/kdeldycke/kevin-deldycke-blog'
+"Repository" = 'https://github.com/kdeldycke/blog'
 "Funding" = "https://github.com/sponsors/kdeldycke"
 
 [tool.lychee]

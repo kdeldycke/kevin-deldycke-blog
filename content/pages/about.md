@@ -71,7 +71,7 @@ Everything is [on LinkedIn](https://www.linkedin.com/in/kevindeldycke/).
 🇬🇧 Everything here is English as a way to practice, and share content with a larger audience. It's not my mother tongue and you’ll certainly
 find mistakes. So if you do, please be kind to comment on the blog (or
 better, [send a
-pull-request](https://github.com/kdeldycke/kevin-deldycke-blog/pulls)) so I can
+pull-request](https://github.com/kdeldycke/blog/pulls)) so I can
 quickly fix errors. 🇫🇷 I sometimes write [in French]({category}francais).
 
 🎸 This blog was previously titled *coolkevmen*. Which is the nickname given to me by friends from the [Cool Cavemen](https://coolcavemen.com) band, in the credits of [All Cool

@@ -60,13 +60,13 @@ tags: calendar, CLI, date, epoch, find, Linux, recode, sed, VIM, Markdown, Perl,
   $ find /folder -iname "*.xml" -exec sed -i 's/[ \t]*$//' "{}" \;
   ```
 
-- Place a new `---` line at the start of each `.markdown` files ([see result](https://github.com/kdeldycke/kevin-deldycke-blog/commit/19d1b082e93966f82873ce9d8de238a889d371b7)):
+- Place a new `---` line at the start of each `.markdown` files ([see result](https://github.com/kdeldycke/blog/commit/19d1b082e93966f82873ce9d8de238a889d371b7)):
 
   ```shell-session
   $ find ./folder -iname "*.markdown" -exec sed -i '1s/^/---\n/' "{}" \;
   ```
 
-- Place a new `---` line before the first empty line of each `.markdown` files ([see result](https://github.com/kdeldycke/kevin-deldycke-blog/commit/8628d53284e41917159e344ea45ad9e9d16b90b1)):
+- Place a new `---` line before the first empty line of each `.markdown` files ([see result](https://github.com/kdeldycke/blog/commit/8628d53284e41917159e344ea45ad9e9d16b90b1)):
 
   ```shell-session
   $ find ./folder -iname "*.markdown" -exec sed -i '0,/^$/s//---\n/' "{}" \;

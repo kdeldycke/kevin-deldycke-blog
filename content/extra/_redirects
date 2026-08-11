@@ -56,7 +56,7 @@
 /2012/tale-of-two-timelapse.png                 /2013/tale-of-two-timelapse.png                 301
 # Deleted articles are redirected to the post that inherited their content.
 # The Amazon affiliate article was removed and its commands moved to the 2006 one:
-# https://github.com/kdeldycke/kevin-deldycke-blog/commit/0cded43
+# https://github.com/kdeldycke/blog/commit/0cded43
 /2013/simplify-amazon-affiliate-links       /2006/text-date-document-processing-commands    301
 # All documents were moved alongside their articles.
 /documents/cd-template-cd-face.svg                              /2006/cd-template-cd-face.svg                               301
@@ -84,7 +84,7 @@
 /documents/     /   301
 # There used to be a /pages subfolder that contained all static pages.
 /pages                      /                       301
-# Removal of static subfolders: https://github.com/kdeldycke/kevin-deldycke-blog/commit/f91fdc7
+# Removal of static subfolders: https://github.com/kdeldycke/blog/commit/f91fdc7
 /static/documents           /                       301
 /static/uploads             /                       301
 # Old yearly grouped upload folders were moved alongside articles.
@@ -102,7 +102,7 @@
 /feed                       /feed.rss              301
 
 # WordPress had a dedicated subfolder for content uploads.
-# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/418bf30
+# See: https://github.com/kdeldycke/blog/commit/418bf30
 /wp-content/uploads     /                   301
 # Worpress had default pages for each author.
 /author                 /                       301
@@ -124,7 +124,7 @@
 /static/documents/*         /documents/:splat       301
 /static/uploads/*           /:splat                 301
 # Removal of month in uploads URLs. This works because all filenames are unique.
-# See: https://github.com/kdeldycke/kevin-deldycke-blog/commit/a4a6454
+# See: https://github.com/kdeldycke/blog/commit/a4a6454
 /uploads/:year/:month/:slug /:year/:slug            301
 /uploads/*                  /:splat                 301
 /mandriva-rpm-repository/*  https://github.com/kdeldycke/mandriva-specs

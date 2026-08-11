@@ -260,4 +260,4 @@ $ make ssh_upload
 
 If you need an example or inspiration, my [current Pelican blog, its theme,
 configuration and content are all available on
-GitHub](https://github.com/kdeldycke/kevin-deldycke-blog).
+GitHub](https://github.com/kdeldycke/blog).

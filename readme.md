@@ -9,7 +9,7 @@ which is powered by [Pelican](https://getpelican.com) (engine) and
 - Fetch a copy of the repository:
 
   ```shell-session
-  $ git clone https://github.com/kdeldycke/kevin-deldycke-blog.git blog
+  $ git clone https://github.com/kdeldycke/blog.git
   $ cd ./blog
   ```
 

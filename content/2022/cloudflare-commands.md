@@ -56,7 +56,7 @@ CloudFlare have several redirection options:
 
 ### Pages redirects
 
-This blog uses [CloudFlare Pages](https://pages.cloudflare.com/) to host all its static content. To redirect old URLs to new ones, I use a [`_redirects` file at the root of the repository](https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/content/extra/_redirects). You should inspect that file to see how it works.
+This blog uses [CloudFlare Pages](https://pages.cloudflare.com/) to host all its static content. To redirect old URLs to new ones, I use a [`_redirects` file at the root of the repository](https://github.com/kdeldycke/blog/blob/main/content/extra/_redirects). You should inspect that file to see how it works.
 
 Note that this kind of redirects are not working at the domain-level: Pages rules match on path only, never on host. If you want to redirect `https://example.com/` to `https://www.example.com/`, you need a zone-level [Single Redirect](https://developers.cloudflare.com/rules/url-forwarding/single-redirects/) matching on `http.host` (I used [Page Rules](#page-rules) for this before Cloudflare deprecated them).
 
@@ -107,7 +107,7 @@ Two matching facts from the same source (`rules-engine.ts`) worth knowing:
 - Sources are matched as anchored regexes: `:name` compiles to `[^/]+` (never empty, never crosses a slash) and `*` to `.*` (may be empty). `/a` and `/a/` are therefore different sources, and neither matches the other.
 - Because a splat may match empty, a rule ending in `/*` also answers the bare trailing-slash URL. WordPress URLs all ended with a slash, so for old blogs this empty-splat behavior is what keeps two decades of inbound links alive.
 
-I keep a [faithful Python replica of the engine](https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/tests/pages_redirects_engine.py) in this blog's repository, and [a test suite](https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/tests/test_redirects.py) that parses my `_redirects` with it and probes every rule against production. The full write-up lives in [`docs/redirects.md`](https://github.com/kdeldycke/kevin-deldycke-blog/blob/main/docs/redirects.md).
+I keep a [faithful Python replica of the engine](https://github.com/kdeldycke/blog/blob/main/tests/pages_redirects_engine.py) in this blog's repository, and [a test suite](https://github.com/kdeldycke/blog/blob/main/tests/test_redirects.py) that parses my `_redirects` with it and probes every rule against production. The full write-up lives in [`docs/redirects.md`](https://github.com/kdeldycke/blog/blob/main/docs/redirects.md).
 
 ## Page rules
 

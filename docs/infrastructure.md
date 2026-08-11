@@ -125,12 +125,12 @@ Create the replacement before revoking the incumbent, so no window exists where 
 1. Create the new token as above, with a fresh one-year TTL. Name it with a date, like `kevin-deldycke-blog-deploy-2026-08`.
 2. Update the secret without the value entering a shell history or a terminal transcript:
    ```bash
-   pbpaste | gh secret set CLOUDFLARE_API_TOKEN --repo kdeldycke/kevin-deldycke-blog
+   pbpaste | gh secret set CLOUDFLARE_API_TOKEN --repo kdeldycke/blog
    ```
 3. Verify with a real deploy before revoking anything:
    ```bash
-   gh workflow run deploy.yaml --repo kdeldycke/kevin-deldycke-blog
-   gh run watch --repo kdeldycke/kevin-deldycke-blog
+   gh workflow run deploy.yaml --repo kdeldycke/blog
+   gh run watch --repo kdeldycke/blog
    ```
    Watch the `Publish` step for `Deployment complete`. A too-narrow scope fails there, and the previous deployment keeps serving.
 4. Only then delete the old token.
