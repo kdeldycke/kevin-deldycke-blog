@@ -60,26 +60,28 @@ jobs:
 
   test-generation:
     name: Generate the static site
-    # arm64 rather than x64, and this job first, because it is the one that can
-    # answer whether the swap is worth making: it runs the same build deploy.yaml
-    # does, where roughly two thirds of the wall clock is Pelican rendering 262
-    # articles through Sphinx. Both runners are 4 vCPU / 16 GB and both are free
-    # on public repositories, so the only question is wall clock, and the only way
-    # to get that number is to spend a run on it.
+    # Same architecture as the deploy job, deliberately: this job is what covers that
+    # build, so a break here has to show up before a push reaches readers.
     #
-    # Safe to try: nothing in the lockfile is x64-only. Of 71 packages, 63 are pure
+    # arm64 was tried on 2026-08-11 and reverted. It was never a compatibility
+    # problem, and nothing in the lockfile is x64-only: of 71 packages, 63 are pure
     # Python, 5 ship aarch64 wheels, and the 3 with no wheel at all (cssmin, rtoml,
-    # typogrify) compile from source on either architecture already. What arm64 has
-    # to prove instead is the two native toolchains: `cargo install stork-search`
-    # and, over in deploy.yaml, jampack's libvips bindings.
+    # typogrify) already compile from source everywhere. It ran green. It was just
+    # slower at the part that matters, taking 427s to build the site against 386s
+    # here, with deploy.yaml measuring the same gap on its own run. arm64 wins on the
+    # Rust and libvips steps and loses on single-threaded Python, and this job is
+    # mostly single-threaded Python. See the table in deploy.yaml.
     #
-    # This job is also what covers the build for deploy.yaml, which runs on the same
-    # architecture: a break here shows up before a push reaches readers. The one
-    # thing it cannot vouch for is jampack's libvips bindings, which only deploy.yaml
-    # runs. Note that no updater walks a `runs-on:` value forward the way
-    # sync-workflow-pins walks the version pins above, so this is a hand-held
-    # choice: revisit it, it will not revisit itself.
-    runs-on: ubuntu-24.04-arm
+    # ubuntu-slim cannot run this at all: it ships no Rust, which `cargo install
+    # stork-search` and the rtoml build both need. ubuntu-26.04 is the one worth
+    # revisiting, for its Python 3.14 rather than its OS, but not until lxml,
+    # markupsafe, pyyaml and watchfiles are on versions with cp314 wheels, since all
+    # four would otherwise fall back to compiling from source.
+    #
+    # Note that no updater walks a `runs-on:` value forward the way
+    # sync-workflow-pins walks the version pins above, so this is a hand-held choice:
+    # revisit it, it will not revisit itself.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0

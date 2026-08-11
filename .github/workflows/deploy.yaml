@@ -68,19 +68,26 @@ jobs:
 
   deploy:
     name: Deploy to Cloudflare Pages
-    # Same architecture as tests.yaml builds on, and for the same reason: two thirds
-    # of this job is Pelican rendering 262 articles, both runners are 4 vCPU / 16 GB,
-    # and both are free on public repositories. Nothing in the lockfile is x64-only.
+    # x64 because it was measured, not assumed. arm64 ran this same job green on
+    # 2026-08-11, so the architecture is not a compatibility problem: jampack's
+    # libvips bindings, the Stork compile and the whole Pelican build all work. It
+    # is simply slower where this job spends its time.
     #
-    # This job carries one risk tests.yaml cannot cover for it: jampack's libvips
-    # bindings in the Optimize step, which tests.yaml never runs. If arm64 turns out
-    # not to suit it, the fallback is `ubuntu-24.04` on this job alone rather than a
-    # wholesale revert, since the build itself is proven by the test workflow first.
+    #                    x64     arm64
+    #   Install Stork     66s      52s   arm64 faster, Rust compiles well on it
+    #   Generate content 386s     441s   arm64 14% slower, and this is 70% of the job
+    #   Optimize          90s      78s   arm64 faster
     #
-    # No updater walks a `runs-on:` value forward the way sync-workflow-pins walks
-    # the version pins below, so this is a hand-held choice: revisit it, it will not
-    # revisit itself.
-    runs-on: ubuntu-24.04-arm
+    # The two wins total 26s and the loss is 55s, so arm64 costs about half a minute
+    # per deploy. tests.yaml saw the same shape independently (427s against 386s),
+    # which is what makes it a result rather than runner noise: single-threaded
+    # Python is the one thing these arm64 runners do worse, and it is the one thing
+    # this job mostly does.
+    #
+    # Worth revisiting only if the build stops dominating. Note that no updater walks
+    # a `runs-on:` value forward the way sync-workflow-pins walks the version pins
+    # below, so this is a hand-held choice: revisit it, it will not revisit itself.
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       deployments: write

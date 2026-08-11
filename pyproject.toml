@@ -2,7 +2,27 @@
 # Docs: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
 name = "blog"
 version = "1.0.0"
-requires-python = ">= 3.12"
+# A floor rather than a compatibility claim, and the only Python control in the repo.
+# Nothing here needs 3.14 and the corpus built fine on 3.12, but this blog has one
+# contributor and one pipeline, so the range never describes anyone else's
+# environment: it says what CI should run, and it is the newest release because the
+# newest release is the fastest.
+#
+# Being a floor and not a pin is the point. uv takes the first compatible interpreter
+# it finds, so a new minor is adopted on its own once runners and wheels carry it,
+# which is the intent here rather than something to guard against. There is
+# deliberately no `.python-version`: it would fix the version and have to be bumped by
+# hand, and no updater walks it forward.
+#
+# What this does rule out is the older failure: uv can no longer fall back to whatever
+# `/usr/bin/python3` a runner image ships, which is how the build spent its life on
+# 3.12.3 without anyone choosing it. Narrowing the range also let the resolver drop
+# every older-Python branch from the lock.
+#
+# The cost is one upstream pin per bump. 3.14 needed pelican-search 1.1.1, whose
+# predecessor capped rtoml below the release that first shipped cp314 wheels. Expect
+# to go hunting for the equivalent when 3.15 lands.
+requires-python = ">= 3.14"
 description = "Kevin Deldycke's personal blog"
 license = { text = 'CC-BY-NC-SA-4.0' }
 readme = "readme.md"
