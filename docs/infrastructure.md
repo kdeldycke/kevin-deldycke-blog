@@ -204,6 +204,18 @@ This could not have been done in `content/extra/_redirects`. That file is served
 
 Two things stay unrecoverable from this repository alone: the Web Analytics token, which is regenerated per project, and the TXT record values, which are fingerprinted here by design. Everything else in a rebuild is reproducible from what is committed.
 
+### The pages.dev subdomain
+
+`kevin-deldycke-blog.pages.dev` is not optional and cannot be deleted: it is the CNAME target `kevin.deldycke.com` resolves to, so the site is served *through* it. Cloudflare assigns one `<project>.pages.dev` per Pages project and keeps it for the life of the project. The [documented](https://developers.cloudflare.com/pages/configuration/custom-domains/) ways to keep the public off it are Cloudflare Access over previews, or redirecting it to the custom domain. That redirect needs host matching, which neither `_redirects` nor `_headers` can do since both match on path only, so it would take a Pages Function running on every request: a Worker invocation added to a site that is otherwise pure static asset serving.
+
+Not worth it here, because the duplicate it exposes is already inert. Checked 2026-08-11:
+
+- A web search for the hostname returns only this repository on GitHub, never a page of the site. The copy is not indexed.
+- All 264 article and page files carry `<link rel="canonical">` pointing at `https://kevin.deldycke.com/…`, emitted by the `seo` plugin (`SEO_ENHANCER`). Served from either hostname, an article names the canonical one.
+- `sitemap.xml` lists canonical URLs only, and every internal link in the HTML is absolute to `kevin.deldycke.com`, so a crawler landing on the `pages.dev` copy leaves it on the first click.
+
+The gap, recorded rather than closed: the homepage, the 754 generated listing pages and the `archives.html`, `categories.html` and `page/N.html` files carry no canonical, because the SEO plugin only decorates articles and pages. If that ever matters, the fix is injecting the tag from `pelican_patches.py`, which costs nothing at request time, not a Pages Function.
+
 ## What the test suite checks against production
 
 Three of this site's behaviours exist only at the edge. They are configured in files here, but nothing in a build proves they work: `_headers` and `_redirects` are copied verbatim into `output/` and only mean anything once Cloudflare is serving them, and the host canonicalization is not in this repository at all. So the suite fetches the live site.
