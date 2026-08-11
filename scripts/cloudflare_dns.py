@@ -50,9 +50,17 @@ BLOG_ZONE = "deldycke.com"
 
 # Record types whose content is a hostname, an address or a public policy value. These
 # are reproduced verbatim: a rebuild needs them exactly, and none carries key material.
-VERBATIM_TYPES = frozenset(
-    {"A", "AAAA", "ALIAS", "CAA", "CNAME", "MX", "NS", "PTR", "SRV"}
-)
+VERBATIM_TYPES = frozenset({
+    "A",
+    "AAAA",
+    "ALIAS",
+    "CAA",
+    "CNAME",
+    "MX",
+    "NS",
+    "PTR",
+    "SRV",
+})
 
 # Value prefixes that identify a protocol rather than a secret, and so survive redaction.
 PUBLIC_DIRECTIVES = frozenset({"spf1", "DKIM1", "DMARC1", "STSv1", "TLSRPTv1"})

@@ -253,8 +253,7 @@ CODE_STYLE = "monokai"
 STORK_SEARCH = True
 
 ARTICLE_EDIT_LINK = (
-    "https://github.com/kdeldycke/blog/edit/main/content/posts/"
-    "%(slug)s.md"
+    "https://github.com/kdeldycke/blog/edit/main/content/posts/%(slug)s.md"
 )
 
 SOCIAL_WIDGET_NAME = "Online presence"

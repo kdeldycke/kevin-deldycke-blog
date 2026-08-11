@@ -37,7 +37,9 @@ And here is it applied in a trivial example (in a python shell):
 >>> content = """This is the <strong>content</strong> in which we want to
 <em>find</em> <a href="https://en.wikipedia.org/wiki/Html">HTML</a> tags."""
 >>>
->>> ultimate_regexp = "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
+>>> ultimate_regexp = (
+...     "(?i)<\/?\w+((\s+\w+(\s*=\s*(?:\".*?\"|'.*?'|[^'\">\s]+))?)+\s*|\s*)\/?>"
+... )
 >>>
 >>> for match in re.finditer(ultimate_regexp, content):
 ...   print repr(match.group())

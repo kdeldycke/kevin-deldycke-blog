@@ -158,15 +158,13 @@ I maintain a set of default configuration files in my [`dotfiles` repository](ht
   with cmd.main_context():
       cmd.tempdir_registry = cmd.enter_context(tempdir_registry())
       cmd.enter_context(global_tempdir_manager())
-      options, args = cmd.parse_args(
-          [
-              "--no-binary=:all:",
-              "--no-deps",
-              "--dest",
-              f"{tmp_path}",
-              f"pygments==2.14.0",
-          ]
-      )
+      options, args = cmd.parse_args([
+          "--no-binary=:all:",
+          "--no-deps",
+          "--dest",
+          f"{tmp_path}",
+          f"pygments==2.14.0",
+      ])
       cmd.verbosity = options.verbose
       outcome = cmd.run(options, args)
       assert outcome == SUCCESS
