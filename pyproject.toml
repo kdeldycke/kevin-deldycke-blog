@@ -2,6 +2,34 @@
 # Docs: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
 name = "blog"
 version = "1.0.0"
+# Kept byte-identical to the GitHub repository description: `lint-repo` compares the
+# two with a plain `!=`, with no normalization, so a stray emoji shortcode or a
+# trailing full stop on one side is a failed check. Change both or neither.
+description = "My personal blog, and the yak-shaving that keeps two decades of URLs alive."
+readme = "readme.md"
+keywords = [
+  "atom-feed",
+  "blog-posts",
+  "blog-source",
+  "creative-commons",
+  "dev-blog",
+  "markdown-blog",
+  "myst",
+  "myst-markdown",
+  "myst-parser",
+  "pelican",
+  "pelican-blog",
+  "pelican-site",
+  "personal-blog",
+  "personal-site",
+  "python-blog",
+  "static-blog",
+  "static-website",
+  "technical-blog",
+  "wrangler",
+  "yak-shaving",
+]
+license = { text = "CC-BY-NC-SA-4.0" }
 # A floor rather than a compatibility claim, and the only Python control in the repo.
 # Nothing here needs 3.14 and the corpus built fine on 3.12, but this blog has one
 # contributor and one pipeline, so the range never describes anyone else's
@@ -22,87 +50,215 @@ version = "1.0.0"
 # The cost is one upstream pin per bump. 3.14 needed pelican-search 1.1.1, whose
 # predecessor capped rtoml below the release that first shipped cp314 wheels. Expect
 # to go hunting for the equivalent when 3.15 lands.
-requires-python = ">= 3.14"
-# Kept byte-identical to the GitHub repository description: `lint-repo` compares the
-# two with a plain `!=`, with no normalization, so a stray emoji shortcode or a
-# trailing full stop on one side is a failed check. Change both or neither.
-description = "My personal blog, and the yak-shaving that keeps two decades of URLs alive."
-license = { text = 'CC-BY-NC-SA-4.0' }
-readme = "readme.md"
-keywords = [
-    'atom-feed',
-    'blog-posts',
-    'blog-source',
-    'creative-commons',
-    'dev-blog',
-    'markdown-blog',
-    'myst',
-    'myst-markdown',
-    'myst-parser',
-    'pelican',
-    'pelican-blog',
-    'pelican-site',
-    'personal-blog',
-    'personal-site',
-    'python-blog',
-    'static-blog',
-    'static-website',
-    'technical-blog',
-    'wrangler',
-    'yak-shaving',
-]
+requires-python = ">=3.14"
 classifiers = [
-    # See: https://pypi.org/pypi?%3Aaction=list_classifiers
-    'Development Status :: 5 - Production/Stable',
-    'Environment :: Web Environment',
-    'Framework :: Pelican',
-    'License :: Other/Proprietary License',
-    'Natural Language :: English',
-    'Natural Language :: French',
-    'Operating System :: OS Independent',
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.12",
-    'Programming Language :: Python :: Implementation :: CPython',
-    'Programming Language :: Other',
-    'Topic :: Internet :: WWW/HTTP :: Dynamic Content :: News/Diary',
-    'Topic :: Text Processing :: Markup :: HTML',
-    'Topic :: Text Processing :: Markup :: Markdown',
-    'Typing :: Typed',
+  # See: https://pypi.org/pypi?%3Aaction=list_classifiers
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "Framework :: Pelican",
+  "License :: Other/Proprietary License",
+  "Natural Language :: English",
+  "Natural Language :: French",
+  "Operating System :: OS Independent",
+  "Programming Language :: Other",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: News/Diary",
+  "Topic :: Text Processing :: Markup :: HTML",
+  "Topic :: Text Processing :: Markup :: Markdown",
+  "Typing :: Typed",
 ]
 dependencies = [
-    "pelican[Markdown]>=4.10.0",
-    "typogrify>=2.0.7",
-    "plumage>=5.0.0",
-    "pelican-seo>=1.2.2",
-    "pelican-search>=1.1.0",
-    # "pelican-similar-posts ~= 1.0.0",  # XXX Broken!
-    "pelican-sitemap>=1.1.0",
-    "pelican-neighbors>=1.2.0",
-    # "gensim ~= 4.3.0",  # XXX Broken!
+  "pelican[Markdown]>=4.10",
+  "pelican-neighbors>=1.2",
+  "pelican-search>=1.1",
+  "pelican-seo>=1.2.2",
+  # "pelican-similar-posts ~= 1.0.0",  # XXX Broken!
+  "pelican-sitemap>=1.1",
+  "plumage>=5",
+  "typogrify>=2.0.7",
+  # "gensim ~= 4.3.0",  # XXX Broken!
+]
+optional-dependencies.test = [
+  "pytest>=8.3.2",
+  # More pytest plugins at: https://docs.pytest.org/en/latest/reference/plugin_list.html
+  "pytest-github-actions-annotate-failures>=0.2",
+  "pytest-randomly>=3.15",
+  # Most of this suite waits on the network rather than on a CPU: every rule in
+  # `_redirects` and every rule in `_headers` is one live request to production. That
+  # is the workload xdist is best at, and it takes the local run from about four
+  # minutes to under three.
+  #
+  # The psutil extra is what makes `--numprocesses=logical` available, should the
+  # split ever want tuning beyond physical cores.
+  "pytest-xdist[psutil]>=3.7",
+  "requests>=2.32.3",
+]
+optional-dependencies.typing = [ "types-requests>=2.32.0.20240622" ]
+urls.Funding = "https://github.com/sponsors/kdeldycke"
+urls.Homepage = "https://kevin.deldycke.com"
+urls.Repository = "https://github.com/kdeldycke/blog"
+
+[tool.uv]
+# Both pins below are repomatic's, written by `repomatic init uv` and left alone
+# afterwards. Floor uv rather than cap it: astral-sh/setup-uv reads `required-version`
+# directly and installs the newest release satisfying it, so a ceiling would break every
+# machine the day the next minor lands.
+required-version = ">=0.11.15"
+# Cooldown before a newly published package can be resolved, held equal to
+# `[tool.repomatic] minimum-release-age` so the window here never excludes a version the
+# `uvx` installs in CI would pick. Until this landed the cooldown came from
+# ~/.config/uv/uv.toml alone, which is one machine's config and does not travel: a fresh
+# clone resolved with no window at all.
+exclude-newer = "1 week"
+# The theme is my own, published by me: the cooldown above guards against a compromised
+# upstream, which does not apply here, and it otherwise holds each release back for a
+# week. A zero duration rather than a fixed date, so the next release is picked up without
+# editing this file. Not a repomatic-owned key: the sync leaves it untouched.
+exclude-newer-package = { plumage = "0 days" }
+package = false
+
+[tool.typos]
+default.extend-ignore-re = [
+  # error: `ba` should be `by`, `be`
+  #   --> ./content/2011/postgresql-commands.md:47:95
+  #    |
+  # 47 |   $ psql --tuples-only --no-align -d database_id -c "SELECT id FROM res_users;" | sed ':a;N;$!ba;s/\n/ /g'
+  #    |                                                                                               ^^
+  #    |
+  # Issue reported at: https://github.com/crate-ci/typos/issues/642#issuecomment-2058343059
+  "!ba;",
+  # error: `classe` should be `class`, `classes`
+  #   --> ./content/2010/convert-lotus-notes-nsf-files-mbox-nlconverter.md:120:77
+  #     |
+  # 120 |    pywintypes.com_error: (-2147221231, 'ClassFactory ne peut pas fournir la classe demand\xe9e', None, None)
+  #     |                                                                             ^^^^^^
+  #     |
+  " ne peut pas fournir la classe ",
+  # error: `hda` should be `had`
+  #   --> content/2005/qemu-commands.md:19:29
+  #    |
+  # 19 |   $ qemu -cdrom /dev/cdrom -hda /home/kevin/qemu-disk-image.qcow -boot d
+  #    |                             ^^^
+  #    |
+  # Issue reported at: https://github.com/crate-ci/typos/issues/998
+  " -hda ",
+  # error: `espace` should be `escape`
+  #   --> ./content/2005/easy-mirroring-without-raid-the-poor-mans-disk-array.md:10:116
+  #    |
+  # 10 | ... in USB enclosures]({filename}/2005/creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux.md) ...
+  #    |                                                 ^^^^^^
+  #    |
+  "creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux.md",
+  # error: `cylindres` should be `cylinders`
+  #   --> ./content/2005/how-to-mount-a-file-system-binary-image.md:28:31
+  #    |
+  # 28 | 9 têtes, 56 secteurs/piste, 0 cylindres, total 0 sectors
+  #    |                               ^^^^^^^^^
+  #    |
+  " cylindres, ",
+  # error: `THM` should be `THEM`
+  #   --> ./content/2011/nichrome-preview-behind-the-scene-video.md:57:3
+  #    |
+  # 57 | `.THM` preview files generated by the camera for each `.MOV` clip.
+  #    |   ^^^
+  #    |
+  ".THM",
+  # error: `ND` should be `AND`
+  #   --> ./content/2010/making-info-tgv-android-app-video.md:28:414
+  #    |
+  # 28 | ... so I attached a variable ND-filter to the lens ...
+  #    |                              ^^
+  #    |
+  " ND-filter",
+  # error: `Shure` should be `Sure`
+  #   --> ./content/2010/making-info-tgv-android-app-video.md:68:154
+  #    |
+  # 68 | ... me his Shure Beta57A microphone ...
+  #    |            ^^^^^
+  #    |
+  "Shure ",
+  # error: `shure` should be `sure`
+  #   --> ./content/2010/making-info-tgv-android-app-video.md:70:13
+  #    |
+  # 70 | ![]({attach}shure-beta-57a-microphone-on-gorillapod.jpg)
+  #    |             ^^^^^
+  #    |
+  "shure-",
+  # error: `hda` should be `had`
+  #   --> ./content/2006/hardware-commands.md:25:28
+  #    |
+  # 25 | - Low-level format of the `hda` device:
+  #    |                            ^^^
+  #    |
+  "`hda`",
+  # error: `dbe` should be `be`
+  #   --> ./content/2008/hp-w2207h-external-display-on-intel-945.md:37:9
+  #    |
+  # 37 |   Load "dbe" # Double-Buffering Extension
+  #    |         ^^^
+  #    |
+  ' "dbe" ',
+  # error: `abitrate` should be `arbitrate`
+  #   --> ./content/2006/video-commands.md:297:140
+  #     |
+  # 297 | ... vcodec=mpeg4:vbitrate=400:v4mv:mbd=2:trell:autoaspect:dia=2:acodec=mp3:abitrate=32:vpass=1 -vf hqdn3d -o output.avi
+  #     |                                                                            ^^^^^^^^
+  #     |
+  ":abitrate=",
+]  # Sections of text to ignore.
+# Exclude French articles.
+files.extend-exclude = [
+  "content/2004/mise-en-place-paserelle-adsl-mandrake-10.md",
+  "content/2005/creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux.md",
+  "content/2005/script-de-reconnection-automatique-ppp.md",
+  "content/2006/ajouter-une-entree-jack-universelle-sur-un-telephone-sagem-my700xi.md",
+  "content/2009/cool-cavemen-creative-commons-moi.md",
+  "content/2010/comment-supprimer-des-comptes-mails-secondaires-free-fr.md",
+  "content/2012/ovh-configuration-modem-thomson-tg585-ipoe.md",
 ]
 
-[project.optional-dependencies]
-test = [
-    "pytest>=8.3.2",
-    # More pytest plugins at: https://docs.pytest.org/en/latest/reference/plugin_list.html
-    "pytest-github-actions-annotate-failures>=0.2.0",
-    "pytest-randomly>=3.15.0",
-    # Most of this suite waits on the network rather than on a CPU: every rule in
-    # `_redirects` and every rule in `_headers` is one live request to production. That
-    # is the workload xdist is best at, and it takes the local run from about four
-    # minutes to under three.
-    #
-    # The psutil extra is what makes `--numprocesses=logical` available, should the
-    # split ever want tuning beyond physical cores.
-    "pytest-xdist[psutil]>=3.7",
-    "requests>=2.32.3",
+[tool.mypy]
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+warn_unreachable = true
+pretty = true
+warn_unused_configs = true
+overrides = [
+  # Pelican ships no py.typed marker, so importing it is an error under the settings above.
+  # Silenced here rather than with an inline ignore on each import, because every local
+  # workaround in pelican_patches.py has to reach into the engine to hook onto it. Drop
+  # this once Pelican starts advertising its own types.
+  { module = [ "pelican.*" ], ignore_missing_imports = true },
 ]
-typing = ["types-requests>=2.32.0.20240622"]
 
-[project.urls]
-"Homepage" = 'https://kevin.deldycke.com'
-"Repository" = 'https://github.com/kdeldycke/blog'
-"Funding" = "https://github.com/sponsors/kdeldycke"
+[tool.pytest]
+# The tests import pelicanconf and pelican_patches, which sit at the repository root.
+# This project is not a package (see [tool.uv] below), so there is nothing installed for
+# them to be imported from: pytest only puts the test file's own folder on sys.path, and
+# from tests/ that no longer covers the root. Needed for the `pytest` console script CI
+# runs, which unlike `python -m pytest` does not prepend the working directory.
+ini_options.pythonpath = [ "." ]
+# https://docs.pytest.org/en/latest/customize.html#pyproject-toml
+# `--numprocesses=auto` splits the run across cores. It pays off because the suite is
+# mostly live HTTP against production, so workers spend their time waiting rather than
+# competing, and it costs a fraction of a second on the offline files.
+#
+# It only works because every test ID is deterministic. xdist compares what each worker
+# collected and aborts the whole run when they disagree, which is what the generated
+# redirect cases used to cause: they drew their placeholder values from the global
+# random state at collection time, so every worker invented different URLs. `token()`
+# in `test_redirects.py` seeds off the rule instead. Keep it that way, or this flag
+# turns every run into "Different tests were collected between gw0 and gw1".
+ini_options.addopts = [ "--durations=10", "--numprocesses=auto" ]
+# Make sure tests that are expected to fail do not resurect and start working all of a sudden.
+ini_options.xfail_strict = true
 
 [tool.lychee]
 # Since v0.24 lychee reads this table straight out of pyproject.toml, so repomatic runs no
@@ -111,34 +267,34 @@ typing = ["types-requests>=2.32.0.20240622"]
 # entries are therefore restated below rather than inherited. Everything from `archive.ph`
 # down is a verbatim copy; only the first entry is specific to this repo.
 exclude = [
-    # Pelican's internal link markers are resolved at build time, so they only ever exist
-    # in the Markdown source. lychee reads that source and rewrites `]({attach}foo.jpg)`
-    # into `file://.../%7Battach%7Dfoo.jpg`, a path nothing on disk answers to. Left alone
-    # that is ~690 phantom failures across 164 posts, enough to bury a real one. Matching
-    # the encoded braces rather than the literal `{attach}` is deliberate: the check runs
-    # after lychee has already percent-encoded them.
-    "%7B(attach|author|category|filename|index|static|tag)%7D",
-    # GitHub issue comment fragments are dynamically loaded and can't be verified.
-    "^https://github.com/.+/issues/[0-9]+#issuecomment-.*$",
-    # Release binary download URLs redirect to the GitHub CDN (objects.githubusercontent.com).
-    "^https://github.com/.+/releases/.+/download/.*$",
-    # Allow redirects of generic DOI URLs to their specific Zenodo release page.
-    "^https://doi.org/.+/zenodo.*$",
-    # Skip archive.ph and Sci-Hub because they restrict access to crawlers.
-    # Skip HN because of rate-limiting.
-    # See: https://github.com/lycheeverse/lychee/issues/989#issuecomment-1587208730
-    # https://github.com/lycheeverse/lychee/pull/1147
-    "archive\\.ph",
-    "sci-hub\\.st",
-    "ycombinator\\.com",
-    "x\\.com",
-    # Same story as x.com above, and this corpus predates the rename: 29 links still point
-    # at the old domain, which answers a crawler with a login wall. Not in the bundled
-    # config, which covers repositories whose prose is younger than the rename.
-    "twitter\\.com",
-    # VirusTotal analysis pages are a JS app that rate-limits bots, and the
-    # binaries page links one per released binary.
-    "^https://www\\.virustotal\\.com/gui/.*$",
+  # Pelican's internal link markers are resolved at build time, so they only ever exist
+  # in the Markdown source. lychee reads that source and rewrites `]({attach}foo.jpg)`
+  # into `file://.../%7Battach%7Dfoo.jpg`, a path nothing on disk answers to. Left alone
+  # that is ~690 phantom failures across 164 posts, enough to bury a real one. Matching
+  # the encoded braces rather than the literal `{attach}` is deliberate: the check runs
+  # after lychee has already percent-encoded them.
+  "%7B(attach|author|category|filename|index|static|tag)%7D",
+  # GitHub issue comment fragments are dynamically loaded and can't be verified.
+  "^https://github.com/.+/issues/[0-9]+#issuecomment-.*$",
+  # Release binary download URLs redirect to the GitHub CDN (objects.githubusercontent.com).
+  "^https://github.com/.+/releases/.+/download/.*$",
+  # Allow redirects of generic DOI URLs to their specific Zenodo release page.
+  "^https://doi.org/.+/zenodo.*$",
+  # Skip archive.ph and Sci-Hub because they restrict access to crawlers.
+  # Skip HN because of rate-limiting.
+  # See: https://github.com/lycheeverse/lychee/issues/989#issuecomment-1587208730
+  # https://github.com/lycheeverse/lychee/pull/1147
+  "archive\\.ph",
+  "sci-hub\\.st",
+  "ycombinator\\.com",
+  "x\\.com",
+  # Same story as x.com above, and this corpus predates the rename: 29 links still point
+  # at the old domain, which answers a crawler with a login wall. Not in the bundled
+  # config, which covers repositories whose prose is younger than the rename.
+  "twitter\\.com",
+  # VirusTotal analysis pages are a JS app that rate-limits bots, and the
+  # binaries page links one per released binary.
+  "^https://www\\.virustotal\\.com/gui/.*$",
 ]
 
 [tool.repomatic]
@@ -149,7 +305,6 @@ exclude = [
 # PACKAGE_ONLY and was never migrated to the narrower `is_python_package` metadata
 # key (fixed upstream, pending release). Drop this once that ships.
 bumpversion.sync = false
-
 # The release lane used to be listed here too: changelog, changelog.yaml, release.yaml
 # and publish-pypi-action. RepoScope.PACKAGE_ONLY now keeps all four away from a
 # `[tool.uv] package = false` project on its own, so naming them only restated what
@@ -157,9 +312,8 @@ bumpversion.sync = false
 # debug.yaml is the one that stays: it is PYTHON_ONLY, and this repo really is a Python
 # project. It just has nothing to debug, being a Pelican toolchain rather than a package.
 exclude = [
-    "workflows/debug.yaml",
+  "workflows/debug.yaml",
 ]
-
 # `sync-gitignore` rebuilds .gitignore from gitignore.io and appends this key, in that
 # order and nothing else: the file on disk is never read. So the Pelican rules below only
 # survive by being declared here, and until they were, they sat in the generated file
@@ -170,8 +324,7 @@ exclude = [
 # tree this repo does not have. `.cc-writes/` is repomatic's own addition rather than a
 # bundled default, and is worth carrying: Claude Code drops that staging directory into
 # whichever tree it is launched from.
-[tool.repomatic.gitignore]
-extra-content = """
+gitignore.extra-content = """
 # Claude Code local files.
 .claude/scheduled_tasks.lock
 .claude/settings.local.json
@@ -191,22 +344,20 @@ seo_report.html
 # only works because extra-content is appended after the generated rules.
 !scripts/
 """
-
 # The default filter is written for a repo whose prose lives in docs/ and readme.md. Here
 # the prose is the product: every post is under content/, so without it below a new article
 # ships without ever having its links checked. An override rather than extra_paths because
 # extra_paths only appends, and two of the defaults need removing, not supplementing:
 # changelog.md and citation.cff name files this repo does not have. An override replaces
 # the default outright, so what follows is the entire filter.
-[tool.repomatic.workflow.paths]
-"docs.yaml" = [
-    ".github/workflows/docs.yaml",
-    "content/**",
-    "docs/**",
-    "pyproject.toml",
-    "readme.md",
-    "uv.lock",
-    "**/*.py",
+workflow.paths."docs.yaml" = [
+  ".github/workflows/docs.yaml",
+  "content/**",
+  "docs/**",
+  "pyproject.toml",
+  "readme.md",
+  "uv.lock",
+  "**/*.py",
 ]
 # Same reasoning, and the same reason the default misses: source_paths derives from
 # [project] name, so the stock filter watches blog/**, a directory this repo does not
@@ -220,169 +371,12 @@ seo_report.html
 # pelican_patches.py joined the list when the local Pelican workarounds moved out of
 # pelicanconf.py: it runs on every build, so a change to it has to re-run the tests.
 # The suite itself is globbed, since pytest discovers it the same way.
-"tests.yaml" = [
-    ".github/workflows/tests.yaml",
-    "content/**",
-    "pelican_patches.py",
-    "pelicanconf.py",
-    "pyproject.toml",
-    "tests/**",
-    "uv.lock",
-]
-
-[tool.uv]
-package = false
-# Both pins below are repomatic's, written by `repomatic init uv` and left alone
-# afterwards. Floor uv rather than cap it: astral-sh/setup-uv reads `required-version`
-# directly and installs the newest release satisfying it, so a ceiling would break every
-# machine the day the next minor lands.
-required-version = ">=0.11.15"
-# Cooldown before a newly published package can be resolved, held equal to
-# `[tool.repomatic] minimum-release-age` so the window here never excludes a version the
-# `uvx` installs in CI would pick. Until this landed the cooldown came from
-# ~/.config/uv/uv.toml alone, which is one machine's config and does not travel: a fresh
-# clone resolved with no window at all.
-exclude-newer = "1 week"
-# The theme is my own, published by me: the cooldown above guards against a compromised
-# upstream, which does not apply here, and it otherwise holds each release back for a
-# week. A zero duration rather than a fixed date, so the next release is picked up without
-# editing this file. Not a repomatic-owned key: the sync leaves it untouched.
-exclude-newer-package = { plumage = "0 days" }
-
-[tool.mypy]
-warn_unused_configs = true
-warn_redundant_casts = true
-warn_unused_ignores = true
-warn_return_any = true
-warn_unreachable = true
-pretty = true
-
-# Pelican ships no py.typed marker, so importing it is an error under the settings above.
-# Silenced here rather than with an inline ignore on each import, because every local
-# workaround in pelican_patches.py has to reach into the engine to hook onto it. Drop
-# this once Pelican starts advertising its own types.
-[[tool.mypy.overrides]]
-module = ["pelican.*"]
-ignore_missing_imports = true
-
-[tool.pytest.ini_options]
-# https://docs.pytest.org/en/latest/customize.html#pyproject-toml
-# `--numprocesses=auto` splits the run across cores. It pays off because the suite is
-# mostly live HTTP against production, so workers spend their time waiting rather than
-# competing, and it costs a fraction of a second on the offline files.
-#
-# It only works because every test ID is deterministic. xdist compares what each worker
-# collected and aborts the whole run when they disagree, which is what the generated
-# redirect cases used to cause: they drew their placeholder values from the global
-# random state at collection time, so every worker invented different URLs. `token()`
-# in `test_redirects.py` seeds off the rule instead. Keep it that way, or this flag
-# turns every run into "Different tests were collected between gw0 and gw1".
-addopts = ["--durations=10", "--numprocesses=auto"]
-# The tests import pelicanconf and pelican_patches, which sit at the repository root.
-# This project is not a package (see [tool.uv] below), so there is nothing installed for
-# them to be imported from: pytest only puts the test file's own folder on sys.path, and
-# from tests/ that no longer covers the root. Needed for the `pytest` console script CI
-# runs, which unlike `python -m pytest` does not prepend the working directory.
-pythonpath = ["."]
-# Make sure tests that are expected to fail do not resurect and start working all of a sudden.
-xfail_strict = true
-
-[tool.typos]
-default.extend-ignore-re = [
-    # error: `ba` should be `by`, `be`
-    #   --> ./content/2011/postgresql-commands.md:47:95
-    #    |
-    # 47 |   $ psql --tuples-only --no-align -d database_id -c "SELECT id FROM res_users;" | sed ':a;N;$!ba;s/\n/ /g'
-    #    |                                                                                               ^^
-    #    |
-    # Issue reported at: https://github.com/crate-ci/typos/issues/642#issuecomment-2058343059
-    "!ba;",
-    # error: `classe` should be `class`, `classes`
-    #   --> ./content/2010/convert-lotus-notes-nsf-files-mbox-nlconverter.md:120:77
-    #     |
-    # 120 |    pywintypes.com_error: (-2147221231, 'ClassFactory ne peut pas fournir la classe demand\xe9e', None, None)
-    #     |                                                                             ^^^^^^
-    #     |
-    " ne peut pas fournir la classe ",
-    # error: `hda` should be `had`
-    #   --> content/2005/qemu-commands.md:19:29
-    #    |
-    # 19 |   $ qemu -cdrom /dev/cdrom -hda /home/kevin/qemu-disk-image.qcow -boot d
-    #    |                             ^^^
-    #    |
-    # Issue reported at: https://github.com/crate-ci/typos/issues/998
-    " -hda ",
-    # error: `espace` should be `escape`
-    #   --> ./content/2005/easy-mirroring-without-raid-the-poor-mans-disk-array.md:10:116
-    #    |
-    # 10 | ... in USB enclosures]({filename}/2005/creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux.md) ...
-    #    |                                                 ^^^^^^
-    #    |
-    "creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux.md",
-    # error: `cylindres` should be `cylinders`
-    #   --> ./content/2005/how-to-mount-a-file-system-binary-image.md:28:31
-    #    |
-    # 28 | 9 têtes, 56 secteurs/piste, 0 cylindres, total 0 sectors
-    #    |                               ^^^^^^^^^
-    #    |
-    " cylindres, ",
-    # error: `THM` should be `THEM`
-    #   --> ./content/2011/nichrome-preview-behind-the-scene-video.md:57:3
-    #    |
-    # 57 | `.THM` preview files generated by the camera for each `.MOV` clip.
-    #    |   ^^^
-    #    |
-    ".THM",
-    # error: `ND` should be `AND`
-    #   --> ./content/2010/making-info-tgv-android-app-video.md:28:414
-    #    |
-    # 28 | ... so I attached a variable ND-filter to the lens ...
-    #    |                              ^^
-    #    |
-    " ND-filter",
-    # error: `Shure` should be `Sure`
-    #   --> ./content/2010/making-info-tgv-android-app-video.md:68:154
-    #    |
-    # 68 | ... me his Shure Beta57A microphone ...
-    #    |            ^^^^^
-    #    |
-    "Shure ",
-    # error: `shure` should be `sure`
-    #   --> ./content/2010/making-info-tgv-android-app-video.md:70:13
-    #    |
-    # 70 | ![]({attach}shure-beta-57a-microphone-on-gorillapod.jpg)
-    #    |             ^^^^^
-    #    |
-    "shure-",
-    # error: `hda` should be `had`
-    #   --> ./content/2006/hardware-commands.md:25:28
-    #    |
-    # 25 | - Low-level format of the `hda` device:
-    #    |                            ^^^
-    #    |
-    "`hda`",
-    # error: `dbe` should be `be`
-    #   --> ./content/2008/hp-w2207h-external-display-on-intel-945.md:37:9
-    #    |
-    # 37 |   Load "dbe" # Double-Buffering Extension
-    #    |         ^^^
-    #    |
-    ' "dbe" ',
-    # error: `abitrate` should be `arbitrate`
-    #   --> ./content/2006/video-commands.md:297:140
-    #     |
-    # 297 | ... vcodec=mpeg4:vbitrate=400:v4mv:mbd=2:trell:autoaspect:dia=2:acodec=mp3:abitrate=32:vpass=1 -vf hqdn3d -o output.avi
-    #     |                                                                            ^^^^^^^^
-    #     |
-    ":abitrate=",
-] # Sections of text to ignore.
-# Exclude French articles.
-files.extend-exclude = [
-    "content/2004/mise-en-place-paserelle-adsl-mandrake-10.md",
-    "content/2005/creer-un-espace-de-stockage-fiable-avec-raid-5-et-lvm-sous-linux.md",
-    "content/2005/script-de-reconnection-automatique-ppp.md",
-    "content/2006/ajouter-une-entree-jack-universelle-sur-un-telephone-sagem-my700xi.md",
-    "content/2009/cool-cavemen-creative-commons-moi.md",
-    "content/2010/comment-supprimer-des-comptes-mails-secondaires-free-fr.md",
-    "content/2012/ovh-configuration-modem-thomson-tg585-ipoe.md",
+workflow.paths."tests.yaml" = [
+  ".github/workflows/tests.yaml",
+  "content/**",
+  "pelican_patches.py",
+  "pelicanconf.py",
+  "pyproject.toml",
+  "tests/**",
+  "uv.lock",
 ]
