@@ -211,10 +211,10 @@ Two things stay unrecoverable from this repository alone: the Web Analytics toke
 Not worth it here, because the duplicate it exposes is already inert. Checked 2026-08-11:
 
 - A web search for the hostname returns only this repository on GitHub, never a page of the site. The copy is not indexed.
-- All 264 article and page files carry `<link rel="canonical">` pointing at `https://kevin.deldycke.com/…`, emitted by the `seo` plugin (`SEO_ENHANCER`). Served from either hostname, an article names the canonical one.
+- Every generated document carries `<link rel="canonical">` pointing at `https://kevin.deldycke.com/…`. Served from either hostname, a page names the canonical one.
 - `sitemap.xml` lists canonical URLs only, and every internal link in the HTML is absolute to `kevin.deldycke.com`, so a crawler landing on the `pages.dev` copy leaves it on the first click.
 
-The gap, recorded rather than closed: the homepage, the 754 generated listing pages and the `archives.html`, `categories.html` and `page/N.html` files carry no canonical, because the SEO plugin only decorates articles and pages. If that ever matters, the fix is injecting the tag from `pelican_patches.py`, which costs nothing at request time, not a Pages Function.
+Full canonical coverage took a patch. The `seo` plugin decorates articles and pages only: its `run_html_enhancer` returns early unless the render context holds an `article` or a `page`, which no listing template supplies, so 810 of the 1074 generated documents had nothing naming their host. `canonicalize_listings()` in `pelican_patches.py` fills them in from the same `content_written` signal the plugin uses, deriving each URL from its output path, since Pages resolves a directory to its `index.html` and strips `.html` from everything else. Paginated pages point at themselves rather than at the first page, which is what Google asks for. The tag is spliced in as text rather than through BeautifulSoup: re-serializing 800-odd documents full of hand-written HTML for one line is a risk the corpus would notice. A build now yields 1074 of 1074 documents carrying exactly one canonical, all on `kevin.deldycke.com`, and `tests/test_pelican_patches.py` covers the URL mapping, the skip conditions and the signal registration.
 
 ## What the test suite checks against production
 

@@ -16,6 +16,7 @@ from __future__ import annotations
 import os
 import posixpath
 import re
+from html import escape
 
 from pelican import signals
 from pelican.contents import Article, Content
@@ -82,6 +83,75 @@ def absolutize_relative_images(instance: Content) -> None:
     instance._content = IMG_SRC.sub(rewrite, content)
 
 
+# A canonical link already present in the document, whoever wrote it.
+CANONICAL_LINK = re.compile(r"""<link\b[^>]*\brel=["']canonical["']""", re.IGNORECASE)
+
+
+def _served_url(save_as: str) -> str:
+    """Map a path under ``output/`` to the URL Cloudflare Pages serves it at.
+
+    Pages resolves a directory to its ``index.html`` and strips ``.html`` from every
+    other name, redirecting the suffixed spelling to the bare one. The output path
+    therefore already carries the answer, and no generator state is needed to read it.
+    """
+    if save_as == "index.html":
+        return ""
+    if save_as.endswith("/index.html"):
+        # Keep the trailing slash: TAG_URL and CATEGORY_URL both end in one.
+        return save_as[: -len("index.html")]
+    if save_as.endswith(".html"):
+        return save_as[: -len(".html")]
+    return save_as
+
+
+def canonicalize_listings(path: str, context: dict) -> None:
+    """Give every generated listing page a ``<link rel="canonical">``.
+
+    The ``seo`` plugin writes one for articles and pages only: its ``run_html_enhancer``
+    returns early unless the render context holds an ``article`` or a ``page``, which no
+    listing template supplies. That leaves the homepage, the per-tag, per-category and
+    per-year indexes, the ``archives``/``categories``/``tags`` summaries and the index
+    pagination with nothing naming the host they belong to.
+
+    It matters because the site answers on two hostnames. ``kevin.deldycke.com`` is a
+    CNAME to ``kevin-deldycke-blog.pages.dev``, and Cloudflare keeps that subdomain
+    publicly reachable for the life of the project: it cannot be deleted, and hiding it
+    would take a Pages Function on every request, since neither ``_redirects`` nor
+    ``_headers`` can match on host. Naming the canonical host in the markup costs
+    nothing at request time and settles the question wherever the document is served
+    from. See ``docs/infrastructure.md``.
+
+    Paginated pages point at themselves rather than at the first page, which is what
+    Google asks for: canonicalizing a sequence onto its head drops the rest of it.
+
+    The tag is spliced in as text instead of through BeautifulSoup, the way the plugin
+    does it. Re-serializing would round-trip 800-odd documents full of hand-written
+    HTML through a parser for the sake of one line, and the corpus is exactly the kind
+    that notices. Skipping documents that already carry a canonical keeps this safe to
+    run over output the plugin has already touched.
+    """
+    if not path.endswith(".html"):
+        return
+    # Already handled by the seo plugin, whose receiver shares this signal.
+    if context.get("article") or context.get("page"):
+        return
+
+    output_path = context.get("OUTPUT_PATH")
+    siteurl = context.get("SITEURL", "").rstrip("/")
+    if not output_path:
+        return
+
+    with open(path, encoding="utf-8") as document:
+        markup = document.read()
+    if CANONICAL_LINK.search(markup) or "</head>" not in markup:
+        return
+
+    url = _served_url(os.path.relpath(path, output_path).replace(os.sep, "/"))
+    tag = f'<link href="{escape(f"{siteurl}/{url}", quote=True)}" rel="canonical">'
+    with open(path, "w", encoding="utf-8") as document:
+        document.write(markup.replace("</head>", f"{tag}</head>", 1))
+
+
 def register() -> None:
     """Connect every patch above to the signal it hooks into.
 
@@ -89,6 +159,7 @@ def register() -> None:
     cached in ``sys.modules``, so a second call reconnects the same function objects.
     """
     signals.content_object_init.connect(absolutize_relative_images)
+    signals.content_written.connect(canonicalize_listings)
 
 
 register()

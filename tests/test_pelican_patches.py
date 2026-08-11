@@ -24,6 +24,8 @@ effect in ``pelicanconf.py`` ever stops installing the hook, these fail.
 
 from __future__ import annotations
 
+import re
+
 import pytest
 from pelican.contents import Article, Page
 from pelican.settings import DEFAULT_CONFIG
@@ -171,6 +173,109 @@ def test_hook_is_registered():
         r() if callable(r) and not hasattr(r, "__name__") else r for r in receivers
     }
     assert pelican_patches.absolutize_relative_images in resolved
+
+
+LISTING = "<html><head><title>Tag: Python</title></head><body>x</body></html>"
+
+HREF = re.compile(r"""<link\s+href="([^"]+)"\s+rel="canonical">""")
+
+
+def render(tmp_path, relative, markup=LISTING, **context):
+    """Lay a rendered document under a fake ``output/`` tree and fire the signal on it."""
+    target = tmp_path / relative
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(markup, encoding="utf-8")
+    pelican_patches.canonicalize_listings(
+        str(target),
+        {"OUTPUT_PATH": str(tmp_path), "SITEURL": SITEURL, **context},
+    )
+    return target.read_text(encoding="utf-8")
+
+
+@pytest.mark.parametrize(
+    ("save_as", "url"),
+    (
+        # A directory index is served at the directory, trailing slash and all: that is
+        # the exact spelling of TAG_URL, CATEGORY_URL and YEAR_ARCHIVE_SAVE_AS.
+        ("index.html", ""),
+        ("tag/python/index.html", "tag/python/"),
+        ("category/english/index.html", "category/english/"),
+        ("2004/index.html", "2004/"),
+        # Everything else loses the suffix, because Pages redirects the .html spelling
+        # to the bare one and serving both under one canonical is the whole point.
+        ("archives.html", "archives"),
+        ("categories.html", "categories"),
+        ("tags.html", "tags"),
+        ("page/2.html", "page/2"),
+    ),
+)
+def test_served_url(save_as, url):
+    assert pelican_patches._served_url(save_as) == url
+
+
+@pytest.mark.parametrize(
+    ("save_as", "expected"),
+    (
+        ("index.html", f"{SITEURL}/"),
+        ("tag/python/index.html", f"{SITEURL}/tag/python/"),
+        ("archives.html", f"{SITEURL}/archives"),
+        # Pagination points at itself. Canonicalizing a sequence onto its first page is
+        # what makes search engines drop the rest of it.
+        ("page/2.html", f"{SITEURL}/page/2"),
+        ("page/13.html", f"{SITEURL}/page/13"),
+    ),
+)
+def test_listing_gets_canonical(tmp_path, save_as, expected):
+    assert HREF.search(render(tmp_path, save_as)).group(1) == expected
+
+
+def test_canonical_lands_inside_head(tmp_path):
+    markup = render(tmp_path, "tags.html")
+    assert markup.index('rel="canonical"') < markup.index("</head>")
+    assert markup.startswith("<html><head><title>")
+
+
+@pytest.mark.parametrize(
+    "context",
+    ({"article": object()}, {"page": object()}),
+    ids=("article", "page"),
+)
+def test_seo_plugin_territory_is_left_alone(tmp_path, context):
+    """Articles and pages already get a canonical from the plugin, on this same signal."""
+    assert render(tmp_path, "2005/post.html", **context) == LISTING
+
+
+def test_existing_canonical_is_not_doubled(tmp_path):
+    """Safe to run over output the plugin has already touched, whatever the hook order."""
+    already = LISTING.replace(
+        "</head>", f'<link href="{SITEURL}/elsewhere" rel="canonical"></head>'
+    )
+    assert render(tmp_path, "tags.html", markup=already) == already
+
+
+@pytest.mark.parametrize("markup", ("", "<html><body>no head</body></html>"))
+def test_document_without_head_is_skipped(tmp_path, markup):
+    assert render(tmp_path, "tags.html", markup=markup) == markup
+
+
+def test_non_html_is_skipped(tmp_path):
+    assert render(tmp_path, "feed.rss", markup="<rss/>") == "<rss/>"
+
+
+def test_siteurl_trailing_slash_does_not_double_up_in_canonical(tmp_path):
+    markup = render(tmp_path, "tags.html", SITEURL=f"{SITEURL}/")
+    assert HREF.search(markup).group(1) == f"{SITEURL}/tags"
+
+
+def test_canonical_hook_is_registered():
+    """Guards the import side effect, same as the images hook above."""
+    from pelican import signals
+
+    receivers = signals.content_written.receivers.values()
+    resolved = {
+        r() if callable(r) and not hasattr(r, "__name__") else r for r in receivers
+    }
+    assert pelican_patches.canonicalize_listings in resolved
 
 
 def test_myst_renderer_is_pinned():
