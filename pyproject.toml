@@ -62,10 +62,9 @@ classifiers = [
   "Operating System :: OS Independent",
   "Programming Language :: Other",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Programming Language :: Python :: 3.13",
+  # Only 3.14, matching the `requires-python` floor above. Resolvers read that floor and
+  # humans read these, so a list reaching down to 3.10 advertised support for four
+  # versions the project refuses to install on. `lint-repo` flags the disagreement.
   "Programming Language :: Python :: 3.14",
   "Programming Language :: Python :: Implementation :: CPython",
   "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: News/Diary",
@@ -298,13 +297,11 @@ exclude = [
 ]
 
 [tool.repomatic]
-# `sync-bumpversion` gates on `is_python_project`, true for any repo with a [project]
-# table, so it still fired here even though this is a `[tool.uv] package = false`
-# project with no package to version: no __init__.py, no changelog.md, no
-# citation.cff. Unlike the release lane below, this job predates RepoScope.
-# PACKAGE_ONLY and was never migrated to the narrower `is_python_package` metadata
-# key (fixed upstream, pending release). Drop this once that ships.
-bumpversion.sync = false
+# `bumpversion.sync = false` used to sit here, because `sync-bumpversion` gated on
+# `is_python_project`, true for any repo carrying a [project] table, and so fired against
+# this `[tool.uv] package = false` project with nothing to version. v7.10.0 moved the job
+# onto the narrower `is_python_package`, which is false here, so the opt-out no longer
+# describes anything.
 # The release lane used to be listed here too: changelog, changelog.yaml, release.yaml
 # and publish-pypi-action. RepoScope.PACKAGE_ONLY now keeps all four away from a
 # `[tool.uv] package = false` project on its own, so naming them only restated what
@@ -344,6 +341,13 @@ seo_report.html
 # only works because extra-content is appended after the generated rules.
 !scripts/
 """
+# Declared rather than inherited, even though `1 week` is repomatic's own default. This
+# window is restated in three hand-held copies: `[tool.uv] exclude-newer` above, and the
+# `UV_EXCLUDE_NEWER` and `NPM_CONFIG_MIN_RELEASE_AGE` literals in tests.yaml and
+# deploy.yaml. Held equal to a default, they would all silently fall out of step the day
+# upstream moves it, and nothing here would say what they were meant to equal. Writing it
+# down is what makes the other three checkable.
+minimum-release-age = "1 week"
 # The default filter is written for a repo whose prose lives in docs/ and readme.md. Here
 # the prose is the product: every post is under content/, so without it below a new article
 # ships without ever having its links checked. An override rather than extra_paths because

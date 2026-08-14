@@ -73,15 +73,26 @@ jobs:
     # mostly single-threaded Python. See the table in deploy.yaml.
     #
     # ubuntu-slim cannot run this at all: it ships no Rust, which `cargo install
-    # stork-search` and the rtoml build both need. ubuntu-26.04 is the one worth
-    # revisiting, for its Python 3.14 rather than its OS, but not until lxml,
-    # markupsafe, pyyaml and watchfiles are on versions with cp314 wheels, since all
-    # four would otherwise fall back to compiling from source.
+    # stork-search` and the rtoml build both need, and repomatic has since retired it
+    # from its axes. 26.04 was the one worth revisiting, for its Python 3.14 rather
+    # than its OS, and the blocker cleared on 2026-08-14: lxml, markupsafe, pyyaml and
+    # watchfiles all ship cp314 wheels at the versions uv.lock pins (6.1.1, 3.0.3,
+    # 6.0.3, 1.2.0), so none of them falls back to compiling from source. The move is
+    # x64 to x64, which leaves the arm64 measurement above untouched.
     #
     # Note that no updater walks a `runs-on:` value forward the way
-    # sync-workflow-pins walks the version pins above, so this is a hand-held choice:
-    # revisit it, it will not revisit itself.
-    runs-on: ubuntu-24.04
+    # sync-workflow-pins walks the version pins in the steps below, so this is still a
+    # hand-held choice. What 26.04 buys is the warning: it is one of the images
+    # repomatic draws its test axes from, and the runner-images job files an issue
+    # when GitHub's announcement feed puts one of those into deprecation. 24.04 sat
+    # outside that list, so this image retiring would have arrived unannounced.
+    runs-on: ubuntu-26.04
+    # The site build is the long pole here at roughly 6 minutes, and html-validate
+    # walks 262 articles after it. 30 leaves room for a slow runner without letting a
+    # hung step hold the slot for the platform's 6-hour default. repomatic caps every
+    # job it owns the same way, but this workflow owns its jobs, so nothing is
+    # inherited.
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
@@ -137,7 +148,12 @@ jobs:
 
   unittests:
     name: Unittests
-    runs-on: ubuntu-24.04
+    # Same image as the job above, for the same reasons.
+    runs-on: ubuntu-26.04
+    # The suite is mostly live HTTP against production, so it is bounded by how long
+    # those hosts take to answer rather than by anything local. 15 is generous against
+    # a run that finishes in well under a minute, and still caps a hang.
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0

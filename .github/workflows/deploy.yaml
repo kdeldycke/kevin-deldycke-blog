@@ -52,13 +52,17 @@ jobs:
   # settings should be loud, but they should never hold up publishing an article.
   config-drift:
     name: Check Cloudflare config drift
-    runs-on: ubuntu-24.04
+    # Same image as the deploy job below, where the reasoning sits.
+    runs-on: ubuntu-26.04
+    # Two Cloudflare API calls and a TOML parse. A minute is already luxurious; 10
+    # covers an API that is answering slowly rather than not at all.
+    timeout-minutes: 10
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       # Standard library only, so no uv sync and no dependency cooldown to honour.
-      # Needs Python 3.11 or later for tomllib; ubuntu-24.04 ships 3.12.
+      # Needs Python 3.11 or later for tomllib; ubuntu-26.04 ships 3.14.
       - name: Compare live project against declared state
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -86,8 +90,21 @@ jobs:
     #
     # Worth revisiting only if the build stops dominating. Note that no updater walks
     # a `runs-on:` value forward the way sync-workflow-pins walks the version pins
-    # below, so this is a hand-held choice: revisit it, it will not revisit itself.
-    runs-on: ubuntu-24.04
+    # below, so the architecture stays a hand-held choice.
+    #
+    # 26.04 rather than 24.04 since 2026-08-14, x64 to x64, so the table above still
+    # describes this job. The image ships Python 3.14.4, Rust 1.97.1 and npm 11.17.0,
+    # which covers everything the steps below reach for before they pin their own.
+    # The version, unlike the architecture, is now watched: 26.04 is one of the images
+    # repomatic draws its test axes from, and the runner-images job files an issue when
+    # GitHub's announcement feed puts one of those into deprecation. 24.04 sat outside
+    # that list, so its retirement would have surfaced as a broken deploy instead.
+    runs-on: ubuntu-26.04
+    # Measured at roughly 10 minutes end to end from the table above, and it is the
+    # workflow whose output reaches readers, so the cap is set to absorb a bad day
+    # rather than to be tight. What it rules out is a wedged step holding a runner for
+    # the platform's 6-hour default while nothing is being published.
+    timeout-minutes: 30
     permissions:
       contents: read
       deployments: write
