@@ -109,17 +109,6 @@ urls.Repository = "https://github.com/kdeldycke/blog"
 # directly and installs the newest release satisfying it, so a ceiling would break every
 # machine the day the next minor lands.
 required-version = ">=0.11.15"
-# Cooldown before a newly published package can be resolved, held equal to
-# `[tool.repomatic] minimum-release-age` so the window here never excludes a version the
-# `uvx` installs in CI would pick. Until this landed the cooldown came from
-# ~/.config/uv/uv.toml alone, which is one machine's config and does not travel: a fresh
-# clone resolved with no window at all.
-exclude-newer = "1 week"
-# The theme is my own, published by me: the cooldown above guards against a compromised
-# upstream, which does not apply here, and it otherwise holds each release back for a
-# week. A zero duration rather than a fixed date, so the next release is picked up without
-# editing this file. Not a repomatic-owned key: the sync leaves it untouched.
-exclude-newer-package = { plumage = "2026-08-11T00:00:00Z" }
 # pelican caps pygments at `<2.20.0`, and 2.20.0 is the release fixing CVE-2026-4539, so
 # this repo's Dependabot alert sits out of reach of an ordinary resolution: uv keeps 2.18.0
 # without complaining and `fix-vulnerable-deps` has nothing to propose. The cap is
@@ -134,9 +123,21 @@ exclude-newer-package = { plumage = "2026-08-11T00:00:00Z" }
 # colors as ordinary text, and it uppercases the hex colors in the generated stylesheets.
 # Neither reaches a rendered page, so I take the upgrade and close the alert.
 #
-# Remove once pelican widens the cap. `lint-deps` warns about this key by design; the
-# `lint-deps.allow` entry under `[tool.repomatic]` carries the reason into its report.
+# Remove once pelican widens the cap. `lint-deps` flags this key by design; the
+# `lint-deps.allow` entry under `[tool.repomatic]` demotes that warning to a note carrying
+# the reason.
 override-dependencies = [ "pygments>=2.20" ]
+# Cooldown before a newly published package can be resolved, held equal to
+# `[tool.repomatic] minimum-release-age` so the window here never excludes a version the
+# `uvx` installs in CI would pick. Until this landed the cooldown came from
+# ~/.config/uv/uv.toml alone, which is one machine's config and does not travel: a fresh
+# clone resolved with no window at all.
+exclude-newer = "1 week"
+# The theme is my own, published by me: the cooldown above guards against a compromised
+# upstream, which does not apply here, and it otherwise holds each release back for a
+# week. A zero duration rather than a fixed date, so the next release is picked up without
+# editing this file. Not a repomatic-owned key: the sync leaves it untouched.
+exclude-newer-package = { plumage = "2026-08-11T00:00:00Z" }
 package = false
 
 [tool.typos]
@@ -362,9 +363,9 @@ seo_report.html
 # resolution for whoever locks the project and for nobody else, so a package ships tested
 # against a tree its users never get. That consequence needs a package, and this one is
 # `[tool.uv] package = false`: the tree the override produces is the only tree anyone ever
-# installs. Naming it here does not silence the warning, which never blocked anything
-# anyway; it attaches the reason to it, so the next reader gets the argument instead of a
-# bare finding. The full story sits beside the override itself.
+# installs. Naming it here demotes that warning to a note carrying the reason, so the next
+# reader gets the argument instead of a bare finding. The full story sits beside the
+# override itself.
 lint-deps.allow = { pygments = "no published artifact: the overridden tree is the only one that ships" }
 # Declared rather than inherited, even though `1 week` is repomatic's own default. This
 # window is restated in three hand-held copies: `[tool.uv] exclude-newer` above, and the
