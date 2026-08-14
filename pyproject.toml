@@ -119,7 +119,7 @@ exclude-newer = "1 week"
 # upstream, which does not apply here, and it otherwise holds each release back for a
 # week. A zero duration rather than a fixed date, so the next release is picked up without
 # editing this file. Not a repomatic-owned key: the sync leaves it untouched.
-exclude-newer-package = { plumage = "0 days" }
+exclude-newer-package = { plumage = "2026-08-11T00:00:00Z" }
 package = false
 
 [tool.typos]
