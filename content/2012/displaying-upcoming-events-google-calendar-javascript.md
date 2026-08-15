@@ -94,5 +94,4 @@ And around this data feed, I've built a quick and dirty Javascript piece of code
     });
   });
 </script>
-
 ```
