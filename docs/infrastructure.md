@@ -98,7 +98,7 @@ A Cloudflare DNS API token would only ever be needed for TLS if a certificate we
 | `api_token` | A scoped API token |
 | *(empty)*, actor `system` | Cloudflare itself, mostly certificate renewal |
 
-Account-owned and user-owned tokens are distinguishable: an account-owned token logs actor `account` with an empty Actor Email, a user-owned one logs the owner's address. That is how a credential migration can be confirmed after the fact rather than assumed.
+Account-owned and user-owned tokens are distinguishable: an account-owned token logs actor `account` with an empty Actor Email, a user-owned one logs the owner's address. That is how a credential migration can be confirmed after the fact rather than assumed. They are also distinguishable at the API, and [in a way that looks like a broken credential](#the-rule-is-readable-over-the-api-after-all): an account-owned token is rejected outright by the user-scoped `/user/tokens/verify`.
 
 Two limits worth knowing before drawing conclusions. The log records **changes only**, so a credential that only ever reads leaves no trace no matter how far back you look. And reading it through the API needs `Account → Audit Logs → Read`, which the `wrangler login` OAuth token does not carry, so in practice this is a dashboard exercise.
 
@@ -204,6 +204,24 @@ Three details in that rule are load-carrying, and all three were wrong before 20
 
 This could not have been done in `content/extra/_redirects`. That file is served by Pages for `kevin.deldycke.com`, and Pages redirects match on **path**, never on host: a `/*` rule there would fire on the canonical hostname too and redirect the site to itself forever. Host canonicalization has to happen at the edge, before Pages sees the request.
 
+#### The rule is readable over the API after all
+
+An edge rule of this kind can be snapshotted and reconciled the way `scripts/cloudflare_config.py` handles the Pages project, and an account-owned token is enough. Measured on 2026-08-15, against the sibling `mpm.run` zone rather than this one, with a token carrying `Zone → Read` and `Dynamic URL Redirects → Edit`:
+
+| Call | Result |
+| --- | --- |
+| `GET /zones?name={zone}` | zone resolved |
+| `GET /zones/{zone_id}/rulesets` | phases listed, `http_request_dynamic_redirect` among them |
+| `GET /zones/{zone_id}/rulesets/{ruleset_id}` | full rule bodies, expression and target included |
+| `PATCH /zones/{zone_id}/rulesets/{ruleset_id}/rules/{rule_id}` | target expression rewritten, live within seconds |
+| `GET /user/tokens/verify` | **HTTP 401**, error `1000` "Invalid API Token" |
+
+The last row is the trap, and it is about the endpoint rather than the token: `/user/tokens/verify` is user-scoped, so an account-owned token (the `cfat_` prefix) fails it while every zone call above succeeds. A verify step is therefore the wrong thing to gate a script on — prove the credential against the zone it is meant to touch instead.
+
+This does not contradict [what is recorded below](#known-gaps) about Page Rules: that is the **legacy** `/zones/{id}/pagerules` endpoint, and nothing here re-tested it. Single Redirects live in the newer `rulesets` API, which is what these calls exercise.
+
+Reconciling this rule from the repository is therefore possible and not yet done. It would need a `Dynamic URL Redirects → Read` token in the same short-TTL, delete-after-use shape as the DNS snapshot one, and the same `--check`/`--apply`/`--dump` verbs `cloudflare_config.py` already offers.
+
 Two things stay unrecoverable from this repository alone: the Web Analytics token, which is regenerated per project, and the TXT record values, which are fingerprinted here by design. Everything else in a rebuild is reproducible from what is committed.
 
 ### The pages.dev subdomain
@@ -242,7 +260,7 @@ Things known to be wrong or unfinished, as opposed to the gaps below which are l
 - `dns.md` is a snapshot, not a reconciler. Nothing detects DNS drift automatically the way `cloudflare_config.py --check` does for the Pages project, because that would mean a DNS-scoped token living in CI. Regenerating after any DNS change is manual.
 - `scripts/cloudflare_config.py` reconciles the Pages project only. Zones, DNS, Web Analytics and zone-level rules are untouched by it.
 - Zone-level settings (SSL mode, minimum TLS version, always-use-HTTPS, cache rules) are not captured anywhere. They are unlikely to matter for a static site on Cloudflare defaults, but they are not verified to be on defaults either.
-- The rule producing the apex redirect is not recorded here, only its effect. Reading it needs a rulesets-scoped token, and the Page Rules endpoint refuses account-owned tokens outright, so it stays a dashboard-only artefact for now.
+- The rule producing the apex redirect is recorded here by hand, and nothing reconciles it. It is no longer dashboard-only: [the rulesets API reads and writes it with an account-owned token](#the-rule-is-readable-over-the-api-after-all), so the gap is now the missing script rather than a missing capability. The legacy Page Rules endpoint is a separate thing and still refuses those tokens as far as anyone here has tested.
 
 ## Keeping this current
 
