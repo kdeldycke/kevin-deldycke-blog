@@ -6,9 +6,6 @@ requires-python = ">=3.14"
 exclude-newer = "0001-01-01T00:00:00Z" # This has no effect and is included for backwards compatibility when using relative exclude-newer values.
 exclude-newer-span = "P1W"
 
-[options.exclude-newer-package]
-plumage = "2026-08-11T00:00:00Z"
-
 [manifest]
 overrides = [{ name = "pygments", specifier = ">=2.20" }]
 
